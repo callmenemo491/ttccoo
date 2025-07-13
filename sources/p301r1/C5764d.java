@@ -1,0 +1,677 @@
+package p301r1;
+
+/* renamed from: r1.d */
+/* loaded from: classes.dex */
+public class C5764d extends android.graphics.drawable.Drawable implements android.graphics.drawable.Animatable {
+
+    /* renamed from: e0 */
+    public static final android.view.animation.Interpolator f22187e0 = null;
+
+    /* renamed from: f0 */
+    public static final android.view.animation.Interpolator f22188f0 = null;
+
+    /* renamed from: g0 */
+    public static final int[] f22189g0 = null;
+
+    /* renamed from: Y */
+    public final p301r1.C5764d.a f22190Y;
+
+    /* renamed from: Z */
+    public float f22191Z;
+
+    /* renamed from: a0 */
+    public android.content.res.Resources f22192a0;
+
+    /* renamed from: b0 */
+    public android.animation.Animator f22193b0;
+
+    /* renamed from: c0 */
+    public float f22194c0;
+
+    /* renamed from: d0 */
+    public boolean f22195d0;
+
+    /* renamed from: r1.d$a */
+    public static class a {
+
+        /* renamed from: a */
+        public final android.graphics.RectF f22196a;
+
+        /* renamed from: b */
+        public final android.graphics.Paint f22197b;
+
+        /* renamed from: c */
+        public final android.graphics.Paint f22198c;
+
+        /* renamed from: d */
+        public final android.graphics.Paint f22199d;
+
+        /* renamed from: e */
+        public float f22200e;
+
+        /* renamed from: f */
+        public float f22201f;
+
+        /* renamed from: g */
+        public float f22202g;
+
+        /* renamed from: h */
+        public float f22203h;
+
+        /* renamed from: i */
+        public int[] f22204i;
+
+        /* renamed from: j */
+        public int f22205j;
+
+        /* renamed from: k */
+        public float f22206k;
+
+        /* renamed from: l */
+        public float f22207l;
+
+        /* renamed from: m */
+        public float f22208m;
+
+        /* renamed from: n */
+        public boolean f22209n;
+
+        /* renamed from: o */
+        public android.graphics.Path f22210o;
+
+        /* renamed from: p */
+        public float f22211p;
+
+        /* renamed from: q */
+        public float f22212q;
+
+        /* renamed from: r */
+        public int f22213r;
+
+        /* renamed from: s */
+        public int f22214s;
+
+        /* renamed from: t */
+        public int f22215t;
+
+        /* renamed from: u */
+        public int f22216u;
+
+        public a() {
+                r5 = this;
+                r5.<init>()
+                android.graphics.RectF r0 = new android.graphics.RectF
+                r0.<init>()
+                r5.f22196a = r0
+                android.graphics.Paint r0 = new android.graphics.Paint
+                r0.<init>()
+                r5.f22197b = r0
+                android.graphics.Paint r1 = new android.graphics.Paint
+                r1.<init>()
+                r5.f22198c = r1
+                android.graphics.Paint r2 = new android.graphics.Paint
+                r2.<init>()
+                r5.f22199d = r2
+                r3 = 0
+                r5.f22200e = r3
+                r5.f22201f = r3
+                r5.f22202g = r3
+                r3 = 1084227584(0x40a00000, float:5.0)
+                r5.f22203h = r3
+                r3 = 1065353216(0x3f800000, float:1.0)
+                r5.f22211p = r3
+                r3 = 255(0xff, float:3.57E-43)
+                r5.f22215t = r3
+                android.graphics.Paint$Cap r3 = android.graphics.Paint.Cap.SQUARE
+                r0.setStrokeCap(r3)
+                r3 = 1
+                r0.setAntiAlias(r3)
+                android.graphics.Paint$Style r4 = android.graphics.Paint.Style.STROKE
+                r0.setStyle(r4)
+                android.graphics.Paint$Style r0 = android.graphics.Paint.Style.FILL
+                r1.setStyle(r0)
+                r1.setAntiAlias(r3)
+                r0 = 0
+                r2.setColor(r0)
+                return
+        }
+
+        /* renamed from: a */
+        public void m12083a(int r2) {
+                r1 = this;
+                r1.f22205j = r2
+                int[] r0 = r1.f22204i
+                r2 = r0[r2]
+                r1.f22216u = r2
+                return
+        }
+
+        /* renamed from: b */
+        public void m12084b(boolean r2) {
+                r1 = this;
+                boolean r0 = r1.f22209n
+                if (r0 == r2) goto L6
+                r1.f22209n = r2
+            L6:
+                return
+        }
+    }
+
+    static {
+            android.view.animation.LinearInterpolator r0 = new android.view.animation.LinearInterpolator
+            r0.<init>()
+            p301r1.C5764d.f22187e0 = r0
+            y0.b r0 = new y0.b
+            r0.<init>()
+            p301r1.C5764d.f22188f0 = r0
+            r0 = 1
+            int[] r0 = new int[r0]
+            r1 = 0
+            r2 = -16777216(0xffffffffff000000, float:-1.7014118E38)
+            r0[r1] = r2
+            p301r1.C5764d.f22189g0 = r0
+            return
+    }
+
+    public C5764d(android.content.Context r3) {
+            r2 = this;
+            r2.<init>()
+            java.util.Objects.requireNonNull(r3)
+            android.content.res.Resources r3 = r3.getResources()
+            r2.f22192a0 = r3
+            r1.d$a r3 = new r1.d$a
+            r3.<init>()
+            r2.f22190Y = r3
+            int[] r0 = p301r1.C5764d.f22189g0
+            r3.f22204i = r0
+            r0 = 0
+            r3.m12083a(r0)
+            r0 = 1075838976(0x40200000, float:2.5)
+            r2.m12080d(r0)
+            r0 = 2
+            float[] r0 = new float[r0]
+            r0 = {x004a: FILL_ARRAY_DATA , data: [0, 1065353216} // fill-array
+            android.animation.ValueAnimator r0 = android.animation.ValueAnimator.ofFloat(r0)
+            r1.b r1 = new r1.b
+            r1.<init>(r2, r3)
+            r0.addUpdateListener(r1)
+            r1 = -1
+            r0.setRepeatCount(r1)
+            r1 = 1
+            r0.setRepeatMode(r1)
+            android.view.animation.Interpolator r1 = p301r1.C5764d.f22187e0
+            r0.setInterpolator(r1)
+            r1.c r1 = new r1.c
+            r1.<init>(r2, r3)
+            r0.addListener(r1)
+            r2.f22193b0 = r0
+            return
+    }
+
+    /* renamed from: a */
+    public void m12077a(float r8, p301r1.C5764d.a r9, boolean r10) {
+            r7 = this;
+            boolean r0 = r7.f22195d0
+            r1 = 1008981770(0x3c23d70a, float:0.01)
+            if (r0 == 0) goto L30
+            r7.m12082f(r8, r9)
+            float r10 = r9.f22208m
+            r0 = 1061997773(0x3f4ccccd, float:0.8)
+            float r10 = r10 / r0
+            double r2 = (double) r10
+            double r2 = java.lang.Math.floor(r2)
+            r4 = 4607182418800017408(0x3ff0000000000000, double:1.0)
+            double r2 = r2 + r4
+            float r10 = (float) r2
+            float r0 = r9.f22206k
+            float r2 = r9.f22207l
+            float r1 = r2 - r1
+            float r1 = r1 - r0
+            float r1 = r1 * r8
+            float r1 = r1 + r0
+            r9.f22200e = r1
+            r9.f22201f = r2
+            float r0 = r9.f22208m
+            float r8 = p346u.C6268m.m12887a(r10, r0, r8, r0)
+            r9.f22202g = r8
+            goto L80
+        L30:
+            r0 = 1065353216(0x3f800000, float:1.0)
+            int r2 = (r8 > r0 ? 1 : (r8 == r0 ? 0 : -1))
+            if (r2 != 0) goto L38
+            if (r10 == 0) goto L80
+        L38:
+            float r10 = r9.f22208m
+            r2 = 1061830001(0x3f4a3d71, float:0.79)
+            r3 = 1056964608(0x3f000000, float:0.5)
+            int r4 = (r8 > r3 ? 1 : (r8 == r3 ? 0 : -1))
+            if (r4 >= 0) goto L54
+            float r0 = r8 / r3
+            float r3 = r9.f22206k
+            android.view.animation.Interpolator r4 = p301r1.C5764d.f22188f0
+            y0.d r4 = (p423y0.AbstractInterpolatorC7102d) r4
+            float r0 = r4.getInterpolation(r0)
+            float r0 = r0 * r2
+            float r0 = r0 + r1
+            float r0 = r0 + r3
+            goto L6b
+        L54:
+            float r4 = r8 - r3
+            float r4 = r4 / r3
+            float r3 = r9.f22206k
+            float r3 = r3 + r2
+            android.view.animation.Interpolator r5 = p301r1.C5764d.f22188f0
+            y0.d r5 = (p423y0.AbstractInterpolatorC7102d) r5
+            float r4 = r5.getInterpolation(r4)
+            float r0 = r0 - r4
+            float r0 = r0 * r2
+            float r0 = r0 + r1
+            float r0 = r3 - r0
+            r6 = r3
+            r3 = r0
+            r0 = r6
+        L6b:
+            r1 = 1045891644(0x3e570a3c, float:0.20999998)
+            float r1 = r1 * r8
+            float r1 = r1 + r10
+            r10 = 1129840640(0x43580000, float:216.0)
+            float r2 = r7.f22194c0
+            float r8 = r8 + r2
+            float r8 = r8 * r10
+            r9.f22200e = r3
+            r9.f22201f = r0
+            r9.f22202g = r1
+            r7.f22191Z = r8
+        L80:
+            return
+    }
+
+    /* renamed from: b */
+    public void m12078b(int... r2) {
+            r1 = this;
+            r1.d$a r0 = r1.f22190Y
+            r0.f22204i = r2
+            r2 = 0
+            r0.m12083a(r2)
+            r1.d$a r0 = r1.f22190Y
+            r0.m12083a(r2)
+            r1.invalidateSelf()
+            return
+    }
+
+    /* renamed from: c */
+    public final void m12079c(float r4, float r5, float r6, float r7) {
+            r3 = this;
+            r1.d$a r0 = r3.f22190Y
+            android.content.res.Resources r1 = r3.f22192a0
+            android.util.DisplayMetrics r1 = r1.getDisplayMetrics()
+            float r1 = r1.density
+            float r5 = r5 * r1
+            r0.f22203h = r5
+            android.graphics.Paint r2 = r0.f22197b
+            r2.setStrokeWidth(r5)
+            float r4 = r4 * r1
+            r0.f22212q = r4
+            r4 = 0
+            r0.m12083a(r4)
+            float r6 = r6 * r1
+            float r7 = r7 * r1
+            int r4 = (int) r6
+            r0.f22213r = r4
+            int r4 = (int) r7
+            r0.f22214s = r4
+            return
+    }
+
+    /* renamed from: d */
+    public void m12080d(float r2) {
+            r1 = this;
+            r1.d$a r0 = r1.f22190Y
+            r0.f22203h = r2
+            android.graphics.Paint r0 = r0.f22197b
+            r0.setStrokeWidth(r2)
+            r1.invalidateSelf()
+            return
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public void draw(android.graphics.Canvas r13) {
+            r12 = this;
+            android.graphics.Rect r0 = r12.getBounds()
+            r13.save()
+            float r1 = r12.f22191Z
+            float r2 = r0.exactCenterX()
+            float r3 = r0.exactCenterY()
+            r13.rotate(r1, r2, r3)
+            r1.d$a r1 = r12.f22190Y
+            android.graphics.RectF r8 = r1.f22196a
+            float r2 = r1.f22212q
+            float r3 = r1.f22203h
+            r9 = 1073741824(0x40000000, float:2.0)
+            float r3 = r3 / r9
+            float r3 = r3 + r2
+            r10 = 0
+            int r2 = (r2 > r10 ? 1 : (r2 == r10 ? 0 : -1))
+            if (r2 > 0) goto L44
+            int r2 = r0.width()
+            int r3 = r0.height()
+            int r2 = java.lang.Math.min(r2, r3)
+            float r2 = (float) r2
+            float r2 = r2 / r9
+            int r3 = r1.f22213r
+            float r3 = (float) r3
+            float r4 = r1.f22211p
+            float r3 = r3 * r4
+            float r3 = r3 / r9
+            float r4 = r1.f22203h
+            float r4 = r4 / r9
+            float r3 = java.lang.Math.max(r3, r4)
+            float r3 = r2 - r3
+        L44:
+            int r2 = r0.centerX()
+            float r2 = (float) r2
+            float r2 = r2 - r3
+            int r4 = r0.centerY()
+            float r4 = (float) r4
+            float r4 = r4 - r3
+            int r5 = r0.centerX()
+            float r5 = (float) r5
+            float r5 = r5 + r3
+            int r0 = r0.centerY()
+            float r0 = (float) r0
+            float r0 = r0 + r3
+            r8.set(r2, r4, r5, r0)
+            float r0 = r1.f22200e
+            float r2 = r1.f22202g
+            float r0 = r0 + r2
+            r3 = 1135869952(0x43b40000, float:360.0)
+            float r0 = r0 * r3
+            float r4 = r1.f22201f
+            float r4 = r4 + r2
+            float r4 = r4 * r3
+            float r11 = r4 - r0
+            android.graphics.Paint r2 = r1.f22197b
+            int r3 = r1.f22216u
+            r2.setColor(r3)
+            android.graphics.Paint r2 = r1.f22197b
+            int r3 = r1.f22215t
+            r2.setAlpha(r3)
+            float r2 = r1.f22203h
+            float r2 = r2 / r9
+            r8.inset(r2, r2)
+            float r3 = r8.centerX()
+            float r4 = r8.centerY()
+            float r5 = r8.width()
+            float r5 = r5 / r9
+            android.graphics.Paint r6 = r1.f22199d
+            r13.drawCircle(r3, r4, r5, r6)
+            float r2 = -r2
+            r8.inset(r2, r2)
+            r6 = 0
+            android.graphics.Paint r7 = r1.f22197b
+            r2 = r13
+            r3 = r8
+            r4 = r0
+            r5 = r11
+            r2.drawArc(r3, r4, r5, r6, r7)
+            boolean r2 = r1.f22209n
+            if (r2 == 0) goto L132
+            android.graphics.Path r2 = r1.f22210o
+            if (r2 != 0) goto Lb8
+            android.graphics.Path r2 = new android.graphics.Path
+            r2.<init>()
+            r1.f22210o = r2
+            android.graphics.Path$FillType r3 = android.graphics.Path.FillType.EVEN_ODD
+            r2.setFillType(r3)
+            goto Lbb
+        Lb8:
+            r2.reset()
+        Lbb:
+            float r2 = r8.width()
+            float r3 = r8.height()
+            float r2 = java.lang.Math.min(r2, r3)
+            float r2 = r2 / r9
+            int r3 = r1.f22213r
+            float r3 = (float) r3
+            float r4 = r1.f22211p
+            float r3 = r3 * r4
+            float r3 = r3 / r9
+            android.graphics.Path r4 = r1.f22210o
+            r4.moveTo(r10, r10)
+            android.graphics.Path r4 = r1.f22210o
+            int r5 = r1.f22213r
+            float r5 = (float) r5
+            float r6 = r1.f22211p
+            float r5 = r5 * r6
+            r4.lineTo(r5, r10)
+            android.graphics.Path r4 = r1.f22210o
+            int r5 = r1.f22213r
+            float r5 = (float) r5
+            float r6 = r1.f22211p
+            float r5 = r5 * r6
+            float r5 = r5 / r9
+            int r7 = r1.f22214s
+            float r7 = (float) r7
+            float r7 = r7 * r6
+            r4.lineTo(r5, r7)
+            android.graphics.Path r4 = r1.f22210o
+            float r5 = r8.centerX()
+            float r5 = r5 + r2
+            float r5 = r5 - r3
+            float r2 = r8.centerY()
+            float r3 = r1.f22203h
+            float r3 = r3 / r9
+            float r3 = r3 + r2
+            r4.offset(r5, r3)
+            android.graphics.Path r2 = r1.f22210o
+            r2.close()
+            android.graphics.Paint r2 = r1.f22198c
+            int r3 = r1.f22216u
+            r2.setColor(r3)
+            android.graphics.Paint r2 = r1.f22198c
+            int r3 = r1.f22215t
+            r2.setAlpha(r3)
+            r13.save()
+            float r0 = r0 + r11
+            float r2 = r8.centerX()
+            float r3 = r8.centerY()
+            r13.rotate(r0, r2, r3)
+            android.graphics.Path r0 = r1.f22210o
+            android.graphics.Paint r1 = r1.f22198c
+            r13.drawPath(r0, r1)
+            r13.restore()
+        L132:
+            r13.restore()
+            return
+    }
+
+    /* renamed from: e */
+    public void m12081e(int r4) {
+            r3 = this;
+            if (r4 != 0) goto Lb
+            r4 = 1093664768(0x41300000, float:11.0)
+            r0 = 1077936128(0x40400000, float:3.0)
+            r1 = 1094713344(0x41400000, float:12.0)
+            r2 = 1086324736(0x40c00000, float:6.0)
+            goto L13
+        Lb:
+            r4 = 1089470464(0x40f00000, float:7.5)
+            r0 = 1075838976(0x40200000, float:2.5)
+            r1 = 1092616192(0x41200000, float:10.0)
+            r2 = 1084227584(0x40a00000, float:5.0)
+        L13:
+            r3.m12079c(r4, r0, r1, r2)
+            r3.invalidateSelf()
+            return
+    }
+
+    /* renamed from: f */
+    public void m12082f(float r9, p301r1.C5764d.a r10) {
+            r8 = this;
+            r0 = 1061158912(0x3f400000, float:0.75)
+            int r1 = (r9 > r0 ? 1 : (r9 == r0 ? 0 : -1))
+            if (r1 <= 0) goto L55
+            float r9 = r9 - r0
+            r0 = 1048576000(0x3e800000, float:0.25)
+            float r9 = r9 / r0
+            int[] r0 = r10.f22204i
+            int r1 = r10.f22205j
+            r2 = r0[r1]
+            int r1 = r1 + 1
+            int r3 = r0.length
+            int r1 = r1 % r3
+            r0 = r0[r1]
+            int r1 = r2 >> 24
+            r1 = r1 & 255(0xff, float:3.57E-43)
+            int r3 = r2 >> 16
+            r3 = r3 & 255(0xff, float:3.57E-43)
+            int r4 = r2 >> 8
+            r4 = r4 & 255(0xff, float:3.57E-43)
+            r2 = r2 & 255(0xff, float:3.57E-43)
+            int r5 = r0 >> 24
+            r5 = r5 & 255(0xff, float:3.57E-43)
+            int r6 = r0 >> 16
+            r6 = r6 & 255(0xff, float:3.57E-43)
+            int r7 = r0 >> 8
+            r7 = r7 & 255(0xff, float:3.57E-43)
+            r0 = r0 & 255(0xff, float:3.57E-43)
+            int r5 = r5 - r1
+            float r5 = (float) r5
+            float r5 = r5 * r9
+            int r5 = (int) r5
+            int r1 = r1 + r5
+            int r1 = r1 << 24
+            int r6 = r6 - r3
+            float r5 = (float) r6
+            float r5 = r5 * r9
+            int r5 = (int) r5
+            int r3 = r3 + r5
+            int r3 = r3 << 16
+            r1 = r1 | r3
+            int r7 = r7 - r4
+            float r3 = (float) r7
+            float r3 = r3 * r9
+            int r3 = (int) r3
+            int r4 = r4 + r3
+            int r3 = r4 << 8
+            r1 = r1 | r3
+            int r0 = r0 - r2
+            float r0 = (float) r0
+            float r9 = r9 * r0
+            int r9 = (int) r9
+            int r2 = r2 + r9
+            r9 = r1 | r2
+            goto L5b
+        L55:
+            int[] r9 = r10.f22204i
+            int r0 = r10.f22205j
+            r9 = r9[r0]
+        L5b:
+            r10.f22216u = r9
+            return
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public int getAlpha() {
+            r1 = this;
+            r1.d$a r0 = r1.f22190Y
+            int r0 = r0.f22215t
+            return r0
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public int getOpacity() {
+            r1 = this;
+            r0 = -3
+            return r0
+    }
+
+    @Override // android.graphics.drawable.Animatable
+    public boolean isRunning() {
+            r1 = this;
+            android.animation.Animator r0 = r1.f22193b0
+            boolean r0 = r0.isRunning()
+            return r0
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public void setAlpha(int r2) {
+            r1 = this;
+            r1.d$a r0 = r1.f22190Y
+            r0.f22215t = r2
+            r1.invalidateSelf()
+            return
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public void setColorFilter(android.graphics.ColorFilter r2) {
+            r1 = this;
+            r1.d$a r0 = r1.f22190Y
+            android.graphics.Paint r0 = r0.f22197b
+            r0.setColorFilter(r2)
+            r1.invalidateSelf()
+            return
+    }
+
+    @Override // android.graphics.drawable.Animatable
+    public void start() {
+            r4 = this;
+            android.animation.Animator r0 = r4.f22193b0
+            r0.cancel()
+            r1.d$a r0 = r4.f22190Y
+            float r1 = r0.f22200e
+            r0.f22206k = r1
+            float r2 = r0.f22201f
+            r0.f22207l = r2
+            float r3 = r0.f22202g
+            r0.f22208m = r3
+            int r1 = (r2 > r1 ? 1 : (r2 == r1 ? 0 : -1))
+            if (r1 == 0) goto L1f
+            r0 = 1
+            r4.f22195d0 = r0
+            android.animation.Animator r0 = r4.f22193b0
+            r1 = 666(0x29a, double:3.29E-321)
+            goto L36
+        L1f:
+            r1 = 0
+            r0.m12083a(r1)
+            r1.d$a r0 = r4.f22190Y
+            r1 = 0
+            r0.f22206k = r1
+            r0.f22207l = r1
+            r0.f22208m = r1
+            r0.f22200e = r1
+            r0.f22201f = r1
+            r0.f22202g = r1
+            android.animation.Animator r0 = r4.f22193b0
+            r1 = 1332(0x534, double:6.58E-321)
+        L36:
+            r0.setDuration(r1)
+            android.animation.Animator r0 = r4.f22193b0
+            r0.start()
+            return
+    }
+
+    @Override // android.graphics.drawable.Animatable
+    public void stop() {
+            r3 = this;
+            android.animation.Animator r0 = r3.f22193b0
+            r0.cancel()
+            r0 = 0
+            r3.f22191Z = r0
+            r1.d$a r1 = r3.f22190Y
+            r2 = 0
+            r1.m12084b(r2)
+            r1.d$a r1 = r3.f22190Y
+            r1.m12083a(r2)
+            r1.d$a r1 = r3.f22190Y
+            r1.f22206k = r0
+            r1.f22207l = r0
+            r1.f22208m = r0
+            r1.f22200e = r0
+            r1.f22201f = r0
+            r1.f22202g = r0
+            r3.invalidateSelf()
+            return
+    }
+}

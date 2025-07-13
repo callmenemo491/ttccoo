@@ -1,0 +1,39 @@
+package p077ed;
+
+/* renamed from: ed.a */
+/* loaded from: classes.dex */
+public final class C1821a implements p077ed.InterfaceC1822b {
+    public C1821a() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p077ed.InterfaceC1822b
+    /* renamed from: a */
+    public java.lang.String mo4587a(byte[] r4, int r5, int r6, java.lang.String r7) {
+            r3 = this;
+            java.lang.StringBuilder r7 = new java.lang.StringBuilder
+            r7.<init>()
+            r0 = 0
+        L6:
+            if (r0 >= r6) goto L21
+            int r1 = r0 + r5
+            r1 = r4[r1]
+            r1 = r1 & 255(0xff, float:3.57E-43)
+            r2 = 16
+            if (r1 >= r2) goto L17
+            java.lang.String r2 = "0"
+            r7.append(r2)
+        L17:
+            java.lang.String r1 = java.lang.Integer.toHexString(r1)
+            r7.append(r1)
+            int r0 = r0 + 1
+            goto L6
+        L21:
+            java.lang.String r4 = r7.toString()
+            java.lang.String r5 = "result.toString()"
+            p214m2.C4339q.m9703h(r4, r5)
+            return r4
+    }
+}

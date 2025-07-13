@@ -1,0 +1,12 @@
+package p189kb;
+
+@java.lang.annotation.Target({java.lang.annotation.ElementType.FIELD, java.lang.annotation.ElementType.METHOD})
+@java.lang.annotation.Documented
+@java.lang.annotation.Retention(java.lang.annotation.RetentionPolicy.RUNTIME)
+/* renamed from: kb.b */
+/* loaded from: classes.dex */
+public @interface InterfaceC4079b {
+    java.lang.String[] alternate() default {};
+
+    java.lang.String value();
+}

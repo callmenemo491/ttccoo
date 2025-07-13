@@ -1,0 +1,107 @@
+package p253ob;
+
+/* renamed from: ob.c */
+/* loaded from: classes.dex */
+public final class C5189c extends p253ob.AbstractC5188b {
+
+    /* renamed from: d */
+    public static java.lang.Class f20335d;
+
+    /* renamed from: b */
+    public final java.lang.Object f20336b;
+
+    /* renamed from: c */
+    public final java.lang.reflect.Field f20337c;
+
+    public C5189c() {
+            r3 = this;
+            r3.<init>()
+            r0 = 0
+            java.lang.String r1 = "sun.misc.Unsafe"
+            java.lang.Class r1 = java.lang.Class.forName(r1)     // Catch: java.lang.Exception -> L1b
+            p253ob.C5189c.f20335d = r1     // Catch: java.lang.Exception -> L1b
+            java.lang.String r2 = "theUnsafe"
+            java.lang.reflect.Field r1 = r1.getDeclaredField(r2)     // Catch: java.lang.Exception -> L1b
+            r2 = 1
+            r1.setAccessible(r2)     // Catch: java.lang.Exception -> L1b
+            java.lang.Object r1 = r1.get(r0)     // Catch: java.lang.Exception -> L1b
+            goto L1c
+        L1b:
+            r1 = r0
+        L1c:
+            r3.f20336b = r1
+            java.lang.Class<java.lang.reflect.AccessibleObject> r1 = java.lang.reflect.AccessibleObject.class
+            java.lang.String r2 = "override"
+            java.lang.reflect.Field r0 = r1.getDeclaredField(r2)     // Catch: java.lang.NoSuchFieldException -> L26
+        L26:
+            r3.f20337c = r0
+            return
+    }
+
+    @Override // p253ob.AbstractC5188b
+    /* renamed from: a */
+    public void mo11504a(java.lang.reflect.AccessibleObject r11) {
+            r10 = this;
+            java.lang.Object r0 = r10.f20336b
+            r1 = 1
+            r2 = 0
+            if (r0 == 0) goto L58
+            java.lang.reflect.Field r0 = r10.f20337c
+            if (r0 == 0) goto L58
+            java.lang.Class r0 = p253ob.C5189c.f20335d     // Catch: java.lang.Exception -> L57
+            java.lang.String r3 = "objectFieldOffset"
+            java.lang.Class[] r4 = new java.lang.Class[r1]     // Catch: java.lang.Exception -> L57
+            java.lang.Class<java.lang.reflect.Field> r5 = java.lang.reflect.Field.class
+            r4[r2] = r5     // Catch: java.lang.Exception -> L57
+            java.lang.reflect.Method r0 = r0.getMethod(r3, r4)     // Catch: java.lang.Exception -> L57
+            java.lang.Object r3 = r10.f20336b     // Catch: java.lang.Exception -> L57
+            java.lang.Object[] r4 = new java.lang.Object[r1]     // Catch: java.lang.Exception -> L57
+            java.lang.reflect.Field r5 = r10.f20337c     // Catch: java.lang.Exception -> L57
+            r4[r2] = r5     // Catch: java.lang.Exception -> L57
+            java.lang.Object r0 = r0.invoke(r3, r4)     // Catch: java.lang.Exception -> L57
+            java.lang.Long r0 = (java.lang.Long) r0     // Catch: java.lang.Exception -> L57
+            long r3 = r0.longValue()     // Catch: java.lang.Exception -> L57
+            java.lang.Class r0 = p253ob.C5189c.f20335d     // Catch: java.lang.Exception -> L57
+            java.lang.String r5 = "putBoolean"
+            r6 = 3
+            java.lang.Class[] r7 = new java.lang.Class[r6]     // Catch: java.lang.Exception -> L57
+            java.lang.Class<java.lang.Object> r8 = java.lang.Object.class
+            r7[r2] = r8     // Catch: java.lang.Exception -> L57
+            java.lang.Class r8 = java.lang.Long.TYPE     // Catch: java.lang.Exception -> L57
+            r7[r1] = r8     // Catch: java.lang.Exception -> L57
+            java.lang.Class r8 = java.lang.Boolean.TYPE     // Catch: java.lang.Exception -> L57
+            r9 = 2
+            r7[r9] = r8     // Catch: java.lang.Exception -> L57
+            java.lang.reflect.Method r0 = r0.getMethod(r5, r7)     // Catch: java.lang.Exception -> L57
+            java.lang.Object r5 = r10.f20336b     // Catch: java.lang.Exception -> L57
+            java.lang.Object[] r6 = new java.lang.Object[r6]     // Catch: java.lang.Exception -> L57
+            r6[r2] = r11     // Catch: java.lang.Exception -> L57
+            java.lang.Long r3 = java.lang.Long.valueOf(r3)     // Catch: java.lang.Exception -> L57
+            r6[r1] = r3     // Catch: java.lang.Exception -> L57
+            java.lang.Boolean r3 = java.lang.Boolean.TRUE     // Catch: java.lang.Exception -> L57
+            r6[r9] = r3     // Catch: java.lang.Exception -> L57
+            r0.invoke(r5, r6)     // Catch: java.lang.Exception -> L57
+            r2 = 1
+            goto L58
+        L57:
+        L58:
+            if (r2 != 0) goto L7b
+            r11.setAccessible(r1)     // Catch: java.lang.SecurityException -> L5e
+            goto L7b
+        L5e:
+            r0 = move-exception
+            jb.q r1 = new jb.q
+            java.lang.StringBuilder r2 = new java.lang.StringBuilder
+            r2.<init>()
+            java.lang.String r3 = "Gson couldn't modify fields for "
+            r2.append(r3)
+            r2.append(r11)
+            java.lang.String r11 = "\nand sun.misc.Unsafe not found.\nEither write a custom type adapter, or make fields accessible, or include sun.misc.Unsafe."
+            r2.append(r11)
+            java.lang.String r11 = r2.toString()
+            r1.<init>(r11, r0)
+            throw r1
+        L7b:
+            return
+    }
+}

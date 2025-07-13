@@ -1,0 +1,19 @@
+package p185k7;
+
+/* JADX WARN: Unexpected interfaces in signature: [k7.g7] */
+/* renamed from: k7.b2 */
+/* loaded from: classes.dex */
+public final class C3741b2 extends p185k7.C3731a6<p185k7.C3783e2, p185k7.C3741b2> {
+    public /* synthetic */ C3741b2(int r2) {
+            r1 = this;
+            r0 = 1
+            if (r2 == r0) goto Lb
+            k7.e2 r2 = p185k7.C3783e2.m8508t()
+            r1.<init>(r2)
+            return
+        Lb:
+            k7.n3 r2 = p185k7.C3907n3.m8836t()
+            r1.<init>(r2)
+            return
+    }
+}

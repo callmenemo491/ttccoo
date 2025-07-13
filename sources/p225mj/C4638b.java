@@ -1,0 +1,52 @@
+package p225mj;
+
+/* renamed from: mj.b */
+/* loaded from: classes.dex */
+public class C4638b implements java.security.spec.AlgorithmParameterSpec {
+
+    /* renamed from: a */
+    public p240nj.AbstractC4845c f18485a;
+
+    /* renamed from: b */
+    public p240nj.AbstractC4848f f18486b;
+
+    public C4638b(p240nj.AbstractC4845c r1, p240nj.AbstractC4848f r2, java.math.BigInteger r3, java.math.BigInteger r4, byte[] r5) {
+            r0 = this;
+            r0.<init>()
+            r0.f18485a = r1
+            nj.f r1 = r2.m10934o()
+            r0.f18486b = r1
+            return
+    }
+
+    public boolean equals(java.lang.Object r4) {
+            r3 = this;
+            boolean r0 = r4 instanceof p225mj.C4638b
+            r1 = 0
+            if (r0 != 0) goto L6
+            return r1
+        L6:
+            mj.b r4 = (p225mj.C4638b) r4
+            nj.c r0 = r3.f18485a
+            nj.c r2 = r4.f18485a
+            boolean r0 = r0.m10878k(r2)
+            if (r0 == 0) goto L1d
+            nj.f r0 = r3.f18486b
+            nj.f r4 = r4.f18486b
+            boolean r4 = r0.m10922c(r4)
+            if (r4 == 0) goto L1d
+            r1 = 1
+        L1d:
+            return r1
+    }
+
+    public int hashCode() {
+            r2 = this;
+            nj.c r0 = r2.f18485a
+            int r0 = r0.hashCode()
+            nj.f r1 = r2.f18486b
+            int r1 = r1.hashCode()
+            r0 = r0 ^ r1
+            return r0
+    }
+}

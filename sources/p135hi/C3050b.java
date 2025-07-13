@@ -1,0 +1,1124 @@
+package p135hi;
+
+/* renamed from: hi.b */
+/* loaded from: classes.dex */
+public final class C3050b implements gi.InterfaceC2394d {
+
+    /* renamed from: a */
+    public int f12255a;
+
+    /* renamed from: b */
+    public final p135hi.C3049a f12256b;
+
+    /* renamed from: c */
+    public bi.C0802v f12257c;
+
+    /* renamed from: d */
+    public final bi.C0771a0 f12258d;
+
+    /* renamed from: e */
+    public final fi.C2185g f12259e;
+
+    /* renamed from: f */
+    public final p260oi.InterfaceC5286h f12260f;
+
+    /* renamed from: g */
+    public final p260oi.InterfaceC5285g f12261g;
+
+    /* renamed from: hi.b$a */
+    public abstract class a implements p260oi.InterfaceC5304z {
+
+        /* renamed from: Y */
+        public final p260oi.C5290l f12262Y;
+
+        /* renamed from: Z */
+        public boolean f12263Z;
+
+        /* renamed from: a0 */
+        public final /* synthetic */ p135hi.C3050b f12264a0;
+
+        public a(p135hi.C3050b r2) {
+                r1 = this;
+                r1.f12264a0 = r2
+                r1.<init>()
+                oi.l r0 = new oi.l
+                oi.h r2 = r2.f12260f
+                oi.a0 r2 = r2.mo7463d()
+                r0.<init>(r2)
+                r1.f12262Y = r0
+                return
+        }
+
+        /* renamed from: a */
+        public final void m7462a() {
+                r4 = this;
+                hi.b r0 = r4.f12264a0
+                int r1 = r0.f12255a
+                r2 = 6
+                if (r1 != r2) goto L8
+                return
+            L8:
+                r3 = 5
+                if (r1 != r3) goto L15
+                oi.l r1 = r4.f12262Y
+                p135hi.C3050b.m7459i(r0, r1)
+                hi.b r0 = r4.f12264a0
+                r0.f12255a = r2
+                return
+            L15:
+                java.lang.IllegalStateException r0 = new java.lang.IllegalStateException
+                java.lang.String r1 = "state: "
+                java.lang.StringBuilder r1 = android.support.v4.media.C0144c.m256a(r1)
+                hi.b r2 = r4.f12264a0
+                int r2 = r2.f12255a
+                r1.append(r2)
+                java.lang.String r1 = r1.toString()
+                r0.<init>(r1)
+                throw r0
+        }
+
+        @Override // p260oi.InterfaceC5304z
+        /* renamed from: d */
+        public p260oi.C5279a0 mo7463d() {
+                r1 = this;
+                oi.l r0 = r1.f12262Y
+                return r0
+        }
+
+        @Override // p260oi.InterfaceC5304z
+        /* renamed from: j0 */
+        public long mo4683j0(p260oi.C5283e r2, long r3) {
+                r1 = this;
+                hi.b r0 = r1.f12264a0     // Catch: java.io.IOException -> L9
+                oi.h r0 = r0.f12260f     // Catch: java.io.IOException -> L9
+                long r2 = r0.mo4683j0(r2, r3)     // Catch: java.io.IOException -> L9
+                return r2
+            L9:
+                r2 = move-exception
+                hi.b r3 = r1.f12264a0
+                fi.g r3 = r3.f12259e
+                r3.m5772k()
+                r1.m7462a()
+                throw r2
+        }
+    }
+
+    /* renamed from: hi.b$b */
+    public final class b implements p260oi.InterfaceC5302x {
+
+        /* renamed from: Y */
+        public final p260oi.C5290l f12265Y;
+
+        /* renamed from: Z */
+        public boolean f12266Z;
+
+        /* renamed from: a0 */
+        public final /* synthetic */ p135hi.C3050b f12267a0;
+
+        public b(p135hi.C3050b r2) {
+                r1 = this;
+                r1.f12267a0 = r2
+                r1.<init>()
+                oi.l r0 = new oi.l
+                oi.g r2 = r2.f12261g
+                oi.a0 r2 = r2.mo7464d()
+                r0.<init>(r2)
+                r1.f12265Y = r0
+                return
+        }
+
+        @Override // p260oi.InterfaceC5302x, java.io.Closeable, java.lang.AutoCloseable
+        public synchronized void close() {
+                r2 = this;
+                monitor-enter(r2)
+                boolean r0 = r2.f12266Z     // Catch: java.lang.Throwable -> L21
+                if (r0 == 0) goto L7
+                monitor-exit(r2)
+                return
+            L7:
+                r0 = 1
+                r2.f12266Z = r0     // Catch: java.lang.Throwable -> L21
+                hi.b r0 = r2.f12267a0     // Catch: java.lang.Throwable -> L21
+                oi.g r0 = r0.f12261g     // Catch: java.lang.Throwable -> L21
+                java.lang.String r1 = "0\r\n\r\n"
+                r0.mo11567l0(r1)     // Catch: java.lang.Throwable -> L21
+                hi.b r0 = r2.f12267a0     // Catch: java.lang.Throwable -> L21
+                oi.l r1 = r2.f12265Y     // Catch: java.lang.Throwable -> L21
+                p135hi.C3050b.m7459i(r0, r1)     // Catch: java.lang.Throwable -> L21
+                hi.b r0 = r2.f12267a0     // Catch: java.lang.Throwable -> L21
+                r1 = 3
+                r0.f12255a = r1     // Catch: java.lang.Throwable -> L21
+                monitor-exit(r2)
+                return
+            L21:
+                r0 = move-exception
+                monitor-exit(r2)
+                throw r0
+        }
+
+        @Override // p260oi.InterfaceC5302x
+        /* renamed from: d */
+        public p260oi.C5279a0 mo7464d() {
+                r1 = this;
+                oi.l r0 = r1.f12265Y
+                return r0
+        }
+
+        @Override // p260oi.InterfaceC5302x, java.io.Flushable
+        public synchronized void flush() {
+                r1 = this;
+                monitor-enter(r1)
+                boolean r0 = r1.f12266Z     // Catch: java.lang.Throwable -> L10
+                if (r0 == 0) goto L7
+                monitor-exit(r1)
+                return
+            L7:
+                hi.b r0 = r1.f12267a0     // Catch: java.lang.Throwable -> L10
+                oi.g r0 = r0.f12261g     // Catch: java.lang.Throwable -> L10
+                r0.flush()     // Catch: java.lang.Throwable -> L10
+                monitor-exit(r1)
+                return
+            L10:
+                r0 = move-exception
+                monitor-exit(r1)
+                throw r0
+        }
+
+        @Override // p260oi.InterfaceC5302x
+        /* renamed from: p0 */
+        public void mo5749p0(p260oi.C5283e r4, long r5) {
+                r3 = this;
+                java.lang.String r0 = "source"
+                p214m2.C4339q.m9706k(r4, r0)
+                boolean r0 = r3.f12266Z
+                r0 = r0 ^ 1
+                if (r0 == 0) goto L31
+                r0 = 0
+                int r2 = (r5 > r0 ? 1 : (r5 == r0 ? 0 : -1))
+                if (r2 != 0) goto L12
+                return
+            L12:
+                hi.b r0 = r3.f12267a0
+                oi.g r0 = r0.f12261g
+                r0.mo11568m(r5)
+                hi.b r0 = r3.f12267a0
+                oi.g r0 = r0.f12261g
+                java.lang.String r1 = "\r\n"
+                r0.mo11567l0(r1)
+                hi.b r0 = r3.f12267a0
+                oi.g r0 = r0.f12261g
+                r0.mo5749p0(r4, r5)
+                hi.b r4 = r3.f12267a0
+                oi.g r4 = r4.f12261g
+                r4.mo11567l0(r1)
+                return
+            L31:
+                java.lang.IllegalStateException r4 = new java.lang.IllegalStateException
+                java.lang.String r5 = "closed"
+                java.lang.String r5 = r5.toString()
+                r4.<init>(r5)
+                throw r4
+        }
+    }
+
+    /* renamed from: hi.b$c */
+    public final class c extends p135hi.C3050b.a {
+
+        /* renamed from: b0 */
+        public long f12268b0;
+
+        /* renamed from: c0 */
+        public boolean f12269c0;
+
+        /* renamed from: d0 */
+        public final bi.C0803w f12270d0;
+
+        /* renamed from: e0 */
+        public final /* synthetic */ p135hi.C3050b f12271e0;
+
+        public c(p135hi.C3050b r2, bi.C0803w r3) {
+                r1 = this;
+                java.lang.String r0 = "url"
+                p214m2.C4339q.m9706k(r3, r0)
+                r1.f12271e0 = r2
+                r1.<init>(r2)
+                r1.f12270d0 = r3
+                r2 = -1
+                r1.f12268b0 = r2
+                r2 = 1
+                r1.f12269c0 = r2
+                return
+        }
+
+        @Override // p260oi.InterfaceC5304z, java.io.Closeable, java.lang.AutoCloseable
+        public void close() {
+                r2 = this;
+                boolean r0 = r2.f12263Z
+                if (r0 == 0) goto L5
+                return
+            L5:
+                boolean r0 = r2.f12269c0
+                if (r0 == 0) goto L1d
+                r0 = 100
+                java.util.concurrent.TimeUnit r1 = java.util.concurrent.TimeUnit.MILLISECONDS
+                boolean r0 = ci.C0988c.m2702g(r2, r0, r1)
+                if (r0 != 0) goto L1d
+                hi.b r0 = r2.f12271e0
+                fi.g r0 = r0.f12259e
+                r0.m5772k()
+                r2.m7462a()
+            L1d:
+                r0 = 1
+                r2.f12263Z = r0
+                return
+        }
+
+        @Override // p135hi.C3050b.a, p260oi.InterfaceC5304z
+        /* renamed from: j0 */
+        public long mo4683j0(p260oi.C5283e r11, long r12) {
+                r10 = this;
+                java.lang.String r0 = "sink"
+                p214m2.C4339q.m9706k(r11, r0)
+                r0 = 1
+                r1 = 0
+                r2 = 0
+                int r4 = (r12 > r2 ? 1 : (r12 == r2 ? 0 : -1))
+                if (r4 < 0) goto Lf
+                r4 = 1
+                goto L10
+            Lf:
+                r4 = 0
+            L10:
+                if (r4 == 0) goto L102
+                boolean r4 = r10.f12263Z
+                r4 = r4 ^ r0
+                if (r4 == 0) goto Lf6
+                boolean r4 = r10.f12269c0
+                r5 = -1
+                if (r4 != 0) goto L1e
+                return r5
+            L1e:
+                long r7 = r10.f12268b0
+                int r4 = (r7 > r2 ? 1 : (r7 == r2 ? 0 : -1))
+                if (r4 == 0) goto L28
+                int r4 = (r7 > r5 ? 1 : (r7 == r5 ? 0 : -1))
+                if (r4 != 0) goto L97
+            L28:
+                int r4 = (r7 > r5 ? 1 : (r7 == r5 ? 0 : -1))
+                if (r4 == 0) goto L33
+                hi.b r4 = r10.f12271e0
+                oi.h r4 = r4.f12260f
+                r4.mo11537C()
+            L33:
+                hi.b r4 = r10.f12271e0     // Catch: java.lang.NumberFormatException -> Leb
+                oi.h r4 = r4.f12260f     // Catch: java.lang.NumberFormatException -> Leb
+                long r7 = r4.mo11574t0()     // Catch: java.lang.NumberFormatException -> Leb
+                r10.f12268b0 = r7     // Catch: java.lang.NumberFormatException -> Leb
+                hi.b r4 = r10.f12271e0     // Catch: java.lang.NumberFormatException -> Leb
+                oi.h r4 = r4.f12260f     // Catch: java.lang.NumberFormatException -> Leb
+                java.lang.String r4 = r4.mo11537C()     // Catch: java.lang.NumberFormatException -> Leb
+                if (r4 == 0) goto Le3
+                java.lang.CharSequence r4 = p362uh.C6467m.m13083n0(r4)     // Catch: java.lang.NumberFormatException -> Leb
+                java.lang.String r4 = r4.toString()     // Catch: java.lang.NumberFormatException -> Leb
+                long r7 = r10.f12268b0     // Catch: java.lang.NumberFormatException -> Leb
+                int r9 = (r7 > r2 ? 1 : (r7 == r2 ? 0 : -1))
+                if (r9 < 0) goto Lbd
+                int r7 = r4.length()     // Catch: java.lang.NumberFormatException -> Leb
+                if (r7 <= 0) goto L5c
+                goto L5d
+            L5c:
+                r0 = 0
+            L5d:
+                if (r0 == 0) goto L68
+                java.lang.String r0 = ";"
+                r7 = 2
+                boolean r0 = p362uh.C6463i.m13061R(r4, r0, r1, r7)     // Catch: java.lang.NumberFormatException -> Leb
+                if (r0 == 0) goto Lbd
+            L68:
+                long r7 = r10.f12268b0
+                int r0 = (r7 > r2 ? 1 : (r7 == r2 ? 0 : -1))
+                if (r0 != 0) goto L92
+                r10.f12269c0 = r1
+                hi.b r0 = r10.f12271e0
+                hi.a r1 = r0.f12256b
+                bi.v r1 = r1.m7457a()
+                r0.f12257c = r1
+                hi.b r0 = r10.f12271e0
+                bi.a0 r0 = r0.f12258d
+                p214m2.C4339q.m9704i(r0)
+                bi.o r0 = r0.f4147h0
+                bi.w r1 = r10.f12270d0
+                hi.b r2 = r10.f12271e0
+                bi.v r2 = r2.f12257c
+                p214m2.C4339q.m9704i(r2)
+                gi.C2395e.m6146b(r0, r1, r2)
+                r10.m7462a()
+            L92:
+                boolean r0 = r10.f12269c0
+                if (r0 != 0) goto L97
+                return r5
+            L97:
+                long r0 = r10.f12268b0
+                long r12 = java.lang.Math.min(r12, r0)
+                long r11 = super.mo4683j0(r11, r12)
+                int r13 = (r11 > r5 ? 1 : (r11 == r5 ? 0 : -1))
+                if (r13 == 0) goto Lab
+                long r0 = r10.f12268b0
+                long r0 = r0 - r11
+                r10.f12268b0 = r0
+                return r11
+            Lab:
+                hi.b r11 = r10.f12271e0
+                fi.g r11 = r11.f12259e
+                r11.m5772k()
+                java.net.ProtocolException r11 = new java.net.ProtocolException
+                java.lang.String r12 = "unexpected end of stream"
+                r11.<init>(r12)
+                r10.m7462a()
+                throw r11
+            Lbd:
+                java.net.ProtocolException r11 = new java.net.ProtocolException     // Catch: java.lang.NumberFormatException -> Leb
+                java.lang.StringBuilder r12 = new java.lang.StringBuilder     // Catch: java.lang.NumberFormatException -> Leb
+                r12.<init>()     // Catch: java.lang.NumberFormatException -> Leb
+                java.lang.String r13 = "expected chunk size and optional extensions"
+                r12.append(r13)     // Catch: java.lang.NumberFormatException -> Leb
+                java.lang.String r13 = " but was \""
+                r12.append(r13)     // Catch: java.lang.NumberFormatException -> Leb
+                long r0 = r10.f12268b0     // Catch: java.lang.NumberFormatException -> Leb
+                r12.append(r0)     // Catch: java.lang.NumberFormatException -> Leb
+                r12.append(r4)     // Catch: java.lang.NumberFormatException -> Leb
+                r13 = 34
+                r12.append(r13)     // Catch: java.lang.NumberFormatException -> Leb
+                java.lang.String r12 = r12.toString()     // Catch: java.lang.NumberFormatException -> Leb
+                r11.<init>(r12)     // Catch: java.lang.NumberFormatException -> Leb
+                throw r11     // Catch: java.lang.NumberFormatException -> Leb
+            Le3:
+                java.lang.NullPointerException r11 = new java.lang.NullPointerException     // Catch: java.lang.NumberFormatException -> Leb
+                java.lang.String r12 = "null cannot be cast to non-null type kotlin.CharSequence"
+                r11.<init>(r12)     // Catch: java.lang.NumberFormatException -> Leb
+                throw r11     // Catch: java.lang.NumberFormatException -> Leb
+            Leb:
+                r11 = move-exception
+                java.net.ProtocolException r12 = new java.net.ProtocolException
+                java.lang.String r11 = r11.getMessage()
+                r12.<init>(r11)
+                throw r12
+            Lf6:
+                java.lang.IllegalStateException r11 = new java.lang.IllegalStateException
+                java.lang.String r12 = "closed"
+                java.lang.String r12 = r12.toString()
+                r11.<init>(r12)
+                throw r11
+            L102:
+                java.lang.String r11 = "byteCount < 0: "
+                java.lang.String r11 = p382w0.C6774a.m13748a(r11, r12)
+                java.lang.IllegalArgumentException r12 = new java.lang.IllegalArgumentException
+                java.lang.String r11 = r11.toString()
+                r12.<init>(r11)
+                throw r12
+        }
+    }
+
+    /* renamed from: hi.b$d */
+    public final class d extends p135hi.C3050b.a {
+
+        /* renamed from: b0 */
+        public long f12272b0;
+
+        /* renamed from: c0 */
+        public final /* synthetic */ p135hi.C3050b f12273c0;
+
+        public d(p135hi.C3050b r3, long r4) {
+                r2 = this;
+                r2.f12273c0 = r3
+                r2.<init>(r3)
+                r2.f12272b0 = r4
+                r0 = 0
+                int r3 = (r4 > r0 ? 1 : (r4 == r0 ? 0 : -1))
+                if (r3 != 0) goto L10
+                r2.m7462a()
+            L10:
+                return
+        }
+
+        @Override // p260oi.InterfaceC5304z, java.io.Closeable, java.lang.AutoCloseable
+        public void close() {
+                r5 = this;
+                boolean r0 = r5.f12263Z
+                if (r0 == 0) goto L5
+                return
+            L5:
+                long r0 = r5.f12272b0
+                r2 = 0
+                int r4 = (r0 > r2 ? 1 : (r0 == r2 ? 0 : -1))
+                if (r4 == 0) goto L21
+                r0 = 100
+                java.util.concurrent.TimeUnit r1 = java.util.concurrent.TimeUnit.MILLISECONDS
+                boolean r0 = ci.C0988c.m2702g(r5, r0, r1)
+                if (r0 != 0) goto L21
+                hi.b r0 = r5.f12273c0
+                fi.g r0 = r0.f12259e
+                r0.m5772k()
+                r5.m7462a()
+            L21:
+                r0 = 1
+                r5.f12263Z = r0
+                return
+        }
+
+        @Override // p135hi.C3050b.a, p260oi.InterfaceC5304z
+        /* renamed from: j0 */
+        public long mo4683j0(p260oi.C5283e r8, long r9) {
+                r7 = this;
+                java.lang.String r0 = "sink"
+                p214m2.C4339q.m9706k(r8, r0)
+                r0 = 0
+                int r2 = (r9 > r0 ? 1 : (r9 == r0 ? 0 : -1))
+                if (r2 < 0) goto Ld
+                r2 = 1
+                goto Le
+            Ld:
+                r2 = 0
+            Le:
+                if (r2 == 0) goto L56
+                boolean r2 = r7.f12263Z
+                r2 = r2 ^ 1
+                if (r2 == 0) goto L4a
+                long r2 = r7.f12272b0
+                r4 = -1
+                int r6 = (r2 > r0 ? 1 : (r2 == r0 ? 0 : -1))
+                if (r6 != 0) goto L1f
+                return r4
+            L1f:
+                long r9 = java.lang.Math.min(r2, r9)
+                long r8 = super.mo4683j0(r8, r9)
+                int r10 = (r8 > r4 ? 1 : (r8 == r4 ? 0 : -1))
+                if (r10 == 0) goto L38
+                long r2 = r7.f12272b0
+                long r2 = r2 - r8
+                r7.f12272b0 = r2
+                int r10 = (r2 > r0 ? 1 : (r2 == r0 ? 0 : -1))
+                if (r10 != 0) goto L37
+                r7.m7462a()
+            L37:
+                return r8
+            L38:
+                hi.b r8 = r7.f12273c0
+                fi.g r8 = r8.f12259e
+                r8.m5772k()
+                java.net.ProtocolException r8 = new java.net.ProtocolException
+                java.lang.String r9 = "unexpected end of stream"
+                r8.<init>(r9)
+                r7.m7462a()
+                throw r8
+            L4a:
+                java.lang.IllegalStateException r8 = new java.lang.IllegalStateException
+                java.lang.String r9 = "closed"
+                java.lang.String r9 = r9.toString()
+                r8.<init>(r9)
+                throw r8
+            L56:
+                java.lang.String r8 = "byteCount < 0: "
+                java.lang.String r8 = p382w0.C6774a.m13748a(r8, r9)
+                java.lang.IllegalArgumentException r9 = new java.lang.IllegalArgumentException
+                java.lang.String r8 = r8.toString()
+                r9.<init>(r8)
+                throw r9
+        }
+    }
+
+    /* renamed from: hi.b$e */
+    public final class e implements p260oi.InterfaceC5302x {
+
+        /* renamed from: Y */
+        public final p260oi.C5290l f12274Y;
+
+        /* renamed from: Z */
+        public boolean f12275Z;
+
+        /* renamed from: a0 */
+        public final /* synthetic */ p135hi.C3050b f12276a0;
+
+        public e(p135hi.C3050b r2) {
+                r1 = this;
+                r1.f12276a0 = r2
+                r1.<init>()
+                oi.l r0 = new oi.l
+                oi.g r2 = r2.f12261g
+                oi.a0 r2 = r2.mo7464d()
+                r0.<init>(r2)
+                r1.f12274Y = r0
+                return
+        }
+
+        @Override // p260oi.InterfaceC5302x, java.io.Closeable, java.lang.AutoCloseable
+        public void close() {
+                r2 = this;
+                boolean r0 = r2.f12275Z
+                if (r0 == 0) goto L5
+                return
+            L5:
+                r0 = 1
+                r2.f12275Z = r0
+                hi.b r0 = r2.f12276a0
+                oi.l r1 = r2.f12274Y
+                p135hi.C3050b.m7459i(r0, r1)
+                hi.b r0 = r2.f12276a0
+                r1 = 3
+                r0.f12255a = r1
+                return
+        }
+
+        @Override // p260oi.InterfaceC5302x
+        /* renamed from: d */
+        public p260oi.C5279a0 mo7464d() {
+                r1 = this;
+                oi.l r0 = r1.f12274Y
+                return r0
+        }
+
+        @Override // p260oi.InterfaceC5302x, java.io.Flushable
+        public void flush() {
+                r1 = this;
+                boolean r0 = r1.f12275Z
+                if (r0 == 0) goto L5
+                return
+            L5:
+                hi.b r0 = r1.f12276a0
+                oi.g r0 = r0.f12261g
+                r0.flush()
+                return
+        }
+
+        @Override // p260oi.InterfaceC5302x
+        /* renamed from: p0 */
+        public void mo5749p0(p260oi.C5283e r8, long r9) {
+                r7 = this;
+                java.lang.String r0 = "source"
+                p214m2.C4339q.m9706k(r8, r0)
+                boolean r0 = r7.f12275Z
+                r0 = r0 ^ 1
+                if (r0 == 0) goto L1b
+                long r1 = r8.f20501Z
+                r3 = 0
+                r5 = r9
+                ci.C0988c.m2697b(r1, r3, r5)
+                hi.b r0 = r7.f12276a0
+                oi.g r0 = r0.f12261g
+                r0.mo5749p0(r8, r9)
+                return
+            L1b:
+                java.lang.IllegalStateException r8 = new java.lang.IllegalStateException
+                java.lang.String r9 = "closed"
+                java.lang.String r9 = r9.toString()
+                r8.<init>(r9)
+                throw r8
+        }
+    }
+
+    /* renamed from: hi.b$f */
+    public final class f extends p135hi.C3050b.a {
+
+        /* renamed from: b0 */
+        public boolean f12277b0;
+
+        public f(p135hi.C3050b r1) {
+                r0 = this;
+                r0.<init>(r1)
+                return
+        }
+
+        @Override // p260oi.InterfaceC5304z, java.io.Closeable, java.lang.AutoCloseable
+        public void close() {
+                r1 = this;
+                boolean r0 = r1.f12263Z
+                if (r0 == 0) goto L5
+                return
+            L5:
+                boolean r0 = r1.f12277b0
+                if (r0 != 0) goto Lc
+                r1.m7462a()
+            Lc:
+                r0 = 1
+                r1.f12263Z = r0
+                return
+        }
+
+        @Override // p135hi.C3050b.a, p260oi.InterfaceC5304z
+        /* renamed from: j0 */
+        public long mo4683j0(p260oi.C5283e r5, long r6) {
+                r4 = this;
+                java.lang.String r0 = "sink"
+                p214m2.C4339q.m9706k(r5, r0)
+                r0 = 1
+                r1 = 0
+                int r3 = (r6 > r1 ? 1 : (r6 == r1 ? 0 : -1))
+                if (r3 < 0) goto Le
+                r1 = 1
+                goto Lf
+            Le:
+                r1 = 0
+            Lf:
+                if (r1 == 0) goto L38
+                boolean r1 = r4.f12263Z
+                r1 = r1 ^ r0
+                if (r1 == 0) goto L2c
+                boolean r1 = r4.f12277b0
+                r2 = -1
+                if (r1 == 0) goto L1d
+                return r2
+            L1d:
+                long r5 = super.mo4683j0(r5, r6)
+                int r7 = (r5 > r2 ? 1 : (r5 == r2 ? 0 : -1))
+                if (r7 != 0) goto L2b
+                r4.f12277b0 = r0
+                r4.m7462a()
+                return r2
+            L2b:
+                return r5
+            L2c:
+                java.lang.IllegalStateException r5 = new java.lang.IllegalStateException
+                java.lang.String r6 = "closed"
+                java.lang.String r6 = r6.toString()
+                r5.<init>(r6)
+                throw r5
+            L38:
+                java.lang.String r5 = "byteCount < 0: "
+                java.lang.String r5 = p382w0.C6774a.m13748a(r5, r6)
+                java.lang.IllegalArgumentException r6 = new java.lang.IllegalArgumentException
+                java.lang.String r5 = r5.toString()
+                r6.<init>(r5)
+                throw r6
+        }
+    }
+
+    public C3050b(bi.C0771a0 r1, fi.C2185g r2, p260oi.InterfaceC5286h r3, p260oi.InterfaceC5285g r4) {
+            r0 = this;
+            r0.<init>()
+            r0.f12258d = r1
+            r0.f12259e = r2
+            r0.f12260f = r3
+            r0.f12261g = r4
+            hi.a r1 = new hi.a
+            r1.<init>(r3)
+            r0.f12256b = r1
+            return
+    }
+
+    /* renamed from: i */
+    public static final void m7459i(p135hi.C3050b r2, p260oi.C5290l r3) {
+            java.util.Objects.requireNonNull(r2)
+            oi.a0 r2 = r3.f20511e
+            oi.a0 r0 = p260oi.C5279a0.f20485d
+            java.lang.String r1 = "delegate"
+            p214m2.C4339q.m9706k(r0, r1)
+            r3.f20511e = r0
+            r2.mo11524a()
+            r2.mo11525b()
+            return
+    }
+
+    @Override // gi.InterfaceC2394d
+    /* renamed from: a */
+    public long mo6137a(bi.C0783g0 r4) {
+            r3 = this;
+            boolean r0 = gi.C2395e.m6145a(r4)
+            if (r0 != 0) goto L9
+            r0 = 0
+            goto L21
+        L9:
+            r0 = 0
+            r1 = 2
+            java.lang.String r2 = "Transfer-Encoding"
+            java.lang.String r0 = bi.C0783g0.m2380a(r4, r2, r0, r1)
+            r1 = 1
+            java.lang.String r2 = "chunked"
+            boolean r0 = p362uh.C6463i.m13053J(r2, r0, r1)
+            if (r0 == 0) goto L1d
+            r0 = -1
+            goto L21
+        L1d:
+            long r0 = ci.C0988c.m2705j(r4)
+        L21:
+            return r0
+    }
+
+    @Override // gi.InterfaceC2394d
+    /* renamed from: b */
+    public p260oi.InterfaceC5302x mo6138b(bi.C0775c0 r6, long r7) {
+            r5 = this;
+            java.lang.String r0 = "Transfer-Encoding"
+            java.lang.String r6 = r6.m2364b(r0)
+            r0 = 1
+            java.lang.String r1 = "chunked"
+            boolean r6 = p362uh.C6463i.m13053J(r1, r6, r0)
+            r1 = 2
+            java.lang.String r2 = "state: "
+            if (r6 == 0) goto L39
+            int r6 = r5.f12255a
+            if (r6 != r0) goto L17
+            goto L18
+        L17:
+            r0 = 0
+        L18:
+            if (r0 == 0) goto L22
+            r5.f12255a = r1
+            hi.b$b r6 = new hi.b$b
+            r6.<init>(r5)
+            goto L4e
+        L22:
+            java.lang.StringBuilder r6 = android.support.v4.media.C0144c.m256a(r2)
+            int r7 = r5.f12255a
+            r6.append(r7)
+            java.lang.String r6 = r6.toString()
+            java.lang.IllegalStateException r7 = new java.lang.IllegalStateException
+            java.lang.String r6 = r6.toString()
+            r7.<init>(r6)
+            throw r7
+        L39:
+            r3 = -1
+            int r6 = (r7 > r3 ? 1 : (r7 == r3 ? 0 : -1))
+            if (r6 == 0) goto L66
+            int r6 = r5.f12255a
+            if (r6 != r0) goto L44
+            goto L45
+        L44:
+            r0 = 0
+        L45:
+            if (r0 == 0) goto L4f
+            r5.f12255a = r1
+            hi.b$e r6 = new hi.b$e
+            r6.<init>(r5)
+        L4e:
+            return r6
+        L4f:
+            java.lang.StringBuilder r6 = android.support.v4.media.C0144c.m256a(r2)
+            int r7 = r5.f12255a
+            r6.append(r7)
+            java.lang.String r6 = r6.toString()
+            java.lang.IllegalStateException r7 = new java.lang.IllegalStateException
+            java.lang.String r6 = r6.toString()
+            r7.<init>(r6)
+            throw r7
+        L66:
+            java.lang.IllegalStateException r6 = new java.lang.IllegalStateException
+            java.lang.String r7 = "Cannot stream a request body without chunked encoding or a known content length!"
+            r6.<init>(r7)
+            throw r6
+    }
+
+    @Override // gi.InterfaceC2394d
+    /* renamed from: c */
+    public void mo6139c() {
+            r1 = this;
+            oi.g r0 = r1.f12261g
+            r0.flush()
+            return
+    }
+
+    @Override // gi.InterfaceC2394d
+    public void cancel() {
+            r1 = this;
+            fi.g r0 = r1.f12259e
+            java.net.Socket r0 = r0.f9967b
+            if (r0 == 0) goto L9
+            ci.C0988c.m2699d(r0)
+        L9:
+            return
+    }
+
+    @Override // gi.InterfaceC2394d
+    /* renamed from: d */
+    public void mo6140d() {
+            r1 = this;
+            oi.g r0 = r1.f12261g
+            r0.flush()
+            return
+    }
+
+    @Override // gi.InterfaceC2394d
+    /* renamed from: e */
+    public void mo6141e(bi.C0775c0 r5) {
+            r4 = this;
+            fi.g r0 = r4.f12259e
+            bi.j0 r0 = r0.f9982q
+            java.net.Proxy r0 = r0.f4287b
+            java.net.Proxy$Type r0 = r0.type()
+            java.lang.String r1 = "connection.route().proxy.type()"
+            p214m2.C4339q.m9705j(r0, r1)
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            r1.<init>()
+            java.lang.String r2 = r5.f4195c
+            r1.append(r2)
+            r2 = 32
+            r1.append(r2)
+            bi.w r2 = r5.f4194b
+            boolean r3 = r2.f4345a
+            if (r3 != 0) goto L2a
+            java.net.Proxy$Type r3 = java.net.Proxy.Type.HTTP
+            if (r0 != r3) goto L2a
+            r0 = 1
+            goto L2b
+        L2a:
+            r0 = 0
+        L2b:
+            if (r0 == 0) goto L31
+            r1.append(r2)
+            goto L52
+        L31:
+            java.lang.String r0 = r2.m2440b()
+            java.lang.String r2 = r2.m2442d()
+            if (r2 == 0) goto L4f
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder
+            r3.<init>()
+            r3.append(r0)
+            r0 = 63
+            r3.append(r0)
+            r3.append(r2)
+            java.lang.String r0 = r3.toString()
+        L4f:
+            r1.append(r0)
+        L52:
+            java.lang.String r0 = " HTTP/1.1"
+            r1.append(r0)
+            java.lang.String r0 = r1.toString()
+            java.lang.String r1 = "StringBuilder().apply(builderAction).toString()"
+            p214m2.C4339q.m9705j(r0, r1)
+            bi.v r5 = r5.f4196d
+            r4.m7461k(r5, r0)
+            return
+    }
+
+    @Override // gi.InterfaceC2394d
+    /* renamed from: f */
+    public p260oi.InterfaceC5304z mo6142f(bi.C0783g0 r10) {
+            r9 = this;
+            boolean r0 = gi.C2395e.m6145a(r10)
+            if (r0 != 0) goto Ld
+            r0 = 0
+            oi.z r10 = r9.m7460j(r0)
+            goto L71
+        Ld:
+            r0 = 0
+            r1 = 2
+            java.lang.String r2 = "Transfer-Encoding"
+            java.lang.String r0 = bi.C0783g0.m2380a(r10, r2, r0, r1)
+            r1 = 1
+            java.lang.String r2 = "chunked"
+            boolean r0 = p362uh.C6463i.m13053J(r2, r0, r1)
+            r2 = 5
+            java.lang.String r3 = "state: "
+            r4 = 4
+            if (r0 == 0) goto L4e
+            bi.c0 r10 = r10.f4225Y
+            bi.w r10 = r10.f4194b
+            int r0 = r9.f12255a
+            if (r0 != r4) goto L2b
+            goto L2c
+        L2b:
+            r1 = 0
+        L2c:
+            if (r1 == 0) goto L37
+            r9.f12255a = r2
+            hi.b$c r0 = new hi.b$c
+            r0.<init>(r9, r10)
+            r10 = r0
+            goto L71
+        L37:
+            java.lang.StringBuilder r10 = android.support.v4.media.C0144c.m256a(r3)
+            int r0 = r9.f12255a
+            r10.append(r0)
+            java.lang.String r10 = r10.toString()
+            java.lang.IllegalStateException r0 = new java.lang.IllegalStateException
+            java.lang.String r10 = r10.toString()
+            r0.<init>(r10)
+            throw r0
+        L4e:
+            long r5 = ci.C0988c.m2705j(r10)
+            r7 = -1
+            int r10 = (r5 > r7 ? 1 : (r5 == r7 ? 0 : -1))
+            if (r10 == 0) goto L5d
+            oi.z r10 = r9.m7460j(r5)
+            goto L71
+        L5d:
+            int r10 = r9.f12255a
+            if (r10 != r4) goto L62
+            goto L63
+        L62:
+            r1 = 0
+        L63:
+            if (r1 == 0) goto L72
+            r9.f12255a = r2
+            fi.g r10 = r9.f12259e
+            r10.m5772k()
+            hi.b$f r10 = new hi.b$f
+            r10.<init>(r9)
+        L71:
+            return r10
+        L72:
+            java.lang.StringBuilder r10 = android.support.v4.media.C0144c.m256a(r3)
+            int r0 = r9.f12255a
+            r10.append(r0)
+            java.lang.String r10 = r10.toString()
+            java.lang.IllegalStateException r0 = new java.lang.IllegalStateException
+            java.lang.String r10 = r10.toString()
+            r0.<init>(r10)
+            throw r0
+    }
+
+    @Override // gi.InterfaceC2394d
+    /* renamed from: g */
+    public bi.C0783g0.a mo6143g(boolean r5) {
+            r4 = this;
+            int r0 = r4.f12255a
+            r1 = 3
+            r2 = 1
+            if (r0 == r2) goto La
+            if (r0 != r1) goto L9
+            goto La
+        L9:
+            r2 = 0
+        La:
+            if (r2 == 0) goto L60
+            hi.a r0 = r4.f12256b     // Catch: java.io.EOFException -> L47
+            java.lang.String r0 = r0.m7458b()     // Catch: java.io.EOFException -> L47
+            gi.j r0 = gi.C2400j.m6154a(r0)     // Catch: java.io.EOFException -> L47
+            bi.g0$a r2 = new bi.g0$a     // Catch: java.io.EOFException -> L47
+            r2.<init>()     // Catch: java.io.EOFException -> L47
+            bi.b0 r3 = r0.f10794a     // Catch: java.io.EOFException -> L47
+            r2.m2387f(r3)     // Catch: java.io.EOFException -> L47
+            int r3 = r0.f10795b     // Catch: java.io.EOFException -> L47
+            r2.f4240c = r3     // Catch: java.io.EOFException -> L47
+            java.lang.String r3 = r0.f10796c     // Catch: java.io.EOFException -> L47
+            r2.m2386e(r3)     // Catch: java.io.EOFException -> L47
+            hi.a r3 = r4.f12256b     // Catch: java.io.EOFException -> L47
+            bi.v r3 = r3.m7457a()     // Catch: java.io.EOFException -> L47
+            r2.m2385d(r3)     // Catch: java.io.EOFException -> L47
+            r3 = 100
+            if (r5 == 0) goto L3c
+            int r5 = r0.f10795b     // Catch: java.io.EOFException -> L47
+            if (r5 != r3) goto L3c
+            r2 = 0
+            goto L46
+        L3c:
+            int r5 = r0.f10795b     // Catch: java.io.EOFException -> L47
+            if (r5 != r3) goto L43
+            r4.f12255a = r1     // Catch: java.io.EOFException -> L47
+            goto L46
+        L43:
+            r5 = 4
+            r4.f12255a = r5     // Catch: java.io.EOFException -> L47
+        L46:
+            return r2
+        L47:
+            r5 = move-exception
+            fi.g r0 = r4.f12259e
+            bi.j0 r0 = r0.f9982q
+            bi.a r0 = r0.f4286a
+            bi.w r0 = r0.f4124a
+            java.lang.String r0 = r0.m2445g()
+            java.io.IOException r1 = new java.io.IOException
+            java.lang.String r2 = "unexpected end of stream on "
+            java.lang.String r0 = p064e.C1493g.m4049a(r2, r0)
+            r1.<init>(r0, r5)
+            throw r1
+        L60:
+            java.lang.String r5 = "state: "
+            java.lang.StringBuilder r5 = android.support.v4.media.C0144c.m256a(r5)
+            int r0 = r4.f12255a
+            r5.append(r0)
+            java.lang.String r5 = r5.toString()
+            java.lang.IllegalStateException r0 = new java.lang.IllegalStateException
+            java.lang.String r5 = r5.toString()
+            r0.<init>(r5)
+            throw r0
+    }
+
+    @Override // gi.InterfaceC2394d
+    /* renamed from: h */
+    public fi.C2185g mo6144h() {
+            r1 = this;
+            fi.g r0 = r1.f12259e
+            return r0
+    }
+
+    /* renamed from: j */
+    public final p260oi.InterfaceC5304z m7460j(long r3) {
+            r2 = this;
+            int r0 = r2.f12255a
+            r1 = 4
+            if (r0 != r1) goto L7
+            r0 = 1
+            goto L8
+        L7:
+            r0 = 0
+        L8:
+            if (r0 == 0) goto L13
+            r0 = 5
+            r2.f12255a = r0
+            hi.b$d r0 = new hi.b$d
+            r0.<init>(r2, r3)
+            return r0
+        L13:
+            java.lang.String r3 = "state: "
+            java.lang.StringBuilder r3 = android.support.v4.media.C0144c.m256a(r3)
+            int r4 = r2.f12255a
+            r3.append(r4)
+            java.lang.String r3 = r3.toString()
+            java.lang.IllegalStateException r4 = new java.lang.IllegalStateException
+            java.lang.String r3 = r3.toString()
+            r4.<init>(r3)
+            throw r4
+    }
+
+    /* renamed from: k */
+    public final void m7461k(bi.C0802v r6, java.lang.String r7) {
+            r5 = this;
+            java.lang.String r0 = "headers"
+            p214m2.C4339q.m9706k(r6, r0)
+            java.lang.String r0 = "requestLine"
+            p214m2.C4339q.m9706k(r7, r0)
+            int r0 = r5.f12255a
+            r1 = 0
+            r2 = 1
+            if (r0 != 0) goto L12
+            r0 = 1
+            goto L13
+        L12:
+            r0 = 0
+        L13:
+            if (r0 == 0) goto L4c
+            oi.g r0 = r5.f12261g
+            oi.g r7 = r0.mo11567l0(r7)
+            java.lang.String r0 = "\r\n"
+            r7.mo11567l0(r0)
+            int r7 = r6.size()
+        L24:
+            if (r1 >= r7) goto L44
+            oi.g r3 = r5.f12261g
+            java.lang.String r4 = r6.m2429e(r1)
+            oi.g r3 = r3.mo11567l0(r4)
+            java.lang.String r4 = ": "
+            oi.g r3 = r3.mo11567l0(r4)
+            java.lang.String r4 = r6.m2431i(r1)
+            oi.g r3 = r3.mo11567l0(r4)
+            r3.mo11567l0(r0)
+            int r1 = r1 + 1
+            goto L24
+        L44:
+            oi.g r6 = r5.f12261g
+            r6.mo11567l0(r0)
+            r5.f12255a = r2
+            return
+        L4c:
+            java.lang.String r6 = "state: "
+            java.lang.StringBuilder r6 = android.support.v4.media.C0144c.m256a(r6)
+            int r7 = r5.f12255a
+            r6.append(r7)
+            java.lang.String r6 = r6.toString()
+            java.lang.IllegalStateException r7 = new java.lang.IllegalStateException
+            java.lang.String r6 = r6.toString()
+            r7.<init>(r6)
+            throw r7
+    }
+}

@@ -1,0 +1,28 @@
+package p276pd;
+
+/* renamed from: pd.k */
+/* loaded from: classes.dex */
+public class C5425k {
+    private final p276pd.C5385a abiBinaryGen;
+
+    public C5425k(p276pd.C5385a r1) {
+            r0 = this;
+            r0.<init>()
+            r0.abiBinaryGen = r1
+            return
+    }
+
+    public /* bridge */ /* synthetic */ void squish(java.lang.Object r1, bd.InterfaceC0733a r2) {
+            r0 = this;
+            pd.j r1 = (p276pd.C5421j) r1
+            r0.squish(r1, r2)
+            return
+    }
+
+    public void squish(p276pd.C5421j r3, bd.InterfaceC0733a r4) {
+            r2 = this;
+            long r0 = r3.getGetSaleId()
+            r4.mo2347j(r0)
+            return
+    }
+}

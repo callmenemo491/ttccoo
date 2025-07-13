@@ -1,0 +1,81 @@
+package p032c2;
+
+/* renamed from: c2.a */
+/* loaded from: classes.dex */
+public final class C0853a implements p032c2.InterfaceC0854b {
+
+    /* renamed from: a */
+    public final android.view.View f4617a;
+
+    /* renamed from: b */
+    public final p048d2.C1264c f4618b;
+
+    /* renamed from: c */
+    public final p019b2.InterfaceC0655a<?> f4619c;
+
+    /* renamed from: d */
+    public final p067e2.C1510c f4620d;
+
+    public C0853a(android.view.View r1, p048d2.C1264c r2, p019b2.InterfaceC0655a<?> r3, p067e2.C1510c r4) {
+            r0 = this;
+            java.lang.String r1 = "adapter"
+            p214m2.C4339q.m9707l(r2, r1)
+            r0.<init>()
+            r1 = 0
+            r0.f4617a = r1
+            r0.f4618b = r2
+            r0.f4619c = r3
+            r0.f4620d = r4
+            return
+    }
+
+    @Override // p032c2.InterfaceC0854b
+    /* renamed from: a */
+    public p067e2.C1510c mo2520a() {
+            r1 = this;
+            e2.c r0 = r1.f4620d
+            return r0
+    }
+
+    @Override // p032c2.InterfaceC0854b
+    /* renamed from: b */
+    public void mo2521b(mh.InterfaceC4620l<? super androidx.recyclerview.widget.RecyclerView.AbstractC0549e<?>, ch.C0985l> r4) {
+            r3 = this;
+            java.lang.String r0 = "block"
+            p214m2.C4339q.m9707l(r4, r0)
+            android.os.Looper r0 = android.os.Looper.myLooper()
+            android.os.Looper r1 = android.os.Looper.getMainLooper()
+            boolean r0 = p214m2.C4339q.m9702c(r0, r1)
+            java.lang.String r1 = "DataSource interaction must be done on the main (UI) thread."
+            if (r0 == 0) goto L46
+            d2.c r0 = r3.f4618b
+            r4.mo107b(r0)
+            b2.a<?> r4 = r3.f4619c
+            boolean r4 = r4.isEmpty()
+            android.os.Looper r0 = android.os.Looper.myLooper()
+            android.os.Looper r2 = android.os.Looper.getMainLooper()
+            boolean r0 = p214m2.C4339q.m9702c(r0, r2)
+            if (r0 == 0) goto L3c
+            android.view.View r0 = r3.f4617a
+            if (r0 == 0) goto L3b
+            if (r4 == 0) goto L36
+            r4 = 0
+            goto L38
+        L36:
+            r4 = 8
+        L38:
+            r0.setVisibility(r4)
+        L3b:
+            return
+        L3c:
+            java.lang.IllegalStateException r4 = new java.lang.IllegalStateException
+            java.lang.String r0 = r1.toString()
+            r4.<init>(r0)
+            throw r4
+        L46:
+            java.lang.IllegalStateException r4 = new java.lang.IllegalStateException
+            java.lang.String r0 = r1.toString()
+            r4.<init>(r0)
+            throw r4
+    }
+}

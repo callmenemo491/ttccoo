@@ -1,0 +1,236 @@
+package p276pd;
+
+/* renamed from: pd.z0 */
+/* loaded from: classes.dex */
+public final class C5477z0 implements p276pd.InterfaceC5460t1 {
+    private final java.lang.String account;
+    private final java.util.List<java.lang.String> anim_asset_ids;
+    private final java.util.List<java.lang.String> build_asset_ids;
+    private final java.util.List<java.lang.String> plant_asset_ids;
+
+    public C5477z0(java.lang.String r2, java.util.List<java.lang.String> r3, java.util.List<java.lang.String> r4, java.util.List<java.lang.String> r5) {
+            r1 = this;
+            java.lang.String r0 = "account"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "anim_asset_ids"
+            p214m2.C4339q.m9706k(r3, r0)
+            java.lang.String r0 = "plant_asset_ids"
+            p214m2.C4339q.m9706k(r4, r0)
+            java.lang.String r0 = "build_asset_ids"
+            p214m2.C4339q.m9706k(r5, r0)
+            r1.<init>()
+            r1.account = r2
+            r1.anim_asset_ids = r3
+            r1.plant_asset_ids = r4
+            r1.build_asset_ids = r5
+            return
+    }
+
+    public static /* synthetic */ p276pd.C5477z0 copy$default(p276pd.C5477z0 r0, java.lang.String r1, java.util.List r2, java.util.List r3, java.util.List r4, int r5, java.lang.Object r6) {
+            r6 = r5 & 1
+            if (r6 == 0) goto L6
+            java.lang.String r1 = r0.account
+        L6:
+            r6 = r5 & 2
+            if (r6 == 0) goto Lc
+            java.util.List<java.lang.String> r2 = r0.anim_asset_ids
+        Lc:
+            r6 = r5 & 4
+            if (r6 == 0) goto L12
+            java.util.List<java.lang.String> r3 = r0.plant_asset_ids
+        L12:
+            r5 = r5 & 8
+            if (r5 == 0) goto L18
+            java.util.List<java.lang.String> r4 = r0.build_asset_ids
+        L18:
+            pd.z0 r0 = r0.copy(r1, r2, r3, r4)
+            return r0
+    }
+
+    public final java.lang.String component1() {
+            r1 = this;
+            java.lang.String r0 = r1.account
+            return r0
+    }
+
+    public final java.util.List<java.lang.String> component2() {
+            r1 = this;
+            java.util.List<java.lang.String> r0 = r1.anim_asset_ids
+            return r0
+    }
+
+    public final java.util.List<java.lang.String> component3() {
+            r1 = this;
+            java.util.List<java.lang.String> r0 = r1.plant_asset_ids
+            return r0
+    }
+
+    public final java.util.List<java.lang.String> component4() {
+            r1 = this;
+            java.util.List<java.lang.String> r0 = r1.build_asset_ids
+            return r0
+    }
+
+    public final p276pd.C5477z0 copy(java.lang.String r2, java.util.List<java.lang.String> r3, java.util.List<java.lang.String> r4, java.util.List<java.lang.String> r5) {
+            r1 = this;
+            java.lang.String r0 = "account"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "anim_asset_ids"
+            p214m2.C4339q.m9706k(r3, r0)
+            java.lang.String r0 = "plant_asset_ids"
+            p214m2.C4339q.m9706k(r4, r0)
+            java.lang.String r0 = "build_asset_ids"
+            p214m2.C4339q.m9706k(r5, r0)
+            pd.z0 r0 = new pd.z0
+            r0.<init>(r2, r3, r4, r5)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            boolean r1 = r5 instanceof p276pd.C5477z0
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            pd.z0 r5 = (p276pd.C5477z0) r5
+            java.lang.String r1 = r4.account
+            java.lang.String r3 = r5.account
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L17
+            return r2
+        L17:
+            java.util.List<java.lang.String> r1 = r4.anim_asset_ids
+            java.util.List<java.lang.String> r3 = r5.anim_asset_ids
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L22
+            return r2
+        L22:
+            java.util.List<java.lang.String> r1 = r4.plant_asset_ids
+            java.util.List<java.lang.String> r3 = r5.plant_asset_ids
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L2d
+            return r2
+        L2d:
+            java.util.List<java.lang.String> r1 = r4.build_asset_ids
+            java.util.List<java.lang.String> r5 = r5.build_asset_ids
+            boolean r5 = p214m2.C4339q.m9702c(r1, r5)
+            if (r5 != 0) goto L38
+            return r2
+        L38:
+            return r0
+    }
+
+    public final java.lang.String getAccount() {
+            r1 = this;
+            java.lang.String r0 = r1.account
+            return r0
+    }
+
+    public final java.util.List<java.lang.String> getAnim_asset_ids() {
+            r1 = this;
+            java.util.List<java.lang.String> r0 = r1.anim_asset_ids
+            return r0
+    }
+
+    public final java.util.List<java.lang.String> getBuild_asset_ids() {
+            r1 = this;
+            java.util.List<java.lang.String> r0 = r1.build_asset_ids
+            return r0
+    }
+
+    public final java.lang.String getGetAccount() {
+            r1 = this;
+            java.lang.String r0 = r1.account
+            return r0
+    }
+
+    public final byte[] getGetAnimAssetIds() {
+            r1 = this;
+            java.util.List<java.lang.String> r0 = r1.anim_asset_ids
+            byte[] r0 = p185k7.C4038x4.m9093f(r0)
+            return r0
+    }
+
+    public final byte[] getGetBuildAssetIds() {
+            r1 = this;
+            java.util.List<java.lang.String> r0 = r1.build_asset_ids
+            byte[] r0 = p185k7.C4038x4.m9093f(r0)
+            return r0
+    }
+
+    public final byte[] getGetPlantAssetIds() {
+            r1 = this;
+            java.util.List<java.lang.String> r0 = r1.plant_asset_ids
+            byte[] r0 = p185k7.C4038x4.m9093f(r0)
+            return r0
+    }
+
+    @Override // p276pd.InterfaceC5460t1
+    public java.lang.String getHex() {
+            r2 = this;
+            pd.a r0 = new pd.a
+            dd.b r1 = p059dd.EnumC1428b.f7113Y
+            r0.<init>(r1)
+            pd.a r0 = r0.squishFTHarvestAllArgs(r2)
+            java.lang.String r0 = r0.toHex()
+            java.lang.String r1 = "AbiBinaryGenTransactions\u2026   this\n        ).toHex()"
+            p214m2.C4339q.m9705j(r0, r1)
+            return r0
+    }
+
+    @Override // p276pd.InterfaceC5460t1
+    public java.lang.String getJson() {
+            r1 = this;
+            java.lang.String r0 = p276pd.InterfaceC5460t1.a.getJson(r1)
+            return r0
+    }
+
+    public final java.util.List<java.lang.String> getPlant_asset_ids() {
+            r1 = this;
+            java.util.List<java.lang.String> r0 = r1.plant_asset_ids
+            return r0
+    }
+
+    public int hashCode() {
+            r3 = this;
+            java.lang.String r0 = r3.account
+            int r0 = r0.hashCode()
+            int r0 = r0 * 31
+            java.util.List<java.lang.String> r1 = r3.anim_asset_ids
+            r2 = 31
+            int r0 = p255od.C5212k0.m11509a(r1, r0, r2)
+            java.util.List<java.lang.String> r1 = r3.plant_asset_ids
+            int r0 = p255od.C5212k0.m11509a(r1, r0, r2)
+            java.util.List<java.lang.String> r1 = r3.build_asset_ids
+            int r1 = r1.hashCode()
+            int r1 = r1 + r0
+            return r1
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "FTHarvestAllArgs(account="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r3.account
+            r0.append(r1)
+            java.lang.String r1 = ", anim_asset_ids="
+            r0.append(r1)
+            java.util.List<java.lang.String> r1 = r3.anim_asset_ids
+            r0.append(r1)
+            java.lang.String r1 = ", plant_asset_ids="
+            r0.append(r1)
+            java.util.List<java.lang.String> r1 = r3.plant_asset_ids
+            r0.append(r1)
+            java.lang.String r1 = ", build_asset_ids="
+            r0.append(r1)
+            java.util.List<java.lang.String> r1 = r3.build_asset_ids
+            r2 = 41
+            java.lang.String r0 = p213m1.C4320f.m9652a(r0, r1, r2)
+            return r0
+    }
+}

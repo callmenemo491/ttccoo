@@ -1,0 +1,332 @@
+package p197l2;
+
+/* renamed from: l2.a */
+/* loaded from: classes.dex */
+public class C4164a implements com.bumptech.glide.load.data.InterfaceC1016d<java.io.InputStream> {
+
+    /* renamed from: Y */
+    public final android.net.Uri f17241Y;
+
+    /* renamed from: Z */
+    public final p197l2.C4166c f17242Z;
+
+    /* renamed from: a0 */
+    public java.io.InputStream f17243a0;
+
+    /* renamed from: l2.a$a */
+    public static class a implements p197l2.InterfaceC4165b {
+
+        /* renamed from: b */
+        public static final java.lang.String[] f17244b = null;
+
+        /* renamed from: a */
+        public final android.content.ContentResolver f17245a;
+
+        static {
+                java.lang.String r0 = "_data"
+                java.lang.String[] r0 = new java.lang.String[]{r0}
+                p197l2.C4164a.a.f17244b = r0
+                return
+        }
+
+        public a(android.content.ContentResolver r1) {
+                r0 = this;
+                r0.<init>()
+                r0.f17245a = r1
+                return
+        }
+
+        @Override // p197l2.InterfaceC4165b
+        /* renamed from: a */
+        public android.database.Cursor mo9225a(android.net.Uri r7) {
+                r6 = this;
+                java.lang.String r7 = r7.getLastPathSegment()
+                android.content.ContentResolver r0 = r6.f17245a
+                android.net.Uri r1 = android.provider.MediaStore.Images.Thumbnails.EXTERNAL_CONTENT_URI
+                java.lang.String[] r2 = p197l2.C4164a.a.f17244b
+                r3 = 1
+                java.lang.String[] r4 = new java.lang.String[r3]
+                r3 = 0
+                r4[r3] = r7
+                java.lang.String r3 = "kind = 1 AND image_id = ?"
+                r5 = 0
+                android.database.Cursor r7 = r0.query(r1, r2, r3, r4, r5)
+                return r7
+        }
+    }
+
+    /* renamed from: l2.a$b */
+    public static class b implements p197l2.InterfaceC4165b {
+
+        /* renamed from: b */
+        public static final java.lang.String[] f17246b = null;
+
+        /* renamed from: a */
+        public final android.content.ContentResolver f17247a;
+
+        static {
+                java.lang.String r0 = "_data"
+                java.lang.String[] r0 = new java.lang.String[]{r0}
+                p197l2.C4164a.b.f17246b = r0
+                return
+        }
+
+        public b(android.content.ContentResolver r1) {
+                r0 = this;
+                r0.<init>()
+                r0.f17247a = r1
+                return
+        }
+
+        @Override // p197l2.InterfaceC4165b
+        /* renamed from: a */
+        public android.database.Cursor mo9225a(android.net.Uri r7) {
+                r6 = this;
+                java.lang.String r7 = r7.getLastPathSegment()
+                android.content.ContentResolver r0 = r6.f17247a
+                android.net.Uri r1 = android.provider.MediaStore.Video.Thumbnails.EXTERNAL_CONTENT_URI
+                java.lang.String[] r2 = p197l2.C4164a.b.f17246b
+                r3 = 1
+                java.lang.String[] r4 = new java.lang.String[r3]
+                r3 = 0
+                r4[r3] = r7
+                java.lang.String r3 = "kind = 1 AND video_id = ?"
+                r5 = 0
+                android.database.Cursor r7 = r0.query(r1, r2, r3, r4, r5)
+                return r7
+        }
+    }
+
+    public C4164a(android.net.Uri r1, p197l2.C4166c r2) {
+            r0 = this;
+            r0.<init>()
+            r0.f17241Y = r1
+            r0.f17242Z = r2
+            return
+    }
+
+    /* renamed from: c */
+    public static p197l2.C4164a m9223c(android.content.Context r3, android.net.Uri r4, p197l2.InterfaceC4165b r5) {
+            com.bumptech.glide.c r0 = com.bumptech.glide.ComponentCallbacks2C0999c.m2734b(r3)
+            n2.b r0 = r0.f5101c0
+            l2.c r1 = new l2.c
+            com.bumptech.glide.c r2 = com.bumptech.glide.ComponentCallbacks2C0999c.m2734b(r3)
+            com.bumptech.glide.h r2 = r2.f5100b0
+            java.util.List r2 = r2.m2743e()
+            android.content.ContentResolver r3 = r3.getContentResolver()
+            r1.<init>(r2, r5, r0, r3)
+            l2.a r3 = new l2.a
+            r3.<init>(r4, r1)
+            return r3
+    }
+
+    @Override // com.bumptech.glide.load.data.InterfaceC1016d
+    /* renamed from: a */
+    public java.lang.Class<java.io.InputStream> mo2786a() {
+            r1 = this;
+            java.lang.Class<java.io.InputStream> r0 = java.io.InputStream.class
+            return r0
+    }
+
+    @Override // com.bumptech.glide.load.data.InterfaceC1016d
+    /* renamed from: b */
+    public void mo2789b() {
+            r1 = this;
+            java.io.InputStream r0 = r1.f17243a0
+            if (r0 == 0) goto L7
+            r0.close()     // Catch: java.io.IOException -> L7
+        L7:
+            return
+    }
+
+    @Override // com.bumptech.glide.load.data.InterfaceC1016d
+    public void cancel() {
+            r0 = this;
+            return
+    }
+
+    /* renamed from: d */
+    public final java.io.InputStream m9224d() {
+            r12 = this;
+            java.lang.String r0 = "ThumbStreamOpener"
+            l2.c r1 = r12.f17242Z
+            android.net.Uri r2 = r12.f17241Y
+            java.util.Objects.requireNonNull(r1)
+            r3 = 0
+            r4 = 3
+            r5 = 0
+            l2.b r6 = r1.f17250b     // Catch: java.lang.Throwable -> L2b java.lang.SecurityException -> L2e
+            android.database.Cursor r6 = r6.mo9225a(r2)     // Catch: java.lang.Throwable -> L2b java.lang.SecurityException -> L2e
+            if (r6 == 0) goto L28
+            boolean r7 = r6.moveToFirst()     // Catch: java.lang.Throwable -> L22 java.lang.SecurityException -> L26
+            if (r7 == 0) goto L28
+            java.lang.String r7 = r6.getString(r3)     // Catch: java.lang.Throwable -> L22 java.lang.SecurityException -> L26
+            r6.close()
+            goto L51
+        L22:
+            r0 = move-exception
+            r5 = r6
+            goto L106
+        L26:
+            r7 = move-exception
+            goto L31
+        L28:
+            if (r6 == 0) goto L50
+            goto L4d
+        L2b:
+            r0 = move-exception
+            goto L106
+        L2e:
+            r6 = move-exception
+            r7 = r6
+            r6 = r5
+        L31:
+            boolean r8 = android.util.Log.isLoggable(r0, r4)     // Catch: java.lang.Throwable -> L22
+            if (r8 == 0) goto L4b
+            java.lang.StringBuilder r8 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L22
+            r8.<init>()     // Catch: java.lang.Throwable -> L22
+            java.lang.String r9 = "Failed to query for thumbnail for Uri: "
+            r8.append(r9)     // Catch: java.lang.Throwable -> L22
+            r8.append(r2)     // Catch: java.lang.Throwable -> L22
+            java.lang.String r8 = r8.toString()     // Catch: java.lang.Throwable -> L22
+            android.util.Log.d(r0, r8, r7)     // Catch: java.lang.Throwable -> L22
+        L4b:
+            if (r6 == 0) goto L50
+        L4d:
+            r6.close()
+        L50:
+            r7 = r5
+        L51:
+            boolean r6 = android.text.TextUtils.isEmpty(r7)
+            if (r6 == 0) goto L59
+        L57:
+            r1 = r5
+            goto L8b
+        L59:
+            t8.e r6 = r1.f17249a
+            java.util.Objects.requireNonNull(r6)
+            java.io.File r6 = new java.io.File
+            r6.<init>(r7)
+            t8.e r7 = r1.f17249a
+            java.util.Objects.requireNonNull(r7)
+            boolean r7 = r6.exists()
+            if (r7 == 0) goto L7e
+            r7 = 0
+            t8.e r9 = r1.f17249a
+            java.util.Objects.requireNonNull(r9)
+            long r9 = r6.length()
+            int r11 = (r7 > r9 ? 1 : (r7 == r9 ? 0 : -1))
+            if (r11 >= 0) goto L7e
+            r3 = 1
+        L7e:
+            if (r3 != 0) goto L81
+            goto L57
+        L81:
+            android.net.Uri r3 = android.net.Uri.fromFile(r6)
+            android.content.ContentResolver r1 = r1.f17252d     // Catch: java.lang.NullPointerException -> Le0
+            java.io.InputStream r1 = r1.openInputStream(r3)     // Catch: java.lang.NullPointerException -> Le0
+        L8b:
+            r2 = -1
+            if (r1 == 0) goto Ld6
+            l2.c r3 = r12.f17242Z
+            android.net.Uri r6 = r12.f17241Y
+            java.util.Objects.requireNonNull(r3)
+            android.content.ContentResolver r7 = r3.f17252d     // Catch: java.lang.Throwable -> Lab java.lang.NullPointerException -> Lad java.io.IOException -> Laf
+            java.io.InputStream r5 = r7.openInputStream(r6)     // Catch: java.lang.Throwable -> Lab java.lang.NullPointerException -> Lad java.io.IOException -> Laf
+            java.util.List<com.bumptech.glide.load.ImageHeaderParser> r7 = r3.f17253e     // Catch: java.lang.Throwable -> Lab java.lang.NullPointerException -> Lad java.io.IOException -> Laf
+            n2.b r3 = r3.f17251c     // Catch: java.lang.Throwable -> Lab java.lang.NullPointerException -> Lad java.io.IOException -> Laf
+            int r0 = com.bumptech.glide.load.C1011d.m2779a(r7, r5, r3)     // Catch: java.lang.Throwable -> Lab java.lang.NullPointerException -> Lad java.io.IOException -> Laf
+            if (r5 == 0) goto Ld7
+            r5.close()     // Catch: java.io.IOException -> La9
+            goto Ld7
+        La9:
+            goto Ld7
+        Lab:
+            r0 = move-exception
+            goto Ld0
+        Lad:
+            r3 = move-exception
+            goto Lb0
+        Laf:
+            r3 = move-exception
+        Lb0:
+            boolean r4 = android.util.Log.isLoggable(r0, r4)     // Catch: java.lang.Throwable -> Lab
+            if (r4 == 0) goto Lca
+            java.lang.StringBuilder r4 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> Lab
+            r4.<init>()     // Catch: java.lang.Throwable -> Lab
+            java.lang.String r7 = "Failed to open uri: "
+            r4.append(r7)     // Catch: java.lang.Throwable -> Lab
+            r4.append(r6)     // Catch: java.lang.Throwable -> Lab
+            java.lang.String r4 = r4.toString()     // Catch: java.lang.Throwable -> Lab
+            android.util.Log.d(r0, r4, r3)     // Catch: java.lang.Throwable -> Lab
+        Lca:
+            if (r5 == 0) goto Ld6
+            r5.close()     // Catch: java.io.IOException -> Ld6
+            goto Ld6
+        Ld0:
+            if (r5 == 0) goto Ld5
+            r5.close()     // Catch: java.io.IOException -> Ld5
+        Ld5:
+            throw r0
+        Ld6:
+            r0 = -1
+        Ld7:
+            if (r0 == r2) goto Ldf
+            com.bumptech.glide.load.data.g r2 = new com.bumptech.glide.load.data.g
+            r2.<init>(r1, r0)
+            r1 = r2
+        Ldf:
+            return r1
+        Le0:
+            r0 = move-exception
+            java.io.FileNotFoundException r1 = new java.io.FileNotFoundException
+            java.lang.StringBuilder r4 = new java.lang.StringBuilder
+            r4.<init>()
+            java.lang.String r5 = "NPE opening uri: "
+            r4.append(r5)
+            r4.append(r2)
+            java.lang.String r2 = " -> "
+            r4.append(r2)
+            r4.append(r3)
+            java.lang.String r2 = r4.toString()
+            r1.<init>(r2)
+            java.lang.Throwable r0 = r1.initCause(r0)
+            java.io.FileNotFoundException r0 = (java.io.FileNotFoundException) r0
+            throw r0
+        L106:
+            if (r5 == 0) goto L10b
+            r5.close()
+        L10b:
+            throw r0
+    }
+
+    @Override // com.bumptech.glide.load.data.InterfaceC1016d
+    /* renamed from: e */
+    public com.bumptech.glide.load.EnumC1008a mo2792e() {
+            r1 = this;
+            com.bumptech.glide.load.a r0 = com.bumptech.glide.load.EnumC1008a.f5180Y
+            return r0
+    }
+
+    @Override // com.bumptech.glide.load.data.InterfaceC1016d
+    /* renamed from: f */
+    public void mo2793f(com.bumptech.glide.EnumC1003g r3, com.bumptech.glide.load.data.InterfaceC1016d.a<? super java.io.InputStream> r4) {
+            r2 = this;
+            java.io.InputStream r3 = r2.m9224d()     // Catch: java.io.FileNotFoundException -> La
+            r2.f17243a0 = r3     // Catch: java.io.FileNotFoundException -> La
+            r4.mo2795d(r3)     // Catch: java.io.FileNotFoundException -> La
+            goto L1c
+        La:
+            r3 = move-exception
+            r0 = 3
+            java.lang.String r1 = "MediaStoreThumbFetcher"
+            boolean r0 = android.util.Log.isLoggable(r1, r0)
+            if (r0 == 0) goto L19
+            java.lang.String r0 = "Failed to find thumbnail file"
+            android.util.Log.d(r1, r0, r3)
+        L19:
+            r4.mo2794c(r3)
+        L1c:
+            return
+    }
+}

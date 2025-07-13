@@ -1,0 +1,79 @@
+package p408x6;
+
+/* renamed from: x6.b */
+/* loaded from: classes.dex */
+public final class BinderC6958b<T> extends p408x6.InterfaceC6957a.a {
+
+    /* renamed from: a */
+    public final T f27202a;
+
+    public BinderC6958b(T r1) {
+            r0 = this;
+            r0.<init>()
+            r0.f27202a = r1
+            return
+    }
+
+    @androidx.annotation.RecentlyNonNull
+    /* renamed from: H */
+    public static <T> T m14124H(@androidx.annotation.RecentlyNonNull p408x6.InterfaceC6957a r7) {
+            boolean r0 = r7 instanceof p408x6.BinderC6958b
+            if (r0 == 0) goto L9
+            x6.b r7 = (p408x6.BinderC6958b) r7
+            T r7 = r7.f27202a
+            return r7
+        L9:
+            android.os.IBinder r7 = r7.asBinder()
+            java.lang.Class r0 = r7.getClass()
+            java.lang.reflect.Field[] r0 = r0.getDeclaredFields()
+            r1 = 0
+            int r2 = r0.length
+            r3 = 0
+            r4 = 0
+        L19:
+            if (r3 >= r2) goto L29
+            r5 = r0[r3]
+            boolean r6 = r5.isSynthetic()
+            if (r6 != 0) goto L26
+            int r4 = r4 + 1
+            r1 = r5
+        L26:
+            int r3 = r3 + 1
+            goto L19
+        L29:
+            r2 = 1
+            if (r4 != r2) goto L59
+            java.lang.String r0 = "null reference"
+            java.util.Objects.requireNonNull(r1, r0)
+            boolean r0 = r1.isAccessible()
+            if (r0 != 0) goto L51
+            r1.setAccessible(r2)
+            java.lang.Object r7 = r1.get(r7)     // Catch: java.lang.IllegalAccessException -> L3f java.lang.NullPointerException -> L48
+            return r7
+        L3f:
+            r7 = move-exception
+            java.lang.IllegalArgumentException r0 = new java.lang.IllegalArgumentException
+            java.lang.String r1 = "Could not access the field in remoteBinder."
+            r0.<init>(r1, r7)
+            throw r0
+        L48:
+            r7 = move-exception
+            java.lang.IllegalArgumentException r0 = new java.lang.IllegalArgumentException
+            java.lang.String r1 = "Binder object is null."
+            r0.<init>(r1, r7)
+            throw r0
+        L51:
+            java.lang.IllegalArgumentException r7 = new java.lang.IllegalArgumentException
+            java.lang.String r0 = "IObjectWrapper declared field not private!"
+            r7.<init>(r0)
+            throw r7
+        L59:
+            java.lang.IllegalArgumentException r7 = new java.lang.IllegalArgumentException
+            int r0 = r0.length
+            r1 = 64
+            java.lang.String r2 = "Unexpected number of IObjectWrapper declared fields: "
+            java.lang.String r0 = p064e.C1490d.m4039a(r1, r2, r0)
+            r7.<init>(r0)
+            throw r7
+    }
+}

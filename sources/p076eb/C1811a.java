@@ -1,0 +1,426 @@
+package p076eb;
+
+/* renamed from: eb.a */
+/* loaded from: classes.dex */
+public final class C1811a {
+
+    /* renamed from: p */
+    public static final /* synthetic */ int f7878p = 0;
+
+    /* renamed from: a */
+    public final long f7879a;
+
+    /* renamed from: b */
+    public final java.lang.String f7880b;
+
+    /* renamed from: c */
+    public final java.lang.String f7881c;
+
+    /* renamed from: d */
+    public final p076eb.C1811a.c f7882d;
+
+    /* renamed from: e */
+    public final p076eb.C1811a.d f7883e;
+
+    /* renamed from: f */
+    public final java.lang.String f7884f;
+
+    /* renamed from: g */
+    public final java.lang.String f7885g;
+
+    /* renamed from: h */
+    public final int f7886h;
+
+    /* renamed from: i */
+    public final int f7887i;
+
+    /* renamed from: j */
+    public final java.lang.String f7888j;
+
+    /* renamed from: k */
+    public final long f7889k;
+
+    /* renamed from: l */
+    public final p076eb.C1811a.b f7890l;
+
+    /* renamed from: m */
+    public final java.lang.String f7891m;
+
+    /* renamed from: n */
+    public final long f7892n;
+
+    /* renamed from: o */
+    public final java.lang.String f7893o;
+
+    /* renamed from: eb.a$a */
+    public static final class a {
+
+        /* renamed from: a */
+        public long f7894a;
+
+        /* renamed from: b */
+        public java.lang.String f7895b;
+
+        /* renamed from: c */
+        public java.lang.String f7896c;
+
+        /* renamed from: d */
+        public p076eb.C1811a.c f7897d;
+
+        /* renamed from: e */
+        public p076eb.C1811a.d f7898e;
+
+        /* renamed from: f */
+        public java.lang.String f7899f;
+
+        /* renamed from: g */
+        public java.lang.String f7900g;
+
+        /* renamed from: h */
+        public int f7901h;
+
+        /* renamed from: i */
+        public java.lang.String f7902i;
+
+        /* renamed from: j */
+        public p076eb.C1811a.b f7903j;
+
+        /* renamed from: k */
+        public java.lang.String f7904k;
+
+        /* renamed from: l */
+        public java.lang.String f7905l;
+
+        public a() {
+                r2 = this;
+                r2.<init>()
+                r0 = 0
+                r2.f7894a = r0
+                java.lang.String r0 = ""
+                r2.f7895b = r0
+                r2.f7896c = r0
+                eb.a$c r1 = p076eb.C1811a.c.f7911Z
+                r2.f7897d = r1
+                eb.a$d r1 = p076eb.C1811a.d.f7917Z
+                r2.f7898e = r1
+                r2.f7899f = r0
+                r2.f7900g = r0
+                r1 = 0
+                r2.f7901h = r1
+                r2.f7902i = r0
+                eb.a$b r1 = p076eb.C1811a.b.f7906Z
+                r2.f7903j = r1
+                r2.f7904k = r0
+                r2.f7905l = r0
+                return
+        }
+
+        /* renamed from: a */
+        public p076eb.C1811a m4565a() {
+                r21 = this;
+                r0 = r21
+                eb.a r20 = new eb.a
+                r1 = r20
+                long r2 = r0.f7894a
+                java.lang.String r4 = r0.f7895b
+                java.lang.String r5 = r0.f7896c
+                eb.a$c r6 = r0.f7897d
+                eb.a$d r7 = r0.f7898e
+                java.lang.String r8 = r0.f7899f
+                java.lang.String r9 = r0.f7900g
+                int r11 = r0.f7901h
+                java.lang.String r12 = r0.f7902i
+                eb.a$b r15 = r0.f7903j
+                java.lang.String r10 = r0.f7904k
+                r16 = r10
+                java.lang.String r10 = r0.f7905l
+                r19 = r10
+                r10 = 0
+                r13 = 0
+                r17 = 0
+                r1.<init>(r2, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r15, r16, r17, r19)
+                return r20
+        }
+    }
+
+    /* renamed from: eb.a$b */
+    public enum b extends java.lang.Enum<p076eb.C1811a.b> implements p145i7.InterfaceC3112u {
+
+        /* renamed from: Z */
+        public static final p076eb.C1811a.b f7906Z = null;
+
+        /* renamed from: a0 */
+        public static final p076eb.C1811a.b f7907a0 = null;
+
+        /* renamed from: b0 */
+        public static final p076eb.C1811a.b f7908b0 = null;
+
+        /* renamed from: c0 */
+        public static final /* synthetic */ p076eb.C1811a.b[] f7909c0 = null;
+
+        /* renamed from: Y */
+        public final int f7910Y;
+
+        static {
+                eb.a$b r0 = new eb.a$b
+                java.lang.String r1 = "UNKNOWN_EVENT"
+                r2 = 0
+                r0.<init>(r1, r2, r2)
+                p076eb.C1811a.b.f7906Z = r0
+                eb.a$b r1 = new eb.a$b
+                java.lang.String r3 = "MESSAGE_DELIVERED"
+                r4 = 1
+                r1.<init>(r3, r4, r4)
+                p076eb.C1811a.b.f7907a0 = r1
+                eb.a$b r3 = new eb.a$b
+                java.lang.String r5 = "MESSAGE_OPEN"
+                r6 = 2
+                r3.<init>(r5, r6, r6)
+                p076eb.C1811a.b.f7908b0 = r3
+                r5 = 3
+                eb.a$b[] r5 = new p076eb.C1811a.b[r5]
+                r5[r2] = r0
+                r5[r4] = r1
+                r5[r6] = r3
+                p076eb.C1811a.b.f7909c0 = r5
+                return
+        }
+
+        b(java.lang.String r1, int r2, int r3) {
+                r0 = this;
+                r0.<init>(r1, r2)
+                r0.f7910Y = r3
+                return
+        }
+
+        public static p076eb.C1811a.b valueOf(java.lang.String r1) {
+                java.lang.Class<eb.a$b> r0 = p076eb.C1811a.b.class
+                java.lang.Enum r1 = java.lang.Enum.valueOf(r0, r1)
+                eb.a$b r1 = (p076eb.C1811a.b) r1
+                return r1
+        }
+
+        public static p076eb.C1811a.b[] values() {
+                eb.a$b[] r0 = p076eb.C1811a.b.f7909c0
+                java.lang.Object r0 = r0.clone()
+                eb.a$b[] r0 = (p076eb.C1811a.b[]) r0
+                return r0
+        }
+
+        @Override // p145i7.InterfaceC3112u
+        /* renamed from: d */
+        public int mo4566d() {
+                r1 = this;
+                int r0 = r1.f7910Y
+                return r0
+        }
+    }
+
+    /* renamed from: eb.a$c */
+    public enum c extends java.lang.Enum<p076eb.C1811a.c> implements p145i7.InterfaceC3112u {
+
+        /* renamed from: Z */
+        public static final p076eb.C1811a.c f7911Z = null;
+
+        /* renamed from: a0 */
+        public static final p076eb.C1811a.c f7912a0 = null;
+
+        /* renamed from: b0 */
+        public static final p076eb.C1811a.c f7913b0 = null;
+
+        /* renamed from: c0 */
+        public static final p076eb.C1811a.c f7914c0 = null;
+
+        /* renamed from: d0 */
+        public static final /* synthetic */ p076eb.C1811a.c[] f7915d0 = null;
+
+        /* renamed from: Y */
+        public final int f7916Y;
+
+        static {
+                eb.a$c r0 = new eb.a$c
+                java.lang.String r1 = "UNKNOWN"
+                r2 = 0
+                r0.<init>(r1, r2, r2)
+                p076eb.C1811a.c.f7911Z = r0
+                eb.a$c r1 = new eb.a$c
+                java.lang.String r3 = "DATA_MESSAGE"
+                r4 = 1
+                r1.<init>(r3, r4, r4)
+                p076eb.C1811a.c.f7912a0 = r1
+                eb.a$c r3 = new eb.a$c
+                java.lang.String r5 = "TOPIC"
+                r6 = 2
+                r3.<init>(r5, r6, r6)
+                p076eb.C1811a.c.f7913b0 = r3
+                eb.a$c r5 = new eb.a$c
+                java.lang.String r7 = "DISPLAY_NOTIFICATION"
+                r8 = 3
+                r5.<init>(r7, r8, r8)
+                p076eb.C1811a.c.f7914c0 = r5
+                r7 = 4
+                eb.a$c[] r7 = new p076eb.C1811a.c[r7]
+                r7[r2] = r0
+                r7[r4] = r1
+                r7[r6] = r3
+                r7[r8] = r5
+                p076eb.C1811a.c.f7915d0 = r7
+                return
+        }
+
+        c(java.lang.String r1, int r2, int r3) {
+                r0 = this;
+                r0.<init>(r1, r2)
+                r0.f7916Y = r3
+                return
+        }
+
+        public static p076eb.C1811a.c valueOf(java.lang.String r1) {
+                java.lang.Class<eb.a$c> r0 = p076eb.C1811a.c.class
+                java.lang.Enum r1 = java.lang.Enum.valueOf(r0, r1)
+                eb.a$c r1 = (p076eb.C1811a.c) r1
+                return r1
+        }
+
+        public static p076eb.C1811a.c[] values() {
+                eb.a$c[] r0 = p076eb.C1811a.c.f7915d0
+                java.lang.Object r0 = r0.clone()
+                eb.a$c[] r0 = (p076eb.C1811a.c[]) r0
+                return r0
+        }
+
+        @Override // p145i7.InterfaceC3112u
+        /* renamed from: d */
+        public int mo4566d() {
+                r1 = this;
+                int r0 = r1.f7916Y
+                return r0
+        }
+    }
+
+    /* renamed from: eb.a$d */
+    public enum d extends java.lang.Enum<p076eb.C1811a.d> implements p145i7.InterfaceC3112u {
+
+        /* renamed from: Z */
+        public static final p076eb.C1811a.d f7917Z = null;
+
+        /* renamed from: a0 */
+        public static final p076eb.C1811a.d f7918a0 = null;
+
+        /* renamed from: b0 */
+        public static final p076eb.C1811a.d f7919b0 = null;
+
+        /* renamed from: c0 */
+        public static final p076eb.C1811a.d f7920c0 = null;
+
+        /* renamed from: d0 */
+        public static final /* synthetic */ p076eb.C1811a.d[] f7921d0 = null;
+
+        /* renamed from: Y */
+        public final int f7922Y;
+
+        static {
+                eb.a$d r0 = new eb.a$d
+                java.lang.String r1 = "UNKNOWN_OS"
+                r2 = 0
+                r0.<init>(r1, r2, r2)
+                p076eb.C1811a.d.f7917Z = r0
+                eb.a$d r1 = new eb.a$d
+                java.lang.String r3 = "ANDROID"
+                r4 = 1
+                r1.<init>(r3, r4, r4)
+                p076eb.C1811a.d.f7918a0 = r1
+                eb.a$d r3 = new eb.a$d
+                java.lang.String r5 = "IOS"
+                r6 = 2
+                r3.<init>(r5, r6, r6)
+                p076eb.C1811a.d.f7919b0 = r3
+                eb.a$d r5 = new eb.a$d
+                java.lang.String r7 = "WEB"
+                r8 = 3
+                r5.<init>(r7, r8, r8)
+                p076eb.C1811a.d.f7920c0 = r5
+                r7 = 4
+                eb.a$d[] r7 = new p076eb.C1811a.d[r7]
+                r7[r2] = r0
+                r7[r4] = r1
+                r7[r6] = r3
+                r7[r8] = r5
+                p076eb.C1811a.d.f7921d0 = r7
+                return
+        }
+
+        d(java.lang.String r1, int r2, int r3) {
+                r0 = this;
+                r0.<init>(r1, r2)
+                r0.f7922Y = r3
+                return
+        }
+
+        public static p076eb.C1811a.d valueOf(java.lang.String r1) {
+                java.lang.Class<eb.a$d> r0 = p076eb.C1811a.d.class
+                java.lang.Enum r1 = java.lang.Enum.valueOf(r0, r1)
+                eb.a$d r1 = (p076eb.C1811a.d) r1
+                return r1
+        }
+
+        public static p076eb.C1811a.d[] values() {
+                eb.a$d[] r0 = p076eb.C1811a.d.f7921d0
+                java.lang.Object r0 = r0.clone()
+                eb.a$d[] r0 = (p076eb.C1811a.d[]) r0
+                return r0
+        }
+
+        @Override // p145i7.InterfaceC3112u
+        /* renamed from: d */
+        public int mo4566d() {
+                r1 = this;
+                int r0 = r1.f7922Y
+                return r0
+        }
+    }
+
+    static {
+            eb.a$a r0 = new eb.a$a
+            r0.<init>()
+            r0.m4565a()
+            return
+    }
+
+    public C1811a(long r4, java.lang.String r6, java.lang.String r7, p076eb.C1811a.c r8, p076eb.C1811a.d r9, java.lang.String r10, java.lang.String r11, int r12, int r13, java.lang.String r14, long r15, p076eb.C1811a.b r17, java.lang.String r18, long r19, java.lang.String r21) {
+            r3 = this;
+            r0 = r3
+            r3.<init>()
+            r1 = r4
+            r0.f7879a = r1
+            r1 = r6
+            r0.f7880b = r1
+            r1 = r7
+            r0.f7881c = r1
+            r1 = r8
+            r0.f7882d = r1
+            r1 = r9
+            r0.f7883e = r1
+            r1 = r10
+            r0.f7884f = r1
+            r1 = r11
+            r0.f7885g = r1
+            r1 = r12
+            r0.f7886h = r1
+            r1 = r13
+            r0.f7887i = r1
+            r1 = r14
+            r0.f7888j = r1
+            r1 = r15
+            r0.f7889k = r1
+            r1 = r17
+            r0.f7890l = r1
+            r1 = r18
+            r0.f7891m = r1
+            r1 = r19
+            r0.f7892n = r1
+            r1 = r21
+            r0.f7893o = r1
+            return
+    }
+}

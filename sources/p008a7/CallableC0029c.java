@@ -1,0 +1,219 @@
+package p008a7;
+
+/* renamed from: a7.c */
+/* loaded from: classes.dex */
+public final class CallableC0029c implements java.util.concurrent.Callable<android.content.SharedPreferences> {
+
+    /* renamed from: a */
+    public final /* synthetic */ int f68a;
+
+    /* renamed from: b */
+    public final java.lang.Object f69b;
+
+    public CallableC0029c(android.content.Context r2) {
+            r1 = this;
+            r0 = 0
+            r1.f68a = r0
+            r1.f69b = r2
+            r1.<init>()
+            return
+    }
+
+    public CallableC0029c(p057db.C1418s r2) {
+            r1 = this;
+            r0 = 2
+            r1.f68a = r0
+            r1.<init>()
+            r1.f69b = r2
+            return
+    }
+
+    public /* synthetic */ CallableC0029c(p249o7.C4953a4 r2) {
+            r1 = this;
+            r0 = 1
+            r1.f68a = r0
+            r1.<init>()
+            r1.f69b = r2
+            return
+    }
+
+    @Override // java.util.concurrent.Callable
+    public android.content.SharedPreferences call() {
+            r14 = this;
+            int r0 = r14.f68a
+            r1 = 0
+            switch(r0) {
+                case 0: goto L13;
+                case 1: goto L7;
+                default: goto L6;
+            }
+        L6:
+            goto L1e
+        L7:
+            java.lang.Object r0 = r14.f69b
+            o7.a4 r0 = (p249o7.C4953a4) r0
+            k7.e6 r1 = new k7.e6
+            o7.z3 r0 = r0.f19571j
+            r1.<init>(r0)
+            return r1
+        L13:
+            java.lang.Object r0 = r14.f69b
+            android.content.Context r0 = (android.content.Context) r0
+            java.lang.String r2 = "google_sdk_flags"
+            android.content.SharedPreferences r0 = r0.getSharedPreferences(r2, r1)
+            return r0
+        L1e:
+            java.lang.Object r0 = r14.f69b
+            db.s r0 = (p057db.C1418s) r0
+            java.net.URL r2 = r0.f7091Y
+            java.lang.String r2 = java.lang.String.valueOf(r2)
+            int r3 = r2.length()
+            java.lang.StringBuilder r4 = new java.lang.StringBuilder
+            int r3 = r3 + 22
+            r4.<init>(r3)
+            java.lang.String r3 = "Starting download of: "
+            r4.append(r3)
+            r4.append(r2)
+            java.lang.String r2 = r4.toString()
+            java.lang.String r3 = "FirebaseMessaging"
+            android.util.Log.i(r3, r2)
+            java.net.URL r2 = r0.f7091Y
+            java.net.URLConnection r2 = r2.openConnection()
+            int r4 = r2.getContentLength()
+            r5 = 1048576(0x100000, float:1.469368E-39)
+            if (r4 > r5) goto L155
+            java.io.InputStream r2 = r2.getInputStream()
+            r0.f7093a0 = r2     // Catch: java.lang.Throwable -> L147
+            int r4 = p145i7.C3103l.f12493a     // Catch: java.lang.Throwable -> L147
+            i7.k r4 = new i7.k     // Catch: java.lang.Throwable -> L147
+            r4.<init>(r2)     // Catch: java.lang.Throwable -> L147
+            java.util.ArrayDeque r6 = new java.util.ArrayDeque     // Catch: java.lang.Throwable -> L147
+            r7 = 20
+            r6.<init>(r7)     // Catch: java.lang.Throwable -> L147
+            r7 = 8192(0x2000, float:1.148E-41)
+            r8 = 0
+        L69:
+            r9 = -1
+            r10 = 2147483639(0x7ffffff7, float:NaN)
+            if (r8 >= r10) goto La5
+            int r10 = r10 - r8
+            int r10 = java.lang.Math.min(r7, r10)     // Catch: java.lang.Throwable -> L147
+            byte[] r11 = new byte[r10]     // Catch: java.lang.Throwable -> L147
+            r6.add(r11)     // Catch: java.lang.Throwable -> L147
+            r12 = 0
+        L7a:
+            if (r12 >= r10) goto L8c
+            int r13 = r10 - r12
+            int r13 = r4.read(r11, r12, r13)     // Catch: java.lang.Throwable -> L147
+            if (r13 != r9) goto L89
+            byte[] r4 = p145i7.C3103l.m7570a(r6, r8)     // Catch: java.lang.Throwable -> L147
+            goto Laf
+        L89:
+            int r12 = r12 + r13
+            int r8 = r8 + r13
+            goto L7a
+        L8c:
+            long r9 = (long) r7     // Catch: java.lang.Throwable -> L147
+            long r9 = r9 + r9
+            r11 = 2147483647(0x7fffffff, double:1.060997895E-314)
+            int r7 = (r9 > r11 ? 1 : (r9 == r11 ? 0 : -1))
+            if (r7 <= 0) goto L99
+            r7 = 2147483647(0x7fffffff, float:NaN)
+            goto L69
+        L99:
+            r11 = -2147483648(0xffffffff80000000, double:NaN)
+            int r7 = (r9 > r11 ? 1 : (r9 == r11 ? 0 : -1))
+            if (r7 >= 0) goto La3
+            r7 = -2147483648(0xffffffff80000000, float:-0.0)
+            goto L69
+        La3:
+            int r7 = (int) r9     // Catch: java.lang.Throwable -> L147
+            goto L69
+        La5:
+            int r4 = r4.read()     // Catch: java.lang.Throwable -> L147
+            if (r4 != r9) goto L13f
+            byte[] r4 = p145i7.C3103l.m7570a(r6, r10)     // Catch: java.lang.Throwable -> L147
+        Laf:
+            r2.close()
+            r2 = 2
+            boolean r2 = android.util.Log.isLoggable(r3, r2)
+            if (r2 == 0) goto Le2
+            java.net.URL r2 = r0.f7091Y
+            java.lang.String r2 = java.lang.String.valueOf(r2)
+            int r6 = r2.length()
+            java.lang.StringBuilder r7 = new java.lang.StringBuilder
+            int r6 = r6 + 34
+            r7.<init>(r6)
+            java.lang.String r6 = "Downloaded "
+            r7.append(r6)
+            int r6 = r4.length
+            r7.append(r6)
+            java.lang.String r6 = " bytes from "
+            r7.append(r6)
+            r7.append(r2)
+            java.lang.String r2 = r7.toString()
+            android.util.Log.v(r3, r2)
+        Le2:
+            int r2 = r4.length
+            if (r2 > r5) goto L137
+            int r2 = r4.length
+            android.graphics.Bitmap r1 = android.graphics.BitmapFactory.decodeByteArray(r4, r1, r2)
+            if (r1 == 0) goto L114
+            r2 = 3
+            boolean r2 = android.util.Log.isLoggable(r3, r2)
+            if (r2 == 0) goto L113
+            java.net.URL r0 = r0.f7091Y
+            java.lang.String r0 = java.lang.String.valueOf(r0)
+            int r2 = r0.length()
+            java.lang.StringBuilder r4 = new java.lang.StringBuilder
+            int r2 = r2 + 31
+            r4.<init>(r2)
+            java.lang.String r2 = "Successfully downloaded image: "
+            r4.append(r2)
+            r4.append(r0)
+            java.lang.String r0 = r4.toString()
+            android.util.Log.d(r3, r0)
+        L113:
+            return r1
+        L114:
+            java.io.IOException r1 = new java.io.IOException
+            java.net.URL r0 = r0.f7091Y
+            java.lang.String r0 = java.lang.String.valueOf(r0)
+            int r2 = r0.length()
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder
+            int r2 = r2 + 24
+            r3.<init>(r2)
+            java.lang.String r2 = "Failed to decode image: "
+            r3.append(r2)
+            r3.append(r0)
+            java.lang.String r0 = r3.toString()
+            r1.<init>(r0)
+            throw r1
+        L137:
+            java.io.IOException r0 = new java.io.IOException
+            java.lang.String r1 = "Image exceeds max size of 1048576"
+            r0.<init>(r1)
+            throw r0
+        L13f:
+            java.lang.OutOfMemoryError r0 = new java.lang.OutOfMemoryError     // Catch: java.lang.Throwable -> L147
+            java.lang.String r1 = "input is too large to fit in a byte array"
+            r0.<init>(r1)     // Catch: java.lang.Throwable -> L147
+            throw r0     // Catch: java.lang.Throwable -> L147
+        L147:
+            r0 = move-exception
+            if (r2 == 0) goto L154
+            r2.close()     // Catch: java.lang.Throwable -> L14e
+            goto L154
+        L14e:
+            r1 = move-exception
+            t1.f r2 = p145i7.C3109r.f12497a
+            r2.mo7571f(r0, r1)
+        L154:
+            throw r0
+        L155:
+            java.io.IOException r0 = new java.io.IOException
+            java.lang.String r1 = "Content-Length exceeds max size of 1048576"
+            r0.<init>(r1)
+            throw r0
+    }
+}

@@ -1,0 +1,474 @@
+package p015ak;
+
+/* renamed from: ak.c */
+/* loaded from: classes.dex */
+public final class C0119c {
+
+    /* renamed from: a */
+    public static volatile int f452a;
+
+    /* renamed from: b */
+    public static final p445z2.C7240n f453b = null;
+
+    /* renamed from: c */
+    public static final p422y.C7095e f454c = null;
+
+    /* renamed from: d */
+    public static boolean f455d;
+
+    /* renamed from: e */
+    public static final java.lang.String[] f456e = null;
+
+    /* renamed from: f */
+    public static java.lang.String f457f;
+
+    static {
+            z2.n r0 = new z2.n
+            r1 = 2
+            r0.<init>(r1)
+            p015ak.C0119c.f453b = r0
+            y.e r0 = new y.e
+            r1 = 27
+            r0.<init>(r1)
+            p015ak.C0119c.f454c = r0
+            java.lang.String r0 = "slf4j.detectLoggerNameMismatch"
+            r1 = 0
+            java.lang.String r1 = java.lang.System.getProperty(r0)     // Catch: java.lang.SecurityException -> L19
+            goto L1a
+        L19:
+        L1a:
+            if (r1 != 0) goto L1e
+            r0 = 0
+            goto L24
+        L1e:
+            java.lang.String r0 = "true"
+            boolean r0 = r1.equalsIgnoreCase(r0)
+        L24:
+            p015ak.C0119c.f455d = r0
+            java.lang.String r0 = "1.6"
+            java.lang.String r1 = "1.7"
+            java.lang.String[] r0 = new java.lang.String[]{r0, r1}
+            p015ak.C0119c.f456e = r0
+            java.lang.String r0 = "org/slf4j/impl/StaticLoggerBinder.class"
+            p015ak.C0119c.f457f = r0
+            return
+    }
+
+    public C0119c() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    /* renamed from: a */
+    public static java.util.Set<java.net.URL> m179a() {
+            java.util.LinkedHashSet r0 = new java.util.LinkedHashSet
+            r0.<init>()
+            java.lang.Class<ak.c> r1 = p015ak.C0119c.class
+            java.lang.ClassLoader r1 = r1.getClassLoader()     // Catch: java.io.IOException -> L2a
+            if (r1 != 0) goto L14
+            java.lang.String r1 = p015ak.C0119c.f457f     // Catch: java.io.IOException -> L2a
+            java.util.Enumeration r1 = java.lang.ClassLoader.getSystemResources(r1)     // Catch: java.io.IOException -> L2a
+            goto L1a
+        L14:
+            java.lang.String r2 = p015ak.C0119c.f457f     // Catch: java.io.IOException -> L2a
+            java.util.Enumeration r1 = r1.getResources(r2)     // Catch: java.io.IOException -> L2a
+        L1a:
+            boolean r2 = r1.hasMoreElements()     // Catch: java.io.IOException -> L2a
+            if (r2 == 0) goto L30
+            java.lang.Object r2 = r1.nextElement()     // Catch: java.io.IOException -> L2a
+            java.net.URL r2 = (java.net.URL) r2     // Catch: java.io.IOException -> L2a
+            r0.add(r2)     // Catch: java.io.IOException -> L2a
+            goto L1a
+        L2a:
+            r1 = move-exception
+            java.lang.String r2 = "Error getting resources from path"
+            ck.C0996e.m2729b(r2, r1)
+        L30:
+            return r0
+    }
+
+    /* renamed from: b */
+    public static void m180b() {
+            z2.n r0 = p015ak.C0119c.f453b
+            monitor-enter(r0)
+            r1 = 1
+            r0.f27828b0 = r1     // Catch: java.lang.Throwable -> L33
+            java.util.Objects.requireNonNull(r0)     // Catch: java.lang.Throwable -> L33
+            java.util.ArrayList r1 = new java.util.ArrayList     // Catch: java.lang.Throwable -> L33
+            java.util.Set<c3.d> r2 = r0.f27826Z     // Catch: java.lang.Throwable -> L33
+            java.util.Map r2 = (java.util.Map) r2     // Catch: java.lang.Throwable -> L33
+            java.util.Collection r2 = r2.values()     // Catch: java.lang.Throwable -> L33
+            r1.<init>(r2)     // Catch: java.lang.Throwable -> L33
+            java.util.Iterator r1 = r1.iterator()     // Catch: java.lang.Throwable -> L33
+        L1a:
+            boolean r2 = r1.hasNext()     // Catch: java.lang.Throwable -> L33
+            if (r2 == 0) goto L2f
+            java.lang.Object r2 = r1.next()     // Catch: java.lang.Throwable -> L33
+            ck.d r2 = (ck.C0995d) r2     // Catch: java.lang.Throwable -> L33
+            java.lang.String r3 = r2.f5085Y     // Catch: java.lang.Throwable -> L33
+            ak.b r3 = m181c(r3)     // Catch: java.lang.Throwable -> L33
+            r2.f5086Z = r3     // Catch: java.lang.Throwable -> L33
+            goto L1a
+        L2f:
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L33
+            return
+        L31:
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L33
+            throw r1
+        L33:
+            r1 = move-exception
+            goto L31
+    }
+
+    /* renamed from: c */
+    public static p015ak.InterfaceC0118b m181c(java.lang.String r3) {
+            int r0 = p015ak.C0119c.f452a
+            r1 = 1
+            if (r0 != 0) goto L16
+            java.lang.Class<ak.c> r0 = p015ak.C0119c.class
+            monitor-enter(r0)
+            int r2 = p015ak.C0119c.f452a     // Catch: java.lang.Throwable -> L13
+            if (r2 != 0) goto L11
+            p015ak.C0119c.f452a = r1     // Catch: java.lang.Throwable -> L13
+            m183e()     // Catch: java.lang.Throwable -> L13
+        L11:
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L13
+            goto L16
+        L13:
+            r3 = move-exception
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L13
+            throw r3
+        L16:
+            int r0 = p015ak.C0119c.f452a
+            if (r0 == r1) goto L3b
+            r1 = 2
+            if (r0 == r1) goto L33
+            r1 = 3
+            if (r0 == r1) goto L2e
+            r1 = 4
+            if (r0 != r1) goto L26
+            y.e r0 = p015ak.C0119c.f454c
+            goto L3d
+        L26:
+            java.lang.IllegalStateException r3 = new java.lang.IllegalStateException
+            java.lang.String r0 = "Unreachable code"
+            r3.<init>(r0)
+            throw r3
+        L2e:
+            dk.b r0 = dk.C1486b.f7250b
+            ak.a r0 = r0.f7253a
+            goto L3d
+        L33:
+            java.lang.IllegalStateException r3 = new java.lang.IllegalStateException
+            java.lang.String r0 = "org.slf4j.LoggerFactory in failed state. Original exception was thrown EARLIER. See also http://www.slf4j.org/codes.html#unsuccessfulInit"
+            r3.<init>(r0)
+            throw r3
+        L3b:
+            z2.n r0 = p015ak.C0119c.f453b
+        L3d:
+            ak.b r3 = r0.mo176b(r3)
+            return r3
+    }
+
+    /* renamed from: d */
+    public static boolean m182d() {
+            java.lang.String r0 = "java.vendor.url"
+            java.lang.String r0 = java.lang.System.getProperty(r0)     // Catch: java.lang.SecurityException -> L7
+            goto L8
+        L7:
+            r0 = 0
+        L8:
+            if (r0 != 0) goto Lc
+            r0 = 0
+            return r0
+        Lc:
+            java.lang.String r0 = r0.toLowerCase()
+            java.lang.String r1 = "android"
+            boolean r0 = r0.contains(r1)
+            return r0
+    }
+
+    /* renamed from: e */
+    public static final void m183e() {
+            java.lang.String r0 = "Failed to instantiate SLF4J LoggerFactory"
+            r1 = 0
+            r2 = 2
+            r3 = 3
+            r4 = 1
+            r5 = 0
+            boolean r6 = m182d()     // Catch: java.lang.Exception -> L27 java.lang.NoSuchMethodError -> L35 java.lang.NoClassDefFoundError -> L56
+            if (r6 != 0) goto L14
+            java.util.Set r1 = m179a()     // Catch: java.lang.Exception -> L27 java.lang.NoSuchMethodError -> L35 java.lang.NoClassDefFoundError -> L56
+            m186h(r1)     // Catch: java.lang.Exception -> L27 java.lang.NoSuchMethodError -> L35 java.lang.NoClassDefFoundError -> L56
+        L14:
+            dk.b r6 = dk.C1486b.f7250b     // Catch: java.lang.Exception -> L27 java.lang.NoSuchMethodError -> L35 java.lang.NoClassDefFoundError -> L56
+            p015ak.C0119c.f452a = r3     // Catch: java.lang.Exception -> L27 java.lang.NoSuchMethodError -> L35 java.lang.NoClassDefFoundError -> L56
+            m185g(r1)     // Catch: java.lang.Exception -> L27 java.lang.NoSuchMethodError -> L35 java.lang.NoClassDefFoundError -> L56
+            m180b()     // Catch: java.lang.Exception -> L27 java.lang.NoSuchMethodError -> L35 java.lang.NoClassDefFoundError -> L56
+            m184f()     // Catch: java.lang.Exception -> L27 java.lang.NoSuchMethodError -> L35 java.lang.NoClassDefFoundError -> L56
+            z2.n r1 = p015ak.C0119c.f453b     // Catch: java.lang.Exception -> L27 java.lang.NoSuchMethodError -> L35 java.lang.NoClassDefFoundError -> L56
+            r1.m14305a()     // Catch: java.lang.Exception -> L27 java.lang.NoSuchMethodError -> L35 java.lang.NoClassDefFoundError -> L56
+            goto L86
+        L27:
+            r1 = move-exception
+            p015ak.C0119c.f452a = r2
+            ck.C0996e.m2729b(r0, r1)
+            java.lang.IllegalStateException r0 = new java.lang.IllegalStateException
+            java.lang.String r2 = "Unexpected initialization failure"
+            r0.<init>(r2, r1)
+            throw r0
+        L35:
+            r0 = move-exception
+            java.lang.String r1 = r0.getMessage()
+            if (r1 == 0) goto L55
+            java.lang.String r3 = "org.slf4j.impl.StaticLoggerBinder.getSingleton()"
+            boolean r1 = r1.contains(r3)
+            if (r1 == 0) goto L55
+            p015ak.C0119c.f452a = r2
+            java.lang.String r1 = "slf4j-api 1.6.x (or later) is incompatible with this binding."
+            ck.C0996e.m2728a(r1)
+            java.lang.String r1 = "Your binding is version 1.5.5 or earlier."
+            ck.C0996e.m2728a(r1)
+            java.lang.String r1 = "Upgrade your binding to version 1.6.x."
+            ck.C0996e.m2728a(r1)
+        L55:
+            throw r0
+        L56:
+            r1 = move-exception
+            java.lang.String r6 = r1.getMessage()
+            if (r6 != 0) goto L5e
+            goto L71
+        L5e:
+            java.lang.String r7 = "org/slf4j/impl/StaticLoggerBinder"
+            boolean r7 = r6.contains(r7)
+            if (r7 == 0) goto L67
+            goto L6f
+        L67:
+            java.lang.String r7 = "org.slf4j.impl.StaticLoggerBinder"
+            boolean r6 = r6.contains(r7)
+            if (r6 == 0) goto L71
+        L6f:
+            r6 = 1
+            goto L72
+        L71:
+            r6 = 0
+        L72:
+            if (r6 == 0) goto Ld3
+            r0 = 4
+            p015ak.C0119c.f452a = r0
+            java.lang.String r0 = "Failed to load class \"org.slf4j.impl.StaticLoggerBinder\"."
+            ck.C0996e.m2728a(r0)
+            java.lang.String r0 = "Defaulting to no-operation (NOP) logger implementation"
+            ck.C0996e.m2728a(r0)
+            java.lang.String r0 = "See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details."
+            ck.C0996e.m2728a(r0)
+        L86:
+            int r0 = p015ak.C0119c.f452a
+            if (r0 != r3) goto Ld2
+            java.lang.String r0 = dk.C1486b.f7251c     // Catch: java.lang.Throwable -> Lcc java.lang.NoSuchFieldError -> Ld2
+            java.lang.String[] r1 = p015ak.C0119c.f456e     // Catch: java.lang.Throwable -> Lcc java.lang.NoSuchFieldError -> Ld2
+            int r2 = r1.length     // Catch: java.lang.Throwable -> Lcc java.lang.NoSuchFieldError -> Ld2
+            r3 = 0
+        L90:
+            if (r5 >= r2) goto L9e
+            r6 = r1[r5]     // Catch: java.lang.Throwable -> Lcc java.lang.NoSuchFieldError -> Ld2
+            boolean r6 = r0.startsWith(r6)     // Catch: java.lang.Throwable -> Lcc java.lang.NoSuchFieldError -> Ld2
+            if (r6 == 0) goto L9b
+            r3 = 1
+        L9b:
+            int r5 = r5 + 1
+            goto L90
+        L9e:
+            if (r3 != 0) goto Ld2
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> Lcc java.lang.NoSuchFieldError -> Ld2
+            r1.<init>()     // Catch: java.lang.Throwable -> Lcc java.lang.NoSuchFieldError -> Ld2
+            java.lang.String r2 = "The requested version "
+            r1.append(r2)     // Catch: java.lang.Throwable -> Lcc java.lang.NoSuchFieldError -> Ld2
+            r1.append(r0)     // Catch: java.lang.Throwable -> Lcc java.lang.NoSuchFieldError -> Ld2
+            java.lang.String r0 = " by your slf4j binding is not compatible with "
+            r1.append(r0)     // Catch: java.lang.Throwable -> Lcc java.lang.NoSuchFieldError -> Ld2
+            java.lang.String[] r0 = p015ak.C0119c.f456e     // Catch: java.lang.Throwable -> Lcc java.lang.NoSuchFieldError -> Ld2
+            java.util.List r0 = java.util.Arrays.asList(r0)     // Catch: java.lang.Throwable -> Lcc java.lang.NoSuchFieldError -> Ld2
+            java.lang.String r0 = r0.toString()     // Catch: java.lang.Throwable -> Lcc java.lang.NoSuchFieldError -> Ld2
+            r1.append(r0)     // Catch: java.lang.Throwable -> Lcc java.lang.NoSuchFieldError -> Ld2
+            java.lang.String r0 = r1.toString()     // Catch: java.lang.Throwable -> Lcc java.lang.NoSuchFieldError -> Ld2
+            ck.C0996e.m2728a(r0)     // Catch: java.lang.Throwable -> Lcc java.lang.NoSuchFieldError -> Ld2
+            java.lang.String r0 = "See http://www.slf4j.org/codes.html#version_mismatch for further details."
+            ck.C0996e.m2728a(r0)     // Catch: java.lang.Throwable -> Lcc java.lang.NoSuchFieldError -> Ld2
+            goto Ld2
+        Lcc:
+            r0 = move-exception
+            java.lang.String r1 = "Unexpected problem occured during version sanity check"
+            ck.C0996e.m2729b(r1, r0)
+        Ld2:
+            return
+        Ld3:
+            p015ak.C0119c.f452a = r2
+            ck.C0996e.m2729b(r0, r1)
+            throw r1
+    }
+
+    /* renamed from: f */
+    public static void m184f() {
+            z2.n r0 = p015ak.C0119c.f453b
+            java.util.List<c3.d> r0 = r0.f27827a0
+            java.util.concurrent.LinkedBlockingQueue r0 = (java.util.concurrent.LinkedBlockingQueue) r0
+            int r1 = r0.size()
+            java.util.ArrayList r2 = new java.util.ArrayList
+            r3 = 128(0x80, float:1.8E-43)
+            r2.<init>(r3)
+            r4 = 0
+            r5 = 0
+        L13:
+            int r6 = r0.drainTo(r2, r3)
+            if (r6 != 0) goto L1a
+            return
+        L1a:
+            java.util.Iterator r6 = r2.iterator()
+        L1e:
+            boolean r7 = r6.hasNext()
+            if (r7 == 0) goto Lba
+            java.lang.Object r7 = r6.next()
+            bk.c r7 = (p028bk.C0811c) r7
+            if (r7 != 0) goto L2d
+            goto L5d
+        L2d:
+            ck.d r8 = r7.f4417a
+            java.lang.String r9 = r8.f5085Y
+            ak.b r10 = r8.f5086Z
+            r11 = 1
+            if (r10 != 0) goto L38
+            r10 = 1
+            goto L39
+        L38:
+            r10 = 0
+        L39:
+            if (r10 != 0) goto Lb2
+            ak.b r10 = r8.f5086Z
+            boolean r10 = r10 instanceof ck.C0994c
+            if (r10 == 0) goto L42
+            goto L5d
+        L42:
+            boolean r10 = r8.m2727c()
+            if (r10 == 0) goto L5a
+            boolean r9 = r8.m2727c()
+            if (r9 == 0) goto L5d
+            java.lang.reflect.Method r9 = r8.f5088b0     // Catch: java.lang.Throwable -> L5d
+            ak.b r8 = r8.f5086Z     // Catch: java.lang.Throwable -> L5d
+            java.lang.Object[] r10 = new java.lang.Object[r11]     // Catch: java.lang.Throwable -> L5d
+            r10[r4] = r7     // Catch: java.lang.Throwable -> L5d
+            r9.invoke(r8, r10)     // Catch: java.lang.Throwable -> L5d
+            goto L5d
+        L5a:
+            ck.C0996e.m2728a(r9)
+        L5d:
+            int r8 = r5 + 1
+            if (r5 != 0) goto Laf
+            ck.d r5 = r7.f4417a
+            boolean r5 = r5.m2727c()
+            if (r5 == 0) goto L8d
+            java.lang.StringBuilder r5 = new java.lang.StringBuilder
+            r5.<init>()
+            java.lang.String r7 = "A number ("
+            r5.append(r7)
+            r5.append(r1)
+            java.lang.String r7 = ") of logging calls during the initialization phase have been intercepted and are"
+            r5.append(r7)
+            java.lang.String r5 = r5.toString()
+            ck.C0996e.m2728a(r5)
+            java.lang.String r5 = "now being replayed. These are subject to the filtering rules of the underlying logging system."
+            ck.C0996e.m2728a(r5)
+            java.lang.String r5 = "See also http://www.slf4j.org/codes.html#replay"
+            ck.C0996e.m2728a(r5)
+            goto Laf
+        L8d:
+            ck.d r5 = r7.f4417a
+            ak.b r5 = r5.f5086Z
+            boolean r5 = r5 instanceof ck.C0994c
+            if (r5 == 0) goto L96
+            goto Laf
+        L96:
+            java.lang.String r5 = "The following set of substitute loggers may have been accessed"
+            ck.C0996e.m2728a(r5)
+            java.lang.String r5 = "during the initialization phase. Logging calls during this"
+            ck.C0996e.m2728a(r5)
+            java.lang.String r5 = "phase were not honored. However, subsequent logging calls to these"
+            ck.C0996e.m2728a(r5)
+            java.lang.String r5 = "loggers will work as normally expected."
+            ck.C0996e.m2728a(r5)
+            java.lang.String r5 = "See also http://www.slf4j.org/codes.html#substituteLogger"
+            ck.C0996e.m2728a(r5)
+        Laf:
+            r5 = r8
+            goto L1e
+        Lb2:
+            java.lang.IllegalStateException r0 = new java.lang.IllegalStateException
+            java.lang.String r1 = "Delegate logger cannot be null at this state."
+            r0.<init>(r1)
+            throw r0
+        Lba:
+            r2.clear()
+            goto L13
+    }
+
+    /* renamed from: g */
+    public static void m185g(java.util.Set<java.net.URL> r1) {
+            if (r1 == 0) goto L29
+            int r1 = r1.size()
+            r0 = 1
+            if (r1 <= r0) goto La
+            goto Lb
+        La:
+            r0 = 0
+        Lb:
+            if (r0 == 0) goto L29
+            java.lang.String r1 = "Actual binding is of type ["
+            java.lang.StringBuilder r1 = android.support.v4.media.C0144c.m256a(r1)
+            dk.b r0 = dk.C1486b.f7250b
+            java.util.Objects.requireNonNull(r0)
+            java.lang.String r0 = dk.C1486b.f7252d
+            r1.append(r0)
+            java.lang.String r0 = "]"
+            r1.append(r0)
+            java.lang.String r1 = r1.toString()
+            ck.C0996e.m2728a(r1)
+        L29:
+            return
+    }
+
+    /* renamed from: h */
+    public static void m186h(java.util.Set<java.net.URL> r3) {
+            int r0 = r3.size()
+            r1 = 1
+            if (r0 <= r1) goto L8
+            goto L9
+        L8:
+            r1 = 0
+        L9:
+            if (r1 == 0) goto L3f
+            java.lang.String r0 = "Class path contains multiple SLF4J bindings."
+            ck.C0996e.m2728a(r0)
+            java.util.Iterator r3 = r3.iterator()
+        L14:
+            boolean r0 = r3.hasNext()
+            if (r0 == 0) goto L3a
+            java.lang.Object r0 = r3.next()
+            java.net.URL r0 = (java.net.URL) r0
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            r1.<init>()
+            java.lang.String r2 = "Found binding in ["
+            r1.append(r2)
+            r1.append(r0)
+            java.lang.String r0 = "]"
+            r1.append(r0)
+            java.lang.String r0 = r1.toString()
+            ck.C0996e.m2728a(r0)
+            goto L14
+        L3a:
+            java.lang.String r3 = "See http://www.slf4j.org/codes.html#multiple_bindings for an explanation."
+            ck.C0996e.m2728a(r3)
+        L3f:
+            return
+    }
+}

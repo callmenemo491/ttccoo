@@ -1,0 +1,382 @@
+package p454zc;
+
+/* renamed from: zc.k */
+/* loaded from: classes.dex */
+public class C7287k {
+
+    /* renamed from: a */
+    public ad.C0061d f27941a;
+
+    /* renamed from: b */
+    public android.os.HandlerThread f27942b;
+
+    /* renamed from: c */
+    public android.os.Handler f27943c;
+
+    /* renamed from: d */
+    public p454zc.C7284h f27944d;
+
+    /* renamed from: e */
+    public android.os.Handler f27945e;
+
+    /* renamed from: f */
+    public android.graphics.Rect f27946f;
+
+    /* renamed from: g */
+    public boolean f27947g;
+
+    /* renamed from: h */
+    public final java.lang.Object f27948h;
+
+    /* renamed from: i */
+    public final android.os.Handler.Callback f27949i;
+
+    /* renamed from: j */
+    public final ad.InterfaceC0069l f27950j;
+
+    /* renamed from: zc.k$a */
+    public class a implements android.os.Handler.Callback {
+
+        /* renamed from: Y */
+        public final /* synthetic */ p454zc.C7287k f27951Y;
+
+        public a(p454zc.C7287k r1) {
+                r0 = this;
+                r0.f27951Y = r1
+                r0.<init>()
+                return
+        }
+
+        @Override // android.os.Handler.Callback
+        public boolean handleMessage(android.os.Message r21) {
+                r20 = this;
+                r1 = r20
+                r0 = r21
+                int r2 = r0.what
+                r3 = 1
+                r4 = 2131362786(0x7f0a03e2, float:1.8345362E38)
+                if (r2 != r4) goto L1c8
+                zc.k r2 = r1.f27951Y
+                java.lang.Object r0 = r0.obj
+                zc.s r0 = (p454zc.C7295s) r0
+                java.util.Objects.requireNonNull(r2)
+                long r4 = java.lang.System.currentTimeMillis()
+                android.graphics.Rect r6 = r2.f27946f
+                r0.f27968d = r6
+                r7 = 0
+                if (r6 != 0) goto L23
+                r6 = r7
+                goto Lf0
+            L23:
+                zb.c r6 = r0.f27965a
+                int r8 = r0.f27967c
+                java.util.Objects.requireNonNull(r6)
+                r9 = 90
+                r10 = 0
+                if (r8 == r9) goto L88
+                r9 = 180(0xb4, float:2.52E-43)
+                if (r8 == r9) goto L66
+                r9 = 270(0x10e, float:3.78E-43)
+                if (r8 == r9) goto L39
+                goto Lb4
+            L39:
+                zb.c r8 = new zb.c
+                byte[] r9 = r6.f27906a
+                int r11 = r6.f27907b
+                int r12 = r6.f27908c
+                int r13 = r11 * r12
+                byte[] r14 = new byte[r13]
+                int r13 = r13 + (-1)
+                r15 = 0
+            L48:
+                if (r15 >= r11) goto L5e
+                int r16 = r12 + (-1)
+            L4c:
+                if (r16 < 0) goto L5b
+                int r17 = r16 * r11
+                int r17 = r17 + r15
+                r17 = r9[r17]
+                r14[r13] = r17
+                int r13 = r13 + (-1)
+                int r16 = r16 + (-1)
+                goto L4c
+            L5b:
+                int r15 = r15 + 1
+                goto L48
+            L5e:
+                int r9 = r6.f27908c
+                int r6 = r6.f27907b
+                r8.<init>(r14, r9, r6)
+                goto Lb3
+            L66:
+                zb.c r8 = new zb.c
+                byte[] r9 = r6.f27906a
+                int r11 = r6.f27907b
+                int r12 = r6.f27908c
+                int r11 = r11 * r12
+                byte[] r12 = new byte[r11]
+                int r13 = r11 + (-1)
+                r14 = 0
+            L75:
+                if (r14 >= r11) goto L80
+                r15 = r9[r14]
+                r12[r13] = r15
+                int r13 = r13 + (-1)
+                int r14 = r14 + 1
+                goto L75
+            L80:
+                int r9 = r6.f27907b
+                int r6 = r6.f27908c
+                r8.<init>(r12, r9, r6)
+                goto Lb3
+            L88:
+                zb.c r8 = new zb.c
+                byte[] r9 = r6.f27906a
+                int r11 = r6.f27907b
+                int r12 = r6.f27908c
+                int r13 = r11 * r12
+                byte[] r13 = new byte[r13]
+                r14 = 0
+                r15 = 0
+            L96:
+                if (r14 >= r11) goto Lac
+                int r16 = r12 + (-1)
+            L9a:
+                if (r16 < 0) goto La9
+                int r17 = r16 * r11
+                int r17 = r17 + r14
+                r17 = r9[r17]
+                r13[r15] = r17
+                int r15 = r15 + 1
+                int r16 = r16 + (-1)
+                goto L9a
+            La9:
+                int r14 = r14 + 1
+                goto L96
+            Lac:
+                int r9 = r6.f27908c
+                int r6 = r6.f27907b
+                r8.<init>(r13, r9, r6)
+            Lb3:
+                r6 = r8
+            Lb4:
+                android.graphics.Rect r8 = r0.f27968d
+                int r9 = r8.width()
+                int r9 = r9 / r3
+                int r11 = r8.height()
+                int r15 = r11 / 1
+                int r11 = r8.top
+                int r12 = r9 * r15
+                byte[] r12 = new byte[r12]
+                int r13 = r6.f27907b
+                int r11 = r11 * r13
+                int r8 = r8.left
+                int r11 = r11 + r8
+            Lce:
+                if (r10 >= r15) goto Ldd
+                int r8 = r10 * r9
+                byte[] r13 = r6.f27906a
+                java.lang.System.arraycopy(r13, r11, r12, r8, r9)
+                int r8 = r6.f27907b
+                int r11 = r11 + r8
+                int r10 = r10 + 1
+                goto Lce
+            Ldd:
+                sb.l r6 = new sb.l
+                r8 = 0
+                r16 = 0
+                r19 = 0
+                r11 = r6
+                r13 = r9
+                r14 = r15
+                r10 = r15
+                r15 = r8
+                r17 = r9
+                r18 = r10
+                r11.<init>(r12, r13, r14, r15, r16, r17, r18, r19)
+            Lf0:
+                if (r6 == 0) goto L123
+                zc.h r8 = r2.f27944d
+                hb.h r6 = r8.mo14390b(r6)
+                java.util.List<sb.q> r9 = r8.f27939b
+                r9.clear()
+                sb.m r9 = r8.f27938a     // Catch: java.lang.Throwable -> L117 java.lang.Exception -> L11e
+                boolean r10 = r9 instanceof sb.C6015i     // Catch: java.lang.Throwable -> L117 java.lang.Exception -> L11e
+                if (r10 == 0) goto L111
+                sb.i r9 = (sb.C6015i) r9     // Catch: java.lang.Throwable -> L117 java.lang.Exception -> L11e
+                sb.m[] r10 = r9.f23199b     // Catch: java.lang.Throwable -> L117 java.lang.Exception -> L11e
+                if (r10 != 0) goto L10c
+                r9.m12498e(r7)     // Catch: java.lang.Throwable -> L117 java.lang.Exception -> L11e
+            L10c:
+                sb.o r6 = r9.m12497d(r6)     // Catch: java.lang.Throwable -> L117 java.lang.Exception -> L11e
+                goto L115
+            L111:
+                sb.o r6 = r9.mo2335a(r6)     // Catch: java.lang.Throwable -> L117 java.lang.Exception -> L11e
+            L115:
+                r7 = r6
+                goto L11e
+            L117:
+                r0 = move-exception
+                sb.m r2 = r8.f27938a
+                r2.mo2336b()
+                throw r0
+            L11e:
+                sb.m r6 = r8.f27938a
+                r6.mo2336b()
+            L123:
+                if (r7 == 0) goto L15a
+                long r8 = java.lang.System.currentTimeMillis()
+                java.lang.String r6 = "k"
+                java.lang.String r10 = "Found barcode in "
+                java.lang.StringBuilder r10 = android.support.v4.media.C0144c.m256a(r10)
+                long r8 = r8 - r4
+                r10.append(r8)
+                java.lang.String r4 = " ms"
+                r10.append(r4)
+                java.lang.String r4 = r10.toString()
+                android.util.Log.d(r6, r4)
+                android.os.Handler r4 = r2.f27945e
+                if (r4 == 0) goto L168
+                zc.c r5 = new zc.c
+                r5.<init>(r7, r0)
+                r6 = 2131362788(0x7f0a03e4, float:1.8345366E38)
+                android.os.Message r4 = android.os.Message.obtain(r4, r6, r5)
+                android.os.Bundle r5 = new android.os.Bundle
+                r5.<init>()
+                r4.setData(r5)
+                goto L165
+            L15a:
+                android.os.Handler r4 = r2.f27945e
+                if (r4 == 0) goto L168
+                r5 = 2131362787(0x7f0a03e3, float:1.8345364E38)
+                android.os.Message r4 = android.os.Message.obtain(r4, r5)
+            L165:
+                r4.sendToTarget()
+            L168:
+                android.os.Handler r4 = r2.f27945e
+                if (r4 == 0) goto L1c4
+                zc.h r4 = r2.f27944d
+                java.util.Objects.requireNonNull(r4)
+                java.util.ArrayList r5 = new java.util.ArrayList
+                java.util.List<sb.q> r4 = r4.f27939b
+                r5.<init>(r4)
+                java.util.ArrayList r4 = new java.util.ArrayList
+                int r6 = r5.size()
+                r4.<init>(r6)
+                java.util.Iterator r5 = r5.iterator()
+            L185:
+                boolean r6 = r5.hasNext()
+                if (r6 == 0) goto L1b8
+                java.lang.Object r6 = r5.next()
+                sb.q r6 = (sb.C6023q) r6
+                float r7 = r6.f23222a
+                float r8 = (float) r3
+                float r7 = r7 * r8
+                android.graphics.Rect r9 = r0.f27968d
+                int r10 = r9.left
+                float r10 = (float) r10
+                float r7 = r7 + r10
+                float r6 = r6.f23223b
+                float r6 = r6 * r8
+                int r8 = r9.top
+                float r8 = (float) r8
+                float r6 = r6 + r8
+                boolean r8 = r0.f27969e
+                if (r8 == 0) goto L1af
+                zb.c r8 = r0.f27965a
+                int r8 = r8.f27907b
+                float r8 = (float) r8
+                float r7 = r8 - r7
+            L1af:
+                sb.q r8 = new sb.q
+                r8.<init>(r7, r6)
+                r4.add(r8)
+                goto L185
+            L1b8:
+                android.os.Handler r0 = r2.f27945e
+                r5 = 2131362789(0x7f0a03e5, float:1.8345368E38)
+                android.os.Message r0 = android.os.Message.obtain(r0, r5, r4)
+                r0.sendToTarget()
+            L1c4:
+                r2.m14392a()
+                goto L1d2
+            L1c8:
+                r0 = 2131362790(0x7f0a03e6, float:1.834537E38)
+                if (r2 != r0) goto L1d2
+                zc.k r0 = r1.f27951Y
+                r0.m14392a()
+            L1d2:
+                return r3
+        }
+    }
+
+    /* renamed from: zc.k$b */
+    public class b implements ad.InterfaceC0069l {
+
+        /* renamed from: a */
+        public final /* synthetic */ p454zc.C7287k f27952a;
+
+        public b(p454zc.C7287k r1) {
+                r0 = this;
+                r0.f27952a = r1
+                r0.<init>()
+                return
+        }
+
+        /* renamed from: a */
+        public void m14393a(java.lang.Exception r3) {
+                r2 = this;
+                zc.k r3 = r2.f27952a
+                java.lang.Object r3 = r3.f27948h
+                monitor-enter(r3)
+                zc.k r0 = r2.f27952a     // Catch: java.lang.Throwable -> L19
+                boolean r1 = r0.f27947g     // Catch: java.lang.Throwable -> L19
+                if (r1 == 0) goto L17
+                android.os.Handler r0 = r0.f27943c     // Catch: java.lang.Throwable -> L19
+                r1 = 2131362790(0x7f0a03e6, float:1.834537E38)
+                android.os.Message r0 = r0.obtainMessage(r1)     // Catch: java.lang.Throwable -> L19
+                r0.sendToTarget()     // Catch: java.lang.Throwable -> L19
+            L17:
+                monitor-exit(r3)     // Catch: java.lang.Throwable -> L19
+                return
+            L19:
+                r0 = move-exception
+                monitor-exit(r3)     // Catch: java.lang.Throwable -> L19
+                throw r0
+        }
+    }
+
+    public C7287k(ad.C0061d r2, p454zc.C7284h r3, android.os.Handler r4) {
+            r1 = this;
+            r1.<init>()
+            r0 = 0
+            r1.f27947g = r0
+            java.lang.Object r0 = new java.lang.Object
+            r0.<init>()
+            r1.f27948h = r0
+            zc.k$a r0 = new zc.k$a
+            r0.<init>(r1)
+            r1.f27949i = r0
+            zc.k$b r0 = new zc.k$b
+            r0.<init>(r1)
+            r1.f27950j = r0
+            p185k7.C3828h5.m8580I()
+            r1.f27941a = r2
+            r1.f27944d = r3
+            r1.f27945e = r4
+            return
+    }
+
+    /* renamed from: a */
+    public final void m14392a() {
+            r5 = this;
+            ad.d r0 = r5.f27941a
+            ad.l r1 = r5.f27950j
+            android.os.Handler r2 = r0.f169h
+            ad.c r3 = new ad.c
+            r4 = 0
+            r3.<init>(r0, r1, r4)
+            r2.post(r3)
+            return
+    }
+}

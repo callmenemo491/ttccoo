@@ -1,0 +1,24 @@
+package p217m5;
+
+/* renamed from: m5.d */
+/* loaded from: classes.dex */
+public final class C4385d implements p217m5.InterfaceC4383b {
+
+    /* renamed from: a */
+    public int f17948a;
+
+    /* renamed from: b */
+    public int f17949b;
+
+    /* renamed from: c */
+    public final int f17950c;
+
+    public C4385d(int r1, int r2, int r3) {
+            r0 = this;
+            r0.<init>()
+            r0.f17948a = r1
+            r0.f17949b = r2
+            r0.f17950c = r3
+            return
+    }
+}

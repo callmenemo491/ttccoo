@@ -1,0 +1,1454 @@
+package p107g4;
+
+/* renamed from: g4.p */
+/* loaded from: classes.dex */
+public class C2254p implements p088f4.InterfaceC2054x0.e, p121h4.InterfaceC2473n, p387w5.InterfaceC6812o, p108g5.InterfaceC2286u, p352u5.InterfaceC6308c.a, p162j4.InterfaceC3403h {
+
+    /* renamed from: Y */
+    public final p371v5.InterfaceC6553c f10230Y;
+
+    /* renamed from: Z */
+    public final p088f4.AbstractC2031n1.b f10231Z;
+
+    /* renamed from: a0 */
+    public final p088f4.AbstractC2031n1.d f10232a0;
+
+    /* renamed from: b0 */
+    public final p107g4.C2254p.a f10233b0;
+
+    /* renamed from: c0 */
+    public final android.util.SparseArray<p107g4.InterfaceC2255q.a> f10234c0;
+
+    /* renamed from: d0 */
+    public p371v5.C6564n<p107g4.InterfaceC2255q> f10235d0;
+
+    /* renamed from: e0 */
+    public p088f4.InterfaceC2054x0 f10236e0;
+
+    /* renamed from: f0 */
+    public p371v5.InterfaceC6563m f10237f0;
+
+    /* renamed from: g0 */
+    public boolean f10238g0;
+
+    /* renamed from: g4.p$a */
+    public static final class a {
+
+        /* renamed from: a */
+        public final p088f4.AbstractC2031n1.b f10239a;
+
+        /* renamed from: b */
+        public p026b9.AbstractC0714n<p108g5.InterfaceC2283r.a> f10240b;
+
+        /* renamed from: c */
+        public p026b9.AbstractC0715o<p108g5.InterfaceC2283r.a, p088f4.AbstractC2031n1> f10241c;
+
+        /* renamed from: d */
+        public p108g5.InterfaceC2283r.a f10242d;
+
+        /* renamed from: e */
+        public p108g5.InterfaceC2283r.a f10243e;
+
+        /* renamed from: f */
+        public p108g5.InterfaceC2283r.a f10244f;
+
+        public a(p088f4.AbstractC2031n1.b r1) {
+                r0 = this;
+                r0.<init>()
+                r0.f10239a = r1
+                b9.a<java.lang.Object> r1 = p026b9.AbstractC0714n.f3979Z
+                b9.n<java.lang.Object> r1 = p026b9.C0693c0.f3898c0
+                r0.f10240b = r1
+                b9.o<java.lang.Object, java.lang.Object> r1 = p026b9.C0695d0.f3901e0
+                r0.f10241c = r1
+                return
+        }
+
+        /* renamed from: b */
+        public static p108g5.InterfaceC2283r.a m5857b(p088f4.InterfaceC2054x0 r10, p026b9.AbstractC0714n<p108g5.InterfaceC2283r.a> r11, p108g5.InterfaceC2283r.a r12, p088f4.AbstractC2031n1.b r13) {
+                f4.n1 r0 = r10.mo2829M()
+                int r1 = r10.mo2822C()
+                boolean r2 = r0.m5344r()
+                r3 = 0
+                if (r2 == 0) goto L11
+                r2 = r3
+                goto L15
+            L11:
+                java.lang.Object r2 = r0.mo5092n(r1)
+            L15:
+                boolean r4 = r10.mo2840h()
+                if (r4 != 0) goto L36
+                boolean r4 = r0.m5344r()
+                if (r4 == 0) goto L22
+                goto L36
+            L22:
+                f4.n1$b r0 = r0.m5340g(r1, r13)
+                long r4 = r10.mo2834W()
+                long r4 = p371v5.C6552b0.m13297A(r4)
+                long r6 = r13.f9229c0
+                long r4 = r4 - r6
+                int r13 = r0.m5347b(r4)
+                goto L37
+            L36:
+                r13 = -1
+            L37:
+                r0 = 0
+            L38:
+                int r1 = r11.size()
+                if (r0 >= r1) goto L5d
+                java.lang.Object r1 = r11.get(r0)
+                g5.r$a r1 = (p108g5.InterfaceC2283r.a) r1
+                boolean r6 = r10.mo2840h()
+                int r7 = r10.mo2823E()
+                int r8 = r10.mo2826I()
+                r4 = r1
+                r5 = r2
+                r9 = r13
+                boolean r4 = m5858c(r4, r5, r6, r7, r8, r9)
+                if (r4 == 0) goto L5a
+                return r1
+            L5a:
+                int r0 = r0 + 1
+                goto L38
+            L5d:
+                boolean r11 = r11.isEmpty()
+                if (r11 == 0) goto L7b
+                if (r12 == 0) goto L7b
+                boolean r6 = r10.mo2840h()
+                int r7 = r10.mo2823E()
+                int r8 = r10.mo2826I()
+                r4 = r12
+                r5 = r2
+                r9 = r13
+                boolean r10 = m5858c(r4, r5, r6, r7, r8, r9)
+                if (r10 == 0) goto L7b
+                return r12
+            L7b:
+                return r3
+        }
+
+        /* renamed from: c */
+        public static boolean m5858c(p108g5.InterfaceC2283r.a r1, java.lang.Object r2, boolean r3, int r4, int r5, int r6) {
+                java.lang.Object r0 = r1.f10415a
+                boolean r2 = r0.equals(r2)
+                r0 = 0
+                if (r2 != 0) goto La
+                return r0
+            La:
+                if (r3 == 0) goto L14
+                int r2 = r1.f10416b
+                if (r2 != r4) goto L14
+                int r2 = r1.f10417c
+                if (r2 == r5) goto L1f
+            L14:
+                if (r3 != 0) goto L20
+                int r2 = r1.f10416b
+                r3 = -1
+                if (r2 != r3) goto L20
+                int r1 = r1.f10419e
+                if (r1 != r6) goto L20
+            L1f:
+                r0 = 1
+            L20:
+                return r0
+        }
+
+        /* renamed from: a */
+        public final void m5859a(p026b9.AbstractC0715o.a<p108g5.InterfaceC2283r.a, p088f4.AbstractC2031n1> r3, p108g5.InterfaceC2283r.a r4, p088f4.AbstractC2031n1 r5) {
+                r2 = this;
+                if (r4 != 0) goto L3
+                return
+            L3:
+                java.lang.Object r0 = r4.f10415a
+                int r0 = r5.mo5086c(r0)
+                r1 = -1
+                if (r0 == r1) goto Ld
+                goto L17
+            Ld:
+                b9.o<g5.r$a, f4.n1> r5 = r2.f10241c
+                java.lang.Object r5 = r5.get(r4)
+                f4.n1 r5 = (p088f4.AbstractC2031n1) r5
+                if (r5 == 0) goto L1a
+            L17:
+                r3.m2322c(r4, r5)
+            L1a:
+                return
+        }
+
+        /* renamed from: d */
+        public final void m5860d(p088f4.AbstractC2031n1 r4) {
+                r3 = this;
+                b9.o$a r0 = new b9.o$a
+                r0.<init>()
+                b9.n<g5.r$a> r1 = r3.f10240b
+                boolean r1 = r1.isEmpty()
+                if (r1 == 0) goto L36
+                g5.r$a r1 = r3.f10243e
+                r3.m5859a(r0, r1, r4)
+                g5.r$a r1 = r3.f10244f
+                g5.r$a r2 = r3.f10243e
+                boolean r1 = p185k7.C3836i.m8619d(r1, r2)
+                if (r1 != 0) goto L21
+                g5.r$a r1 = r3.f10244f
+                r3.m5859a(r0, r1, r4)
+            L21:
+                g5.r$a r1 = r3.f10242d
+                g5.r$a r2 = r3.f10243e
+                boolean r1 = p185k7.C3836i.m8619d(r1, r2)
+                if (r1 != 0) goto L5c
+                g5.r$a r1 = r3.f10242d
+                g5.r$a r2 = r3.f10244f
+                boolean r1 = p185k7.C3836i.m8619d(r1, r2)
+                if (r1 != 0) goto L5c
+                goto L57
+            L36:
+                r1 = 0
+            L37:
+                b9.n<g5.r$a> r2 = r3.f10240b
+                int r2 = r2.size()
+                if (r1 >= r2) goto L4d
+                b9.n<g5.r$a> r2 = r3.f10240b
+                java.lang.Object r2 = r2.get(r1)
+                g5.r$a r2 = (p108g5.InterfaceC2283r.a) r2
+                r3.m5859a(r0, r2, r4)
+                int r1 = r1 + 1
+                goto L37
+            L4d:
+                b9.n<g5.r$a> r1 = r3.f10240b
+                g5.r$a r2 = r3.f10242d
+                boolean r1 = r1.contains(r2)
+                if (r1 != 0) goto L5c
+            L57:
+                g5.r$a r1 = r3.f10242d
+                r3.m5859a(r0, r1, r4)
+            L5c:
+                b9.o r4 = r0.m2320a()
+                r3.f10241c = r4
+                return
+        }
+    }
+
+    public C2254p(p371v5.InterfaceC6553c r4) {
+            r3 = this;
+            r3.<init>()
+            r3.f10230Y = r4
+            v5.n r0 = new v5.n
+            android.os.Looper r1 = p371v5.C6552b0.m13322o()
+            k1.c r2 = p179k1.C3644c.f16087i0
+            r0.<init>(r1, r4, r2)
+            r3.f10235d0 = r0
+            f4.n1$b r4 = new f4.n1$b
+            r4.<init>()
+            r3.f10231Z = r4
+            f4.n1$d r0 = new f4.n1$d
+            r0.<init>()
+            r3.f10232a0 = r0
+            g4.p$a r0 = new g4.p$a
+            r0.<init>(r4)
+            r3.f10233b0 = r0
+            android.util.SparseArray r4 = new android.util.SparseArray
+            r4.<init>()
+            r3.f10234c0 = r4
+            return
+    }
+
+    @Override // p121h4.InterfaceC2473n
+    /* renamed from: A */
+    public final void mo5278A(java.lang.Exception r4) {
+            r3 = this;
+            g4.q$a r0 = r3.m5856p0()
+            g4.b r1 = new g4.b
+            r2 = 2
+            r1.<init>(r0, r4, r2)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r2 = 1018(0x3fa, float:1.427E-42)
+            r4.put(r2, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r2, r1)
+            r4.m13364a()
+            return
+    }
+
+    @Override // p387w5.InterfaceC6812o
+    /* renamed from: B */
+    public /* synthetic */ void mo5279B(p088f4.C2003e0 r1) {
+            r0 = this;
+            p387w5.C6808k.m13881a(r0, r1)
+            return
+    }
+
+    @Override // p121h4.InterfaceC2473n
+    /* renamed from: C */
+    public final void mo5280C(long r3) {
+            r2 = this;
+            g4.q$a r0 = r2.m5856p0()
+            b4.j r1 = new b4.j
+            r1.<init>(r0, r3)
+            android.util.SparseArray<g4.q$a> r3 = r2.f10234c0
+            r4 = 1011(0x3f3, float:1.417E-42)
+            r3.put(r4, r0)
+            v5.n<g4.q> r3 = r2.f10235d0
+            r3.m13365b(r4, r1)
+            r3.m13364a()
+            return
+    }
+
+    @Override // p108g5.InterfaceC2286u
+    /* renamed from: D */
+    public final void mo5395D(int r2, p108g5.InterfaceC2283r.a r3, p108g5.C2276k r4, p108g5.C2279n r5) {
+            r1 = this;
+            g4.q$a r2 = r1.m5854n0(r2, r3)
+            g4.n r3 = new g4.n
+            r0 = 0
+            r3.<init>(r2, r4, r5, r0)
+            android.util.SparseArray<g4.q$a> r4 = r1.f10234c0
+            r5 = 1000(0x3e8, float:1.401E-42)
+            r4.put(r5, r2)
+            v5.n<g4.q> r2 = r1.f10235d0
+            r2.m13365b(r5, r3)
+            r2.m13364a()
+            return
+    }
+
+    @Override // p162j4.InterfaceC3403h
+    /* renamed from: E */
+    public final void mo5396E(int r3, p108g5.InterfaceC2283r.a r4) {
+            r2 = this;
+            g4.q$a r3 = r2.m5854n0(r3, r4)
+            g4.i r4 = new g4.i
+            r0 = 5
+            r4.<init>(r3, r0)
+            android.util.SparseArray<g4.q$a> r0 = r2.f10234c0
+            r1 = 1033(0x409, float:1.448E-42)
+            r0.put(r1, r3)
+            v5.n<g4.q> r3 = r2.f10235d0
+            r3.m13365b(r1, r4)
+            r3.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.e
+    /* renamed from: F */
+    public final void mo2885F(p121h4.C2461d r4) {
+            r3 = this;
+            g4.q$a r0 = r3.m5856p0()
+            f1.g0 r1 = new f1.g0
+            r1.<init>(r0, r4)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r2 = 1016(0x3f8, float:1.424E-42)
+            r4.put(r2, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r2, r1)
+            r4.m13364a()
+            return
+    }
+
+    @Override // p121h4.InterfaceC2473n
+    /* renamed from: G */
+    public final void mo5281G(p088f4.C2003e0 r4, p142i4.C3075i r5) {
+            r3 = this;
+            g4.q$a r0 = r3.m5856p0()
+            g4.m r1 = new g4.m
+            r2 = 1
+            r1.<init>(r0, r4, r5, r2)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r5 = 1010(0x3f2, float:1.415E-42)
+            r4.put(r5, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r5, r1)
+            r4.m13364a()
+            return
+    }
+
+    @Override // p121h4.InterfaceC2473n
+    /* renamed from: H */
+    public /* synthetic */ void mo5282H(p088f4.C2003e0 r1) {
+            r0 = this;
+            p121h4.C2466g.m6264a(r0, r1)
+            return
+    }
+
+    @Override // p121h4.InterfaceC2473n
+    /* renamed from: I */
+    public final void mo5283I(java.lang.Exception r4) {
+            r3 = this;
+            g4.q$a r0 = r3.m5856p0()
+            g4.b r1 = new g4.b
+            r2 = 0
+            r1.<init>(r0, r4, r2)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r2 = 1037(0x40d, float:1.453E-42)
+            r4.put(r2, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r2, r1)
+            r4.m13364a()
+            return
+    }
+
+    @Override // p387w5.InterfaceC6812o
+    /* renamed from: J */
+    public final void mo5284J(p142i4.C3071e r4) {
+            r3 = this;
+            g4.q$a r0 = r3.m5856p0()
+            g4.o r1 = new g4.o
+            r2 = 0
+            r1.<init>(r0, r4, r2)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r2 = 1020(0x3fc, float:1.43E-42)
+            r4.put(r2, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r2, r1)
+            r4.m13364a()
+            return
+    }
+
+    @Override // p387w5.InterfaceC6812o
+    /* renamed from: K */
+    public final void mo5285K(p142i4.C3071e r4) {
+            r3 = this;
+            g4.q$a r0 = r3.m5855o0()
+            g4.o r1 = new g4.o
+            r2 = 3
+            r1.<init>(r0, r4, r2)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r2 = 1025(0x401, float:1.436E-42)
+            r4.put(r2, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r2, r1)
+            r4.m13364a()
+            return
+    }
+
+    @Override // p387w5.InterfaceC6812o
+    /* renamed from: L */
+    public final void mo5286L(java.lang.Exception r4) {
+            r3 = this;
+            g4.q$a r0 = r3.m5856p0()
+            g4.b r1 = new g4.b
+            r2 = 1
+            r1.<init>(r0, r4, r2)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r2 = 1038(0x40e, float:1.455E-42)
+            r4.put(r2, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r2, r1)
+            r4.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.e
+    /* renamed from: M */
+    public /* synthetic */ void mo2886M(p088f4.C2032o r1) {
+            r0 = this;
+            p088f4.C2058z0.m5465d(r0, r1)
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.c
+    /* renamed from: N */
+    public final void mo2887N(int r4) {
+            r3 = this;
+            g4.q$a r0 = r3.m5851k0()
+            g4.j r1 = new g4.j
+            r2 = 4
+            r1.<init>(r0, r4, r2)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r4.put(r2, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r2, r1)
+            r4.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.c
+    /* renamed from: O */
+    public final void mo2888O(boolean r4, int r5) {
+            r3 = this;
+            g4.q$a r0 = r3.m5851k0()
+            g4.f r1 = new g4.f
+            r2 = 0
+            r1.<init>(r0, r4, r5, r2)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r5 = 5
+            r4.put(r5, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r5, r1)
+            r4.m13364a()
+            return
+    }
+
+    @Override // p162j4.InterfaceC3403h
+    /* renamed from: P */
+    public final void mo5397P(int r3, p108g5.InterfaceC2283r.a r4) {
+            r2 = this;
+            g4.q$a r3 = r2.m5854n0(r3, r4)
+            g4.i r4 = new g4.i
+            r0 = 2
+            r4.<init>(r3, r0)
+            android.util.SparseArray<g4.q$a> r0 = r2.f10234c0
+            r1 = 1035(0x40b, float:1.45E-42)
+            r0.put(r1, r3)
+            v5.n<g4.q> r3 = r2.f10235d0
+            r3.m13365b(r1, r4)
+            r3.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.c
+    /* renamed from: Q */
+    public final void mo2889Q(p088f4.InterfaceC2054x0.f r6, p088f4.InterfaceC2054x0.f r7, int r8) {
+            r5 = this;
+            r0 = 1
+            if (r8 != r0) goto L6
+            r0 = 0
+            r5.f10238g0 = r0
+        L6:
+            g4.p$a r0 = r5.f10233b0
+            f4.x0 r1 = r5.f10236e0
+            java.util.Objects.requireNonNull(r1)
+            b9.n<g5.r$a> r2 = r0.f10240b
+            g5.r$a r3 = r0.f10243e
+            f4.n1$b r4 = r0.f10239a
+            g5.r$a r1 = p107g4.C2254p.a.m5857b(r1, r2, r3, r4)
+            r0.f10242d = r1
+            g4.q$a r0 = r5.m5851k0()
+            r1 = 11
+            g4.g r2 = new g4.g
+            r2.<init>(r0, r8, r6, r7)
+            android.util.SparseArray<g4.q$a> r6 = r5.f10234c0
+            r6.put(r1, r0)
+            v5.n<g4.q> r6 = r5.f10235d0
+            r6.m13365b(r1, r2)
+            r6.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.c
+    /* renamed from: R */
+    public /* synthetic */ void mo2890R(p088f4.InterfaceC2054x0 r1, p088f4.InterfaceC2054x0.d r2) {
+            r0 = this;
+            p088f4.C2058z0.m5467f(r0, r1, r2)
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.c
+    /* renamed from: S */
+    public void mo2891S(p088f4.InterfaceC2054x0.b r4) {
+            r3 = this;
+            g4.q$a r0 = r3.m5851k0()
+            f1.g0 r1 = new f1.g0
+            r1.<init>(r0, r4)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r2 = 13
+            r4.put(r2, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r2, r1)
+            r4.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.c
+    /* renamed from: T */
+    public void mo2892T(p088f4.C2034o1 r4) {
+            r3 = this;
+            g4.q$a r0 = r3.m5851k0()
+            f1.g0 r1 = new f1.g0
+            r1.<init>(r0, r4)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r2 = 2
+            r4.put(r2, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r2, r1)
+            r4.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.c
+    /* renamed from: U */
+    public final void mo2893U(p108g5.C2273i0 r3, p325s5.C5970j r4) {
+            r2 = this;
+            g4.q$a r0 = r2.m5851k0()
+            z3.a r1 = new z3.a
+            r1.<init>(r0, r3, r4)
+            android.util.SparseArray<g4.q$a> r3 = r2.f10234c0
+            r4 = 2
+            r3.put(r4, r0)
+            v5.n<g4.q> r3 = r2.f10235d0
+            r3.m13365b(r4, r1)
+            r3.m13364a()
+            return
+    }
+
+    @Override // p121h4.InterfaceC2473n
+    /* renamed from: V */
+    public final void mo5287V(java.lang.String r4) {
+            r3 = this;
+            g4.q$a r0 = r3.m5856p0()
+            g4.c r1 = new g4.c
+            r2 = 1
+            r1.<init>(r0, r4, r2)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r2 = 1013(0x3f5, float:1.42E-42)
+            r4.put(r2, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r2, r1)
+            r4.m13364a()
+            return
+    }
+
+    @Override // p121h4.InterfaceC2473n
+    /* renamed from: W */
+    public final void mo5288W(java.lang.String r11, long r12, long r14) {
+            r10 = this;
+            g4.q$a r8 = r10.m5856p0()
+            g4.d r9 = new g4.d
+            r7 = 0
+            r0 = r9
+            r1 = r8
+            r2 = r11
+            r3 = r14
+            r5 = r12
+            r0.<init>(r1, r2, r3, r5, r7)
+            android.util.SparseArray<g4.q$a> r11 = r10.f10234c0
+            r12 = 1009(0x3f1, float:1.414E-42)
+            r11.put(r12, r8)
+            v5.n<g4.q> r11 = r10.f10235d0
+            r11.m13365b(r12, r9)
+            r11.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.c
+    /* renamed from: X */
+    public final void mo2894X(boolean r4) {
+            r3 = this;
+            g4.q$a r0 = r3.m5851k0()
+            g4.e r1 = new g4.e
+            r2 = 3
+            r1.<init>(r0, r4, r2)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r2 = 9
+            r4.put(r2, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r2, r1)
+            r4.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.c
+    /* renamed from: Y */
+    public final void mo2895Y(p088f4.C2048u0 r4) {
+            r3 = this;
+            boolean r0 = r4 instanceof p088f4.C2038q
+            if (r0 == 0) goto L15
+            r0 = r4
+            f4.q r0 = (p088f4.C2038q) r0
+            g5.p r0 = r0.f9289f0
+            if (r0 == 0) goto L15
+            g5.r$a r1 = new g5.r$a
+            r1.<init>(r0)
+            g4.q$a r0 = r3.m5853m0(r1)
+            goto L16
+        L15:
+            r0 = 0
+        L16:
+            if (r0 != 0) goto L1c
+            g4.q$a r0 = r3.m5851k0()
+        L1c:
+            r1 = 10
+            f1.g0 r2 = new f1.g0
+            r2.<init>(r0, r4)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r4.put(r1, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r1, r2)
+            r4.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.e
+    /* renamed from: Z */
+    public void mo2896Z(int r3, int r4) {
+            r2 = this;
+            g4.q$a r0 = r2.m5856p0()
+            g4.a r1 = new g4.a
+            r1.<init>(r0, r3, r4)
+            android.util.SparseArray<g4.q$a> r3 = r2.f10234c0
+            r4 = 1029(0x405, float:1.442E-42)
+            r3.put(r4, r0)
+            v5.n<g4.q> r3 = r2.f10235d0
+            r3.m13365b(r4, r1)
+            r3.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.e
+    /* renamed from: a */
+    public /* synthetic */ void mo2897a() {
+            r0 = this;
+            p088f4.C2058z0.m5480s(r0)
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.c
+    /* renamed from: a0 */
+    public final void mo2898a0(p088f4.C2018j0 r3, int r4) {
+            r2 = this;
+            g4.q$a r0 = r2.m5851k0()
+            a4.e r1 = new a4.e
+            r1.<init>(r0, r3, r4)
+            android.util.SparseArray<g4.q$a> r3 = r2.f10234c0
+            r4 = 1
+            r3.put(r4, r0)
+            v5.n<g4.q> r3 = r2.f10235d0
+            r3.m13365b(r4, r1)
+            r3.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.c
+    /* renamed from: b */
+    public final void mo2899b() {
+            r4 = this;
+            g4.q$a r0 = r4.m5851k0()
+            g4.i r1 = new g4.i
+            r2 = 3
+            r1.<init>(r0, r2)
+            android.util.SparseArray<g4.q$a> r2 = r4.f10234c0
+            r3 = -1
+            r2.put(r3, r0)
+            v5.n<g4.q> r0 = r4.f10235d0
+            r0.m13365b(r3, r1)
+            r0.m13364a()
+            return
+    }
+
+    @Override // p121h4.InterfaceC2473n
+    /* renamed from: b0 */
+    public final void mo5289b0(p142i4.C3071e r4) {
+            r3 = this;
+            g4.q$a r0 = r3.m5855o0()
+            g4.o r1 = new g4.o
+            r2 = 2
+            r1.<init>(r0, r4, r2)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r2 = 1014(0x3f6, float:1.421E-42)
+            r4.put(r2, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r2, r1)
+            r4.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.e
+    /* renamed from: c */
+    public final void mo2900c(boolean r4) {
+            r3 = this;
+            g4.q$a r0 = r3.m5856p0()
+            g4.e r1 = new g4.e
+            r2 = 2
+            r1.<init>(r0, r4, r2)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r2 = 1017(0x3f9, float:1.425E-42)
+            r4.put(r2, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r2, r1)
+            r4.m13364a()
+            return
+    }
+
+    @Override // p121h4.InterfaceC2473n
+    /* renamed from: c0 */
+    public final void mo5291c0(int r11, long r12, long r14) {
+            r10 = this;
+            g4.q$a r8 = r10.m5856p0()
+            g4.l r9 = new g4.l
+            r7 = 0
+            r0 = r9
+            r1 = r8
+            r2 = r11
+            r3 = r12
+            r5 = r14
+            r0.<init>(r1, r2, r3, r5, r7)
+            android.util.SparseArray<g4.q$a> r11 = r10.f10234c0
+            r12 = 1012(0x3f4, float:1.418E-42)
+            r11.put(r12, r8)
+            v5.n<g4.q> r11 = r10.f10235d0
+            r11.m13365b(r12, r9)
+            r11.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.e
+    /* renamed from: d */
+    public /* synthetic */ void mo2901d(java.util.List r1) {
+            r0 = this;
+            p088f4.C2058z0.m5464c(r0, r1)
+            return
+    }
+
+    @Override // p387w5.InterfaceC6812o
+    /* renamed from: d0 */
+    public final void mo5293d0(int r3, long r4) {
+            r2 = this;
+            g4.q$a r0 = r2.m5855o0()
+            g4.k r1 = new g4.k
+            r1.<init>(r0, r3, r4)
+            android.util.SparseArray<g4.q$a> r3 = r2.f10234c0
+            r4 = 1023(0x3ff, float:1.434E-42)
+            r3.put(r4, r0)
+            v5.n<g4.q> r3 = r2.f10235d0
+            r3.m13365b(r4, r1)
+            r3.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.e
+    /* renamed from: e */
+    public final void mo2902e(p387w5.C6813p r4) {
+            r3 = this;
+            g4.q$a r0 = r3.m5856p0()
+            f1.g0 r1 = new f1.g0
+            r1.<init>(r0, r4)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r2 = 1028(0x404, float:1.44E-42)
+            r4.put(r2, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r2, r1)
+            r4.m13364a()
+            return
+    }
+
+    @Override // p162j4.InterfaceC3403h
+    /* renamed from: e0 */
+    public final void mo5399e0(int r3, p108g5.InterfaceC2283r.a r4) {
+            r2 = this;
+            g4.q$a r3 = r2.m5854n0(r3, r4)
+            g4.i r4 = new g4.i
+            r0 = 4
+            r4.<init>(r3, r0)
+            android.util.SparseArray<g4.q$a> r0 = r2.f10234c0
+            r1 = 1031(0x407, float:1.445E-42)
+            r0.put(r1, r3)
+            v5.n<g4.q> r3 = r2.f10235d0
+            r3.m13365b(r1, r4)
+            r3.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.e
+    /* renamed from: f */
+    public final void mo2903f(p427y4.C7110a r4) {
+            r3 = this;
+            g4.q$a r0 = r3.m5851k0()
+            f1.g0 r1 = new f1.g0
+            r1.<init>(r0, r4)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r2 = 1007(0x3ef, float:1.411E-42)
+            r4.put(r2, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r2, r1)
+            r4.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.c
+    /* renamed from: f0 */
+    public final void mo2904f0(p088f4.C2052w0 r4) {
+            r3 = this;
+            g4.q$a r0 = r3.m5851k0()
+            f1.g0 r1 = new f1.g0
+            r1.<init>(r0, r4)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r2 = 12
+            r4.put(r2, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r2, r1)
+            r4.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.c
+    /* renamed from: g */
+    public final void mo2905g(int r4) {
+            r3 = this;
+            g4.q$a r0 = r3.m5851k0()
+            g4.j r1 = new g4.j
+            r2 = 2
+            r1.<init>(r0, r4, r2)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r2 = 6
+            r4.put(r2, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r2, r1)
+            r4.m13364a()
+            return
+    }
+
+    @Override // p162j4.InterfaceC3403h
+    /* renamed from: g0 */
+    public final void mo5400g0(int r3, p108g5.InterfaceC2283r.a r4) {
+            r2 = this;
+            g4.q$a r3 = r2.m5854n0(r3, r4)
+            g4.i r4 = new g4.i
+            r0 = 6
+            r4.<init>(r3, r0)
+            android.util.SparseArray<g4.q$a> r0 = r2.f10234c0
+            r1 = 1034(0x40a, float:1.449E-42)
+            r0.put(r1, r3)
+            v5.n<g4.q> r3 = r2.f10235d0
+            r3.m13365b(r1, r4)
+            r3.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.c
+    /* renamed from: h */
+    public final void mo2906h(boolean r4, int r5) {
+            r3 = this;
+            g4.q$a r0 = r3.m5851k0()
+            g4.f r1 = new g4.f
+            r2 = 1
+            r1.<init>(r0, r4, r5, r2)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r5 = -1
+            r4.put(r5, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r5, r1)
+            r4.m13364a()
+            return
+    }
+
+    @Override // p387w5.InterfaceC6812o
+    /* renamed from: h0 */
+    public final void mo5296h0(long r3, int r5) {
+            r2 = this;
+            g4.q$a r0 = r2.m5855o0()
+            g4.k r1 = new g4.k
+            r1.<init>(r0, r3, r5)
+            android.util.SparseArray<g4.q$a> r3 = r2.f10234c0
+            r4 = 1026(0x402, float:1.438E-42)
+            r3.put(r4, r0)
+            v5.n<g4.q> r3 = r2.f10235d0
+            r3.m13365b(r4, r1)
+            r3.m13364a()
+            return
+    }
+
+    @Override // p108g5.InterfaceC2286u
+    /* renamed from: i */
+    public final void mo5401i(int r2, p108g5.InterfaceC2283r.a r3, p108g5.C2276k r4, p108g5.C2279n r5) {
+            r1 = this;
+            g4.q$a r2 = r1.m5854n0(r2, r3)
+            g4.n r3 = new g4.n
+            r0 = 1
+            r3.<init>(r2, r4, r5, r0)
+            android.util.SparseArray<g4.q$a> r4 = r1.f10234c0
+            r5 = 1002(0x3ea, float:1.404E-42)
+            r4.put(r5, r2)
+            v5.n<g4.q> r2 = r1.f10235d0
+            r2.m13365b(r5, r3)
+            r2.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.e
+    /* renamed from: i0 */
+    public /* synthetic */ void mo2908i0(int r1, boolean r2) {
+            r0 = this;
+            p088f4.C2058z0.m5466e(r0, r1, r2)
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.c
+    /* renamed from: j */
+    public /* synthetic */ void mo2909j(boolean r1) {
+            r0 = this;
+            p088f4.C2056y0.m5428e(r0, r1)
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.c
+    /* renamed from: j0 */
+    public void mo2910j0(boolean r4) {
+            r3 = this;
+            g4.q$a r0 = r3.m5851k0()
+            g4.e r1 = new g4.e
+            r2 = 1
+            r1.<init>(r0, r4, r2)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r2 = 7
+            r4.put(r2, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r2, r1)
+            r4.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.c
+    /* renamed from: k */
+    public /* synthetic */ void mo2911k(int r1) {
+            r0 = this;
+            p088f4.C2056y0.m5438o(r0, r1)
+            return
+    }
+
+    /* renamed from: k0 */
+    public final p107g4.InterfaceC2255q.a m5851k0() {
+            r1 = this;
+            g4.p$a r0 = r1.f10233b0
+            g5.r$a r0 = r0.f10242d
+            g4.q$a r0 = r1.m5853m0(r0)
+            return r0
+    }
+
+    @Override // p387w5.InterfaceC6812o
+    /* renamed from: l */
+    public final void mo5298l(java.lang.String r4) {
+            r3 = this;
+            g4.q$a r0 = r3.m5856p0()
+            g4.c r1 = new g4.c
+            r2 = 0
+            r1.<init>(r0, r4, r2)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r2 = 1024(0x400, float:1.435E-42)
+            r4.put(r2, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r2, r1)
+            r4.m13364a()
+            return
+    }
+
+    @org.checkerframework.checker.nullness.qual.RequiresNonNull({"player"})
+    /* renamed from: l0 */
+    public final p107g4.InterfaceC2255q.a m5852l0(p088f4.AbstractC2031n1 r18, int r19, p108g5.InterfaceC2283r.a r20) {
+            r17 = this;
+            r0 = r17
+            r4 = r18
+            r5 = r19
+            boolean r1 = r18.m5344r()
+            if (r1 == 0) goto Lf
+            r1 = 0
+            r6 = r1
+            goto L11
+        Lf:
+            r6 = r20
+        L11:
+            v5.c r1 = r0.f10230Y
+            long r2 = r1.mo13337d()
+            f4.x0 r1 = r0.f10236e0
+            f4.n1 r1 = r1.mo2829M()
+            boolean r1 = r4.equals(r1)
+            r7 = 0
+            r8 = 1
+            if (r1 == 0) goto L2f
+            f4.x0 r1 = r0.f10236e0
+            int r1 = r1.mo2824F()
+            if (r5 != r1) goto L2f
+            r1 = 1
+            goto L30
+        L2f:
+            r1 = 0
+        L30:
+            r9 = 0
+            if (r6 == 0) goto L5a
+            boolean r11 = r6.m6028a()
+            if (r11 == 0) goto L5a
+            if (r1 == 0) goto L51
+            f4.x0 r1 = r0.f10236e0
+            int r1 = r1.mo2823E()
+            int r11 = r6.f10416b
+            if (r1 != r11) goto L51
+            f4.x0 r1 = r0.f10236e0
+            int r1 = r1.mo2826I()
+            int r11 = r6.f10417c
+            if (r1 != r11) goto L51
+            r7 = 1
+        L51:
+            if (r7 == 0) goto L74
+            f4.x0 r1 = r0.f10236e0
+            long r9 = r1.mo2834W()
+            goto L74
+        L5a:
+            if (r1 == 0) goto L63
+            f4.x0 r1 = r0.f10236e0
+            long r7 = r1.mo2846l()
+            goto L75
+        L63:
+            boolean r1 = r18.m5344r()
+            if (r1 == 0) goto L6a
+            goto L74
+        L6a:
+            f4.n1$d r1 = r0.f10232a0
+            f4.n1$d r1 = r4.mo5093p(r5, r1, r9)
+            long r9 = r1.m5353a()
+        L74:
+            r7 = r9
+        L75:
+            g4.p$a r1 = r0.f10233b0
+            g5.r$a r11 = r1.f10242d
+            g4.q$a r16 = new g4.q$a
+            f4.x0 r1 = r0.f10236e0
+            f4.n1 r9 = r1.mo2829M()
+            f4.x0 r1 = r0.f10236e0
+            int r10 = r1.mo2824F()
+            f4.x0 r1 = r0.f10236e0
+            long r12 = r1.mo2834W()
+            f4.x0 r1 = r0.f10236e0
+            long r14 = r1.mo2848m()
+            r1 = r16
+            r4 = r18
+            r5 = r19
+            r1.<init>(r2, r4, r5, r6, r7, r9, r10, r11, r12, r14)
+            return r16
+    }
+
+    @Override // p121h4.InterfaceC2473n
+    /* renamed from: m */
+    public final void mo5299m(p142i4.C3071e r4) {
+            r3 = this;
+            g4.q$a r0 = r3.m5856p0()
+            g4.o r1 = new g4.o
+            r2 = 1
+            r1.<init>(r0, r4, r2)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r2 = 1008(0x3f0, float:1.413E-42)
+            r4.put(r2, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r2, r1)
+            r4.m13364a()
+            return
+    }
+
+    /* renamed from: m0 */
+    public final p107g4.InterfaceC2255q.a m5853m0(p108g5.InterfaceC2283r.a r4) {
+            r3 = this;
+            f4.x0 r0 = r3.f10236e0
+            java.util.Objects.requireNonNull(r0)
+            r0 = 0
+            if (r4 != 0) goto La
+            r1 = r0
+            goto L14
+        La:
+            g4.p$a r1 = r3.f10233b0
+            b9.o<g5.r$a, f4.n1> r1 = r1.f10241c
+            java.lang.Object r1 = r1.get(r4)
+            f4.n1 r1 = (p088f4.AbstractC2031n1) r1
+        L14:
+            if (r4 == 0) goto L28
+            if (r1 != 0) goto L19
+            goto L28
+        L19:
+            java.lang.Object r0 = r4.f10415a
+            f4.n1$b r2 = r3.f10231Z
+            f4.n1$b r0 = r1.mo5090i(r0, r2)
+            int r0 = r0.f9227a0
+            g4.q$a r4 = r3.m5852l0(r1, r0, r4)
+            return r4
+        L28:
+            f4.x0 r4 = r3.f10236e0
+            int r4 = r4.mo2824F()
+            f4.x0 r1 = r3.f10236e0
+            f4.n1 r1 = r1.mo2829M()
+            int r2 = r1.mo5180q()
+            if (r4 >= r2) goto L3c
+            r2 = 1
+            goto L3d
+        L3c:
+            r2 = 0
+        L3d:
+            if (r2 == 0) goto L40
+            goto L42
+        L40:
+            f4.n1 r1 = p088f4.AbstractC2031n1.f9223Y
+        L42:
+            g4.q$a r4 = r3.m5852l0(r1, r4, r0)
+            return r4
+    }
+
+    @Override // p088f4.InterfaceC2054x0.c
+    /* renamed from: n */
+    public void mo2912n(p088f4.C2021k0 r4) {
+            r3 = this;
+            g4.q$a r0 = r3.m5851k0()
+            f1.g0 r1 = new f1.g0
+            r1.<init>(r0, r4)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r2 = 14
+            r4.put(r2, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r2, r1)
+            r4.m13364a()
+            return
+    }
+
+    /* renamed from: n0 */
+    public final p107g4.InterfaceC2255q.a m5854n0(int r4, p108g5.InterfaceC2283r.a r5) {
+            r3 = this;
+            f4.x0 r0 = r3.f10236e0
+            java.util.Objects.requireNonNull(r0)
+            r0 = 0
+            r1 = 1
+            if (r5 == 0) goto L24
+            g4.p$a r2 = r3.f10233b0
+            b9.o<g5.r$a, f4.n1> r2 = r2.f10241c
+            java.lang.Object r2 = r2.get(r5)
+            f4.n1 r2 = (p088f4.AbstractC2031n1) r2
+            if (r2 == 0) goto L16
+            r0 = 1
+        L16:
+            if (r0 == 0) goto L1d
+            g4.q$a r4 = r3.m5853m0(r5)
+            goto L23
+        L1d:
+            f4.n1 r0 = p088f4.AbstractC2031n1.f9223Y
+            g4.q$a r4 = r3.m5852l0(r0, r4, r5)
+        L23:
+            return r4
+        L24:
+            f4.x0 r5 = r3.f10236e0
+            f4.n1 r5 = r5.mo2829M()
+            int r2 = r5.mo5180q()
+            if (r4 >= r2) goto L31
+            r0 = 1
+        L31:
+            if (r0 == 0) goto L34
+            goto L36
+        L34:
+            f4.n1 r5 = p088f4.AbstractC2031n1.f9223Y
+        L36:
+            r0 = 0
+            g4.q$a r4 = r3.m5852l0(r5, r4, r0)
+            return r4
+    }
+
+    @Override // p162j4.InterfaceC3403h
+    /* renamed from: o */
+    public final void mo5402o(int r2, p108g5.InterfaceC2283r.a r3, int r4) {
+            r1 = this;
+            g4.q$a r2 = r1.m5854n0(r2, r3)
+            g4.j r3 = new g4.j
+            r0 = 1
+            r3.<init>(r2, r4, r0)
+            android.util.SparseArray<g4.q$a> r4 = r1.f10234c0
+            r0 = 1030(0x406, float:1.443E-42)
+            r4.put(r0, r2)
+            v5.n<g4.q> r2 = r1.f10235d0
+            r2.m13365b(r0, r3)
+            r2.m13364a()
+            return
+    }
+
+    /* renamed from: o0 */
+    public final p107g4.InterfaceC2255q.a m5855o0() {
+            r1 = this;
+            g4.p$a r0 = r1.f10233b0
+            g5.r$a r0 = r0.f10243e
+            g4.q$a r0 = r1.m5853m0(r0)
+            return r0
+    }
+
+    @Override // p108g5.InterfaceC2286u
+    /* renamed from: p */
+    public final void mo5403p(int r2, p108g5.InterfaceC2283r.a r3, p108g5.C2279n r4) {
+            r1 = this;
+            g4.q$a r2 = r1.m5854n0(r2, r3)
+            f1.g0 r3 = new f1.g0
+            r3.<init>(r2, r4)
+            android.util.SparseArray<g4.q$a> r4 = r1.f10234c0
+            r0 = 1004(0x3ec, float:1.407E-42)
+            r4.put(r0, r2)
+            v5.n<g4.q> r2 = r1.f10235d0
+            r2.m13365b(r0, r3)
+            r2.m13364a()
+            return
+    }
+
+    /* renamed from: p0 */
+    public final p107g4.InterfaceC2255q.a m5856p0() {
+            r1 = this;
+            g4.p$a r0 = r1.f10233b0
+            g5.r$a r0 = r0.f10244f
+            g4.q$a r0 = r1.m5853m0(r0)
+            return r0
+    }
+
+    @Override // p387w5.InterfaceC6812o
+    /* renamed from: q */
+    public final void mo5302q(java.lang.Object r3, long r4) {
+            r2 = this;
+            g4.q$a r0 = r2.m5856p0()
+            a4.f r1 = new a4.f
+            r1.<init>(r0, r3, r4)
+            android.util.SparseArray<g4.q$a> r3 = r2.f10234c0
+            r4 = 1027(0x403, float:1.439E-42)
+            r3.put(r4, r0)
+            v5.n<g4.q> r3 = r2.f10235d0
+            r3.m13365b(r4, r1)
+            r3.m13364a()
+            return
+    }
+
+    @Override // p387w5.InterfaceC6812o
+    /* renamed from: r */
+    public final void mo5303r(java.lang.String r11, long r12, long r14) {
+            r10 = this;
+            g4.q$a r8 = r10.m5856p0()
+            g4.d r9 = new g4.d
+            r7 = 1
+            r0 = r9
+            r1 = r8
+            r2 = r11
+            r3 = r14
+            r5 = r12
+            r0.<init>(r1, r2, r3, r5, r7)
+            android.util.SparseArray<g4.q$a> r11 = r10.f10234c0
+            r12 = 1021(0x3fd, float:1.431E-42)
+            r11.put(r12, r8)
+            v5.n<g4.q> r11 = r10.f10235d0
+            r11.m13365b(r12, r9)
+            r11.m13364a()
+            return
+    }
+
+    @Override // p108g5.InterfaceC2286u
+    /* renamed from: s */
+    public final void mo5404s(int r7, p108g5.InterfaceC2283r.a r8, p108g5.C2276k r9, p108g5.C2279n r10, java.io.IOException r11, boolean r12) {
+            r6 = this;
+            g4.q$a r7 = r6.m5854n0(r7, r8)
+            g4.h r8 = new g4.h
+            r0 = r8
+            r1 = r7
+            r2 = r9
+            r3 = r10
+            r4 = r11
+            r5 = r12
+            r0.<init>(r1, r2, r3, r4, r5)
+            android.util.SparseArray<g4.q$a> r9 = r6.f10234c0
+            r10 = 1003(0x3eb, float:1.406E-42)
+            r9.put(r10, r7)
+            v5.n<g4.q> r7 = r6.f10235d0
+            r7.m13365b(r10, r8)
+            r7.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.c
+    /* renamed from: t */
+    public final void mo2913t(p088f4.AbstractC2031n1 r5, int r6) {
+            r4 = this;
+            g4.p$a r5 = r4.f10233b0
+            f4.x0 r0 = r4.f10236e0
+            java.util.Objects.requireNonNull(r0)
+            b9.n<g5.r$a> r1 = r5.f10240b
+            g5.r$a r2 = r5.f10243e
+            f4.n1$b r3 = r5.f10239a
+            g5.r$a r1 = p107g4.C2254p.a.m5857b(r0, r1, r2, r3)
+            r5.f10242d = r1
+            f4.n1 r0 = r0.mo2829M()
+            r5.m5860d(r0)
+            g4.q$a r5 = r4.m5851k0()
+            g4.j r0 = new g4.j
+            r1 = 0
+            r0.<init>(r5, r6, r1)
+            android.util.SparseArray<g4.q$a> r6 = r4.f10234c0
+            r6.put(r1, r5)
+            v5.n<g4.q> r5 = r4.f10235d0
+            r5.m13365b(r1, r0)
+            r5.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.c
+    /* renamed from: u */
+    public final void mo2914u(int r4) {
+            r3 = this;
+            g4.q$a r0 = r3.m5851k0()
+            g4.j r1 = new g4.j
+            r2 = 3
+            r1.<init>(r0, r4, r2)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r2 = 8
+            r4.put(r2, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r2, r1)
+            r4.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.c
+    /* renamed from: v */
+    public final void mo2915v(boolean r4) {
+            r3 = this;
+            g4.q$a r0 = r3.m5851k0()
+            g4.e r1 = new g4.e
+            r2 = 0
+            r1.<init>(r0, r4, r2)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r2 = 3
+            r4.put(r2, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r2, r1)
+            r4.m13364a()
+            return
+    }
+
+    @Override // p108g5.InterfaceC2286u
+    /* renamed from: w */
+    public final void mo5405w(int r2, p108g5.InterfaceC2283r.a r3, p108g5.C2276k r4, p108g5.C2279n r5) {
+            r1 = this;
+            g4.q$a r2 = r1.m5854n0(r2, r3)
+            g4.n r3 = new g4.n
+            r0 = 2
+            r3.<init>(r2, r4, r5, r0)
+            android.util.SparseArray<g4.q$a> r4 = r1.f10234c0
+            r5 = 1001(0x3e9, float:1.403E-42)
+            r4.put(r5, r2)
+            v5.n<g4.q> r2 = r1.f10235d0
+            r2.m13365b(r5, r3)
+            r2.m13364a()
+            return
+    }
+
+    @Override // p162j4.InterfaceC3403h
+    /* renamed from: x */
+    public final void mo5406x(int r2, p108g5.InterfaceC2283r.a r3, java.lang.Exception r4) {
+            r1 = this;
+            g4.q$a r2 = r1.m5854n0(r2, r3)
+            g4.b r3 = new g4.b
+            r0 = 3
+            r3.<init>(r2, r4, r0)
+            android.util.SparseArray<g4.q$a> r4 = r1.f10234c0
+            r0 = 1032(0x408, float:1.446E-42)
+            r4.put(r0, r2)
+            v5.n<g4.q> r2 = r1.f10235d0
+            r2.m13365b(r0, r3)
+            r2.m13364a()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2054x0.c
+    /* renamed from: y */
+    public /* synthetic */ void mo2916y(p088f4.C2048u0 r1) {
+            r0 = this;
+            p088f4.C2058z0.m5478q(r0, r1)
+            return
+    }
+
+    @Override // p387w5.InterfaceC6812o
+    /* renamed from: z */
+    public final void mo5305z(p088f4.C2003e0 r4, p142i4.C3075i r5) {
+            r3 = this;
+            g4.q$a r0 = r3.m5856p0()
+            g4.m r1 = new g4.m
+            r2 = 0
+            r1.<init>(r0, r4, r5, r2)
+            android.util.SparseArray<g4.q$a> r4 = r3.f10234c0
+            r5 = 1022(0x3fe, float:1.432E-42)
+            r4.put(r5, r0)
+            v5.n<g4.q> r4 = r3.f10235d0
+            r4.m13365b(r5, r1)
+            r4.m13364a()
+            return
+    }
+}
