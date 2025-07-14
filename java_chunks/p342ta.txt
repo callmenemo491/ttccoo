@@ -1,0 +1,44 @@
+package p342ta;
+
+/* renamed from: ta.a */
+/* loaded from: classes.dex */
+public class C6203a<T> {
+    public java.lang.String toString() {
+            r3 = this;
+            r0 = 2
+            java.lang.Object[] r0 = new java.lang.Object[r0]
+            r1 = 0
+            r2 = 0
+            r0[r1] = r2
+            r1 = 1
+            r0[r1] = r2
+            java.lang.String r1 = "Event{type: %s, payload: %s}"
+            java.lang.String r0 = java.lang.String.format(r1, r0)
+            return r0
+    }
+}
+package p342ta;
+
+/* renamed from: ta.b */
+/* loaded from: classes.dex */
+public interface InterfaceC6204b<T> {
+    /* renamed from: a */
+    void mo3939a(p342ta.C6203a<T> r1);
+}
+package p342ta;
+
+/* renamed from: ta.c */
+/* loaded from: classes.dex */
+public interface InterfaceC6205c {
+}
+package p342ta;
+
+/* renamed from: ta.d */
+/* loaded from: classes.dex */
+public interface InterfaceC6206d {
+    /* renamed from: a */
+    <T> void mo12808a(java.lang.Class<T> r1, p342ta.InterfaceC6204b<? super T> r2);
+
+    /* renamed from: b */
+    <T> void mo12809b(java.lang.Class<T> r1, java.util.concurrent.Executor r2, p342ta.InterfaceC6204b<? super T> r3);
+}

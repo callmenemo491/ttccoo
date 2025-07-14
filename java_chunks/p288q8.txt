@@ -1,0 +1,689 @@
+package p288q8;
+
+/* renamed from: q8.a */
+/* loaded from: classes.dex */
+public final class C5597a extends p124h7.AbstractC2951xf {
+
+    /* renamed from: b */
+    public final android.graphics.Typeface f21743b;
+
+    /* renamed from: c */
+    public final p288q8.C5597a.a f21744c;
+
+    /* renamed from: d */
+    public boolean f21745d;
+
+    /* renamed from: q8.a$a */
+    public interface a {
+    }
+
+    public C5597a(p288q8.C5597a.a r2, android.graphics.Typeface r3) {
+            r1 = this;
+            r0 = 1
+            r1.<init>(r0)
+            r1.f21743b = r3
+            r1.f21744c = r2
+            return
+    }
+
+    @Override // p124h7.AbstractC2951xf
+    /* renamed from: a */
+    public void mo3339a(int r1) {
+            r0 = this;
+            android.graphics.Typeface r1 = r0.f21743b
+            r0.m11871e(r1)
+            return
+    }
+
+    @Override // p124h7.AbstractC2951xf
+    /* renamed from: b */
+    public void mo3340b(android.graphics.Typeface r1, boolean r2) {
+            r0 = this;
+            r0.m11871e(r1)
+            return
+    }
+
+    /* renamed from: e */
+    public final void m11871e(android.graphics.Typeface r4) {
+            r3 = this;
+            boolean r0 = r3.f21745d
+            if (r0 != 0) goto L1e
+            q8.a$a r0 = r3.f21744c
+            m8.b r0 = (p220m8.C4418b) r0
+            m8.c r0 = r0.f17994a
+            q8.a r1 = r0.f18036w
+            r2 = 1
+            if (r1 == 0) goto L11
+            r1.f21745d = r2
+        L11:
+            android.graphics.Typeface r1 = r0.f18033t
+            if (r1 == r4) goto L18
+            r0.f18033t = r4
+            goto L19
+        L18:
+            r2 = 0
+        L19:
+            if (r2 == 0) goto L1e
+            r0.m9862k()
+        L1e:
+            return
+    }
+}
+package p288q8;
+
+/* renamed from: q8.b */
+/* loaded from: classes.dex */
+public class C5598b {
+    /* renamed from: a */
+    public static android.util.TypedValue m11872a(android.content.Context r2, int r3) {
+            android.util.TypedValue r0 = new android.util.TypedValue
+            r0.<init>()
+            android.content.res.Resources$Theme r2 = r2.getTheme()
+            r1 = 1
+            boolean r2 = r2.resolveAttribute(r3, r0, r1)
+            if (r2 == 0) goto L11
+            return r0
+        L11:
+            r2 = 0
+            return r2
+    }
+
+    /* renamed from: b */
+    public static boolean m11873b(android.content.Context r1, int r2, boolean r3) {
+            android.util.TypedValue r1 = m11872a(r1, r2)
+            if (r1 == 0) goto L13
+            int r2 = r1.type
+            r0 = 18
+            if (r2 != r0) goto L13
+            int r1 = r1.data
+            if (r1 == 0) goto L12
+            r3 = 1
+            goto L13
+        L12:
+            r3 = 0
+        L13:
+            return r3
+    }
+
+    /* renamed from: c */
+    public static int m11874c(android.content.Context r3, int r4, java.lang.String r5) {
+            android.util.TypedValue r0 = m11872a(r3, r4)
+            if (r0 == 0) goto L9
+            int r3 = r0.data
+            return r3
+        L9:
+            java.lang.IllegalArgumentException r0 = new java.lang.IllegalArgumentException
+            r1 = 2
+            java.lang.Object[] r1 = new java.lang.Object[r1]
+            r2 = 0
+            r1[r2] = r5
+            r5 = 1
+            android.content.res.Resources r3 = r3.getResources()
+            java.lang.String r3 = r3.getResourceName(r4)
+            r1[r5] = r3
+            java.lang.String r3 = "%1$s requires a value for the %2$s attribute to be set in your app theme. You can either set the attribute in your theme or update your theme to inherit from Theme.MaterialComponents (or a descendant)."
+            java.lang.String r3 = java.lang.String.format(r3, r1)
+            r0.<init>(r3)
+            throw r0
+    }
+}
+package p288q8;
+
+/* renamed from: q8.c */
+/* loaded from: classes.dex */
+public class C5599c {
+    /* renamed from: a */
+    public static android.content.res.ColorStateList m11875a(android.content.Context r1, android.content.res.TypedArray r2, int r3) {
+            boolean r0 = r2.hasValue(r3)
+            if (r0 == 0) goto L14
+            r0 = 0
+            int r0 = r2.getResourceId(r3, r0)
+            if (r0 == 0) goto L14
+            android.content.res.ColorStateList r1 = p102g.C2199a.m5783a(r1, r0)
+            if (r1 == 0) goto L14
+            return r1
+        L14:
+            android.content.res.ColorStateList r1 = r2.getColorStateList(r3)
+            return r1
+    }
+
+    /* renamed from: b */
+    public static android.content.res.ColorStateList m11876b(android.content.Context r2, androidx.appcompat.widget.C0314y0 r3, int r4) {
+            android.content.res.TypedArray r0 = r3.f1501b
+            boolean r0 = r0.hasValue(r4)
+            if (r0 == 0) goto L18
+            r0 = 0
+            android.content.res.TypedArray r1 = r3.f1501b
+            int r0 = r1.getResourceId(r4, r0)
+            if (r0 == 0) goto L18
+            android.content.res.ColorStateList r2 = p102g.C2199a.m5783a(r2, r0)
+            if (r2 == 0) goto L18
+            return r2
+        L18:
+            android.content.res.ColorStateList r2 = r3.m851c(r4)
+            return r2
+    }
+
+    /* renamed from: c */
+    public static int m11877c(android.content.Context r3, android.content.res.TypedArray r4, int r5, int r6) {
+            android.util.TypedValue r0 = new android.util.TypedValue
+            r0.<init>()
+            boolean r1 = r4.getValue(r5, r0)
+            if (r1 == 0) goto L29
+            int r1 = r0.type
+            r2 = 2
+            if (r1 == r2) goto L11
+            goto L29
+        L11:
+            android.content.res.Resources$Theme r3 = r3.getTheme()
+            r4 = 1
+            int[] r4 = new int[r4]
+            int r5 = r0.data
+            r0 = 0
+            r4[r0] = r5
+            android.content.res.TypedArray r3 = r3.obtainStyledAttributes(r4)
+            int r4 = r3.getDimensionPixelSize(r0, r6)
+            r3.recycle()
+            return r4
+        L29:
+            int r3 = r4.getDimensionPixelSize(r5, r6)
+            return r3
+    }
+
+    /* renamed from: d */
+    public static android.graphics.drawable.Drawable m11878d(android.content.Context r1, android.content.res.TypedArray r2, int r3) {
+            boolean r0 = r2.hasValue(r3)
+            if (r0 == 0) goto L14
+            r0 = 0
+            int r0 = r2.getResourceId(r3, r0)
+            if (r0 == 0) goto L14
+            android.graphics.drawable.Drawable r1 = p102g.C2199a.m5784b(r1, r0)
+            if (r1 == 0) goto L14
+            return r1
+        L14:
+            android.graphics.drawable.Drawable r1 = r2.getDrawable(r3)
+            return r1
+    }
+
+    /* renamed from: e */
+    public static boolean m11879e(android.content.Context r1) {
+            android.content.res.Resources r1 = r1.getResources()
+            android.content.res.Configuration r1 = r1.getConfiguration()
+            float r1 = r1.fontScale
+            r0 = 1067869798(0x3fa66666, float:1.3)
+            int r1 = (r1 > r0 ? 1 : (r1 == r0 ? 0 : -1))
+            if (r1 < 0) goto L13
+            r1 = 1
+            goto L14
+        L13:
+            r1 = 0
+        L14:
+            return r1
+    }
+
+    /* renamed from: f */
+    public static boolean m11880f(android.content.Context r1) {
+            android.content.res.Resources r1 = r1.getResources()
+            android.content.res.Configuration r1 = r1.getConfiguration()
+            float r1 = r1.fontScale
+            r0 = 1073741824(0x40000000, float:2.0)
+            int r1 = (r1 > r0 ? 1 : (r1 == r0 ? 0 : -1))
+            if (r1 < 0) goto L12
+            r1 = 1
+            goto L13
+        L12:
+            r1 = 0
+        L13:
+            return r1
+    }
+}
+package p288q8;
+
+/* renamed from: q8.d */
+/* loaded from: classes.dex */
+public class C5600d {
+
+    /* renamed from: a */
+    public final android.content.res.ColorStateList f21746a;
+
+    /* renamed from: b */
+    public final android.content.res.ColorStateList f21747b;
+
+    /* renamed from: c */
+    public final java.lang.String f21748c;
+
+    /* renamed from: d */
+    public final int f21749d;
+
+    /* renamed from: e */
+    public final int f21750e;
+
+    /* renamed from: f */
+    public final float f21751f;
+
+    /* renamed from: g */
+    public final float f21752g;
+
+    /* renamed from: h */
+    public final float f21753h;
+
+    /* renamed from: i */
+    public final boolean f21754i;
+
+    /* renamed from: j */
+    public final float f21755j;
+
+    /* renamed from: k */
+    public float f21756k;
+
+    /* renamed from: l */
+    public final int f21757l;
+
+    /* renamed from: m */
+    public boolean f21758m;
+
+    /* renamed from: n */
+    public android.graphics.Typeface f21759n;
+
+    /* renamed from: q8.d$a */
+    public class a extends p065e0.C1503h.c {
+
+        /* renamed from: a */
+        public final /* synthetic */ p124h7.AbstractC2951xf f21760a;
+
+        /* renamed from: b */
+        public final /* synthetic */ p288q8.C5600d f21761b;
+
+        public a(p288q8.C5600d r1, p124h7.AbstractC2951xf r2) {
+                r0 = this;
+                r0.f21761b = r1
+                r0.f21760a = r2
+                r0.<init>()
+                return
+        }
+
+        @Override // p065e0.C1503h.c
+        /* renamed from: d */
+        public void mo845d(int r3) {
+                r2 = this;
+                q8.d r0 = r2.f21761b
+                r1 = 1
+                r0.f21758m = r1
+                h7.xf r0 = r2.f21760a
+                r0.mo3339a(r3)
+                return
+        }
+
+        @Override // p065e0.C1503h.c
+        /* renamed from: e */
+        public void mo846e(android.graphics.Typeface r3) {
+                r2 = this;
+                q8.d r0 = r2.f21761b
+                int r1 = r0.f21749d
+                android.graphics.Typeface r3 = android.graphics.Typeface.create(r3, r1)
+                r0.f21759n = r3
+                q8.d r3 = r2.f21761b
+                r0 = 1
+                r3.f21758m = r0
+                h7.xf r0 = r2.f21760a
+                android.graphics.Typeface r3 = r3.f21759n
+                r1 = 0
+                r0.mo3340b(r3, r1)
+                return
+        }
+    }
+
+    public C5600d(android.content.Context r6, int r7) {
+            r5 = this;
+            r5.<init>()
+            r0 = 0
+            r5.f21758m = r0
+            int[] r1 = p339t7.C6183a.f24000M
+            android.content.res.TypedArray r1 = r6.obtainStyledAttributes(r7, r1)
+            r2 = 0
+            float r3 = r1.getDimension(r0, r2)
+            r5.f21756k = r3
+            r3 = 3
+            android.content.res.ColorStateList r3 = p288q8.C5599c.m11875a(r6, r1, r3)
+            r5.f21746a = r3
+            r3 = 4
+            p288q8.C5599c.m11875a(r6, r1, r3)
+            r3 = 5
+            p288q8.C5599c.m11875a(r6, r1, r3)
+            r3 = 2
+            int r3 = r1.getInt(r3, r0)
+            r5.f21749d = r3
+            r3 = 1
+            int r3 = r1.getInt(r3, r3)
+            r5.f21750e = r3
+            r3 = 12
+            boolean r4 = r1.hasValue(r3)
+            if (r4 == 0) goto L39
+            goto L3b
+        L39:
+            r3 = 10
+        L3b:
+            int r4 = r1.getResourceId(r3, r0)
+            r5.f21757l = r4
+            java.lang.String r3 = r1.getString(r3)
+            r5.f21748c = r3
+            r3 = 14
+            r1.getBoolean(r3, r0)
+            r3 = 6
+            android.content.res.ColorStateList r3 = p288q8.C5599c.m11875a(r6, r1, r3)
+            r5.f21747b = r3
+            r3 = 7
+            float r3 = r1.getFloat(r3, r2)
+            r5.f21751f = r3
+            r3 = 8
+            float r3 = r1.getFloat(r3, r2)
+            r5.f21752g = r3
+            r3 = 9
+            float r3 = r1.getFloat(r3, r2)
+            r5.f21753h = r3
+            r1.recycle()
+            int[] r1 = p339t7.C6183a.f23989B
+            android.content.res.TypedArray r6 = r6.obtainStyledAttributes(r7, r1)
+            boolean r7 = r6.hasValue(r0)
+            r5.f21754i = r7
+            float r7 = r6.getFloat(r0, r2)
+            r5.f21755j = r7
+            r6.recycle()
+            return
+    }
+
+    /* renamed from: a */
+    public final void m11881a() {
+            r2 = this;
+            android.graphics.Typeface r0 = r2.f21759n
+            if (r0 != 0) goto L10
+            java.lang.String r0 = r2.f21748c
+            if (r0 == 0) goto L10
+            int r1 = r2.f21749d
+            android.graphics.Typeface r0 = android.graphics.Typeface.create(r0, r1)
+            r2.f21759n = r0
+        L10:
+            android.graphics.Typeface r0 = r2.f21759n
+            if (r0 != 0) goto L36
+            int r0 = r2.f21750e
+            r1 = 1
+            if (r0 == r1) goto L28
+            r1 = 2
+            if (r0 == r1) goto L25
+            r1 = 3
+            if (r0 == r1) goto L22
+            android.graphics.Typeface r0 = android.graphics.Typeface.DEFAULT
+            goto L2a
+        L22:
+            android.graphics.Typeface r0 = android.graphics.Typeface.MONOSPACE
+            goto L2a
+        L25:
+            android.graphics.Typeface r0 = android.graphics.Typeface.SERIF
+            goto L2a
+        L28:
+            android.graphics.Typeface r0 = android.graphics.Typeface.SANS_SERIF
+        L2a:
+            r2.f21759n = r0
+            android.graphics.Typeface r0 = r2.f21759n
+            int r1 = r2.f21749d
+            android.graphics.Typeface r0 = android.graphics.Typeface.create(r0, r1)
+            r2.f21759n = r0
+        L36:
+            return
+    }
+
+    /* renamed from: b */
+    public android.graphics.Typeface m11882b(android.content.Context r3) {
+            r2 = this;
+            boolean r0 = r2.f21758m
+            if (r0 == 0) goto L7
+            android.graphics.Typeface r3 = r2.f21759n
+            return r3
+        L7:
+            boolean r0 = r3.isRestricted()
+            if (r0 != 0) goto L35
+            int r0 = r2.f21757l     // Catch: java.lang.Exception -> L20 java.lang.Throwable -> L35
+            android.graphics.Typeface r3 = p065e0.C1503h.m4082a(r3, r0)     // Catch: java.lang.Exception -> L20 java.lang.Throwable -> L35
+            r2.f21759n = r3     // Catch: java.lang.Exception -> L20 java.lang.Throwable -> L35
+            if (r3 == 0) goto L35
+            int r0 = r2.f21749d     // Catch: java.lang.Exception -> L20 java.lang.Throwable -> L35
+            android.graphics.Typeface r3 = android.graphics.Typeface.create(r3, r0)     // Catch: java.lang.Exception -> L20 java.lang.Throwable -> L35
+            r2.f21759n = r3     // Catch: java.lang.Exception -> L20 java.lang.Throwable -> L35
+            goto L35
+        L20:
+            r3 = move-exception
+            java.lang.String r0 = "Error loading font "
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r2.f21748c
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            java.lang.String r1 = "TextAppearance"
+            android.util.Log.d(r1, r0, r3)
+        L35:
+            r2.m11881a()
+            r3 = 1
+            r2.f21758m = r3
+            android.graphics.Typeface r3 = r2.f21759n
+            return r3
+    }
+
+    /* renamed from: c */
+    public void m11883c(android.content.Context r10, p124h7.AbstractC2951xf r11) {
+            r9 = this;
+            boolean r0 = r9.m11884d(r10)
+            if (r0 == 0) goto La
+            r9.m11882b(r10)
+            goto Ld
+        La:
+            r9.m11881a()
+        Ld:
+            int r2 = r9.f21757l
+            r0 = 1
+            if (r2 != 0) goto L14
+            r9.f21758m = r0
+        L14:
+            boolean r1 = r9.f21758m
+            if (r1 == 0) goto L1e
+            android.graphics.Typeface r10 = r9.f21759n
+            r11.mo3340b(r10, r0)
+            return
+        L1e:
+            q8.d$a r5 = new q8.d$a     // Catch: java.lang.Exception -> L3f android.content.res.Resources.NotFoundException -> L5b
+            r5.<init>(r9, r11)     // Catch: java.lang.Exception -> L3f android.content.res.Resources.NotFoundException -> L5b
+            r1 = 0
+            java.lang.ThreadLocal<android.util.TypedValue> r3 = p065e0.C1503h.f7314a     // Catch: java.lang.Exception -> L3f android.content.res.Resources.NotFoundException -> L5b
+            boolean r3 = r10.isRestricted()     // Catch: java.lang.Exception -> L3f android.content.res.Resources.NotFoundException -> L5b
+            if (r3 == 0) goto L31
+            r10 = -4
+            r5.m4085a(r10, r1)     // Catch: java.lang.Exception -> L3f android.content.res.Resources.NotFoundException -> L5b
+            goto L60
+        L31:
+            android.util.TypedValue r3 = new android.util.TypedValue     // Catch: java.lang.Exception -> L3f android.content.res.Resources.NotFoundException -> L5b
+            r3.<init>()     // Catch: java.lang.Exception -> L3f android.content.res.Resources.NotFoundException -> L5b
+            r4 = 0
+            r7 = 0
+            r8 = 0
+            r6 = 0
+            r1 = r10
+            p065e0.C1503h.m4083b(r1, r2, r3, r4, r5, r6, r7, r8)     // Catch: java.lang.Exception -> L3f android.content.res.Resources.NotFoundException -> L5b
+            goto L60
+        L3f:
+            r10 = move-exception
+            java.lang.String r1 = "Error loading font "
+            java.lang.StringBuilder r1 = android.support.v4.media.C0144c.m256a(r1)
+            java.lang.String r2 = r9.f21748c
+            r1.append(r2)
+            java.lang.String r1 = r1.toString()
+            java.lang.String r2 = "TextAppearance"
+            android.util.Log.d(r2, r1, r10)
+            r9.f21758m = r0
+            r10 = -3
+            r11.mo3339a(r10)
+            goto L60
+        L5b:
+            r9.f21758m = r0
+            r11.mo3339a(r0)
+        L60:
+            return
+    }
+
+    /* renamed from: d */
+    public final boolean m11884d(android.content.Context r9) {
+            r8 = this;
+            int r1 = r8.f21757l
+            r0 = 0
+            if (r1 == 0) goto L1e
+            java.lang.ThreadLocal<android.util.TypedValue> r2 = p065e0.C1503h.f7314a
+            boolean r2 = r9.isRestricted()
+            if (r2 == 0) goto Le
+            goto L1e
+        Le:
+            android.util.TypedValue r2 = new android.util.TypedValue
+            r2.<init>()
+            r3 = 0
+            r4 = 0
+            r5 = 0
+            r6 = 0
+            r7 = 1
+            r0 = r9
+            android.graphics.Typeface r9 = p065e0.C1503h.m4083b(r0, r1, r2, r3, r4, r5, r6, r7)
+            r0 = r9
+        L1e:
+            if (r0 == 0) goto L22
+            r9 = 1
+            goto L23
+        L22:
+            r9 = 0
+        L23:
+            return r9
+    }
+
+    /* renamed from: e */
+    public void m11885e(android.content.Context r5, android.text.TextPaint r6, p124h7.AbstractC2951xf r7) {
+            r4 = this;
+            r4.m11886f(r5, r6, r7)
+            android.content.res.ColorStateList r5 = r4.f21746a
+            if (r5 == 0) goto L12
+            int[] r7 = r6.drawableState
+            int r0 = r5.getDefaultColor()
+            int r5 = r5.getColorForState(r7, r0)
+            goto L14
+        L12:
+            r5 = -16777216(0xffffffffff000000, float:-1.7014118E38)
+        L14:
+            r6.setColor(r5)
+            float r5 = r4.f21753h
+            float r7 = r4.f21751f
+            float r0 = r4.f21752g
+            android.content.res.ColorStateList r1 = r4.f21747b
+            if (r1 == 0) goto L2c
+            int[] r2 = r6.drawableState
+            int r3 = r1.getDefaultColor()
+            int r1 = r1.getColorForState(r2, r3)
+            goto L2d
+        L2c:
+            r1 = 0
+        L2d:
+            r6.setShadowLayer(r5, r7, r0, r1)
+            return
+    }
+
+    /* renamed from: f */
+    public void m11886f(android.content.Context r2, android.text.TextPaint r3, p124h7.AbstractC2951xf r4) {
+            r1 = this;
+            boolean r0 = r1.m11884d(r2)
+            if (r0 == 0) goto Le
+            android.graphics.Typeface r2 = r1.m11882b(r2)
+            r1.m11887g(r3, r2)
+            goto L1e
+        Le:
+            r1.m11881a()
+            android.graphics.Typeface r0 = r1.f21759n
+            r1.m11887g(r3, r0)
+            q8.e r0 = new q8.e
+            r0.<init>(r1, r3, r4)
+            r1.m11883c(r2, r0)
+        L1e:
+            return
+    }
+
+    /* renamed from: g */
+    public void m11887g(android.text.TextPaint r2, android.graphics.Typeface r3) {
+            r1 = this;
+            r2.setTypeface(r3)
+            int r0 = r1.f21749d
+            int r3 = r3.getStyle()
+            int r3 = ~r3
+            r3 = r3 & r0
+            r0 = r3 & 1
+            if (r0 == 0) goto L11
+            r0 = 1
+            goto L12
+        L11:
+            r0 = 0
+        L12:
+            r2.setFakeBoldText(r0)
+            r3 = r3 & 2
+            if (r3 == 0) goto L1c
+            r3 = -1098907648(0xffffffffbe800000, float:-0.25)
+            goto L1d
+        L1c:
+            r3 = 0
+        L1d:
+            r2.setTextSkewX(r3)
+            float r3 = r1.f21756k
+            r2.setTextSize(r3)
+            boolean r3 = r1.f21754i
+            if (r3 == 0) goto L2e
+            float r3 = r1.f21755j
+            r2.setLetterSpacing(r3)
+        L2e:
+            return
+    }
+}
+package p288q8;
+
+/* renamed from: q8.e */
+/* loaded from: classes.dex */
+public class C5601e extends p124h7.AbstractC2951xf {
+
+    /* renamed from: b */
+    public final /* synthetic */ android.text.TextPaint f21762b;
+
+    /* renamed from: c */
+    public final /* synthetic */ p124h7.AbstractC2951xf f21763c;
+
+    /* renamed from: d */
+    public final /* synthetic */ p288q8.C5600d f21764d;
+
+    public C5601e(p288q8.C5600d r1, android.text.TextPaint r2, p124h7.AbstractC2951xf r3) {
+            r0 = this;
+            r0.f21764d = r1
+            r0.f21762b = r2
+            r0.f21763c = r3
+            r1 = 1
+            r0.<init>(r1)
+            return
+    }
+
+    @Override // p124h7.AbstractC2951xf
+    /* renamed from: a */
+    public void mo3339a(int r2) {
+            r1 = this;
+            h7.xf r0 = r1.f21763c
+            r0.mo3339a(r2)
+            return
+    }
+
+    @Override // p124h7.AbstractC2951xf
+    /* renamed from: b */
+    public void mo3340b(android.graphics.Typeface r3, boolean r4) {
+            r2 = this;
+            q8.d r0 = r2.f21764d
+            android.text.TextPaint r1 = r2.f21762b
+            r0.m11887g(r1, r3)
+            h7.xf r0 = r2.f21763c
+            r0.mo3340b(r3, r4)
+            return
+    }
+}

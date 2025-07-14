@@ -1,0 +1,1155 @@
+package p283q3;
+
+import p161j3.AbstractC3395c;
+
+/* renamed from: q3.b */
+/* loaded from: classes.dex */
+public abstract class AbstractViewOnTouchListenerC5567b<T extends p161j3.AbstractC3395c<?>> extends android.view.GestureDetector.SimpleOnGestureListener implements android.view.View.OnTouchListener {
+
+    /* renamed from: Y */
+    public p283q3.AbstractViewOnTouchListenerC5567b.a f21680Y;
+
+    /* renamed from: Z */
+    public int f21681Z;
+
+    /* renamed from: a0 */
+    public p230n3.C4684b f21682a0;
+
+    /* renamed from: b0 */
+    public android.view.GestureDetector f21683b0;
+
+    /* renamed from: c0 */
+    public T f21684c0;
+
+    /* renamed from: q3.b$a */
+    public enum a extends java.lang.Enum<p283q3.AbstractViewOnTouchListenerC5567b.a> {
+
+        /* renamed from: Y */
+        public static final p283q3.AbstractViewOnTouchListenerC5567b.a f21685Y = null;
+
+        /* renamed from: Z */
+        public static final p283q3.AbstractViewOnTouchListenerC5567b.a f21686Z = null;
+
+        /* renamed from: a0 */
+        public static final p283q3.AbstractViewOnTouchListenerC5567b.a f21687a0 = null;
+
+        /* renamed from: b0 */
+        public static final p283q3.AbstractViewOnTouchListenerC5567b.a f21688b0 = null;
+
+        /* renamed from: c0 */
+        public static final p283q3.AbstractViewOnTouchListenerC5567b.a f21689c0 = null;
+
+        /* renamed from: d0 */
+        public static final p283q3.AbstractViewOnTouchListenerC5567b.a f21690d0 = null;
+
+        /* renamed from: e0 */
+        public static final p283q3.AbstractViewOnTouchListenerC5567b.a f21691e0 = null;
+
+        /* renamed from: f0 */
+        public static final p283q3.AbstractViewOnTouchListenerC5567b.a f21692f0 = null;
+
+        /* renamed from: g0 */
+        public static final p283q3.AbstractViewOnTouchListenerC5567b.a f21693g0 = null;
+
+        /* renamed from: h0 */
+        public static final /* synthetic */ p283q3.AbstractViewOnTouchListenerC5567b.a[] f21694h0 = null;
+
+        static {
+                q3.b$a r0 = new q3.b$a
+                java.lang.String r1 = "NONE"
+                r2 = 0
+                r0.<init>(r1, r2)
+                p283q3.AbstractViewOnTouchListenerC5567b.a.f21685Y = r0
+                q3.b$a r1 = new q3.b$a
+                java.lang.String r3 = "DRAG"
+                r4 = 1
+                r1.<init>(r3, r4)
+                p283q3.AbstractViewOnTouchListenerC5567b.a.f21686Z = r1
+                q3.b$a r3 = new q3.b$a
+                java.lang.String r5 = "X_ZOOM"
+                r6 = 2
+                r3.<init>(r5, r6)
+                p283q3.AbstractViewOnTouchListenerC5567b.a.f21687a0 = r3
+                q3.b$a r5 = new q3.b$a
+                java.lang.String r7 = "Y_ZOOM"
+                r8 = 3
+                r5.<init>(r7, r8)
+                p283q3.AbstractViewOnTouchListenerC5567b.a.f21688b0 = r5
+                q3.b$a r7 = new q3.b$a
+                java.lang.String r9 = "PINCH_ZOOM"
+                r10 = 4
+                r7.<init>(r9, r10)
+                p283q3.AbstractViewOnTouchListenerC5567b.a.f21689c0 = r7
+                q3.b$a r9 = new q3.b$a
+                java.lang.String r11 = "ROTATE"
+                r12 = 5
+                r9.<init>(r11, r12)
+                q3.b$a r11 = new q3.b$a
+                java.lang.String r13 = "SINGLE_TAP"
+                r14 = 6
+                r11.<init>(r13, r14)
+                p283q3.AbstractViewOnTouchListenerC5567b.a.f21690d0 = r11
+                q3.b$a r13 = new q3.b$a
+                java.lang.String r15 = "DOUBLE_TAP"
+                r14 = 7
+                r13.<init>(r15, r14)
+                p283q3.AbstractViewOnTouchListenerC5567b.a.f21691e0 = r13
+                q3.b$a r15 = new q3.b$a
+                java.lang.String r14 = "LONG_PRESS"
+                r12 = 8
+                r15.<init>(r14, r12)
+                p283q3.AbstractViewOnTouchListenerC5567b.a.f21692f0 = r15
+                q3.b$a r14 = new q3.b$a
+                java.lang.String r12 = "FLING"
+                r10 = 9
+                r14.<init>(r12, r10)
+                p283q3.AbstractViewOnTouchListenerC5567b.a.f21693g0 = r14
+                r12 = 10
+                q3.b$a[] r12 = new p283q3.AbstractViewOnTouchListenerC5567b.a[r12]
+                r12[r2] = r0
+                r12[r4] = r1
+                r12[r6] = r3
+                r12[r8] = r5
+                r0 = 4
+                r12[r0] = r7
+                r0 = 5
+                r12[r0] = r9
+                r0 = 6
+                r12[r0] = r11
+                r0 = 7
+                r12[r0] = r13
+                r0 = 8
+                r12[r0] = r15
+                r12[r10] = r14
+                p283q3.AbstractViewOnTouchListenerC5567b.a.f21694h0 = r12
+                return
+        }
+
+        a(java.lang.String r1, int r2) {
+                r0 = this;
+                r0.<init>(r1, r2)
+                return
+        }
+
+        public static p283q3.AbstractViewOnTouchListenerC5567b.a valueOf(java.lang.String r1) {
+                java.lang.Class<q3.b$a> r0 = p283q3.AbstractViewOnTouchListenerC5567b.a.class
+                java.lang.Enum r1 = java.lang.Enum.valueOf(r0, r1)
+                q3.b$a r1 = (p283q3.AbstractViewOnTouchListenerC5567b.a) r1
+                return r1
+        }
+
+        public static p283q3.AbstractViewOnTouchListenerC5567b.a[] values() {
+                q3.b$a[] r0 = p283q3.AbstractViewOnTouchListenerC5567b.a.f21694h0
+                java.lang.Object r0 = r0.clone()
+                q3.b$a[] r0 = (p283q3.AbstractViewOnTouchListenerC5567b.a[]) r0
+                return r0
+        }
+    }
+
+    public AbstractViewOnTouchListenerC5567b(T r2) {
+            r1 = this;
+            r1.<init>()
+            q3.b$a r0 = p283q3.AbstractViewOnTouchListenerC5567b.a.f21685Y
+            r1.f21680Y = r0
+            r0 = 0
+            r1.f21681Z = r0
+            r1.f21684c0 = r2
+            android.view.GestureDetector r0 = new android.view.GestureDetector
+            android.content.Context r2 = r2.getContext()
+            r0.<init>(r2, r1)
+            r1.f21683b0 = r0
+            return
+    }
+}
+package p283q3;
+
+/* renamed from: q3.a */
+/* loaded from: classes.dex */
+public class C5566a extends p283q3.AbstractViewOnTouchListenerC5567b<p161j3.AbstractC3394b<? extends p198l3.AbstractC4167a<? extends p267p3.InterfaceC5348b<? extends p198l3.C4172f>>>> {
+
+    /* renamed from: d0 */
+    public android.graphics.Matrix f21666d0;
+
+    /* renamed from: e0 */
+    public android.graphics.Matrix f21667e0;
+
+    /* renamed from: f0 */
+    public p323s3.C5949c f21668f0;
+
+    /* renamed from: g0 */
+    public p323s3.C5949c f21669g0;
+
+    /* renamed from: h0 */
+    public float f21670h0;
+
+    /* renamed from: i0 */
+    public float f21671i0;
+
+    /* renamed from: j0 */
+    public float f21672j0;
+
+    /* renamed from: k0 */
+    public p267p3.InterfaceC5350d f21673k0;
+
+    /* renamed from: l0 */
+    public android.view.VelocityTracker f21674l0;
+
+    /* renamed from: m0 */
+    public long f21675m0;
+
+    /* renamed from: n0 */
+    public p323s3.C5949c f21676n0;
+
+    /* renamed from: o0 */
+    public p323s3.C5949c f21677o0;
+
+    /* renamed from: p0 */
+    public float f21678p0;
+
+    /* renamed from: q0 */
+    public float f21679q0;
+
+    public C5566a(p161j3.AbstractC3394b<? extends p198l3.AbstractC4167a<? extends p267p3.InterfaceC5348b<? extends p198l3.C4172f>>> r3, android.graphics.Matrix r4, float r5) {
+            r2 = this;
+            r2.<init>(r3)
+            android.graphics.Matrix r3 = new android.graphics.Matrix
+            r3.<init>()
+            r2.f21666d0 = r3
+            android.graphics.Matrix r3 = new android.graphics.Matrix
+            r3.<init>()
+            r2.f21667e0 = r3
+            r3 = 0
+            s3.c r0 = p323s3.C5949c.m12359b(r3, r3)
+            r2.f21668f0 = r0
+            s3.c r0 = p323s3.C5949c.m12359b(r3, r3)
+            r2.f21669g0 = r0
+            r0 = 1065353216(0x3f800000, float:1.0)
+            r2.f21670h0 = r0
+            r2.f21671i0 = r0
+            r2.f21672j0 = r0
+            r0 = 0
+            r2.f21675m0 = r0
+            s3.c r0 = p323s3.C5949c.m12359b(r3, r3)
+            r2.f21676n0 = r0
+            s3.c r3 = p323s3.C5949c.m12359b(r3, r3)
+            r2.f21677o0 = r3
+            r2.f21666d0 = r4
+            float r3 = p323s3.AbstractC5952f.m12377d(r5)
+            r2.f21678p0 = r3
+            r3 = 1080033280(0x40600000, float:3.5)
+            float r3 = p323s3.AbstractC5952f.m12377d(r3)
+            r2.f21679q0 = r3
+            return
+    }
+
+    /* renamed from: e */
+    public static float m11845e(android.view.MotionEvent r4) {
+            r0 = 0
+            float r1 = r4.getX(r0)
+            r2 = 1
+            float r3 = r4.getX(r2)
+            float r1 = r1 - r3
+            float r0 = r4.getY(r0)
+            float r4 = r4.getY(r2)
+            float r0 = r0 - r4
+            float r1 = r1 * r1
+            float r0 = r0 * r0
+            float r0 = r0 + r1
+            double r0 = (double) r0
+            double r0 = java.lang.Math.sqrt(r0)
+            float r4 = (float) r0
+            return r4
+    }
+
+    /* renamed from: a */
+    public p323s3.C5949c m11846a(float r3, float r4) {
+            r2 = this;
+            T extends j3.c<?> r0 = r2.f21684c0
+            j3.b r0 = (p161j3.AbstractC3394b) r0
+            s3.g r0 = r0.getViewPortHandler()
+            android.graphics.RectF r1 = r0.f22866b
+            float r1 = r1.left
+            float r3 = r3 - r1
+            r2.m11847b()
+            T extends j3.c<?> r1 = r2.f21684c0
+            j3.b r1 = (p161j3.AbstractC3394b) r1
+            int r1 = r1.getMeasuredHeight()
+            float r1 = (float) r1
+            float r1 = r1 - r4
+            float r4 = r0.m12390k()
+            float r1 = r1 - r4
+            float r4 = -r1
+            s3.c r3 = p323s3.C5949c.m12359b(r3, r4)
+            return r3
+    }
+
+    /* renamed from: b */
+    public final boolean m11847b() {
+            r2 = this;
+            p3.d r0 = r2.f21673k0
+            if (r0 != 0) goto L12
+            T extends j3.c<?> r0 = r2.f21684c0
+            j3.b r0 = (p161j3.AbstractC3394b) r0
+            k3.i r1 = r0.f14613X0
+            java.util.Objects.requireNonNull(r1)
+            k3.i r0 = r0.f14614Y0
+            java.util.Objects.requireNonNull(r0)
+        L12:
+            p3.d r0 = r2.f21673k0
+            if (r0 == 0) goto L21
+            T extends j3.c<?> r1 = r2.f21684c0
+            j3.b r1 = (p161j3.AbstractC3394b) r1
+            k3.i$a r0 = r0.mo9228L()
+            r1.m7780m(r0)
+        L21:
+            r0 = 0
+            return r0
+    }
+
+    /* renamed from: c */
+    public final void m11848c(android.view.MotionEvent r3, float r4, float r5) {
+            r2 = this;
+            q3.b$a r0 = p283q3.AbstractViewOnTouchListenerC5567b.a.f21686Z
+            r2.f21680Y = r0
+            android.graphics.Matrix r0 = r2.f21666d0
+            android.graphics.Matrix r1 = r2.f21667e0
+            r0.set(r1)
+            T extends j3.c<?> r0 = r2.f21684c0
+            j3.b r0 = (p161j3.AbstractC3394b) r0
+            q3.c r0 = r0.getOnChartGestureListener()
+            r2.m11847b()
+            android.graphics.Matrix r1 = r2.f21666d0
+            r1.postTranslate(r4, r5)
+            if (r0 == 0) goto L20
+            r0.m11854d(r3, r4, r5)
+        L20:
+            return
+    }
+
+    /* renamed from: d */
+    public final void m11849d(android.view.MotionEvent r3) {
+            r2 = this;
+            android.graphics.Matrix r0 = r2.f21667e0
+            android.graphics.Matrix r1 = r2.f21666d0
+            r0.set(r1)
+            s3.c r0 = r2.f21668f0
+            float r1 = r3.getX()
+            r0.f22838b = r1
+            s3.c r0 = r2.f21668f0
+            float r1 = r3.getY()
+            r0.f22839c = r1
+            T extends j3.c<?> r0 = r2.f21684c0
+            j3.b r0 = (p161j3.AbstractC3394b) r0
+            float r1 = r3.getX()
+            float r3 = r3.getY()
+            n3.b r3 = r0.m7784d(r1, r3)
+            if (r3 == 0) goto L36
+            T extends l3.d<? extends p3.d<? extends l3.f>> r0 = r0.f14635b0
+            l3.a r0 = (p198l3.AbstractC4167a) r0
+            int r3 = r3.f18656f
+            p3.d r3 = r0.m9248b(r3)
+            p3.b r3 = (p267p3.InterfaceC5348b) r3
+            goto L37
+        L36:
+            r3 = 0
+        L37:
+            r2.f21673k0 = r3
+            return
+    }
+
+    /* renamed from: f */
+    public void m11850f() {
+            r2 = this;
+            s3.c r0 = r2.f21677o0
+            r1 = 0
+            r0.f22838b = r1
+            r0.f22839c = r1
+            return
+    }
+
+    @Override // android.view.GestureDetector.SimpleOnGestureListener, android.view.GestureDetector.OnDoubleTapListener
+    public boolean onDoubleTap(android.view.MotionEvent r9) {
+            r8 = this;
+            q3.b$a r0 = p283q3.AbstractViewOnTouchListenerC5567b.a.f21691e0
+            r8.f21680Y = r0
+            T extends j3.c<?> r0 = r8.f21684c0
+            j3.b r0 = (p161j3.AbstractC3394b) r0
+            q3.c r0 = r0.getOnChartGestureListener()
+            if (r0 == 0) goto L11
+            r0.m11852b(r9)
+        L11:
+            T extends j3.c<?> r0 = r8.f21684c0
+            r1 = r0
+            j3.b r1 = (p161j3.AbstractC3394b) r1
+            boolean r1 = r1.f14599J0
+            if (r1 == 0) goto La2
+            j3.b r0 = (p161j3.AbstractC3394b) r0
+            l3.d r0 = r0.getData()
+            l3.a r0 = (p198l3.AbstractC4167a) r0
+            int r0 = r0.m9250d()
+            if (r0 <= 0) goto La2
+            float r0 = r9.getX()
+            float r1 = r9.getY()
+            s3.c r0 = r8.m11846a(r0, r1)
+            T extends j3.c<?> r1 = r8.f21684c0
+            r2 = r1
+            j3.b r2 = (p161j3.AbstractC3394b) r2
+            r3 = r1
+            j3.b r3 = (p161j3.AbstractC3394b) r3
+            boolean r3 = r3.f14603N0
+            r4 = 1068708659(0x3fb33333, float:1.4)
+            if (r3 == 0) goto L47
+            r3 = 1068708659(0x3fb33333, float:1.4)
+            goto L49
+        L47:
+            r3 = 1065353216(0x3f800000, float:1.0)
+        L49:
+            j3.b r1 = (p161j3.AbstractC3394b) r1
+            boolean r1 = r1.f14604O0
+            if (r1 == 0) goto L50
+            goto L52
+        L50:
+            r4 = 1065353216(0x3f800000, float:1.0)
+        L52:
+            float r1 = r0.f22838b
+            float r5 = r0.f22839c
+            s3.g r6 = r2.f14653t0
+            float r5 = -r5
+            android.graphics.Matrix r7 = r2.f14623h1
+            java.util.Objects.requireNonNull(r6)
+            r7.reset()
+            android.graphics.Matrix r6 = r6.f22865a
+            r7.set(r6)
+            r7.postScale(r3, r4, r1, r5)
+            s3.g r1 = r2.f14653t0
+            android.graphics.Matrix r3 = r2.f14623h1
+            r4 = 0
+            r1.m12392m(r3, r2, r4)
+            r2.mo7776b()
+            r2.postInvalidate()
+            T extends j3.c<?> r1 = r8.f21684c0
+            j3.b r1 = (p161j3.AbstractC3394b) r1
+            boolean r1 = r1.f14634a0
+            if (r1 == 0) goto L9d
+            java.lang.String r1 = "Double-Tap, Zooming In, x: "
+            java.lang.StringBuilder r1 = android.support.v4.media.C0144c.m256a(r1)
+            float r2 = r0.f22838b
+            r1.append(r2)
+            java.lang.String r2 = ", y: "
+            r1.append(r2)
+            float r2 = r0.f22839c
+            r1.append(r2)
+            java.lang.String r1 = r1.toString()
+            java.lang.String r2 = "BarlineChartTouch"
+            android.util.Log.i(r2, r1)
+        L9d:
+            s3.d<s3.c> r1 = p323s3.C5949c.f22837d
+            r1.m12363c(r0)
+        La2:
+            boolean r9 = super.onDoubleTap(r9)
+            return r9
+    }
+
+    @Override // android.view.GestureDetector.SimpleOnGestureListener, android.view.GestureDetector.OnGestureListener
+    public boolean onFling(android.view.MotionEvent r2, android.view.MotionEvent r3, float r4, float r5) {
+            r1 = this;
+            q3.b$a r0 = p283q3.AbstractViewOnTouchListenerC5567b.a.f21693g0
+            r1.f21680Y = r0
+            T extends j3.c<?> r0 = r1.f21684c0
+            j3.b r0 = (p161j3.AbstractC3394b) r0
+            q3.c r0 = r0.getOnChartGestureListener()
+            if (r0 == 0) goto L11
+            r0.m11855e(r2, r3, r4, r5)
+        L11:
+            boolean r2 = super.onFling(r2, r3, r4, r5)
+            return r2
+    }
+
+    @Override // android.view.GestureDetector.SimpleOnGestureListener, android.view.GestureDetector.OnGestureListener
+    public void onLongPress(android.view.MotionEvent r2) {
+            r1 = this;
+            q3.b$a r0 = p283q3.AbstractViewOnTouchListenerC5567b.a.f21692f0
+            r1.f21680Y = r0
+            T extends j3.c<?> r0 = r1.f21684c0
+            j3.b r0 = (p161j3.AbstractC3394b) r0
+            q3.c r0 = r0.getOnChartGestureListener()
+            if (r0 == 0) goto L11
+            r0.m11858h(r2)
+        L11:
+            return
+    }
+
+    @Override // android.view.GestureDetector.SimpleOnGestureListener, android.view.GestureDetector.OnGestureListener
+    public boolean onSingleTapUp(android.view.MotionEvent r4) {
+            r3 = this;
+            q3.b$a r0 = p283q3.AbstractViewOnTouchListenerC5567b.a.f21690d0
+            r3.f21680Y = r0
+            T extends j3.c<?> r0 = r3.f21684c0
+            j3.b r0 = (p161j3.AbstractC3394b) r0
+            q3.c r0 = r0.getOnChartGestureListener()
+            if (r0 == 0) goto L11
+            r0.m11857g(r4)
+        L11:
+            T extends j3.c<?> r0 = r3.f21684c0
+            r1 = r0
+            j3.b r1 = (p161j3.AbstractC3394b) r1
+            boolean r1 = r1.f14636c0
+            if (r1 != 0) goto L1c
+            r4 = 0
+            return r4
+        L1c:
+            j3.b r0 = (p161j3.AbstractC3394b) r0
+            float r1 = r4.getX()
+            float r2 = r4.getY()
+            n3.b r0 = r0.m7784d(r1, r2)
+            r1 = 1
+            if (r0 == 0) goto L3e
+            n3.b r2 = r3.f21682a0
+            boolean r2 = r0.m10724a(r2)
+            if (r2 == 0) goto L36
+            goto L3e
+        L36:
+            T extends j3.c<?> r2 = r3.f21684c0
+            r2.m7786f(r0, r1)
+            r3.f21682a0 = r0
+            goto L46
+        L3e:
+            T extends j3.c<?> r0 = r3.f21684c0
+            r2 = 0
+            r0.m7786f(r2, r1)
+            r3.f21682a0 = r2
+        L46:
+            boolean r4 = super.onSingleTapUp(r4)
+            return r4
+    }
+
+    @Override // android.view.View.OnTouchListener
+    @android.annotation.SuppressLint({"ClickableViewAccessibility"})
+    public boolean onTouch(android.view.View r12, android.view.MotionEvent r13) {
+            r11 = this;
+            q3.b$a r12 = p283q3.AbstractViewOnTouchListenerC5567b.a.f21686Z
+            android.view.VelocityTracker r0 = r11.f21674l0
+            if (r0 != 0) goto Lc
+            android.view.VelocityTracker r0 = android.view.VelocityTracker.obtain()
+            r11.f21674l0 = r0
+        Lc:
+            android.view.VelocityTracker r0 = r11.f21674l0
+            r0.addMovement(r13)
+            int r0 = r13.getActionMasked()
+            r1 = 0
+            r2 = 3
+            if (r0 != r2) goto L22
+            android.view.VelocityTracker r0 = r11.f21674l0
+            if (r0 == 0) goto L22
+            r0.recycle()
+            r11.f21674l0 = r1
+        L22:
+            int r0 = r11.f21681Z
+            if (r0 != 0) goto L2b
+            android.view.GestureDetector r0 = r11.f21683b0
+            r0.onTouchEvent(r13)
+        L2b:
+            T extends j3.c<?> r0 = r11.f21684c0
+            j3.b r0 = (p161j3.AbstractC3394b) r0
+            boolean r3 = r0.f14601L0
+            r4 = 0
+            r5 = 1
+            if (r3 != 0) goto L3c
+            boolean r3 = r0.f14602M0
+            if (r3 == 0) goto L3a
+            goto L3c
+        L3a:
+            r3 = 0
+            goto L3d
+        L3c:
+            r3 = 1
+        L3d:
+            if (r3 != 0) goto L48
+            boolean r3 = r0.f14603N0
+            if (r3 != 0) goto L48
+            boolean r0 = r0.f14604O0
+            if (r0 != 0) goto L48
+            return r5
+        L48:
+            int r0 = r13.getAction()
+            r0 = r0 & 255(0xff, float:3.57E-43)
+            if (r0 == 0) goto L414
+            r3 = 1000(0x3e8, float:1.401E-42)
+            r6 = 5
+            r7 = 4
+            r8 = 2
+            if (r0 == r5) goto L37c
+            r1 = 0
+            if (r0 == r8) goto L127
+            if (r0 == r2) goto L11b
+            if (r0 == r6) goto La4
+            r12 = 6
+            if (r0 == r12) goto L63
+            goto L427
+        L63:
+            android.view.VelocityTracker r12 = r11.f21674l0
+            int r0 = p323s3.AbstractC5952f.f22857c
+            float r0 = (float) r0
+            r12.computeCurrentVelocity(r3, r0)
+            int r0 = r13.getActionIndex()
+            int r2 = r13.getPointerId(r0)
+            float r3 = r12.getXVelocity(r2)
+            float r2 = r12.getYVelocity(r2)
+            int r7 = r13.getPointerCount()
+        L7f:
+            if (r4 >= r7) goto La0
+            if (r4 != r0) goto L84
+            goto L9d
+        L84:
+            int r8 = r13.getPointerId(r4)
+            float r9 = r12.getXVelocity(r8)
+            float r9 = r9 * r3
+            float r8 = r12.getYVelocity(r8)
+            float r8 = r8 * r2
+            float r8 = r8 + r9
+            int r8 = (r8 > r1 ? 1 : (r8 == r1 ? 0 : -1))
+            if (r8 >= 0) goto L9d
+            r12.clear()
+            goto La0
+        L9d:
+            int r4 = r4 + 1
+            goto L7f
+        La0:
+            r11.f21681Z = r6
+            goto L427
+        La4:
+            int r12 = r13.getPointerCount()
+            if (r12 < r8) goto L427
+            T extends j3.c<?> r12 = r11.f21684c0
+            j3.b r12 = (p161j3.AbstractC3394b) r12
+            r12.m7783c()
+            r11.m11849d(r13)
+            float r12 = r13.getX(r4)
+            float r0 = r13.getX(r5)
+            float r12 = r12 - r0
+            float r12 = java.lang.Math.abs(r12)
+            r11.f21670h0 = r12
+            float r12 = r13.getY(r4)
+            float r0 = r13.getY(r5)
+            float r12 = r12 - r0
+            float r12 = java.lang.Math.abs(r12)
+            r11.f21671i0 = r12
+            float r12 = m11845e(r13)
+            r11.f21672j0 = r12
+            r0 = 1092616192(0x41200000, float:10.0)
+            int r12 = (r12 > r0 ? 1 : (r12 == r0 ? 0 : -1))
+            if (r12 <= 0) goto Lfd
+            T extends j3.c<?> r12 = r11.f21684c0
+            j3.b r12 = (p161j3.AbstractC3394b) r12
+            boolean r0 = r12.f14598I0
+            if (r0 == 0) goto Le9
+            r11.f21681Z = r7
+            goto Lfd
+        Le9:
+            boolean r0 = r12.f14603N0
+            boolean r12 = r12.f14604O0
+            if (r0 == r12) goto Lf2
+            if (r0 == 0) goto Lfb
+            goto Lfa
+        Lf2:
+            float r12 = r11.f21670h0
+            float r0 = r11.f21671i0
+            int r12 = (r12 > r0 ? 1 : (r12 == r0 ? 0 : -1))
+            if (r12 <= 0) goto Lfb
+        Lfa:
+            r2 = 2
+        Lfb:
+            r11.f21681Z = r2
+        Lfd:
+            s3.c r12 = r11.f21669g0
+            float r0 = r13.getX(r4)
+            float r1 = r13.getX(r5)
+            float r1 = r1 + r0
+            float r0 = r13.getY(r4)
+            float r13 = r13.getY(r5)
+            float r13 = r13 + r0
+            r0 = 1073741824(0x40000000, float:2.0)
+            float r1 = r1 / r0
+            r12.f22838b = r1
+            float r13 = r13 / r0
+            r12.f22839c = r13
+            goto L427
+        L11b:
+            r11.f21681Z = r4
+            T extends j3.c<?> r12 = r11.f21684c0
+            q3.c r12 = r12.getOnChartGestureListener()
+            if (r12 == 0) goto L427
+            goto L40e
+        L127:
+            int r0 = r11.f21681Z
+            if (r0 != r5) goto L15c
+            T extends j3.c<?> r12 = r11.f21684c0
+            j3.b r12 = (p161j3.AbstractC3394b) r12
+            r12.m7783c()
+            T extends j3.c<?> r12 = r11.f21684c0
+            j3.b r12 = (p161j3.AbstractC3394b) r12
+            boolean r12 = r12.f14601L0
+            if (r12 == 0) goto L144
+            float r12 = r13.getX()
+            s3.c r0 = r11.f21668f0
+            float r0 = r0.f22838b
+            float r12 = r12 - r0
+            goto L145
+        L144:
+            r12 = 0
+        L145:
+            T extends j3.c<?> r0 = r11.f21684c0
+            j3.b r0 = (p161j3.AbstractC3394b) r0
+            boolean r0 = r0.f14602M0
+            if (r0 == 0) goto L157
+            float r0 = r13.getY()
+            s3.c r1 = r11.f21668f0
+            float r1 = r1.f22839c
+            float r1 = r0 - r1
+        L157:
+            r11.m11848c(r13, r12, r1)
+            goto L427
+        L15c:
+            if (r0 == r8) goto L22d
+            if (r0 == r2) goto L22d
+            if (r0 != r7) goto L164
+            goto L22d
+        L164:
+            if (r0 != 0) goto L427
+            float r0 = r13.getX()
+            s3.c r2 = r11.f21668f0
+            float r2 = r2.f22838b
+            float r3 = r13.getY()
+            s3.c r6 = r11.f21668f0
+            float r6 = r6.f22839c
+            float r0 = r0 - r2
+            float r3 = r3 - r6
+            float r0 = r0 * r0
+            float r3 = r3 * r3
+            float r3 = r3 + r0
+            double r2 = (double) r3
+            double r2 = java.lang.Math.sqrt(r2)
+            float r0 = (float) r2
+            float r0 = java.lang.Math.abs(r0)
+            float r2 = r11.f21678p0
+            int r0 = (r0 > r2 ? 1 : (r0 == r2 ? 0 : -1))
+            if (r0 <= 0) goto L427
+            T extends j3.c<?> r0 = r11.f21684c0
+            j3.b r0 = (p161j3.AbstractC3394b) r0
+            boolean r2 = r0.f14601L0
+            if (r2 != 0) goto L19c
+            boolean r2 = r0.f14602M0
+            if (r2 == 0) goto L19a
+            goto L19c
+        L19a:
+            r2 = 0
+            goto L19d
+        L19c:
+            r2 = 1
+        L19d:
+            if (r2 == 0) goto L427
+            s3.g r0 = r0.f14653t0
+            boolean r2 = r0.m12381b()
+            if (r2 == 0) goto L1af
+            boolean r0 = r0.m12382c()
+            if (r0 == 0) goto L1af
+            r0 = 1
+            goto L1b0
+        L1af:
+            r0 = 0
+        L1b0:
+            if (r0 == 0) goto L1c9
+            T extends j3.c<?> r0 = r11.f21684c0
+            j3.b r0 = (p161j3.AbstractC3394b) r0
+            s3.g r0 = r0.f14653t0
+            float r2 = r0.f22876l
+            int r2 = (r2 > r1 ? 1 : (r2 == r1 ? 0 : -1))
+            if (r2 > 0) goto L1c6
+            float r0 = r0.f22877m
+            int r0 = (r0 > r1 ? 1 : (r0 == r1 ? 0 : -1))
+            if (r0 > 0) goto L1c6
+            r0 = 1
+            goto L1c7
+        L1c6:
+            r0 = 0
+        L1c7:
+            if (r0 != 0) goto L1ca
+        L1c9:
+            r4 = 1
+        L1ca:
+            if (r4 == 0) goto L200
+            float r0 = r13.getX()
+            s3.c r1 = r11.f21668f0
+            float r1 = r1.f22838b
+            float r0 = r0 - r1
+            float r0 = java.lang.Math.abs(r0)
+            float r13 = r13.getY()
+            s3.c r1 = r11.f21668f0
+            float r1 = r1.f22839c
+            float r13 = r13 - r1
+            float r13 = java.lang.Math.abs(r13)
+            T extends j3.c<?> r1 = r11.f21684c0
+            j3.b r1 = (p161j3.AbstractC3394b) r1
+            boolean r2 = r1.f14601L0
+            if (r2 != 0) goto L1f2
+            int r2 = (r13 > r0 ? 1 : (r13 == r0 ? 0 : -1))
+            if (r2 < 0) goto L427
+        L1f2:
+            boolean r1 = r1.f14602M0
+            if (r1 != 0) goto L1fa
+            int r13 = (r13 > r0 ? 1 : (r13 == r0 ? 0 : -1))
+            if (r13 > 0) goto L427
+        L1fa:
+            r11.f21680Y = r12
+            r11.f21681Z = r5
+            goto L427
+        L200:
+            T extends j3.c<?> r0 = r11.f21684c0
+            j3.b r0 = (p161j3.AbstractC3394b) r0
+            boolean r1 = r0.f14600K0
+            if (r1 == 0) goto L427
+            r11.f21680Y = r12
+            if (r1 == 0) goto L427
+            float r12 = r13.getX()
+            float r13 = r13.getY()
+            n3.b r12 = r0.m7784d(r12, r13)
+            if (r12 == 0) goto L427
+            n3.b r13 = r11.f21682a0
+            boolean r13 = r12.m10724a(r13)
+            if (r13 != 0) goto L427
+            r11.f21682a0 = r12
+            T extends j3.c<?> r13 = r11.f21684c0
+            j3.b r13 = (p161j3.AbstractC3394b) r13
+            r13.m7786f(r12, r5)
+            goto L427
+        L22d:
+            T extends j3.c<?> r12 = r11.f21684c0
+            j3.b r12 = (p161j3.AbstractC3394b) r12
+            r12.m7783c()
+            T extends j3.c<?> r12 = r11.f21684c0
+            j3.b r12 = (p161j3.AbstractC3394b) r12
+            boolean r0 = r12.f14603N0
+            if (r0 != 0) goto L240
+            boolean r12 = r12.f14604O0
+            if (r12 == 0) goto L427
+        L240:
+            int r12 = r13.getPointerCount()
+            if (r12 < r8) goto L427
+            T extends j3.c<?> r12 = r11.f21684c0
+            j3.b r12 = (p161j3.AbstractC3394b) r12
+            q3.c r12 = r12.getOnChartGestureListener()
+            float r0 = m11845e(r13)
+            float r1 = r11.f21679q0
+            int r1 = (r0 > r1 ? 1 : (r0 == r1 ? 0 : -1))
+            if (r1 <= 0) goto L427
+            s3.c r1 = r11.f21669g0
+            float r3 = r1.f22838b
+            float r1 = r1.f22839c
+            s3.c r1 = r11.m11846a(r3, r1)
+            T extends j3.c<?> r3 = r11.f21684c0
+            j3.b r3 = (p161j3.AbstractC3394b) r3
+            s3.g r3 = r3.getViewPortHandler()
+            int r6 = r11.f21681Z
+            r9 = 1065353216(0x3f800000, float:1.0)
+            if (r6 != r7) goto L2d4
+            q3.b$a r2 = p283q3.AbstractViewOnTouchListenerC5567b.a.f21689c0
+            r11.f21680Y = r2
+            float r2 = r11.f21672j0
+            float r0 = r0 / r2
+            int r2 = (r0 > r9 ? 1 : (r0 == r9 ? 0 : -1))
+            if (r2 >= 0) goto L27d
+            r2 = 1
+            goto L27e
+        L27d:
+            r2 = 0
+        L27e:
+            if (r2 == 0) goto L289
+            float r6 = r3.f22873i
+            float r7 = r3.f22871g
+            int r6 = (r6 > r7 ? 1 : (r6 == r7 ? 0 : -1))
+            if (r6 <= 0) goto L293
+            goto L291
+        L289:
+            float r6 = r3.f22873i
+            float r7 = r3.f22872h
+            int r6 = (r6 > r7 ? 1 : (r6 == r7 ? 0 : -1))
+            if (r6 >= 0) goto L293
+        L291:
+            r6 = 1
+            goto L294
+        L293:
+            r6 = 0
+        L294:
+            if (r2 == 0) goto L29f
+            float r2 = r3.f22874j
+            float r3 = r3.f22869e
+            int r2 = (r2 > r3 ? 1 : (r2 == r3 ? 0 : -1))
+            if (r2 <= 0) goto L2a8
+            goto L2a7
+        L29f:
+            float r2 = r3.f22874j
+            float r3 = r3.f22870f
+            int r2 = (r2 > r3 ? 1 : (r2 == r3 ? 0 : -1))
+            if (r2 >= 0) goto L2a8
+        L2a7:
+            r4 = 1
+        L2a8:
+            T extends j3.c<?> r2 = r11.f21684c0
+            j3.b r2 = (p161j3.AbstractC3394b) r2
+            boolean r3 = r2.f14603N0
+            if (r3 == 0) goto L2b2
+            r3 = r0
+            goto L2b4
+        L2b2:
+            r3 = 1065353216(0x3f800000, float:1.0)
+        L2b4:
+            boolean r2 = r2.f14604O0
+            if (r2 == 0) goto L2b9
+            r9 = r0
+        L2b9:
+            if (r4 != 0) goto L2bd
+            if (r6 == 0) goto L375
+        L2bd:
+            android.graphics.Matrix r0 = r11.f21666d0
+            android.graphics.Matrix r2 = r11.f21667e0
+            r0.set(r2)
+            android.graphics.Matrix r0 = r11.f21666d0
+            float r2 = r1.f22838b
+            float r4 = r1.f22839c
+            r0.postScale(r3, r9, r2, r4)
+            if (r12 == 0) goto L375
+            r12.m11853c(r13, r3, r9)
+            goto L375
+        L2d4:
+            if (r6 != r8) goto L325
+            T extends j3.c<?> r0 = r11.f21684c0
+            j3.b r0 = (p161j3.AbstractC3394b) r0
+            boolean r0 = r0.f14603N0
+            if (r0 == 0) goto L325
+            q3.b$a r0 = p283q3.AbstractViewOnTouchListenerC5567b.a.f21687a0
+            r11.f21680Y = r0
+            float r0 = r13.getX(r4)
+            float r2 = r13.getX(r5)
+            float r0 = r0 - r2
+            float r0 = java.lang.Math.abs(r0)
+            float r2 = r11.f21670h0
+            float r0 = r0 / r2
+            int r2 = (r0 > r9 ? 1 : (r0 == r9 ? 0 : -1))
+            if (r2 >= 0) goto L2f8
+            r2 = 1
+            goto L2f9
+        L2f8:
+            r2 = 0
+        L2f9:
+            if (r2 == 0) goto L304
+            float r2 = r3.f22873i
+            float r3 = r3.f22871g
+            int r2 = (r2 > r3 ? 1 : (r2 == r3 ? 0 : -1))
+            if (r2 <= 0) goto L30d
+            goto L30c
+        L304:
+            float r2 = r3.f22873i
+            float r3 = r3.f22872h
+            int r2 = (r2 > r3 ? 1 : (r2 == r3 ? 0 : -1))
+            if (r2 >= 0) goto L30d
+        L30c:
+            r4 = 1
+        L30d:
+            if (r4 == 0) goto L375
+            android.graphics.Matrix r2 = r11.f21666d0
+            android.graphics.Matrix r3 = r11.f21667e0
+            r2.set(r3)
+            android.graphics.Matrix r2 = r11.f21666d0
+            float r3 = r1.f22838b
+            float r4 = r1.f22839c
+            r2.postScale(r0, r9, r3, r4)
+            if (r12 == 0) goto L375
+            r12.m11853c(r13, r0, r9)
+            goto L375
+        L325:
+            if (r6 != r2) goto L375
+            T extends j3.c<?> r0 = r11.f21684c0
+            j3.b r0 = (p161j3.AbstractC3394b) r0
+            boolean r0 = r0.f14604O0
+            if (r0 == 0) goto L375
+            q3.b$a r0 = p283q3.AbstractViewOnTouchListenerC5567b.a.f21688b0
+            r11.f21680Y = r0
+            float r0 = r13.getY(r4)
+            float r2 = r13.getY(r5)
+            float r0 = r0 - r2
+            float r0 = java.lang.Math.abs(r0)
+            float r2 = r11.f21671i0
+            float r0 = r0 / r2
+            int r2 = (r0 > r9 ? 1 : (r0 == r9 ? 0 : -1))
+            if (r2 >= 0) goto L349
+            r2 = 1
+            goto L34a
+        L349:
+            r2 = 0
+        L34a:
+            if (r2 == 0) goto L355
+            float r2 = r3.f22874j
+            float r3 = r3.f22869e
+            int r2 = (r2 > r3 ? 1 : (r2 == r3 ? 0 : -1))
+            if (r2 <= 0) goto L35e
+            goto L35d
+        L355:
+            float r2 = r3.f22874j
+            float r3 = r3.f22870f
+            int r2 = (r2 > r3 ? 1 : (r2 == r3 ? 0 : -1))
+            if (r2 >= 0) goto L35e
+        L35d:
+            r4 = 1
+        L35e:
+            if (r4 == 0) goto L375
+            android.graphics.Matrix r2 = r11.f21666d0
+            android.graphics.Matrix r3 = r11.f21667e0
+            r2.set(r3)
+            android.graphics.Matrix r2 = r11.f21666d0
+            float r3 = r1.f22838b
+            float r4 = r1.f22839c
+            r2.postScale(r9, r0, r3, r4)
+            if (r12 == 0) goto L375
+            r12.m11853c(r13, r9, r0)
+        L375:
+            s3.d<s3.c> r12 = p323s3.C5949c.f22837d
+            r12.m12363c(r1)
+            goto L427
+        L37c:
+            android.view.VelocityTracker r12 = r11.f21674l0
+            int r0 = r13.getPointerId(r4)
+            int r9 = p323s3.AbstractC5952f.f22857c
+            float r9 = (float) r9
+            r12.computeCurrentVelocity(r3, r9)
+            float r3 = r12.getYVelocity(r0)
+            float r12 = r12.getXVelocity(r0)
+            float r0 = java.lang.Math.abs(r12)
+            int r9 = p323s3.AbstractC5952f.f22856b
+            float r9 = (float) r9
+            int r0 = (r0 > r9 ? 1 : (r0 == r9 ? 0 : -1))
+            if (r0 > 0) goto L3a6
+            float r0 = java.lang.Math.abs(r3)
+            int r9 = p323s3.AbstractC5952f.f22856b
+            float r9 = (float) r9
+            int r0 = (r0 > r9 ? 1 : (r0 == r9 ? 0 : -1))
+            if (r0 <= 0) goto L3d6
+        L3a6:
+            int r0 = r11.f21681Z
+            if (r0 != r5) goto L3d6
+            T extends j3.c<?> r0 = r11.f21684c0
+            j3.b r0 = (p161j3.AbstractC3394b) r0
+            boolean r0 = r0.f14637d0
+            if (r0 == 0) goto L3d6
+            r11.m11850f()
+            long r9 = android.view.animation.AnimationUtils.currentAnimationTimeMillis()
+            r11.f21675m0 = r9
+            s3.c r0 = r11.f21676n0
+            float r9 = r13.getX()
+            r0.f22838b = r9
+            s3.c r0 = r11.f21676n0
+            float r9 = r13.getY()
+            r0.f22839c = r9
+            s3.c r0 = r11.f21677o0
+            r0.f22838b = r12
+            r0.f22839c = r3
+            T extends j3.c<?> r12 = r11.f21684c0
+            r12.postInvalidateOnAnimation()
+        L3d6:
+            int r12 = r11.f21681Z
+            if (r12 == r8) goto L3e0
+            if (r12 == r2) goto L3e0
+            if (r12 == r7) goto L3e0
+            if (r12 != r6) goto L3ee
+        L3e0:
+            T extends j3.c<?> r12 = r11.f21684c0
+            j3.b r12 = (p161j3.AbstractC3394b) r12
+            r12.mo7776b()
+            T extends j3.c<?> r12 = r11.f21684c0
+            j3.b r12 = (p161j3.AbstractC3394b) r12
+            r12.postInvalidate()
+        L3ee:
+            r11.f21681Z = r4
+            T extends j3.c<?> r12 = r11.f21684c0
+            j3.b r12 = (p161j3.AbstractC3394b) r12
+            android.view.ViewParent r12 = r12.getParent()
+            if (r12 == 0) goto L3fd
+            r12.requestDisallowInterceptTouchEvent(r4)
+        L3fd:
+            android.view.VelocityTracker r12 = r11.f21674l0
+            if (r12 == 0) goto L406
+            r12.recycle()
+            r11.f21674l0 = r1
+        L406:
+            T extends j3.c<?> r12 = r11.f21684c0
+            q3.c r12 = r12.getOnChartGestureListener()
+            if (r12 == 0) goto L427
+        L40e:
+            q3.b$a r0 = r11.f21680Y
+            r12.m11856f(r13, r0)
+            goto L427
+        L414:
+            T extends j3.c<?> r12 = r11.f21684c0
+            q3.c r12 = r12.getOnChartGestureListener()
+            if (r12 == 0) goto L421
+            q3.b$a r0 = r11.f21680Y
+            r12.m11851a(r13, r0)
+        L421:
+            r11.m11850f()
+            r11.m11849d(r13)
+        L427:
+            T extends j3.c<?> r12 = r11.f21684c0
+            j3.b r12 = (p161j3.AbstractC3394b) r12
+            s3.g r12 = r12.getViewPortHandler()
+            android.graphics.Matrix r13 = r11.f21666d0
+            T extends j3.c<?> r0 = r11.f21684c0
+            r12.m12392m(r13, r0, r5)
+            r11.f21666d0 = r13
+            return r5
+    }
+}
+package p283q3;
+
+/* renamed from: q3.c */
+/* loaded from: classes.dex */
+public interface InterfaceC5568c {
+    /* renamed from: a */
+    void m11851a(android.view.MotionEvent r1, p283q3.AbstractViewOnTouchListenerC5567b.a r2);
+
+    /* renamed from: b */
+    void m11852b(android.view.MotionEvent r1);
+
+    /* renamed from: c */
+    void m11853c(android.view.MotionEvent r1, float r2, float r3);
+
+    /* renamed from: d */
+    void m11854d(android.view.MotionEvent r1, float r2, float r3);
+
+    /* renamed from: e */
+    void m11855e(android.view.MotionEvent r1, android.view.MotionEvent r2, float r3, float r4);
+
+    /* renamed from: f */
+    void m11856f(android.view.MotionEvent r1, p283q3.AbstractViewOnTouchListenerC5567b.a r2);
+
+    /* renamed from: g */
+    void m11857g(android.view.MotionEvent r1);
+
+    /* renamed from: h */
+    void m11858h(android.view.MotionEvent r1);
+}
+package p283q3;
+
+/* renamed from: q3.d */
+/* loaded from: classes.dex */
+public interface InterfaceC5569d {
+    /* renamed from: a */
+    void m11859a(p198l3.C4172f r1, p230n3.C4684b r2);
+
+    /* renamed from: b */
+    void m11860b();
+}
+package p283q3;
+
+/* renamed from: q3.e */
+/* loaded from: classes.dex */
+public interface InterfaceC5570e {
+}

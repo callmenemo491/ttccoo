@@ -1,0 +1,1225 @@
+package p012ab;
+
+@com.google.auto.value.AutoValue
+/* renamed from: ab.d */
+/* loaded from: classes.dex */
+public abstract class AbstractC0052d {
+
+    /* renamed from: ab.d$a */
+    public enum a extends java.lang.Enum<p012ab.AbstractC0052d.a> {
+
+        /* renamed from: Y */
+        public static final p012ab.AbstractC0052d.a f119Y = null;
+
+        /* renamed from: Z */
+        public static final p012ab.AbstractC0052d.a f120Z = null;
+
+        /* renamed from: a0 */
+        public static final /* synthetic */ p012ab.AbstractC0052d.a[] f121a0 = null;
+
+        static {
+                ab.d$a r0 = new ab.d$a
+                java.lang.String r1 = "OK"
+                r2 = 0
+                r0.<init>(r1, r2)
+                p012ab.AbstractC0052d.a.f119Y = r0
+                ab.d$a r1 = new ab.d$a
+                java.lang.String r3 = "BAD_CONFIG"
+                r4 = 1
+                r1.<init>(r3, r4)
+                p012ab.AbstractC0052d.a.f120Z = r1
+                r3 = 2
+                ab.d$a[] r3 = new p012ab.AbstractC0052d.a[r3]
+                r3[r2] = r0
+                r3[r4] = r1
+                p012ab.AbstractC0052d.a.f121a0 = r3
+                return
+        }
+
+        a(java.lang.String r1, int r2) {
+                r0 = this;
+                r0.<init>(r1, r2)
+                return
+        }
+
+        public static p012ab.AbstractC0052d.a valueOf(java.lang.String r1) {
+                java.lang.Class<ab.d$a> r0 = p012ab.AbstractC0052d.a.class
+                java.lang.Enum r1 = java.lang.Enum.valueOf(r0, r1)
+                ab.d$a r1 = (p012ab.AbstractC0052d.a) r1
+                return r1
+        }
+
+        public static p012ab.AbstractC0052d.a[] values() {
+                ab.d$a[] r0 = p012ab.AbstractC0052d.a.f121a0
+                java.lang.Object r0 = r0.clone()
+                ab.d$a[] r0 = (p012ab.AbstractC0052d.a[]) r0
+                return r0
+        }
+    }
+
+    public AbstractC0052d() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    /* renamed from: a */
+    public abstract p012ab.AbstractC0054f mo56a();
+
+    /* renamed from: b */
+    public abstract java.lang.String mo57b();
+
+    /* renamed from: c */
+    public abstract java.lang.String mo58c();
+
+    /* renamed from: d */
+    public abstract p012ab.AbstractC0052d.a mo59d();
+
+    /* renamed from: e */
+    public abstract java.lang.String mo60e();
+}
+package p012ab;
+
+@com.google.auto.value.AutoValue
+/* renamed from: ab.f */
+/* loaded from: classes.dex */
+public abstract class AbstractC0054f {
+
+    @com.google.auto.value.AutoValue.Builder
+    /* renamed from: ab.f$a */
+    public static abstract class a {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        /* renamed from: a */
+        public abstract p012ab.AbstractC0054f mo64a();
+
+        /* renamed from: b */
+        public abstract p012ab.AbstractC0054f.a mo65b(long r1);
+    }
+
+    /* renamed from: ab.f$b */
+    public enum b extends java.lang.Enum<p012ab.AbstractC0054f.b> {
+
+        /* renamed from: Y */
+        public static final p012ab.AbstractC0054f.b f127Y = null;
+
+        /* renamed from: Z */
+        public static final p012ab.AbstractC0054f.b f128Z = null;
+
+        /* renamed from: a0 */
+        public static final p012ab.AbstractC0054f.b f129a0 = null;
+
+        /* renamed from: b0 */
+        public static final /* synthetic */ p012ab.AbstractC0054f.b[] f130b0 = null;
+
+        static {
+                ab.f$b r0 = new ab.f$b
+                java.lang.String r1 = "OK"
+                r2 = 0
+                r0.<init>(r1, r2)
+                p012ab.AbstractC0054f.b.f127Y = r0
+                ab.f$b r1 = new ab.f$b
+                java.lang.String r3 = "BAD_CONFIG"
+                r4 = 1
+                r1.<init>(r3, r4)
+                p012ab.AbstractC0054f.b.f128Z = r1
+                ab.f$b r3 = new ab.f$b
+                java.lang.String r5 = "AUTH_ERROR"
+                r6 = 2
+                r3.<init>(r5, r6)
+                p012ab.AbstractC0054f.b.f129a0 = r3
+                r5 = 3
+                ab.f$b[] r5 = new p012ab.AbstractC0054f.b[r5]
+                r5[r2] = r0
+                r5[r4] = r1
+                r5[r6] = r3
+                p012ab.AbstractC0054f.b.f130b0 = r5
+                return
+        }
+
+        b(java.lang.String r1, int r2) {
+                r0 = this;
+                r0.<init>(r1, r2)
+                return
+        }
+
+        public static p012ab.AbstractC0054f.b valueOf(java.lang.String r1) {
+                java.lang.Class<ab.f$b> r0 = p012ab.AbstractC0054f.b.class
+                java.lang.Enum r1 = java.lang.Enum.valueOf(r0, r1)
+                ab.f$b r1 = (p012ab.AbstractC0054f.b) r1
+                return r1
+        }
+
+        public static p012ab.AbstractC0054f.b[] values() {
+                ab.f$b[] r0 = p012ab.AbstractC0054f.b.f130b0
+                java.lang.Object r0 = r0.clone()
+                ab.f$b[] r0 = (p012ab.AbstractC0054f.b[]) r0
+                return r0
+        }
+    }
+
+    public AbstractC0054f() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    /* renamed from: a */
+    public static p012ab.AbstractC0054f.a m77a() {
+            ab.b$b r0 = new ab.b$b
+            r0.<init>()
+            r1 = 0
+            r0.mo65b(r1)
+            return r0
+    }
+
+    /* renamed from: b */
+    public abstract p012ab.AbstractC0054f.b mo61b();
+
+    /* renamed from: c */
+    public abstract java.lang.String mo62c();
+
+    /* renamed from: d */
+    public abstract long mo63d();
+}
+package p012ab;
+
+/* renamed from: ab.a */
+/* loaded from: classes.dex */
+public final class C0049a extends p012ab.AbstractC0052d {
+
+    /* renamed from: a */
+    public final java.lang.String f102a;
+
+    /* renamed from: b */
+    public final java.lang.String f103b;
+
+    /* renamed from: c */
+    public final java.lang.String f104c;
+
+    /* renamed from: d */
+    public final p012ab.AbstractC0054f f105d;
+
+    /* renamed from: e */
+    public final p012ab.AbstractC0052d.a f106e;
+
+    /* renamed from: ab.a$a */
+    public static /* synthetic */ class a {
+    }
+
+    public C0049a(java.lang.String r1, java.lang.String r2, java.lang.String r3, p012ab.AbstractC0054f r4, p012ab.AbstractC0052d.a r5, p012ab.C0049a.a r6) {
+            r0 = this;
+            r0.<init>()
+            r0.f102a = r1
+            r0.f103b = r2
+            r0.f104c = r3
+            r0.f105d = r4
+            r0.f106e = r5
+            return
+    }
+
+    @Override // p012ab.AbstractC0052d
+    /* renamed from: a */
+    public p012ab.AbstractC0054f mo56a() {
+            r1 = this;
+            ab.f r0 = r1.f105d
+            return r0
+    }
+
+    @Override // p012ab.AbstractC0052d
+    /* renamed from: b */
+    public java.lang.String mo57b() {
+            r1 = this;
+            java.lang.String r0 = r1.f103b
+            return r0
+    }
+
+    @Override // p012ab.AbstractC0052d
+    /* renamed from: c */
+    public java.lang.String mo58c() {
+            r1 = this;
+            java.lang.String r0 = r1.f104c
+            return r0
+    }
+
+    @Override // p012ab.AbstractC0052d
+    /* renamed from: d */
+    public p012ab.AbstractC0052d.a mo59d() {
+            r1 = this;
+            ab.d$a r0 = r1.f106e
+            return r0
+    }
+
+    @Override // p012ab.AbstractC0052d
+    /* renamed from: e */
+    public java.lang.String mo60e() {
+            r1 = this;
+            java.lang.String r0 = r1.f102a
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r5 != r4) goto L4
+            return r0
+        L4:
+            boolean r1 = r5 instanceof p012ab.AbstractC0052d
+            r2 = 0
+            if (r1 == 0) goto L73
+            ab.d r5 = (p012ab.AbstractC0052d) r5
+            java.lang.String r1 = r4.f102a
+            if (r1 != 0) goto L16
+            java.lang.String r1 = r5.mo60e()
+            if (r1 != 0) goto L71
+            goto L20
+        L16:
+            java.lang.String r3 = r5.mo60e()
+            boolean r1 = r1.equals(r3)
+            if (r1 == 0) goto L71
+        L20:
+            java.lang.String r1 = r4.f103b
+            if (r1 != 0) goto L2b
+            java.lang.String r1 = r5.mo57b()
+            if (r1 != 0) goto L71
+            goto L35
+        L2b:
+            java.lang.String r3 = r5.mo57b()
+            boolean r1 = r1.equals(r3)
+            if (r1 == 0) goto L71
+        L35:
+            java.lang.String r1 = r4.f104c
+            if (r1 != 0) goto L40
+            java.lang.String r1 = r5.mo58c()
+            if (r1 != 0) goto L71
+            goto L4a
+        L40:
+            java.lang.String r3 = r5.mo58c()
+            boolean r1 = r1.equals(r3)
+            if (r1 == 0) goto L71
+        L4a:
+            ab.f r1 = r4.f105d
+            if (r1 != 0) goto L55
+            ab.f r1 = r5.mo56a()
+            if (r1 != 0) goto L71
+            goto L5f
+        L55:
+            ab.f r3 = r5.mo56a()
+            boolean r1 = r1.equals(r3)
+            if (r1 == 0) goto L71
+        L5f:
+            ab.d$a r1 = r4.f106e
+            ab.d$a r5 = r5.mo59d()
+            if (r1 != 0) goto L6a
+            if (r5 != 0) goto L71
+            goto L72
+        L6a:
+            boolean r5 = r1.equals(r5)
+            if (r5 == 0) goto L71
+            goto L72
+        L71:
+            r0 = 0
+        L72:
+            return r0
+        L73:
+            return r2
+    }
+
+    public int hashCode() {
+            r4 = this;
+            java.lang.String r0 = r4.f102a
+            r1 = 0
+            if (r0 != 0) goto L7
+            r0 = 0
+            goto Lb
+        L7:
+            int r0 = r0.hashCode()
+        Lb:
+            r2 = 1000003(0xf4243, float:1.401303E-39)
+            r0 = r0 ^ r2
+            int r0 = r0 * r2
+            java.lang.String r3 = r4.f103b
+            if (r3 != 0) goto L17
+            r3 = 0
+            goto L1b
+        L17:
+            int r3 = r3.hashCode()
+        L1b:
+            r0 = r0 ^ r3
+            int r0 = r0 * r2
+            java.lang.String r3 = r4.f104c
+            if (r3 != 0) goto L24
+            r3 = 0
+            goto L28
+        L24:
+            int r3 = r3.hashCode()
+        L28:
+            r0 = r0 ^ r3
+            int r0 = r0 * r2
+            ab.f r3 = r4.f105d
+            if (r3 != 0) goto L31
+            r3 = 0
+            goto L35
+        L31:
+            int r3 = r3.hashCode()
+        L35:
+            r0 = r0 ^ r3
+            int r0 = r0 * r2
+            ab.d$a r2 = r4.f106e
+            if (r2 != 0) goto L3d
+            goto L41
+        L3d:
+            int r1 = r2.hashCode()
+        L41:
+            r0 = r0 ^ r1
+            return r0
+    }
+
+    public java.lang.String toString() {
+            r2 = this;
+            java.lang.String r0 = "InstallationResponse{uri="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r2.f102a
+            r0.append(r1)
+            java.lang.String r1 = ", fid="
+            r0.append(r1)
+            java.lang.String r1 = r2.f103b
+            r0.append(r1)
+            java.lang.String r1 = ", refreshToken="
+            r0.append(r1)
+            java.lang.String r1 = r2.f104c
+            r0.append(r1)
+            java.lang.String r1 = ", authToken="
+            r0.append(r1)
+            ab.f r1 = r2.f105d
+            r0.append(r1)
+            java.lang.String r1 = ", responseCode="
+            r0.append(r1)
+            ab.d$a r1 = r2.f106e
+            r0.append(r1)
+            java.lang.String r1 = "}"
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            return r0
+    }
+}
+package p012ab;
+
+/* renamed from: ab.b */
+/* loaded from: classes.dex */
+public final class C0050b extends p012ab.AbstractC0054f {
+
+    /* renamed from: a */
+    public final java.lang.String f107a;
+
+    /* renamed from: b */
+    public final long f108b;
+
+    /* renamed from: c */
+    public final p012ab.AbstractC0054f.b f109c;
+
+    /* renamed from: ab.b$a */
+    public static /* synthetic */ class a {
+    }
+
+    /* renamed from: ab.b$b */
+    public static final class b extends p012ab.AbstractC0054f.a {
+
+        /* renamed from: a */
+        public java.lang.String f110a;
+
+        /* renamed from: b */
+        public java.lang.Long f111b;
+
+        /* renamed from: c */
+        public p012ab.AbstractC0054f.b f112c;
+
+        public b() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // p012ab.AbstractC0054f.a
+        /* renamed from: a */
+        public p012ab.AbstractC0054f mo64a() {
+                r8 = this;
+                java.lang.Long r0 = r8.f111b
+                if (r0 != 0) goto L7
+                java.lang.String r0 = " tokenExpirationTimestamp"
+                goto L9
+            L7:
+                java.lang.String r0 = ""
+            L9:
+                boolean r1 = r0.isEmpty()
+                if (r1 == 0) goto L21
+                ab.b r0 = new ab.b
+                java.lang.String r3 = r8.f110a
+                java.lang.Long r1 = r8.f111b
+                long r4 = r1.longValue()
+                ab.f$b r6 = r8.f112c
+                r7 = 0
+                r2 = r0
+                r2.<init>(r3, r4, r6, r7)
+                return r0
+            L21:
+                java.lang.IllegalStateException r1 = new java.lang.IllegalStateException
+                java.lang.String r2 = "Missing required properties:"
+                java.lang.String r0 = p064e.C1493g.m4049a(r2, r0)
+                r1.<init>(r0)
+                throw r1
+        }
+
+        @Override // p012ab.AbstractC0054f.a
+        /* renamed from: b */
+        public p012ab.AbstractC0054f.a mo65b(long r1) {
+                r0 = this;
+                java.lang.Long r1 = java.lang.Long.valueOf(r1)
+                r0.f111b = r1
+                return r0
+        }
+    }
+
+    public C0050b(java.lang.String r1, long r2, p012ab.AbstractC0054f.b r4, p012ab.C0050b.a r5) {
+            r0 = this;
+            r0.<init>()
+            r0.f107a = r1
+            r0.f108b = r2
+            r0.f109c = r4
+            return
+    }
+
+    @Override // p012ab.AbstractC0054f
+    /* renamed from: b */
+    public p012ab.AbstractC0054f.b mo61b() {
+            r1 = this;
+            ab.f$b r0 = r1.f109c
+            return r0
+    }
+
+    @Override // p012ab.AbstractC0054f
+    /* renamed from: c */
+    public java.lang.String mo62c() {
+            r1 = this;
+            java.lang.String r0 = r1.f107a
+            return r0
+    }
+
+    @Override // p012ab.AbstractC0054f
+    /* renamed from: d */
+    public long mo63d() {
+            r2 = this;
+            long r0 = r2.f108b
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r8) {
+            r7 = this;
+            r0 = 1
+            if (r8 != r7) goto L4
+            return r0
+        L4:
+            boolean r1 = r8 instanceof p012ab.AbstractC0054f
+            r2 = 0
+            if (r1 == 0) goto L3e
+            ab.f r8 = (p012ab.AbstractC0054f) r8
+            java.lang.String r1 = r7.f107a
+            if (r1 != 0) goto L16
+            java.lang.String r1 = r8.mo62c()
+            if (r1 != 0) goto L3c
+            goto L20
+        L16:
+            java.lang.String r3 = r8.mo62c()
+            boolean r1 = r1.equals(r3)
+            if (r1 == 0) goto L3c
+        L20:
+            long r3 = r7.f108b
+            long r5 = r8.mo63d()
+            int r1 = (r3 > r5 ? 1 : (r3 == r5 ? 0 : -1))
+            if (r1 != 0) goto L3c
+            ab.f$b r1 = r7.f109c
+            ab.f$b r8 = r8.mo61b()
+            if (r1 != 0) goto L35
+            if (r8 != 0) goto L3c
+            goto L3d
+        L35:
+            boolean r8 = r1.equals(r8)
+            if (r8 == 0) goto L3c
+            goto L3d
+        L3c:
+            r0 = 0
+        L3d:
+            return r0
+        L3e:
+            return r2
+    }
+
+    public int hashCode() {
+            r7 = this;
+            java.lang.String r0 = r7.f107a
+            r1 = 0
+            if (r0 != 0) goto L7
+            r0 = 0
+            goto Lb
+        L7:
+            int r0 = r0.hashCode()
+        Lb:
+            r2 = 1000003(0xf4243, float:1.401303E-39)
+            r0 = r0 ^ r2
+            int r0 = r0 * r2
+            long r3 = r7.f108b
+            r5 = 32
+            long r5 = r3 >>> r5
+            long r3 = r3 ^ r5
+            int r4 = (int) r3
+            r0 = r0 ^ r4
+            int r0 = r0 * r2
+            ab.f$b r2 = r7.f109c
+            if (r2 != 0) goto L21
+            goto L25
+        L21:
+            int r1 = r2.hashCode()
+        L25:
+            r0 = r0 ^ r1
+            return r0
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "TokenResult{token="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r3.f107a
+            r0.append(r1)
+            java.lang.String r1 = ", tokenExpirationTimestamp="
+            r0.append(r1)
+            long r1 = r3.f108b
+            r0.append(r1)
+            java.lang.String r1 = ", responseCode="
+            r0.append(r1)
+            ab.f$b r1 = r3.f109c
+            r0.append(r1)
+            java.lang.String r1 = "}"
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            return r0
+    }
+}
+package p012ab;
+
+/* renamed from: ab.c */
+/* loaded from: classes.dex */
+public class C0051c {
+
+    /* renamed from: e */
+    public static final java.util.regex.Pattern f113e = null;
+
+    /* renamed from: f */
+    public static final java.nio.charset.Charset f114f = null;
+
+    /* renamed from: a */
+    public final android.content.Context f115a;
+
+    /* renamed from: b */
+    public final p392wa.InterfaceC6823b<p095fb.InterfaceC2137g> f116b;
+
+    /* renamed from: c */
+    public final p392wa.InterfaceC6823b<ua.InterfaceC6369d> f117c;
+
+    /* renamed from: d */
+    public final p012ab.C0053e f118d;
+
+    static {
+            java.lang.String r0 = "[0-9]+s"
+            java.util.regex.Pattern r0 = java.util.regex.Pattern.compile(r0)
+            p012ab.C0051c.f113e = r0
+            java.lang.String r0 = "UTF-8"
+            java.nio.charset.Charset r0 = java.nio.charset.Charset.forName(r0)
+            p012ab.C0051c.f114f = r0
+            return
+    }
+
+    public C0051c(android.content.Context r1, p392wa.InterfaceC6823b<p095fb.InterfaceC2137g> r2, p392wa.InterfaceC6823b<ua.InterfaceC6369d> r3) {
+            r0 = this;
+            r0.<init>()
+            r0.f115a = r1
+            r0.f116b = r2
+            r0.f117c = r3
+            ab.e r1 = new ab.e
+            r1.<init>()
+            r0.f118d = r1
+            return
+    }
+
+    /* renamed from: b */
+    public static void m66b(java.net.HttpURLConnection r10, java.lang.String r11, java.lang.String r12, java.lang.String r13) {
+            java.io.InputStream r0 = r10.getErrorStream()
+            r1 = 0
+            r2 = 2
+            r3 = 1
+            r4 = 0
+            r5 = 3
+            if (r0 != 0) goto Lc
+            goto L52
+        Lc:
+            java.io.BufferedReader r6 = new java.io.BufferedReader
+            java.io.InputStreamReader r7 = new java.io.InputStreamReader
+            java.nio.charset.Charset r8 = p012ab.C0051c.f114f
+            r7.<init>(r0, r8)
+            r6.<init>(r7)
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L48 java.io.IOException -> L4d
+            r0.<init>()     // Catch: java.lang.Throwable -> L48 java.io.IOException -> L4d
+        L1d:
+            java.lang.String r7 = r6.readLine()     // Catch: java.lang.Throwable -> L48 java.io.IOException -> L4d
+            if (r7 == 0) goto L2c
+            r0.append(r7)     // Catch: java.lang.Throwable -> L48 java.io.IOException -> L4d
+            r7 = 10
+            r0.append(r7)     // Catch: java.lang.Throwable -> L48 java.io.IOException -> L4d
+            goto L1d
+        L2c:
+            java.lang.String r7 = "Error when communicating with the Firebase Installations server API. HTTP response: [%d %s: %s]"
+            java.lang.Object[] r8 = new java.lang.Object[r5]     // Catch: java.lang.Throwable -> L48 java.io.IOException -> L4d
+            int r9 = r10.getResponseCode()     // Catch: java.lang.Throwable -> L48 java.io.IOException -> L4d
+            java.lang.Integer r9 = java.lang.Integer.valueOf(r9)     // Catch: java.lang.Throwable -> L48 java.io.IOException -> L4d
+            r8[r4] = r9     // Catch: java.lang.Throwable -> L48 java.io.IOException -> L4d
+            java.lang.String r10 = r10.getResponseMessage()     // Catch: java.lang.Throwable -> L48 java.io.IOException -> L4d
+            r8[r3] = r10     // Catch: java.lang.Throwable -> L48 java.io.IOException -> L4d
+            r8[r2] = r0     // Catch: java.lang.Throwable -> L48 java.io.IOException -> L4d
+            java.lang.String r10 = java.lang.String.format(r7, r8)     // Catch: java.lang.Throwable -> L48 java.io.IOException -> L4d
+            r1 = r10
+            goto L4d
+        L48:
+            r10 = move-exception
+            r6.close()     // Catch: java.io.IOException -> L4c
+        L4c:
+            throw r10
+        L4d:
+            r6.close()     // Catch: java.io.IOException -> L51
+            goto L52
+        L51:
+        L52:
+            boolean r10 = android.text.TextUtils.isEmpty(r1)
+            if (r10 != 0) goto L7d
+            java.lang.String r10 = "Firebase-Installations"
+            android.util.Log.w(r10, r1)
+            java.lang.Object[] r0 = new java.lang.Object[r5]
+            r0[r4] = r12
+            r0[r3] = r13
+            boolean r12 = android.text.TextUtils.isEmpty(r11)
+            if (r12 == 0) goto L6c
+            java.lang.String r11 = ""
+            goto L72
+        L6c:
+            java.lang.String r12 = ", "
+            java.lang.String r11 = p064e.C1493g.m4049a(r12, r11)
+        L72:
+            r0[r2] = r11
+            java.lang.String r11 = "Firebase options used while communicating with Firebase server APIs: %s, %s%s"
+            java.lang.String r11 = java.lang.String.format(r11, r0)
+            android.util.Log.w(r10, r11)
+        L7d:
+            return
+    }
+
+    /* renamed from: d */
+    public static long m67d(java.lang.String r2) {
+            java.util.regex.Pattern r0 = p012ab.C0051c.f113e
+            java.util.regex.Matcher r0 = r0.matcher(r2)
+            boolean r0 = r0.matches()
+            java.lang.String r1 = "Invalid Expiration Timestamp."
+            com.google.android.gms.common.internal.C1101a.m3097b(r0, r1)
+            if (r2 == 0) goto L28
+            int r0 = r2.length()
+            if (r0 != 0) goto L18
+            goto L28
+        L18:
+            r0 = 0
+            int r1 = r2.length()
+            int r1 = r1 + (-1)
+            java.lang.String r2 = r2.substring(r0, r1)
+            long r0 = java.lang.Long.parseLong(r2)
+            goto L2a
+        L28:
+            r0 = 0
+        L2a:
+            return r0
+    }
+
+    /* renamed from: i */
+    public static void m68i(java.net.URLConnection r1, byte[] r2) {
+            java.io.OutputStream r1 = r1.getOutputStream()
+            if (r1 == 0) goto L1d
+            java.util.zip.GZIPOutputStream r0 = new java.util.zip.GZIPOutputStream
+            r0.<init>(r1)
+            r0.write(r2)     // Catch: java.lang.Throwable -> L15
+            r0.close()     // Catch: java.io.IOException -> L14
+            r1.close()     // Catch: java.io.IOException -> L14
+        L14:
+            return
+        L15:
+            r2 = move-exception
+            r0.close()     // Catch: java.io.IOException -> L1c
+            r1.close()     // Catch: java.io.IOException -> L1c
+        L1c:
+            throw r2
+        L1d:
+            java.io.IOException r1 = new java.io.IOException
+            java.lang.String r2 = "Cannot send request to FIS servers. No OutputStream available."
+            r1.<init>(r2)
+            throw r1
+    }
+
+    /* renamed from: a */
+    public final java.net.URL m69a(java.lang.String r7) {
+            r6 = this;
+            r0 = 2
+            java.net.URL r1 = new java.net.URL     // Catch: java.net.MalformedURLException -> L1c
+            java.lang.String r2 = "https://%s/%s/%s"
+            r3 = 3
+            java.lang.Object[] r3 = new java.lang.Object[r3]     // Catch: java.net.MalformedURLException -> L1c
+            r4 = 0
+            java.lang.String r5 = "firebaseinstallations.googleapis.com"
+            r3[r4] = r5     // Catch: java.net.MalformedURLException -> L1c
+            r4 = 1
+            java.lang.String r5 = "v1"
+            r3[r4] = r5     // Catch: java.net.MalformedURLException -> L1c
+            r3[r0] = r7     // Catch: java.net.MalformedURLException -> L1c
+            java.lang.String r7 = java.lang.String.format(r2, r3)     // Catch: java.net.MalformedURLException -> L1c
+            r1.<init>(r7)     // Catch: java.net.MalformedURLException -> L1c
+            return r1
+        L1c:
+            r7 = move-exception
+            xa.e r1 = new xa.e
+            java.lang.String r7 = r7.getMessage()
+            r1.<init>(r7, r0)
+            throw r1
+    }
+
+    /* renamed from: c */
+    public final java.net.HttpURLConnection m70c(java.net.URL r6, java.lang.String r7) {
+            r5 = this;
+            java.net.URLConnection r6 = r6.openConnection()     // Catch: java.io.IOException -> Lc7
+            java.net.HttpURLConnection r6 = (java.net.HttpURLConnection) r6     // Catch: java.io.IOException -> Lc7
+            r0 = 10000(0x2710, float:1.4013E-41)
+            r6.setConnectTimeout(r0)
+            r1 = 0
+            r6.setUseCaches(r1)
+            r6.setReadTimeout(r0)
+            java.lang.String r0 = "application/json"
+            java.lang.String r2 = "Content-Type"
+            r6.addRequestProperty(r2, r0)
+            java.lang.String r2 = "Accept"
+            r6.addRequestProperty(r2, r0)
+            java.lang.String r0 = "Content-Encoding"
+            java.lang.String r2 = "gzip"
+            r6.addRequestProperty(r0, r2)
+            java.lang.String r0 = "Cache-Control"
+            java.lang.String r2 = "no-cache"
+            r6.addRequestProperty(r0, r2)
+            android.content.Context r0 = r5.f115a
+            java.lang.String r0 = r0.getPackageName()
+            java.lang.String r2 = "X-Android-Package"
+            r6.addRequestProperty(r2, r0)
+            wa.b<ua.d> r0 = r5.f117c
+            java.lang.Object r0 = r0.get()
+            if (r0 == 0) goto L76
+            wa.b<fb.g> r0 = r5.f116b
+            java.lang.Object r0 = r0.get()
+            if (r0 == 0) goto L76
+            wa.b<ua.d> r0 = r5.f117c
+            java.lang.Object r0 = r0.get()
+            ua.d r0 = (ua.InterfaceC6369d) r0
+            java.lang.String r2 = "fire-installations-id"
+            int r0 = r0.mo13015a(r2)
+            r2 = 1
+            if (r0 == r2) goto L76
+            wa.b<fb.g> r2 = r5.f116b
+            java.lang.Object r2 = r2.get()
+            fb.g r2 = (p095fb.InterfaceC2137g) r2
+            java.lang.String r2 = r2.mo5694a()
+            java.lang.String r3 = "x-firebase-client"
+            r6.addRequestProperty(r3, r2)
+            int r0 = p365v.C6480g.m13148b(r0)
+            java.lang.String r0 = java.lang.Integer.toString(r0)
+            java.lang.String r2 = "x-firebase-client-log-type"
+            r6.addRequestProperty(r2, r0)
+        L76:
+            java.lang.String r0 = "ContentValues"
+            r2 = 0
+            android.content.Context r3 = r5.f115a     // Catch: android.content.pm.PackageManager.NameNotFoundException -> La5
+            java.lang.String r4 = r3.getPackageName()     // Catch: android.content.pm.PackageManager.NameNotFoundException -> La5
+            byte[] r3 = p353u6.C6338a.m12988a(r3, r4)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> La5
+            if (r3 != 0) goto La0
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder     // Catch: android.content.pm.PackageManager.NameNotFoundException -> La5
+            r1.<init>()     // Catch: android.content.pm.PackageManager.NameNotFoundException -> La5
+            java.lang.String r3 = "Could not get fingerprint hash for package: "
+            r1.append(r3)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> La5
+            android.content.Context r3 = r5.f115a     // Catch: android.content.pm.PackageManager.NameNotFoundException -> La5
+            java.lang.String r3 = r3.getPackageName()     // Catch: android.content.pm.PackageManager.NameNotFoundException -> La5
+            r1.append(r3)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> La5
+            java.lang.String r1 = r1.toString()     // Catch: android.content.pm.PackageManager.NameNotFoundException -> La5
+            android.util.Log.e(r0, r1)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> La5
+            goto Lbc
+        La0:
+            java.lang.String r2 = p353u6.C6343f.m12993a(r3, r1)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> La5
+            goto Lbc
+        La5:
+            r1 = move-exception
+            java.lang.String r3 = "No such package: "
+            java.lang.StringBuilder r3 = android.support.v4.media.C0144c.m256a(r3)
+            android.content.Context r4 = r5.f115a
+            java.lang.String r4 = r4.getPackageName()
+            r3.append(r4)
+            java.lang.String r3 = r3.toString()
+            android.util.Log.e(r0, r3, r1)
+        Lbc:
+            java.lang.String r0 = "X-Android-Cert"
+            r6.addRequestProperty(r0, r2)
+            java.lang.String r0 = "x-goog-api-key"
+            r6.addRequestProperty(r0, r7)
+            return r6
+        Lc7:
+            xa.e r6 = new xa.e
+            r7 = 2
+            java.lang.String r0 = "Firebase Installations Service is unavailable. Please try again later."
+            r6.<init>(r0, r7)
+            throw r6
+    }
+
+    /* renamed from: e */
+    public final p012ab.AbstractC0052d m71e(java.net.HttpURLConnection r11) {
+            r10 = this;
+            java.io.InputStream r11 = r11.getInputStream()
+            android.util.JsonReader r0 = new android.util.JsonReader
+            java.io.InputStreamReader r1 = new java.io.InputStreamReader
+            java.nio.charset.Charset r2 = p012ab.C0051c.f114f
+            r1.<init>(r11, r2)
+            r0.<init>(r1)
+            ab.f$a r1 = p012ab.AbstractC0054f.m77a()
+            r0.beginObject()
+            r2 = 0
+            r4 = r2
+            r5 = r4
+            r6 = r5
+            r7 = r6
+        L1c:
+            boolean r2 = r0.hasNext()
+            if (r2 == 0) goto L98
+            java.lang.String r2 = r0.nextName()
+            java.lang.String r3 = "name"
+            boolean r3 = r2.equals(r3)
+            if (r3 == 0) goto L33
+            java.lang.String r4 = r0.nextString()
+            goto L1c
+        L33:
+            java.lang.String r3 = "fid"
+            boolean r3 = r2.equals(r3)
+            if (r3 == 0) goto L40
+            java.lang.String r5 = r0.nextString()
+            goto L1c
+        L40:
+            java.lang.String r3 = "refreshToken"
+            boolean r3 = r2.equals(r3)
+            if (r3 == 0) goto L4d
+            java.lang.String r6 = r0.nextString()
+            goto L1c
+        L4d:
+            java.lang.String r3 = "authToken"
+            boolean r2 = r2.equals(r3)
+            if (r2 == 0) goto L94
+            r0.beginObject()
+        L58:
+            boolean r2 = r0.hasNext()
+            if (r2 == 0) goto L8c
+            java.lang.String r2 = r0.nextName()
+            java.lang.String r3 = "token"
+            boolean r3 = r2.equals(r3)
+            if (r3 == 0) goto L74
+            java.lang.String r2 = r0.nextString()
+            r3 = r1
+            ab.b$b r3 = (p012ab.C0050b.b) r3
+            r3.f110a = r2
+            goto L58
+        L74:
+            java.lang.String r3 = "expiresIn"
+            boolean r2 = r2.equals(r3)
+            if (r2 == 0) goto L88
+            java.lang.String r2 = r0.nextString()
+            long r2 = m67d(r2)
+            r1.mo65b(r2)
+            goto L58
+        L88:
+            r0.skipValue()
+            goto L58
+        L8c:
+            ab.f r7 = r1.mo64a()
+            r0.endObject()
+            goto L1c
+        L94:
+            r0.skipValue()
+            goto L1c
+        L98:
+            r0.endObject()
+            r0.close()
+            r11.close()
+            ab.d$a r8 = p012ab.AbstractC0052d.a.f119Y
+            ab.a r11 = new ab.a
+            r9 = 0
+            r3 = r11
+            r3.<init>(r4, r5, r6, r7, r8, r9)
+            return r11
+    }
+
+    /* renamed from: f */
+    public final p012ab.AbstractC0054f m72f(java.net.HttpURLConnection r5) {
+            r4 = this;
+            java.io.InputStream r5 = r5.getInputStream()
+            android.util.JsonReader r0 = new android.util.JsonReader
+            java.io.InputStreamReader r1 = new java.io.InputStreamReader
+            java.nio.charset.Charset r2 = p012ab.C0051c.f114f
+            r1.<init>(r5, r2)
+            r0.<init>(r1)
+            ab.f$a r1 = p012ab.AbstractC0054f.m77a()
+            r0.beginObject()
+        L17:
+            boolean r2 = r0.hasNext()
+            if (r2 == 0) goto L4b
+            java.lang.String r2 = r0.nextName()
+            java.lang.String r3 = "token"
+            boolean r3 = r2.equals(r3)
+            if (r3 == 0) goto L33
+            java.lang.String r2 = r0.nextString()
+            r3 = r1
+            ab.b$b r3 = (p012ab.C0050b.b) r3
+            r3.f110a = r2
+            goto L17
+        L33:
+            java.lang.String r3 = "expiresIn"
+            boolean r2 = r2.equals(r3)
+            if (r2 == 0) goto L47
+            java.lang.String r2 = r0.nextString()
+            long r2 = m67d(r2)
+            r1.mo65b(r2)
+            goto L17
+        L47:
+            r0.skipValue()
+            goto L17
+        L4b:
+            r0.endObject()
+            r0.close()
+            r5.close()
+            ab.f$b r5 = p012ab.AbstractC0054f.b.f127Y
+            ab.b$b r1 = (p012ab.C0050b.b) r1
+            r1.f112c = r5
+            ab.f r5 = r1.mo64a()
+            return r5
+    }
+
+    /* renamed from: g */
+    public final void m73g(java.net.HttpURLConnection r3, java.lang.String r4, java.lang.String r5) {
+            r2 = this;
+            org.json.JSONObject r0 = new org.json.JSONObject     // Catch: org.json.JSONException -> L2b
+            r0.<init>()     // Catch: org.json.JSONException -> L2b
+            java.lang.String r1 = "fid"
+            r0.put(r1, r4)     // Catch: org.json.JSONException -> L2b
+            java.lang.String r4 = "appId"
+            r0.put(r4, r5)     // Catch: org.json.JSONException -> L2b
+            java.lang.String r4 = "authVersion"
+            java.lang.String r5 = "FIS_v2"
+            r0.put(r4, r5)     // Catch: org.json.JSONException -> L2b
+            java.lang.String r4 = "sdkVersion"
+            java.lang.String r5 = "a:17.0.0"
+            r0.put(r4, r5)     // Catch: org.json.JSONException -> L2b
+            java.lang.String r4 = r0.toString()
+            java.lang.String r5 = "UTF-8"
+            byte[] r4 = r4.getBytes(r5)
+            m68i(r3, r4)
+            return
+        L2b:
+            r3 = move-exception
+            java.lang.IllegalStateException r4 = new java.lang.IllegalStateException
+            r4.<init>(r3)
+            throw r4
+    }
+
+    /* renamed from: h */
+    public final void m74h(java.net.HttpURLConnection r4) {
+            r3 = this;
+            org.json.JSONObject r0 = new org.json.JSONObject     // Catch: org.json.JSONException -> L24
+            r0.<init>()     // Catch: org.json.JSONException -> L24
+            java.lang.String r1 = "sdkVersion"
+            java.lang.String r2 = "a:17.0.0"
+            r0.put(r1, r2)     // Catch: org.json.JSONException -> L24
+            org.json.JSONObject r1 = new org.json.JSONObject     // Catch: org.json.JSONException -> L24
+            r1.<init>()     // Catch: org.json.JSONException -> L24
+            java.lang.String r2 = "installation"
+            r1.put(r2, r0)     // Catch: org.json.JSONException -> L24
+            java.lang.String r0 = r1.toString()
+            java.lang.String r1 = "UTF-8"
+            byte[] r0 = r0.getBytes(r1)
+            m68i(r4, r0)
+            return
+        L24:
+            r4 = move-exception
+            java.lang.IllegalStateException r0 = new java.lang.IllegalStateException
+            r0.<init>(r4)
+            throw r0
+    }
+}
+package p012ab;
+
+/* renamed from: ab.e */
+/* loaded from: classes.dex */
+public class C0053e {
+
+    /* renamed from: d */
+    public static final long f122d = 0;
+
+    /* renamed from: e */
+    public static final long f123e = 0;
+
+    /* renamed from: a */
+    public final p412xa.C7017j f124a;
+
+    /* renamed from: b */
+    public long f125b;
+
+    /* renamed from: c */
+    public int f126c;
+
+    static {
+            java.util.concurrent.TimeUnit r0 = java.util.concurrent.TimeUnit.HOURS
+            r1 = 24
+            long r0 = r0.toMillis(r1)
+            p012ab.C0053e.f122d = r0
+            java.util.concurrent.TimeUnit r0 = java.util.concurrent.TimeUnit.MINUTES
+            r1 = 30
+            long r0 = r0.toMillis(r1)
+            p012ab.C0053e.f123e = r0
+            return
+    }
+
+    public C0053e() {
+            r1 = this;
+            r1.<init>()
+            xa.j r0 = p412xa.C7017j.m14169c()
+            r1.f124a = r0
+            return
+    }
+
+    /* renamed from: a */
+    public synchronized boolean m75a() {
+            r5 = this;
+            monitor-enter(r5)
+            int r0 = r5.f126c     // Catch: java.lang.Throwable -> L17
+            if (r0 == 0) goto L14
+            xa.j r0 = r5.f124a     // Catch: java.lang.Throwable -> L17
+            long r0 = r0.m14170a()     // Catch: java.lang.Throwable -> L17
+            long r2 = r5.f125b     // Catch: java.lang.Throwable -> L17
+            int r4 = (r0 > r2 ? 1 : (r0 == r2 ? 0 : -1))
+            if (r4 <= 0) goto L12
+            goto L14
+        L12:
+            r0 = 0
+            goto L15
+        L14:
+            r0 = 1
+        L15:
+            monitor-exit(r5)
+            return r0
+        L17:
+            r0 = move-exception
+            monitor-exit(r5)
+            throw r0
+    }
+
+    /* renamed from: b */
+    public synchronized void m76b(int r7) {
+            r6 = this;
+            monitor-enter(r6)
+            r0 = 200(0xc8, float:2.8E-43)
+            r1 = 0
+            r2 = 1
+            if (r7 < r0) goto Lb
+            r0 = 300(0x12c, float:4.2E-43)
+            if (r7 < r0) goto L16
+        Lb:
+            r0 = 401(0x191, float:5.62E-43)
+            if (r7 == r0) goto L16
+            r0 = 404(0x194, float:5.66E-43)
+            if (r7 != r0) goto L14
+            goto L16
+        L14:
+            r0 = 0
+            goto L17
+        L16:
+            r0 = 1
+        L17:
+            if (r0 == 0) goto L22
+            monitor-enter(r6)     // Catch: java.lang.Throwable -> L6f
+            r6.f126c = r1     // Catch: java.lang.Throwable -> L1f
+            monitor-exit(r6)     // Catch: java.lang.Throwable -> L6f
+            monitor-exit(r6)
+            return
+        L1f:
+            r7 = move-exception
+            monitor-exit(r6)     // Catch: java.lang.Throwable -> L6f
+            throw r7     // Catch: java.lang.Throwable -> L6f
+        L22:
+            int r0 = r6.f126c     // Catch: java.lang.Throwable -> L6f
+            int r0 = r0 + r2
+            r6.f126c = r0     // Catch: java.lang.Throwable -> L6f
+            monitor-enter(r6)     // Catch: java.lang.Throwable -> L6f
+            r0 = 429(0x1ad, float:6.01E-43)
+            if (r7 == r0) goto L34
+            r0 = 500(0x1f4, float:7.0E-43)
+            if (r7 < r0) goto L35
+            r0 = 600(0x258, float:8.41E-43)
+            if (r7 >= r0) goto L35
+        L34:
+            r1 = 1
+        L35:
+            if (r1 != 0) goto L3d
+            long r0 = p012ab.C0053e.f122d     // Catch: java.lang.Throwable -> L3b
+            monitor-exit(r6)     // Catch: java.lang.Throwable -> L6f
+            goto L62
+        L3b:
+            r7 = move-exception
+            goto L6d
+        L3d:
+            r0 = 4611686018427387904(0x4000000000000000, double:2.0)
+            int r7 = r6.f126c     // Catch: java.lang.Throwable -> L3b
+            double r2 = (double) r7     // Catch: java.lang.Throwable -> L3b
+            double r0 = java.lang.Math.pow(r0, r2)     // Catch: java.lang.Throwable -> L3b
+            xa.j r7 = r6.f124a     // Catch: java.lang.Throwable -> L3b
+            java.util.Objects.requireNonNull(r7)     // Catch: java.lang.Throwable -> L3b
+            double r2 = java.lang.Math.random()     // Catch: java.lang.Throwable -> L3b
+            r4 = 4652007308841189376(0x408f400000000000, double:1000.0)
+            double r2 = r2 * r4
+            long r2 = (long) r2     // Catch: java.lang.Throwable -> L3b
+            double r2 = (double) r2     // Catch: java.lang.Throwable -> L3b
+            double r0 = r0 + r2
+            long r2 = p012ab.C0053e.f123e     // Catch: java.lang.Throwable -> L3b
+            double r2 = (double) r2     // Catch: java.lang.Throwable -> L3b
+            double r0 = java.lang.Math.min(r0, r2)     // Catch: java.lang.Throwable -> L3b
+            long r0 = (long) r0
+            monitor-exit(r6)     // Catch: java.lang.Throwable -> L6f
+        L62:
+            xa.j r7 = r6.f124a     // Catch: java.lang.Throwable -> L6f
+            long r2 = r7.m14170a()     // Catch: java.lang.Throwable -> L6f
+            long r2 = r2 + r0
+            r6.f125b = r2     // Catch: java.lang.Throwable -> L6f
+            monitor-exit(r6)
+            return
+        L6d:
+            monitor-exit(r6)     // Catch: java.lang.Throwable -> L6f
+            throw r7     // Catch: java.lang.Throwable -> L6f
+        L6f:
+            r7 = move-exception
+            monitor-exit(r6)
+            throw r7
+    }
+}

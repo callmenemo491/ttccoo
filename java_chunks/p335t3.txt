@@ -1,0 +1,299 @@
+package p335t3;
+
+@com.google.auto.value.AutoValue
+/* renamed from: t3.c */
+/* loaded from: classes.dex */
+public abstract class AbstractC6150c<T> {
+    public AbstractC6150c() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    /* renamed from: a */
+    public abstract java.lang.Integer mo12695a();
+
+    /* renamed from: b */
+    public abstract T mo12696b();
+
+    /* renamed from: c */
+    public abstract p335t3.EnumC6151d mo12697c();
+}
+package p335t3;
+
+/* renamed from: t3.a */
+/* loaded from: classes.dex */
+public final class C6148a<T> extends p335t3.AbstractC6150c<T> {
+
+    /* renamed from: a */
+    public final java.lang.Integer f23738a;
+
+    /* renamed from: b */
+    public final T f23739b;
+
+    /* renamed from: c */
+    public final p335t3.EnumC6151d f23740c;
+
+    public C6148a(java.lang.Integer r1, T r2, p335t3.EnumC6151d r3) {
+            r0 = this;
+            r0.<init>()
+            r0.f23738a = r1
+            java.lang.String r1 = "Null payload"
+            java.util.Objects.requireNonNull(r2, r1)
+            r0.f23739b = r2
+            java.lang.String r1 = "Null priority"
+            java.util.Objects.requireNonNull(r3, r1)
+            r0.f23740c = r3
+            return
+    }
+
+    @Override // p335t3.AbstractC6150c
+    /* renamed from: a */
+    public java.lang.Integer mo12695a() {
+            r1 = this;
+            java.lang.Integer r0 = r1.f23738a
+            return r0
+    }
+
+    @Override // p335t3.AbstractC6150c
+    /* renamed from: b */
+    public T mo12696b() {
+            r1 = this;
+            T r0 = r1.f23739b
+            return r0
+    }
+
+    @Override // p335t3.AbstractC6150c
+    /* renamed from: c */
+    public p335t3.EnumC6151d mo12697c() {
+            r1 = this;
+            t3.d r0 = r1.f23740c
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r5 != r4) goto L4
+            return r0
+        L4:
+            boolean r1 = r5 instanceof p335t3.AbstractC6150c
+            r2 = 0
+            if (r1 == 0) goto L3b
+            t3.c r5 = (p335t3.AbstractC6150c) r5
+            java.lang.Integer r1 = r4.f23738a
+            if (r1 != 0) goto L16
+            java.lang.Integer r1 = r5.mo12695a()
+            if (r1 != 0) goto L39
+            goto L20
+        L16:
+            java.lang.Integer r3 = r5.mo12695a()
+            boolean r1 = r1.equals(r3)
+            if (r1 == 0) goto L39
+        L20:
+            T r1 = r4.f23739b
+            java.lang.Object r3 = r5.mo12696b()
+            boolean r1 = r1.equals(r3)
+            if (r1 == 0) goto L39
+            t3.d r1 = r4.f23740c
+            t3.d r5 = r5.mo12697c()
+            boolean r5 = r1.equals(r5)
+            if (r5 == 0) goto L39
+            goto L3a
+        L39:
+            r0 = 0
+        L3a:
+            return r0
+        L3b:
+            return r2
+    }
+
+    public int hashCode() {
+            r3 = this;
+            java.lang.Integer r0 = r3.f23738a
+            if (r0 != 0) goto L6
+            r0 = 0
+            goto La
+        L6:
+            int r0 = r0.hashCode()
+        La:
+            r1 = 1000003(0xf4243, float:1.401303E-39)
+            r0 = r0 ^ r1
+            int r0 = r0 * r1
+            T r2 = r3.f23739b
+            int r2 = r2.hashCode()
+            r0 = r0 ^ r2
+            int r0 = r0 * r1
+            t3.d r1 = r3.f23740c
+            int r1 = r1.hashCode()
+            r0 = r0 ^ r1
+            return r0
+    }
+
+    public java.lang.String toString() {
+            r2 = this;
+            java.lang.String r0 = "Event{code="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.Integer r1 = r2.f23738a
+            r0.append(r1)
+            java.lang.String r1 = ", payload="
+            r0.append(r1)
+            T r1 = r2.f23739b
+            r0.append(r1)
+            java.lang.String r1 = ", priority="
+            r0.append(r1)
+            t3.d r1 = r2.f23740c
+            r0.append(r1)
+            java.lang.String r1 = "}"
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            return r0
+    }
+}
+package p335t3;
+
+/* renamed from: t3.b */
+/* loaded from: classes.dex */
+public final class C6149b {
+
+    /* renamed from: a */
+    public final java.lang.String f23741a;
+
+    public C6149b(java.lang.String r2) {
+            r1 = this;
+            r1.<init>()
+            java.lang.String r0 = "name is null"
+            java.util.Objects.requireNonNull(r2, r0)
+            r1.f23741a = r2
+            return
+    }
+
+    public boolean equals(java.lang.Object r2) {
+            r1 = this;
+            if (r1 != r2) goto L4
+            r2 = 1
+            return r2
+        L4:
+            boolean r0 = r2 instanceof p335t3.C6149b
+            if (r0 != 0) goto La
+            r2 = 0
+            return r2
+        La:
+            java.lang.String r0 = r1.f23741a
+            t3.b r2 = (p335t3.C6149b) r2
+            java.lang.String r2 = r2.f23741a
+            boolean r2 = r0.equals(r2)
+            return r2
+    }
+
+    public int hashCode() {
+            r2 = this;
+            java.lang.String r0 = r2.f23741a
+            int r0 = r0.hashCode()
+            r1 = 1000003(0xf4243, float:1.401303E-39)
+            r0 = r0 ^ r1
+            return r0
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "Encoding{name=\""
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r3.f23741a
+            java.lang.String r2 = "\"}"
+            java.lang.String r0 = p346u.C6269n.m12888a(r0, r1, r2)
+            return r0
+    }
+}
+package p335t3;
+
+/* renamed from: t3.d */
+/* loaded from: classes.dex */
+public enum EnumC6151d extends java.lang.Enum<p335t3.EnumC6151d> {
+
+    /* renamed from: Y */
+    public static final p335t3.EnumC6151d f23742Y = null;
+
+    /* renamed from: Z */
+    public static final p335t3.EnumC6151d f23743Z = null;
+
+    /* renamed from: a0 */
+    public static final p335t3.EnumC6151d f23744a0 = null;
+
+    /* renamed from: b0 */
+    public static final /* synthetic */ p335t3.EnumC6151d[] f23745b0 = null;
+
+    static {
+            t3.d r0 = new t3.d
+            java.lang.String r1 = "DEFAULT"
+            r2 = 0
+            r0.<init>(r1, r2)
+            p335t3.EnumC6151d.f23742Y = r0
+            t3.d r1 = new t3.d
+            java.lang.String r3 = "VERY_LOW"
+            r4 = 1
+            r1.<init>(r3, r4)
+            p335t3.EnumC6151d.f23743Z = r1
+            t3.d r3 = new t3.d
+            java.lang.String r5 = "HIGHEST"
+            r6 = 2
+            r3.<init>(r5, r6)
+            p335t3.EnumC6151d.f23744a0 = r3
+            r5 = 3
+            t3.d[] r5 = new p335t3.EnumC6151d[r5]
+            r5[r2] = r0
+            r5[r4] = r1
+            r5[r6] = r3
+            p335t3.EnumC6151d.f23745b0 = r5
+            return
+    }
+
+    EnumC6151d(java.lang.String r1, int r2) {
+            r0 = this;
+            r0.<init>(r1, r2)
+            return
+    }
+
+    public static p335t3.EnumC6151d valueOf(java.lang.String r1) {
+            java.lang.Class<t3.d> r0 = p335t3.EnumC6151d.class
+            java.lang.Enum r1 = java.lang.Enum.valueOf(r0, r1)
+            t3.d r1 = (p335t3.EnumC6151d) r1
+            return r1
+    }
+
+    public static p335t3.EnumC6151d[] values() {
+            t3.d[] r0 = p335t3.EnumC6151d.f23745b0
+            java.lang.Object r0 = r0.clone()
+            t3.d[] r0 = (p335t3.EnumC6151d[]) r0
+            return r0
+    }
+}
+package p335t3;
+
+/* renamed from: t3.e */
+/* loaded from: classes.dex */
+public interface InterfaceC6152e<T, U> {
+    U apply(T r1);
+}
+package p335t3;
+
+/* renamed from: t3.f */
+/* loaded from: classes.dex */
+public interface InterfaceC6153f<T> {
+}
+package p335t3;
+
+/* renamed from: t3.g */
+/* loaded from: classes.dex */
+public interface InterfaceC6154g {
+    /* renamed from: a */
+    <T> p335t3.InterfaceC6153f<T> mo12698a(java.lang.String r1, java.lang.Class<T> r2, p335t3.C6149b r3, p335t3.InterfaceC6152e<T, byte[]> r4);
+}
+package p335t3;
+
+/* renamed from: t3.h */
+/* loaded from: classes.dex */
+public interface InterfaceC6155h {
+    /* renamed from: k */
+    void mo2151k(java.lang.Exception r1);
+}

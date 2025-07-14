@@ -1,0 +1,1758 @@
+package p183k5;
+
+/* renamed from: k5.a */
+/* loaded from: classes.dex */
+public final class C3694a extends p143i5.AbstractC3081e {
+
+    /* renamed from: n */
+    public final p183k5.C3695b f16335n;
+
+    public C3694a(java.util.List<byte[]> r4) {
+            r3 = this;
+            java.lang.String r0 = "DvbDecoder"
+            r3.<init>(r0)
+            r0 = 0
+            java.lang.Object r4 = r4.get(r0)
+            byte[] r4 = (byte[]) r4
+            int r1 = r4.length
+            r1 = 0
+            int r1 = r1 + 1
+            r0 = r4[r0]
+            r0 = r0 & 255(0xff, float:3.57E-43)
+            int r0 = r0 << 8
+            int r2 = r1 + 1
+            r1 = r4[r1]
+            r1 = r1 & 255(0xff, float:3.57E-43)
+            r0 = r0 | r1
+            int r1 = r2 + 1
+            r2 = r4[r2]
+            r2 = r2 & 255(0xff, float:3.57E-43)
+            int r2 = r2 << 8
+            r4 = r4[r1]
+            r4 = r4 & 255(0xff, float:3.57E-43)
+            r4 = r4 | r2
+            k5.b r1 = new k5.b
+            r1.<init>(r0, r4)
+            r3.f16335n = r1
+            return
+    }
+
+    @Override // p143i5.AbstractC3081e
+    /* renamed from: j */
+    public p143i5.InterfaceC3082f mo7541j(byte[] r48, int r49, boolean r50) {
+            r47 = this;
+            r0 = r47
+            r1 = 0
+            if (r50 == 0) goto L26
+            k5.b r2 = r0.f16335n
+            k5.b$h r2 = r2.f16344f
+            android.util.SparseArray<k5.b$f> r3 = r2.f16379c
+            r3.clear()
+            android.util.SparseArray<k5.b$a> r3 = r2.f16380d
+            r3.clear()
+            android.util.SparseArray<k5.b$c> r3 = r2.f16381e
+            r3.clear()
+            android.util.SparseArray<k5.b$a> r3 = r2.f16382f
+            r3.clear()
+            android.util.SparseArray<k5.b$c> r3 = r2.f16383g
+            r3.clear()
+            r2.f16384h = r1
+            r2.f16385i = r1
+        L26:
+            j5.e r2 = new j5.e
+            k5.b r3 = r0.f16335n
+            java.util.Objects.requireNonNull(r3)
+            m4.b0 r4 = new m4.b0
+            r5 = r48
+            r6 = r49
+            r4.<init>(r5, r6)
+        L36:
+            int r5 = r4.m9757b()
+            r6 = 48
+            r7 = 3
+            r8 = 2
+            r9 = 1
+            if (r5 < r6) goto L224
+            r5 = 8
+            int r6 = r4.m9766k(r5)
+            r11 = 15
+            if (r6 != r11) goto L224
+            k5.b$h r6 = r3.f16344f
+            int r11 = r4.m9766k(r5)
+            r12 = 16
+            int r13 = r4.m9766k(r12)
+            int r14 = r4.m9766k(r12)
+            int r15 = r4.m9761f()
+            int r15 = r15 + r14
+            int r1 = r14 * 8
+            int r10 = r4.m9757b()
+            if (r1 <= r10) goto L78
+            java.lang.String r1 = "DvbParser"
+            java.lang.String r5 = "Data field length exceeds limit"
+            android.util.Log.w(r1, r5)
+            int r1 = r4.m9757b()
+            r4.m9775t(r1)
+        L76:
+            r1 = 0
+            goto L36
+        L78:
+            r1 = 4
+            switch(r11) {
+                case 16: goto L1bb;
+                case 17: goto Lf4;
+                case 18: goto Ldb;
+                case 19: goto Lc2;
+                case 20: goto L7e;
+                default: goto L7c;
+            }
+        L7c:
+            goto L21a
+        L7e:
+            int r5 = r6.f16377a
+            if (r13 != r5) goto L21a
+            r4.m9775t(r1)
+            boolean r1 = r4.m9765j()
+            r4.m9775t(r7)
+            int r17 = r4.m9766k(r12)
+            int r18 = r4.m9766k(r12)
+            if (r1 == 0) goto Laf
+            int r10 = r4.m9766k(r12)
+            int r1 = r4.m9766k(r12)
+            int r5 = r4.m9766k(r12)
+            int r7 = r4.m9766k(r12)
+            r20 = r1
+            r21 = r5
+            r22 = r7
+            r19 = r10
+            goto Lb7
+        Laf:
+            r20 = r17
+            r22 = r18
+            r19 = 0
+            r21 = 0
+        Lb7:
+            k5.b$b r1 = new k5.b$b
+            r16 = r1
+            r16.<init>(r17, r18, r19, r20, r21, r22)
+            r6.f16384h = r1
+            goto L21a
+        Lc2:
+            int r1 = r6.f16377a
+            if (r13 != r1) goto Lcd
+            k5.b$c r1 = p183k5.C3695b.m8155g(r4)
+            android.util.SparseArray<k5.b$c> r5 = r6.f16381e
+            goto Ld7
+        Lcd:
+            int r1 = r6.f16378b
+            if (r13 != r1) goto L21a
+            k5.b$c r1 = p183k5.C3695b.m8155g(r4)
+            android.util.SparseArray<k5.b$c> r5 = r6.f16383g
+        Ld7:
+            int r6 = r1.f16356a
+            goto L1b7
+        Ldb:
+            int r1 = r6.f16377a
+            if (r13 != r1) goto Le6
+            k5.b$a r1 = p183k5.C3695b.m8154f(r4, r14)
+            android.util.SparseArray<k5.b$a> r5 = r6.f16380d
+            goto Lf0
+        Le6:
+            int r1 = r6.f16378b
+            if (r13 != r1) goto L21a
+            k5.b$a r1 = p183k5.C3695b.m8154f(r4, r14)
+            android.util.SparseArray<k5.b$a> r5 = r6.f16382f
+        Lf0:
+            int r6 = r1.f16346a
+            goto L1b7
+        Lf4:
+            k5.b$d r10 = r6.f16385i
+            int r11 = r6.f16377a
+            if (r13 != r11) goto L21a
+            if (r10 == 0) goto L21a
+            int r11 = r4.m9766k(r5)
+            r4.m9775t(r1)
+            boolean r18 = r4.m9765j()
+            r4.m9775t(r7)
+            int r19 = r4.m9766k(r12)
+            int r20 = r4.m9766k(r12)
+            int r21 = r4.m9766k(r7)
+            int r22 = r4.m9766k(r7)
+            r4.m9775t(r8)
+            int r23 = r4.m9766k(r5)
+            int r24 = r4.m9766k(r5)
+            int r25 = r4.m9766k(r1)
+            int r26 = r4.m9766k(r8)
+            r4.m9775t(r8)
+            int r14 = r14 + (-10)
+            android.util.SparseArray r7 = new android.util.SparseArray
+            r7.<init>()
+        L137:
+            if (r14 <= 0) goto L17f
+            int r13 = r4.m9766k(r12)
+            int r12 = r4.m9766k(r8)
+            int r29 = r4.m9766k(r8)
+            r5 = 12
+            int r30 = r4.m9766k(r5)
+            r4.m9775t(r1)
+            int r31 = r4.m9766k(r5)
+            int r14 = r14 + (-6)
+            if (r12 == r9) goto L15e
+            if (r12 != r8) goto L159
+            goto L15e
+        L159:
+            r32 = 0
+            r33 = 0
+            goto L16e
+        L15e:
+            r5 = 8
+            int r16 = r4.m9766k(r5)
+            int r17 = r4.m9766k(r5)
+            int r14 = r14 + (-2)
+            r32 = r16
+            r33 = r17
+        L16e:
+            k5.b$g r5 = new k5.b$g
+            r27 = r5
+            r28 = r12
+            r27.<init>(r28, r29, r30, r31, r32, r33)
+            r7.put(r13, r5)
+            r5 = 8
+            r12 = 16
+            goto L137
+        L17f:
+            k5.b$f r1 = new k5.b$f
+            r16 = r1
+            r17 = r11
+            r27 = r7
+            r16.<init>(r17, r18, r19, r20, r21, r22, r23, r24, r25, r26, r27)
+            int r5 = r10.f16361b
+            if (r5 != 0) goto L1b3
+            android.util.SparseArray<k5.b$f> r5 = r6.f16379c
+            java.lang.Object r5 = r5.get(r11)
+            k5.b$f r5 = (p183k5.C3695b.f) r5
+            if (r5 == 0) goto L1b3
+            android.util.SparseArray<k5.b$g> r5 = r5.f16374j
+            r10 = 0
+        L19b:
+            int r7 = r5.size()
+            if (r10 >= r7) goto L1b3
+            android.util.SparseArray<k5.b$g> r7 = r1.f16374j
+            int r8 = r5.keyAt(r10)
+            java.lang.Object r9 = r5.valueAt(r10)
+            k5.b$g r9 = (p183k5.C3695b.g) r9
+            r7.put(r8, r9)
+            int r10 = r10 + 1
+            goto L19b
+        L1b3:
+            android.util.SparseArray<k5.b$f> r5 = r6.f16379c
+            int r6 = r1.f16365a
+        L1b7:
+            r5.put(r6, r1)
+            goto L21a
+        L1bb:
+            int r5 = r6.f16377a
+            if (r13 != r5) goto L21a
+            k5.b$d r5 = r6.f16385i
+            r7 = 8
+            int r9 = r4.m9766k(r7)
+            int r1 = r4.m9766k(r1)
+            int r10 = r4.m9766k(r8)
+            r4.m9775t(r8)
+            int r14 = r14 + (-2)
+            android.util.SparseArray r8 = new android.util.SparseArray
+            r8.<init>()
+        L1d9:
+            if (r14 <= 0) goto L1f9
+            int r11 = r4.m9766k(r7)
+            r4.m9775t(r7)
+            r12 = 16
+            int r13 = r4.m9766k(r12)
+            int r7 = r4.m9766k(r12)
+            int r14 = r14 + (-6)
+            k5.b$e r12 = new k5.b$e
+            r12.<init>(r13, r7)
+            r8.put(r11, r12)
+            r7 = 8
+            goto L1d9
+        L1f9:
+            k5.b$d r7 = new k5.b$d
+            r7.<init>(r9, r1, r10, r8)
+            if (r10 == 0) goto L212
+            r6.f16385i = r7
+            android.util.SparseArray<k5.b$f> r1 = r6.f16379c
+            r1.clear()
+            android.util.SparseArray<k5.b$a> r1 = r6.f16380d
+            r1.clear()
+            android.util.SparseArray<k5.b$c> r1 = r6.f16381e
+            r1.clear()
+            goto L21a
+        L212:
+            if (r5 == 0) goto L21a
+            int r5 = r5.f16360a
+            if (r5 == r1) goto L21a
+            r6.f16385i = r7
+        L21a:
+            int r1 = r4.m9761f()
+            int r15 = r15 - r1
+            r4.m9776u(r15)
+            goto L76
+        L224:
+            k5.b$h r1 = r3.f16344f
+            k5.b$d r4 = r1.f16385i
+            if (r4 != 0) goto L232
+            java.util.List r1 = java.util.Collections.emptyList()
+            r26 = r2
+            goto L406
+        L232:
+            k5.b$b r1 = r1.f16384h
+            if (r1 == 0) goto L237
+            goto L239
+        L237:
+            k5.b$b r1 = r3.f16342d
+        L239:
+            android.graphics.Bitmap r5 = r3.f16345g
+            if (r5 == 0) goto L251
+            int r6 = r1.f16350a
+            int r6 = r6 + r9
+            int r5 = r5.getWidth()
+            if (r6 != r5) goto L251
+            int r5 = r1.f16351b
+            int r5 = r5 + r9
+            android.graphics.Bitmap r6 = r3.f16345g
+            int r6 = r6.getHeight()
+            if (r5 == r6) goto L264
+        L251:
+            int r5 = r1.f16350a
+            int r5 = r5 + r9
+            int r6 = r1.f16351b
+            int r6 = r6 + r9
+            android.graphics.Bitmap$Config r10 = android.graphics.Bitmap.Config.ARGB_8888
+            android.graphics.Bitmap r5 = android.graphics.Bitmap.createBitmap(r5, r6, r10)
+            r3.f16345g = r5
+            android.graphics.Canvas r6 = r3.f16341c
+            r6.setBitmap(r5)
+        L264:
+            java.util.ArrayList r5 = new java.util.ArrayList
+            r5.<init>()
+            android.util.SparseArray<k5.b$e> r4 = r4.f16362c
+            r6 = 0
+        L26c:
+            int r10 = r4.size()
+            if (r6 >= r10) goto L400
+            android.graphics.Canvas r10 = r3.f16341c
+            r10.save()
+            java.lang.Object r10 = r4.valueAt(r6)
+            k5.b$e r10 = (p183k5.C3695b.e) r10
+            int r11 = r4.keyAt(r6)
+            k5.b$h r12 = r3.f16344f
+            android.util.SparseArray<k5.b$f> r12 = r12.f16379c
+            java.lang.Object r11 = r12.get(r11)
+            k5.b$f r11 = (p183k5.C3695b.f) r11
+            int r12 = r10.f16363a
+            int r13 = r1.f16352c
+            int r12 = r12 + r13
+            int r10 = r10.f16364b
+            int r13 = r1.f16354e
+            int r10 = r10 + r13
+            int r13 = r11.f16367c
+            int r13 = r13 + r12
+            int r14 = r1.f16353d
+            int r13 = java.lang.Math.min(r13, r14)
+            int r14 = r11.f16368d
+            int r14 = r14 + r10
+            int r15 = r1.f16355f
+            int r14 = java.lang.Math.min(r14, r15)
+            android.graphics.Canvas r15 = r3.f16341c
+            r15.clipRect(r12, r10, r13, r14)
+            k5.b$h r13 = r3.f16344f
+            android.util.SparseArray<k5.b$a> r13 = r13.f16380d
+            int r14 = r11.f16370f
+            java.lang.Object r13 = r13.get(r14)
+            k5.b$a r13 = (p183k5.C3695b.a) r13
+            if (r13 != 0) goto L2ca
+            k5.b$h r13 = r3.f16344f
+            android.util.SparseArray<k5.b$a> r13 = r13.f16382f
+            int r14 = r11.f16370f
+            java.lang.Object r13 = r13.get(r14)
+            k5.b$a r13 = (p183k5.C3695b.a) r13
+            if (r13 != 0) goto L2ca
+            k5.b$a r13 = r3.f16343e
+        L2ca:
+            android.util.SparseArray<k5.b$g> r14 = r11.f16374j
+            r15 = 0
+        L2cd:
+            int r9 = r14.size()
+            if (r15 >= r9) goto L355
+            int r9 = r14.keyAt(r15)
+            java.lang.Object r16 = r14.valueAt(r15)
+            r8 = r16
+            k5.b$g r8 = (p183k5.C3695b.g) r8
+            k5.b$h r7 = r3.f16344f
+            android.util.SparseArray<k5.b$c> r7 = r7.f16381e
+            java.lang.Object r7 = r7.get(r9)
+            k5.b$c r7 = (p183k5.C3695b.c) r7
+            if (r7 != 0) goto L2f5
+            k5.b$h r7 = r3.f16344f
+            android.util.SparseArray<k5.b$c> r7 = r7.f16383g
+            java.lang.Object r7 = r7.get(r9)
+            k5.b$c r7 = (p183k5.C3695b.c) r7
+        L2f5:
+            if (r7 == 0) goto L33d
+            boolean r9 = r7.f16357b
+            if (r9 == 0) goto L2fd
+            r9 = 0
+            goto L2ff
+        L2fd:
+            android.graphics.Paint r9 = r3.f16339a
+        L2ff:
+            int r0 = r11.f16369e
+            r24 = r4
+            int r4 = r8.f16375a
+            int r4 = r4 + r12
+            int r8 = r8.f16376b
+            int r8 = r8 + r10
+            r25 = r14
+            android.graphics.Canvas r14 = r3.f16341c
+            r26 = r2
+            r2 = 3
+            if (r0 != r2) goto L315
+            int[] r2 = r13.f16349d
+            goto L31d
+        L315:
+            r2 = 2
+            if (r0 != r2) goto L31b
+            int[] r2 = r13.f16348c
+            goto L31d
+        L31b:
+            int[] r2 = r13.f16347b
+        L31d:
+            r27 = r6
+            byte[] r6 = r7.f16358c
+            r17 = r6
+            r18 = r2
+            r19 = r0
+            r20 = r4
+            r21 = r8
+            r22 = r9
+            r23 = r14
+            p183k5.C3695b.m8153e(r17, r18, r19, r20, r21, r22, r23)
+            byte[] r6 = r7.f16359d
+            r7 = 1
+            int r21 = r8 + 1
+            r17 = r6
+            p183k5.C3695b.m8153e(r17, r18, r19, r20, r21, r22, r23)
+            goto L345
+        L33d:
+            r26 = r2
+            r24 = r4
+            r27 = r6
+            r25 = r14
+        L345:
+            int r15 = r15 + 1
+            r0 = r47
+            r4 = r24
+            r14 = r25
+            r2 = r26
+            r6 = r27
+            r7 = 3
+            r8 = 2
+            goto L2cd
+        L355:
+            r26 = r2
+            r24 = r4
+            r27 = r6
+            boolean r0 = r11.f16366b
+            if (r0 == 0) goto L39f
+            int r0 = r11.f16369e
+            r2 = 3
+            if (r0 != r2) goto L36c
+            int[] r0 = r13.f16349d
+            int r4 = r11.f16371g
+            r0 = r0[r4]
+            r4 = 2
+            goto L37c
+        L36c:
+            r4 = 2
+            if (r0 != r4) goto L376
+            int[] r0 = r13.f16348c
+            int r6 = r11.f16372h
+            r0 = r0[r6]
+            goto L37c
+        L376:
+            int[] r0 = r13.f16347b
+            int r6 = r11.f16373i
+            r0 = r0[r6]
+        L37c:
+            android.graphics.Paint r6 = r3.f16340b
+            r6.setColor(r0)
+            android.graphics.Canvas r0 = r3.f16341c
+            float r6 = (float) r12
+            float r7 = (float) r10
+            int r8 = r11.f16367c
+            int r8 = r8 + r12
+            float r8 = (float) r8
+            int r9 = r11.f16368d
+            int r9 = r9 + r10
+            float r9 = (float) r9
+            android.graphics.Paint r13 = r3.f16340b
+            r16 = r0
+            r17 = r6
+            r18 = r7
+            r19 = r8
+            r20 = r9
+            r21 = r13
+            r16.drawRect(r17, r18, r19, r20, r21)
+            goto L3a1
+        L39f:
+            r2 = 3
+            r4 = 2
+        L3a1:
+            r45 = 0
+            r30 = 0
+            r29 = r30
+            r31 = r30
+            r39 = -8388609(0xffffffffff7fffff, float:-3.4028235E38)
+            r38 = -2147483648(0xffffffff80000000, float:-0.0)
+            r44 = r38
+            r42 = 0
+            r43 = -16777216(0xffffffffff000000, float:-1.7014118E38)
+            android.graphics.Bitmap r0 = r3.f16345g
+            int r6 = r11.f16367c
+            int r7 = r11.f16368d
+            android.graphics.Bitmap r32 = android.graphics.Bitmap.createBitmap(r0, r12, r10, r6, r7)
+            float r0 = (float) r12
+            int r6 = r1.f16350a
+            float r6 = (float) r6
+            float r36 = r0 / r6
+            r37 = 0
+            float r0 = (float) r10
+            int r7 = r1.f16351b
+            float r7 = (float) r7
+            float r33 = r0 / r7
+            r34 = 0
+            r35 = 0
+            int r0 = r11.f16367c
+            float r0 = (float) r0
+            float r40 = r0 / r6
+            int r0 = r11.f16368d
+            float r0 = (float) r0
+            float r41 = r0 / r7
+            i5.a r0 = new i5.a
+            r28 = r0
+            r46 = 0
+            r28.<init>(r29, r30, r31, r32, r33, r34, r35, r36, r37, r38, r39, r40, r41, r42, r43, r44, r45, r46)
+            r5.add(r0)
+            android.graphics.Canvas r0 = r3.f16341c
+            android.graphics.PorterDuff$Mode r6 = android.graphics.PorterDuff.Mode.CLEAR
+            r7 = 0
+            r0.drawColor(r7, r6)
+            android.graphics.Canvas r0 = r3.f16341c
+            r0.restore()
+            int r6 = r27 + 1
+            r0 = r47
+            r4 = r24
+            r2 = r26
+            r7 = 3
+            r8 = 2
+            r9 = 1
+            goto L26c
+        L400:
+            r26 = r2
+            java.util.List r1 = java.util.Collections.unmodifiableList(r5)
+        L406:
+            r0 = r26
+            r2 = 1
+            r0.<init>(r1, r2)
+            return r0
+    }
+}
+package p183k5;
+
+/* renamed from: k5.b */
+/* loaded from: classes.dex */
+public final class C3695b {
+
+    /* renamed from: h */
+    public static final byte[] f16336h = null;
+
+    /* renamed from: i */
+    public static final byte[] f16337i = null;
+
+    /* renamed from: j */
+    public static final byte[] f16338j = null;
+
+    /* renamed from: a */
+    public final android.graphics.Paint f16339a;
+
+    /* renamed from: b */
+    public final android.graphics.Paint f16340b;
+
+    /* renamed from: c */
+    public final android.graphics.Canvas f16341c;
+
+    /* renamed from: d */
+    public final p183k5.C3695b.b f16342d;
+
+    /* renamed from: e */
+    public final p183k5.C3695b.a f16343e;
+
+    /* renamed from: f */
+    public final p183k5.C3695b.h f16344f;
+
+    /* renamed from: g */
+    public android.graphics.Bitmap f16345g;
+
+    /* renamed from: k5.b$a */
+    public static final class a {
+
+        /* renamed from: a */
+        public final int f16346a;
+
+        /* renamed from: b */
+        public final int[] f16347b;
+
+        /* renamed from: c */
+        public final int[] f16348c;
+
+        /* renamed from: d */
+        public final int[] f16349d;
+
+        public a(int r1, int[] r2, int[] r3, int[] r4) {
+                r0 = this;
+                r0.<init>()
+                r0.f16346a = r1
+                r0.f16347b = r2
+                r0.f16348c = r3
+                r0.f16349d = r4
+                return
+        }
+    }
+
+    /* renamed from: k5.b$b */
+    public static final class b {
+
+        /* renamed from: a */
+        public final int f16350a;
+
+        /* renamed from: b */
+        public final int f16351b;
+
+        /* renamed from: c */
+        public final int f16352c;
+
+        /* renamed from: d */
+        public final int f16353d;
+
+        /* renamed from: e */
+        public final int f16354e;
+
+        /* renamed from: f */
+        public final int f16355f;
+
+        public b(int r1, int r2, int r3, int r4, int r5, int r6) {
+                r0 = this;
+                r0.<init>()
+                r0.f16350a = r1
+                r0.f16351b = r2
+                r0.f16352c = r3
+                r0.f16353d = r4
+                r0.f16354e = r5
+                r0.f16355f = r6
+                return
+        }
+    }
+
+    /* renamed from: k5.b$c */
+    public static final class c {
+
+        /* renamed from: a */
+        public final int f16356a;
+
+        /* renamed from: b */
+        public final boolean f16357b;
+
+        /* renamed from: c */
+        public final byte[] f16358c;
+
+        /* renamed from: d */
+        public final byte[] f16359d;
+
+        public c(int r1, boolean r2, byte[] r3, byte[] r4) {
+                r0 = this;
+                r0.<init>()
+                r0.f16356a = r1
+                r0.f16357b = r2
+                r0.f16358c = r3
+                r0.f16359d = r4
+                return
+        }
+    }
+
+    /* renamed from: k5.b$d */
+    public static final class d {
+
+        /* renamed from: a */
+        public final int f16360a;
+
+        /* renamed from: b */
+        public final int f16361b;
+
+        /* renamed from: c */
+        public final android.util.SparseArray<p183k5.C3695b.e> f16362c;
+
+        public d(int r1, int r2, int r3, android.util.SparseArray<p183k5.C3695b.e> r4) {
+                r0 = this;
+                r0.<init>()
+                r0.f16360a = r2
+                r0.f16361b = r3
+                r0.f16362c = r4
+                return
+        }
+    }
+
+    /* renamed from: k5.b$e */
+    public static final class e {
+
+        /* renamed from: a */
+        public final int f16363a;
+
+        /* renamed from: b */
+        public final int f16364b;
+
+        public e(int r1, int r2) {
+                r0 = this;
+                r0.<init>()
+                r0.f16363a = r1
+                r0.f16364b = r2
+                return
+        }
+    }
+
+    /* renamed from: k5.b$f */
+    public static final class f {
+
+        /* renamed from: a */
+        public final int f16365a;
+
+        /* renamed from: b */
+        public final boolean f16366b;
+
+        /* renamed from: c */
+        public final int f16367c;
+
+        /* renamed from: d */
+        public final int f16368d;
+
+        /* renamed from: e */
+        public final int f16369e;
+
+        /* renamed from: f */
+        public final int f16370f;
+
+        /* renamed from: g */
+        public final int f16371g;
+
+        /* renamed from: h */
+        public final int f16372h;
+
+        /* renamed from: i */
+        public final int f16373i;
+
+        /* renamed from: j */
+        public final android.util.SparseArray<p183k5.C3695b.g> f16374j;
+
+        public f(int r1, boolean r2, int r3, int r4, int r5, int r6, int r7, int r8, int r9, int r10, android.util.SparseArray<p183k5.C3695b.g> r11) {
+                r0 = this;
+                r0.<init>()
+                r0.f16365a = r1
+                r0.f16366b = r2
+                r0.f16367c = r3
+                r0.f16368d = r4
+                r0.f16369e = r6
+                r0.f16370f = r7
+                r0.f16371g = r8
+                r0.f16372h = r9
+                r0.f16373i = r10
+                r0.f16374j = r11
+                return
+        }
+    }
+
+    /* renamed from: k5.b$g */
+    public static final class g {
+
+        /* renamed from: a */
+        public final int f16375a;
+
+        /* renamed from: b */
+        public final int f16376b;
+
+        public g(int r1, int r2, int r3, int r4, int r5, int r6) {
+                r0 = this;
+                r0.<init>()
+                r0.f16375a = r3
+                r0.f16376b = r4
+                return
+        }
+    }
+
+    /* renamed from: k5.b$h */
+    public static final class h {
+
+        /* renamed from: a */
+        public final int f16377a;
+
+        /* renamed from: b */
+        public final int f16378b;
+
+        /* renamed from: c */
+        public final android.util.SparseArray<p183k5.C3695b.f> f16379c;
+
+        /* renamed from: d */
+        public final android.util.SparseArray<p183k5.C3695b.a> f16380d;
+
+        /* renamed from: e */
+        public final android.util.SparseArray<p183k5.C3695b.c> f16381e;
+
+        /* renamed from: f */
+        public final android.util.SparseArray<p183k5.C3695b.a> f16382f;
+
+        /* renamed from: g */
+        public final android.util.SparseArray<p183k5.C3695b.c> f16383g;
+
+        /* renamed from: h */
+        public p183k5.C3695b.b f16384h;
+
+        /* renamed from: i */
+        public p183k5.C3695b.d f16385i;
+
+        public h(int r1, int r2) {
+                r0 = this;
+                r0.<init>()
+                r0.f16377a = r1
+                r0.f16378b = r2
+                android.util.SparseArray r1 = new android.util.SparseArray
+                r1.<init>()
+                r0.f16379c = r1
+                android.util.SparseArray r1 = new android.util.SparseArray
+                r1.<init>()
+                r0.f16380d = r1
+                android.util.SparseArray r1 = new android.util.SparseArray
+                r1.<init>()
+                r0.f16381e = r1
+                android.util.SparseArray r1 = new android.util.SparseArray
+                r1.<init>()
+                r0.f16382f = r1
+                android.util.SparseArray r1 = new android.util.SparseArray
+                r1.<init>()
+                r0.f16383g = r1
+                return
+        }
+    }
+
+    static {
+            r0 = 4
+            byte[] r1 = new byte[r0]
+            r1 = {x001a: FILL_ARRAY_DATA , data: [0, 7, 8, 15} // fill-array
+            p183k5.C3695b.f16336h = r1
+            byte[] r0 = new byte[r0]
+            r0 = {x0020: FILL_ARRAY_DATA , data: [0, 119, -120, -1} // fill-array
+            p183k5.C3695b.f16337i = r0
+            r0 = 16
+            byte[] r0 = new byte[r0]
+            r0 = {x0026: FILL_ARRAY_DATA , data: [0, 17, 34, 51, 68, 85, 102, 119, -120, -103, -86, -69, -52, -35, -18, -1} // fill-array
+            p183k5.C3695b.f16338j = r0
+            return
+    }
+
+    public C3695b(int r9, int r10) {
+            r8 = this;
+            r8.<init>()
+            android.graphics.Paint r0 = new android.graphics.Paint
+            r0.<init>()
+            r8.f16339a = r0
+            android.graphics.Paint$Style r1 = android.graphics.Paint.Style.FILL_AND_STROKE
+            r0.setStyle(r1)
+            android.graphics.PorterDuffXfermode r1 = new android.graphics.PorterDuffXfermode
+            android.graphics.PorterDuff$Mode r2 = android.graphics.PorterDuff.Mode.SRC
+            r1.<init>(r2)
+            r0.setXfermode(r1)
+            r1 = 0
+            r0.setPathEffect(r1)
+            android.graphics.Paint r0 = new android.graphics.Paint
+            r0.<init>()
+            r8.f16340b = r0
+            android.graphics.Paint$Style r2 = android.graphics.Paint.Style.FILL
+            r0.setStyle(r2)
+            android.graphics.PorterDuffXfermode r2 = new android.graphics.PorterDuffXfermode
+            android.graphics.PorterDuff$Mode r3 = android.graphics.PorterDuff.Mode.DST_OVER
+            r2.<init>(r3)
+            r0.setXfermode(r2)
+            r0.setPathEffect(r1)
+            android.graphics.Canvas r0 = new android.graphics.Canvas
+            r0.<init>()
+            r8.f16341c = r0
+            k5.b$b r0 = new k5.b$b
+            r2 = 719(0x2cf, float:1.008E-42)
+            r3 = 575(0x23f, float:8.06E-43)
+            r4 = 0
+            r5 = 719(0x2cf, float:1.008E-42)
+            r6 = 0
+            r7 = 575(0x23f, float:8.06E-43)
+            r1 = r0
+            r1.<init>(r2, r3, r4, r5, r6, r7)
+            r8.f16342d = r0
+            k5.b$a r0 = new k5.b$a
+            r1 = 4
+            int[] r1 = new int[r1]
+            r1 = {x006c: FILL_ARRAY_DATA , data: [0, -1, -16777216, -8421505} // fill-array
+            int[] r2 = m8150b()
+            int[] r3 = m8151c()
+            r0.<init>(r4, r1, r2, r3)
+            r8.f16343e = r0
+            k5.b$h r0 = new k5.b$h
+            r0.<init>(r9, r10)
+            r8.f16344f = r0
+            return
+    }
+
+    /* renamed from: a */
+    public static byte[] m8149a(int r3, int r4, p216m4.C4355b0 r5) {
+            byte[] r0 = new byte[r3]
+            r1 = 0
+        L3:
+            if (r1 >= r3) goto Lf
+            int r2 = r5.m9766k(r4)
+            byte r2 = (byte) r2
+            r0[r1] = r2
+            int r1 = r1 + 1
+            goto L3
+        Lf:
+            return r0
+    }
+
+    /* renamed from: b */
+    public static int[] m8150b() {
+            r0 = 16
+            int[] r1 = new int[r0]
+            r2 = 0
+            r1[r2] = r2
+            r3 = 1
+        L8:
+            if (r3 >= r0) goto L50
+            r4 = 8
+            r5 = 255(0xff, float:3.57E-43)
+            if (r3 >= r4) goto L2f
+            r4 = r3 & 1
+            if (r4 == 0) goto L17
+            r4 = 255(0xff, float:3.57E-43)
+            goto L18
+        L17:
+            r4 = 0
+        L18:
+            r6 = r3 & 2
+            if (r6 == 0) goto L1f
+            r6 = 255(0xff, float:3.57E-43)
+            goto L20
+        L1f:
+            r6 = 0
+        L20:
+            r7 = r3 & 4
+            if (r7 == 0) goto L27
+            r7 = 255(0xff, float:3.57E-43)
+            goto L28
+        L27:
+            r7 = 0
+        L28:
+            int r4 = m8152d(r5, r4, r6, r7)
+            r1[r3] = r4
+            goto L4d
+        L2f:
+            r4 = r3 & 1
+            r6 = 127(0x7f, float:1.78E-43)
+            if (r4 == 0) goto L38
+            r4 = 127(0x7f, float:1.78E-43)
+            goto L39
+        L38:
+            r4 = 0
+        L39:
+            r7 = r3 & 2
+            if (r7 == 0) goto L40
+            r7 = 127(0x7f, float:1.78E-43)
+            goto L41
+        L40:
+            r7 = 0
+        L41:
+            r8 = r3 & 4
+            if (r8 == 0) goto L46
+            goto L47
+        L46:
+            r6 = 0
+        L47:
+            int r4 = m8152d(r5, r4, r7, r6)
+            r1[r3] = r4
+        L4d:
+            int r3 = r3 + 1
+            goto L8
+        L50:
+            return r1
+    }
+
+    /* renamed from: c */
+    public static int[] m8151c() {
+            r0 = 256(0x100, float:3.59E-43)
+            int[] r1 = new int[r0]
+            r2 = 0
+            r1[r2] = r2
+            r3 = 0
+        L8:
+            if (r3 >= r0) goto L128
+            r4 = 8
+            r5 = 255(0xff, float:3.57E-43)
+            if (r3 >= r4) goto L30
+            r4 = 63
+            r6 = r3 & 1
+            if (r6 == 0) goto L19
+            r6 = 255(0xff, float:3.57E-43)
+            goto L1a
+        L19:
+            r6 = 0
+        L1a:
+            r7 = r3 & 2
+            if (r7 == 0) goto L21
+            r7 = 255(0xff, float:3.57E-43)
+            goto L22
+        L21:
+            r7 = 0
+        L22:
+            r8 = r3 & 4
+            if (r8 == 0) goto L27
+            goto L28
+        L27:
+            r5 = 0
+        L28:
+            int r4 = m8152d(r4, r6, r7, r5)
+            r1[r3] = r4
+            goto L124
+        L30:
+            r6 = r3 & 136(0x88, float:1.9E-43)
+            r7 = 170(0xaa, float:2.38E-43)
+            r8 = 85
+            if (r6 == 0) goto Lef
+            r9 = 127(0x7f, float:1.78E-43)
+            if (r6 == r4) goto Lb9
+            r4 = 128(0x80, float:1.8E-43)
+            r7 = 43
+            if (r6 == r4) goto L7f
+            r4 = 136(0x88, float:1.9E-43)
+            if (r6 == r4) goto L48
+            goto L124
+        L48:
+            r4 = r3 & 1
+            if (r4 == 0) goto L4f
+            r4 = 43
+            goto L50
+        L4f:
+            r4 = 0
+        L50:
+            r6 = r3 & 16
+            if (r6 == 0) goto L57
+            r6 = 85
+            goto L58
+        L57:
+            r6 = 0
+        L58:
+            int r4 = r4 + r6
+            r6 = r3 & 2
+            if (r6 == 0) goto L60
+            r6 = 43
+            goto L61
+        L60:
+            r6 = 0
+        L61:
+            r9 = r3 & 32
+            if (r9 == 0) goto L68
+            r9 = 85
+            goto L69
+        L68:
+            r9 = 0
+        L69:
+            int r6 = r6 + r9
+            r9 = r3 & 4
+            if (r9 == 0) goto L6f
+            goto L70
+        L6f:
+            r7 = 0
+        L70:
+            r9 = r3 & 64
+            if (r9 == 0) goto L75
+            goto L76
+        L75:
+            r8 = 0
+        L76:
+            int r7 = r7 + r8
+            int r4 = m8152d(r5, r4, r6, r7)
+            r1[r3] = r4
+            goto L124
+        L7f:
+            r4 = r3 & 1
+            if (r4 == 0) goto L86
+            r4 = 43
+            goto L87
+        L86:
+            r4 = 0
+        L87:
+            int r4 = r4 + r9
+            r6 = r3 & 16
+            if (r6 == 0) goto L8f
+            r6 = 85
+            goto L90
+        L8f:
+            r6 = 0
+        L90:
+            int r4 = r4 + r6
+            r6 = r3 & 2
+            if (r6 == 0) goto L98
+            r6 = 43
+            goto L99
+        L98:
+            r6 = 0
+        L99:
+            int r6 = r6 + r9
+            r10 = r3 & 32
+            if (r10 == 0) goto La1
+            r10 = 85
+            goto La2
+        La1:
+            r10 = 0
+        La2:
+            int r6 = r6 + r10
+            r10 = r3 & 4
+            if (r10 == 0) goto La8
+            goto La9
+        La8:
+            r7 = 0
+        La9:
+            int r7 = r7 + r9
+            r9 = r3 & 64
+            if (r9 == 0) goto Laf
+            goto Lb0
+        Laf:
+            r8 = 0
+        Lb0:
+            int r7 = r7 + r8
+            int r4 = m8152d(r5, r4, r6, r7)
+            r1[r3] = r4
+            goto L124
+        Lb9:
+            r4 = r3 & 1
+            if (r4 == 0) goto Lc0
+            r4 = 85
+            goto Lc1
+        Lc0:
+            r4 = 0
+        Lc1:
+            r5 = r3 & 16
+            if (r5 == 0) goto Lc8
+            r5 = 170(0xaa, float:2.38E-43)
+            goto Lc9
+        Lc8:
+            r5 = 0
+        Lc9:
+            int r4 = r4 + r5
+            r5 = r3 & 2
+            if (r5 == 0) goto Ld1
+            r5 = 85
+            goto Ld2
+        Ld1:
+            r5 = 0
+        Ld2:
+            r6 = r3 & 32
+            if (r6 == 0) goto Ld9
+            r6 = 170(0xaa, float:2.38E-43)
+            goto Lda
+        Ld9:
+            r6 = 0
+        Lda:
+            int r5 = r5 + r6
+            r6 = r3 & 4
+            if (r6 == 0) goto Le0
+            goto Le1
+        Le0:
+            r8 = 0
+        Le1:
+            r6 = r3 & 64
+            if (r6 == 0) goto Le6
+            goto Le7
+        Le6:
+            r7 = 0
+        Le7:
+            int r8 = r8 + r7
+            int r4 = m8152d(r9, r4, r5, r8)
+            r1[r3] = r4
+            goto L124
+        Lef:
+            r4 = r3 & 1
+            if (r4 == 0) goto Lf6
+            r4 = 85
+            goto Lf7
+        Lf6:
+            r4 = 0
+        Lf7:
+            r6 = r3 & 16
+            if (r6 == 0) goto Lfe
+            r6 = 170(0xaa, float:2.38E-43)
+            goto Lff
+        Lfe:
+            r6 = 0
+        Lff:
+            int r4 = r4 + r6
+            r6 = r3 & 2
+            if (r6 == 0) goto L107
+            r6 = 85
+            goto L108
+        L107:
+            r6 = 0
+        L108:
+            r9 = r3 & 32
+            if (r9 == 0) goto L10f
+            r9 = 170(0xaa, float:2.38E-43)
+            goto L110
+        L10f:
+            r9 = 0
+        L110:
+            int r6 = r6 + r9
+            r9 = r3 & 4
+            if (r9 == 0) goto L116
+            goto L117
+        L116:
+            r8 = 0
+        L117:
+            r9 = r3 & 64
+            if (r9 == 0) goto L11c
+            goto L11d
+        L11c:
+            r7 = 0
+        L11d:
+            int r8 = r8 + r7
+            int r4 = m8152d(r5, r4, r6, r8)
+            r1[r3] = r4
+        L124:
+            int r3 = r3 + 1
+            goto L8
+        L128:
+            return r1
+    }
+
+    /* renamed from: d */
+    public static int m8152d(int r0, int r1, int r2, int r3) {
+            int r0 = r0 << 24
+            int r1 = r1 << 16
+            r0 = r0 | r1
+            int r1 = r2 << 8
+            r0 = r0 | r1
+            r0 = r0 | r3
+            return r0
+    }
+
+    /* renamed from: e */
+    public static void m8153e(byte[] r24, int[] r25, int r26, int r27, int r28, android.graphics.Paint r29, android.graphics.Canvas r30) {
+            r0 = r26
+            r7 = r29
+            m4.b0 r8 = new m4.b0
+            r9 = 1
+            r10 = 0
+            r1 = r24
+            r8.<init>(r1, r9, r10)
+            r1 = r27
+            r11 = r28
+            r12 = r10
+            r13 = r12
+            r14 = r13
+        L14:
+            int r2 = r8.m9757b()
+            if (r2 == 0) goto L20c
+            r15 = 8
+            int r2 = r8.m9766k(r15)
+            r3 = 240(0xf0, float:3.36E-43)
+            if (r2 == r3) goto L205
+            r6 = 3
+            r5 = 4
+            r4 = 2
+            r16 = 0
+            switch(r2) {
+                case 16: goto L149;
+                case 17: goto L9f;
+                case 18: goto L45;
+                default: goto L2c;
+            }
+        L2c:
+            switch(r2) {
+                case 32: goto L3f;
+                case 33: goto L39;
+                case 34: goto L31;
+                default: goto L2f;
+            }
+        L2f:
+            goto L209
+        L31:
+            r2 = 16
+            byte[] r13 = m8149a(r2, r15, r8)
+            goto L209
+        L39:
+            byte[] r12 = m8149a(r5, r15, r8)
+            goto L209
+        L3f:
+            byte[] r14 = m8149a(r5, r5, r8)
+            goto L209
+        L45:
+            r6 = r1
+            r1 = 0
+        L47:
+            int r2 = r8.m9766k(r15)
+            if (r2 == 0) goto L52
+            r17 = r1
+            r18 = 1
+            goto L78
+        L52:
+            boolean r2 = r8.m9765j()
+            r3 = 7
+            if (r2 != 0) goto L6b
+            int r2 = r8.m9766k(r3)
+            if (r2 == 0) goto L65
+            r17 = r1
+            r18 = r2
+            r2 = 0
+            goto L78
+        L65:
+            r2 = 0
+            r17 = 1
+            r18 = 0
+            goto L78
+        L6b:
+            int r2 = r8.m9766k(r3)
+            int r3 = r8.m9766k(r15)
+            r17 = r1
+            r18 = r2
+            r2 = r3
+        L78:
+            if (r18 == 0) goto L93
+            if (r7 == 0) goto L93
+            r1 = r25[r2]
+            r7.setColor(r1)
+            float r2 = (float) r6
+            float r3 = (float) r11
+            int r1 = r6 + r18
+            float r4 = (float) r1
+            int r1 = r11 + 1
+            float r5 = (float) r1
+            r1 = r30
+            r19 = r6
+            r6 = r29
+            r1.drawRect(r2, r3, r4, r5, r6)
+            goto L95
+        L93:
+            r19 = r6
+        L95:
+            int r6 = r19 + r18
+            if (r17 == 0) goto L9c
+        L99:
+            r1 = r6
+            goto L209
+        L9c:
+            r1 = r17
+            goto L47
+        L9f:
+            if (r0 != r6) goto Laa
+            if (r13 != 0) goto La6
+            byte[] r2 = p183k5.C3695b.f16338j
+            goto La7
+        La6:
+            r2 = r13
+        La7:
+            r17 = r2
+            goto Lac
+        Laa:
+            r17 = r10
+        Lac:
+            r3 = r1
+            r1 = 0
+        Lae:
+            int r2 = r8.m9766k(r5)
+            if (r2 == 0) goto Lb5
+            goto L108
+        Lb5:
+            boolean r2 = r8.m9765j()
+            if (r2 != 0) goto Lcb
+            int r2 = r8.m9766k(r6)
+            if (r2 == 0) goto Lc9
+            int r2 = r2 + 2
+            r18 = r1
+            r19 = r2
+            r2 = 0
+            goto L10c
+        Lc9:
+            r1 = 1
+            goto Le3
+        Lcb:
+            boolean r2 = r8.m9765j()
+            if (r2 != 0) goto Ld7
+            int r2 = r8.m9766k(r4)
+            int r2 = r2 + r5
+            goto Lf6
+        Ld7:
+            int r2 = r8.m9766k(r4)
+            if (r2 == 0) goto L107
+            if (r2 == r9) goto L101
+            if (r2 == r4) goto Lf0
+            if (r2 == r6) goto Le9
+        Le3:
+            r18 = r1
+            r2 = 0
+            r19 = 0
+            goto L10c
+        Le9:
+            int r2 = r8.m9766k(r15)
+            int r2 = r2 + 25
+            goto Lf6
+        Lf0:
+            int r2 = r8.m9766k(r5)
+            int r2 = r2 + 9
+        Lf6:
+            int r18 = r8.m9766k(r5)
+            r19 = r2
+            r2 = r18
+            r18 = r1
+            goto L10c
+        L101:
+            r18 = r1
+            r2 = 0
+            r19 = 2
+            goto L10c
+        L107:
+            r2 = 0
+        L108:
+            r18 = r1
+            r19 = 1
+        L10c:
+            if (r19 == 0) goto L131
+            if (r7 == 0) goto L131
+            if (r17 == 0) goto L114
+            r2 = r17[r2]
+        L114:
+            r1 = r25[r2]
+            r7.setColor(r1)
+            float r2 = (float) r3
+            float r1 = (float) r11
+            int r4 = r3 + r19
+            float r4 = (float) r4
+            int r5 = r11 + 1
+            float r5 = (float) r5
+            r20 = r1
+            r1 = r30
+            r21 = r3
+            r3 = r20
+            r10 = 2
+            r15 = 3
+            r6 = r29
+            r1.drawRect(r2, r3, r4, r5, r6)
+            goto L135
+        L131:
+            r21 = r3
+            r10 = 2
+            r15 = 3
+        L135:
+            int r3 = r21 + r19
+            if (r18 == 0) goto L13f
+            r8.m9758c()
+            r1 = r3
+            goto L209
+        L13f:
+            r1 = r18
+            r4 = 2
+            r5 = 4
+            r6 = 3
+            r10 = 0
+            r15 = 8
+            goto Lae
+        L149:
+            r10 = 2
+            r15 = 3
+            if (r0 != r15) goto L156
+            if (r12 != 0) goto L152
+            byte[] r2 = p183k5.C3695b.f16337i
+            goto L153
+        L152:
+            r2 = r12
+        L153:
+            r17 = r2
+            goto L161
+        L156:
+            if (r0 != r10) goto L15f
+            if (r14 != 0) goto L15d
+            byte[] r2 = p183k5.C3695b.f16336h
+            goto L153
+        L15d:
+            r2 = r14
+            goto L153
+        L15f:
+            r17 = 0
+        L161:
+            r6 = r1
+            r1 = 0
+        L163:
+            int r2 = r8.m9766k(r10)
+            if (r2 == 0) goto L16a
+            goto L180
+        L16a:
+            boolean r2 = r8.m9765j()
+            if (r2 == 0) goto L179
+            int r2 = r8.m9766k(r15)
+            int r2 = r2 + r15
+            r4 = 4
+            r5 = 8
+            goto L1ab
+        L179:
+            boolean r2 = r8.m9765j()
+            if (r2 == 0) goto L188
+            r2 = 0
+        L180:
+            r18 = r1
+            r4 = 4
+            r5 = 8
+            r19 = 1
+            goto L1c7
+        L188:
+            int r2 = r8.m9766k(r10)
+            if (r2 == 0) goto L1be
+            if (r2 == r9) goto L1b5
+            if (r2 == r10) goto L1a2
+            if (r2 == r15) goto L198
+            r4 = 4
+            r5 = 8
+            goto L1c2
+        L198:
+            r5 = 8
+            int r2 = r8.m9766k(r5)
+            int r2 = r2 + 29
+            r4 = 4
+            goto L1ab
+        L1a2:
+            r4 = 4
+            r5 = 8
+            int r2 = r8.m9766k(r4)
+            int r2 = r2 + 12
+        L1ab:
+            int r3 = r8.m9766k(r10)
+            r18 = r1
+            r19 = r2
+            r2 = r3
+            goto L1c7
+        L1b5:
+            r4 = 4
+            r5 = 8
+            r18 = r1
+            r2 = 0
+            r19 = 2
+            goto L1c7
+        L1be:
+            r4 = 4
+            r5 = 8
+            r1 = 1
+        L1c2:
+            r18 = r1
+            r2 = 0
+            r19 = 0
+        L1c7:
+            if (r19 == 0) goto L1f2
+            if (r7 == 0) goto L1f2
+            if (r17 == 0) goto L1cf
+            r2 = r17[r2]
+        L1cf:
+            r1 = r25[r2]
+            r7.setColor(r1)
+            float r2 = (float) r6
+            float r3 = (float) r11
+            int r1 = r6 + r19
+            float r1 = (float) r1
+            int r4 = r11 + 1
+            float r4 = (float) r4
+            r21 = r1
+            r1 = r30
+            r22 = r4
+            r23 = 4
+            r4 = r21
+            r21 = 8
+            r5 = r22
+            r22 = r6
+            r6 = r29
+            r1.drawRect(r2, r3, r4, r5, r6)
+            goto L1f8
+        L1f2:
+            r22 = r6
+            r21 = 8
+            r23 = 4
+        L1f8:
+            int r6 = r22 + r19
+            if (r18 == 0) goto L201
+            r8.m9758c()
+            goto L99
+        L201:
+            r1 = r18
+            goto L163
+        L205:
+            int r11 = r11 + 2
+            r1 = r27
+        L209:
+            r10 = 0
+            goto L14
+        L20c:
+            return
+    }
+
+    /* renamed from: f */
+    public static p183k5.C3695b.a m8154f(p216m4.C4355b0 r21, int r22) {
+            r0 = r21
+            r1 = 8
+            int r2 = r0.m9766k(r1)
+            r0.m9775t(r1)
+            int r3 = r22 + (-2)
+            r4 = 4
+            int[] r5 = new int[r4]
+            r5 = {x00cc: FILL_ARRAY_DATA , data: [0, -1, -16777216, -8421505} // fill-array
+            int[] r6 = m8150b()
+            int[] r7 = m8151c()
+        L1b:
+            r8 = 2
+            if (r3 <= 0) goto Lc1
+            int r9 = r0.m9766k(r1)
+            int r10 = r0.m9766k(r1)
+            int r3 = r3 + (-2)
+            r11 = r10 & 128(0x80, float:1.8E-43)
+            if (r11 == 0) goto L2e
+            r11 = r5
+            goto L35
+        L2e:
+            r11 = r10 & 64
+            if (r11 == 0) goto L34
+            r11 = r6
+            goto L35
+        L34:
+            r11 = r7
+        L35:
+            r10 = r10 & 1
+            if (r10 == 0) goto L4c
+            int r8 = r0.m9766k(r1)
+            int r10 = r0.m9766k(r1)
+            int r12 = r0.m9766k(r1)
+            int r13 = r0.m9766k(r1)
+            int r3 = r3 + (-4)
+            goto L67
+        L4c:
+            r10 = 6
+            int r12 = r0.m9766k(r10)
+            int r12 = r12 << r8
+            int r13 = r0.m9766k(r4)
+            int r13 = r13 << r4
+            int r14 = r0.m9766k(r4)
+            int r14 = r14 << r4
+            int r8 = r0.m9766k(r8)
+            int r8 = r8 << r10
+            int r3 = r3 + (-2)
+            r10 = r13
+            r13 = r8
+            r8 = r12
+            r12 = r14
+        L67:
+            r15 = 255(0xff, float:3.57E-43)
+            if (r8 != 0) goto L6f
+            r10 = 0
+            r12 = 0
+            r13 = 255(0xff, float:3.57E-43)
+        L6f:
+            r13 = r13 & r15
+            int r13 = 255 - r13
+            byte r13 = (byte) r13
+            r16 = r2
+            double r1 = (double) r8
+            r17 = 4608992865850220347(0x3ff66e978d4fdf3b, double:1.402)
+            int r10 = r10 + (-128)
+            r8 = r5
+            double r4 = (double) r10
+            double r17 = r17 * r4
+            double r14 = r17 + r1
+            int r14 = (int) r14
+            r17 = 4599871095020959050(0x3fd60663c74fb54a, double:0.34414)
+            int r12 = r12 + (-128)
+            r15 = r11
+            double r10 = (double) r12
+            double r17 = r17 * r10
+            double r17 = r1 - r17
+            r19 = 4604607620821057148(0x3fe6da3c21187e7c, double:0.71414)
+            double r4 = r4 * r19
+            double r4 = r17 - r4
+            int r4 = (int) r4
+            r17 = 4610659197712347431(0x3ffc5a1cac083127, double:1.772)
+            double r10 = r10 * r17
+            double r10 = r10 + r1
+            int r1 = (int) r10
+            r2 = 0
+            r5 = 255(0xff, float:3.57E-43)
+            int r10 = p371v5.C6552b0.m13315h(r14, r2, r5)
+            int r4 = p371v5.C6552b0.m13315h(r4, r2, r5)
+            int r1 = p371v5.C6552b0.m13315h(r1, r2, r5)
+            int r1 = m8152d(r13, r10, r4, r1)
+            r15[r9] = r1
+            r5 = r8
+            r2 = r16
+            r1 = 8
+            r4 = 4
+            goto L1b
+        Lc1:
+            r16 = r2
+            r8 = r5
+            k5.b$a r0 = new k5.b$a
+            r1 = r16
+            r0.<init>(r1, r8, r6, r7)
+            return r0
+    }
+
+    /* renamed from: g */
+    public static p183k5.C3695b.c m8155g(p216m4.C4355b0 r6) {
+            r0 = 16
+            int r1 = r6.m9766k(r0)
+            r2 = 4
+            r6.m9775t(r2)
+            r2 = 2
+            int r2 = r6.m9766k(r2)
+            boolean r3 = r6.m9765j()
+            r4 = 1
+            r6.m9775t(r4)
+            byte[] r5 = p371v5.C6552b0.f25629f
+            if (r2 != r4) goto L27
+            r2 = 8
+            int r2 = r6.m9766k(r2)
+            int r2 = r2 * 16
+            r6.m9775t(r2)
+            goto L41
+        L27:
+            if (r2 != 0) goto L41
+            int r2 = r6.m9766k(r0)
+            int r0 = r6.m9766k(r0)
+            r4 = 0
+            if (r2 <= 0) goto L39
+            byte[] r5 = new byte[r2]
+            r6.m9768m(r5, r4, r2)
+        L39:
+            if (r0 <= 0) goto L41
+            byte[] r2 = new byte[r0]
+            r6.m9768m(r2, r4, r0)
+            goto L42
+        L41:
+            r2 = r5
+        L42:
+            k5.b$c r6 = new k5.b$c
+            r6.<init>(r1, r3, r5, r2)
+            return r6
+    }
+}

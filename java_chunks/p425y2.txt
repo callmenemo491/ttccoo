@@ -1,0 +1,166 @@
+package p425y2;
+
+/* renamed from: y2.a */
+/* loaded from: classes.dex */
+public class C7104a implements p425y2.InterfaceC7105b<android.graphics.Bitmap, byte[]> {
+
+    /* renamed from: Y */
+    public final android.graphics.Bitmap.CompressFormat f27495Y;
+
+    /* renamed from: Z */
+    public final int f27496Z;
+
+    public C7104a() {
+            r1 = this;
+            android.graphics.Bitmap$CompressFormat r0 = android.graphics.Bitmap.CompressFormat.JPEG
+            r1.<init>()
+            r1.f27495Y = r0
+            r0 = 100
+            r1.f27496Z = r0
+            return
+    }
+
+    @Override // p425y2.InterfaceC7105b
+    /* renamed from: g */
+    public p214m2.InterfaceC4345w<byte[]> mo1272g(p214m2.InterfaceC4345w<android.graphics.Bitmap> r4, p180k2.C3673e r5) {
+            r3 = this;
+            java.io.ByteArrayOutputStream r5 = new java.io.ByteArrayOutputStream
+            r5.<init>()
+            java.lang.Object r0 = r4.get()
+            android.graphics.Bitmap r0 = (android.graphics.Bitmap) r0
+            android.graphics.Bitmap$CompressFormat r1 = r3.f27495Y
+            int r2 = r3.f27496Z
+            r0.compress(r1, r2, r5)
+            r4.mo9721d()
+            u2.b r4 = new u2.b
+            byte[] r5 = r5.toByteArray()
+            r4.<init>(r5)
+            return r4
+    }
+}
+package p425y2;
+
+/* renamed from: y2.c */
+/* loaded from: classes.dex */
+public class C7106c {
+
+    /* renamed from: a */
+    public final java.util.List<p425y2.C7106c.a<?, ?>> f27497a;
+
+    /* renamed from: y2.c$a */
+    public static final class a<Z, R> {
+
+        /* renamed from: a */
+        public final java.lang.Class<Z> f27498a;
+
+        /* renamed from: b */
+        public final java.lang.Class<R> f27499b;
+
+        /* renamed from: c */
+        public final p425y2.InterfaceC7105b<Z, R> f27500c;
+
+        public a(java.lang.Class<Z> r1, java.lang.Class<R> r2, p425y2.InterfaceC7105b<Z, R> r3) {
+                r0 = this;
+                r0.<init>()
+                r0.f27498a = r1
+                r0.f27499b = r2
+                r0.f27500c = r3
+                return
+        }
+
+        /* renamed from: a */
+        public boolean m14218a(java.lang.Class<?> r2, java.lang.Class<?> r3) {
+                r1 = this;
+                java.lang.Class<Z> r0 = r1.f27498a
+                boolean r2 = r0.isAssignableFrom(r2)
+                if (r2 == 0) goto L12
+                java.lang.Class<R> r2 = r1.f27499b
+                boolean r2 = r3.isAssignableFrom(r2)
+                if (r2 == 0) goto L12
+                r2 = 1
+                goto L13
+            L12:
+                r2 = 0
+            L13:
+                return r2
+        }
+    }
+
+    public C7106c() {
+            r1 = this;
+            r1.<init>()
+            java.util.ArrayList r0 = new java.util.ArrayList
+            r0.<init>()
+            r1.f27497a = r0
+            return
+    }
+
+    /* renamed from: a */
+    public synchronized <Z, R> java.util.List<java.lang.Class<R>> m14217a(java.lang.Class<Z> r4, java.lang.Class<R> r5) {
+            r3 = this;
+            monitor-enter(r3)
+            java.util.ArrayList r0 = new java.util.ArrayList     // Catch: java.lang.Throwable -> L2f
+            r0.<init>()     // Catch: java.lang.Throwable -> L2f
+            boolean r1 = r5.isAssignableFrom(r4)     // Catch: java.lang.Throwable -> L2f
+            if (r1 == 0) goto L11
+            r0.add(r5)     // Catch: java.lang.Throwable -> L2f
+            monitor-exit(r3)
+            return r0
+        L11:
+            java.util.List<y2.c$a<?, ?>> r1 = r3.f27497a     // Catch: java.lang.Throwable -> L2f
+            java.util.Iterator r1 = r1.iterator()     // Catch: java.lang.Throwable -> L2f
+        L17:
+            boolean r2 = r1.hasNext()     // Catch: java.lang.Throwable -> L2f
+            if (r2 == 0) goto L2d
+            java.lang.Object r2 = r1.next()     // Catch: java.lang.Throwable -> L2f
+            y2.c$a r2 = (p425y2.C7106c.a) r2     // Catch: java.lang.Throwable -> L2f
+            boolean r2 = r2.m14218a(r4, r5)     // Catch: java.lang.Throwable -> L2f
+            if (r2 == 0) goto L17
+            r0.add(r5)     // Catch: java.lang.Throwable -> L2f
+            goto L17
+        L2d:
+            monitor-exit(r3)
+            return r0
+        L2f:
+            r4 = move-exception
+            monitor-exit(r3)
+            throw r4
+    }
+}
+package p425y2;
+
+/* renamed from: y2.d */
+/* loaded from: classes.dex */
+public class C7107d<Z> implements p425y2.InterfaceC7105b<Z, Z> {
+
+    /* renamed from: Y */
+    public static final p425y2.C7107d<?> f27501Y = null;
+
+    static {
+            y2.d r0 = new y2.d
+            r0.<init>()
+            p425y2.C7107d.f27501Y = r0
+            return
+    }
+
+    public C7107d() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p425y2.InterfaceC7105b
+    /* renamed from: g */
+    public p214m2.InterfaceC4345w<Z> mo1272g(p214m2.InterfaceC4345w<Z> r1, p180k2.C3673e r2) {
+            r0 = this;
+            return r1
+    }
+}
+package p425y2;
+
+/* renamed from: y2.b */
+/* loaded from: classes.dex */
+public interface InterfaceC7105b<Z, R> {
+    /* renamed from: g */
+    p214m2.InterfaceC4345w<R> mo1272g(p214m2.InterfaceC4345w<Z> r1, p180k2.C3673e r2);
+}

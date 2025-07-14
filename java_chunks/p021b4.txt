@@ -1,0 +1,1467 @@
+package p021b4;
+
+@com.google.auto.value.AutoValue
+/* renamed from: b4.d */
+/* loaded from: classes.dex */
+public abstract class AbstractC0667d {
+
+    /* renamed from: a */
+    public static final p021b4.AbstractC0667d f3834a = null;
+
+    static {
+            r0 = 10485760(0xa00000, double:5.180654E-317)
+            java.lang.Long r0 = java.lang.Long.valueOf(r0)
+            r1 = 200(0xc8, float:2.8E-43)
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)
+            r2 = 10000(0x2710, float:1.4013E-41)
+            java.lang.Integer r2 = java.lang.Integer.valueOf(r2)
+            r3 = 604800000(0x240c8400, double:2.988109026E-315)
+            java.lang.Long r3 = java.lang.Long.valueOf(r3)
+            r4 = 81920(0x14000, float:1.14794E-40)
+            java.lang.Integer r4 = java.lang.Integer.valueOf(r4)
+            if (r0 != 0) goto L26
+            java.lang.String r5 = " maxStorageSizeInBytes"
+            goto L28
+        L26:
+            java.lang.String r5 = ""
+        L28:
+            if (r1 != 0) goto L30
+            java.lang.String r6 = " loadBatchSize"
+            java.lang.String r5 = p064e.C1493g.m4049a(r5, r6)
+        L30:
+            if (r2 != 0) goto L38
+            java.lang.String r6 = " criticalSectionEnterTimeoutMs"
+            java.lang.String r5 = p064e.C1493g.m4049a(r5, r6)
+        L38:
+            if (r3 != 0) goto L40
+            java.lang.String r6 = " eventCleanUpAge"
+            java.lang.String r5 = p064e.C1493g.m4049a(r5, r6)
+        L40:
+            if (r4 != 0) goto L48
+            java.lang.String r6 = " maxBlobByteSizePerRow"
+            java.lang.String r5 = p064e.C1493g.m4049a(r5, r6)
+        L48:
+            boolean r6 = r5.isEmpty()
+            if (r6 == 0) goto L6c
+            b4.a r5 = new b4.a
+            long r8 = r0.longValue()
+            int r10 = r1.intValue()
+            int r11 = r2.intValue()
+            long r12 = r3.longValue()
+            int r14 = r4.intValue()
+            r15 = 0
+            r7 = r5
+            r7.<init>(r8, r10, r11, r12, r14, r15)
+            p021b4.AbstractC0667d.f3834a = r5
+            return
+        L6c:
+            java.lang.IllegalStateException r0 = new java.lang.IllegalStateException
+            java.lang.String r1 = "Missing required properties:"
+            java.lang.String r1 = p064e.C1493g.m4049a(r1, r5)
+            r0.<init>(r1)
+            throw r0
+    }
+
+    public AbstractC0667d() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    /* renamed from: a */
+    public abstract int mo2216a();
+
+    /* renamed from: b */
+    public abstract long mo2217b();
+
+    /* renamed from: c */
+    public abstract int mo2218c();
+
+    /* renamed from: d */
+    public abstract int mo2219d();
+
+    /* renamed from: e */
+    public abstract long mo2220e();
+}
+package p021b4;
+
+@com.google.auto.value.AutoValue
+/* renamed from: b4.h */
+/* loaded from: classes.dex */
+public abstract class AbstractC0671h {
+    public AbstractC0671h() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    /* renamed from: a */
+    public abstract p385w3.AbstractC6784f mo2221a();
+
+    /* renamed from: b */
+    public abstract long mo2222b();
+
+    /* renamed from: c */
+    public abstract p385w3.AbstractC6787i mo2223c();
+}
+package p021b4;
+
+/* renamed from: b4.a */
+/* loaded from: classes.dex */
+public final class C0664a extends p021b4.AbstractC0667d {
+
+    /* renamed from: b */
+    public final long f3826b;
+
+    /* renamed from: c */
+    public final int f3827c;
+
+    /* renamed from: d */
+    public final int f3828d;
+
+    /* renamed from: e */
+    public final long f3829e;
+
+    /* renamed from: f */
+    public final int f3830f;
+
+    /* renamed from: b4.a$a */
+    public static /* synthetic */ class a {
+    }
+
+    public C0664a(long r1, int r3, int r4, long r5, int r7, p021b4.C0664a.a r8) {
+            r0 = this;
+            r0.<init>()
+            r0.f3826b = r1
+            r0.f3827c = r3
+            r0.f3828d = r4
+            r0.f3829e = r5
+            r0.f3830f = r7
+            return
+    }
+
+    @Override // p021b4.AbstractC0667d
+    /* renamed from: a */
+    public int mo2216a() {
+            r1 = this;
+            int r0 = r1.f3828d
+            return r0
+    }
+
+    @Override // p021b4.AbstractC0667d
+    /* renamed from: b */
+    public long mo2217b() {
+            r2 = this;
+            long r0 = r2.f3829e
+            return r0
+    }
+
+    @Override // p021b4.AbstractC0667d
+    /* renamed from: c */
+    public int mo2218c() {
+            r1 = this;
+            int r0 = r1.f3827c
+            return r0
+    }
+
+    @Override // p021b4.AbstractC0667d
+    /* renamed from: d */
+    public int mo2219d() {
+            r1 = this;
+            int r0 = r1.f3830f
+            return r0
+    }
+
+    @Override // p021b4.AbstractC0667d
+    /* renamed from: e */
+    public long mo2220e() {
+            r2 = this;
+            long r0 = r2.f3826b
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r8) {
+            r7 = this;
+            r0 = 1
+            if (r8 != r7) goto L4
+            return r0
+        L4:
+            boolean r1 = r8 instanceof p021b4.AbstractC0667d
+            r2 = 0
+            if (r1 == 0) goto L3a
+            b4.d r8 = (p021b4.AbstractC0667d) r8
+            long r3 = r7.f3826b
+            long r5 = r8.mo2220e()
+            int r1 = (r3 > r5 ? 1 : (r3 == r5 ? 0 : -1))
+            if (r1 != 0) goto L38
+            int r1 = r7.f3827c
+            int r3 = r8.mo2218c()
+            if (r1 != r3) goto L38
+            int r1 = r7.f3828d
+            int r3 = r8.mo2216a()
+            if (r1 != r3) goto L38
+            long r3 = r7.f3829e
+            long r5 = r8.mo2217b()
+            int r1 = (r3 > r5 ? 1 : (r3 == r5 ? 0 : -1))
+            if (r1 != 0) goto L38
+            int r1 = r7.f3830f
+            int r8 = r8.mo2219d()
+            if (r1 != r8) goto L38
+            goto L39
+        L38:
+            r0 = 0
+        L39:
+            return r0
+        L3a:
+            return r2
+    }
+
+    public int hashCode() {
+            r7 = this;
+            long r0 = r7.f3826b
+            r2 = 32
+            long r3 = r0 >>> r2
+            long r0 = r0 ^ r3
+            int r1 = (int) r0
+            r0 = 1000003(0xf4243, float:1.401303E-39)
+            r1 = r1 ^ r0
+            int r1 = r1 * r0
+            int r3 = r7.f3827c
+            r1 = r1 ^ r3
+            int r1 = r1 * r0
+            int r3 = r7.f3828d
+            r1 = r1 ^ r3
+            int r1 = r1 * r0
+            long r3 = r7.f3829e
+            long r5 = r3 >>> r2
+            long r2 = r5 ^ r3
+            int r3 = (int) r2
+            r1 = r1 ^ r3
+            int r1 = r1 * r0
+            int r0 = r7.f3830f
+            r0 = r0 ^ r1
+            return r0
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "EventStoreConfig{maxStorageSizeInBytes="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            long r1 = r3.f3826b
+            r0.append(r1)
+            java.lang.String r1 = ", loadBatchSize="
+            r0.append(r1)
+            int r1 = r3.f3827c
+            r0.append(r1)
+            java.lang.String r1 = ", criticalSectionEnterTimeoutMs="
+            r0.append(r1)
+            int r1 = r3.f3828d
+            r0.append(r1)
+            java.lang.String r1 = ", eventCleanUpAge="
+            r0.append(r1)
+            long r1 = r3.f3829e
+            r0.append(r1)
+            java.lang.String r1 = ", maxBlobByteSizePerRow="
+            r0.append(r1)
+            int r1 = r3.f3830f
+            java.lang.String r2 = "}"
+            java.lang.String r0 = p381w.C6764e.m13690a(r0, r1, r2)
+            return r0
+    }
+}
+package p021b4;
+
+/* renamed from: b4.b */
+/* loaded from: classes.dex */
+public final class C0665b extends p021b4.AbstractC0671h {
+
+    /* renamed from: a */
+    public final long f3831a;
+
+    /* renamed from: b */
+    public final p385w3.AbstractC6787i f3832b;
+
+    /* renamed from: c */
+    public final p385w3.AbstractC6784f f3833c;
+
+    public C0665b(long r1, p385w3.AbstractC6787i r3, p385w3.AbstractC6784f r4) {
+            r0 = this;
+            r0.<init>()
+            r0.f3831a = r1
+            java.lang.String r1 = "Null transportContext"
+            java.util.Objects.requireNonNull(r3, r1)
+            r0.f3832b = r3
+            java.lang.String r1 = "Null event"
+            java.util.Objects.requireNonNull(r4, r1)
+            r0.f3833c = r4
+            return
+    }
+
+    @Override // p021b4.AbstractC0671h
+    /* renamed from: a */
+    public p385w3.AbstractC6784f mo2221a() {
+            r1 = this;
+            w3.f r0 = r1.f3833c
+            return r0
+    }
+
+    @Override // p021b4.AbstractC0671h
+    /* renamed from: b */
+    public long mo2222b() {
+            r2 = this;
+            long r0 = r2.f3831a
+            return r0
+    }
+
+    @Override // p021b4.AbstractC0671h
+    /* renamed from: c */
+    public p385w3.AbstractC6787i mo2223c() {
+            r1 = this;
+            w3.i r0 = r1.f3832b
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r8) {
+            r7 = this;
+            r0 = 1
+            if (r8 != r7) goto L4
+            return r0
+        L4:
+            boolean r1 = r8 instanceof p021b4.AbstractC0671h
+            r2 = 0
+            if (r1 == 0) goto L30
+            b4.h r8 = (p021b4.AbstractC0671h) r8
+            long r3 = r7.f3831a
+            long r5 = r8.mo2222b()
+            int r1 = (r3 > r5 ? 1 : (r3 == r5 ? 0 : -1))
+            if (r1 != 0) goto L2e
+            w3.i r1 = r7.f3832b
+            w3.i r3 = r8.mo2223c()
+            boolean r1 = r1.equals(r3)
+            if (r1 == 0) goto L2e
+            w3.f r1 = r7.f3833c
+            w3.f r8 = r8.mo2221a()
+            boolean r8 = r1.equals(r8)
+            if (r8 == 0) goto L2e
+            goto L2f
+        L2e:
+            r0 = 0
+        L2f:
+            return r0
+        L30:
+            return r2
+    }
+
+    public int hashCode() {
+            r4 = this;
+            long r0 = r4.f3831a
+            r2 = 32
+            long r2 = r0 >>> r2
+            long r0 = r0 ^ r2
+            int r1 = (int) r0
+            r0 = 1000003(0xf4243, float:1.401303E-39)
+            r1 = r1 ^ r0
+            int r1 = r1 * r0
+            w3.i r2 = r4.f3832b
+            int r2 = r2.hashCode()
+            r1 = r1 ^ r2
+            int r1 = r1 * r0
+            w3.f r0 = r4.f3833c
+            int r0 = r0.hashCode()
+            r0 = r0 ^ r1
+            return r0
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "PersistedEvent{id="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            long r1 = r3.f3831a
+            r0.append(r1)
+            java.lang.String r1 = ", transportContext="
+            r0.append(r1)
+            w3.i r1 = r3.f3832b
+            r0.append(r1)
+            java.lang.String r1 = ", event="
+            r0.append(r1)
+            w3.f r1 = r3.f3833c
+            r0.append(r1)
+            java.lang.String r1 = "}"
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            return r0
+    }
+}
+package p021b4;
+
+/* renamed from: b4.e */
+/* loaded from: classes.dex */
+public final class C0668e implements bh.InterfaceC0769a {
+
+    /* renamed from: b4.e$a */
+    public static final class a {
+
+        /* renamed from: a */
+        public static final p021b4.C0668e f3835a = null;
+
+        static {
+                b4.e r0 = new b4.e
+                r0.<init>()
+                p021b4.C0668e.a.f3835a = r0
+                return
+        }
+    }
+
+    public C0668e() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // bh.InterfaceC0769a
+    public /* bridge */ /* synthetic */ java.lang.Object get() {
+            r1 = this;
+            java.lang.String r0 = "com.google.android.datatransport.events"
+            return r0
+    }
+}
+package p021b4;
+
+/* renamed from: b4.f */
+/* loaded from: classes.dex */
+public final class C0669f implements bh.InterfaceC0769a {
+
+    /* renamed from: b4.f$a */
+    public static final class a {
+
+        /* renamed from: a */
+        public static final p021b4.C0669f f3836a = null;
+
+        static {
+                b4.f r0 = new b4.f
+                r0.<init>()
+                p021b4.C0669f.a.f3836a = r0
+                return
+        }
+    }
+
+    public C0669f() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // bh.InterfaceC0769a
+    public java.lang.Object get() {
+            r1 = this;
+            java.util.List<b4.p$a> r0 = p021b4.C0679p.f3854a0
+            r0 = 4
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r0)
+            return r0
+    }
+}
+package p021b4;
+
+/* renamed from: b4.g */
+/* loaded from: classes.dex */
+public final class C0670g implements bh.InterfaceC0769a {
+
+    /* renamed from: b4.g$a */
+    public static final class a {
+
+        /* renamed from: a */
+        public static final p021b4.C0670g f3837a = null;
+
+        static {
+                b4.g r0 = new b4.g
+                r0.<init>()
+                p021b4.C0670g.a.f3837a = r0
+                return
+        }
+    }
+
+    public C0670g() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // bh.InterfaceC0769a
+    public java.lang.Object get() {
+            r2 = this;
+            b4.d r0 = p021b4.AbstractC0667d.f3834a
+            java.lang.String r1 = "Cannot return null from a non-@Nullable @Provides method"
+            java.util.Objects.requireNonNull(r0, r1)
+            return r0
+    }
+}
+package p021b4;
+
+/* renamed from: b4.i */
+/* loaded from: classes.dex */
+public final /* synthetic */ class C0672i implements p021b4.C0674k.b {
+
+    /* renamed from: Y */
+    public final /* synthetic */ int f3838Y;
+
+    /* renamed from: Z */
+    public final /* synthetic */ p021b4.C0674k f3839Z;
+
+    /* renamed from: a0 */
+    public final /* synthetic */ p385w3.AbstractC6787i f3840a0;
+
+    public /* synthetic */ C0672i(p021b4.C0674k r1, p385w3.AbstractC6787i r2, int r3) {
+            r0 = this;
+            r0.f3838Y = r3
+            r0.<init>()
+            r0.f3839Z = r1
+            r0.f3840a0 = r2
+            return
+    }
+
+    @Override // p021b4.C0674k.b
+    public final java.lang.Object apply(java.lang.Object r15) {
+            r14 = this;
+            int r0 = r14.f3838Y
+            r1 = 1
+            r2 = 0
+            switch(r0) {
+                case 0: goto L8;
+                default: goto L7;
+            }
+        L7:
+            goto L32
+        L8:
+            b4.k r0 = r14.f3839Z
+            w3.i r3 = r14.f3840a0
+            android.database.sqlite.SQLiteDatabase r15 = (android.database.sqlite.SQLiteDatabase) r15
+            java.lang.Long r15 = r0.m2237i(r15, r3)
+            if (r15 != 0) goto L17
+            java.lang.Boolean r15 = java.lang.Boolean.FALSE
+            goto L31
+        L17:
+            android.database.sqlite.SQLiteDatabase r0 = r0.m2236h()
+            java.lang.String[] r1 = new java.lang.String[r1]
+            java.lang.String r15 = r15.toString()
+            r1[r2] = r15
+            java.lang.String r15 = "SELECT 1 FROM events WHERE context_id = ? LIMIT 1"
+            android.database.Cursor r15 = r0.rawQuery(r15, r1)
+            k1.d r0 = p179k1.C3646d.f16114c0
+            java.lang.Object r15 = p021b4.C0674k.m2234L(r15, r0)
+            java.lang.Boolean r15 = (java.lang.Boolean) r15
+        L31:
+            return r15
+        L32:
+            b4.k r0 = r14.f3839Z
+            w3.i r3 = r14.f3840a0
+            android.database.sqlite.SQLiteDatabase r15 = (android.database.sqlite.SQLiteDatabase) r15
+            java.util.Objects.requireNonNull(r0)
+            java.util.ArrayList r13 = new java.util.ArrayList
+            r13.<init>()
+            java.lang.Long r4 = r0.m2237i(r15, r3)
+            if (r4 != 0) goto L47
+            goto L81
+        L47:
+            java.lang.String r5 = "_id"
+            java.lang.String r6 = "transport_name"
+            java.lang.String r7 = "timestamp_ms"
+            java.lang.String r8 = "uptime_ms"
+            java.lang.String r9 = "payload_encoding"
+            java.lang.String r10 = "payload"
+            java.lang.String r11 = "code"
+            java.lang.String r12 = "inline"
+            java.lang.String[] r6 = new java.lang.String[]{r5, r6, r7, r8, r9, r10, r11, r12}
+            java.lang.String[] r8 = new java.lang.String[r1]
+            java.lang.String r1 = r4.toString()
+            r8[r2] = r1
+            r9 = 0
+            r10 = 0
+            r11 = 0
+            b4.d r1 = r0.f3847b0
+            int r1 = r1.mo2218c()
+            java.lang.String r12 = java.lang.String.valueOf(r1)
+            java.lang.String r5 = "events"
+            java.lang.String r7 = "context_id = ?"
+            r4 = r15
+            android.database.Cursor r1 = r4.query(r5, r6, r7, r8, r9, r10, r11, r12)
+            z3.a r4 = new z3.a
+            r4.<init>(r0, r13, r3)
+            p021b4.C0674k.m2234L(r1, r4)
+        L81:
+            java.util.HashMap r0 = new java.util.HashMap
+            r0.<init>()
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            java.lang.String r3 = "event_id IN ("
+            r1.<init>(r3)
+        L8d:
+            int r3 = r13.size()
+            if (r2 >= r3) goto Lb0
+            java.lang.Object r3 = r13.get(r2)
+            b4.h r3 = (p021b4.AbstractC0671h) r3
+            long r3 = r3.mo2222b()
+            r1.append(r3)
+            int r3 = r13.size()
+            int r3 = r3 + (-1)
+            if (r2 >= r3) goto Lad
+            r3 = 44
+            r1.append(r3)
+        Lad:
+            int r2 = r2 + 1
+            goto L8d
+        Lb0:
+            r2 = 41
+            r1.append(r2)
+            java.lang.String r2 = "event_id"
+            java.lang.String r3 = "name"
+            java.lang.String r4 = "value"
+            java.lang.String[] r6 = new java.lang.String[]{r2, r3, r4}
+            java.lang.String r7 = r1.toString()
+            r8 = 0
+            r9 = 0
+            r10 = 0
+            r11 = 0
+            java.lang.String r5 = "event_metadata"
+            r4 = r15
+            android.database.Cursor r15 = r4.query(r5, r6, r7, r8, r9, r10, r11)
+            u3.b r1 = new u3.b
+            r1.<init>(r0)
+            p021b4.C0674k.m2234L(r15, r1)
+            java.util.ListIterator r15 = r13.listIterator()
+        Lda:
+            boolean r1 = r15.hasNext()
+            if (r1 == 0) goto L138
+            java.lang.Object r1 = r15.next()
+            b4.h r1 = (p021b4.AbstractC0671h) r1
+            long r2 = r1.mo2222b()
+            java.lang.Long r2 = java.lang.Long.valueOf(r2)
+            boolean r2 = r0.containsKey(r2)
+            if (r2 != 0) goto Lf5
+            goto Lda
+        Lf5:
+            w3.f r2 = r1.mo2221a()
+            w3.f$a r2 = r2.m13806i()
+            long r3 = r1.mo2222b()
+            java.lang.Long r3 = java.lang.Long.valueOf(r3)
+            java.lang.Object r3 = r0.get(r3)
+            java.util.Set r3 = (java.util.Set) r3
+            java.util.Iterator r3 = r3.iterator()
+        L10f:
+            boolean r4 = r3.hasNext()
+            if (r4 == 0) goto L123
+            java.lang.Object r4 = r3.next()
+            b4.k$c r4 = (p021b4.C0674k.c) r4
+            java.lang.String r5 = r4.f3848a
+            java.lang.String r4 = r4.f3849b
+            r2.m13807a(r5, r4)
+            goto L10f
+        L123:
+            long r3 = r1.mo2222b()
+            w3.i r1 = r1.mo2223c()
+            w3.f r2 = r2.mo13792b()
+            b4.b r5 = new b4.b
+            r5.<init>(r3, r1, r2)
+            r15.set(r5)
+            goto Lda
+        L138:
+            return r13
+    }
+}
+package p021b4;
+
+/* renamed from: b4.j */
+/* loaded from: classes.dex */
+public final /* synthetic */ class C0673j implements p021b4.C0674k.b, p371v5.C6564n.a, p327s7.InterfaceC5977a {
+
+    /* renamed from: Y */
+    public final /* synthetic */ long f3841Y;
+
+    /* renamed from: Z */
+    public final /* synthetic */ java.lang.Object f3842Z;
+
+    public /* synthetic */ C0673j(long r1, p385w3.AbstractC6787i r3) {
+            r0 = this;
+            r0.<init>()
+            r0.f3841Y = r1
+            r0.f3842Z = r3
+            return
+    }
+
+    public /* synthetic */ C0673j(com.google.firebase.remoteconfig.internal.C1247a r1, long r2) {
+            r0 = this;
+            r0.<init>()
+            r0.f3842Z = r1
+            r0.f3841Y = r2
+            return
+    }
+
+    public /* synthetic */ C0673j(p107g4.InterfaceC2255q.a r1, long r2) {
+            r0 = this;
+            r0.<init>()
+            r0.f3842Z = r1
+            r0.f3841Y = r2
+            return
+    }
+
+    @Override // p021b4.C0674k.b
+    public java.lang.Object apply(java.lang.Object r7) {
+            r6 = this;
+            long r0 = r6.f3841Y
+            java.lang.Object r2 = r6.f3842Z
+            w3.i r2 = (p385w3.AbstractC6787i) r2
+            android.database.sqlite.SQLiteDatabase r7 = (android.database.sqlite.SQLiteDatabase) r7
+            android.content.ContentValues r3 = new android.content.ContentValues
+            r3.<init>()
+            java.lang.Long r0 = java.lang.Long.valueOf(r0)
+            java.lang.String r1 = "next_request_ms"
+            r3.put(r1, r0)
+            r0 = 2
+            java.lang.String[] r0 = new java.lang.String[r0]
+            java.lang.String r1 = r2.mo13798b()
+            r4 = 0
+            r0[r4] = r1
+            t3.d r1 = r2.mo13800d()
+            int r1 = p069e4.C1515a.m4103a(r1)
+            java.lang.String r1 = java.lang.String.valueOf(r1)
+            r4 = 1
+            r0[r4] = r1
+            java.lang.String r1 = "transport_contexts"
+            java.lang.String r5 = "backend_name = ? and priority = ?"
+            int r0 = r7.update(r1, r3, r5, r0)
+            r5 = 0
+            if (r0 >= r4) goto L57
+            java.lang.String r0 = r2.mo13798b()
+            java.lang.String r4 = "backend_name"
+            r3.put(r4, r0)
+            t3.d r0 = r2.mo13800d()
+            int r0 = p069e4.C1515a.m4103a(r0)
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r0)
+            java.lang.String r2 = "priority"
+            r3.put(r2, r0)
+            r7.insert(r1, r5, r3)
+        L57:
+            return r5
+    }
+
+    @Override // p371v5.C6564n.a
+    /* renamed from: b */
+    public void mo24b(java.lang.Object r2) {
+            r1 = this;
+            java.lang.Object r0 = r1.f3842Z
+            g4.q$a r0 = (p107g4.InterfaceC2255q.a) r0
+            g4.q r2 = (p107g4.InterfaceC2255q) r2
+            r2.m5919q()
+            return
+    }
+
+    @Override // p327s7.InterfaceC5977a
+    /* renamed from: g */
+    public java.lang.Object mo816g(p327s7.AbstractC5985i r12) {
+            r11 = this;
+            java.lang.Object r0 = r11.f3842Z
+            com.google.firebase.remoteconfig.internal.a r0 = (com.google.firebase.remoteconfig.internal.C1247a) r0
+            long r1 = r11.f3841Y
+            int[] r3 = com.google.firebase.remoteconfig.internal.C1247a.f6637j
+            java.util.Objects.requireNonNull(r0)
+            java.util.Date r3 = new java.util.Date
+            long r4 = java.lang.System.currentTimeMillis()
+            r3.<init>(r4)
+            boolean r12 = r12.mo12455m()
+            r4 = 2
+            r5 = 0
+            r6 = 0
+            if (r12 == 0) goto L5b
+            com.google.firebase.remoteconfig.internal.b r12 = r0.f6644g
+            java.util.Objects.requireNonNull(r12)
+            java.util.Date r7 = new java.util.Date
+            android.content.SharedPreferences r12 = r12.f6651a
+            r8 = -1
+            java.lang.String r10 = "last_fetch_time_in_millis"
+            long r8 = r12.getLong(r10, r8)
+            r7.<init>(r8)
+            java.util.Date r12 = com.google.firebase.remoteconfig.internal.C1248b.f6649d
+            boolean r12 = r7.equals(r12)
+            if (r12 == 0) goto L3b
+            r12 = 0
+            goto L4f
+        L3b:
+            java.util.Date r12 = new java.util.Date
+            long r7 = r7.getTime()
+            java.util.concurrent.TimeUnit r9 = java.util.concurrent.TimeUnit.SECONDS
+            long r1 = r9.toMillis(r1)
+            long r1 = r1 + r7
+            r12.<init>(r1)
+            boolean r12 = r3.before(r12)
+        L4f:
+            if (r12 == 0) goto L5b
+            com.google.firebase.remoteconfig.internal.a$a r12 = new com.google.firebase.remoteconfig.internal.a$a
+            r12.<init>(r3, r4, r5, r5)
+            s7.i r12 = p327s7.C5988l.m12464e(r12)
+            goto Lc4
+        L5b:
+            com.google.firebase.remoteconfig.internal.b r12 = r0.f6644g
+            com.google.firebase.remoteconfig.internal.b$a r12 = r12.m3680a()
+            java.util.Date r12 = r12.f6655b
+            boolean r1 = r3.before(r12)
+            if (r1 == 0) goto L6a
+            r5 = r12
+        L6a:
+            r12 = 1
+            if (r5 == 0) goto L98
+            gb.f r1 = new gb.f
+            long r7 = r5.getTime()
+            long r9 = r3.getTime()
+            long r7 = r7 - r9
+            java.lang.Object[] r12 = new java.lang.Object[r12]
+            java.util.concurrent.TimeUnit r2 = java.util.concurrent.TimeUnit.MILLISECONDS
+            long r7 = r2.toSeconds(r7)
+            java.lang.String r2 = android.text.format.DateUtils.formatElapsedTime(r7)
+            r12[r6] = r2
+            java.lang.String r2 = "Fetch is throttled. Please wait before calling fetch again: %s"
+            java.lang.String r12 = java.lang.String.format(r2, r12)
+            long r4 = r5.getTime()
+            r1.<init>(r12, r4)
+            s7.i r12 = p327s7.C5988l.m12463d(r1)
+            goto Lb9
+        L98:
+            xa.d r1 = r0.f6638a
+            s7.i r1 = r1.mo14165r()
+            xa.d r2 = r0.f6638a
+            s7.i r2 = r2.mo14154a(r6)
+            s7.i[] r4 = new p327s7.AbstractC5985i[r4]
+            r4[r6] = r1
+            r4[r12] = r2
+            s7.i r12 = p327s7.C5988l.m12466g(r4)
+            java.util.concurrent.Executor r4 = r0.f6640c
+            hb.e r5 = new hb.e
+            r5.<init>(r0, r1, r2, r3)
+            s7.i r12 = r12.mo12449g(r4, r5)
+        Lb9:
+            java.util.concurrent.Executor r1 = r0.f6640c
+            f1.g0 r2 = new f1.g0
+            r2.<init>(r0, r3)
+            s7.i r12 = r12.mo12449g(r1, r2)
+        Lc4:
+            return r12
+    }
+}
+package p021b4;
+
+/* renamed from: b4.k */
+/* loaded from: classes.dex */
+public class C0674k implements p021b4.InterfaceC0666c, p034c4.InterfaceC0867b {
+
+    /* renamed from: c0 */
+    public static final p335t3.C6149b f3843c0 = null;
+
+    /* renamed from: Y */
+    public final p021b4.C0679p f3844Y;
+
+    /* renamed from: Z */
+    public final p050d4.InterfaceC1277a f3845Z;
+
+    /* renamed from: a0 */
+    public final p050d4.InterfaceC1277a f3846a0;
+
+    /* renamed from: b0 */
+    public final p021b4.AbstractC0667d f3847b0;
+
+    /* renamed from: b4.k$a */
+    public static /* synthetic */ class a {
+    }
+
+    /* renamed from: b4.k$b */
+    public interface b<T, U> {
+        U apply(T r1);
+    }
+
+    /* renamed from: b4.k$c */
+    public static class c {
+
+        /* renamed from: a */
+        public final java.lang.String f3848a;
+
+        /* renamed from: b */
+        public final java.lang.String f3849b;
+
+        public c(java.lang.String r1, java.lang.String r2, p021b4.C0674k.a r3) {
+                r0 = this;
+                r0.<init>()
+                r0.f3848a = r1
+                r0.f3849b = r2
+                return
+        }
+    }
+
+    /* renamed from: b4.k$d */
+    public interface d<T> {
+    }
+
+    static {
+            t3.b r0 = new t3.b
+            java.lang.String r1 = "proto"
+            r0.<init>(r1)
+            p021b4.C0674k.f3843c0 = r0
+            return
+    }
+
+    public C0674k(p050d4.InterfaceC1277a r1, p050d4.InterfaceC1277a r2, p021b4.AbstractC0667d r3, p021b4.C0679p r4) {
+            r0 = this;
+            r0.<init>()
+            r0.f3844Y = r4
+            r0.f3845Z = r1
+            r0.f3846a0 = r2
+            r0.f3847b0 = r3
+            return
+    }
+
+    /* renamed from: A */
+    public static java.lang.String m2233A(java.lang.Iterable<p021b4.AbstractC0671h> r3) {
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            java.lang.String r1 = "("
+            r0.<init>(r1)
+            java.util.Iterator r3 = r3.iterator()
+        Lb:
+            boolean r1 = r3.hasNext()
+            if (r1 == 0) goto L2a
+            java.lang.Object r1 = r3.next()
+            b4.h r1 = (p021b4.AbstractC0671h) r1
+            long r1 = r1.mo2222b()
+            r0.append(r1)
+            boolean r1 = r3.hasNext()
+            if (r1 == 0) goto Lb
+            r1 = 44
+            r0.append(r1)
+            goto Lb
+        L2a:
+            r3 = 41
+            r0.append(r3)
+            java.lang.String r3 = r0.toString()
+            return r3
+    }
+
+    /* renamed from: L */
+    public static <T> T m2234L(android.database.Cursor r0, p021b4.C0674k.b<android.database.Cursor, T> r1) {
+            java.lang.Object r1 = r1.apply(r0)     // Catch: java.lang.Throwable -> L8
+            r0.close()
+            return r1
+        L8:
+            r1 = move-exception
+            r0.close()
+            throw r1
+    }
+
+    @Override // p021b4.InterfaceC0666c
+    /* renamed from: E */
+    public boolean mo2224E(p385w3.AbstractC6787i r3) {
+            r2 = this;
+            b4.i r0 = new b4.i
+            r1 = 0
+            r0.<init>(r2, r3, r1)
+            java.lang.Object r3 = r2.m2238l(r0)
+            java.lang.Boolean r3 = (java.lang.Boolean) r3
+            boolean r3 = r3.booleanValue()
+            return r3
+    }
+
+    @Override // p021b4.InterfaceC0666c
+    /* renamed from: H */
+    public long mo2225H(p385w3.AbstractC6787i r5) {
+            r4 = this;
+            android.database.sqlite.SQLiteDatabase r0 = r4.m2236h()
+            r1 = 2
+            java.lang.String[] r1 = new java.lang.String[r1]
+            java.lang.String r2 = r5.mo13798b()
+            r3 = 0
+            r1[r3] = r2
+            t3.d r5 = r5.mo13800d()
+            int r5 = p069e4.C1515a.m4103a(r5)
+            java.lang.String r5 = java.lang.String.valueOf(r5)
+            r2 = 1
+            r1[r2] = r5
+            java.lang.String r5 = "SELECT next_request_ms FROM transport_contexts WHERE backend_name = ? and priority = ?"
+            android.database.Cursor r5 = r0.rawQuery(r5, r1)
+            k1.d r0 = p179k1.C3646d.f16113b0
+            java.lang.Object r5 = m2234L(r5, r0)
+            java.lang.Long r5 = (java.lang.Long) r5
+            long r0 = r5.longValue()
+            return r0
+    }
+
+    @Override // p021b4.InterfaceC0666c
+    /* renamed from: N */
+    public java.lang.Iterable<p385w3.AbstractC6787i> mo2226N() {
+            r1 = this;
+            k1.b r0 = p179k1.C3642b.f16052a0
+            java.lang.Object r0 = r1.m2238l(r0)
+            java.lang.Iterable r0 = (java.lang.Iterable) r0
+            return r0
+    }
+
+    @Override // p034c4.InterfaceC0867b
+    /* renamed from: a */
+    public <T> T mo2235a(p034c4.InterfaceC0867b.a<T> r4) {
+            r3 = this;
+            android.database.sqlite.SQLiteDatabase r0 = r3.m2236h()
+            u3.b r1 = new u3.b
+            r1.<init>(r0)
+            k1.c r2 = p179k1.C3644c.f16080b0
+            r3.m2239n(r1, r2)
+            java.lang.Object r4 = r4.mo23h()     // Catch: java.lang.Throwable -> L19
+            r0.setTransactionSuccessful()     // Catch: java.lang.Throwable -> L19
+            r0.endTransaction()
+            return r4
+        L19:
+            r4 = move-exception
+            r0.endTransaction()
+            throw r4
+    }
+
+    @Override // p021b4.InterfaceC0666c
+    /* renamed from: a0 */
+    public p021b4.AbstractC0671h mo2227a0(p385w3.AbstractC6787i r6, p385w3.AbstractC6784f r7) {
+            r5 = this;
+            r0 = 3
+            java.lang.Object[] r0 = new java.lang.Object[r0]
+            t3.d r1 = r6.mo13800d()
+            r2 = 0
+            r0[r2] = r1
+            java.lang.String r1 = r7.mo13790g()
+            r2 = 1
+            r0[r2] = r1
+            java.lang.String r1 = r6.mo13798b()
+            r2 = 2
+            r0[r2] = r1
+            java.lang.String r1 = "SQLiteEventStore"
+            java.lang.String r2 = "Storing event with priority=%s, name=%s for destination %s"
+            p064e.C1494h.m4053d(r1, r2, r0)
+            z3.a r0 = new z3.a
+            r0.<init>(r5, r6, r7)
+            java.lang.Object r0 = r5.m2238l(r0)
+            java.lang.Long r0 = (java.lang.Long) r0
+            long r0 = r0.longValue()
+            r2 = 1
+            int r4 = (r0 > r2 ? 1 : (r0 == r2 ? 0 : -1))
+            if (r4 >= 0) goto L36
+            r6 = 0
+            return r6
+        L36:
+            b4.b r2 = new b4.b
+            r2.<init>(r0, r6, r7)
+            return r2
+    }
+
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+            r1 = this;
+            b4.p r0 = r1.f3844Y
+            r0.close()
+            return
+    }
+
+    /* renamed from: h */
+    public android.database.sqlite.SQLiteDatabase m2236h() {
+            r2 = this;
+            b4.p r0 = r2.f3844Y
+            java.util.Objects.requireNonNull(r0)
+            u3.b r1 = new u3.b
+            r1.<init>(r0)
+            androidx.room.a r0 = androidx.room.C0618a.f3652b0
+            java.lang.Object r0 = r2.m2239n(r1, r0)
+            android.database.sqlite.SQLiteDatabase r0 = (android.database.sqlite.SQLiteDatabase) r0
+            return r0
+    }
+
+    @Override // p021b4.InterfaceC0666c
+    /* renamed from: h0 */
+    public void mo2228h0(java.lang.Iterable<p021b4.AbstractC0671h> r2) {
+            r1 = this;
+            java.util.Iterator r0 = r2.iterator()
+            boolean r0 = r0.hasNext()
+            if (r0 != 0) goto Lb
+            return
+        Lb:
+            java.lang.String r0 = "UPDATE events SET num_attempts = num_attempts + 1 WHERE _id in "
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r2 = m2233A(r2)
+            r0.append(r2)
+            java.lang.String r2 = r0.toString()
+            android.database.sqlite.SQLiteDatabase r0 = r1.m2236h()
+            r0.beginTransaction()
+            android.database.sqlite.SQLiteStatement r2 = r0.compileStatement(r2)     // Catch: java.lang.Throwable -> L3a
+            r2.execute()     // Catch: java.lang.Throwable -> L3a
+            java.lang.String r2 = "DELETE FROM events WHERE num_attempts >= 16"
+            android.database.sqlite.SQLiteStatement r2 = r0.compileStatement(r2)     // Catch: java.lang.Throwable -> L3a
+            r2.execute()     // Catch: java.lang.Throwable -> L3a
+            r0.setTransactionSuccessful()     // Catch: java.lang.Throwable -> L3a
+            r0.endTransaction()
+            return
+        L3a:
+            r2 = move-exception
+            r0.endTransaction()
+            throw r2
+    }
+
+    /* renamed from: i */
+    public final java.lang.Long m2237i(android.database.sqlite.SQLiteDatabase r14, p385w3.AbstractC6787i r15) {
+            r13 = this;
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            java.lang.String r1 = "backend_name = ? and priority = ?"
+            r0.<init>(r1)
+            java.util.ArrayList r1 = new java.util.ArrayList
+            r2 = 2
+            java.lang.String[] r2 = new java.lang.String[r2]
+            java.lang.String r3 = r15.mo13798b()
+            r4 = 0
+            r2[r4] = r3
+            t3.d r3 = r15.mo13800d()
+            int r3 = p069e4.C1515a.m4103a(r3)
+            java.lang.String r3 = java.lang.String.valueOf(r3)
+            r5 = 1
+            r2[r5] = r3
+            java.util.List r2 = java.util.Arrays.asList(r2)
+            r1.<init>(r2)
+            byte[] r2 = r15.mo13799c()
+            if (r2 == 0) goto L40
+            java.lang.String r2 = " and extras = ?"
+            r0.append(r2)
+            byte[] r15 = r15.mo13799c()
+            java.lang.String r15 = android.util.Base64.encodeToString(r15, r4)
+            r1.add(r15)
+            goto L45
+        L40:
+            java.lang.String r15 = " and extras is null"
+            r0.append(r15)
+        L45:
+            java.lang.String r15 = "_id"
+            java.lang.String[] r7 = new java.lang.String[]{r15}
+            java.lang.String r8 = r0.toString()
+            java.lang.String[] r15 = new java.lang.String[r4]
+            java.lang.Object[] r15 = r1.toArray(r15)
+            r9 = r15
+            java.lang.String[] r9 = (java.lang.String[]) r9
+            r10 = 0
+            r11 = 0
+            r12 = 0
+            java.lang.String r6 = "transport_contexts"
+            r5 = r14
+            android.database.Cursor r14 = r5.query(r6, r7, r8, r9, r10, r11, r12)
+            androidx.room.a r15 = androidx.room.C0618a.f3653c0
+            java.lang.Object r14 = m2234L(r14, r15)
+            java.lang.Long r14 = (java.lang.Long) r14
+            return r14
+    }
+
+    @Override // p021b4.InterfaceC0666c
+    /* renamed from: j */
+    public int mo2229j() {
+            r4 = this;
+            d4.a r0 = r4.f3845Z
+            long r0 = r0.mo3736a()
+            b4.d r2 = r4.f3847b0
+            long r2 = r2.mo2217b()
+            long r0 = r0 - r2
+            android.database.sqlite.SQLiteDatabase r2 = r4.m2236h()
+            r2.beginTransaction()
+            r3 = 1
+            java.lang.String[] r3 = new java.lang.String[r3]     // Catch: java.lang.Throwable -> L35
+            java.lang.String r0 = java.lang.String.valueOf(r0)     // Catch: java.lang.Throwable -> L35
+            r1 = 0
+            r3[r1] = r0     // Catch: java.lang.Throwable -> L35
+            java.lang.String r0 = "events"
+            java.lang.String r1 = "timestamp_ms < ?"
+            int r0 = r2.delete(r0, r1, r3)     // Catch: java.lang.Throwable -> L35
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r0)     // Catch: java.lang.Throwable -> L35
+            r2.setTransactionSuccessful()     // Catch: java.lang.Throwable -> L35
+            r2.endTransaction()
+            int r0 = r0.intValue()
+            return r0
+        L35:
+            r0 = move-exception
+            r2.endTransaction()
+            throw r0
+    }
+
+    @Override // p021b4.InterfaceC0666c
+    /* renamed from: k */
+    public void mo2230k(java.lang.Iterable<p021b4.AbstractC0671h> r2) {
+            r1 = this;
+            java.util.Iterator r0 = r2.iterator()
+            boolean r0 = r0.hasNext()
+            if (r0 != 0) goto Lb
+            return
+        Lb:
+            java.lang.String r0 = "DELETE FROM events WHERE _id in "
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r2 = m2233A(r2)
+            r0.append(r2)
+            java.lang.String r2 = r0.toString()
+            android.database.sqlite.SQLiteDatabase r0 = r1.m2236h()
+            android.database.sqlite.SQLiteStatement r2 = r0.compileStatement(r2)
+            r2.execute()
+            return
+    }
+
+    /* renamed from: l */
+    public <T> T m2238l(p021b4.C0674k.b<android.database.sqlite.SQLiteDatabase, T> r2) {
+            r1 = this;
+            android.database.sqlite.SQLiteDatabase r0 = r1.m2236h()
+            r0.beginTransaction()
+            java.lang.Object r2 = r2.apply(r0)     // Catch: java.lang.Throwable -> L12
+            r0.setTransactionSuccessful()     // Catch: java.lang.Throwable -> L12
+            r0.endTransaction()
+            return r2
+        L12:
+            r2 = move-exception
+            r0.endTransaction()
+            throw r2
+    }
+
+    /* renamed from: n */
+    public final <T> T m2239n(p021b4.C0674k.d<T> r9, p021b4.C0674k.b<java.lang.Throwable, T> r10) {
+            r8 = this;
+            d4.a r0 = r8.f3846a0
+            long r0 = r0.mo3736a()
+        L6:
+            r2 = r9
+            u3.b r2 = (p350u3.C6293b) r2     // Catch: android.database.sqlite.SQLiteDatabaseLockedException -> L21
+            int r3 = r2.f24544Y     // Catch: android.database.sqlite.SQLiteDatabaseLockedException -> L21
+            switch(r3) {
+                case 3: goto Lf;
+                default: goto Le;
+            }     // Catch: android.database.sqlite.SQLiteDatabaseLockedException -> L21
+        Le:
+            goto L18
+        Lf:
+            java.lang.Object r2 = r2.f24545Z     // Catch: android.database.sqlite.SQLiteDatabaseLockedException -> L21
+            b4.p r2 = (p021b4.C0679p) r2     // Catch: android.database.sqlite.SQLiteDatabaseLockedException -> L21
+            android.database.sqlite.SQLiteDatabase r9 = r2.getWritableDatabase()     // Catch: android.database.sqlite.SQLiteDatabaseLockedException -> L21
+            goto L20
+        L18:
+            java.lang.Object r2 = r2.f24545Z     // Catch: android.database.sqlite.SQLiteDatabaseLockedException -> L21
+            android.database.sqlite.SQLiteDatabase r2 = (android.database.sqlite.SQLiteDatabase) r2     // Catch: android.database.sqlite.SQLiteDatabaseLockedException -> L21
+            r2.beginTransaction()     // Catch: android.database.sqlite.SQLiteDatabaseLockedException -> L21
+            r9 = 0
+        L20:
+            return r9
+        L21:
+            r2 = move-exception
+            d4.a r3 = r8.f3846a0
+            long r3 = r3.mo3736a()
+            b4.d r5 = r8.f3847b0
+            int r5 = r5.mo2216a()
+            long r5 = (long) r5
+            long r5 = r5 + r0
+            int r7 = (r3 > r5 ? 1 : (r3 == r5 ? 0 : -1))
+            if (r7 < 0) goto L39
+            java.lang.Object r9 = r10.apply(r2)
+            return r9
+        L39:
+            r2 = 50
+            android.os.SystemClock.sleep(r2)
+            goto L6
+    }
+
+    @Override // p021b4.InterfaceC0666c
+    /* renamed from: o */
+    public void mo2231o(p385w3.AbstractC6787i r2, long r3) {
+            r1 = this;
+            b4.j r0 = new b4.j
+            r0.<init>(r3, r2)
+            r1.m2238l(r0)
+            return
+    }
+
+    @Override // p021b4.InterfaceC0666c
+    /* renamed from: v0 */
+    public java.lang.Iterable<p021b4.AbstractC0671h> mo2232v0(p385w3.AbstractC6787i r3) {
+            r2 = this;
+            b4.i r0 = new b4.i
+            r1 = 1
+            r0.<init>(r2, r3, r1)
+            java.lang.Object r3 = r2.m2238l(r0)
+            java.lang.Iterable r3 = (java.lang.Iterable) r3
+            return r3
+    }
+}
+package p021b4;
+
+/* renamed from: b4.p */
+/* loaded from: classes.dex */
+public final class C0679p extends android.database.sqlite.SQLiteOpenHelper {
+
+    /* renamed from: a0 */
+    public static final java.util.List<p021b4.C0679p.a> f3854a0 = null;
+
+    /* renamed from: Y */
+    public final int f3855Y;
+
+    /* renamed from: Z */
+    public boolean f3856Z;
+
+    /* renamed from: b4.p$a */
+    public interface a {
+        /* renamed from: a */
+        void mo2240a(android.database.sqlite.SQLiteDatabase r1);
+    }
+
+    static {
+            b4.l r0 = p021b4.C0675l.f3850a
+            b4.m r1 = p021b4.C0676m.f3851a
+            b4.n r2 = p021b4.C0677n.f3852a
+            b4.o r3 = p021b4.C0678o.f3853a
+            r4 = 4
+            b4.p$a[] r4 = new p021b4.C0679p.a[r4]
+            r5 = 0
+            r4[r5] = r0
+            r0 = 1
+            r4[r0] = r1
+            r0 = 2
+            r4[r0] = r2
+            r0 = 3
+            r4[r0] = r3
+            java.util.List r0 = java.util.Arrays.asList(r4)
+            p021b4.C0679p.f3854a0 = r0
+            return
+    }
+
+    public C0679p(android.content.Context r2, java.lang.String r3, int r4) {
+            r1 = this;
+            r0 = 0
+            r1.<init>(r2, r3, r0, r4)
+            r2 = 0
+            r1.f3856Z = r2
+            r1.f3855Y = r4
+            return
+    }
+
+    /* renamed from: a */
+    public final void m2241a(android.database.sqlite.SQLiteDatabase r5, int r6, int r7) {
+            r4 = this;
+            java.util.List<b4.p$a> r0 = p021b4.C0679p.f3854a0
+            int r1 = r0.size()
+            if (r7 > r1) goto L19
+        L8:
+            if (r6 >= r7) goto L18
+            java.util.List<b4.p$a> r0 = p021b4.C0679p.f3854a0
+            java.lang.Object r0 = r0.get(r6)
+            b4.p$a r0 = (p021b4.C0679p.a) r0
+            r0.mo2240a(r5)
+            int r6 = r6 + 1
+            goto L8
+        L18:
+            return
+        L19:
+            java.lang.IllegalArgumentException r5 = new java.lang.IllegalArgumentException
+            java.lang.String r1 = "Migration from "
+            java.lang.String r2 = " to "
+            java.lang.String r3 = " was requested, but cannot be performed. Only "
+            java.lang.StringBuilder r6 = androidx.recyclerview.widget.C0608s.m2117a(r1, r6, r2, r7, r3)
+            int r7 = r0.size()
+            r6.append(r7)
+            java.lang.String r7 = " migrations are provided"
+            r6.append(r7)
+            java.lang.String r6 = r6.toString()
+            r5.<init>(r6)
+            throw r5
+    }
+
+    @Override // android.database.sqlite.SQLiteOpenHelper
+    public void onConfigure(android.database.sqlite.SQLiteDatabase r4) {
+            r3 = this;
+            r0 = 1
+            r3.f3856Z = r0
+            r1 = 0
+            java.lang.String[] r1 = new java.lang.String[r1]
+            java.lang.String r2 = "PRAGMA busy_timeout=0;"
+            android.database.Cursor r1 = r4.rawQuery(r2, r1)
+            r1.close()
+            r4.setForeignKeyConstraintsEnabled(r0)
+            return
+    }
+
+    @Override // android.database.sqlite.SQLiteOpenHelper
+    public void onCreate(android.database.sqlite.SQLiteDatabase r3) {
+            r2 = this;
+            int r0 = r2.f3855Y
+            boolean r1 = r2.f3856Z
+            if (r1 != 0) goto L9
+            r2.onConfigure(r3)
+        L9:
+            r1 = 0
+            r2.m2241a(r3, r1, r0)
+            return
+    }
+
+    @Override // android.database.sqlite.SQLiteOpenHelper
+    public void onDowngrade(android.database.sqlite.SQLiteDatabase r1, int r2, int r3) {
+            r0 = this;
+            java.lang.String r2 = "DROP TABLE events"
+            r1.execSQL(r2)
+            java.lang.String r2 = "DROP TABLE event_metadata"
+            r1.execSQL(r2)
+            java.lang.String r2 = "DROP TABLE transport_contexts"
+            r1.execSQL(r2)
+            java.lang.String r2 = "DROP TABLE IF EXISTS event_payloads"
+            r1.execSQL(r2)
+            boolean r2 = r0.f3856Z
+            if (r2 != 0) goto L1b
+            r0.onConfigure(r1)
+        L1b:
+            r2 = 0
+            r0.m2241a(r1, r2, r3)
+            return
+    }
+
+    @Override // android.database.sqlite.SQLiteOpenHelper
+    public void onOpen(android.database.sqlite.SQLiteDatabase r2) {
+            r1 = this;
+            boolean r0 = r1.f3856Z
+            if (r0 != 0) goto L7
+            r1.onConfigure(r2)
+        L7:
+            return
+    }
+
+    @Override // android.database.sqlite.SQLiteOpenHelper
+    public void onUpgrade(android.database.sqlite.SQLiteDatabase r2, int r3, int r4) {
+            r1 = this;
+            boolean r0 = r1.f3856Z
+            if (r0 != 0) goto L7
+            r1.onConfigure(r2)
+        L7:
+            r1.m2241a(r2, r3, r4)
+            return
+    }
+}
+package p021b4;
+
+/* renamed from: b4.c */
+/* loaded from: classes.dex */
+public interface InterfaceC0666c extends java.io.Closeable {
+    /* renamed from: E */
+    boolean mo2224E(p385w3.AbstractC6787i r1);
+
+    /* renamed from: H */
+    long mo2225H(p385w3.AbstractC6787i r1);
+
+    /* renamed from: N */
+    java.lang.Iterable<p385w3.AbstractC6787i> mo2226N();
+
+    /* renamed from: a0 */
+    p021b4.AbstractC0671h mo2227a0(p385w3.AbstractC6787i r1, p385w3.AbstractC6784f r2);
+
+    /* renamed from: h0 */
+    void mo2228h0(java.lang.Iterable<p021b4.AbstractC0671h> r1);
+
+    /* renamed from: j */
+    int mo2229j();
+
+    /* renamed from: k */
+    void mo2230k(java.lang.Iterable<p021b4.AbstractC0671h> r1);
+
+    /* renamed from: o */
+    void mo2231o(p385w3.AbstractC6787i r1, long r2);
+
+    /* renamed from: v0 */
+    java.lang.Iterable<p021b4.AbstractC0671h> mo2232v0(p385w3.AbstractC6787i r1);
+}

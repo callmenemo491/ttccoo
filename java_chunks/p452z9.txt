@@ -1,0 +1,342 @@
+package p452z9;
+
+/* renamed from: z9.a */
+/* loaded from: classes.dex */
+public final /* synthetic */ class C7259a implements ca.InterfaceC0939b, ba.InterfaceC0727a, p392wa.InterfaceC6822a.a {
+
+    /* renamed from: Y */
+    public final /* synthetic */ p452z9.C7260b f27863Y;
+
+    public /* synthetic */ C7259a(p452z9.C7260b r2, int r3) {
+            r1 = this;
+            r0 = 1
+            r1.<init>()
+            r1.f27863Y = r2
+            return
+    }
+
+    @Override // p392wa.InterfaceC6822a.a
+    /* renamed from: c */
+    public void mo25c(p392wa.InterfaceC6823b r8) {
+            r7 = this;
+            z9.b r0 = r7.f27863Y
+            java.util.Objects.requireNonNull(r0)
+            aa.c r1 = p011aa.C0047c.f101a
+            java.lang.String r2 = "AnalyticsConnector now available."
+            r1.m51b(r2)
+            java.lang.Object r8 = r8.get()
+            s9.a r8 = (p329s9.InterfaceC5997a) r8
+            h7.rb r2 = new h7.rb
+            r2.<init>(r8)
+            z9.c r3 = new z9.c
+            r3.<init>()
+            java.lang.String r4 = "clx"
+            s9.a$a r4 = r8.mo12478a(r4, r3)
+            if (r4 != 0) goto L40
+            r4 = 3
+            java.lang.String r5 = "FirebaseCrashlytics"
+            boolean r4 = android.util.Log.isLoggable(r5, r4)
+            r6 = 0
+            if (r4 == 0) goto L33
+            java.lang.String r4 = "Could not register AnalyticsConnectorListener with Crashlytics origin."
+            android.util.Log.d(r5, r4, r6)
+        L33:
+            java.lang.String r4 = "crash"
+            s9.a$a r4 = r8.mo12478a(r4, r3)
+            if (r4 == 0) goto L40
+            java.lang.String r8 = "A new version of the Google Analytics for Firebase SDK is now available. For improved performance and compatibility with Crashlytics, please update to the latest version."
+            android.util.Log.w(r5, r8, r6)
+        L40:
+            if (r4 == 0) goto L7b
+            java.lang.String r8 = "Registered Firebase Analytics listener."
+            r1.m51b(r8)
+            h7.rb r8 = new h7.rb
+            r1 = 14
+            r8.<init>(r1)
+            ba.c r1 = new ba.c
+            r4 = 500(0x1f4, float:7.0E-43)
+            java.util.concurrent.TimeUnit r5 = java.util.concurrent.TimeUnit.MILLISECONDS
+            r1.<init>(r2, r4, r5)
+            monitor-enter(r0)
+            java.util.List<ca.a> r2 = r0.f27867d     // Catch: java.lang.Throwable -> L78
+            java.util.Iterator r2 = r2.iterator()     // Catch: java.lang.Throwable -> L78
+        L5e:
+            boolean r4 = r2.hasNext()     // Catch: java.lang.Throwable -> L78
+            if (r4 == 0) goto L6e
+            java.lang.Object r4 = r2.next()     // Catch: java.lang.Throwable -> L78
+            ca.a r4 = (ca.InterfaceC0938a) r4     // Catch: java.lang.Throwable -> L78
+            r8.mo2663f(r4)     // Catch: java.lang.Throwable -> L78
+            goto L5e
+        L6e:
+            r3.f27869b = r8     // Catch: java.lang.Throwable -> L78
+            r3.f27868a = r1     // Catch: java.lang.Throwable -> L78
+            r0.f27866c = r8     // Catch: java.lang.Throwable -> L78
+            r0.f27865b = r1     // Catch: java.lang.Throwable -> L78
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L78
+            goto L80
+        L78:
+            r8 = move-exception
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L78
+            throw r8
+        L7b:
+            java.lang.String r8 = "Could not register Firebase Analytics listener; a listener is already registered."
+            r1.m54e(r8)
+        L80:
+            return
+    }
+
+    @Override // ba.InterfaceC0727a
+    /* renamed from: e */
+    public void mo2333e(java.lang.String r2, android.os.Bundle r3) {
+            r1 = this;
+            z9.b r0 = r1.f27863Y
+            ba.a r0 = r0.f27865b
+            r0.mo2333e(r2, r3)
+            return
+    }
+
+    @Override // ca.InterfaceC0939b
+    /* renamed from: f */
+    public void mo2663f(ca.InterfaceC0938a r3) {
+            r2 = this;
+            z9.b r0 = r2.f27863Y
+            monitor-enter(r0)
+            ca.b r1 = r0.f27866c     // Catch: java.lang.Throwable -> L15
+            boolean r1 = r1 instanceof ca.C0940c     // Catch: java.lang.Throwable -> L15
+            if (r1 == 0) goto Le
+            java.util.List<ca.a> r1 = r0.f27867d     // Catch: java.lang.Throwable -> L15
+            r1.add(r3)     // Catch: java.lang.Throwable -> L15
+        Le:
+            ca.b r1 = r0.f27866c     // Catch: java.lang.Throwable -> L15
+            r1.mo2663f(r3)     // Catch: java.lang.Throwable -> L15
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L15
+            return
+        L15:
+            r3 = move-exception
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L15
+            throw r3
+    }
+}
+package p452z9;
+
+/* renamed from: z9.b */
+/* loaded from: classes.dex */
+public class C7260b {
+
+    /* renamed from: a */
+    public final p392wa.InterfaceC6822a<p329s9.InterfaceC5997a> f27864a;
+
+    /* renamed from: b */
+    public volatile ba.InterfaceC0727a f27865b;
+
+    /* renamed from: c */
+    public volatile ca.InterfaceC0939b f27866c;
+
+    /* renamed from: d */
+    public final java.util.List<ca.InterfaceC0938a> f27867d;
+
+    public C7260b(p392wa.InterfaceC6822a<p329s9.InterfaceC5997a> r4) {
+            r3 = this;
+            ca.c r0 = new ca.c
+            r0.<init>()
+            v1.b r1 = new v1.b
+            r2 = 27
+            r1.<init>(r2)
+            r3.<init>()
+            r3.f27864a = r4
+            r3.f27866c = r0
+            java.util.ArrayList r0 = new java.util.ArrayList
+            r0.<init>()
+            r3.f27867d = r0
+            r3.f27865b = r1
+            z9.a r0 = new z9.a
+            r1 = 2
+            r0.<init>(r3, r1)
+            y9.r r4 = (p432y9.C7151r) r4
+            r4.m14265a(r0)
+            return
+    }
+}
+package p452z9;
+
+/* renamed from: z9.c */
+/* loaded from: classes.dex */
+public class C7261c implements p329s9.InterfaceC5997a.b {
+
+    /* renamed from: a */
+    public ba.InterfaceC0728b f27868a;
+
+    /* renamed from: b */
+    public ba.InterfaceC0728b f27869b;
+
+    public C7261c() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    /* renamed from: a */
+    public void m14339a(int r5, android.os.Bundle r6) {
+            r4 = this;
+            java.util.Locale r0 = java.util.Locale.US
+            r1 = 2
+            java.lang.Object[] r2 = new java.lang.Object[r1]
+            java.lang.Integer r5 = java.lang.Integer.valueOf(r5)
+            r3 = 0
+            r2[r3] = r5
+            r5 = 1
+            r2[r5] = r6
+            java.lang.String r5 = "Analytics listener received message. ID: %d, Extras: %s"
+            java.lang.String r5 = java.lang.String.format(r0, r5, r2)
+            java.lang.String r0 = "FirebaseCrashlytics"
+            boolean r1 = android.util.Log.isLoggable(r0, r1)
+            if (r1 == 0) goto L21
+            r1 = 0
+            android.util.Log.v(r0, r5, r1)
+        L21:
+            java.lang.String r5 = "name"
+            java.lang.String r5 = r6.getString(r5)
+            if (r5 == 0) goto L4f
+            java.lang.String r0 = "params"
+            android.os.Bundle r6 = r6.getBundle(r0)
+            if (r6 != 0) goto L36
+            android.os.Bundle r6 = new android.os.Bundle
+            r6.<init>()
+        L36:
+            java.lang.String r0 = "_o"
+            java.lang.String r0 = r6.getString(r0)
+            java.lang.String r1 = "clx"
+            boolean r0 = r1.equals(r0)
+            if (r0 == 0) goto L47
+            ba.b r0 = r4.f27868a
+            goto L49
+        L47:
+            ba.b r0 = r4.f27869b
+        L49:
+            if (r0 != 0) goto L4c
+            goto L4f
+        L4c:
+            r0.mo2334G(r5, r6)
+        L4f:
+            return
+    }
+}
+package p452z9;
+
+/* renamed from: z9.d */
+/* loaded from: classes.dex */
+public class C7262d implements p327s7.InterfaceC5977a<java.lang.Void, java.lang.Object> {
+    public C7262d() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p327s7.InterfaceC5977a
+    /* renamed from: g */
+    public java.lang.Object mo816g(p327s7.AbstractC5985i<java.lang.Void> r3) {
+            r2 = this;
+            boolean r0 = r3.mo12455m()
+            if (r0 != 0) goto L11
+            java.lang.Exception r3 = r3.mo12450h()
+            java.lang.String r0 = "FirebaseCrashlytics"
+            java.lang.String r1 = "Error fetching settings."
+            android.util.Log.e(r0, r1, r3)
+        L11:
+            r3 = 0
+            return r3
+    }
+}
+package p452z9;
+
+/* renamed from: z9.f */
+/* loaded from: classes.dex */
+public class C7264f {
+
+    /* renamed from: a */
+    public final p056da.C1385y f27873a;
+
+    public C7264f(p056da.C1385y r1) {
+            r0 = this;
+            r0.<init>()
+            r0.f27873a = r1
+            return
+    }
+
+    /* renamed from: a */
+    public static p452z9.C7264f m14340a() {
+            o9.d r0 = p251o9.C5180d.m11494c()
+            java.lang.Class<z9.f> r1 = p452z9.C7264f.class
+            r0.m11497a()
+            y9.i r0 = r0.f20315d
+            java.lang.Object r0 = r0.mo14246a(r1)
+            z9.f r0 = (p452z9.C7264f) r0
+            java.lang.String r1 = "FirebaseCrashlytics component is not present."
+            java.util.Objects.requireNonNull(r0, r1)
+            return r0
+    }
+
+    /* renamed from: b */
+    public void m14341b(java.lang.Throwable r9) {
+            r8 = this;
+            da.y r0 = r8.f27873a
+            da.r r2 = r0.f6986f
+            java.lang.Thread r6 = java.lang.Thread.currentThread()
+            java.util.Objects.requireNonNull(r2)
+            long r3 = java.lang.System.currentTimeMillis()
+            da.f r0 = r2.f6952d
+            da.t r7 = new da.t
+            r1 = r7
+            r5 = r9
+            r1.<init>(r2, r3, r5, r6)
+            da.g r9 = new da.g
+            r9.<init>(r0, r7)
+            r0.m3872b(r9)
+            return
+    }
+}
+package p452z9;
+
+/* renamed from: z9.e */
+/* loaded from: classes.dex */
+public class CallableC7263e implements java.util.concurrent.Callable<java.lang.Void> {
+
+    /* renamed from: a */
+    public final /* synthetic */ boolean f27870a;
+
+    /* renamed from: b */
+    public final /* synthetic */ p056da.C1385y f27871b;
+
+    /* renamed from: c */
+    public final /* synthetic */ p188ka.C4075b f27872c;
+
+    public CallableC7263e(boolean r1, p056da.C1385y r2, p188ka.C4075b r3) {
+            r0 = this;
+            r0.f27870a = r1
+            r0.f27871b = r2
+            r0.f27872c = r3
+            r0.<init>()
+            return
+    }
+
+    @Override // java.util.concurrent.Callable
+    public java.lang.Void call() {
+            r4 = this;
+            boolean r0 = r4.f27870a
+            if (r0 == 0) goto L1e
+            da.y r0 = r4.f27871b
+            ka.b r1 = r4.f27872c
+            java.util.concurrent.ExecutorService r2 = r0.f6990j
+            da.w r3 = new da.w
+            r3.<init>(r0, r1)
+            java.util.concurrent.ExecutorService r0 = p056da.C1375o0.f6943a
+            s7.j r0 = new s7.j
+            r0.<init>()
+            da.n0 r1 = new da.n0
+            r1.<init>(r3, r0)
+            r2.execute(r1)
+        L1e:
+            r0 = 0
+            return r0
+    }
+}

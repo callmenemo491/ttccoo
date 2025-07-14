@@ -1,0 +1,291 @@
+package p002a1;
+
+/* renamed from: a1.a */
+/* loaded from: classes.dex */
+public abstract class AbstractC0002a {
+    public AbstractC0002a() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    /* renamed from: b */
+    public static <T extends androidx.lifecycle.InterfaceC0471v & androidx.lifecycle.InterfaceC0469t0> p002a1.AbstractC0002a m2b(T r2) {
+            a1.b r0 = new a1.b
+            r1 = r2
+            androidx.lifecycle.t0 r1 = (androidx.lifecycle.InterfaceC0469t0) r1
+            androidx.lifecycle.s0 r1 = r1.mo432o()
+            r0.<init>(r2, r1)
+            return r0
+    }
+
+    @java.lang.Deprecated
+    /* renamed from: a */
+    public abstract void mo3a(java.lang.String r1, java.io.FileDescriptor r2, java.io.PrintWriter r3, java.lang.String[] r4);
+}
+package p002a1;
+
+/* renamed from: a1.b */
+/* loaded from: classes.dex */
+public class C0003b extends p002a1.AbstractC0002a {
+
+    /* renamed from: a */
+    public final androidx.lifecycle.InterfaceC0471v f4a;
+
+    /* renamed from: b */
+    public final p002a1.C0003b.b f5b;
+
+    /* renamed from: a1.b$a */
+    public static class a<D> extends androidx.lifecycle.C0437d0<D> {
+        @Override // androidx.lifecycle.LiveData
+        /* renamed from: h */
+        public void mo4h() {
+                r1 = this;
+                r0 = 0
+                throw r0
+        }
+
+        @Override // androidx.lifecycle.LiveData
+        /* renamed from: i */
+        public void mo5i() {
+                r1 = this;
+                r0 = 0
+                throw r0
+        }
+
+        @Override // androidx.lifecycle.LiveData
+        /* renamed from: k */
+        public void mo6k(androidx.lifecycle.InterfaceC0439e0<? super D> r1) {
+                r0 = this;
+                super.mo6k(r1)
+                return
+        }
+
+        @Override // androidx.lifecycle.C0437d0, androidx.lifecycle.LiveData
+        /* renamed from: l */
+        public void mo7l(D r1) {
+                r0 = this;
+                super.mo7l(r1)
+                return
+        }
+
+        public java.lang.String toString() {
+                r2 = this;
+                java.lang.StringBuilder r0 = new java.lang.StringBuilder
+                r1 = 64
+                r0.<init>(r1)
+                java.lang.String r1 = "LoaderInfo{"
+                r0.append(r1)
+                int r1 = java.lang.System.identityHashCode(r2)
+                java.lang.String r1 = java.lang.Integer.toHexString(r1)
+                r0.append(r1)
+                java.lang.String r1 = " #"
+                r0.append(r1)
+                r1 = 0
+                r0.append(r1)
+                java.lang.String r1 = " : "
+                r0.append(r1)
+                r1 = 0
+                p064e.C1488b.m4034a(r1, r0)
+                java.lang.String r1 = "}}"
+                r0.append(r1)
+                java.lang.String r0 = r0.toString()
+                return r0
+        }
+    }
+
+    /* renamed from: a1.b$b */
+    public static class b extends androidx.lifecycle.AbstractC0457n0 {
+
+        /* renamed from: d */
+        public static final androidx.lifecycle.InterfaceC0461p0 f6d = null;
+
+        /* renamed from: c */
+        public p319s.C5942i<p002a1.C0003b.a> f7c;
+
+        /* renamed from: a1.b$b$a */
+        public static class a implements androidx.lifecycle.InterfaceC0461p0 {
+            public a() {
+                    r0 = this;
+                    r0.<init>()
+                    return
+            }
+
+            @Override // androidx.lifecycle.InterfaceC0461p0
+            /* renamed from: a */
+            public <T extends androidx.lifecycle.AbstractC0457n0> T mo9a(java.lang.Class<T> r1) {
+                    r0 = this;
+                    a1.b$b r1 = new a1.b$b
+                    r1.<init>()
+                    return r1
+            }
+        }
+
+        static {
+                a1.b$b$a r0 = new a1.b$b$a
+                r0.<init>()
+                p002a1.C0003b.b.f6d = r0
+                return
+        }
+
+        public b() {
+                r1 = this;
+                r1.<init>()
+                s.i r0 = new s.i
+                r0.<init>()
+                r1.f7c = r0
+                return
+        }
+
+        @Override // androidx.lifecycle.AbstractC0457n0
+        /* renamed from: b */
+        public void mo8b() {
+                r6 = this;
+                s.i<a1.b$a> r0 = r6.f7c
+                int r0 = r0.m12352j()
+                r1 = 0
+                r2 = 0
+                if (r0 > 0) goto L1d
+                s.i<a1.b$a> r0 = r6.f7c
+                int r3 = r0.f22817b0
+                java.lang.Object[] r4 = r0.f22816a0
+                r5 = 0
+            L11:
+                if (r5 >= r3) goto L18
+                r4[r5] = r1
+                int r5 = r5 + 1
+                goto L11
+            L18:
+                r0.f22817b0 = r2
+                r0.f22814Y = r2
+                return
+            L1d:
+                s.i<a1.b$a> r0 = r6.f7c
+                java.lang.Object r0 = r0.m12353k(r2)
+                a1.b$a r0 = (p002a1.C0003b.a) r0
+                java.util.Objects.requireNonNull(r0)
+                throw r1
+        }
+    }
+
+    public C0003b(androidx.lifecycle.InterfaceC0471v r5, androidx.lifecycle.C0467s0 r6) {
+            r4 = this;
+            r4.<init>()
+            r4.f4a = r5
+            androidx.lifecycle.p0 r5 = p002a1.C0003b.b.f6d
+            java.lang.Class<a1.b$b> r0 = p002a1.C0003b.b.class
+            java.lang.String r1 = r0.getCanonicalName()
+            if (r1 == 0) goto L51
+            java.lang.String r2 = "androidx.lifecycle.ViewModelProvider.DefaultKey:"
+            java.lang.String r1 = p064e.C1493g.m4049a(r2, r1)
+            java.util.HashMap<java.lang.String, androidx.lifecycle.n0> r2 = r6.f2562a
+            java.lang.Object r2 = r2.get(r1)
+            androidx.lifecycle.n0 r2 = (androidx.lifecycle.AbstractC0457n0) r2
+            boolean r3 = r0.isInstance(r2)
+            if (r3 == 0) goto L2d
+            boolean r6 = r5 instanceof androidx.lifecycle.C0465r0
+            if (r6 == 0) goto L4c
+            androidx.lifecycle.r0 r5 = (androidx.lifecycle.C0465r0) r5
+            r5.mo1425b(r2)
+            goto L4c
+        L2d:
+            boolean r2 = r5 instanceof androidx.lifecycle.AbstractC0463q0
+            if (r2 == 0) goto L38
+            androidx.lifecycle.q0 r5 = (androidx.lifecycle.AbstractC0463q0) r5
+            androidx.lifecycle.n0 r5 = r5.mo1426c(r1, r0)
+            goto L3e
+        L38:
+            a1.b$b$a r5 = (p002a1.C0003b.b.a) r5
+            androidx.lifecycle.n0 r5 = r5.mo9a(r0)
+        L3e:
+            r2 = r5
+            java.util.HashMap<java.lang.String, androidx.lifecycle.n0> r5 = r6.f2562a
+            java.lang.Object r5 = r5.put(r1, r2)
+            androidx.lifecycle.n0 r5 = (androidx.lifecycle.AbstractC0457n0) r5
+            if (r5 == 0) goto L4c
+            r5.mo8b()
+        L4c:
+            a1.b$b r2 = (p002a1.C0003b.b) r2
+            r4.f5b = r2
+            return
+        L51:
+            java.lang.IllegalArgumentException r5 = new java.lang.IllegalArgumentException
+            java.lang.String r6 = "Local and anonymous classes can not be ViewModels"
+            r5.<init>(r6)
+            throw r5
+    }
+
+    @Override // p002a1.AbstractC0002a
+    @java.lang.Deprecated
+    /* renamed from: a */
+    public void mo3a(java.lang.String r3, java.io.FileDescriptor r4, java.io.PrintWriter r5, java.lang.String[] r6) {
+            r2 = this;
+            a1.b$b r4 = r2.f5b
+            s.i<a1.b$a> r6 = r4.f7c
+            int r6 = r6.m12352j()
+            if (r6 <= 0) goto L72
+            r5.print(r3)
+            java.lang.String r6 = "Loaders:"
+            r5.println(r6)
+            java.lang.StringBuilder r6 = new java.lang.StringBuilder
+            r6.<init>()
+            r6.append(r3)
+            java.lang.String r0 = "    "
+            r6.append(r0)
+            java.lang.String r6 = r6.toString()
+            s.i<a1.b$a> r0 = r4.f7c
+            int r0 = r0.m12352j()
+            if (r0 > 0) goto L2c
+            goto L72
+        L2c:
+            s.i<a1.b$a> r0 = r4.f7c
+            r1 = 0
+            java.lang.Object r0 = r0.m12353k(r1)
+            a1.b$a r0 = (p002a1.C0003b.a) r0
+            r5.print(r3)
+            java.lang.String r3 = "  #"
+            r5.print(r3)
+            s.i<a1.b$a> r3 = r4.f7c
+            int r3 = r3.m12350f(r1)
+            r5.print(r3)
+            java.lang.String r3 = ": "
+            r5.print(r3)
+            java.lang.String r3 = r0.toString()
+            r5.println(r3)
+            r5.print(r6)
+            java.lang.String r3 = "mId="
+            r5.print(r3)
+            r5.print(r1)
+            java.lang.String r3 = " mArgs="
+            r5.print(r3)
+            r3 = 0
+            r5.println(r3)
+            r5.print(r6)
+            java.lang.String r4 = "mLoader="
+            r5.print(r4)
+            r5.println(r3)
+            throw r3
+        L72:
+            return
+    }
+
+    public java.lang.String toString() {
+            r2 = this;
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            r1 = 128(0x80, float:1.8E-43)
+            r0.<init>(r1)
+            java.lang.String r1 = "LoaderManager{"
+            r0.append(r1)
+            int r1 = java.lang.System.identityHashCode(r2)
+            java.lang.String r1 = java.lang.Integer.toHexString(r1)
+            r0.append(r1)
+            java.lang.String r1 = " in "
+            r0.append(r1)
+            androidx.lifecycle.v r1 = r2.f4a
+            p064e.C1488b.m4034a(r1, r0)
+            java.lang.String r1 = "}}"
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            return r0
+    }
+}

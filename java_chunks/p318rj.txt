@@ -1,0 +1,119 @@
+package p318rj;
+
+/* renamed from: rj.b */
+/* loaded from: classes.dex */
+public class C5933b implements p318rj.InterfaceC5932a {
+
+    /* renamed from: a */
+    public final la.C4237e f22760a;
+
+    /* renamed from: b */
+    public final p124h7.C2839rb f22761b;
+
+    public C5933b(p240nj.AbstractC4845c r2, la.C4237e r3) {
+            r1 = this;
+            r1.<init>()
+            r1.f22760a = r3
+            h7.rb r0 = new h7.rb
+            java.lang.Object r3 = r3.f17398a
+            java.math.BigInteger r3 = (java.math.BigInteger) r3
+            nj.d r2 = r2.mo10879l(r3)
+            r0.<init>(r2)
+            r1.f22761b = r0
+            return
+    }
+
+    @Override // p318rj.InterfaceC5932a
+    /* renamed from: a */
+    public p124h7.C2839rb mo12295a() {
+            r1 = this;
+            h7.rb r0 = r1.f22761b
+            return r0
+    }
+
+    @Override // p318rj.InterfaceC5932a
+    /* renamed from: b */
+    public boolean mo12296b() {
+            r1 = this;
+            r0 = 1
+            return r0
+    }
+
+    @Override // p318rj.InterfaceC5932a
+    /* renamed from: c */
+    public java.math.BigInteger[] mo12297c(java.math.BigInteger r6) {
+            r5 = this;
+            la.e r0 = r5.f22760a
+            int r1 = r0.f17406i
+            java.lang.Object r0 = r0.f17405h
+            java.math.BigInteger r0 = (java.math.BigInteger) r0
+            java.math.BigInteger r0 = r5.m12298d(r6, r0, r1)
+            la.e r2 = r5.f22760a
+            java.lang.Object r2 = r2.f17402e
+            java.math.BigInteger r2 = (java.math.BigInteger) r2
+            java.math.BigInteger r1 = r5.m12298d(r6, r2, r1)
+            la.e r2 = r5.f22760a
+            java.lang.Object r3 = r2.f17400c
+            java.math.BigInteger r3 = (java.math.BigInteger) r3
+            java.math.BigInteger r3 = r0.multiply(r3)
+            java.lang.Object r4 = r2.f17403f
+            java.math.BigInteger r4 = (java.math.BigInteger) r4
+            java.math.BigInteger r4 = r1.multiply(r4)
+            java.math.BigInteger r3 = r3.add(r4)
+            java.math.BigInteger r6 = r6.subtract(r3)
+            java.lang.Object r3 = r2.f17401d
+            java.math.BigInteger r3 = (java.math.BigInteger) r3
+            java.math.BigInteger r0 = r0.multiply(r3)
+            java.lang.Object r2 = r2.f17404g
+            java.math.BigInteger r2 = (java.math.BigInteger) r2
+            java.math.BigInteger r1 = r1.multiply(r2)
+            java.math.BigInteger r0 = r0.add(r1)
+            java.math.BigInteger r0 = r0.negate()
+            r1 = 2
+            java.math.BigInteger[] r1 = new java.math.BigInteger[r1]
+            r2 = 0
+            r1[r2] = r6
+            r6 = 1
+            r1[r6] = r0
+            return r1
+    }
+
+    /* renamed from: d */
+    public java.math.BigInteger m12298d(java.math.BigInteger r2, java.math.BigInteger r3, int r4) {
+            r1 = this;
+            int r0 = r3.signum()
+            if (r0 >= 0) goto L8
+            r0 = 1
+            goto L9
+        L8:
+            r0 = 0
+        L9:
+            java.math.BigInteger r3 = r3.abs()
+            java.math.BigInteger r2 = r2.multiply(r3)
+            int r3 = r4 + (-1)
+            boolean r3 = r2.testBit(r3)
+            java.math.BigInteger r2 = r2.shiftRight(r4)
+            if (r3 == 0) goto L23
+            java.math.BigInteger r3 = p240nj.InterfaceC4844b.f19244S
+            java.math.BigInteger r2 = r2.add(r3)
+        L23:
+            if (r0 == 0) goto L29
+            java.math.BigInteger r2 = r2.negate()
+        L29:
+            return r2
+    }
+}
+package p318rj;
+
+/* renamed from: rj.a */
+/* loaded from: classes.dex */
+public interface InterfaceC5932a {
+    /* renamed from: a */
+    p124h7.C2839rb mo12295a();
+
+    /* renamed from: b */
+    boolean mo12296b();
+
+    /* renamed from: c */
+    java.math.BigInteger[] mo12297c(java.math.BigInteger r1);
+}

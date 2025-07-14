@@ -1,0 +1,537 @@
+package p439yh;
+
+import p439yh.AbstractC7206c;
+
+/* renamed from: yh.a */
+/* loaded from: classes.dex */
+public abstract class AbstractC7204a<S extends p439yh.AbstractC7206c<?>> {
+
+    /* renamed from: Y */
+    public S[] f27743Y;
+
+    /* renamed from: Z */
+    public int f27744Z;
+
+    /* renamed from: a0 */
+    public int f27745a0;
+
+    public AbstractC7204a() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+}
+package p439yh;
+
+/* renamed from: yh.c */
+/* loaded from: classes.dex */
+public abstract class AbstractC7206c<F> {
+    public AbstractC7206c() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    /* renamed from: a */
+    public abstract boolean mo14184a(F r1);
+}
+package p439yh;
+
+/* renamed from: yh.b */
+/* loaded from: classes.dex */
+public final class C7205b {
+
+    /* renamed from: a */
+    public static final kotlin.coroutines.Continuation<kotlin.Unit>[] f27746a = null;
+
+    static {
+            r0 = 0
+            fh.d[] r0 = new p101fh.InterfaceC2172d[r0]
+            p439yh.C7205b.f27746a = r0
+            return
+    }
+}
+package p439yh;
+
+/* renamed from: yh.d */
+/* loaded from: classes.dex */
+public final class C7207d implements p101fh.InterfaceC2175g.a {
+
+    /* renamed from: Z */
+    public static final p439yh.C7207d.a f27747Z = null;
+
+    /* renamed from: Y */
+    public final java.lang.Throwable f27748Y;
+
+    /* renamed from: yh.d$a */
+    public static final class a implements p101fh.InterfaceC2175g.b<p439yh.C7207d> {
+        public a(p239nh.C4826f r1) {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+    }
+
+    static {
+            yh.d$a r0 = new yh.d$a
+            r1 = 0
+            r0.<init>(r1)
+            p439yh.C7207d.f27747Z = r0
+            return
+    }
+
+    public C7207d(java.lang.Throwable r1) {
+            r0 = this;
+            r0.<init>()
+            r0.f27748Y = r1
+            return
+    }
+
+    @Override // p101fh.InterfaceC2175g
+    public <R> R fold(R r1, mh.InterfaceC4624p<? super R, ? super p101fh.InterfaceC2175g.a, ? extends R> r2) {
+            r0 = this;
+            java.lang.Object r1 = p101fh.InterfaceC2175g.a.C7391a.m5737a(r0, r1, r2)
+            return r1
+    }
+
+    @Override // p101fh.InterfaceC2175g.a, p101fh.InterfaceC2175g
+    public <E extends p101fh.InterfaceC2175g.a> E get(p101fh.InterfaceC2175g.b<E> r1) {
+            r0 = this;
+            fh.g$a r1 = p101fh.InterfaceC2175g.a.C7391a.m5738b(r0, r1)
+            return r1
+    }
+
+    @Override // p101fh.InterfaceC2175g.a
+    public p101fh.InterfaceC2175g.b<?> getKey() {
+            r1 = this;
+            yh.d$a r0 = p439yh.C7207d.f27747Z
+            return r0
+    }
+
+    @Override // p101fh.InterfaceC2175g
+    public p101fh.InterfaceC2175g minusKey(p101fh.InterfaceC2175g.b<?> r1) {
+            r0 = this;
+            fh.g r1 = p101fh.InterfaceC2175g.a.C7391a.m5739c(r0, r1)
+            return r1
+    }
+
+    @Override // p101fh.InterfaceC2175g
+    public p101fh.InterfaceC2175g plus(p101fh.InterfaceC2175g r1) {
+            r0 = this;
+            fh.g r1 = p101fh.InterfaceC2175g.a.C7391a.m5740d(r0, r1)
+            return r1
+    }
+}
+package p439yh;
+
+/* renamed from: yh.e */
+/* loaded from: classes.dex */
+public final class C7208e implements p101fh.InterfaceC2172d<java.lang.Object> {
+
+    /* renamed from: Y */
+    public static final p439yh.C7208e f27749Y = null;
+
+    static {
+            yh.e r0 = new yh.e
+            r0.<init>()
+            p439yh.C7208e.f27749Y = r0
+            return
+    }
+
+    public C7208e() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p101fh.InterfaceC2172d
+    /* renamed from: c */
+    public p101fh.InterfaceC2175g mo5706c() {
+            r1 = this;
+            fh.i r0 = p101fh.C2177i.f9918Y
+            return r0
+    }
+
+    @Override // p101fh.InterfaceC2172d
+    /* renamed from: k */
+    public void mo5707k(java.lang.Object r1) {
+            r0 = this;
+            return
+    }
+}
+package p439yh;
+
+/* renamed from: yh.f */
+/* loaded from: classes.dex */
+public final class C7209f {
+
+    /* renamed from: a */
+    public static final p459zh.C7350p f27750a = null;
+
+    static {
+            zh.p r0 = new zh.p
+            java.lang.String r1 = "NULL"
+            r0.<init>(r1)
+            p439yh.C7209f.f27750a = r0
+            return
+    }
+}
+package p439yh;
+
+/* JADX WARN: Unexpected interfaces in signature: [hh.d] */
+/* renamed from: yh.g */
+/* loaded from: classes.dex */
+public final class C7210g<T> extends p134hh.AbstractC3042c implements p419xh.InterfaceC7074b<T> {
+
+    /* renamed from: b0 */
+    public final p419xh.InterfaceC7074b<T> f27751b0;
+
+    /* renamed from: c0 */
+    public final p101fh.InterfaceC2175g f27752c0;
+
+    /* renamed from: d0 */
+    public final int f27753d0;
+
+    /* renamed from: e0 */
+    public p101fh.InterfaceC2175g f27754e0;
+
+    /* renamed from: f0 */
+    public p101fh.InterfaceC2172d<? super ch.C0985l> f27755f0;
+
+    /* renamed from: yh.g$a */
+    public static final class a extends p239nh.AbstractC4830j implements mh.InterfaceC4624p<java.lang.Integer, p101fh.InterfaceC2175g.a, java.lang.Integer> {
+
+        /* renamed from: Z */
+        public static final p439yh.C7210g.a f27756Z = null;
+
+        static {
+                yh.g$a r0 = new yh.g$a
+                r0.<init>()
+                p439yh.C7210g.a.f27756Z = r0
+                return
+        }
+
+        public a() {
+                r1 = this;
+                r0 = 2
+                r1.<init>(r0)
+                return
+        }
+
+        @Override // mh.InterfaceC4624p
+        /* renamed from: l */
+        public java.lang.Integer mo122l(java.lang.Integer r1, p101fh.InterfaceC2175g.a r2) {
+                r0 = this;
+                java.lang.Number r1 = (java.lang.Number) r1
+                int r1 = r1.intValue()
+                fh.g$a r2 = (p101fh.InterfaceC2175g.a) r2
+                int r1 = r1 + 1
+                java.lang.Integer r1 = java.lang.Integer.valueOf(r1)
+                return r1
+        }
+    }
+
+    public C7210g(p419xh.InterfaceC7074b<? super T> r3, p101fh.InterfaceC2175g r4) {
+            r2 = this;
+            yh.e r0 = p439yh.C7208e.f27749Y
+            fh.i r1 = p101fh.C2177i.f9918Y
+            r2.<init>(r0, r1)
+            r2.f27751b0 = r3
+            r2.f27752c0 = r4
+            r3 = 0
+            java.lang.Integer r3 = java.lang.Integer.valueOf(r3)
+            yh.g$a r0 = p439yh.C7210g.a.f27756Z
+            java.lang.Object r3 = r4.fold(r3, r0)
+            java.lang.Number r3 = (java.lang.Number) r3
+            int r3 = r3.intValue()
+            r2.f27753d0 = r3
+            return
+    }
+
+    @Override // p419xh.InterfaceC7074b
+    /* renamed from: a */
+    public java.lang.Object mo1443a(T r1, p101fh.InterfaceC2172d<? super ch.C0985l> r2) {
+            r0 = this;
+            java.lang.Object r1 = r0.m14284t(r2, r1)     // Catch: java.lang.Throwable -> Lc
+            gh.a r2 = gh.EnumC2389a.f10764Y
+            if (r1 != r2) goto L9
+            return r1
+        L9:
+            ch.l r1 = ch.C0985l.f5061a
+            return r1
+        Lc:
+            r1 = move-exception
+            yh.d r2 = new yh.d
+            r2.<init>(r1)
+            r0.f27754e0 = r2
+            throw r1
+    }
+
+    @Override // p134hh.AbstractC3042c, p101fh.InterfaceC2172d
+    /* renamed from: c */
+    public p101fh.InterfaceC2175g mo5706c() {
+            r1 = this;
+            fh.d<? super ch.l> r0 = r1.f27755f0
+            if (r0 != 0) goto L6
+            r0 = 0
+            goto La
+        L6:
+            fh.g r0 = r0.mo5706c()
+        La:
+            if (r0 != 0) goto Le
+            fh.i r0 = p101fh.C2177i.f9918Y
+        Le:
+            return r0
+    }
+
+    @Override // p134hh.AbstractC3040a, p134hh.InterfaceC3043d
+    /* renamed from: j */
+    public p134hh.InterfaceC3043d mo5742j() {
+            r2 = this;
+            fh.d<? super ch.l> r0 = r2.f27755f0
+            boolean r1 = r0 instanceof p134hh.InterfaceC3043d
+            if (r1 == 0) goto L9
+            hh.d r0 = (p134hh.InterfaceC3043d) r0
+            goto La
+        L9:
+            r0 = 0
+        La:
+            return r0
+    }
+
+    @Override // p134hh.AbstractC3040a
+    /* renamed from: n */
+    public java.lang.StackTraceElement mo7449n() {
+            r1 = this;
+            r0 = 0
+            return r0
+    }
+
+    @Override // p134hh.AbstractC3040a
+    /* renamed from: o */
+    public java.lang.Object mo123o(java.lang.Object r3) {
+            r2 = this;
+            java.lang.Throwable r0 = ch.C0979f.m2690b(r3)
+            if (r0 == 0) goto Ld
+            yh.d r1 = new yh.d
+            r1.<init>(r0)
+            r2.f27754e0 = r1
+        Ld:
+            fh.d<? super ch.l> r0 = r2.f27755f0
+            if (r0 != 0) goto L12
+            goto L15
+        L12:
+            r0.mo5707k(r3)
+        L15:
+            gh.a r3 = gh.EnumC2389a.f10764Y
+            return r3
+    }
+
+    @Override // p134hh.AbstractC3042c, p134hh.AbstractC3040a
+    /* renamed from: s */
+    public void mo7450s() {
+            r0 = this;
+            super.mo7450s()
+            return
+    }
+
+    /* renamed from: t */
+    public final java.lang.Object m14284t(p101fh.InterfaceC2172d<? super ch.C0985l> r4, T r5) {
+            r3 = this;
+            fh.g r0 = r4.mo5706c()
+            p209lh.C4304a.m9619m(r0)
+            fh.g r1 = r3.f27754e0
+            if (r1 == r0) goto L7c
+            boolean r2 = r1 instanceof p439yh.C7207d
+            if (r2 != 0) goto L50
+            r1 = 0
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)
+            yh.i r2 = new yh.i
+            r2.<init>(r3)
+            java.lang.Object r1 = r0.fold(r1, r2)
+            java.lang.Number r1 = (java.lang.Number) r1
+            int r1 = r1.intValue()
+            int r2 = r3.f27753d0
+            if (r1 != r2) goto L2a
+            r3.f27754e0 = r0
+            goto L7c
+        L2a:
+            java.lang.String r4 = "Flow invariant is violated:\n\t\tFlow was collected in "
+            java.lang.StringBuilder r4 = android.support.v4.media.C0144c.m256a(r4)
+            fh.g r5 = r3.f27752c0
+            r4.append(r5)
+            java.lang.String r5 = ",\n\t\tbut emission happened in "
+            r4.append(r5)
+            r4.append(r0)
+            java.lang.String r5 = ".\n\t\tPlease refer to 'flow' documentation or use 'flowOn' instead"
+            r4.append(r5)
+            java.lang.String r4 = r4.toString()
+            java.lang.IllegalStateException r5 = new java.lang.IllegalStateException
+            java.lang.String r4 = r4.toString()
+            r5.<init>(r4)
+            throw r5
+        L50:
+            yh.d r1 = (p439yh.C7207d) r1
+            java.lang.String r4 = "\n            Flow exception transparency is violated:\n                Previous 'emit' call has thrown exception "
+            java.lang.StringBuilder r4 = android.support.v4.media.C0144c.m256a(r4)
+            java.lang.Throwable r0 = r1.f27748Y
+            r4.append(r0)
+            java.lang.String r0 = ", but then emission attempt of value '"
+            r4.append(r0)
+            r4.append(r5)
+            java.lang.String r5 = "' has been detected.\n                Emissions from 'catch' blocks are prohibited in order to avoid unspecified behaviour, 'Flow.catch' operator can be used instead.\n                For a more detailed explanation, please refer to Flow documentation.\n            "
+            r4.append(r5)
+            java.lang.String r4 = r4.toString()
+            java.lang.String r4 = p362uh.C6459e.m13046C(r4)
+            java.lang.IllegalStateException r5 = new java.lang.IllegalStateException
+            java.lang.String r4 = r4.toString()
+            r5.<init>(r4)
+            throw r5
+        L7c:
+            r3.f27755f0 = r4
+            mh.q<xh.b<java.lang.Object>, java.lang.Object, fh.d<? super ch.l>, java.lang.Object> r4 = p439yh.C7211h.f27757a
+            xh.b<T> r0 = r3.f27751b0
+            java.lang.Object r4 = r4.mo115i(r0, r5, r3)
+            return r4
+    }
+}
+package p439yh;
+
+/* renamed from: yh.h */
+/* loaded from: classes.dex */
+public final class C7211h {
+
+    /* renamed from: a */
+    public static final mh.InterfaceC4625q<p419xh.InterfaceC7074b<java.lang.Object>, java.lang.Object, p101fh.InterfaceC2172d<? super ch.C0985l>, java.lang.Object> f27757a = null;
+
+    /* renamed from: yh.h$a */
+    public /* synthetic */ class a extends p239nh.C4829i implements mh.InterfaceC4625q<p419xh.InterfaceC7074b<? super java.lang.Object>, java.lang.Object, ch.C0985l> {
+
+        /* renamed from: g0 */
+        public static final p439yh.C7211h.a f27758g0 = null;
+
+        static {
+                yh.h$a r0 = new yh.h$a
+                r0.<init>()
+                p439yh.C7211h.a.f27758g0 = r0
+                return
+        }
+
+        public a() {
+                r6 = this;
+                java.lang.Class<xh.b> r2 = p419xh.InterfaceC7074b.class
+                r1 = 3
+                java.lang.String r3 = "emit"
+                java.lang.String r4 = "emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"
+                r5 = 0
+                r0 = r6
+                r0.<init>(r1, r2, r3, r4, r5)
+                return
+        }
+
+        @Override // mh.InterfaceC4625q
+        /* renamed from: i */
+        public java.lang.Object mo115i(java.lang.Object r1, java.lang.Object r2, java.lang.Object r3) {
+                r0 = this;
+                xh.b r1 = (p419xh.InterfaceC7074b) r1
+                fh.d r3 = (p101fh.InterfaceC2172d) r3
+                java.lang.Object r1 = r1.mo1443a(r2, r3)
+                return r1
+        }
+    }
+
+    static {
+            yh.h$a r0 = p439yh.C7211h.a.f27758g0
+            r1 = 3
+            p239nh.C4840t.m10855a(r0, r1)
+            mh.q r0 = (mh.InterfaceC4625q) r0
+            p439yh.C7211h.f27757a = r0
+            return
+    }
+}
+package p439yh;
+
+/* renamed from: yh.i */
+/* loaded from: classes.dex */
+public final class C7212i extends p239nh.AbstractC4830j implements mh.InterfaceC4624p<java.lang.Integer, p101fh.InterfaceC2175g.a, java.lang.Integer> {
+
+    /* renamed from: Z */
+    public final /* synthetic */ p439yh.C7210g<?> f27759Z;
+
+    public C7212i(p439yh.C7210g<?> r1) {
+            r0 = this;
+            r0.f27759Z = r1
+            r1 = 2
+            r0.<init>(r1)
+            return
+    }
+
+    @Override // mh.InterfaceC4624p
+    /* renamed from: l */
+    public java.lang.Integer mo122l(java.lang.Integer r4, p101fh.InterfaceC2175g.a r5) {
+            r3 = this;
+            java.lang.Number r4 = (java.lang.Number) r4
+            int r4 = r4.intValue()
+            fh.g$a r5 = (p101fh.InterfaceC2175g.a) r5
+            fh.g$b r0 = r5.getKey()
+            yh.g<?> r1 = r3.f27759Z
+            fh.g r1 = r1.f27752c0
+            fh.g$a r1 = r1.get(r0)
+            int r2 = p379vh.InterfaceC6687b1.f25957X
+            vh.b1$b r2 = p379vh.InterfaceC6687b1.b.f25958Y
+            if (r0 == r2) goto L26
+            if (r5 == r1) goto L1f
+            r4 = -2147483648(0xffffffff80000000, float:-0.0)
+            goto L21
+        L1f:
+            int r4 = r4 + 1
+        L21:
+            java.lang.Integer r4 = java.lang.Integer.valueOf(r4)
+            goto L3b
+        L26:
+            vh.b1 r1 = (p379vh.InterfaceC6687b1) r1
+            vh.b1 r5 = (p379vh.InterfaceC6687b1) r5
+        L2a:
+            r0 = 0
+            if (r5 != 0) goto L2f
+            r5 = r0
+            goto L36
+        L2f:
+            if (r5 != r1) goto L32
+            goto L36
+        L32:
+            boolean r2 = r5 instanceof p459zh.C7349o
+            if (r2 != 0) goto L64
+        L36:
+            if (r5 != r1) goto L3c
+            if (r1 != 0) goto L1f
+            goto L21
+        L3b:
+            return r4
+        L3c:
+            java.lang.StringBuilder r4 = new java.lang.StringBuilder
+            r4.<init>()
+            java.lang.String r0 = "Flow invariant is violated:\n\t\tEmission from another coroutine is detected.\n\t\tChild of "
+            r4.append(r0)
+            r4.append(r5)
+            java.lang.String r5 = ", expected child of "
+            r4.append(r5)
+            r4.append(r1)
+            java.lang.String r5 = ".\n\t\tFlowCollector is not thread-safe and concurrent emissions are prohibited.\n\t\tTo mitigate this restriction please use 'channelFlow' builder instead of 'flow'"
+            r4.append(r5)
+            java.lang.String r4 = r4.toString()
+            java.lang.IllegalStateException r5 = new java.lang.IllegalStateException
+            java.lang.String r4 = r4.toString()
+            r5.<init>(r4)
+            throw r5
+        L64:
+            zh.o r5 = (p459zh.C7349o) r5
+            vh.m r5 = r5.m13572B()
+            if (r5 != 0) goto L6e
+            r5 = r0
+            goto L2a
+        L6e:
+            vh.b1 r5 = r5.getParent()
+            goto L2a
+    }
+}

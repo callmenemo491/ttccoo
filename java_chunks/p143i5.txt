@@ -1,0 +1,1853 @@
+package p143i5;
+
+/* renamed from: i5.e */
+/* loaded from: classes.dex */
+public abstract class AbstractC3081e extends p142i4.AbstractC3076j<p143i5.C3086j, p143i5.AbstractC3087k, p143i5.C3084h> implements p143i5.InterfaceC3083g {
+    public AbstractC3081e(java.lang.String r5) {
+            r4 = this;
+            r5 = 2
+            i5.j[] r0 = new p143i5.C3086j[r5]
+            i5.k[] r5 = new p143i5.AbstractC3087k[r5]
+            r4.<init>(r0, r5)
+            int r5 = r4.f12376g
+            I extends i4.g[] r0 = r4.f12374e
+            int r0 = r0.length
+            r1 = 0
+            if (r5 != r0) goto L12
+            r5 = 1
+            goto L13
+        L12:
+            r5 = 0
+        L13:
+            p371v5.C6549a.m13291e(r5)
+            I extends i4.g[] r5 = r4.f12374e
+            int r0 = r5.length
+        L19:
+            if (r1 >= r0) goto L25
+            r2 = r5[r1]
+            r3 = 1024(0x400, float:1.435E-42)
+            r2.m7524v(r3)
+            int r1 = r1 + 1
+            goto L19
+        L25:
+            return
+    }
+
+    @Override // p143i5.InterfaceC3083g
+    /* renamed from: a */
+    public void mo7536a(long r1) {
+            r0 = this;
+            return
+    }
+
+    @Override // p142i4.AbstractC3076j
+    /* renamed from: e */
+    public p142i4.C3072f mo7528e(p142i4.C3073g r7, p142i4.AbstractC3074h r8, boolean r9) {
+            r6 = this;
+            i5.j r7 = (p143i5.C3086j) r7
+            i5.k r8 = (p143i5.AbstractC3087k) r8
+            java.nio.ByteBuffer r0 = r7.f12358a0     // Catch: p143i5.C3084h -> L27
+            java.util.Objects.requireNonNull(r0)     // Catch: p143i5.C3084h -> L27
+            byte[] r1 = r0.array()     // Catch: p143i5.C3084h -> L27
+            int r0 = r0.limit()     // Catch: p143i5.C3084h -> L27
+            i5.f r3 = r6.mo7541j(r1, r0, r9)     // Catch: p143i5.C3084h -> L27
+            long r1 = r7.f12360c0     // Catch: p143i5.C3084h -> L27
+            long r4 = r7.f12430g0     // Catch: p143i5.C3084h -> L27
+            r0 = r8
+            r0.m7543v(r1, r3, r4)     // Catch: p143i5.C3084h -> L27
+            int r7 = r8.f12333Y     // Catch: p143i5.C3084h -> L27
+            r9 = 2147483647(0x7fffffff, float:NaN)
+            r7 = r7 & r9
+            r8.f12333Y = r7     // Catch: p143i5.C3084h -> L27
+            r7 = 0
+            goto L28
+        L27:
+            r7 = move-exception
+        L28:
+            return r7
+    }
+
+    /* renamed from: j */
+    public abstract p143i5.InterfaceC3082f mo7541j(byte[] r1, int r2, boolean r3);
+}
+package p143i5;
+
+/* renamed from: i5.k */
+/* loaded from: classes.dex */
+public abstract class AbstractC3087k extends p142i4.AbstractC3074h implements p143i5.InterfaceC3082f {
+
+    /* renamed from: a0 */
+    public p143i5.InterfaceC3082f f12431a0;
+
+    /* renamed from: b0 */
+    public long f12432b0;
+
+    public AbstractC3087k() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p143i5.InterfaceC3082f
+    /* renamed from: e */
+    public int mo7537e(long r4) {
+            r3 = this;
+            i5.f r0 = r3.f12431a0
+            java.util.Objects.requireNonNull(r0)
+            long r1 = r3.f12432b0
+            long r4 = r4 - r1
+            int r4 = r0.mo7537e(r4)
+            return r4
+    }
+
+    @Override // p143i5.InterfaceC3082f
+    /* renamed from: g */
+    public long mo7538g(int r5) {
+            r4 = this;
+            i5.f r0 = r4.f12431a0
+            java.util.Objects.requireNonNull(r0)
+            long r0 = r0.mo7538g(r5)
+            long r2 = r4.f12432b0
+            long r0 = r0 + r2
+            return r0
+    }
+
+    @Override // p143i5.InterfaceC3082f
+    /* renamed from: h */
+    public java.util.List<p143i5.C3077a> mo7539h(long r4) {
+            r3 = this;
+            i5.f r0 = r3.f12431a0
+            java.util.Objects.requireNonNull(r0)
+            long r1 = r3.f12432b0
+            long r4 = r4 - r1
+            java.util.List r4 = r0.mo7539h(r4)
+            return r4
+    }
+
+    @Override // p143i5.InterfaceC3082f
+    /* renamed from: k */
+    public int mo7540k() {
+            r1 = this;
+            i5.f r0 = r1.f12431a0
+            java.util.Objects.requireNonNull(r0)
+            int r0 = r0.mo7540k()
+            return r0
+    }
+
+    /* renamed from: u */
+    public void m7542u() {
+            r1 = this;
+            r0 = 0
+            r1.f12333Y = r0
+            r0 = 0
+            r1.f12431a0 = r0
+            return
+    }
+
+    /* renamed from: v */
+    public void m7543v(long r3, p143i5.InterfaceC3082f r5, long r6) {
+            r2 = this;
+            r2.f12364Z = r3
+            r2.f12431a0 = r5
+            r0 = 9223372036854775807(0x7fffffffffffffff, double:NaN)
+            int r5 = (r6 > r0 ? 1 : (r6 == r0 ? 0 : -1))
+            if (r5 != 0) goto Le
+            goto Lf
+        Le:
+            r3 = r6
+        Lf:
+            r2.f12432b0 = r3
+            return
+    }
+}
+package p143i5;
+
+/* renamed from: i5.a */
+/* loaded from: classes.dex */
+public final class C3077a implements p088f4.InterfaceC2014i {
+
+    /* renamed from: p0 */
+    public static final p143i5.C3077a f12384p0 = null;
+
+    /* renamed from: q0 */
+    public static final p088f4.InterfaceC2014i.a<p143i5.C3077a> f12385q0 = null;
+
+    /* renamed from: Y */
+    public final java.lang.CharSequence f12386Y;
+
+    /* renamed from: Z */
+    public final android.text.Layout.Alignment f12387Z;
+
+    /* renamed from: a0 */
+    public final android.text.Layout.Alignment f12388a0;
+
+    /* renamed from: b0 */
+    public final android.graphics.Bitmap f12389b0;
+
+    /* renamed from: c0 */
+    public final float f12390c0;
+
+    /* renamed from: d0 */
+    public final int f12391d0;
+
+    /* renamed from: e0 */
+    public final int f12392e0;
+
+    /* renamed from: f0 */
+    public final float f12393f0;
+
+    /* renamed from: g0 */
+    public final int f12394g0;
+
+    /* renamed from: h0 */
+    public final float f12395h0;
+
+    /* renamed from: i0 */
+    public final float f12396i0;
+
+    /* renamed from: j0 */
+    public final boolean f12397j0;
+
+    /* renamed from: k0 */
+    public final int f12398k0;
+
+    /* renamed from: l0 */
+    public final int f12399l0;
+
+    /* renamed from: m0 */
+    public final float f12400m0;
+
+    /* renamed from: n0 */
+    public final int f12401n0;
+
+    /* renamed from: o0 */
+    public final float f12402o0;
+
+    /* renamed from: i5.a$a */
+    public static /* synthetic */ class a {
+    }
+
+    /* renamed from: i5.a$b */
+    public static final class b {
+
+        /* renamed from: a */
+        public java.lang.CharSequence f12403a;
+
+        /* renamed from: b */
+        public android.graphics.Bitmap f12404b;
+
+        /* renamed from: c */
+        public android.text.Layout.Alignment f12405c;
+
+        /* renamed from: d */
+        public android.text.Layout.Alignment f12406d;
+
+        /* renamed from: e */
+        public float f12407e;
+
+        /* renamed from: f */
+        public int f12408f;
+
+        /* renamed from: g */
+        public int f12409g;
+
+        /* renamed from: h */
+        public float f12410h;
+
+        /* renamed from: i */
+        public int f12411i;
+
+        /* renamed from: j */
+        public int f12412j;
+
+        /* renamed from: k */
+        public float f12413k;
+
+        /* renamed from: l */
+        public float f12414l;
+
+        /* renamed from: m */
+        public float f12415m;
+
+        /* renamed from: n */
+        public boolean f12416n;
+
+        /* renamed from: o */
+        public int f12417o;
+
+        /* renamed from: p */
+        public int f12418p;
+
+        /* renamed from: q */
+        public float f12419q;
+
+        public b() {
+                r2 = this;
+                r2.<init>()
+                r0 = 0
+                r2.f12403a = r0
+                r2.f12404b = r0
+                r2.f12405c = r0
+                r2.f12406d = r0
+                r0 = -8388609(0xffffffffff7fffff, float:-3.4028235E38)
+                r2.f12407e = r0
+                r1 = -2147483648(0xffffffff80000000, float:-0.0)
+                r2.f12408f = r1
+                r2.f12409g = r1
+                r2.f12410h = r0
+                r2.f12411i = r1
+                r2.f12412j = r1
+                r2.f12413k = r0
+                r2.f12414l = r0
+                r2.f12415m = r0
+                r0 = 0
+                r2.f12416n = r0
+                r0 = -16777216(0xffffffffff000000, float:-1.7014118E38)
+                r2.f12417o = r0
+                r2.f12418p = r1
+                return
+        }
+
+        public b(p143i5.C3077a r1, p143i5.C3077a.a r2) {
+                r0 = this;
+                r0.<init>()
+                java.lang.CharSequence r2 = r1.f12386Y
+                r0.f12403a = r2
+                android.graphics.Bitmap r2 = r1.f12389b0
+                r0.f12404b = r2
+                android.text.Layout$Alignment r2 = r1.f12387Z
+                r0.f12405c = r2
+                android.text.Layout$Alignment r2 = r1.f12388a0
+                r0.f12406d = r2
+                float r2 = r1.f12390c0
+                r0.f12407e = r2
+                int r2 = r1.f12391d0
+                r0.f12408f = r2
+                int r2 = r1.f12392e0
+                r0.f12409g = r2
+                float r2 = r1.f12393f0
+                r0.f12410h = r2
+                int r2 = r1.f12394g0
+                r0.f12411i = r2
+                int r2 = r1.f12399l0
+                r0.f12412j = r2
+                float r2 = r1.f12400m0
+                r0.f12413k = r2
+                float r2 = r1.f12395h0
+                r0.f12414l = r2
+                float r2 = r1.f12396i0
+                r0.f12415m = r2
+                boolean r2 = r1.f12397j0
+                r0.f12416n = r2
+                int r2 = r1.f12398k0
+                r0.f12417o = r2
+                int r2 = r1.f12401n0
+                r0.f12418p = r2
+                float r1 = r1.f12402o0
+                r0.f12419q = r1
+                return
+        }
+
+        /* renamed from: a */
+        public p143i5.C3077a m7535a() {
+                r22 = this;
+                r0 = r22
+                i5.a r20 = new i5.a
+                r1 = r20
+                java.lang.CharSequence r2 = r0.f12403a
+                android.text.Layout$Alignment r3 = r0.f12405c
+                android.text.Layout$Alignment r4 = r0.f12406d
+                android.graphics.Bitmap r5 = r0.f12404b
+                float r6 = r0.f12407e
+                int r7 = r0.f12408f
+                int r8 = r0.f12409g
+                float r9 = r0.f12410h
+                int r10 = r0.f12411i
+                int r11 = r0.f12412j
+                float r12 = r0.f12413k
+                float r13 = r0.f12414l
+                float r14 = r0.f12415m
+                boolean r15 = r0.f12416n
+                r21 = r1
+                int r1 = r0.f12417o
+                r16 = r1
+                int r1 = r0.f12418p
+                r17 = r1
+                float r1 = r0.f12419q
+                r18 = r1
+                r19 = 0
+                r1 = r21
+                r1.<init>(r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19)
+                return r20
+        }
+    }
+
+    static {
+            r4 = 0
+            r13 = -8388609(0xffffffffff7fffff, float:-3.4028235E38)
+            r16 = -2147483648(0xffffffff80000000, float:-0.0)
+            r14 = 0
+            r15 = -16777216(0xffffffffff000000, float:-1.7014118E38)
+            i5.a r19 = new i5.a
+            r0 = r19
+            r18 = 0
+            java.lang.String r1 = ""
+            r17 = 0
+            r2 = r4
+            r3 = r4
+            r5 = r13
+            r6 = r16
+            r7 = r16
+            r8 = r13
+            r9 = r16
+            r10 = r16
+            r11 = r13
+            r12 = r13
+            r0.<init>(r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18)
+            p143i5.C3077a.f12384p0 = r19
+            k1.c r0 = p179k1.C3644c.f16093o0
+            p143i5.C3077a.f12385q0 = r0
+            return
+    }
+
+    public C3077a(java.lang.CharSequence r5, android.text.Layout.Alignment r6, android.text.Layout.Alignment r7, android.graphics.Bitmap r8, float r9, int r10, int r11, float r12, int r13, int r14, float r15, float r16, float r17, boolean r18, int r19, int r20, float r21, p143i5.C3077a.a r22) {
+            r4 = this;
+            r0 = r4
+            r1 = r5
+            r2 = r8
+            r4.<init>()
+            if (r1 != 0) goto Lc
+            java.util.Objects.requireNonNull(r8)
+            goto L14
+        Lc:
+            if (r2 != 0) goto L10
+            r3 = 1
+            goto L11
+        L10:
+            r3 = 0
+        L11:
+            p371v5.C6549a.m13288b(r3)
+        L14:
+            boolean r3 = r1 instanceof android.text.Spanned
+            if (r3 == 0) goto L1d
+            android.text.SpannedString r1 = android.text.SpannedString.valueOf(r5)
+            goto L25
+        L1d:
+            if (r1 == 0) goto L24
+            java.lang.String r1 = r5.toString()
+            goto L25
+        L24:
+            r1 = 0
+        L25:
+            r0.f12386Y = r1
+            r1 = r6
+            r0.f12387Z = r1
+            r1 = r7
+            r0.f12388a0 = r1
+            r0.f12389b0 = r2
+            r1 = r9
+            r0.f12390c0 = r1
+            r1 = r10
+            r0.f12391d0 = r1
+            r1 = r11
+            r0.f12392e0 = r1
+            r1 = r12
+            r0.f12393f0 = r1
+            r1 = r13
+            r0.f12394g0 = r1
+            r1 = r16
+            r0.f12395h0 = r1
+            r1 = r17
+            r0.f12396i0 = r1
+            r1 = r18
+            r0.f12397j0 = r1
+            r1 = r19
+            r0.f12398k0 = r1
+            r1 = r14
+            r0.f12399l0 = r1
+            r1 = r15
+            r0.f12400m0 = r1
+            r1 = r20
+            r0.f12401n0 = r1
+            r1 = r21
+            r0.f12402o0 = r1
+            return
+    }
+
+    /* renamed from: b */
+    public static java.lang.String m7533b(int r1) {
+            r0 = 36
+            java.lang.String r1 = java.lang.Integer.toString(r1, r0)
+            return r1
+    }
+
+    /* renamed from: a */
+    public p143i5.C3077a.b m7534a() {
+            r2 = this;
+            i5.a$b r0 = new i5.a$b
+            r1 = 0
+            r0.<init>(r2, r1)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            r1 = 0
+            if (r5 == 0) goto L99
+            java.lang.Class<i5.a> r2 = p143i5.C3077a.class
+            java.lang.Class r3 = r5.getClass()
+            if (r2 == r3) goto L11
+            goto L99
+        L11:
+            i5.a r5 = (p143i5.C3077a) r5
+            java.lang.CharSequence r2 = r4.f12386Y
+            java.lang.CharSequence r3 = r5.f12386Y
+            boolean r2 = android.text.TextUtils.equals(r2, r3)
+            if (r2 == 0) goto L97
+            android.text.Layout$Alignment r2 = r4.f12387Z
+            android.text.Layout$Alignment r3 = r5.f12387Z
+            if (r2 != r3) goto L97
+            android.text.Layout$Alignment r2 = r4.f12388a0
+            android.text.Layout$Alignment r3 = r5.f12388a0
+            if (r2 != r3) goto L97
+            android.graphics.Bitmap r2 = r4.f12389b0
+            if (r2 != 0) goto L32
+            android.graphics.Bitmap r2 = r5.f12389b0
+            if (r2 != 0) goto L97
+            goto L3c
+        L32:
+            android.graphics.Bitmap r3 = r5.f12389b0
+            if (r3 == 0) goto L97
+            boolean r2 = r2.sameAs(r3)
+            if (r2 == 0) goto L97
+        L3c:
+            float r2 = r4.f12390c0
+            float r3 = r5.f12390c0
+            int r2 = (r2 > r3 ? 1 : (r2 == r3 ? 0 : -1))
+            if (r2 != 0) goto L97
+            int r2 = r4.f12391d0
+            int r3 = r5.f12391d0
+            if (r2 != r3) goto L97
+            int r2 = r4.f12392e0
+            int r3 = r5.f12392e0
+            if (r2 != r3) goto L97
+            float r2 = r4.f12393f0
+            float r3 = r5.f12393f0
+            int r2 = (r2 > r3 ? 1 : (r2 == r3 ? 0 : -1))
+            if (r2 != 0) goto L97
+            int r2 = r4.f12394g0
+            int r3 = r5.f12394g0
+            if (r2 != r3) goto L97
+            float r2 = r4.f12395h0
+            float r3 = r5.f12395h0
+            int r2 = (r2 > r3 ? 1 : (r2 == r3 ? 0 : -1))
+            if (r2 != 0) goto L97
+            float r2 = r4.f12396i0
+            float r3 = r5.f12396i0
+            int r2 = (r2 > r3 ? 1 : (r2 == r3 ? 0 : -1))
+            if (r2 != 0) goto L97
+            boolean r2 = r4.f12397j0
+            boolean r3 = r5.f12397j0
+            if (r2 != r3) goto L97
+            int r2 = r4.f12398k0
+            int r3 = r5.f12398k0
+            if (r2 != r3) goto L97
+            int r2 = r4.f12399l0
+            int r3 = r5.f12399l0
+            if (r2 != r3) goto L97
+            float r2 = r4.f12400m0
+            float r3 = r5.f12400m0
+            int r2 = (r2 > r3 ? 1 : (r2 == r3 ? 0 : -1))
+            if (r2 != 0) goto L97
+            int r2 = r4.f12401n0
+            int r3 = r5.f12401n0
+            if (r2 != r3) goto L97
+            float r2 = r4.f12402o0
+            float r5 = r5.f12402o0
+            int r5 = (r2 > r5 ? 1 : (r2 == r5 ? 0 : -1))
+            if (r5 != 0) goto L97
+            goto L98
+        L97:
+            r0 = 0
+        L98:
+            return r0
+        L99:
+            return r1
+    }
+
+    public int hashCode() {
+            r3 = this;
+            r0 = 17
+            java.lang.Object[] r0 = new java.lang.Object[r0]
+            java.lang.CharSequence r1 = r3.f12386Y
+            r2 = 0
+            r0[r2] = r1
+            android.text.Layout$Alignment r1 = r3.f12387Z
+            r2 = 1
+            r0[r2] = r1
+            android.text.Layout$Alignment r1 = r3.f12388a0
+            r2 = 2
+            r0[r2] = r1
+            android.graphics.Bitmap r1 = r3.f12389b0
+            r2 = 3
+            r0[r2] = r1
+            float r1 = r3.f12390c0
+            java.lang.Float r1 = java.lang.Float.valueOf(r1)
+            r2 = 4
+            r0[r2] = r1
+            int r1 = r3.f12391d0
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)
+            r2 = 5
+            r0[r2] = r1
+            int r1 = r3.f12392e0
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)
+            r2 = 6
+            r0[r2] = r1
+            float r1 = r3.f12393f0
+            java.lang.Float r1 = java.lang.Float.valueOf(r1)
+            r2 = 7
+            r0[r2] = r1
+            int r1 = r3.f12394g0
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)
+            r2 = 8
+            r0[r2] = r1
+            float r1 = r3.f12395h0
+            java.lang.Float r1 = java.lang.Float.valueOf(r1)
+            r2 = 9
+            r0[r2] = r1
+            float r1 = r3.f12396i0
+            java.lang.Float r1 = java.lang.Float.valueOf(r1)
+            r2 = 10
+            r0[r2] = r1
+            boolean r1 = r3.f12397j0
+            java.lang.Boolean r1 = java.lang.Boolean.valueOf(r1)
+            r2 = 11
+            r0[r2] = r1
+            int r1 = r3.f12398k0
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)
+            r2 = 12
+            r0[r2] = r1
+            int r1 = r3.f12399l0
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)
+            r2 = 13
+            r0[r2] = r1
+            float r1 = r3.f12400m0
+            java.lang.Float r1 = java.lang.Float.valueOf(r1)
+            r2 = 14
+            r0[r2] = r1
+            int r1 = r3.f12401n0
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)
+            r2 = 15
+            r0[r2] = r1
+            float r1 = r3.f12402o0
+            java.lang.Float r1 = java.lang.Float.valueOf(r1)
+            r2 = 16
+            r0[r2] = r1
+            int r0 = java.util.Arrays.hashCode(r0)
+            return r0
+    }
+}
+package p143i5;
+
+/* renamed from: i5.b */
+/* loaded from: classes.dex */
+public final class C3078b {
+    public C3078b() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+}
+package p143i5;
+
+/* renamed from: i5.c */
+/* loaded from: classes.dex */
+public final class C3079c implements p143i5.InterfaceC3083g {
+
+    /* renamed from: a */
+    public final p143i5.C3078b f12420a;
+
+    /* renamed from: b */
+    public final p143i5.C3086j f12421b;
+
+    /* renamed from: c */
+    public final java.util.Deque<p143i5.AbstractC3087k> f12422c;
+
+    /* renamed from: d */
+    public int f12423d;
+
+    /* renamed from: e */
+    public boolean f12424e;
+
+    /* renamed from: i5.c$a */
+    public class a extends p143i5.AbstractC3087k {
+
+        /* renamed from: c0 */
+        public final /* synthetic */ p143i5.C3079c f12425c0;
+
+        public a(p143i5.C3079c r1) {
+                r0 = this;
+                r0.f12425c0 = r1
+                r0.<init>()
+                return
+        }
+
+        @Override // p142i4.AbstractC3074h
+        /* renamed from: t */
+        public void mo7527t() {
+                r4 = this;
+                i5.c r0 = r4.f12425c0
+                java.util.Deque<i5.k> r1 = r0.f12422c
+                int r1 = r1.size()
+                r2 = 2
+                r3 = 1
+                if (r1 >= r2) goto Le
+                r1 = 1
+                goto Lf
+            Le:
+                r1 = 0
+            Lf:
+                p371v5.C6549a.m13291e(r1)
+                java.util.Deque<i5.k> r1 = r0.f12422c
+                boolean r1 = r1.contains(r4)
+                r1 = r1 ^ r3
+                p371v5.C6549a.m13288b(r1)
+                r4.m7542u()
+                java.util.Deque<i5.k> r0 = r0.f12422c
+                r0.addFirst(r4)
+                return
+        }
+    }
+
+    /* renamed from: i5.c$b */
+    public static final class b implements p143i5.InterfaceC3082f {
+
+        /* renamed from: Y */
+        public final long f12426Y;
+
+        /* renamed from: Z */
+        public final p026b9.AbstractC0714n<p143i5.C3077a> f12427Z;
+
+        public b(long r1, p026b9.AbstractC0714n<p143i5.C3077a> r3) {
+                r0 = this;
+                r0.<init>()
+                r0.f12426Y = r1
+                r0.f12427Z = r3
+                return
+        }
+
+        @Override // p143i5.InterfaceC3082f
+        /* renamed from: e */
+        public int mo7537e(long r4) {
+                r3 = this;
+                long r0 = r3.f12426Y
+                int r2 = (r0 > r4 ? 1 : (r0 == r4 ? 0 : -1))
+                if (r2 <= 0) goto L8
+                r4 = 0
+                goto L9
+            L8:
+                r4 = -1
+            L9:
+                return r4
+        }
+
+        @Override // p143i5.InterfaceC3082f
+        /* renamed from: g */
+        public long mo7538g(int r3) {
+                r2 = this;
+                if (r3 != 0) goto L4
+                r3 = 1
+                goto L5
+            L4:
+                r3 = 0
+            L5:
+                p371v5.C6549a.m13288b(r3)
+                long r0 = r2.f12426Y
+                return r0
+        }
+
+        @Override // p143i5.InterfaceC3082f
+        /* renamed from: h */
+        public java.util.List<p143i5.C3077a> mo7539h(long r4) {
+                r3 = this;
+                long r0 = r3.f12426Y
+                int r2 = (r4 > r0 ? 1 : (r4 == r0 ? 0 : -1))
+                if (r2 < 0) goto L9
+                b9.n<i5.a> r4 = r3.f12427Z
+                goto Ld
+            L9:
+                b9.a<java.lang.Object> r4 = p026b9.AbstractC0714n.f3979Z
+                b9.n<java.lang.Object> r4 = p026b9.C0693c0.f3898c0
+            Ld:
+                return r4
+        }
+
+        @Override // p143i5.InterfaceC3082f
+        /* renamed from: k */
+        public int mo7540k() {
+                r1 = this;
+                r0 = 1
+                return r0
+        }
+    }
+
+    public C3079c() {
+            r4 = this;
+            r4.<init>()
+            i5.b r0 = new i5.b
+            r0.<init>()
+            r4.f12420a = r0
+            i5.j r0 = new i5.j
+            r0.<init>()
+            r4.f12421b = r0
+            java.util.ArrayDeque r0 = new java.util.ArrayDeque
+            r0.<init>()
+            r4.f12422c = r0
+            r0 = 0
+            r1 = 0
+        L1a:
+            r2 = 2
+            if (r1 >= r2) goto L2a
+            java.util.Deque<i5.k> r2 = r4.f12422c
+            i5.c$a r3 = new i5.c$a
+            r3.<init>(r4)
+            r2.addFirst(r3)
+            int r1 = r1 + 1
+            goto L1a
+        L2a:
+            r4.f12423d = r0
+            return
+    }
+
+    @Override // p143i5.InterfaceC3083g
+    /* renamed from: a */
+    public void mo7536a(long r1) {
+            r0 = this;
+            return
+    }
+
+    @Override // p142i4.InterfaceC3070d
+    /* renamed from: b */
+    public void mo7519b(p143i5.C3086j r4) {
+            r3 = this;
+            i5.j r4 = (p143i5.C3086j) r4
+            boolean r0 = r3.f12424e
+            r1 = 1
+            r0 = r0 ^ r1
+            p371v5.C6549a.m13291e(r0)
+            int r0 = r3.f12423d
+            r2 = 0
+            if (r0 != r1) goto L10
+            r0 = 1
+            goto L11
+        L10:
+            r0 = 0
+        L11:
+            p371v5.C6549a.m13291e(r0)
+            i5.j r0 = r3.f12421b
+            if (r0 != r4) goto L19
+            goto L1a
+        L19:
+            r1 = 0
+        L1a:
+            p371v5.C6549a.m13288b(r1)
+            r4 = 2
+            r3.f12423d = r4
+            return
+    }
+
+    @Override // p142i4.InterfaceC3070d
+    /* renamed from: c */
+    public p143i5.AbstractC3087k mo7520c() {
+            r8 = this;
+            boolean r0 = r8.f12424e
+            r0 = r0 ^ 1
+            p371v5.C6549a.m13291e(r0)
+            int r0 = r8.f12423d
+            r1 = 2
+            if (r0 != r1) goto L7b
+            java.util.Deque<i5.k> r0 = r8.f12422c
+            boolean r0 = r0.isEmpty()
+            if (r0 == 0) goto L15
+            goto L7b
+        L15:
+            java.util.Deque<i5.k> r0 = r8.f12422c
+            java.lang.Object r0 = r0.removeFirst()
+            i5.k r0 = (p143i5.AbstractC3087k) r0
+            i5.j r1 = r8.f12421b
+            boolean r1 = r1.m7517r()
+            r7 = 0
+            if (r1 == 0) goto L2b
+            r1 = 4
+            r0.m7513l(r1)
+            goto L73
+        L2b:
+            i5.c$b r4 = new i5.c$b
+            i5.j r1 = r8.f12421b
+            long r2 = r1.f12360c0
+            i5.b r5 = r8.f12420a
+            java.nio.ByteBuffer r1 = r1.f12358a0
+            java.util.Objects.requireNonNull(r1)
+            byte[] r1 = r1.array()
+            java.util.Objects.requireNonNull(r5)
+            android.os.Parcel r5 = android.os.Parcel.obtain()
+            int r6 = r1.length
+            r5.unmarshall(r1, r7, r6)
+            r5.setDataPosition(r7)
+            java.lang.Class<android.os.Bundle> r1 = android.os.Bundle.class
+            java.lang.ClassLoader r1 = r1.getClassLoader()
+            android.os.Bundle r1 = r5.readBundle(r1)
+            r5.recycle()
+            java.lang.String r5 = "c"
+            java.util.ArrayList r1 = r1.getParcelableArrayList(r5)
+            java.util.Objects.requireNonNull(r1)
+            f4.i$a<i5.a> r5 = p143i5.C3077a.f12385q0
+            b9.n r1 = p371v5.C6551b.m13294a(r5, r1)
+            r4.<init>(r2, r1)
+            i5.j r1 = r8.f12421b
+            long r2 = r1.f12360c0
+            r5 = 0
+            r1 = r0
+            r1.m7543v(r2, r4, r5)
+        L73:
+            i5.j r1 = r8.f12421b
+            r1.mo7522t()
+            r8.f12423d = r7
+            goto L7c
+        L7b:
+            r0 = 0
+        L7c:
+            return r0
+    }
+
+    @Override // p142i4.InterfaceC3070d
+    /* renamed from: d */
+    public p143i5.C3086j mo7521d() {
+            r2 = this;
+            boolean r0 = r2.f12424e
+            r1 = 1
+            r0 = r0 ^ r1
+            p371v5.C6549a.m13291e(r0)
+            int r0 = r2.f12423d
+            if (r0 == 0) goto Ld
+            r0 = 0
+            goto L11
+        Ld:
+            r2.f12423d = r1
+            i5.j r0 = r2.f12421b
+        L11:
+            return r0
+    }
+
+    @Override // p142i4.InterfaceC3070d
+    public void flush() {
+            r1 = this;
+            boolean r0 = r1.f12424e
+            r0 = r0 ^ 1
+            p371v5.C6549a.m13291e(r0)
+            i5.j r0 = r1.f12421b
+            r0.mo7522t()
+            r0 = 0
+            r1.f12423d = r0
+            return
+    }
+
+    @Override // p142i4.InterfaceC3070d
+    public void release() {
+            r1 = this;
+            r0 = 1
+            r1.f12424e = r0
+            return
+    }
+}
+package p143i5;
+
+/* renamed from: i5.d */
+/* loaded from: classes.dex */
+public class C3080d extends p143i5.AbstractC3087k {
+
+    /* renamed from: c0 */
+    public final /* synthetic */ p143i5.AbstractC3081e f12428c0;
+
+    public C3080d(p143i5.AbstractC3081e r1) {
+            r0 = this;
+            r0.f12428c0 = r1
+            r0.<init>()
+            return
+    }
+
+    @Override // p142i4.AbstractC3074h
+    /* renamed from: t */
+    public void mo7527t() {
+            r5 = this;
+            i5.e r0 = r5.f12428c0
+            java.lang.Object r1 = r0.f12371b
+            monitor-enter(r1)
+            r5.m7542u()     // Catch: java.lang.Throwable -> L17
+            O extends i4.h[] r2 = r0.f12375f     // Catch: java.lang.Throwable -> L17
+            int r3 = r0.f12377h     // Catch: java.lang.Throwable -> L17
+            int r4 = r3 + 1
+            r0.f12377h = r4     // Catch: java.lang.Throwable -> L17
+            r2[r3] = r5     // Catch: java.lang.Throwable -> L17
+            r0.m7530g()     // Catch: java.lang.Throwable -> L17
+            monitor-exit(r1)     // Catch: java.lang.Throwable -> L17
+            return
+        L17:
+            r0 = move-exception
+            monitor-exit(r1)     // Catch: java.lang.Throwable -> L17
+            throw r0
+    }
+}
+package p143i5;
+
+/* renamed from: i5.h */
+/* loaded from: classes.dex */
+public class C3084h extends p142i4.C3072f {
+    public C3084h(java.lang.String r1) {
+            r0 = this;
+            r0.<init>(r1)
+            return
+    }
+
+    public C3084h(java.lang.String r1, java.lang.Throwable r2) {
+            r0 = this;
+            r0.<init>(r1, r2)
+            return
+    }
+
+    public C3084h(java.lang.Throwable r1) {
+            r0 = this;
+            r0.<init>(r1)
+            return
+    }
+}
+package p143i5;
+
+/* renamed from: i5.j */
+/* loaded from: classes.dex */
+public class C3086j extends p142i4.C3073g {
+
+    /* renamed from: g0 */
+    public long f12430g0;
+
+    public C3086j() {
+            r1 = this;
+            r0 = 1
+            r1.<init>(r0)
+            return
+    }
+}
+package p143i5;
+
+/* renamed from: i5.m */
+/* loaded from: classes.dex */
+public final class C3089m extends p088f4.AbstractC2008g implements android.os.Handler.Callback {
+
+    /* renamed from: j0 */
+    public final android.os.Handler f12433j0;
+
+    /* renamed from: k0 */
+    public final p143i5.InterfaceC3088l f12434k0;
+
+    /* renamed from: l0 */
+    public final p143i5.InterfaceC3085i f12435l0;
+
+    /* renamed from: m0 */
+    public final androidx.appcompat.widget.C0311x f12436m0;
+
+    /* renamed from: n0 */
+    public boolean f12437n0;
+
+    /* renamed from: o0 */
+    public boolean f12438o0;
+
+    /* renamed from: p0 */
+    public boolean f12439p0;
+
+    /* renamed from: q0 */
+    public int f12440q0;
+
+    /* renamed from: r0 */
+    public p088f4.C2003e0 f12441r0;
+
+    /* renamed from: s0 */
+    public p143i5.InterfaceC3083g f12442s0;
+
+    /* renamed from: t0 */
+    public p143i5.C3086j f12443t0;
+
+    /* renamed from: u0 */
+    public p143i5.AbstractC3087k f12444u0;
+
+    /* renamed from: v0 */
+    public p143i5.AbstractC3087k f12445v0;
+
+    /* renamed from: w0 */
+    public int f12446w0;
+
+    /* renamed from: x0 */
+    public long f12447x0;
+
+    public C3089m(p143i5.InterfaceC3088l r3, android.os.Looper r4) {
+            r2 = this;
+            i5.i r0 = p143i5.InterfaceC3085i.f12429a
+            r1 = 3
+            r2.<init>(r1)
+            java.util.Objects.requireNonNull(r3)
+            r2.f12434k0 = r3
+            if (r4 != 0) goto Lf
+            r3 = 0
+            goto L16
+        Lf:
+            int r3 = p371v5.C6552b0.f25624a
+            android.os.Handler r3 = new android.os.Handler
+            r3.<init>(r4, r2)
+        L16:
+            r2.f12433j0 = r3
+            r2.f12435l0 = r0
+            androidx.appcompat.widget.x r3 = new androidx.appcompat.widget.x
+            r4 = 7
+            r3.<init>(r4)
+            r2.f12436m0 = r3
+            r3 = -9223372036854775807(0x8000000000000001, double:-4.9E-324)
+            r2.f12447x0 = r3
+            return
+    }
+
+    @Override // p088f4.AbstractC2008g
+    /* renamed from: D */
+    public void mo5244D() {
+            r3 = this;
+            r0 = 0
+            r3.f12441r0 = r0
+            r1 = -9223372036854775807(0x8000000000000001, double:-4.9E-324)
+            r3.f12447x0 = r1
+            r3.m7544L()
+            r3.m7548P()
+            i5.g r1 = r3.f12442s0
+            java.util.Objects.requireNonNull(r1)
+            r1.release()
+            r3.f12442s0 = r0
+            r0 = 0
+            r3.f12440q0 = r0
+            return
+    }
+
+    @Override // p088f4.AbstractC2008g
+    /* renamed from: F */
+    public void mo5246F(long r1, boolean r3) {
+            r0 = this;
+            r0.m7544L()
+            r1 = 0
+            r0.f12437n0 = r1
+            r0.f12438o0 = r1
+            r1 = -9223372036854775807(0x8000000000000001, double:-4.9E-324)
+            r0.f12447x0 = r1
+            int r1 = r0.f12440q0
+            if (r1 == 0) goto L17
+            r0.m7549Q()
+            goto L22
+        L17:
+            r0.m7548P()
+            i5.g r1 = r0.f12442s0
+            java.util.Objects.requireNonNull(r1)
+            r1.flush()
+        L22:
+            return
+    }
+
+    @Override // p088f4.AbstractC2008g
+    /* renamed from: J */
+    public void mo5250J(p088f4.C2003e0[] r1, long r2, long r4) {
+            r0 = this;
+            r2 = 0
+            r1 = r1[r2]
+            r0.f12441r0 = r1
+            i5.g r1 = r0.f12442s0
+            if (r1 == 0) goto Ld
+            r1 = 1
+            r0.f12440q0 = r1
+            goto L10
+        Ld:
+            r0.m7547O()
+        L10:
+            return
+    }
+
+    /* renamed from: L */
+    public final void m7544L() {
+            r3 = this;
+            java.util.List r0 = java.util.Collections.emptyList()
+            android.os.Handler r1 = r3.f12433j0
+            if (r1 == 0) goto L11
+            r2 = 0
+            android.os.Message r0 = r1.obtainMessage(r2, r0)
+            r0.sendToTarget()
+            goto L16
+        L11:
+            i5.l r1 = r3.f12434k0
+            r1.mo5292d(r0)
+        L16:
+            return
+    }
+
+    /* renamed from: M */
+    public final long m7545M() {
+            r5 = this;
+            int r0 = r5.f12446w0
+            r1 = 9223372036854775807(0x7fffffffffffffff, double:NaN)
+            r3 = -1
+            if (r0 != r3) goto Lb
+            return r1
+        Lb:
+            i5.k r0 = r5.f12444u0
+            java.util.Objects.requireNonNull(r0)
+            int r0 = r5.f12446w0
+            i5.k r3 = r5.f12444u0
+            i5.f r3 = r3.f12431a0
+            java.util.Objects.requireNonNull(r3)
+            int r3 = r3.mo7540k()
+            if (r0 < r3) goto L20
+            goto L30
+        L20:
+            i5.k r0 = r5.f12444u0
+            int r1 = r5.f12446w0
+            i5.f r2 = r0.f12431a0
+            java.util.Objects.requireNonNull(r2)
+            long r1 = r2.mo7538g(r1)
+            long r3 = r0.f12432b0
+            long r1 = r1 + r3
+        L30:
+            return r1
+    }
+
+    /* renamed from: N */
+    public final void m7546N(p143i5.C3084h r4) {
+            r3 = this;
+            f4.e0 r0 = r3.f12441r0
+            java.lang.String r0 = java.lang.String.valueOf(r0)
+            int r1 = r0.length()
+            int r1 = r1 + 39
+            java.lang.StringBuilder r2 = new java.lang.StringBuilder
+            r2.<init>(r1)
+            java.lang.String r1 = "Subtitle decoding failed. streamFormat="
+            r2.append(r1)
+            r2.append(r0)
+            java.lang.String r0 = r2.toString()
+            java.lang.String r1 = "TextRenderer"
+            p371v5.C6565o.m13369b(r1, r0, r4)
+            r3.m7544L()
+            r3.m7549Q()
+            return
+    }
+
+    /* renamed from: O */
+    public final void m7547O() {
+            r5 = this;
+            r0 = 1
+            r5.f12439p0 = r0
+            i5.i r1 = r5.f12435l0
+            f4.e0 r2 = r5.f12441r0
+            java.util.Objects.requireNonNull(r2)
+            i5.i$a r1 = (p143i5.InterfaceC3085i.a) r1
+            java.util.Objects.requireNonNull(r1)
+            java.lang.String r1 = r2.f8896j0
+            if (r1 == 0) goto Lfe
+            r3 = -1
+            int r4 = r1.hashCode()
+            switch(r4) {
+                case -1351681404: goto L9d;
+                case -1248334819: goto L93;
+                case -1026075066: goto L88;
+                case -1004728940: goto L7d;
+                case 691401887: goto L72;
+                case 822864842: goto L67;
+                case 930165504: goto L5c;
+                case 1201784583: goto L51;
+                case 1566015601: goto L45;
+                case 1566016562: goto L38;
+                case 1668750253: goto L2b;
+                case 1693976202: goto L1e;
+                default: goto L1b;
+            }
+        L1b:
+            r0 = -1
+            goto La8
+        L1e:
+            java.lang.String r0 = "application/ttml+xml"
+            boolean r0 = r1.equals(r0)
+            if (r0 != 0) goto L27
+            goto L1b
+        L27:
+            r0 = 11
+            goto La8
+        L2b:
+            java.lang.String r0 = "application/x-subrip"
+            boolean r0 = r1.equals(r0)
+            if (r0 != 0) goto L34
+            goto L1b
+        L34:
+            r0 = 10
+            goto La8
+        L38:
+            java.lang.String r0 = "application/cea-708"
+            boolean r0 = r1.equals(r0)
+            if (r0 != 0) goto L41
+            goto L1b
+        L41:
+            r0 = 9
+            goto La8
+        L45:
+            java.lang.String r0 = "application/cea-608"
+            boolean r0 = r1.equals(r0)
+            if (r0 != 0) goto L4e
+            goto L1b
+        L4e:
+            r0 = 8
+            goto La8
+        L51:
+            java.lang.String r0 = "text/x-exoplayer-cues"
+            boolean r0 = r1.equals(r0)
+            if (r0 != 0) goto L5a
+            goto L1b
+        L5a:
+            r0 = 7
+            goto La8
+        L5c:
+            java.lang.String r0 = "application/x-mp4-cea-608"
+            boolean r0 = r1.equals(r0)
+            if (r0 != 0) goto L65
+            goto L1b
+        L65:
+            r0 = 6
+            goto La8
+        L67:
+            java.lang.String r0 = "text/x-ssa"
+            boolean r0 = r1.equals(r0)
+            if (r0 != 0) goto L70
+            goto L1b
+        L70:
+            r0 = 5
+            goto La8
+        L72:
+            java.lang.String r0 = "application/x-quicktime-tx3g"
+            boolean r0 = r1.equals(r0)
+            if (r0 != 0) goto L7b
+            goto L1b
+        L7b:
+            r0 = 4
+            goto La8
+        L7d:
+            java.lang.String r0 = "text/vtt"
+            boolean r0 = r1.equals(r0)
+            if (r0 != 0) goto L86
+            goto L1b
+        L86:
+            r0 = 3
+            goto La8
+        L88:
+            java.lang.String r0 = "application/x-mp4-vtt"
+            boolean r0 = r1.equals(r0)
+            if (r0 != 0) goto L91
+            goto L1b
+        L91:
+            r0 = 2
+            goto La8
+        L93:
+            java.lang.String r4 = "application/pgs"
+            boolean r4 = r1.equals(r4)
+            if (r4 != 0) goto La8
+            goto L1b
+        L9d:
+            java.lang.String r0 = "application/dvbsubs"
+            boolean r0 = r1.equals(r0)
+            if (r0 != 0) goto La7
+            goto L1b
+        La7:
+            r0 = 0
+        La8:
+            switch(r0) {
+                case 0: goto Lf4;
+                case 1: goto Lee;
+                case 2: goto Le8;
+                case 3: goto Le2;
+                case 4: goto Lda;
+                case 5: goto Ld2;
+                case 6: goto Lc8;
+                case 7: goto Lc2;
+                case 8: goto Lc8;
+                case 9: goto Lb8;
+                case 10: goto Lb2;
+                case 11: goto Lac;
+                default: goto Lab;
+            }
+        Lab:
+            goto Lfe
+        Lac:
+            p5.c r0 = new p5.c
+            r0.<init>()
+            goto Lfb
+        Lb2:
+            o5.a r0 = new o5.a
+            r0.<init>()
+            goto Lfb
+        Lb8:
+            j5.c r0 = new j5.c
+            int r1 = r2.f8882B0
+            java.util.List<byte[]> r2 = r2.f8898l0
+            r0.<init>(r1, r2)
+            goto Lfb
+        Lc2:
+            i5.c r0 = new i5.c
+            r0.<init>()
+            goto Lfb
+        Lc8:
+            j5.a r0 = new j5.a
+            int r2 = r2.f8882B0
+            r3 = 16000(0x3e80, double:7.905E-320)
+            r0.<init>(r1, r2, r3)
+            goto Lfb
+        Ld2:
+            n5.a r0 = new n5.a
+            java.util.List<byte[]> r1 = r2.f8898l0
+            r0.<init>(r1)
+            goto Lfb
+        Lda:
+            q5.a r0 = new q5.a
+            java.util.List<byte[]> r1 = r2.f8898l0
+            r0.<init>(r1)
+            goto Lfb
+        Le2:
+            r5.g r0 = new r5.g
+            r0.<init>()
+            goto Lfb
+        Le8:
+            r5.a r0 = new r5.a
+            r0.<init>()
+            goto Lfb
+        Lee:
+            l5.a r0 = new l5.a
+            r0.<init>()
+            goto Lfb
+        Lf4:
+            k5.a r0 = new k5.a
+            java.util.List<byte[]> r1 = r2.f8898l0
+            r0.<init>(r1)
+        Lfb:
+            r5.f12442s0 = r0
+            return
+        Lfe:
+            java.lang.IllegalArgumentException r0 = new java.lang.IllegalArgumentException
+            java.lang.String r2 = "Attempted to create decoder for unsupported MIME type: "
+            java.lang.String r1 = java.lang.String.valueOf(r1)
+            int r3 = r1.length()
+            if (r3 == 0) goto L111
+            java.lang.String r1 = r2.concat(r1)
+            goto L116
+        L111:
+            java.lang.String r1 = new java.lang.String
+            r1.<init>(r2)
+        L116:
+            r0.<init>(r1)
+            throw r0
+    }
+
+    /* renamed from: P */
+    public final void m7548P() {
+            r2 = this;
+            r0 = 0
+            r2.f12443t0 = r0
+            r1 = -1
+            r2.f12446w0 = r1
+            i5.k r1 = r2.f12444u0
+            if (r1 == 0) goto Lf
+            r1.mo7527t()
+            r2.f12444u0 = r0
+        Lf:
+            i5.k r1 = r2.f12445v0
+            if (r1 == 0) goto L18
+            r1.mo7527t()
+            r2.f12445v0 = r0
+        L18:
+            return
+    }
+
+    /* renamed from: Q */
+    public final void m7549Q() {
+            r1 = this;
+            r1.m7548P()
+            i5.g r0 = r1.f12442s0
+            java.util.Objects.requireNonNull(r0)
+            r0.release()
+            r0 = 0
+            r1.f12442s0 = r0
+            r0 = 0
+            r1.f12440q0 = r0
+            r1.m7547O()
+            return
+    }
+
+    @Override // p088f4.InterfaceC2004e1, p088f4.InterfaceC2007f1
+    /* renamed from: a */
+    public java.lang.String mo5195a() {
+            r1 = this;
+            java.lang.String r0 = "TextRenderer"
+            return r0
+    }
+
+    @Override // p088f4.InterfaceC2004e1
+    /* renamed from: d */
+    public boolean mo5197d() {
+            r1 = this;
+            boolean r0 = r1.f12438o0
+            return r0
+    }
+
+    @Override // p088f4.InterfaceC2007f1
+    /* renamed from: f */
+    public int mo5239f(p088f4.C2003e0 r5) {
+            r4 = this;
+            i5.i r0 = r4.f12435l0
+            i5.i$a r0 = (p143i5.InterfaceC3085i.a) r0
+            java.util.Objects.requireNonNull(r0)
+            java.lang.String r0 = r5.f8896j0
+            java.lang.String r1 = "text/vtt"
+            boolean r1 = r1.equals(r0)
+            r2 = 1
+            r3 = 0
+            if (r1 != 0) goto L6e
+            java.lang.String r1 = "text/x-ssa"
+            boolean r1 = r1.equals(r0)
+            if (r1 != 0) goto L6e
+            java.lang.String r1 = "application/ttml+xml"
+            boolean r1 = r1.equals(r0)
+            if (r1 != 0) goto L6e
+            java.lang.String r1 = "application/x-mp4-vtt"
+            boolean r1 = r1.equals(r0)
+            if (r1 != 0) goto L6e
+            java.lang.String r1 = "application/x-subrip"
+            boolean r1 = r1.equals(r0)
+            if (r1 != 0) goto L6e
+            java.lang.String r1 = "application/x-quicktime-tx3g"
+            boolean r1 = r1.equals(r0)
+            if (r1 != 0) goto L6e
+            java.lang.String r1 = "application/cea-608"
+            boolean r1 = r1.equals(r0)
+            if (r1 != 0) goto L6e
+            java.lang.String r1 = "application/x-mp4-cea-608"
+            boolean r1 = r1.equals(r0)
+            if (r1 != 0) goto L6e
+            java.lang.String r1 = "application/cea-708"
+            boolean r1 = r1.equals(r0)
+            if (r1 != 0) goto L6e
+            java.lang.String r1 = "application/dvbsubs"
+            boolean r1 = r1.equals(r0)
+            if (r1 != 0) goto L6e
+            java.lang.String r1 = "application/pgs"
+            boolean r1 = r1.equals(r0)
+            if (r1 != 0) goto L6e
+            java.lang.String r1 = "text/x-exoplayer-cues"
+            boolean r0 = r1.equals(r0)
+            if (r0 == 0) goto L6c
+            goto L6e
+        L6c:
+            r0 = 0
+            goto L6f
+        L6e:
+            r0 = 1
+        L6f:
+            if (r0 == 0) goto L7b
+            int r5 = r5.f8883C0
+            if (r5 != 0) goto L77
+            r5 = 4
+            goto L78
+        L77:
+            r5 = 2
+        L78:
+            r5 = r5 | r3
+            r5 = r5 | r3
+            return r5
+        L7b:
+            java.lang.String r5 = r5.f8896j0
+            boolean r5 = p371v5.C6567q.m13379i(r5)
+            if (r5 == 0) goto L84
+            return r2
+        L84:
+            return r3
+    }
+
+    @Override // android.os.Handler.Callback
+    public boolean handleMessage(android.os.Message r2) {
+            r1 = this;
+            int r0 = r2.what
+            if (r0 != 0) goto Lf
+            java.lang.Object r2 = r2.obj
+            java.util.List r2 = (java.util.List) r2
+            i5.l r0 = r1.f12434k0
+            r0.mo5292d(r2)
+            r2 = 1
+            return r2
+        Lf:
+            java.lang.IllegalStateException r2 = new java.lang.IllegalStateException
+            r2.<init>()
+            throw r2
+    }
+
+    @Override // p088f4.InterfaceC2004e1
+    /* renamed from: i */
+    public boolean mo5200i() {
+            r1 = this;
+            r0 = 1
+            return r0
+    }
+
+    @Override // p088f4.InterfaceC2004e1
+    /* renamed from: m */
+    public void mo5203m(long r9, long r11) {
+            r8 = this;
+            boolean r11 = r8.f8956h0
+            r12 = 1
+            if (r11 == 0) goto L19
+            long r0 = r8.f12447x0
+            r2 = -9223372036854775807(0x8000000000000001, double:-4.9E-324)
+            int r11 = (r0 > r2 ? 1 : (r0 == r2 ? 0 : -1))
+            if (r11 == 0) goto L19
+            int r11 = (r9 > r0 ? 1 : (r9 == r0 ? 0 : -1))
+            if (r11 < 0) goto L19
+            r8.m7548P()
+            r8.f12438o0 = r12
+        L19:
+            boolean r11 = r8.f12438o0
+            if (r11 == 0) goto L1e
+            return
+        L1e:
+            i5.k r11 = r8.f12445v0
+            if (r11 != 0) goto L3d
+            i5.g r11 = r8.f12442s0
+            java.util.Objects.requireNonNull(r11)
+            r11.mo7536a(r9)
+            i5.g r11 = r8.f12442s0     // Catch: p143i5.C3084h -> L38
+            java.util.Objects.requireNonNull(r11)     // Catch: p143i5.C3084h -> L38
+            java.lang.Object r11 = r11.mo7520c()     // Catch: p143i5.C3084h -> L38
+            i5.k r11 = (p143i5.AbstractC3087k) r11     // Catch: p143i5.C3084h -> L38
+            r8.f12445v0 = r11     // Catch: p143i5.C3084h -> L38
+            goto L3d
+        L38:
+            r9 = move-exception
+            r8.m7546N(r9)
+            return
+        L3d:
+            int r11 = r8.f8951c0
+            r0 = 2
+            if (r11 == r0) goto L43
+            return
+        L43:
+            i5.k r11 = r8.f12444u0
+            r1 = 0
+            if (r11 == 0) goto L5c
+            long r2 = r8.m7545M()
+            r11 = 0
+        L4d:
+            int r4 = (r2 > r9 ? 1 : (r2 == r9 ? 0 : -1))
+            if (r4 > 0) goto L5d
+            int r11 = r8.f12446w0
+            int r11 = r11 + r12
+            r8.f12446w0 = r11
+            long r2 = r8.m7545M()
+            r11 = 1
+            goto L4d
+        L5c:
+            r11 = 0
+        L5d:
+            i5.k r2 = r8.f12445v0
+            r3 = 0
+            if (r2 == 0) goto La6
+            boolean r4 = r2.m7517r()
+            if (r4 == 0) goto L85
+            if (r11 != 0) goto La6
+            long r4 = r8.m7545M()
+            r6 = 9223372036854775807(0x7fffffffffffffff, double:NaN)
+            int r2 = (r4 > r6 ? 1 : (r4 == r6 ? 0 : -1))
+            if (r2 != 0) goto La6
+            int r2 = r8.f12440q0
+            if (r2 != r0) goto L7f
+            r8.m7549Q()
+            goto La6
+        L7f:
+            r8.m7548P()
+            r8.f12438o0 = r12
+            goto La6
+        L85:
+            long r4 = r2.f12364Z
+            int r6 = (r4 > r9 ? 1 : (r4 == r9 ? 0 : -1))
+            if (r6 > 0) goto La6
+            i5.k r11 = r8.f12444u0
+            if (r11 == 0) goto L92
+            r11.mo7527t()
+        L92:
+            i5.f r11 = r2.f12431a0
+            java.util.Objects.requireNonNull(r11)
+            long r4 = r2.f12432b0
+            long r4 = r9 - r4
+            int r11 = r11.mo7537e(r4)
+            r8.f12446w0 = r11
+            r8.f12444u0 = r2
+            r8.f12445v0 = r3
+            r11 = 1
+        La6:
+            if (r11 == 0) goto Lcc
+            i5.k r11 = r8.f12444u0
+            java.util.Objects.requireNonNull(r11)
+            i5.k r11 = r8.f12444u0
+            i5.f r2 = r11.f12431a0
+            java.util.Objects.requireNonNull(r2)
+            long r4 = r11.f12432b0
+            long r9 = r9 - r4
+            java.util.List r9 = r2.mo7539h(r9)
+            android.os.Handler r10 = r8.f12433j0
+            if (r10 == 0) goto Lc7
+            android.os.Message r9 = r10.obtainMessage(r1, r9)
+            r9.sendToTarget()
+            goto Lcc
+        Lc7:
+            i5.l r10 = r8.f12434k0
+            r10.mo5292d(r9)
+        Lcc:
+            int r9 = r8.f12440q0
+            if (r9 != r0) goto Ld1
+            return
+        Ld1:
+            boolean r9 = r8.f12437n0     // Catch: p143i5.C3084h -> L142
+            if (r9 != 0) goto L146
+            i5.j r9 = r8.f12443t0     // Catch: p143i5.C3084h -> L142
+            if (r9 != 0) goto Le9
+            i5.g r9 = r8.f12442s0     // Catch: p143i5.C3084h -> L142
+            java.util.Objects.requireNonNull(r9)     // Catch: p143i5.C3084h -> L142
+            java.lang.Object r9 = r9.mo7521d()     // Catch: p143i5.C3084h -> L142
+            i5.j r9 = (p143i5.C3086j) r9     // Catch: p143i5.C3084h -> L142
+            if (r9 != 0) goto Le7
+            return
+        Le7:
+            r8.f12443t0 = r9     // Catch: p143i5.C3084h -> L142
+        Le9:
+            int r10 = r8.f12440q0     // Catch: p143i5.C3084h -> L142
+            if (r10 != r12) goto Lfd
+            r10 = 4
+            r9.f12333Y = r10     // Catch: p143i5.C3084h -> L142
+            i5.g r10 = r8.f12442s0     // Catch: p143i5.C3084h -> L142
+            java.util.Objects.requireNonNull(r10)     // Catch: p143i5.C3084h -> L142
+            r10.mo7519b(r9)     // Catch: p143i5.C3084h -> L142
+            r8.f12443t0 = r3     // Catch: p143i5.C3084h -> L142
+            r8.f12440q0 = r0     // Catch: p143i5.C3084h -> L142
+            return
+        Lfd:
+            androidx.appcompat.widget.x r10 = r8.f12436m0     // Catch: p143i5.C3084h -> L142
+            int r10 = r8.m5251K(r10, r9, r1)     // Catch: p143i5.C3084h -> L142
+            r11 = -4
+            if (r10 != r11) goto L13e
+            boolean r10 = r9.m7517r()     // Catch: p143i5.C3084h -> L142
+            if (r10 == 0) goto L111
+            r8.f12437n0 = r12     // Catch: p143i5.C3084h -> L142
+            r8.f12439p0 = r1     // Catch: p143i5.C3084h -> L142
+            goto L12f
+        L111:
+            androidx.appcompat.widget.x r10 = r8.f12436m0     // Catch: p143i5.C3084h -> L142
+            java.lang.Object r10 = r10.f1482a0     // Catch: p143i5.C3084h -> L142
+            f4.e0 r10 = (p088f4.C2003e0) r10     // Catch: p143i5.C3084h -> L142
+            if (r10 != 0) goto L11a
+            return
+        L11a:
+            long r10 = r10.f8900n0     // Catch: p143i5.C3084h -> L142
+            r9.f12430g0 = r10     // Catch: p143i5.C3084h -> L142
+            r9.m7525w()     // Catch: p143i5.C3084h -> L142
+            boolean r10 = r8.f12439p0     // Catch: p143i5.C3084h -> L142
+            boolean r11 = r9.m7518s()     // Catch: p143i5.C3084h -> L142
+            if (r11 != 0) goto L12b
+            r11 = 1
+            goto L12c
+        L12b:
+            r11 = 0
+        L12c:
+            r10 = r10 & r11
+            r8.f12439p0 = r10     // Catch: p143i5.C3084h -> L142
+        L12f:
+            boolean r10 = r8.f12439p0     // Catch: p143i5.C3084h -> L142
+            if (r10 != 0) goto Ld1
+            i5.g r10 = r8.f12442s0     // Catch: p143i5.C3084h -> L142
+            java.util.Objects.requireNonNull(r10)     // Catch: p143i5.C3084h -> L142
+            r10.mo7519b(r9)     // Catch: p143i5.C3084h -> L142
+            r8.f12443t0 = r3     // Catch: p143i5.C3084h -> L142
+            goto Ld1
+        L13e:
+            r9 = -3
+            if (r10 != r9) goto Ld1
+            return
+        L142:
+            r9 = move-exception
+            r8.m7546N(r9)
+        L146:
+            return
+    }
+}
+package p143i5;
+
+/* renamed from: i5.f */
+/* loaded from: classes.dex */
+public interface InterfaceC3082f {
+    /* renamed from: e */
+    int mo7537e(long r1);
+
+    /* renamed from: g */
+    long mo7538g(int r1);
+
+    /* renamed from: h */
+    java.util.List<p143i5.C3077a> mo7539h(long r1);
+
+    /* renamed from: k */
+    int mo7540k();
+}
+package p143i5;
+
+/* renamed from: i5.g */
+/* loaded from: classes.dex */
+public interface InterfaceC3083g extends p142i4.InterfaceC3070d<p143i5.C3086j, p143i5.AbstractC3087k, p143i5.C3084h> {
+    /* renamed from: a */
+    void mo7536a(long r1);
+}
+package p143i5;
+
+/* renamed from: i5.i */
+/* loaded from: classes.dex */
+public interface InterfaceC3085i {
+
+    /* renamed from: a */
+    public static final p143i5.InterfaceC3085i f12429a = null;
+
+    /* renamed from: i5.i$a */
+    public class a implements p143i5.InterfaceC3085i {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+    }
+
+    static {
+            i5.i$a r0 = new i5.i$a
+            r0.<init>()
+            p143i5.InterfaceC3085i.f12429a = r0
+            return
+    }
+}
+package p143i5;
+
+/* renamed from: i5.l */
+/* loaded from: classes.dex */
+public interface InterfaceC3088l {
+    /* renamed from: d */
+    void mo5292d(java.util.List<p143i5.C3077a> r1);
+}

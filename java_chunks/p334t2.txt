@@ -1,0 +1,5286 @@
+package p334t2;
+
+/* renamed from: t2.e */
+/* loaded from: classes.dex */
+public abstract class AbstractC6127e implements p180k2.InterfaceC3676h<android.graphics.Bitmap> {
+    public AbstractC6127e() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p180k2.InterfaceC3676h
+    /* renamed from: a */
+    public final p214m2.InterfaceC4345w<android.graphics.Bitmap> mo8134a(android.content.Context r3, p214m2.InterfaceC4345w<android.graphics.Bitmap> r4, int r5, int r6) {
+            r2 = this;
+            boolean r0 = p106g3.C2238j.m5850j(r5, r6)
+            if (r0 == 0) goto L30
+            com.bumptech.glide.c r3 = com.bumptech.glide.ComponentCallbacks2C0999c.m2734b(r3)
+            n2.c r3 = r3.f5097Y
+            java.lang.Object r0 = r4.get()
+            android.graphics.Bitmap r0 = (android.graphics.Bitmap) r0
+            r1 = -2147483648(0xffffffff80000000, float:-0.0)
+            if (r5 != r1) goto L1a
+            int r5 = r0.getWidth()
+        L1a:
+            if (r6 != r1) goto L20
+            int r6 = r0.getHeight()
+        L20:
+            android.graphics.Bitmap r5 = r2.mo12655c(r3, r0, r5, r6)
+            boolean r6 = r0.equals(r5)
+            if (r6 == 0) goto L2b
+            goto L2f
+        L2b:
+            t2.d r4 = p334t2.C6126d.m12654f(r5, r3)
+        L2f:
+            return r4
+        L30:
+            java.lang.IllegalArgumentException r3 = new java.lang.IllegalArgumentException
+            java.lang.StringBuilder r4 = new java.lang.StringBuilder
+            r4.<init>()
+            java.lang.String r0 = "Cannot apply transformation on width: "
+            r4.append(r0)
+            r4.append(r5)
+            java.lang.String r5 = " or height: "
+            r4.append(r5)
+            r4.append(r6)
+            java.lang.String r5 = " less than or equal to zero and not Target.SIZE_ORIGINAL"
+            r4.append(r5)
+            java.lang.String r4 = r4.toString()
+            r3.<init>(r4)
+            throw r3
+    }
+
+    /* renamed from: c */
+    public abstract android.graphics.Bitmap mo12655c(p229n2.InterfaceC4673c r1, android.graphics.Bitmap r2, int r3, int r4);
+}
+package p334t2;
+
+/* renamed from: t2.k */
+/* loaded from: classes.dex */
+public abstract class AbstractC6133k {
+
+    /* renamed from: a */
+    public static final p334t2.AbstractC6133k f23675a = null;
+
+    /* renamed from: b */
+    public static final p334t2.AbstractC6133k f23676b = null;
+
+    /* renamed from: c */
+    public static final p334t2.AbstractC6133k f23677c = null;
+
+    /* renamed from: d */
+    public static final p334t2.AbstractC6133k f23678d = null;
+
+    /* renamed from: e */
+    public static final p334t2.AbstractC6133k f23679e = null;
+
+    /* renamed from: f */
+    public static final p180k2.C3672d<p334t2.AbstractC6133k> f23680f = null;
+
+    /* renamed from: g */
+    public static final boolean f23681g = false;
+
+    /* renamed from: t2.k$a */
+    public static class a extends p334t2.AbstractC6133k {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // p334t2.AbstractC6133k
+        /* renamed from: a */
+        public int mo12665a(int r1, int r2, int r3, int r4) {
+                r0 = this;
+                float r1 = r0.mo12666b(r1, r2, r3, r4)
+                r2 = 1065353216(0x3f800000, float:1.0)
+                int r1 = (r1 > r2 ? 1 : (r1 == r2 ? 0 : -1))
+                if (r1 != 0) goto Lb
+                goto Lf
+            Lb:
+                boolean r1 = p334t2.AbstractC6133k.f23681g
+                if (r1 == 0) goto L11
+            Lf:
+                r1 = 2
+                goto L12
+            L11:
+                r1 = 1
+            L12:
+                return r1
+        }
+
+        @Override // p334t2.AbstractC6133k
+        /* renamed from: b */
+        public float mo12666b(int r2, int r3, int r4, int r5) {
+                r1 = this;
+                t2.k r0 = p334t2.AbstractC6133k.f23675a
+                float r2 = r0.mo12666b(r2, r3, r4, r5)
+                r3 = 1065353216(0x3f800000, float:1.0)
+                float r2 = java.lang.Math.min(r3, r2)
+                return r2
+        }
+    }
+
+    /* renamed from: t2.k$b */
+    public static class b extends p334t2.AbstractC6133k {
+        public b() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // p334t2.AbstractC6133k
+        /* renamed from: a */
+        public int mo12665a(int r1, int r2, int r3, int r4) {
+                r0 = this;
+                r1 = 2
+                return r1
+        }
+
+        @Override // p334t2.AbstractC6133k
+        /* renamed from: b */
+        public float mo12666b(int r1, int r2, int r3, int r4) {
+                r0 = this;
+                float r3 = (float) r3
+                float r1 = (float) r1
+                float r3 = r3 / r1
+                float r1 = (float) r4
+                float r2 = (float) r2
+                float r1 = r1 / r2
+                float r1 = java.lang.Math.max(r3, r1)
+                return r1
+        }
+    }
+
+    /* renamed from: t2.k$c */
+    public static class c extends p334t2.AbstractC6133k {
+        public c() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // p334t2.AbstractC6133k
+        /* renamed from: a */
+        public int mo12665a(int r1, int r2, int r3, int r4) {
+                r0 = this;
+                boolean r1 = p334t2.AbstractC6133k.f23681g
+                if (r1 == 0) goto L6
+                r1 = 2
+                return r1
+            L6:
+                r1 = 1
+                return r1
+        }
+
+        @Override // p334t2.AbstractC6133k
+        /* renamed from: b */
+        public float mo12666b(int r2, int r3, int r4, int r5) {
+                r1 = this;
+                boolean r0 = p334t2.AbstractC6133k.f23681g
+                if (r0 == 0) goto Lf
+                float r4 = (float) r4
+                float r2 = (float) r2
+                float r4 = r4 / r2
+                float r2 = (float) r5
+                float r3 = (float) r3
+                float r2 = r2 / r3
+                float r2 = java.lang.Math.min(r4, r2)
+                return r2
+            Lf:
+                int r3 = r3 / r5
+                int r2 = r2 / r4
+                int r2 = java.lang.Math.max(r3, r2)
+                r3 = 1065353216(0x3f800000, float:1.0)
+                if (r2 != 0) goto L1a
+                goto L20
+            L1a:
+                int r2 = java.lang.Integer.highestOneBit(r2)
+                float r2 = (float) r2
+                float r3 = r3 / r2
+            L20:
+                return r3
+        }
+    }
+
+    /* renamed from: t2.k$d */
+    public static class d extends p334t2.AbstractC6133k {
+        public d() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // p334t2.AbstractC6133k
+        /* renamed from: a */
+        public int mo12665a(int r1, int r2, int r3, int r4) {
+                r0 = this;
+                r1 = 2
+                return r1
+        }
+
+        @Override // p334t2.AbstractC6133k
+        /* renamed from: b */
+        public float mo12666b(int r1, int r2, int r3, int r4) {
+                r0 = this;
+                r1 = 1065353216(0x3f800000, float:1.0)
+                return r1
+        }
+    }
+
+    static {
+            t2.k$c r0 = new t2.k$c
+            r0.<init>()
+            p334t2.AbstractC6133k.f23675a = r0
+            t2.k$a r0 = new t2.k$a
+            r0.<init>()
+            p334t2.AbstractC6133k.f23676b = r0
+            t2.k$b r0 = new t2.k$b
+            r0.<init>()
+            p334t2.AbstractC6133k.f23677c = r0
+            t2.k$d r1 = new t2.k$d
+            r1.<init>()
+            p334t2.AbstractC6133k.f23678d = r1
+            p334t2.AbstractC6133k.f23679e = r0
+            java.lang.String r1 = "com.bumptech.glide.load.resource.bitmap.Downsampler.DownsampleStrategy"
+            k2.d r0 = p180k2.C3672d.m8128a(r1, r0)
+            p334t2.AbstractC6133k.f23680f = r0
+            r0 = 1
+            p334t2.AbstractC6133k.f23681g = r0
+            return
+    }
+
+    public AbstractC6133k() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    /* renamed from: a */
+    public abstract int mo12665a(int r1, int r2, int r3, int r4);
+
+    /* renamed from: b */
+    public abstract float mo12666b(int r1, int r2, int r3, int r4);
+}
+package p334t2;
+
+/* renamed from: t2.a */
+/* loaded from: classes.dex */
+public class C6123a<DataType> implements p180k2.InterfaceC3674f<DataType, android.graphics.drawable.BitmapDrawable> {
+
+    /* renamed from: a */
+    public final /* synthetic */ int f23655a;
+
+    /* renamed from: b */
+    public final p180k2.InterfaceC3674f<DataType, android.graphics.Bitmap> f23656b;
+
+    /* renamed from: c */
+    public final java.lang.Object f23657c;
+
+    public C6123a(android.content.res.Resources r2, p180k2.InterfaceC3674f r3) {
+            r1 = this;
+            r0 = 0
+            r1.f23655a = r0
+            r1.<init>()
+            r1.f23657c = r2
+            r1.f23656b = r3
+            return
+    }
+
+    public C6123a(p368v2.C6495d r2, p229n2.InterfaceC4673c r3) {
+            r1 = this;
+            r0 = 1
+            r1.f23655a = r0
+            r1.<init>()
+            r1.f23656b = r2
+            r1.f23657c = r3
+            return
+    }
+
+    @Override // p180k2.InterfaceC3674f
+    /* renamed from: a */
+    public p214m2.InterfaceC4345w<android.graphics.drawable.BitmapDrawable> mo8132a(java.lang.Object r2, int r3, int r4, p180k2.C3673e r5) {
+            r1 = this;
+            int r0 = r1.f23655a
+            switch(r0) {
+                case 0: goto L6;
+                default: goto L5;
+            }
+        L5:
+            goto L17
+        L6:
+            k2.f<DataType, android.graphics.Bitmap> r0 = r1.f23656b
+            k2.f r0 = (p180k2.InterfaceC3674f) r0
+            m2.w r2 = r0.mo8132a(r2, r3, r4, r5)
+            java.lang.Object r3 = r1.f23657c
+            android.content.res.Resources r3 = (android.content.res.Resources) r3
+            m2.w r2 = p334t2.C6126d.m12653e(r3, r2)
+            return r2
+        L17:
+            android.net.Uri r2 = (android.net.Uri) r2
+            k2.f<DataType, android.graphics.Bitmap> r5 = r1.f23656b
+            v2.d r5 = (p368v2.C6495d) r5
+            m2.w r2 = r5.m13207c(r2)
+            if (r2 != 0) goto L25
+            r2 = 0
+            goto L35
+        L25:
+            v2.b r2 = (p368v2.AbstractC6493b) r2
+            java.lang.Object r2 = r2.get()
+            android.graphics.drawable.Drawable r2 = (android.graphics.drawable.Drawable) r2
+            java.lang.Object r5 = r1.f23657c
+            n2.c r5 = (p229n2.InterfaceC4673c) r5
+            m2.w r2 = p334t2.C6135m.m12681a(r5, r2, r3, r4)
+        L35:
+            return r2
+    }
+
+    @Override // p180k2.InterfaceC3674f
+    /* renamed from: b */
+    public boolean mo8133b(java.lang.Object r2, p180k2.C3673e r3) {
+            r1 = this;
+            int r0 = r1.f23655a
+            switch(r0) {
+                case 0: goto L6;
+                default: goto L5;
+            }
+        L5:
+            goto Lf
+        L6:
+            k2.f<DataType, android.graphics.Bitmap> r0 = r1.f23656b
+            k2.f r0 = (p180k2.InterfaceC3674f) r0
+            boolean r2 = r0.mo8133b(r2, r3)
+            return r2
+        Lf:
+            android.net.Uri r2 = (android.net.Uri) r2
+            java.lang.String r2 = r2.getScheme()
+            java.lang.String r3 = "android.resource"
+            boolean r2 = r3.equals(r2)
+            return r2
+    }
+}
+package p334t2;
+
+/* renamed from: t2.b */
+/* loaded from: classes.dex */
+public class C6124b implements p180k2.InterfaceC3675g<android.graphics.Bitmap> {
+
+    /* renamed from: Z */
+    public static final p180k2.C3672d<java.lang.Integer> f23658Z = null;
+
+    /* renamed from: a0 */
+    public static final p180k2.C3672d<android.graphics.Bitmap.CompressFormat> f23659a0 = null;
+
+    /* renamed from: Y */
+    public final p229n2.InterfaceC4672b f23660Y;
+
+    static {
+            r0 = 90
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r0)
+            java.lang.String r1 = "com.bumptech.glide.load.resource.bitmap.BitmapEncoder.CompressionQuality"
+            k2.d r0 = p180k2.C3672d.m8128a(r1, r0)
+            p334t2.C6124b.f23658Z = r0
+            k2.d r0 = new k2.d
+            k2.d$b<java.lang.Object> r1 = p180k2.C3672d.f16245e
+            r2 = 0
+            java.lang.String r3 = "com.bumptech.glide.load.resource.bitmap.BitmapEncoder.CompressionFormat"
+            r0.<init>(r3, r2, r1)
+            p334t2.C6124b.f23659a0 = r0
+            return
+    }
+
+    public C6124b(p229n2.InterfaceC4672b r1) {
+            r0 = this;
+            r0.<init>()
+            r0.f23660Y = r1
+            return
+    }
+
+    @Override // p180k2.InterfaceC3669a
+    /* renamed from: d */
+    public boolean mo814d(java.lang.Object r9, java.io.File r10, p180k2.C3673e r11) {
+            r8 = this;
+            m2.w r9 = (p214m2.InterfaceC4345w) r9
+            java.lang.String r0 = "BitmapEncoder"
+            java.lang.Object r9 = r9.get()
+            android.graphics.Bitmap r9 = (android.graphics.Bitmap) r9
+            k2.d<android.graphics.Bitmap$CompressFormat> r1 = p334t2.C6124b.f23659a0
+            java.lang.Object r1 = r11.m8130c(r1)
+            android.graphics.Bitmap$CompressFormat r1 = (android.graphics.Bitmap.CompressFormat) r1
+            if (r1 == 0) goto L15
+            goto L20
+        L15:
+            boolean r1 = r9.hasAlpha()
+            if (r1 == 0) goto L1e
+            android.graphics.Bitmap$CompressFormat r1 = android.graphics.Bitmap.CompressFormat.PNG
+            goto L20
+        L1e:
+            android.graphics.Bitmap$CompressFormat r1 = android.graphics.Bitmap.CompressFormat.JPEG
+        L20:
+            r9.getWidth()
+            r9.getHeight()
+            int r2 = p106g3.C2234f.f10203b     // Catch: java.lang.Throwable -> Lc3
+            long r2 = android.os.SystemClock.elapsedRealtimeNanos()     // Catch: java.lang.Throwable -> Lc3
+            k2.d<java.lang.Integer> r4 = p334t2.C6124b.f23658Z     // Catch: java.lang.Throwable -> Lc3
+            java.lang.Object r4 = r11.m8130c(r4)     // Catch: java.lang.Throwable -> Lc3
+            java.lang.Integer r4 = (java.lang.Integer) r4     // Catch: java.lang.Throwable -> Lc3
+            int r4 = r4.intValue()     // Catch: java.lang.Throwable -> Lc3
+            r5 = 0
+            r6 = 0
+            java.io.FileOutputStream r7 = new java.io.FileOutputStream     // Catch: java.lang.Throwable -> L5a java.io.IOException -> L5c
+            r7.<init>(r10)     // Catch: java.lang.Throwable -> L5a java.io.IOException -> L5c
+            n2.b r10 = r8.f23660Y     // Catch: java.lang.Throwable -> L55 java.io.IOException -> L57
+            if (r10 == 0) goto L4c
+            com.bumptech.glide.load.data.c r10 = new com.bumptech.glide.load.data.c     // Catch: java.lang.Throwable -> L55 java.io.IOException -> L57
+            n2.b r6 = r8.f23660Y     // Catch: java.lang.Throwable -> L55 java.io.IOException -> L57
+            r10.<init>(r7, r6)     // Catch: java.lang.Throwable -> L55 java.io.IOException -> L57
+            r6 = r10
+            goto L4d
+        L4c:
+            r6 = r7
+        L4d:
+            r9.compress(r1, r4, r6)     // Catch: java.lang.Throwable -> L5a java.io.IOException -> L5c
+            r6.close()     // Catch: java.lang.Throwable -> L5a java.io.IOException -> L5c
+            r5 = 1
+            goto L6b
+        L55:
+            r9 = move-exception
+            goto Lbd
+        L57:
+            r10 = move-exception
+            r6 = r7
+            goto L5d
+        L5a:
+            r9 = move-exception
+            goto Lbc
+        L5c:
+            r10 = move-exception
+        L5d:
+            r4 = 3
+            boolean r4 = android.util.Log.isLoggable(r0, r4)     // Catch: java.lang.Throwable -> L5a
+            if (r4 == 0) goto L69
+            java.lang.String r4 = "Failed to encode Bitmap"
+            android.util.Log.d(r0, r4, r10)     // Catch: java.lang.Throwable -> L5a
+        L69:
+            if (r6 == 0) goto L6e
+        L6b:
+            r6.close()     // Catch: java.io.IOException -> L6e java.lang.Throwable -> Lc3
+        L6e:
+            r10 = 2
+            boolean r10 = android.util.Log.isLoggable(r0, r10)     // Catch: java.lang.Throwable -> Lc3
+            if (r10 == 0) goto Lbb
+            java.lang.StringBuilder r10 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> Lc3
+            r10.<init>()     // Catch: java.lang.Throwable -> Lc3
+            java.lang.String r4 = "Compressed with type: "
+            r10.append(r4)     // Catch: java.lang.Throwable -> Lc3
+            r10.append(r1)     // Catch: java.lang.Throwable -> Lc3
+            java.lang.String r1 = " of size "
+            r10.append(r1)     // Catch: java.lang.Throwable -> Lc3
+            int r1 = p106g3.C2238j.m5844d(r9)     // Catch: java.lang.Throwable -> Lc3
+            r10.append(r1)     // Catch: java.lang.Throwable -> Lc3
+            java.lang.String r1 = " in "
+            r10.append(r1)     // Catch: java.lang.Throwable -> Lc3
+            double r1 = p106g3.C2234f.m5833a(r2)     // Catch: java.lang.Throwable -> Lc3
+            r10.append(r1)     // Catch: java.lang.Throwable -> Lc3
+            java.lang.String r1 = ", options format: "
+            r10.append(r1)     // Catch: java.lang.Throwable -> Lc3
+            k2.d<android.graphics.Bitmap$CompressFormat> r1 = p334t2.C6124b.f23659a0     // Catch: java.lang.Throwable -> Lc3
+            java.lang.Object r11 = r11.m8130c(r1)     // Catch: java.lang.Throwable -> Lc3
+            r10.append(r11)     // Catch: java.lang.Throwable -> Lc3
+            java.lang.String r11 = ", hasAlpha: "
+            r10.append(r11)     // Catch: java.lang.Throwable -> Lc3
+            boolean r9 = r9.hasAlpha()     // Catch: java.lang.Throwable -> Lc3
+            r10.append(r9)     // Catch: java.lang.Throwable -> Lc3
+            java.lang.String r9 = r10.toString()     // Catch: java.lang.Throwable -> Lc3
+            android.util.Log.v(r0, r9)     // Catch: java.lang.Throwable -> Lc3
+        Lbb:
+            return r5
+        Lbc:
+            r7 = r6
+        Lbd:
+            if (r7 == 0) goto Lc2
+            r7.close()     // Catch: java.io.IOException -> Lc2 java.lang.Throwable -> Lc3
+        Lc2:
+            throw r9     // Catch: java.lang.Throwable -> Lc3
+        Lc3:
+            r9 = move-exception
+            throw r9
+    }
+
+    @Override // p180k2.InterfaceC3675g
+    /* renamed from: s */
+    public com.bumptech.glide.load.EnumC1010c mo827s(p180k2.C3673e r1) {
+            r0 = this;
+            com.bumptech.glide.load.c r1 = com.bumptech.glide.load.EnumC1010c.f5190Z
+            return r1
+    }
+}
+package p334t2;
+
+/* renamed from: t2.c */
+/* loaded from: classes.dex */
+public final class C6125c extends p322s2.AbstractC5945a<android.graphics.Bitmap> {
+
+    /* renamed from: b */
+    public final p229n2.InterfaceC4673c f23661b;
+
+    public C6125c() {
+            r1 = this;
+            r1.<init>()
+            n2.d r0 = new n2.d
+            r0.<init>()
+            r1.f23661b = r0
+            return
+    }
+}
+package p334t2;
+
+/* renamed from: t2.d */
+/* loaded from: classes.dex */
+public class C6126d implements p214m2.InterfaceC4345w<android.graphics.Bitmap>, p214m2.InterfaceC4342t {
+
+    /* renamed from: Y */
+    public final /* synthetic */ int f23662Y;
+
+    /* renamed from: Z */
+    public final java.lang.Object f23663Z;
+
+    /* renamed from: a0 */
+    public final java.lang.Object f23664a0;
+
+    public C6126d(android.content.res.Resources r2, p214m2.InterfaceC4345w r3) {
+            r1 = this;
+            r0 = 1
+            r1.f23662Y = r0
+            r1.<init>()
+            java.lang.String r0 = "Argument must not be null"
+            java.util.Objects.requireNonNull(r2, r0)
+            r1.f23663Z = r2
+            r1.f23664a0 = r3
+            return
+    }
+
+    public C6126d(android.graphics.Bitmap r2, p229n2.InterfaceC4673c r3) {
+            r1 = this;
+            r0 = 0
+            r1.f23662Y = r0
+            r1.<init>()
+            java.lang.String r0 = "Bitmap must not be null"
+            java.util.Objects.requireNonNull(r2, r0)
+            r1.f23663Z = r2
+            java.lang.String r2 = "BitmapPool must not be null"
+            java.util.Objects.requireNonNull(r3, r2)
+            r1.f23664a0 = r3
+            return
+    }
+
+    /* renamed from: e */
+    public static p214m2.InterfaceC4345w<android.graphics.drawable.BitmapDrawable> m12653e(android.content.res.Resources r1, p214m2.InterfaceC4345w<android.graphics.Bitmap> r2) {
+            if (r2 != 0) goto L4
+            r1 = 0
+            return r1
+        L4:
+            t2.d r0 = new t2.d
+            r0.<init>(r1, r2)
+            return r0
+    }
+
+    /* renamed from: f */
+    public static p334t2.C6126d m12654f(android.graphics.Bitmap r1, p229n2.InterfaceC4673c r2) {
+            if (r1 != 0) goto L4
+            r1 = 0
+            return r1
+        L4:
+            t2.d r0 = new t2.d
+            r0.<init>(r1, r2)
+            return r0
+    }
+
+    @Override // p214m2.InterfaceC4345w
+    /* renamed from: a */
+    public int mo9718a() {
+            r1 = this;
+            int r0 = r1.f23662Y
+            switch(r0) {
+                case 0: goto L6;
+                default: goto L5;
+            }
+        L5:
+            goto Lf
+        L6:
+            java.lang.Object r0 = r1.f23663Z
+            android.graphics.Bitmap r0 = (android.graphics.Bitmap) r0
+            int r0 = p106g3.C2238j.m5844d(r0)
+            return r0
+        Lf:
+            java.lang.Object r0 = r1.f23664a0
+            m2.w r0 = (p214m2.InterfaceC4345w) r0
+            int r0 = r0.mo9718a()
+            return r0
+    }
+
+    @Override // p214m2.InterfaceC4342t
+    /* renamed from: b */
+    public void mo9729b() {
+            r2 = this;
+            int r0 = r2.f23662Y
+            switch(r0) {
+                case 0: goto L6;
+                default: goto L5;
+            }
+        L5:
+            goto Le
+        L6:
+            java.lang.Object r0 = r2.f23663Z
+            android.graphics.Bitmap r0 = (android.graphics.Bitmap) r0
+            r0.prepareToDraw()
+            return
+        Le:
+            java.lang.Object r0 = r2.f23664a0
+            m2.w r0 = (p214m2.InterfaceC4345w) r0
+            boolean r1 = r0 instanceof p214m2.InterfaceC4342t
+            if (r1 == 0) goto L1b
+            m2.t r0 = (p214m2.InterfaceC4342t) r0
+            r0.mo9729b()
+        L1b:
+            return
+    }
+
+    @Override // p214m2.InterfaceC4345w
+    /* renamed from: c */
+    public java.lang.Class<android.graphics.Bitmap> mo9720c() {
+            r1 = this;
+            int r0 = r1.f23662Y
+            switch(r0) {
+                case 0: goto L6;
+                default: goto L5;
+            }
+        L5:
+            goto L9
+        L6:
+            java.lang.Class<android.graphics.Bitmap> r0 = android.graphics.Bitmap.class
+            return r0
+        L9:
+            java.lang.Class<android.graphics.drawable.BitmapDrawable> r0 = android.graphics.drawable.BitmapDrawable.class
+            return r0
+    }
+
+    @Override // p214m2.InterfaceC4345w
+    /* renamed from: d */
+    public void mo9721d() {
+            r2 = this;
+            int r0 = r2.f23662Y
+            switch(r0) {
+                case 0: goto L6;
+                default: goto L5;
+            }
+        L5:
+            goto L12
+        L6:
+            java.lang.Object r0 = r2.f23664a0
+            n2.c r0 = (p229n2.InterfaceC4673c) r0
+            java.lang.Object r1 = r2.f23663Z
+            android.graphics.Bitmap r1 = (android.graphics.Bitmap) r1
+            r0.mo10694f(r1)
+            return
+        L12:
+            java.lang.Object r0 = r2.f23664a0
+            m2.w r0 = (p214m2.InterfaceC4345w) r0
+            r0.mo9721d()
+            return
+    }
+
+    @Override // p214m2.InterfaceC4345w
+    public android.graphics.Bitmap get() {
+            r3 = this;
+            int r0 = r3.f23662Y
+            switch(r0) {
+                case 0: goto L6;
+                default: goto L5;
+            }
+        L5:
+            goto Lb
+        L6:
+            java.lang.Object r0 = r3.f23663Z
+            android.graphics.Bitmap r0 = (android.graphics.Bitmap) r0
+            return r0
+        Lb:
+            android.graphics.drawable.BitmapDrawable r0 = new android.graphics.drawable.BitmapDrawable
+            java.lang.Object r1 = r3.f23663Z
+            android.content.res.Resources r1 = (android.content.res.Resources) r1
+            java.lang.Object r2 = r3.f23664a0
+            m2.w r2 = (p214m2.InterfaceC4345w) r2
+            java.lang.Object r2 = r2.get()
+            android.graphics.Bitmap r2 = (android.graphics.Bitmap) r2
+            r0.<init>(r1, r2)
+            return r0
+    }
+}
+package p334t2;
+
+/* renamed from: t2.f */
+/* loaded from: classes.dex */
+public class C6128f implements p180k2.InterfaceC3674f<java.nio.ByteBuffer, android.graphics.Bitmap> {
+
+    /* renamed from: a */
+    public final /* synthetic */ int f23665a;
+
+    /* renamed from: b */
+    public final java.lang.Object f23666b;
+
+    public C6128f(p229n2.InterfaceC4673c r2) {
+            r1 = this;
+            r0 = 2
+            r1.f23665a = r0
+            r1.<init>()
+            r1.f23666b = r2
+            return
+    }
+
+    public C6128f(p334t2.C6134l r2, int r3) {
+            r1 = this;
+            r1.f23665a = r3
+            r0 = 1
+            if (r3 == r0) goto Lb
+            r1.<init>()
+            r1.f23666b = r2
+            return
+        Lb:
+            r1.<init>()
+            r1.f23666b = r2
+            return
+    }
+
+    @Override // p180k2.InterfaceC3674f
+    /* renamed from: a */
+    public p214m2.InterfaceC4345w<android.graphics.Bitmap> mo8132a(java.nio.ByteBuffer r8, int r9, int r10, p180k2.C3673e r11) {
+            r7 = this;
+            int r0 = r7.f23665a
+            switch(r0) {
+                case 0: goto L20;
+                case 1: goto L6;
+                default: goto L5;
+            }
+        L5:
+            goto L38
+        L6:
+            android.os.ParcelFileDescriptor r8 = (android.os.ParcelFileDescriptor) r8
+            java.lang.Object r0 = r7.f23666b
+            r1 = r0
+            t2.l r1 = (p334t2.C6134l) r1
+            t2.r$b r2 = new t2.r$b
+            java.util.List<com.bumptech.glide.load.ImageHeaderParser> r0 = r1.f23692d
+            n2.b r3 = r1.f23691c
+            r2.<init>(r8, r0, r3)
+            t2.l$b r6 = p334t2.C6134l.f23687k
+            r3 = r9
+            r4 = r10
+            r5 = r11
+            m2.w r8 = r1.m12677b(r2, r3, r4, r5, r6)
+            return r8
+        L20:
+            java.nio.ByteBuffer r8 = (java.nio.ByteBuffer) r8
+            java.util.concurrent.atomic.AtomicReference<byte[]> r0 = p106g3.C2229a.f10188a
+            g3.a$a r2 = new g3.a$a
+            r2.<init>(r8)
+            java.lang.Object r8 = r7.f23666b
+            r1 = r8
+            t2.l r1 = (p334t2.C6134l) r1
+            t2.l$b r6 = p334t2.C6134l.f23687k
+            r3 = r9
+            r4 = r10
+            r5 = r11
+            m2.w r8 = r1.m12676a(r2, r3, r4, r5, r6)
+            return r8
+        L38:
+            j2.a r8 = (p160j2.InterfaceC3388a) r8
+            android.graphics.Bitmap r8 = r8.mo7760b()
+            java.lang.Object r9 = r7.f23666b
+            n2.c r9 = (p229n2.InterfaceC4673c) r9
+            t2.d r8 = p334t2.C6126d.m12654f(r8, r9)
+            return r8
+    }
+
+    @Override // p180k2.InterfaceC3674f
+    /* renamed from: b */
+    public boolean mo8133b(java.nio.ByteBuffer r2, p180k2.C3673e r3) {
+            r1 = this;
+            int r3 = r1.f23665a
+            r0 = 1
+            switch(r3) {
+                case 0: goto L11;
+                case 1: goto L7;
+                default: goto L6;
+            }
+        L6:
+            goto L1b
+        L7:
+            android.os.ParcelFileDescriptor r2 = (android.os.ParcelFileDescriptor) r2
+            java.lang.Object r2 = r1.f23666b
+            t2.l r2 = (p334t2.C6134l) r2
+            java.util.Objects.requireNonNull(r2)
+            return r0
+        L11:
+            java.nio.ByteBuffer r2 = (java.nio.ByteBuffer) r2
+            java.lang.Object r2 = r1.f23666b
+            t2.l r2 = (p334t2.C6134l) r2
+            java.util.Objects.requireNonNull(r2)
+            return r0
+        L1b:
+            j2.a r2 = (p160j2.InterfaceC3388a) r2
+            return r0
+    }
+}
+package p334t2;
+
+/* renamed from: t2.g */
+/* loaded from: classes.dex */
+public final class C6129g implements p180k2.InterfaceC3674f<java.nio.ByteBuffer, android.graphics.Bitmap> {
+
+    /* renamed from: a */
+    public final p334t2.C6125c f23667a;
+
+    public C6129g() {
+            r1 = this;
+            r1.<init>()
+            t2.c r0 = new t2.c
+            r0.<init>()
+            r1.f23667a = r0
+            return
+    }
+
+    @Override // p180k2.InterfaceC3674f
+    /* renamed from: a */
+    public p214m2.InterfaceC4345w<android.graphics.Bitmap> mo8132a(java.nio.ByteBuffer r2, int r3, int r4, p180k2.C3673e r5) {
+            r1 = this;
+            java.nio.ByteBuffer r2 = (java.nio.ByteBuffer) r2
+            android.graphics.ImageDecoder$Source r2 = android.graphics.ImageDecoder.createSource(r2)
+            t2.c r0 = r1.f23667a
+            m2.w r2 = r0.m12355c(r2, r3, r4, r5)
+            return r2
+    }
+
+    @Override // p180k2.InterfaceC3674f
+    /* renamed from: b */
+    public /* bridge */ /* synthetic */ boolean mo8133b(java.nio.ByteBuffer r1, p180k2.C3673e r2) {
+            r0 = this;
+            java.nio.ByteBuffer r1 = (java.nio.ByteBuffer) r1
+            r1 = 1
+            return r1
+    }
+}
+package p334t2;
+
+/* renamed from: t2.h */
+/* loaded from: classes.dex */
+public class C6130h extends p334t2.AbstractC6127e {
+
+    /* renamed from: b */
+    public static final byte[] f23668b = null;
+
+    static {
+            java.nio.charset.Charset r0 = p180k2.InterfaceC3671c.f16244a
+            java.lang.String r1 = "com.bumptech.glide.load.resource.bitmap.CenterCrop"
+            byte[] r0 = r1.getBytes(r0)
+            p334t2.C6130h.f23668b = r0
+            return
+    }
+
+    public C6130h() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p180k2.InterfaceC3671c
+    /* renamed from: b */
+    public void mo5082b(java.security.MessageDigest r2) {
+            r1 = this;
+            byte[] r0 = p334t2.C6130h.f23668b
+            r2.update(r0)
+            return
+    }
+
+    @Override // p334t2.AbstractC6127e
+    /* renamed from: c */
+    public android.graphics.Bitmap mo12655c(p229n2.InterfaceC4673c r7, android.graphics.Bitmap r8, int r9, int r10) {
+            r6 = this;
+            android.graphics.Paint r0 = p334t2.C6144v.f23726a
+            int r0 = r8.getWidth()
+            if (r0 != r9) goto Lf
+            int r0 = r8.getHeight()
+            if (r0 != r10) goto Lf
+            goto L6b
+        Lf:
+            android.graphics.Matrix r0 = new android.graphics.Matrix
+            r0.<init>()
+            int r1 = r8.getWidth()
+            int r1 = r1 * r10
+            int r2 = r8.getHeight()
+            int r2 = r2 * r9
+            r3 = 1056964608(0x3f000000, float:0.5)
+            r4 = 0
+            if (r1 <= r2) goto L3a
+            float r1 = (float) r10
+            int r2 = r8.getHeight()
+            float r2 = (float) r2
+            float r1 = r1 / r2
+            float r2 = (float) r9
+            int r5 = r8.getWidth()
+            float r5 = (float) r5
+            float r5 = r5 * r1
+            float r2 = r2 - r5
+            float r2 = r2 * r3
+            r4 = r2
+            r2 = 0
+            goto L4c
+        L3a:
+            float r1 = (float) r9
+            int r2 = r8.getWidth()
+            float r2 = (float) r2
+            float r1 = r1 / r2
+            float r2 = (float) r10
+            int r5 = r8.getHeight()
+            float r5 = (float) r5
+            float r5 = r5 * r1
+            float r2 = r2 - r5
+            float r2 = r2 * r3
+        L4c:
+            r0.setScale(r1, r1)
+            float r4 = r4 + r3
+            int r1 = (int) r4
+            float r1 = (float) r1
+            float r2 = r2 + r3
+            int r2 = (int) r2
+            float r2 = (float) r2
+            r0.postTranslate(r1, r2)
+            android.graphics.Bitmap$Config r1 = p334t2.C6144v.m12692c(r8)
+            android.graphics.Bitmap r7 = r7.mo10693e(r9, r10, r1)
+            boolean r9 = r8.hasAlpha()
+            r7.setHasAlpha(r9)
+            p334t2.C6144v.m12690a(r8, r7, r0)
+            r8 = r7
+        L6b:
+            return r8
+    }
+
+    @Override // p180k2.InterfaceC3671c
+    public boolean equals(java.lang.Object r1) {
+            r0 = this;
+            boolean r1 = r1 instanceof p334t2.C6130h
+            return r1
+    }
+
+    @Override // p180k2.InterfaceC3671c
+    public int hashCode() {
+            r1 = this;
+            r0 = -599754482(0xffffffffdc40790e, float:-2.1670519E17)
+            return r0
+    }
+}
+package p334t2;
+
+/* renamed from: t2.i */
+/* loaded from: classes.dex */
+public class C6131i extends p334t2.AbstractC6127e {
+
+    /* renamed from: b */
+    public static final byte[] f23669b = null;
+
+    static {
+            java.nio.charset.Charset r0 = p180k2.InterfaceC3671c.f16244a
+            java.lang.String r1 = "com.bumptech.glide.load.resource.bitmap.CenterInside"
+            byte[] r0 = r1.getBytes(r0)
+            p334t2.C6131i.f23669b = r0
+            return
+    }
+
+    public C6131i() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p180k2.InterfaceC3671c
+    /* renamed from: b */
+    public void mo5082b(java.security.MessageDigest r2) {
+            r1 = this;
+            byte[] r0 = p334t2.C6131i.f23669b
+            r2.update(r0)
+            return
+    }
+
+    @Override // p334t2.AbstractC6127e
+    /* renamed from: c */
+    public android.graphics.Bitmap mo12655c(p229n2.InterfaceC4673c r4, android.graphics.Bitmap r5, int r6, int r7) {
+            r3 = this;
+            android.graphics.Paint r0 = p334t2.C6144v.f23726a
+            int r0 = r5.getWidth()
+            r1 = 2
+            java.lang.String r2 = "TransformationUtils"
+            if (r0 > r6) goto L1d
+            int r0 = r5.getHeight()
+            if (r0 > r7) goto L1d
+            boolean r4 = android.util.Log.isLoggable(r2, r1)
+            if (r4 == 0) goto L2c
+            java.lang.String r4 = "requested target size larger or equal to input, returning input"
+            android.util.Log.v(r2, r4)
+            goto L2c
+        L1d:
+            boolean r0 = android.util.Log.isLoggable(r2, r1)
+            if (r0 == 0) goto L28
+            java.lang.String r0 = "requested target size too big for input, fit centering instead"
+            android.util.Log.v(r2, r0)
+        L28:
+            android.graphics.Bitmap r5 = p334t2.C6144v.m12691b(r4, r5, r6, r7)
+        L2c:
+            return r5
+    }
+
+    @Override // p180k2.InterfaceC3671c
+    public boolean equals(java.lang.Object r1) {
+            r0 = this;
+            boolean r1 = r1 instanceof p334t2.C6131i
+            return r1
+    }
+
+    @Override // p180k2.InterfaceC3671c
+    public int hashCode() {
+            r1 = this;
+            r0 = -670243078(0xffffffffd80ce6fa, float:-6.1969466E14)
+            return r0
+    }
+}
+package p334t2;
+
+/* renamed from: t2.j */
+/* loaded from: classes.dex */
+public final class C6132j implements com.bumptech.glide.load.ImageHeaderParser {
+
+    /* renamed from: a */
+    public static final byte[] f23670a = null;
+
+    /* renamed from: b */
+    public static final int[] f23671b = null;
+
+    /* renamed from: t2.j$a */
+    public static final class a implements p334t2.C6132j.c {
+
+        /* renamed from: a */
+        public final java.nio.ByteBuffer f23672a;
+
+        public a(java.nio.ByteBuffer r2) {
+                r1 = this;
+                r1.<init>()
+                r1.f23672a = r2
+                java.nio.ByteOrder r0 = java.nio.ByteOrder.BIG_ENDIAN
+                r2.order(r0)
+                return
+        }
+
+        @Override // p334t2.C6132j.c
+        /* renamed from: a */
+        public int mo12659a(byte[] r3, int r4) {
+                r2 = this;
+                java.nio.ByteBuffer r0 = r2.f23672a
+                int r0 = r0.remaining()
+                int r4 = java.lang.Math.min(r4, r0)
+                if (r4 != 0) goto Le
+                r3 = -1
+                return r3
+            Le:
+                java.nio.ByteBuffer r0 = r2.f23672a
+                r1 = 0
+                r0.get(r3, r1, r4)
+                return r4
+        }
+
+        @Override // p334t2.C6132j.c
+        /* renamed from: b */
+        public long mo12660b(long r3) {
+                r2 = this;
+                java.nio.ByteBuffer r0 = r2.f23672a
+                int r0 = r0.remaining()
+                long r0 = (long) r0
+                long r3 = java.lang.Math.min(r0, r3)
+                int r4 = (int) r3
+                java.nio.ByteBuffer r3 = r2.f23672a
+                int r0 = r3.position()
+                int r0 = r0 + r4
+                r3.position(r0)
+                long r3 = (long) r4
+                return r3
+        }
+
+        @Override // p334t2.C6132j.c
+        /* renamed from: c */
+        public short mo12661c() {
+                r2 = this;
+                java.nio.ByteBuffer r0 = r2.f23672a
+                int r0 = r0.remaining()
+                r1 = 1
+                if (r0 < r1) goto L13
+                java.nio.ByteBuffer r0 = r2.f23672a
+                byte r0 = r0.get()
+                r0 = r0 & 255(0xff, float:3.57E-43)
+                short r0 = (short) r0
+                return r0
+            L13:
+                t2.j$c$a r0 = new t2.j$c$a
+                r0.<init>()
+                throw r0
+        }
+
+        @Override // p334t2.C6132j.c
+        /* renamed from: d */
+        public int mo12662d() {
+                r2 = this;
+                short r0 = r2.mo12661c()
+                int r0 = r0 << 8
+                short r1 = r2.mo12661c()
+                r0 = r0 | r1
+                return r0
+        }
+    }
+
+    /* renamed from: t2.j$b */
+    public static final class b {
+
+        /* renamed from: a */
+        public final java.nio.ByteBuffer f23673a;
+
+        public b(byte[] r2, int r3) {
+                r1 = this;
+                r1.<init>()
+                java.nio.ByteBuffer r2 = java.nio.ByteBuffer.wrap(r2)
+                java.nio.ByteOrder r0 = java.nio.ByteOrder.BIG_ENDIAN
+                java.nio.ByteBuffer r2 = r2.order(r0)
+                java.nio.Buffer r2 = r2.limit(r3)
+                java.nio.ByteBuffer r2 = (java.nio.ByteBuffer) r2
+                r1.f23673a = r2
+                return
+        }
+
+        /* renamed from: a */
+        public short m12663a(int r3) {
+                r2 = this;
+                java.nio.ByteBuffer r0 = r2.f23673a
+                int r0 = r0.remaining()
+                int r0 = r0 - r3
+                r1 = 2
+                if (r0 < r1) goto Lc
+                r0 = 1
+                goto Ld
+            Lc:
+                r0 = 0
+            Ld:
+                if (r0 == 0) goto L16
+                java.nio.ByteBuffer r0 = r2.f23673a
+                short r3 = r0.getShort(r3)
+                goto L17
+            L16:
+                r3 = -1
+            L17:
+                return r3
+        }
+
+        /* renamed from: b */
+        public int m12664b(int r3) {
+                r2 = this;
+                java.nio.ByteBuffer r0 = r2.f23673a
+                int r0 = r0.remaining()
+                int r0 = r0 - r3
+                r1 = 4
+                if (r0 < r1) goto Lc
+                r0 = 1
+                goto Ld
+            Lc:
+                r0 = 0
+            Ld:
+                if (r0 == 0) goto L16
+                java.nio.ByteBuffer r0 = r2.f23673a
+                int r3 = r0.getInt(r3)
+                goto L17
+            L16:
+                r3 = -1
+            L17:
+                return r3
+        }
+    }
+
+    /* renamed from: t2.j$c */
+    public interface c {
+
+        /* renamed from: t2.j$c$a */
+        public static final class a extends java.io.IOException {
+            public a() {
+                    r1 = this;
+                    java.lang.String r0 = "Unexpectedly reached end of a file"
+                    r1.<init>(r0)
+                    return
+            }
+        }
+
+        /* renamed from: a */
+        int mo12659a(byte[] r1, int r2);
+
+        /* renamed from: b */
+        long mo12660b(long r1);
+
+        /* renamed from: c */
+        short mo12661c();
+
+        /* renamed from: d */
+        int mo12662d();
+    }
+
+    /* renamed from: t2.j$d */
+    public static final class d implements p334t2.C6132j.c {
+
+        /* renamed from: a */
+        public final java.io.InputStream f23674a;
+
+        public d(java.io.InputStream r1) {
+                r0 = this;
+                r0.<init>()
+                r0.f23674a = r1
+                return
+        }
+
+        @Override // p334t2.C6132j.c
+        /* renamed from: a */
+        public int mo12659a(byte[] r5, int r6) {
+                r4 = this;
+                r0 = 0
+                r1 = 0
+            L2:
+                r2 = -1
+                if (r0 >= r6) goto L11
+                java.io.InputStream r1 = r4.f23674a
+                int r3 = r6 - r0
+                int r1 = r1.read(r5, r0, r3)
+                if (r1 == r2) goto L11
+                int r0 = r0 + r1
+                goto L2
+            L11:
+                if (r0 != 0) goto L1c
+                if (r1 == r2) goto L16
+                goto L1c
+            L16:
+                t2.j$c$a r5 = new t2.j$c$a
+                r5.<init>()
+                throw r5
+            L1c:
+                return r0
+        }
+
+        @Override // p334t2.C6132j.c
+        /* renamed from: b */
+        public long mo12660b(long r8) {
+                r7 = this;
+                r0 = 0
+                int r2 = (r8 > r0 ? 1 : (r8 == r0 ? 0 : -1))
+                if (r2 >= 0) goto L7
+                return r0
+            L7:
+                r2 = r8
+            L8:
+                int r4 = (r2 > r0 ? 1 : (r2 == r0 ? 0 : -1))
+                if (r4 <= 0) goto L25
+                java.io.InputStream r4 = r7.f23674a
+                long r4 = r4.skip(r2)
+                int r6 = (r4 > r0 ? 1 : (r4 == r0 ? 0 : -1))
+                if (r6 <= 0) goto L18
+            L16:
+                long r2 = r2 - r4
+                goto L8
+            L18:
+                java.io.InputStream r4 = r7.f23674a
+                int r4 = r4.read()
+                r5 = -1
+                if (r4 != r5) goto L22
+                goto L25
+            L22:
+                r4 = 1
+                goto L16
+            L25:
+                long r8 = r8 - r2
+                return r8
+        }
+
+        @Override // p334t2.C6132j.c
+        /* renamed from: c */
+        public short mo12661c() {
+                r2 = this;
+                java.io.InputStream r0 = r2.f23674a
+                int r0 = r0.read()
+                r1 = -1
+                if (r0 == r1) goto Lb
+                short r0 = (short) r0
+                return r0
+            Lb:
+                t2.j$c$a r0 = new t2.j$c$a
+                r0.<init>()
+                throw r0
+        }
+
+        @Override // p334t2.C6132j.c
+        /* renamed from: d */
+        public int mo12662d() {
+                r2 = this;
+                short r0 = r2.mo12661c()
+                int r0 = r0 << 8
+                short r1 = r2.mo12661c()
+                r0 = r0 | r1
+                return r0
+        }
+    }
+
+    static {
+            java.lang.String r0 = "UTF-8"
+            java.nio.charset.Charset r0 = java.nio.charset.Charset.forName(r0)
+            java.lang.String r1 = "Exif\u0000\u0000"
+            byte[] r0 = r1.getBytes(r0)
+            p334t2.C6132j.f23670a = r0
+            r0 = 13
+            int[] r0 = new int[r0]
+            r0 = {x0018: FILL_ARRAY_DATA , data: [0, 1, 1, 2, 4, 8, 1, 1, 2, 4, 8, 4, 8} // fill-array
+            p334t2.C6132j.f23671b = r0
+            return
+    }
+
+    public C6132j() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // com.bumptech.glide.load.ImageHeaderParser
+    /* renamed from: a */
+    public com.bumptech.glide.load.ImageHeaderParser.ImageType mo2776a(java.nio.ByteBuffer r3) {
+            r2 = this;
+            t2.j$a r0 = new t2.j$a
+            java.lang.String r1 = "Argument must not be null"
+            java.util.Objects.requireNonNull(r3, r1)
+            r0.<init>(r3)
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r3 = r2.m12656d(r0)
+            return r3
+    }
+
+    @Override // com.bumptech.glide.load.ImageHeaderParser
+    /* renamed from: b */
+    public int mo2777b(java.io.InputStream r6, p229n2.InterfaceC4672b r7) {
+            r5 = this;
+            t2.j$d r0 = new t2.j$d
+            java.lang.String r1 = "Argument must not be null"
+            java.util.Objects.requireNonNull(r6, r1)
+            r0.<init>(r6)
+            java.util.Objects.requireNonNull(r7, r1)
+            r6 = -1
+            int r1 = r0.mo12662d()     // Catch: p334t2.C6132j.c.a -> L6a
+            r2 = 65496(0xffd8, float:9.178E-41)
+            r3 = r1 & r2
+            if (r3 == r2) goto L24
+            r2 = 19789(0x4d4d, float:2.773E-41)
+            if (r1 == r2) goto L24
+            r2 = 18761(0x4949, float:2.629E-41)
+            if (r1 != r2) goto L22
+            goto L24
+        L22:
+            r2 = 0
+            goto L25
+        L24:
+            r2 = 1
+        L25:
+            r3 = 3
+            java.lang.String r4 = "DfltImageHeaderParser"
+            if (r2 != 0) goto L42
+            boolean r7 = android.util.Log.isLoggable(r4, r3)     // Catch: p334t2.C6132j.c.a -> L6a
+            if (r7 == 0) goto L6a
+            java.lang.StringBuilder r7 = new java.lang.StringBuilder     // Catch: p334t2.C6132j.c.a -> L6a
+            r7.<init>()     // Catch: p334t2.C6132j.c.a -> L6a
+            java.lang.String r0 = "Parser doesn't handle magic number: "
+            r7.append(r0)     // Catch: p334t2.C6132j.c.a -> L6a
+            r7.append(r1)     // Catch: p334t2.C6132j.c.a -> L6a
+            java.lang.String r7 = r7.toString()     // Catch: p334t2.C6132j.c.a -> L6a
+            goto L50
+        L42:
+            int r1 = r5.m12657e(r0)     // Catch: p334t2.C6132j.c.a -> L6a
+            if (r1 != r6) goto L54
+            boolean r7 = android.util.Log.isLoggable(r4, r3)     // Catch: p334t2.C6132j.c.a -> L6a
+            if (r7 == 0) goto L6a
+            java.lang.String r7 = "Failed to parse exif segment length, or exif segment not found"
+        L50:
+            android.util.Log.d(r4, r7)     // Catch: p334t2.C6132j.c.a -> L6a
+            goto L6a
+        L54:
+            java.lang.Class<byte[]> r2 = byte[].class
+            java.lang.Object r2 = r7.mo10688e(r1, r2)     // Catch: p334t2.C6132j.c.a -> L6a
+            byte[] r2 = (byte[]) r2     // Catch: p334t2.C6132j.c.a -> L6a
+            int r0 = r5.m12658f(r0, r2, r1)     // Catch: java.lang.Throwable -> L65
+            r7.mo10687d(r2)     // Catch: p334t2.C6132j.c.a -> L6a
+            r6 = r0
+            goto L6a
+        L65:
+            r0 = move-exception
+            r7.mo10687d(r2)     // Catch: p334t2.C6132j.c.a -> L6a
+            throw r0     // Catch: p334t2.C6132j.c.a -> L6a
+        L6a:
+            return r6
+    }
+
+    @Override // com.bumptech.glide.load.ImageHeaderParser
+    /* renamed from: c */
+    public com.bumptech.glide.load.ImageHeaderParser.ImageType mo2778c(java.io.InputStream r3) {
+            r2 = this;
+            t2.j$d r0 = new t2.j$d
+            java.lang.String r1 = "Argument must not be null"
+            java.util.Objects.requireNonNull(r3, r1)
+            r0.<init>(r3)
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r3 = r2.m12656d(r0)
+            return r3
+    }
+
+    /* renamed from: d */
+    public final com.bumptech.glide.load.ImageHeaderParser.ImageType m12656d(p334t2.C6132j.c r6) {
+            r5 = this;
+            int r0 = r6.mo12662d()     // Catch: p334t2.C6132j.c.a -> La0
+            r1 = 65496(0xffd8, float:9.178E-41)
+            if (r0 != r1) goto Lc
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r6 = com.bumptech.glide.load.ImageHeaderParser.ImageType.JPEG     // Catch: p334t2.C6132j.c.a -> La0
+            return r6
+        Lc:
+            int r0 = r0 << 8
+            short r1 = r6.mo12661c()     // Catch: p334t2.C6132j.c.a -> La0
+            r0 = r0 | r1
+            r1 = 4671814(0x474946, float:6.546606E-39)
+            if (r0 != r1) goto L1b
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r6 = com.bumptech.glide.load.ImageHeaderParser.ImageType.GIF     // Catch: p334t2.C6132j.c.a -> La0
+            return r6
+        L1b:
+            int r0 = r0 << 8
+            short r1 = r6.mo12661c()     // Catch: p334t2.C6132j.c.a -> La0
+            r0 = r0 | r1
+            r1 = -1991225785(0xffffffff89504e47, float:-2.5073895E-33)
+            if (r0 != r1) goto L3c
+            r0 = 21
+            r6.mo12660b(r0)     // Catch: p334t2.C6132j.c.a -> La0
+            short r6 = r6.mo12661c()     // Catch: p334t2.C6132j.c.a -> L39
+            r0 = 3
+            if (r6 < r0) goto L36
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r6 = com.bumptech.glide.load.ImageHeaderParser.ImageType.PNG_A     // Catch: p334t2.C6132j.c.a -> L39
+            goto L38
+        L36:
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r6 = com.bumptech.glide.load.ImageHeaderParser.ImageType.PNG     // Catch: p334t2.C6132j.c.a -> L39
+        L38:
+            return r6
+        L39:
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r6 = com.bumptech.glide.load.ImageHeaderParser.ImageType.PNG     // Catch: p334t2.C6132j.c.a -> La0
+            return r6
+        L3c:
+            r1 = 1380533830(0x52494646, float:2.1611685E11)
+            if (r0 == r1) goto L44
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r6 = com.bumptech.glide.load.ImageHeaderParser.ImageType.UNKNOWN     // Catch: p334t2.C6132j.c.a -> La0
+            return r6
+        L44:
+            r0 = 4
+            r6.mo12660b(r0)     // Catch: p334t2.C6132j.c.a -> La0
+            int r2 = r6.mo12662d()     // Catch: p334t2.C6132j.c.a -> La0
+            int r2 = r2 << 16
+            int r3 = r6.mo12662d()     // Catch: p334t2.C6132j.c.a -> La0
+            r2 = r2 | r3
+            r3 = 1464156752(0x57454250, float:2.168886E14)
+            if (r2 == r3) goto L5c
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r6 = com.bumptech.glide.load.ImageHeaderParser.ImageType.UNKNOWN     // Catch: p334t2.C6132j.c.a -> La0
+            return r6
+        L5c:
+            int r2 = r6.mo12662d()     // Catch: p334t2.C6132j.c.a -> La0
+            int r2 = r2 << 16
+            int r3 = r6.mo12662d()     // Catch: p334t2.C6132j.c.a -> La0
+            r2 = r2 | r3
+            r3 = r2 & (-256(0xffffffffffffff00, float:NaN))
+            r4 = 1448097792(0x56503800, float:5.7234734E13)
+            if (r3 == r4) goto L71
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r6 = com.bumptech.glide.load.ImageHeaderParser.ImageType.UNKNOWN     // Catch: p334t2.C6132j.c.a -> La0
+            return r6
+        L71:
+            r2 = r2 & 255(0xff, float:3.57E-43)
+            r3 = 88
+            if (r2 != r3) goto L88
+            r6.mo12660b(r0)     // Catch: p334t2.C6132j.c.a -> La0
+            short r6 = r6.mo12661c()     // Catch: p334t2.C6132j.c.a -> La0
+            r6 = r6 & 16
+            if (r6 == 0) goto L85
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r6 = com.bumptech.glide.load.ImageHeaderParser.ImageType.WEBP_A     // Catch: p334t2.C6132j.c.a -> La0
+            goto L87
+        L85:
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r6 = com.bumptech.glide.load.ImageHeaderParser.ImageType.WEBP     // Catch: p334t2.C6132j.c.a -> La0
+        L87:
+            return r6
+        L88:
+            r3 = 76
+            if (r2 != r3) goto L9d
+            r6.mo12660b(r0)     // Catch: p334t2.C6132j.c.a -> La0
+            short r6 = r6.mo12661c()     // Catch: p334t2.C6132j.c.a -> La0
+            r6 = r6 & 8
+            if (r6 == 0) goto L9a
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r6 = com.bumptech.glide.load.ImageHeaderParser.ImageType.WEBP_A     // Catch: p334t2.C6132j.c.a -> La0
+            goto L9c
+        L9a:
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r6 = com.bumptech.glide.load.ImageHeaderParser.ImageType.WEBP     // Catch: p334t2.C6132j.c.a -> La0
+        L9c:
+            return r6
+        L9d:
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r6 = com.bumptech.glide.load.ImageHeaderParser.ImageType.WEBP     // Catch: p334t2.C6132j.c.a -> La0
+            return r6
+        La0:
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r6 = com.bumptech.glide.load.ImageHeaderParser.ImageType.UNKNOWN
+            return r6
+    }
+
+    /* renamed from: e */
+    public final int m12657e(p334t2.C6132j.c r11) {
+            r10 = this;
+        L0:
+            short r0 = r11.mo12661c()
+            r1 = 255(0xff, float:3.57E-43)
+            r2 = 3
+            r3 = -1
+            java.lang.String r4 = "DfltImageHeaderParser"
+            if (r0 == r1) goto L27
+            boolean r11 = android.util.Log.isLoggable(r4, r2)
+            if (r11 == 0) goto L26
+            java.lang.StringBuilder r11 = new java.lang.StringBuilder
+            r11.<init>()
+            java.lang.String r1 = "Unknown segmentId="
+            r11.append(r1)
+            r11.append(r0)
+            java.lang.String r11 = r11.toString()
+            android.util.Log.d(r4, r11)
+        L26:
+            return r3
+        L27:
+            short r0 = r11.mo12661c()
+            r1 = 218(0xda, float:3.05E-43)
+            if (r0 != r1) goto L30
+            return r3
+        L30:
+            r1 = 217(0xd9, float:3.04E-43)
+            if (r0 != r1) goto L40
+            boolean r11 = android.util.Log.isLoggable(r4, r2)
+            if (r11 == 0) goto L3f
+            java.lang.String r11 = "Found MARKER_EOI in exif segment"
+            android.util.Log.d(r4, r11)
+        L3f:
+            return r3
+        L40:
+            int r1 = r11.mo12662d()
+            int r1 = r1 + (-2)
+            r5 = 225(0xe1, float:3.15E-43)
+            if (r0 == r5) goto L6e
+            long r5 = (long) r1
+            long r7 = r11.mo12660b(r5)
+            int r9 = (r7 > r5 ? 1 : (r7 == r5 ? 0 : -1))
+            if (r9 == 0) goto L0
+            boolean r11 = android.util.Log.isLoggable(r4, r2)
+            if (r11 == 0) goto L6d
+            java.lang.String r11 = "Unable to skip enough data, type: "
+            java.lang.String r2 = ", wanted to skip: "
+            java.lang.String r5 = ", but actually skipped: "
+            java.lang.StringBuilder r11 = androidx.recyclerview.widget.C0608s.m2117a(r11, r0, r2, r1, r5)
+            r11.append(r7)
+            java.lang.String r11 = r11.toString()
+            android.util.Log.d(r4, r11)
+        L6d:
+            return r3
+        L6e:
+            return r1
+    }
+
+    /* renamed from: f */
+    public final int m12658f(p334t2.C6132j.c r13, byte[] r14, int r15) {
+            r12 = this;
+            int r13 = r13.mo12659a(r14, r15)
+            r0 = -1
+            r1 = 3
+            java.lang.String r2 = "DfltImageHeaderParser"
+            if (r13 == r15) goto L2d
+            boolean r14 = android.util.Log.isLoggable(r2, r1)
+            if (r14 == 0) goto L2c
+            java.lang.StringBuilder r14 = new java.lang.StringBuilder
+            r14.<init>()
+            java.lang.String r1 = "Unable to read exif segment data, length: "
+            r14.append(r1)
+            r14.append(r15)
+            java.lang.String r15 = ", actually read: "
+            r14.append(r15)
+            r14.append(r13)
+            java.lang.String r13 = r14.toString()
+            android.util.Log.d(r2, r13)
+        L2c:
+            return r0
+        L2d:
+            r13 = 0
+            r3 = 1
+            if (r14 == 0) goto L38
+            byte[] r4 = p334t2.C6132j.f23670a
+            int r4 = r4.length
+            if (r15 <= r4) goto L38
+            r4 = 1
+            goto L39
+        L38:
+            r4 = 0
+        L39:
+            if (r4 == 0) goto L4c
+            r5 = 0
+        L3c:
+            byte[] r6 = p334t2.C6132j.f23670a
+            int r7 = r6.length
+            if (r5 >= r7) goto L4c
+            r7 = r14[r5]
+            r6 = r6[r5]
+            if (r7 == r6) goto L49
+            r4 = 0
+            goto L4c
+        L49:
+            int r5 = r5 + 1
+            goto L3c
+        L4c:
+            if (r4 == 0) goto L14f
+            t2.j$b r4 = new t2.j$b
+            r4.<init>(r14, r15)
+            r14 = 6
+            short r15 = r4.m12663a(r14)
+            r5 = 18761(0x4949, float:2.629E-41)
+            if (r15 == r5) goto L7d
+            r5 = 19789(0x4d4d, float:2.773E-41)
+            if (r15 == r5) goto L7a
+            boolean r5 = android.util.Log.isLoggable(r2, r1)
+            if (r5 == 0) goto L7a
+            java.lang.StringBuilder r5 = new java.lang.StringBuilder
+            r5.<init>()
+            java.lang.String r6 = "Unknown endianness = "
+            r5.append(r6)
+            r5.append(r15)
+            java.lang.String r15 = r5.toString()
+            android.util.Log.d(r2, r15)
+        L7a:
+            java.nio.ByteOrder r15 = java.nio.ByteOrder.BIG_ENDIAN
+            goto L7f
+        L7d:
+            java.nio.ByteOrder r15 = java.nio.ByteOrder.LITTLE_ENDIAN
+        L7f:
+            java.nio.ByteBuffer r5 = r4.f23673a
+            r5.order(r15)
+            r15 = 10
+            int r15 = r4.m12664b(r15)
+            int r15 = r15 + r14
+            short r14 = r4.m12663a(r15)
+        L8f:
+            if (r13 >= r14) goto L14e
+            int r5 = r15 + 2
+            int r6 = r13 * 12
+            int r6 = r6 + r5
+            short r5 = r4.m12663a(r6)
+            r7 = 274(0x112, float:3.84E-43)
+            if (r5 == r7) goto La0
+            goto L14a
+        La0:
+            int r7 = r6 + 2
+            short r7 = r4.m12663a(r7)
+            if (r7 < r3) goto L130
+            r8 = 12
+            if (r7 <= r8) goto Lae
+            goto L130
+        Lae:
+            int r8 = r6 + 4
+            int r8 = r4.m12664b(r8)
+            if (r8 >= 0) goto Lc0
+            boolean r5 = android.util.Log.isLoggable(r2, r1)
+            if (r5 == 0) goto L14a
+            java.lang.String r5 = "Negative tiff component count"
+            goto L147
+        Lc0:
+            boolean r9 = android.util.Log.isLoggable(r2, r1)
+            java.lang.String r10 = " tagType="
+            if (r9 == 0) goto Le2
+            java.lang.String r9 = "Got tagIndex="
+            java.lang.String r11 = " formatCode="
+            java.lang.StringBuilder r9 = androidx.recyclerview.widget.C0608s.m2117a(r9, r13, r10, r5, r11)
+            r9.append(r7)
+            java.lang.String r11 = " componentCount="
+            r9.append(r11)
+            r9.append(r8)
+            java.lang.String r9 = r9.toString()
+            android.util.Log.d(r2, r9)
+        Le2:
+            int[] r9 = p334t2.C6132j.f23671b
+            r9 = r9[r7]
+            int r8 = r8 + r9
+            r9 = 4
+            if (r8 <= r9) goto Lf8
+            boolean r5 = android.util.Log.isLoggable(r2, r1)
+            if (r5 == 0) goto L14a
+            java.lang.StringBuilder r5 = new java.lang.StringBuilder
+            r5.<init>()
+            java.lang.String r6 = "Got byte count > 4, not orientation, continuing, formatCode="
+            goto L13d
+        Lf8:
+            int r6 = r6 + 8
+            if (r6 < 0) goto L123
+            java.nio.ByteBuffer r7 = r4.f23673a
+            int r7 = r7.remaining()
+            if (r6 <= r7) goto L105
+            goto L123
+        L105:
+            if (r8 < 0) goto L116
+            int r8 = r8 + r6
+            java.nio.ByteBuffer r7 = r4.f23673a
+            int r7 = r7.remaining()
+            if (r8 <= r7) goto L111
+            goto L116
+        L111:
+            short r0 = r4.m12663a(r6)
+            goto L14e
+        L116:
+            boolean r6 = android.util.Log.isLoggable(r2, r1)
+            if (r6 == 0) goto L14a
+            java.lang.String r6 = "Illegal number of bytes for TI tag data tagType="
+            java.lang.String r5 = android.support.v4.media.C0142a.m254a(r6, r5)
+            goto L147
+        L123:
+            boolean r7 = android.util.Log.isLoggable(r2, r1)
+            if (r7 == 0) goto L14a
+            java.lang.String r7 = "Illegal tagValueOffset="
+            java.lang.String r5 = p243o1.C4872b.m11020a(r7, r6, r10, r5)
+            goto L147
+        L130:
+            boolean r5 = android.util.Log.isLoggable(r2, r1)
+            if (r5 == 0) goto L14a
+            java.lang.StringBuilder r5 = new java.lang.StringBuilder
+            r5.<init>()
+            java.lang.String r6 = "Got invalid format code = "
+        L13d:
+            r5.append(r6)
+            r5.append(r7)
+            java.lang.String r5 = r5.toString()
+        L147:
+            android.util.Log.d(r2, r5)
+        L14a:
+            int r13 = r13 + 1
+            goto L8f
+        L14e:
+            return r0
+        L14f:
+            boolean r13 = android.util.Log.isLoggable(r2, r1)
+            if (r13 == 0) goto L15a
+            java.lang.String r13 = "Missing jpeg exif preamble"
+            android.util.Log.d(r2, r13)
+        L15a:
+            return r0
+    }
+}
+package p334t2;
+
+/* renamed from: t2.l */
+/* loaded from: classes.dex */
+public final class C6134l {
+
+    /* renamed from: f */
+    public static final p180k2.C3672d<com.bumptech.glide.load.EnumC1009b> f23682f = null;
+
+    /* renamed from: g */
+    public static final p180k2.C3672d<com.bumptech.glide.load.EnumC1027e> f23683g = null;
+
+    /* renamed from: h */
+    public static final p180k2.C3672d<java.lang.Boolean> f23684h = null;
+
+    /* renamed from: i */
+    public static final p180k2.C3672d<java.lang.Boolean> f23685i = null;
+
+    /* renamed from: j */
+    public static final java.util.Set<java.lang.String> f23686j = null;
+
+    /* renamed from: k */
+    public static final p334t2.C6134l.b f23687k = null;
+
+    /* renamed from: l */
+    public static final java.util.Queue<android.graphics.BitmapFactory.Options> f23688l = null;
+
+    /* renamed from: a */
+    public final p229n2.InterfaceC4673c f23689a;
+
+    /* renamed from: b */
+    public final android.util.DisplayMetrics f23690b;
+
+    /* renamed from: c */
+    public final p229n2.InterfaceC4672b f23691c;
+
+    /* renamed from: d */
+    public final java.util.List<com.bumptech.glide.load.ImageHeaderParser> f23692d;
+
+    /* renamed from: e */
+    public final p334t2.C6139q f23693e;
+
+    /* renamed from: t2.l$a */
+    public class a implements p334t2.C6134l.b {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // p334t2.C6134l.b
+        /* renamed from: a */
+        public void mo12679a(p229n2.InterfaceC4673c r1, android.graphics.Bitmap r2) {
+                r0 = this;
+                return
+        }
+
+        @Override // p334t2.C6134l.b
+        /* renamed from: b */
+        public void mo12680b() {
+                r0 = this;
+                return
+        }
+    }
+
+    /* renamed from: t2.l$b */
+    public interface b {
+        /* renamed from: a */
+        void mo12679a(p229n2.InterfaceC4673c r1, android.graphics.Bitmap r2);
+
+        /* renamed from: b */
+        void mo12680b();
+    }
+
+    static {
+            com.bumptech.glide.load.b r0 = com.bumptech.glide.load.EnumC1009b.f5186Y
+            java.lang.String r1 = "com.bumptech.glide.load.resource.bitmap.Downsampler.DecodeFormat"
+            k2.d r0 = p180k2.C3672d.m8128a(r1, r0)
+            p334t2.C6134l.f23682f = r0
+            com.bumptech.glide.load.e r0 = com.bumptech.glide.load.EnumC1027e.f5221Y
+            java.lang.String r1 = "com.bumptech.glide.load.resource.bitmap.Downsampler.PreferredColorSpace"
+            k2.d r0 = p180k2.C3672d.m8128a(r1, r0)
+            p334t2.C6134l.f23683g = r0
+            k2.d<t2.k> r0 = p334t2.AbstractC6133k.f23680f
+            java.lang.Boolean r0 = java.lang.Boolean.FALSE
+            java.lang.String r1 = "com.bumptech.glide.load.resource.bitmap.Downsampler.FixBitmapSize"
+            k2.d r1 = p180k2.C3672d.m8128a(r1, r0)
+            p334t2.C6134l.f23684h = r1
+            java.lang.String r1 = "com.bumptech.glide.load.resource.bitmap.Downsampler.AllowHardwareDecode"
+            k2.d r0 = p180k2.C3672d.m8128a(r1, r0)
+            p334t2.C6134l.f23685i = r0
+            java.util.HashSet r0 = new java.util.HashSet
+            java.lang.String r1 = "image/vnd.wap.wbmp"
+            java.lang.String r2 = "image/x-ico"
+            java.lang.String[] r1 = new java.lang.String[]{r1, r2}
+            java.util.List r1 = java.util.Arrays.asList(r1)
+            r0.<init>(r1)
+            java.util.Set r0 = java.util.Collections.unmodifiableSet(r0)
+            p334t2.C6134l.f23686j = r0
+            t2.l$a r0 = new t2.l$a
+            r0.<init>()
+            p334t2.C6134l.f23687k = r0
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r0 = com.bumptech.glide.load.ImageHeaderParser.ImageType.JPEG
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r1 = com.bumptech.glide.load.ImageHeaderParser.ImageType.PNG_A
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r2 = com.bumptech.glide.load.ImageHeaderParser.ImageType.PNG
+            java.util.EnumSet r0 = java.util.EnumSet.of(r0, r1, r2)
+            java.util.Collections.unmodifiableSet(r0)
+            char[] r0 = p106g3.C2238j.f10214a
+            java.util.ArrayDeque r0 = new java.util.ArrayDeque
+            r1 = 0
+            r0.<init>(r1)
+            p334t2.C6134l.f23688l = r0
+            return
+    }
+
+    public C6134l(java.util.List<com.bumptech.glide.load.ImageHeaderParser> r2, android.util.DisplayMetrics r3, p229n2.InterfaceC4673c r4, p229n2.InterfaceC4672b r5) {
+            r1 = this;
+            r1.<init>()
+            t2.q r0 = p334t2.C6139q.m12682a()
+            r1.f23693e = r0
+            r1.f23692d = r2
+            java.lang.String r2 = "Argument must not be null"
+            java.util.Objects.requireNonNull(r3, r2)
+            r1.f23690b = r3
+            java.util.Objects.requireNonNull(r4, r2)
+            r1.f23689a = r4
+            java.util.Objects.requireNonNull(r5, r2)
+            r1.f23691c = r5
+            return
+    }
+
+    /* renamed from: d */
+    public static android.graphics.Bitmap m12667d(p334t2.InterfaceC6140r r5, android.graphics.BitmapFactory.Options r6, p334t2.C6134l.b r7, p229n2.InterfaceC4673c r8) {
+            java.lang.String r0 = "Downsampler"
+            boolean r1 = r6.inJustDecodeBounds
+            if (r1 != 0) goto Lc
+            r7.mo12680b()
+            r5.mo12685b()
+        Lc:
+            int r1 = r6.outWidth
+            int r2 = r6.outHeight
+            java.lang.String r3 = r6.outMimeType
+            java.util.concurrent.locks.Lock r4 = p334t2.C6144v.f23727b
+            r4.lock()
+            android.graphics.Bitmap r5 = r5.mo12684a(r6)     // Catch: java.lang.Throwable -> L1f java.lang.IllegalArgumentException -> L21
+            r4.unlock()
+            return r5
+        L1f:
+            r5 = move-exception
+            goto L48
+        L21:
+            r4 = move-exception
+            java.io.IOException r1 = m12672i(r4, r1, r2, r3, r6)     // Catch: java.lang.Throwable -> L1f
+            r2 = 3
+            boolean r2 = android.util.Log.isLoggable(r0, r2)     // Catch: java.lang.Throwable -> L1f
+            if (r2 == 0) goto L32
+            java.lang.String r2 = "Failed to decode with inBitmap, trying again without Bitmap re-use"
+            android.util.Log.d(r0, r2, r1)     // Catch: java.lang.Throwable -> L1f
+        L32:
+            android.graphics.Bitmap r0 = r6.inBitmap     // Catch: java.lang.Throwable -> L1f
+            if (r0 == 0) goto L47
+            r8.mo10694f(r0)     // Catch: java.lang.Throwable -> L1f java.io.IOException -> L46
+            r0 = 0
+            r6.inBitmap = r0     // Catch: java.lang.Throwable -> L1f java.io.IOException -> L46
+            android.graphics.Bitmap r5 = m12667d(r5, r6, r7, r8)     // Catch: java.lang.Throwable -> L1f java.io.IOException -> L46
+            java.util.concurrent.locks.Lock r6 = p334t2.C6144v.f23727b
+            r6.unlock()
+            return r5
+        L46:
+            throw r1     // Catch: java.lang.Throwable -> L1f
+        L47:
+            throw r1     // Catch: java.lang.Throwable -> L1f
+        L48:
+            java.util.concurrent.locks.Lock r6 = p334t2.C6144v.f23727b
+            r6.unlock()
+            throw r5
+    }
+
+    @android.annotation.TargetApi(19)
+    /* renamed from: e */
+    public static java.lang.String m12668e(android.graphics.Bitmap r3) {
+            if (r3 != 0) goto L4
+            r3 = 0
+            return r3
+        L4:
+            java.lang.String r0 = " ("
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            int r1 = r3.getAllocationByteCount()
+            r0.append(r1)
+            java.lang.String r1 = ")"
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            java.lang.String r1 = "["
+            java.lang.StringBuilder r1 = android.support.v4.media.C0144c.m256a(r1)
+            int r2 = r3.getWidth()
+            r1.append(r2)
+            java.lang.String r2 = "x"
+            r1.append(r2)
+            int r2 = r3.getHeight()
+            r1.append(r2)
+            java.lang.String r2 = "] "
+            r1.append(r2)
+            android.graphics.Bitmap$Config r3 = r3.getConfig()
+            r1.append(r3)
+            r1.append(r0)
+            java.lang.String r3 = r1.toString()
+            return r3
+    }
+
+    /* renamed from: f */
+    public static int m12669f(double r3) {
+            r0 = 4607182418800017408(0x3ff0000000000000, double:1.0)
+            int r2 = (r3 > r0 ? 1 : (r3 == r0 ? 0 : -1))
+            if (r2 > 0) goto L7
+            goto L9
+        L7:
+            double r3 = r0 / r3
+        L9:
+            r0 = 4746794007244308480(0x41dfffffffc00000, double:2.147483647E9)
+            double r3 = r3 * r0
+            long r3 = java.lang.Math.round(r3)
+            int r4 = (int) r3
+            return r4
+    }
+
+    /* renamed from: g */
+    public static int[] m12670g(p334t2.InterfaceC6140r r1, android.graphics.BitmapFactory.Options r2, p334t2.C6134l.b r3, p229n2.InterfaceC4673c r4) {
+            r0 = 1
+            r2.inJustDecodeBounds = r0
+            m12667d(r1, r2, r3, r4)
+            r1 = 0
+            r2.inJustDecodeBounds = r1
+            r3 = 2
+            int[] r3 = new int[r3]
+            int r4 = r2.outWidth
+            r3[r1] = r4
+            int r1 = r2.outHeight
+            r3[r0] = r1
+            return r3
+    }
+
+    /* renamed from: h */
+    public static boolean m12671h(int r1) {
+            r0 = 90
+            if (r1 == r0) goto Lb
+            r0 = 270(0x10e, float:3.78E-43)
+            if (r1 != r0) goto L9
+            goto Lb
+        L9:
+            r1 = 0
+            goto Lc
+        Lb:
+            r1 = 1
+        Lc:
+            return r1
+    }
+
+    /* renamed from: i */
+    public static java.io.IOException m12672i(java.lang.IllegalArgumentException r4, int r5, int r6, java.lang.String r7, android.graphics.BitmapFactory.Options r8) {
+            java.io.IOException r0 = new java.io.IOException
+            java.lang.String r1 = "Exception decoding bitmap, outWidth: "
+            java.lang.String r2 = ", outHeight: "
+            java.lang.String r3 = ", outMimeType: "
+            java.lang.StringBuilder r5 = androidx.recyclerview.widget.C0608s.m2117a(r1, r5, r2, r6, r3)
+            r5.append(r7)
+            java.lang.String r6 = ", inBitmap: "
+            r5.append(r6)
+            android.graphics.Bitmap r6 = r8.inBitmap
+            java.lang.String r6 = m12668e(r6)
+            r5.append(r6)
+            java.lang.String r5 = r5.toString()
+            r0.<init>(r5, r4)
+            return r0
+    }
+
+    /* renamed from: j */
+    public static void m12673j(android.graphics.BitmapFactory.Options r2) {
+            m12674k(r2)
+            java.util.Queue<android.graphics.BitmapFactory$Options> r0 = p334t2.C6134l.f23688l
+            monitor-enter(r0)
+            r1 = r0
+            java.util.ArrayDeque r1 = (java.util.ArrayDeque) r1     // Catch: java.lang.Throwable -> Le
+            r1.offer(r2)     // Catch: java.lang.Throwable -> Le
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> Le
+            return
+        Le:
+            r2 = move-exception
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> Le
+            throw r2
+    }
+
+    /* renamed from: k */
+    public static void m12674k(android.graphics.BitmapFactory.Options r5) {
+            r0 = 0
+            r5.inTempStorage = r0
+            r1 = 0
+            r5.inDither = r1
+            r5.inScaled = r1
+            r2 = 1
+            r5.inSampleSize = r2
+            r5.inPreferredConfig = r0
+            r5.inJustDecodeBounds = r1
+            r5.inDensity = r1
+            r5.inTargetDensity = r1
+            int r3 = android.os.Build.VERSION.SDK_INT
+            r4 = 26
+            if (r3 < r4) goto L1f
+            r5.inPreferredColorSpace = r0
+            r5.outColorSpace = r0
+            r5.outConfig = r0
+        L1f:
+            r5.outWidth = r1
+            r5.outHeight = r1
+            r5.outMimeType = r0
+            r5.inBitmap = r0
+            r5.inMutable = r2
+            return
+    }
+
+    /* renamed from: l */
+    public static int m12675l(double r2) {
+            r0 = 4602678819172646912(0x3fe0000000000000, double:0.5)
+            double r2 = r2 + r0
+            int r2 = (int) r2
+            return r2
+    }
+
+    /* renamed from: a */
+    public p214m2.InterfaceC4345w<android.graphics.Bitmap> m12676a(java.io.InputStream r7, int r8, int r9, p180k2.C3673e r10, p334t2.C6134l.b r11) {
+            r6 = this;
+            t2.r$a r1 = new t2.r$a
+            java.util.List<com.bumptech.glide.load.ImageHeaderParser> r0 = r6.f23692d
+            n2.b r2 = r6.f23691c
+            r1.<init>(r7, r0, r2)
+            r0 = r6
+            r2 = r8
+            r3 = r9
+            r4 = r10
+            r5 = r11
+            m2.w r7 = r0.m12677b(r1, r2, r3, r4, r5)
+            return r7
+    }
+
+    /* renamed from: b */
+    public final p214m2.InterfaceC4345w<android.graphics.Bitmap> m12677b(p334t2.InterfaceC6140r r16, int r17, int r18, p180k2.C3673e r19, p334t2.C6134l.b r20) {
+            r15 = this;
+            r12 = r15
+            r0 = r19
+            n2.b r1 = r12.f23691c
+            java.lang.Class<byte[]> r2 = byte[].class
+            r3 = 65536(0x10000, float:9.1835E-41)
+            java.lang.Object r1 = r1.mo10688e(r3, r2)
+            r13 = r1
+            byte[] r13 = (byte[]) r13
+            java.lang.Class<t2.l> r1 = p334t2.C6134l.class
+            monitor-enter(r1)
+            java.util.Queue<android.graphics.BitmapFactory$Options> r2 = p334t2.C6134l.f23688l     // Catch: java.lang.Throwable -> L98
+            monitor-enter(r2)     // Catch: java.lang.Throwable -> L98
+            r3 = r2
+            java.util.ArrayDeque r3 = (java.util.ArrayDeque) r3     // Catch: java.lang.Throwable -> L95
+            java.lang.Object r3 = r3.poll()     // Catch: java.lang.Throwable -> L95
+            android.graphics.BitmapFactory$Options r3 = (android.graphics.BitmapFactory.Options) r3     // Catch: java.lang.Throwable -> L95
+            monitor-exit(r2)     // Catch: java.lang.Throwable -> L95
+            if (r3 != 0) goto L2a
+            android.graphics.BitmapFactory$Options r3 = new android.graphics.BitmapFactory$Options     // Catch: java.lang.Throwable -> L98
+            r3.<init>()     // Catch: java.lang.Throwable -> L98
+            m12674k(r3)     // Catch: java.lang.Throwable -> L98
+        L2a:
+            r14 = r3
+            monitor-exit(r1)
+            r14.inTempStorage = r13
+            k2.d<com.bumptech.glide.load.b> r1 = p334t2.C6134l.f23682f
+            java.lang.Object r1 = r0.m8130c(r1)
+            r5 = r1
+            com.bumptech.glide.load.b r5 = (com.bumptech.glide.load.EnumC1009b) r5
+            k2.d<com.bumptech.glide.load.e> r1 = p334t2.C6134l.f23683g
+            java.lang.Object r1 = r0.m8130c(r1)
+            r6 = r1
+            com.bumptech.glide.load.e r6 = (com.bumptech.glide.load.EnumC1027e) r6
+            k2.d<t2.k> r1 = p334t2.AbstractC6133k.f23680f
+            java.lang.Object r1 = r0.m8130c(r1)
+            r4 = r1
+            t2.k r4 = (p334t2.AbstractC6133k) r4
+            k2.d<java.lang.Boolean> r1 = p334t2.C6134l.f23684h
+            java.lang.Object r1 = r0.m8130c(r1)
+            java.lang.Boolean r1 = (java.lang.Boolean) r1
+            boolean r10 = r1.booleanValue()
+            k2.d<java.lang.Boolean> r1 = p334t2.C6134l.f23685i
+            java.lang.Object r2 = r0.m8130c(r1)
+            if (r2 == 0) goto L6c
+            java.lang.Object r0 = r0.m8130c(r1)
+            java.lang.Boolean r0 = (java.lang.Boolean) r0
+            boolean r0 = r0.booleanValue()
+            if (r0 == 0) goto L6c
+            r0 = 1
+            r7 = 1
+            goto L6e
+        L6c:
+            r0 = 0
+            r7 = 0
+        L6e:
+            r1 = r15
+            r2 = r16
+            r3 = r14
+            r8 = r17
+            r9 = r18
+            r11 = r20
+            android.graphics.Bitmap r0 = r1.m12678c(r2, r3, r4, r5, r6, r7, r8, r9, r10, r11)     // Catch: java.lang.Throwable -> L8b
+            n2.c r1 = r12.f23689a     // Catch: java.lang.Throwable -> L8b
+            t2.d r0 = p334t2.C6126d.m12654f(r0, r1)     // Catch: java.lang.Throwable -> L8b
+            m12673j(r14)
+            n2.b r1 = r12.f23691c
+            r1.mo10687d(r13)
+            return r0
+        L8b:
+            r0 = move-exception
+            m12673j(r14)
+            n2.b r1 = r12.f23691c
+            r1.mo10687d(r13)
+            throw r0
+        L95:
+            r0 = move-exception
+            monitor-exit(r2)     // Catch: java.lang.Throwable -> L95
+            throw r0     // Catch: java.lang.Throwable -> L98
+        L98:
+            r0 = move-exception
+            monitor-exit(r1)
+            throw r0
+    }
+
+    /* renamed from: c */
+    public final android.graphics.Bitmap m12678c(p334t2.InterfaceC6140r r31, android.graphics.BitmapFactory.Options r32, p334t2.AbstractC6133k r33, com.bumptech.glide.load.EnumC1009b r34, com.bumptech.glide.load.EnumC1027e r35, boolean r36, int r37, int r38, boolean r39, p334t2.C6134l.b r40) {
+            r30 = this;
+            r1 = r30
+            r2 = r31
+            r3 = r32
+            r0 = r33
+            r4 = r34
+            r5 = r37
+            r6 = r38
+            r7 = r40
+            int r8 = p106g3.C2234f.f10203b
+            long r8 = android.os.SystemClock.elapsedRealtimeNanos()
+            n2.c r10 = r1.f23689a
+            int[] r10 = m12670g(r2, r3, r7, r10)
+            r11 = 0
+            r11 = r10[r11]
+            r12 = 1
+            r10 = r10[r12]
+            java.lang.String r12 = r3.outMimeType
+            r13 = -1
+            if (r11 == r13) goto L2d
+            if (r10 != r13) goto L2a
+            goto L2d
+        L2a:
+            r13 = r36
+            goto L2e
+        L2d:
+            r13 = 0
+        L2e:
+            int r14 = r31.mo12686c()
+            switch(r14) {
+                case 3: goto L3d;
+                case 4: goto L3d;
+                case 5: goto L3a;
+                case 6: goto L3a;
+                case 7: goto L37;
+                case 8: goto L37;
+                default: goto L35;
+            }
+        L35:
+            r15 = 0
+            goto L3f
+        L37:
+            r15 = 270(0x10e, float:3.78E-43)
+            goto L3f
+        L3a:
+            r15 = 90
+            goto L3f
+        L3d:
+            r15 = 180(0xb4, float:2.52E-43)
+        L3f:
+            switch(r14) {
+                case 2: goto L4a;
+                case 3: goto L4a;
+                case 4: goto L4a;
+                case 5: goto L4a;
+                case 6: goto L4a;
+                case 7: goto L4a;
+                case 8: goto L4a;
+                default: goto L42;
+            }
+        L42:
+            r16 = 0
+            r16 = r8
+            r36 = r14
+            r14 = 0
+            goto L51
+        L4a:
+            r16 = 1
+            r16 = r8
+            r36 = r14
+            r14 = 1
+        L51:
+            r8 = -2147483648(0xffffffff80000000, float:-0.0)
+            if (r5 != r8) goto L5f
+            boolean r9 = m12671h(r15)
+            if (r9 == 0) goto L5d
+            r9 = r10
+            goto L60
+        L5d:
+            r9 = r11
+            goto L60
+        L5f:
+            r9 = r5
+        L60:
+            if (r6 != r8) goto L6c
+            boolean r8 = m12671h(r15)
+            if (r8 == 0) goto L6a
+            r8 = r11
+            goto L6d
+        L6a:
+            r8 = r10
+            goto L6d
+        L6c:
+            r8 = r6
+        L6d:
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r6 = r31.mo12687d()
+            n2.c r5 = r1.f23689a
+            r18 = r12
+            java.lang.String r12 = "]"
+            java.lang.String r4 = ", target density: "
+            r19 = r13
+            java.lang.String r13 = ", density: "
+            r20 = r14
+            java.lang.String r14 = "x"
+            java.lang.String r1 = "Downsampler"
+            if (r11 <= 0) goto L280
+            if (r10 > 0) goto L92
+            r0 = 3
+            r7 = r1
+            r1 = r4
+            r15 = r10
+            r5 = r12
+            r4 = r13
+            r10 = r8
+            r13 = r11
+            r11 = r9
+            goto L289
+        L92:
+            boolean r21 = m12671h(r15)
+            r23 = r4
+            if (r21 == 0) goto La1
+            r21 = r12
+            r22 = r13
+            r12 = r10
+            r13 = r11
+            goto La7
+        La1:
+            r21 = r12
+            r22 = r13
+            r13 = r10
+            r12 = r11
+        La7:
+            float r4 = r0.mo12666b(r12, r13, r9, r8)
+            r24 = 0
+            int r24 = (r4 > r24 ? 1 : (r4 == r24 ? 0 : -1))
+            if (r24 <= 0) goto L23b
+            r24 = r15
+            int r15 = r0.mo12665a(r12, r13, r9, r8)
+            if (r15 == 0) goto L233
+            r25 = r10
+            float r10 = (float) r12
+            r26 = r11
+            float r11 = r4 * r10
+            r27 = r1
+            double r0 = (double) r11
+            int r0 = m12675l(r0)
+            float r1 = (float) r13
+            float r11 = r4 * r1
+            r29 = r8
+            r28 = r9
+            double r8 = (double) r11
+            int r8 = m12675l(r8)
+            int r0 = r12 / r0
+            int r8 = r13 / r8
+            r9 = 1
+            if (r15 != r9) goto Ldf
+            int r0 = java.lang.Math.max(r0, r8)
+            goto Le3
+        Ldf:
+            int r0 = java.lang.Math.min(r0, r8)
+        Le3:
+            int r8 = android.os.Build.VERSION.SDK_INT
+            r9 = 23
+            if (r8 > r9) goto Lf5
+            java.util.Set<java.lang.String> r9 = p334t2.C6134l.f23686j
+            java.lang.String r11 = r3.outMimeType
+            boolean r9 = r9.contains(r11)
+            if (r9 == 0) goto Lf5
+            r0 = 1
+            goto L10a
+        Lf5:
+            int r0 = java.lang.Integer.highestOneBit(r0)
+            r9 = 1
+            int r0 = java.lang.Math.max(r9, r0)
+            if (r15 != r9) goto L10a
+            float r9 = (float) r0
+            r11 = 1065353216(0x3f800000, float:1.0)
+            float r11 = r11 / r4
+            int r9 = (r9 > r11 ? 1 : (r9 == r11 ? 0 : -1))
+            if (r9 >= 0) goto L10a
+            int r0 = r0 << 1
+        L10a:
+            r3.inSampleSize = r0
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r9 = com.bumptech.glide.load.ImageHeaderParser.ImageType.JPEG
+            if (r6 != r9) goto L12c
+            r5 = 8
+            int r5 = java.lang.Math.min(r0, r5)
+            float r5 = (float) r5
+            float r10 = r10 / r5
+            double r8 = (double) r10
+            double r8 = java.lang.Math.ceil(r8)
+            int r6 = (int) r8
+            float r1 = r1 / r5
+            double r8 = (double) r1
+            double r8 = java.lang.Math.ceil(r8)
+            int r1 = (int) r8
+            int r5 = r0 / 8
+            if (r5 <= 0) goto L17c
+            int r6 = r6 / r5
+            int r1 = r1 / r5
+            goto L17c
+        L12c:
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r9 = com.bumptech.glide.load.ImageHeaderParser.ImageType.PNG
+            if (r6 == r9) goto L16d
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r9 = com.bumptech.glide.load.ImageHeaderParser.ImageType.PNG_A
+            if (r6 != r9) goto L135
+            goto L16d
+        L135:
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r9 = com.bumptech.glide.load.ImageHeaderParser.ImageType.WEBP
+            if (r6 == r9) goto L15d
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r9 = com.bumptech.glide.load.ImageHeaderParser.ImageType.WEBP_A
+            if (r6 != r9) goto L13e
+            goto L15d
+        L13e:
+            int r1 = r12 % r0
+            if (r1 != 0) goto L14c
+            int r1 = r13 % r0
+            if (r1 == 0) goto L147
+            goto L14c
+        L147:
+            int r6 = r12 / r0
+            int r1 = r13 / r0
+            goto L17c
+        L14c:
+            int[] r1 = m12670g(r2, r3, r7, r5)
+            r5 = 0
+            r5 = r1[r5]
+            r6 = 1
+            r1 = r1[r6]
+            r6 = r33
+            r11 = r28
+            r10 = r29
+            goto L183
+        L15d:
+            r5 = 24
+            if (r8 < r5) goto L16d
+            float r5 = (float) r0
+            float r10 = r10 / r5
+            int r6 = java.lang.Math.round(r10)
+            float r1 = r1 / r5
+            int r1 = java.lang.Math.round(r1)
+            goto L17c
+        L16d:
+            float r5 = (float) r0
+            float r10 = r10 / r5
+            double r8 = (double) r10
+            double r8 = java.lang.Math.floor(r8)
+            int r6 = (int) r8
+            float r1 = r1 / r5
+            double r8 = (double) r1
+            double r8 = java.lang.Math.floor(r8)
+            int r1 = (int) r8
+        L17c:
+            r5 = r6
+            r11 = r28
+            r10 = r29
+            r6 = r33
+        L183:
+            float r6 = r6.mo12666b(r5, r1, r11, r10)
+            double r8 = (double) r6
+            int r6 = m12669f(r8)
+            double r12 = (double) r6
+            double r12 = r12 * r8
+            int r12 = m12675l(r12)
+            float r13 = (float) r12
+            float r6 = (float) r6
+            float r13 = r13 / r6
+            double r6 = (double) r13
+            double r6 = r8 / r6
+            double r12 = (double) r12
+            double r6 = r6 * r12
+            int r6 = m12675l(r6)
+            r3.inTargetDensity = r6
+            int r6 = m12669f(r8)
+            r3.inDensity = r6
+            int r7 = r3.inTargetDensity
+            if (r7 <= 0) goto L1b2
+            if (r6 <= 0) goto L1b2
+            if (r7 == r6) goto L1b2
+            r6 = 1
+            goto L1b3
+        L1b2:
+            r6 = 0
+        L1b3:
+            if (r6 == 0) goto L1b9
+            r6 = 1
+            r3.inScaled = r6
+            goto L1be
+        L1b9:
+            r6 = 0
+            r3.inTargetDensity = r6
+            r3.inDensity = r6
+        L1be:
+            r6 = 2
+            r7 = r27
+            boolean r6 = android.util.Log.isLoggable(r7, r6)
+            if (r6 == 0) goto L229
+            java.lang.String r6 = "Calculate scaling, source: ["
+            java.lang.String r12 = "], degreesToRotate: "
+            r15 = r25
+            r13 = r26
+            java.lang.StringBuilder r6 = androidx.recyclerview.widget.C0608s.m2117a(r6, r13, r14, r15, r12)
+            r12 = r24
+            r6.append(r12)
+            java.lang.String r12 = ", target: ["
+            r6.append(r12)
+            r6.append(r11)
+            r6.append(r14)
+            r6.append(r10)
+            java.lang.String r12 = "], power of two scaled: ["
+            r6.append(r12)
+            r6.append(r5)
+            r6.append(r14)
+            r6.append(r1)
+            java.lang.String r1 = "], exact scale factor: "
+            r6.append(r1)
+            r6.append(r4)
+            java.lang.String r1 = ", power of 2 sample size: "
+            r6.append(r1)
+            r6.append(r0)
+            java.lang.String r0 = ", adjusted scale factor: "
+            r6.append(r0)
+            r6.append(r8)
+            r1 = r23
+            r6.append(r1)
+            int r0 = r3.inTargetDensity
+            r6.append(r0)
+            r4 = r22
+            r6.append(r4)
+            int r0 = r3.inDensity
+            r6.append(r0)
+            java.lang.String r0 = r6.toString()
+            android.util.Log.v(r7, r0)
+            goto L2b4
+        L229:
+            r4 = r22
+            r1 = r23
+            r15 = r25
+            r13 = r26
+            goto L2b4
+        L233:
+            java.lang.IllegalArgumentException r0 = new java.lang.IllegalArgumentException
+            java.lang.String r1 = "Cannot round with null rounding"
+            r0.<init>(r1)
+            throw r0
+        L23b:
+            r6 = r0
+            r15 = r10
+            r13 = r11
+            r10 = r8
+            r11 = r9
+            java.lang.IllegalArgumentException r0 = new java.lang.IllegalArgumentException
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            r1.<init>()
+            java.lang.String r2 = "Cannot scale with factor: "
+            r1.append(r2)
+            r1.append(r4)
+            java.lang.String r2 = " from: "
+            r1.append(r2)
+            r1.append(r6)
+            java.lang.String r2 = ", source: ["
+            r1.append(r2)
+            r1.append(r13)
+            r1.append(r14)
+            r1.append(r15)
+            java.lang.String r2 = "], target: ["
+            r1.append(r2)
+            r1.append(r11)
+            r1.append(r14)
+            r1.append(r10)
+            r5 = r21
+            r1.append(r5)
+            java.lang.String r1 = r1.toString()
+            r0.<init>(r1)
+            throw r0
+        L280:
+            r7 = r1
+            r1 = r4
+            r15 = r10
+            r5 = r12
+            r4 = r13
+            r10 = r8
+            r13 = r11
+            r11 = r9
+            r0 = 3
+        L289:
+            boolean r0 = android.util.Log.isLoggable(r7, r0)
+            if (r0 == 0) goto L2b4
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            r0.<init>()
+            java.lang.String r8 = "Unable to determine dimensions for: "
+            r0.append(r8)
+            r0.append(r6)
+            java.lang.String r6 = " with target ["
+            r0.append(r6)
+            r0.append(r11)
+            r0.append(r14)
+            r0.append(r10)
+            r0.append(r5)
+            java.lang.String r0 = r0.toString()
+            android.util.Log.d(r7, r0)
+        L2b4:
+            r5 = r30
+            r6 = r7
+            t2.q r0 = r5.f23693e
+            r7 = r19
+            r8 = r20
+            boolean r0 = r0.m12683b(r11, r10, r7, r8)
+            if (r0 == 0) goto L2ca
+            android.graphics.Bitmap$Config r7 = android.graphics.Bitmap.Config.HARDWARE
+            r3.inPreferredConfig = r7
+            r7 = 0
+            r3.inMutable = r7
+        L2ca:
+            if (r0 == 0) goto L2ce
+            r7 = r1
+            goto L310
+        L2ce:
+            com.bumptech.glide.load.b r0 = com.bumptech.glide.load.EnumC1009b.f5186Y
+            r7 = r1
+            r1 = r34
+            if (r1 == r0) goto L30c
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r0 = r31.mo12687d()     // Catch: java.io.IOException -> L2de
+            boolean r0 = r0.hasAlpha()     // Catch: java.io.IOException -> L2de
+            goto L2fb
+        L2de:
+            r0 = move-exception
+            r8 = 3
+            boolean r8 = android.util.Log.isLoggable(r6, r8)
+            if (r8 == 0) goto L2fa
+            java.lang.StringBuilder r8 = new java.lang.StringBuilder
+            r8.<init>()
+            java.lang.String r9 = "Cannot determine whether the image has alpha or not from header, format "
+            r8.append(r9)
+            r8.append(r1)
+            java.lang.String r1 = r8.toString()
+            android.util.Log.d(r6, r1, r0)
+        L2fa:
+            r0 = 0
+        L2fb:
+            if (r0 == 0) goto L300
+            android.graphics.Bitmap$Config r0 = android.graphics.Bitmap.Config.ARGB_8888
+            goto L302
+        L300:
+            android.graphics.Bitmap$Config r0 = android.graphics.Bitmap.Config.RGB_565
+        L302:
+            r3.inPreferredConfig = r0
+            android.graphics.Bitmap$Config r1 = android.graphics.Bitmap.Config.RGB_565
+            if (r0 != r1) goto L310
+            r0 = 1
+            r3.inDither = r0
+            goto L310
+        L30c:
+            android.graphics.Bitmap$Config r0 = android.graphics.Bitmap.Config.ARGB_8888
+            r3.inPreferredConfig = r0
+        L310:
+            int r0 = android.os.Build.VERSION.SDK_INT
+            int r1 = r3.inSampleSize
+            if (r13 < 0) goto L31e
+            if (r15 < 0) goto L31e
+            if (r39 == 0) goto L31e
+            r8 = r10
+            r9 = r11
+            goto L396
+        L31e:
+            int r8 = r3.inTargetDensity
+            if (r8 <= 0) goto L32a
+            int r9 = r3.inDensity
+            if (r9 <= 0) goto L32a
+            if (r8 == r9) goto L32a
+            r9 = 1
+            goto L32b
+        L32a:
+            r9 = 0
+        L32b:
+            if (r9 == 0) goto L333
+            float r8 = (float) r8
+            int r9 = r3.inDensity
+            float r9 = (float) r9
+            float r8 = r8 / r9
+            goto L335
+        L333:
+            r8 = 1065353216(0x3f800000, float:1.0)
+        L335:
+            float r9 = (float) r13
+            float r10 = (float) r1
+            float r9 = r9 / r10
+            double r11 = (double) r9
+            double r11 = java.lang.Math.ceil(r11)
+            int r9 = (int) r11
+            float r11 = (float) r15
+            float r11 = r11 / r10
+            double r10 = (double) r11
+            double r10 = java.lang.Math.ceil(r10)
+            int r10 = (int) r10
+            float r9 = (float) r9
+            float r9 = r9 * r8
+            int r9 = java.lang.Math.round(r9)
+            float r10 = (float) r10
+            float r10 = r10 * r8
+            int r10 = java.lang.Math.round(r10)
+            r11 = 2
+            boolean r11 = android.util.Log.isLoggable(r6, r11)
+            if (r11 == 0) goto L395
+            java.lang.String r11 = "Calculated target ["
+            java.lang.String r12 = "] for source ["
+            java.lang.StringBuilder r11 = androidx.recyclerview.widget.C0608s.m2117a(r11, r9, r14, r10, r12)
+            r11.append(r13)
+            r11.append(r14)
+            r11.append(r15)
+            java.lang.String r12 = "], sampleSize: "
+            r11.append(r12)
+            r11.append(r1)
+            java.lang.String r1 = ", targetDensity: "
+            r11.append(r1)
+            int r1 = r3.inTargetDensity
+            r11.append(r1)
+            r11.append(r4)
+            int r1 = r3.inDensity
+            r11.append(r1)
+            java.lang.String r1 = ", density multiplier: "
+            r11.append(r1)
+            r11.append(r8)
+            java.lang.String r1 = r11.toString()
+            android.util.Log.v(r6, r1)
+        L395:
+            r8 = r10
+        L396:
+            r10 = 26
+            if (r9 <= 0) goto L3b5
+            if (r8 <= 0) goto L3b5
+            n2.c r11 = r5.f23689a
+            if (r0 < r10) goto L3aa
+            android.graphics.Bitmap$Config r12 = r3.inPreferredConfig
+            android.graphics.Bitmap$Config r1 = android.graphics.Bitmap.Config.HARDWARE
+            if (r12 != r1) goto L3a7
+            goto L3b5
+        L3a7:
+            android.graphics.Bitmap$Config r1 = r3.outConfig
+            goto L3ab
+        L3aa:
+            r1 = 0
+        L3ab:
+            if (r1 != 0) goto L3af
+            android.graphics.Bitmap$Config r1 = r3.inPreferredConfig
+        L3af:
+            android.graphics.Bitmap r1 = r11.mo10692d(r9, r8, r1)
+            r3.inBitmap = r1
+        L3b5:
+            r1 = 28
+            if (r0 < r1) goto L3d1
+            com.bumptech.glide.load.e r0 = com.bumptech.glide.load.EnumC1027e.f5222Z
+            r1 = r35
+            if (r1 != r0) goto L3cb
+            android.graphics.ColorSpace r0 = r3.outColorSpace
+            if (r0 == 0) goto L3cb
+            boolean r0 = r0.isWideGamut()
+            if (r0 == 0) goto L3cb
+            r0 = 1
+            goto L3cc
+        L3cb:
+            r0 = 0
+        L3cc:
+            if (r0 == 0) goto L3d3
+            android.graphics.ColorSpace$Named r0 = android.graphics.ColorSpace.Named.DISPLAY_P3
+            goto L3d5
+        L3d1:
+            if (r0 < r10) goto L3db
+        L3d3:
+            android.graphics.ColorSpace$Named r0 = android.graphics.ColorSpace.Named.SRGB
+        L3d5:
+            android.graphics.ColorSpace r0 = android.graphics.ColorSpace.get(r0)
+            r3.inPreferredColorSpace = r0
+        L3db:
+            n2.c r0 = r5.f23689a
+            r1 = r40
+            android.graphics.Bitmap r0 = m12667d(r2, r3, r1, r0)
+            n2.c r2 = r5.f23689a
+            r1.mo12679a(r2, r0)
+            r1 = 2
+            boolean r1 = android.util.Log.isLoggable(r6, r1)
+            if (r1 == 0) goto L471
+            java.lang.String r1 = "Decoded "
+            java.lang.StringBuilder r1 = android.support.v4.media.C0144c.m256a(r1)
+            java.lang.String r2 = m12668e(r0)
+            r1.append(r2)
+            java.lang.String r2 = " from ["
+            r1.append(r2)
+            r1.append(r13)
+            r1.append(r14)
+            r1.append(r15)
+            java.lang.String r2 = "] "
+            r1.append(r2)
+            r2 = r18
+            r1.append(r2)
+            java.lang.String r2 = " with inBitmap "
+            r1.append(r2)
+            android.graphics.Bitmap r2 = r3.inBitmap
+            java.lang.String r2 = m12668e(r2)
+            r1.append(r2)
+            java.lang.String r2 = " for ["
+            r1.append(r2)
+            r2 = r37
+            r1.append(r2)
+            r1.append(r14)
+            r2 = r38
+            r1.append(r2)
+            java.lang.String r2 = "], sample size: "
+            r1.append(r2)
+            int r2 = r3.inSampleSize
+            r1.append(r2)
+            r1.append(r4)
+            int r2 = r3.inDensity
+            r1.append(r2)
+            r1.append(r7)
+            int r2 = r3.inTargetDensity
+            r1.append(r2)
+            java.lang.String r2 = ", thread: "
+            r1.append(r2)
+            java.lang.Thread r2 = java.lang.Thread.currentThread()
+            java.lang.String r2 = r2.getName()
+            r1.append(r2)
+            java.lang.String r2 = ", duration: "
+            r1.append(r2)
+            double r2 = p106g3.C2234f.m5833a(r16)
+            r1.append(r2)
+            java.lang.String r1 = r1.toString()
+            android.util.Log.v(r6, r1)
+        L471:
+            if (r0 == 0) goto L504
+            android.util.DisplayMetrics r1 = r5.f23690b
+            int r1 = r1.densityDpi
+            r0.setDensity(r1)
+            n2.c r1 = r5.f23689a
+            switch(r36) {
+                case 2: goto L481;
+                case 3: goto L481;
+                case 4: goto L481;
+                case 5: goto L481;
+                case 6: goto L481;
+                case 7: goto L481;
+                case 8: goto L481;
+                default: goto L47f;
+            }
+        L47f:
+            r2 = 0
+            goto L482
+        L481:
+            r2 = 1
+        L482:
+            if (r2 != 0) goto L487
+            r1 = r0
+            goto L4f8
+        L487:
+            android.graphics.Matrix r2 = new android.graphics.Matrix
+            r2.<init>()
+            r3 = -1028390912(0xffffffffc2b40000, float:-90.0)
+            r4 = 1119092736(0x42b40000, float:90.0)
+            r6 = 1127481344(0x43340000, float:180.0)
+            r7 = -1082130432(0xffffffffbf800000, float:-1.0)
+            switch(r36) {
+                case 2: goto L4b5;
+                case 3: goto L4b1;
+                case 4: goto L4a8;
+                case 5: goto L4a4;
+                case 6: goto L4a0;
+                case 7: goto L49c;
+                case 8: goto L498;
+                default: goto L497;
+            }
+        L497:
+            goto L4ba
+        L498:
+            r2.setRotate(r3)
+            goto L4ba
+        L49c:
+            r2.setRotate(r3)
+            goto L4ab
+        L4a0:
+            r2.setRotate(r4)
+            goto L4ba
+        L4a4:
+            r2.setRotate(r4)
+            goto L4ab
+        L4a8:
+            r2.setRotate(r6)
+        L4ab:
+            r3 = 1065353216(0x3f800000, float:1.0)
+            r2.postScale(r7, r3)
+            goto L4ba
+        L4b1:
+            r2.setRotate(r6)
+            goto L4ba
+        L4b5:
+            r3 = 1065353216(0x3f800000, float:1.0)
+            r2.setScale(r7, r3)
+        L4ba:
+            android.graphics.RectF r3 = new android.graphics.RectF
+            int r4 = r0.getWidth()
+            float r4 = (float) r4
+            int r6 = r0.getHeight()
+            float r6 = (float) r6
+            r7 = 0
+            r3.<init>(r7, r7, r4, r6)
+            r2.mapRect(r3)
+            float r4 = r3.width()
+            int r4 = java.lang.Math.round(r4)
+            float r6 = r3.height()
+            int r6 = java.lang.Math.round(r6)
+            android.graphics.Bitmap$Config r7 = p334t2.C6144v.m12692c(r0)
+            android.graphics.Bitmap r1 = r1.mo10693e(r4, r6, r7)
+            float r4 = r3.left
+            float r4 = -r4
+            float r3 = r3.top
+            float r3 = -r3
+            r2.postTranslate(r4, r3)
+            boolean r3 = r0.hasAlpha()
+            r1.setHasAlpha(r3)
+            p334t2.C6144v.m12690a(r0, r1, r2)
+        L4f8:
+            boolean r2 = r0.equals(r1)
+            if (r2 != 0) goto L505
+            n2.c r2 = r5.f23689a
+            r2.mo10694f(r0)
+            goto L505
+        L504:
+            r1 = 0
+        L505:
+            return r1
+    }
+}
+package p334t2;
+
+/* renamed from: t2.m */
+/* loaded from: classes.dex */
+public final class C6135m {
+
+    /* renamed from: a */
+    public static final p229n2.InterfaceC4673c f23694a = null;
+
+    /* renamed from: t2.m$a */
+    public class a extends p229n2.C4674d {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // p229n2.C4674d, p229n2.InterfaceC4673c
+        /* renamed from: f */
+        public void mo10694f(android.graphics.Bitmap r1) {
+                r0 = this;
+                return
+        }
+    }
+
+    static {
+            t2.m$a r0 = new t2.m$a
+            r0.<init>()
+            p334t2.C6135m.f23694a = r0
+            return
+    }
+
+    /* renamed from: a */
+    public static p214m2.InterfaceC4345w<android.graphics.Bitmap> m12681a(p229n2.InterfaceC4673c r7, android.graphics.drawable.Drawable r8, int r9, int r10) {
+            android.graphics.drawable.Drawable r8 = r8.getCurrent()
+            boolean r0 = r8 instanceof android.graphics.drawable.BitmapDrawable
+            r1 = 0
+            r2 = 0
+            if (r0 == 0) goto L12
+            android.graphics.drawable.BitmapDrawable r8 = (android.graphics.drawable.BitmapDrawable) r8
+            android.graphics.Bitmap r2 = r8.getBitmap()
+            goto L97
+        L12:
+            boolean r0 = r8 instanceof android.graphics.drawable.Animatable
+            if (r0 != 0) goto L97
+            java.lang.String r0 = "Unable to draw "
+            r3 = 5
+            r4 = -2147483648(0xffffffff80000000, float:-0.0)
+            java.lang.String r5 = "DrawableToBitmap"
+            if (r9 != r4) goto L43
+            int r6 = r8.getIntrinsicWidth()
+            if (r6 > 0) goto L43
+            boolean r9 = android.util.Log.isLoggable(r5, r3)
+            if (r9 == 0) goto L90
+            java.lang.StringBuilder r9 = new java.lang.StringBuilder
+            r9.<init>()
+            r9.append(r0)
+            r9.append(r8)
+            java.lang.String r8 = " to Bitmap with Target.SIZE_ORIGINAL because the Drawable has no intrinsic width"
+        L38:
+            r9.append(r8)
+            java.lang.String r8 = r9.toString()
+            android.util.Log.w(r5, r8)
+            goto L90
+        L43:
+            if (r10 != r4) goto L5f
+            int r4 = r8.getIntrinsicHeight()
+            if (r4 > 0) goto L5f
+            boolean r9 = android.util.Log.isLoggable(r5, r3)
+            if (r9 == 0) goto L90
+            java.lang.StringBuilder r9 = new java.lang.StringBuilder
+            r9.<init>()
+            r9.append(r0)
+            r9.append(r8)
+            java.lang.String r8 = " to Bitmap with Target.SIZE_ORIGINAL because the Drawable has no intrinsic height"
+            goto L38
+        L5f:
+            int r0 = r8.getIntrinsicWidth()
+            if (r0 <= 0) goto L69
+            int r9 = r8.getIntrinsicWidth()
+        L69:
+            int r0 = r8.getIntrinsicHeight()
+            if (r0 <= 0) goto L73
+            int r10 = r8.getIntrinsicHeight()
+        L73:
+            java.util.concurrent.locks.Lock r0 = p334t2.C6144v.f23727b
+            r0.lock()
+            android.graphics.Bitmap$Config r3 = android.graphics.Bitmap.Config.ARGB_8888
+            android.graphics.Bitmap r3 = r7.mo10693e(r9, r10, r3)
+            android.graphics.Canvas r4 = new android.graphics.Canvas     // Catch: java.lang.Throwable -> L92
+            r4.<init>(r3)     // Catch: java.lang.Throwable -> L92
+            r8.setBounds(r1, r1, r9, r10)     // Catch: java.lang.Throwable -> L92
+            r8.draw(r4)     // Catch: java.lang.Throwable -> L92
+            r4.setBitmap(r2)     // Catch: java.lang.Throwable -> L92
+            r0.unlock()
+            r2 = r3
+        L90:
+            r1 = 1
+            goto L97
+        L92:
+            r7 = move-exception
+            r0.unlock()
+            throw r7
+        L97:
+            if (r1 == 0) goto L9a
+            goto L9c
+        L9a:
+            n2.c r7 = p334t2.C6135m.f23694a
+        L9c:
+            t2.d r7 = p334t2.C6126d.m12654f(r2, r7)
+            return r7
+    }
+}
+package p334t2;
+
+/* renamed from: t2.n */
+/* loaded from: classes.dex */
+public class C6136n implements p180k2.InterfaceC3676h<android.graphics.drawable.Drawable> {
+
+    /* renamed from: b */
+    public final p180k2.InterfaceC3676h<android.graphics.Bitmap> f23695b;
+
+    /* renamed from: c */
+    public final boolean f23696c;
+
+    public C6136n(p180k2.InterfaceC3676h<android.graphics.Bitmap> r1, boolean r2) {
+            r0 = this;
+            r0.<init>()
+            r0.f23695b = r1
+            r0.f23696c = r2
+            return
+    }
+
+    @Override // p180k2.InterfaceC3676h
+    /* renamed from: a */
+    public p214m2.InterfaceC4345w<android.graphics.drawable.Drawable> mo8134a(android.content.Context r3, p214m2.InterfaceC4345w<android.graphics.drawable.Drawable> r4, int r5, int r6) {
+            r2 = this;
+            com.bumptech.glide.c r0 = com.bumptech.glide.ComponentCallbacks2C0999c.m2734b(r3)
+            n2.c r0 = r0.f5097Y
+            java.lang.Object r1 = r4.get()
+            android.graphics.drawable.Drawable r1 = (android.graphics.drawable.Drawable) r1
+            m2.w r0 = p334t2.C6135m.m12681a(r0, r1, r5, r6)
+            if (r0 != 0) goto L33
+            boolean r3 = r2.f23696c
+            if (r3 != 0) goto L17
+            return r4
+        L17:
+            java.lang.IllegalArgumentException r3 = new java.lang.IllegalArgumentException
+            java.lang.StringBuilder r4 = new java.lang.StringBuilder
+            r4.<init>()
+            java.lang.String r5 = "Unable to convert "
+            r4.append(r5)
+            r4.append(r1)
+            java.lang.String r5 = " to a Bitmap"
+            r4.append(r5)
+            java.lang.String r4 = r4.toString()
+            r3.<init>(r4)
+            throw r3
+        L33:
+            k2.h<android.graphics.Bitmap> r1 = r2.f23695b
+            m2.w r5 = r1.mo8134a(r3, r0, r5, r6)
+            boolean r6 = r5.equals(r0)
+            if (r6 == 0) goto L43
+            r5.mo9721d()
+            return r4
+        L43:
+            android.content.res.Resources r3 = r3.getResources()
+            m2.w r3 = p334t2.C6126d.m12653e(r3, r5)
+            return r3
+    }
+
+    @Override // p180k2.InterfaceC3671c
+    /* renamed from: b */
+    public void mo5082b(java.security.MessageDigest r2) {
+            r1 = this;
+            k2.h<android.graphics.Bitmap> r0 = r1.f23695b
+            r0.mo5082b(r2)
+            return
+    }
+
+    @Override // p180k2.InterfaceC3671c
+    public boolean equals(java.lang.Object r2) {
+            r1 = this;
+            boolean r0 = r2 instanceof p334t2.C6136n
+            if (r0 == 0) goto Lf
+            t2.n r2 = (p334t2.C6136n) r2
+            k2.h<android.graphics.Bitmap> r0 = r1.f23695b
+            k2.h<android.graphics.Bitmap> r2 = r2.f23695b
+            boolean r2 = r0.equals(r2)
+            return r2
+        Lf:
+            r2 = 0
+            return r2
+    }
+
+    @Override // p180k2.InterfaceC3671c
+    public int hashCode() {
+            r1 = this;
+            k2.h<android.graphics.Bitmap> r0 = r1.f23695b
+            int r0 = r0.hashCode()
+            return r0
+    }
+}
+package p334t2;
+
+/* renamed from: t2.o */
+/* loaded from: classes.dex */
+public final class C6137o implements com.bumptech.glide.load.ImageHeaderParser {
+    public C6137o() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // com.bumptech.glide.load.ImageHeaderParser
+    /* renamed from: a */
+    public com.bumptech.glide.load.ImageHeaderParser.ImageType mo2776a(java.nio.ByteBuffer r1) {
+            r0 = this;
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r1 = com.bumptech.glide.load.ImageHeaderParser.ImageType.UNKNOWN
+            return r1
+    }
+
+    @Override // com.bumptech.glide.load.ImageHeaderParser
+    /* renamed from: b */
+    public int mo2777b(java.io.InputStream r2, p229n2.InterfaceC4672b r3) {
+            r1 = this;
+            w0.b r3 = new w0.b
+            r3.<init>(r2)
+            java.lang.String r2 = "Orientation"
+            w0.b$c r2 = r3.m13755e(r2)
+            r0 = 1
+            if (r2 != 0) goto Lf
+            goto L15
+        Lf:
+            java.nio.ByteOrder r3 = r3.f26281g     // Catch: java.lang.NumberFormatException -> L15
+            int r0 = r2.m13783f(r3)     // Catch: java.lang.NumberFormatException -> L15
+        L15:
+            if (r0 != 0) goto L19
+            r2 = -1
+            return r2
+        L19:
+            return r0
+    }
+
+    @Override // com.bumptech.glide.load.ImageHeaderParser
+    /* renamed from: c */
+    public com.bumptech.glide.load.ImageHeaderParser.ImageType mo2778c(java.io.InputStream r1) {
+            r0 = this;
+            com.bumptech.glide.load.ImageHeaderParser$ImageType r1 = com.bumptech.glide.load.ImageHeaderParser.ImageType.UNKNOWN
+            return r1
+    }
+}
+package p334t2;
+
+/* renamed from: t2.p */
+/* loaded from: classes.dex */
+public class C6138p extends p334t2.AbstractC6127e {
+
+    /* renamed from: b */
+    public static final byte[] f23697b = null;
+
+    static {
+            java.nio.charset.Charset r0 = p180k2.InterfaceC3671c.f16244a
+            java.lang.String r1 = "com.bumptech.glide.load.resource.bitmap.FitCenter"
+            byte[] r0 = r1.getBytes(r0)
+            p334t2.C6138p.f23697b = r0
+            return
+    }
+
+    public C6138p() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p180k2.InterfaceC3671c
+    /* renamed from: b */
+    public void mo5082b(java.security.MessageDigest r2) {
+            r1 = this;
+            byte[] r0 = p334t2.C6138p.f23697b
+            r2.update(r0)
+            return
+    }
+
+    @Override // p334t2.AbstractC6127e
+    /* renamed from: c */
+    public android.graphics.Bitmap mo12655c(p229n2.InterfaceC4673c r1, android.graphics.Bitmap r2, int r3, int r4) {
+            r0 = this;
+            android.graphics.Bitmap r1 = p334t2.C6144v.m12691b(r1, r2, r3, r4)
+            return r1
+    }
+
+    @Override // p180k2.InterfaceC3671c
+    public boolean equals(java.lang.Object r1) {
+            r0 = this;
+            boolean r1 = r1 instanceof p334t2.C6138p
+            return r1
+    }
+
+    @Override // p180k2.InterfaceC3671c
+    public int hashCode() {
+            r1 = this;
+            r0 = 1572326941(0x5db7ce1d, float:1.6555694E18)
+            return r0
+    }
+}
+package p334t2;
+
+/* renamed from: t2.q */
+/* loaded from: classes.dex */
+public final class C6139q {
+
+    /* renamed from: g */
+    public static final boolean f23698g = false;
+
+    /* renamed from: h */
+    public static final boolean f23699h = false;
+
+    /* renamed from: i */
+    public static final java.io.File f23700i = null;
+
+    /* renamed from: j */
+    public static volatile p334t2.C6139q f23701j;
+
+    /* renamed from: k */
+    public static volatile int f23702k;
+
+    /* renamed from: a */
+    public final boolean f23703a;
+
+    /* renamed from: b */
+    public final int f23704b;
+
+    /* renamed from: c */
+    public final int f23705c;
+
+    /* renamed from: d */
+    public int f23706d;
+
+    /* renamed from: e */
+    public boolean f23707e;
+
+    /* renamed from: f */
+    public final java.util.concurrent.atomic.AtomicBoolean f23708f;
+
+    static {
+            int r0 = android.os.Build.VERSION.SDK_INT
+            r1 = 1
+            r2 = 0
+            r3 = 29
+            if (r0 >= r3) goto La
+            r3 = 1
+            goto Lb
+        La:
+            r3 = 0
+        Lb:
+            p334t2.C6139q.f23698g = r3
+            r3 = 26
+            if (r0 < r3) goto L12
+            goto L13
+        L12:
+            r1 = 0
+        L13:
+            p334t2.C6139q.f23699h = r1
+            java.io.File r0 = new java.io.File
+            java.lang.String r1 = "/proc/self/fd"
+            r0.<init>(r1)
+            p334t2.C6139q.f23700i = r0
+            r0 = -1
+            p334t2.C6139q.f23702k = r0
+            return
+    }
+
+    public C6139q() {
+            r26 = this;
+            r0 = r26
+            r26.<init>()
+            r1 = 1
+            r0.f23707e = r1
+            java.util.concurrent.atomic.AtomicBoolean r2 = new java.util.concurrent.atomic.AtomicBoolean
+            r3 = 0
+            r2.<init>(r3)
+            r0.f23708f = r2
+            int r2 = android.os.Build.VERSION.SDK_INT
+            r4 = 26
+            if (r2 == r4) goto L17
+            goto L5b
+        L17:
+            java.lang.String r5 = "SC-04J"
+            java.lang.String r6 = "SM-N935"
+            java.lang.String r7 = "SM-J720"
+            java.lang.String r8 = "SM-G570F"
+            java.lang.String r9 = "SM-G570M"
+            java.lang.String r10 = "SM-G960"
+            java.lang.String r11 = "SM-G965"
+            java.lang.String r12 = "SM-G935"
+            java.lang.String r13 = "SM-G930"
+            java.lang.String r14 = "SM-A520"
+            java.lang.String r15 = "SM-A720F"
+            java.lang.String r16 = "moto e5"
+            java.lang.String r17 = "moto e5 play"
+            java.lang.String r18 = "moto e5 plus"
+            java.lang.String r19 = "moto e5 cruise"
+            java.lang.String r20 = "moto g(6) forge"
+            java.lang.String r21 = "moto g(6) play"
+            java.lang.String[] r2 = new java.lang.String[]{r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21}
+            java.util.List r2 = java.util.Arrays.asList(r2)
+            java.util.Iterator r2 = r2.iterator()
+        L45:
+            boolean r4 = r2.hasNext()
+            if (r4 == 0) goto L5b
+            java.lang.Object r4 = r2.next()
+            java.lang.String r4 = (java.lang.String) r4
+            java.lang.String r5 = android.os.Build.MODEL
+            boolean r4 = r5.startsWith(r4)
+            if (r4 == 0) goto L45
+            r2 = 1
+            goto L5c
+        L5b:
+            r2 = 0
+        L5c:
+            if (r2 != 0) goto La1
+            int r2 = android.os.Build.VERSION.SDK_INT
+            r4 = 27
+            if (r2 == r4) goto L66
+            r2 = 0
+            goto L9e
+        L66:
+            java.lang.String r5 = "LG-M250"
+            java.lang.String r6 = "LG-M320"
+            java.lang.String r7 = "LG-Q710AL"
+            java.lang.String r8 = "LG-Q710PL"
+            java.lang.String r9 = "LGM-K121K"
+            java.lang.String r10 = "LGM-K121L"
+            java.lang.String r11 = "LGM-K121S"
+            java.lang.String r12 = "LGM-X320K"
+            java.lang.String r13 = "LGM-X320L"
+            java.lang.String r14 = "LGM-X320S"
+            java.lang.String r15 = "LGM-X401L"
+            java.lang.String r16 = "LGM-X401S"
+            java.lang.String r17 = "LM-Q610.FG"
+            java.lang.String r18 = "LM-Q610.FGN"
+            java.lang.String r19 = "LM-Q617.FG"
+            java.lang.String r20 = "LM-Q617.FGN"
+            java.lang.String r21 = "LM-Q710.FG"
+            java.lang.String r22 = "LM-Q710.FGN"
+            java.lang.String r23 = "LM-X220PM"
+            java.lang.String r24 = "LM-X220QMA"
+            java.lang.String r25 = "LM-X410PM"
+            java.lang.String[] r2 = new java.lang.String[]{r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21, r22, r23, r24, r25}
+            java.util.List r2 = java.util.Arrays.asList(r2)
+            java.lang.String r4 = android.os.Build.MODEL
+            boolean r2 = r2.contains(r4)
+        L9e:
+            if (r2 != 0) goto La1
+            goto La2
+        La1:
+            r1 = 0
+        La2:
+            r0.f23703a = r1
+            int r1 = android.os.Build.VERSION.SDK_INT
+            r2 = 28
+            if (r1 < r2) goto Lb1
+            r1 = 20000(0x4e20, float:2.8026E-41)
+            r0.f23704b = r1
+            r0.f23705c = r3
+            goto Lb9
+        Lb1:
+            r1 = 700(0x2bc, float:9.81E-43)
+            r0.f23704b = r1
+            r1 = 128(0x80, float:1.8E-43)
+            r0.f23705c = r1
+        Lb9:
+            return
+    }
+
+    /* renamed from: a */
+    public static p334t2.C6139q m12682a() {
+            t2.q r0 = p334t2.C6139q.f23701j
+            if (r0 != 0) goto L17
+            java.lang.Class<t2.q> r0 = p334t2.C6139q.class
+            monitor-enter(r0)
+            t2.q r1 = p334t2.C6139q.f23701j     // Catch: java.lang.Throwable -> L14
+            if (r1 != 0) goto L12
+            t2.q r1 = new t2.q     // Catch: java.lang.Throwable -> L14
+            r1.<init>()     // Catch: java.lang.Throwable -> L14
+            p334t2.C6139q.f23701j = r1     // Catch: java.lang.Throwable -> L14
+        L12:
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L14
+            goto L17
+        L14:
+            r1 = move-exception
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L14
+            throw r1
+        L17:
+            t2.q r0 = p334t2.C6139q.f23701j
+            return r0
+    }
+
+    /* renamed from: b */
+    public boolean m12683b(int r6, int r7, boolean r8, boolean r9) {
+            r5 = this;
+            r0 = 2
+            r1 = 0
+            if (r8 != 0) goto L14
+            java.lang.String r6 = "HardwareConfig"
+            boolean r6 = android.util.Log.isLoggable(r6, r0)
+            if (r6 == 0) goto L13
+            java.lang.String r6 = "HardwareConfig"
+            java.lang.String r7 = "Hardware config disallowed by caller"
+            android.util.Log.v(r6, r7)
+        L13:
+            return r1
+        L14:
+            boolean r8 = r5.f23703a
+            if (r8 != 0) goto L28
+            java.lang.String r6 = "HardwareConfig"
+            boolean r6 = android.util.Log.isLoggable(r6, r0)
+            if (r6 == 0) goto L27
+            java.lang.String r6 = "HardwareConfig"
+            java.lang.String r7 = "Hardware config disallowed by device model"
+            android.util.Log.v(r6, r7)
+        L27:
+            return r1
+        L28:
+            boolean r8 = p334t2.C6139q.f23699h
+            if (r8 != 0) goto L3c
+            java.lang.String r6 = "HardwareConfig"
+            boolean r6 = android.util.Log.isLoggable(r6, r0)
+            if (r6 == 0) goto L3b
+            java.lang.String r6 = "HardwareConfig"
+            java.lang.String r7 = "Hardware config disallowed by sdk"
+            android.util.Log.v(r6, r7)
+        L3b:
+            return r1
+        L3c:
+            boolean r8 = p334t2.C6139q.f23698g
+            r2 = 1
+            if (r8 == 0) goto L4b
+            java.util.concurrent.atomic.AtomicBoolean r8 = r5.f23708f
+            boolean r8 = r8.get()
+            if (r8 != 0) goto L4b
+            r8 = 1
+            goto L4c
+        L4b:
+            r8 = 0
+        L4c:
+            if (r8 == 0) goto L5e
+            java.lang.String r6 = "HardwareConfig"
+            boolean r6 = android.util.Log.isLoggable(r6, r0)
+            if (r6 == 0) goto L5d
+            java.lang.String r6 = "HardwareConfig"
+            java.lang.String r7 = "Hardware config disallowed by app state"
+            android.util.Log.v(r6, r7)
+        L5d:
+            return r1
+        L5e:
+            if (r9 == 0) goto L70
+            java.lang.String r6 = "HardwareConfig"
+            boolean r6 = android.util.Log.isLoggable(r6, r0)
+            if (r6 == 0) goto L6f
+            java.lang.String r6 = "HardwareConfig"
+            java.lang.String r7 = "Hardware config disallowed because exif orientation is required"
+            android.util.Log.v(r6, r7)
+        L6f:
+            return r1
+        L70:
+            int r8 = r5.f23705c
+            if (r6 >= r8) goto L84
+            java.lang.String r6 = "HardwareConfig"
+            boolean r6 = android.util.Log.isLoggable(r6, r0)
+            if (r6 == 0) goto L83
+            java.lang.String r6 = "HardwareConfig"
+            java.lang.String r7 = "Hardware config disallowed because width is too small"
+            android.util.Log.v(r6, r7)
+        L83:
+            return r1
+        L84:
+            if (r7 >= r8) goto L96
+            java.lang.String r6 = "HardwareConfig"
+            boolean r6 = android.util.Log.isLoggable(r6, r0)
+            if (r6 == 0) goto L95
+            java.lang.String r6 = "HardwareConfig"
+            java.lang.String r7 = "Hardware config disallowed because height is too small"
+            android.util.Log.v(r6, r7)
+        L95:
+            return r1
+        L96:
+            monitor-enter(r5)
+            int r6 = r5.f23706d     // Catch: java.lang.Throwable -> Lfd
+            int r6 = r6 + r2
+            r5.f23706d = r6     // Catch: java.lang.Throwable -> Lfd
+            r7 = 50
+            if (r6 < r7) goto Le7
+            r5.f23706d = r1     // Catch: java.lang.Throwable -> Lfd
+            java.io.File r6 = p334t2.C6139q.f23700i     // Catch: java.lang.Throwable -> Lfd
+            java.lang.String[] r6 = r6.list()     // Catch: java.lang.Throwable -> Lfd
+            int r6 = r6.length     // Catch: java.lang.Throwable -> Lfd
+            int r7 = p334t2.C6139q.f23702k     // Catch: java.lang.Throwable -> Lfd
+            r8 = -1
+            if (r7 == r8) goto Lb1
+            int r7 = p334t2.C6139q.f23702k     // Catch: java.lang.Throwable -> Lfd
+            goto Lb3
+        Lb1:
+            int r7 = r5.f23704b     // Catch: java.lang.Throwable -> Lfd
+        Lb3:
+            long r7 = (long) r7     // Catch: java.lang.Throwable -> Lfd
+            long r3 = (long) r6     // Catch: java.lang.Throwable -> Lfd
+            int r9 = (r3 > r7 ? 1 : (r3 == r7 ? 0 : -1))
+            if (r9 >= 0) goto Lbb
+            r9 = 1
+            goto Lbc
+        Lbb:
+            r9 = 0
+        Lbc:
+            r5.f23707e = r9     // Catch: java.lang.Throwable -> Lfd
+            if (r9 != 0) goto Le7
+            java.lang.String r9 = "Downsampler"
+            r3 = 5
+            boolean r9 = android.util.Log.isLoggable(r9, r3)     // Catch: java.lang.Throwable -> Lfd
+            if (r9 == 0) goto Le7
+            java.lang.String r9 = "Downsampler"
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> Lfd
+            r3.<init>()     // Catch: java.lang.Throwable -> Lfd
+            java.lang.String r4 = "Excluding HARDWARE bitmap config because we're over the file descriptor limit, file descriptors "
+            r3.append(r4)     // Catch: java.lang.Throwable -> Lfd
+            r3.append(r6)     // Catch: java.lang.Throwable -> Lfd
+            java.lang.String r6 = ", limit "
+            r3.append(r6)     // Catch: java.lang.Throwable -> Lfd
+            r3.append(r7)     // Catch: java.lang.Throwable -> Lfd
+            java.lang.String r6 = r3.toString()     // Catch: java.lang.Throwable -> Lfd
+            android.util.Log.w(r9, r6)     // Catch: java.lang.Throwable -> Lfd
+        Le7:
+            boolean r6 = r5.f23707e     // Catch: java.lang.Throwable -> Lfd
+            monitor-exit(r5)
+            if (r6 != 0) goto Lfc
+            java.lang.String r6 = "HardwareConfig"
+            boolean r6 = android.util.Log.isLoggable(r6, r0)
+            if (r6 == 0) goto Lfb
+            java.lang.String r6 = "HardwareConfig"
+            java.lang.String r7 = "Hardware config disallowed because there are insufficient FDs"
+            android.util.Log.v(r6, r7)
+        Lfb:
+            return r1
+        Lfc:
+            return r2
+        Lfd:
+            r6 = move-exception
+            monitor-exit(r5)
+            throw r6
+    }
+}
+package p334t2;
+
+/* renamed from: t2.s */
+/* loaded from: classes.dex */
+public final class C6141s implements p180k2.InterfaceC3674f<java.io.InputStream, android.graphics.Bitmap> {
+
+    /* renamed from: a */
+    public final p334t2.C6125c f23715a;
+
+    public C6141s() {
+            r1 = this;
+            r1.<init>()
+            t2.c r0 = new t2.c
+            r0.<init>()
+            r1.f23715a = r0
+            return
+    }
+
+    @Override // p180k2.InterfaceC3674f
+    /* renamed from: a */
+    public p214m2.InterfaceC4345w<android.graphics.Bitmap> mo8132a(java.io.InputStream r5, int r6, int r7, p180k2.C3673e r8) {
+            r4 = this;
+            java.io.InputStream r5 = (java.io.InputStream) r5
+            java.util.concurrent.atomic.AtomicReference<byte[]> r0 = p106g3.C2229a.f10188a
+            java.io.ByteArrayOutputStream r0 = new java.io.ByteArrayOutputStream
+            r1 = 16384(0x4000, float:2.2959E-41)
+            r0.<init>(r1)
+            java.util.concurrent.atomic.AtomicReference<byte[]> r2 = p106g3.C2229a.f10188a
+            r3 = 0
+            java.lang.Object r2 = r2.getAndSet(r3)
+            byte[] r2 = (byte[]) r2
+            if (r2 != 0) goto L18
+            byte[] r2 = new byte[r1]
+        L18:
+            int r1 = r5.read(r2)
+            r3 = 0
+            if (r1 < 0) goto L23
+            r0.write(r2, r3, r1)
+            goto L18
+        L23:
+            java.util.concurrent.atomic.AtomicReference<byte[]> r5 = p106g3.C2229a.f10188a
+            r5.set(r2)
+            byte[] r5 = r0.toByteArray()
+            int r0 = r5.length
+            java.nio.ByteBuffer r0 = java.nio.ByteBuffer.allocateDirect(r0)
+            java.nio.ByteBuffer r5 = r0.put(r5)
+            java.nio.Buffer r5 = r5.position(r3)
+            java.nio.ByteBuffer r5 = (java.nio.ByteBuffer) r5
+            android.graphics.ImageDecoder$Source r5 = android.graphics.ImageDecoder.createSource(r5)
+            t2.c r0 = r4.f23715a
+            m2.w r5 = r0.m12355c(r5, r6, r7, r8)
+            return r5
+    }
+
+    @Override // p180k2.InterfaceC3674f
+    /* renamed from: b */
+    public /* bridge */ /* synthetic */ boolean mo8133b(java.io.InputStream r1, p180k2.C3673e r2) {
+            r0 = this;
+            java.io.InputStream r1 = (java.io.InputStream) r1
+            r1 = 1
+            return r1
+    }
+}
+package p334t2;
+
+/* renamed from: t2.t */
+/* loaded from: classes.dex */
+public class C6142t extends java.io.FilterInputStream {
+
+    /* renamed from: Y */
+    public volatile byte[] f23716Y;
+
+    /* renamed from: Z */
+    public int f23717Z;
+
+    /* renamed from: a0 */
+    public int f23718a0;
+
+    /* renamed from: b0 */
+    public int f23719b0;
+
+    /* renamed from: c0 */
+    public int f23720c0;
+
+    /* renamed from: d0 */
+    public final p229n2.InterfaceC4672b f23721d0;
+
+    /* renamed from: t2.t$a */
+    public static class a extends java.io.IOException {
+        public a(java.lang.String r1) {
+                r0 = this;
+                r0.<init>(r1)
+                return
+        }
+    }
+
+    public C6142t(java.io.InputStream r2, p229n2.InterfaceC4672b r3) {
+            r1 = this;
+            r1.<init>(r2)
+            r2 = -1
+            r1.f23719b0 = r2
+            r1.f23721d0 = r3
+            java.lang.Class<byte[]> r2 = byte[].class
+            r0 = 65536(0x10000, float:9.1835E-41)
+            java.lang.Object r2 = r3.mo10688e(r0, r2)
+            byte[] r2 = (byte[]) r2
+            r1.f23716Y = r2
+            return
+    }
+
+    /* renamed from: h */
+    public static java.io.IOException m12688h() {
+            java.io.IOException r0 = new java.io.IOException
+            java.lang.String r1 = "BufferedInputStream is closed"
+            r0.<init>(r1)
+            throw r0
+    }
+
+    /* renamed from: a */
+    public final int m12689a(java.io.InputStream r6, byte[] r7) {
+            r5 = this;
+            int r0 = r5.f23719b0
+            r1 = -1
+            r2 = 0
+            if (r0 == r1) goto L57
+            int r3 = r5.f23720c0
+            int r3 = r3 - r0
+            int r4 = r5.f23718a0
+            if (r3 < r4) goto Le
+            goto L57
+        Le:
+            if (r0 != 0) goto L36
+            int r1 = r7.length
+            if (r4 <= r1) goto L36
+            int r1 = r5.f23717Z
+            int r3 = r7.length
+            if (r1 != r3) goto L36
+            int r0 = r7.length
+            int r0 = r0 * 2
+            if (r0 <= r4) goto L1e
+            goto L1f
+        L1e:
+            r4 = r0
+        L1f:
+            n2.b r0 = r5.f23721d0
+            java.lang.Class<byte[]> r1 = byte[].class
+            java.lang.Object r0 = r0.mo10688e(r4, r1)
+            byte[] r0 = (byte[]) r0
+            int r1 = r7.length
+            java.lang.System.arraycopy(r7, r2, r0, r2, r1)
+            r5.f23716Y = r0
+            n2.b r1 = r5.f23721d0
+            r1.mo10687d(r7)
+            r7 = r0
+            goto L3d
+        L36:
+            if (r0 <= 0) goto L3d
+            int r1 = r7.length
+            int r1 = r1 - r0
+            java.lang.System.arraycopy(r7, r0, r7, r2, r1)
+        L3d:
+            int r0 = r5.f23720c0
+            int r1 = r5.f23719b0
+            int r0 = r0 - r1
+            r5.f23720c0 = r0
+            r5.f23719b0 = r2
+            r5.f23717Z = r2
+            int r1 = r7.length
+            int r1 = r1 - r0
+            int r6 = r6.read(r7, r0, r1)
+            int r7 = r5.f23720c0
+            if (r6 > 0) goto L53
+            goto L54
+        L53:
+            int r7 = r7 + r6
+        L54:
+            r5.f23717Z = r7
+            return r6
+        L57:
+            int r6 = r6.read(r7)
+            if (r6 <= 0) goto L63
+            r5.f23719b0 = r1
+            r5.f23720c0 = r2
+            r5.f23717Z = r6
+        L63:
+            return r6
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public synchronized int available() {
+            r3 = this;
+            monitor-enter(r3)
+            java.io.InputStream r0 = r3.in     // Catch: java.lang.Throwable -> L1a
+            byte[] r1 = r3.f23716Y     // Catch: java.lang.Throwable -> L1a
+            if (r1 == 0) goto L15
+            if (r0 == 0) goto L15
+            int r1 = r3.f23717Z     // Catch: java.lang.Throwable -> L1a
+            int r2 = r3.f23720c0     // Catch: java.lang.Throwable -> L1a
+            int r1 = r1 - r2
+            int r0 = r0.available()     // Catch: java.lang.Throwable -> L1a
+            int r1 = r1 + r0
+            monitor-exit(r3)
+            return r1
+        L15:
+            m12688h()     // Catch: java.lang.Throwable -> L1a
+            r0 = 0
+            throw r0     // Catch: java.lang.Throwable -> L1a
+        L1a:
+            r0 = move-exception
+            monitor-exit(r3)
+            throw r0
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream, java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+            r3 = this;
+            byte[] r0 = r3.f23716Y
+            r1 = 0
+            if (r0 == 0) goto Le
+            n2.b r0 = r3.f23721d0
+            byte[] r2 = r3.f23716Y
+            r0.mo10687d(r2)
+            r3.f23716Y = r1
+        Le:
+            java.io.InputStream r0 = r3.in
+            r3.in = r1
+            if (r0 == 0) goto L17
+            r0.close()
+        L17:
+            return
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public synchronized void mark(int r2) {
+            r1 = this;
+            monitor-enter(r1)
+            int r0 = r1.f23718a0     // Catch: java.lang.Throwable -> Lf
+            int r2 = java.lang.Math.max(r0, r2)     // Catch: java.lang.Throwable -> Lf
+            r1.f23718a0 = r2     // Catch: java.lang.Throwable -> Lf
+            int r2 = r1.f23720c0     // Catch: java.lang.Throwable -> Lf
+            r1.f23719b0 = r2     // Catch: java.lang.Throwable -> Lf
+            monitor-exit(r1)
+            return
+        Lf:
+            r2 = move-exception
+            monitor-exit(r1)
+            throw r2
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public boolean markSupported() {
+            r1 = this;
+            r0 = 1
+            return r0
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public synchronized int read() {
+            r6 = this;
+            monitor-enter(r6)
+            byte[] r0 = r6.f23716Y     // Catch: java.lang.Throwable -> L3d
+            java.io.InputStream r1 = r6.in     // Catch: java.lang.Throwable -> L3d
+            r2 = 0
+            if (r0 == 0) goto L39
+            if (r1 == 0) goto L39
+            int r3 = r6.f23720c0     // Catch: java.lang.Throwable -> L3d
+            int r4 = r6.f23717Z     // Catch: java.lang.Throwable -> L3d
+            r5 = -1
+            if (r3 < r4) goto L19
+            int r1 = r6.m12689a(r1, r0)     // Catch: java.lang.Throwable -> L3d
+            if (r1 != r5) goto L19
+            monitor-exit(r6)
+            return r5
+        L19:
+            byte[] r1 = r6.f23716Y     // Catch: java.lang.Throwable -> L3d
+            if (r0 == r1) goto L26
+            byte[] r0 = r6.f23716Y     // Catch: java.lang.Throwable -> L3d
+            if (r0 == 0) goto L22
+            goto L26
+        L22:
+            m12688h()     // Catch: java.lang.Throwable -> L3d
+            throw r2     // Catch: java.lang.Throwable -> L3d
+        L26:
+            int r1 = r6.f23717Z     // Catch: java.lang.Throwable -> L3d
+            int r2 = r6.f23720c0     // Catch: java.lang.Throwable -> L3d
+            int r1 = r1 - r2
+            if (r1 <= 0) goto L37
+            int r1 = r2 + 1
+            r6.f23720c0 = r1     // Catch: java.lang.Throwable -> L3d
+            r0 = r0[r2]     // Catch: java.lang.Throwable -> L3d
+            r0 = r0 & 255(0xff, float:3.57E-43)
+            monitor-exit(r6)
+            return r0
+        L37:
+            monitor-exit(r6)
+            return r5
+        L39:
+            m12688h()     // Catch: java.lang.Throwable -> L3d
+            throw r2     // Catch: java.lang.Throwable -> L3d
+        L3d:
+            r0 = move-exception
+            monitor-exit(r6)
+            throw r0
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public synchronized int read(byte[] r8, int r9, int r10) {
+            r7 = this;
+            monitor-enter(r7)
+            byte[] r0 = r7.f23716Y     // Catch: java.lang.Throwable -> L8e
+            r1 = 0
+            if (r0 == 0) goto L8a
+            if (r10 != 0) goto Lb
+            r8 = 0
+            monitor-exit(r7)
+            return r8
+        Lb:
+            java.io.InputStream r2 = r7.in     // Catch: java.lang.Throwable -> L8e
+            if (r2 == 0) goto L86
+            int r3 = r7.f23720c0     // Catch: java.lang.Throwable -> L8e
+            int r4 = r7.f23717Z     // Catch: java.lang.Throwable -> L8e
+            if (r3 >= r4) goto L33
+            int r5 = r4 - r3
+            if (r5 < r10) goto L1b
+            r4 = r10
+            goto L1c
+        L1b:
+            int r4 = r4 - r3
+        L1c:
+            java.lang.System.arraycopy(r0, r3, r8, r9, r4)     // Catch: java.lang.Throwable -> L8e
+            int r3 = r7.f23720c0     // Catch: java.lang.Throwable -> L8e
+            int r3 = r3 + r4
+            r7.f23720c0 = r3     // Catch: java.lang.Throwable -> L8e
+            if (r4 == r10) goto L31
+            int r3 = r2.available()     // Catch: java.lang.Throwable -> L8e
+            if (r3 != 0) goto L2d
+            goto L31
+        L2d:
+            int r9 = r9 + r4
+            int r3 = r10 - r4
+            goto L34
+        L31:
+            monitor-exit(r7)
+            return r4
+        L33:
+            r3 = r10
+        L34:
+            int r4 = r7.f23719b0     // Catch: java.lang.Throwable -> L8e
+            r5 = -1
+            if (r4 != r5) goto L49
+            int r4 = r0.length     // Catch: java.lang.Throwable -> L8e
+            if (r3 < r4) goto L49
+            int r4 = r2.read(r8, r9, r3)     // Catch: java.lang.Throwable -> L8e
+            if (r4 != r5) goto L76
+            if (r3 != r10) goto L45
+            goto L47
+        L45:
+            int r5 = r10 - r3
+        L47:
+            monitor-exit(r7)
+            return r5
+        L49:
+            int r4 = r7.m12689a(r2, r0)     // Catch: java.lang.Throwable -> L8e
+            if (r4 != r5) goto L56
+            if (r3 != r10) goto L52
+            goto L54
+        L52:
+            int r5 = r10 - r3
+        L54:
+            monitor-exit(r7)
+            return r5
+        L56:
+            byte[] r4 = r7.f23716Y     // Catch: java.lang.Throwable -> L8e
+            if (r0 == r4) goto L63
+            byte[] r0 = r7.f23716Y     // Catch: java.lang.Throwable -> L8e
+            if (r0 == 0) goto L5f
+            goto L63
+        L5f:
+            m12688h()     // Catch: java.lang.Throwable -> L8e
+            throw r1     // Catch: java.lang.Throwable -> L8e
+        L63:
+            int r4 = r7.f23717Z     // Catch: java.lang.Throwable -> L8e
+            int r5 = r7.f23720c0     // Catch: java.lang.Throwable -> L8e
+            int r6 = r4 - r5
+            if (r6 < r3) goto L6d
+            r4 = r3
+            goto L6e
+        L6d:
+            int r4 = r4 - r5
+        L6e:
+            java.lang.System.arraycopy(r0, r5, r8, r9, r4)     // Catch: java.lang.Throwable -> L8e
+            int r5 = r7.f23720c0     // Catch: java.lang.Throwable -> L8e
+            int r5 = r5 + r4
+            r7.f23720c0 = r5     // Catch: java.lang.Throwable -> L8e
+        L76:
+            int r3 = r3 - r4
+            if (r3 != 0) goto L7b
+            monitor-exit(r7)
+            return r10
+        L7b:
+            int r5 = r2.available()     // Catch: java.lang.Throwable -> L8e
+            if (r5 != 0) goto L84
+            int r10 = r10 - r3
+            monitor-exit(r7)
+            return r10
+        L84:
+            int r9 = r9 + r4
+            goto L34
+        L86:
+            m12688h()     // Catch: java.lang.Throwable -> L8e
+            throw r1     // Catch: java.lang.Throwable -> L8e
+        L8a:
+            m12688h()     // Catch: java.lang.Throwable -> L8e
+            throw r1     // Catch: java.lang.Throwable -> L8e
+        L8e:
+            r8 = move-exception
+            monitor-exit(r7)
+            throw r8
+    }
+
+    public synchronized void release() {
+            r2 = this;
+            monitor-enter(r2)
+            byte[] r0 = r2.f23716Y     // Catch: java.lang.Throwable -> L11
+            if (r0 == 0) goto Lf
+            n2.b r0 = r2.f23721d0     // Catch: java.lang.Throwable -> L11
+            byte[] r1 = r2.f23716Y     // Catch: java.lang.Throwable -> L11
+            r0.mo10687d(r1)     // Catch: java.lang.Throwable -> L11
+            r0 = 0
+            r2.f23716Y = r0     // Catch: java.lang.Throwable -> L11
+        Lf:
+            monitor-exit(r2)
+            return
+        L11:
+            r0 = move-exception
+            monitor-exit(r2)
+            throw r0
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public synchronized void reset() {
+            r3 = this;
+            monitor-enter(r3)
+            byte[] r0 = r3.f23716Y     // Catch: java.lang.Throwable -> L39
+            if (r0 == 0) goto L31
+            r0 = -1
+            int r1 = r3.f23719b0     // Catch: java.lang.Throwable -> L39
+            if (r0 == r1) goto Le
+            r3.f23720c0 = r1     // Catch: java.lang.Throwable -> L39
+            monitor-exit(r3)
+            return
+        Le:
+            t2.t$a r0 = new t2.t$a     // Catch: java.lang.Throwable -> L39
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L39
+            r1.<init>()     // Catch: java.lang.Throwable -> L39
+            java.lang.String r2 = "Mark has been invalidated, pos: "
+            r1.append(r2)     // Catch: java.lang.Throwable -> L39
+            int r2 = r3.f23720c0     // Catch: java.lang.Throwable -> L39
+            r1.append(r2)     // Catch: java.lang.Throwable -> L39
+            java.lang.String r2 = " markLimit: "
+            r1.append(r2)     // Catch: java.lang.Throwable -> L39
+            int r2 = r3.f23718a0     // Catch: java.lang.Throwable -> L39
+            r1.append(r2)     // Catch: java.lang.Throwable -> L39
+            java.lang.String r1 = r1.toString()     // Catch: java.lang.Throwable -> L39
+            r0.<init>(r1)     // Catch: java.lang.Throwable -> L39
+            throw r0     // Catch: java.lang.Throwable -> L39
+        L31:
+            java.io.IOException r0 = new java.io.IOException     // Catch: java.lang.Throwable -> L39
+            java.lang.String r1 = "Stream is closed"
+            r0.<init>(r1)     // Catch: java.lang.Throwable -> L39
+            throw r0     // Catch: java.lang.Throwable -> L39
+        L39:
+            r0 = move-exception
+            monitor-exit(r3)
+            throw r0
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public synchronized long skip(long r11) {
+            r10 = this;
+            monitor-enter(r10)
+            r0 = 1
+            r2 = 0
+            int r4 = (r11 > r0 ? 1 : (r11 == r0 ? 0 : -1))
+            if (r4 >= 0) goto Lb
+            monitor-exit(r10)
+            return r2
+        Lb:
+            byte[] r0 = r10.f23716Y     // Catch: java.lang.Throwable -> L72
+            r1 = 0
+            if (r0 == 0) goto L6e
+            java.io.InputStream r4 = r10.in     // Catch: java.lang.Throwable -> L72
+            if (r4 == 0) goto L6a
+            int r1 = r10.f23717Z     // Catch: java.lang.Throwable -> L72
+            int r5 = r10.f23720c0     // Catch: java.lang.Throwable -> L72
+            int r6 = r1 - r5
+            long r6 = (long) r6     // Catch: java.lang.Throwable -> L72
+            int r8 = (r6 > r11 ? 1 : (r6 == r11 ? 0 : -1))
+            if (r8 < 0) goto L26
+            long r0 = (long) r5     // Catch: java.lang.Throwable -> L72
+            long r0 = r0 + r11
+            int r1 = (int) r0     // Catch: java.lang.Throwable -> L72
+            r10.f23720c0 = r1     // Catch: java.lang.Throwable -> L72
+            monitor-exit(r10)
+            return r11
+        L26:
+            long r6 = (long) r1
+            long r8 = (long) r5
+            long r6 = r6 - r8
+            r10.f23720c0 = r1     // Catch: java.lang.Throwable -> L72
+            int r1 = r10.f23719b0     // Catch: java.lang.Throwable -> L72
+            r5 = -1
+            if (r1 == r5) goto L5c
+            int r1 = r10.f23718a0     // Catch: java.lang.Throwable -> L72
+            long r8 = (long) r1     // Catch: java.lang.Throwable -> L72
+            int r1 = (r11 > r8 ? 1 : (r11 == r8 ? 0 : -1))
+            if (r1 > 0) goto L5c
+            int r0 = r10.m12689a(r4, r0)     // Catch: java.lang.Throwable -> L72
+            if (r0 != r5) goto L3f
+            monitor-exit(r10)
+            return r6
+        L3f:
+            int r0 = r10.f23717Z     // Catch: java.lang.Throwable -> L72
+            int r1 = r10.f23720c0     // Catch: java.lang.Throwable -> L72
+            int r2 = r0 - r1
+            long r2 = (long) r2     // Catch: java.lang.Throwable -> L72
+            long r4 = r11 - r6
+            int r8 = (r2 > r4 ? 1 : (r2 == r4 ? 0 : -1))
+            if (r8 < 0) goto L54
+            long r0 = (long) r1     // Catch: java.lang.Throwable -> L72
+            long r0 = r0 + r11
+            long r0 = r0 - r6
+            int r1 = (int) r0     // Catch: java.lang.Throwable -> L72
+            r10.f23720c0 = r1     // Catch: java.lang.Throwable -> L72
+            monitor-exit(r10)
+            return r11
+        L54:
+            long r11 = (long) r0
+            long r6 = r6 + r11
+            long r11 = (long) r1
+            long r6 = r6 - r11
+            r10.f23720c0 = r0     // Catch: java.lang.Throwable -> L72
+            monitor-exit(r10)
+            return r6
+        L5c:
+            long r11 = r11 - r6
+            long r11 = r4.skip(r11)     // Catch: java.lang.Throwable -> L72
+            int r0 = (r11 > r2 ? 1 : (r11 == r2 ? 0 : -1))
+            if (r0 <= 0) goto L67
+            r10.f23719b0 = r5     // Catch: java.lang.Throwable -> L72
+        L67:
+            long r6 = r6 + r11
+            monitor-exit(r10)
+            return r6
+        L6a:
+            m12688h()     // Catch: java.lang.Throwable -> L72
+            throw r1     // Catch: java.lang.Throwable -> L72
+        L6e:
+            m12688h()     // Catch: java.lang.Throwable -> L72
+            throw r1     // Catch: java.lang.Throwable -> L72
+        L72:
+            r11 = move-exception
+            monitor-exit(r10)
+            throw r11
+    }
+}
+package p334t2;
+
+/* renamed from: t2.u */
+/* loaded from: classes.dex */
+public class C6143u implements p180k2.InterfaceC3674f<java.io.InputStream, android.graphics.Bitmap> {
+
+    /* renamed from: a */
+    public final p334t2.C6134l f23722a;
+
+    /* renamed from: b */
+    public final p229n2.InterfaceC4672b f23723b;
+
+    /* renamed from: t2.u$a */
+    public static class a implements p334t2.C6134l.b {
+
+        /* renamed from: a */
+        public final p334t2.C6142t f23724a;
+
+        /* renamed from: b */
+        public final p106g3.C2232d f23725b;
+
+        public a(p334t2.C6142t r1, p106g3.C2232d r2) {
+                r0 = this;
+                r0.<init>()
+                r0.f23724a = r1
+                r0.f23725b = r2
+                return
+        }
+
+        @Override // p334t2.C6134l.b
+        /* renamed from: a */
+        public void mo12679a(p229n2.InterfaceC4673c r2, android.graphics.Bitmap r3) {
+                r1 = this;
+                g3.d r0 = r1.f23725b
+                java.io.IOException r0 = r0.f10199Z
+                if (r0 == 0) goto Lc
+                if (r3 == 0) goto Lb
+                r2.mo10694f(r3)
+            Lb:
+                throw r0
+            Lc:
+                return
+        }
+
+        @Override // p334t2.C6134l.b
+        /* renamed from: b */
+        public void mo12680b() {
+                r2 = this;
+                t2.t r0 = r2.f23724a
+                monitor-enter(r0)
+                byte[] r1 = r0.f23716Y     // Catch: java.lang.Throwable -> La
+                int r1 = r1.length     // Catch: java.lang.Throwable -> La
+                r0.f23718a0 = r1     // Catch: java.lang.Throwable -> La
+                monitor-exit(r0)
+                return
+            La:
+                r1 = move-exception
+                monitor-exit(r0)
+                throw r1
+        }
+    }
+
+    public C6143u(p334t2.C6134l r1, p229n2.InterfaceC4672b r2) {
+            r0 = this;
+            r0.<init>()
+            r0.f23722a = r1
+            r0.f23723b = r2
+            return
+    }
+
+    @Override // p180k2.InterfaceC3674f
+    /* renamed from: a */
+    public p214m2.InterfaceC4345w<android.graphics.Bitmap> mo8132a(java.io.InputStream r10, int r11, int r12, p180k2.C3673e r13) {
+            r9 = this;
+            java.io.InputStream r10 = (java.io.InputStream) r10
+            boolean r0 = r10 instanceof p334t2.C6142t
+            if (r0 == 0) goto La
+            t2.t r10 = (p334t2.C6142t) r10
+            r0 = 0
+            goto L14
+        La:
+            t2.t r0 = new t2.t
+            n2.b r1 = r9.f23723b
+            r0.<init>(r10, r1)
+            r10 = 1
+            r10 = r0
+            r0 = 1
+        L14:
+            java.util.Queue<g3.d> r1 = p106g3.C2232d.f10197a0
+            monitor-enter(r1)
+            r2 = r1
+            java.util.ArrayDeque r2 = (java.util.ArrayDeque) r2     // Catch: java.lang.Throwable -> L50
+            java.lang.Object r2 = r2.poll()     // Catch: java.lang.Throwable -> L50
+            g3.d r2 = (p106g3.C2232d) r2     // Catch: java.lang.Throwable -> L50
+            monitor-exit(r1)     // Catch: java.lang.Throwable -> L50
+            if (r2 != 0) goto L28
+            g3.d r2 = new g3.d
+            r2.<init>()
+        L28:
+            r2.f10198Y = r10
+            g3.h r4 = new g3.h
+            r4.<init>(r2)
+            t2.u$a r8 = new t2.u$a
+            r8.<init>(r10, r2)
+            t2.l r3 = r9.f23722a     // Catch: java.lang.Throwable -> L46
+            r5 = r11
+            r6 = r12
+            r7 = r13
+            m2.w r11 = r3.m12676a(r4, r5, r6, r7, r8)     // Catch: java.lang.Throwable -> L46
+            r2.release()
+            if (r0 == 0) goto L45
+            r10.release()
+        L45:
+            return r11
+        L46:
+            r11 = move-exception
+            r2.release()
+            if (r0 == 0) goto L4f
+            r10.release()
+        L4f:
+            throw r11
+        L50:
+            r10 = move-exception
+            monitor-exit(r1)     // Catch: java.lang.Throwable -> L50
+            throw r10
+    }
+
+    @Override // p180k2.InterfaceC3674f
+    /* renamed from: b */
+    public boolean mo8133b(java.io.InputStream r1, p180k2.C3673e r2) {
+            r0 = this;
+            java.io.InputStream r1 = (java.io.InputStream) r1
+            t2.l r1 = r0.f23722a
+            java.util.Objects.requireNonNull(r1)
+            r1 = 1
+            return r1
+    }
+}
+package p334t2;
+
+/* renamed from: t2.v */
+/* loaded from: classes.dex */
+public final class C6144v {
+
+    /* renamed from: a */
+    public static final android.graphics.Paint f23726a = null;
+
+    /* renamed from: b */
+    public static final java.util.concurrent.locks.Lock f23727b = null;
+
+    /* renamed from: t2.v$a */
+    public static final class a implements java.util.concurrent.locks.Lock {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // java.util.concurrent.locks.Lock
+        public void lock() {
+                r0 = this;
+                return
+        }
+
+        @Override // java.util.concurrent.locks.Lock
+        public void lockInterruptibly() {
+                r0 = this;
+                return
+        }
+
+        @Override // java.util.concurrent.locks.Lock
+        public java.util.concurrent.locks.Condition newCondition() {
+                r2 = this;
+                java.lang.UnsupportedOperationException r0 = new java.lang.UnsupportedOperationException
+                java.lang.String r1 = "Should not be called"
+                r0.<init>(r1)
+                throw r0
+        }
+
+        @Override // java.util.concurrent.locks.Lock
+        public boolean tryLock() {
+                r1 = this;
+                r0 = 1
+                return r0
+        }
+
+        @Override // java.util.concurrent.locks.Lock
+        public boolean tryLock(long r1, java.util.concurrent.TimeUnit r3) {
+                r0 = this;
+                r1 = 1
+                return r1
+        }
+
+        @Override // java.util.concurrent.locks.Lock
+        public void unlock() {
+                r0 = this;
+                return
+        }
+    }
+
+    static {
+            android.graphics.Paint r0 = new android.graphics.Paint
+            r1 = 6
+            r0.<init>(r1)
+            p334t2.C6144v.f23726a = r0
+            android.graphics.Paint r0 = new android.graphics.Paint
+            r1 = 7
+            r0.<init>(r1)
+            java.util.HashSet r0 = new java.util.HashSet
+            java.lang.String r2 = "XT1085"
+            java.lang.String r3 = "XT1092"
+            java.lang.String r4 = "XT1093"
+            java.lang.String r5 = "XT1094"
+            java.lang.String r6 = "XT1095"
+            java.lang.String r7 = "XT1096"
+            java.lang.String r8 = "XT1097"
+            java.lang.String r9 = "XT1098"
+            java.lang.String r10 = "XT1031"
+            java.lang.String r11 = "XT1028"
+            java.lang.String r12 = "XT937C"
+            java.lang.String r13 = "XT1032"
+            java.lang.String r14 = "XT1008"
+            java.lang.String r15 = "XT1033"
+            java.lang.String r16 = "XT1035"
+            java.lang.String r17 = "XT1034"
+            java.lang.String r18 = "XT939G"
+            java.lang.String r19 = "XT1039"
+            java.lang.String r20 = "XT1040"
+            java.lang.String r21 = "XT1042"
+            java.lang.String r22 = "XT1045"
+            java.lang.String r23 = "XT1063"
+            java.lang.String r24 = "XT1064"
+            java.lang.String r25 = "XT1068"
+            java.lang.String r26 = "XT1069"
+            java.lang.String r27 = "XT1072"
+            java.lang.String r28 = "XT1077"
+            java.lang.String r29 = "XT1078"
+            java.lang.String r30 = "XT1079"
+            java.lang.String[] r2 = new java.lang.String[]{r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21, r22, r23, r24, r25, r26, r27, r28, r29, r30}
+            java.util.List r2 = java.util.Arrays.asList(r2)
+            r0.<init>(r2)
+            java.lang.String r2 = android.os.Build.MODEL
+            boolean r0 = r0.contains(r2)
+            if (r0 == 0) goto L63
+            java.util.concurrent.locks.ReentrantLock r0 = new java.util.concurrent.locks.ReentrantLock
+            r0.<init>()
+            goto L68
+        L63:
+            t2.v$a r0 = new t2.v$a
+            r0.<init>()
+        L68:
+            p334t2.C6144v.f23727b = r0
+            android.graphics.Paint r0 = new android.graphics.Paint
+            r0.<init>(r1)
+            android.graphics.PorterDuffXfermode r1 = new android.graphics.PorterDuffXfermode
+            android.graphics.PorterDuff$Mode r2 = android.graphics.PorterDuff.Mode.SRC_IN
+            r1.<init>(r2)
+            r0.setXfermode(r1)
+            return
+    }
+
+    /* renamed from: a */
+    public static void m12690a(android.graphics.Bitmap r2, android.graphics.Bitmap r3, android.graphics.Matrix r4) {
+            java.util.concurrent.locks.Lock r0 = p334t2.C6144v.f23727b
+            r0.lock()
+            android.graphics.Canvas r1 = new android.graphics.Canvas     // Catch: java.lang.Throwable -> L17
+            r1.<init>(r3)     // Catch: java.lang.Throwable -> L17
+            android.graphics.Paint r3 = p334t2.C6144v.f23726a     // Catch: java.lang.Throwable -> L17
+            r1.drawBitmap(r2, r4, r3)     // Catch: java.lang.Throwable -> L17
+            r2 = 0
+            r1.setBitmap(r2)     // Catch: java.lang.Throwable -> L17
+            r0.unlock()
+            return
+        L17:
+            r2 = move-exception
+            java.util.concurrent.locks.Lock r3 = p334t2.C6144v.f23727b
+            r3.unlock()
+            throw r2
+    }
+
+    /* renamed from: b */
+    public static android.graphics.Bitmap m12691b(p229n2.InterfaceC4673c r6, android.graphics.Bitmap r7, int r8, int r9) {
+            int r0 = r7.getWidth()
+            r1 = 2
+            java.lang.String r2 = "TransformationUtils"
+            if (r0 != r8) goto L1b
+            int r0 = r7.getHeight()
+            if (r0 != r9) goto L1b
+            boolean r6 = android.util.Log.isLoggable(r2, r1)
+            if (r6 == 0) goto L1a
+            java.lang.String r6 = "requested target size matches input, returning input"
+            android.util.Log.v(r2, r6)
+        L1a:
+            return r7
+        L1b:
+            float r0 = (float) r8
+            int r3 = r7.getWidth()
+            float r3 = (float) r3
+            float r0 = r0 / r3
+            float r3 = (float) r9
+            int r4 = r7.getHeight()
+            float r4 = (float) r4
+            float r3 = r3 / r4
+            float r0 = java.lang.Math.min(r0, r3)
+            int r3 = r7.getWidth()
+            float r3 = (float) r3
+            float r3 = r3 * r0
+            int r3 = java.lang.Math.round(r3)
+            int r4 = r7.getHeight()
+            float r4 = (float) r4
+            float r4 = r4 * r0
+            int r4 = java.lang.Math.round(r4)
+            int r5 = r7.getWidth()
+            if (r5 != r3) goto L5b
+            int r3 = r7.getHeight()
+            if (r3 != r4) goto L5b
+            boolean r6 = android.util.Log.isLoggable(r2, r1)
+            if (r6 == 0) goto L5a
+            java.lang.String r6 = "adjusted target size matches input, returning input"
+            android.util.Log.v(r2, r6)
+        L5a:
+            return r7
+        L5b:
+            int r3 = r7.getWidth()
+            float r3 = (float) r3
+            float r3 = r3 * r0
+            int r3 = (int) r3
+            int r4 = r7.getHeight()
+            float r4 = (float) r4
+            float r4 = r4 * r0
+            int r4 = (int) r4
+            android.graphics.Bitmap$Config r5 = m12692c(r7)
+            android.graphics.Bitmap r6 = r6.mo10693e(r3, r4, r5)
+            boolean r3 = r7.hasAlpha()
+            r6.setHasAlpha(r3)
+            boolean r1 = android.util.Log.isLoggable(r2, r1)
+            if (r1 == 0) goto Lf4
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            r1.<init>()
+            java.lang.String r3 = "request: "
+            r1.append(r3)
+            r1.append(r8)
+            java.lang.String r8 = "x"
+            r1.append(r8)
+            r1.append(r9)
+            java.lang.String r9 = r1.toString()
+            android.util.Log.v(r2, r9)
+            java.lang.StringBuilder r9 = new java.lang.StringBuilder
+            r9.<init>()
+            java.lang.String r1 = "toFit:   "
+            r9.append(r1)
+            int r1 = r7.getWidth()
+            r9.append(r1)
+            r9.append(r8)
+            int r1 = r7.getHeight()
+            r9.append(r1)
+            java.lang.String r9 = r9.toString()
+            android.util.Log.v(r2, r9)
+            java.lang.StringBuilder r9 = new java.lang.StringBuilder
+            r9.<init>()
+            java.lang.String r1 = "toReuse: "
+            r9.append(r1)
+            int r1 = r6.getWidth()
+            r9.append(r1)
+            r9.append(r8)
+            int r8 = r6.getHeight()
+            r9.append(r8)
+            java.lang.String r8 = r9.toString()
+            android.util.Log.v(r2, r8)
+            java.lang.StringBuilder r8 = new java.lang.StringBuilder
+            r8.<init>()
+            java.lang.String r9 = "minPct:   "
+            r8.append(r9)
+            r8.append(r0)
+            java.lang.String r8 = r8.toString()
+            android.util.Log.v(r2, r8)
+        Lf4:
+            android.graphics.Matrix r8 = new android.graphics.Matrix
+            r8.<init>()
+            r8.setScale(r0, r0)
+            m12690a(r7, r6, r8)
+            return r6
+    }
+
+    /* renamed from: c */
+    public static android.graphics.Bitmap.Config m12692c(android.graphics.Bitmap r1) {
+            android.graphics.Bitmap$Config r0 = r1.getConfig()
+            if (r0 == 0) goto Lb
+            android.graphics.Bitmap$Config r1 = r1.getConfig()
+            goto Ld
+        Lb:
+            android.graphics.Bitmap$Config r1 = android.graphics.Bitmap.Config.ARGB_8888
+        Ld:
+            return r1
+    }
+}
+package p334t2;
+
+/* renamed from: t2.w */
+/* loaded from: classes.dex */
+public final class C6145w implements p180k2.InterfaceC3674f<android.graphics.Bitmap, android.graphics.Bitmap> {
+
+    /* renamed from: t2.w$a */
+    public static final class a implements p214m2.InterfaceC4345w<android.graphics.Bitmap> {
+
+        /* renamed from: Y */
+        public final android.graphics.Bitmap f23728Y;
+
+        public a(android.graphics.Bitmap r1) {
+                r0 = this;
+                r0.<init>()
+                r0.f23728Y = r1
+                return
+        }
+
+        @Override // p214m2.InterfaceC4345w
+        /* renamed from: a */
+        public int mo9718a() {
+                r1 = this;
+                android.graphics.Bitmap r0 = r1.f23728Y
+                int r0 = p106g3.C2238j.m5844d(r0)
+                return r0
+        }
+
+        @Override // p214m2.InterfaceC4345w
+        /* renamed from: c */
+        public java.lang.Class<android.graphics.Bitmap> mo9720c() {
+                r1 = this;
+                java.lang.Class<android.graphics.Bitmap> r0 = android.graphics.Bitmap.class
+                return r0
+        }
+
+        @Override // p214m2.InterfaceC4345w
+        /* renamed from: d */
+        public void mo9721d() {
+                r0 = this;
+                return
+        }
+
+        @Override // p214m2.InterfaceC4345w
+        public android.graphics.Bitmap get() {
+                r1 = this;
+                android.graphics.Bitmap r0 = r1.f23728Y
+                return r0
+        }
+    }
+
+    public C6145w() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p180k2.InterfaceC3674f
+    /* renamed from: a */
+    public p214m2.InterfaceC4345w<android.graphics.Bitmap> mo8132a(android.graphics.Bitmap r1, int r2, int r3, p180k2.C3673e r4) {
+            r0 = this;
+            android.graphics.Bitmap r1 = (android.graphics.Bitmap) r1
+            t2.w$a r2 = new t2.w$a
+            r2.<init>(r1)
+            return r2
+    }
+
+    @Override // p180k2.InterfaceC3674f
+    /* renamed from: b */
+    public /* bridge */ /* synthetic */ boolean mo8133b(android.graphics.Bitmap r1, p180k2.C3673e r2) {
+            r0 = this;
+            android.graphics.Bitmap r1 = (android.graphics.Bitmap) r1
+            r1 = 1
+            return r1
+    }
+}
+package p334t2;
+
+/* renamed from: t2.x */
+/* loaded from: classes.dex */
+public class C6146x<T> implements p180k2.InterfaceC3674f<T, android.graphics.Bitmap> {
+
+    /* renamed from: d */
+    public static final p180k2.C3672d<java.lang.Long> f23729d = null;
+
+    /* renamed from: e */
+    public static final p180k2.C3672d<java.lang.Integer> f23730e = null;
+
+    /* renamed from: f */
+    public static final p334t2.C6146x.e f23731f = null;
+
+    /* renamed from: a */
+    public final p334t2.C6146x.f<T> f23732a;
+
+    /* renamed from: b */
+    public final p229n2.InterfaceC4673c f23733b;
+
+    /* renamed from: c */
+    public final p334t2.C6146x.e f23734c;
+
+    /* renamed from: t2.x$a */
+    public class a implements p180k2.C3672d.b<java.lang.Long> {
+
+        /* renamed from: a */
+        public final java.nio.ByteBuffer f23735a;
+
+        public a() {
+                r1 = this;
+                r1.<init>()
+                r0 = 8
+                java.nio.ByteBuffer r0 = java.nio.ByteBuffer.allocate(r0)
+                r1.f23735a = r0
+                return
+        }
+
+        @Override // p180k2.C3672d.b
+        /* renamed from: a */
+        public void mo8129a(byte[] r4, java.lang.Long r5, java.security.MessageDigest r6) {
+                r3 = this;
+                java.lang.Long r5 = (java.lang.Long) r5
+                r6.update(r4)
+                java.nio.ByteBuffer r4 = r3.f23735a
+                monitor-enter(r4)
+                java.nio.ByteBuffer r0 = r3.f23735a     // Catch: java.lang.Throwable -> L21
+                r1 = 0
+                r0.position(r1)     // Catch: java.lang.Throwable -> L21
+                java.nio.ByteBuffer r0 = r3.f23735a     // Catch: java.lang.Throwable -> L21
+                long r1 = r5.longValue()     // Catch: java.lang.Throwable -> L21
+                java.nio.ByteBuffer r5 = r0.putLong(r1)     // Catch: java.lang.Throwable -> L21
+                byte[] r5 = r5.array()     // Catch: java.lang.Throwable -> L21
+                r6.update(r5)     // Catch: java.lang.Throwable -> L21
+                monitor-exit(r4)     // Catch: java.lang.Throwable -> L21
+                return
+            L21:
+                r5 = move-exception
+                monitor-exit(r4)     // Catch: java.lang.Throwable -> L21
+                throw r5
+        }
+    }
+
+    /* renamed from: t2.x$b */
+    public class b implements p180k2.C3672d.b<java.lang.Integer> {
+
+        /* renamed from: a */
+        public final java.nio.ByteBuffer f23736a;
+
+        public b() {
+                r1 = this;
+                r1.<init>()
+                r0 = 4
+                java.nio.ByteBuffer r0 = java.nio.ByteBuffer.allocate(r0)
+                r1.f23736a = r0
+                return
+        }
+
+        @Override // p180k2.C3672d.b
+        /* renamed from: a */
+        public void mo8129a(byte[] r3, java.lang.Integer r4, java.security.MessageDigest r5) {
+                r2 = this;
+                java.lang.Integer r4 = (java.lang.Integer) r4
+                if (r4 != 0) goto L5
+                goto L23
+            L5:
+                r5.update(r3)
+                java.nio.ByteBuffer r3 = r2.f23736a
+                monitor-enter(r3)
+                java.nio.ByteBuffer r0 = r2.f23736a     // Catch: java.lang.Throwable -> L24
+                r1 = 0
+                r0.position(r1)     // Catch: java.lang.Throwable -> L24
+                java.nio.ByteBuffer r0 = r2.f23736a     // Catch: java.lang.Throwable -> L24
+                int r4 = r4.intValue()     // Catch: java.lang.Throwable -> L24
+                java.nio.ByteBuffer r4 = r0.putInt(r4)     // Catch: java.lang.Throwable -> L24
+                byte[] r4 = r4.array()     // Catch: java.lang.Throwable -> L24
+                r5.update(r4)     // Catch: java.lang.Throwable -> L24
+                monitor-exit(r3)     // Catch: java.lang.Throwable -> L24
+            L23:
+                return
+            L24:
+                r4 = move-exception
+                monitor-exit(r3)     // Catch: java.lang.Throwable -> L24
+                throw r4
+        }
+    }
+
+    /* renamed from: t2.x$c */
+    public static final class c implements p334t2.C6146x.f<android.content.res.AssetFileDescriptor> {
+        public c(p334t2.C6146x.a r1) {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // p334t2.C6146x.f
+        /* renamed from: a */
+        public void mo12694a(android.media.MediaMetadataRetriever r7, android.content.res.AssetFileDescriptor r8) {
+                r6 = this;
+                android.content.res.AssetFileDescriptor r8 = (android.content.res.AssetFileDescriptor) r8
+                java.io.FileDescriptor r1 = r8.getFileDescriptor()
+                long r2 = r8.getStartOffset()
+                long r4 = r8.getLength()
+                r0 = r7
+                r0.setDataSource(r1, r2, r4)
+                return
+        }
+    }
+
+    /* renamed from: t2.x$d */
+    public static final class d implements p334t2.C6146x.f<java.nio.ByteBuffer> {
+        public d() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // p334t2.C6146x.f
+        /* renamed from: a */
+        public void mo12694a(android.media.MediaMetadataRetriever r2, java.nio.ByteBuffer r3) {
+                r1 = this;
+                java.nio.ByteBuffer r3 = (java.nio.ByteBuffer) r3
+                t2.y r0 = new t2.y
+                r0.<init>(r1, r3)
+                r2.setDataSource(r0)
+                return
+        }
+    }
+
+    /* renamed from: t2.x$e */
+    public static class e {
+        public e() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+    }
+
+    /* renamed from: t2.x$f */
+    public interface f<T> {
+        /* renamed from: a */
+        void mo12694a(android.media.MediaMetadataRetriever r1, T r2);
+    }
+
+    /* renamed from: t2.x$g */
+    public static final class g implements p334t2.C6146x.f<android.os.ParcelFileDescriptor> {
+        public g() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // p334t2.C6146x.f
+        /* renamed from: a */
+        public void mo12694a(android.media.MediaMetadataRetriever r1, android.os.ParcelFileDescriptor r2) {
+                r0 = this;
+                android.os.ParcelFileDescriptor r2 = (android.os.ParcelFileDescriptor) r2
+                java.io.FileDescriptor r2 = r2.getFileDescriptor()
+                r1.setDataSource(r2)
+                return
+        }
+    }
+
+    /* renamed from: t2.x$h */
+    public static final class h extends java.lang.RuntimeException {
+        public h() {
+                r1 = this;
+                java.lang.String r0 = "MediaMetadataRetriever failed to retrieve a frame without throwing, check the adb logs for .*MetadataRetriever.* prior to this exception for details"
+                r1.<init>(r0)
+                return
+        }
+    }
+
+    static {
+            r0 = -1
+            java.lang.Long r0 = java.lang.Long.valueOf(r0)
+            t2.x$a r1 = new t2.x$a
+            r1.<init>()
+            k2.d r2 = new k2.d
+            java.lang.String r3 = "com.bumptech.glide.load.resource.bitmap.VideoBitmapDecode.TargetFrame"
+            r2.<init>(r3, r0, r1)
+            p334t2.C6146x.f23729d = r2
+            r0 = 2
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r0)
+            t2.x$b r1 = new t2.x$b
+            r1.<init>()
+            k2.d r2 = new k2.d
+            java.lang.String r3 = "com.bumptech.glide.load.resource.bitmap.VideoBitmapDecode.FrameOption"
+            r2.<init>(r3, r0, r1)
+            p334t2.C6146x.f23730e = r2
+            t2.x$e r0 = new t2.x$e
+            r0.<init>()
+            p334t2.C6146x.f23731f = r0
+            return
+    }
+
+    public C6146x(p229n2.InterfaceC4673c r2, p334t2.C6146x.f<T> r3) {
+            r1 = this;
+            t2.x$e r0 = p334t2.C6146x.f23731f
+            r1.<init>()
+            r1.f23733b = r2
+            r1.f23732a = r3
+            r1.f23734c = r0
+            return
+    }
+
+    /* renamed from: c */
+    public static android.graphics.Bitmap m12693c(android.media.MediaMetadataRetriever r9, long r10, int r12, int r13, int r14, p334t2.AbstractC6133k r15) {
+            int r0 = android.os.Build.VERSION.SDK_INT
+            r1 = 27
+            if (r0 < r1) goto L62
+            r0 = -2147483648(0xffffffff80000000, float:-0.0)
+            if (r13 == r0) goto L62
+            if (r14 == r0) goto L62
+            t2.k r0 = p334t2.AbstractC6133k.f23678d
+            if (r15 == r0) goto L62
+            r0 = 18
+            java.lang.String r0 = r9.extractMetadata(r0)     // Catch: java.lang.Throwable -> L53
+            int r0 = java.lang.Integer.parseInt(r0)     // Catch: java.lang.Throwable -> L53
+            r1 = 19
+            java.lang.String r1 = r9.extractMetadata(r1)     // Catch: java.lang.Throwable -> L53
+            int r1 = java.lang.Integer.parseInt(r1)     // Catch: java.lang.Throwable -> L53
+            r2 = 24
+            java.lang.String r2 = r9.extractMetadata(r2)     // Catch: java.lang.Throwable -> L53
+            int r2 = java.lang.Integer.parseInt(r2)     // Catch: java.lang.Throwable -> L53
+            r3 = 90
+            if (r2 == r3) goto L36
+            r3 = 270(0x10e, float:3.78E-43)
+            if (r2 != r3) goto L39
+        L36:
+            r8 = r1
+            r1 = r0
+            r0 = r8
+        L39:
+            float r13 = r15.mo12666b(r0, r1, r13, r14)     // Catch: java.lang.Throwable -> L53
+            float r14 = (float) r0     // Catch: java.lang.Throwable -> L53
+            float r14 = r14 * r13
+            int r6 = java.lang.Math.round(r14)     // Catch: java.lang.Throwable -> L53
+            float r14 = (float) r1     // Catch: java.lang.Throwable -> L53
+            float r13 = r13 * r14
+            int r7 = java.lang.Math.round(r13)     // Catch: java.lang.Throwable -> L53
+            r2 = r9
+            r3 = r10
+            r5 = r12
+            android.graphics.Bitmap r13 = r2.getScaledFrameAtTime(r3, r5, r6, r7)     // Catch: java.lang.Throwable -> L53
+            goto L63
+        L53:
+            r13 = move-exception
+            r14 = 3
+            java.lang.String r15 = "VideoDecoder"
+            boolean r14 = android.util.Log.isLoggable(r15, r14)
+            if (r14 == 0) goto L62
+            java.lang.String r14 = "Exception trying to decode a scaled frame on oreo+, falling back to a fullsize frame"
+            android.util.Log.d(r15, r14, r13)
+        L62:
+            r13 = 0
+        L63:
+            if (r13 != 0) goto L69
+            android.graphics.Bitmap r13 = r9.getFrameAtTime(r10, r12)
+        L69:
+            if (r13 == 0) goto L6c
+            return r13
+        L6c:
+            t2.x$h r9 = new t2.x$h
+            r9.<init>()
+            throw r9
+    }
+
+    @Override // p180k2.InterfaceC3674f
+    /* renamed from: a */
+    public p214m2.InterfaceC4345w<android.graphics.Bitmap> mo8132a(T r9, int r10, int r11, p180k2.C3673e r12) {
+            r8 = this;
+            k2.d<java.lang.Long> r0 = p334t2.C6146x.f23729d
+            java.lang.Object r0 = r12.m8130c(r0)
+            java.lang.Long r0 = (java.lang.Long) r0
+            long r2 = r0.longValue()
+            r0 = 0
+            int r4 = (r2 > r0 ? 1 : (r2 == r0 ? 0 : -1))
+            if (r4 >= 0) goto L25
+            r0 = -1
+            int r4 = (r2 > r0 ? 1 : (r2 == r0 ? 0 : -1))
+            if (r4 != 0) goto L19
+            goto L25
+        L19:
+            java.lang.IllegalArgumentException r9 = new java.lang.IllegalArgumentException
+            java.lang.String r10 = "Requested frame must be non-negative, or DEFAULT_FRAME, given: "
+            java.lang.String r10 = p382w0.C6774a.m13748a(r10, r2)
+            r9.<init>(r10)
+            throw r9
+        L25:
+            k2.d<java.lang.Integer> r0 = p334t2.C6146x.f23730e
+            java.lang.Object r0 = r12.m8130c(r0)
+            java.lang.Integer r0 = (java.lang.Integer) r0
+            if (r0 != 0) goto L34
+            r0 = 2
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r0)
+        L34:
+            k2.d<t2.k> r1 = p334t2.AbstractC6133k.f23680f
+            java.lang.Object r12 = r12.m8130c(r1)
+            t2.k r12 = (p334t2.AbstractC6133k) r12
+            if (r12 != 0) goto L40
+            t2.k r12 = p334t2.AbstractC6133k.f23679e
+        L40:
+            r7 = r12
+            t2.x$e r12 = r8.f23734c
+            java.util.Objects.requireNonNull(r12)
+            android.media.MediaMetadataRetriever r12 = new android.media.MediaMetadataRetriever
+            r12.<init>()
+            t2.x$f<T> r1 = r8.f23732a     // Catch: java.lang.Throwable -> L65
+            r1.mo12694a(r12, r9)     // Catch: java.lang.Throwable -> L65
+            int r4 = r0.intValue()     // Catch: java.lang.Throwable -> L65
+            r1 = r12
+            r5 = r10
+            r6 = r11
+            android.graphics.Bitmap r9 = m12693c(r1, r2, r4, r5, r6, r7)     // Catch: java.lang.Throwable -> L65
+            r12.release()
+            n2.c r10 = r8.f23733b
+            t2.d r9 = p334t2.C6126d.m12654f(r9, r10)
+            return r9
+        L65:
+            r9 = move-exception
+            r12.release()
+            throw r9
+    }
+
+    @Override // p180k2.InterfaceC3674f
+    /* renamed from: b */
+    public boolean mo8133b(T r1, p180k2.C3673e r2) {
+            r0 = this;
+            r1 = 1
+            return r1
+    }
+}
+package p334t2;
+
+/* renamed from: t2.y */
+/* loaded from: classes.dex */
+public class C6147y extends android.media.MediaDataSource {
+
+    /* renamed from: Y */
+    public final /* synthetic */ java.nio.ByteBuffer f23737Y;
+
+    public C6147y(p334t2.C6146x.d r1, java.nio.ByteBuffer r2) {
+            r0 = this;
+            r0.f23737Y = r2
+            r0.<init>()
+            return
+    }
+
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+            r0 = this;
+            return
+    }
+
+    @Override // android.media.MediaDataSource
+    public long getSize() {
+            r2 = this;
+            java.nio.ByteBuffer r0 = r2.f23737Y
+            int r0 = r0.limit()
+            long r0 = (long) r0
+            return r0
+    }
+
+    @Override // android.media.MediaDataSource
+    public int readAt(long r4, byte[] r6, int r7, int r8) {
+            r3 = this;
+            java.nio.ByteBuffer r0 = r3.f23737Y
+            int r0 = r0.limit()
+            long r0 = (long) r0
+            int r2 = (r4 > r0 ? 1 : (r4 == r0 ? 0 : -1))
+            if (r2 < 0) goto Ld
+            r4 = -1
+            return r4
+        Ld:
+            java.nio.ByteBuffer r0 = r3.f23737Y
+            int r5 = (int) r4
+            r0.position(r5)
+            java.nio.ByteBuffer r4 = r3.f23737Y
+            int r4 = r4.remaining()
+            int r4 = java.lang.Math.min(r8, r4)
+            java.nio.ByteBuffer r5 = r3.f23737Y
+            r5.get(r6, r7, r4)
+            return r4
+    }
+}
+package p334t2;
+
+/* renamed from: t2.r */
+/* loaded from: classes.dex */
+public interface InterfaceC6140r {
+
+    /* renamed from: t2.r$a */
+    public static final class a implements p334t2.InterfaceC6140r {
+
+        /* renamed from: a */
+        public final com.bumptech.glide.load.data.C1023k f23709a;
+
+        /* renamed from: b */
+        public final p229n2.InterfaceC4672b f23710b;
+
+        /* renamed from: c */
+        public final java.util.List<com.bumptech.glide.load.ImageHeaderParser> f23711c;
+
+        public a(java.io.InputStream r2, java.util.List<com.bumptech.glide.load.ImageHeaderParser> r3, p229n2.InterfaceC4672b r4) {
+                r1 = this;
+                r1.<init>()
+                java.lang.String r0 = "Argument must not be null"
+                java.util.Objects.requireNonNull(r4, r0)
+                r1.f23710b = r4
+                java.util.Objects.requireNonNull(r3, r0)
+                r1.f23711c = r3
+                com.bumptech.glide.load.data.k r3 = new com.bumptech.glide.load.data.k
+                r3.<init>(r2, r4)
+                r1.f23709a = r3
+                return
+        }
+
+        @Override // p334t2.InterfaceC6140r
+        /* renamed from: a */
+        public android.graphics.Bitmap mo12684a(android.graphics.BitmapFactory.Options r3) {
+                r2 = this;
+                com.bumptech.glide.load.data.k r0 = r2.f23709a
+                java.io.InputStream r0 = r0.m2798c()
+                r1 = 0
+                android.graphics.Bitmap r3 = android.graphics.BitmapFactory.decodeStream(r0, r1, r3)
+                return r3
+        }
+
+        @Override // p334t2.InterfaceC6140r
+        /* renamed from: b */
+        public void mo12685b() {
+                r2 = this;
+                com.bumptech.glide.load.data.k r0 = r2.f23709a
+                t2.t r0 = r0.f5215a
+                monitor-enter(r0)
+                byte[] r1 = r0.f23716Y     // Catch: java.lang.Throwable -> Lc
+                int r1 = r1.length     // Catch: java.lang.Throwable -> Lc
+                r0.f23718a0 = r1     // Catch: java.lang.Throwable -> Lc
+                monitor-exit(r0)
+                return
+            Lc:
+                r1 = move-exception
+                monitor-exit(r0)
+                throw r1
+        }
+
+        @Override // p334t2.InterfaceC6140r
+        /* renamed from: c */
+        public int mo12686c() {
+                r3 = this;
+                java.util.List<com.bumptech.glide.load.ImageHeaderParser> r0 = r3.f23711c
+                com.bumptech.glide.load.data.k r1 = r3.f23709a
+                java.io.InputStream r1 = r1.m2798c()
+                n2.b r2 = r3.f23710b
+                int r0 = com.bumptech.glide.load.C1011d.m2779a(r0, r1, r2)
+                return r0
+        }
+
+        @Override // p334t2.InterfaceC6140r
+        /* renamed from: d */
+        public com.bumptech.glide.load.ImageHeaderParser.ImageType mo12687d() {
+                r3 = this;
+                java.util.List<com.bumptech.glide.load.ImageHeaderParser> r0 = r3.f23711c
+                com.bumptech.glide.load.data.k r1 = r3.f23709a
+                java.io.InputStream r1 = r1.m2798c()
+                n2.b r2 = r3.f23710b
+                com.bumptech.glide.load.ImageHeaderParser$ImageType r0 = com.bumptech.glide.load.C1011d.m2780b(r0, r1, r2)
+                return r0
+        }
+    }
+
+    /* renamed from: t2.r$b */
+    public static final class b implements p334t2.InterfaceC6140r {
+
+        /* renamed from: a */
+        public final p229n2.InterfaceC4672b f23712a;
+
+        /* renamed from: b */
+        public final java.util.List<com.bumptech.glide.load.ImageHeaderParser> f23713b;
+
+        /* renamed from: c */
+        public final com.bumptech.glide.load.data.ParcelFileDescriptorRewinder f23714c;
+
+        public b(android.os.ParcelFileDescriptor r2, java.util.List<com.bumptech.glide.load.ImageHeaderParser> r3, p229n2.InterfaceC4672b r4) {
+                r1 = this;
+                r1.<init>()
+                java.lang.String r0 = "Argument must not be null"
+                java.util.Objects.requireNonNull(r4, r0)
+                r1.f23712a = r4
+                java.util.Objects.requireNonNull(r3, r0)
+                r1.f23713b = r3
+                com.bumptech.glide.load.data.ParcelFileDescriptorRewinder r3 = new com.bumptech.glide.load.data.ParcelFileDescriptorRewinder
+                r3.<init>(r2)
+                r1.f23714c = r3
+                return
+        }
+
+        @Override // p334t2.InterfaceC6140r
+        /* renamed from: a */
+        public android.graphics.Bitmap mo12684a(android.graphics.BitmapFactory.Options r3) {
+                r2 = this;
+                com.bumptech.glide.load.data.ParcelFileDescriptorRewinder r0 = r2.f23714c
+                android.os.ParcelFileDescriptor r0 = r0.m2783c()
+                java.io.FileDescriptor r0 = r0.getFileDescriptor()
+                r1 = 0
+                android.graphics.Bitmap r3 = android.graphics.BitmapFactory.decodeFileDescriptor(r0, r1, r3)
+                return r3
+        }
+
+        @Override // p334t2.InterfaceC6140r
+        /* renamed from: b */
+        public void mo12685b() {
+                r0 = this;
+                return
+        }
+
+        @Override // p334t2.InterfaceC6140r
+        /* renamed from: c */
+        public int mo12686c() {
+                r11 = this;
+                java.util.List<com.bumptech.glide.load.ImageHeaderParser> r0 = r11.f23713b
+                com.bumptech.glide.load.data.ParcelFileDescriptorRewinder r1 = r11.f23714c
+                n2.b r2 = r11.f23712a
+                int r3 = r0.size()
+                r4 = 0
+            Lb:
+                r5 = -1
+                if (r4 >= r3) goto L47
+                java.lang.Object r6 = r0.get(r4)
+                com.bumptech.glide.load.ImageHeaderParser r6 = (com.bumptech.glide.load.ImageHeaderParser) r6
+                r7 = 0
+                t2.t r8 = new t2.t     // Catch: java.lang.Throwable -> L3d
+                java.io.FileInputStream r9 = new java.io.FileInputStream     // Catch: java.lang.Throwable -> L3d
+                android.os.ParcelFileDescriptor r10 = r1.m2783c()     // Catch: java.lang.Throwable -> L3d
+                java.io.FileDescriptor r10 = r10.getFileDescriptor()     // Catch: java.lang.Throwable -> L3d
+                r9.<init>(r10)     // Catch: java.lang.Throwable -> L3d
+                r8.<init>(r9, r2)     // Catch: java.lang.Throwable -> L3d
+                int r6 = r6.mo2777b(r8, r2)     // Catch: java.lang.Throwable -> L3a
+                r8.close()     // Catch: java.io.IOException -> L2f
+                goto L30
+            L2f:
+            L30:
+                r1.m2783c()
+                if (r6 == r5) goto L37
+                r5 = r6
+                goto L47
+            L37:
+                int r4 = r4 + 1
+                goto Lb
+            L3a:
+                r0 = move-exception
+                r7 = r8
+                goto L3e
+            L3d:
+                r0 = move-exception
+            L3e:
+                if (r7 == 0) goto L43
+                r7.close()     // Catch: java.io.IOException -> L43
+            L43:
+                r1.m2783c()
+                throw r0
+            L47:
+                return r5
+        }
+
+        @Override // p334t2.InterfaceC6140r
+        /* renamed from: d */
+        public com.bumptech.glide.load.ImageHeaderParser.ImageType mo12687d() {
+                r10 = this;
+                java.util.List<com.bumptech.glide.load.ImageHeaderParser> r0 = r10.f23713b
+                com.bumptech.glide.load.data.ParcelFileDescriptorRewinder r1 = r10.f23714c
+                n2.b r2 = r10.f23712a
+                int r3 = r0.size()
+                r4 = 0
+            Lb:
+                if (r4 >= r3) goto L47
+                java.lang.Object r5 = r0.get(r4)
+                com.bumptech.glide.load.ImageHeaderParser r5 = (com.bumptech.glide.load.ImageHeaderParser) r5
+                r6 = 0
+                t2.t r7 = new t2.t     // Catch: java.lang.Throwable -> L3d
+                java.io.FileInputStream r8 = new java.io.FileInputStream     // Catch: java.lang.Throwable -> L3d
+                android.os.ParcelFileDescriptor r9 = r1.m2783c()     // Catch: java.lang.Throwable -> L3d
+                java.io.FileDescriptor r9 = r9.getFileDescriptor()     // Catch: java.lang.Throwable -> L3d
+                r8.<init>(r9)     // Catch: java.lang.Throwable -> L3d
+                r7.<init>(r8, r2)     // Catch: java.lang.Throwable -> L3d
+                com.bumptech.glide.load.ImageHeaderParser$ImageType r5 = r5.mo2778c(r7)     // Catch: java.lang.Throwable -> L3a
+                r7.close()     // Catch: java.io.IOException -> L2e
+                goto L2f
+            L2e:
+            L2f:
+                r1.m2783c()
+                com.bumptech.glide.load.ImageHeaderParser$ImageType r6 = com.bumptech.glide.load.ImageHeaderParser.ImageType.UNKNOWN
+                if (r5 == r6) goto L37
+                goto L49
+            L37:
+                int r4 = r4 + 1
+                goto Lb
+            L3a:
+                r0 = move-exception
+                r6 = r7
+                goto L3e
+            L3d:
+                r0 = move-exception
+            L3e:
+                if (r6 == 0) goto L43
+                r6.close()     // Catch: java.io.IOException -> L43
+            L43:
+                r1.m2783c()
+                throw r0
+            L47:
+                com.bumptech.glide.load.ImageHeaderParser$ImageType r5 = com.bumptech.glide.load.ImageHeaderParser.ImageType.UNKNOWN
+            L49:
+                return r5
+        }
+    }
+
+    /* renamed from: a */
+    android.graphics.Bitmap mo12684a(android.graphics.BitmapFactory.Options r1);
+
+    /* renamed from: b */
+    void mo12685b();
+
+    /* renamed from: c */
+    int mo12686c();
+
+    /* renamed from: d */
+    com.bumptech.glide.load.ImageHeaderParser.ImageType mo12687d();
+}

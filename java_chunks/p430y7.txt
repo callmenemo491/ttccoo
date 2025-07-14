@@ -1,0 +1,297 @@
+package p430y7;
+
+/* renamed from: y7.a */
+/* loaded from: classes.dex */
+public class C7126a extends android.animation.AnimatorListenerAdapter {
+
+    /* renamed from: a */
+    public final /* synthetic */ com.google.android.material.bottomappbar.BottomAppBar f27535a;
+
+    public C7126a(com.google.android.material.bottomappbar.BottomAppBar r1) {
+            r0 = this;
+            r0.f27535a = r1
+            r0.<init>()
+            return
+    }
+
+    @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+    public void onAnimationEnd(android.animation.Animator r2) {
+            r1 = this;
+            com.google.android.material.bottomappbar.BottomAppBar r2 = r1.f27535a
+            com.google.android.material.bottomappbar.BottomAppBar.m3270w(r2)
+            com.google.android.material.bottomappbar.BottomAppBar r2 = r1.f27535a
+            r0 = 0
+            r2.f5802N0 = r0
+            return
+    }
+
+    @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+    public void onAnimationStart(android.animation.Animator r2) {
+            r1 = this;
+            com.google.android.material.bottomappbar.BottomAppBar r2 = r1.f27535a
+            int r0 = r2.f5807S0
+            int r0 = r0 + 1
+            r2.f5807S0 = r0
+            return
+    }
+}
+package p430y7;
+
+/* renamed from: y7.b */
+/* loaded from: classes.dex */
+public class C7127b extends com.google.android.material.floatingactionbutton.FloatingActionButton.AbstractC1187a {
+
+    /* renamed from: a */
+    public final /* synthetic */ int f27536a;
+
+    /* renamed from: b */
+    public final /* synthetic */ com.google.android.material.bottomappbar.BottomAppBar f27537b;
+
+    /* renamed from: y7.b$a */
+    public class a extends com.google.android.material.floatingactionbutton.FloatingActionButton.AbstractC1187a {
+
+        /* renamed from: a */
+        public final /* synthetic */ p430y7.C7127b f27538a;
+
+        public a(p430y7.C7127b r1) {
+                r0 = this;
+                r0.f27538a = r1
+                r0.<init>()
+                return
+        }
+
+        @Override // com.google.android.material.floatingactionbutton.FloatingActionButton.AbstractC1187a
+        /* renamed from: b */
+        public void mo3469b(com.google.android.material.floatingactionbutton.FloatingActionButton r1) {
+                r0 = this;
+                y7.b r1 = r0.f27538a
+                com.google.android.material.bottomappbar.BottomAppBar r1 = r1.f27537b
+                com.google.android.material.bottomappbar.BottomAppBar.m3270w(r1)
+                return
+        }
+    }
+
+    public C7127b(com.google.android.material.bottomappbar.BottomAppBar r1, int r2) {
+            r0 = this;
+            r0.f27537b = r1
+            r0.f27536a = r2
+            r0.<init>()
+            return
+    }
+
+    @Override // com.google.android.material.floatingactionbutton.FloatingActionButton.AbstractC1187a
+    /* renamed from: a */
+    public void mo3468a(com.google.android.material.floatingactionbutton.FloatingActionButton r3) {
+            r2 = this;
+            com.google.android.material.bottomappbar.BottomAppBar r0 = r2.f27537b
+            int r1 = r2.f27536a
+            float r0 = r0.m3271A(r1)
+            r3.setTranslationX(r0)
+            y7.b$a r0 = new y7.b$a
+            r0.<init>(r2)
+            r1 = 1
+            r3.m3461m(r0, r1)
+            return
+    }
+}
+package p430y7;
+
+/* renamed from: y7.c */
+/* loaded from: classes.dex */
+public class C7128c extends android.animation.AnimatorListenerAdapter {
+
+    /* renamed from: a */
+    public final /* synthetic */ com.google.android.material.bottomappbar.BottomAppBar f27539a;
+
+    public C7128c(com.google.android.material.bottomappbar.BottomAppBar r1) {
+            r0 = this;
+            r0.f27539a = r1
+            r0.<init>()
+            return
+    }
+
+    @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+    public void onAnimationEnd(android.animation.Animator r2) {
+            r1 = this;
+            com.google.android.material.bottomappbar.BottomAppBar r2 = r1.f27539a
+            com.google.android.material.bottomappbar.BottomAppBar.m3270w(r2)
+            com.google.android.material.bottomappbar.BottomAppBar r2 = r1.f27539a
+            java.util.Objects.requireNonNull(r2)
+            com.google.android.material.bottomappbar.BottomAppBar r2 = r1.f27539a
+            r0 = 0
+            r2.f5803O0 = r0
+            return
+    }
+
+    @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+    public void onAnimationStart(android.animation.Animator r2) {
+            r1 = this;
+            com.google.android.material.bottomappbar.BottomAppBar r2 = r1.f27539a
+            int r0 = r2.f5807S0
+            int r0 = r0 + 1
+            r2.f5807S0 = r0
+            return
+    }
+}
+package p430y7;
+
+/* renamed from: y7.d */
+/* loaded from: classes.dex */
+public class C7129d extends android.animation.AnimatorListenerAdapter {
+
+    /* renamed from: a */
+    public boolean f27540a;
+
+    /* renamed from: b */
+    public final /* synthetic */ androidx.appcompat.widget.ActionMenuView f27541b;
+
+    /* renamed from: c */
+    public final /* synthetic */ int f27542c;
+
+    /* renamed from: d */
+    public final /* synthetic */ boolean f27543d;
+
+    /* renamed from: e */
+    public final /* synthetic */ com.google.android.material.bottomappbar.BottomAppBar f27544e;
+
+    public C7129d(com.google.android.material.bottomappbar.BottomAppBar r1, androidx.appcompat.widget.ActionMenuView r2, int r3, boolean r4) {
+            r0 = this;
+            r0.f27544e = r1
+            r0.f27541b = r2
+            r0.f27542c = r3
+            r0.f27543d = r4
+            r0.<init>()
+            return
+    }
+
+    @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+    public void onAnimationCancel(android.animation.Animator r1) {
+            r0 = this;
+            r1 = 1
+            r0.f27540a = r1
+            return
+    }
+
+    @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+    public void onAnimationEnd(android.animation.Animator r6) {
+            r5 = this;
+            boolean r6 = r5.f27540a
+            if (r6 != 0) goto L35
+            com.google.android.material.bottomappbar.BottomAppBar r6 = r5.f27544e
+            int r0 = r6.f5808T0
+            r1 = 0
+            if (r0 == 0) goto Ld
+            r2 = 1
+            goto Le
+        Ld:
+            r2 = 0
+        Le:
+            if (r0 == 0) goto L1c
+            r6.f5808T0 = r1
+            android.view.Menu r1 = r6.getMenu()
+            r1.clear()
+            r6.m636n(r0)
+        L1c:
+            com.google.android.material.bottomappbar.BottomAppBar r6 = r5.f27544e
+            androidx.appcompat.widget.ActionMenuView r0 = r5.f27541b
+            int r1 = r5.f27542c
+            boolean r3 = r5.f27543d
+            java.util.Objects.requireNonNull(r6)
+            y7.e r4 = new y7.e
+            r4.<init>(r6, r0, r1, r3)
+            if (r2 == 0) goto L32
+            r0.post(r4)
+            goto L35
+        L32:
+            r4.run()
+        L35:
+            return
+    }
+}
+package p430y7;
+
+/* renamed from: y7.f */
+/* loaded from: classes.dex */
+public class C7131f extends android.animation.AnimatorListenerAdapter {
+
+    /* renamed from: a */
+    public final /* synthetic */ com.google.android.material.bottomappbar.BottomAppBar f27549a;
+
+    public C7131f(com.google.android.material.bottomappbar.BottomAppBar r1) {
+            r0 = this;
+            r0.f27549a = r1
+            r0.<init>()
+            return
+    }
+
+    @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+    public void onAnimationStart(android.animation.Animator r1) {
+            r0 = this;
+            com.google.android.material.bottomappbar.BottomAppBar r1 = r0.f27549a
+            java.util.Objects.requireNonNull(r1)
+            r1 = 0
+            throw r1
+    }
+}
+package p430y7;
+
+/* renamed from: y7.g */
+/* loaded from: classes.dex */
+public class C7132g extends p340t8.C6188e implements java.lang.Cloneable {
+
+    /* renamed from: Z */
+    public float f27550Z;
+
+    /* renamed from: a0 */
+    public float f27551a0;
+
+    /* renamed from: b0 */
+    public float f27552b0;
+
+    /* renamed from: c0 */
+    public float f27553c0;
+
+    /* renamed from: d0 */
+    public float f27554d0;
+}
+package p430y7;
+
+/* renamed from: y7.e */
+/* loaded from: classes.dex */
+public class RunnableC7130e implements java.lang.Runnable {
+
+    /* renamed from: Y */
+    public final /* synthetic */ androidx.appcompat.widget.ActionMenuView f27545Y;
+
+    /* renamed from: Z */
+    public final /* synthetic */ int f27546Z;
+
+    /* renamed from: a0 */
+    public final /* synthetic */ boolean f27547a0;
+
+    /* renamed from: b0 */
+    public final /* synthetic */ com.google.android.material.bottomappbar.BottomAppBar f27548b0;
+
+    public RunnableC7130e(com.google.android.material.bottomappbar.BottomAppBar r1, androidx.appcompat.widget.ActionMenuView r2, int r3, boolean r4) {
+            r0 = this;
+            r0.f27548b0 = r1
+            r0.f27545Y = r2
+            r0.f27546Z = r3
+            r0.f27547a0 = r4
+            r0.<init>()
+            return
+    }
+
+    @Override // java.lang.Runnable
+    public void run() {
+            r4 = this;
+            androidx.appcompat.widget.ActionMenuView r0 = r4.f27545Y
+            com.google.android.material.bottomappbar.BottomAppBar r1 = r4.f27548b0
+            int r2 = r4.f27546Z
+            boolean r3 = r4.f27547a0
+            int r1 = r1.m3276z(r0, r2, r3)
+            float r1 = (float) r1
+            r0.setTranslationX(r1)
+            return
+    }
+}

@@ -1,0 +1,333 @@
+package p126h9;
+
+/* renamed from: h9.a */
+/* loaded from: classes.dex */
+public final class C2991a extends p093f9.AbstractC2089g<p204l9.C4220n> {
+
+    /* renamed from: h9.a$a */
+    public class a extends p093f9.AbstractC2089g.b<p093f9.InterfaceC2085c, p204l9.C4220n> {
+        public a(java.lang.Class r1) {
+                r0 = this;
+                r0.<init>(r1)
+                return
+        }
+
+        @Override // p093f9.AbstractC2089g.b
+        /* renamed from: a */
+        public p093f9.InterfaceC2085c mo5523a(p204l9.C4220n r2) {
+                r1 = this;
+                l9.n r2 = (p204l9.C4220n) r2
+                n9.e r0 = new n9.e
+                m9.h r2 = r2.m9480z()
+                byte[] r2 = r2.m10063w()
+                r0.<init>(r2)
+                return r0
+        }
+    }
+
+    /* renamed from: h9.a$b */
+    public class b extends p093f9.AbstractC2089g.a<p204l9.C4221o, p204l9.C4220n> {
+
+        /* renamed from: b */
+        public final /* synthetic */ p126h9.C2991a f12080b;
+
+        public b(p126h9.C2991a r1, java.lang.Class r2) {
+                r0 = this;
+                r0.f12080b = r1
+                r0.<init>(r2)
+                return
+        }
+
+        @Override // p093f9.AbstractC2089g.a
+        /* renamed from: a */
+        public p204l9.C4220n mo5520a(p221m9.InterfaceC4482q0 r4) {
+                r3 = this;
+                l9.o r4 = (p204l9.C4221o) r4
+                l9.n$b r0 = p204l9.C4220n.m9474B()
+                int r4 = r4.m9485y()
+                byte[] r4 = p236n9.C4716q.m10773a(r4)
+                int r1 = r4.length
+                r2 = 0
+                m9.h r4 = p221m9.AbstractC4454h.m10054i(r4, r2, r1)
+                r0.m10377o()
+                MessageType extends m9.x<MessageType, BuilderType> r1 = r0.f18293Z
+                l9.n r1 = (p204l9.C4220n) r1
+                p204l9.C4220n.m9478y(r1, r4)
+                h9.a r4 = r3.f12080b
+                java.util.Objects.requireNonNull(r4)
+                r0.m10377o()
+                MessageType extends m9.x<MessageType, BuilderType> r4 = r0.f18293Z
+                l9.n r4 = (p204l9.C4220n) r4
+                p204l9.C4220n.m9477x(r4, r2)
+                m9.x r4 = r0.m10375k()
+                l9.n r4 = (p204l9.C4220n) r4
+                return r4
+        }
+
+        @Override // p093f9.AbstractC2089g.a
+        /* renamed from: b */
+        public p221m9.InterfaceC4482q0 mo5521b(p221m9.AbstractC4454h r2) {
+                r1 = this;
+                m9.p r0 = p221m9.C4478p.m10222a()
+                l9.o r2 = p204l9.C4221o.m9481A(r2, r0)
+                return r2
+        }
+
+        @Override // p093f9.AbstractC2089g.a
+        /* renamed from: c */
+        public void mo5522c(p221m9.InterfaceC4482q0 r3) {
+                r2 = this;
+                l9.o r3 = (p204l9.C4221o) r3
+                int r0 = r3.m9485y()
+                r1 = 64
+                if (r0 != r1) goto Lb
+                return
+            Lb:
+                java.security.InvalidAlgorithmParameterException r0 = new java.security.InvalidAlgorithmParameterException
+                java.lang.String r1 = "invalid key size: "
+                java.lang.StringBuilder r1 = android.support.v4.media.C0144c.m256a(r1)
+                int r3 = r3.m9485y()
+                r1.append(r3)
+                java.lang.String r3 = ". Valid keys must have 64 bytes."
+                r1.append(r3)
+                java.lang.String r3 = r1.toString()
+                r0.<init>(r3)
+                throw r0
+        }
+    }
+
+    public C2991a() {
+            r4 = this;
+            java.lang.Class<l9.n> r0 = p204l9.C4220n.class
+            r1 = 1
+            f9.g$b[] r1 = new p093f9.AbstractC2089g.b[r1]
+            h9.a$a r2 = new h9.a$a
+            java.lang.Class<f9.c> r3 = p093f9.InterfaceC2085c.class
+            r2.<init>(r3)
+            r3 = 0
+            r1[r3] = r2
+            r4.<init>(r0, r1)
+            return
+    }
+
+    @Override // p093f9.AbstractC2089g
+    /* renamed from: a */
+    public java.lang.String mo5514a() {
+            r1 = this;
+            java.lang.String r0 = "type.googleapis.com/google.crypto.tink.AesSivKey"
+            return r0
+    }
+
+    @Override // p093f9.AbstractC2089g
+    /* renamed from: c */
+    public p093f9.AbstractC2089g.a<p204l9.C4221o, p204l9.C4220n> mo5516c() {
+            r2 = this;
+            h9.a$b r0 = new h9.a$b
+            java.lang.Class<l9.o> r1 = p204l9.C4221o.class
+            r0.<init>(r2, r1)
+            return r0
+    }
+
+    @Override // p093f9.AbstractC2089g
+    /* renamed from: d */
+    public p204l9.C4229w.c mo5517d() {
+            r1 = this;
+            l9.w$c r0 = p204l9.C4229w.c.f17378a0
+            return r0
+    }
+
+    @Override // p093f9.AbstractC2089g
+    /* renamed from: e */
+    public p221m9.InterfaceC4482q0 mo5518e(p221m9.AbstractC4454h r2) {
+            r1 = this;
+            m9.p r0 = p221m9.C4478p.m10222a()
+            l9.n r2 = p204l9.C4220n.m9475C(r2, r0)
+            return r2
+    }
+
+    @Override // p093f9.AbstractC2089g
+    /* renamed from: f */
+    public void mo5519f(p221m9.InterfaceC4482q0 r3) {
+            r2 = this;
+            l9.n r3 = (p204l9.C4220n) r3
+            int r0 = r3.m9479A()
+            r1 = 0
+            p236n9.C4717r.m10776c(r0, r1)
+            m9.h r0 = r3.m9480z()
+            int r0 = r0.size()
+            r1 = 64
+            if (r0 != r1) goto L17
+            return
+        L17:
+            java.security.InvalidKeyException r0 = new java.security.InvalidKeyException
+            java.lang.String r1 = "invalid key size: "
+            java.lang.StringBuilder r1 = android.support.v4.media.C0144c.m256a(r1)
+            m9.h r3 = r3.m9480z()
+            int r3 = r3.size()
+            r1.append(r3)
+            java.lang.String r3 = ". Valid keys must have 64 bytes."
+            r1.append(r3)
+            java.lang.String r3 = r1.toString()
+            r0.<init>(r3)
+            throw r0
+    }
+}
+package p126h9;
+
+/* renamed from: h9.b */
+/* loaded from: classes.dex */
+public final class C2992b {
+
+    /* renamed from: a */
+    public static final /* synthetic */ int f12081a = 0;
+
+    static {
+            h9.a r0 = new h9.a
+            r0.<init>()
+            int r0 = p204l9.C4212h0.CONFIG_NAME_FIELD_NUMBER
+            h9.a r0 = new h9.a     // Catch: java.security.GeneralSecurityException -> L19
+            r0.<init>()     // Catch: java.security.GeneralSecurityException -> L19
+            r1 = 1
+            p093f9.C2100r.m5552f(r0, r1)     // Catch: java.security.GeneralSecurityException -> L19
+            h9.c r0 = new h9.c     // Catch: java.security.GeneralSecurityException -> L19
+            r0.<init>()     // Catch: java.security.GeneralSecurityException -> L19
+            p093f9.C2100r.m5553g(r0)     // Catch: java.security.GeneralSecurityException -> L19
+            return
+        L19:
+            r0 = move-exception
+            java.lang.ExceptionInInitializerError r1 = new java.lang.ExceptionInInitializerError
+            r1.<init>(r0)
+            throw r1
+    }
+}
+package p126h9;
+
+/* renamed from: h9.c */
+/* loaded from: classes.dex */
+public class C2993c implements p093f9.InterfaceC2097o<p093f9.InterfaceC2085c> {
+
+    /* renamed from: a */
+    public static final java.util.logging.Logger f12082a = null;
+
+    /* renamed from: h9.c$a */
+    public static class a implements p093f9.InterfaceC2085c {
+
+        /* renamed from: a */
+        public p093f9.C2096n<p093f9.InterfaceC2085c> f12083a;
+
+        public a(p093f9.C2096n<p093f9.InterfaceC2085c> r1) {
+                r0 = this;
+                r0.<init>()
+                r0.f12083a = r1
+                return
+        }
+
+        @Override // p093f9.InterfaceC2085c
+        /* renamed from: a */
+        public byte[] mo5508a(byte[] r4, byte[] r5) {
+                r3 = this;
+                r0 = 2
+                byte[][] r0 = new byte[r0][]
+                f9.n<f9.c> r1 = r3.f12083a
+                f9.n$a<P> r1 = r1.f9517b
+                byte[] r1 = r1.m5540a()
+                r2 = 0
+                r0[r2] = r1
+                r1 = 1
+                f9.n<f9.c> r2 = r3.f12083a
+                f9.n$a<P> r2 = r2.f9517b
+                P r2 = r2.f9519a
+                f9.c r2 = (p093f9.InterfaceC2085c) r2
+                byte[] r4 = r2.mo5508a(r4, r5)
+                r0[r1] = r4
+                byte[] r4 = p185k7.C3828h5.m8589d(r0)
+                return r4
+        }
+
+        @Override // p093f9.InterfaceC2085c
+        /* renamed from: b */
+        public byte[] mo5509b(byte[] r6, byte[] r7) {
+                r5 = this;
+                int r0 = r6.length
+                r1 = 5
+                if (r0 <= r1) goto L45
+                r0 = 0
+                byte[] r0 = java.util.Arrays.copyOfRange(r6, r0, r1)
+                int r2 = r6.length
+                byte[] r1 = java.util.Arrays.copyOfRange(r6, r1, r2)
+                f9.n<f9.c> r2 = r5.f12083a
+                java.util.List r0 = r2.m5538a(r0)
+                java.util.Iterator r0 = r0.iterator()
+            L18:
+                boolean r2 = r0.hasNext()
+                if (r2 == 0) goto L45
+                java.lang.Object r2 = r0.next()
+                f9.n$a r2 = (p093f9.C2096n.a) r2
+                P r2 = r2.f9519a     // Catch: java.security.GeneralSecurityException -> L2d
+                f9.c r2 = (p093f9.InterfaceC2085c) r2     // Catch: java.security.GeneralSecurityException -> L2d
+                byte[] r6 = r2.mo5509b(r1, r7)     // Catch: java.security.GeneralSecurityException -> L2d
+                return r6
+            L2d:
+                r2 = move-exception
+                java.util.logging.Logger r3 = p126h9.C2993c.f12082a
+                java.lang.String r4 = "ciphertext prefix matches a key, but cannot decrypt: "
+                java.lang.StringBuilder r4 = android.support.v4.media.C0144c.m256a(r4)
+                java.lang.String r2 = r2.toString()
+                r4.append(r2)
+                java.lang.String r2 = r4.toString()
+                r3.info(r2)
+                goto L18
+            L45:
+                f9.n<f9.c> r0 = r5.f12083a
+                java.util.List r0 = r0.m5539b()
+                java.util.Iterator r0 = r0.iterator()
+            L4f:
+                boolean r1 = r0.hasNext()
+                if (r1 == 0) goto L66
+                java.lang.Object r1 = r0.next()
+                f9.n$a r1 = (p093f9.C2096n.a) r1
+                P r1 = r1.f9519a     // Catch: java.security.GeneralSecurityException -> L64
+                f9.c r1 = (p093f9.InterfaceC2085c) r1     // Catch: java.security.GeneralSecurityException -> L64
+                byte[] r6 = r1.mo5509b(r6, r7)     // Catch: java.security.GeneralSecurityException -> L64
+                return r6
+            L64:
+                goto L4f
+            L66:
+                java.security.GeneralSecurityException r6 = new java.security.GeneralSecurityException
+                java.lang.String r7 = "decryption failed"
+                r6.<init>(r7)
+                throw r6
+        }
+    }
+
+    static {
+            java.lang.Class<h9.c> r0 = p126h9.C2993c.class
+            java.lang.String r0 = r0.getName()
+            java.util.logging.Logger r0 = java.util.logging.Logger.getLogger(r0)
+            p126h9.C2993c.f12082a = r0
+            return
+    }
+
+    public C2993c() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p093f9.InterfaceC2097o
+    /* renamed from: a */
+    public p093f9.InterfaceC2085c mo5541a(p093f9.C2096n<p093f9.InterfaceC2085c> r2) {
+            r1 = this;
+            h9.c$a r0 = new h9.c$a
+            r0.<init>(r2)
+            return r0
+    }
+
+    @Override // p093f9.InterfaceC2097o
+    /* renamed from: b */
+    public java.lang.Class<p093f9.InterfaceC2085c> mo5542b() {
+            r1 = this;
+            java.lang.Class<f9.c> r0 = p093f9.InterfaceC2085c.class
+            return r0
+    }
+}

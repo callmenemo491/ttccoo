@@ -1,0 +1,2151 @@
+package p362uh;
+
+/* renamed from: uh.a */
+/* loaded from: classes.dex */
+public final class C6455a {
+
+    /* renamed from: a */
+    public static final p362uh.C6455a f25033a = null;
+
+    /* renamed from: b */
+    public static final java.nio.charset.Charset f25034b = null;
+
+    /* renamed from: c */
+    public static java.nio.charset.Charset f25035c;
+
+    /* renamed from: d */
+    public static java.nio.charset.Charset f25036d;
+
+    static {
+            java.lang.String r0 = "UTF-8"
+            java.nio.charset.Charset r0 = java.nio.charset.Charset.forName(r0)
+            java.lang.String r1 = "forName(\"UTF-8\")"
+            p214m2.C4339q.m9705j(r0, r1)
+            p362uh.C6455a.f25034b = r0
+            java.lang.String r0 = "UTF-16"
+            java.nio.charset.Charset r0 = java.nio.charset.Charset.forName(r0)
+            java.lang.String r1 = "forName(\"UTF-16\")"
+            p214m2.C4339q.m9705j(r0, r1)
+            java.lang.String r0 = "UTF-16BE"
+            java.nio.charset.Charset r0 = java.nio.charset.Charset.forName(r0)
+            java.lang.String r1 = "forName(\"UTF-16BE\")"
+            p214m2.C4339q.m9705j(r0, r1)
+            java.lang.String r0 = "UTF-16LE"
+            java.nio.charset.Charset r0 = java.nio.charset.Charset.forName(r0)
+            java.lang.String r1 = "forName(\"UTF-16LE\")"
+            p214m2.C4339q.m9705j(r0, r1)
+            java.lang.String r0 = "US-ASCII"
+            java.nio.charset.Charset r0 = java.nio.charset.Charset.forName(r0)
+            java.lang.String r1 = "forName(\"US-ASCII\")"
+            p214m2.C4339q.m9705j(r0, r1)
+            java.lang.String r0 = "ISO-8859-1"
+            java.nio.charset.Charset r0 = java.nio.charset.Charset.forName(r0)
+            java.lang.String r1 = "forName(\"ISO-8859-1\")"
+            p214m2.C4339q.m9705j(r0, r1)
+            return
+    }
+}
+package p362uh;
+
+/* renamed from: uh.b */
+/* loaded from: classes.dex */
+public final class C6456b implements th.InterfaceC6246d<p316rh.C5854c> {
+
+    /* renamed from: a */
+    public final java.lang.CharSequence f25037a;
+
+    /* renamed from: b */
+    public final int f25038b;
+
+    /* renamed from: c */
+    public final int f25039c;
+
+    /* renamed from: d */
+    public final mh.InterfaceC4624p<java.lang.CharSequence, java.lang.Integer, ch.C0978e<java.lang.Integer, java.lang.Integer>> f25040d;
+
+    /* renamed from: uh.b$a */
+    public static final class a implements java.util.Iterator<p316rh.C5854c>, p259oh.InterfaceC5277a {
+
+        /* renamed from: Y */
+        public int f25041Y;
+
+        /* renamed from: Z */
+        public int f25042Z;
+
+        /* renamed from: a0 */
+        public int f25043a0;
+
+        /* renamed from: b0 */
+        public p316rh.C5854c f25044b0;
+
+        /* renamed from: c0 */
+        public int f25045c0;
+
+        /* renamed from: d0 */
+        public final /* synthetic */ p362uh.C6456b f25046d0;
+
+        public a(p362uh.C6456b r3) {
+                r2 = this;
+                r2.f25046d0 = r3
+                r2.<init>()
+                r0 = -1
+                r2.f25041Y = r0
+                int r0 = r3.f25038b
+                java.lang.CharSequence r3 = r3.f25037a
+                int r3 = r3.length()
+                r1 = 0
+                int r3 = p209lh.C4304a.m9616j(r0, r1, r3)
+                r2.f25042Z = r3
+                r2.f25043a0 = r3
+                return
+        }
+
+        /* renamed from: a */
+        public final void m13042a() {
+                r7 = this;
+                int r0 = r7.f25043a0
+                r1 = 0
+                if (r0 >= 0) goto Lb
+                r7.f25041Y = r1
+                r0 = 0
+                r7.f25044b0 = r0
+                goto L7d
+            Lb:
+                uh.b r2 = r7.f25046d0
+                int r3 = r2.f25039c
+                r4 = -1
+                r5 = 1
+                if (r3 <= 0) goto L1a
+                int r6 = r7.f25045c0
+                int r6 = r6 + r5
+                r7.f25045c0 = r6
+                if (r6 >= r3) goto L22
+            L1a:
+                java.lang.CharSequence r2 = r2.f25037a
+                int r2 = r2.length()
+                if (r0 <= r2) goto L32
+            L22:
+                rh.c r0 = new rh.c
+                int r1 = r7.f25042Z
+                uh.b r2 = r7.f25046d0
+                java.lang.CharSequence r2 = r2.f25037a
+                int r2 = p362uh.C6467m.m13065V(r2)
+                r0.<init>(r1, r2)
+                goto L55
+            L32:
+                uh.b r0 = r7.f25046d0
+                mh.p<java.lang.CharSequence, java.lang.Integer, ch.e<java.lang.Integer, java.lang.Integer>> r2 = r0.f25040d
+                java.lang.CharSequence r0 = r0.f25037a
+                int r3 = r7.f25043a0
+                java.lang.Integer r3 = java.lang.Integer.valueOf(r3)
+                java.lang.Object r0 = r2.mo122l(r0, r3)
+                ch.e r0 = (ch.C0978e) r0
+                if (r0 != 0) goto L5a
+                rh.c r0 = new rh.c
+                int r1 = r7.f25042Z
+                uh.b r2 = r7.f25046d0
+                java.lang.CharSequence r2 = r2.f25037a
+                int r2 = p362uh.C6467m.m13065V(r2)
+                r0.<init>(r1, r2)
+            L55:
+                r7.f25044b0 = r0
+                r7.f25043a0 = r4
+                goto L7b
+            L5a:
+                A r2 = r0.f5050Y
+                java.lang.Number r2 = (java.lang.Number) r2
+                int r2 = r2.intValue()
+                B r0 = r0.f5051Z
+                java.lang.Number r0 = (java.lang.Number) r0
+                int r0 = r0.intValue()
+                int r3 = r7.f25042Z
+                rh.c r3 = p209lh.C4304a.m9605K(r3, r2)
+                r7.f25044b0 = r3
+                int r2 = r2 + r0
+                r7.f25042Z = r2
+                if (r0 != 0) goto L78
+                r1 = 1
+            L78:
+                int r2 = r2 + r1
+                r7.f25043a0 = r2
+            L7b:
+                r7.f25041Y = r5
+            L7d:
+                return
+        }
+
+        @Override // java.util.Iterator
+        public boolean hasNext() {
+                r2 = this;
+                int r0 = r2.f25041Y
+                r1 = -1
+                if (r0 != r1) goto L8
+                r2.m13042a()
+            L8:
+                int r0 = r2.f25041Y
+                r1 = 1
+                if (r0 != r1) goto Le
+                goto Lf
+            Le:
+                r1 = 0
+            Lf:
+                return r1
+        }
+
+        @Override // java.util.Iterator
+        public p316rh.C5854c next() {
+                r3 = this;
+                int r0 = r3.f25041Y
+                r1 = -1
+                if (r0 != r1) goto L8
+                r3.m13042a()
+            L8:
+                int r0 = r3.f25041Y
+                if (r0 == 0) goto L19
+                rh.c r0 = r3.f25044b0
+                java.lang.String r2 = "null cannot be cast to non-null type kotlin.ranges.IntRange"
+                java.util.Objects.requireNonNull(r0, r2)
+                r2 = 0
+                r3.f25044b0 = r2
+                r3.f25041Y = r1
+                return r0
+            L19:
+                java.util.NoSuchElementException r0 = new java.util.NoSuchElementException
+                r0.<init>()
+                throw r0
+        }
+
+        @Override // java.util.Iterator
+        public void remove() {
+                r2 = this;
+                java.lang.UnsupportedOperationException r0 = new java.lang.UnsupportedOperationException
+                java.lang.String r1 = "Operation is not supported for read-only collection"
+                r0.<init>(r1)
+                throw r0
+        }
+    }
+
+    public C6456b(java.lang.CharSequence r2, int r3, int r4, mh.InterfaceC4624p<? super java.lang.CharSequence, ? super java.lang.Integer, ch.C0978e<java.lang.Integer, java.lang.Integer>> r5) {
+            r1 = this;
+            java.lang.String r0 = "input"
+            p214m2.C4339q.m9706k(r2, r0)
+            r1.<init>()
+            r1.f25037a = r2
+            r1.f25038b = r3
+            r1.f25039c = r4
+            r1.f25040d = r5
+            return
+    }
+
+    @Override // th.InterfaceC6246d
+    public java.util.Iterator<p316rh.C5854c> iterator() {
+            r1 = this;
+            uh.b$a r0 = new uh.b$a
+            r0.<init>(r1)
+            return r0
+    }
+}
+package p362uh;
+
+/* renamed from: uh.c */
+/* loaded from: classes.dex */
+public final class C6457c implements java.io.Serializable {
+
+    /* renamed from: Y */
+    public final java.util.regex.Pattern f25047Y;
+
+    public C6457c(java.lang.String r2) {
+            r1 = this;
+            java.lang.String r0 = "pattern"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.util.regex.Pattern r2 = java.util.regex.Pattern.compile(r2)
+            java.lang.String r0 = "compile(pattern)"
+            p214m2.C4339q.m9705j(r2, r0)
+            java.lang.String r0 = "nativePattern"
+            p214m2.C4339q.m9706k(r2, r0)
+            r1.<init>()
+            r1.f25047Y = r2
+            return
+    }
+
+    /* renamed from: a */
+    public final boolean m13043a(java.lang.CharSequence r2) {
+            r1 = this;
+            java.util.regex.Pattern r0 = r1.f25047Y
+            java.util.regex.Matcher r2 = r0.matcher(r2)
+            boolean r2 = r2.matches()
+            return r2
+    }
+
+    /* renamed from: b */
+    public final java.lang.String m13044b(java.lang.CharSequence r2, java.lang.String r3) {
+            r1 = this;
+            java.util.regex.Pattern r0 = r1.f25047Y
+            java.util.regex.Matcher r2 = r0.matcher(r2)
+            java.lang.String r2 = r2.replaceAll(r3)
+            java.lang.String r3 = "nativePattern.matcher(in\u2026).replaceAll(replacement)"
+            p214m2.C4339q.m9705j(r2, r3)
+            return r2
+    }
+
+    public java.lang.String toString() {
+            r2 = this;
+            java.util.regex.Pattern r0 = r2.f25047Y
+            java.lang.String r0 = r0.toString()
+            java.lang.String r1 = "nativePattern.toString()"
+            p214m2.C4339q.m9705j(r0, r1)
+            return r0
+    }
+}
+package p362uh;
+
+/* renamed from: uh.d */
+/* loaded from: classes.dex */
+public final class C6458d {
+
+    /* renamed from: a */
+    public static final p362uh.C6457c f25048a = null;
+
+    static {
+            java.lang.String r0 = "[\\x00-\\x20]*[+-]?(NaN|Infinity|(("
+            java.lang.String r1 = "((\\p{Digit}+)(\\.)?((\\p{Digit}+)?)([eE][+-]?(\\p{Digit}+))?)|(\\.((\\p{Digit}+))([eE][+-]?(\\p{Digit}+))?)|(((0[xX](\\p{XDigit}+)(\\.)?)|(0[xX](\\p{XDigit}+)?(\\.)(\\p{XDigit}+)))[pP][+-]?(\\p{Digit}+))"
+            java.lang.String r2 = ")[fFdD]?))[\\x00-\\x20]*"
+            java.lang.String r0 = android.support.v4.media.C0145d.m257a(r0, r1, r2)
+            uh.c r1 = new uh.c
+            r1.<init>(r0)
+            p362uh.C6458d.f25048a = r1
+            return
+    }
+}
+package p362uh;
+
+/* renamed from: uh.e */
+/* loaded from: classes.dex */
+public class C6459e extends p101fh.C2174f {
+
+    /* renamed from: uh.e$a */
+    public static final class a extends p239nh.AbstractC4830j implements mh.InterfaceC4620l<java.lang.String, java.lang.String> {
+
+        /* renamed from: Z */
+        public static final p362uh.C6459e.a f25049Z = null;
+
+        static {
+                uh.e$a r0 = new uh.e$a
+                r0.<init>()
+                p362uh.C6459e.a.f25049Z = r0
+                return
+        }
+
+        public a() {
+                r1 = this;
+                r0 = 1
+                r1.<init>(r0)
+                return
+        }
+
+        @Override // mh.InterfaceC4620l
+        /* renamed from: b */
+        public java.lang.String mo107b(java.lang.String r2) {
+                r1 = this;
+                java.lang.String r2 = (java.lang.String) r2
+                java.lang.String r0 = "line"
+                p214m2.C4339q.m9706k(r2, r0)
+                return r2
+        }
+    }
+
+    /* renamed from: uh.e$b */
+    public static final class b extends p239nh.AbstractC4830j implements mh.InterfaceC4620l<java.lang.String, java.lang.String> {
+
+        /* renamed from: Z */
+        public final /* synthetic */ java.lang.String f25050Z;
+
+        public b(java.lang.String r1) {
+                r0 = this;
+                r0.f25050Z = r1
+                r1 = 1
+                r0.<init>(r1)
+                return
+        }
+
+        @Override // mh.InterfaceC4620l
+        /* renamed from: b */
+        public java.lang.String mo107b(java.lang.String r3) {
+                r2 = this;
+                java.lang.String r3 = (java.lang.String) r3
+                java.lang.String r0 = "line"
+                p214m2.C4339q.m9706k(r3, r0)
+                java.lang.StringBuilder r0 = new java.lang.StringBuilder
+                r0.<init>()
+                java.lang.String r1 = r2.f25050Z
+                java.lang.String r3 = p346u.C6269n.m12888a(r0, r1, r3)
+                return r3
+        }
+    }
+
+    /* renamed from: B */
+    public static final mh.InterfaceC4620l<java.lang.String, java.lang.String> m13045B(java.lang.String r1) {
+            int r0 = r1.length()
+            if (r0 != 0) goto L8
+            r0 = 1
+            goto L9
+        L8:
+            r0 = 0
+        L9:
+            if (r0 == 0) goto Le
+            uh.e$a r1 = p362uh.C6459e.a.f25049Z
+            goto L14
+        Le:
+            uh.e$b r0 = new uh.e$b
+            r0.<init>(r1)
+            r1 = r0
+        L14:
+            return r1
+    }
+
+    /* renamed from: C */
+    public static final java.lang.String m13046C(java.lang.String r15) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r15, r0)
+            p214m2.C4339q.m9706k(r15, r0)
+            java.lang.String r1 = ""
+            java.lang.String r2 = "newIndent"
+            p214m2.C4339q.m9706k(r1, r2)
+            java.util.List r2 = p362uh.C6467m.m13073d0(r15)
+            java.util.ArrayList r3 = new java.util.ArrayList
+            r3.<init>()
+            java.util.Iterator r4 = r2.iterator()
+        L1c:
+            boolean r5 = r4.hasNext()
+            if (r5 == 0) goto L35
+            java.lang.Object r5 = r4.next()
+            r6 = r5
+            java.lang.String r6 = (java.lang.String) r6
+            boolean r6 = p362uh.C6463i.m13054K(r6)
+            r6 = r6 ^ 1
+            if (r6 == 0) goto L1c
+            r3.add(r5)
+            goto L1c
+        L35:
+            java.util.ArrayList r4 = new java.util.ArrayList
+            r5 = 10
+            int r5 = p062dh.C1469e.m3992D(r3, r5)
+            r4.<init>(r5)
+            java.util.Iterator r3 = r3.iterator()
+        L44:
+            boolean r5 = r3.hasNext()
+            r6 = 0
+            if (r5 == 0) goto L77
+            java.lang.Object r5 = r3.next()
+            java.lang.String r5 = (java.lang.String) r5
+            int r7 = r5.length()
+        L55:
+            r8 = -1
+            if (r6 >= r7) goto L68
+            char r9 = r5.charAt(r6)
+            boolean r9 = gh.C2390b.m6128r(r9)
+            r9 = r9 ^ 1
+            if (r9 == 0) goto L65
+            goto L69
+        L65:
+            int r6 = r6 + 1
+            goto L55
+        L68:
+            r6 = -1
+        L69:
+            if (r6 != r8) goto L6f
+            int r6 = r5.length()
+        L6f:
+            java.lang.Integer r5 = java.lang.Integer.valueOf(r6)
+            r4.add(r5)
+            goto L44
+        L77:
+            p214m2.C4339q.m9706k(r4, r0)
+            java.util.Iterator r3 = r4.iterator()
+            boolean r4 = r3.hasNext()
+            r5 = 0
+            if (r4 != 0) goto L87
+            r4 = r5
+            goto La1
+        L87:
+            java.lang.Object r4 = r3.next()
+            java.lang.Comparable r4 = (java.lang.Comparable) r4
+        L8d:
+            boolean r6 = r3.hasNext()
+            if (r6 == 0) goto La1
+            java.lang.Object r6 = r3.next()
+            java.lang.Comparable r6 = (java.lang.Comparable) r6
+            int r7 = r4.compareTo(r6)
+            if (r7 <= 0) goto L8d
+            r4 = r6
+            goto L8d
+        La1:
+            java.lang.Integer r4 = (java.lang.Integer) r4
+            if (r4 == 0) goto Laa
+            int r3 = r4.intValue()
+            goto Lab
+        Laa:
+            r3 = 0
+        Lab:
+            int r15 = r15.length()
+            int r4 = r2.size()
+            int r4 = r4 * 0
+            int r4 = r4 + r15
+            mh.l r15 = m13045B(r1)
+            int r1 = p074e9.C1805a.m4527l(r2)
+            java.util.ArrayList r6 = new java.util.ArrayList
+            r6.<init>()
+            java.util.Iterator r2 = r2.iterator()
+            r7 = 0
+        Lc8:
+            boolean r8 = r2.hasNext()
+            if (r8 == 0) goto L126
+            java.lang.Object r8 = r2.next()
+            int r9 = r7 + 1
+            if (r7 < 0) goto L122
+            java.lang.String r8 = (java.lang.String) r8
+            if (r7 == 0) goto Ldc
+            if (r7 != r1) goto Le4
+        Ldc:
+            boolean r7 = p362uh.C6463i.m13054K(r8)
+            if (r7 == 0) goto Le4
+            r8 = r5
+            goto L109
+        Le4:
+            p214m2.C4339q.m9706k(r8, r0)
+            if (r3 < 0) goto Leb
+            r7 = 1
+            goto Lec
+        Leb:
+            r7 = 0
+        Lec:
+            if (r7 == 0) goto L110
+            int r7 = r8.length()
+            if (r3 <= r7) goto Lf5
+            goto Lf6
+        Lf5:
+            r7 = r3
+        Lf6:
+            java.lang.String r7 = r8.substring(r7)
+            java.lang.String r10 = "this as java.lang.String).substring(startIndex)"
+            p214m2.C4339q.m9705j(r7, r10)
+            java.lang.Object r7 = r15.mo107b(r7)
+            java.lang.String r7 = (java.lang.String) r7
+            if (r7 != 0) goto L108
+            goto L109
+        L108:
+            r8 = r7
+        L109:
+            if (r8 == 0) goto L10e
+            r6.add(r8)
+        L10e:
+            r7 = r9
+            goto Lc8
+        L110:
+            java.lang.String r15 = "Requested character count "
+            java.lang.String r0 = " is less than zero."
+            java.lang.String r15 = android.support.v4.media.C0146e.m258a(r15, r3, r0)
+            java.lang.IllegalArgumentException r0 = new java.lang.IllegalArgumentException
+            java.lang.String r15 = r15.toString()
+            r0.<init>(r15)
+            throw r0
+        L122:
+            p074e9.C1805a.m4539x()
+            throw r5
+        L126:
+            java.lang.StringBuilder r15 = new java.lang.StringBuilder
+            r15.<init>(r4)
+            r9 = 0
+            r10 = 0
+            r11 = 0
+            r12 = 0
+            r13 = 0
+            r14 = 124(0x7c, float:1.74E-43)
+            java.lang.String r8 = "\n"
+            r7 = r15
+            p062dh.C1473i.m3999K(r6, r7, r8, r9, r10, r11, r12, r13, r14)
+            java.lang.String r15 = r15.toString()
+            java.lang.String r0 = "mapIndexedNotNull { inde\u2026\"\\n\")\n        .toString()"
+            p214m2.C4339q.m9705j(r15, r0)
+            return r15
+    }
+
+    /* renamed from: D */
+    public static java.lang.String m13047D(java.lang.String r13, java.lang.String r14, int r15) {
+            r14 = r15 & 1
+            r15 = 0
+            if (r14 == 0) goto L8
+            java.lang.String r14 = "|"
+            goto L9
+        L8:
+            r14 = r15
+        L9:
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r13, r0)
+            java.lang.String r0 = "marginPrefix"
+            p214m2.C4339q.m9706k(r14, r0)
+            boolean r0 = p362uh.C6463i.m13054K(r14)
+            r0 = r0 ^ 1
+            if (r0 == 0) goto Lc1
+            java.util.List r0 = p362uh.C6467m.m13073d0(r13)
+            int r13 = r13.length()
+            int r1 = r0.size()
+            r2 = 0
+            int r1 = r1 * 0
+            int r1 = r1 + r13
+            java.lang.String r13 = ""
+            mh.l r13 = m13045B(r13)
+            int r3 = p074e9.C1805a.m4527l(r0)
+            java.util.ArrayList r4 = new java.util.ArrayList
+            r4.<init>()
+            java.util.Iterator r0 = r0.iterator()
+            r5 = 0
+        L3f:
+            boolean r6 = r0.hasNext()
+            if (r6 == 0) goto La5
+            java.lang.Object r6 = r0.next()
+            int r7 = r5 + 1
+            if (r5 < 0) goto La1
+            java.lang.String r6 = (java.lang.String) r6
+            if (r5 == 0) goto L53
+            if (r5 != r3) goto L5b
+        L53:
+            boolean r5 = p362uh.C6463i.m13054K(r6)
+            if (r5 == 0) goto L5b
+            r6 = r15
+            goto L9a
+        L5b:
+            int r5 = r6.length()
+            r8 = 0
+        L60:
+            r9 = -1
+            if (r8 >= r5) goto L73
+            char r10 = r6.charAt(r8)
+            boolean r10 = gh.C2390b.m6128r(r10)
+            r10 = r10 ^ 1
+            if (r10 == 0) goto L70
+            goto L74
+        L70:
+            int r8 = r8 + 1
+            goto L60
+        L73:
+            r8 = -1
+        L74:
+            if (r8 != r9) goto L77
+            goto L8d
+        L77:
+            r5 = 4
+            boolean r5 = p362uh.C6463i.m13060Q(r6, r14, r8, r2, r5)
+            if (r5 == 0) goto L8d
+            int r5 = r14.length()
+            int r5 = r5 + r8
+            java.lang.String r5 = r6.substring(r5)
+            java.lang.String r8 = "this as java.lang.String).substring(startIndex)"
+            p214m2.C4339q.m9705j(r5, r8)
+            goto L8e
+        L8d:
+            r5 = r15
+        L8e:
+            if (r5 == 0) goto L9a
+            java.lang.Object r5 = r13.mo107b(r5)
+            java.lang.String r5 = (java.lang.String) r5
+            if (r5 != 0) goto L99
+            goto L9a
+        L99:
+            r6 = r5
+        L9a:
+            if (r6 == 0) goto L9f
+            r4.add(r6)
+        L9f:
+            r5 = r7
+            goto L3f
+        La1:
+            p074e9.C1805a.m4539x()
+            throw r15
+        La5:
+            java.lang.StringBuilder r13 = new java.lang.StringBuilder
+            r13.<init>(r1)
+            r7 = 0
+            r8 = 0
+            r9 = 0
+            r10 = 0
+            r11 = 0
+            r12 = 124(0x7c, float:1.74E-43)
+            java.lang.String r6 = "\n"
+            r5 = r13
+            p062dh.C1473i.m3999K(r4, r5, r6, r7, r8, r9, r10, r11, r12)
+            java.lang.String r13 = r13.toString()
+            java.lang.String r14 = "mapIndexedNotNull { inde\u2026\"\\n\")\n        .toString()"
+            p214m2.C4339q.m9705j(r13, r14)
+            return r13
+        Lc1:
+            java.lang.IllegalArgumentException r13 = new java.lang.IllegalArgumentException
+            java.lang.String r14 = "marginPrefix must be non-blank string."
+            java.lang.String r14 = r14.toString()
+            r13.<init>(r14)
+            throw r13
+    }
+}
+package p362uh;
+
+/* renamed from: uh.f */
+/* loaded from: classes.dex */
+public class C6460f extends p362uh.C6459e {
+}
+package p362uh;
+
+/* renamed from: uh.g */
+/* loaded from: classes.dex */
+public class C6461g extends p362uh.C6460f {
+}
+package p362uh;
+
+/* renamed from: uh.h */
+/* loaded from: classes.dex */
+public class C6462h extends p362uh.C6461g {
+    /* renamed from: E */
+    public static final java.lang.Double m13048E(java.lang.String r3) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r3, r0)
+            r0 = 0
+            uh.c r1 = p362uh.C6458d.f25048a     // Catch: java.lang.NumberFormatException -> L17
+            boolean r1 = r1.m13043a(r3)     // Catch: java.lang.NumberFormatException -> L17
+            if (r1 == 0) goto L17
+            double r1 = java.lang.Double.parseDouble(r3)     // Catch: java.lang.NumberFormatException -> L17
+            java.lang.Double r3 = java.lang.Double.valueOf(r1)     // Catch: java.lang.NumberFormatException -> L17
+            r0 = r3
+        L17:
+            return r0
+    }
+
+    /* renamed from: F */
+    public static final java.lang.Integer m13049F(java.lang.String r11) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r11, r0)
+            p214m2.C4339q.m9706k(r11, r0)
+            r0 = 10
+            gh.C2390b.m6112b(r0)
+            int r1 = r11.length()
+            r2 = 0
+            if (r1 != 0) goto L15
+            goto L6d
+        L15:
+            r3 = 0
+            char r4 = r11.charAt(r3)
+            r5 = 48
+            int r5 = p214m2.C4339q.m9708m(r4, r5)
+            r6 = -2147483647(0xffffffff80000001, float:-1.4E-45)
+            r7 = 1
+            if (r5 >= 0) goto L37
+            if (r1 != r7) goto L29
+            goto L6d
+        L29:
+            r5 = 45
+            if (r4 != r5) goto L31
+            r6 = -2147483648(0xffffffff80000000, float:-0.0)
+            r4 = 1
+            goto L39
+        L31:
+            r5 = 43
+            if (r4 != r5) goto L6d
+            r4 = 1
+            goto L38
+        L37:
+            r4 = 0
+        L38:
+            r7 = 0
+        L39:
+            r5 = -59652323(0xfffffffffc71c71d, float:-5.0215282E36)
+            r8 = -59652323(0xfffffffffc71c71d, float:-5.0215282E36)
+        L3f:
+            if (r4 >= r1) goto L60
+            char r9 = r11.charAt(r4)
+            int r9 = java.lang.Character.digit(r9, r0)
+            if (r9 >= 0) goto L4c
+            goto L6d
+        L4c:
+            if (r3 >= r8) goto L55
+            if (r8 != r5) goto L6d
+            int r8 = r6 / 10
+            if (r3 >= r8) goto L55
+            goto L6d
+        L55:
+            int r3 = r3 * 10
+            int r10 = r6 + r9
+            if (r3 >= r10) goto L5c
+            goto L6d
+        L5c:
+            int r3 = r3 - r9
+            int r4 = r4 + 1
+            goto L3f
+        L60:
+            if (r7 == 0) goto L67
+            java.lang.Integer r11 = java.lang.Integer.valueOf(r3)
+            goto L6c
+        L67:
+            int r11 = -r3
+            java.lang.Integer r11 = java.lang.Integer.valueOf(r11)
+        L6c:
+            r2 = r11
+        L6d:
+            return r2
+    }
+
+    /* renamed from: G */
+    public static final java.lang.Long m13050G(java.lang.String r18) {
+            r0 = r18
+            r1 = 10
+            gh.C2390b.m6112b(r1)
+            int r2 = r18.length()
+            r3 = 0
+            if (r2 != 0) goto L10
+            goto L7a
+        L10:
+            r4 = 0
+            char r5 = r0.charAt(r4)
+            r6 = 48
+            int r6 = p214m2.C4339q.m9708m(r5, r6)
+            r7 = -9223372036854775807(0x8000000000000001, double:-4.9E-324)
+            r9 = 1
+            if (r6 >= 0) goto L33
+            if (r2 != r9) goto L26
+            goto L7a
+        L26:
+            r6 = 45
+            if (r5 != r6) goto L2e
+            r7 = -9223372036854775808
+            r4 = 1
+            goto L34
+        L2e:
+            r6 = 43
+            if (r5 != r6) goto L7a
+            goto L34
+        L33:
+            r9 = 0
+        L34:
+            r5 = 0
+            r10 = -256204778801521550(0xfc71c71c71c71c72, double:-2.772000429909333E291)
+            r12 = r10
+        L3c:
+            if (r9 >= r2) goto L6d
+            char r14 = r0.charAt(r9)
+            int r14 = java.lang.Character.digit(r14, r1)
+            if (r14 >= 0) goto L49
+            goto L7a
+        L49:
+            int r15 = (r5 > r12 ? 1 : (r5 == r12 ? 0 : -1))
+            if (r15 >= 0) goto L59
+            int r15 = (r12 > r10 ? 1 : (r12 == r10 ? 0 : -1))
+            if (r15 != 0) goto L7a
+            long r12 = (long) r1
+            long r12 = r7 / r12
+            int r15 = (r5 > r12 ? 1 : (r5 == r12 ? 0 : -1))
+            if (r15 >= 0) goto L59
+            goto L7a
+        L59:
+            long r10 = (long) r1
+            long r5 = r5 * r10
+            long r10 = (long) r14
+            long r16 = r7 + r10
+            int r14 = (r5 > r16 ? 1 : (r5 == r16 ? 0 : -1))
+            if (r14 >= 0) goto L64
+            goto L7a
+        L64:
+            long r5 = r5 - r10
+            int r9 = r9 + 1
+            r10 = -256204778801521550(0xfc71c71c71c71c72, double:-2.772000429909333E291)
+            goto L3c
+        L6d:
+            if (r4 == 0) goto L74
+            java.lang.Long r0 = java.lang.Long.valueOf(r5)
+            goto L79
+        L74:
+            long r0 = -r5
+            java.lang.Long r0 = java.lang.Long.valueOf(r0)
+        L79:
+            r3 = r0
+        L7a:
+            return r3
+    }
+}
+package p362uh;
+
+/* renamed from: uh.i */
+/* loaded from: classes.dex */
+public class C6463i extends p362uh.C6462h {
+    /* renamed from: H */
+    public static final java.lang.String m13051H(byte[] r2) {
+            java.lang.String r0 = new java.lang.String
+            java.nio.charset.Charset r1 = p362uh.C6455a.f25034b
+            r0.<init>(r2, r1)
+            return r0
+    }
+
+    /* renamed from: I */
+    public static boolean m13052I(java.lang.String r6, java.lang.String r7, boolean r8, int r9) {
+            r9 = r9 & 2
+            if (r9 == 0) goto L5
+            r8 = 0
+        L5:
+            java.lang.String r9 = "<this>"
+            p214m2.C4339q.m9706k(r6, r9)
+            java.lang.String r9 = "suffix"
+            p214m2.C4339q.m9706k(r7, r9)
+            if (r8 != 0) goto L16
+            boolean r6 = r6.endsWith(r7)
+            goto L2c
+        L16:
+            int r8 = r6.length()
+            int r9 = r7.length()
+            int r1 = r8 - r9
+            r3 = 0
+            int r4 = r7.length()
+            r5 = 1
+            r0 = r6
+            r2 = r7
+            boolean r6 = m13055L(r0, r1, r2, r3, r4, r5)
+        L2c:
+            return r6
+    }
+
+    /* renamed from: J */
+    public static final boolean m13053J(java.lang.String r0, java.lang.String r1, boolean r2) {
+            if (r0 != 0) goto L8
+            if (r1 != 0) goto L6
+            r0 = 1
+            goto L7
+        L6:
+            r0 = 0
+        L7:
+            return r0
+        L8:
+            if (r2 != 0) goto Lf
+            boolean r0 = r0.equals(r1)
+            goto L13
+        Lf:
+            boolean r0 = r0.equalsIgnoreCase(r1)
+        L13:
+            return r0
+    }
+
+    /* renamed from: K */
+    public static final boolean m13054K(java.lang.CharSequence r4) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r4, r0)
+            int r1 = r4.length()
+            r2 = 0
+            r3 = 1
+            if (r1 == 0) goto L48
+            p214m2.C4339q.m9706k(r4, r0)
+            rh.c r0 = new rh.c
+            int r1 = r4.length()
+            int r1 = r1 + (-1)
+            r0.<init>(r2, r1)
+            boolean r1 = r0 instanceof java.util.Collection
+            if (r1 == 0) goto L2a
+            r1 = r0
+            java.util.Collection r1 = (java.util.Collection) r1
+            boolean r1 = r1.isEmpty()
+            if (r1 == 0) goto L2a
+        L28:
+            r4 = 1
+            goto L46
+        L2a:
+            java.util.Iterator r0 = r0.iterator()
+        L2e:
+            boolean r1 = r0.hasNext()
+            if (r1 == 0) goto L28
+            r1 = r0
+            dh.n r1 = (p062dh.AbstractC1478n) r1
+            int r1 = r1.mo4012a()
+            char r1 = r4.charAt(r1)
+            boolean r1 = gh.C2390b.m6128r(r1)
+            if (r1 != 0) goto L2e
+            r4 = 0
+        L46:
+            if (r4 == 0) goto L49
+        L48:
+            r2 = 1
+        L49:
+            return r2
+    }
+
+    /* renamed from: L */
+    public static final boolean m13055L(java.lang.String r6, int r7, java.lang.String r8, int r9, int r10, boolean r11) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r6, r0)
+            java.lang.String r0 = "other"
+            p214m2.C4339q.m9706k(r8, r0)
+            if (r11 != 0) goto L11
+            boolean r6 = r6.regionMatches(r7, r8, r9, r10)
+            goto L1b
+        L11:
+            r0 = r6
+            r1 = r11
+            r2 = r7
+            r3 = r8
+            r4 = r9
+            r5 = r10
+            boolean r6 = r0.regionMatches(r1, r2, r3, r4, r5)
+        L1b:
+            return r6
+    }
+
+    /* renamed from: M */
+    public static java.lang.String m13056M(java.lang.String r3, char r4, char r5, boolean r6, int r7) {
+            r7 = r7 & 4
+            r0 = 0
+            if (r7 == 0) goto L6
+            r6 = 0
+        L6:
+            if (r6 != 0) goto Lf
+            java.lang.String r3 = r3.replace(r4, r5)
+            java.lang.String r4 = "this as java.lang.String\u2026replace(oldChar, newChar)"
+            goto L35
+        Lf:
+            int r7 = r3.length()
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            r1.<init>(r7)
+        L18:
+            int r7 = r3.length()
+            if (r0 >= r7) goto L2f
+            char r7 = r3.charAt(r0)
+            boolean r2 = gh.C2390b.m6115e(r7, r4, r6)
+            if (r2 == 0) goto L29
+            r7 = r5
+        L29:
+            r1.append(r7)
+            int r0 = r0 + 1
+            goto L18
+        L2f:
+            java.lang.String r3 = r1.toString()
+            java.lang.String r4 = "StringBuilder(capacity).\u2026builderAction).toString()"
+        L35:
+            p214m2.C4339q.m9705j(r3, r4)
+            return r3
+    }
+
+    /* renamed from: N */
+    public static java.lang.String m13057N(java.lang.String r5, java.lang.String r6, java.lang.String r7, boolean r8, int r9) {
+            r9 = r9 & 4
+            r0 = 0
+            if (r9 == 0) goto L6
+            r8 = 0
+        L6:
+            java.lang.String r9 = "<this>"
+            p214m2.C4339q.m9706k(r5, r9)
+            int r9 = p362uh.C6467m.m13066W(r5, r6, r0, r8)
+            if (r9 >= 0) goto L12
+            goto L51
+        L12:
+            int r1 = r6.length()
+            r2 = 1
+            if (r1 >= r2) goto L1a
+            goto L1b
+        L1a:
+            r2 = r1
+        L1b:
+            int r3 = r5.length()
+            int r3 = r3 - r1
+            int r4 = r7.length()
+            int r4 = r4 + r3
+            if (r4 < 0) goto L52
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder
+            r3.<init>(r4)
+        L2c:
+            r3.append(r5, r0, r9)
+            r3.append(r7)
+            int r0 = r9 + r1
+            int r4 = r5.length()
+            if (r9 >= r4) goto L41
+            int r9 = r9 + r2
+            int r9 = p362uh.C6467m.m13066W(r5, r6, r9, r8)
+            if (r9 > 0) goto L2c
+        L41:
+            int r6 = r5.length()
+            r3.append(r5, r0, r6)
+            java.lang.String r5 = r3.toString()
+            java.lang.String r6 = "stringBuilder.append(this, i, length).toString()"
+            p214m2.C4339q.m9705j(r5, r6)
+        L51:
+            return r5
+        L52:
+            java.lang.OutOfMemoryError r5 = new java.lang.OutOfMemoryError
+            r5.<init>()
+            throw r5
+    }
+
+    /* renamed from: O */
+    public static final boolean m13058O(java.lang.String r6, java.lang.String r7, int r8, boolean r9) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r6, r0)
+            java.lang.String r0 = "prefix"
+            p214m2.C4339q.m9706k(r7, r0)
+            if (r9 != 0) goto L11
+            boolean r6 = r6.startsWith(r7, r8)
+            return r6
+        L11:
+            r3 = 0
+            int r4 = r7.length()
+            r0 = r6
+            r1 = r8
+            r2 = r7
+            r5 = r9
+            boolean r6 = m13055L(r0, r1, r2, r3, r4, r5)
+            return r6
+    }
+
+    /* renamed from: P */
+    public static final boolean m13059P(java.lang.String r6, java.lang.String r7, boolean r8) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r6, r0)
+            java.lang.String r0 = "prefix"
+            p214m2.C4339q.m9706k(r7, r0)
+            if (r8 != 0) goto L11
+            boolean r6 = r6.startsWith(r7)
+            return r6
+        L11:
+            r1 = 0
+            r3 = 0
+            int r4 = r7.length()
+            r0 = r6
+            r2 = r7
+            r5 = r8
+            boolean r6 = m13055L(r0, r1, r2, r3, r4, r5)
+            return r6
+    }
+
+    /* renamed from: Q */
+    public static /* synthetic */ boolean m13060Q(java.lang.String r0, java.lang.String r1, int r2, boolean r3, int r4) {
+            r4 = r4 & 4
+            if (r4 == 0) goto L5
+            r3 = 0
+        L5:
+            boolean r0 = m13058O(r0, r1, r2, r3)
+            return r0
+    }
+
+    /* renamed from: R */
+    public static /* synthetic */ boolean m13061R(java.lang.String r0, java.lang.String r1, boolean r2, int r3) {
+            r3 = r3 & 2
+            if (r3 == 0) goto L5
+            r2 = 0
+        L5:
+            boolean r0 = m13059P(r0, r1, r2)
+            return r0
+    }
+}
+package p362uh;
+
+/* renamed from: uh.j */
+/* loaded from: classes.dex */
+public final class C6464j extends p239nh.AbstractC4830j implements mh.InterfaceC4624p<java.lang.CharSequence, java.lang.Integer, ch.C0978e<? extends java.lang.Integer, ? extends java.lang.Integer>> {
+
+    /* renamed from: Z */
+    public final /* synthetic */ char[] f25051Z;
+
+    /* renamed from: a0 */
+    public final /* synthetic */ boolean f25052a0;
+
+    public C6464j(char[] r1, boolean r2) {
+            r0 = this;
+            r0.f25051Z = r1
+            r0.f25052a0 = r2
+            r1 = 2
+            r0.<init>(r1)
+            return
+    }
+
+    @Override // mh.InterfaceC4624p
+    /* renamed from: l */
+    public ch.C0978e<? extends java.lang.Integer, ? extends java.lang.Integer> mo122l(java.lang.CharSequence r3, java.lang.Integer r4) {
+            r2 = this;
+            java.lang.CharSequence r3 = (java.lang.CharSequence) r3
+            java.lang.Number r4 = (java.lang.Number) r4
+            int r4 = r4.intValue()
+            java.lang.String r0 = "$this$$receiver"
+            p214m2.C4339q.m9706k(r3, r0)
+            char[] r0 = r2.f25051Z
+            boolean r1 = r2.f25052a0
+            int r3 = p362uh.C6467m.m13071b0(r3, r0, r4, r1)
+            if (r3 >= 0) goto L19
+            r3 = 0
+            goto L28
+        L19:
+            java.lang.Integer r3 = java.lang.Integer.valueOf(r3)
+            r4 = 1
+            java.lang.Integer r4 = java.lang.Integer.valueOf(r4)
+            ch.e r0 = new ch.e
+            r0.<init>(r3, r4)
+            r3 = r0
+        L28:
+            return r3
+    }
+}
+package p362uh;
+
+/* renamed from: uh.k */
+/* loaded from: classes.dex */
+public final class C6465k extends p239nh.AbstractC4830j implements mh.InterfaceC4624p<java.lang.CharSequence, java.lang.Integer, ch.C0978e<? extends java.lang.Integer, ? extends java.lang.Integer>> {
+
+    /* renamed from: Z */
+    public final /* synthetic */ java.util.List<java.lang.String> f25053Z;
+
+    /* renamed from: a0 */
+    public final /* synthetic */ boolean f25054a0;
+
+    public C6465k(java.util.List<java.lang.String> r1, boolean r2) {
+            r0 = this;
+            r0.f25053Z = r1
+            r0.f25054a0 = r2
+            r1 = 2
+            r0.<init>(r1)
+            return
+    }
+
+    @Override // mh.InterfaceC4624p
+    /* renamed from: l */
+    public ch.C0978e<? extends java.lang.Integer, ? extends java.lang.Integer> mo122l(java.lang.CharSequence r14, java.lang.Integer r15) {
+            r13 = this;
+            java.lang.CharSequence r14 = (java.lang.CharSequence) r14
+            java.lang.Number r15 = (java.lang.Number) r15
+            int r15 = r15.intValue()
+            java.lang.String r0 = "$this$$receiver"
+            p214m2.C4339q.m9706k(r14, r0)
+            java.util.List<java.lang.String> r6 = r13.f25053Z
+            boolean r7 = r13.f25054a0
+            r8 = 0
+            r0 = 0
+            if (r7 != 0) goto L56
+            int r1 = r6.size()
+            r2 = 1
+            if (r1 != r2) goto L56
+            java.lang.String r1 = "<this>"
+            p214m2.C4339q.m9706k(r6, r1)
+            p214m2.C4339q.m9706k(r6, r1)
+            int r1 = r6.size()
+            if (r1 == 0) goto L4e
+            if (r1 != r2) goto L46
+            java.lang.Object r1 = r6.get(r0)
+            java.lang.String r1 = (java.lang.String) r1
+            r2 = 4
+            int r14 = p362uh.C6467m.m13070a0(r14, r1, r15, r0, r2)
+            if (r14 >= 0) goto L3b
+            goto Le6
+        L3b:
+            java.lang.Integer r14 = java.lang.Integer.valueOf(r14)
+            ch.e r15 = new ch.e
+            r15.<init>(r14, r1)
+            goto Le7
+        L46:
+            java.lang.IllegalArgumentException r14 = new java.lang.IllegalArgumentException
+            java.lang.String r15 = "List has more than one element."
+            r14.<init>(r15)
+            throw r14
+        L4e:
+            java.util.NoSuchElementException r14 = new java.util.NoSuchElementException
+            java.lang.String r15 = "List is empty."
+            r14.<init>(r15)
+            throw r14
+        L56:
+            rh.c r1 = new rh.c
+            if (r15 >= 0) goto L5b
+            r15 = 0
+        L5b:
+            int r0 = r14.length()
+            r1.<init>(r15, r0)
+            boolean r0 = r14 instanceof java.lang.String
+            if (r0 == 0) goto La7
+            int r9 = r1.f22648Z
+            int r10 = r1.f22649a0
+            if (r10 <= 0) goto L6e
+            if (r15 <= r9) goto L72
+        L6e:
+            if (r10 >= 0) goto Le6
+            if (r9 > r15) goto Le6
+        L72:
+            java.util.Iterator r11 = r6.iterator()
+        L76:
+            boolean r0 = r11.hasNext()
+            if (r0 == 0) goto L94
+            java.lang.Object r12 = r11.next()
+            r0 = r12
+            java.lang.String r0 = (java.lang.String) r0
+            r1 = 0
+            r2 = r14
+            java.lang.String r2 = (java.lang.String) r2
+            int r4 = r0.length()
+            r3 = r15
+            r5 = r7
+            boolean r0 = p362uh.C6463i.m13055L(r0, r1, r2, r3, r4, r5)
+            if (r0 == 0) goto L76
+            goto L95
+        L94:
+            r12 = r8
+        L95:
+            java.lang.String r12 = (java.lang.String) r12
+            if (r12 == 0) goto La3
+            java.lang.Integer r14 = java.lang.Integer.valueOf(r15)
+            ch.e r15 = new ch.e
+            r15.<init>(r14, r12)
+            goto Le7
+        La3:
+            if (r15 == r9) goto Le6
+            int r15 = r15 + r10
+            goto L72
+        La7:
+            int r9 = r1.f22648Z
+            int r10 = r1.f22649a0
+            if (r10 <= 0) goto Laf
+            if (r15 <= r9) goto Lb3
+        Laf:
+            if (r10 >= 0) goto Le6
+            if (r9 > r15) goto Le6
+        Lb3:
+            java.util.Iterator r11 = r6.iterator()
+        Lb7:
+            boolean r0 = r11.hasNext()
+            if (r0 == 0) goto Ld3
+            java.lang.Object r12 = r11.next()
+            r0 = r12
+            java.lang.String r0 = (java.lang.String) r0
+            r1 = 0
+            int r4 = r0.length()
+            r2 = r14
+            r3 = r15
+            r5 = r7
+            boolean r0 = p362uh.C6467m.m13075f0(r0, r1, r2, r3, r4, r5)
+            if (r0 == 0) goto Lb7
+            goto Ld4
+        Ld3:
+            r12 = r8
+        Ld4:
+            java.lang.String r12 = (java.lang.String) r12
+            if (r12 == 0) goto Le2
+            java.lang.Integer r14 = java.lang.Integer.valueOf(r15)
+            ch.e r15 = new ch.e
+            r15.<init>(r14, r12)
+            goto Le7
+        Le2:
+            if (r15 == r9) goto Le6
+            int r15 = r15 + r10
+            goto Lb3
+        Le6:
+            r15 = r8
+        Le7:
+            if (r15 == 0) goto Lfc
+            A r14 = r15.f5050Y
+            B r15 = r15.f5051Z
+            java.lang.String r15 = (java.lang.String) r15
+            int r15 = r15.length()
+            java.lang.Integer r15 = java.lang.Integer.valueOf(r15)
+            ch.e r8 = new ch.e
+            r8.<init>(r14, r15)
+        Lfc:
+            return r8
+    }
+}
+package p362uh;
+
+/* renamed from: uh.l */
+/* loaded from: classes.dex */
+public final class C6466l extends p239nh.AbstractC4830j implements mh.InterfaceC4620l<p316rh.C5854c, java.lang.String> {
+
+    /* renamed from: Z */
+    public final /* synthetic */ java.lang.CharSequence f25055Z;
+
+    public C6466l(java.lang.CharSequence r1) {
+            r0 = this;
+            r0.f25055Z = r1
+            r1 = 1
+            r0.<init>(r1)
+            return
+    }
+
+    @Override // mh.InterfaceC4620l
+    /* renamed from: b */
+    public java.lang.String mo107b(p316rh.C5854c r2) {
+            r1 = this;
+            rh.c r2 = (p316rh.C5854c) r2
+            java.lang.String r0 = "it"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.CharSequence r0 = r1.f25055Z
+            java.lang.String r2 = p362uh.C6467m.m13081l0(r0, r2)
+            return r2
+    }
+}
+package p362uh;
+
+/* renamed from: uh.m */
+/* loaded from: classes.dex */
+public class C6467m extends p362uh.C6463i {
+    /* renamed from: S */
+    public static final boolean m13062S(java.lang.CharSequence r10, java.lang.CharSequence r11, boolean r12) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r10, r0)
+            java.lang.String r0 = "other"
+            p214m2.C4339q.m9706k(r11, r0)
+            boolean r0 = r11 instanceof java.lang.String
+            r1 = 1
+            r2 = 0
+            if (r0 == 0) goto L1a
+            java.lang.String r11 = (java.lang.String) r11
+            r0 = 2
+            int r10 = m13070a0(r10, r11, r2, r12, r0)
+            if (r10 < 0) goto L2c
+            goto L2d
+        L1a:
+            r5 = 0
+            int r6 = r10.length()
+            r8 = 0
+            r9 = 16
+            r3 = r10
+            r4 = r11
+            r7 = r12
+            int r10 = m13068Y(r3, r4, r5, r6, r7, r8, r9)
+            if (r10 < 0) goto L2c
+            goto L2d
+        L2c:
+            r1 = 0
+        L2d:
+            return r1
+    }
+
+    /* renamed from: T */
+    public static boolean m13063T(java.lang.CharSequence r2, char r3, boolean r4, int r5) {
+            r0 = 2
+            r5 = r5 & r0
+            r1 = 0
+            if (r5 == 0) goto L6
+            r4 = 0
+        L6:
+            java.lang.String r5 = "<this>"
+            p214m2.C4339q.m9706k(r2, r5)
+            int r2 = m13069Z(r2, r3, r1, r4, r0)
+            if (r2 < 0) goto L12
+            r1 = 1
+        L12:
+            return r1
+    }
+
+    /* renamed from: U */
+    public static /* synthetic */ boolean m13064U(java.lang.CharSequence r0, java.lang.CharSequence r1, boolean r2, int r3) {
+            r3 = r3 & 2
+            if (r3 == 0) goto L5
+            r2 = 0
+        L5:
+            boolean r0 = m13062S(r0, r1, r2)
+            return r0
+    }
+
+    /* renamed from: V */
+    public static final int m13065V(java.lang.CharSequence r1) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r1, r0)
+            int r1 = r1.length()
+            int r1 = r1 + (-1)
+            return r1
+    }
+
+    /* renamed from: W */
+    public static final int m13066W(java.lang.CharSequence r7, java.lang.String r8, int r9, boolean r10) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r7, r0)
+            java.lang.String r0 = "string"
+            p214m2.C4339q.m9706k(r8, r0)
+            if (r10 != 0) goto L18
+            boolean r0 = r7 instanceof java.lang.String
+            if (r0 != 0) goto L11
+            goto L18
+        L11:
+            java.lang.String r7 = (java.lang.String) r7
+            int r7 = r7.indexOf(r8, r9)
+            goto L27
+        L18:
+            int r3 = r7.length()
+            r5 = 0
+            r6 = 16
+            r0 = r7
+            r1 = r8
+            r2 = r9
+            r4 = r10
+            int r7 = m13068Y(r0, r1, r2, r3, r4, r5, r6)
+        L27:
+            return r7
+    }
+
+    /* renamed from: X */
+    public static final int m13067X(java.lang.CharSequence r6, java.lang.CharSequence r7, int r8, int r9, boolean r10, boolean r11) {
+            r0 = 0
+            if (r11 != 0) goto L13
+            rh.c r11 = new rh.c
+            if (r8 >= 0) goto L8
+            r8 = 0
+        L8:
+            int r0 = r6.length()
+            if (r9 <= r0) goto Lf
+            r9 = r0
+        Lf:
+            r11.<init>(r8, r9)
+            goto L21
+        L13:
+            int r11 = m13065V(r6)
+            if (r8 <= r11) goto L1a
+            r8 = r11
+        L1a:
+            if (r9 >= 0) goto L1d
+            r9 = 0
+        L1d:
+            rh.a r11 = p209lh.C4304a.m9618l(r8, r9)
+        L21:
+            boolean r8 = r6 instanceof java.lang.String
+            if (r8 == 0) goto L4f
+            boolean r8 = r7 instanceof java.lang.String
+            if (r8 == 0) goto L4f
+            int r8 = r11.f22647Y
+            int r9 = r11.f22648Z
+            int r11 = r11.f22649a0
+            if (r11 <= 0) goto L33
+            if (r8 <= r9) goto L37
+        L33:
+            if (r11 >= 0) goto L71
+            if (r9 > r8) goto L71
+        L37:
+            r0 = r7
+            java.lang.String r0 = (java.lang.String) r0
+            r1 = 0
+            r2 = r6
+            java.lang.String r2 = (java.lang.String) r2
+            int r4 = r7.length()
+            r3 = r8
+            r5 = r10
+            boolean r0 = p362uh.C6463i.m13055L(r0, r1, r2, r3, r4, r5)
+            if (r0 == 0) goto L4b
+            return r8
+        L4b:
+            if (r8 == r9) goto L71
+            int r8 = r8 + r11
+            goto L37
+        L4f:
+            int r8 = r11.f22647Y
+            int r9 = r11.f22648Z
+            int r11 = r11.f22649a0
+            if (r11 <= 0) goto L59
+            if (r8 <= r9) goto L5d
+        L59:
+            if (r11 >= 0) goto L71
+            if (r9 > r8) goto L71
+        L5d:
+            r1 = 0
+            int r4 = r7.length()
+            r0 = r7
+            r2 = r6
+            r3 = r8
+            r5 = r10
+            boolean r0 = m13075f0(r0, r1, r2, r3, r4, r5)
+            if (r0 == 0) goto L6d
+            return r8
+        L6d:
+            if (r8 == r9) goto L71
+            int r8 = r8 + r11
+            goto L5d
+        L71:
+            r6 = -1
+            return r6
+    }
+
+    /* renamed from: Y */
+    public static /* synthetic */ int m13068Y(java.lang.CharSequence r6, java.lang.CharSequence r7, int r8, int r9, boolean r10, boolean r11, int r12) {
+            r12 = r12 & 16
+            if (r12 == 0) goto L7
+            r11 = 0
+            r5 = 0
+            goto L8
+        L7:
+            r5 = r11
+        L8:
+            r0 = r6
+            r1 = r7
+            r2 = r8
+            r3 = r9
+            r4 = r10
+            int r6 = m13067X(r0, r1, r2, r3, r4, r5)
+            return r6
+    }
+
+    /* renamed from: Z */
+    public static int m13069Z(java.lang.CharSequence r2, char r3, int r4, boolean r5, int r6) {
+            r0 = r6 & 2
+            r1 = 0
+            if (r0 == 0) goto L6
+            r4 = 0
+        L6:
+            r6 = r6 & 4
+            if (r6 == 0) goto Lb
+            r5 = 0
+        Lb:
+            java.lang.String r6 = "<this>"
+            p214m2.C4339q.m9706k(r2, r6)
+            if (r5 != 0) goto L1e
+            boolean r6 = r2 instanceof java.lang.String
+            if (r6 != 0) goto L17
+            goto L1e
+        L17:
+            java.lang.String r2 = (java.lang.String) r2
+            int r2 = r2.indexOf(r3, r4)
+            goto L27
+        L1e:
+            r6 = 1
+            char[] r6 = new char[r6]
+            r6[r1] = r3
+            int r2 = m13071b0(r2, r6, r4, r5)
+        L27:
+            return r2
+    }
+
+    /* renamed from: a0 */
+    public static /* synthetic */ int m13070a0(java.lang.CharSequence r2, java.lang.String r3, int r4, boolean r5, int r6) {
+            r0 = r6 & 2
+            r1 = 0
+            if (r0 == 0) goto L6
+            r4 = 0
+        L6:
+            r6 = r6 & 4
+            if (r6 == 0) goto Lb
+            r5 = 0
+        Lb:
+            int r2 = m13066W(r2, r3, r4, r5)
+            return r2
+    }
+
+    /* renamed from: b0 */
+    public static final int m13071b0(java.lang.CharSequence r7, char[] r8, int r9, boolean r10) {
+            java.lang.String r0 = "chars"
+            p214m2.C4339q.m9706k(r8, r0)
+            r0 = 1
+            if (r10 != 0) goto L1a
+            int r1 = r8.length
+            if (r1 != r0) goto L1a
+            boolean r1 = r7 instanceof java.lang.String
+            if (r1 == 0) goto L1a
+            char r8 = p062dh.C1468d.m3990L(r8)
+            java.lang.String r7 = (java.lang.String) r7
+            int r7 = r7.indexOf(r8, r9)
+            return r7
+        L1a:
+            r1 = 0
+            if (r9 >= 0) goto L1e
+            r9 = 0
+        L1e:
+            int r2 = m13065V(r7)
+            if (r9 > r2) goto L42
+        L24:
+            char r3 = r7.charAt(r9)
+            int r4 = r8.length
+            r5 = 0
+        L2a:
+            if (r5 >= r4) goto L39
+            char r6 = r8[r5]
+            boolean r6 = gh.C2390b.m6115e(r6, r3, r10)
+            if (r6 == 0) goto L36
+            r3 = 1
+            goto L3a
+        L36:
+            int r5 = r5 + 1
+            goto L2a
+        L39:
+            r3 = 0
+        L3a:
+            if (r3 == 0) goto L3d
+            return r9
+        L3d:
+            if (r9 == r2) goto L42
+            int r9 = r9 + 1
+            goto L24
+        L42:
+            r7 = -1
+            return r7
+    }
+
+    /* renamed from: c0 */
+    public static int m13072c0(java.lang.CharSequence r5, char r6, int r7, boolean r8, int r9) {
+            r0 = r9 & 2
+            if (r0 == 0) goto L8
+            int r7 = m13065V(r5)
+        L8:
+            r9 = r9 & 4
+            r0 = 0
+            if (r9 == 0) goto Le
+            r8 = 0
+        Le:
+            r9 = -1
+            if (r8 != 0) goto L18
+            java.lang.String r5 = (java.lang.String) r5
+            int r9 = r5.lastIndexOf(r6, r7)
+            goto L4f
+        L18:
+            r1 = 1
+            char[] r2 = new char[r1]
+            r2[r0] = r6
+            if (r8 != 0) goto L2a
+            char r6 = p062dh.C1468d.m3990L(r2)
+            java.lang.String r5 = (java.lang.String) r5
+            int r9 = r5.lastIndexOf(r6, r7)
+            goto L4f
+        L2a:
+            int r6 = m13065V(r5)
+            if (r7 <= r6) goto L31
+            r7 = r6
+        L31:
+            if (r9 >= r7) goto L4f
+            char r6 = r5.charAt(r7)
+            r3 = 0
+        L38:
+            if (r3 >= r1) goto L47
+            char r4 = r2[r3]
+            boolean r4 = gh.C2390b.m6115e(r4, r6, r8)
+            if (r4 == 0) goto L44
+            r6 = 1
+            goto L48
+        L44:
+            int r3 = r3 + 1
+            goto L38
+        L47:
+            r6 = 0
+        L48:
+            if (r6 == 0) goto L4c
+            r9 = r7
+            goto L4f
+        L4c:
+            int r7 = r7 + (-1)
+            goto L31
+        L4f:
+            return r9
+    }
+
+    /* renamed from: d0 */
+    public static final java.util.List<java.lang.String> m13073d0(java.lang.CharSequence r9) {
+            java.lang.String r0 = "\r\n"
+            java.lang.String r1 = "\n"
+            java.lang.String r2 = "\r"
+            java.lang.String[] r4 = new java.lang.String[]{r0, r1, r2}
+            r6 = 0
+            r7 = 0
+            r5 = 0
+            r8 = 2
+            r3 = r9
+            th.d r0 = m13074e0(r3, r4, r5, r6, r7, r8)
+            uh.l r1 = new uh.l
+            r1.<init>(r9)
+            th.k r9 = new th.k
+            r9.<init>(r0, r1)
+            java.util.List r9 = th.C6249g.m12831E(r9)
+            return r9
+    }
+
+    /* renamed from: e0 */
+    public static th.InterfaceC6246d m13074e0(java.lang.CharSequence r2, java.lang.String[] r3, int r4, boolean r5, int r6, int r7) {
+            r0 = r7 & 2
+            r1 = 0
+            if (r0 == 0) goto L6
+            r4 = 0
+        L6:
+            r0 = r7 & 4
+            if (r0 == 0) goto Lb
+            r5 = 0
+        Lb:
+            r7 = r7 & 8
+            if (r7 == 0) goto L10
+            r6 = 0
+        L10:
+            m13077h0(r6)
+            java.util.List r3 = p062dh.C1468d.m3982D(r3)
+            uh.b r7 = new uh.b
+            uh.k r0 = new uh.k
+            r0.<init>(r3, r5)
+            r7.<init>(r2, r4, r6, r0)
+            return r7
+    }
+
+    /* renamed from: f0 */
+    public static final boolean m13075f0(java.lang.CharSequence r4, int r5, java.lang.CharSequence r6, int r7, int r8, boolean r9) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r4, r0)
+            java.lang.String r0 = "other"
+            p214m2.C4339q.m9706k(r6, r0)
+            r0 = 0
+            if (r7 < 0) goto L39
+            if (r5 < 0) goto L39
+            int r1 = r4.length()
+            int r1 = r1 - r8
+            if (r5 > r1) goto L39
+            int r1 = r6.length()
+            int r1 = r1 - r8
+            if (r7 <= r1) goto L1e
+            goto L39
+        L1e:
+            r1 = 0
+        L1f:
+            if (r1 >= r8) goto L37
+            int r2 = r5 + r1
+            char r2 = r4.charAt(r2)
+            int r3 = r7 + r1
+            char r3 = r6.charAt(r3)
+            boolean r2 = gh.C2390b.m6115e(r2, r3, r9)
+            if (r2 != 0) goto L34
+            return r0
+        L34:
+            int r1 = r1 + 1
+            goto L1f
+        L37:
+            r4 = 1
+            return r4
+        L39:
+            return r0
+    }
+
+    /* renamed from: g0 */
+    public static final java.lang.String m13076g0(java.lang.String r3, java.lang.CharSequence r4) {
+            r0 = 2
+            r1 = 0
+            r2 = r4
+            java.lang.String r2 = (java.lang.String) r2
+            boolean r0 = p362uh.C6463i.m13061R(r3, r2, r1, r0)
+            if (r0 == 0) goto L18
+            int r4 = r4.length()
+            java.lang.String r3 = r3.substring(r4)
+            java.lang.String r4 = "this as java.lang.String).substring(startIndex)"
+            p214m2.C4339q.m9705j(r3, r4)
+        L18:
+            return r3
+    }
+
+    /* renamed from: h0 */
+    public static final void m13077h0(int r1) {
+            if (r1 < 0) goto L4
+            r0 = 1
+            goto L5
+        L4:
+            r0 = 0
+        L5:
+            if (r0 == 0) goto L8
+            return
+        L8:
+            java.lang.String r0 = "Limit must be non-negative, but was "
+            java.lang.String r1 = android.support.v4.media.C0142a.m254a(r0, r1)
+            java.lang.IllegalArgumentException r0 = new java.lang.IllegalArgumentException
+            java.lang.String r1 = r1.toString()
+            r0.<init>(r1)
+            throw r0
+    }
+
+    /* renamed from: i0 */
+    public static final java.util.List<java.lang.String> m13078i0(java.lang.CharSequence r6, java.lang.String r7, boolean r8, int r9) {
+            m13077h0(r9)
+            r0 = 0
+            int r1 = m13066W(r6, r7, r0, r8)
+            r2 = -1
+            if (r1 == r2) goto L50
+            r3 = 1
+            if (r9 != r3) goto Lf
+            goto L50
+        Lf:
+            if (r9 <= 0) goto L12
+            goto L13
+        L12:
+            r3 = 0
+        L13:
+            java.util.ArrayList r4 = new java.util.ArrayList
+            r5 = 10
+            if (r3 == 0) goto L1d
+            if (r9 <= r5) goto L1c
+            goto L1d
+        L1c:
+            r5 = r9
+        L1d:
+            r4.<init>(r5)
+        L20:
+            java.lang.CharSequence r0 = r6.subSequence(r0, r1)
+            java.lang.String r0 = r0.toString()
+            r4.add(r0)
+            int r0 = r7.length()
+            int r0 = r0 + r1
+            if (r3 == 0) goto L3a
+            int r1 = r4.size()
+            int r5 = r9 + (-1)
+            if (r1 == r5) goto L40
+        L3a:
+            int r1 = m13066W(r6, r7, r0, r8)
+            if (r1 != r2) goto L20
+        L40:
+            int r7 = r6.length()
+            java.lang.CharSequence r6 = r6.subSequence(r0, r7)
+            java.lang.String r6 = r6.toString()
+            r4.add(r6)
+            return r4
+        L50:
+            java.lang.String r6 = r6.toString()
+            java.util.List r6 = p074e9.C1805a.m4528m(r6)
+            return r6
+    }
+
+    /* renamed from: j0 */
+    public static java.util.List m13079j0(java.lang.CharSequence r2, char[] r3, boolean r4, int r5, int r6) {
+            r0 = r6 & 2
+            r1 = 0
+            if (r0 == 0) goto L6
+            r4 = 0
+        L6:
+            r6 = r6 & 4
+            if (r6 == 0) goto Lb
+            r5 = 0
+        Lb:
+            java.lang.String r6 = "<this>"
+            p214m2.C4339q.m9706k(r2, r6)
+            int r6 = r3.length
+            r0 = 1
+            if (r6 != r0) goto L1f
+            char r3 = r3[r1]
+            java.lang.String r3 = java.lang.String.valueOf(r3)
+            java.util.List r2 = m13078i0(r2, r3, r4, r5)
+            goto L55
+        L1f:
+            m13077h0(r5)
+            uh.b r6 = new uh.b
+            uh.j r0 = new uh.j
+            r0.<init>(r3, r4)
+            r6.<init>(r2, r1, r5, r0)
+            th.j r3 = new th.j
+            r3.<init>(r6)
+            java.util.ArrayList r4 = new java.util.ArrayList
+            r5 = 10
+            int r5 = p062dh.C1469e.m3992D(r3, r5)
+            r4.<init>(r5)
+            java.util.Iterator r3 = r3.iterator()
+        L40:
+            boolean r5 = r3.hasNext()
+            if (r5 == 0) goto L54
+            java.lang.Object r5 = r3.next()
+            rh.c r5 = (p316rh.C5854c) r5
+            java.lang.String r5 = m13081l0(r2, r5)
+            r4.add(r5)
+            goto L40
+        L54:
+            r2 = r4
+        L55:
+            return r2
+    }
+
+    /* renamed from: k0 */
+    public static java.util.List m13080k0(java.lang.CharSequence r8, java.lang.String[] r9, boolean r10, int r11, int r12) {
+            r0 = r12 & 2
+            r1 = 0
+            if (r0 == 0) goto L7
+            r5 = 0
+            goto L8
+        L7:
+            r5 = r10
+        L8:
+            r10 = r12 & 4
+            if (r10 == 0) goto Le
+            r6 = 0
+            goto Lf
+        Le:
+            r6 = r11
+        Lf:
+            java.lang.String r10 = "<this>"
+            p214m2.C4339q.m9706k(r8, r10)
+            int r10 = r9.length
+            r11 = 1
+            if (r10 != r11) goto L28
+            r10 = r9[r1]
+            int r12 = r10.length()
+            if (r12 != 0) goto L21
+            r1 = 1
+        L21:
+            if (r1 != 0) goto L28
+            java.util.List r8 = m13078i0(r8, r10, r5, r6)
+            goto L59
+        L28:
+            r4 = 0
+            r7 = 2
+            r2 = r8
+            r3 = r9
+            th.d r9 = m13074e0(r2, r3, r4, r5, r6, r7)
+            th.j r10 = new th.j
+            r10.<init>(r9)
+            java.util.ArrayList r9 = new java.util.ArrayList
+            r11 = 10
+            int r11 = p062dh.C1469e.m3992D(r10, r11)
+            r9.<init>(r11)
+            java.util.Iterator r10 = r10.iterator()
+        L44:
+            boolean r11 = r10.hasNext()
+            if (r11 == 0) goto L58
+            java.lang.Object r11 = r10.next()
+            rh.c r11 = (p316rh.C5854c) r11
+            java.lang.String r11 = m13081l0(r8, r11)
+            r9.add(r11)
+            goto L44
+        L58:
+            r8 = r9
+        L59:
+            return r8
+    }
+
+    /* renamed from: l0 */
+    public static final java.lang.String m13081l0(java.lang.CharSequence r1, p316rh.C5854c r2) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r1, r0)
+            java.lang.String r0 = "range"
+            p214m2.C4339q.m9706k(r2, r0)
+            int r0 = r2.f22647Y
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r0)
+            int r0 = r0.intValue()
+            int r2 = r2.f22648Z
+            java.lang.Integer r2 = java.lang.Integer.valueOf(r2)
+            int r2 = r2.intValue()
+            int r2 = r2 + 1
+            java.lang.CharSequence r1 = r1.subSequence(r0, r2)
+            java.lang.String r1 = r1.toString()
+            return r1
+    }
+
+    /* renamed from: m0 */
+    public static java.lang.String m13082m0(java.lang.String r1, char r2, java.lang.String r3, int r4) {
+            r3 = r4 & 2
+            if (r3 == 0) goto L6
+            r3 = r1
+            goto L7
+        L6:
+            r3 = 0
+        L7:
+            java.lang.String r4 = "<this>"
+            p214m2.C4339q.m9706k(r1, r4)
+            java.lang.String r4 = "missingDelimiterValue"
+            p214m2.C4339q.m9706k(r3, r4)
+            r4 = 0
+            r0 = 6
+            int r2 = m13072c0(r1, r2, r4, r4, r0)
+            r4 = -1
+            if (r2 != r4) goto L1b
+            goto L2a
+        L1b:
+            int r2 = r2 + 1
+            int r3 = r1.length()
+            java.lang.String r3 = r1.substring(r2, r3)
+            java.lang.String r1 = "this as java.lang.String\u2026ing(startIndex, endIndex)"
+            p214m2.C4339q.m9705j(r3, r1)
+        L2a:
+            return r3
+    }
+
+    /* renamed from: n0 */
+    public static final java.lang.CharSequence m13083n0(java.lang.CharSequence r5) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r5, r0)
+            int r0 = r5.length()
+            r1 = 1
+            int r0 = r0 - r1
+            r2 = 0
+            r3 = 0
+        Ld:
+            if (r2 > r0) goto L2b
+            if (r3 != 0) goto L13
+            r4 = r2
+            goto L14
+        L13:
+            r4 = r0
+        L14:
+            char r4 = r5.charAt(r4)
+            boolean r4 = gh.C2390b.m6128r(r4)
+            if (r3 != 0) goto L25
+            if (r4 != 0) goto L22
+            r3 = 1
+            goto Ld
+        L22:
+            int r2 = r2 + 1
+            goto Ld
+        L25:
+            if (r4 != 0) goto L28
+            goto L2b
+        L28:
+            int r0 = r0 + (-1)
+            goto Ld
+        L2b:
+            int r0 = r0 + r1
+            java.lang.CharSequence r5 = r5.subSequence(r2, r0)
+            return r5
+    }
+}
+package p362uh;
+
+/* renamed from: uh.n */
+/* loaded from: classes.dex */
+public class C6468n extends p362uh.C6467m {
+}
+package p362uh;
+
+/* renamed from: uh.o */
+/* loaded from: classes.dex */
+public class C6469o extends p362uh.C6468n {
+    /* renamed from: o0 */
+    public static final java.lang.String m13084o0(java.lang.String r2, int r3) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r2, r0)
+            r0 = 0
+            if (r3 < 0) goto La
+            r1 = 1
+            goto Lb
+        La:
+            r1 = 0
+        Lb:
+            if (r1 == 0) goto L1e
+            int r1 = r2.length()
+            if (r3 <= r1) goto L14
+            r3 = r1
+        L14:
+            java.lang.String r2 = r2.substring(r0, r3)
+            java.lang.String r3 = "this as java.lang.String\u2026ing(startIndex, endIndex)"
+            p214m2.C4339q.m9705j(r2, r3)
+            return r2
+        L1e:
+            java.lang.String r2 = "Requested character count "
+            java.lang.String r0 = " is less than zero."
+            java.lang.String r2 = android.support.v4.media.C0146e.m258a(r2, r3, r0)
+            java.lang.IllegalArgumentException r3 = new java.lang.IllegalArgumentException
+            java.lang.String r2 = r2.toString()
+            r3.<init>(r2)
+            throw r3
+    }
+
+    /* renamed from: p0 */
+    public static final java.lang.String m13085p0(java.lang.String r1, int r2) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r1, r0)
+            if (r2 < 0) goto L9
+            r0 = 1
+            goto La
+        L9:
+            r0 = 0
+        La:
+            if (r0 == 0) goto L1e
+            int r0 = r1.length()
+            if (r2 <= r0) goto L13
+            r2 = r0
+        L13:
+            int r0 = r0 - r2
+            java.lang.String r1 = r1.substring(r0)
+            java.lang.String r2 = "this as java.lang.String).substring(startIndex)"
+            p214m2.C4339q.m9705j(r1, r2)
+            return r1
+        L1e:
+            java.lang.String r1 = "Requested character count "
+            java.lang.String r0 = " is less than zero."
+            java.lang.String r1 = android.support.v4.media.C0146e.m258a(r1, r2, r0)
+            java.lang.IllegalArgumentException r2 = new java.lang.IllegalArgumentException
+            java.lang.String r1 = r1.toString()
+            r2.<init>(r1)
+            throw r2
+    }
+}

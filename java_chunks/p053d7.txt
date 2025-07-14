@@ -1,0 +1,443 @@
+package p053d7;
+
+/* renamed from: d7.a */
+/* loaded from: classes.dex */
+public class BinderC1339a extends android.os.Binder implements android.os.IInterface {
+    public BinderC1339a(java.lang.String r1) {
+            r0 = this;
+            r0.<init>()
+            r0.attachInterface(r0, r1)
+            return
+    }
+
+    @Override // android.os.IInterface
+    public android.os.IBinder asBinder() {
+            r0 = this;
+            return r0
+    }
+
+    @Override // android.os.Binder
+    public boolean onTransact(int r3, android.os.Parcel r4, android.os.Parcel r5, int r6) {
+            r2 = this;
+            r0 = 0
+            r1 = 16777215(0xffffff, float:2.3509886E-38)
+            if (r3 <= r1) goto Lb
+            boolean r6 = super.onTransact(r3, r4, r5, r6)
+            goto L13
+        Lb:
+            java.lang.String r6 = r2.getInterfaceDescriptor()
+            r4.enforceInterface(r6)
+            r6 = 0
+        L13:
+            r1 = 1
+            if (r6 == 0) goto L17
+            return r1
+        L17:
+            r6 = r2
+            q7.e r6 = (p287q7.AbstractBinderC5587e) r6
+            switch(r3) {
+                case 3: goto L56;
+                case 4: goto L4d;
+                case 5: goto L1d;
+                case 6: goto L4d;
+                case 7: goto L3c;
+                case 8: goto L27;
+                case 9: goto L1e;
+                default: goto L1d;
+            }
+        L1d:
+            goto L6a
+        L1e:
+            android.os.Parcelable$Creator<q7.j> r3 = p287q7.C5592j.CREATOR
+            android.os.Parcelable r3 = p053d7.C1341c.m3841a(r4, r3)
+            q7.j r3 = (p287q7.C5592j) r3
+            goto L66
+        L27:
+            android.os.Parcelable$Creator<q7.l> r3 = p287q7.C5594l.CREATOR
+            android.os.Parcelable r3 = p053d7.C1341c.m3841a(r4, r3)
+            q7.l r3 = (p287q7.C5594l) r3
+            m6.t r6 = (p218m6.BinderC4407t) r6
+            android.os.Handler r4 = r6.f17980b
+            h6.a0 r0 = new h6.a0
+            r0.<init>(r6, r3)
+            r4.post(r0)
+            goto L66
+        L3c:
+            android.os.Parcelable$Creator<com.google.android.gms.common.api.Status> r3 = com.google.android.gms.common.api.Status.CREATOR
+            android.os.Parcelable r3 = p053d7.C1341c.m3841a(r4, r3)
+            com.google.android.gms.common.api.Status r3 = (com.google.android.gms.common.api.Status) r3
+            android.os.Parcelable$Creator<com.google.android.gms.auth.api.signin.GoogleSignInAccount> r3 = com.google.android.gms.auth.api.signin.GoogleSignInAccount.CREATOR
+            android.os.Parcelable r3 = p053d7.C1341c.m3841a(r4, r3)
+            com.google.android.gms.auth.api.signin.GoogleSignInAccount r3 = (com.google.android.gms.auth.api.signin.GoogleSignInAccount) r3
+            goto L66
+        L4d:
+            android.os.Parcelable$Creator<com.google.android.gms.common.api.Status> r3 = com.google.android.gms.common.api.Status.CREATOR
+            android.os.Parcelable r3 = p053d7.C1341c.m3841a(r4, r3)
+            com.google.android.gms.common.api.Status r3 = (com.google.android.gms.common.api.Status) r3
+            goto L66
+        L56:
+            android.os.Parcelable$Creator<k6.b> r3 = p184k6.C3698b.CREATOR
+            android.os.Parcelable r3 = p053d7.C1341c.m3841a(r4, r3)
+            k6.b r3 = (p184k6.C3698b) r3
+            android.os.Parcelable$Creator<q7.b> r3 = p287q7.C5584b.CREATOR
+            android.os.Parcelable r3 = p053d7.C1341c.m3841a(r4, r3)
+            q7.b r3 = (p287q7.C5584b) r3
+        L66:
+            r5.writeNoException()
+            r0 = 1
+        L6a:
+            return r0
+    }
+}
+package p053d7;
+
+/* renamed from: d7.b */
+/* loaded from: classes.dex */
+public class C1340b implements android.os.IInterface {
+
+    /* renamed from: a */
+    public final /* synthetic */ int f6852a;
+
+    /* renamed from: b */
+    public final android.os.IBinder f6853b;
+
+    /* renamed from: c */
+    public final java.lang.String f6854c;
+
+    public C1340b(android.os.IBinder r2, java.lang.String r3, int r4) {
+            r1 = this;
+            r1.f6852a = r4
+            r0 = 1
+            if (r4 == r0) goto L2e
+            r0 = 2
+            if (r4 == r0) goto L26
+            r0 = 3
+            if (r4 == r0) goto L1e
+            r0 = 4
+            if (r4 == r0) goto L16
+            r1.<init>()
+            r1.f6853b = r2
+            r1.f6854c = r3
+            return
+        L16:
+            r1.<init>()
+            r1.f6853b = r2
+            r1.f6854c = r3
+            return
+        L1e:
+            r1.<init>()
+            r1.f6853b = r2
+            r1.f6854c = r3
+            return
+        L26:
+            r1.<init>()
+            r1.f6853b = r2
+            r1.f6854c = r3
+            return
+        L2e:
+            r1.<init>()
+            r1.f6853b = r2
+            r1.f6854c = r3
+            return
+    }
+
+    /* renamed from: H */
+    public void m3833H(int r4, android.os.Parcel r5) {
+            r3 = this;
+            android.os.IBinder r0 = r3.f6853b     // Catch: java.lang.Throwable -> Lb
+            r1 = 0
+            r2 = 1
+            r0.transact(r4, r5, r1, r2)     // Catch: java.lang.Throwable -> Lb
+            r5.recycle()
+            return
+        Lb:
+            r4 = move-exception
+            r5.recycle()
+            throw r4
+    }
+
+    @Override // android.os.IInterface
+    public android.os.IBinder asBinder() {
+            r1 = this;
+            int r0 = r1.f6852a
+            switch(r0) {
+                case 0: goto Lf;
+                case 1: goto Lc;
+                case 2: goto L9;
+                case 3: goto L6;
+                default: goto L5;
+            }
+        L5:
+            goto L12
+        L6:
+            android.os.IBinder r0 = r1.f6853b
+            return r0
+        L9:
+            android.os.IBinder r0 = r1.f6853b
+            return r0
+        Lc:
+            android.os.IBinder r0 = r1.f6853b
+            return r0
+        Lf:
+            android.os.IBinder r0 = r1.f6853b
+            return r0
+        L12:
+            android.os.IBinder r0 = r1.f6853b
+            return r0
+    }
+
+    /* renamed from: k2 */
+    public android.os.Parcel m3834k2() {
+            r2 = this;
+            int r0 = r2.f6852a
+            switch(r0) {
+                case 1: goto L10;
+                case 2: goto L5;
+                case 3: goto L6;
+                default: goto L5;
+            }
+        L5:
+            goto L1a
+        L6:
+            android.os.Parcel r0 = android.os.Parcel.obtain()
+            java.lang.String r1 = r2.f6854c
+            r0.writeInterfaceToken(r1)
+            return r0
+        L10:
+            android.os.Parcel r0 = android.os.Parcel.obtain()
+            java.lang.String r1 = r2.f6854c
+            r0.writeInterfaceToken(r1)
+            return r0
+        L1a:
+            android.os.Parcel r0 = android.os.Parcel.obtain()
+            java.lang.String r1 = r2.f6854c
+            r0.writeInterfaceToken(r1)
+            return r0
+    }
+
+    /* renamed from: l2 */
+    public android.os.Parcel m3835l2(int r4, android.os.Parcel r5) {
+            r3 = this;
+            android.os.Parcel r0 = android.os.Parcel.obtain()
+            android.os.IBinder r1 = r3.f6853b     // Catch: java.lang.Throwable -> L11 java.lang.RuntimeException -> L13
+            r2 = 0
+            r1.transact(r4, r5, r0, r2)     // Catch: java.lang.Throwable -> L11 java.lang.RuntimeException -> L13
+            r0.readException()     // Catch: java.lang.Throwable -> L11 java.lang.RuntimeException -> L13
+            r5.recycle()
+            return r0
+        L11:
+            r4 = move-exception
+            goto L18
+        L13:
+            r4 = move-exception
+            r0.recycle()     // Catch: java.lang.Throwable -> L11
+            throw r4     // Catch: java.lang.Throwable -> L11
+        L18:
+            r5.recycle()
+            throw r4
+    }
+
+    /* renamed from: m2 */
+    public android.os.Parcel m3836m2(int r4, android.os.Parcel r5) {
+            r3 = this;
+            int r0 = r3.f6852a
+            r1 = 0
+            switch(r0) {
+                case 1: goto L7;
+                default: goto L6;
+            }
+        L6:
+            goto L22
+        L7:
+            android.os.Parcel r0 = android.os.Parcel.obtain()
+            android.os.IBinder r2 = r3.f6853b     // Catch: java.lang.Throwable -> L17 java.lang.RuntimeException -> L19
+            r2.transact(r4, r5, r0, r1)     // Catch: java.lang.Throwable -> L17 java.lang.RuntimeException -> L19
+            r0.readException()     // Catch: java.lang.Throwable -> L17 java.lang.RuntimeException -> L19
+            r5.recycle()
+            return r0
+        L17:
+            r4 = move-exception
+            goto L1e
+        L19:
+            r4 = move-exception
+            r0.recycle()     // Catch: java.lang.Throwable -> L17
+            throw r4     // Catch: java.lang.Throwable -> L17
+        L1e:
+            r5.recycle()
+            throw r4
+        L22:
+            android.os.Parcel r0 = android.os.Parcel.obtain()
+            android.os.IBinder r2 = r3.f6853b     // Catch: java.lang.Throwable -> L32 java.lang.RuntimeException -> L34
+            r2.transact(r4, r5, r0, r1)     // Catch: java.lang.Throwable -> L32 java.lang.RuntimeException -> L34
+            r0.readException()     // Catch: java.lang.Throwable -> L32 java.lang.RuntimeException -> L34
+            r5.recycle()
+            return r0
+        L32:
+            r4 = move-exception
+            goto L39
+        L34:
+            r4 = move-exception
+            r0.recycle()     // Catch: java.lang.Throwable -> L32
+            throw r4     // Catch: java.lang.Throwable -> L32
+        L39:
+            r5.recycle()
+            throw r4
+    }
+
+    /* renamed from: n2 */
+    public void m3837n2(int r4, android.os.Parcel r5) {
+            r3 = this;
+            int r0 = r3.f6852a
+            r1 = 0
+            switch(r0) {
+                case 1: goto L7;
+                default: goto L6;
+            }
+        L6:
+            goto L22
+        L7:
+            android.os.Parcel r0 = android.os.Parcel.obtain()
+            android.os.IBinder r2 = r3.f6853b     // Catch: java.lang.Throwable -> L1a
+            r2.transact(r4, r5, r0, r1)     // Catch: java.lang.Throwable -> L1a
+            r0.readException()     // Catch: java.lang.Throwable -> L1a
+            r5.recycle()
+            r0.recycle()
+            return
+        L1a:
+            r4 = move-exception
+            r5.recycle()
+            r0.recycle()
+            throw r4
+        L22:
+            android.os.Parcel r0 = android.os.Parcel.obtain()
+            android.os.IBinder r2 = r3.f6853b     // Catch: java.lang.Throwable -> L35
+            r2.transact(r4, r5, r0, r1)     // Catch: java.lang.Throwable -> L35
+            r0.readException()     // Catch: java.lang.Throwable -> L35
+            r5.recycle()
+            r0.recycle()
+            return
+        L35:
+            r4 = move-exception
+            r5.recycle()
+            r0.recycle()
+            throw r4
+    }
+
+    /* renamed from: o2 */
+    public void m3838o2(int r4, android.os.Parcel r5) {
+            r3 = this;
+            android.os.IBinder r0 = r3.f6853b     // Catch: java.lang.Throwable -> Lb
+            r1 = 0
+            r2 = 1
+            r0.transact(r4, r5, r1, r2)     // Catch: java.lang.Throwable -> Lb
+            r5.recycle()
+            return
+        Lb:
+            r4 = move-exception
+            r5.recycle()
+            throw r4
+    }
+
+    /* renamed from: v */
+    public android.os.Parcel m3839v() {
+            r2 = this;
+            android.os.Parcel r0 = android.os.Parcel.obtain()
+            java.lang.String r1 = r2.f6854c
+            r0.writeInterfaceToken(r1)
+            return r0
+    }
+
+    /* renamed from: x */
+    public void m3840x(int r4, android.os.Parcel r5) {
+            r3 = this;
+            android.os.Parcel r0 = android.os.Parcel.obtain()
+            android.os.IBinder r1 = r3.f6853b     // Catch: java.lang.Throwable -> L14
+            r2 = 0
+            r1.transact(r4, r5, r0, r2)     // Catch: java.lang.Throwable -> L14
+            r0.readException()     // Catch: java.lang.Throwable -> L14
+            r5.recycle()
+            r0.recycle()
+            return
+        L14:
+            r4 = move-exception
+            r5.recycle()
+            r0.recycle()
+            throw r4
+    }
+}
+package p053d7;
+
+/* renamed from: d7.c */
+/* loaded from: classes.dex */
+public class C1341c {
+
+    /* renamed from: a */
+    public static final /* synthetic */ int f6855a = 0;
+
+    static {
+            java.lang.Class<d7.c> r0 = p053d7.C1341c.class
+            r0.getClassLoader()
+            return
+    }
+
+    public C1341c() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    /* renamed from: a */
+    public static <T extends android.os.Parcelable> T m3841a(android.os.Parcel r1, android.os.Parcelable.Creator<T> r2) {
+            int r0 = r1.readInt()
+            if (r0 != 0) goto L8
+            r1 = 0
+            return r1
+        L8:
+            java.lang.Object r1 = r2.createFromParcel(r1)
+            android.os.Parcelable r1 = (android.os.Parcelable) r1
+            return r1
+    }
+}
+package p053d7;
+
+/* renamed from: d7.d */
+/* loaded from: classes.dex */
+public final class C1342d {
+
+    /* renamed from: a */
+    public static final p184k6.C3701d f6856a = null;
+
+    /* renamed from: b */
+    public static final p184k6.C3701d[] f6857b = null;
+
+    static {
+            k6.d r0 = new k6.d
+            java.lang.String r1 = "CLIENT_TELEMETRY"
+            r2 = 1
+            r0.<init>(r1, r2)
+            p053d7.C1342d.f6856a = r0
+            r1 = 1
+            k6.d[] r1 = new p184k6.C3701d[r1]
+            r2 = 0
+            r1[r2] = r0
+            p053d7.C1342d.f6857b = r1
+            return
+    }
+}
+package p053d7;
+
+/* renamed from: d7.e */
+/* loaded from: classes.dex */
+public class HandlerC1343e extends android.os.Handler {
+    public HandlerC1343e(android.os.Looper r1) {
+            r0 = this;
+            r0.<init>(r1)
+            return
+    }
+
+    public HandlerC1343e(android.os.Looper r1, android.os.Handler.Callback r2) {
+            r0 = this;
+            r0.<init>(r1, r2)
+            return
+    }
+}

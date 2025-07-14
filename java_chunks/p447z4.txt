@@ -1,0 +1,241 @@
+package p447z4;
+
+/* renamed from: z4.a */
+/* loaded from: classes.dex */
+public final class C7248a implements p427y4.C7110a.b {
+    public static final android.os.Parcelable.Creator<p447z4.C7248a> CREATOR = null;
+
+    /* renamed from: Y */
+    public final int f27852Y;
+
+    /* renamed from: Z */
+    public final java.lang.String f27853Z;
+
+    /* renamed from: z4.a$a */
+    public class a implements android.os.Parcelable.Creator<p447z4.C7248a> {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p447z4.C7248a createFromParcel(android.os.Parcel r3) {
+                r2 = this;
+                java.lang.String r0 = r3.readString()
+                java.util.Objects.requireNonNull(r0)
+                int r3 = r3.readInt()
+                z4.a r1 = new z4.a
+                r1.<init>(r3, r0)
+                return r1
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p447z4.C7248a[] newArray(int r1) {
+                r0 = this;
+                z4.a[] r1 = new p447z4.C7248a[r1]
+                return r1
+        }
+    }
+
+    static {
+            z4.a$a r0 = new z4.a$a
+            r0.<init>()
+            p447z4.C7248a.CREATOR = r0
+            return
+    }
+
+    public C7248a(int r1, java.lang.String r2) {
+            r0 = this;
+            r0.<init>()
+            r0.f27852Y = r1
+            r0.f27853Z = r2
+            return
+    }
+
+    @Override // p427y4.C7110a.b
+    /* renamed from: D */
+    public /* synthetic */ p088f4.C2003e0 mo30D() {
+            r1 = this;
+            f4.e0 r0 = p427y4.C7111b.m14222b(r1)
+            return r0
+    }
+
+    @Override // p427y4.C7110a.b
+    /* renamed from: O */
+    public /* synthetic */ byte[] mo31O() {
+            r1 = this;
+            byte[] r0 = p427y4.C7111b.m14221a(r1)
+            return r0
+    }
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+            r1 = this;
+            r0 = 0
+            return r0
+    }
+
+    @Override // p427y4.C7110a.b
+    /* renamed from: p */
+    public /* synthetic */ void mo32p(p088f4.C2021k0.b r1) {
+            r0 = this;
+            p427y4.C7111b.m14223c(r0, r1)
+            return
+    }
+
+    public java.lang.String toString() {
+            r4 = this;
+            int r0 = r4.f27852Y
+            java.lang.String r1 = r4.f27853Z
+            r2 = 33
+            int r2 = p064e.C1489c.m4038a(r1, r2)
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder
+            r3.<init>(r2)
+            java.lang.String r2 = "Ait(controlCode="
+            r3.append(r2)
+            r3.append(r0)
+            java.lang.String r0 = ",url="
+            r3.append(r0)
+            r3.append(r1)
+            java.lang.String r0 = ")"
+            r3.append(r0)
+            java.lang.String r0 = r3.toString()
+            return r0
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(android.os.Parcel r1, int r2) {
+            r0 = this;
+            java.lang.String r2 = r0.f27853Z
+            r1.writeString(r2)
+            int r2 = r0.f27852Y
+            r1.writeInt(r2)
+            return
+    }
+}
+package p447z4;
+
+/* renamed from: z4.b */
+/* loaded from: classes.dex */
+public final class C7249b extends p427y4.AbstractC7117h {
+    public C7249b() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p427y4.AbstractC7117h
+    /* renamed from: b */
+    public p427y4.C7110a mo33b(p427y4.C7114e r17, java.nio.ByteBuffer r18) {
+            r16 = this;
+            byte r0 = r18.get()
+            r2 = 116(0x74, float:1.63E-43)
+            if (r0 != r2) goto Le9
+            m4.b0 r0 = new m4.b0
+            byte[] r2 = r18.array()
+            int r3 = r18.limit()
+            r0.<init>(r2, r3)
+            r2 = 12
+            r0.m9775t(r2)
+            int r3 = r0.m9766k(r2)
+            int r4 = r0.m9761f()
+            int r4 = r4 + r3
+            r3 = 4
+            int r4 = r4 - r3
+            r5 = 44
+            r0.m9775t(r5)
+            int r5 = r0.m9766k(r2)
+            r0.m9776u(r5)
+            r5 = 16
+            r0.m9775t(r5)
+            java.util.ArrayList r6 = new java.util.ArrayList
+            r6.<init>()
+        L3b:
+            int r7 = r0.m9761f()
+            if (r7 >= r4) goto Ldc
+            r7 = 48
+            r0.m9775t(r7)
+            r7 = 8
+            int r8 = r0.m9766k(r7)
+            r0.m9775t(r3)
+            int r9 = r0.m9766k(r2)
+            int r10 = r0.m9761f()
+            int r10 = r10 + r9
+            r9 = 0
+            r11 = 0
+        L5a:
+            int r12 = r0.m9761f()
+            if (r12 >= r10) goto Lb9
+            int r12 = r0.m9766k(r7)
+            int r13 = r0.m9766k(r7)
+            int r14 = r0.m9761f()
+            int r14 = r14 + r13
+            r15 = 2
+            r1 = 0
+            if (r12 != r15) goto La2
+            int r12 = r0.m9766k(r5)
+            r0.m9775t(r7)
+            r13 = 3
+            if (r12 != r13) goto Lb3
+        L7b:
+            int r12 = r0.m9761f()
+            if (r12 >= r14) goto Lb3
+            int r9 = r0.m9766k(r7)
+            java.nio.charset.Charset r12 = p010a9.C0035c.f80a
+            byte[] r13 = new byte[r9]
+            r0.m9768m(r13, r1, r9)
+            java.lang.String r9 = new java.lang.String
+            r9.<init>(r13, r12)
+            int r12 = r0.m9766k(r7)
+            r13 = 0
+        L96:
+            if (r13 >= r12) goto L7b
+            int r15 = r0.m9766k(r7)
+            r0.m9776u(r15)
+            int r13 = r13 + 1
+            goto L96
+        La2:
+            r15 = 21
+            if (r12 != r15) goto Lb3
+            java.nio.charset.Charset r11 = p010a9.C0035c.f80a
+            byte[] r12 = new byte[r13]
+            r0.m9768m(r12, r1, r13)
+            java.lang.String r1 = new java.lang.String
+            r1.<init>(r12, r11)
+            r11 = r1
+        Lb3:
+            int r14 = r14 * 8
+            r0.m9772q(r14)
+            goto L5a
+        Lb9:
+            int r10 = r10 * 8
+            r0.m9772q(r10)
+            if (r9 == 0) goto L3b
+            if (r11 == 0) goto L3b
+            z4.a r1 = new z4.a
+            int r7 = r11.length()
+            if (r7 == 0) goto Lcf
+            java.lang.String r7 = r9.concat(r11)
+            goto Ld4
+        Lcf:
+            java.lang.String r7 = new java.lang.String
+            r7.<init>(r9)
+        Ld4:
+            r1.<init>(r8, r7)
+            r6.add(r1)
+            goto L3b
+        Ldc:
+            boolean r0 = r6.isEmpty()
+            if (r0 == 0) goto Le3
+            goto Le9
+        Le3:
+            y4.a r1 = new y4.a
+            r1.<init>(r6)
+            goto Lea
+        Le9:
+            r1 = 0
+        Lea:
+            return r1
+    }
+}

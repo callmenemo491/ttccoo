@@ -1,0 +1,269 @@
+package p045d;
+
+/* renamed from: d.a */
+/* loaded from: classes.dex */
+public abstract class AbstractC1255a<I, O> {
+
+    /* renamed from: d.a$a */
+    public static final class a<T> {
+
+        /* renamed from: a */
+        @android.annotation.SuppressLint({"UnknownNullness"})
+        public final T f6732a;
+
+        public a(@android.annotation.SuppressLint({"UnknownNullness"}) T r1) {
+                r0 = this;
+                r0.<init>()
+                r0.f6732a = r1
+                return
+        }
+    }
+
+    public AbstractC1255a() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    /* renamed from: a */
+    public abstract android.content.Intent mo1198a(android.content.Context r1, @android.annotation.SuppressLint({"UnknownNullness"}) I r2);
+
+    /* renamed from: b */
+    public p045d.AbstractC1255a.a<O> mo3704b(android.content.Context r1, @android.annotation.SuppressLint({"UnknownNullness"}) I r2) {
+            r0 = this;
+            r1 = 0
+            return r1
+    }
+
+    @android.annotation.SuppressLint({"UnknownNullness"})
+    /* renamed from: c */
+    public abstract O mo1199c(int r1, android.content.Intent r2);
+}
+package p045d;
+
+/* renamed from: d.b */
+/* loaded from: classes.dex */
+public final class C1256b extends p045d.AbstractC1255a<java.lang.String[], java.util.Map<java.lang.String, java.lang.Boolean>> {
+    public C1256b() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p045d.AbstractC1255a
+    /* renamed from: a */
+    public android.content.Intent mo1198a(android.content.Context r2, java.lang.String[] r3) {
+            r1 = this;
+            java.lang.String[] r3 = (java.lang.String[]) r3
+            android.content.Intent r2 = new android.content.Intent
+            java.lang.String r0 = "androidx.activity.result.contract.action.REQUEST_PERMISSIONS"
+            r2.<init>(r0)
+            java.lang.String r0 = "androidx.activity.result.contract.extra.PERMISSIONS"
+            android.content.Intent r2 = r2.putExtra(r0, r3)
+            return r2
+    }
+
+    @Override // p045d.AbstractC1255a
+    /* renamed from: b */
+    public p045d.AbstractC1255a.a<java.util.Map<java.lang.String, java.lang.Boolean>> mo3704b(android.content.Context r10, java.lang.String[] r11) {
+            r9 = this;
+            java.lang.String[] r11 = (java.lang.String[]) r11
+            if (r11 == 0) goto L36
+            int r0 = r11.length
+            if (r0 != 0) goto L8
+            goto L36
+        L8:
+            s.a r0 = new s.a
+            r0.<init>()
+            int r1 = r11.length
+            r2 = 1
+            r3 = 0
+            r4 = 0
+            r5 = 1
+        L12:
+            if (r4 >= r1) goto L2c
+            r6 = r11[r4]
+            int r7 = p046d0.C1259a.m3705a(r10, r6)
+            if (r7 != 0) goto L1e
+            r7 = 1
+            goto L1f
+        L1e:
+            r7 = 0
+        L1f:
+            java.lang.Boolean r8 = java.lang.Boolean.valueOf(r7)
+            r0.put(r6, r8)
+            if (r7 != 0) goto L29
+            r5 = 0
+        L29:
+            int r4 = r4 + 1
+            goto L12
+        L2c:
+            if (r5 == 0) goto L34
+            d.a$a r10 = new d.a$a
+            r10.<init>(r0)
+            goto L3f
+        L34:
+            r10 = 0
+            goto L3f
+        L36:
+            d.a$a r10 = new d.a$a
+            java.util.Map r11 = java.util.Collections.emptyMap()
+            r10.<init>(r11)
+        L3f:
+            return r10
+    }
+
+    @Override // p045d.AbstractC1255a
+    /* renamed from: c */
+    public java.util.Map<java.lang.String, java.lang.Boolean> mo1199c(int r7, android.content.Intent r8) {
+            r6 = this;
+            r0 = -1
+            if (r7 == r0) goto L8
+        L3:
+            java.util.Map r7 = java.util.Collections.emptyMap()
+            goto L3a
+        L8:
+            if (r8 != 0) goto Lb
+            goto L3
+        Lb:
+            java.lang.String r7 = "androidx.activity.result.contract.extra.PERMISSIONS"
+            java.lang.String[] r7 = r8.getStringArrayExtra(r7)
+            java.lang.String r0 = "androidx.activity.result.contract.extra.PERMISSION_GRANT_RESULTS"
+            int[] r8 = r8.getIntArrayExtra(r0)
+            if (r8 == 0) goto L3
+            if (r7 != 0) goto L1c
+            goto L3
+        L1c:
+            java.util.HashMap r0 = new java.util.HashMap
+            r0.<init>()
+            int r1 = r7.length
+            r2 = 0
+            r3 = 0
+        L24:
+            if (r3 >= r1) goto L39
+            r4 = r7[r3]
+            r5 = r8[r3]
+            if (r5 != 0) goto L2e
+            r5 = 1
+            goto L2f
+        L2e:
+            r5 = 0
+        L2f:
+            java.lang.Boolean r5 = java.lang.Boolean.valueOf(r5)
+            r0.put(r4, r5)
+            int r3 = r3 + 1
+            goto L24
+        L39:
+            r7 = r0
+        L3a:
+            return r7
+    }
+}
+package p045d;
+
+/* renamed from: d.c */
+/* loaded from: classes.dex */
+public final class C1257c extends p045d.AbstractC1255a<java.lang.String, java.lang.Boolean> {
+    public C1257c() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p045d.AbstractC1255a
+    /* renamed from: a */
+    public android.content.Intent mo1198a(android.content.Context r2, java.lang.String r3) {
+            r1 = this;
+            java.lang.String r3 = (java.lang.String) r3
+            r2 = 1
+            java.lang.String[] r2 = new java.lang.String[r2]
+            r0 = 0
+            r2[r0] = r3
+            android.content.Intent r3 = new android.content.Intent
+            java.lang.String r0 = "androidx.activity.result.contract.action.REQUEST_PERMISSIONS"
+            r3.<init>(r0)
+            java.lang.String r0 = "androidx.activity.result.contract.extra.PERMISSIONS"
+            android.content.Intent r2 = r3.putExtra(r0, r2)
+            return r2
+    }
+
+    @Override // p045d.AbstractC1255a
+    /* renamed from: b */
+    public p045d.AbstractC1255a.a<java.lang.Boolean> mo3704b(android.content.Context r1, java.lang.String r2) {
+            r0 = this;
+            java.lang.String r2 = (java.lang.String) r2
+            if (r2 != 0) goto Lc
+            d.a$a r1 = new d.a$a
+            java.lang.Boolean r2 = java.lang.Boolean.FALSE
+            r1.<init>(r2)
+            goto L1b
+        Lc:
+            int r1 = p046d0.C1259a.m3705a(r1, r2)
+            if (r1 != 0) goto L1a
+            d.a$a r1 = new d.a$a
+            java.lang.Boolean r2 = java.lang.Boolean.TRUE
+            r1.<init>(r2)
+            goto L1b
+        L1a:
+            r1 = 0
+        L1b:
+            return r1
+    }
+
+    @Override // p045d.AbstractC1255a
+    /* renamed from: c */
+    public java.lang.Boolean mo1199c(int r2, android.content.Intent r3) {
+            r1 = this;
+            if (r3 == 0) goto L1d
+            r0 = -1
+            if (r2 == r0) goto L6
+            goto L1d
+        L6:
+            java.lang.String r2 = "androidx.activity.result.contract.extra.PERMISSION_GRANT_RESULTS"
+            int[] r2 = r3.getIntArrayExtra(r2)
+            if (r2 == 0) goto L1d
+            int r3 = r2.length
+            if (r3 != 0) goto L12
+            goto L1d
+        L12:
+            r3 = 0
+            r2 = r2[r3]
+            if (r2 != 0) goto L18
+            r3 = 1
+        L18:
+            java.lang.Boolean r2 = java.lang.Boolean.valueOf(r3)
+            goto L1f
+        L1d:
+            java.lang.Boolean r2 = java.lang.Boolean.FALSE
+        L1f:
+            return r2
+    }
+}
+package p045d;
+
+/* renamed from: d.d */
+/* loaded from: classes.dex */
+public final class C1258d extends p045d.AbstractC1255a<android.content.Intent, androidx.activity.result.C0193a> {
+    public C1258d() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p045d.AbstractC1255a
+    /* renamed from: a */
+    public android.content.Intent mo1198a(android.content.Context r1, android.content.Intent r2) {
+            r0 = this;
+            android.content.Intent r2 = (android.content.Intent) r2
+            return r2
+    }
+
+    @Override // p045d.AbstractC1255a
+    /* renamed from: c */
+    public androidx.activity.result.C0193a mo1199c(int r2, android.content.Intent r3) {
+            r1 = this;
+            androidx.activity.result.a r0 = new androidx.activity.result.a
+            r0.<init>(r2, r3)
+            return r0
+    }
+}

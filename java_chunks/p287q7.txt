@@ -1,0 +1,730 @@
+package p287q7;
+
+/* renamed from: q7.e */
+/* loaded from: classes.dex */
+public abstract class AbstractBinderC5587e extends p053d7.BinderC1339a implements p287q7.InterfaceC5588f {
+    public AbstractBinderC5587e() {
+            r1 = this;
+            java.lang.String r0 = "com.google.android.gms.signin.internal.ISignInCallbacks"
+            r1.<init>(r0)
+            return
+    }
+}
+package p287q7;
+
+/* renamed from: q7.c */
+/* loaded from: classes.dex */
+public class BinderC5585c extends p287q7.AbstractBinderC5587e {
+    public BinderC5585c() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+}
+package p287q7;
+
+/* renamed from: q7.a */
+/* loaded from: classes.dex */
+public class C5583a extends p248o6.AbstractC4910h<p287q7.InterfaceC5590h> implements p271p7.InterfaceC5374d {
+
+    /* renamed from: A0 */
+    public final p248o6.C4902d f21729A0;
+
+    /* renamed from: B0 */
+    public final android.os.Bundle f21730B0;
+
+    /* renamed from: C0 */
+    public final java.lang.Integer f21731C0;
+
+    /* renamed from: z0 */
+    public final boolean f21732z0;
+
+    public C5583a(@androidx.annotation.RecentlyNonNull android.content.Context r8, @androidx.annotation.RecentlyNonNull android.os.Looper r9, boolean r10, @androidx.annotation.RecentlyNonNull p248o6.C4902d r11, @androidx.annotation.RecentlyNonNull android.os.Bundle r12, @androidx.annotation.RecentlyNonNull p201l6.AbstractC4184d.a r13, @androidx.annotation.RecentlyNonNull p201l6.AbstractC4184d.b r14) {
+            r7 = this;
+            r3 = 44
+            r0 = r7
+            r1 = r8
+            r2 = r9
+            r4 = r11
+            r5 = r13
+            r6 = r14
+            r0.<init>(r1, r2, r3, r4, r5, r6)
+            r7.f21732z0 = r10
+            r7.f21729A0 = r11
+            r7.f21730B0 = r12
+            java.lang.Integer r8 = r11.f19465h
+            r7.f21731C0 = r8
+            return
+    }
+
+    @Override // p248o6.AbstractC4900c
+    @androidx.annotation.RecentlyNonNull
+    /* renamed from: A */
+    public java.lang.String mo2635A() {
+            r1 = this;
+            java.lang.String r0 = "com.google.android.gms.signin.service.START"
+            return r0
+    }
+
+    @Override // p271p7.InterfaceC5374d
+    /* renamed from: e */
+    public final void mo11727e(p287q7.InterfaceC5588f r6) {
+            r5 = this;
+            o6.d r0 = r5.f21729A0     // Catch: android.os.RemoteException -> L42
+            android.accounts.Account r0 = r0.f19458a     // Catch: android.os.RemoteException -> L42
+            java.lang.String r1 = "<<default account>>"
+            if (r0 == 0) goto L9
+            goto L10
+        L9:
+            android.accounts.Account r0 = new android.accounts.Account     // Catch: android.os.RemoteException -> L42
+            java.lang.String r2 = "com.google"
+            r0.<init>(r1, r2)     // Catch: android.os.RemoteException -> L42
+        L10:
+            r2 = 0
+            java.lang.String r3 = r0.name     // Catch: android.os.RemoteException -> L42
+            boolean r1 = r1.equals(r3)     // Catch: android.os.RemoteException -> L42
+            if (r1 == 0) goto L23
+            android.content.Context r1 = r5.f19417a0     // Catch: android.os.RemoteException -> L42
+            b6.a r1 = p023b6.C0682a.m2242a(r1)     // Catch: android.os.RemoteException -> L42
+            com.google.android.gms.auth.api.signin.GoogleSignInAccount r2 = r1.m2243b()     // Catch: android.os.RemoteException -> L42
+        L23:
+            o6.c0 r1 = new o6.c0     // Catch: android.os.RemoteException -> L42
+            java.lang.Integer r3 = r5.f21731C0     // Catch: android.os.RemoteException -> L42
+            java.lang.String r4 = "null reference"
+            java.util.Objects.requireNonNull(r3, r4)     // Catch: android.os.RemoteException -> L42
+            int r3 = r3.intValue()     // Catch: android.os.RemoteException -> L42
+            r1.<init>(r0, r3, r2)     // Catch: android.os.RemoteException -> L42
+            android.os.IInterface r0 = r5.m11053y()     // Catch: android.os.RemoteException -> L42
+            q7.h r0 = (p287q7.InterfaceC5590h) r0     // Catch: android.os.RemoteException -> L42
+            q7.k r2 = new q7.k     // Catch: android.os.RemoteException -> L42
+            r2.<init>(r1)     // Catch: android.os.RemoteException -> L42
+            r0.mo11870R0(r2, r6)     // Catch: android.os.RemoteException -> L42
+            return
+        L42:
+            r0 = move-exception
+            java.lang.String r1 = "SignInClientImpl"
+            java.lang.String r2 = "Remote service probably died when signIn is called"
+            android.util.Log.w(r1, r2)
+            q7.l r2 = new q7.l     // Catch: android.os.RemoteException -> L5c
+            r2.<init>()     // Catch: android.os.RemoteException -> L5c
+            m6.t r6 = (p218m6.BinderC4407t) r6     // Catch: android.os.RemoteException -> L5c
+            android.os.Handler r3 = r6.f17980b     // Catch: android.os.RemoteException -> L5c
+            h6.a0 r4 = new h6.a0     // Catch: android.os.RemoteException -> L5c
+            r4.<init>(r6, r2)     // Catch: android.os.RemoteException -> L5c
+            r3.post(r4)     // Catch: android.os.RemoteException -> L5c
+            return
+        L5c:
+            java.lang.String r6 = "ISignInCallbacks#onSignInComplete should be executed from the same process, unexpected RemoteException."
+            android.util.Log.wtf(r1, r6, r0)
+            return
+    }
+
+    @Override // p248o6.AbstractC4900c, p201l6.C4181a.e
+    /* renamed from: h */
+    public int mo2636h() {
+            r1 = this;
+            r0 = 12451000(0xbdfcb8, float:1.7447567E-38)
+            return r0
+    }
+
+    @Override // p248o6.AbstractC4900c, p201l6.C4181a.e
+    /* renamed from: o */
+    public boolean mo9323o() {
+            r1 = this;
+            boolean r0 = r1.f21732z0
+            return r0
+    }
+
+    @Override // p271p7.InterfaceC5374d
+    /* renamed from: p */
+    public final void mo11728p() {
+            r1 = this;
+            o6.c$d r0 = new o6.c$d
+            r0.<init>(r1)
+            r1.m11049q(r0)
+            return
+    }
+
+    @Override // p248o6.AbstractC4900c
+    @androidx.annotation.RecentlyNonNull
+    /* renamed from: s */
+    public /* synthetic */ android.os.IInterface mo2637s(@androidx.annotation.RecentlyNonNull android.os.IBinder r3) {
+            r2 = this;
+            if (r3 != 0) goto L4
+            r3 = 0
+            return r3
+        L4:
+            java.lang.String r0 = "com.google.android.gms.signin.internal.ISignInService"
+            android.os.IInterface r0 = r3.queryLocalInterface(r0)
+            boolean r1 = r0 instanceof p287q7.InterfaceC5590h
+            if (r1 == 0) goto L11
+            q7.h r0 = (p287q7.InterfaceC5590h) r0
+            return r0
+        L11:
+            q7.g r0 = new q7.g
+            r0.<init>(r3)
+            return r0
+    }
+
+    @Override // p248o6.AbstractC4900c
+    @androidx.annotation.RecentlyNonNull
+    /* renamed from: w */
+    public android.os.Bundle mo6391w() {
+            r3 = this;
+            o6.d r0 = r3.f21729A0
+            java.lang.String r0 = r0.f19462e
+            android.content.Context r1 = r3.f19417a0
+            java.lang.String r1 = r1.getPackageName()
+            boolean r0 = r1.equals(r0)
+            if (r0 != 0) goto L1b
+            android.os.Bundle r0 = r3.f21730B0
+            o6.d r1 = r3.f21729A0
+            java.lang.String r1 = r1.f19462e
+            java.lang.String r2 = "com.google.android.gms.signin.internal.realClientPackageName"
+            r0.putString(r2, r1)
+        L1b:
+            android.os.Bundle r0 = r3.f21730B0
+            return r0
+    }
+
+    @Override // p248o6.AbstractC4900c
+    @androidx.annotation.RecentlyNonNull
+    /* renamed from: z */
+    public java.lang.String mo2639z() {
+            r1 = this;
+            java.lang.String r0 = "com.google.android.gms.signin.internal.ISignInService"
+            return r0
+    }
+}
+package p287q7;
+
+/* renamed from: q7.b */
+/* loaded from: classes.dex */
+public final class C5584b extends p270p6.AbstractC5367a implements p201l6.InterfaceC4188h {
+    public static final android.os.Parcelable.Creator<p287q7.C5584b> CREATOR = null;
+
+    /* renamed from: Y */
+    public final int f21733Y;
+
+    /* renamed from: Z */
+    public int f21734Z;
+
+    /* renamed from: a0 */
+    public android.content.Intent f21735a0;
+
+    static {
+            q7.d r0 = new q7.d
+            r0.<init>()
+            p287q7.C5584b.CREATOR = r0
+            return
+    }
+
+    public C5584b() {
+            r1 = this;
+            r1.<init>()
+            r0 = 2
+            r1.f21733Y = r0
+            r0 = 0
+            r1.f21734Z = r0
+            r0 = 0
+            r1.f21735a0 = r0
+            return
+    }
+
+    public C5584b(int r1, int r2, android.content.Intent r3) {
+            r0 = this;
+            r0.<init>()
+            r0.f21733Y = r1
+            r0.f21734Z = r2
+            r0.f21735a0 = r3
+            return
+    }
+
+    @Override // p201l6.InterfaceC4188h
+    /* renamed from: F */
+    public final com.google.android.gms.common.api.Status mo3030F() {
+            r1 = this;
+            int r0 = r1.f21734Z
+            if (r0 != 0) goto L7
+            com.google.android.gms.common.api.Status r0 = com.google.android.gms.common.api.Status.f5532d0
+            return r0
+        L7:
+            com.google.android.gms.common.api.Status r0 = com.google.android.gms.common.api.Status.f5534f0
+            return r0
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(android.os.Parcel r5, int r6) {
+            r4 = this;
+            r0 = 20293(0x4f45, float:2.8437E-41)
+            int r0 = p270p6.C5369c.m11723k(r5, r0)
+            r1 = 1
+            int r2 = r4.f21733Y
+            r3 = 4
+            p270p6.C5369c.m11724l(r5, r1, r3)
+            r5.writeInt(r2)
+            r1 = 2
+            int r2 = r4.f21734Z
+            p270p6.C5369c.m11724l(r5, r1, r3)
+            r5.writeInt(r2)
+            r1 = 3
+            android.content.Intent r2 = r4.f21735a0
+            r3 = 0
+            p270p6.C5369c.m11718f(r5, r1, r2, r6, r3)
+            p270p6.C5369c.m11726n(r5, r0)
+            return
+    }
+}
+package p287q7;
+
+/* renamed from: q7.d */
+/* loaded from: classes.dex */
+public final class C5586d implements android.os.Parcelable.Creator<p287q7.C5584b> {
+    public C5586d() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final p287q7.C5584b createFromParcel(android.os.Parcel r8) {
+            r7 = this;
+            int r0 = p270p6.C5368b.m11710t(r8)
+            r1 = 0
+            r2 = 0
+            r3 = r2
+            r2 = 0
+        L8:
+            int r4 = r8.dataPosition()
+            if (r4 >= r0) goto L36
+            int r4 = r8.readInt()
+            r5 = 65535(0xffff, float:9.1834E-41)
+            r5 = r5 & r4
+            r6 = 1
+            if (r5 == r6) goto L31
+            r6 = 2
+            if (r5 == r6) goto L2c
+            r6 = 3
+            if (r5 == r6) goto L23
+            p270p6.C5368b.m11709s(r8, r4)
+            goto L8
+        L23:
+            android.os.Parcelable$Creator r3 = android.content.Intent.CREATOR
+            android.os.Parcelable r3 = p270p6.C5368b.m11694d(r8, r4, r3)
+            android.content.Intent r3 = (android.content.Intent) r3
+            goto L8
+        L2c:
+            int r2 = p270p6.C5368b.m11705o(r8, r4)
+            goto L8
+        L31:
+            int r1 = p270p6.C5368b.m11705o(r8, r4)
+            goto L8
+        L36:
+            p270p6.C5368b.m11699i(r8, r0)
+            q7.b r8 = new q7.b
+            r8.<init>(r1, r2, r3)
+            return r8
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* synthetic */ p287q7.C5584b[] newArray(int r1) {
+            r0 = this;
+            q7.b[] r1 = new p287q7.C5584b[r1]
+            return r1
+    }
+}
+package p287q7;
+
+/* renamed from: q7.g */
+/* loaded from: classes.dex */
+public final class C5589g extends p053d7.C1340b implements p287q7.InterfaceC5590h {
+    public C5589g(android.os.IBinder r3) {
+            r2 = this;
+            java.lang.String r0 = "com.google.android.gms.signin.internal.ISignInService"
+            r1 = 0
+            r2.<init>(r3, r0, r1)
+            return
+    }
+
+    @Override // p287q7.InterfaceC5590h
+    /* renamed from: R0 */
+    public final void mo11870R0(p287q7.C5593k r4, p287q7.InterfaceC5588f r5) {
+            r3 = this;
+            android.os.Parcel r0 = android.os.Parcel.obtain()
+            java.lang.String r1 = r3.f6854c
+            r0.writeInterfaceToken(r1)
+            int r1 = p053d7.C1341c.f6855a
+            r1 = 1
+            r0.writeInt(r1)
+            r1 = 0
+            r4.writeToParcel(r0, r1)
+            d7.a r5 = (p053d7.BinderC1339a) r5
+            r0.writeStrongBinder(r5)
+            r4 = 12
+            android.os.Parcel r5 = android.os.Parcel.obtain()
+            android.os.IBinder r2 = r3.f6853b     // Catch: java.lang.Throwable -> L2d
+            r2.transact(r4, r0, r5, r1)     // Catch: java.lang.Throwable -> L2d
+            r5.readException()     // Catch: java.lang.Throwable -> L2d
+            r0.recycle()
+            r5.recycle()
+            return
+        L2d:
+            r4 = move-exception
+            r0.recycle()
+            r5.recycle()
+            throw r4
+    }
+}
+package p287q7;
+
+/* renamed from: q7.i */
+/* loaded from: classes.dex */
+public final class C5591i implements android.os.Parcelable.Creator<p287q7.C5592j> {
+    public C5591i() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final p287q7.C5592j createFromParcel(android.os.Parcel r7) {
+            r6 = this;
+            int r0 = p270p6.C5368b.m11710t(r7)
+            r1 = 0
+            r2 = r1
+        L6:
+            int r3 = r7.dataPosition()
+            if (r3 >= r0) goto L28
+            int r3 = r7.readInt()
+            r4 = 65535(0xffff, float:9.1834E-41)
+            r4 = r4 & r3
+            r5 = 1
+            if (r4 == r5) goto L23
+            r5 = 2
+            if (r4 == r5) goto L1e
+            p270p6.C5368b.m11709s(r7, r3)
+            goto L6
+        L1e:
+            java.lang.String r2 = p270p6.C5368b.m11695e(r7, r3)
+            goto L6
+        L23:
+            java.util.ArrayList r1 = p270p6.C5368b.m11696f(r7, r3)
+            goto L6
+        L28:
+            p270p6.C5368b.m11699i(r7, r0)
+            q7.j r7 = new q7.j
+            r7.<init>(r1, r2)
+            return r7
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* synthetic */ p287q7.C5592j[] newArray(int r1) {
+            r0 = this;
+            q7.j[] r1 = new p287q7.C5592j[r1]
+            return r1
+    }
+}
+package p287q7;
+
+/* renamed from: q7.j */
+/* loaded from: classes.dex */
+public final class C5592j extends p270p6.AbstractC5367a implements p201l6.InterfaceC4188h {
+    public static final android.os.Parcelable.Creator<p287q7.C5592j> CREATOR = null;
+
+    /* renamed from: Y */
+    public final java.util.List<java.lang.String> f21736Y;
+
+    /* renamed from: Z */
+    public final java.lang.String f21737Z;
+
+    static {
+            q7.i r0 = new q7.i
+            r0.<init>()
+            p287q7.C5592j.CREATOR = r0
+            return
+    }
+
+    public C5592j(java.util.List<java.lang.String> r1, java.lang.String r2) {
+            r0 = this;
+            r0.<init>()
+            r0.f21736Y = r1
+            r0.f21737Z = r2
+            return
+    }
+
+    @Override // p201l6.InterfaceC4188h
+    /* renamed from: F */
+    public final com.google.android.gms.common.api.Status mo3030F() {
+            r1 = this;
+            java.lang.String r0 = r1.f21737Z
+            if (r0 == 0) goto L7
+            com.google.android.gms.common.api.Status r0 = com.google.android.gms.common.api.Status.f5532d0
+            return r0
+        L7:
+            com.google.android.gms.common.api.Status r0 = com.google.android.gms.common.api.Status.f5534f0
+            return r0
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(android.os.Parcel r4, int r5) {
+            r3 = this;
+            r5 = 20293(0x4f45, float:2.8437E-41)
+            int r5 = p270p6.C5369c.m11723k(r4, r5)
+            r0 = 1
+            java.util.List<java.lang.String> r1 = r3.f21736Y
+            r2 = 0
+            p270p6.C5369c.m11720h(r4, r0, r1, r2)
+            r0 = 2
+            java.lang.String r1 = r3.f21737Z
+            p270p6.C5369c.m11719g(r4, r0, r1, r2)
+            p270p6.C5369c.m11726n(r4, r5)
+            return
+    }
+}
+package p287q7;
+
+/* renamed from: q7.k */
+/* loaded from: classes.dex */
+public final class C5593k extends p270p6.AbstractC5367a {
+    public static final android.os.Parcelable.Creator<p287q7.C5593k> CREATOR = null;
+
+    /* renamed from: Y */
+    public final int f21738Y;
+
+    /* renamed from: Z */
+    public final p248o6.C4901c0 f21739Z;
+
+    static {
+            q7.m r0 = new q7.m
+            r0.<init>()
+            p287q7.C5593k.CREATOR = r0
+            return
+    }
+
+    public C5593k(int r1, p248o6.C4901c0 r2) {
+            r0 = this;
+            r0.<init>()
+            r0.f21738Y = r1
+            r0.f21739Z = r2
+            return
+    }
+
+    public C5593k(p248o6.C4901c0 r2) {
+            r1 = this;
+            r1.<init>()
+            r0 = 1
+            r1.f21738Y = r0
+            r1.f21739Z = r2
+            return
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(android.os.Parcel r5, int r6) {
+            r4 = this;
+            r0 = 20293(0x4f45, float:2.8437E-41)
+            int r0 = p270p6.C5369c.m11723k(r5, r0)
+            r1 = 1
+            int r2 = r4.f21738Y
+            r3 = 4
+            p270p6.C5369c.m11724l(r5, r1, r3)
+            r5.writeInt(r2)
+            r1 = 2
+            o6.c0 r2 = r4.f21739Z
+            r3 = 0
+            p270p6.C5369c.m11718f(r5, r1, r2, r6, r3)
+            p270p6.C5369c.m11726n(r5, r0)
+            return
+    }
+}
+package p287q7;
+
+/* renamed from: q7.l */
+/* loaded from: classes.dex */
+public final class C5594l extends p270p6.AbstractC5367a {
+    public static final android.os.Parcelable.Creator<p287q7.C5594l> CREATOR = null;
+
+    /* renamed from: Y */
+    public final int f21740Y;
+
+    /* renamed from: Z */
+    public final p184k6.C3698b f21741Z;
+
+    /* renamed from: a0 */
+    public final p248o6.C4903d0 f21742a0;
+
+    static {
+            q7.n r0 = new q7.n
+            r0.<init>()
+            p287q7.C5594l.CREATOR = r0
+            return
+    }
+
+    public C5594l() {
+            r3 = this;
+            k6.b r0 = new k6.b
+            r1 = 8
+            r2 = 0
+            r0.<init>(r1, r2)
+            r3.<init>()
+            r1 = 1
+            r3.f21740Y = r1
+            r3.f21741Z = r0
+            r3.f21742a0 = r2
+            return
+    }
+
+    public C5594l(int r1, p184k6.C3698b r2, p248o6.C4903d0 r3) {
+            r0 = this;
+            r0.<init>()
+            r0.f21740Y = r1
+            r0.f21741Z = r2
+            r0.f21742a0 = r3
+            return
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(android.os.Parcel r5, int r6) {
+            r4 = this;
+            r0 = 20293(0x4f45, float:2.8437E-41)
+            int r0 = p270p6.C5369c.m11723k(r5, r0)
+            r1 = 1
+            int r2 = r4.f21740Y
+            r3 = 4
+            p270p6.C5369c.m11724l(r5, r1, r3)
+            r5.writeInt(r2)
+            r1 = 2
+            k6.b r2 = r4.f21741Z
+            r3 = 0
+            p270p6.C5369c.m11718f(r5, r1, r2, r6, r3)
+            r1 = 3
+            o6.d0 r2 = r4.f21742a0
+            p270p6.C5369c.m11718f(r5, r1, r2, r6, r3)
+            p270p6.C5369c.m11726n(r5, r0)
+            return
+    }
+}
+package p287q7;
+
+/* renamed from: q7.m */
+/* loaded from: classes.dex */
+public final class C5595m implements android.os.Parcelable.Creator<p287q7.C5593k> {
+    public C5595m() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final p287q7.C5593k createFromParcel(android.os.Parcel r7) {
+            r6 = this;
+            int r0 = p270p6.C5368b.m11710t(r7)
+            r1 = 0
+            r2 = 0
+        L6:
+            int r3 = r7.dataPosition()
+            if (r3 >= r0) goto L2c
+            int r3 = r7.readInt()
+            r4 = 65535(0xffff, float:9.1834E-41)
+            r4 = r4 & r3
+            r5 = 1
+            if (r4 == r5) goto L27
+            r5 = 2
+            if (r4 == r5) goto L1e
+            p270p6.C5368b.m11709s(r7, r3)
+            goto L6
+        L1e:
+            android.os.Parcelable$Creator<o6.c0> r2 = p248o6.C4901c0.CREATOR
+            android.os.Parcelable r2 = p270p6.C5368b.m11694d(r7, r3, r2)
+            o6.c0 r2 = (p248o6.C4901c0) r2
+            goto L6
+        L27:
+            int r1 = p270p6.C5368b.m11705o(r7, r3)
+            goto L6
+        L2c:
+            p270p6.C5368b.m11699i(r7, r0)
+            q7.k r7 = new q7.k
+            r7.<init>(r1, r2)
+            return r7
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* synthetic */ p287q7.C5593k[] newArray(int r1) {
+            r0 = this;
+            q7.k[] r1 = new p287q7.C5593k[r1]
+            return r1
+    }
+}
+package p287q7;
+
+/* renamed from: q7.n */
+/* loaded from: classes.dex */
+public final class C5596n implements android.os.Parcelable.Creator<p287q7.C5594l> {
+    public C5596n() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final p287q7.C5594l createFromParcel(android.os.Parcel r8) {
+            r7 = this;
+            int r0 = p270p6.C5368b.m11710t(r8)
+            r1 = 0
+            r2 = 0
+            r2 = r1
+            r3 = 0
+        L8:
+            int r4 = r8.dataPosition()
+            if (r4 >= r0) goto L3a
+            int r4 = r8.readInt()
+            r5 = 65535(0xffff, float:9.1834E-41)
+            r5 = r5 & r4
+            r6 = 1
+            if (r5 == r6) goto L35
+            r6 = 2
+            if (r5 == r6) goto L2c
+            r6 = 3
+            if (r5 == r6) goto L23
+            p270p6.C5368b.m11709s(r8, r4)
+            goto L8
+        L23:
+            android.os.Parcelable$Creator<o6.d0> r2 = p248o6.C4903d0.CREATOR
+            android.os.Parcelable r2 = p270p6.C5368b.m11694d(r8, r4, r2)
+            o6.d0 r2 = (p248o6.C4903d0) r2
+            goto L8
+        L2c:
+            android.os.Parcelable$Creator<k6.b> r1 = p184k6.C3698b.CREATOR
+            android.os.Parcelable r1 = p270p6.C5368b.m11694d(r8, r4, r1)
+            k6.b r1 = (p184k6.C3698b) r1
+            goto L8
+        L35:
+            int r3 = p270p6.C5368b.m11705o(r8, r4)
+            goto L8
+        L3a:
+            p270p6.C5368b.m11699i(r8, r0)
+            q7.l r8 = new q7.l
+            r8.<init>(r3, r1, r2)
+            return r8
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* synthetic */ p287q7.C5594l[] newArray(int r1) {
+            r0 = this;
+            q7.l[] r1 = new p287q7.C5594l[r1]
+            return r1
+    }
+}
+package p287q7;
+
+/* renamed from: q7.f */
+/* loaded from: classes.dex */
+public interface InterfaceC5588f extends android.os.IInterface {
+}
+package p287q7;
+
+/* renamed from: q7.h */
+/* loaded from: classes.dex */
+public interface InterfaceC5590h extends android.os.IInterface {
+    /* renamed from: R0 */
+    void mo11870R0(p287q7.C5593k r1, p287q7.InterfaceC5588f r2);
+}

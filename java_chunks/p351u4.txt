@@ -1,0 +1,2438 @@
+package p351u4;
+
+/* renamed from: u4.h */
+/* loaded from: classes.dex */
+public abstract class AbstractC6302h {
+
+    /* renamed from: a */
+    public final p351u4.C6298d f24595a;
+
+    /* renamed from: b */
+    public p216m4.InterfaceC4381z f24596b;
+
+    /* renamed from: c */
+    public p216m4.InterfaceC4366k f24597c;
+
+    /* renamed from: d */
+    public p351u4.InterfaceC6300f f24598d;
+
+    /* renamed from: e */
+    public long f24599e;
+
+    /* renamed from: f */
+    public long f24600f;
+
+    /* renamed from: g */
+    public long f24601g;
+
+    /* renamed from: h */
+    public int f24602h;
+
+    /* renamed from: i */
+    public int f24603i;
+
+    /* renamed from: j */
+    public p351u4.AbstractC6302h.b f24604j;
+
+    /* renamed from: k */
+    public long f24605k;
+
+    /* renamed from: l */
+    public boolean f24606l;
+
+    /* renamed from: m */
+    public boolean f24607m;
+
+    /* renamed from: u4.h$a */
+    public static /* synthetic */ class a {
+    }
+
+    /* renamed from: u4.h$b */
+    public static class b {
+
+        /* renamed from: a */
+        public p088f4.C2003e0 f24608a;
+
+        /* renamed from: b */
+        public p351u4.InterfaceC6300f f24609b;
+
+        public b() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+    }
+
+    /* renamed from: u4.h$c */
+    public static final class c implements p351u4.InterfaceC6300f {
+        public c(p351u4.AbstractC6302h.a r1) {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // p351u4.InterfaceC6300f
+        /* renamed from: a */
+        public p216m4.InterfaceC4378w mo12930a() {
+                r5 = this;
+                m4.w$b r0 = new m4.w$b
+                r1 = 0
+                r3 = -9223372036854775807(0x8000000000000001, double:-4.9E-324)
+                r0.<init>(r3, r1)
+                return r0
+        }
+
+        @Override // p351u4.InterfaceC6300f
+        /* renamed from: b */
+        public void mo12931b(long r1) {
+                r0 = this;
+                return
+        }
+
+        @Override // p351u4.InterfaceC6300f
+        /* renamed from: c */
+        public long mo12932c(p216m4.InterfaceC4365j r3) {
+                r2 = this;
+                r0 = -1
+                return r0
+        }
+    }
+
+    public AbstractC6302h() {
+            r1 = this;
+            r1.<init>()
+            u4.d r0 = new u4.d
+            r0.<init>()
+            r1.f24595a = r0
+            u4.h$b r0 = new u4.h$b
+            r0.<init>()
+            r1.f24604j = r0
+            return
+    }
+
+    /* renamed from: a */
+    public long m12942a(long r3) {
+            r2 = this;
+            int r0 = r2.f24603i
+            long r0 = (long) r0
+            long r0 = r0 * r3
+            r3 = 1000000(0xf4240, double:4.940656E-318)
+            long r0 = r0 / r3
+            return r0
+    }
+
+    /* renamed from: b */
+    public void mo12943b(long r1) {
+            r0 = this;
+            r0.f24601g = r1
+            return
+    }
+
+    /* renamed from: c */
+    public abstract long mo12933c(p371v5.C6571u r1);
+
+    @org.checkerframework.checker.nullness.qual.EnsuresNonNullIf(expression = {"#3.format"}, result = false)
+    /* renamed from: d */
+    public abstract boolean mo12934d(p371v5.C6571u r1, long r2, p351u4.AbstractC6302h.b r4);
+
+    /* renamed from: e */
+    public void mo12935e(boolean r5) {
+            r4 = this;
+            r0 = 0
+            if (r5 == 0) goto Lf
+            u4.h$b r5 = new u4.h$b
+            r5.<init>()
+            r4.f24604j = r5
+            r4.f24600f = r0
+            r5 = 0
+            goto L10
+        Lf:
+            r5 = 1
+        L10:
+            r4.f24602h = r5
+            r2 = -1
+            r4.f24599e = r2
+            r4.f24601g = r0
+            return
+    }
+}
+package p351u4;
+
+/* renamed from: u4.a */
+/* loaded from: classes.dex */
+public final class C6295a implements p351u4.InterfaceC6300f {
+
+    /* renamed from: a */
+    public final p351u4.C6299e f24559a;
+
+    /* renamed from: b */
+    public final long f24560b;
+
+    /* renamed from: c */
+    public final long f24561c;
+
+    /* renamed from: d */
+    public final p351u4.AbstractC6302h f24562d;
+
+    /* renamed from: e */
+    public int f24563e;
+
+    /* renamed from: f */
+    public long f24564f;
+
+    /* renamed from: g */
+    public long f24565g;
+
+    /* renamed from: h */
+    public long f24566h;
+
+    /* renamed from: i */
+    public long f24567i;
+
+    /* renamed from: j */
+    public long f24568j;
+
+    /* renamed from: k */
+    public long f24569k;
+
+    /* renamed from: l */
+    public long f24570l;
+
+    /* renamed from: u4.a$a */
+    public static /* synthetic */ class a {
+    }
+
+    /* renamed from: u4.a$b */
+    public final class b implements p216m4.InterfaceC4378w {
+
+        /* renamed from: a */
+        public final /* synthetic */ p351u4.C6295a f24571a;
+
+        public b(p351u4.C6295a r1, p351u4.C6295a.a r2) {
+                r0 = this;
+                r0.f24571a = r1
+                r0.<init>()
+                return
+        }
+
+        @Override // p216m4.InterfaceC4378w
+        /* renamed from: d */
+        public boolean mo9742d() {
+                r1 = this;
+                r0 = 1
+                return r0
+        }
+
+        @Override // p216m4.InterfaceC4378w
+        /* renamed from: g */
+        public p216m4.InterfaceC4378w.a mo9743g(long r10) {
+                r9 = this;
+                u4.a r0 = r9.f24571a
+                u4.h r1 = r0.f24562d
+                int r1 = r1.f24603i
+                long r1 = (long) r1
+                long r1 = r1 * r10
+                r3 = 1000000(0xf4240, double:4.940656E-318)
+                long r1 = r1 / r3
+                long r5 = r0.f24560b
+                long r3 = r0.f24561c
+                long r7 = r3 - r5
+                long r7 = r7 * r1
+                long r0 = r0.f24564f
+                long r7 = r7 / r0
+                long r7 = r7 + r5
+                r0 = 30000(0x7530, double:1.4822E-319)
+                long r0 = r7 - r0
+                r7 = 1
+                long r7 = r3 - r7
+                r3 = r0
+                long r0 = p371v5.C6552b0.m13316i(r3, r5, r7)
+                m4.w$a r2 = new m4.w$a
+                m4.x r3 = new m4.x
+                r3.<init>(r10, r0)
+                r2.<init>(r3)
+                return r2
+        }
+
+        @Override // p216m4.InterfaceC4378w
+        /* renamed from: h */
+        public long mo9744h() {
+                r6 = this;
+                u4.a r0 = r6.f24571a
+                u4.h r1 = r0.f24562d
+                long r2 = r0.f24564f
+                r4 = 1000000(0xf4240, double:4.940656E-318)
+                long r2 = r2 * r4
+                int r0 = r1.f24603i
+                long r0 = (long) r0
+                long r2 = r2 / r0
+                return r2
+        }
+    }
+
+    public C6295a(p351u4.AbstractC6302h r5, long r6, long r8, long r10, long r12, boolean r14) {
+            r4 = this;
+            r4.<init>()
+            r0 = 0
+            r1 = 0
+            int r3 = (r6 > r1 ? 1 : (r6 == r1 ? 0 : -1))
+            if (r3 < 0) goto L10
+            int r1 = (r8 > r6 ? 1 : (r8 == r6 ? 0 : -1))
+            if (r1 <= 0) goto L10
+            r1 = 1
+            goto L11
+        L10:
+            r1 = 0
+        L11:
+            p371v5.C6549a.m13288b(r1)
+            r4.f24562d = r5
+            r4.f24560b = r6
+            r4.f24561c = r8
+            long r8 = r8 - r6
+            int r5 = (r10 > r8 ? 1 : (r10 == r8 ? 0 : -1))
+            if (r5 == 0) goto L25
+            if (r14 == 0) goto L22
+            goto L25
+        L22:
+            r4.f24563e = r0
+            goto L2a
+        L25:
+            r4.f24564f = r12
+            r5 = 4
+            r4.f24563e = r5
+        L2a:
+            u4.e r5 = new u4.e
+            r5.<init>()
+            r4.f24559a = r5
+            return
+    }
+
+    @Override // p351u4.InterfaceC6300f
+    /* renamed from: a */
+    public p216m4.InterfaceC4378w mo12930a() {
+            r6 = this;
+            long r0 = r6.f24564f
+            r2 = 0
+            r3 = 0
+            int r5 = (r0 > r3 ? 1 : (r0 == r3 ? 0 : -1))
+            if (r5 == 0) goto Lf
+            u4.a$b r0 = new u4.a$b
+            r0.<init>(r6, r2)
+            r2 = r0
+        Lf:
+            return r2
+    }
+
+    @Override // p351u4.InterfaceC6300f
+    /* renamed from: b */
+    public void mo12931b(long r11) {
+            r10 = this;
+            long r0 = r10.f24564f
+            r2 = 1
+            long r8 = r0 - r2
+            r6 = 0
+            r4 = r11
+            long r11 = p371v5.C6552b0.m13316i(r4, r6, r8)
+            r10.f24566h = r11
+            r11 = 2
+            r10.f24563e = r11
+            long r11 = r10.f24560b
+            r10.f24567i = r11
+            long r11 = r10.f24561c
+            r10.f24568j = r11
+            r11 = 0
+            r10.f24569k = r11
+            long r11 = r10.f24564f
+            r10.f24570l = r11
+            return
+    }
+
+    @Override // p351u4.InterfaceC6300f
+    /* renamed from: c */
+    public long mo12932c(p216m4.InterfaceC4365j r23) {
+            r22 = this;
+            r0 = r22
+            r1 = r23
+            int r2 = r0.f24563e
+            r3 = 1
+            r4 = 0
+            r5 = 4
+            r6 = -1
+            if (r2 == 0) goto L100
+            if (r2 == r3) goto L113
+            r3 = 2
+            r10 = 3
+            if (r2 == r3) goto L21
+            if (r2 == r10) goto L1e
+            if (r2 != r5) goto L18
+            return r6
+        L18:
+            java.lang.IllegalStateException r1 = new java.lang.IllegalStateException
+            r1.<init>()
+            throw r1
+        L1e:
+            r2 = r6
+            goto Lc5
+        L21:
+            long r2 = r0.f24567i
+            long r11 = r0.f24568j
+            int r13 = (r2 > r11 ? 1 : (r2 == r11 ? 0 : -1))
+            if (r13 != 0) goto L2c
+        L29:
+            r11 = r6
+            goto Lbc
+        L2c:
+            long r2 = r23.mo9797q()
+            u4.e r11 = r0.f24559a
+            long r12 = r0.f24568j
+            boolean r11 = r11.m12941c(r1, r12)
+            if (r11 != 0) goto L4a
+            long r11 = r0.f24567i
+            int r13 = (r11 > r2 ? 1 : (r11 == r2 ? 0 : -1))
+            if (r13 == 0) goto L42
+            goto Lbc
+        L42:
+            java.io.IOException r1 = new java.io.IOException
+            java.lang.String r2 = "No ogg page can be found."
+            r1.<init>(r2)
+            throw r1
+        L4a:
+            u4.e r11 = r0.f24559a
+            r11.m12939a(r1, r4)
+            r23.mo9790h()
+            long r11 = r0.f24566h
+            u4.e r13 = r0.f24559a
+            long r14 = r13.f24587b
+            long r11 = r11 - r14
+            int r8 = r13.f24589d
+            int r9 = r13.f24590e
+            int r8 = r8 + r9
+            r16 = 0
+            int r9 = (r16 > r11 ? 1 : (r16 == r11 ? 0 : -1))
+            if (r9 > 0) goto L6c
+            r18 = 72000(0x11940, double:3.55727E-319)
+            int r9 = (r11 > r18 ? 1 : (r11 == r18 ? 0 : -1))
+            if (r9 >= 0) goto L6c
+            goto L29
+        L6c:
+            int r9 = (r11 > r16 ? 1 : (r11 == r16 ? 0 : -1))
+            if (r9 >= 0) goto L75
+            r0.f24568j = r2
+            r0.f24570l = r14
+            goto L83
+        L75:
+            long r2 = r23.mo9797q()
+            long r13 = (long) r8
+            long r2 = r2 + r13
+            r0.f24567i = r2
+            u4.e r2 = r0.f24559a
+            long r2 = r2.f24587b
+            r0.f24569k = r2
+        L83:
+            long r2 = r0.f24568j
+            long r13 = r0.f24567i
+            long r2 = r2 - r13
+            r16 = 100000(0x186a0, double:4.94066E-319)
+            int r15 = (r2 > r16 ? 1 : (r2 == r16 ? 0 : -1))
+            if (r15 >= 0) goto L93
+            r0.f24568j = r13
+            r11 = r13
+            goto Lbc
+        L93:
+            long r2 = (long) r8
+            r13 = 1
+            if (r9 > 0) goto L9b
+            r8 = 2
+            goto L9c
+        L9b:
+            r8 = r13
+        L9c:
+            long r2 = r2 * r8
+            long r8 = r23.mo9797q()
+            long r8 = r8 - r2
+            long r2 = r0.f24568j
+            long r4 = r0.f24567i
+            long r16 = r2 - r4
+            long r16 = r16 * r11
+            long r11 = r0.f24570l
+            long r6 = r0.f24569k
+            long r11 = r11 - r6
+            long r16 = r16 / r11
+            long r16 = r16 + r8
+            long r20 = r2 - r13
+            r18 = r4
+            long r11 = p371v5.C6552b0.m13316i(r16, r18, r20)
+        Lbc:
+            r2 = -1
+            int r4 = (r11 > r2 ? 1 : (r11 == r2 ? 0 : -1))
+            if (r4 == 0) goto Lc3
+            return r11
+        Lc3:
+            r0.f24563e = r10
+        Lc5:
+            u4.e r4 = r0.f24559a
+            r4.m12941c(r1, r2)
+            u4.e r2 = r0.f24559a
+            r3 = 0
+            r2.m12939a(r1, r3)
+            u4.e r2 = r0.f24559a
+            long r3 = r2.f24587b
+            long r5 = r0.f24566h
+            int r7 = (r3 > r5 ? 1 : (r3 == r5 ? 0 : -1))
+            if (r7 <= 0) goto Le7
+            r23.mo9790h()
+            r1 = 4
+            r0.f24563e = r1
+            long r1 = r0.f24569k
+            r4 = 2
+            long r1 = r1 + r4
+            long r1 = -r1
+            return r1
+        Le7:
+            r4 = 2
+            int r3 = r2.f24589d
+            int r2 = r2.f24590e
+            int r3 = r3 + r2
+            r1.mo9791i(r3)
+            long r2 = r23.mo9797q()
+            r0.f24567i = r2
+            u4.e r2 = r0.f24559a
+            long r2 = r2.f24587b
+            r0.f24569k = r2
+            r2 = -1
+            goto Lc5
+        L100:
+            long r4 = r23.mo9797q()
+            r0.f24565g = r4
+            r0.f24563e = r3
+            long r6 = r0.f24561c
+            r8 = 65307(0xff1b, double:3.2266E-319)
+            long r6 = r6 - r8
+            int r2 = (r6 > r4 ? 1 : (r6 == r4 ? 0 : -1))
+            if (r2 <= 0) goto L113
+            return r6
+        L113:
+            u4.e r2 = r0.f24559a
+            r2.m12940b()
+            u4.e r2 = r0.f24559a
+            r4 = -1
+            boolean r2 = r2.m12941c(r1, r4)
+            if (r2 == 0) goto L16d
+            u4.e r2 = r0.f24559a
+            r4 = 0
+            r2.m12939a(r1, r4)
+            u4.e r2 = r0.f24559a
+            int r5 = r2.f24589d
+            int r2 = r2.f24590e
+            int r5 = r5 + r2
+            r1.mo9791i(r5)
+        L132:
+            u4.e r2 = r0.f24559a
+            long r5 = r2.f24587b
+            int r7 = r2.f24586a
+            r8 = 4
+            r7 = r7 & r8
+            if (r7 == r8) goto L165
+            r7 = -1
+            boolean r2 = r2.m12941c(r1, r7)
+            if (r2 == 0) goto L165
+            long r9 = r23.mo9797q()
+            long r11 = r0.f24561c
+            int r2 = (r9 > r11 ? 1 : (r9 == r11 ? 0 : -1))
+            if (r2 >= 0) goto L165
+            u4.e r2 = r0.f24559a
+            boolean r2 = r2.m12939a(r1, r3)
+            if (r2 == 0) goto L165
+            u4.e r2 = r0.f24559a
+            int r9 = r2.f24589d
+            int r2 = r2.f24590e
+            int r9 = r9 + r2
+            r1.mo9791i(r9)     // Catch: java.io.EOFException -> L162
+            r2 = 1
+            goto L163
+        L162:
+            r2 = 0
+        L163:
+            if (r2 != 0) goto L132
+        L165:
+            r0.f24564f = r5
+            r1 = 4
+            r0.f24563e = r1
+            long r1 = r0.f24565g
+            return r1
+        L16d:
+            java.io.EOFException r1 = new java.io.EOFException
+            r1.<init>()
+            throw r1
+    }
+}
+package p351u4;
+
+/* renamed from: u4.b */
+/* loaded from: classes.dex */
+public final class C6296b extends p351u4.AbstractC6302h {
+
+    /* renamed from: n */
+    public p216m4.C4373r f24572n;
+
+    /* renamed from: o */
+    public p351u4.C6296b.a f24573o;
+
+    /* renamed from: u4.b$a */
+    public static final class a implements p351u4.InterfaceC6300f {
+
+        /* renamed from: a */
+        public p216m4.C4373r f24574a;
+
+        /* renamed from: b */
+        public p216m4.C4373r.a f24575b;
+
+        /* renamed from: c */
+        public long f24576c;
+
+        /* renamed from: d */
+        public long f24577d;
+
+        public a(p216m4.C4373r r1, p216m4.C4373r.a r2) {
+                r0 = this;
+                r0.<init>()
+                r0.f24574a = r1
+                r0.f24575b = r2
+                r1 = -1
+                r0.f24576c = r1
+                r0.f24577d = r1
+                return
+        }
+
+        @Override // p351u4.InterfaceC6300f
+        /* renamed from: a */
+        public p216m4.InterfaceC4378w mo12930a() {
+                r5 = this;
+                long r0 = r5.f24576c
+                r2 = -1
+                int r4 = (r0 > r2 ? 1 : (r0 == r2 ? 0 : -1))
+                if (r4 == 0) goto La
+                r0 = 1
+                goto Lb
+            La:
+                r0 = 0
+            Lb:
+                p371v5.C6549a.m13291e(r0)
+                m4.q r0 = new m4.q
+                m4.r r1 = r5.f24574a
+                long r2 = r5.f24576c
+                r0.<init>(r1, r2)
+                return r0
+        }
+
+        @Override // p351u4.InterfaceC6300f
+        /* renamed from: b */
+        public void mo12931b(long r3) {
+                r2 = this;
+                m4.r$a r0 = r2.f24575b
+                long[] r0 = r0.f17924a
+                r1 = 1
+                int r3 = p371v5.C6552b0.m13312e(r0, r3, r1, r1)
+                r3 = r0[r3]
+                r2.f24577d = r3
+                return
+        }
+
+        @Override // p351u4.InterfaceC6300f
+        /* renamed from: c */
+        public long mo12932c(p216m4.InterfaceC4365j r7) {
+                r6 = this;
+                long r0 = r6.f24577d
+                r2 = -1
+                r4 = 0
+                int r7 = (r0 > r4 ? 1 : (r0 == r4 ? 0 : -1))
+                if (r7 < 0) goto L11
+                r4 = 2
+                long r0 = r0 + r4
+                long r0 = -r0
+                r6.f24577d = r2
+                return r0
+            L11:
+                return r2
+        }
+    }
+
+    public C6296b() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p351u4.AbstractC6302h
+    /* renamed from: c */
+    public long mo12933c(p371v5.C6571u r5) {
+            r4 = this;
+            byte[] r0 = r5.f25710a
+            r1 = 0
+            r2 = r0[r1]
+            r3 = -1
+            if (r2 != r3) goto La
+            r2 = 1
+            goto Lb
+        La:
+            r2 = 0
+        Lb:
+            if (r2 != 0) goto L10
+            r0 = -1
+            return r0
+        L10:
+            r2 = 2
+            r0 = r0[r2]
+            r0 = r0 & 255(0xff, float:3.57E-43)
+            r2 = 4
+            int r0 = r0 >> r2
+            r3 = 6
+            if (r0 == r3) goto L1d
+            r3 = 7
+            if (r0 != r3) goto L23
+        L1d:
+            r5.m13397G(r2)
+            r5.m13391A()
+        L23:
+            int r0 = p216m4.C4370o.m9815c(r5, r0)
+            r5.m13396F(r1)
+            long r0 = (long) r0
+            return r0
+    }
+
+    @Override // p351u4.AbstractC6302h
+    @org.checkerframework.checker.nullness.qual.EnsuresNonNullIf(expression = {"#3.format"}, result = false)
+    /* renamed from: d */
+    public boolean mo12934d(p371v5.C6571u r7, long r8, p351u4.AbstractC6302h.b r10) {
+            r6 = this;
+            byte[] r0 = r7.f25710a
+            m4.r r1 = r6.f24572n
+            r2 = 1
+            if (r1 != 0) goto L20
+            m4.r r8 = new m4.r
+            r9 = 17
+            r8.<init>(r0, r9)
+            r6.f24572n = r8
+            r9 = 9
+            int r7 = r7.f25712c
+            byte[] r7 = java.util.Arrays.copyOfRange(r0, r9, r7)
+            r9 = 0
+            f4.e0 r7 = r8.m9824e(r7, r9)
+            r10.f24608a = r7
+            return r2
+        L20:
+            r3 = 0
+            r4 = r0[r3]
+            r4 = r4 & 127(0x7f, float:1.78E-43)
+            r5 = 3
+            if (r4 != r5) goto L3a
+            m4.r$a r7 = p216m4.C4371p.m9817b(r7)
+            m4.r r8 = r1.m9822b(r7)
+            r6.f24572n = r8
+            u4.b$a r9 = new u4.b$a
+            r9.<init>(r8, r7)
+            r6.f24573o = r9
+            return r2
+        L3a:
+            r7 = r0[r3]
+            r0 = -1
+            if (r7 != r0) goto L41
+            r7 = 1
+            goto L42
+        L41:
+            r7 = 0
+        L42:
+            if (r7 == 0) goto L52
+            u4.b$a r7 = r6.f24573o
+            if (r7 == 0) goto L4c
+            r7.f24576c = r8
+            r10.f24609b = r7
+        L4c:
+            f4.e0 r7 = r10.f24608a
+            java.util.Objects.requireNonNull(r7)
+            return r3
+        L52:
+            return r2
+    }
+
+    @Override // p351u4.AbstractC6302h
+    /* renamed from: e */
+    public void mo12935e(boolean r1) {
+            r0 = this;
+            super.mo12935e(r1)
+            if (r1 == 0) goto La
+            r1 = 0
+            r0.f24572n = r1
+            r0.f24573o = r1
+        La:
+            return
+    }
+}
+package p351u4;
+
+/* renamed from: u4.c */
+/* loaded from: classes.dex */
+public class C6297c implements p216m4.InterfaceC4364i {
+
+    /* renamed from: a */
+    public p216m4.InterfaceC4366k f24578a;
+
+    /* renamed from: b */
+    public p351u4.AbstractC6302h f24579b;
+
+    /* renamed from: c */
+    public boolean f24580c;
+
+    static {
+            k1.b r0 = p179k1.C3642b.f16063l0
+            return
+    }
+
+    public C6297c() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @org.checkerframework.checker.nullness.qual.EnsuresNonNullIf(expression = {"streamReader"}, result = true)
+    /* renamed from: a */
+    public final boolean m12936a(p216m4.InterfaceC4365j r9) {
+            r8 = this;
+            u4.e r0 = new u4.e
+            r0.<init>()
+            r1 = 1
+            boolean r2 = r0.m12939a(r9, r1)
+            r3 = 0
+            if (r2 == 0) goto L8d
+            int r2 = r0.f24586a
+            r4 = 2
+            r2 = r2 & r4
+            if (r2 == r4) goto L15
+            goto L8d
+        L15:
+            int r0 = r0.f24590e
+            r2 = 8
+            int r0 = java.lang.Math.min(r0, r2)
+            v5.u r2 = new v5.u
+            r2.<init>(r0)
+            byte[] r4 = r2.f25710a
+            r9.mo9795o(r4, r3, r0)
+            r2.m13396F(r3)
+            int r9 = r2.m13398a()
+            r0 = 5
+            if (r9 < r0) goto L46
+            int r9 = r2.m13418u()
+            r0 = 127(0x7f, float:1.78E-43)
+            if (r9 != r0) goto L46
+            long r4 = r2.m13419v()
+            r6 = 1179402563(0x464c4143, double:5.82702289E-315)
+            int r9 = (r4 > r6 ? 1 : (r4 == r6 ? 0 : -1))
+            if (r9 != 0) goto L46
+            r9 = 1
+            goto L47
+        L46:
+            r9 = 0
+        L47:
+            if (r9 == 0) goto L51
+            u4.b r9 = new u4.b
+            r9.<init>()
+        L4e:
+            r8.f24579b = r9
+            goto L8c
+        L51:
+            r2.m13396F(r3)
+            boolean r9 = p216m4.C4359d0.m9783c(r1, r2, r1)     // Catch: p088f4.C2044s0 -> L59
+            goto L5a
+        L59:
+            r9 = 0
+        L5a:
+            if (r9 == 0) goto L62
+            u4.i r9 = new u4.i
+            r9.<init>()
+            goto L4e
+        L62:
+            r2.m13396F(r3)
+            int r9 = r2.m13398a()
+            byte[] r0 = p351u4.C6301g.f24593o
+            int r4 = r0.length
+            if (r9 >= r4) goto L70
+            r9 = 0
+            goto L84
+        L70:
+            int r9 = r0.length
+            byte[] r9 = new byte[r9]
+            int r4 = r0.length
+            byte[] r5 = r2.f25710a
+            int r6 = r2.f25711b
+            java.lang.System.arraycopy(r5, r6, r9, r3, r4)
+            int r5 = r2.f25711b
+            int r5 = r5 + r4
+            r2.f25711b = r5
+            boolean r9 = java.util.Arrays.equals(r9, r0)
+        L84:
+            if (r9 == 0) goto L8d
+            u4.g r9 = new u4.g
+            r9.<init>()
+            goto L4e
+        L8c:
+            return r1
+        L8d:
+            return r3
+    }
+
+    @Override // p216m4.InterfaceC4364i
+    /* renamed from: b */
+    public void mo9803b(long r5, long r7) {
+            r4 = this;
+            u4.h r0 = r4.f24579b
+            if (r0 == 0) goto L3d
+            u4.d r1 = r0.f24595a
+            u4.e r2 = r1.f24581a
+            r2.m12940b()
+            v5.u r2 = r1.f24582b
+            r3 = 0
+            r2.m13392B(r3)
+            r2 = -1
+            r1.f24583c = r2
+            r1.f24585e = r3
+            r1 = 0
+            int r3 = (r5 > r1 ? 1 : (r5 == r1 ? 0 : -1))
+            if (r3 != 0) goto L24
+            boolean r5 = r0.f24606l
+            r5 = r5 ^ 1
+            r0.mo12935e(r5)
+            goto L3d
+        L24:
+            int r5 = r0.f24602h
+            if (r5 == 0) goto L3d
+            int r5 = r0.f24603i
+            long r5 = (long) r5
+            long r5 = r5 * r7
+            r7 = 1000000(0xf4240, double:4.940656E-318)
+            long r5 = r5 / r7
+            r0.f24599e = r5
+            u4.f r7 = r0.f24598d
+            int r8 = p371v5.C6552b0.f25624a
+            r7.mo12931b(r5)
+            r5 = 2
+            r0.f24602h = r5
+        L3d:
+            return
+    }
+
+    @Override // p216m4.InterfaceC4364i
+    /* renamed from: c */
+    public void mo9804c(p216m4.InterfaceC4366k r1) {
+            r0 = this;
+            r0.f24578a = r1
+            return
+    }
+
+    @Override // p216m4.InterfaceC4364i
+    /* renamed from: f */
+    public boolean mo9805f(p216m4.InterfaceC4365j r1) {
+            r0 = this;
+            boolean r1 = r0.m12936a(r1)     // Catch: p088f4.C2044s0 -> L5
+            return r1
+        L5:
+            r1 = 0
+            return r1
+    }
+
+    @Override // p216m4.InterfaceC4364i
+    /* renamed from: i */
+    public int mo9806i(p216m4.InterfaceC4365j r21, p216m4.C4377v r22) {
+            r20 = this;
+            r0 = r20
+            r1 = r21
+            m4.k r2 = r0.f24578a
+            p371v5.C6549a.m13292f(r2)
+            u4.h r2 = r0.f24579b
+            r3 = 0
+            if (r2 != 0) goto L1f
+            boolean r2 = r20.m12936a(r21)
+            if (r2 == 0) goto L18
+            r21.mo9790h()
+            goto L1f
+        L18:
+            java.lang.String r1 = "Failed to determine bitstream type"
+            f4.s0 r1 = p088f4.C2044s0.m5407a(r1, r3)
+            throw r1
+        L1f:
+            boolean r2 = r0.f24580c
+            r4 = 0
+            r5 = 1
+            if (r2 != 0) goto L3d
+            m4.k r2 = r0.f24578a
+            m4.z r2 = r2.mo6048l(r4, r5)
+            m4.k r6 = r0.f24578a
+            r6.mo6043b()
+            u4.h r6 = r0.f24579b
+            m4.k r7 = r0.f24578a
+            r6.f24597c = r7
+            r6.f24596b = r2
+            r6.mo12935e(r5)
+            r0.f24580c = r5
+        L3d:
+            u4.h r2 = r0.f24579b
+            m4.z r6 = r2.f24596b
+            p371v5.C6549a.m13292f(r6)
+            int r6 = p371v5.C6552b0.f25624a
+            int r6 = r2.f24602h
+            r7 = -1
+            r10 = 3
+            r14 = 2
+            if (r6 == 0) goto Led
+            if (r6 == r5) goto Le3
+            if (r6 == r14) goto L5c
+            if (r6 != r10) goto L56
+            goto L119
+        L56:
+            java.lang.IllegalStateException r1 = new java.lang.IllegalStateException
+            r1.<init>()
+            throw r1
+        L5c:
+            u4.f r3 = r2.f24598d
+            long r11 = r3.mo12932c(r1)
+            r13 = 0
+            int r3 = (r11 > r13 ? 1 : (r11 == r13 ? 0 : -1))
+            if (r3 < 0) goto L6f
+            r3 = r22
+            r3.f17934a = r11
+            r4 = 1
+            goto L18f
+        L6f:
+            int r3 = (r11 > r7 ? 1 : (r11 == r7 ? 0 : -1))
+            if (r3 >= 0) goto L7a
+            r15 = 2
+            long r11 = r11 + r15
+            long r11 = -r11
+            r2.mo12943b(r11)
+        L7a:
+            boolean r3 = r2.f24606l
+            if (r3 != 0) goto L8e
+            u4.f r3 = r2.f24598d
+            m4.w r3 = r3.mo12930a()
+            p371v5.C6549a.m13292f(r3)
+            m4.k r6 = r2.f24597c
+            r6.mo6044c(r3)
+            r2.f24606l = r5
+        L8e:
+            long r5 = r2.f24605k
+            int r3 = (r5 > r13 ? 1 : (r5 == r13 ? 0 : -1))
+            if (r3 > 0) goto La2
+            u4.d r3 = r2.f24595a
+            boolean r1 = r3.m12938b(r1)
+            if (r1 == 0) goto L9d
+            goto La2
+        L9d:
+            r2.f24602h = r10
+        L9f:
+            r4 = -1
+            goto L18f
+        La2:
+            r2.f24605k = r13
+            u4.d r1 = r2.f24595a
+            v5.u r1 = r1.f24582b
+            long r5 = r2.mo12933c(r1)
+            int r3 = (r5 > r13 ? 1 : (r5 == r13 ? 0 : -1))
+            if (r3 < 0) goto Ldc
+            long r9 = r2.f24601g
+            long r11 = r9 + r5
+            long r13 = r2.f24599e
+            int r3 = (r11 > r13 ? 1 : (r11 == r13 ? 0 : -1))
+            if (r3 < 0) goto Ldc
+            r11 = 1000000(0xf4240, double:4.940656E-318)
+            long r9 = r9 * r11
+            int r3 = r2.f24603i
+            long r11 = (long) r3
+            long r14 = r9 / r11
+            m4.z r3 = r2.f24596b
+            int r9 = r1.f25712c
+            r3.mo5972d(r1, r9)
+            m4.z r13 = r2.f24596b
+            r16 = 1
+            int r1 = r1.f25712c
+            r18 = 0
+            r19 = 0
+            r17 = r1
+            r13.mo5971c(r14, r16, r17, r18, r19)
+            r2.f24599e = r7
+        Ldc:
+            long r7 = r2.f24601g
+            long r7 = r7 + r5
+            r2.f24601g = r7
+            goto L18f
+        Le3:
+            long r5 = r2.f24600f
+            int r3 = (int) r5
+            r1.mo9791i(r3)
+            r2.f24602h = r14
+            goto L18f
+        Led:
+            u4.d r6 = r2.f24595a
+            boolean r6 = r6.m12938b(r1)
+            if (r6 != 0) goto Lf9
+            r2.f24602h = r10
+            r9 = 0
+            goto L117
+        Lf9:
+            long r11 = r21.mo9797q()
+            long r9 = r2.f24600f
+            long r11 = r11 - r9
+            r2.f24605k = r11
+            u4.d r11 = r2.f24595a
+            v5.u r11 = r11.f24582b
+            u4.h$b r12 = r2.f24604j
+            boolean r9 = r2.mo12934d(r11, r9, r12)
+            if (r9 == 0) goto L116
+            long r9 = r21.mo9797q()
+            r2.f24600f = r9
+            r10 = 3
+            goto Led
+        L116:
+            r9 = 1
+        L117:
+            if (r9 != 0) goto L11a
+        L119:
+            goto L9f
+        L11a:
+            u4.h$b r6 = r2.f24604j
+            f4.e0 r6 = r6.f24608a
+            int r9 = r6.f8910x0
+            r2.f24603i = r9
+            boolean r9 = r2.f24607m
+            if (r9 != 0) goto L12d
+            m4.z r9 = r2.f24596b
+            r9.mo5973e(r6)
+            r2.f24607m = r5
+        L12d:
+            u4.h$b r6 = r2.f24604j
+            u4.f r6 = r6.f24609b
+            if (r6 == 0) goto L134
+            goto L141
+        L134:
+            long r9 = r21.mo9786a()
+            int r6 = (r9 > r7 ? 1 : (r9 == r7 ? 0 : -1))
+            if (r6 != 0) goto L145
+            u4.h$c r6 = new u4.h$c
+            r6.<init>(r3)
+        L141:
+            r2.f24598d = r6
+            r1 = 2
+            goto L16f
+        L145:
+            u4.d r3 = r2.f24595a
+            u4.e r3 = r3.f24581a
+            int r6 = r3.f24586a
+            r6 = r6 & 4
+            if (r6 == 0) goto L152
+            r18 = 1
+            goto L154
+        L152:
+            r18 = 0
+        L154:
+            u4.a r5 = new u4.a
+            long r10 = r2.f24600f
+            long r12 = r21.mo9786a()
+            int r1 = r3.f24589d
+            int r6 = r3.f24590e
+            int r1 = r1 + r6
+            long r6 = (long) r1
+            long r8 = r3.f24587b
+            r16 = r8
+            r8 = r5
+            r9 = r2
+            r1 = 2
+            r14 = r6
+            r8.<init>(r9, r10, r12, r14, r16, r18)
+            r2.f24598d = r5
+        L16f:
+            r2.f24602h = r1
+            u4.d r1 = r2.f24595a
+            v5.u r2 = r1.f24582b
+            byte[] r3 = r2.f25710a
+            int r5 = r3.length
+            r6 = 65025(0xfe01, float:9.112E-41)
+            if (r5 != r6) goto L17e
+            goto L18f
+        L17e:
+            int r5 = r2.f25712c
+            int r5 = java.lang.Math.max(r6, r5)
+            byte[] r3 = java.util.Arrays.copyOf(r3, r5)
+            v5.u r1 = r1.f24582b
+            int r1 = r1.f25712c
+            r2.m13394D(r3, r1)
+        L18f:
+            return r4
+    }
+
+    @Override // p216m4.InterfaceC4364i
+    public void release() {
+            r0 = this;
+            return
+    }
+}
+package p351u4;
+
+/* renamed from: u4.d */
+/* loaded from: classes.dex */
+public final class C6298d {
+
+    /* renamed from: a */
+    public final p351u4.C6299e f24581a;
+
+    /* renamed from: b */
+    public final p371v5.C6571u f24582b;
+
+    /* renamed from: c */
+    public int f24583c;
+
+    /* renamed from: d */
+    public int f24584d;
+
+    /* renamed from: e */
+    public boolean f24585e;
+
+    public C6298d() {
+            r3 = this;
+            r3.<init>()
+            u4.e r0 = new u4.e
+            r0.<init>()
+            r3.f24581a = r0
+            v5.u r0 = new v5.u
+            r1 = 65025(0xfe01, float:9.112E-41)
+            byte[] r1 = new byte[r1]
+            r2 = 0
+            r0.<init>(r1, r2)
+            r3.f24582b = r0
+            r0 = -1
+            r3.f24583c = r0
+            return
+    }
+
+    /* renamed from: a */
+    public final int m12937a(int r6) {
+            r5 = this;
+            r0 = 0
+            r5.f24584d = r0
+        L3:
+            int r1 = r5.f24584d
+            int r2 = r6 + r1
+            u4.e r3 = r5.f24581a
+            int r4 = r3.f24588c
+            if (r2 >= r4) goto L1b
+            int[] r2 = r3.f24591f
+            int r3 = r1 + 1
+            r5.f24584d = r3
+            int r1 = r1 + r6
+            r1 = r2[r1]
+            int r0 = r0 + r1
+            r2 = 255(0xff, float:3.57E-43)
+            if (r1 == r2) goto L3
+        L1b:
+            return r0
+    }
+
+    /* renamed from: b */
+    public boolean m12938b(p216m4.InterfaceC4365j r7) {
+            r6 = this;
+            r0 = 1
+            r1 = 0
+            if (r7 == 0) goto L6
+            r2 = 1
+            goto L7
+        L6:
+            r2 = 0
+        L7:
+            p371v5.C6549a.m13291e(r2)
+            boolean r2 = r6.f24585e
+            if (r2 == 0) goto L15
+            r6.f24585e = r1
+            v5.u r2 = r6.f24582b
+            r2.m13392B(r1)
+        L15:
+            boolean r2 = r6.f24585e
+            if (r2 != 0) goto L9e
+            int r2 = r6.f24583c
+            if (r2 >= 0) goto L56
+            u4.e r2 = r6.f24581a
+            r3 = -1
+            boolean r2 = r2.m12941c(r7, r3)
+            if (r2 == 0) goto L55
+            u4.e r2 = r6.f24581a
+            boolean r2 = r2.m12939a(r7, r0)
+            if (r2 != 0) goto L30
+            goto L55
+        L30:
+            u4.e r2 = r6.f24581a
+            int r3 = r2.f24589d
+            int r2 = r2.f24586a
+            r2 = r2 & r0
+            if (r2 != r0) goto L48
+            v5.u r2 = r6.f24582b
+            int r2 = r2.f25712c
+            if (r2 != 0) goto L48
+            int r2 = r6.m12937a(r1)
+            int r3 = r3 + r2
+            int r2 = r6.f24584d
+            int r2 = r2 + r1
+            goto L49
+        L48:
+            r2 = 0
+        L49:
+            r7.mo9791i(r3)     // Catch: java.io.EOFException -> L4e
+            r3 = 1
+            goto L4f
+        L4e:
+            r3 = 0
+        L4f:
+            if (r3 != 0) goto L52
+            return r1
+        L52:
+            r6.f24583c = r2
+            goto L56
+        L55:
+            return r1
+        L56:
+            int r2 = r6.f24583c
+            int r2 = r6.m12937a(r2)
+            int r3 = r6.f24583c
+            int r4 = r6.f24584d
+            int r3 = r3 + r4
+            if (r2 <= 0) goto L93
+            v5.u r4 = r6.f24582b
+            int r5 = r4.f25712c
+            int r5 = r5 + r2
+            r4.m13399b(r5)
+            v5.u r4 = r6.f24582b
+            byte[] r5 = r4.f25710a
+            int r4 = r4.f25712c
+            r7.readFully(r5, r4, r2)     // Catch: java.io.EOFException -> L76
+            r4 = 1
+            goto L77
+        L76:
+            r4 = 0
+        L77:
+            if (r4 != 0) goto L7a
+            return r1
+        L7a:
+            v5.u r4 = r6.f24582b
+            int r5 = r4.f25712c
+            int r5 = r5 + r2
+            r4.m13395E(r5)
+            u4.e r2 = r6.f24581a
+            int[] r2 = r2.f24591f
+            int r4 = r3 + (-1)
+            r2 = r2[r4]
+            r4 = 255(0xff, float:3.57E-43)
+            if (r2 == r4) goto L90
+            r2 = 1
+            goto L91
+        L90:
+            r2 = 0
+        L91:
+            r6.f24585e = r2
+        L93:
+            u4.e r2 = r6.f24581a
+            int r2 = r2.f24588c
+            if (r3 != r2) goto L9a
+            r3 = -1
+        L9a:
+            r6.f24583c = r3
+            goto L15
+        L9e:
+            return r0
+    }
+}
+package p351u4;
+
+/* renamed from: u4.e */
+/* loaded from: classes.dex */
+public final class C6299e {
+
+    /* renamed from: a */
+    public int f24586a;
+
+    /* renamed from: b */
+    public long f24587b;
+
+    /* renamed from: c */
+    public int f24588c;
+
+    /* renamed from: d */
+    public int f24589d;
+
+    /* renamed from: e */
+    public int f24590e;
+
+    /* renamed from: f */
+    public final int[] f24591f;
+
+    /* renamed from: g */
+    public final p371v5.C6571u f24592g;
+
+    public C6299e() {
+            r2 = this;
+            r2.<init>()
+            r0 = 255(0xff, float:3.57E-43)
+            int[] r1 = new int[r0]
+            r2.f24591f = r1
+            v5.u r1 = new v5.u
+            r1.<init>(r0)
+            r2.f24592g = r1
+            return
+    }
+
+    /* renamed from: a */
+    public boolean m12939a(p216m4.InterfaceC4365j r7, boolean r8) {
+            r6 = this;
+            r6.m12940b()
+            v5.u r0 = r6.f24592g
+            r1 = 27
+            r0.m13392B(r1)
+            v5.u r0 = r6.f24592g
+            byte[] r0 = r0.f25710a
+            r2 = 0
+            boolean r0 = p216m4.C4367l.m9808b(r7, r0, r2, r1, r8)
+            if (r0 == 0) goto L8e
+            v5.u r0 = r6.f24592g
+            long r0 = r0.m13419v()
+            r3 = 1332176723(0x4f676753, double:6.58182753E-315)
+            int r5 = (r0 > r3 ? 1 : (r0 == r3 ? 0 : -1))
+            if (r5 == 0) goto L23
+            goto L8e
+        L23:
+            v5.u r0 = r6.f24592g
+            int r0 = r0.m13418u()
+            if (r0 == 0) goto L35
+            if (r8 == 0) goto L2e
+            return r2
+        L2e:
+            java.lang.String r7 = "unsupported bit stream revision"
+            f4.s0 r7 = p088f4.C2044s0.m5408b(r7)
+            throw r7
+        L35:
+            v5.u r0 = r6.f24592g
+            int r0 = r0.m13418u()
+            r6.f24586a = r0
+            v5.u r0 = r6.f24592g
+            long r0 = r0.m13406i()
+            r6.f24587b = r0
+            v5.u r0 = r6.f24592g
+            r0.m13408k()
+            v5.u r0 = r6.f24592g
+            r0.m13408k()
+            v5.u r0 = r6.f24592g
+            r0.m13408k()
+            v5.u r0 = r6.f24592g
+            int r0 = r0.m13418u()
+            r6.f24588c = r0
+            int r1 = r0 + 27
+            r6.f24589d = r1
+            v5.u r1 = r6.f24592g
+            r1.m13392B(r0)
+            v5.u r0 = r6.f24592g
+            byte[] r0 = r0.f25710a
+            int r1 = r6.f24588c
+            boolean r7 = p216m4.C4367l.m9808b(r7, r0, r2, r1, r8)
+            if (r7 != 0) goto L72
+            return r2
+        L72:
+            int r7 = r6.f24588c
+            if (r2 >= r7) goto L8c
+            int[] r7 = r6.f24591f
+            v5.u r8 = r6.f24592g
+            int r8 = r8.m13418u()
+            r7[r2] = r8
+            int r7 = r6.f24590e
+            int[] r8 = r6.f24591f
+            r8 = r8[r2]
+            int r7 = r7 + r8
+            r6.f24590e = r7
+            int r2 = r2 + 1
+            goto L72
+        L8c:
+            r7 = 1
+            return r7
+        L8e:
+            return r2
+    }
+
+    /* renamed from: b */
+    public void m12940b() {
+            r3 = this;
+            r0 = 0
+            r3.f24586a = r0
+            r1 = 0
+            r3.f24587b = r1
+            r3.f24588c = r0
+            r3.f24589d = r0
+            r3.f24590e = r0
+            return
+    }
+
+    /* renamed from: c */
+    public boolean m12941c(p216m4.InterfaceC4365j r9, long r10) {
+            r8 = this;
+            long r0 = r9.mo9797q()
+            long r2 = r9.mo9794n()
+            r4 = 0
+            r5 = 1
+            int r6 = (r0 > r2 ? 1 : (r0 == r2 ? 0 : -1))
+            if (r6 != 0) goto L10
+            r0 = 1
+            goto L11
+        L10:
+            r0 = 0
+        L11:
+            p371v5.C6549a.m13288b(r0)
+            v5.u r0 = r8.f24592g
+            r1 = 4
+            r0.m13392B(r1)
+        L1a:
+            r2 = -1
+            int r0 = (r10 > r2 ? 1 : (r10 == r2 ? 0 : -1))
+            if (r0 == 0) goto L2b
+            long r2 = r9.mo9797q()
+            r6 = 4
+            long r2 = r2 + r6
+            int r6 = (r2 > r10 ? 1 : (r2 == r10 ? 0 : -1))
+            if (r6 >= 0) goto L4f
+        L2b:
+            v5.u r2 = r8.f24592g
+            byte[] r2 = r2.f25710a
+            boolean r2 = p216m4.C4367l.m9808b(r9, r2, r4, r1, r5)
+            if (r2 == 0) goto L4f
+            v5.u r0 = r8.f24592g
+            r0.m13396F(r4)
+            v5.u r0 = r8.f24592g
+            long r2 = r0.m13419v()
+            r6 = 1332176723(0x4f676753, double:6.58182753E-315)
+            int r0 = (r2 > r6 ? 1 : (r2 == r6 ? 0 : -1))
+            if (r0 != 0) goto L4b
+            r9.mo9790h()
+            return r5
+        L4b:
+            r9.mo9791i(r5)
+            goto L1a
+        L4f:
+            if (r0 == 0) goto L59
+            long r1 = r9.mo9797q()
+            int r3 = (r1 > r10 ? 1 : (r1 == r10 ? 0 : -1))
+            if (r3 >= 0) goto L61
+        L59:
+            int r1 = r9.mo9787d(r5)
+            r2 = -1
+            if (r1 == r2) goto L61
+            goto L4f
+        L61:
+            return r4
+    }
+}
+package p351u4;
+
+/* renamed from: u4.g */
+/* loaded from: classes.dex */
+public final class C6301g extends p351u4.AbstractC6302h {
+
+    /* renamed from: o */
+    public static final byte[] f24593o = null;
+
+    /* renamed from: n */
+    public boolean f24594n;
+
+    static {
+            r0 = 8
+            byte[] r0 = new byte[r0]
+            r0 = {x000a: FILL_ARRAY_DATA , data: [79, 112, 117, 115, 72, 101, 97, 100} // fill-array
+            p351u4.C6301g.f24593o = r0
+            return
+    }
+
+    public C6301g() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p351u4.AbstractC6302h
+    /* renamed from: c */
+    public long mo12933c(p371v5.C6571u r7) {
+            r6 = this;
+            byte[] r7 = r7.f25710a
+            r0 = 0
+            r0 = r7[r0]
+            r0 = r0 & 255(0xff, float:3.57E-43)
+            r1 = r0 & 3
+            r2 = 2
+            r3 = 1
+            if (r1 == 0) goto L16
+            if (r1 == r3) goto L17
+            if (r1 == r2) goto L17
+            r7 = r7[r3]
+            r2 = r7 & 63
+            goto L17
+        L16:
+            r2 = 1
+        L17:
+            r7 = 3
+            int r0 = r0 >> r7
+            r1 = r0 & 3
+            r4 = 16
+            if (r0 < r4) goto L23
+            r7 = 2500(0x9c4, float:3.503E-42)
+            int r7 = r7 << r1
+            goto L36
+        L23:
+            r4 = 12
+            r5 = 10000(0x2710, float:1.4013E-41)
+            if (r0 < r4) goto L2e
+            r7 = r1 & 1
+            int r7 = r5 << r7
+            goto L36
+        L2e:
+            if (r1 != r7) goto L34
+            r7 = 60000(0xea60, float:8.4078E-41)
+            goto L36
+        L34:
+            int r7 = r5 << r1
+        L36:
+            long r0 = (long) r2
+            long r2 = (long) r7
+            long r0 = r0 * r2
+            long r0 = r6.m12942a(r0)
+            return r0
+    }
+
+    @Override // p351u4.AbstractC6302h
+    @org.checkerframework.checker.nullness.qual.EnsuresNonNullIf(expression = {"#3.format"}, result = false)
+    /* renamed from: d */
+    public boolean mo12934d(p371v5.C6571u r3, long r4, p351u4.AbstractC6302h.b r6) {
+            r2 = this;
+            boolean r4 = r2.f24594n
+            r5 = 1
+            if (r4 != 0) goto L32
+            byte[] r4 = r3.f25710a
+            int r3 = r3.f25712c
+            byte[] r3 = java.util.Arrays.copyOf(r4, r3)
+            r4 = 9
+            r4 = r3[r4]
+            r4 = r4 & 255(0xff, float:3.57E-43)
+            java.util.List r3 = p064e.C1487a.m4024b(r3)
+            f4.e0$b r0 = new f4.e0$b
+            r0.<init>()
+            java.lang.String r1 = "audio/opus"
+            r0.f8927k = r1
+            r0.f8940x = r4
+            r4 = 48000(0xbb80, float:6.7262E-41)
+            r0.f8941y = r4
+            r0.f8929m = r3
+            f4.e0 r3 = r0.m5193a()
+            r6.f24608a = r3
+            r2.f24594n = r5
+            return r5
+        L32:
+            f4.e0 r4 = r6.f24608a
+            java.util.Objects.requireNonNull(r4)
+            int r4 = r3.m13403f()
+            r6 = 1332770163(0x4f707573, float:4.034229E9)
+            r0 = 0
+            if (r4 != r6) goto L42
+            goto L43
+        L42:
+            r5 = 0
+        L43:
+            r3.m13396F(r0)
+            return r5
+    }
+
+    @Override // p351u4.AbstractC6302h
+    /* renamed from: e */
+    public void mo12935e(boolean r1) {
+            r0 = this;
+            super.mo12935e(r1)
+            if (r1 == 0) goto L8
+            r1 = 0
+            r0.f24594n = r1
+        L8:
+            return
+    }
+}
+package p351u4;
+
+/* renamed from: u4.i */
+/* loaded from: classes.dex */
+public final class C6303i extends p351u4.AbstractC6302h {
+
+    /* renamed from: n */
+    public p351u4.C6303i.a f24610n;
+
+    /* renamed from: o */
+    public int f24611o;
+
+    /* renamed from: p */
+    public boolean f24612p;
+
+    /* renamed from: q */
+    public p216m4.C4359d0.c f24613q;
+
+    /* renamed from: r */
+    public p216m4.C4359d0.a f24614r;
+
+    /* renamed from: u4.i$a */
+    public static final class a {
+
+        /* renamed from: a */
+        public final p216m4.C4359d0.c f24615a;
+
+        /* renamed from: b */
+        public final byte[] f24616b;
+
+        /* renamed from: c */
+        public final p216m4.C4359d0.b[] f24617c;
+
+        /* renamed from: d */
+        public final int f24618d;
+
+        public a(p216m4.C4359d0.c r1, p216m4.C4359d0.a r2, byte[] r3, p216m4.C4359d0.b[] r4, int r5) {
+                r0 = this;
+                r0.<init>()
+                r0.f24615a = r1
+                r0.f24616b = r3
+                r0.f24617c = r4
+                r0.f24618d = r5
+                return
+        }
+    }
+
+    public C6303i() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p351u4.AbstractC6302h
+    /* renamed from: b */
+    public void mo12943b(long r5) {
+            r4 = this;
+            r4.f24601g = r5
+            r0 = 0
+            r2 = 0
+            int r3 = (r5 > r0 ? 1 : (r5 == r0 ? 0 : -1))
+            if (r3 == 0) goto Lb
+            r5 = 1
+            goto Lc
+        Lb:
+            r5 = 0
+        Lc:
+            r4.f24612p = r5
+            m4.d0$c r5 = r4.f24613q
+            if (r5 == 0) goto L14
+            int r2 = r5.f17886e
+        L14:
+            r4.f24611o = r2
+            return
+    }
+
+    @Override // p351u4.AbstractC6302h
+    /* renamed from: c */
+    public long mo12933c(p371v5.C6571u r12) {
+            r11 = this;
+            byte[] r0 = r12.f25710a
+            r1 = 0
+            r2 = r0[r1]
+            r3 = 1
+            r2 = r2 & r3
+            if (r2 != r3) goto Lc
+            r0 = -1
+            return r0
+        Lc:
+            r0 = r0[r1]
+            u4.i$a r2 = r11.f24610n
+            p371v5.C6549a.m13292f(r2)
+            u4.i$a r2 = (p351u4.C6303i.a) r2
+            int r4 = r2.f24618d
+            int r0 = r0 >> r3
+            r5 = 8
+            int r4 = 8 - r4
+            r6 = 255(0xff, float:3.57E-43)
+            int r4 = r6 >>> r4
+            r0 = r0 & r4
+            m4.d0$b[] r4 = r2.f24617c
+            r0 = r4[r0]
+            boolean r0 = r0.f17881a
+            if (r0 != 0) goto L2e
+            m4.d0$c r0 = r2.f24615a
+            int r0 = r0.f17886e
+            goto L32
+        L2e:
+            m4.d0$c r0 = r2.f24615a
+            int r0 = r0.f17887f
+        L32:
+            boolean r2 = r11.f24612p
+            if (r2 == 0) goto L3b
+            int r1 = r11.f24611o
+            int r1 = r1 + r0
+            int r1 = r1 / 4
+        L3b:
+            long r1 = (long) r1
+            byte[] r4 = r12.f25710a
+            int r6 = r4.length
+            int r7 = r12.f25712c
+            int r7 = r7 + 4
+            if (r6 >= r7) goto L4d
+            byte[] r4 = java.util.Arrays.copyOf(r4, r7)
+            r12.m13393C(r4)
+            goto L50
+        L4d:
+            r12.m13395E(r7)
+        L50:
+            byte[] r4 = r12.f25710a
+            int r12 = r12.f25712c
+            int r6 = r12 + (-4)
+            r7 = 255(0xff, double:1.26E-321)
+            long r9 = r1 & r7
+            int r10 = (int) r9
+            byte r9 = (byte) r10
+            r4[r6] = r9
+            int r6 = r12 + (-3)
+            long r9 = r1 >>> r5
+            long r9 = r9 & r7
+            int r5 = (int) r9
+            byte r5 = (byte) r5
+            r4[r6] = r5
+            int r5 = r12 + (-2)
+            r6 = 16
+            long r9 = r1 >>> r6
+            long r9 = r9 & r7
+            int r6 = (int) r9
+            byte r6 = (byte) r6
+            r4[r5] = r6
+            int r12 = r12 + (-1)
+            r5 = 24
+            long r5 = r1 >>> r5
+            long r5 = r5 & r7
+            int r6 = (int) r5
+            byte r5 = (byte) r6
+            r4[r12] = r5
+            r11.f24612p = r3
+            r11.f24611o = r0
+            return r1
+    }
+
+    @Override // p351u4.AbstractC6302h
+    @org.checkerframework.checker.nullness.qual.EnsuresNonNullIf(expression = {"#3.format"}, result = false)
+    /* renamed from: d */
+    public boolean mo12934d(p371v5.C6571u r19, long r20, p351u4.AbstractC6302h.b r22) {
+            r18 = this;
+            r0 = r18
+            r1 = r19
+            r2 = r22
+            u4.i$a r3 = r0.f24610n
+            r4 = 0
+            if (r3 == 0) goto L11
+            f4.e0 r1 = r2.f24608a
+            java.util.Objects.requireNonNull(r1)
+            return r4
+        L11:
+            m4.d0$c r6 = r0.f24613q
+            r3 = 0
+            r5 = 1
+            if (r6 != 0) goto L7e
+            p216m4.C4359d0.m9783c(r5, r1, r4)
+            int r8 = r19.m13409l()
+            int r9 = r19.m13418u()
+            int r10 = r19.m13409l()
+            int r4 = r19.m13405h()
+            if (r4 > 0) goto L2f
+            r4 = -1
+            r11 = -1
+            goto L30
+        L2f:
+            r11 = r4
+        L30:
+            int r4 = r19.m13405h()
+            if (r4 > 0) goto L39
+            r4 = -1
+            r12 = -1
+            goto L3a
+        L39:
+            r12 = r4
+        L3a:
+            int r4 = r19.m13405h()
+            if (r4 > 0) goto L43
+            r4 = -1
+            r13 = -1
+            goto L44
+        L43:
+            r13 = r4
+        L44:
+            int r4 = r19.m13418u()
+            r5 = r4 & 15
+            double r5 = (double) r5
+            r14 = 4611686018427387904(0x4000000000000000, double:2.0)
+            double r5 = java.lang.Math.pow(r14, r5)
+            int r5 = (int) r5
+            r4 = r4 & 240(0xf0, float:3.36E-43)
+            int r4 = r4 >> 4
+            double r6 = (double) r4
+            double r6 = java.lang.Math.pow(r14, r6)
+            int r15 = (int) r6
+            int r4 = r19.m13418u()
+            r4 = r4 & 1
+            if (r4 <= 0) goto L68
+            r4 = 1
+            r16 = 1
+            goto L6b
+        L68:
+            r4 = 0
+            r16 = 0
+        L6b:
+            byte[] r4 = r1.f25710a
+            int r1 = r1.f25712c
+            byte[] r17 = java.util.Arrays.copyOf(r4, r1)
+            m4.d0$c r1 = new m4.d0$c
+            r7 = r1
+            r14 = r5
+            r7.<init>(r8, r9, r10, r11, r12, r13, r14, r15, r16, r17)
+            r0.f24613q = r1
+            goto L3b3
+        L7e:
+            m4.d0$a r7 = r0.f24614r
+            if (r7 != 0) goto L8b
+            r4 = 1
+            m4.d0$a r1 = p216m4.C4359d0.m9782b(r1, r4, r4)
+            r0.f24614r = r1
+            goto L3b3
+        L8b:
+            int r5 = r1.f25712c
+            byte[] r8 = new byte[r5]
+            byte[] r9 = r1.f25710a
+            java.lang.System.arraycopy(r9, r4, r8, r4, r5)
+            int r5 = r6.f17882a
+            r9 = 5
+            p216m4.C4359d0.m9783c(r9, r1, r4)
+            int r10 = r19.m13418u()
+            int r10 = r10 + 1
+            m4.b0 r11 = new m4.b0
+            byte[] r12 = r1.f25710a
+            r11.<init>(r12, r4, r3)
+            int r1 = r1.f25711b
+            int r1 = r1 * 8
+            r11.m9775t(r1)
+            r1 = 0
+        Laf:
+            r3 = 16
+            r4 = 24
+            if (r1 >= r10) goto L1a2
+            int r12 = r11.m9766k(r4)
+            r13 = 5653314(0x564342, float:7.92198E-39)
+            if (r12 != r13) goto L194
+            int r3 = r11.m9766k(r3)
+            int r4 = r11.m9766k(r4)
+            long[] r12 = new long[r4]
+            boolean r13 = r11.m9765j()
+            if (r13 != 0) goto L10b
+            boolean r13 = r11.m9765j()
+            r16 = 0
+            r14 = 0
+        Ld5:
+            if (r14 >= r4) goto L108
+            if (r13 == 0) goto Lf4
+            boolean r15 = r11.m9765j()
+            if (r15 == 0) goto Led
+            int r9 = r11.m9766k(r9)
+            int r9 = r9 + 1
+            r21 = r10
+            long r9 = (long) r9
+            r12[r14] = r9
+            r9 = 0
+            goto L102
+        Led:
+            r21 = r10
+            r9 = 0
+            r12[r14] = r9
+            goto L102
+        Lf4:
+            r21 = r10
+            r9 = 0
+            r15 = 5
+            int r15 = r11.m9766k(r15)
+            int r15 = r15 + 1
+            long r9 = (long) r15
+            r12[r14] = r9
+        L102:
+            int r14 = r14 + 1
+            r9 = 5
+            r10 = r21
+            goto Ld5
+        L108:
+            r21 = r10
+            goto L13d
+        L10b:
+            r21 = r10
+            r9 = 5
+            int r9 = r11.m9766k(r9)
+            int r9 = r9 + 1
+            r10 = 0
+        L115:
+            if (r10 >= r4) goto L13d
+            int r13 = r4 - r10
+            int r13 = p216m4.C4359d0.m9781a(r13)
+            int r13 = r11.m9766k(r13)
+            r14 = 0
+        L122:
+            if (r14 >= r13) goto L134
+            if (r10 >= r4) goto L134
+            r15 = r7
+            r16 = r8
+            long r7 = (long) r9
+            r12[r10] = r7
+            int r10 = r10 + 1
+            int r14 = r14 + 1
+            r7 = r15
+            r8 = r16
+            goto L122
+        L134:
+            r15 = r7
+            r16 = r8
+            int r9 = r9 + 1
+            r7 = r15
+            r8 = r16
+            goto L115
+        L13d:
+            r15 = r7
+            r16 = r8
+            r7 = 4
+            int r8 = r11.m9766k(r7)
+            r9 = 2
+            if (r8 > r9) goto L18a
+            r10 = 1
+            if (r8 == r10) goto L14d
+            if (r8 != r9) goto L180
+        L14d:
+            r9 = 32
+            r11.m9775t(r9)
+            r11.m9775t(r9)
+            int r7 = r11.m9766k(r7)
+            int r7 = r7 + r10
+            r11.m9775t(r10)
+            if (r8 != r10) goto L175
+            if (r3 == 0) goto L172
+            long r8 = (long) r4
+            long r3 = (long) r3
+            double r8 = (double) r8
+            double r3 = (double) r3
+            r12 = 4607182418800017408(0x3ff0000000000000, double:1.0)
+            double r12 = r12 / r3
+            double r3 = java.lang.Math.pow(r8, r12)
+            double r3 = java.lang.Math.floor(r3)
+            long r3 = (long) r3
+            goto L179
+        L172:
+            r3 = 0
+            goto L179
+        L175:
+            long r8 = (long) r4
+            long r3 = (long) r3
+            long r3 = r3 * r8
+        L179:
+            long r7 = (long) r7
+            long r7 = r7 * r3
+            int r3 = (int) r7
+            r11.m9775t(r3)
+        L180:
+            int r1 = r1 + 1
+            r9 = 5
+            r10 = r21
+            r7 = r15
+            r8 = r16
+            goto Laf
+        L18a:
+            r1 = 53
+            java.lang.String r2 = "lookup type greater than 2 not decodable: "
+            r3 = 0
+            f4.s0 r1 = p216m4.C4357c0.m9780a(r1, r2, r8, r3)
+            throw r1
+        L194:
+            r1 = 0
+            int r2 = r11.m9763h()
+            r3 = 66
+            java.lang.String r4 = "expected code book to start with [0x56, 0x43, 0x42] at "
+            f4.s0 r1 = p216m4.C4357c0.m9780a(r3, r4, r2, r1)
+            throw r1
+        L1a2:
+            r15 = r7
+            r16 = r8
+            r1 = 6
+            int r4 = r11.m9766k(r1)
+            int r4 = r4 + 1
+            r7 = 0
+        L1ad:
+            if (r7 >= r4) goto L1c0
+            int r8 = r11.m9766k(r3)
+            if (r8 != 0) goto L1b8
+            int r7 = r7 + 1
+            goto L1ad
+        L1b8:
+            java.lang.String r1 = "placeholder of time domain transforms not zeroed out"
+            r2 = 0
+            f4.s0 r1 = p088f4.C2044s0.m5407a(r1, r2)
+            throw r1
+        L1c0:
+            int r4 = r11.m9766k(r1)
+            r7 = 1
+            int r4 = r4 + r7
+            r8 = 0
+        L1c7:
+            r9 = 52
+            r10 = 3
+            if (r8 >= r4) goto L27c
+            int r1 = r11.m9766k(r3)
+            if (r1 == 0) goto L24a
+            if (r1 != r7) goto L242
+            r1 = 5
+            int r1 = r11.m9766k(r1)
+            int[] r3 = new int[r1]
+            r7 = 0
+            r9 = -1
+        L1dd:
+            if (r7 >= r1) goto L1ef
+            r12 = 4
+            int r12 = r11.m9766k(r12)
+            r3[r7] = r12
+            r12 = r3[r7]
+            if (r12 <= r9) goto L1ec
+            r9 = r3[r7]
+        L1ec:
+            int r7 = r7 + 1
+            goto L1dd
+        L1ef:
+            int r9 = r9 + 1
+            int[] r7 = new int[r9]
+            r12 = 0
+        L1f4:
+            if (r12 >= r9) goto L222
+            int r10 = r11.m9766k(r10)
+            r13 = 1
+            int r10 = r10 + 1
+            r7[r12] = r10
+            r10 = 2
+            int r10 = r11.m9766k(r10)
+            r14 = 8
+            if (r10 <= 0) goto L20b
+            r11.m9775t(r14)
+        L20b:
+            r17 = 0
+            r19 = r4
+            r4 = 0
+        L210:
+            int r13 = r13 << r10
+            if (r4 >= r13) goto L21c
+            r11.m9775t(r14)
+            int r4 = r4 + 1
+            r14 = 8
+            r13 = 1
+            goto L210
+        L21c:
+            int r12 = r12 + 1
+            r10 = 3
+            r4 = r19
+            goto L1f4
+        L222:
+            r19 = r4
+            r4 = 2
+            r11.m9775t(r4)
+            r4 = 4
+            int r4 = r11.m9766k(r4)
+            r9 = 0
+            r10 = 0
+            r12 = 0
+        L230:
+            if (r9 >= r1) goto L272
+            r13 = r3[r9]
+            r13 = r7[r13]
+            int r10 = r10 + r13
+        L237:
+            if (r12 >= r10) goto L23f
+            r11.m9775t(r4)
+            int r12 = r12 + 1
+            goto L237
+        L23f:
+            int r9 = r9 + 1
+            goto L230
+        L242:
+            java.lang.String r2 = "floor type greater than 1 not decodable: "
+            r3 = 0
+            f4.s0 r1 = p216m4.C4357c0.m9780a(r9, r2, r1, r3)
+            throw r1
+        L24a:
+            r19 = r4
+            r1 = 8
+            r11.m9775t(r1)
+            r3 = 16
+            r11.m9775t(r3)
+            r11.m9775t(r3)
+            r3 = 6
+            r11.m9775t(r3)
+            r11.m9775t(r1)
+            r3 = 4
+            int r3 = r11.m9766k(r3)
+            int r3 = r3 + 1
+            r4 = 0
+        L268:
+            if (r4 >= r3) goto L272
+            r11.m9775t(r1)
+            int r4 = r4 + 1
+            r1 = 8
+            goto L268
+        L272:
+            int r8 = r8 + 1
+            r1 = 6
+            r7 = 1
+            r3 = 16
+            r4 = r19
+            goto L1c7
+        L27c:
+            int r3 = r11.m9766k(r1)
+            r4 = 1
+            int r3 = r3 + r4
+            r7 = 0
+        L283:
+            if (r7 >= r3) goto L2e9
+            r8 = 16
+            int r8 = r11.m9766k(r8)
+            r10 = 2
+            if (r8 > r10) goto L2e1
+            r8 = 24
+            r11.m9775t(r8)
+            r11.m9775t(r8)
+            r11.m9775t(r8)
+            int r1 = r11.m9766k(r1)
+            int r1 = r1 + r4
+            r4 = 8
+            r11.m9775t(r4)
+            int[] r8 = new int[r1]
+            r10 = 0
+        L2a6:
+            if (r10 >= r1) goto L2c2
+            r12 = 3
+            int r12 = r11.m9766k(r12)
+            boolean r13 = r11.m9765j()
+            r14 = 5
+            if (r13 == 0) goto L2b9
+            int r13 = r11.m9766k(r14)
+            goto L2ba
+        L2b9:
+            r13 = 0
+        L2ba:
+            int r13 = r13 * 8
+            int r13 = r13 + r12
+            r8[r10] = r13
+            int r10 = r10 + 1
+            goto L2a6
+        L2c2:
+            r10 = 0
+        L2c3:
+            if (r10 >= r1) goto L2dc
+            r12 = 0
+        L2c6:
+            if (r12 >= r4) goto L2d7
+            r13 = r8[r10]
+            r14 = 1
+            int r14 = r14 << r12
+            r13 = r13 & r14
+            if (r13 == 0) goto L2d2
+            r11.m9775t(r4)
+        L2d2:
+            int r12 = r12 + 1
+            r4 = 8
+            goto L2c6
+        L2d7:
+            int r10 = r10 + 1
+            r4 = 8
+            goto L2c3
+        L2dc:
+            int r7 = r7 + 1
+            r1 = 6
+            r4 = 1
+            goto L283
+        L2e1:
+            java.lang.String r1 = "residueType greater than 2 is not decodable"
+            r2 = 0
+            f4.s0 r1 = p088f4.C2044s0.m5407a(r1, r2)
+            throw r1
+        L2e9:
+            int r1 = r11.m9766k(r1)
+            int r1 = r1 + 1
+            r3 = 0
+        L2f0:
+            if (r3 >= r1) goto L374
+            r4 = 16
+            int r4 = r11.m9766k(r4)
+            if (r4 == 0) goto L311
+            java.lang.StringBuilder r7 = new java.lang.StringBuilder
+            r7.<init>(r9)
+            java.lang.String r8 = "mapping type other than 0 not supported: "
+            r7.append(r8)
+            r7.append(r4)
+            java.lang.String r4 = r7.toString()
+            java.lang.String r7 = "VorbisUtil"
+            android.util.Log.e(r7, r4)
+            goto L369
+        L311:
+            boolean r4 = r11.m9765j()
+            if (r4 == 0) goto L31f
+            r4 = 4
+            int r4 = r11.m9766k(r4)
+            r7 = 1
+            int r4 = r4 + r7
+            goto L321
+        L31f:
+            r7 = 1
+            r4 = 1
+        L321:
+            boolean r8 = r11.m9765j()
+            if (r8 == 0) goto L344
+            r8 = 8
+            int r8 = r11.m9766k(r8)
+            int r8 = r8 + r7
+            r7 = 0
+        L32f:
+            if (r7 >= r8) goto L344
+            int r10 = r5 + (-1)
+            int r12 = p216m4.C4359d0.m9781a(r10)
+            r11.m9775t(r12)
+            int r10 = p216m4.C4359d0.m9781a(r10)
+            r11.m9775t(r10)
+            int r7 = r7 + 1
+            goto L32f
+        L344:
+            r7 = 2
+            int r7 = r11.m9766k(r7)
+            if (r7 != 0) goto L36c
+            r7 = 1
+            if (r4 <= r7) goto L358
+            r7 = 0
+        L34f:
+            if (r7 >= r5) goto L358
+            r8 = 4
+            r11.m9775t(r8)
+            int r7 = r7 + 1
+            goto L34f
+        L358:
+            r7 = 0
+        L359:
+            if (r7 >= r4) goto L369
+            r8 = 8
+            r11.m9775t(r8)
+            r11.m9775t(r8)
+            r11.m9775t(r8)
+            int r7 = r7 + 1
+            goto L359
+        L369:
+            int r3 = r3 + 1
+            goto L2f0
+        L36c:
+            java.lang.String r1 = "to reserved bits must be zero after mapping coupling steps"
+            r2 = 0
+            f4.s0 r1 = p088f4.C2044s0.m5407a(r1, r2)
+            throw r1
+        L374:
+            r1 = 6
+            int r1 = r11.m9766k(r1)
+            int r1 = r1 + 1
+            m4.d0$b[] r9 = new p216m4.C4359d0.b[r1]
+            r3 = 0
+        L37e:
+            if (r3 >= r1) goto L39e
+            boolean r4 = r11.m9765j()
+            r5 = 16
+            int r7 = r11.m9766k(r5)
+            int r5 = r11.m9766k(r5)
+            r8 = 8
+            int r8 = r11.m9766k(r8)
+            m4.d0$b r10 = new m4.d0$b
+            r10.<init>(r4, r7, r5, r8)
+            r9[r3] = r10
+            int r3 = r3 + 1
+            goto L37e
+        L39e:
+            boolean r3 = r11.m9765j()
+            if (r3 == 0) goto L3ed
+            int r1 = r1 + (-1)
+            int r10 = p216m4.C4359d0.m9781a(r1)
+            u4.i$a r3 = new u4.i$a
+            r5 = r3
+            r7 = r15
+            r8 = r16
+            r5.<init>(r6, r7, r8, r9, r10)
+        L3b3:
+            r0.f24610n = r3
+            if (r3 != 0) goto L3b9
+            r1 = 1
+            return r1
+        L3b9:
+            m4.d0$c r1 = r3.f24615a
+            java.util.ArrayList r4 = new java.util.ArrayList
+            r4.<init>()
+            byte[] r5 = r1.f17888g
+            r4.add(r5)
+            byte[] r3 = r3.f24616b
+            r4.add(r3)
+            f4.e0$b r3 = new f4.e0$b
+            r3.<init>()
+            java.lang.String r5 = "audio/vorbis"
+            r3.f8927k = r5
+            int r5 = r1.f17885d
+            r3.f8922f = r5
+            int r5 = r1.f17884c
+            r3.f8923g = r5
+            int r5 = r1.f17882a
+            r3.f8940x = r5
+            int r1 = r1.f17883b
+            r3.f8941y = r1
+            r3.f8929m = r4
+            f4.e0 r1 = r3.m5193a()
+            r2.f24608a = r1
+            r1 = 1
+            return r1
+        L3ed:
+            java.lang.String r1 = "framing bit after modes not set as expected"
+            r2 = 0
+            f4.s0 r1 = p088f4.C2044s0.m5407a(r1, r2)
+            throw r1
+    }
+
+    @Override // p351u4.AbstractC6302h
+    /* renamed from: e */
+    public void mo12935e(boolean r1) {
+            r0 = this;
+            super.mo12935e(r1)
+            if (r1 == 0) goto Lc
+            r1 = 0
+            r0.f24610n = r1
+            r0.f24613q = r1
+            r0.f24614r = r1
+        Lc:
+            r1 = 0
+            r0.f24611o = r1
+            r0.f24612p = r1
+            return
+    }
+}
+package p351u4;
+
+/* renamed from: u4.f */
+/* loaded from: classes.dex */
+public interface InterfaceC6300f {
+    /* renamed from: a */
+    p216m4.InterfaceC4378w mo12930a();
+
+    /* renamed from: b */
+    void mo12931b(long r1);
+
+    /* renamed from: c */
+    long mo12932c(p216m4.InterfaceC4365j r1);
+}

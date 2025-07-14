@@ -1,0 +1,82 @@
+package p390w8;
+
+/* renamed from: w8.a */
+/* loaded from: classes.dex */
+public class C6819a extends com.google.android.material.tabs.C1206a {
+    public C6819a() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    /* renamed from: c */
+    public static float m13903c(float r4) {
+            double r0 = (double) r4
+            r2 = 4614256656552045848(0x400921fb54442d18, double:3.141592653589793)
+            double r0 = r0 * r2
+            r2 = 4611686018427387904(0x4000000000000000, double:2.0)
+            double r0 = r0 / r2
+            double r0 = java.lang.Math.cos(r0)
+            r2 = 4607182418800017408(0x3ff0000000000000, double:1.0)
+            double r2 = r2 - r0
+            float r4 = (float) r2
+            return r4
+    }
+
+    @Override // com.google.android.material.tabs.C1206a
+    /* renamed from: b */
+    public void mo3538b(com.google.android.material.tabs.TabLayout r7, android.view.View r8, android.view.View r9, float r10, android.graphics.drawable.Drawable r11) {
+            r6 = this;
+            android.graphics.RectF r8 = com.google.android.material.tabs.C1206a.m3537a(r7, r8)
+            android.graphics.RectF r7 = com.google.android.material.tabs.C1206a.m3537a(r7, r9)
+            float r9 = r8.left
+            float r0 = r7.left
+            int r9 = (r9 > r0 ? 1 : (r9 == r0 ? 0 : -1))
+            if (r9 >= 0) goto L12
+            r9 = 1
+            goto L13
+        L12:
+            r9 = 0
+        L13:
+            r0 = 4611686018427387904(0x4000000000000000, double:2.0)
+            r2 = 4614256656552045848(0x400921fb54442d18, double:3.141592653589793)
+            if (r9 == 0) goto L2a
+            float r9 = m13903c(r10)
+            double r4 = (double) r10
+            double r4 = r4 * r2
+            double r4 = r4 / r0
+            double r0 = java.lang.Math.sin(r4)
+            float r10 = (float) r0
+            goto L37
+        L2a:
+            double r4 = (double) r10
+            double r4 = r4 * r2
+            double r4 = r4 / r0
+            double r0 = java.lang.Math.sin(r4)
+            float r9 = (float) r0
+            float r10 = m13903c(r10)
+        L37:
+            float r0 = r8.left
+            int r0 = (int) r0
+            float r1 = r7.left
+            int r1 = (int) r1
+            int r9 = p354u7.C6350a.m13004b(r0, r1, r9)
+            android.graphics.Rect r0 = r11.getBounds()
+            int r0 = r0.top
+            float r8 = r8.right
+            int r8 = (int) r8
+            float r7 = r7.right
+            int r7 = (int) r7
+            int r7 = p354u7.C6350a.m13004b(r8, r7, r10)
+            android.graphics.Rect r8 = r11.getBounds()
+            int r8 = r8.bottom
+            r11.setBounds(r9, r0, r7, r8)
+            return
+    }
+}
+package p390w8;
+
+/* renamed from: w8.b */
+/* loaded from: classes.dex */
+public class C6820b extends android.view.View {
+}

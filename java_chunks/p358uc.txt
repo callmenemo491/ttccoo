@@ -1,0 +1,398 @@
+package p358uc;
+
+/* renamed from: uc.a */
+/* loaded from: classes.dex */
+public class C6372a extends java.lang.Exception {
+    public C6372a(java.lang.String r1) {
+            r0 = this;
+            r0.<init>(r1)
+            return
+    }
+}
+package p358uc;
+
+/* renamed from: uc.b */
+/* loaded from: classes.dex */
+public class C6373b implements com.eclipsesource.p043v8.JavaCallback {
+    public C6373b(p358uc.C6376e r1) {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // com.eclipsesource.p043v8.JavaCallback
+    public java.lang.Object invoke(com.eclipsesource.p043v8.V8Object r4, com.eclipsesource.p043v8.V8Array r5) {
+            r3 = this;
+            r4 = 0
+            java.lang.String r4 = r5.getString(r4)
+            java.util.Objects.requireNonNull(r4)
+            java.lang.String r0 = "debug"
+            boolean r0 = r4.equals(r0)
+            r1 = 1
+            java.lang.String r2 = "ESR-V8"
+            if (r0 != 0) goto L2b
+            java.lang.String r0 = "error"
+            boolean r4 = r4.equals(r0)
+            if (r4 != 0) goto L23
+            java.lang.String r4 = r5.getString(r1)
+            android.util.Log.i(r2, r4)
+            goto L32
+        L23:
+            java.lang.String r4 = r5.getString(r1)
+            android.util.Log.e(r2, r4)
+            goto L32
+        L2b:
+            java.lang.String r4 = r5.getString(r1)
+            android.util.Log.d(r2, r4)
+        L32:
+            r4 = 0
+            return r4
+    }
+}
+package p358uc;
+
+/* renamed from: uc.c */
+/* loaded from: classes.dex */
+public class C6374c implements com.eclipsesource.p043v8.JavaCallback {
+
+    /* renamed from: a */
+    public final /* synthetic */ p358uc.C6376e f24846a;
+
+    public C6374c(p358uc.C6376e r1) {
+            r0 = this;
+            r0.f24846a = r1
+            r0.<init>()
+            return
+    }
+
+    @Override // com.eclipsesource.p043v8.JavaCallback
+    public java.lang.Object invoke(com.eclipsesource.p043v8.V8Object r7, com.eclipsesource.p043v8.V8Array r8) {
+            r6 = this;
+            r7 = 0
+            java.lang.String r7 = r8.getString(r7)
+            java.nio.charset.Charset r8 = p010a9.C0035c.f82c
+            byte[] r7 = r7.getBytes(r8)
+            int r8 = r7.length
+            java.nio.ByteBuffer r8 = java.nio.ByteBuffer.allocateDirect(r8)
+            r8.put(r7)
+            com.eclipsesource.v8.V8ArrayBuffer r2 = new com.eclipsesource.v8.V8ArrayBuffer
+            uc.e r0 = r6.f24846a
+            com.eclipsesource.v8.V8 r0 = r0.f24847a
+            r2.<init>(r0, r8)
+            com.eclipsesource.v8.V8TypedArray r8 = new com.eclipsesource.v8.V8TypedArray
+            uc.e r0 = r6.f24846a
+            com.eclipsesource.v8.V8 r1 = r0.f24847a
+            int r5 = r7.length
+            r3 = 11
+            r4 = 0
+            r0 = r8
+            r0.<init>(r1, r2, r3, r4, r5)
+            return r8
+    }
+}
+package p358uc;
+
+/* renamed from: uc.d */
+/* loaded from: classes.dex */
+public class C6375d implements com.eclipsesource.p043v8.JavaCallback {
+    public C6375d(p358uc.C6376e r1) {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // com.eclipsesource.p043v8.JavaCallback
+    public java.lang.Object invoke(com.eclipsesource.p043v8.V8Object r2, com.eclipsesource.p043v8.V8Array r3) {
+            r1 = this;
+            r2 = 0
+            com.eclipsesource.v8.V8Array r3 = r3.getArray(r2)
+            int r0 = r3.length()
+            byte[] r2 = r3.getBytes(r2, r0)
+            java.lang.String r3 = new java.lang.String
+            java.nio.charset.Charset r0 = p010a9.C0035c.f80a
+            r3.<init>(r2, r0)
+            return r3
+    }
+}
+package p358uc;
+
+/* renamed from: uc.e */
+/* loaded from: classes.dex */
+public class C6376e {
+
+    /* renamed from: a */
+    public com.eclipsesource.p043v8.C1032V8 f24847a;
+
+    /* renamed from: b */
+    public p185k7.C3827h4 f24848b;
+
+    public C6376e(p185k7.C3827h4 r4) {
+            r3 = this;
+            r3.<init>()
+            r3.f24848b = r4
+            java.lang.String r4 = "global"
+            com.eclipsesource.v8.V8 r4 = com.eclipsesource.p043v8.C1032V8.createV8Runtime(r4)
+            r3.f24847a = r4
+            k7.h4 r0 = r3.f24848b
+            r1 = 2131886083(0x7f120003, float:1.9406735E38)
+            java.lang.String r0 = r0.m8571e(r1)
+            r4.executeVoidScript(r0)
+            uc.b r4 = new uc.b
+            r4.<init>(r3)
+            com.eclipsesource.v8.V8 r0 = r3.f24847a
+            java.lang.String r1 = "JavaLogger"
+            r0.registerJavaMethod(r4, r1)
+            com.eclipsesource.v8.V8 r4 = r3.f24847a
+            k7.h4 r0 = r3.f24848b
+            r1 = 2131886080(0x7f120000, float:1.9406729E38)
+            java.lang.String r0 = r0.m8571e(r1)
+            r4.executeVoidScript(r0)
+            uc.c r4 = new uc.c
+            r4.<init>(r3)
+            uc.d r0 = new uc.d
+            r0.<init>(r3)
+            com.eclipsesource.v8.V8 r1 = r3.f24847a
+            java.lang.String r2 = "encodeFunction"
+            r1.registerJavaMethod(r4, r2)
+            com.eclipsesource.v8.V8 r4 = r3.f24847a
+            java.lang.String r1 = "decodeFunction"
+            r4.registerJavaMethod(r0, r1)
+            com.eclipsesource.v8.V8 r4 = r3.f24847a
+            k7.h4 r0 = r3.f24848b
+            r1 = 2131886081(0x7f120001, float:1.940673E38)
+            java.lang.String r0 = r0.m8571e(r1)
+            r4.executeVoidScript(r0)
+            com.eclipsesource.v8.V8 r4 = r3.f24847a
+            k7.h4 r0 = r3.f24848b
+            r1 = 2131886082(0x7f120002, float:1.9406733E38)
+            java.lang.String r0 = r0.m8571e(r1)
+            r4.executeVoidScript(r0)
+            return
+    }
+
+    /* renamed from: a */
+    public void m13019a(p394wc.InterfaceC6830a r4, p414xc.C7027b r5) {
+            r3 = this;
+            xc.c r0 = r5.getData()
+            boolean r0 = r0.isPacked()
+            if (r0 == 0) goto Lb
+            return
+        Lb:
+            java.lang.String r0 = "(function() {\nlet contract = "
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            boolean r1 = r5.isIdentity()
+            if (r1 == 0) goto L1a
+            java.lang.String r4 = "global.getContract(global.abi.data)"
+            goto L38
+        L1a:
+            java.lang.String r1 = "global.getContract("
+            java.lang.StringBuilder r1 = android.support.v4.media.C0144c.m256a(r1)
+            xc.a r2 = r5.getAccount()
+            java.lang.String r2 = r2.getName()
+            java.lang.String r4 = r4.mo13491a(r2)
+            r1.append(r4)
+            java.lang.String r4 = ")"
+            r1.append(r4)
+            java.lang.String r4 = r1.toString()
+        L38:
+            java.lang.String r1 = "\nlet serializedActionData = global.Serialize.serializeActionData(contract, '%s', '%s', %s, {encode: global.encodeFunction}, {decode: global.decodeFunction})\nreturn serializedActionData\n})()"
+            java.lang.String r4 = p346u.C6269n.m12888a(r0, r4, r1)
+            r0 = 3
+            java.lang.Object[] r0 = new java.lang.Object[r0]
+            r1 = 0
+            xc.a r2 = r5.getAccount()
+            java.lang.String r2 = r2.getName()
+            r0[r1] = r2
+            r1 = 1
+            xc.d r2 = r5.getName()
+            java.lang.String r2 = r2.getName()
+            r0[r1] = r2
+            r1 = 2
+            xc.c r2 = r5.getData()
+            java.lang.String r2 = r2.toJSON()
+            r0[r1] = r2
+            java.lang.String r4 = java.lang.String.format(r4, r0)
+            com.eclipsesource.v8.V8 r0 = r3.f24847a
+            java.lang.String r4 = r0.executeStringScript(r4)
+            xc.c r5 = r5.getData()
+            r5.setData(r4)
+            return
+    }
+}
+package p358uc;
+
+/* renamed from: uc.f */
+/* loaded from: classes.dex */
+public class C6377f {
+
+    /* renamed from: a */
+    public p394wc.InterfaceC6830a f24849a;
+
+    /* renamed from: b */
+    public p358uc.C6376e f24850b;
+
+    /* renamed from: c */
+    public p414xc.C7032g f24851c;
+
+    /* renamed from: d */
+    public p394wc.InterfaceC6831b f24852d;
+
+    /* renamed from: e */
+    public p414xc.C7038m f24853e;
+
+    /* renamed from: f */
+    public java.lang.String f24854f;
+
+    /* renamed from: g */
+    public java.util.List<p414xc.C7035j> f24855g;
+
+    static {
+            xc.k r0 = new xc.k
+            java.lang.String r1 = "............1"
+            java.lang.String r2 = "............2"
+            r0.<init>(r1, r2)
+            return
+    }
+
+    public C6377f(p365v.C6476c r2) {
+            r1 = this;
+            r1.<init>()
+            java.lang.Object r0 = r2.f25078b0
+            k7.h4 r0 = (p185k7.C3827h4) r0
+            v.e r0 = r2.f25075Y
+            wc.a r0 = (p394wc.InterfaceC6830a) r0
+            r1.f24849a = r0
+            v.e r2 = r2.f25076Z
+            uc.e r2 = (p358uc.C6376e) r2
+            r1.f24850b = r2
+            xc.g r2 = new xc.g
+            xc.f r0 = p414xc.EnumC7031f.EOS
+            r2.<init>(r0)
+            r1.f24851c = r2
+            xc.m r2 = p414xc.C7038m.getDefault()
+            r1.f24853e = r2
+            java.lang.String r2 = ""
+            r1.f24854f = r2
+            java.util.ArrayList r2 = new java.util.ArrayList
+            r2.<init>()
+            r1.f24855g = r2
+            return
+    }
+
+    /* renamed from: a */
+    public java.lang.String m13020a() {
+            r8 = this;
+            uc.e r0 = r8.f24850b
+            java.util.HashMap r1 = new java.util.HashMap
+            r1.<init>()
+            xc.g r2 = r8.f24851c
+            java.util.List r2 = r2.toVariant()
+            java.lang.String r3 = "chain_id"
+            r1.put(r3, r2)
+            wc.b r2 = r8.f24852d
+            java.util.List r2 = r2.toVariant()
+            java.lang.String r3 = "req"
+            r1.put(r3, r2)
+            xc.m r2 = r8.f24853e
+            byte r2 = r2.getFlagValue()
+            java.lang.Byte r2 = java.lang.Byte.valueOf(r2)
+            java.lang.String r3 = "flags"
+            r1.put(r3, r2)
+            java.lang.String r2 = r8.f24854f
+            java.lang.String r3 = "callback"
+            r1.put(r3, r2)
+            java.util.ArrayList r2 = new java.util.ArrayList
+            r2.<init>()
+            java.util.List<xc.j> r3 = r8.f24855g
+            java.util.Iterator r3 = r3.iterator()
+        L3e:
+            boolean r4 = r3.hasNext()
+            if (r4 == 0) goto L52
+            java.lang.Object r4 = r3.next()
+            xc.j r4 = (p414xc.C7035j) r4
+            java.util.Map r4 = r4.toMap()
+            r2.add(r4)
+            goto L3e
+        L52:
+            java.lang.String r3 = "info"
+            r1.put(r3, r2)
+            java.lang.String r1 = p435yc.C7155a.m14270c(r1)
+            java.util.Objects.requireNonNull(r0)
+            r2 = 1
+            java.lang.Object[] r3 = new java.lang.Object[r2]
+            r4 = 0
+            r3[r4] = r1
+            java.lang.String r1 = "(function() {\nconst textEncoder = {encode: global.encodeFunction}\nconst textDecoder = {decode: global.decodeFunction}\nconst buffer = new Serialize.SerialBuffer({\n    textEncoder,\n    textDecoder\n})\nlet data = %s\nglobal.signingRequestType.serialize(buffer, data)\nreturn buffer.asUint8Array()\n})()"
+            java.lang.String r1 = java.lang.String.format(r1, r3)
+            com.eclipsesource.v8.V8 r0 = r0.f24847a
+            com.eclipsesource.v8.V8Array r0 = r0.executeArrayScript(r1)
+            int r1 = r0.length()
+            byte[] r0 = r0.getBytes(r4, r1)
+            byte[] r1 = new byte[r4]
+            r3 = 2
+            byte[][] r5 = new byte[r3][]
+            r5[r4] = r0
+            r5[r2] = r1
+            byte[] r0 = p074e9.C1805a.m4519d(r5)
+            java.io.ByteArrayOutputStream r1 = new java.io.ByteArrayOutputStream
+            r1.<init>()
+            java.util.zip.Deflater r5 = new java.util.zip.Deflater
+            r6 = 9
+            r5.<init>(r6, r2)
+            r5.setInput(r0)
+            r5.finish()
+            r6 = 4096(0x1000, float:5.74E-42)
+            byte[] r6 = new byte[r6]
+        L9b:
+            boolean r7 = r5.finished()     // Catch: java.lang.Throwable -> La9 java.lang.Exception -> Lae
+            if (r7 != 0) goto Lae
+            int r7 = r5.deflate(r6)     // Catch: java.lang.Throwable -> La9 java.lang.Exception -> Lae
+            r1.write(r6, r4, r7)     // Catch: java.lang.Throwable -> La9 java.lang.Exception -> Lae
+            goto L9b
+        La9:
+            r0 = move-exception
+            r1.close()     // Catch: java.lang.Exception -> Lad
+        Lad:
+            throw r0
+        Lae:
+            r1.close()     // Catch: java.lang.Exception -> Lb2
+            goto Lb3
+        Lb2:
+        Lb3:
+            byte[] r1 = r1.toByteArray()
+            int r5 = r0.length
+            int r6 = r1.length
+            if (r5 <= r6) goto Lbf
+            r0 = 130(0x82, float:1.82E-43)
+            byte r0 = (byte) r0
+            goto Lc2
+        Lbf:
+            r1 = 2
+            r1 = r0
+            r0 = 2
+        Lc2:
+            byte[][] r3 = new byte[r3][]
+            byte[] r5 = new byte[r2]
+            r5[r4] = r0
+            r3[r4] = r5
+            r3[r2] = r1
+            byte[] r0 = p074e9.C1805a.m4519d(r3)
+            java.lang.String r1 = "esr://"
+            java.lang.StringBuilder r1 = android.support.v4.media.C0144c.m256a(r1)
+            uc.e r3 = r8.f24850b
+            com.eclipsesource.v8.V8 r3 = r3.f24847a
+            java.lang.Object[] r5 = new java.lang.Object[r2]
+            java.lang.Object[] r2 = new java.lang.Object[r2]
+            java.lang.String r0 = p435yc.C7155a.m14270c(r0)
+            r2[r4] = r0
+            java.lang.String r0 = "Uint8Array.from(%s)"
+            java.lang.String r0 = java.lang.String.format(r0, r2)
+            r5[r4] = r0
+            java.lang.String r0 = "(function() {\nlet decoded = global.base64u.encode(%s)\nreturn decoded\n})()"
+            java.lang.String r0 = java.lang.String.format(r0, r5)
+            java.lang.String r0 = r3.executeStringScript(r0)
+            r1.append(r0)
+            java.lang.String r0 = r1.toString()
+            return r0
+    }
+}

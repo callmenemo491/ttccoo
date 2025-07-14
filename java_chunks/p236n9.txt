@@ -1,0 +1,3155 @@
+package p236n9;
+
+/* renamed from: n9.h */
+/* loaded from: classes.dex */
+public abstract class AbstractC4707h implements p236n9.InterfaceC4713n {
+
+    /* renamed from: c */
+    public static final int[] f18811c = null;
+
+    /* renamed from: a */
+    public int[] f18812a;
+
+    /* renamed from: b */
+    public final int f18813b;
+
+    static {
+            r0 = 16
+            byte[] r0 = new byte[r0]
+            r0 = {x000e: FILL_ARRAY_DATA , data: [101, 120, 112, 97, 110, 100, 32, 51, 50, 45, 98, 121, 116, 101, 32, 107} // fill-array
+            int[] r0 = m10763m(r0)
+            p236n9.AbstractC4707h.f18811c = r0
+            return
+    }
+
+    public AbstractC4707h(byte[] r3, int r4) {
+            r2 = this;
+            r2.<init>()
+            int r0 = r3.length
+            r1 = 32
+            if (r0 != r1) goto L11
+            int[] r3 = m10763m(r3)
+            r2.f18812a = r3
+            r2.f18813b = r4
+            return
+        L11:
+            java.security.InvalidKeyException r3 = new java.security.InvalidKeyException
+            java.lang.String r4 = "The key length in bytes must be 32."
+            r3.<init>(r4)
+            throw r3
+    }
+
+    /* renamed from: i */
+    public static void m10759i(int[] r2, int r3, int r4, int r5, int r6) {
+            r0 = r2[r3]
+            r1 = r2[r4]
+            int r0 = r0 + r1
+            r2[r3] = r0
+            r0 = r2[r6]
+            r1 = r2[r3]
+            r0 = r0 ^ r1
+            r1 = 16
+            int r0 = m10760j(r0, r1)
+            r2[r6] = r0
+            r0 = r2[r5]
+            r1 = r2[r6]
+            int r0 = r0 + r1
+            r2[r5] = r0
+            r0 = r2[r4]
+            r1 = r2[r5]
+            r0 = r0 ^ r1
+            r1 = 12
+            int r0 = m10760j(r0, r1)
+            r2[r4] = r0
+            r0 = r2[r3]
+            r1 = r2[r4]
+            int r0 = r0 + r1
+            r2[r3] = r0
+            r0 = r2[r6]
+            r3 = r2[r3]
+            r3 = r3 ^ r0
+            r0 = 8
+            int r3 = m10760j(r3, r0)
+            r2[r6] = r3
+            r3 = r2[r5]
+            r6 = r2[r6]
+            int r3 = r3 + r6
+            r2[r5] = r3
+            r3 = r2[r4]
+            r5 = r2[r5]
+            r3 = r3 ^ r5
+            r5 = 7
+            int r3 = m10760j(r3, r5)
+            r2[r4] = r3
+            return
+    }
+
+    /* renamed from: j */
+    public static int m10760j(int r1, int r2) {
+            int r0 = r1 << r2
+            int r2 = -r2
+            int r1 = r1 >>> r2
+            r1 = r1 | r0
+            return r1
+    }
+
+    /* renamed from: k */
+    public static void m10761k(int[] r3, int[] r4) {
+            int[] r0 = p236n9.AbstractC4707h.f18811c
+            int r1 = r0.length
+            r2 = 0
+            java.lang.System.arraycopy(r0, r2, r3, r2, r1)
+            int r0 = r0.length
+            r1 = 8
+            java.lang.System.arraycopy(r4, r2, r3, r0, r1)
+            return
+    }
+
+    /* renamed from: l */
+    public static void m10762l(int[] r16) {
+            r0 = r16
+            r1 = 0
+            r2 = 0
+        L4:
+            r3 = 10
+            if (r2 >= r3) goto L3b
+            r4 = 8
+            r5 = 12
+            r6 = 4
+            m10759i(r0, r1, r6, r4, r5)
+            r7 = 5
+            r8 = 13
+            r9 = 1
+            r10 = 9
+            m10759i(r0, r9, r7, r10, r8)
+            r11 = 2
+            r12 = 6
+            r13 = 14
+            m10759i(r0, r11, r12, r3, r13)
+            r14 = 3
+            r15 = 7
+            r6 = 11
+            r10 = 15
+            m10759i(r0, r14, r15, r6, r10)
+            m10759i(r0, r1, r7, r3, r10)
+            m10759i(r0, r9, r12, r6, r5)
+            m10759i(r0, r11, r15, r4, r8)
+            r3 = 9
+            r4 = 4
+            m10759i(r0, r14, r4, r3, r13)
+            int r2 = r2 + 1
+            goto L4
+        L3b:
+            return
+    }
+
+    /* renamed from: m */
+    public static int[] m10763m(byte[] r1) {
+            java.nio.ByteBuffer r1 = java.nio.ByteBuffer.wrap(r1)
+            java.nio.ByteOrder r0 = java.nio.ByteOrder.LITTLE_ENDIAN
+            java.nio.ByteBuffer r1 = r1.order(r0)
+            java.nio.IntBuffer r1 = r1.asIntBuffer()
+            int r0 = r1.remaining()
+            int[] r0 = new int[r0]
+            r1.get(r0)
+            return r0
+    }
+
+    @Override // p236n9.InterfaceC4713n
+    /* renamed from: a */
+    public byte[] mo10746a(byte[] r4) {
+            r3 = this;
+            int r0 = r4.length
+            int r1 = r3.mo10758g()
+            r2 = 2147483647(0x7fffffff, float:NaN)
+            int r2 = r2 - r1
+            if (r0 > r2) goto L1d
+            int r0 = r3.mo10758g()
+            int r1 = r4.length
+            int r0 = r0 + r1
+            java.nio.ByteBuffer r0 = java.nio.ByteBuffer.allocate(r0)
+            r3.m10766f(r0, r4)
+            byte[] r4 = r0.array()
+            return r4
+        L1d:
+            java.security.GeneralSecurityException r4 = new java.security.GeneralSecurityException
+            java.lang.String r0 = "plaintext too long"
+            r4.<init>(r0)
+            throw r4
+    }
+
+    @Override // p236n9.InterfaceC4713n
+    /* renamed from: b */
+    public byte[] mo10747b(byte[] r1) {
+            r0 = this;
+            java.nio.ByteBuffer r1 = java.nio.ByteBuffer.wrap(r1)
+            byte[] r1 = r0.m10765e(r1)
+            return r1
+    }
+
+    /* renamed from: c */
+    public java.nio.ByteBuffer m10764c(byte[] r5, int r6) {
+            r4 = this;
+            int[] r5 = m10763m(r5)
+            int[] r5 = r4.mo10757d(r5, r6)
+            java.lang.Object r6 = r5.clone()
+            int[] r6 = (int[]) r6
+            m10762l(r6)
+            r0 = 0
+            r1 = 0
+        L13:
+            int r2 = r5.length
+            if (r1 >= r2) goto L20
+            r2 = r5[r1]
+            r3 = r6[r1]
+            int r2 = r2 + r3
+            r5[r1] = r2
+            int r1 = r1 + 1
+            goto L13
+        L20:
+            r6 = 64
+            java.nio.ByteBuffer r6 = java.nio.ByteBuffer.allocate(r6)
+            java.nio.ByteOrder r1 = java.nio.ByteOrder.LITTLE_ENDIAN
+            java.nio.ByteBuffer r6 = r6.order(r1)
+            java.nio.IntBuffer r1 = r6.asIntBuffer()
+            r2 = 16
+            r1.put(r5, r0, r2)
+            return r6
+    }
+
+    /* renamed from: d */
+    public abstract int[] mo10757d(int[] r1, int r2);
+
+    /* renamed from: e */
+    public byte[] m10765e(java.nio.ByteBuffer r3) {
+            r2 = this;
+            int r0 = r3.remaining()
+            int r1 = r2.mo10758g()
+            if (r0 < r1) goto L23
+            int r0 = r2.mo10758g()
+            byte[] r0 = new byte[r0]
+            r3.get(r0)
+            int r1 = r3.remaining()
+            java.nio.ByteBuffer r1 = java.nio.ByteBuffer.allocate(r1)
+            r2.m10767h(r0, r1, r3)
+            byte[] r3 = r1.array()
+            return r3
+        L23:
+            java.security.GeneralSecurityException r3 = new java.security.GeneralSecurityException
+            java.lang.String r0 = "ciphertext too short"
+            r3.<init>(r0)
+            throw r3
+    }
+
+    /* renamed from: f */
+    public void m10766f(java.nio.ByteBuffer r3, byte[] r4) {
+            r2 = this;
+            int r0 = r3.remaining()
+            int r1 = r2.mo10758g()
+            int r0 = r0 - r1
+            int r1 = r4.length
+            if (r0 < r1) goto L1f
+            int r0 = r2.mo10758g()
+            byte[] r0 = p236n9.C4716q.m10773a(r0)
+            r3.put(r0)
+            java.nio.ByteBuffer r4 = java.nio.ByteBuffer.wrap(r4)
+            r2.m10767h(r0, r3, r4)
+            return
+        L1f:
+            java.lang.IllegalArgumentException r3 = new java.lang.IllegalArgumentException
+            java.lang.String r4 = "Given ByteBuffer output is too small"
+            r3.<init>(r4)
+            throw r3
+    }
+
+    /* renamed from: g */
+    public abstract int mo10758g();
+
+    /* renamed from: h */
+    public final void m10767h(byte[] r7, java.nio.ByteBuffer r8, java.nio.ByteBuffer r9) {
+            r6 = this;
+            int r0 = r9.remaining()
+            int r1 = r0 / 64
+            int r1 = r1 + 1
+            r2 = 0
+        L9:
+            if (r2 >= r1) goto L24
+            int r3 = r6.f18813b
+            int r3 = r3 + r2
+            java.nio.ByteBuffer r3 = r6.m10764c(r7, r3)
+            int r4 = r1 + (-1)
+            r5 = 64
+            if (r2 != r4) goto L1e
+            int r4 = r0 % 64
+            p185k7.C3828h5.m8581J(r8, r9, r3, r4)
+            goto L21
+        L1e:
+            p185k7.C3828h5.m8581J(r8, r9, r3, r5)
+        L21:
+            int r2 = r2 + 1
+            goto L9
+        L24:
+            return
+    }
+}
+package p236n9;
+
+/* renamed from: n9.j */
+/* loaded from: classes.dex */
+public abstract class AbstractC4709j implements p093f9.InterfaceC2083a {
+
+    /* renamed from: a */
+    public final p236n9.AbstractC4707h f18814a;
+
+    /* renamed from: b */
+    public final p236n9.AbstractC4707h f18815b;
+
+    public AbstractC4709j(byte[] r2) {
+            r1 = this;
+            r1.<init>()
+            r0 = 1
+            n9.h r0 = r1.mo10768d(r2, r0)
+            r1.f18814a = r0
+            r0 = 0
+            n9.h r2 = r1.mo10768d(r2, r0)
+            r1.f18815b = r2
+            return
+    }
+
+    /* renamed from: c */
+    public static byte[] m10769c(byte[] r5, java.nio.ByteBuffer r6) {
+            int r0 = r5.length
+            int r0 = r0 % 16
+            if (r0 != 0) goto L7
+            int r0 = r5.length
+            goto Le
+        L7:
+            int r0 = r5.length
+            int r0 = r0 + 16
+            int r1 = r5.length
+            int r1 = r1 % 16
+            int r0 = r0 - r1
+        Le:
+            int r1 = r6.remaining()
+            int r2 = r1 % 16
+            if (r2 != 0) goto L18
+            r3 = r1
+            goto L1b
+        L18:
+            int r3 = r1 + 16
+            int r3 = r3 - r2
+        L1b:
+            int r3 = r3 + r0
+            int r2 = r3 + 16
+            java.nio.ByteBuffer r2 = java.nio.ByteBuffer.allocate(r2)
+            java.nio.ByteOrder r4 = java.nio.ByteOrder.LITTLE_ENDIAN
+            java.nio.ByteBuffer r2 = r2.order(r4)
+            r2.put(r5)
+            r2.position(r0)
+            r2.put(r6)
+            r2.position(r3)
+            int r5 = r5.length
+            long r5 = (long) r5
+            r2.putLong(r5)
+            long r5 = (long) r1
+            r2.putLong(r5)
+            byte[] r5 = r2.array()
+            return r5
+    }
+
+    @Override // p093f9.InterfaceC2083a
+    /* renamed from: a */
+    public byte[] mo5506a(byte[] r5, byte[] r6) {
+            r4 = this;
+            int r0 = r5.length
+            n9.h r1 = r4.f18814a
+            int r1 = r1.mo10758g()
+            r2 = 2147483647(0x7fffffff, float:NaN)
+            int r2 = r2 - r1
+            int r2 = r2 + (-16)
+            if (r0 > r2) goto L80
+            int r0 = r5.length
+            n9.h r1 = r4.f18814a
+            int r1 = r1.mo10758g()
+            int r1 = r1 + r0
+            int r1 = r1 + 16
+            java.nio.ByteBuffer r0 = java.nio.ByteBuffer.allocate(r1)
+            int r1 = r0.remaining()
+            int r2 = r5.length
+            n9.h r3 = r4.f18814a
+            int r3 = r3.mo10758g()
+            int r3 = r3 + r2
+            int r3 = r3 + 16
+            if (r1 < r3) goto L78
+            int r1 = r0.position()
+            n9.h r2 = r4.f18814a
+            r2.m10766f(r0, r5)
+            r0.position(r1)
+            n9.h r5 = r4.f18814a
+            int r5 = r5.mo10758g()
+            byte[] r5 = new byte[r5]
+            r0.get(r5)
+            int r1 = r0.limit()
+            int r1 = r1 + (-16)
+            r0.limit(r1)
+            r1 = 0
+            if (r6 != 0) goto L52
+            byte[] r6 = new byte[r1]
+        L52:
+            n9.h r2 = r4.f18815b
+            java.nio.ByteBuffer r5 = r2.m10764c(r5, r1)
+            r1 = 32
+            byte[] r1 = new byte[r1]
+            r5.get(r1)
+            byte[] r5 = m10769c(r6, r0)
+            byte[] r5 = p185k7.C3828h5.m8588c(r1, r5)
+            int r6 = r0.limit()
+            int r6 = r6 + 16
+            r0.limit(r6)
+            r0.put(r5)
+            byte[] r5 = r0.array()
+            return r5
+        L78:
+            java.lang.IllegalArgumentException r5 = new java.lang.IllegalArgumentException
+            java.lang.String r6 = "Given ByteBuffer output is too small"
+            r5.<init>(r6)
+            throw r5
+        L80:
+            java.security.GeneralSecurityException r5 = new java.security.GeneralSecurityException
+            java.lang.String r6 = "plaintext too long"
+            r5.<init>(r6)
+            throw r5
+    }
+
+    @Override // p093f9.InterfaceC2083a
+    /* renamed from: b */
+    public byte[] mo5507b(byte[] r6, byte[] r7) {
+            r5 = this;
+            java.nio.ByteBuffer r6 = java.nio.ByteBuffer.wrap(r6)
+            int r0 = r6.remaining()
+            n9.h r1 = r5.f18814a
+            int r1 = r1.mo10758g()
+            r2 = 16
+            int r1 = r1 + r2
+            if (r0 < r1) goto L77
+            int r0 = r6.position()
+            byte[] r1 = new byte[r2]
+            int r3 = r6.limit()
+            int r3 = r3 - r2
+            r6.position(r3)
+            r6.get(r1)
+            r6.position(r0)
+            int r3 = r6.limit()
+            int r3 = r3 - r2
+            r6.limit(r3)
+            n9.h r2 = r5.f18814a
+            int r2 = r2.mo10758g()
+            byte[] r2 = new byte[r2]
+            r6.get(r2)
+            r3 = 0
+            if (r7 != 0) goto L3f
+            byte[] r7 = new byte[r3]
+        L3f:
+            n9.h r4 = r5.f18815b     // Catch: java.security.GeneralSecurityException -> L6c
+            java.nio.ByteBuffer r2 = r4.m10764c(r2, r3)     // Catch: java.security.GeneralSecurityException -> L6c
+            r3 = 32
+            byte[] r3 = new byte[r3]     // Catch: java.security.GeneralSecurityException -> L6c
+            r2.get(r3)     // Catch: java.security.GeneralSecurityException -> L6c
+            byte[] r7 = m10769c(r7, r6)     // Catch: java.security.GeneralSecurityException -> L6c
+            byte[] r7 = p185k7.C3828h5.m8588c(r3, r7)     // Catch: java.security.GeneralSecurityException -> L6c
+            boolean r7 = p185k7.C3828h5.m8594i(r7, r1)     // Catch: java.security.GeneralSecurityException -> L6c
+            if (r7 == 0) goto L64
+            r6.position(r0)
+            n9.h r7 = r5.f18814a
+            byte[] r6 = r7.m10765e(r6)
+            return r6
+        L64:
+            java.security.GeneralSecurityException r6 = new java.security.GeneralSecurityException     // Catch: java.security.GeneralSecurityException -> L6c
+            java.lang.String r7 = "invalid MAC"
+            r6.<init>(r7)     // Catch: java.security.GeneralSecurityException -> L6c
+            throw r6     // Catch: java.security.GeneralSecurityException -> L6c
+        L6c:
+            r6 = move-exception
+            javax.crypto.AEADBadTagException r7 = new javax.crypto.AEADBadTagException
+            java.lang.String r6 = r6.toString()
+            r7.<init>(r6)
+            throw r7
+        L77:
+            java.security.GeneralSecurityException r6 = new java.security.GeneralSecurityException
+            java.lang.String r7 = "ciphertext too short"
+            r6.<init>(r7)
+            throw r6
+    }
+
+    /* renamed from: d */
+    public abstract p236n9.AbstractC4707h mo10768d(byte[] r1, int r2);
+}
+package p236n9;
+
+/* renamed from: n9.a */
+/* loaded from: classes.dex */
+public final class C4700a implements p093f9.InterfaceC2095m {
+
+    /* renamed from: a */
+    public final javax.crypto.SecretKey f18777a;
+
+    /* renamed from: b */
+    public final int f18778b;
+
+    /* renamed from: c */
+    public byte[] f18779c;
+
+    /* renamed from: d */
+    public byte[] f18780d;
+
+    public C4700a(byte[] r4, int r5) {
+            r3 = this;
+            r3.<init>()
+            int r0 = r4.length
+            p236n9.C4717r.m10774a(r0)
+            r0 = 10
+            if (r5 < r0) goto L43
+            r0 = 16
+            if (r5 > r0) goto L3b
+            javax.crypto.spec.SecretKeySpec r1 = new javax.crypto.spec.SecretKeySpec
+            java.lang.String r2 = "AES"
+            r1.<init>(r4, r2)
+            r3.f18777a = r1
+            r3.f18778b = r5
+            n9.l<n9.m$a, javax.crypto.Cipher> r4 = p236n9.C4711l.f18821e
+            java.lang.String r5 = "AES/ECB/NoPadding"
+            java.lang.Object r4 = r4.m10770a(r5)
+            javax.crypto.Cipher r4 = (javax.crypto.Cipher) r4
+            r5 = 1
+            r4.init(r5, r1)
+            byte[] r5 = new byte[r0]
+            byte[] r4 = r4.doFinal(r5)
+            byte[] r4 = p074e9.C1805a.m4521f(r4)
+            r3.f18779c = r4
+            byte[] r4 = p074e9.C1805a.m4521f(r4)
+            r3.f18780d = r4
+            return
+        L3b:
+            java.security.InvalidAlgorithmParameterException r4 = new java.security.InvalidAlgorithmParameterException
+            java.lang.String r5 = "tag size too large, max is 16 bytes"
+            r4.<init>(r5)
+            throw r4
+        L43:
+            java.security.InvalidAlgorithmParameterException r4 = new java.security.InvalidAlgorithmParameterException
+            java.lang.String r5 = "tag size too small, min is 10 bytes"
+            r4.<init>(r5)
+            throw r4
+    }
+
+    @Override // p093f9.InterfaceC2095m
+    /* renamed from: a */
+    public void mo5536a(byte[] r1, byte[] r2) {
+            r0 = this;
+            byte[] r2 = r0.mo5537b(r2)
+            boolean r1 = p185k7.C3828h5.m8594i(r1, r2)
+            if (r1 == 0) goto Lb
+            return
+        Lb:
+            java.security.GeneralSecurityException r1 = new java.security.GeneralSecurityException
+            java.lang.String r2 = "invalid MAC"
+            r1.<init>(r2)
+            throw r1
+    }
+
+    @Override // p093f9.InterfaceC2095m
+    /* renamed from: b */
+    public byte[] mo5537b(byte[] r9) {
+            r8 = this;
+            n9.l<n9.m$a, javax.crypto.Cipher> r0 = p236n9.C4711l.f18821e
+            java.lang.String r1 = "AES/ECB/NoPadding"
+            java.lang.Object r0 = r0.m10770a(r1)
+            javax.crypto.Cipher r0 = (javax.crypto.Cipher) r0
+            javax.crypto.SecretKey r1 = r8.f18777a
+            r2 = 1
+            r0.init(r2, r1)
+            int r1 = r9.length
+            double r3 = (double) r1
+            r5 = 4625196817309499392(0x4030000000000000, double:16.0)
+            double r3 = r3 / r5
+            double r3 = java.lang.Math.ceil(r3)
+            int r1 = (int) r3
+            int r1 = java.lang.Math.max(r2, r1)
+            int r3 = r1 * 16
+            int r4 = r9.length
+            r5 = 0
+            if (r3 != r4) goto L25
+            goto L26
+        L25:
+            r2 = 0
+        L26:
+            r3 = 16
+            if (r2 == 0) goto L35
+            int r2 = r1 + (-1)
+            int r2 = r2 * 16
+            byte[] r4 = r8.f18779c
+            byte[] r2 = p185k7.C3828h5.m8582K(r9, r2, r4, r5, r3)
+            goto L48
+        L35:
+            int r2 = r1 + (-1)
+            int r2 = r2 * 16
+            int r4 = r9.length
+            byte[] r2 = java.util.Arrays.copyOfRange(r9, r2, r4)
+            byte[] r2 = p074e9.C1805a.m4518c(r2)
+            byte[] r4 = r8.f18780d
+            byte[] r2 = p185k7.C3828h5.m8583L(r2, r4)
+        L48:
+            byte[] r4 = new byte[r3]
+            r6 = 0
+        L4b:
+            int r7 = r1 + (-1)
+            if (r6 >= r7) goto L5c
+            int r7 = r6 * 16
+            byte[] r4 = p185k7.C3828h5.m8582K(r4, r5, r9, r7, r3)
+            byte[] r4 = r0.doFinal(r4)
+            int r6 = r6 + 1
+            goto L4b
+        L5c:
+            byte[] r9 = p185k7.C3828h5.m8583L(r2, r4)
+            int r1 = r8.f18778b
+            byte[] r1 = new byte[r1]
+            byte[] r9 = r0.doFinal(r9)
+            int r0 = r8.f18778b
+            java.lang.System.arraycopy(r9, r5, r1, r5, r0)
+            return r1
+    }
+}
+package p236n9;
+
+/* renamed from: n9.b */
+/* loaded from: classes.dex */
+public final class C4701b implements p236n9.InterfaceC4713n {
+
+    /* renamed from: d */
+    public static final java.lang.ThreadLocal<javax.crypto.Cipher> f18781d = null;
+
+    /* renamed from: a */
+    public final javax.crypto.spec.SecretKeySpec f18782a;
+
+    /* renamed from: b */
+    public final int f18783b;
+
+    /* renamed from: c */
+    public final int f18784c;
+
+    /* renamed from: n9.b$a */
+    public class a extends java.lang.ThreadLocal<javax.crypto.Cipher> {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // java.lang.ThreadLocal
+        public javax.crypto.Cipher initialValue() {
+                r2 = this;
+                n9.l<n9.m$a, javax.crypto.Cipher> r0 = p236n9.C4711l.f18821e     // Catch: java.security.GeneralSecurityException -> Lb
+                java.lang.String r1 = "AES/CTR/NoPadding"
+                java.lang.Object r0 = r0.m10770a(r1)     // Catch: java.security.GeneralSecurityException -> Lb
+                javax.crypto.Cipher r0 = (javax.crypto.Cipher) r0     // Catch: java.security.GeneralSecurityException -> Lb
+                return r0
+            Lb:
+                r0 = move-exception
+                java.lang.IllegalStateException r1 = new java.lang.IllegalStateException
+                r1.<init>(r0)
+                throw r1
+        }
+    }
+
+    static {
+            n9.b$a r0 = new n9.b$a
+            r0.<init>()
+            p236n9.C4701b.f18781d = r0
+            return
+    }
+
+    public C4701b(byte[] r3, int r4) {
+            r2 = this;
+            r2.<init>()
+            int r0 = r3.length
+            p236n9.C4717r.m10774a(r0)
+            javax.crypto.spec.SecretKeySpec r0 = new javax.crypto.spec.SecretKeySpec
+            java.lang.String r1 = "AES"
+            r0.<init>(r3, r1)
+            r2.f18782a = r0
+            java.lang.ThreadLocal<javax.crypto.Cipher> r3 = p236n9.C4701b.f18781d
+            java.lang.Object r3 = r3.get()
+            javax.crypto.Cipher r3 = (javax.crypto.Cipher) r3
+            int r3 = r3.getBlockSize()
+            r2.f18784c = r3
+            r0 = 12
+            if (r4 < r0) goto L27
+            if (r4 > r3) goto L27
+            r2.f18783b = r4
+            return
+        L27:
+            java.security.GeneralSecurityException r3 = new java.security.GeneralSecurityException
+            java.lang.String r4 = "invalid IV size"
+            r3.<init>(r4)
+            throw r3
+    }
+
+    @Override // p236n9.InterfaceC4713n
+    /* renamed from: a */
+    public byte[] mo10746a(byte[] r11) {
+            r10 = this;
+            int r0 = r11.length
+            int r1 = r10.f18783b
+            r2 = 2147483647(0x7fffffff, float:NaN)
+            int r3 = r2 - r1
+            if (r0 > r3) goto L24
+            int r0 = r11.length
+            int r0 = r0 + r1
+            byte[] r0 = new byte[r0]
+            byte[] r8 = p236n9.C4716q.m10773a(r1)
+            int r1 = r10.f18783b
+            r2 = 0
+            java.lang.System.arraycopy(r8, r2, r0, r2, r1)
+            r4 = 0
+            int r5 = r11.length
+            int r7 = r10.f18783b
+            r9 = 1
+            r2 = r10
+            r3 = r11
+            r6 = r0
+            r2.m10748c(r3, r4, r5, r6, r7, r8, r9)
+            return r0
+        L24:
+            java.security.GeneralSecurityException r11 = new java.security.GeneralSecurityException
+            java.lang.String r0 = "plaintext length can not exceed "
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            int r1 = r10.f18783b
+            int r2 = r2 - r1
+            r0.append(r2)
+            java.lang.String r0 = r0.toString()
+            r11.<init>(r0)
+            throw r11
+    }
+
+    @Override // p236n9.InterfaceC4713n
+    /* renamed from: b */
+    public byte[] mo10747b(byte[] r11) {
+            r10 = this;
+            int r0 = r11.length
+            int r1 = r10.f18783b
+            if (r0 < r1) goto L1d
+            byte[] r8 = new byte[r1]
+            r0 = 0
+            java.lang.System.arraycopy(r11, r0, r8, r0, r1)
+            int r0 = r11.length
+            int r4 = r10.f18783b
+            int r0 = r0 - r4
+            byte[] r0 = new byte[r0]
+            int r1 = r11.length
+            int r5 = r1 - r4
+            r7 = 0
+            r9 = 0
+            r2 = r10
+            r3 = r11
+            r6 = r0
+            r2.m10748c(r3, r4, r5, r6, r7, r8, r9)
+            return r0
+        L1d:
+            java.security.GeneralSecurityException r11 = new java.security.GeneralSecurityException
+            java.lang.String r0 = "ciphertext too short"
+            r11.<init>(r0)
+            throw r11
+    }
+
+    /* renamed from: c */
+    public final void m10748c(byte[] r8, int r9, int r10, byte[] r11, int r12, byte[] r13, boolean r14) {
+            r7 = this;
+            java.lang.ThreadLocal<javax.crypto.Cipher> r0 = p236n9.C4701b.f18781d
+            java.lang.Object r0 = r0.get()
+            r1 = r0
+            javax.crypto.Cipher r1 = (javax.crypto.Cipher) r1
+            int r0 = r7.f18784c
+            byte[] r0 = new byte[r0]
+            int r2 = r7.f18783b
+            r3 = 0
+            java.lang.System.arraycopy(r13, r3, r0, r3, r2)
+            javax.crypto.spec.IvParameterSpec r13 = new javax.crypto.spec.IvParameterSpec
+            r13.<init>(r0)
+            if (r14 == 0) goto L1c
+            r14 = 1
+            goto L1d
+        L1c:
+            r14 = 2
+        L1d:
+            javax.crypto.spec.SecretKeySpec r0 = r7.f18782a
+            r1.init(r14, r0, r13)
+            r2 = r8
+            r3 = r9
+            r4 = r10
+            r5 = r11
+            r6 = r12
+            int r8 = r1.doFinal(r2, r3, r4, r5, r6)
+            if (r8 != r10) goto L2e
+            return
+        L2e:
+            java.security.GeneralSecurityException r8 = new java.security.GeneralSecurityException
+            java.lang.String r9 = "stored output's length does not match input's length"
+            r8.<init>(r9)
+            throw r8
+    }
+}
+package p236n9;
+
+/* renamed from: n9.c */
+/* loaded from: classes.dex */
+public final class C4702c implements p093f9.InterfaceC2083a {
+
+    /* renamed from: e */
+    public static final java.lang.ThreadLocal<javax.crypto.Cipher> f18785e = null;
+
+    /* renamed from: f */
+    public static final java.lang.ThreadLocal<javax.crypto.Cipher> f18786f = null;
+
+    /* renamed from: a */
+    public final byte[] f18787a;
+
+    /* renamed from: b */
+    public final byte[] f18788b;
+
+    /* renamed from: c */
+    public final javax.crypto.spec.SecretKeySpec f18789c;
+
+    /* renamed from: d */
+    public final int f18790d;
+
+    /* renamed from: n9.c$a */
+    public class a extends java.lang.ThreadLocal<javax.crypto.Cipher> {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // java.lang.ThreadLocal
+        public javax.crypto.Cipher initialValue() {
+                r2 = this;
+                n9.l<n9.m$a, javax.crypto.Cipher> r0 = p236n9.C4711l.f18821e     // Catch: java.security.GeneralSecurityException -> Lb
+                java.lang.String r1 = "AES/ECB/NOPADDING"
+                java.lang.Object r0 = r0.m10770a(r1)     // Catch: java.security.GeneralSecurityException -> Lb
+                javax.crypto.Cipher r0 = (javax.crypto.Cipher) r0     // Catch: java.security.GeneralSecurityException -> Lb
+                return r0
+            Lb:
+                r0 = move-exception
+                java.lang.IllegalStateException r1 = new java.lang.IllegalStateException
+                r1.<init>(r0)
+                throw r1
+        }
+    }
+
+    /* renamed from: n9.c$b */
+    public class b extends java.lang.ThreadLocal<javax.crypto.Cipher> {
+        public b() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // java.lang.ThreadLocal
+        public javax.crypto.Cipher initialValue() {
+                r2 = this;
+                n9.l<n9.m$a, javax.crypto.Cipher> r0 = p236n9.C4711l.f18821e     // Catch: java.security.GeneralSecurityException -> Lb
+                java.lang.String r1 = "AES/CTR/NOPADDING"
+                java.lang.Object r0 = r0.m10770a(r1)     // Catch: java.security.GeneralSecurityException -> Lb
+                javax.crypto.Cipher r0 = (javax.crypto.Cipher) r0     // Catch: java.security.GeneralSecurityException -> Lb
+                return r0
+            Lb:
+                r0 = move-exception
+                java.lang.IllegalStateException r1 = new java.lang.IllegalStateException
+                r1.<init>(r0)
+                throw r1
+        }
+    }
+
+    static {
+            n9.c$a r0 = new n9.c$a
+            r0.<init>()
+            p236n9.C4702c.f18785e = r0
+            n9.c$b r0 = new n9.c$b
+            r0.<init>()
+            p236n9.C4702c.f18786f = r0
+            return
+    }
+
+    public C4702c(byte[] r3, int r4) {
+            r2 = this;
+            r2.<init>()
+            r0 = 16
+            r1 = 12
+            if (r4 == r1) goto L14
+            if (r4 != r0) goto Lc
+            goto L14
+        Lc:
+            java.lang.IllegalArgumentException r3 = new java.lang.IllegalArgumentException
+            java.lang.String r4 = "IV size should be either 12 or 16 bytes"
+            r3.<init>(r4)
+            throw r3
+        L14:
+            r2.f18790d = r4
+            int r4 = r3.length
+            p236n9.C4717r.m10774a(r4)
+            javax.crypto.spec.SecretKeySpec r4 = new javax.crypto.spec.SecretKeySpec
+            java.lang.String r1 = "AES"
+            r4.<init>(r3, r1)
+            r2.f18789c = r4
+            java.lang.ThreadLocal<javax.crypto.Cipher> r3 = p236n9.C4702c.f18785e
+            java.lang.Object r3 = r3.get()
+            javax.crypto.Cipher r3 = (javax.crypto.Cipher) r3
+            r1 = 1
+            r3.init(r1, r4)
+            byte[] r4 = new byte[r0]
+            byte[] r3 = r3.doFinal(r4)
+            byte[] r3 = m10749c(r3)
+            r2.f18787a = r3
+            byte[] r3 = m10749c(r3)
+            r2.f18788b = r3
+            return
+    }
+
+    /* renamed from: c */
+    public static byte[] m10749c(byte[] r6) {
+            r0 = 16
+            byte[] r0 = new byte[r0]
+            r1 = 0
+            r2 = 0
+        L6:
+            r3 = 15
+            if (r2 >= r3) goto L1e
+            r3 = r6[r2]
+            int r3 = r3 << 1
+            int r4 = r2 + 1
+            r5 = r6[r4]
+            r5 = r5 & 255(0xff, float:3.57E-43)
+            int r5 = r5 >>> 7
+            r3 = r3 ^ r5
+            r3 = r3 & 255(0xff, float:3.57E-43)
+            byte r3 = (byte) r3
+            r0[r2] = r3
+            r2 = r4
+            goto L6
+        L1e:
+            r2 = r6[r3]
+            int r2 = r2 << 1
+            r6 = r6[r1]
+            r6 = r6 & 128(0x80, float:1.8E-43)
+            if (r6 != 0) goto L29
+            goto L2b
+        L29:
+            r1 = 135(0x87, float:1.89E-43)
+        L2b:
+            r6 = r2 ^ r1
+            byte r6 = (byte) r6
+            r0[r3] = r6
+            return r0
+    }
+
+    /* renamed from: e */
+    public static byte[] m10750e(byte[] r5, byte[] r6) {
+            int r0 = r5.length
+            byte[] r1 = new byte[r0]
+            r2 = 0
+        L4:
+            if (r2 >= r0) goto L11
+            r3 = r5[r2]
+            r4 = r6[r2]
+            r3 = r3 ^ r4
+            byte r3 = (byte) r3
+            r1[r2] = r3
+            int r2 = r2 + 1
+            goto L4
+        L11:
+            return r1
+    }
+
+    @Override // p093f9.InterfaceC2083a
+    /* renamed from: a */
+    public byte[] mo5506a(byte[] r16, byte[] r17) {
+            r15 = this;
+            r6 = r15
+            r7 = r16
+            int r0 = r7.length
+            int r1 = r6.f18790d
+            r2 = 2147483647(0x7fffffff, float:NaN)
+            int r2 = r2 - r1
+            r8 = 16
+            int r2 = r2 - r8
+            if (r0 > r2) goto L85
+            int r0 = r7.length
+            int r0 = r0 + r1
+            int r0 = r0 + r8
+            byte[] r9 = new byte[r0]
+            byte[] r3 = p236n9.C4716q.m10773a(r1)
+            int r0 = r6.f18790d
+            r10 = 0
+            java.lang.System.arraycopy(r3, r10, r9, r10, r0)
+            java.lang.ThreadLocal<javax.crypto.Cipher> r0 = p236n9.C4702c.f18785e
+            java.lang.Object r0 = r0.get()
+            r11 = r0
+            javax.crypto.Cipher r11 = (javax.crypto.Cipher) r11
+            javax.crypto.spec.SecretKeySpec r0 = r6.f18789c
+            r12 = 1
+            r11.init(r12, r0)
+            r2 = 0
+            r4 = 0
+            int r5 = r3.length
+            r0 = r15
+            r1 = r11
+            byte[] r13 = r0.m10751d(r1, r2, r3, r4, r5)
+            if (r17 != 0) goto L3c
+            byte[] r0 = new byte[r10]
+            r3 = r0
+            goto L3e
+        L3c:
+            r3 = r17
+        L3e:
+            r2 = 1
+            r4 = 0
+            int r5 = r3.length
+            r0 = r15
+            r1 = r11
+            byte[] r14 = r0.m10751d(r1, r2, r3, r4, r5)
+            java.lang.ThreadLocal<javax.crypto.Cipher> r0 = p236n9.C4702c.f18786f
+            java.lang.Object r0 = r0.get()
+            javax.crypto.Cipher r0 = (javax.crypto.Cipher) r0
+            javax.crypto.spec.SecretKeySpec r1 = r6.f18789c
+            javax.crypto.spec.IvParameterSpec r2 = new javax.crypto.spec.IvParameterSpec
+            r2.<init>(r13)
+            r0.init(r12, r1, r2)
+            r2 = 0
+            int r3 = r7.length
+            int r5 = r6.f18790d
+            r1 = r16
+            r4 = r9
+            r0.doFinal(r1, r2, r3, r4, r5)
+            r2 = 2
+            int r4 = r6.f18790d
+            int r5 = r7.length
+            r0 = r15
+            r1 = r11
+            r3 = r9
+            byte[] r0 = r0.m10751d(r1, r2, r3, r4, r5)
+            int r1 = r7.length
+            int r2 = r6.f18790d
+            int r1 = r1 + r2
+        L72:
+            if (r10 >= r8) goto L84
+            int r2 = r1 + r10
+            r3 = r14[r10]
+            r4 = r13[r10]
+            r3 = r3 ^ r4
+            r4 = r0[r10]
+            r3 = r3 ^ r4
+            byte r3 = (byte) r3
+            r9[r2] = r3
+            int r10 = r10 + 1
+            goto L72
+        L84:
+            return r9
+        L85:
+            java.security.GeneralSecurityException r0 = new java.security.GeneralSecurityException
+            java.lang.String r1 = "plaintext too long"
+            r0.<init>(r1)
+            throw r0
+    }
+
+    @Override // p093f9.InterfaceC2083a
+    /* renamed from: b */
+    public byte[] mo5507b(byte[] r14, byte[] r15) {
+            r13 = this;
+            int r0 = r14.length
+            int r1 = r13.f18790d
+            int r0 = r0 - r1
+            r1 = 16
+            int r0 = r0 - r1
+            if (r0 < 0) goto L77
+            java.lang.ThreadLocal<javax.crypto.Cipher> r2 = p236n9.C4702c.f18785e
+            java.lang.Object r2 = r2.get()
+            r9 = r2
+            javax.crypto.Cipher r9 = (javax.crypto.Cipher) r9
+            javax.crypto.spec.SecretKeySpec r2 = r13.f18789c
+            r10 = 1
+            r9.init(r10, r2)
+            r5 = 0
+            r7 = 0
+            int r8 = r13.f18790d
+            r3 = r13
+            r4 = r9
+            r6 = r14
+            byte[] r11 = r3.m10751d(r4, r5, r6, r7, r8)
+            r12 = 0
+            if (r15 != 0) goto L28
+            byte[] r15 = new byte[r12]
+        L28:
+            r6 = r15
+            r5 = 1
+            r7 = 0
+            int r8 = r6.length
+            r3 = r13
+            r4 = r9
+            byte[] r15 = r3.m10751d(r4, r5, r6, r7, r8)
+            r4 = 2
+            int r6 = r13.f18790d
+            r2 = r13
+            r3 = r9
+            r5 = r14
+            r7 = r0
+            byte[] r2 = r2.m10751d(r3, r4, r5, r6, r7)
+            int r3 = r14.length
+            int r3 = r3 - r1
+            r4 = 0
+        L40:
+            if (r12 >= r1) goto L54
+            int r5 = r3 + r12
+            r5 = r14[r5]
+            r6 = r15[r12]
+            r5 = r5 ^ r6
+            r6 = r11[r12]
+            r5 = r5 ^ r6
+            r6 = r2[r12]
+            r5 = r5 ^ r6
+            r4 = r4 | r5
+            byte r4 = (byte) r4
+            int r12 = r12 + 1
+            goto L40
+        L54:
+            if (r4 != 0) goto L6f
+            java.lang.ThreadLocal<javax.crypto.Cipher> r15 = p236n9.C4702c.f18786f
+            java.lang.Object r15 = r15.get()
+            javax.crypto.Cipher r15 = (javax.crypto.Cipher) r15
+            javax.crypto.spec.SecretKeySpec r1 = r13.f18789c
+            javax.crypto.spec.IvParameterSpec r2 = new javax.crypto.spec.IvParameterSpec
+            r2.<init>(r11)
+            r15.init(r10, r1, r2)
+            int r1 = r13.f18790d
+            byte[] r14 = r15.doFinal(r14, r1, r0)
+            return r14
+        L6f:
+            javax.crypto.AEADBadTagException r14 = new javax.crypto.AEADBadTagException
+            java.lang.String r15 = "tag mismatch"
+            r14.<init>(r15)
+            throw r14
+        L77:
+            java.security.GeneralSecurityException r14 = new java.security.GeneralSecurityException
+            java.lang.String r15 = "ciphertext too short"
+            r14.<init>(r15)
+            throw r14
+    }
+
+    /* renamed from: d */
+    public final byte[] m10751d(javax.crypto.Cipher r7, int r8, byte[] r9, int r10, int r11) {
+            r6 = this;
+            r0 = 16
+            byte[] r1 = new byte[r0]
+            byte r8 = (byte) r8
+            r2 = 15
+            r1[r2] = r8
+            if (r11 != 0) goto L16
+            byte[] r8 = r6.f18787a
+            byte[] r8 = m10750e(r1, r8)
+            byte[] r7 = r7.doFinal(r8)
+            return r7
+        L16:
+            byte[] r8 = r7.doFinal(r1)
+            r1 = 0
+            r2 = 0
+        L1c:
+            int r3 = r11 - r2
+            if (r3 <= r0) goto L38
+            r3 = 0
+        L21:
+            if (r3 >= r0) goto L31
+            r4 = r8[r3]
+            int r5 = r10 + r2
+            int r5 = r5 + r3
+            r5 = r9[r5]
+            r4 = r4 ^ r5
+            byte r4 = (byte) r4
+            r8[r3] = r4
+            int r3 = r3 + 1
+            goto L21
+        L31:
+            byte[] r8 = r7.doFinal(r8)
+            int r2 = r2 + 16
+            goto L1c
+        L38:
+            int r2 = r2 + r10
+            int r10 = r10 + r11
+            byte[] r9 = java.util.Arrays.copyOfRange(r9, r2, r10)
+            int r10 = r9.length
+            if (r10 != r0) goto L48
+            byte[] r10 = r6.f18787a
+            byte[] r9 = m10750e(r9, r10)
+            goto L66
+        L48:
+            byte[] r10 = r6.f18788b
+            byte[] r10 = java.util.Arrays.copyOf(r10, r0)
+        L4e:
+            int r11 = r9.length
+            if (r1 >= r11) goto L5c
+            r11 = r10[r1]
+            r0 = r9[r1]
+            r11 = r11 ^ r0
+            byte r11 = (byte) r11
+            r10[r1] = r11
+            int r1 = r1 + 1
+            goto L4e
+        L5c:
+            int r11 = r9.length
+            int r9 = r9.length
+            r9 = r10[r9]
+            r9 = r9 ^ 128(0x80, float:1.8E-43)
+            byte r9 = (byte) r9
+            r10[r11] = r9
+            r9 = r10
+        L66:
+            byte[] r8 = m10750e(r8, r9)
+            byte[] r7 = r7.doFinal(r8)
+            return r7
+    }
+}
+package p236n9;
+
+/* renamed from: n9.d */
+/* loaded from: classes.dex */
+public final class C4703d implements p093f9.InterfaceC2083a {
+
+    /* renamed from: b */
+    public static final java.lang.ThreadLocal<javax.crypto.Cipher> f18791b = null;
+
+    /* renamed from: a */
+    public final javax.crypto.SecretKey f18792a;
+
+    /* renamed from: n9.d$a */
+    public class a extends java.lang.ThreadLocal<javax.crypto.Cipher> {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // java.lang.ThreadLocal
+        public javax.crypto.Cipher initialValue() {
+                r2 = this;
+                n9.l<n9.m$a, javax.crypto.Cipher> r0 = p236n9.C4711l.f18821e     // Catch: java.security.GeneralSecurityException -> Lb
+                java.lang.String r1 = "AES/GCM/NoPadding"
+                java.lang.Object r0 = r0.m10770a(r1)     // Catch: java.security.GeneralSecurityException -> Lb
+                javax.crypto.Cipher r0 = (javax.crypto.Cipher) r0     // Catch: java.security.GeneralSecurityException -> Lb
+                return r0
+            Lb:
+                r0 = move-exception
+                java.lang.IllegalStateException r1 = new java.lang.IllegalStateException
+                r1.<init>(r0)
+                throw r1
+        }
+    }
+
+    static {
+            n9.d$a r0 = new n9.d$a
+            r0.<init>()
+            p236n9.C4703d.f18791b = r0
+            return
+    }
+
+    public C4703d(byte[] r3) {
+            r2 = this;
+            r2.<init>()
+            int r0 = r3.length
+            p236n9.C4717r.m10774a(r0)
+            javax.crypto.spec.SecretKeySpec r0 = new javax.crypto.spec.SecretKeySpec
+            java.lang.String r1 = "AES"
+            r0.<init>(r3, r1)
+            r2.f18792a = r0
+            return
+    }
+
+    /* renamed from: c */
+    public static java.security.spec.AlgorithmParameterSpec m10752c(byte[] r2, int r3, int r4) {
+            java.lang.String r0 = "javax.crypto.spec.GCMParameterSpec"
+            java.lang.Class.forName(r0)     // Catch: java.lang.ClassNotFoundException -> Ld
+            javax.crypto.spec.GCMParameterSpec r0 = new javax.crypto.spec.GCMParameterSpec     // Catch: java.lang.ClassNotFoundException -> Ld
+            r1 = 128(0x80, float:1.8E-43)
+            r0.<init>(r1, r2, r3, r4)     // Catch: java.lang.ClassNotFoundException -> Ld
+            return r0
+        Ld:
+            boolean r0 = p185k7.C4038x4.m9095h()
+            if (r0 == 0) goto L1a
+            javax.crypto.spec.IvParameterSpec r0 = new javax.crypto.spec.IvParameterSpec
+            r0.<init>(r2, r3, r4)
+            return r0
+        L1a:
+            java.security.GeneralSecurityException r2 = new java.security.GeneralSecurityException
+            java.lang.String r3 = "cannot use AES-GCM: javax.crypto.spec.GCMParameterSpec not found"
+            r2.<init>(r3)
+            throw r2
+    }
+
+    @Override // p093f9.InterfaceC2083a
+    /* renamed from: a */
+    public byte[] mo5506a(byte[] r12, byte[] r13) {
+            r11 = this;
+            int r0 = r12.length
+            r1 = 2147483619(0x7fffffe3, float:NaN)
+            if (r0 > r1) goto L6b
+            int r0 = r12.length
+            r1 = 12
+            int r0 = r0 + r1
+            r2 = 16
+            int r0 = r0 + r2
+            byte[] r0 = new byte[r0]
+            byte[] r3 = p236n9.C4716q.m10773a(r1)
+            r9 = 0
+            java.lang.System.arraycopy(r3, r9, r0, r9, r1)
+            int r1 = r3.length
+            java.security.spec.AlgorithmParameterSpec r1 = m10752c(r3, r9, r1)
+            java.lang.ThreadLocal<javax.crypto.Cipher> r3 = p236n9.C4703d.f18791b
+            java.lang.Object r4 = r3.get()
+            javax.crypto.Cipher r4 = (javax.crypto.Cipher) r4
+            javax.crypto.SecretKey r5 = r11.f18792a
+            r10 = 1
+            r4.init(r10, r5, r1)
+            if (r13 == 0) goto L38
+            int r1 = r13.length
+            if (r1 == 0) goto L38
+            java.lang.Object r1 = r3.get()
+            javax.crypto.Cipher r1 = (javax.crypto.Cipher) r1
+            r1.updateAAD(r13)
+        L38:
+            java.lang.Object r13 = r3.get()
+            r3 = r13
+            javax.crypto.Cipher r3 = (javax.crypto.Cipher) r3
+            r5 = 0
+            int r6 = r12.length
+            r8 = 12
+            r4 = r12
+            r7 = r0
+            int r13 = r3.doFinal(r4, r5, r6, r7, r8)
+            int r1 = r12.length
+            int r1 = r1 + r2
+            if (r13 != r1) goto L4e
+            return r0
+        L4e:
+            int r12 = r12.length
+            int r13 = r13 - r12
+            java.security.GeneralSecurityException r12 = new java.security.GeneralSecurityException
+            r0 = 2
+            java.lang.Object[] r0 = new java.lang.Object[r0]
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r2)
+            r0[r9] = r1
+            java.lang.Integer r13 = java.lang.Integer.valueOf(r13)
+            r0[r10] = r13
+            java.lang.String r13 = "encryption failed; GCM tag must be %s bytes, but got only %s bytes"
+            java.lang.String r13 = java.lang.String.format(r13, r0)
+            r12.<init>(r13)
+            throw r12
+        L6b:
+            java.security.GeneralSecurityException r12 = new java.security.GeneralSecurityException
+            java.lang.String r13 = "plaintext too long"
+            r12.<init>(r13)
+            throw r12
+    }
+
+    @Override // p093f9.InterfaceC2083a
+    /* renamed from: b */
+    public byte[] mo5507b(byte[] r7, byte[] r8) {
+            r6 = this;
+            int r0 = r7.length
+            r1 = 28
+            if (r0 < r1) goto L35
+            r0 = 0
+            r1 = 12
+            java.security.spec.AlgorithmParameterSpec r0 = m10752c(r7, r0, r1)
+            java.lang.ThreadLocal<javax.crypto.Cipher> r2 = p236n9.C4703d.f18791b
+            java.lang.Object r3 = r2.get()
+            javax.crypto.Cipher r3 = (javax.crypto.Cipher) r3
+            r4 = 2
+            javax.crypto.SecretKey r5 = r6.f18792a
+            r3.init(r4, r5, r0)
+            if (r8 == 0) goto L28
+            int r0 = r8.length
+            if (r0 == 0) goto L28
+            java.lang.Object r0 = r2.get()
+            javax.crypto.Cipher r0 = (javax.crypto.Cipher) r0
+            r0.updateAAD(r8)
+        L28:
+            java.lang.Object r8 = r2.get()
+            javax.crypto.Cipher r8 = (javax.crypto.Cipher) r8
+            int r0 = r7.length
+            int r0 = r0 - r1
+            byte[] r7 = r8.doFinal(r7, r1, r0)
+            return r7
+        L35:
+            java.security.GeneralSecurityException r7 = new java.security.GeneralSecurityException
+            java.lang.String r8 = "ciphertext too short"
+            r7.<init>(r8)
+            throw r7
+    }
+}
+package p236n9;
+
+/* renamed from: n9.e */
+/* loaded from: classes.dex */
+public final class C4704e implements p093f9.InterfaceC2085c {
+
+    /* renamed from: c */
+    public static final java.util.Collection<java.lang.Integer> f18793c = null;
+
+    /* renamed from: d */
+    public static final byte[] f18794d = null;
+
+    /* renamed from: e */
+    public static final byte[] f18795e = null;
+
+    /* renamed from: a */
+    public final p236n9.C4700a f18796a;
+
+    /* renamed from: b */
+    public final byte[] f18797b;
+
+    static {
+            r0 = 1
+            java.lang.Integer[] r0 = new java.lang.Integer[r0]
+            r1 = 64
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)
+            r2 = 0
+            r0[r2] = r1
+            java.util.List r0 = java.util.Arrays.asList(r0)
+            p236n9.C4704e.f18793c = r0
+            r0 = 16
+            byte[] r1 = new byte[r0]
+            p236n9.C4704e.f18794d = r1
+            byte[] r0 = new byte[r0]
+            r0 = {x0020: FILL_ARRAY_DATA , data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1} // fill-array
+            p236n9.C4704e.f18795e = r0
+            return
+    }
+
+    public C4704e(byte[] r4) {
+            r3 = this;
+            r3.<init>()
+            java.util.Collection<java.lang.Integer> r0 = p236n9.C4704e.f18793c
+            int r1 = r4.length
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)
+            boolean r0 = r0.contains(r1)
+            if (r0 == 0) goto L2c
+            r0 = 0
+            int r1 = r4.length
+            int r1 = r1 / 2
+            byte[] r0 = java.util.Arrays.copyOfRange(r4, r0, r1)
+            int r1 = r4.length
+            int r1 = r1 / 2
+            int r2 = r4.length
+            byte[] r4 = java.util.Arrays.copyOfRange(r4, r1, r2)
+            r3.f18797b = r4
+            n9.a r4 = new n9.a
+            r1 = 16
+            r4.<init>(r0, r1)
+            r3.f18796a = r4
+            return
+        L2c:
+            java.security.InvalidKeyException r0 = new java.security.InvalidKeyException
+            java.lang.String r1 = "invalid key size: "
+            java.lang.StringBuilder r1 = android.support.v4.media.C0144c.m256a(r1)
+            int r4 = r4.length
+            java.lang.String r2 = " bytes; key must have 64 bytes"
+            java.lang.String r4 = p381w.C6764e.m13690a(r1, r4, r2)
+            r0.<init>(r4)
+            throw r0
+    }
+
+    @Override // p093f9.InterfaceC2085c
+    /* renamed from: a */
+    public byte[] mo5508a(byte[] r9, byte[] r10) {
+            r8 = this;
+            int r0 = r9.length
+            r1 = 2147483631(0x7fffffef, float:NaN)
+            if (r0 > r1) goto L55
+            n9.l<n9.m$a, javax.crypto.Cipher> r0 = p236n9.C4711l.f18821e
+            java.lang.String r1 = "AES/CTR/NoPadding"
+            java.lang.Object r0 = r0.m10770a(r1)
+            javax.crypto.Cipher r0 = (javax.crypto.Cipher) r0
+            r1 = 2
+            byte[][] r2 = new byte[r1][]
+            r3 = 0
+            r2[r3] = r10
+            r10 = 1
+            r2[r10] = r9
+            byte[] r2 = r8.m10753c(r2)
+            java.lang.Object r4 = r2.clone()
+            byte[] r4 = (byte[]) r4
+            r5 = 8
+            r6 = r4[r5]
+            r6 = r6 & 127(0x7f, float:1.78E-43)
+            byte r6 = (byte) r6
+            r4[r5] = r6
+            r5 = 12
+            r6 = r4[r5]
+            r6 = r6 & 127(0x7f, float:1.78E-43)
+            byte r6 = (byte) r6
+            r4[r5] = r6
+            javax.crypto.spec.SecretKeySpec r5 = new javax.crypto.spec.SecretKeySpec
+            byte[] r6 = r8.f18797b
+            java.lang.String r7 = "AES"
+            r5.<init>(r6, r7)
+            javax.crypto.spec.IvParameterSpec r6 = new javax.crypto.spec.IvParameterSpec
+            r6.<init>(r4)
+            r0.init(r10, r5, r6)
+            byte[] r9 = r0.doFinal(r9)
+            byte[][] r0 = new byte[r1][]
+            r0[r3] = r2
+            r0[r10] = r9
+            byte[] r9 = p185k7.C3828h5.m8589d(r0)
+            return r9
+        L55:
+            java.security.GeneralSecurityException r9 = new java.security.GeneralSecurityException
+            java.lang.String r10 = "plaintext too long"
+            r9.<init>(r10)
+            throw r9
+    }
+
+    @Override // p093f9.InterfaceC2085c
+    /* renamed from: b */
+    public byte[] mo5509b(byte[] r9, byte[] r10) {
+            r8 = this;
+            int r0 = r9.length
+            r1 = 16
+            if (r0 < r1) goto L6e
+            n9.l<n9.m$a, javax.crypto.Cipher> r0 = p236n9.C4711l.f18821e
+            java.lang.String r2 = "AES/CTR/NoPadding"
+            java.lang.Object r0 = r0.m10770a(r2)
+            javax.crypto.Cipher r0 = (javax.crypto.Cipher) r0
+            r2 = 0
+            byte[] r3 = java.util.Arrays.copyOfRange(r9, r2, r1)
+            java.lang.Object r4 = r3.clone()
+            byte[] r4 = (byte[]) r4
+            r5 = 8
+            r6 = r4[r5]
+            r6 = r6 & 127(0x7f, float:1.78E-43)
+            byte r6 = (byte) r6
+            r4[r5] = r6
+            r5 = 12
+            r6 = r4[r5]
+            r6 = r6 & 127(0x7f, float:1.78E-43)
+            byte r6 = (byte) r6
+            r4[r5] = r6
+            javax.crypto.spec.SecretKeySpec r5 = new javax.crypto.spec.SecretKeySpec
+            byte[] r6 = r8.f18797b
+            java.lang.String r7 = "AES"
+            r5.<init>(r6, r7)
+            javax.crypto.spec.IvParameterSpec r6 = new javax.crypto.spec.IvParameterSpec
+            r6.<init>(r4)
+            r4 = 2
+            r0.init(r4, r5, r6)
+            int r5 = r9.length
+            byte[] r9 = java.util.Arrays.copyOfRange(r9, r1, r5)
+            byte[] r0 = r0.doFinal(r9)
+            int r9 = r9.length
+            if (r9 != 0) goto L54
+            if (r0 != 0) goto L54
+            boolean r9 = p185k7.C4038x4.m9095h()
+            if (r9 == 0) goto L54
+            byte[] r0 = new byte[r2]
+        L54:
+            byte[][] r9 = new byte[r4][]
+            r9[r2] = r10
+            r10 = 1
+            r9[r10] = r0
+            byte[] r9 = r8.m10753c(r9)
+            boolean r9 = p185k7.C3828h5.m8594i(r3, r9)
+            if (r9 == 0) goto L66
+            return r0
+        L66:
+            javax.crypto.AEADBadTagException r9 = new javax.crypto.AEADBadTagException
+            java.lang.String r10 = "Integrity check failed."
+            r9.<init>(r10)
+            throw r9
+        L6e:
+            java.security.GeneralSecurityException r9 = new java.security.GeneralSecurityException
+            java.lang.String r10 = "Ciphertext too short."
+            r9.<init>(r10)
+            throw r9
+    }
+
+    /* renamed from: c */
+    public final byte[] m10753c(byte[]... r7) {
+            r6 = this;
+            int r0 = r7.length
+            if (r0 != 0) goto Lc
+            n9.a r7 = r6.f18796a
+            byte[] r0 = p236n9.C4704e.f18795e
+            byte[] r7 = r7.mo5537b(r0)
+            return r7
+        Lc:
+            n9.a r0 = r6.f18796a
+            byte[] r1 = p236n9.C4704e.f18794d
+            byte[] r0 = r0.mo5537b(r1)
+            r1 = 0
+            r2 = 0
+        L16:
+            int r3 = r7.length
+            int r3 = r3 + (-1)
+            if (r2 >= r3) goto L35
+            r3 = r7[r2]
+            if (r3 != 0) goto L22
+            byte[] r3 = new byte[r1]
+            goto L24
+        L22:
+            r3 = r7[r2]
+        L24:
+            byte[] r0 = p074e9.C1805a.m4521f(r0)
+            n9.a r4 = r6.f18796a
+            byte[] r3 = r4.mo5537b(r3)
+            byte[] r0 = p185k7.C3828h5.m8583L(r0, r3)
+            int r2 = r2 + 1
+            goto L16
+        L35:
+            int r2 = r7.length
+            int r2 = r2 + (-1)
+            r7 = r7[r2]
+            int r2 = r7.length
+            r3 = 16
+            if (r2 < r3) goto L63
+            int r2 = r7.length
+            int r3 = r0.length
+            if (r2 < r3) goto L5b
+            int r2 = r7.length
+            int r3 = r0.length
+            int r2 = r2 - r3
+            int r3 = r7.length
+            byte[] r7 = java.util.Arrays.copyOf(r7, r3)
+        L4b:
+            int r3 = r0.length
+            if (r1 >= r3) goto L6f
+            int r3 = r2 + r1
+            r4 = r7[r3]
+            r5 = r0[r1]
+            r4 = r4 ^ r5
+            byte r4 = (byte) r4
+            r7[r3] = r4
+            int r1 = r1 + 1
+            goto L4b
+        L5b:
+            java.lang.IllegalArgumentException r7 = new java.lang.IllegalArgumentException
+            java.lang.String r0 = "xorEnd requires a.length >= b.length"
+            r7.<init>(r0)
+            throw r7
+        L63:
+            byte[] r7 = p074e9.C1805a.m4518c(r7)
+            byte[] r0 = p074e9.C1805a.m4521f(r0)
+            byte[] r7 = p185k7.C3828h5.m8583L(r7, r0)
+        L6f:
+            n9.a r0 = r6.f18796a
+            byte[] r7 = r0.mo5537b(r7)
+            return r7
+    }
+}
+package p236n9;
+
+/* renamed from: n9.f */
+/* loaded from: classes.dex */
+public final class C4705f {
+
+    /* renamed from: a */
+    public static final java.nio.charset.Charset f18798a = null;
+
+    /* renamed from: n9.f$a */
+    public static abstract class a {
+
+        /* renamed from: a */
+        public byte[] f18799a;
+
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+    }
+
+    /* renamed from: n9.f$b */
+    public static class b extends p236n9.C4705f.a {
+
+        /* renamed from: b */
+        public static final int[] f18800b = null;
+
+        /* renamed from: c */
+        public static final int[] f18801c = null;
+
+        static {
+                r0 = 256(0x100, float:3.59E-43)
+                int[] r1 = new int[r0]
+                r1 = {x0012: FILL_ARRAY_DATA , data: [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 62, -1, -1, -1, 63, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, -1, -1, -1, -2, -1, -1, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, -1, -1, -1, -1, -1, -1, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1} // fill-array
+                p236n9.C4705f.b.f18800b = r1
+                int[] r0 = new int[r0]
+                r0 = {x0216: FILL_ARRAY_DATA , data: [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 62, -1, -1, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, -1, -1, -1, -2, -1, -1, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, -1, -1, -1, -1, 63, -1, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1} // fill-array
+                p236n9.C4705f.b.f18801c = r0
+                return
+        }
+    }
+
+    /* renamed from: n9.f$c */
+    public static class c extends p236n9.C4705f.a {
+
+        /* renamed from: i */
+        public static final byte[] f18802i = null;
+
+        /* renamed from: j */
+        public static final byte[] f18803j = null;
+
+        /* renamed from: b */
+        public final byte[] f18804b;
+
+        /* renamed from: c */
+        public int f18805c;
+
+        /* renamed from: d */
+        public int f18806d;
+
+        /* renamed from: e */
+        public final boolean f18807e;
+
+        /* renamed from: f */
+        public final boolean f18808f;
+
+        /* renamed from: g */
+        public final boolean f18809g;
+
+        /* renamed from: h */
+        public final byte[] f18810h;
+
+        static {
+                r0 = 64
+                byte[] r1 = new byte[r0]
+                r1 = {x0012: FILL_ARRAY_DATA , data: [65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 43, 47} // fill-array
+                p236n9.C4705f.c.f18802i = r1
+                byte[] r0 = new byte[r0]
+                r0 = {x0036: FILL_ARRAY_DATA , data: [65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 45, 95} // fill-array
+                p236n9.C4705f.c.f18803j = r0
+                return
+        }
+
+        public c(int r4, byte[] r5) {
+                r3 = this;
+                r3.<init>()
+                r5 = 0
+                r3.f18799a = r5
+                r5 = r4 & 1
+                r0 = 0
+                r1 = 1
+                if (r5 != 0) goto Le
+                r5 = 1
+                goto Lf
+            Le:
+                r5 = 0
+            Lf:
+                r3.f18807e = r5
+                r5 = r4 & 2
+                if (r5 != 0) goto L17
+                r5 = 1
+                goto L18
+            L17:
+                r5 = 0
+            L18:
+                r3.f18808f = r5
+                r2 = r4 & 4
+                if (r2 == 0) goto L1f
+                goto L20
+            L1f:
+                r1 = 0
+            L20:
+                r3.f18809g = r1
+                r4 = r4 & 8
+                if (r4 != 0) goto L29
+                byte[] r4 = p236n9.C4705f.c.f18802i
+                goto L2b
+            L29:
+                byte[] r4 = p236n9.C4705f.c.f18803j
+            L2b:
+                r3.f18810h = r4
+                r4 = 2
+                byte[] r4 = new byte[r4]
+                r3.f18804b = r4
+                r3.f18805c = r0
+                if (r5 == 0) goto L39
+                r4 = 19
+                goto L3a
+            L39:
+                r4 = -1
+            L3a:
+                r3.f18806d = r4
+                return
+        }
+    }
+
+    static {
+            java.lang.String r0 = "UTF-8"
+            java.nio.charset.Charset r0 = java.nio.charset.Charset.forName(r0)
+            p236n9.C4705f.f18798a = r0
+            return
+    }
+
+    /* renamed from: a */
+    public static byte[] m10754a(java.lang.String r16, int r17) {
+            java.nio.charset.Charset r0 = p236n9.C4705f.f18798a
+            r1 = r16
+            byte[] r0 = r1.getBytes(r0)
+            int r1 = r0.length
+            int r2 = r1 * 3
+            r3 = 4
+            int r2 = r2 / r3
+            byte[] r4 = new byte[r2]
+            r5 = r17 & 8
+            if (r5 != 0) goto L16
+            int[] r5 = p236n9.C4705f.b.f18800b
+            goto L18
+        L16:
+            int[] r5 = p236n9.C4705f.b.f18801c
+        L18:
+            r6 = 0
+            int r1 = r1 + r6
+            r7 = 0
+            r8 = 0
+            r9 = 0
+            r10 = 0
+        L1e:
+            r11 = 3
+            r12 = 2
+            r13 = 1
+            if (r7 >= r1) goto Lea
+            if (r8 != 0) goto L6b
+        L25:
+            int r14 = r7 + 4
+            if (r14 > r1) goto L67
+            r9 = r0[r7]
+            r9 = r9 & 255(0xff, float:3.57E-43)
+            r9 = r5[r9]
+            int r9 = r9 << 18
+            int r15 = r7 + 1
+            r15 = r0[r15]
+            r15 = r15 & 255(0xff, float:3.57E-43)
+            r15 = r5[r15]
+            int r15 = r15 << 12
+            r9 = r9 | r15
+            int r15 = r7 + 2
+            r15 = r0[r15]
+            r15 = r15 & 255(0xff, float:3.57E-43)
+            r15 = r5[r15]
+            int r15 = r15 << 6
+            r9 = r9 | r15
+            int r15 = r7 + 3
+            r15 = r0[r15]
+            r15 = r15 & 255(0xff, float:3.57E-43)
+            r15 = r5[r15]
+            r9 = r9 | r15
+            if (r9 < 0) goto L67
+            int r7 = r10 + 2
+            byte r15 = (byte) r9
+            r4[r7] = r15
+            int r7 = r10 + 1
+            int r15 = r9 >> 8
+            byte r15 = (byte) r15
+            r4[r7] = r15
+            int r7 = r9 >> 16
+            byte r7 = (byte) r7
+            r4[r10] = r7
+            int r10 = r10 + 3
+            r7 = r14
+            goto L25
+        L67:
+            if (r7 < r1) goto L6b
+            goto Lea
+        L6b:
+            int r14 = r7 + 1
+            r7 = r0[r7]
+            r7 = r7 & 255(0xff, float:3.57E-43)
+            r7 = r5[r7]
+            r15 = -1
+            r6 = 5
+            if (r8 == 0) goto Ldd
+            if (r8 == r13) goto Ld4
+            r13 = -2
+            if (r8 == r12) goto Lc2
+            if (r8 == r11) goto L92
+            if (r8 == r3) goto L88
+            if (r8 == r6) goto L84
+            goto Le6
+        L84:
+            if (r7 == r15) goto Le6
+            goto L10b
+        L88:
+            if (r7 != r13) goto L8e
+            int r8 = r8 + 1
+            goto Le6
+        L8e:
+            if (r7 == r15) goto Le6
+            goto L10b
+        L92:
+            if (r7 < 0) goto Lad
+            int r6 = r9 << 6
+            r6 = r6 | r7
+            int r7 = r10 + 2
+            byte r8 = (byte) r6
+            r4[r7] = r8
+            int r7 = r10 + 1
+            int r8 = r6 >> 8
+            byte r8 = (byte) r8
+            r4[r7] = r8
+            int r7 = r6 >> 16
+            byte r7 = (byte) r7
+            r4[r10] = r7
+            int r10 = r10 + 3
+            r9 = r6
+            r8 = 0
+            goto Le6
+        Lad:
+            if (r7 != r13) goto Lbf
+            int r7 = r10 + 1
+            int r8 = r9 >> 2
+            byte r8 = (byte) r8
+            r4[r7] = r8
+            int r7 = r9 >> 10
+            byte r7 = (byte) r7
+            r4[r10] = r7
+            int r10 = r10 + 2
+            r8 = 5
+            goto Le6
+        Lbf:
+            if (r7 == r15) goto Le6
+            goto L10b
+        Lc2:
+            if (r7 < 0) goto Lc5
+            goto Ld6
+        Lc5:
+            if (r7 != r13) goto Ld1
+            int r6 = r10 + 1
+            int r7 = r9 >> 4
+            byte r7 = (byte) r7
+            r4[r10] = r7
+            r10 = r6
+            r8 = 4
+            goto Le6
+        Ld1:
+            if (r7 == r15) goto Le6
+            goto L10b
+        Ld4:
+            if (r7 < 0) goto Lda
+        Ld6:
+            int r6 = r9 << 6
+            r7 = r7 | r6
+            goto Ldf
+        Lda:
+            if (r7 == r15) goto Le6
+            goto L10b
+        Ldd:
+            if (r7 < 0) goto Le3
+        Ldf:
+            int r8 = r8 + 1
+            r9 = r7
+            goto Le6
+        Le3:
+            if (r7 == r15) goto Le6
+            goto L10b
+        Le6:
+            r7 = r14
+            r6 = 0
+            goto L1e
+        Lea:
+            if (r8 == r13) goto L10b
+            if (r8 == r12) goto L102
+            if (r8 == r11) goto Lf3
+            if (r8 == r3) goto L10b
+            goto L10d
+        Lf3:
+            int r0 = r10 + 1
+            int r1 = r9 >> 10
+            byte r1 = (byte) r1
+            r4[r10] = r1
+            int r10 = r0 + 1
+            int r1 = r9 >> 2
+            byte r1 = (byte) r1
+            r4[r0] = r1
+            goto L10d
+        L102:
+            int r0 = r10 + 1
+            int r1 = r9 >> 4
+            byte r1 = (byte) r1
+            r4[r10] = r1
+            r10 = r0
+            goto L10d
+        L10b:
+            r10 = 0
+            r13 = 0
+        L10d:
+            if (r13 == 0) goto L11a
+            if (r10 != r2) goto L112
+            goto L119
+        L112:
+            byte[] r0 = new byte[r10]
+            r1 = 0
+            java.lang.System.arraycopy(r4, r1, r0, r1, r10)
+            r4 = r0
+        L119:
+            return r4
+        L11a:
+            java.lang.IllegalArgumentException r0 = new java.lang.IllegalArgumentException
+            java.lang.String r1 = "bad base-64"
+            r0.<init>(r1)
+            throw r0
+    }
+
+    /* renamed from: b */
+    public static java.lang.String m10755b(byte[] r2) {
+            java.lang.String r0 = new java.lang.String     // Catch: java.io.UnsupportedEncodingException -> Ld
+            r1 = 2
+            byte[] r2 = m10756c(r2, r1)     // Catch: java.io.UnsupportedEncodingException -> Ld
+            java.lang.String r1 = "US-ASCII"
+            r0.<init>(r2, r1)     // Catch: java.io.UnsupportedEncodingException -> Ld
+            return r0
+        Ld:
+            r2 = move-exception
+            java.lang.AssertionError r0 = new java.lang.AssertionError
+            r0.<init>(r2)
+            throw r0
+    }
+
+    /* renamed from: c */
+    public static byte[] m10756c(byte[] r17, int r18) {
+            r0 = r17
+            int r1 = r0.length
+            n9.f$c r2 = new n9.f$c
+            r3 = 0
+            r4 = r18
+            r2.<init>(r4, r3)
+            int r3 = r1 / 3
+            r4 = 4
+            int r3 = r3 * 4
+            boolean r5 = r2.f18807e
+            r6 = 2
+            r7 = 1
+            if (r5 == 0) goto L1d
+            int r5 = r1 % 3
+            if (r5 <= 0) goto L29
+            int r3 = r3 + 4
+            goto L29
+        L1d:
+            int r5 = r1 % 3
+            if (r5 == r7) goto L27
+            if (r5 == r6) goto L24
+            goto L29
+        L24:
+            int r3 = r3 + 3
+            goto L29
+        L27:
+            int r3 = r3 + 2
+        L29:
+            boolean r5 = r2.f18808f
+            if (r5 == 0) goto L3e
+            if (r1 <= 0) goto L3e
+            int r5 = r1 + (-1)
+            int r5 = r5 / 57
+            int r5 = r5 + r7
+            boolean r8 = r2.f18809g
+            if (r8 == 0) goto L3a
+            r8 = 2
+            goto L3b
+        L3a:
+            r8 = 1
+        L3b:
+            int r5 = r5 * r8
+            int r3 = r3 + r5
+        L3e:
+            byte[] r3 = new byte[r3]
+            r2.f18799a = r3
+            byte[] r5 = r2.f18810h
+            int r8 = r2.f18806d
+            r9 = 0
+            int r1 = r1 + r9
+            int r10 = r2.f18805c
+            r11 = -1
+            if (r10 == r7) goto L6a
+            if (r10 == r6) goto L50
+            goto L84
+        L50:
+            if (r7 > r1) goto L84
+            byte[] r10 = r2.f18804b
+            r12 = r10[r9]
+            r12 = r12 & 255(0xff, float:3.57E-43)
+            int r12 = r12 << 16
+            r10 = r10[r7]
+            r10 = r10 & 255(0xff, float:3.57E-43)
+            int r10 = r10 << 8
+            r10 = r10 | r12
+            r12 = r0[r9]
+            r12 = r12 & 255(0xff, float:3.57E-43)
+            r10 = r10 | r12
+            r2.f18805c = r9
+            r12 = 1
+            goto L86
+        L6a:
+            if (r6 > r1) goto L84
+            byte[] r10 = r2.f18804b
+            r10 = r10[r9]
+            r10 = r10 & 255(0xff, float:3.57E-43)
+            int r10 = r10 << 16
+            r12 = r0[r9]
+            r12 = r12 & 255(0xff, float:3.57E-43)
+            int r12 = r12 << 8
+            r10 = r10 | r12
+            r12 = r0[r7]
+            r12 = r12 & 255(0xff, float:3.57E-43)
+            r10 = r10 | r12
+            r2.f18805c = r9
+            r12 = 2
+            goto L86
+        L84:
+            r10 = -1
+            r12 = 0
+        L86:
+            r14 = 10
+            r15 = 13
+            if (r10 == r11) goto Lc3
+            int r11 = r10 >> 18
+            r11 = r11 & 63
+            r11 = r5[r11]
+            r3[r9] = r11
+            int r11 = r10 >> 12
+            r11 = r11 & 63
+            r11 = r5[r11]
+            r3[r7] = r11
+            int r11 = r10 >> 6
+            r11 = r11 & 63
+            r11 = r5[r11]
+            r3[r6] = r11
+            r10 = r10 & 63
+            r10 = r5[r10]
+            r11 = 3
+            r3[r11] = r10
+            int r8 = r8 + (-1)
+            if (r8 != 0) goto Lc1
+            boolean r8 = r2.f18809g
+            if (r8 == 0) goto Lb7
+            r8 = 5
+            r3[r4] = r15
+            goto Lb8
+        Lb7:
+            r8 = 4
+        Lb8:
+            int r10 = r8 + 1
+            r3[r8] = r14
+            r8 = r5
+            r11 = r10
+            r5 = r3
+            r3 = r2
+            goto L11c
+        Lc1:
+            r10 = 4
+            goto Lc4
+        Lc3:
+            r10 = 0
+        Lc4:
+            r11 = r10
+            r10 = r8
+            r8 = r5
+            r5 = r3
+            r3 = r2
+        Lc9:
+            int r13 = r12 + 3
+            if (r13 > r1) goto L125
+            r7 = r0[r12]
+            r7 = r7 & 255(0xff, float:3.57E-43)
+            int r7 = r7 << 16
+            int r16 = r12 + 1
+            r6 = r0[r16]
+            r6 = r6 & 255(0xff, float:3.57E-43)
+            int r6 = r6 << 8
+            r6 = r6 | r7
+            int r12 = r12 + 2
+            r7 = r0[r12]
+            r7 = r7 & 255(0xff, float:3.57E-43)
+            r6 = r6 | r7
+            int r7 = r6 >> 18
+            r7 = r7 & 63
+            r7 = r8[r7]
+            r5[r11] = r7
+            int r7 = r11 + 1
+            int r12 = r6 >> 12
+            r12 = r12 & 63
+            r12 = r8[r12]
+            r5[r7] = r12
+            int r7 = r11 + 2
+            int r12 = r6 >> 6
+            r12 = r12 & 63
+            r12 = r8[r12]
+            r5[r7] = r12
+            int r7 = r11 + 3
+            r6 = r6 & 63
+            r6 = r8[r6]
+            r5[r7] = r6
+            int r11 = r11 + 4
+            int r10 = r10 + (-1)
+            if (r10 != 0) goto L121
+            boolean r6 = r2.f18809g
+            if (r6 == 0) goto L116
+            int r6 = r11 + 1
+            r5[r11] = r15
+            r11 = r6
+        L116:
+            int r10 = r11 + 1
+            r5[r11] = r14
+            r11 = r10
+            r12 = r13
+        L11c:
+            r6 = 2
+            r7 = 1
+            r10 = 19
+            goto Lc9
+        L121:
+            r12 = r13
+            r6 = 2
+            r7 = 1
+            goto Lc9
+        L125:
+            int r6 = r2.f18805c
+            int r7 = r12 - r6
+            int r13 = r1 + (-1)
+            r16 = 61
+            if (r7 != r13) goto L16f
+            if (r6 <= 0) goto L137
+            byte[] r0 = r2.f18804b
+            r0 = r0[r9]
+            r7 = 1
+            goto L13a
+        L137:
+            r0 = r0[r12]
+            r7 = 0
+        L13a:
+            r0 = r0 & 255(0xff, float:3.57E-43)
+            int r0 = r0 << r4
+            int r6 = r6 - r7
+            r2.f18805c = r6
+            int r1 = r11 + 1
+            int r4 = r0 >> 6
+            r4 = r4 & 63
+            r4 = r8[r4]
+            r5[r11] = r4
+            int r4 = r1 + 1
+            r0 = r0 & 63
+            r0 = r8[r0]
+            r5[r1] = r0
+            boolean r0 = r2.f18807e
+            if (r0 == 0) goto L15e
+            int r0 = r4 + 1
+            r5[r4] = r16
+            int r4 = r0 + 1
+            r5[r0] = r16
+        L15e:
+            boolean r0 = r2.f18808f
+            if (r0 == 0) goto L1e3
+            boolean r0 = r2.f18809g
+            if (r0 == 0) goto L16b
+            int r0 = r4 + 1
+            r5[r4] = r15
+            r4 = r0
+        L16b:
+            r5[r4] = r14
+            goto L1e3
+        L16f:
+            r4 = 2
+            int r1 = r1 - r4
+            if (r7 != r1) goto L1ce
+            r1 = 1
+            if (r6 <= r1) goto L17c
+            byte[] r4 = r2.f18804b
+            r4 = r4[r9]
+            r7 = 1
+            goto L182
+        L17c:
+            int r1 = r12 + 1
+            r4 = r0[r12]
+            r12 = r1
+            r7 = 0
+        L182:
+            r1 = r4 & 255(0xff, float:3.57E-43)
+            int r1 = r1 << r14
+            if (r6 <= 0) goto L18f
+            byte[] r0 = r2.f18804b
+            int r4 = r7 + 1
+            r0 = r0[r7]
+            r7 = r4
+            goto L191
+        L18f:
+            r0 = r0[r12]
+        L191:
+            r0 = r0 & 255(0xff, float:3.57E-43)
+            r4 = 2
+            int r0 = r0 << r4
+            r0 = r0 | r1
+            int r6 = r6 - r7
+            r2.f18805c = r6
+            int r1 = r11 + 1
+            int r4 = r0 >> 12
+            r4 = r4 & 63
+            r4 = r8[r4]
+            r5[r11] = r4
+            int r4 = r1 + 1
+            int r6 = r0 >> 6
+            r6 = r6 & 63
+            r6 = r8[r6]
+            r5[r1] = r6
+            int r1 = r4 + 1
+            r0 = r0 & 63
+            r0 = r8[r0]
+            r5[r4] = r0
+            boolean r0 = r2.f18807e
+            if (r0 == 0) goto L1be
+            int r0 = r1 + 1
+            r5[r1] = r16
+            r1 = r0
+        L1be:
+            boolean r0 = r2.f18808f
+            if (r0 == 0) goto L1e3
+            boolean r0 = r2.f18809g
+            if (r0 == 0) goto L1cb
+            int r0 = r1 + 1
+            r5[r1] = r15
+            r1 = r0
+        L1cb:
+            r5[r1] = r14
+            goto L1e3
+        L1ce:
+            boolean r0 = r2.f18808f
+            if (r0 == 0) goto L1e3
+            if (r11 <= 0) goto L1e3
+            r0 = 19
+            if (r10 == r0) goto L1e3
+            boolean r0 = r2.f18809g
+            if (r0 == 0) goto L1e1
+            int r0 = r11 + 1
+            r5[r11] = r15
+            r11 = r0
+        L1e1:
+            r5[r11] = r14
+        L1e3:
+            r2.f18806d = r10
+            byte[] r0 = r3.f18799a
+            return r0
+    }
+}
+package p236n9;
+
+/* renamed from: n9.g */
+/* loaded from: classes.dex */
+public class C4706g extends p236n9.AbstractC4707h {
+    public C4706g(byte[] r1, int r2) {
+            r0 = this;
+            r0.<init>(r1, r2)
+            return
+    }
+
+    @Override // p236n9.AbstractC4707h
+    /* renamed from: d */
+    public int[] mo10757d(int[] r4, int r5) {
+            r3 = this;
+            int r0 = r4.length
+            r1 = 0
+            r2 = 3
+            if (r0 != r2) goto L19
+            r0 = 16
+            int[] r0 = new int[r0]
+            int[] r2 = r3.f18812a
+            p236n9.AbstractC4707h.m10761k(r0, r2)
+            r2 = 12
+            r0[r2] = r5
+            r5 = 13
+            int r2 = r4.length
+            java.lang.System.arraycopy(r4, r1, r0, r5, r2)
+            return r0
+        L19:
+            java.lang.IllegalArgumentException r5 = new java.lang.IllegalArgumentException
+            r0 = 1
+            java.lang.Object[] r0 = new java.lang.Object[r0]
+            int r4 = r4.length
+            int r4 = r4 * 32
+            java.lang.Integer r4 = java.lang.Integer.valueOf(r4)
+            r0[r1] = r4
+            java.lang.String r4 = "ChaCha20 uses 96-bit nonces, but got a %d-bit nonce"
+            java.lang.String r4 = java.lang.String.format(r4, r0)
+            r5.<init>(r4)
+            throw r5
+    }
+
+    @Override // p236n9.AbstractC4707h
+    /* renamed from: g */
+    public int mo10758g() {
+            r1 = this;
+            r0 = 12
+            return r0
+    }
+}
+package p236n9;
+
+/* renamed from: n9.i */
+/* loaded from: classes.dex */
+public final class C4708i extends p236n9.AbstractC4709j {
+    public C4708i(byte[] r1) {
+            r0 = this;
+            r0.<init>(r1)
+            return
+    }
+
+    @Override // p236n9.AbstractC4709j
+    /* renamed from: d */
+    public p236n9.AbstractC4707h mo10768d(byte[] r2, int r3) {
+            r1 = this;
+            n9.g r0 = new n9.g
+            r0.<init>(r2, r3)
+            return r0
+    }
+}
+package p236n9;
+
+/* renamed from: n9.k */
+/* loaded from: classes.dex */
+public final class C4710k implements p093f9.InterfaceC2083a {
+
+    /* renamed from: a */
+    public final p236n9.InterfaceC4713n f18816a;
+
+    /* renamed from: b */
+    public final p093f9.InterfaceC2095m f18817b;
+
+    /* renamed from: c */
+    public final int f18818c;
+
+    public C4710k(p236n9.InterfaceC4713n r1, p093f9.InterfaceC2095m r2, int r3) {
+            r0 = this;
+            r0.<init>()
+            r0.f18816a = r1
+            r0.f18817b = r2
+            r0.f18818c = r3
+            return
+    }
+
+    @Override // p093f9.InterfaceC2083a
+    /* renamed from: a */
+    public byte[] mo5506a(byte[] r8, byte[] r9) {
+            r7 = this;
+            n9.n r0 = r7.f18816a
+            byte[] r8 = r0.mo10746a(r8)
+            r0 = 0
+            if (r9 != 0) goto Lb
+            byte[] r9 = new byte[r0]
+        Lb:
+            r1 = 8
+            java.nio.ByteBuffer r2 = java.nio.ByteBuffer.allocate(r1)
+            r3 = 8
+            int r5 = r9.length
+            long r5 = (long) r5
+            long r5 = r5 * r3
+            java.nio.ByteBuffer r2 = r2.putLong(r5)
+            byte[] r2 = r2.array()
+            byte[] r1 = java.util.Arrays.copyOf(r2, r1)
+            f9.m r2 = r7.f18817b
+            r3 = 3
+            byte[][] r3 = new byte[r3][]
+            r3[r0] = r9
+            r9 = 1
+            r3[r9] = r8
+            r4 = 2
+            r3[r4] = r1
+            byte[] r1 = p185k7.C3828h5.m8589d(r3)
+            byte[] r1 = r2.mo5537b(r1)
+            byte[][] r2 = new byte[r4][]
+            r2[r0] = r8
+            r2[r9] = r1
+            byte[] r8 = p185k7.C3828h5.m8589d(r2)
+            return r8
+    }
+
+    @Override // p093f9.InterfaceC2083a
+    /* renamed from: b */
+    public byte[] mo5507b(byte[] r9, byte[] r10) {
+            r8 = this;
+            int r0 = r9.length
+            int r1 = r8.f18818c
+            if (r0 < r1) goto L4c
+            int r0 = r9.length
+            int r0 = r0 - r1
+            r1 = 0
+            byte[] r0 = java.util.Arrays.copyOfRange(r9, r1, r0)
+            int r2 = r9.length
+            int r3 = r8.f18818c
+            int r2 = r2 - r3
+            int r3 = r9.length
+            byte[] r9 = java.util.Arrays.copyOfRange(r9, r2, r3)
+            if (r10 != 0) goto L19
+            byte[] r10 = new byte[r1]
+        L19:
+            r2 = 8
+            java.nio.ByteBuffer r3 = java.nio.ByteBuffer.allocate(r2)
+            r4 = 8
+            int r6 = r10.length
+            long r6 = (long) r6
+            long r6 = r6 * r4
+            java.nio.ByteBuffer r3 = r3.putLong(r6)
+            byte[] r3 = r3.array()
+            byte[] r2 = java.util.Arrays.copyOf(r3, r2)
+            f9.m r3 = r8.f18817b
+            r4 = 3
+            byte[][] r4 = new byte[r4][]
+            r4[r1] = r10
+            r10 = 1
+            r4[r10] = r0
+            r10 = 2
+            r4[r10] = r2
+            byte[] r10 = p185k7.C3828h5.m8589d(r4)
+            r3.mo5536a(r9, r10)
+            n9.n r9 = r8.f18816a
+            byte[] r9 = r9.mo10747b(r0)
+            return r9
+        L4c:
+            java.security.GeneralSecurityException r9 = new java.security.GeneralSecurityException
+            java.lang.String r10 = "ciphertext too short"
+            r9.<init>(r10)
+            throw r9
+    }
+}
+package p236n9;
+
+import p236n9.InterfaceC4712m;
+
+/* renamed from: n9.l */
+/* loaded from: classes.dex */
+public final class C4711l<T_WRAPPER extends p236n9.InterfaceC4712m<T_ENGINE>, T_ENGINE> {
+
+    /* renamed from: c */
+    public static final java.util.logging.Logger f18819c = null;
+
+    /* renamed from: d */
+    public static final java.util.List<java.security.Provider> f18820d = null;
+
+    /* renamed from: e */
+    public static final p236n9.C4711l<p236n9.InterfaceC4712m.a, javax.crypto.Cipher> f18821e = null;
+
+    /* renamed from: f */
+    public static final p236n9.C4711l<p236n9.InterfaceC4712m.b, javax.crypto.Mac> f18822f = null;
+
+    /* renamed from: a */
+    public T_WRAPPER f18823a;
+
+    /* renamed from: b */
+    public java.util.List<java.security.Provider> f18824b;
+
+    static {
+            java.lang.Class<n9.l> r0 = p236n9.C4711l.class
+            java.lang.String r0 = r0.getName()
+            java.util.logging.Logger r0 = java.util.logging.Logger.getLogger(r0)
+            p236n9.C4711l.f18819c = r0
+            boolean r0 = p185k7.C4038x4.m9095h()
+            if (r0 == 0) goto L46
+            r0 = 2
+            java.lang.String r1 = "GmsCore_OpenSSL"
+            java.lang.String r2 = "AndroidOpenSSL"
+            java.lang.String[] r1 = new java.lang.String[]{r1, r2}
+            java.util.ArrayList r2 = new java.util.ArrayList
+            r2.<init>()
+            r3 = 0
+            r4 = 0
+        L22:
+            if (r4 >= r0) goto L43
+            r5 = r1[r4]
+            java.security.Provider r6 = java.security.Security.getProvider(r5)
+            if (r6 == 0) goto L30
+            r2.add(r6)
+            goto L40
+        L30:
+            java.util.logging.Logger r6 = p236n9.C4711l.f18819c
+            r7 = 1
+            java.lang.Object[] r7 = new java.lang.Object[r7]
+            r7[r3] = r5
+            java.lang.String r5 = "Provider %s not available"
+            java.lang.String r5 = java.lang.String.format(r5, r7)
+            r6.info(r5)
+        L40:
+            int r4 = r4 + 1
+            goto L22
+        L43:
+            p236n9.C4711l.f18820d = r2
+            goto L4d
+        L46:
+            java.util.ArrayList r0 = new java.util.ArrayList
+            r0.<init>()
+            p236n9.C4711l.f18820d = r0
+        L4d:
+            n9.l r0 = new n9.l
+            n9.m$a r1 = new n9.m$a
+            r1.<init>()
+            r0.<init>(r1)
+            p236n9.C4711l.f18821e = r0
+            n9.l r0 = new n9.l
+            n9.m$b r1 = new n9.m$b
+            r1.<init>()
+            r0.<init>(r1)
+            p236n9.C4711l.f18822f = r0
+            return
+    }
+
+    public C4711l(T_WRAPPER r1) {
+            r0 = this;
+            r0.<init>()
+            r0.f18823a = r1
+            java.util.List<java.security.Provider> r1 = p236n9.C4711l.f18820d
+            r0.f18824b = r1
+            return
+    }
+
+    /* renamed from: a */
+    public T_ENGINE m10770a(java.lang.String r6) {
+            r5 = this;
+            java.util.List<java.security.Provider> r0 = r5.f18824b
+            java.util.Iterator r0 = r0.iterator()
+            r1 = 0
+            r2 = r1
+        L8:
+            boolean r3 = r0.hasNext()
+            if (r3 == 0) goto L20
+            java.lang.Object r3 = r0.next()
+            java.security.Provider r3 = (java.security.Provider) r3
+            T_WRAPPER extends n9.m<T_ENGINE> r4 = r5.f18823a     // Catch: java.lang.Exception -> L1b
+            java.lang.Object r6 = r4.mo10771a(r6, r3)     // Catch: java.lang.Exception -> L1b
+            return r6
+        L1b:
+            r3 = move-exception
+            if (r2 != 0) goto L8
+            r2 = r3
+            goto L8
+        L20:
+            T_WRAPPER extends n9.m<T_ENGINE> r0 = r5.f18823a
+            java.lang.Object r6 = r0.mo10771a(r6, r1)
+            return r6
+    }
+}
+package p236n9;
+
+/* renamed from: n9.o */
+/* loaded from: classes.dex */
+public final class C4714o implements p187k9.InterfaceC4073a {
+
+    /* renamed from: a */
+    public final java.lang.ThreadLocal<javax.crypto.Mac> f18825a;
+
+    /* renamed from: b */
+    public final java.lang.String f18826b;
+
+    /* renamed from: c */
+    public final java.security.Key f18827c;
+
+    /* renamed from: d */
+    public final int f18828d;
+
+    /* renamed from: n9.o$a */
+    public class a extends java.lang.ThreadLocal<javax.crypto.Mac> {
+
+        /* renamed from: a */
+        public final /* synthetic */ p236n9.C4714o f18829a;
+
+        public a(p236n9.C4714o r1) {
+                r0 = this;
+                r0.f18829a = r1
+                r0.<init>()
+                return
+        }
+
+        @Override // java.lang.ThreadLocal
+        public javax.crypto.Mac initialValue() {
+                r2 = this;
+                n9.l<n9.m$b, javax.crypto.Mac> r0 = p236n9.C4711l.f18822f     // Catch: java.security.GeneralSecurityException -> L14
+                n9.o r1 = r2.f18829a     // Catch: java.security.GeneralSecurityException -> L14
+                java.lang.String r1 = r1.f18826b     // Catch: java.security.GeneralSecurityException -> L14
+                java.lang.Object r0 = r0.m10770a(r1)     // Catch: java.security.GeneralSecurityException -> L14
+                javax.crypto.Mac r0 = (javax.crypto.Mac) r0     // Catch: java.security.GeneralSecurityException -> L14
+                n9.o r1 = r2.f18829a     // Catch: java.security.GeneralSecurityException -> L14
+                java.security.Key r1 = r1.f18827c     // Catch: java.security.GeneralSecurityException -> L14
+                r0.init(r1)     // Catch: java.security.GeneralSecurityException -> L14
+                return r0
+            L14:
+                r0 = move-exception
+                java.lang.IllegalStateException r1 = new java.lang.IllegalStateException
+                r1.<init>(r0)
+                throw r1
+        }
+    }
+
+    public C4714o(java.lang.String r3, java.security.Key r4) {
+            r2 = this;
+            r2.<init>()
+            n9.o$a r0 = new n9.o$a
+            r0.<init>(r2)
+            r2.f18825a = r0
+            r2.f18826b = r3
+            r2.f18827c = r4
+            byte[] r4 = r4.getEncoded()
+            int r4 = r4.length
+            r1 = 16
+            if (r4 < r1) goto L5d
+            r4 = -1
+            int r1 = r3.hashCode()
+            switch(r1) {
+                case -1823053428: goto L36;
+                case 392315118: goto L2b;
+                case 392317873: goto L20;
+                default: goto L1f;
+            }
+        L1f:
+            goto L40
+        L20:
+            java.lang.String r1 = "HMACSHA512"
+            boolean r1 = r3.equals(r1)
+            if (r1 != 0) goto L29
+            goto L40
+        L29:
+            r4 = 2
+            goto L40
+        L2b:
+            java.lang.String r1 = "HMACSHA256"
+            boolean r1 = r3.equals(r1)
+            if (r1 != 0) goto L34
+            goto L40
+        L34:
+            r4 = 1
+            goto L40
+        L36:
+            java.lang.String r1 = "HMACSHA1"
+            boolean r1 = r3.equals(r1)
+            if (r1 != 0) goto L3f
+            goto L40
+        L3f:
+            r4 = 0
+        L40:
+            switch(r4) {
+                case 0: goto L55;
+                case 1: goto L52;
+                case 2: goto L4f;
+                default: goto L43;
+            }
+        L43:
+            java.security.NoSuchAlgorithmException r4 = new java.security.NoSuchAlgorithmException
+            java.lang.String r0 = "unknown Hmac algorithm: "
+            java.lang.String r3 = p064e.C1493g.m4049a(r0, r3)
+            r4.<init>(r3)
+            throw r4
+        L4f:
+            r3 = 64
+            goto L57
+        L52:
+            r3 = 32
+            goto L57
+        L55:
+            r3 = 20
+        L57:
+            r2.f18828d = r3
+            r0.get()
+            return
+        L5d:
+            java.security.InvalidAlgorithmParameterException r3 = new java.security.InvalidAlgorithmParameterException
+            java.lang.String r4 = "key size too small, need at least 16 bytes"
+            r3.<init>(r4)
+            throw r3
+    }
+
+    /* renamed from: a */
+    public byte[] m10772a(byte[] r2, int r3) {
+            r1 = this;
+            int r0 = r1.f18828d
+            if (r3 > r0) goto L20
+            java.lang.ThreadLocal<javax.crypto.Mac> r0 = r1.f18825a
+            java.lang.Object r0 = r0.get()
+            javax.crypto.Mac r0 = (javax.crypto.Mac) r0
+            r0.update(r2)
+            java.lang.ThreadLocal<javax.crypto.Mac> r2 = r1.f18825a
+            java.lang.Object r2 = r2.get()
+            javax.crypto.Mac r2 = (javax.crypto.Mac) r2
+            byte[] r2 = r2.doFinal()
+            byte[] r2 = java.util.Arrays.copyOf(r2, r3)
+            return r2
+        L20:
+            java.security.InvalidAlgorithmParameterException r2 = new java.security.InvalidAlgorithmParameterException
+            java.lang.String r3 = "tag size too big"
+            r2.<init>(r3)
+            throw r2
+    }
+}
+package p236n9;
+
+/* renamed from: n9.p */
+/* loaded from: classes.dex */
+public class C4715p implements p093f9.InterfaceC2095m {
+
+    /* renamed from: a */
+    public final p187k9.InterfaceC4073a f18830a;
+
+    /* renamed from: b */
+    public final int f18831b;
+
+    public C4715p(p187k9.InterfaceC4073a r2, int r3) {
+            r1 = this;
+            r1.<init>()
+            r1.f18830a = r2
+            r1.f18831b = r3
+            r0 = 10
+            if (r3 < r0) goto L14
+            r0 = 0
+            byte[] r0 = new byte[r0]
+            n9.o r2 = (p236n9.C4714o) r2
+            r2.m10772a(r0, r3)
+            return
+        L14:
+            java.security.InvalidAlgorithmParameterException r2 = new java.security.InvalidAlgorithmParameterException
+            java.lang.String r3 = "tag size too small, need at least 10 bytes"
+            r2.<init>(r3)
+            throw r2
+    }
+
+    @Override // p093f9.InterfaceC2095m
+    /* renamed from: a */
+    public void mo5536a(byte[] r3, byte[] r4) {
+            r2 = this;
+            k9.a r0 = r2.f18830a
+            int r1 = r2.f18831b
+            n9.o r0 = (p236n9.C4714o) r0
+            byte[] r4 = r0.m10772a(r4, r1)
+            boolean r3 = p185k7.C3828h5.m8594i(r4, r3)
+            if (r3 == 0) goto L11
+            return
+        L11:
+            java.security.GeneralSecurityException r3 = new java.security.GeneralSecurityException
+            java.lang.String r4 = "invalid MAC"
+            r3.<init>(r4)
+            throw r3
+    }
+
+    @Override // p093f9.InterfaceC2095m
+    /* renamed from: b */
+    public byte[] mo5537b(byte[] r3) {
+            r2 = this;
+            k9.a r0 = r2.f18830a
+            int r1 = r2.f18831b
+            n9.o r0 = (p236n9.C4714o) r0
+            byte[] r3 = r0.m10772a(r3, r1)
+            return r3
+    }
+}
+package p236n9;
+
+/* renamed from: n9.q */
+/* loaded from: classes.dex */
+public final class C4716q {
+
+    /* renamed from: a */
+    public static final java.lang.ThreadLocal<java.security.SecureRandom> f18832a = null;
+
+    /* renamed from: n9.q$a */
+    public class a extends java.lang.ThreadLocal<java.security.SecureRandom> {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // java.lang.ThreadLocal
+        public java.security.SecureRandom initialValue() {
+                r1 = this;
+                java.security.SecureRandom r0 = new java.security.SecureRandom
+                r0.<init>()
+                r0.nextLong()
+                return r0
+        }
+    }
+
+    static {
+            n9.q$a r0 = new n9.q$a
+            r0.<init>()
+            p236n9.C4716q.f18832a = r0
+            return
+    }
+
+    /* renamed from: a */
+    public static byte[] m10773a(int r1) {
+            byte[] r1 = new byte[r1]
+            java.lang.ThreadLocal<java.security.SecureRandom> r0 = p236n9.C4716q.f18832a
+            java.lang.Object r0 = r0.get()
+            java.security.SecureRandom r0 = (java.security.SecureRandom) r0
+            r0.nextBytes(r1)
+            return r1
+    }
+}
+package p236n9;
+
+/* renamed from: n9.r */
+/* loaded from: classes.dex */
+public final class C4717r {
+    static {
+            r0 = 4
+            java.lang.Object[] r1 = new java.lang.Object[r0]
+            r2 = 0
+            java.lang.String r3 = "([0-9a-zA-Z\\-\\.\\_~])+"
+            r1[r2] = r3
+            r4 = 1
+            r1[r4] = r3
+            r5 = 2
+            r1[r5] = r3
+            r6 = 3
+            r1[r6] = r3
+            java.lang.String r7 = "^projects/%s/locations/%s/keyRings/%s/cryptoKeys/%s$"
+            java.lang.String r1 = java.lang.String.format(r7, r1)
+            java.util.regex.Pattern.compile(r1, r5)
+            r1 = 5
+            java.lang.Object[] r1 = new java.lang.Object[r1]
+            r1[r2] = r3
+            r1[r4] = r3
+            r1[r5] = r3
+            r1[r6] = r3
+            r1[r0] = r3
+            java.lang.String r0 = "^projects/%s/locations/%s/keyRings/%s/cryptoKeys/%s/cryptoKeyVersions/%s$"
+            java.lang.String r0 = java.lang.String.format(r0, r1)
+            java.util.regex.Pattern.compile(r0, r5)
+            return
+    }
+
+    /* renamed from: a */
+    public static void m10774a(int r3) {
+            r0 = 16
+            if (r3 == r0) goto L21
+            r0 = 32
+            if (r3 != r0) goto L9
+            goto L21
+        L9:
+            java.security.InvalidAlgorithmParameterException r0 = new java.security.InvalidAlgorithmParameterException
+            r1 = 1
+            java.lang.Object[] r1 = new java.lang.Object[r1]
+            r2 = 0
+            int r3 = r3 * 8
+            java.lang.Integer r3 = java.lang.Integer.valueOf(r3)
+            r1[r2] = r3
+            java.lang.String r3 = "invalid key size %d; only 128-bit and 256-bit AES keys are supported"
+            java.lang.String r3 = java.lang.String.format(r3, r1)
+            r0.<init>(r3)
+            throw r0
+        L21:
+            return
+    }
+
+    /* renamed from: b */
+    public static java.lang.String m10775b(java.lang.String r2, java.lang.String r3) {
+            java.util.Locale r0 = java.util.Locale.US
+            java.lang.String r0 = r3.toLowerCase(r0)
+            boolean r0 = r0.startsWith(r2)
+            if (r0 == 0) goto L15
+            int r2 = r2.length()
+            java.lang.String r2 = r3.substring(r2)
+            return r2
+        L15:
+            java.lang.IllegalArgumentException r3 = new java.lang.IllegalArgumentException
+            r0 = 1
+            java.lang.Object[] r0 = new java.lang.Object[r0]
+            r1 = 0
+            r0[r1] = r2
+            java.lang.String r2 = "key URI must start with %s"
+            java.lang.String r2 = java.lang.String.format(r2, r0)
+            r3.<init>(r2)
+            throw r3
+    }
+
+    /* renamed from: c */
+    public static void m10776c(int r3, int r4) {
+            if (r3 < 0) goto L5
+            if (r3 > r4) goto L5
+            return
+        L5:
+            java.security.GeneralSecurityException r0 = new java.security.GeneralSecurityException
+            r1 = 2
+            java.lang.Object[] r1 = new java.lang.Object[r1]
+            r2 = 0
+            java.lang.Integer r3 = java.lang.Integer.valueOf(r3)
+            r1[r2] = r3
+            r3 = 1
+            java.lang.Integer r4 = java.lang.Integer.valueOf(r4)
+            r1[r3] = r4
+            java.lang.String r3 = "key has version %d; only keys with version in range [0..%d] are supported"
+            java.lang.String r3 = java.lang.String.format(r3, r1)
+            r0.<init>(r3)
+            throw r0
+    }
+}
+package p236n9;
+
+/* renamed from: n9.s */
+/* loaded from: classes.dex */
+public class C4718s extends p236n9.AbstractC4707h {
+    public C4718s(byte[] r1, int r2) {
+            r0 = this;
+            r0.<init>(r1, r2)
+            return
+    }
+
+    @Override // p236n9.AbstractC4707h
+    /* renamed from: d */
+    public int[] mo10757d(int[] r12, int r13) {
+            r11 = this;
+            int r0 = r12.length
+            r1 = 1
+            r2 = 6
+            r3 = 0
+            if (r0 != r2) goto L57
+            r0 = 16
+            int[] r4 = new int[r0]
+            int[] r5 = r11.f18812a
+            int[] r0 = new int[r0]
+            p236n9.AbstractC4707h.m10761k(r0, r5)
+            r5 = r12[r3]
+            r6 = 12
+            r0[r6] = r5
+            r1 = r12[r1]
+            r5 = 13
+            r0[r5] = r1
+            r1 = 2
+            r1 = r12[r1]
+            r7 = 14
+            r0[r7] = r1
+            r1 = 3
+            r1 = r12[r1]
+            r8 = 15
+            r0[r8] = r1
+            p236n9.AbstractC4707h.m10762l(r0)
+            r1 = r0[r6]
+            r9 = 4
+            r0[r9] = r1
+            r1 = r0[r5]
+            r10 = 5
+            r0[r10] = r1
+            r1 = r0[r7]
+            r0[r2] = r1
+            r1 = r0[r8]
+            r2 = 7
+            r0[r2] = r1
+            r1 = 8
+            int[] r0 = java.util.Arrays.copyOf(r0, r1)
+            p236n9.AbstractC4707h.m10761k(r4, r0)
+            r4[r6] = r13
+            r4[r5] = r3
+            r13 = r12[r9]
+            r4[r7] = r13
+            r12 = r12[r10]
+            r4[r8] = r12
+            return r4
+        L57:
+            java.lang.IllegalArgumentException r13 = new java.lang.IllegalArgumentException
+            java.lang.Object[] r0 = new java.lang.Object[r1]
+            int r12 = r12.length
+            int r12 = r12 * 32
+            java.lang.Integer r12 = java.lang.Integer.valueOf(r12)
+            r0[r3] = r12
+            java.lang.String r12 = "XChaCha20 uses 192-bit nonces, but got a %d-bit nonce"
+            java.lang.String r12 = java.lang.String.format(r12, r0)
+            r13.<init>(r12)
+            throw r13
+    }
+
+    @Override // p236n9.AbstractC4707h
+    /* renamed from: g */
+    public int mo10758g() {
+            r1 = this;
+            r0 = 24
+            return r0
+    }
+}
+package p236n9;
+
+/* renamed from: n9.t */
+/* loaded from: classes.dex */
+public final class C4719t extends p236n9.AbstractC4709j {
+    public C4719t(byte[] r1) {
+            r0 = this;
+            r0.<init>(r1)
+            return
+    }
+
+    @Override // p236n9.AbstractC4709j
+    /* renamed from: d */
+    public p236n9.AbstractC4707h mo10768d(byte[] r2, int r3) {
+            r1 = this;
+            n9.s r0 = new n9.s
+            r0.<init>(r2, r3)
+            return r0
+    }
+}
+package p236n9;
+
+/* renamed from: n9.m */
+/* loaded from: classes.dex */
+public interface InterfaceC4712m<T> {
+
+    /* renamed from: n9.m$a */
+    public static class a implements p236n9.InterfaceC4712m<javax.crypto.Cipher> {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // p236n9.InterfaceC4712m
+        /* renamed from: a */
+        public javax.crypto.Cipher mo10771a(java.lang.String r1, java.security.Provider r2) {
+                r0 = this;
+                if (r2 != 0) goto L7
+                javax.crypto.Cipher r1 = javax.crypto.Cipher.getInstance(r1)
+                goto Lb
+            L7:
+                javax.crypto.Cipher r1 = javax.crypto.Cipher.getInstance(r1, r2)
+            Lb:
+                return r1
+        }
+    }
+
+    /* renamed from: n9.m$b */
+    public static class b implements p236n9.InterfaceC4712m<javax.crypto.Mac> {
+        public b() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // p236n9.InterfaceC4712m
+        /* renamed from: a */
+        public javax.crypto.Mac mo10771a(java.lang.String r1, java.security.Provider r2) {
+                r0 = this;
+                if (r2 != 0) goto L7
+                javax.crypto.Mac r1 = javax.crypto.Mac.getInstance(r1)
+                goto Lb
+            L7:
+                javax.crypto.Mac r1 = javax.crypto.Mac.getInstance(r1, r2)
+            Lb:
+                return r1
+        }
+    }
+
+    /* renamed from: a */
+    T mo10771a(java.lang.String r1, java.security.Provider r2);
+}
+package p236n9;
+
+/* renamed from: n9.n */
+/* loaded from: classes.dex */
+public interface InterfaceC4713n {
+    /* renamed from: a */
+    byte[] mo10746a(byte[] r1);
+
+    /* renamed from: b */
+    byte[] mo10747b(byte[] r1);
+}

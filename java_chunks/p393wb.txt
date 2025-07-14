@@ -1,0 +1,815 @@
+package p393wb;
+
+/* renamed from: wb.f */
+/* loaded from: classes.dex */
+public abstract class AbstractC6829f {
+
+    /* renamed from: b */
+    public static final p393wb.AbstractC6829f f26573b = null;
+
+    /* renamed from: a */
+    public final p393wb.AbstractC6829f f26574a;
+
+    static {
+            wb.a r0 = new wb.a
+            r1 = 0
+            r2 = 0
+            r3 = 1
+            r0.<init>(r1, r2, r2, r3)
+            p393wb.AbstractC6829f.f26573b = r0
+            return
+    }
+
+    public AbstractC6829f(p393wb.AbstractC6829f r1) {
+            r0 = this;
+            r0.<init>()
+            r0.f26574a = r1
+            return
+    }
+
+    /* renamed from: a */
+    public final p393wb.AbstractC6829f m13914a(int r3, int r4) {
+            r2 = this;
+            wb.a r0 = new wb.a
+            r1 = 1
+            r0.<init>(r2, r3, r4, r1)
+            return r0
+    }
+
+    /* renamed from: b */
+    public abstract void mo13904b(p453zb.C7269a r1, byte[] r2);
+}
+package p393wb;
+
+/* renamed from: wb.a */
+/* loaded from: classes.dex */
+public final class C6824a extends p393wb.AbstractC6829f {
+
+    /* renamed from: c */
+    public final /* synthetic */ int f26559c;
+
+    /* renamed from: d */
+    public final short f26560d;
+
+    /* renamed from: e */
+    public final short f26561e;
+
+    public C6824a(p393wb.AbstractC6829f r2, int r3, int r4, int r5) {
+            r1 = this;
+            r1.f26559c = r5
+            r0 = 1
+            if (r5 == r0) goto Lf
+            r1.<init>(r2)
+            short r2 = (short) r3
+            r1.f26560d = r2
+            short r2 = (short) r4
+            r1.f26561e = r2
+            return
+        Lf:
+            r1.<init>(r2)
+            short r2 = (short) r3
+            r1.f26560d = r2
+            short r2 = (short) r4
+            r1.f26561e = r2
+            return
+    }
+
+    @Override // p393wb.AbstractC6829f
+    /* renamed from: b */
+    public void mo13904b(p453zb.C7269a r6, byte[] r7) {
+            r5 = this;
+            int r0 = r5.f26559c
+            switch(r0) {
+                case 0: goto L6;
+                default: goto L5;
+            }
+        L5:
+            goto L3f
+        L6:
+            r0 = 0
+        L7:
+            short r1 = r5.f26561e
+            if (r0 >= r1) goto L3e
+            r2 = 62
+            r3 = 31
+            if (r0 == 0) goto L15
+            if (r0 != r3) goto L31
+            if (r1 > r2) goto L31
+        L15:
+            r1 = 5
+            r6.m14362c(r3, r1)
+            short r4 = r5.f26561e
+            if (r4 <= r2) goto L22
+            int r4 = r4 + (-31)
+            r1 = 16
+            goto L2e
+        L22:
+            if (r0 != 0) goto L2c
+            int r2 = java.lang.Math.min(r4, r3)
+            r6.m14362c(r2, r1)
+            goto L31
+        L2c:
+            int r4 = r4 + (-31)
+        L2e:
+            r6.m14362c(r4, r1)
+        L31:
+            short r1 = r5.f26560d
+            int r1 = r1 + r0
+            r1 = r7[r1]
+            r2 = 8
+            r6.m14362c(r1, r2)
+            int r0 = r0 + 1
+            goto L7
+        L3e:
+            return
+        L3f:
+            short r7 = r5.f26560d
+            short r0 = r5.f26561e
+            r6.m14362c(r7, r0)
+            return
+    }
+
+    public java.lang.String toString() {
+            r6 = this;
+            int r0 = r6.f26559c
+            r1 = 62
+            java.lang.String r2 = "<"
+            switch(r0) {
+                case 0: goto La;
+                default: goto L9;
+            }
+        L9:
+            goto L2b
+        La:
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            r0.<init>(r2)
+            short r2 = r6.f26560d
+            r0.append(r2)
+            java.lang.String r2 = "::"
+            r0.append(r2)
+            short r2 = r6.f26560d
+            short r3 = r6.f26561e
+            int r2 = r2 + r3
+            int r2 = r2 + (-1)
+            r0.append(r2)
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            return r0
+        L2b:
+            short r0 = r6.f26560d
+            short r3 = r6.f26561e
+            r4 = 1
+            int r3 = r4 << r3
+            int r5 = r3 + (-1)
+            r0 = r0 & r5
+            r0 = r0 | r3
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder
+            r3.<init>(r2)
+            short r2 = r6.f26561e
+            int r2 = r4 << r2
+            r0 = r0 | r2
+            java.lang.String r0 = java.lang.Integer.toBinaryString(r0)
+            java.lang.String r0 = r0.substring(r4)
+            r3.append(r0)
+            r3.append(r1)
+            java.lang.String r0 = r3.toString()
+            return r0
+    }
+}
+package p393wb;
+
+/* renamed from: wb.b */
+/* loaded from: classes.dex */
+public final class C6825b {
+
+    /* renamed from: a */
+    public static final int[] f26562a = null;
+
+    static {
+            r0 = 33
+            int[] r0 = new int[r0]
+            r0 = {x000a: FILL_ARRAY_DATA , data: [4, 6, 6, 8, 8, 8, 8, 8, 8, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12} // fill-array
+            p393wb.C6825b.f26562a = r0
+            return
+    }
+
+    /* renamed from: a */
+    public static void m13905a(p453zb.C7270b r4, int r5, int r6) {
+            r0 = 0
+        L1:
+            if (r0 >= r6) goto L1c
+            int r1 = r5 - r0
+            r2 = r1
+        L6:
+            int r3 = r5 + r0
+            if (r2 > r3) goto L19
+            r4.m14376f(r2, r1)
+            r4.m14376f(r2, r3)
+            r4.m14376f(r1, r2)
+            r4.m14376f(r3, r2)
+            int r2 = r2 + 1
+            goto L6
+        L19:
+            int r0 = r0 + 2
+            goto L1
+        L1c:
+            int r0 = r5 - r6
+            r4.m14376f(r0, r0)
+            int r1 = r0 + 1
+            r4.m14376f(r1, r0)
+            r4.m14376f(r0, r1)
+            int r5 = r5 + r6
+            r4.m14376f(r5, r0)
+            r4.m14376f(r5, r1)
+            int r6 = r5 + (-1)
+            r4.m14376f(r5, r6)
+            return
+    }
+
+    /* renamed from: b */
+    public static p453zb.C7269a m13906b(p453zb.C7269a r11, int r12, int r13) {
+            int r0 = r11.f27901Z
+            int r0 = r0 / r13
+            hb.h r1 = new hb.h
+            r2 = 4
+            if (r13 == r2) goto L2f
+            r2 = 6
+            if (r13 == r2) goto L2c
+            r2 = 8
+            if (r13 == r2) goto L29
+            r2 = 10
+            if (r13 == r2) goto L26
+            r2 = 12
+            if (r13 != r2) goto L1a
+            ac.a r2 = ac.C0055a.f131h
+            goto L31
+        L1a:
+            java.lang.IllegalArgumentException r11 = new java.lang.IllegalArgumentException
+            java.lang.String r12 = "Unsupported word size "
+            java.lang.String r12 = p422y.C7094d.m14209a(r12, r13)
+            r11.<init>(r12)
+            throw r11
+        L26:
+            ac.a r2 = ac.C0055a.f132i
+            goto L31
+        L29:
+            ac.a r2 = ac.C0055a.f137n
+            goto L31
+        L2c:
+            ac.a r2 = ac.C0055a.f133j
+            goto L31
+        L2f:
+            ac.a r2 = ac.C0055a.f134k
+        L31:
+            r1.<init>(r2)
+            int r2 = r12 / r13
+            int[] r3 = new int[r2]
+            int r4 = r11.f27901Z
+            int r4 = r4 / r13
+            r5 = 0
+            r6 = 0
+        L3d:
+            if (r6 >= r4) goto L5d
+            r7 = 0
+            r8 = 0
+        L41:
+            if (r7 >= r13) goto L58
+            int r9 = r6 * r13
+            int r9 = r9 + r7
+            boolean r9 = r11.m14364e(r9)
+            if (r9 == 0) goto L53
+            int r9 = r13 - r7
+            r10 = 1
+            int r9 = r9 - r10
+            int r9 = r10 << r9
+            goto L54
+        L53:
+            r9 = 0
+        L54:
+            r8 = r8 | r9
+            int r7 = r7 + 1
+            goto L41
+        L58:
+            r3[r6] = r8
+            int r6 = r6 + 1
+            goto L3d
+        L5d:
+            int r11 = r2 - r0
+            r1.m7383i(r3, r11)
+            int r12 = r12 % r13
+            zb.a r11 = new zb.a
+            r11.<init>()
+            r11.m14362c(r5, r12)
+        L6b:
+            if (r5 >= r2) goto L75
+            r12 = r3[r5]
+            r11.m14362c(r12, r13)
+            int r5 = r5 + 1
+            goto L6b
+        L75:
+            return r11
+    }
+
+    /* renamed from: c */
+    public static p453zb.C7269a m13907c(p453zb.C7269a r9, int r10) {
+            zb.a r0 = new zb.a
+            r0.<init>()
+            int r1 = r9.f27901Z
+            r2 = 1
+            int r3 = r2 << r10
+            int r3 = r3 + (-2)
+            r4 = 0
+            r5 = 0
+        Le:
+            if (r5 >= r1) goto L3b
+            r6 = 0
+            r7 = 0
+        L12:
+            if (r6 >= r10) goto L27
+            int r8 = r5 + r6
+            if (r8 >= r1) goto L1e
+            boolean r8 = r9.m14364e(r8)
+            if (r8 == 0) goto L24
+        L1e:
+            int r8 = r10 + (-1)
+            int r8 = r8 - r6
+            int r8 = r2 << r8
+            r7 = r7 | r8
+        L24:
+            int r6 = r6 + 1
+            goto L12
+        L27:
+            r6 = r7 & r3
+            if (r6 != r3) goto L2c
+            goto L30
+        L2c:
+            if (r6 != 0) goto L36
+            r6 = r7 | 1
+        L30:
+            r0.m14362c(r6, r10)
+            int r5 = r5 + (-1)
+            goto L39
+        L36:
+            r0.m14362c(r7, r10)
+        L39:
+            int r5 = r5 + r10
+            goto Le
+        L3b:
+            return r0
+    }
+}
+package p393wb;
+
+/* renamed from: wb.c */
+/* loaded from: classes.dex */
+public class C6826c implements java.util.Comparator<p393wb.C6828e> {
+    public C6826c(p393wb.C6827d r1) {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // java.util.Comparator
+    public int compare(p393wb.C6828e r1, p393wb.C6828e r2) {
+            r0 = this;
+            wb.e r1 = (p393wb.C6828e) r1
+            wb.e r2 = (p393wb.C6828e) r2
+            int r1 = r1.f26572d
+            int r2 = r2.f26572d
+            int r1 = r1 - r2
+            return r1
+    }
+}
+package p393wb;
+
+/* renamed from: wb.d */
+/* loaded from: classes.dex */
+public final class C6827d {
+
+    /* renamed from: b */
+    public static final java.lang.String[] f26563b = null;
+
+    /* renamed from: c */
+    public static final int[][] f26564c = null;
+
+    /* renamed from: d */
+    public static final int[][] f26565d = null;
+
+    /* renamed from: e */
+    public static final int[][] f26566e = null;
+
+    /* renamed from: a */
+    public final byte[] f26567a;
+
+    static {
+            java.lang.Class<int> r0 = int.class
+            java.lang.String r1 = "UPPER"
+            java.lang.String r2 = "LOWER"
+            java.lang.String r3 = "DIGIT"
+            java.lang.String r4 = "MIXED"
+            java.lang.String r5 = "PUNCT"
+            java.lang.String[] r1 = new java.lang.String[]{r1, r2, r3, r4, r5}
+            p393wb.C6827d.f26563b = r1
+            r1 = 5
+            int[][] r2 = new int[r1][]
+            int[] r3 = new int[r1]
+            r3 = {x010c: FILL_ARRAY_DATA , data: [0, 327708, 327710, 327709, 656318} // fill-array
+            r4 = 0
+            r2[r4] = r3
+            int[] r3 = new int[r1]
+            r3 = {x011a: FILL_ARRAY_DATA , data: [590318, 0, 327710, 327709, 656318} // fill-array
+            r5 = 1
+            r2[r5] = r3
+            int[] r3 = new int[r1]
+            r3 = {x0128: FILL_ARRAY_DATA , data: [262158, 590300, 0, 590301, 932798} // fill-array
+            r6 = 2
+            r2[r6] = r3
+            int[] r3 = new int[r1]
+            r3 = {x0136: FILL_ARRAY_DATA , data: [327709, 327708, 656318, 0, 327710} // fill-array
+            r7 = 3
+            r2[r7] = r3
+            int[] r1 = new int[r1]
+            r1 = {x0144: FILL_ARRAY_DATA , data: [327711, 656380, 656382, 656381, 0} // fill-array
+            r3 = 4
+            r2[r3] = r1
+            p393wb.C6827d.f26564c = r2
+            int[] r1 = new int[r6]
+            r1 = {x0152: FILL_ARRAY_DATA , data: [5, 256} // fill-array
+            java.lang.Object r1 = java.lang.reflect.Array.newInstance(r0, r1)
+            int[][] r1 = (int[][]) r1
+            p393wb.C6827d.f26565d = r1
+            r1 = r1[r4]
+            r2 = 32
+            r1[r2] = r5
+            r1 = 65
+        L54:
+            r8 = 90
+            if (r1 > r8) goto L64
+            int[][] r8 = p393wb.C6827d.f26565d
+            r8 = r8[r4]
+            int r9 = r1 + (-65)
+            int r9 = r9 + r6
+            r8[r1] = r9
+            int r1 = r1 + 1
+            goto L54
+        L64:
+            int[][] r1 = p393wb.C6827d.f26565d
+            r1 = r1[r5]
+            r1[r2] = r5
+            r1 = 97
+        L6c:
+            r8 = 122(0x7a, float:1.71E-43)
+            if (r1 > r8) goto L7c
+            int[][] r8 = p393wb.C6827d.f26565d
+            r8 = r8[r5]
+            int r9 = r1 + (-97)
+            int r9 = r9 + r6
+            r8[r1] = r9
+            int r1 = r1 + 1
+            goto L6c
+        L7c:
+            int[][] r1 = p393wb.C6827d.f26565d
+            r1 = r1[r6]
+            r1[r2] = r5
+            r1 = 48
+        L84:
+            r2 = 57
+            if (r1 > r2) goto L94
+            int[][] r2 = p393wb.C6827d.f26565d
+            r2 = r2[r6]
+            int r8 = r1 + (-48)
+            int r8 = r8 + r6
+            r2[r1] = r8
+            int r1 = r1 + 1
+            goto L84
+        L94:
+            int[][] r1 = p393wb.C6827d.f26565d
+            r2 = r1[r6]
+            r8 = 44
+            r9 = 12
+            r2[r8] = r9
+            r1 = r1[r6]
+            r2 = 46
+            r8 = 13
+            r1[r2] = r8
+            r1 = 28
+            int[] r2 = new int[r1]
+            r2 = {x015a: FILL_ARRAY_DATA , data: [0, 32, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 27, 28, 29, 30, 31, 64, 92, 94, 95, 96, 124, 126, 127} // fill-array
+            r8 = 0
+        Lae:
+            if (r8 >= r1) goto Lbb
+            int[][] r9 = p393wb.C6827d.f26565d
+            r9 = r9[r7]
+            r10 = r2[r8]
+            r9[r10] = r8
+            int r8 = r8 + 1
+            goto Lae
+        Lbb:
+            r2 = 31
+            int[] r8 = new int[r2]
+            r8 = {x0196: FILL_ARRAY_DATA , data: [0, 13, 0, 0, 0, 0, 33, 39, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 58, 59, 60, 61, 62, 63, 91, 93, 123, 125} // fill-array
+            r9 = 0
+        Lc3:
+            if (r9 >= r2) goto Ld4
+            r10 = r8[r9]
+            if (r10 <= 0) goto Ld1
+            int[][] r10 = p393wb.C6827d.f26565d
+            r10 = r10[r3]
+            r11 = r8[r9]
+            r10[r11] = r9
+        Ld1:
+            int r9 = r9 + 1
+            goto Lc3
+        Ld4:
+            int[] r2 = new int[r6]
+            r2 = {x01d8: FILL_ARRAY_DATA , data: [6, 6} // fill-array
+            java.lang.Object r0 = java.lang.reflect.Array.newInstance(r0, r2)
+            int[][] r0 = (int[][]) r0
+            p393wb.C6827d.f26566e = r0
+            int r2 = r0.length
+            r8 = 0
+        Le3:
+            if (r8 >= r2) goto Lee
+            r9 = r0[r8]
+            r10 = -1
+            java.util.Arrays.fill(r9, r10)
+            int r8 = r8 + 1
+            goto Le3
+        Lee:
+            int[][] r0 = p393wb.C6827d.f26566e
+            r2 = r0[r4]
+            r2[r3] = r4
+            r2 = r0[r5]
+            r2[r3] = r4
+            r2 = r0[r5]
+            r2[r4] = r1
+            r1 = r0[r7]
+            r1[r3] = r4
+            r1 = r0[r6]
+            r1[r3] = r4
+            r0 = r0[r6]
+            r1 = 15
+            r0[r4] = r1
+            return
+    }
+
+    public C6827d(byte[] r1) {
+            r0 = this;
+            r0.<init>()
+            r0.f26567a = r1
+            return
+    }
+
+    /* renamed from: a */
+    public static java.util.Collection<p393wb.C6828e> m13908a(java.lang.Iterable<p393wb.C6828e> r6) {
+            java.util.LinkedList r0 = new java.util.LinkedList
+            r0.<init>()
+            java.util.Iterator r6 = r6.iterator()
+        L9:
+            boolean r1 = r6.hasNext()
+            if (r1 == 0) goto L3e
+            java.lang.Object r1 = r6.next()
+            wb.e r1 = (p393wb.C6828e) r1
+            r2 = 1
+            java.util.Iterator r3 = r0.iterator()
+        L1a:
+            boolean r4 = r3.hasNext()
+            if (r4 == 0) goto L38
+            java.lang.Object r4 = r3.next()
+            wb.e r4 = (p393wb.C6828e) r4
+            boolean r5 = r4.m13911c(r1)
+            if (r5 == 0) goto L2e
+            r2 = 0
+            goto L38
+        L2e:
+            boolean r4 = r1.m13911c(r4)
+            if (r4 == 0) goto L1a
+            r3.remove()
+            goto L1a
+        L38:
+            if (r2 == 0) goto L9
+            r0.add(r1)
+            goto L9
+        L3e:
+            return r0
+    }
+}
+package p393wb;
+
+/* renamed from: wb.e */
+/* loaded from: classes.dex */
+public final class C6828e {
+
+    /* renamed from: e */
+    public static final p393wb.C6828e f26568e = null;
+
+    /* renamed from: a */
+    public final int f26569a;
+
+    /* renamed from: b */
+    public final p393wb.AbstractC6829f f26570b;
+
+    /* renamed from: c */
+    public final int f26571c;
+
+    /* renamed from: d */
+    public final int f26572d;
+
+    static {
+            wb.e r0 = new wb.e
+            wb.f r1 = p393wb.AbstractC6829f.f26573b
+            r2 = 0
+            r0.<init>(r1, r2, r2, r2)
+            p393wb.C6828e.f26568e = r0
+            return
+    }
+
+    public C6828e(p393wb.AbstractC6829f r1, int r2, int r3, int r4) {
+            r0 = this;
+            r0.<init>()
+            r0.f26570b = r1
+            r0.f26569a = r2
+            r0.f26571c = r3
+            r0.f26572d = r4
+            return
+    }
+
+    /* renamed from: a */
+    public p393wb.C6828e m13909a(int r7) {
+            r6 = this;
+            wb.f r0 = r6.f26570b
+            int r1 = r6.f26569a
+            int r2 = r6.f26572d
+            r3 = 0
+            r4 = 4
+            if (r1 == r4) goto Ld
+            r4 = 2
+            if (r1 != r4) goto L1f
+        Ld:
+            int[][] r4 = p393wb.C6827d.f26564c
+            r1 = r4[r1]
+            r1 = r1[r3]
+            r4 = 65535(0xffff, float:9.1834E-41)
+            r4 = r4 & r1
+            int r1 = r1 >> 16
+            wb.f r0 = r0.m13914a(r4, r1)
+            int r2 = r2 + r1
+            r1 = 0
+        L1f:
+            int r3 = r6.f26571c
+            if (r3 == 0) goto L32
+            r4 = 31
+            if (r3 != r4) goto L28
+            goto L32
+        L28:
+            r4 = 62
+            if (r3 != r4) goto L2f
+            r4 = 9
+            goto L34
+        L2f:
+            r4 = 8
+            goto L34
+        L32:
+            r4 = 18
+        L34:
+            wb.e r5 = new wb.e
+            int r3 = r3 + 1
+            int r2 = r2 + r4
+            r5.<init>(r0, r1, r3, r2)
+            r0 = 2078(0x81e, float:2.912E-42)
+            if (r3 != r0) goto L46
+            int r7 = r7 + 1
+            wb.e r5 = r5.m13910b(r7)
+        L46:
+            return r5
+    }
+
+    /* renamed from: b */
+    public p393wb.C6828e m13910b(int r5) {
+            r4 = this;
+            int r0 = r4.f26571c
+            if (r0 != 0) goto L5
+            return r4
+        L5:
+            wb.f r1 = r4.f26570b
+            int r5 = r5 - r0
+            java.util.Objects.requireNonNull(r1)
+            wb.a r2 = new wb.a
+            r3 = 0
+            r2.<init>(r1, r5, r0, r3)
+            wb.e r5 = new wb.e
+            int r0 = r4.f26569a
+            int r1 = r4.f26572d
+            r5.<init>(r2, r0, r3, r1)
+            return r5
+    }
+
+    /* renamed from: c */
+    public boolean m13911c(p393wb.C6828e r4) {
+            r3 = this;
+            int r0 = r3.f26572d
+            int[][] r1 = p393wb.C6827d.f26564c
+            int r2 = r3.f26569a
+            r1 = r1[r2]
+            int r2 = r4.f26569a
+            r1 = r1[r2]
+            int r1 = r1 >> 16
+            int r0 = r0 + r1
+            int r1 = r4.f26571c
+            if (r1 <= 0) goto L1b
+            int r2 = r3.f26571c
+            if (r2 == 0) goto L19
+            if (r2 <= r1) goto L1b
+        L19:
+            int r0 = r0 + 10
+        L1b:
+            int r4 = r4.f26572d
+            if (r0 > r4) goto L21
+            r4 = 1
+            return r4
+        L21:
+            r4 = 0
+            return r4
+    }
+
+    /* renamed from: d */
+    public p393wb.C6828e m13912d(int r5, int r6) {
+            r4 = this;
+            int r0 = r4.f26572d
+            wb.f r1 = r4.f26570b
+            int r2 = r4.f26569a
+            if (r5 == r2) goto L19
+            int[][] r3 = p393wb.C6827d.f26564c
+            r2 = r3[r2]
+            r2 = r2[r5]
+            r3 = 65535(0xffff, float:9.1834E-41)
+            r3 = r3 & r2
+            int r2 = r2 >> 16
+            wb.f r1 = r1.m13914a(r3, r2)
+            int r0 = r0 + r2
+        L19:
+            r2 = 2
+            if (r5 != r2) goto L1e
+            r2 = 4
+            goto L1f
+        L1e:
+            r2 = 5
+        L1f:
+            wb.f r6 = r1.m13914a(r6, r2)
+            wb.e r1 = new wb.e
+            r3 = 0
+            int r0 = r0 + r2
+            r1.<init>(r6, r5, r3, r0)
+            return r1
+    }
+
+    /* renamed from: e */
+    public p393wb.C6828e m13913e(int r6, int r7) {
+            r5 = this;
+            wb.f r0 = r5.f26570b
+            int r1 = r5.f26569a
+            r2 = 5
+            r3 = 2
+            if (r1 != r3) goto La
+            r3 = 4
+            goto Lb
+        La:
+            r3 = 5
+        Lb:
+            int[][] r4 = p393wb.C6827d.f26566e
+            r1 = r4[r1]
+            r6 = r1[r6]
+            wb.f r6 = r0.m13914a(r6, r3)
+            wb.f r6 = r6.m13914a(r7, r2)
+            wb.e r7 = new wb.e
+            int r0 = r5.f26569a
+            r1 = 0
+            int r4 = r5.f26572d
+            int r4 = r4 + r3
+            int r4 = r4 + r2
+            r7.<init>(r6, r0, r1, r4)
+            return r7
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            r0 = 3
+            java.lang.Object[] r0 = new java.lang.Object[r0]
+            java.lang.String[] r1 = p393wb.C6827d.f26563b
+            int r2 = r3.f26569a
+            r1 = r1[r2]
+            r2 = 0
+            r0[r2] = r1
+            int r1 = r3.f26572d
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)
+            r2 = 1
+            r0[r2] = r1
+            int r1 = r3.f26571c
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)
+            r2 = 2
+            r0[r2] = r1
+            java.lang.String r1 = "%s bits=%d bytes=%d"
+            java.lang.String r0 = java.lang.String.format(r1, r0)
+            return r0
+    }
+}

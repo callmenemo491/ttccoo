@@ -1,0 +1,690 @@
+package p330sf;
+
+/* renamed from: sf.b */
+/* loaded from: classes.dex */
+public final class C6059b implements androidx.navigation.InterfaceC0506e {
+
+    /* renamed from: a */
+    public final io.tacocrypto.app.p156ui.tools.nftwallet.model.CollectionDataUi f23397a;
+
+    public C6059b(io.tacocrypto.app.p156ui.tools.nftwallet.model.CollectionDataUi r1) {
+            r0 = this;
+            r0.<init>()
+            r0.f23397a = r1
+            return
+    }
+
+    public static final p330sf.C6059b fromBundle(android.os.Bundle r3) {
+            java.lang.String r0 = "bundle"
+            p214m2.C4339q.m9706k(r3, r0)
+            java.lang.Class<sf.b> r0 = p330sf.C6059b.class
+            java.lang.ClassLoader r0 = r0.getClassLoader()
+            r3.setClassLoader(r0)
+            java.lang.String r0 = "collectionDataUi"
+            boolean r1 = r3.containsKey(r0)
+            if (r1 == 0) goto L5e
+            java.lang.Class<android.os.Parcelable> r1 = android.os.Parcelable.class
+            java.lang.Class<io.tacocrypto.app.ui.tools.nftwallet.model.CollectionDataUi> r2 = io.tacocrypto.app.p156ui.tools.nftwallet.model.CollectionDataUi.class
+            boolean r1 = r1.isAssignableFrom(r2)
+            if (r1 != 0) goto L48
+            java.lang.Class<java.io.Serializable> r1 = java.io.Serializable.class
+            java.lang.Class<io.tacocrypto.app.ui.tools.nftwallet.model.CollectionDataUi> r2 = io.tacocrypto.app.p156ui.tools.nftwallet.model.CollectionDataUi.class
+            boolean r1 = r1.isAssignableFrom(r2)
+            if (r1 == 0) goto L2b
+            goto L48
+        L2b:
+            java.lang.UnsupportedOperationException r3 = new java.lang.UnsupportedOperationException
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            r0.<init>()
+            java.lang.Class<io.tacocrypto.app.ui.tools.nftwallet.model.CollectionDataUi> r1 = io.tacocrypto.app.p156ui.tools.nftwallet.model.CollectionDataUi.class
+            java.lang.String r1 = r1.getName()
+            r0.append(r1)
+            java.lang.String r1 = " must implement Parcelable or Serializable or must be an Enum."
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            r3.<init>(r0)
+            throw r3
+        L48:
+            java.lang.Object r3 = r3.get(r0)
+            io.tacocrypto.app.ui.tools.nftwallet.model.CollectionDataUi r3 = (io.tacocrypto.app.p156ui.tools.nftwallet.model.CollectionDataUi) r3
+            if (r3 == 0) goto L56
+            sf.b r0 = new sf.b
+            r0.<init>(r3)
+            return r0
+        L56:
+            java.lang.IllegalArgumentException r3 = new java.lang.IllegalArgumentException
+            java.lang.String r0 = "Argument \"collectionDataUi\" is marked as non-null but was passed a null value."
+            r3.<init>(r0)
+            throw r3
+        L5e:
+            java.lang.IllegalArgumentException r3 = new java.lang.IllegalArgumentException
+            java.lang.String r0 = "Required argument \"collectionDataUi\" is missing and does not have an android:defaultValue"
+            r3.<init>(r0)
+            throw r3
+    }
+
+    public boolean equals(java.lang.Object r4) {
+            r3 = this;
+            r0 = 1
+            if (r3 != r4) goto L4
+            return r0
+        L4:
+            boolean r1 = r4 instanceof p330sf.C6059b
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            sf.b r4 = (p330sf.C6059b) r4
+            io.tacocrypto.app.ui.tools.nftwallet.model.CollectionDataUi r1 = r3.f23397a
+            io.tacocrypto.app.ui.tools.nftwallet.model.CollectionDataUi r4 = r4.f23397a
+            boolean r4 = p214m2.C4339q.m9702c(r1, r4)
+            if (r4 != 0) goto L17
+            return r2
+        L17:
+            return r0
+    }
+
+    public int hashCode() {
+            r1 = this;
+            io.tacocrypto.app.ui.tools.nftwallet.model.CollectionDataUi r0 = r1.f23397a
+            int r0 = r0.hashCode()
+            return r0
+    }
+
+    public java.lang.String toString() {
+            r2 = this;
+            java.lang.String r0 = "NFTAssetsFragmentArgs(collectionDataUi="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            io.tacocrypto.app.ui.tools.nftwallet.model.CollectionDataUi r1 = r2.f23397a
+            r0.append(r1)
+            r1 = 41
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            return r0
+    }
+}
+package p330sf;
+
+@p134hh.InterfaceC3044e(m7451c = "io.tacocrypto.app.ui.tools.nftwallet.assets.NFTAssetsViewModel$asdfjkasd$1", m7452f = "NFTAssetsViewModel.kt", m7453l = {65, 74, 79}, m7454m = "invokeSuspend")
+/* renamed from: sf.c */
+/* loaded from: classes.dex */
+public final class C6060c extends p134hh.AbstractC3048i implements mh.InterfaceC4624p<p379vh.InterfaceC6686b0, p101fh.InterfaceC2172d<? super ch.C0979f<? extends ch.C0985l>>, java.lang.Object> {
+
+    /* renamed from: c0 */
+    public int f23398c0;
+
+    /* renamed from: d0 */
+    public /* synthetic */ java.lang.Object f23399d0;
+
+    /* renamed from: e0 */
+    public final /* synthetic */ p330sf.C6065h f23400e0;
+
+    /* renamed from: f0 */
+    public final /* synthetic */ java.util.List<java.lang.String> f23401f0;
+
+    @p134hh.InterfaceC3044e(m7451c = "io.tacocrypto.app.ui.tools.nftwallet.assets.NFTAssetsViewModel$asdfjkasd$1$2$1", m7452f = "NFTAssetsViewModel.kt", m7453l = {}, m7454m = "invokeSuspend")
+    /* renamed from: sf.c$a */
+    public static final class a extends p134hh.AbstractC3048i implements mh.InterfaceC4624p<p379vh.InterfaceC6686b0, p101fh.InterfaceC2172d<? super ch.C0985l>, java.lang.Object> {
+
+        /* renamed from: c0 */
+        public final /* synthetic */ p330sf.C6065h f23402c0;
+
+        public a(p330sf.C6065h r1, p101fh.InterfaceC2172d<? super p330sf.C6060c.a> r2) {
+                r0 = this;
+                r0.f23402c0 = r1
+                r1 = 2
+                r0.<init>(r1, r2)
+                return
+        }
+
+        @Override // p134hh.AbstractC3040a
+        /* renamed from: h */
+        public final p101fh.InterfaceC2172d<ch.C0985l> mo121h(java.lang.Object r2, p101fh.InterfaceC2172d<?> r3) {
+                r1 = this;
+                sf.c$a r2 = new sf.c$a
+                sf.h r0 = r1.f23402c0
+                r2.<init>(r0, r3)
+                return r2
+        }
+
+        @Override // mh.InterfaceC4624p
+        /* renamed from: l */
+        public java.lang.Object mo122l(p379vh.InterfaceC6686b0 r2, p101fh.InterfaceC2172d<? super ch.C0985l> r3) {
+                r1 = this;
+                vh.b0 r2 = (p379vh.InterfaceC6686b0) r2
+                fh.d r3 = (p101fh.InterfaceC2172d) r3
+                sf.c$a r2 = new sf.c$a
+                sf.h r0 = r1.f23402c0
+                r2.<init>(r0, r3)
+                ch.l r2 = ch.C0985l.f5061a
+                p074e9.C1805a.m4540y(r2)
+                androidx.lifecycle.d0<java.lang.Boolean> r3 = r0.f23409e
+                java.lang.Boolean r0 = java.lang.Boolean.FALSE
+                r3.mo7l(r0)
+                return r2
+        }
+
+        @Override // p134hh.AbstractC3040a
+        /* renamed from: o */
+        public final java.lang.Object mo123o(java.lang.Object r2) {
+                r1 = this;
+                p074e9.C1805a.m4540y(r2)
+                sf.h r2 = r1.f23402c0
+                androidx.lifecycle.d0<java.lang.Boolean> r2 = r2.f23409e
+                java.lang.Boolean r0 = java.lang.Boolean.FALSE
+                r2.mo7l(r0)
+                ch.l r2 = ch.C0985l.f5061a
+                return r2
+        }
+    }
+
+    @p134hh.InterfaceC3044e(m7451c = "io.tacocrypto.app.ui.tools.nftwallet.assets.NFTAssetsViewModel$asdfjkasd$1$3$1", m7452f = "NFTAssetsViewModel.kt", m7453l = {}, m7454m = "invokeSuspend")
+    /* renamed from: sf.c$b */
+    public static final class b extends p134hh.AbstractC3048i implements mh.InterfaceC4624p<p379vh.InterfaceC6686b0, p101fh.InterfaceC2172d<? super ch.C0985l>, java.lang.Object> {
+
+        /* renamed from: c0 */
+        public final /* synthetic */ p330sf.C6065h f23403c0;
+
+        /* renamed from: d0 */
+        public final /* synthetic */ java.lang.String f23404d0;
+
+        public b(p330sf.C6065h r1, java.lang.String r2, p101fh.InterfaceC2172d<? super p330sf.C6060c.b> r3) {
+                r0 = this;
+                r0.f23403c0 = r1
+                r0.f23404d0 = r2
+                r1 = 2
+                r0.<init>(r1, r3)
+                return
+        }
+
+        @Override // p134hh.AbstractC3040a
+        /* renamed from: h */
+        public final p101fh.InterfaceC2172d<ch.C0985l> mo121h(java.lang.Object r3, p101fh.InterfaceC2172d<?> r4) {
+                r2 = this;
+                sf.c$b r3 = new sf.c$b
+                sf.h r0 = r2.f23403c0
+                java.lang.String r1 = r2.f23404d0
+                r3.<init>(r0, r1, r4)
+                return r3
+        }
+
+        @Override // mh.InterfaceC4624p
+        /* renamed from: l */
+        public java.lang.Object mo122l(p379vh.InterfaceC6686b0 r3, p101fh.InterfaceC2172d<? super ch.C0985l> r4) {
+                r2 = this;
+                vh.b0 r3 = (p379vh.InterfaceC6686b0) r3
+                fh.d r4 = (p101fh.InterfaceC2172d) r4
+                sf.c$b r3 = new sf.c$b
+                sf.h r0 = r2.f23403c0
+                java.lang.String r1 = r2.f23404d0
+                r3.<init>(r0, r1, r4)
+                ch.l r4 = ch.C0985l.f5061a
+                r3.mo123o(r4)
+                return r4
+        }
+
+        @Override // p134hh.AbstractC3040a
+        /* renamed from: o */
+        public final java.lang.Object mo123o(java.lang.Object r6) {
+                r5 = this;
+                p074e9.C1805a.m4540y(r6)
+                sf.h r6 = r5.f23403c0
+                androidx.lifecycle.d0<java.lang.Boolean> r6 = r6.f23409e
+                java.lang.Boolean r0 = java.lang.Boolean.FALSE
+                r6.mo7l(r0)
+                sf.h r6 = r5.f23403c0
+                androidx.lifecycle.d0<vg.b<ah.a>> r6 = r6.f23408d
+                java.lang.String r0 = r5.f23404d0
+                vg.b r1 = new vg.b
+                ah.a r2 = new ah.a
+                zg.d r3 = p458zg.EnumC7332d.f28068Z
+                java.lang.String r4 = "Error"
+                r2.<init>(r4, r0, r3)
+                r1.<init>(r2)
+                r6.mo7l(r1)
+                ch.l r6 = ch.C0985l.f5061a
+                return r6
+        }
+    }
+
+    public C6060c(p330sf.C6065h r1, java.util.List<java.lang.String> r2, p101fh.InterfaceC2172d<? super p330sf.C6060c> r3) {
+            r0 = this;
+            r0.f23400e0 = r1
+            r0.f23401f0 = r2
+            r1 = 2
+            r0.<init>(r1, r3)
+            return
+    }
+
+    @Override // p134hh.AbstractC3040a
+    /* renamed from: h */
+    public final p101fh.InterfaceC2172d<ch.C0985l> mo121h(java.lang.Object r4, p101fh.InterfaceC2172d<?> r5) {
+            r3 = this;
+            sf.c r0 = new sf.c
+            sf.h r1 = r3.f23400e0
+            java.util.List<java.lang.String> r2 = r3.f23401f0
+            r0.<init>(r1, r2, r5)
+            r0.f23399d0 = r4
+            return r0
+    }
+
+    @Override // mh.InterfaceC4624p
+    /* renamed from: l */
+    public java.lang.Object mo122l(p379vh.InterfaceC6686b0 r4, p101fh.InterfaceC2172d<? super ch.C0979f<? extends ch.C0985l>> r5) {
+            r3 = this;
+            vh.b0 r4 = (p379vh.InterfaceC6686b0) r4
+            fh.d r5 = (p101fh.InterfaceC2172d) r5
+            sf.c r0 = new sf.c
+            sf.h r1 = r3.f23400e0
+            java.util.List<java.lang.String> r2 = r3.f23401f0
+            r0.<init>(r1, r2, r5)
+            r0.f23399d0 = r4
+            ch.l r4 = ch.C0985l.f5061a
+            java.lang.Object r4 = r0.mo123o(r4)
+            return r4
+    }
+
+    @Override // p134hh.AbstractC3040a
+    /* renamed from: o */
+    public final java.lang.Object mo123o(java.lang.Object r14) {
+            r13 = this;
+            gh.a r0 = gh.EnumC2389a.f10764Y
+            int r1 = r13.f23398c0
+            r2 = 0
+            r3 = 3
+            r4 = 2
+            r5 = 1
+            if (r1 == 0) goto L2f
+            if (r1 == r5) goto L27
+            if (r1 == r4) goto L1f
+            if (r1 != r3) goto L17
+            java.lang.Object r0 = r13.f23399d0
+            p074e9.C1805a.m4540y(r14)
+            goto L100
+        L17:
+            java.lang.IllegalStateException r14 = new java.lang.IllegalStateException
+            java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
+            r14.<init>(r0)
+            throw r14
+        L1f:
+            java.lang.Object r1 = r13.f23399d0
+            p074e9.C1805a.m4540y(r14)
+            r14 = r1
+            goto Ldf
+        L27:
+            java.lang.Object r1 = r13.f23399d0
+            sf.h r1 = (p330sf.C6065h) r1
+            p074e9.C1805a.m4540y(r14)     // Catch: java.lang.Throwable -> Lbc
+            goto L49
+        L2f:
+            p074e9.C1805a.m4540y(r14)
+            java.lang.Object r14 = r13.f23399d0
+            vh.b0 r14 = (p379vh.InterfaceC6686b0) r14
+            sf.h r1 = r13.f23400e0
+            java.util.List<java.lang.String> r14 = r13.f23401f0
+            java.lang.String r6 = r1.f23415k     // Catch: java.lang.Throwable -> Lbc
+            if (r6 == 0) goto Lb6
+            r13.f23399d0 = r1     // Catch: java.lang.Throwable -> Lbc
+            r13.f23398c0 = r5     // Catch: java.lang.Throwable -> Lbc
+            java.lang.Object r14 = p330sf.C6065h.m12523d(r1, r6, r14, r13)     // Catch: java.lang.Throwable -> Lbc
+            if (r14 != r0) goto L49
+            return r0
+        L49:
+            md.f r14 = (md.C4551f) r14     // Catch: java.lang.Throwable -> Lbc
+            java.util.List r14 = r14.getData()     // Catch: java.lang.Throwable -> Lbc
+            androidx.lifecycle.d0<java.util.List<ch.e<xf.d, xf.p>>> r6 = r1.f23413i     // Catch: java.lang.Throwable -> Lbc
+            java.lang.Object r6 = r6.m1411d()     // Catch: java.lang.Throwable -> Lbc
+            java.util.List r6 = (java.util.List) r6     // Catch: java.lang.Throwable -> Lbc
+            if (r6 != 0) goto L5b
+            dh.k r6 = p062dh.C1475k.f7237Y     // Catch: java.lang.Throwable -> Lbc
+        L5b:
+            java.util.ArrayList r7 = new java.util.ArrayList     // Catch: java.lang.Throwable -> Lbc
+            r8 = 10
+            int r8 = p062dh.C1469e.m3992D(r6, r8)     // Catch: java.lang.Throwable -> Lbc
+            r7.<init>(r8)     // Catch: java.lang.Throwable -> Lbc
+            java.util.Iterator r6 = r6.iterator()     // Catch: java.lang.Throwable -> Lbc
+        L6a:
+            boolean r8 = r6.hasNext()     // Catch: java.lang.Throwable -> Lbc
+            if (r8 == 0) goto Lae
+            java.lang.Object r8 = r6.next()     // Catch: java.lang.Throwable -> Lbc
+            ch.e r8 = (ch.C0978e) r8     // Catch: java.lang.Throwable -> Lbc
+            A r8 = r8.f5050Y     // Catch: java.lang.Throwable -> Lbc
+            xf.d r8 = (p417xf.C7050d) r8     // Catch: java.lang.Throwable -> Lbc
+            java.util.Iterator r9 = r14.iterator()     // Catch: java.lang.Throwable -> Lbc
+        L7e:
+            boolean r10 = r9.hasNext()     // Catch: java.lang.Throwable -> Lbc
+            if (r10 == 0) goto L9a
+            java.lang.Object r10 = r9.next()     // Catch: java.lang.Throwable -> Lbc
+            r11 = r10
+            xf.t r11 = (p417xf.C7066t) r11     // Catch: java.lang.Throwable -> Lbc
+            java.lang.String r11 = r11.getTemplate_id()     // Catch: java.lang.Throwable -> Lbc
+            java.lang.String r12 = r8.getTemplate_id()     // Catch: java.lang.Throwable -> Lbc
+            boolean r11 = p214m2.C4339q.m9702c(r11, r12)     // Catch: java.lang.Throwable -> Lbc
+            if (r11 == 0) goto L7e
+            goto L9b
+        L9a:
+            r10 = r2
+        L9b:
+            xf.t r10 = (p417xf.C7066t) r10     // Catch: java.lang.Throwable -> Lbc
+            if (r10 == 0) goto La4
+            xf.p r9 = r10.toNFTDetailUI()     // Catch: java.lang.Throwable -> Lbc
+            goto La5
+        La4:
+            r9 = r2
+        La5:
+            ch.e r10 = new ch.e     // Catch: java.lang.Throwable -> Lbc
+            r10.<init>(r8, r9)     // Catch: java.lang.Throwable -> Lbc
+            r7.add(r10)     // Catch: java.lang.Throwable -> Lbc
+            goto L6a
+        Lae:
+            androidx.lifecycle.d0<java.util.List<ch.e<xf.d, xf.p>>> r14 = r1.f23413i     // Catch: java.lang.Throwable -> Lbc
+            r14.mo1415j(r7)     // Catch: java.lang.Throwable -> Lbc
+            ch.l r14 = ch.C0985l.f5061a     // Catch: java.lang.Throwable -> Lbc
+            goto Lc1
+        Lb6:
+            java.lang.String r14 = "collectionName"
+            p214m2.C4339q.m9713w(r14)     // Catch: java.lang.Throwable -> Lbc
+            throw r2     // Catch: java.lang.Throwable -> Lbc
+        Lbc:
+            r14 = move-exception
+            java.lang.Object r14 = p074e9.C1805a.m4520e(r14)
+        Lc1:
+            sf.h r1 = r13.f23400e0
+            boolean r6 = r14 instanceof ch.C0979f.a
+            r5 = r5 ^ r6
+            if (r5 == 0) goto Ldf
+            r5 = r14
+            ch.l r5 = (ch.C0985l) r5
+            vh.z r5 = p379vh.C6716l0.f26007a
+            vh.k1 r5 = p459zh.C7346l.f28106a
+            sf.c$a r6 = new sf.c$a
+            r6.<init>(r1, r2)
+            r13.f23399d0 = r14
+            r13.f23398c0 = r4
+            java.lang.Object r1 = p101fh.C2174f.m5710A(r5, r6, r13)
+            if (r1 != r0) goto Ldf
+            return r0
+        Ldf:
+            sf.h r1 = r13.f23400e0
+            java.lang.Throwable r4 = ch.C0979f.m2690b(r14)
+            if (r4 == 0) goto L101
+            java.lang.String r4 = vg.C6672m.m13514a(r4)
+            vh.z r5 = p379vh.C6716l0.f26007a
+            vh.k1 r5 = p459zh.C7346l.f28106a
+            sf.c$b r6 = new sf.c$b
+            r6.<init>(r1, r4, r2)
+            r13.f23399d0 = r14
+            r13.f23398c0 = r3
+            java.lang.Object r1 = p101fh.C2174f.m5710A(r5, r6, r13)
+            if (r1 != r0) goto Lff
+            return r0
+        Lff:
+            r0 = r14
+        L100:
+            r14 = r0
+        L101:
+            ch.f r0 = new ch.f
+            r0.<init>(r14)
+            return r0
+    }
+}
+package p330sf;
+
+/* renamed from: sf.d */
+/* loaded from: classes.dex */
+public final class C6061d extends p119h2.C2448j {
+    public C6061d(java.lang.String r2, p330sf.C6063f<T> r3, p330sf.C6064g r4) {
+            r1 = this;
+            r0 = 0
+            r1.<init>(r0, r2, r3, r4)
+            return
+    }
+}
+package p330sf;
+
+/* renamed from: sf.e */
+/* loaded from: classes.dex */
+public final class C6062e extends p274pb.C5380a<md.C4551f<p417xf.C7066t>> {
+    public C6062e() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+}
+package p330sf;
+
+/* renamed from: sf.f */
+/* loaded from: classes.dex */
+public final class C6063f<T> implements p105g2.C2222p.b {
+
+    /* renamed from: a */
+    public final /* synthetic */ p101fh.InterfaceC2172d<md.C4551f<p417xf.C7066t>> f23405a;
+
+    public C6063f(p101fh.InterfaceC2172d<? super md.C4551f<p417xf.C7066t>> r1) {
+            r0 = this;
+            r0.f23405a = r1
+            r0.<init>()
+            return
+    }
+
+    @Override // p105g2.C2222p.b
+    /* renamed from: a */
+    public void mo117a(java.lang.Object r4) {
+            r3 = this;
+            java.lang.String r4 = (java.lang.String) r4
+            fh.d<md.f<xf.t>> r0 = r3.f23405a
+            java.lang.String r1 = "response"
+            jb.j r1 = p238nd.C4754k.m10827a(r4, r1)
+            sf.e r2 = new sf.e
+            r2.<init>()
+            java.lang.reflect.Type r2 = r2.f21382b
+            java.lang.Object r4 = r1.m7929c(r4, r2)
+            r0.mo5707k(r4)
+            return
+    }
+}
+package p330sf;
+
+/* renamed from: sf.g */
+/* loaded from: classes.dex */
+public final class C6064g implements p105g2.C2222p.a {
+
+    /* renamed from: a */
+    public final /* synthetic */ p101fh.InterfaceC2172d<md.C4551f<p417xf.C7066t>> f23406a;
+
+    public C6064g(p101fh.InterfaceC2172d<? super md.C4551f<p417xf.C7066t>> r1) {
+            r0 = this;
+            r0.f23406a = r1
+            r0.<init>()
+            return
+    }
+
+    @Override // p105g2.C2222p.a
+    /* renamed from: a */
+    public final void mo118a(p105g2.C2226t r3) {
+            r2 = this;
+            fh.d<md.f<xf.t>> r0 = r2.f23406a
+            java.lang.String r1 = "it"
+            p214m2.C4339q.m9705j(r3, r1)
+            java.lang.Object r3 = p074e9.C1805a.m4520e(r3)
+            r0.mo5707k(r3)
+            return
+    }
+}
+package p330sf;
+
+/* renamed from: sf.h */
+/* loaded from: classes.dex */
+public final class C6065h extends androidx.lifecycle.AbstractC0457n0 {
+
+    /* renamed from: c */
+    public final ch.InterfaceC0977d f23407c;
+
+    /* renamed from: d */
+    public final androidx.lifecycle.C0437d0<vg.C6661b<p013ah.C0100a>> f23408d;
+
+    /* renamed from: e */
+    public final androidx.lifecycle.C0437d0<java.lang.Boolean> f23409e;
+
+    /* renamed from: f */
+    public final androidx.lifecycle.LiveData<java.lang.Boolean> f23410f;
+
+    /* renamed from: g */
+    public final androidx.lifecycle.C0437d0<io.tacocrypto.app.p156ui.tools.nftwallet.model.CollectionDataUi> f23411g;
+
+    /* renamed from: h */
+    public final androidx.lifecycle.LiveData<io.tacocrypto.app.p156ui.tools.nftwallet.model.CollectionDataUi> f23412h;
+
+    /* renamed from: i */
+    public final androidx.lifecycle.C0437d0<java.util.List<ch.C0978e<p417xf.C7050d, p417xf.C7062p>>> f23413i;
+
+    /* renamed from: j */
+    public final androidx.lifecycle.LiveData<java.util.List<ch.C0978e<p417xf.C7050d, p417xf.C7062p>>> f23414j;
+
+    /* renamed from: k */
+    public java.lang.String f23415k;
+
+    /* renamed from: sf.h$a */
+    public static final class a extends p239nh.AbstractC4830j implements mh.InterfaceC4609a<p105g2.C2221o> {
+
+        /* renamed from: Z */
+        public final /* synthetic */ android.app.Application f23416Z;
+
+        public a(android.app.Application r1) {
+                r0 = this;
+                r0.f23416Z = r1
+                r1 = 0
+                r0.<init>(r1)
+                return
+        }
+
+        @Override // mh.InterfaceC4609a
+        /* renamed from: e */
+        public p105g2.C2221o mo15e() {
+                r1 = this;
+                android.app.Application r0 = r1.f23416Z
+                g2.o r0 = p119h2.C2450l.m6226a(r0)
+                return r0
+        }
+    }
+
+    public C6065h(android.app.Application r2, p238nd.C4728b0 r3) {
+            r1 = this;
+            java.lang.String r0 = "app"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "eosManager"
+            p214m2.C4339q.m9706k(r3, r0)
+            r1.<init>()
+            sf.h$a r3 = new sf.h$a
+            r3.<init>(r2)
+            ch.d r2 = p185k7.C4038x4.m9096i(r3)
+            r1.f23407c = r2
+            androidx.lifecycle.d0 r2 = new androidx.lifecycle.d0
+            r2.<init>()
+            r1.f23408d = r2
+            androidx.lifecycle.d0 r2 = new androidx.lifecycle.d0
+            r2.<init>()
+            r1.f23409e = r2
+            r1.f23410f = r2
+            androidx.lifecycle.d0 r2 = new androidx.lifecycle.d0
+            r2.<init>()
+            r1.f23411g = r2
+            r1.f23412h = r2
+            androidx.lifecycle.d0 r2 = new androidx.lifecycle.d0
+            r2.<init>()
+            r1.f23413i = r2
+            r1.f23414j = r2
+            return
+    }
+
+    /* renamed from: d */
+    public static final java.lang.Object m12523d(p330sf.C6065h r9, java.lang.String r10, java.util.List r11, p101fh.InterfaceC2172d r12) {
+            fh.j r0 = new fh.j
+            fh.d r12 = gh.C2390b.m6127q(r12)
+            r0.<init>(r12)
+            java.lang.String r2 = ","
+            r3 = 0
+            r4 = 0
+            r5 = 0
+            r6 = 0
+            r7 = 0
+            r8 = 62
+            r1 = r11
+            java.lang.String r11 = p062dh.C1473i.m4000L(r1, r2, r3, r4, r5, r6, r7, r8)
+            java.lang.StringBuilder r12 = new java.lang.StringBuilder
+            r12.<init>()
+            nd.v0 r1 = p238nd.C4781v0.f19121e
+            java.lang.String r2 = "Please for EndpointManager us initialize() before getting the instance."
+            java.util.Objects.requireNonNull(r1, r2)
+            java.lang.String r1 = r1.m10837a()
+            r12.append(r1)
+            java.lang.String r1 = "/v1/templates?collection_name="
+            r12.append(r1)
+            r12.append(r10)
+            java.lang.String r10 = "&ids="
+            r12.append(r10)
+            r12.append(r11)
+            java.lang.String r10 = "&limit=1000"
+            r12.append(r10)
+            java.lang.String r10 = r12.toString()
+            sf.f r11 = new sf.f
+            r11.<init>(r0)
+            sf.g r12 = new sf.g
+            r12.<init>(r0)
+            sf.d r1 = new sf.d
+            r1.<init>(r10, r11, r12)
+            ch.d r9 = r9.f23407c
+            java.lang.Object r9 = r9.getValue()
+            g2.o r9 = (p105g2.C2221o) r9
+            r9.m5814a(r1)
+            java.lang.Object r9 = r0.m5741a()
+            return r9
+    }
+
+    /* renamed from: e */
+    public final void m12524e() {
+            r9 = this;
+            androidx.lifecycle.d0<java.lang.Boolean> r0 = r9.f23409e
+            java.lang.Object r0 = r0.m1411d()
+            java.lang.Boolean r1 = java.lang.Boolean.TRUE
+            boolean r0 = p214m2.C4339q.m9702c(r0, r1)
+            if (r0 == 0) goto Lf
+            goto L58
+        Lf:
+            androidx.lifecycle.d0<java.lang.Boolean> r0 = r9.f23409e
+            r0.mo7l(r1)
+            androidx.lifecycle.d0<java.util.List<ch.e<xf.d, xf.p>>> r0 = r9.f23413i
+            java.lang.Object r0 = r0.m1411d()
+            java.util.List r0 = (java.util.List) r0
+            if (r0 != 0) goto L20
+            dh.k r0 = p062dh.C1475k.f7237Y
+        L20:
+            java.util.ArrayList r1 = new java.util.ArrayList
+            r2 = 10
+            int r2 = p062dh.C1469e.m3992D(r0, r2)
+            r1.<init>(r2)
+            java.util.Iterator r0 = r0.iterator()
+        L2f:
+            boolean r2 = r0.hasNext()
+            if (r2 == 0) goto L47
+            java.lang.Object r2 = r0.next()
+            ch.e r2 = (ch.C0978e) r2
+            A r2 = r2.f5050Y
+            xf.d r2 = (p417xf.C7050d) r2
+            java.lang.String r2 = r2.getTemplate_id()
+            r1.add(r2)
+            goto L2f
+        L47:
+            vh.b0 r3 = p064e.C1488b.m4037d(r9)
+            r4 = 0
+            sf.c r6 = new sf.c
+            r0 = 0
+            r6.<init>(r9, r1, r0)
+            r7 = 3
+            r8 = 0
+            r5 = 0
+            p101fh.C2174f.m5714d(r3, r4, r5, r6, r7, r8)
+        L58:
+            return
+    }
+}

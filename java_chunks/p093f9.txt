@@ -1,0 +1,1544 @@
+package p093f9;
+
+import p221m9.InterfaceC4482q0;
+
+/* renamed from: f9.g */
+/* loaded from: classes.dex */
+public abstract class AbstractC2089g<KeyProtoT extends p221m9.InterfaceC4482q0> {
+
+    /* renamed from: a */
+    public final java.lang.Class<KeyProtoT> f9507a;
+
+    /* renamed from: b */
+    public final java.util.Map<java.lang.Class<?>, p093f9.AbstractC2089g.b<?, KeyProtoT>> f9508b;
+
+    /* renamed from: c */
+    public final java.lang.Class<?> f9509c;
+
+    /* renamed from: f9.g$a */
+    public static abstract class a<KeyFormatProtoT extends p221m9.InterfaceC4482q0, KeyT> {
+
+        /* renamed from: a */
+        public final java.lang.Class<KeyFormatProtoT> f9510a;
+
+        public a(java.lang.Class<KeyFormatProtoT> r1) {
+                r0 = this;
+                r0.<init>()
+                r0.f9510a = r1
+                return
+        }
+
+        /* renamed from: a */
+        public abstract KeyT mo5520a(KeyFormatProtoT r1);
+
+        /* renamed from: b */
+        public abstract KeyFormatProtoT mo5521b(p221m9.AbstractC4454h r1);
+
+        /* renamed from: c */
+        public abstract void mo5522c(KeyFormatProtoT r1);
+    }
+
+    /* renamed from: f9.g$b */
+    public static abstract class b<PrimitiveT, KeyT> {
+
+        /* renamed from: a */
+        public final java.lang.Class<PrimitiveT> f9511a;
+
+        public b(java.lang.Class<PrimitiveT> r1) {
+                r0 = this;
+                r0.<init>()
+                r0.f9511a = r1
+                return
+        }
+
+        /* renamed from: a */
+        public abstract PrimitiveT mo5523a(KeyT r1);
+    }
+
+    @java.lang.SafeVarargs
+    public AbstractC2089g(java.lang.Class<KeyProtoT> r6, com.google.crypto.tink.KeyTypeManager.PrimitiveFactory<?, KeyProtoT>... r7) {
+            r5 = this;
+            r5.<init>()
+            r5.f9507a = r6
+            java.util.HashMap r6 = new java.util.HashMap
+            r6.<init>()
+            int r0 = r7.length
+            r1 = 0
+            r2 = 0
+        Ld:
+            if (r2 >= r0) goto L3a
+            r3 = r7[r2]
+            java.lang.Class<PrimitiveT> r4 = r3.f9511a
+            boolean r4 = r6.containsKey(r4)
+            if (r4 != 0) goto L21
+            java.lang.Class<PrimitiveT> r4 = r3.f9511a
+            r6.put(r4, r3)
+            int r2 = r2 + 1
+            goto Ld
+        L21:
+            java.lang.IllegalArgumentException r6 = new java.lang.IllegalArgumentException
+            java.lang.String r7 = "KeyTypeManager constructed with duplicate factories for primitive "
+            java.lang.StringBuilder r7 = android.support.v4.media.C0144c.m256a(r7)
+            java.lang.Class<PrimitiveT> r0 = r3.f9511a
+            java.lang.String r0 = r0.getCanonicalName()
+            r7.append(r0)
+            java.lang.String r7 = r7.toString()
+            r6.<init>(r7)
+            throw r6
+        L3a:
+            int r0 = r7.length
+            if (r0 <= 0) goto L42
+            r7 = r7[r1]
+            java.lang.Class<PrimitiveT> r7 = r7.f9511a
+            goto L44
+        L42:
+            java.lang.Class<java.lang.Void> r7 = java.lang.Void.class
+        L44:
+            r5.f9509c = r7
+            java.util.Map r6 = java.util.Collections.unmodifiableMap(r6)
+            r5.f9508b = r6
+            return
+    }
+
+    /* renamed from: a */
+    public abstract java.lang.String mo5514a();
+
+    /* renamed from: b */
+    public final <P> P m5515b(KeyProtoT r2, java.lang.Class<P> r3) {
+            r1 = this;
+            java.util.Map<java.lang.Class<?>, f9.g$b<?, KeyProtoT extends m9.q0>> r0 = r1.f9508b
+            java.lang.Object r0 = r0.get(r3)
+            f9.g$b r0 = (p093f9.AbstractC2089g.b) r0
+            if (r0 == 0) goto Lf
+            java.lang.Object r2 = r0.mo5523a(r2)
+            return r2
+        Lf:
+            java.lang.IllegalArgumentException r2 = new java.lang.IllegalArgumentException
+            java.lang.String r0 = "Requested primitive class "
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r3 = r3.getCanonicalName()
+            r0.append(r3)
+            java.lang.String r3 = " not supported."
+            r0.append(r3)
+            java.lang.String r3 = r0.toString()
+            r2.<init>(r3)
+            throw r2
+    }
+
+    /* renamed from: c */
+    public abstract p093f9.AbstractC2089g.a<?, KeyProtoT> mo5516c();
+
+    /* renamed from: d */
+    public abstract p204l9.C4229w.c mo5517d();
+
+    /* renamed from: e */
+    public abstract KeyProtoT mo5518e(p221m9.AbstractC4454h r1);
+
+    /* renamed from: f */
+    public abstract void mo5519f(KeyProtoT r1);
+}
+package p093f9;
+
+/* renamed from: f9.b */
+/* loaded from: classes.dex */
+public final class C2084b {
+
+    /* renamed from: a */
+    public static final byte[] f9503a = null;
+
+    static {
+            r0 = 0
+            byte[] r0 = new byte[r0]
+            p093f9.C2084b.f9503a = r0
+            return
+    }
+}
+package p093f9;
+
+import p221m9.InterfaceC4482q0;
+
+/* renamed from: f9.e */
+/* loaded from: classes.dex */
+public class C2087e<PrimitiveT, KeyProtoT extends p221m9.InterfaceC4482q0> implements p093f9.InterfaceC2086d<PrimitiveT> {
+
+    /* renamed from: a */
+    public final p093f9.AbstractC2089g<KeyProtoT> f9504a;
+
+    /* renamed from: b */
+    public final java.lang.Class<PrimitiveT> f9505b;
+
+    public C2087e(p093f9.AbstractC2089g<KeyProtoT> r4, java.lang.Class<PrimitiveT> r5) {
+            r3 = this;
+            r3.<init>()
+            java.util.Map<java.lang.Class<?>, f9.g$b<?, KeyProtoT extends m9.q0>> r0 = r4.f9508b
+            java.util.Set r0 = r0.keySet()
+            boolean r0 = r0.contains(r5)
+            if (r0 != 0) goto L35
+            java.lang.Class<java.lang.Void> r0 = java.lang.Void.class
+            boolean r0 = r0.equals(r5)
+            if (r0 == 0) goto L18
+            goto L35
+        L18:
+            java.lang.IllegalArgumentException r0 = new java.lang.IllegalArgumentException
+            r1 = 2
+            java.lang.Object[] r1 = new java.lang.Object[r1]
+            r2 = 0
+            java.lang.String r4 = r4.toString()
+            r1[r2] = r4
+            r4 = 1
+            java.lang.String r5 = r5.getName()
+            r1[r4] = r5
+            java.lang.String r4 = "Given internalKeyMananger %s does not support primitive class %s"
+            java.lang.String r4 = java.lang.String.format(r4, r1)
+            r0.<init>(r4)
+            throw r0
+        L35:
+            r3.f9504a = r4
+            r3.f9505b = r5
+            return
+    }
+
+    /* renamed from: a */
+    public final PrimitiveT m5510a(p221m9.AbstractC4454h r4) {
+            r3 = this;
+            f9.g<KeyProtoT extends m9.q0> r0 = r3.f9504a     // Catch: p221m9.C4434a0 -> L26
+            m9.q0 r4 = r0.mo5518e(r4)     // Catch: p221m9.C4434a0 -> L26
+            java.lang.Class<java.lang.Void> r0 = java.lang.Void.class
+            java.lang.Class<PrimitiveT> r1 = r3.f9505b     // Catch: p221m9.C4434a0 -> L26
+            boolean r0 = r0.equals(r1)     // Catch: p221m9.C4434a0 -> L26
+            if (r0 != 0) goto L1e
+            f9.g<KeyProtoT extends m9.q0> r0 = r3.f9504a     // Catch: p221m9.C4434a0 -> L26
+            r0.mo5519f(r4)     // Catch: p221m9.C4434a0 -> L26
+            f9.g<KeyProtoT extends m9.q0> r0 = r3.f9504a     // Catch: p221m9.C4434a0 -> L26
+            java.lang.Class<PrimitiveT> r1 = r3.f9505b     // Catch: p221m9.C4434a0 -> L26
+            java.lang.Object r4 = r0.m5515b(r4, r1)     // Catch: p221m9.C4434a0 -> L26
+            return r4
+        L1e:
+            java.security.GeneralSecurityException r4 = new java.security.GeneralSecurityException     // Catch: p221m9.C4434a0 -> L26
+            java.lang.String r0 = "Cannot create a primitive for Void"
+            r4.<init>(r0)     // Catch: p221m9.C4434a0 -> L26
+            throw r4     // Catch: p221m9.C4434a0 -> L26
+        L26:
+            r4 = move-exception
+            java.security.GeneralSecurityException r0 = new java.security.GeneralSecurityException
+            java.lang.String r1 = "Failures parsing proto of type "
+            java.lang.StringBuilder r1 = android.support.v4.media.C0144c.m256a(r1)
+            f9.g<KeyProtoT extends m9.q0> r2 = r3.f9504a
+            java.lang.Class<KeyProtoT extends m9.q0> r2 = r2.f9507a
+            java.lang.String r2 = r2.getName()
+            r1.append(r2)
+            java.lang.String r1 = r1.toString()
+            r0.<init>(r1, r4)
+            throw r0
+    }
+
+    /* renamed from: b */
+    public final p221m9.InterfaceC4482q0 m5511b(p221m9.AbstractC4454h r4) {
+            r3 = this;
+            f9.g<KeyProtoT extends m9.q0> r0 = r3.f9504a     // Catch: p221m9.C4434a0 -> L14
+            f9.g$a r0 = r0.mo5516c()     // Catch: p221m9.C4434a0 -> L14
+            m9.q0 r4 = r0.mo5521b(r4)     // Catch: p221m9.C4434a0 -> L14
+            r0.mo5522c(r4)     // Catch: p221m9.C4434a0 -> L14
+            java.lang.Object r4 = r0.mo5520a(r4)     // Catch: p221m9.C4434a0 -> L14
+            m9.q0 r4 = (p221m9.InterfaceC4482q0) r4     // Catch: p221m9.C4434a0 -> L14
+            return r4
+        L14:
+            r4 = move-exception
+            java.security.GeneralSecurityException r0 = new java.security.GeneralSecurityException
+            java.lang.String r1 = "Failures parsing proto of type "
+            java.lang.StringBuilder r1 = android.support.v4.media.C0144c.m256a(r1)
+            f9.g<KeyProtoT extends m9.q0> r2 = r3.f9504a
+            f9.g$a r2 = r2.mo5516c()
+            java.lang.Class<KeyFormatProtoT extends m9.q0> r2 = r2.f9510a
+            java.lang.String r2 = r2.getName()
+            r1.append(r2)
+            java.lang.String r1 = r1.toString()
+            r0.<init>(r1, r4)
+            throw r0
+    }
+
+    /* renamed from: c */
+    public final p204l9.C4229w m5512c(p221m9.AbstractC4454h r4) {
+            r3 = this;
+            f9.g<KeyProtoT extends m9.q0> r0 = r3.f9504a     // Catch: p221m9.C4434a0 -> L4c
+            f9.g$a r0 = r0.mo5516c()     // Catch: p221m9.C4434a0 -> L4c
+            m9.q0 r4 = r0.mo5521b(r4)     // Catch: p221m9.C4434a0 -> L4c
+            r0.mo5522c(r4)     // Catch: p221m9.C4434a0 -> L4c
+            java.lang.Object r4 = r0.mo5520a(r4)     // Catch: p221m9.C4434a0 -> L4c
+            m9.q0 r4 = (p221m9.InterfaceC4482q0) r4     // Catch: p221m9.C4434a0 -> L4c
+            l9.w$b r0 = p204l9.C4229w.m9522E()     // Catch: p221m9.C4434a0 -> L4c
+            f9.g<KeyProtoT extends m9.q0> r1 = r3.f9504a     // Catch: p221m9.C4434a0 -> L4c
+            java.lang.String r1 = r1.mo5514a()     // Catch: p221m9.C4434a0 -> L4c
+            r0.m10377o()     // Catch: p221m9.C4434a0 -> L4c
+            MessageType extends m9.x<MessageType, BuilderType> r2 = r0.f18293Z     // Catch: p221m9.C4434a0 -> L4c
+            l9.w r2 = (p204l9.C4229w) r2     // Catch: p221m9.C4434a0 -> L4c
+            p204l9.C4229w.m9524x(r2, r1)     // Catch: p221m9.C4434a0 -> L4c
+            m9.h r4 = r4.mo9890g()     // Catch: p221m9.C4434a0 -> L4c
+            r0.m10377o()     // Catch: p221m9.C4434a0 -> L4c
+            MessageType extends m9.x<MessageType, BuilderType> r1 = r0.f18293Z     // Catch: p221m9.C4434a0 -> L4c
+            l9.w r1 = (p204l9.C4229w) r1     // Catch: p221m9.C4434a0 -> L4c
+            p204l9.C4229w.m9525y(r1, r4)     // Catch: p221m9.C4434a0 -> L4c
+            f9.g<KeyProtoT extends m9.q0> r4 = r3.f9504a     // Catch: p221m9.C4434a0 -> L4c
+            l9.w$c r4 = r4.mo5517d()     // Catch: p221m9.C4434a0 -> L4c
+            r0.m10377o()     // Catch: p221m9.C4434a0 -> L4c
+            MessageType extends m9.x<MessageType, BuilderType> r1 = r0.f18293Z     // Catch: p221m9.C4434a0 -> L4c
+            l9.w r1 = (p204l9.C4229w) r1     // Catch: p221m9.C4434a0 -> L4c
+            p204l9.C4229w.m9526z(r1, r4)     // Catch: p221m9.C4434a0 -> L4c
+            m9.x r4 = r0.m10375k()     // Catch: p221m9.C4434a0 -> L4c
+            l9.w r4 = (p204l9.C4229w) r4     // Catch: p221m9.C4434a0 -> L4c
+            return r4
+        L4c:
+            r4 = move-exception
+            java.security.GeneralSecurityException r0 = new java.security.GeneralSecurityException
+            java.lang.String r1 = "Unexpected proto"
+            r0.<init>(r1, r4)
+            throw r0
+    }
+}
+package p093f9;
+
+/* renamed from: f9.f */
+/* loaded from: classes.dex */
+public final class C2088f {
+
+    /* renamed from: a */
+    public final p204l9.C4231y f9506a;
+
+    public C2088f(p204l9.C4231y r1) {
+            r0 = this;
+            r0.<init>()
+            r0.f9506a = r1
+            return
+    }
+
+    /* renamed from: a */
+    public static p093f9.C2088f m5513a(java.lang.String r3, byte[] r4, int r5) {
+            f9.f r0 = new f9.f
+            l9.y$b r1 = p204l9.C4231y.m9533E()
+            r1.m10377o()
+            MessageType extends m9.x<MessageType, BuilderType> r2 = r1.f18293Z
+            l9.y r2 = (p204l9.C4231y) r2
+            p204l9.C4231y.m9535x(r2, r3)
+            int r3 = r4.length
+            r2 = 0
+            m9.h r3 = p221m9.AbstractC4454h.m10054i(r4, r2, r3)
+            r1.m10377o()
+            MessageType extends m9.x<MessageType, BuilderType> r4 = r1.f18293Z
+            l9.y r4 = (p204l9.C4231y) r4
+            p204l9.C4231y.m9536y(r4, r3)
+            int r3 = p365v.C6480g.m13148b(r5)
+            if (r3 == 0) goto L40
+            r4 = 1
+            if (r3 == r4) goto L3d
+            r4 = 2
+            if (r3 == r4) goto L3a
+            r4 = 3
+            if (r3 != r4) goto L32
+            l9.g0 r3 = p204l9.EnumC4210g0.f17365d0
+            goto L42
+        L32:
+            java.lang.IllegalArgumentException r3 = new java.lang.IllegalArgumentException
+            java.lang.String r4 = "Unknown output prefix type"
+            r3.<init>(r4)
+            throw r3
+        L3a:
+            l9.g0 r3 = p204l9.EnumC4210g0.f17364c0
+            goto L42
+        L3d:
+            l9.g0 r3 = p204l9.EnumC4210g0.f17363b0
+            goto L42
+        L40:
+            l9.g0 r3 = p204l9.EnumC4210g0.f17362a0
+        L42:
+            r1.m10377o()
+            MessageType extends m9.x<MessageType, BuilderType> r4 = r1.f18293Z
+            l9.y r4 = (p204l9.C4231y) r4
+            p204l9.C4231y.m9537z(r4, r3)
+            m9.x r3 = r1.m10375k()
+            l9.y r3 = (p204l9.C4231y) r3
+            r0.<init>(r3)
+            return r0
+    }
+}
+package p093f9;
+
+/* renamed from: f9.h */
+/* loaded from: classes.dex */
+public final class C2090h {
+
+    /* renamed from: a */
+    public final p204l9.C4198a0 f9512a;
+
+    public C2090h(p204l9.C4198a0 r1) {
+            r0 = this;
+            r0.<init>()
+            r0.f9512a = r1
+            return
+    }
+
+    /* renamed from: a */
+    public static final p093f9.C2090h m5524a(p204l9.C4198a0 r1) {
+            if (r1 == 0) goto Le
+            int r0 = r1.m9346A()
+            if (r0 <= 0) goto Le
+            f9.h r0 = new f9.h
+            r0.<init>(r1)
+            return r0
+        Le:
+            java.security.GeneralSecurityException r1 = new java.security.GeneralSecurityException
+            java.lang.String r0 = "empty keyset"
+            r1.<init>(r0)
+            throw r1
+    }
+
+    /* renamed from: c */
+    public static final p093f9.C2090h m5525c(androidx.appcompat.widget.C0311x r3, p093f9.InterfaceC2083a r4) {
+            byte[] r3 = r3.m824o()
+            m9.p r0 = p221m9.C4478p.m10222a()
+            l9.r r3 = p204l9.C4224r.m9496B(r3, r0)
+            m9.h r0 = r3.m9500z()
+            int r0 = r0.size()
+            java.lang.String r1 = "empty keyset"
+            if (r0 == 0) goto L49
+            f9.h r0 = new f9.h
+            m9.h r3 = r3.m9500z()     // Catch: p221m9.C4434a0 -> L41
+            byte[] r3 = r3.m10063w()     // Catch: p221m9.C4434a0 -> L41
+            r2 = 0
+            byte[] r2 = new byte[r2]     // Catch: p221m9.C4434a0 -> L41
+            byte[] r3 = r4.mo5507b(r3, r2)     // Catch: p221m9.C4434a0 -> L41
+            m9.p r4 = p221m9.C4478p.m10222a()     // Catch: p221m9.C4434a0 -> L41
+            l9.a0 r3 = p204l9.C4198a0.m9342E(r3, r4)     // Catch: p221m9.C4434a0 -> L41
+            int r4 = r3.m9346A()     // Catch: p221m9.C4434a0 -> L41
+            if (r4 <= 0) goto L3b
+            r0.<init>(r3)
+            return r0
+        L3b:
+            java.security.GeneralSecurityException r3 = new java.security.GeneralSecurityException     // Catch: p221m9.C4434a0 -> L41
+            r3.<init>(r1)     // Catch: p221m9.C4434a0 -> L41
+            throw r3     // Catch: p221m9.C4434a0 -> L41
+        L41:
+            java.security.GeneralSecurityException r3 = new java.security.GeneralSecurityException
+            java.lang.String r4 = "invalid keyset, corrupted key material"
+            r3.<init>(r4)
+            throw r3
+        L49:
+            java.security.GeneralSecurityException r3 = new java.security.GeneralSecurityException
+            r3.<init>(r1)
+            throw r3
+    }
+
+    /* renamed from: b */
+    public <P> P m5526b(java.lang.Class<P> r15) {
+            r14 = this;
+            java.util.logging.Logger r0 = p093f9.C2100r.f9524a
+            l9.x r0 = p204l9.EnumC4230x.f17386a0
+            l9.a0 r1 = r14.f9512a
+            int r2 = p093f9.C2101s.f9529a
+            int r2 = r1.m9348C()
+            java.util.List r1 = r1.m9347B()
+            java.util.Iterator r1 = r1.iterator()
+            r3 = 0
+            r4 = 1
+            r5 = 0
+            r6 = 0
+            r7 = 1
+        L19:
+            boolean r8 = r1.hasNext()
+            if (r8 == 0) goto Lac
+            java.lang.Object r8 = r1.next()
+            l9.a0$c r8 = (p204l9.C4198a0.c) r8
+            l9.x r9 = r8.m9359E()
+            if (r9 == r0) goto L2c
+            goto L19
+        L2c:
+            boolean r9 = r8.m9360F()
+            if (r9 == 0) goto L94
+            l9.g0 r9 = r8.m9358D()
+            l9.g0 r10 = p204l9.EnumC4210g0.f17361Z
+            if (r9 == r10) goto L7c
+            l9.x r9 = r8.m9359E()
+            l9.x r10 = p204l9.EnumC4230x.f17385Z
+            if (r9 == r10) goto L64
+            int r9 = r8.m9357C()
+            if (r9 != r2) goto L54
+            if (r6 != 0) goto L4c
+            r6 = 1
+            goto L54
+        L4c:
+            java.security.GeneralSecurityException r15 = new java.security.GeneralSecurityException
+            java.lang.String r0 = "keyset contains multiple primary keys"
+            r15.<init>(r0)
+            throw r15
+        L54:
+            l9.w r8 = r8.m9356B()
+            l9.w$c r8 = r8.m9527B()
+            l9.w$c r9 = p204l9.C4229w.c.f17380c0
+            if (r8 == r9) goto L61
+            r7 = 0
+        L61:
+            int r5 = r5 + 1
+            goto L19
+        L64:
+            java.security.GeneralSecurityException r15 = new java.security.GeneralSecurityException
+            java.lang.Object[] r0 = new java.lang.Object[r4]
+            int r1 = r8.m9357C()
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)
+            r0[r3] = r1
+            java.lang.String r1 = "key %d has unknown status"
+            java.lang.String r0 = java.lang.String.format(r1, r0)
+            r15.<init>(r0)
+            throw r15
+        L7c:
+            java.security.GeneralSecurityException r15 = new java.security.GeneralSecurityException
+            java.lang.Object[] r0 = new java.lang.Object[r4]
+            int r1 = r8.m9357C()
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)
+            r0[r3] = r1
+            java.lang.String r1 = "key %d has unknown prefix"
+            java.lang.String r0 = java.lang.String.format(r1, r0)
+            r15.<init>(r0)
+            throw r15
+        L94:
+            java.security.GeneralSecurityException r15 = new java.security.GeneralSecurityException
+            java.lang.Object[] r0 = new java.lang.Object[r4]
+            int r1 = r8.m9357C()
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)
+            r0[r3] = r1
+            java.lang.String r1 = "key %d has no key data"
+            java.lang.String r0 = java.lang.String.format(r1, r0)
+            r15.<init>(r0)
+            throw r15
+        Lac:
+            if (r5 == 0) goto L1e1
+            if (r6 != 0) goto Lbb
+            if (r7 == 0) goto Lb3
+            goto Lbb
+        Lb3:
+            java.security.GeneralSecurityException r15 = new java.security.GeneralSecurityException
+            java.lang.String r0 = "keyset doesn't contain a valid primary key"
+            r15.<init>(r0)
+            throw r15
+        Lbb:
+            f9.n r1 = new f9.n
+            r1.<init>(r15)
+            l9.a0 r2 = r14.f9512a
+            java.util.List r2 = r2.m9347B()
+            java.util.Iterator r2 = r2.iterator()
+        Lca:
+            boolean r5 = r2.hasNext()
+            if (r5 == 0) goto L1b5
+            java.lang.Object r5 = r2.next()
+            l9.a0$c r5 = (p204l9.C4198a0.c) r5
+            l9.x r6 = r5.m9359E()
+            if (r6 != r0) goto Lca
+            l9.w r6 = r5.m9356B()
+            java.lang.String r6 = r6.m9528C()
+            l9.w r7 = r5.m9356B()
+            m9.h r7 = r7.m9529D()
+            java.lang.Object r9 = p093f9.C2100r.m5550d(r6, r7, r15)
+            l9.x r6 = r5.m9359E()
+            if (r6 != r0) goto L1ad
+            f9.n$a r6 = new f9.n$a
+            l9.g0 r7 = r5.m9358D()
+            int r7 = r7.ordinal()
+            r8 = 5
+            if (r7 == r4) goto L121
+            r10 = 2
+            if (r7 == r10) goto L118
+            r10 = 3
+            if (r7 == r10) goto L115
+            r10 = 4
+            if (r7 != r10) goto L10d
+            goto L118
+        L10d:
+            java.security.GeneralSecurityException r15 = new java.security.GeneralSecurityException
+            java.lang.String r0 = "unknown output prefix type"
+            r15.<init>(r0)
+            throw r15
+        L115:
+            byte[] r7 = p093f9.C2084b.f9503a
+            goto L135
+        L118:
+            java.nio.ByteBuffer r7 = java.nio.ByteBuffer.allocate(r8)
+            java.nio.ByteBuffer r7 = r7.put(r3)
+            goto L129
+        L121:
+            java.nio.ByteBuffer r7 = java.nio.ByteBuffer.allocate(r8)
+            java.nio.ByteBuffer r7 = r7.put(r4)
+        L129:
+            int r8 = r5.m9357C()
+            java.nio.ByteBuffer r7 = r7.putInt(r8)
+            byte[] r7 = r7.array()
+        L135:
+            r10 = r7
+            l9.x r11 = r5.m9359E()
+            l9.g0 r12 = r5.m9358D()
+            int r13 = r5.m9357C()
+            r8 = r6
+            r8.<init>(r9, r10, r11, r12, r13)
+            java.util.ArrayList r7 = new java.util.ArrayList
+            r7.<init>()
+            r7.add(r6)
+            java.lang.String r8 = new java.lang.String
+            byte[] r9 = r6.m5540a()
+            java.nio.charset.Charset r10 = p093f9.C2096n.f9515d
+            r8.<init>(r9, r10)
+            java.util.concurrent.ConcurrentMap<java.lang.String, java.util.List<f9.n$a<P>>> r9 = r1.f9516a
+            java.util.List r7 = java.util.Collections.unmodifiableList(r7)
+            java.lang.Object r7 = r9.put(r8, r7)
+            java.util.List r7 = (java.util.List) r7
+            if (r7 == 0) goto L17b
+            java.util.ArrayList r9 = new java.util.ArrayList
+            r9.<init>()
+            r9.addAll(r7)
+            r9.add(r6)
+            java.util.concurrent.ConcurrentMap<java.lang.String, java.util.List<f9.n$a<P>>> r7 = r1.f9516a
+            java.util.List r9 = java.util.Collections.unmodifiableList(r9)
+            r7.put(r8, r9)
+        L17b:
+            int r5 = r5.m9357C()
+            l9.a0 r7 = r14.f9512a
+            int r7 = r7.m9348C()
+            if (r5 != r7) goto Lca
+            l9.x r5 = r6.f9521c
+            if (r5 != r0) goto L1a5
+            byte[] r5 = r6.m5540a()
+            java.util.List r5 = r1.m5538a(r5)
+            boolean r5 = r5.isEmpty()
+            if (r5 != 0) goto L19d
+            r1.f9517b = r6
+            goto Lca
+        L19d:
+            java.lang.IllegalArgumentException r15 = new java.lang.IllegalArgumentException
+            java.lang.String r0 = "the primary entry cannot be set to an entry which is not held by this primitive set"
+            r15.<init>(r0)
+            throw r15
+        L1a5:
+            java.lang.IllegalArgumentException r15 = new java.lang.IllegalArgumentException
+            java.lang.String r0 = "the primary entry has to be ENABLED"
+            r15.<init>(r0)
+            throw r15
+        L1ad:
+            java.security.GeneralSecurityException r15 = new java.security.GeneralSecurityException
+            java.lang.String r0 = "only ENABLED key is allowed"
+            r15.<init>(r0)
+            throw r15
+        L1b5:
+            java.util.concurrent.ConcurrentMap<java.lang.Class<?>, f9.o<?>> r15 = p093f9.C2100r.f9528e
+            java.lang.Class<P> r0 = r1.f9518c
+            java.util.concurrent.ConcurrentHashMap r15 = (java.util.concurrent.ConcurrentHashMap) r15
+            java.lang.Object r15 = r15.get(r0)
+            f9.o r15 = (p093f9.InterfaceC2097o) r15
+            if (r15 == 0) goto L1c8
+            java.lang.Object r15 = r15.mo5541a(r1)
+            return r15
+        L1c8:
+            java.security.GeneralSecurityException r15 = new java.security.GeneralSecurityException
+            java.lang.String r0 = "No wrapper found for "
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.Class<P> r1 = r1.f9518c
+            java.lang.String r1 = r1.getName()
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            r15.<init>(r0)
+            throw r15
+        L1e1:
+            java.security.GeneralSecurityException r15 = new java.security.GeneralSecurityException
+            java.lang.String r0 = "keyset must contain at least one ENABLED key"
+            r15.<init>(r0)
+            throw r15
+    }
+
+    public java.lang.String toString() {
+            r1 = this;
+            l9.a0 r0 = r1.f9512a
+            l9.b0 r0 = p093f9.C2101s.m5554a(r0)
+            java.lang.String r0 = r0.toString()
+            return r0
+    }
+}
+package p093f9;
+
+/* renamed from: f9.i */
+/* loaded from: classes.dex */
+public final class C2091i {
+
+    /* renamed from: a */
+    public final p204l9.C4198a0.b f9513a;
+
+    public C2091i(p204l9.C4198a0.b r1) {
+            r0 = this;
+            r0.<init>()
+            r0.f9513a = r1
+            return
+    }
+
+    /* renamed from: e */
+    public static int m5527e() {
+            java.security.SecureRandom r0 = new java.security.SecureRandom
+            r0.<init>()
+            r1 = 4
+            byte[] r1 = new byte[r1]
+            r2 = 0
+            r3 = 0
+        La:
+            if (r3 != 0) goto L2c
+            r0.nextBytes(r1)
+            r3 = r1[r2]
+            r3 = r3 & 127(0x7f, float:1.78E-43)
+            int r3 = r3 << 24
+            r4 = 1
+            r4 = r1[r4]
+            r4 = r4 & 255(0xff, float:3.57E-43)
+            int r4 = r4 << 16
+            r3 = r3 | r4
+            r4 = 2
+            r4 = r1[r4]
+            r4 = r4 & 255(0xff, float:3.57E-43)
+            int r4 = r4 << 8
+            r3 = r3 | r4
+            r4 = 3
+            r4 = r1[r4]
+            r4 = r4 & 255(0xff, float:3.57E-43)
+            r3 = r3 | r4
+            goto La
+        L2c:
+            return r3
+    }
+
+    /* renamed from: f */
+    public static p093f9.C2091i m5528f(p093f9.C2090h r3) {
+            f9.i r0 = new f9.i
+            l9.a0 r3 = r3.f9512a
+            m9.x$f r1 = p221m9.AbstractC4501x.f.f18300c0
+            r2 = 0
+            java.lang.Object r1 = r3.mo9340o(r1, r2, r2)
+            m9.x$a r1 = (p221m9.AbstractC4501x.a) r1
+            r1.m10377o()
+            MessageType extends m9.x<MessageType, BuilderType> r2 = r1.f18293Z
+            r1.m10379q(r2, r3)
+            l9.a0$b r1 = (p204l9.C4198a0.b) r1
+            r0.<init>(r1)
+            return r0
+    }
+
+    @java.lang.Deprecated
+    /* renamed from: a */
+    public synchronized int m5529a(p204l9.C4231y r2, boolean r3) {
+            r1 = this;
+            monitor-enter(r1)
+            l9.a0$c r2 = r1.m5531c(r2)     // Catch: java.lang.Throwable -> L29
+            l9.a0$b r0 = r1.f9513a     // Catch: java.lang.Throwable -> L29
+            r0.m10377o()     // Catch: java.lang.Throwable -> L29
+            MessageType extends m9.x<MessageType, BuilderType> r0 = r0.f18293Z     // Catch: java.lang.Throwable -> L29
+            l9.a0 r0 = (p204l9.C4198a0) r0     // Catch: java.lang.Throwable -> L29
+            p204l9.C4198a0.m9345y(r0, r2)     // Catch: java.lang.Throwable -> L29
+            if (r3 == 0) goto L23
+            l9.a0$b r3 = r1.f9513a     // Catch: java.lang.Throwable -> L29
+            int r0 = r2.m9357C()     // Catch: java.lang.Throwable -> L29
+            r3.m10377o()     // Catch: java.lang.Throwable -> L29
+            MessageType extends m9.x<MessageType, BuilderType> r3 = r3.f18293Z     // Catch: java.lang.Throwable -> L29
+            l9.a0 r3 = (p204l9.C4198a0) r3     // Catch: java.lang.Throwable -> L29
+            p204l9.C4198a0.m9344x(r3, r0)     // Catch: java.lang.Throwable -> L29
+        L23:
+            int r2 = r2.m9357C()     // Catch: java.lang.Throwable -> L29
+            monitor-exit(r1)
+            return r2
+        L29:
+            r2 = move-exception
+            monitor-exit(r1)
+            throw r2
+    }
+
+    /* renamed from: b */
+    public synchronized p093f9.C2090h m5530b() {
+            r1 = this;
+            monitor-enter(r1)
+            l9.a0$b r0 = r1.f9513a     // Catch: java.lang.Throwable -> Lf
+            m9.x r0 = r0.m10375k()     // Catch: java.lang.Throwable -> Lf
+            l9.a0 r0 = (p204l9.C4198a0) r0     // Catch: java.lang.Throwable -> Lf
+            f9.h r0 = p093f9.C2090h.m5524a(r0)     // Catch: java.lang.Throwable -> Lf
+            monitor-exit(r1)
+            return r0
+        Lf:
+            r0 = move-exception
+            monitor-exit(r1)
+            throw r0
+    }
+
+    /* renamed from: c */
+    public final synchronized p204l9.C4198a0.c m5531c(p204l9.C4231y r5) {
+            r4 = this;
+            monitor-enter(r4)
+            l9.w r0 = p093f9.C2100r.m5551e(r5)     // Catch: java.lang.Throwable -> L49
+            int r1 = r4.m5532d()     // Catch: java.lang.Throwable -> L49
+            l9.g0 r5 = r5.m9538B()     // Catch: java.lang.Throwable -> L49
+            l9.g0 r2 = p204l9.EnumC4210g0.f17361Z     // Catch: java.lang.Throwable -> L49
+            if (r5 != r2) goto L13
+            l9.g0 r5 = p204l9.EnumC4210g0.f17362a0     // Catch: java.lang.Throwable -> L49
+        L13:
+            l9.a0$c$a r2 = p204l9.C4198a0.c.m9351G()     // Catch: java.lang.Throwable -> L49
+            r2.m10377o()     // Catch: java.lang.Throwable -> L49
+            MessageType extends m9.x<MessageType, BuilderType> r3 = r2.f18293Z     // Catch: java.lang.Throwable -> L49
+            l9.a0$c r3 = (p204l9.C4198a0.c) r3     // Catch: java.lang.Throwable -> L49
+            p204l9.C4198a0.c.m9353x(r3, r0)     // Catch: java.lang.Throwable -> L49
+            r2.m10377o()     // Catch: java.lang.Throwable -> L49
+            MessageType extends m9.x<MessageType, BuilderType> r0 = r2.f18293Z     // Catch: java.lang.Throwable -> L49
+            l9.a0$c r0 = (p204l9.C4198a0.c) r0     // Catch: java.lang.Throwable -> L49
+            p204l9.C4198a0.c.m9350A(r0, r1)     // Catch: java.lang.Throwable -> L49
+            l9.x r0 = p204l9.EnumC4230x.f17386a0     // Catch: java.lang.Throwable -> L49
+            r2.m10377o()     // Catch: java.lang.Throwable -> L49
+            MessageType extends m9.x<MessageType, BuilderType> r1 = r2.f18293Z     // Catch: java.lang.Throwable -> L49
+            l9.a0$c r1 = (p204l9.C4198a0.c) r1     // Catch: java.lang.Throwable -> L49
+            p204l9.C4198a0.c.m9355z(r1, r0)     // Catch: java.lang.Throwable -> L49
+            r2.m10377o()     // Catch: java.lang.Throwable -> L49
+            MessageType extends m9.x<MessageType, BuilderType> r0 = r2.f18293Z     // Catch: java.lang.Throwable -> L49
+            l9.a0$c r0 = (p204l9.C4198a0.c) r0     // Catch: java.lang.Throwable -> L49
+            p204l9.C4198a0.c.m9354y(r0, r5)     // Catch: java.lang.Throwable -> L49
+            m9.x r5 = r2.m10375k()     // Catch: java.lang.Throwable -> L49
+            l9.a0$c r5 = (p204l9.C4198a0.c) r5     // Catch: java.lang.Throwable -> L49
+            monitor-exit(r4)
+            return r5
+        L49:
+            r5 = move-exception
+            monitor-exit(r4)
+            throw r5
+    }
+
+    /* renamed from: d */
+    public final synchronized int m5532d() {
+            r3 = this;
+            monitor-enter(r3)
+        L1:
+            int r0 = m5527e()     // Catch: java.lang.Throwable -> L36
+            monitor-enter(r3)     // Catch: java.lang.Throwable -> L36
+            l9.a0$b r1 = r3.f9513a     // Catch: java.lang.Throwable -> L33
+            MessageType extends m9.x<MessageType, BuilderType> r1 = r1.f18293Z     // Catch: java.lang.Throwable -> L33
+            l9.a0 r1 = (p204l9.C4198a0) r1     // Catch: java.lang.Throwable -> L33
+            java.util.List r1 = r1.m9347B()     // Catch: java.lang.Throwable -> L33
+            java.util.List r1 = java.util.Collections.unmodifiableList(r1)     // Catch: java.lang.Throwable -> L33
+            java.util.Iterator r1 = r1.iterator()     // Catch: java.lang.Throwable -> L33
+        L18:
+            boolean r2 = r1.hasNext()     // Catch: java.lang.Throwable -> L33
+            if (r2 == 0) goto L2c
+            java.lang.Object r2 = r1.next()     // Catch: java.lang.Throwable -> L33
+            l9.a0$c r2 = (p204l9.C4198a0.c) r2     // Catch: java.lang.Throwable -> L33
+            int r2 = r2.m9357C()     // Catch: java.lang.Throwable -> L33
+            if (r2 != r0) goto L18
+            r1 = 1
+            goto L2d
+        L2c:
+            r1 = 0
+        L2d:
+            monitor-exit(r3)     // Catch: java.lang.Throwable -> L36
+            if (r1 == 0) goto L31
+            goto L1
+        L31:
+            monitor-exit(r3)
+            return r0
+        L33:
+            r0 = move-exception
+            monitor-exit(r3)     // Catch: java.lang.Throwable -> L36
+            throw r0     // Catch: java.lang.Throwable -> L36
+        L36:
+            r0 = move-exception
+            monitor-exit(r3)
+            throw r0
+    }
+}
+package p093f9;
+
+/* renamed from: f9.l */
+/* loaded from: classes.dex */
+public final class C2094l {
+
+    /* renamed from: a */
+    public static final java.util.concurrent.CopyOnWriteArrayList<p093f9.InterfaceC2093k> f9514a = null;
+
+    static {
+            java.util.concurrent.CopyOnWriteArrayList r0 = new java.util.concurrent.CopyOnWriteArrayList
+            r0.<init>()
+            p093f9.C2094l.f9514a = r0
+            return
+    }
+
+    /* renamed from: a */
+    public static p093f9.InterfaceC2093k m5535a(java.lang.String r3) {
+            java.util.concurrent.CopyOnWriteArrayList<f9.k> r0 = p093f9.C2094l.f9514a
+            java.util.Iterator r0 = r0.iterator()
+        L6:
+            boolean r1 = r0.hasNext()
+            if (r1 == 0) goto L19
+            java.lang.Object r1 = r0.next()
+            f9.k r1 = (p093f9.InterfaceC2093k) r1
+            boolean r2 = r1.mo5534b(r3)
+            if (r2 == 0) goto L6
+            return r1
+        L19:
+            java.security.GeneralSecurityException r0 = new java.security.GeneralSecurityException
+            java.lang.String r1 = "No KMS client does support: "
+            java.lang.String r3 = p064e.C1493g.m4049a(r1, r3)
+            r0.<init>(r3)
+            throw r0
+    }
+}
+package p093f9;
+
+/* renamed from: f9.n */
+/* loaded from: classes.dex */
+public final class C2096n<P> {
+
+    /* renamed from: d */
+    public static final java.nio.charset.Charset f9515d = null;
+
+    /* renamed from: a */
+    public java.util.concurrent.ConcurrentMap<java.lang.String, java.util.List<p093f9.C2096n.a<P>>> f9516a;
+
+    /* renamed from: b */
+    public p093f9.C2096n.a<P> f9517b;
+
+    /* renamed from: c */
+    public final java.lang.Class<P> f9518c;
+
+    /* renamed from: f9.n$a */
+    public static final class a<P> {
+
+        /* renamed from: a */
+        public final P f9519a;
+
+        /* renamed from: b */
+        public final byte[] f9520b;
+
+        /* renamed from: c */
+        public final p204l9.EnumC4230x f9521c;
+
+        /* renamed from: d */
+        public final p204l9.EnumC4210g0 f9522d;
+
+        public a(P r1, byte[] r2, p204l9.EnumC4230x r3, p204l9.EnumC4210g0 r4, int r5) {
+                r0 = this;
+                r0.<init>()
+                r0.f9519a = r1
+                int r1 = r2.length
+                byte[] r1 = java.util.Arrays.copyOf(r2, r1)
+                r0.f9520b = r1
+                r0.f9521c = r3
+                r0.f9522d = r4
+                return
+        }
+
+        /* renamed from: a */
+        public final byte[] m5540a() {
+                r2 = this;
+                byte[] r0 = r2.f9520b
+                if (r0 != 0) goto L6
+                r0 = 0
+                return r0
+            L6:
+                int r1 = r0.length
+                byte[] r0 = java.util.Arrays.copyOf(r0, r1)
+                return r0
+        }
+    }
+
+    static {
+            java.lang.String r0 = "UTF-8"
+            java.nio.charset.Charset r0 = java.nio.charset.Charset.forName(r0)
+            p093f9.C2096n.f9515d = r0
+            return
+    }
+
+    public C2096n(java.lang.Class<P> r2) {
+            r1 = this;
+            r1.<init>()
+            java.util.concurrent.ConcurrentHashMap r0 = new java.util.concurrent.ConcurrentHashMap
+            r0.<init>()
+            r1.f9516a = r0
+            r1.f9518c = r2
+            return
+    }
+
+    /* renamed from: a */
+    public java.util.List<p093f9.C2096n.a<P>> m5538a(byte[] r4) {
+            r3 = this;
+            java.util.concurrent.ConcurrentMap<java.lang.String, java.util.List<f9.n$a<P>>> r0 = r3.f9516a
+            java.lang.String r1 = new java.lang.String
+            java.nio.charset.Charset r2 = p093f9.C2096n.f9515d
+            r1.<init>(r4, r2)
+            java.lang.Object r4 = r0.get(r1)
+            java.util.List r4 = (java.util.List) r4
+            if (r4 == 0) goto L12
+            goto L16
+        L12:
+            java.util.List r4 = java.util.Collections.emptyList()
+        L16:
+            return r4
+    }
+
+    /* renamed from: b */
+    public java.util.List<p093f9.C2096n.a<P>> m5539b() {
+            r1 = this;
+            byte[] r0 = p093f9.C2084b.f9503a
+            java.util.List r0 = r1.m5538a(r0)
+            return r0
+    }
+}
+package p093f9;
+
+/* renamed from: f9.p */
+/* loaded from: classes.dex */
+public class C2098p implements p093f9.C2100r.a {
+
+    /* renamed from: a */
+    public final /* synthetic */ p093f9.AbstractC2089g f9523a;
+
+    public C2098p(p093f9.AbstractC2089g r1) {
+            r0 = this;
+            r0.f9523a = r1
+            r0.<init>()
+            return
+    }
+
+    @Override // p093f9.C2100r.a
+    /* renamed from: a */
+    public <Q> p093f9.InterfaceC2086d<Q> mo5543a(java.lang.Class<Q> r3) {
+            r2 = this;
+            f9.e r0 = new f9.e     // Catch: java.lang.IllegalArgumentException -> L8
+            f9.g r1 = r2.f9523a     // Catch: java.lang.IllegalArgumentException -> L8
+            r0.<init>(r1, r3)     // Catch: java.lang.IllegalArgumentException -> L8
+            return r0
+        L8:
+            r3 = move-exception
+            java.security.GeneralSecurityException r0 = new java.security.GeneralSecurityException
+            java.lang.String r1 = "Primitive type not supported"
+            r0.<init>(r1, r3)
+            throw r0
+    }
+
+    @Override // p093f9.C2100r.a
+    /* renamed from: b */
+    public p093f9.InterfaceC2086d<?> mo5544b() {
+            r3 = this;
+            f9.e r0 = new f9.e
+            f9.g r1 = r3.f9523a
+            java.lang.Class<?> r2 = r1.f9509c
+            r0.<init>(r1, r2)
+            return r0
+    }
+
+    @Override // p093f9.C2100r.a
+    /* renamed from: c */
+    public java.lang.Class<?> mo5545c() {
+            r1 = this;
+            f9.g r0 = r1.f9523a
+            java.lang.Class r0 = r0.getClass()
+            return r0
+    }
+
+    @Override // p093f9.C2100r.a
+    /* renamed from: d */
+    public java.util.Set<java.lang.Class<?>> mo5546d() {
+            r1 = this;
+            f9.g r0 = r1.f9523a
+            java.util.Map<java.lang.Class<?>, f9.g$b<?, KeyProtoT extends m9.q0>> r0 = r0.f9508b
+            java.util.Set r0 = r0.keySet()
+            return r0
+    }
+}
+package p093f9;
+
+/* renamed from: f9.q */
+/* loaded from: classes.dex */
+public class C2099q {
+    public C2099q(p093f9.AbstractC2089g r1) {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+}
+package p093f9;
+
+/* renamed from: f9.r */
+/* loaded from: classes.dex */
+public final class C2100r {
+
+    /* renamed from: a */
+    public static final java.util.logging.Logger f9524a = null;
+
+    /* renamed from: b */
+    public static final java.util.concurrent.ConcurrentMap<java.lang.String, p093f9.C2100r.a> f9525b = null;
+
+    /* renamed from: c */
+    public static final java.util.concurrent.ConcurrentMap<java.lang.String, java.lang.Object> f9526c = null;
+
+    /* renamed from: d */
+    public static final java.util.concurrent.ConcurrentMap<java.lang.String, java.lang.Boolean> f9527d = null;
+
+    /* renamed from: e */
+    public static final java.util.concurrent.ConcurrentMap<java.lang.Class<?>, p093f9.InterfaceC2097o<?>> f9528e = null;
+
+    /* renamed from: f9.r$a */
+    public interface a {
+        /* renamed from: a */
+        <P> p093f9.InterfaceC2086d<P> mo5543a(java.lang.Class<P> r1);
+
+        /* renamed from: b */
+        p093f9.InterfaceC2086d<?> mo5544b();
+
+        /* renamed from: c */
+        java.lang.Class<?> mo5545c();
+
+        /* renamed from: d */
+        java.util.Set<java.lang.Class<?>> mo5546d();
+    }
+
+    static {
+            java.lang.Class<f9.r> r0 = p093f9.C2100r.class
+            java.lang.String r0 = r0.getName()
+            java.util.logging.Logger r0 = java.util.logging.Logger.getLogger(r0)
+            p093f9.C2100r.f9524a = r0
+            java.util.concurrent.ConcurrentHashMap r0 = new java.util.concurrent.ConcurrentHashMap
+            r0.<init>()
+            p093f9.C2100r.f9525b = r0
+            java.util.concurrent.ConcurrentHashMap r0 = new java.util.concurrent.ConcurrentHashMap
+            r0.<init>()
+            p093f9.C2100r.f9526c = r0
+            java.util.concurrent.ConcurrentHashMap r0 = new java.util.concurrent.ConcurrentHashMap
+            r0.<init>()
+            p093f9.C2100r.f9527d = r0
+            java.util.concurrent.ConcurrentHashMap r0 = new java.util.concurrent.ConcurrentHashMap
+            r0.<init>()
+            java.util.concurrent.ConcurrentHashMap r0 = new java.util.concurrent.ConcurrentHashMap
+            r0.<init>()
+            p093f9.C2100r.f9528e = r0
+            return
+    }
+
+    public C2100r() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    /* renamed from: a */
+    public static synchronized void m5547a(java.lang.String r5, java.lang.Class<?> r6, boolean r7) {
+            java.lang.Class<f9.r> r0 = p093f9.C2100r.class
+            monitor-enter(r0)
+            java.util.concurrent.ConcurrentMap<java.lang.String, f9.r$a> r1 = p093f9.C2100r.f9525b     // Catch: java.lang.Throwable -> L88
+            r2 = r1
+            java.util.concurrent.ConcurrentHashMap r2 = (java.util.concurrent.ConcurrentHashMap) r2     // Catch: java.lang.Throwable -> L88
+            boolean r2 = r2.containsKey(r5)     // Catch: java.lang.Throwable -> L88
+            if (r2 != 0) goto L10
+            monitor-exit(r0)
+            return
+        L10:
+            java.util.concurrent.ConcurrentHashMap r1 = (java.util.concurrent.ConcurrentHashMap) r1     // Catch: java.lang.Throwable -> L88
+            java.lang.Object r1 = r1.get(r5)     // Catch: java.lang.Throwable -> L88
+            f9.r$a r1 = (p093f9.C2100r.a) r1     // Catch: java.lang.Throwable -> L88
+            java.lang.Class r2 = r1.mo5545c()     // Catch: java.lang.Throwable -> L88
+            boolean r2 = r2.equals(r6)     // Catch: java.lang.Throwable -> L88
+            if (r2 == 0) goto L4e
+            if (r7 == 0) goto L4c
+            java.util.concurrent.ConcurrentMap<java.lang.String, java.lang.Boolean> r6 = p093f9.C2100r.f9527d     // Catch: java.lang.Throwable -> L88
+            java.util.concurrent.ConcurrentHashMap r6 = (java.util.concurrent.ConcurrentHashMap) r6     // Catch: java.lang.Throwable -> L88
+            java.lang.Object r6 = r6.get(r5)     // Catch: java.lang.Throwable -> L88
+            java.lang.Boolean r6 = (java.lang.Boolean) r6     // Catch: java.lang.Throwable -> L88
+            boolean r6 = r6.booleanValue()     // Catch: java.lang.Throwable -> L88
+            if (r6 == 0) goto L35
+            goto L4c
+        L35:
+            java.security.GeneralSecurityException r6 = new java.security.GeneralSecurityException     // Catch: java.lang.Throwable -> L88
+            java.lang.StringBuilder r7 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L88
+            r7.<init>()     // Catch: java.lang.Throwable -> L88
+            java.lang.String r1 = "New keys are already disallowed for key type "
+            r7.append(r1)     // Catch: java.lang.Throwable -> L88
+            r7.append(r5)     // Catch: java.lang.Throwable -> L88
+            java.lang.String r5 = r7.toString()     // Catch: java.lang.Throwable -> L88
+            r6.<init>(r5)     // Catch: java.lang.Throwable -> L88
+            throw r6     // Catch: java.lang.Throwable -> L88
+        L4c:
+            monitor-exit(r0)
+            return
+        L4e:
+            java.util.logging.Logger r7 = p093f9.C2100r.f9524a     // Catch: java.lang.Throwable -> L88
+            java.lang.StringBuilder r2 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L88
+            r2.<init>()     // Catch: java.lang.Throwable -> L88
+            java.lang.String r3 = "Attempted overwrite of a registered key manager for key type "
+            r2.append(r3)     // Catch: java.lang.Throwable -> L88
+            r2.append(r5)     // Catch: java.lang.Throwable -> L88
+            java.lang.String r2 = r2.toString()     // Catch: java.lang.Throwable -> L88
+            r7.warning(r2)     // Catch: java.lang.Throwable -> L88
+            java.security.GeneralSecurityException r7 = new java.security.GeneralSecurityException     // Catch: java.lang.Throwable -> L88
+            java.lang.String r2 = "typeUrl (%s) is already registered with %s, cannot be re-registered with %s"
+            r3 = 3
+            java.lang.Object[] r3 = new java.lang.Object[r3]     // Catch: java.lang.Throwable -> L88
+            r4 = 0
+            r3[r4] = r5     // Catch: java.lang.Throwable -> L88
+            r5 = 1
+            java.lang.Class r1 = r1.mo5545c()     // Catch: java.lang.Throwable -> L88
+            java.lang.String r1 = r1.getName()     // Catch: java.lang.Throwable -> L88
+            r3[r5] = r1     // Catch: java.lang.Throwable -> L88
+            r5 = 2
+            java.lang.String r6 = r6.getName()     // Catch: java.lang.Throwable -> L88
+            r3[r5] = r6     // Catch: java.lang.Throwable -> L88
+            java.lang.String r5 = java.lang.String.format(r2, r3)     // Catch: java.lang.Throwable -> L88
+            r7.<init>(r5)     // Catch: java.lang.Throwable -> L88
+            throw r7     // Catch: java.lang.Throwable -> L88
+        L88:
+            r5 = move-exception
+            monitor-exit(r0)
+            throw r5
+    }
+
+    /* renamed from: b */
+    public static synchronized p093f9.C2100r.a m5548b(java.lang.String r4) {
+            java.lang.Class<f9.r> r0 = p093f9.C2100r.class
+            monitor-enter(r0)
+            java.util.concurrent.ConcurrentMap<java.lang.String, f9.r$a> r1 = p093f9.C2100r.f9525b     // Catch: java.lang.Throwable -> L2f
+            r2 = r1
+            java.util.concurrent.ConcurrentHashMap r2 = (java.util.concurrent.ConcurrentHashMap) r2     // Catch: java.lang.Throwable -> L2f
+            boolean r2 = r2.containsKey(r4)     // Catch: java.lang.Throwable -> L2f
+            if (r2 == 0) goto L18
+            java.util.concurrent.ConcurrentHashMap r1 = (java.util.concurrent.ConcurrentHashMap) r1     // Catch: java.lang.Throwable -> L2f
+            java.lang.Object r4 = r1.get(r4)     // Catch: java.lang.Throwable -> L2f
+            f9.r$a r4 = (p093f9.C2100r.a) r4     // Catch: java.lang.Throwable -> L2f
+            monitor-exit(r0)
+            return r4
+        L18:
+            java.security.GeneralSecurityException r1 = new java.security.GeneralSecurityException     // Catch: java.lang.Throwable -> L2f
+            java.lang.StringBuilder r2 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L2f
+            r2.<init>()     // Catch: java.lang.Throwable -> L2f
+            java.lang.String r3 = "No key manager found for key type "
+            r2.append(r3)     // Catch: java.lang.Throwable -> L2f
+            r2.append(r4)     // Catch: java.lang.Throwable -> L2f
+            java.lang.String r4 = r2.toString()     // Catch: java.lang.Throwable -> L2f
+            r1.<init>(r4)     // Catch: java.lang.Throwable -> L2f
+            throw r1     // Catch: java.lang.Throwable -> L2f
+        L2f:
+            r4 = move-exception
+            monitor-exit(r0)
+            throw r4
+    }
+
+    /* renamed from: c */
+    public static <P> P m5549c(java.lang.String r2, byte[] r3, java.lang.Class<P> r4) {
+            m9.h r0 = p221m9.AbstractC4454h.f18139Z
+            int r0 = r3.length
+            r1 = 0
+            m9.h r3 = p221m9.AbstractC4454h.m10054i(r3, r1, r0)
+            java.lang.Object r2 = m5550d(r2, r3, r4)
+            return r2
+    }
+
+    /* renamed from: d */
+    public static <P> P m5550d(java.lang.String r3, p221m9.AbstractC4454h r4, java.lang.Class<P> r5) {
+            f9.r$a r3 = m5548b(r3)
+            if (r5 != 0) goto Lb
+            f9.d r3 = r3.mo5544b()
+            goto L19
+        Lb:
+            java.util.Set r0 = r3.mo5546d()
+            boolean r0 = r0.contains(r5)
+            if (r0 == 0) goto L20
+            f9.d r3 = r3.mo5543a(r5)
+        L19:
+            f9.e r3 = (p093f9.C2087e) r3
+            java.lang.Object r3 = r3.m5510a(r4)
+            return r3
+        L20:
+            java.security.GeneralSecurityException r4 = new java.security.GeneralSecurityException
+            java.lang.String r0 = "Primitive type "
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r5 = r5.getName()
+            r0.append(r5)
+            java.lang.String r5 = " not supported by key manager of type "
+            r0.append(r5)
+            java.lang.Class r5 = r3.mo5545c()
+            r0.append(r5)
+            java.lang.String r5 = ", supported primitives: "
+            r0.append(r5)
+            java.util.Set r3 = r3.mo5546d()
+            java.lang.StringBuilder r5 = new java.lang.StringBuilder
+            r5.<init>()
+            java.util.Iterator r3 = r3.iterator()
+            r1 = 1
+        L4e:
+            boolean r2 = r3.hasNext()
+            if (r2 == 0) goto L6a
+            java.lang.Object r2 = r3.next()
+            java.lang.Class r2 = (java.lang.Class) r2
+            if (r1 != 0) goto L61
+            java.lang.String r1 = ", "
+            r5.append(r1)
+        L61:
+            java.lang.String r1 = r2.getCanonicalName()
+            r5.append(r1)
+            r1 = 0
+            goto L4e
+        L6a:
+            java.lang.String r3 = r5.toString()
+            r0.append(r3)
+            java.lang.String r3 = r0.toString()
+            r4.<init>(r3)
+            throw r4
+    }
+
+    /* renamed from: e */
+    public static synchronized p204l9.C4229w m5551e(p204l9.C4231y r4) {
+            java.lang.Class<f9.r> r0 = p093f9.C2100r.class
+            monitor-enter(r0)
+            java.lang.String r1 = r4.m9539C()     // Catch: java.lang.Throwable -> L4a
+            f9.r$a r1 = m5548b(r1)     // Catch: java.lang.Throwable -> L4a
+            f9.d r1 = r1.mo5544b()     // Catch: java.lang.Throwable -> L4a
+            java.util.concurrent.ConcurrentMap<java.lang.String, java.lang.Boolean> r2 = p093f9.C2100r.f9527d     // Catch: java.lang.Throwable -> L4a
+            java.lang.String r3 = r4.m9539C()     // Catch: java.lang.Throwable -> L4a
+            java.util.concurrent.ConcurrentHashMap r2 = (java.util.concurrent.ConcurrentHashMap) r2     // Catch: java.lang.Throwable -> L4a
+            java.lang.Object r2 = r2.get(r3)     // Catch: java.lang.Throwable -> L4a
+            java.lang.Boolean r2 = (java.lang.Boolean) r2     // Catch: java.lang.Throwable -> L4a
+            boolean r2 = r2.booleanValue()     // Catch: java.lang.Throwable -> L4a
+            if (r2 == 0) goto L2f
+            m9.h r4 = r4.m9540D()     // Catch: java.lang.Throwable -> L4a
+            f9.e r1 = (p093f9.C2087e) r1     // Catch: java.lang.Throwable -> L4a
+            l9.w r4 = r1.m5512c(r4)     // Catch: java.lang.Throwable -> L4a
+            monitor-exit(r0)
+            return r4
+        L2f:
+            java.security.GeneralSecurityException r1 = new java.security.GeneralSecurityException     // Catch: java.lang.Throwable -> L4a
+            java.lang.StringBuilder r2 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L4a
+            r2.<init>()     // Catch: java.lang.Throwable -> L4a
+            java.lang.String r3 = "newKey-operation not permitted for key type "
+            r2.append(r3)     // Catch: java.lang.Throwable -> L4a
+            java.lang.String r4 = r4.m9539C()     // Catch: java.lang.Throwable -> L4a
+            r2.append(r4)     // Catch: java.lang.Throwable -> L4a
+            java.lang.String r4 = r2.toString()     // Catch: java.lang.Throwable -> L4a
+            r1.<init>(r4)     // Catch: java.lang.Throwable -> L4a
+            throw r1     // Catch: java.lang.Throwable -> L4a
+        L4a:
+            r4 = move-exception
+            monitor-exit(r0)
+            throw r4
+    }
+
+    /* renamed from: f */
+    public static synchronized <KeyProtoT extends p221m9.InterfaceC4482q0> void m5552f(p093f9.AbstractC2089g<KeyProtoT> r4, boolean r5) {
+            java.lang.Class<f9.r> r0 = p093f9.C2100r.class
+            monitor-enter(r0)
+            java.lang.String r1 = r4.mo5514a()     // Catch: java.lang.Throwable -> L3c
+            java.lang.Class r2 = r4.getClass()     // Catch: java.lang.Throwable -> L3c
+            m5547a(r1, r2, r5)     // Catch: java.lang.Throwable -> L3c
+            java.util.concurrent.ConcurrentMap<java.lang.String, f9.r$a> r2 = p093f9.C2100r.f9525b     // Catch: java.lang.Throwable -> L3c
+            r3 = r2
+            java.util.concurrent.ConcurrentHashMap r3 = (java.util.concurrent.ConcurrentHashMap) r3     // Catch: java.lang.Throwable -> L3c
+            boolean r3 = r3.containsKey(r1)     // Catch: java.lang.Throwable -> L3c
+            if (r3 != 0) goto L2f
+            f9.p r3 = new f9.p     // Catch: java.lang.Throwable -> L3c
+            r3.<init>(r4)     // Catch: java.lang.Throwable -> L3c
+            java.util.concurrent.ConcurrentHashMap r2 = (java.util.concurrent.ConcurrentHashMap) r2     // Catch: java.lang.Throwable -> L3c
+            r2.put(r1, r3)     // Catch: java.lang.Throwable -> L3c
+            java.util.concurrent.ConcurrentMap<java.lang.String, java.lang.Object> r2 = p093f9.C2100r.f9526c     // Catch: java.lang.Throwable -> L3c
+            f9.q r3 = new f9.q     // Catch: java.lang.Throwable -> L3c
+            r3.<init>(r4)     // Catch: java.lang.Throwable -> L3c
+            java.util.concurrent.ConcurrentHashMap r2 = (java.util.concurrent.ConcurrentHashMap) r2     // Catch: java.lang.Throwable -> L3c
+            r2.put(r1, r3)     // Catch: java.lang.Throwable -> L3c
+        L2f:
+            java.util.concurrent.ConcurrentMap<java.lang.String, java.lang.Boolean> r4 = p093f9.C2100r.f9527d     // Catch: java.lang.Throwable -> L3c
+            java.lang.Boolean r5 = java.lang.Boolean.valueOf(r5)     // Catch: java.lang.Throwable -> L3c
+            java.util.concurrent.ConcurrentHashMap r4 = (java.util.concurrent.ConcurrentHashMap) r4     // Catch: java.lang.Throwable -> L3c
+            r4.put(r1, r5)     // Catch: java.lang.Throwable -> L3c
+            monitor-exit(r0)
+            return
+        L3c:
+            r4 = move-exception
+            monitor-exit(r0)
+            throw r4
+    }
+
+    /* renamed from: g */
+    public static synchronized <P> void m5553g(p093f9.InterfaceC2097o<P> r7) {
+            java.lang.Class<f9.r> r0 = p093f9.C2100r.class
+            monitor-enter(r0)
+            java.lang.Class r1 = r7.mo5542b()     // Catch: java.lang.Throwable -> L73
+            java.util.concurrent.ConcurrentMap<java.lang.Class<?>, f9.o<?>> r2 = p093f9.C2100r.f9528e     // Catch: java.lang.Throwable -> L73
+            r3 = r2
+            java.util.concurrent.ConcurrentHashMap r3 = (java.util.concurrent.ConcurrentHashMap) r3     // Catch: java.lang.Throwable -> L73
+            boolean r3 = r3.containsKey(r1)     // Catch: java.lang.Throwable -> L73
+            if (r3 == 0) goto L6c
+            r3 = r2
+            java.util.concurrent.ConcurrentHashMap r3 = (java.util.concurrent.ConcurrentHashMap) r3     // Catch: java.lang.Throwable -> L73
+            java.lang.Object r3 = r3.get(r1)     // Catch: java.lang.Throwable -> L73
+            f9.o r3 = (p093f9.InterfaceC2097o) r3     // Catch: java.lang.Throwable -> L73
+            java.lang.Class r4 = r7.getClass()     // Catch: java.lang.Throwable -> L73
+            java.lang.Class r5 = r3.getClass()     // Catch: java.lang.Throwable -> L73
+            boolean r4 = r4.equals(r5)     // Catch: java.lang.Throwable -> L73
+            if (r4 == 0) goto L2a
+            goto L6c
+        L2a:
+            java.util.logging.Logger r2 = p093f9.C2100r.f9524a     // Catch: java.lang.Throwable -> L73
+            java.lang.StringBuilder r4 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L73
+            r4.<init>()     // Catch: java.lang.Throwable -> L73
+            java.lang.String r5 = "Attempted overwrite of a registered SetWrapper for type "
+            r4.append(r5)     // Catch: java.lang.Throwable -> L73
+            r4.append(r1)     // Catch: java.lang.Throwable -> L73
+            java.lang.String r4 = r4.toString()     // Catch: java.lang.Throwable -> L73
+            r2.warning(r4)     // Catch: java.lang.Throwable -> L73
+            java.security.GeneralSecurityException r2 = new java.security.GeneralSecurityException     // Catch: java.lang.Throwable -> L73
+            java.lang.String r4 = "SetWrapper for primitive (%s) is already registered to be %s, cannot be re-registered with %s"
+            r5 = 3
+            java.lang.Object[] r5 = new java.lang.Object[r5]     // Catch: java.lang.Throwable -> L73
+            r6 = 0
+            java.lang.String r1 = r1.getName()     // Catch: java.lang.Throwable -> L73
+            r5[r6] = r1     // Catch: java.lang.Throwable -> L73
+            r1 = 1
+            java.lang.Class r3 = r3.getClass()     // Catch: java.lang.Throwable -> L73
+            java.lang.String r3 = r3.getName()     // Catch: java.lang.Throwable -> L73
+            r5[r1] = r3     // Catch: java.lang.Throwable -> L73
+            r1 = 2
+            java.lang.Class r7 = r7.getClass()     // Catch: java.lang.Throwable -> L73
+            java.lang.String r7 = r7.getName()     // Catch: java.lang.Throwable -> L73
+            r5[r1] = r7     // Catch: java.lang.Throwable -> L73
+            java.lang.String r7 = java.lang.String.format(r4, r5)     // Catch: java.lang.Throwable -> L73
+            r2.<init>(r7)     // Catch: java.lang.Throwable -> L73
+            throw r2     // Catch: java.lang.Throwable -> L73
+        L6c:
+            java.util.concurrent.ConcurrentHashMap r2 = (java.util.concurrent.ConcurrentHashMap) r2     // Catch: java.lang.Throwable -> L73
+            r2.put(r1, r7)     // Catch: java.lang.Throwable -> L73
+            monitor-exit(r0)
+            return
+        L73:
+            r7 = move-exception
+            monitor-exit(r0)
+            throw r7
+    }
+}
+package p093f9;
+
+/* renamed from: f9.s */
+/* loaded from: classes.dex */
+public class C2101s {
+
+    /* renamed from: a */
+    public static final /* synthetic */ int f9529a = 0;
+
+    static {
+            java.lang.String r0 = "UTF-8"
+            java.nio.charset.Charset.forName(r0)
+            return
+    }
+
+    /* renamed from: a */
+    public static p204l9.C4200b0 m5554a(p204l9.C4198a0 r5) {
+            l9.b0$b r0 = p204l9.C4200b0.m9365A()
+            int r1 = r5.m9348C()
+            r0.m10377o()
+            MessageType extends m9.x<MessageType, BuilderType> r2 = r0.f18293Z
+            l9.b0 r2 = (p204l9.C4200b0) r2
+            p204l9.C4200b0.m9367x(r2, r1)
+            java.util.List r5 = r5.m9347B()
+            java.util.Iterator r5 = r5.iterator()
+        L1a:
+            boolean r1 = r5.hasNext()
+            if (r1 == 0) goto L77
+            java.lang.Object r1 = r5.next()
+            l9.a0$c r1 = (p204l9.C4198a0.c) r1
+            l9.b0$c$a r2 = p204l9.C4200b0.c.m9371C()
+            l9.w r3 = r1.m9356B()
+            java.lang.String r3 = r3.m9528C()
+            r2.m10377o()
+            MessageType extends m9.x<MessageType, BuilderType> r4 = r2.f18293Z
+            l9.b0$c r4 = (p204l9.C4200b0.c) r4
+            p204l9.C4200b0.c.m9373x(r4, r3)
+            l9.x r3 = r1.m9359E()
+            r2.m10377o()
+            MessageType extends m9.x<MessageType, BuilderType> r4 = r2.f18293Z
+            l9.b0$c r4 = (p204l9.C4200b0.c) r4
+            p204l9.C4200b0.c.m9375z(r4, r3)
+            l9.g0 r3 = r1.m9358D()
+            r2.m10377o()
+            MessageType extends m9.x<MessageType, BuilderType> r4 = r2.f18293Z
+            l9.b0$c r4 = (p204l9.C4200b0.c) r4
+            p204l9.C4200b0.c.m9374y(r4, r3)
+            int r1 = r1.m9357C()
+            r2.m10377o()
+            MessageType extends m9.x<MessageType, BuilderType> r3 = r2.f18293Z
+            l9.b0$c r3 = (p204l9.C4200b0.c) r3
+            p204l9.C4200b0.c.m9370A(r3, r1)
+            m9.x r1 = r2.m10375k()
+            l9.b0$c r1 = (p204l9.C4200b0.c) r1
+            r0.m10377o()
+            MessageType extends m9.x<MessageType, BuilderType> r2 = r0.f18293Z
+            l9.b0 r2 = (p204l9.C4200b0) r2
+            p204l9.C4200b0.m9368y(r2, r1)
+            goto L1a
+        L77:
+            m9.x r5 = r0.m10375k()
+            l9.b0 r5 = (p204l9.C4200b0) r5
+            return r5
+    }
+}
+package p093f9;
+
+/* renamed from: f9.a */
+/* loaded from: classes.dex */
+public interface InterfaceC2083a {
+    /* renamed from: a */
+    byte[] mo5506a(byte[] r1, byte[] r2);
+
+    /* renamed from: b */
+    byte[] mo5507b(byte[] r1, byte[] r2);
+}
+package p093f9;
+
+/* renamed from: f9.c */
+/* loaded from: classes.dex */
+public interface InterfaceC2085c {
+    /* renamed from: a */
+    byte[] mo5508a(byte[] r1, byte[] r2);
+
+    /* renamed from: b */
+    byte[] mo5509b(byte[] r1, byte[] r2);
+}
+package p093f9;
+
+/* renamed from: f9.d */
+/* loaded from: classes.dex */
+public interface InterfaceC2086d<P> {
+}
+package p093f9;
+
+/* renamed from: f9.j */
+/* loaded from: classes.dex */
+public interface InterfaceC2092j {
+}
+package p093f9;
+
+/* renamed from: f9.k */
+/* loaded from: classes.dex */
+public interface InterfaceC2093k {
+    /* renamed from: a */
+    p093f9.InterfaceC2083a mo5533a(java.lang.String r1);
+
+    /* renamed from: b */
+    boolean mo5534b(java.lang.String r1);
+}
+package p093f9;
+
+/* renamed from: f9.m */
+/* loaded from: classes.dex */
+public interface InterfaceC2095m {
+    /* renamed from: a */
+    void mo5536a(byte[] r1, byte[] r2);
+
+    /* renamed from: b */
+    byte[] mo5537b(byte[] r1);
+}
+package p093f9;
+
+/* renamed from: f9.o */
+/* loaded from: classes.dex */
+public interface InterfaceC2097o<P> {
+    /* renamed from: a */
+    P mo5541a(p093f9.C2096n<P> r1);
+
+    /* renamed from: b */
+    java.lang.Class<P> mo5542b();
+}

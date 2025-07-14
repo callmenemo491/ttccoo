@@ -1,0 +1,37 @@
+package sh;
+
+/* renamed from: sh.a */
+/* loaded from: classes.dex */
+public interface InterfaceC6072a<R> {
+}
+package sh;
+
+/* renamed from: sh.b */
+/* loaded from: classes.dex */
+public interface InterfaceC6073b<T> extends sh.InterfaceC6074c {
+}
+package sh;
+
+/* renamed from: sh.c */
+/* loaded from: classes.dex */
+public interface InterfaceC6074c {
+}
+package sh;
+
+/* renamed from: sh.d */
+/* loaded from: classes.dex */
+public interface InterfaceC6075d<R> extends sh.InterfaceC6072a<R>, ch.InterfaceC0974a<R> {
+}
+package sh;
+
+/* renamed from: sh.e */
+/* loaded from: classes.dex */
+public interface InterfaceC6076e<T, V> extends sh.InterfaceC6077f<V>, mh.InterfaceC4620l<T, V> {
+    V get(T r1);
+}
+package sh;
+
+/* renamed from: sh.f */
+/* loaded from: classes.dex */
+public interface InterfaceC6077f<V> extends sh.InterfaceC6072a<V> {
+}

@@ -1,0 +1,317 @@
+package p203l8;
+
+/* renamed from: l8.a */
+/* loaded from: classes.dex */
+public class C4194a implements android.animation.TypeEvaluator<java.lang.Float> {
+
+    /* renamed from: a */
+    public android.animation.FloatEvaluator f17359a;
+
+    public C4194a(com.google.android.material.floatingactionbutton.C1193d r1) {
+            r0 = this;
+            r0.<init>()
+            android.animation.FloatEvaluator r1 = new android.animation.FloatEvaluator
+            r1.<init>()
+            r0.f17359a = r1
+            return
+    }
+
+    @Override // android.animation.TypeEvaluator
+    public java.lang.Float evaluate(float r2, java.lang.Float r3, java.lang.Float r4) {
+            r1 = this;
+            java.lang.Float r3 = (java.lang.Float) r3
+            java.lang.Float r4 = (java.lang.Float) r4
+            android.animation.FloatEvaluator r0 = r1.f17359a
+            java.lang.Float r2 = r0.evaluate(r2, r3, r4)
+            float r2 = r2.floatValue()
+            r3 = 1036831949(0x3dcccccd, float:0.1)
+            int r3 = (r2 > r3 ? 1 : (r2 == r3 ? 0 : -1))
+            if (r3 >= 0) goto L16
+            r2 = 0
+        L16:
+            java.lang.Float r2 = java.lang.Float.valueOf(r2)
+            return r2
+    }
+}
+package p203l8;
+
+/* renamed from: l8.c */
+/* loaded from: classes.dex */
+public class C4196c extends com.google.android.material.floatingactionbutton.C1193d {
+    public C4196c(com.google.android.material.floatingactionbutton.FloatingActionButton r1, p328s8.InterfaceC5996b r2) {
+            r0 = this;
+            r0.<init>(r1, r2)
+            return
+    }
+
+    @Override // com.google.android.material.floatingactionbutton.C1193d
+    /* renamed from: c */
+    public float mo3474c() {
+            r1 = this;
+            com.google.android.material.floatingactionbutton.FloatingActionButton r0 = r1.f6203s
+            float r0 = r0.getElevation()
+            return r0
+    }
+
+    @Override // com.google.android.material.floatingactionbutton.C1193d
+    /* renamed from: d */
+    public void mo3475d(android.graphics.Rect r3) {
+            r2 = this;
+            s8.b r0 = r2.f6204t
+            com.google.android.material.floatingactionbutton.FloatingActionButton$b r0 = (com.google.android.material.floatingactionbutton.FloatingActionButton.C1188b) r0
+            com.google.android.material.floatingactionbutton.FloatingActionButton r0 = r0.f6166a
+            boolean r0 = r0.f6162j0
+            if (r0 == 0) goto Le
+            super.mo3475d(r3)
+            goto L21
+        Le:
+            boolean r0 = r2.m3488q()
+            r1 = 0
+            if (r0 != 0) goto L1e
+            com.google.android.material.floatingactionbutton.FloatingActionButton r0 = r2.f6203s
+            int r0 = r0.getSizeDimension()
+            int r1 = r1 - r0
+            int r1 = r1 / 2
+        L1e:
+            r3.set(r1, r1, r1, r1)
+        L21:
+            return
+    }
+
+    @Override // com.google.android.material.floatingactionbutton.C1193d
+    /* renamed from: g */
+    public void mo3478g() {
+            r0 = this;
+            return
+    }
+
+    @Override // com.google.android.material.floatingactionbutton.C1193d
+    /* renamed from: h */
+    public void mo3479h() {
+            r1 = this;
+            r1.m3490s()
+            r0 = 0
+            throw r0
+    }
+
+    @Override // com.google.android.material.floatingactionbutton.C1193d
+    /* renamed from: i */
+    public void mo3480i(int[] r3) {
+            r2 = this;
+            int r3 = android.os.Build.VERSION.SDK_INT
+            r0 = 21
+            if (r3 != r0) goto L42
+            com.google.android.material.floatingactionbutton.FloatingActionButton r3 = r2.f6203s
+            boolean r3 = r3.isEnabled()
+            r0 = 0
+            if (r3 == 0) goto L38
+            com.google.android.material.floatingactionbutton.FloatingActionButton r3 = r2.f6203s
+            float r1 = r2.f6188d
+            r3.setElevation(r1)
+            com.google.android.material.floatingactionbutton.FloatingActionButton r3 = r2.f6203s
+            boolean r3 = r3.isPressed()
+            if (r3 == 0) goto L23
+            com.google.android.material.floatingactionbutton.FloatingActionButton r3 = r2.f6203s
+            float r0 = r2.f6190f
+            goto L3f
+        L23:
+            com.google.android.material.floatingactionbutton.FloatingActionButton r3 = r2.f6203s
+            boolean r3 = r3.isFocused()
+            if (r3 != 0) goto L33
+            com.google.android.material.floatingactionbutton.FloatingActionButton r3 = r2.f6203s
+            boolean r3 = r3.isHovered()
+            if (r3 == 0) goto L3d
+        L33:
+            com.google.android.material.floatingactionbutton.FloatingActionButton r3 = r2.f6203s
+            float r0 = r2.f6189e
+            goto L3f
+        L38:
+            com.google.android.material.floatingactionbutton.FloatingActionButton r3 = r2.f6203s
+            r3.setElevation(r0)
+        L3d:
+            com.google.android.material.floatingactionbutton.FloatingActionButton r3 = r2.f6203s
+        L3f:
+            r3.setTranslationZ(r0)
+        L42:
+            return
+    }
+
+    @Override // com.google.android.material.floatingactionbutton.C1193d
+    /* renamed from: j */
+    public void mo3481j(float r9, float r10, float r11) {
+            r8 = this;
+            int r0 = android.os.Build.VERSION.SDK_INT
+            r1 = 21
+            if (r0 != r1) goto Ld
+            com.google.android.material.floatingactionbutton.FloatingActionButton r9 = r8.f6203s
+            r9.refreshDrawableState()
+            goto Laf
+        Ld:
+            android.animation.StateListAnimator r1 = new android.animation.StateListAnimator
+            r1.<init>()
+            int[] r2 = com.google.android.material.floatingactionbutton.C1193d.f6183y
+            android.animation.Animator r11 = r8.m9330t(r9, r11)
+            r1.addState(r2, r11)
+            int[] r11 = com.google.android.material.floatingactionbutton.C1193d.f6184z
+            android.animation.Animator r2 = r8.m9330t(r9, r10)
+            r1.addState(r11, r2)
+            int[] r11 = com.google.android.material.floatingactionbutton.C1193d.f6178A
+            android.animation.Animator r2 = r8.m9330t(r9, r10)
+            r1.addState(r11, r2)
+            int[] r11 = com.google.android.material.floatingactionbutton.C1193d.f6179B
+            android.animation.Animator r10 = r8.m9330t(r9, r10)
+            r1.addState(r11, r10)
+            android.animation.AnimatorSet r10 = new android.animation.AnimatorSet
+            r10.<init>()
+            java.util.ArrayList r11 = new java.util.ArrayList
+            r11.<init>()
+            com.google.android.material.floatingactionbutton.FloatingActionButton r2 = r8.f6203s
+            r3 = 1
+            float[] r4 = new float[r3]
+            r5 = 0
+            r4[r5] = r9
+            java.lang.String r9 = "elevation"
+            android.animation.ObjectAnimator r9 = android.animation.ObjectAnimator.ofFloat(r2, r9, r4)
+            r6 = 0
+            android.animation.ObjectAnimator r9 = r9.setDuration(r6)
+            r11.add(r9)
+            r9 = 22
+            r6 = 100
+            if (r0 < r9) goto L78
+            r9 = 24
+            if (r0 > r9) goto L78
+            com.google.android.material.floatingactionbutton.FloatingActionButton r9 = r8.f6203s
+            android.util.Property r0 = android.view.View.TRANSLATION_Z
+            float[] r2 = new float[r3]
+            float r4 = r9.getTranslationZ()
+            r2[r5] = r4
+            android.animation.ObjectAnimator r9 = android.animation.ObjectAnimator.ofFloat(r9, r0, r2)
+            android.animation.ObjectAnimator r9 = r9.setDuration(r6)
+            r11.add(r9)
+        L78:
+            com.google.android.material.floatingactionbutton.FloatingActionButton r9 = r8.f6203s
+            android.util.Property r0 = android.view.View.TRANSLATION_Z
+            float[] r2 = new float[r3]
+            r3 = 0
+            r2[r5] = r3
+            android.animation.ObjectAnimator r9 = android.animation.ObjectAnimator.ofFloat(r9, r0, r2)
+            android.animation.ObjectAnimator r9 = r9.setDuration(r6)
+            r11.add(r9)
+            android.animation.Animator[] r9 = new android.animation.Animator[r5]
+            java.lang.Object[] r9 = r11.toArray(r9)
+            android.animation.Animator[] r9 = (android.animation.Animator[]) r9
+            r10.playSequentially(r9)
+            android.animation.TimeInterpolator r9 = com.google.android.material.floatingactionbutton.C1193d.f6182x
+            r10.setInterpolator(r9)
+            int[] r9 = com.google.android.material.floatingactionbutton.C1193d.f6180C
+            r1.addState(r9, r10)
+            int[] r9 = com.google.android.material.floatingactionbutton.C1193d.f6181D
+            android.animation.Animator r10 = r8.m9330t(r3, r3)
+            r1.addState(r9, r10)
+            com.google.android.material.floatingactionbutton.FloatingActionButton r9 = r8.f6203s
+            r9.setStateListAnimator(r1)
+        Laf:
+            boolean r9 = r8.mo3486o()
+            if (r9 != 0) goto Lb6
+            return
+        Lb6:
+            r8.m3490s()
+            r9 = 0
+            throw r9
+    }
+
+    @Override // com.google.android.material.floatingactionbutton.C1193d
+    /* renamed from: n */
+    public void mo3485n(android.content.res.ColorStateList r1) {
+            r0 = this;
+            return
+    }
+
+    @Override // com.google.android.material.floatingactionbutton.C1193d
+    /* renamed from: o */
+    public boolean mo3486o() {
+            r1 = this;
+            s8.b r0 = r1.f6204t
+            com.google.android.material.floatingactionbutton.FloatingActionButton$b r0 = (com.google.android.material.floatingactionbutton.FloatingActionButton.C1188b) r0
+            com.google.android.material.floatingactionbutton.FloatingActionButton r0 = r0.f6166a
+            boolean r0 = r0.f6162j0
+            if (r0 != 0) goto L13
+            boolean r0 = r1.m3488q()
+            if (r0 != 0) goto L11
+            goto L13
+        L11:
+            r0 = 0
+            goto L14
+        L13:
+            r0 = 1
+        L14:
+            return r0
+    }
+
+    @Override // com.google.android.material.floatingactionbutton.C1193d
+    /* renamed from: r */
+    public void mo3489r() {
+            r0 = this;
+            return
+    }
+
+    /* renamed from: t */
+    public final android.animation.Animator m9330t(float r8, float r9) {
+            r7 = this;
+            android.animation.AnimatorSet r0 = new android.animation.AnimatorSet
+            r0.<init>()
+            com.google.android.material.floatingactionbutton.FloatingActionButton r1 = r7.f6203s
+            r2 = 1
+            float[] r3 = new float[r2]
+            r4 = 0
+            r3[r4] = r8
+            java.lang.String r8 = "elevation"
+            android.animation.ObjectAnimator r8 = android.animation.ObjectAnimator.ofFloat(r1, r8, r3)
+            r5 = 0
+            android.animation.ObjectAnimator r8 = r8.setDuration(r5)
+            android.animation.AnimatorSet$Builder r8 = r0.play(r8)
+            com.google.android.material.floatingactionbutton.FloatingActionButton r1 = r7.f6203s
+            android.util.Property r3 = android.view.View.TRANSLATION_Z
+            float[] r2 = new float[r2]
+            r2[r4] = r9
+            android.animation.ObjectAnimator r9 = android.animation.ObjectAnimator.ofFloat(r1, r3, r2)
+            r1 = 100
+            android.animation.ObjectAnimator r9 = r9.setDuration(r1)
+            r8.with(r9)
+            android.animation.TimeInterpolator r8 = com.google.android.material.floatingactionbutton.C1193d.f6182x
+            r0.setInterpolator(r8)
+            return r0
+    }
+}
+package p203l8;
+
+/* renamed from: l8.b */
+/* loaded from: classes.dex */
+public class ViewTreeObserverOnPreDrawListenerC4195b implements android.view.ViewTreeObserver.OnPreDrawListener {
+
+    /* renamed from: Y */
+    public final /* synthetic */ com.google.android.material.floatingactionbutton.C1193d f17360Y;
+
+    public ViewTreeObserverOnPreDrawListenerC4195b(com.google.android.material.floatingactionbutton.C1193d r1) {
+            r0 = this;
+            r0.f17360Y = r1
+            r0.<init>()
+            return
+    }
+
+    @Override // android.view.ViewTreeObserver.OnPreDrawListener
+    public boolean onPreDraw() {
+            r3 = this;
+            com.google.android.material.floatingactionbutton.d r0 = r3.f17360Y
+            com.google.android.material.floatingactionbutton.FloatingActionButton r1 = r0.f6203s
+            float r1 = r1.getRotation()
+            float r2 = r0.f6197m
+            int r2 = (r2 > r1 ? 1 : (r2 == r1 ? 0 : -1))
+            if (r2 == 0) goto L13
+            r0.f6197m = r1
+            r0.mo3489r()
+        L13:
+            r0 = 1
+            return r0
+    }
+}

@@ -1,0 +1,574 @@
+package p293qe;
+
+/* renamed from: qe.a */
+/* loaded from: classes.dex */
+public final class C5628a {
+    private final java.util.List<p293qe.C5632e> data;
+
+    public C5628a(java.util.List<p293qe.C5632e> r2) {
+            r1 = this;
+            java.lang.String r0 = "data"
+            p214m2.C4339q.m9706k(r2, r0)
+            r1.<init>()
+            r1.data = r2
+            return
+    }
+
+    public static /* synthetic */ p293qe.C5628a copy$default(p293qe.C5628a r0, java.util.List r1, int r2, java.lang.Object r3) {
+            r2 = r2 & 1
+            if (r2 == 0) goto L6
+            java.util.List<qe.e> r1 = r0.data
+        L6:
+            qe.a r0 = r0.copy(r1)
+            return r0
+    }
+
+    public final java.util.List<p293qe.C5632e> component1() {
+            r1 = this;
+            java.util.List<qe.e> r0 = r1.data
+            return r0
+    }
+
+    public final p293qe.C5628a copy(java.util.List<p293qe.C5632e> r2) {
+            r1 = this;
+            java.lang.String r0 = "data"
+            p214m2.C4339q.m9706k(r2, r0)
+            qe.a r0 = new qe.a
+            r0.<init>(r2)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r4) {
+            r3 = this;
+            r0 = 1
+            if (r3 != r4) goto L4
+            return r0
+        L4:
+            boolean r1 = r4 instanceof p293qe.C5628a
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            qe.a r4 = (p293qe.C5628a) r4
+            java.util.List<qe.e> r1 = r3.data
+            java.util.List<qe.e> r4 = r4.data
+            boolean r4 = p214m2.C4339q.m9702c(r1, r4)
+            if (r4 != 0) goto L17
+            return r2
+        L17:
+            return r0
+    }
+
+    public final java.util.List<p293qe.C5632e> getData() {
+            r1 = this;
+            java.util.List<qe.e> r0 = r1.data
+            return r0
+    }
+
+    public int hashCode() {
+            r1 = this;
+            java.util.List<qe.e> r0 = r1.data
+            int r0 = r0.hashCode()
+            return r0
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "AlienTemplateResponse(data="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.util.List<qe.e> r1 = r3.data
+            r2 = 41
+            java.lang.String r0 = p213m1.C4320f.m9652a(r0, r1, r2)
+            return r0
+    }
+}
+package p293qe;
+
+/* renamed from: qe.b */
+/* loaded from: classes.dex */
+public final class C5629b {
+    private final java.util.List<p293qe.C5630c> rows;
+
+    public C5629b(java.util.List<p293qe.C5630c> r2) {
+            r1 = this;
+            java.lang.String r0 = "rows"
+            p214m2.C4339q.m9706k(r2, r0)
+            r1.<init>()
+            r1.rows = r2
+            return
+    }
+
+    public static /* synthetic */ p293qe.C5629b copy$default(p293qe.C5629b r0, java.util.List r1, int r2, java.lang.Object r3) {
+            r2 = r2 & 1
+            if (r2 == 0) goto L6
+            java.util.List<qe.c> r1 = r0.rows
+        L6:
+            qe.b r0 = r0.copy(r1)
+            return r0
+    }
+
+    public final java.util.List<p293qe.C5630c> component1() {
+            r1 = this;
+            java.util.List<qe.c> r0 = r1.rows
+            return r0
+    }
+
+    public final p293qe.C5629b copy(java.util.List<p293qe.C5630c> r2) {
+            r1 = this;
+            java.lang.String r0 = "rows"
+            p214m2.C4339q.m9706k(r2, r0)
+            qe.b r0 = new qe.b
+            r0.<init>(r2)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r4) {
+            r3 = this;
+            r0 = 1
+            if (r3 != r4) goto L4
+            return r0
+        L4:
+            boolean r1 = r4 instanceof p293qe.C5629b
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            qe.b r4 = (p293qe.C5629b) r4
+            java.util.List<qe.c> r1 = r3.rows
+            java.util.List<qe.c> r4 = r4.rows
+            boolean r4 = p214m2.C4339q.m9702c(r1, r4)
+            if (r4 != 0) goto L17
+            return r2
+        L17:
+            return r0
+    }
+
+    public final java.util.List<p293qe.C5630c> getRows() {
+            r1 = this;
+            java.util.List<qe.c> r0 = r1.rows
+            return r0
+    }
+
+    public int hashCode() {
+            r1 = this;
+            java.util.List<qe.c> r0 = r1.rows
+            int r0 = r0.hashCode()
+            return r0
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "ClaimNftsResponse(rows="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.util.List<qe.c> r1 = r3.rows
+            r2 = 41
+            java.lang.String r0 = p213m1.C4320f.m9652a(r0, r1, r2)
+            return r0
+    }
+}
+package p293qe;
+
+/* renamed from: qe.c */
+/* loaded from: classes.dex */
+public final class C5630c {
+    private final java.lang.String miner;
+    private final java.util.List<java.lang.Integer> template_ids;
+
+    public C5630c(java.lang.String r2, java.util.List<java.lang.Integer> r3) {
+            r1 = this;
+            java.lang.String r0 = "miner"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "template_ids"
+            p214m2.C4339q.m9706k(r3, r0)
+            r1.<init>()
+            r1.miner = r2
+            r1.template_ids = r3
+            return
+    }
+
+    public static /* synthetic */ p293qe.C5630c copy$default(p293qe.C5630c r0, java.lang.String r1, java.util.List r2, int r3, java.lang.Object r4) {
+            r4 = r3 & 1
+            if (r4 == 0) goto L6
+            java.lang.String r1 = r0.miner
+        L6:
+            r3 = r3 & 2
+            if (r3 == 0) goto Lc
+            java.util.List<java.lang.Integer> r2 = r0.template_ids
+        Lc:
+            qe.c r0 = r0.copy(r1, r2)
+            return r0
+    }
+
+    public final java.lang.String component1() {
+            r1 = this;
+            java.lang.String r0 = r1.miner
+            return r0
+    }
+
+    public final java.util.List<java.lang.Integer> component2() {
+            r1 = this;
+            java.util.List<java.lang.Integer> r0 = r1.template_ids
+            return r0
+    }
+
+    public final p293qe.C5630c copy(java.lang.String r2, java.util.List<java.lang.Integer> r3) {
+            r1 = this;
+            java.lang.String r0 = "miner"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "template_ids"
+            p214m2.C4339q.m9706k(r3, r0)
+            qe.c r0 = new qe.c
+            r0.<init>(r2, r3)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            boolean r1 = r5 instanceof p293qe.C5630c
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            qe.c r5 = (p293qe.C5630c) r5
+            java.lang.String r1 = r4.miner
+            java.lang.String r3 = r5.miner
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L17
+            return r2
+        L17:
+            java.util.List<java.lang.Integer> r1 = r4.template_ids
+            java.util.List<java.lang.Integer> r5 = r5.template_ids
+            boolean r5 = p214m2.C4339q.m9702c(r1, r5)
+            if (r5 != 0) goto L22
+            return r2
+        L22:
+            return r0
+    }
+
+    public final java.lang.String getMiner() {
+            r1 = this;
+            java.lang.String r0 = r1.miner
+            return r0
+    }
+
+    public final java.util.List<java.lang.Integer> getTemplate_ids() {
+            r1 = this;
+            java.util.List<java.lang.Integer> r0 = r1.template_ids
+            return r0
+    }
+
+    public int hashCode() {
+            r2 = this;
+            java.lang.String r0 = r2.miner
+            int r0 = r0.hashCode()
+            int r0 = r0 * 31
+            java.util.List<java.lang.Integer> r1 = r2.template_ids
+            int r1 = r1.hashCode()
+            int r1 = r1 + r0
+            return r1
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "NftsRow(miner="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r3.miner
+            r0.append(r1)
+            java.lang.String r1 = ", template_ids="
+            r0.append(r1)
+            java.util.List<java.lang.Integer> r1 = r3.template_ids
+            r2 = 41
+            java.lang.String r0 = p213m1.C4320f.m9652a(r0, r1, r2)
+            return r0
+    }
+}
+package p293qe;
+
+/* renamed from: qe.d */
+/* loaded from: classes.dex */
+public final class C5631d {
+    private final java.lang.String img;
+    private final java.lang.String rarity;
+
+    public C5631d(java.lang.String r2, java.lang.String r3) {
+            r1 = this;
+            java.lang.String r0 = "img"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "rarity"
+            p214m2.C4339q.m9706k(r3, r0)
+            r1.<init>()
+            r1.img = r2
+            r1.rarity = r3
+            return
+    }
+
+    public static /* synthetic */ p293qe.C5631d copy$default(p293qe.C5631d r0, java.lang.String r1, java.lang.String r2, int r3, java.lang.Object r4) {
+            r4 = r3 & 1
+            if (r4 == 0) goto L6
+            java.lang.String r1 = r0.img
+        L6:
+            r3 = r3 & 2
+            if (r3 == 0) goto Lc
+            java.lang.String r2 = r0.rarity
+        Lc:
+            qe.d r0 = r0.copy(r1, r2)
+            return r0
+    }
+
+    public final java.lang.String component1() {
+            r1 = this;
+            java.lang.String r0 = r1.img
+            return r0
+    }
+
+    public final java.lang.String component2() {
+            r1 = this;
+            java.lang.String r0 = r1.rarity
+            return r0
+    }
+
+    public final p293qe.C5631d copy(java.lang.String r2, java.lang.String r3) {
+            r1 = this;
+            java.lang.String r0 = "img"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "rarity"
+            p214m2.C4339q.m9706k(r3, r0)
+            qe.d r0 = new qe.d
+            r0.<init>(r2, r3)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            boolean r1 = r5 instanceof p293qe.C5631d
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            qe.d r5 = (p293qe.C5631d) r5
+            java.lang.String r1 = r4.img
+            java.lang.String r3 = r5.img
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L17
+            return r2
+        L17:
+            java.lang.String r1 = r4.rarity
+            java.lang.String r5 = r5.rarity
+            boolean r5 = p214m2.C4339q.m9702c(r1, r5)
+            if (r5 != 0) goto L22
+            return r2
+        L22:
+            return r0
+    }
+
+    public final java.lang.String getImageURL() {
+            r2 = this;
+            java.lang.String r0 = "https://cloudflare-ipfs.com/ipfs/"
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r2.img
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            return r0
+    }
+
+    public final java.lang.String getImg() {
+            r1 = this;
+            java.lang.String r0 = r1.img
+            return r0
+    }
+
+    public final java.lang.String getRarity() {
+            r1 = this;
+            java.lang.String r0 = r1.rarity
+            return r0
+    }
+
+    public int hashCode() {
+            r2 = this;
+            java.lang.String r0 = r2.img
+            int r0 = r0.hashCode()
+            int r0 = r0 * 31
+            java.lang.String r1 = r2.rarity
+            int r1 = r1.hashCode()
+            int r1 = r1 + r0
+            return r1
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "TemplateData(img="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r3.img
+            r0.append(r1)
+            java.lang.String r1 = ", rarity="
+            r0.append(r1)
+            java.lang.String r1 = r3.rarity
+            r2 = 41
+            java.lang.String r0 = p185k7.C3814g5.m8552a(r0, r1, r2)
+            return r0
+    }
+}
+package p293qe;
+
+/* renamed from: qe.e */
+/* loaded from: classes.dex */
+public final class C5632e {
+    private final p293qe.C5631d immutable_data;
+    private final java.lang.String name;
+    private final java.lang.String template_id;
+
+    public C5632e(java.lang.String r2, p293qe.C5631d r3, java.lang.String r4) {
+            r1 = this;
+            java.lang.String r0 = "template_id"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "immutable_data"
+            p214m2.C4339q.m9706k(r3, r0)
+            java.lang.String r0 = "name"
+            p214m2.C4339q.m9706k(r4, r0)
+            r1.<init>()
+            r1.template_id = r2
+            r1.immutable_data = r3
+            r1.name = r4
+            return
+    }
+
+    public static /* synthetic */ p293qe.C5632e copy$default(p293qe.C5632e r0, java.lang.String r1, p293qe.C5631d r2, java.lang.String r3, int r4, java.lang.Object r5) {
+            r5 = r4 & 1
+            if (r5 == 0) goto L6
+            java.lang.String r1 = r0.template_id
+        L6:
+            r5 = r4 & 2
+            if (r5 == 0) goto Lc
+            qe.d r2 = r0.immutable_data
+        Lc:
+            r4 = r4 & 4
+            if (r4 == 0) goto L12
+            java.lang.String r3 = r0.name
+        L12:
+            qe.e r0 = r0.copy(r1, r2, r3)
+            return r0
+    }
+
+    public final java.lang.String component1() {
+            r1 = this;
+            java.lang.String r0 = r1.template_id
+            return r0
+    }
+
+    public final p293qe.C5631d component2() {
+            r1 = this;
+            qe.d r0 = r1.immutable_data
+            return r0
+    }
+
+    public final java.lang.String component3() {
+            r1 = this;
+            java.lang.String r0 = r1.name
+            return r0
+    }
+
+    public final p293qe.C5632e copy(java.lang.String r2, p293qe.C5631d r3, java.lang.String r4) {
+            r1 = this;
+            java.lang.String r0 = "template_id"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "immutable_data"
+            p214m2.C4339q.m9706k(r3, r0)
+            java.lang.String r0 = "name"
+            p214m2.C4339q.m9706k(r4, r0)
+            qe.e r0 = new qe.e
+            r0.<init>(r2, r3, r4)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            boolean r1 = r5 instanceof p293qe.C5632e
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            qe.e r5 = (p293qe.C5632e) r5
+            java.lang.String r1 = r4.template_id
+            java.lang.String r3 = r5.template_id
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L17
+            return r2
+        L17:
+            qe.d r1 = r4.immutable_data
+            qe.d r3 = r5.immutable_data
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L22
+            return r2
+        L22:
+            java.lang.String r1 = r4.name
+            java.lang.String r5 = r5.name
+            boolean r5 = p214m2.C4339q.m9702c(r1, r5)
+            if (r5 != 0) goto L2d
+            return r2
+        L2d:
+            return r0
+    }
+
+    public final p293qe.C5631d getImmutable_data() {
+            r1 = this;
+            qe.d r0 = r1.immutable_data
+            return r0
+    }
+
+    public final java.lang.String getName() {
+            r1 = this;
+            java.lang.String r0 = r1.name
+            return r0
+    }
+
+    public final java.lang.String getTemplate_id() {
+            r1 = this;
+            java.lang.String r0 = r1.template_id
+            return r0
+    }
+
+    public int hashCode() {
+            r2 = this;
+            java.lang.String r0 = r2.template_id
+            int r0 = r0.hashCode()
+            int r0 = r0 * 31
+            qe.d r1 = r2.immutable_data
+            int r1 = r1.hashCode()
+            int r1 = r1 + r0
+            int r1 = r1 * 31
+            java.lang.String r0 = r2.name
+            int r0 = r0.hashCode()
+            int r0 = r0 + r1
+            return r0
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "TemplateResponse(template_id="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r3.template_id
+            r0.append(r1)
+            java.lang.String r1 = ", immutable_data="
+            r0.append(r1)
+            qe.d r1 = r3.immutable_data
+            r0.append(r1)
+            java.lang.String r1 = ", name="
+            r0.append(r1)
+            java.lang.String r1 = r3.name
+            r2 = 41
+            java.lang.String r0 = p185k7.C3814g5.m8552a(r0, r1, r2)
+            return r0
+    }
+}

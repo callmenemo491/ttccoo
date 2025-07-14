@@ -1,0 +1,678 @@
+package p167j9;
+
+/* renamed from: j9.a */
+/* loaded from: classes.dex */
+public final class C3452a extends p093f9.AbstractC2089g<p204l9.C4197a> {
+
+    /* renamed from: j9.a$a */
+    public class a extends p093f9.AbstractC2089g.b<p093f9.InterfaceC2095m, p204l9.C4197a> {
+        public a(java.lang.Class r1) {
+                r0 = this;
+                r0.<init>(r1)
+                return
+        }
+
+        @Override // p093f9.AbstractC2089g.b
+        /* renamed from: a */
+        public p093f9.InterfaceC2095m mo5523a(p204l9.C4197a r3) {
+                r2 = this;
+                l9.a r3 = (p204l9.C4197a) r3
+                n9.a r0 = new n9.a
+                m9.h r1 = r3.m9337A()
+                byte[] r1 = r1.m10063w()
+                l9.c r3 = r3.m9338B()
+                int r3 = r3.m9379y()
+                r0.<init>(r1, r3)
+                return r0
+        }
+    }
+
+    /* renamed from: j9.a$b */
+    public class b extends p093f9.AbstractC2089g.a<p204l9.C4199b, p204l9.C4197a> {
+        public b(p167j9.C3452a r1, java.lang.Class r2) {
+                r0 = this;
+                r0.<init>(r2)
+                return
+        }
+
+        @Override // p093f9.AbstractC2089g.a
+        /* renamed from: a */
+        public p204l9.C4197a mo5520a(p221m9.InterfaceC4482q0 r5) {
+                r4 = this;
+                l9.b r5 = (p204l9.C4199b) r5
+                l9.a$b r0 = p204l9.C4197a.m9331D()
+                r0.m10377o()
+                MessageType extends m9.x<MessageType, BuilderType> r1 = r0.f18293Z
+                l9.a r1 = (p204l9.C4197a) r1
+                r2 = 0
+                p204l9.C4197a.m9334x(r1, r2)
+                int r1 = r5.m9363x()
+                byte[] r1 = p236n9.C4716q.m10773a(r1)
+                int r3 = r1.length
+                m9.h r1 = p221m9.AbstractC4454h.m10054i(r1, r2, r3)
+                r0.m10377o()
+                MessageType extends m9.x<MessageType, BuilderType> r2 = r0.f18293Z
+                l9.a r2 = (p204l9.C4197a) r2
+                p204l9.C4197a.m9335y(r2, r1)
+                l9.c r5 = r5.m9364y()
+                r0.m10377o()
+                MessageType extends m9.x<MessageType, BuilderType> r1 = r0.f18293Z
+                l9.a r1 = (p204l9.C4197a) r1
+                p204l9.C4197a.m9336z(r1, r5)
+                m9.x r5 = r0.m10375k()
+                l9.a r5 = (p204l9.C4197a) r5
+                return r5
+        }
+
+        @Override // p093f9.AbstractC2089g.a
+        /* renamed from: b */
+        public p221m9.InterfaceC4482q0 mo5521b(p221m9.AbstractC4454h r2) {
+                r1 = this;
+                m9.p r0 = p221m9.C4478p.m10222a()
+                l9.b r2 = p204l9.C4199b.m9362z(r2, r0)
+                return r2
+        }
+
+        @Override // p093f9.AbstractC2089g.a
+        /* renamed from: c */
+        public void mo5522c(p221m9.InterfaceC4482q0 r2) {
+                r1 = this;
+                l9.b r2 = (p204l9.C4199b) r2
+                l9.c r0 = r2.m9364y()
+                p167j9.C3452a.m7913g(r0)
+                int r2 = r2.m9363x()
+                r0 = 32
+                if (r2 != r0) goto L12
+                return
+            L12:
+                java.security.GeneralSecurityException r2 = new java.security.GeneralSecurityException
+                java.lang.String r0 = "AesCmacKey size wrong, must be 16 bytes"
+                r2.<init>(r0)
+                throw r2
+        }
+    }
+
+    public C3452a() {
+            r4 = this;
+            java.lang.Class<l9.a> r0 = p204l9.C4197a.class
+            r1 = 1
+            f9.g$b[] r1 = new p093f9.AbstractC2089g.b[r1]
+            j9.a$a r2 = new j9.a$a
+            java.lang.Class<f9.m> r3 = p093f9.InterfaceC2095m.class
+            r2.<init>(r3)
+            r3 = 0
+            r1[r3] = r2
+            r4.<init>(r0, r1)
+            return
+    }
+
+    /* renamed from: g */
+    public static void m7913g(p204l9.C4201c r2) {
+            int r0 = r2.m9379y()
+            r1 = 10
+            if (r0 < r1) goto L19
+            int r2 = r2.m9379y()
+            r0 = 16
+            if (r2 > r0) goto L11
+            return
+        L11:
+            java.security.GeneralSecurityException r2 = new java.security.GeneralSecurityException
+            java.lang.String r0 = "tag size too long"
+            r2.<init>(r0)
+            throw r2
+        L19:
+            java.security.GeneralSecurityException r2 = new java.security.GeneralSecurityException
+            java.lang.String r0 = "tag size too short"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // p093f9.AbstractC2089g
+    /* renamed from: a */
+    public java.lang.String mo5514a() {
+            r1 = this;
+            java.lang.String r0 = "type.googleapis.com/google.crypto.tink.AesCmacKey"
+            return r0
+    }
+
+    @Override // p093f9.AbstractC2089g
+    /* renamed from: c */
+    public p093f9.AbstractC2089g.a<p204l9.C4199b, p204l9.C4197a> mo5516c() {
+            r2 = this;
+            j9.a$b r0 = new j9.a$b
+            java.lang.Class<l9.b> r1 = p204l9.C4199b.class
+            r0.<init>(r2, r1)
+            return r0
+    }
+
+    @Override // p093f9.AbstractC2089g
+    /* renamed from: d */
+    public p204l9.C4229w.c mo5517d() {
+            r1 = this;
+            l9.w$c r0 = p204l9.C4229w.c.f17378a0
+            return r0
+    }
+
+    @Override // p093f9.AbstractC2089g
+    /* renamed from: e */
+    public p221m9.InterfaceC4482q0 mo5518e(p221m9.AbstractC4454h r2) {
+            r1 = this;
+            m9.p r0 = p221m9.C4478p.m10222a()
+            l9.a r2 = p204l9.C4197a.m9332E(r2, r0)
+            return r2
+    }
+
+    @Override // p093f9.AbstractC2089g
+    /* renamed from: f */
+    public void mo5519f(p221m9.InterfaceC4482q0 r3) {
+            r2 = this;
+            l9.a r3 = (p204l9.C4197a) r3
+            int r0 = r3.m9339C()
+            r1 = 0
+            p236n9.C4717r.m10776c(r0, r1)
+            m9.h r0 = r3.m9337A()
+            int r0 = r0.size()
+            r1 = 32
+            if (r0 != r1) goto L1e
+            l9.c r3 = r3.m9338B()
+            m7913g(r3)
+            return
+        L1e:
+            java.security.GeneralSecurityException r3 = new java.security.GeneralSecurityException
+            java.lang.String r0 = "AesCmacKey size wrong, must be 16 bytes"
+            r3.<init>(r0)
+            throw r3
+    }
+}
+package p167j9;
+
+/* renamed from: j9.b */
+/* loaded from: classes.dex */
+public final class C3453b extends p093f9.AbstractC2089g<p204l9.C4226t> {
+
+    /* renamed from: j9.b$a */
+    public class a extends p093f9.AbstractC2089g.b<p093f9.InterfaceC2095m, p204l9.C4226t> {
+        public a(java.lang.Class r1) {
+                r0 = this;
+                r0.<init>(r1)
+                return
+        }
+
+        @Override // p093f9.AbstractC2089g.b
+        /* renamed from: a */
+        public p093f9.InterfaceC2095m mo5523a(p204l9.C4226t r5) {
+                r4 = this;
+                l9.t r5 = (p204l9.C4226t) r5
+                l9.v r0 = r5.m9510C()
+                l9.s r0 = r0.m9519y()
+                m9.h r1 = r5.m9509B()
+                byte[] r1 = r1.m10063w()
+                javax.crypto.spec.SecretKeySpec r2 = new javax.crypto.spec.SecretKeySpec
+                java.lang.String r3 = "HMAC"
+                r2.<init>(r1, r3)
+                l9.v r5 = r5.m9510C()
+                int r5 = r5.m9520z()
+                int r0 = r0.ordinal()
+                r1 = 1
+                if (r0 == r1) goto L50
+                r1 = 3
+                if (r0 == r1) goto L43
+                r1 = 4
+                if (r0 != r1) goto L3b
+                n9.p r0 = new n9.p
+                n9.o r1 = new n9.o
+                java.lang.String r3 = "HMACSHA512"
+                r1.<init>(r3, r2)
+                r0.<init>(r1, r5)
+                goto L5c
+            L3b:
+                java.security.GeneralSecurityException r5 = new java.security.GeneralSecurityException
+                java.lang.String r0 = "unknown hash"
+                r5.<init>(r0)
+                throw r5
+            L43:
+                n9.p r0 = new n9.p
+                n9.o r1 = new n9.o
+                java.lang.String r3 = "HMACSHA256"
+                r1.<init>(r3, r2)
+                r0.<init>(r1, r5)
+                goto L5c
+            L50:
+                n9.p r0 = new n9.p
+                n9.o r1 = new n9.o
+                java.lang.String r3 = "HMACSHA1"
+                r1.<init>(r3, r2)
+                r0.<init>(r1, r5)
+            L5c:
+                return r0
+        }
+    }
+
+    /* renamed from: j9.b$b */
+    public class b extends p093f9.AbstractC2089g.a<p204l9.C4227u, p204l9.C4226t> {
+
+        /* renamed from: b */
+        public final /* synthetic */ p167j9.C3453b f14924b;
+
+        public b(p167j9.C3453b r1, java.lang.Class r2) {
+                r0 = this;
+                r0.f14924b = r1
+                r0.<init>(r2)
+                return
+        }
+
+        @Override // p093f9.AbstractC2089g.a
+        /* renamed from: a */
+        public p204l9.C4226t mo5520a(p221m9.InterfaceC4482q0 r5) {
+                r4 = this;
+                l9.u r5 = (p204l9.C4227u) r5
+                l9.t$b r0 = p204l9.C4226t.m9503E()
+                j9.b r1 = r4.f14924b
+                java.util.Objects.requireNonNull(r1)
+                r0.m10377o()
+                MessageType extends m9.x<MessageType, BuilderType> r1 = r0.f18293Z
+                l9.t r1 = (p204l9.C4226t) r1
+                r2 = 0
+                p204l9.C4226t.m9506x(r1, r2)
+                l9.v r1 = r5.m9516z()
+                r0.m10377o()
+                MessageType extends m9.x<MessageType, BuilderType> r3 = r0.f18293Z
+                l9.t r3 = (p204l9.C4226t) r3
+                p204l9.C4226t.m9507y(r3, r1)
+                int r5 = r5.m9515y()
+                byte[] r5 = p236n9.C4716q.m10773a(r5)
+                int r1 = r5.length
+                m9.h r5 = p221m9.AbstractC4454h.m10054i(r5, r2, r1)
+                r0.m10377o()
+                MessageType extends m9.x<MessageType, BuilderType> r1 = r0.f18293Z
+                l9.t r1 = (p204l9.C4226t) r1
+                p204l9.C4226t.m9508z(r1, r5)
+                m9.x r5 = r0.m10375k()
+                l9.t r5 = (p204l9.C4226t) r5
+                return r5
+        }
+
+        @Override // p093f9.AbstractC2089g.a
+        /* renamed from: b */
+        public p221m9.InterfaceC4482q0 mo5521b(p221m9.AbstractC4454h r2) {
+                r1 = this;
+                m9.p r0 = p221m9.C4478p.m10222a()
+                l9.u r2 = p204l9.C4227u.m9512A(r2, r0)
+                return r2
+        }
+
+        @Override // p093f9.AbstractC2089g.a
+        /* renamed from: c */
+        public void mo5522c(p221m9.InterfaceC4482q0 r3) {
+                r2 = this;
+                l9.u r3 = (p204l9.C4227u) r3
+                int r0 = r3.m9515y()
+                r1 = 16
+                if (r0 < r1) goto L12
+                l9.v r3 = r3.m9516z()
+                p167j9.C3453b.m7914h(r3)
+                return
+            L12:
+                java.security.GeneralSecurityException r3 = new java.security.GeneralSecurityException
+                java.lang.String r0 = "key too short"
+                r3.<init>(r0)
+                throw r3
+        }
+    }
+
+    public C3453b() {
+            r4 = this;
+            java.lang.Class<l9.t> r0 = p204l9.C4226t.class
+            r1 = 1
+            f9.g$b[] r1 = new p093f9.AbstractC2089g.b[r1]
+            j9.b$a r2 = new j9.b$a
+            java.lang.Class<f9.m> r3 = p093f9.InterfaceC2095m.class
+            r2.<init>(r3)
+            r3 = 0
+            r1[r3] = r2
+            r4.<init>(r0, r1)
+            return
+    }
+
+    /* renamed from: h */
+    public static void m7914h(p204l9.C4228v r3) {
+            int r0 = r3.m9520z()
+            r1 = 10
+            if (r0 < r1) goto L50
+            l9.s r0 = r3.m9519y()
+            int r0 = r0.ordinal()
+            r1 = 1
+            java.lang.String r2 = "tag size too big"
+            if (r0 == r1) goto L41
+            r1 = 3
+            if (r0 == r1) goto L32
+            r1 = 4
+            if (r0 != r1) goto L2a
+            int r3 = r3.m9520z()
+            r0 = 64
+            if (r3 > r0) goto L24
+            goto L49
+        L24:
+            java.security.GeneralSecurityException r3 = new java.security.GeneralSecurityException
+            r3.<init>(r2)
+            throw r3
+        L2a:
+            java.security.GeneralSecurityException r3 = new java.security.GeneralSecurityException
+            java.lang.String r0 = "unknown hash type"
+            r3.<init>(r0)
+            throw r3
+        L32:
+            int r3 = r3.m9520z()
+            r0 = 32
+            if (r3 > r0) goto L3b
+            goto L49
+        L3b:
+            java.security.GeneralSecurityException r3 = new java.security.GeneralSecurityException
+            r3.<init>(r2)
+            throw r3
+        L41:
+            int r3 = r3.m9520z()
+            r0 = 20
+            if (r3 > r0) goto L4a
+        L49:
+            return
+        L4a:
+            java.security.GeneralSecurityException r3 = new java.security.GeneralSecurityException
+            r3.<init>(r2)
+            throw r3
+        L50:
+            java.security.GeneralSecurityException r3 = new java.security.GeneralSecurityException
+            java.lang.String r0 = "tag size too small"
+            r3.<init>(r0)
+            throw r3
+    }
+
+    @Override // p093f9.AbstractC2089g
+    /* renamed from: a */
+    public java.lang.String mo5514a() {
+            r1 = this;
+            java.lang.String r0 = "type.googleapis.com/google.crypto.tink.HmacKey"
+            return r0
+    }
+
+    @Override // p093f9.AbstractC2089g
+    /* renamed from: c */
+    public p093f9.AbstractC2089g.a<p204l9.C4227u, p204l9.C4226t> mo5516c() {
+            r2 = this;
+            j9.b$b r0 = new j9.b$b
+            java.lang.Class<l9.u> r1 = p204l9.C4227u.class
+            r0.<init>(r2, r1)
+            return r0
+    }
+
+    @Override // p093f9.AbstractC2089g
+    /* renamed from: d */
+    public p204l9.C4229w.c mo5517d() {
+            r1 = this;
+            l9.w$c r0 = p204l9.C4229w.c.f17378a0
+            return r0
+    }
+
+    @Override // p093f9.AbstractC2089g
+    /* renamed from: e */
+    public p221m9.InterfaceC4482q0 mo5518e(p221m9.AbstractC4454h r2) {
+            r1 = this;
+            m9.p r0 = p221m9.C4478p.m10222a()
+            l9.t r2 = p204l9.C4226t.m9504F(r2, r0)
+            return r2
+    }
+
+    @Override // p093f9.AbstractC2089g
+    /* renamed from: f */
+    public /* bridge */ /* synthetic */ void mo5519f(p221m9.InterfaceC4482q0 r1) {
+            r0 = this;
+            l9.t r1 = (p204l9.C4226t) r1
+            r0.m7915g(r1)
+            return
+    }
+
+    /* renamed from: g */
+    public void m7915g(p204l9.C4226t r3) {
+            r2 = this;
+            int r0 = r3.m9511D()
+            r1 = 0
+            p236n9.C4717r.m10776c(r0, r1)
+            m9.h r0 = r3.m9509B()
+            int r0 = r0.size()
+            r1 = 16
+            if (r0 < r1) goto L1c
+            l9.v r3 = r3.m9510C()
+            m7914h(r3)
+            return
+        L1c:
+            java.security.GeneralSecurityException r3 = new java.security.GeneralSecurityException
+            java.lang.String r0 = "key too short"
+            r3.<init>(r0)
+            throw r3
+    }
+}
+package p167j9;
+
+/* renamed from: j9.c */
+/* loaded from: classes.dex */
+public final class C3454c {
+    static {
+            j9.b r0 = new j9.b
+            r0.<init>()
+            int r0 = p204l9.C4212h0.CONFIG_NAME_FIELD_NUMBER
+            m7916a()     // Catch: java.security.GeneralSecurityException -> Lb
+            return
+        Lb:
+            r0 = move-exception
+            java.lang.ExceptionInInitializerError r1 = new java.lang.ExceptionInInitializerError
+            r1.<init>(r0)
+            throw r1
+    }
+
+    /* renamed from: a */
+    public static void m7916a() {
+            j9.b r0 = new j9.b
+            r0.<init>()
+            r1 = 1
+            p093f9.C2100r.m5552f(r0, r1)
+            j9.a r0 = new j9.a
+            r0.<init>()
+            p093f9.C2100r.m5552f(r0, r1)
+            j9.d r0 = new j9.d
+            r0.<init>()
+            p093f9.C2100r.m5553g(r0)
+            return
+    }
+}
+package p167j9;
+
+/* renamed from: j9.d */
+/* loaded from: classes.dex */
+public class C3455d implements p093f9.InterfaceC2097o<p093f9.InterfaceC2095m> {
+
+    /* renamed from: a */
+    public static final java.util.logging.Logger f14925a = null;
+
+    /* renamed from: j9.d$a */
+    public static /* synthetic */ class a {
+    }
+
+    /* renamed from: j9.d$b */
+    public static class b implements p093f9.InterfaceC2095m {
+
+        /* renamed from: a */
+        public final p093f9.C2096n<p093f9.InterfaceC2095m> f14926a;
+
+        /* renamed from: b */
+        public final byte[] f14927b;
+
+        public b(p093f9.C2096n r2, p167j9.C3455d.a r3) {
+                r1 = this;
+                r1.<init>()
+                r3 = 1
+                byte[] r3 = new byte[r3]
+                r0 = 0
+                r3[r0] = r0
+                r1.f14927b = r3
+                r1.f14926a = r2
+                return
+        }
+
+        @Override // p093f9.InterfaceC2095m
+        /* renamed from: a */
+        public void mo5536a(byte[] r7, byte[] r8) {
+                r6 = this;
+                int r0 = r7.length
+                r1 = 5
+                if (r0 <= r1) goto L8c
+                byte[] r0 = java.util.Arrays.copyOf(r7, r1)
+                int r2 = r7.length
+                byte[] r1 = java.util.Arrays.copyOfRange(r7, r1, r2)
+                f9.n<f9.m> r2 = r6.f14926a
+                java.util.List r0 = r2.m5538a(r0)
+                java.util.Iterator r0 = r0.iterator()
+            L17:
+                boolean r2 = r0.hasNext()
+                if (r2 == 0) goto L64
+                java.lang.Object r2 = r0.next()
+                f9.n$a r2 = (p093f9.C2096n.a) r2
+                l9.g0 r3 = r2.f9522d     // Catch: java.security.GeneralSecurityException -> L4c
+                l9.g0 r4 = p204l9.EnumC4210g0.f17363b0     // Catch: java.security.GeneralSecurityException -> L4c
+                boolean r3 = r3.equals(r4)     // Catch: java.security.GeneralSecurityException -> L4c
+                if (r3 == 0) goto L44
+                P r2 = r2.f9519a     // Catch: java.security.GeneralSecurityException -> L4c
+                f9.m r2 = (p093f9.InterfaceC2095m) r2     // Catch: java.security.GeneralSecurityException -> L4c
+                r3 = 2
+                byte[][] r3 = new byte[r3][]     // Catch: java.security.GeneralSecurityException -> L4c
+                r4 = 0
+                r3[r4] = r8     // Catch: java.security.GeneralSecurityException -> L4c
+                r4 = 1
+                byte[] r5 = r6.f14927b     // Catch: java.security.GeneralSecurityException -> L4c
+                r3[r4] = r5     // Catch: java.security.GeneralSecurityException -> L4c
+                byte[] r3 = p185k7.C3828h5.m8589d(r3)     // Catch: java.security.GeneralSecurityException -> L4c
+                r2.mo5536a(r1, r3)     // Catch: java.security.GeneralSecurityException -> L4c
+                goto L4b
+            L44:
+                P r2 = r2.f9519a     // Catch: java.security.GeneralSecurityException -> L4c
+                f9.m r2 = (p093f9.InterfaceC2095m) r2     // Catch: java.security.GeneralSecurityException -> L4c
+                r2.mo5536a(r1, r8)     // Catch: java.security.GeneralSecurityException -> L4c
+            L4b:
+                return
+            L4c:
+                r2 = move-exception
+                java.util.logging.Logger r3 = p167j9.C3455d.f14925a
+                java.lang.StringBuilder r4 = new java.lang.StringBuilder
+                r4.<init>()
+                java.lang.String r5 = "tag prefix matches a key, but cannot verify: "
+                r4.append(r5)
+                r4.append(r2)
+                java.lang.String r2 = r4.toString()
+                r3.info(r2)
+                goto L17
+            L64:
+                f9.n<f9.m> r0 = r6.f14926a
+                java.util.List r0 = r0.m5539b()
+                java.util.Iterator r0 = r0.iterator()
+            L6e:
+                boolean r1 = r0.hasNext()
+                if (r1 == 0) goto L84
+                java.lang.Object r1 = r0.next()
+                f9.n$a r1 = (p093f9.C2096n.a) r1
+                P r1 = r1.f9519a     // Catch: java.security.GeneralSecurityException -> L82
+                f9.m r1 = (p093f9.InterfaceC2095m) r1     // Catch: java.security.GeneralSecurityException -> L82
+                r1.mo5536a(r7, r8)     // Catch: java.security.GeneralSecurityException -> L82
+                return
+            L82:
+                goto L6e
+            L84:
+                java.security.GeneralSecurityException r7 = new java.security.GeneralSecurityException
+                java.lang.String r8 = "invalid MAC"
+                r7.<init>(r8)
+                throw r7
+            L8c:
+                java.security.GeneralSecurityException r7 = new java.security.GeneralSecurityException
+                java.lang.String r8 = "tag too short"
+                r7.<init>(r8)
+                throw r7
+        }
+
+        @Override // p093f9.InterfaceC2095m
+        /* renamed from: b */
+        public byte[] mo5537b(byte[] r6) {
+                r5 = this;
+                f9.n<f9.m> r0 = r5.f14926a
+                f9.n$a<P> r0 = r0.f9517b
+                l9.g0 r0 = r0.f9522d
+                l9.g0 r1 = p204l9.EnumC4210g0.f17363b0
+                boolean r0 = r0.equals(r1)
+                r1 = 1
+                r2 = 0
+                r3 = 2
+                if (r0 == 0) goto L3c
+                byte[][] r0 = new byte[r3][]
+                f9.n<f9.m> r4 = r5.f14926a
+                f9.n$a<P> r4 = r4.f9517b
+                byte[] r4 = r4.m5540a()
+                r0[r2] = r4
+                f9.n<f9.m> r4 = r5.f14926a
+                f9.n$a<P> r4 = r4.f9517b
+                P r4 = r4.f9519a
+                f9.m r4 = (p093f9.InterfaceC2095m) r4
+                byte[][] r3 = new byte[r3][]
+                r3[r2] = r6
+                byte[] r6 = r5.f14927b
+                r3[r1] = r6
+                byte[] r6 = p185k7.C3828h5.m8589d(r3)
+                byte[] r6 = r4.mo5537b(r6)
+                r0[r1] = r6
+                byte[] r6 = p185k7.C3828h5.m8589d(r0)
+                return r6
+            L3c:
+                byte[][] r0 = new byte[r3][]
+                f9.n<f9.m> r3 = r5.f14926a
+                f9.n$a<P> r3 = r3.f9517b
+                byte[] r3 = r3.m5540a()
+                r0[r2] = r3
+                f9.n<f9.m> r2 = r5.f14926a
+                f9.n$a<P> r2 = r2.f9517b
+                P r2 = r2.f9519a
+                f9.m r2 = (p093f9.InterfaceC2095m) r2
+                byte[] r6 = r2.mo5537b(r6)
+                r0[r1] = r6
+                byte[] r6 = p185k7.C3828h5.m8589d(r0)
+                return r6
+        }
+    }
+
+    static {
+            java.lang.Class<j9.d> r0 = p167j9.C3455d.class
+            java.lang.String r0 = r0.getName()
+            java.util.logging.Logger r0 = java.util.logging.Logger.getLogger(r0)
+            p167j9.C3455d.f14925a = r0
+            return
+    }
+
+    public C3455d() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p093f9.InterfaceC2097o
+    /* renamed from: a */
+    public p093f9.InterfaceC2095m mo5541a(p093f9.C2096n<p093f9.InterfaceC2095m> r3) {
+            r2 = this;
+            j9.d$b r0 = new j9.d$b
+            r1 = 0
+            r0.<init>(r3, r1)
+            return r0
+    }
+
+    @Override // p093f9.InterfaceC2097o
+    /* renamed from: b */
+    public java.lang.Class<p093f9.InterfaceC2095m> mo5542b() {
+            r1 = this;
+            java.lang.Class<f9.m> r0 = p093f9.InterfaceC2095m.class
+            return r0
+    }
+}

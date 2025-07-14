@@ -1,0 +1,4886 @@
+package p057db;
+
+@android.annotation.SuppressLint({"UnwrappedWakefulBroadcastReceiver"})
+/* renamed from: db.f */
+/* loaded from: classes.dex */
+public abstract class AbstractServiceC1397f extends android.app.Service {
+
+    /* renamed from: Y */
+    public final java.util.concurrent.ExecutorService f7024Y;
+
+    /* renamed from: Z */
+    public android.os.Binder f7025Z;
+
+    /* renamed from: a0 */
+    public final java.lang.Object f7026a0;
+
+    /* renamed from: b0 */
+    public int f7027b0;
+
+    /* renamed from: c0 */
+    public int f7028c0;
+
+    /* renamed from: db.f$a */
+    public class a implements p057db.BinderC1410l0.a {
+
+        /* renamed from: a */
+        public final /* synthetic */ p057db.AbstractServiceC1397f f7029a;
+
+        public a(p057db.AbstractServiceC1397f r1) {
+                r0 = this;
+                r0.f7029a = r1
+                r0.<init>()
+                return
+        }
+    }
+
+    public AbstractServiceC1397f() {
+            r9 = this;
+            r9.<init>()
+            v6.a r7 = new v6.a
+            java.lang.String r0 = "Firebase-Messaging-Intent-Handle"
+            r7.<init>(r0)
+            java.util.concurrent.ThreadPoolExecutor r8 = new java.util.concurrent.ThreadPoolExecutor
+            java.util.concurrent.TimeUnit r5 = java.util.concurrent.TimeUnit.SECONDS
+            java.util.concurrent.LinkedBlockingQueue r6 = new java.util.concurrent.LinkedBlockingQueue
+            r6.<init>()
+            r1 = 1
+            r2 = 1
+            r3 = 60
+            r0 = r8
+            r0.<init>(r1, r2, r3, r5, r6, r7)
+            r0 = 1
+            r8.allowCoreThreadTimeOut(r0)
+            java.util.concurrent.ExecutorService r0 = java.util.concurrent.Executors.unconfigurableExecutorService(r8)
+            r9.f7024Y = r0
+            java.lang.Object r0 = new java.lang.Object
+            r0.<init>()
+            r9.f7026a0 = r0
+            r0 = 0
+            r9.f7028c0 = r0
+            return
+    }
+
+    /* renamed from: a */
+    public final void m3917a(android.content.Intent r4) {
+            r3 = this;
+            if (r4 == 0) goto L21
+            java.lang.Object r0 = p057db.C1404i0.f7061b
+            monitor-enter(r0)
+            r7.a r1 = p057db.C1404i0.f7062c     // Catch: java.lang.Throwable -> L1e
+            if (r1 == 0) goto L1c
+            java.lang.String r1 = "com.google.firebase.iid.WakeLockHolder.wakefulintent"
+            r2 = 0
+            boolean r1 = r4.getBooleanExtra(r1, r2)     // Catch: java.lang.Throwable -> L1e
+            if (r1 == 0) goto L1c
+            java.lang.String r1 = "com.google.firebase.iid.WakeLockHolder.wakefulintent"
+            r4.putExtra(r1, r2)     // Catch: java.lang.Throwable -> L1e
+            r7.a r4 = p057db.C1404i0.f7062c     // Catch: java.lang.Throwable -> L1e
+            r4.m12166b()     // Catch: java.lang.Throwable -> L1e
+        L1c:
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L1e
+            goto L21
+        L1e:
+            r4 = move-exception
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L1e
+            throw r4
+        L21:
+            java.lang.Object r4 = r3.f7026a0
+            monitor-enter(r4)
+            int r0 = r3.f7028c0     // Catch: java.lang.Throwable -> L32
+            int r0 = r0 + (-1)
+            r3.f7028c0 = r0     // Catch: java.lang.Throwable -> L32
+            if (r0 != 0) goto L34
+            int r0 = r3.f7027b0     // Catch: java.lang.Throwable -> L32
+            r3.stopSelfResult(r0)     // Catch: java.lang.Throwable -> L32
+            goto L34
+        L32:
+            r0 = move-exception
+            goto L36
+        L34:
+            monitor-exit(r4)     // Catch: java.lang.Throwable -> L32
+            return
+        L36:
+            monitor-exit(r4)     // Catch: java.lang.Throwable -> L32
+            throw r0
+    }
+
+    /* renamed from: b */
+    public abstract void mo3666b(android.content.Intent r1);
+
+    @Override // android.app.Service
+    public final synchronized android.os.IBinder onBind(android.content.Intent r2) {
+            r1 = this;
+            monitor-enter(r1)
+            java.lang.String r2 = "EnhancedIntentService"
+            r0 = 3
+            boolean r2 = android.util.Log.isLoggable(r2, r0)     // Catch: java.lang.Throwable -> L25
+            if (r2 == 0) goto L11
+            java.lang.String r2 = "EnhancedIntentService"
+            java.lang.String r0 = "Service received bind request"
+            android.util.Log.d(r2, r0)     // Catch: java.lang.Throwable -> L25
+        L11:
+            android.os.Binder r2 = r1.f7025Z     // Catch: java.lang.Throwable -> L25
+            if (r2 != 0) goto L21
+            db.l0 r2 = new db.l0     // Catch: java.lang.Throwable -> L25
+            db.f$a r0 = new db.f$a     // Catch: java.lang.Throwable -> L25
+            r0.<init>(r1)     // Catch: java.lang.Throwable -> L25
+            r2.<init>(r0)     // Catch: java.lang.Throwable -> L25
+            r1.f7025Z = r2     // Catch: java.lang.Throwable -> L25
+        L21:
+            android.os.Binder r2 = r1.f7025Z     // Catch: java.lang.Throwable -> L25
+            monitor-exit(r1)
+            return r2
+        L25:
+            r2 = move-exception
+            monitor-exit(r1)
+            throw r2
+    }
+
+    @Override // android.app.Service
+    public void onDestroy() {
+            r1 = this;
+            java.util.concurrent.ExecutorService r0 = r1.f7024Y
+            r0.shutdown()
+            super.onDestroy()
+            return
+    }
+
+    @Override // android.app.Service
+    public final int onStartCommand(android.content.Intent r4, int r5, int r6) {
+            r3 = this;
+            java.lang.Object r5 = r3.f7026a0
+            monitor-enter(r5)
+            r3.f7027b0 = r6     // Catch: java.lang.Throwable -> L52
+            int r6 = r3.f7028c0     // Catch: java.lang.Throwable -> L52
+            int r6 = r6 + 1
+            r3.f7028c0 = r6     // Catch: java.lang.Throwable -> L52
+            monitor-exit(r5)     // Catch: java.lang.Throwable -> L52
+            db.a0 r5 = p057db.C1388a0.m3906a()
+            java.util.Queue<android.content.Intent> r5 = r5.f7000d
+            java.lang.Object r5 = r5.poll()
+            android.content.Intent r5 = (android.content.Intent) r5
+            r6 = 2
+            if (r5 != 0) goto L1f
+            r3.m3917a(r4)
+            return r6
+        L1f:
+            s7.j r0 = new s7.j
+            r0.<init>()
+            java.util.concurrent.ExecutorService r1 = r3.f7024Y
+            c6.h0 r2 = new c6.h0
+            r2.<init>(r3, r5, r0)
+            r1.execute(r2)
+            s7.q<TResult> r5 = r0.f23075a
+            boolean r0 = r5.mo12454l()
+            if (r0 == 0) goto L3a
+            r3.m3917a(r4)
+            return r6
+        L3a:
+            java.util.concurrent.Executor r6 = p057db.ExecutorC1395e.f7019Y
+            m6.a0 r0 = new m6.a0
+            r0.<init>(r3, r4)
+            z2.n r4 = r5.f23097b
+            s7.n r1 = new s7.n
+            int r2 = p327s7.C5994r.f23102a
+            r1.<init>(r6, r0)
+            r4.m14310g(r1)
+            r5.m12476u()
+            r4 = 3
+            return r4
+        L52:
+            r4 = move-exception
+            monitor-exit(r5)     // Catch: java.lang.Throwable -> L52
+            throw r4
+    }
+}
+package p057db;
+
+/* renamed from: db.l0 */
+/* loaded from: classes.dex */
+public class BinderC1410l0 extends android.os.Binder {
+
+    /* renamed from: a */
+    public final p057db.BinderC1410l0.a f7071a;
+
+    /* renamed from: db.l0$a */
+    public interface a {
+    }
+
+    public BinderC1410l0(p057db.BinderC1410l0.a r1) {
+            r0 = this;
+            r0.<init>()
+            r0.f7071a = r1
+            return
+    }
+
+    /* renamed from: a */
+    public void m3934a(p057db.ServiceConnectionC1412m0.a r6) {
+            r5 = this;
+            int r0 = android.os.Binder.getCallingUid()
+            int r1 = android.os.Process.myUid()
+            if (r0 != r1) goto L4b
+            r0 = 3
+            java.lang.String r1 = "FirebaseMessaging"
+            boolean r0 = android.util.Log.isLoggable(r1, r0)
+            if (r0 == 0) goto L18
+            java.lang.String r0 = "service received new intent via bind strategy"
+            android.util.Log.d(r1, r0)
+        L18:
+            db.l0$a r0 = r5.f7071a
+            android.content.Intent r1 = r6.f7079a
+            db.f$a r0 = (p057db.AbstractServiceC1397f.a) r0
+            db.f r0 = r0.f7029a
+            java.util.Objects.requireNonNull(r0)
+            s7.j r2 = new s7.j
+            r2.<init>()
+            java.util.concurrent.ExecutorService r3 = r0.f7024Y
+            c6.h0 r4 = new c6.h0
+            r4.<init>(r0, r1, r2)
+            r3.execute(r4)
+            s7.q<TResult> r0 = r2.f23075a
+            java.util.concurrent.Executor r1 = p057db.ExecutorC1406j0.f7064Y
+            db.k0 r2 = new db.k0
+            r2.<init>(r6)
+            z2.n r6 = r0.f23097b
+            s7.n r3 = new s7.n
+            int r4 = p327s7.C5994r.f23102a
+            r3.<init>(r1, r2)
+            r6.m14310g(r3)
+            r0.m12476u()
+            return
+        L4b:
+            java.lang.SecurityException r6 = new java.lang.SecurityException
+            java.lang.String r0 = "Binding only allowed within app"
+            r6.<init>(r0)
+            throw r6
+    }
+}
+package p057db;
+
+/* renamed from: db.a */
+/* loaded from: classes.dex */
+public final /* synthetic */ class C1387a {
+    /* renamed from: a */
+    public static void m3905a(java.lang.StringBuilder r0, java.lang.String r1, java.lang.String r2, java.lang.String r3, java.lang.String r4) {
+            r0.append(r1)
+            r0.append(r2)
+            r0.append(r3)
+            java.lang.String r0 = r0.toString()
+            android.util.Log.w(r4, r0)
+            return
+    }
+}
+package p057db;
+
+/* renamed from: db.a0 */
+/* loaded from: classes.dex */
+public class C1388a0 {
+
+    /* renamed from: e */
+    public static p057db.C1388a0 f6996e;
+
+    /* renamed from: a */
+    public java.lang.String f6997a;
+
+    /* renamed from: b */
+    public java.lang.Boolean f6998b;
+
+    /* renamed from: c */
+    public java.lang.Boolean f6999c;
+
+    /* renamed from: d */
+    public final java.util.Queue<android.content.Intent> f7000d;
+
+    public C1388a0() {
+            r1 = this;
+            r1.<init>()
+            r0 = 0
+            r1.f6997a = r0
+            r1.f6998b = r0
+            r1.f6999c = r0
+            java.util.ArrayDeque r0 = new java.util.ArrayDeque
+            r0.<init>()
+            r1.f7000d = r0
+            return
+    }
+
+    /* renamed from: a */
+    public static synchronized p057db.C1388a0 m3906a() {
+            java.lang.Class<db.a0> r0 = p057db.C1388a0.class
+            monitor-enter(r0)
+            db.a0 r1 = p057db.C1388a0.f6996e     // Catch: java.lang.Throwable -> L12
+            if (r1 != 0) goto Le
+            db.a0 r1 = new db.a0     // Catch: java.lang.Throwable -> L12
+            r1.<init>()     // Catch: java.lang.Throwable -> L12
+            p057db.C1388a0.f6996e = r1     // Catch: java.lang.Throwable -> L12
+        Le:
+            db.a0 r1 = p057db.C1388a0.f6996e     // Catch: java.lang.Throwable -> L12
+            monitor-exit(r0)
+            return r1
+        L12:
+            r1 = move-exception
+            monitor-exit(r0)
+            throw r1
+    }
+
+    /* renamed from: b */
+    public boolean m3907b(android.content.Context r2) {
+            r1 = this;
+            java.lang.Boolean r0 = r1.f6999c
+            if (r0 != 0) goto L15
+            java.lang.String r0 = "android.permission.ACCESS_NETWORK_STATE"
+            int r2 = r2.checkCallingOrSelfPermission(r0)
+            if (r2 != 0) goto Le
+            r2 = 1
+            goto Lf
+        Le:
+            r2 = 0
+        Lf:
+            java.lang.Boolean r2 = java.lang.Boolean.valueOf(r2)
+            r1.f6999c = r2
+        L15:
+            java.lang.Boolean r2 = r1.f6998b
+            boolean r2 = r2.booleanValue()
+            if (r2 != 0) goto L2b
+            r2 = 3
+            java.lang.String r0 = "FirebaseMessaging"
+            boolean r2 = android.util.Log.isLoggable(r0, r2)
+            if (r2 == 0) goto L2b
+            java.lang.String r2 = "Missing Permission: android.permission.ACCESS_NETWORK_STATE this should normally be included by the manifest merger, but may needed to be manually added to your manifest"
+            android.util.Log.d(r0, r2)
+        L2b:
+            java.lang.Boolean r2 = r1.f6999c
+            boolean r2 = r2.booleanValue()
+            return r2
+    }
+
+    /* renamed from: c */
+    public boolean m3908c(android.content.Context r2) {
+            r1 = this;
+            java.lang.Boolean r0 = r1.f6998b
+            if (r0 != 0) goto L15
+            java.lang.String r0 = "android.permission.WAKE_LOCK"
+            int r2 = r2.checkCallingOrSelfPermission(r0)
+            if (r2 != 0) goto Le
+            r2 = 1
+            goto Lf
+        Le:
+            r2 = 0
+        Lf:
+            java.lang.Boolean r2 = java.lang.Boolean.valueOf(r2)
+            r1.f6998b = r2
+        L15:
+            java.lang.Boolean r2 = r1.f6998b
+            boolean r2 = r2.booleanValue()
+            if (r2 != 0) goto L2b
+            r2 = 3
+            java.lang.String r0 = "FirebaseMessaging"
+            boolean r2 = android.util.Log.isLoggable(r0, r2)
+            if (r2 == 0) goto L2b
+            java.lang.String r2 = "Missing Permission: android.permission.WAKE_LOCK this should normally be included by the manifest merger, but may needed to be manually added to your manifest"
+            android.util.Log.d(r0, r2)
+        L2b:
+            java.lang.Boolean r2 = r1.f6998b
+            boolean r2 = r2.booleanValue()
+            return r2
+    }
+}
+package p057db;
+
+/* renamed from: db.b */
+/* loaded from: classes.dex */
+public final class C1389b {
+
+    /* renamed from: a */
+    public static final java.util.concurrent.atomic.AtomicInteger f7001a = null;
+
+    static {
+            java.util.concurrent.atomic.AtomicInteger r0 = new java.util.concurrent.atomic.AtomicInteger
+            long r1 = android.os.SystemClock.elapsedRealtime()
+            int r2 = (int) r1
+            r0.<init>(r2)
+            p057db.C1389b.f7001a = r0
+            return
+    }
+
+    @android.annotation.TargetApi(26)
+    /* renamed from: a */
+    public static boolean m3909a(android.content.res.Resources r4, int r5) {
+            java.lang.String r0 = "FirebaseMessaging"
+            int r1 = android.os.Build.VERSION.SDK_INT
+            r2 = 1
+            r3 = 26
+            if (r1 == r3) goto La
+            return r2
+        La:
+            r1 = 0
+            r3 = 0
+            android.graphics.drawable.Drawable r4 = r4.getDrawable(r5, r1)     // Catch: android.content.res.Resources.NotFoundException -> L2c
+            boolean r4 = r4 instanceof android.graphics.drawable.AdaptiveIconDrawable     // Catch: android.content.res.Resources.NotFoundException -> L2c
+            if (r4 == 0) goto L2b
+            java.lang.StringBuilder r4 = new java.lang.StringBuilder     // Catch: android.content.res.Resources.NotFoundException -> L2c
+            r1 = 77
+            r4.<init>(r1)     // Catch: android.content.res.Resources.NotFoundException -> L2c
+            java.lang.String r1 = "Adaptive icons cannot be used in notifications. Ignoring icon id: "
+            r4.append(r1)     // Catch: android.content.res.Resources.NotFoundException -> L2c
+            r4.append(r5)     // Catch: android.content.res.Resources.NotFoundException -> L2c
+            java.lang.String r4 = r4.toString()     // Catch: android.content.res.Resources.NotFoundException -> L2c
+            android.util.Log.e(r0, r4)     // Catch: android.content.res.Resources.NotFoundException -> L2c
+            return r3
+        L2b:
+            return r2
+        L2c:
+            java.lang.StringBuilder r4 = new java.lang.StringBuilder
+            r1 = 66
+            r4.<init>(r1)
+            java.lang.String r1 = "Couldn't find resource "
+            r4.append(r1)
+            r4.append(r5)
+            java.lang.String r5 = ", treating it as an invalid icon"
+            r4.append(r5)
+            java.lang.String r4 = r4.toString()
+            android.util.Log.e(r0, r4)
+            return r3
+    }
+}
+package p057db;
+
+/* renamed from: db.b0 */
+/* loaded from: classes.dex */
+public final class C1390b0 {
+
+    /* renamed from: a */
+    public final android.content.SharedPreferences f7002a;
+
+    /* renamed from: b */
+    public final java.lang.String f7003b;
+
+    /* renamed from: c */
+    public final java.lang.String f7004c;
+
+    /* renamed from: d */
+    public final java.util.ArrayDeque<java.lang.String> f7005d;
+
+    /* renamed from: e */
+    public final java.util.concurrent.Executor f7006e;
+
+    public C1390b0(android.content.SharedPreferences r1, java.lang.String r2, java.util.concurrent.Executor r3) {
+            r0 = this;
+            r0.<init>()
+            java.util.ArrayDeque r2 = new java.util.ArrayDeque
+            r2.<init>()
+            r0.f7005d = r2
+            r0.f7002a = r1
+            java.lang.String r1 = "topic_operation_queue"
+            r0.f7003b = r1
+            java.lang.String r1 = ","
+            r0.f7004c = r1
+            r0.f7006e = r3
+            return
+    }
+
+    /* renamed from: a */
+    public static p057db.C1390b0 m3910a(android.content.SharedPreferences r4, java.lang.String r5, java.util.concurrent.Executor r6) {
+            db.b0 r5 = new db.b0
+            java.lang.String r0 = "topic_operation_queue"
+            r5.<init>(r4, r0, r6)
+            java.util.ArrayDeque<java.lang.String> r4 = r5.f7005d
+            monitor-enter(r4)
+            java.util.ArrayDeque<java.lang.String> r6 = r5.f7005d     // Catch: java.lang.Throwable -> L4e
+            r6.clear()     // Catch: java.lang.Throwable -> L4e
+            android.content.SharedPreferences r6 = r5.f7002a     // Catch: java.lang.Throwable -> L4e
+            java.lang.String r0 = r5.f7003b     // Catch: java.lang.Throwable -> L4e
+            java.lang.String r1 = ""
+            java.lang.String r6 = r6.getString(r0, r1)     // Catch: java.lang.Throwable -> L4e
+            boolean r0 = android.text.TextUtils.isEmpty(r6)     // Catch: java.lang.Throwable -> L4e
+            if (r0 != 0) goto L4c
+            java.lang.String r0 = r5.f7004c     // Catch: java.lang.Throwable -> L4e
+            boolean r0 = r6.contains(r0)     // Catch: java.lang.Throwable -> L4e
+            if (r0 != 0) goto L28
+            goto L4c
+        L28:
+            java.lang.String r0 = r5.f7004c     // Catch: java.lang.Throwable -> L4e
+            r1 = -1
+            java.lang.String[] r6 = r6.split(r0, r1)     // Catch: java.lang.Throwable -> L4e
+            int r0 = r6.length     // Catch: java.lang.Throwable -> L4e
+            r1 = 0
+            if (r0 != 0) goto L3a
+            java.lang.String r2 = "FirebaseMessaging"
+            java.lang.String r3 = "Corrupted queue. Please check the queue contents and item separator provided"
+            android.util.Log.e(r2, r3)     // Catch: java.lang.Throwable -> L4e
+        L3a:
+            if (r1 >= r0) goto L4c
+            r2 = r6[r1]     // Catch: java.lang.Throwable -> L4e
+            boolean r3 = android.text.TextUtils.isEmpty(r2)     // Catch: java.lang.Throwable -> L4e
+            if (r3 != 0) goto L49
+            java.util.ArrayDeque<java.lang.String> r3 = r5.f7005d     // Catch: java.lang.Throwable -> L4e
+            r3.add(r2)     // Catch: java.lang.Throwable -> L4e
+        L49:
+            int r1 = r1 + 1
+            goto L3a
+        L4c:
+            monitor-exit(r4)     // Catch: java.lang.Throwable -> L4e
+            return r5
+        L4e:
+            r5 = move-exception
+            monitor-exit(r4)     // Catch: java.lang.Throwable -> L4e
+            throw r5
+    }
+}
+package p057db;
+
+/* renamed from: db.c */
+/* loaded from: classes.dex */
+public final class C1391c {
+
+    /* renamed from: a */
+    public static final long f7007a = 0;
+
+    static {
+            java.util.concurrent.TimeUnit r0 = java.util.concurrent.TimeUnit.MINUTES
+            r1 = 3
+            long r0 = r0.toMillis(r1)
+            p057db.C1391c.f7007a = r0
+            return
+    }
+}
+package p057db;
+
+/* renamed from: db.d */
+/* loaded from: classes.dex */
+public class C1393d {
+
+    /* renamed from: a */
+    public final java.util.concurrent.Executor f7012a;
+
+    /* renamed from: b */
+    public final android.content.Context f7013b;
+
+    /* renamed from: c */
+    public final p057db.C1422w f7014c;
+
+    public C1393d(android.content.Context r1, p057db.C1422w r2, java.util.concurrent.Executor r3) {
+            r0 = this;
+            r0.<init>()
+            r0.f7012a = r3
+            r0.f7013b = r1
+            r0.f7014c = r2
+            return
+    }
+
+    /* renamed from: a */
+    public boolean m3915a() {
+            r15 = this;
+            db.w r0 = r15.f7014c
+            java.lang.String r1 = "gcm.n.noui"
+            boolean r0 = r0.m3953a(r1)
+            r1 = 1
+            if (r0 == 0) goto Lc
+            return r1
+        Lc:
+            android.content.Context r0 = r15.f7013b
+            java.lang.String r1 = "keyguard"
+            java.lang.Object r0 = r0.getSystemService(r1)
+            android.app.KeyguardManager r0 = (android.app.KeyguardManager) r0
+            boolean r0 = r0.inKeyguardRestrictedInputMode()
+            r1 = 0
+            if (r0 == 0) goto L1e
+            goto L4e
+        L1e:
+            int r0 = android.os.Process.myPid()
+            android.content.Context r2 = r15.f7013b
+            java.lang.String r3 = "activity"
+            java.lang.Object r2 = r2.getSystemService(r3)
+            android.app.ActivityManager r2 = (android.app.ActivityManager) r2
+            java.util.List r2 = r2.getRunningAppProcesses()
+            if (r2 == 0) goto L4e
+            java.util.Iterator r2 = r2.iterator()
+        L36:
+            boolean r3 = r2.hasNext()
+            if (r3 == 0) goto L4e
+            java.lang.Object r3 = r2.next()
+            android.app.ActivityManager$RunningAppProcessInfo r3 = (android.app.ActivityManager.RunningAppProcessInfo) r3
+            int r4 = r3.pid
+            if (r4 != r0) goto L36
+            int r0 = r3.importance
+            r2 = 100
+            if (r0 != r2) goto L4e
+            r0 = 1
+            goto L4f
+        L4e:
+            r0 = 0
+        L4f:
+            if (r0 == 0) goto L52
+            return r1
+        L52:
+            db.w r0 = r15.f7014c
+            java.lang.String r2 = "gcm.n.image"
+            java.lang.String r0 = r0.m3962j(r2)
+            boolean r2 = android.text.TextUtils.isEmpty(r0)
+            java.lang.String r3 = "FirebaseMessaging"
+            if (r2 == 0) goto L63
+            goto L88
+        L63:
+            db.s r2 = new db.s     // Catch: java.net.MalformedURLException -> L6e
+            java.net.URL r4 = new java.net.URL     // Catch: java.net.MalformedURLException -> L6e
+            r4.<init>(r0)     // Catch: java.net.MalformedURLException -> L6e
+            r2.<init>(r4)     // Catch: java.net.MalformedURLException -> L6e
+            goto L89
+        L6e:
+            java.lang.String r0 = java.lang.String.valueOf(r0)
+            java.lang.String r2 = "Not downloading image, bad URL: "
+            int r4 = r0.length()
+            if (r4 == 0) goto L80
+            java.lang.String r0 = r2.concat(r0)
+            goto L85
+        L80:
+            java.lang.String r0 = new java.lang.String
+            r0.<init>(r2)
+        L85:
+            android.util.Log.w(r3, r0)
+        L88:
+            r2 = 0
+        L89:
+            if (r2 == 0) goto L98
+            java.util.concurrent.Executor r0 = r15.f7012a
+            a7.c r4 = new a7.c
+            r4.<init>(r2)
+            s7.i r0 = p327s7.C5988l.m12462c(r0, r4)
+            r2.f7092Z = r0
+        L98:
+            android.content.Context r0 = r15.f7013b
+            db.w r4 = r15.f7014c
+            java.util.concurrent.atomic.AtomicInteger r5 = p057db.C1389b.f7001a
+            java.lang.String r5 = "Couldn't get own application info: "
+            android.content.pm.PackageManager r6 = r0.getPackageManager()
+            java.lang.String r7 = r0.getPackageName()
+            r8 = 128(0x80, float:1.8E-43)
+            android.content.pm.ApplicationInfo r6 = r6.getApplicationInfo(r7, r8)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> Lb5
+            if (r6 == 0) goto Lc8
+            android.os.Bundle r6 = r6.metaData     // Catch: android.content.pm.PackageManager.NameNotFoundException -> Lb5
+            if (r6 == 0) goto Lc8
+            goto Lca
+        Lb5:
+            r6 = move-exception
+            java.lang.String r6 = java.lang.String.valueOf(r6)
+            int r7 = r6.length()
+            java.lang.StringBuilder r8 = new java.lang.StringBuilder
+            int r7 = r7 + 35
+            r8.<init>(r7)
+            p031c1.C0842j.m2517a(r8, r5, r6, r3)
+        Lc8:
+            android.os.Bundle r6 = android.os.Bundle.EMPTY
+        Lca:
+            java.lang.String r7 = r0.getPackageName()
+            java.lang.String r8 = "gcm.n.android_channel_id"
+            java.lang.String r8 = r4.m3962j(r8)
+            int r9 = android.os.Build.VERSION.SDK_INT
+            r10 = 3
+            r11 = 26
+            if (r9 >= r11) goto Ldd
+            goto L162
+        Ldd:
+            android.content.pm.PackageManager r9 = r0.getPackageManager()     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L162
+            java.lang.String r12 = r0.getPackageName()     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L162
+            android.content.pm.ApplicationInfo r9 = r9.getApplicationInfo(r12, r1)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L162
+            int r9 = r9.targetSdkVersion     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L162
+            if (r9 < r11) goto L162
+            java.lang.Class<android.app.NotificationManager> r9 = android.app.NotificationManager.class
+            java.lang.Object r9 = r0.getSystemService(r9)
+            android.app.NotificationManager r9 = (android.app.NotificationManager) r9
+            boolean r11 = android.text.TextUtils.isEmpty(r8)
+            if (r11 != 0) goto L118
+            android.app.NotificationChannel r11 = r9.getNotificationChannel(r8)
+            if (r11 == 0) goto L102
+            goto L163
+        L102:
+            java.lang.String r11 = java.lang.String.valueOf(r8)
+            int r11 = r11.length()
+            java.lang.StringBuilder r12 = new java.lang.StringBuilder
+            int r11 = r11 + 122
+            r12.<init>(r11)
+            java.lang.String r11 = "Notification Channel requested ("
+            java.lang.String r13 = ") has not been created by the app. Manifest configuration, or default, value will be used."
+            p057db.C1387a.m3905a(r12, r11, r8, r13, r3)
+        L118:
+            java.lang.String r8 = "com.google.firebase.messaging.default_notification_channel_id"
+            java.lang.String r8 = r6.getString(r8)
+            boolean r11 = android.text.TextUtils.isEmpty(r8)
+            if (r11 != 0) goto L12e
+            android.app.NotificationChannel r11 = r9.getNotificationChannel(r8)
+            if (r11 == 0) goto L12b
+            goto L163
+        L12b:
+            java.lang.String r8 = "Notification Channel set in AndroidManifest.xml has not been created by the app. Default value will be used."
+            goto L130
+        L12e:
+            java.lang.String r8 = "Missing Default Notification Channel metadata in AndroidManifest. Default value will be used."
+        L130:
+            android.util.Log.w(r3, r8)
+            java.lang.String r8 = "fcm_fallback_notification_channel"
+            android.app.NotificationChannel r11 = r9.getNotificationChannel(r8)
+            if (r11 != 0) goto L163
+            android.content.res.Resources r11 = r0.getResources()
+            java.lang.String r12 = r0.getPackageName()
+            java.lang.String r13 = "fcm_fallback_notification_channel_label"
+            java.lang.String r14 = "string"
+            int r11 = r11.getIdentifier(r13, r14, r12)
+            if (r11 != 0) goto L155
+            java.lang.String r11 = "String resource \"fcm_fallback_notification_channel_label\" is not found. Using default string channel name."
+            android.util.Log.e(r3, r11)
+            java.lang.String r11 = "Misc"
+            goto L159
+        L155:
+            java.lang.String r11 = r0.getString(r11)
+        L159:
+            android.app.NotificationChannel r12 = new android.app.NotificationChannel
+            r12.<init>(r8, r11, r10)
+            r9.createNotificationChannel(r12)
+            goto L163
+        L162:
+            r8 = 0
+        L163:
+            android.content.res.Resources r9 = r0.getResources()
+            android.content.pm.PackageManager r10 = r0.getPackageManager()
+            c0.m r11 = new c0.m
+            r11.<init>(r0, r8)
+            java.lang.String r8 = "gcm.n.title"
+            java.lang.String r8 = r4.m3961i(r9, r7, r8)
+            boolean r12 = android.text.TextUtils.isEmpty(r8)
+            if (r12 != 0) goto L17f
+            r11.m2485d(r8)
+        L17f:
+            java.lang.String r8 = "gcm.n.body"
+            java.lang.String r8 = r4.m3961i(r9, r7, r8)
+            boolean r12 = android.text.TextUtils.isEmpty(r8)
+            if (r12 != 0) goto L1a2
+            r11.m2484c(r8)
+            c0.l r12 = new c0.l
+            r12.<init>()
+            java.lang.CharSequence r8 = p030c0.C0826m.m2482b(r8)
+            r12.f4460b = r8
+            c0.n r8 = r11.f4473m
+            if (r8 == r12) goto L1a2
+            r11.f4473m = r12
+            r12.m2491f(r11)
+        L1a2:
+            java.lang.String r8 = "gcm.n.icon"
+            java.lang.String r8 = r4.m3962j(r8)
+            boolean r12 = android.text.TextUtils.isEmpty(r8)
+            if (r12 != 0) goto L1e0
+            java.lang.String r12 = "drawable"
+            int r12 = r9.getIdentifier(r8, r12, r7)
+            if (r12 == 0) goto L1bc
+            boolean r13 = p057db.C1389b.m3909a(r9, r12)
+            if (r13 != 0) goto L215
+        L1bc:
+            java.lang.String r12 = "mipmap"
+            int r12 = r9.getIdentifier(r8, r12, r7)
+            if (r12 == 0) goto L1ca
+            boolean r13 = p057db.C1389b.m3909a(r9, r12)
+            if (r13 != 0) goto L215
+        L1ca:
+            java.lang.String r12 = java.lang.String.valueOf(r8)
+            int r12 = r12.length()
+            java.lang.StringBuilder r13 = new java.lang.StringBuilder
+            int r12 = r12 + 61
+            r13.<init>(r12)
+            java.lang.String r12 = "Icon resource "
+            java.lang.String r14 = " not found. Notification will use default icon."
+            p057db.C1387a.m3905a(r13, r12, r8, r14, r3)
+        L1e0:
+            java.lang.String r8 = "com.google.firebase.messaging.default_notification_icon"
+            int r8 = r6.getInt(r8, r1)
+            if (r8 == 0) goto L1ee
+            boolean r12 = p057db.C1389b.m3909a(r9, r8)
+            if (r12 != 0) goto L209
+        L1ee:
+            android.content.pm.ApplicationInfo r12 = r10.getApplicationInfo(r7, r1)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L1f6
+            int r5 = r12.icon     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L1f6
+            r12 = r5
+            goto L20a
+        L1f6:
+            r12 = move-exception
+            java.lang.String r12 = java.lang.String.valueOf(r12)
+            int r13 = r12.length()
+            java.lang.StringBuilder r14 = new java.lang.StringBuilder
+            int r13 = r13 + 35
+            r14.<init>(r13)
+            p031c1.C0842j.m2517a(r14, r5, r12, r3)
+        L209:
+            r12 = r8
+        L20a:
+            if (r12 == 0) goto L212
+            boolean r5 = p057db.C1389b.m3909a(r9, r12)
+            if (r5 != 0) goto L215
+        L212:
+            r12 = 17301651(0x1080093, float:2.4979667E-38)
+        L215:
+            android.app.Notification r5 = r11.f4485y
+            r5.icon = r12
+            java.lang.String r5 = "gcm.n.sound2"
+            java.lang.String r5 = r4.m3962j(r5)
+            boolean r8 = android.text.TextUtils.isEmpty(r5)
+            if (r8 == 0) goto L22b
+            java.lang.String r5 = "gcm.n.sound"
+            java.lang.String r5 = r4.m3962j(r5)
+        L22b:
+            boolean r8 = android.text.TextUtils.isEmpty(r5)
+            r12 = 2
+            if (r8 == 0) goto L234
+            r5 = 0
+            goto L279
+        L234:
+            java.lang.String r8 = "default"
+            boolean r8 = r8.equals(r5)
+            if (r8 != 0) goto L275
+            java.lang.String r8 = "raw"
+            int r8 = r9.getIdentifier(r5, r8, r7)
+            if (r8 == 0) goto L275
+            java.lang.String r8 = java.lang.String.valueOf(r7)
+            int r8 = r8.length()
+            java.lang.String r9 = java.lang.String.valueOf(r5)
+            int r9 = r9.length()
+            java.lang.StringBuilder r13 = new java.lang.StringBuilder
+            int r8 = r8 + 24
+            int r8 = r8 + r9
+            r13.<init>(r8)
+            java.lang.String r8 = "android.resource://"
+            r13.append(r8)
+            r13.append(r7)
+            java.lang.String r8 = "/raw/"
+            r13.append(r8)
+            r13.append(r5)
+            java.lang.String r5 = r13.toString()
+            android.net.Uri r5 = android.net.Uri.parse(r5)
+            goto L279
+        L275:
+            android.net.Uri r5 = android.media.RingtoneManager.getDefaultUri(r12)
+        L279:
+            if (r5 == 0) goto L27e
+            r11.m2488g(r5)
+        L27e:
+            java.lang.String r5 = "gcm.n.click_action"
+            java.lang.String r5 = r4.m3962j(r5)
+            boolean r8 = android.text.TextUtils.isEmpty(r5)
+            if (r8 != 0) goto L298
+            android.content.Intent r8 = new android.content.Intent
+            r8.<init>(r5)
+            r8.setPackage(r7)
+            r5 = 268435456(0x10000000, float:2.524355E-29)
+            r8.setFlags(r5)
+            goto L2b7
+        L298:
+            android.net.Uri r5 = r4.m3957e()
+            if (r5 == 0) goto L2ac
+            android.content.Intent r8 = new android.content.Intent
+            java.lang.String r9 = "android.intent.action.VIEW"
+            r8.<init>(r9)
+            r8.setPackage(r7)
+            r8.setData(r5)
+            goto L2b7
+        L2ac:
+            android.content.Intent r8 = r10.getLaunchIntentForPackage(r7)
+            if (r8 != 0) goto L2b7
+            java.lang.String r5 = "No activity found to launch app"
+            android.util.Log.w(r3, r5)
+        L2b7:
+            r5 = 23
+            java.lang.String r7 = "google.c.a.e"
+            if (r8 != 0) goto L2bf
+            r8 = 0
+            goto L328
+        L2bf:
+            r9 = 67108864(0x4000000, float:1.5046328E-36)
+            r8.addFlags(r9)
+            android.os.Bundle r9 = new android.os.Bundle
+            android.os.Bundle r10 = r4.f7100a
+            r9.<init>(r10)
+            android.os.Bundle r10 = r4.f7100a
+            java.util.Set r10 = r10.keySet()
+            java.util.Iterator r10 = r10.iterator()
+        L2d5:
+            boolean r13 = r10.hasNext()
+            if (r13 == 0) goto L303
+            java.lang.Object r13 = r10.next()
+            java.lang.String r13 = (java.lang.String) r13
+            java.lang.String r14 = "google.c."
+            boolean r14 = r13.startsWith(r14)
+            if (r14 != 0) goto L2fc
+            java.lang.String r14 = "gcm.n."
+            boolean r14 = r13.startsWith(r14)
+            if (r14 != 0) goto L2fc
+            java.lang.String r14 = "gcm.notification."
+            boolean r14 = r13.startsWith(r14)
+            if (r14 == 0) goto L2fa
+            goto L2fc
+        L2fa:
+            r14 = 0
+            goto L2fd
+        L2fc:
+            r14 = 1
+        L2fd:
+            if (r14 == 0) goto L2d5
+            r9.remove(r13)
+            goto L2d5
+        L303:
+            r8.putExtras(r9)
+            boolean r9 = r4.m3953a(r7)
+            if (r9 == 0) goto L315
+            android.os.Bundle r9 = r4.m3964m()
+            java.lang.String r10 = "gcm.n.analytics_data"
+            r8.putExtra(r10, r9)
+        L315:
+            java.util.concurrent.atomic.AtomicInteger r9 = p057db.C1389b.f7001a
+            int r9 = r9.incrementAndGet()
+            int r10 = android.os.Build.VERSION.SDK_INT
+            if (r10 < r5) goto L322
+            r10 = 1140850688(0x44000000, float:512.0)
+            goto L324
+        L322:
+            r10 = 1073741824(0x40000000, float:2.0)
+        L324:
+            android.app.PendingIntent r8 = android.app.PendingIntent.getActivity(r0, r9, r8, r10)
+        L328:
+            r11.f4467g = r8
+            boolean r7 = r4.m3953a(r7)
+            if (r7 != 0) goto L332
+            r5 = 0
+            goto L36c
+        L332:
+            android.content.Intent r7 = new android.content.Intent
+            java.lang.String r8 = "com.google.firebase.messaging.NOTIFICATION_DISMISS"
+            r7.<init>(r8)
+            android.os.Bundle r8 = r4.m3964m()
+            android.content.Intent r7 = r7.putExtras(r8)
+            java.util.concurrent.atomic.AtomicInteger r8 = p057db.C1389b.f7001a
+            int r8 = r8.incrementAndGet()
+            android.content.Intent r9 = new android.content.Intent
+            java.lang.String r10 = "com.google.firebase.MESSAGING_EVENT"
+            r9.<init>(r10)
+            android.content.ComponentName r10 = new android.content.ComponentName
+            java.lang.String r13 = "com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            r10.<init>(r0, r13)
+            android.content.Intent r9 = r9.setComponent(r10)
+            java.lang.String r10 = "wrapped_intent"
+            android.content.Intent r7 = r9.putExtra(r10, r7)
+            int r9 = android.os.Build.VERSION.SDK_INT
+            if (r9 < r5) goto L366
+            r5 = 1140850688(0x44000000, float:512.0)
+            goto L368
+        L366:
+            r5 = 1073741824(0x40000000, float:2.0)
+        L368:
+            android.app.PendingIntent r5 = android.app.PendingIntent.getBroadcast(r0, r8, r7, r5)
+        L36c:
+            if (r5 == 0) goto L372
+            android.app.Notification r7 = r11.f4485y
+            r7.deleteIntent = r5
+        L372:
+            java.lang.String r5 = "gcm.n.color"
+            java.lang.String r5 = r4.m3962j(r5)
+            boolean r7 = android.text.TextUtils.isEmpty(r5)
+            if (r7 != 0) goto L39d
+            int r7 = android.graphics.Color.parseColor(r5)     // Catch: java.lang.IllegalArgumentException -> L387
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r7)     // Catch: java.lang.IllegalArgumentException -> L387
+            goto L3b4
+        L387:
+            java.lang.String r7 = java.lang.String.valueOf(r5)
+            int r7 = r7.length()
+            java.lang.StringBuilder r8 = new java.lang.StringBuilder
+            int r7 = r7 + 56
+            r8.<init>(r7)
+            java.lang.String r7 = "Color is invalid: "
+            java.lang.String r9 = ". Notification will use default color."
+            p057db.C1387a.m3905a(r8, r7, r5, r9, r3)
+        L39d:
+            java.lang.String r5 = "com.google.firebase.messaging.default_notification_color"
+            int r5 = r6.getInt(r5, r1)
+            if (r5 == 0) goto L3b3
+            int r0 = p046d0.C1259a.m3706b(r0, r5)     // Catch: android.content.res.Resources.NotFoundException -> L3ae
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r0)     // Catch: android.content.res.Resources.NotFoundException -> L3ae
+            goto L3b4
+        L3ae:
+            java.lang.String r0 = "Cannot find the color resource referenced in AndroidManifest."
+            android.util.Log.w(r3, r0)
+        L3b3:
+            r0 = 0
+        L3b4:
+            if (r0 == 0) goto L3bc
+            int r0 = r0.intValue()
+            r11.f4480t = r0
+        L3bc:
+            java.lang.String r0 = "gcm.n.sticky"
+            boolean r0 = r4.m3953a(r0)
+            r0 = r0 ^ 1
+            r5 = 16
+            r11.m2486e(r5, r0)
+            java.lang.String r0 = "gcm.n.local_only"
+            boolean r0 = r4.m3953a(r0)
+            r11.f4476p = r0
+            java.lang.String r0 = "gcm.n.ticker"
+            java.lang.String r0 = r4.m3962j(r0)
+            if (r0 == 0) goto L3e1
+            android.app.Notification r5 = r11.f4485y
+            java.lang.CharSequence r0 = p030c0.C0826m.m2482b(r0)
+            r5.tickerText = r0
+        L3e1:
+            java.lang.String r0 = "gcm.n.notification_priority"
+            java.lang.Integer r0 = r4.m3954b(r0)
+            r5 = -2
+            if (r0 != 0) goto L3eb
+            goto L40d
+        L3eb:
+            int r6 = r0.intValue()
+            if (r6 < r5) goto L3f7
+            int r6 = r0.intValue()
+            if (r6 <= r12) goto L40e
+        L3f7:
+            java.lang.String r0 = java.lang.String.valueOf(r0)
+            int r6 = r0.length()
+            java.lang.StringBuilder r7 = new java.lang.StringBuilder
+            int r6 = r6 + 72
+            r7.<init>(r6)
+            java.lang.String r6 = "notificationPriority is invalid "
+            java.lang.String r8 = ". Skipping setting notificationPriority."
+            p057db.C1387a.m3905a(r7, r6, r0, r8, r3)
+        L40d:
+            r0 = 0
+        L40e:
+            if (r0 == 0) goto L416
+            int r0 = r0.intValue()
+            r11.f4470j = r0
+        L416:
+            java.lang.String r0 = "gcm.n.visibility"
+            java.lang.Integer r0 = r4.m3954b(r0)
+            if (r0 != 0) goto L41f
+            goto L445
+        L41f:
+            int r6 = r0.intValue()
+            r7 = -1
+            if (r6 < r7) goto L42d
+            int r6 = r0.intValue()
+            r7 = 1
+            if (r6 <= r7) goto L446
+        L42d:
+            java.lang.String r0 = java.lang.String.valueOf(r0)
+            int r6 = r0.length()
+            java.lang.StringBuilder r7 = new java.lang.StringBuilder
+            int r6 = r6 + 53
+            r7.<init>(r6)
+            java.lang.String r6 = "visibility is invalid: "
+            java.lang.String r8 = ". Skipping setting visibility."
+            java.lang.String r9 = "NotificationParams"
+            p057db.C1387a.m3905a(r7, r6, r0, r8, r9)
+        L445:
+            r0 = 0
+        L446:
+            if (r0 == 0) goto L44e
+            int r0 = r0.intValue()
+            r11.f4481u = r0
+        L44e:
+            java.lang.String r0 = "gcm.n.notification_count"
+            java.lang.Integer r0 = r4.m3954b(r0)
+            if (r0 != 0) goto L457
+            goto L473
+        L457:
+            int r6 = r0.intValue()
+            if (r6 >= 0) goto L474
+            java.lang.String r0 = java.lang.String.valueOf(r0)
+            int r6 = r0.length()
+            java.lang.StringBuilder r7 = new java.lang.StringBuilder
+            int r6 = r6 + 67
+            r7.<init>(r6)
+            java.lang.String r6 = "notificationCount is invalid: "
+            java.lang.String r8 = ". Skipping setting notificationCount."
+            p057db.C1387a.m3905a(r7, r6, r0, r8, r3)
+        L473:
+            r0 = 0
+        L474:
+            if (r0 == 0) goto L47c
+            int r0 = r0.intValue()
+            r11.f4469i = r0
+        L47c:
+            java.lang.String r0 = "gcm.n.event_time"
+            java.lang.Long r0 = r4.m3960h(r0)
+            if (r0 == 0) goto L48f
+            r6 = 1
+            r11.f4471k = r6
+            long r6 = r0.longValue()
+            android.app.Notification r0 = r11.f4485y
+            r0.when = r6
+        L48f:
+            long[] r0 = r4.m3963k()
+            if (r0 == 0) goto L499
+            android.app.Notification r6 = r11.f4485y
+            r6.vibrate = r0
+        L499:
+            int[] r0 = r4.m3956d()
+            if (r0 == 0) goto L4bb
+            r6 = r0[r1]
+            r7 = 1
+            r7 = r0[r7]
+            r0 = r0[r12]
+            android.app.Notification r8 = r11.f4485y
+            r8.ledARGB = r6
+            r8.ledOnMS = r7
+            r8.ledOffMS = r0
+            if (r7 == 0) goto L4b4
+            if (r0 == 0) goto L4b4
+            r0 = 1
+            goto L4b5
+        L4b4:
+            r0 = 0
+        L4b5:
+            int r6 = r8.flags
+            r5 = r5 & r6
+            r0 = r0 | r5
+            r8.flags = r0
+        L4bb:
+            java.lang.String r0 = "gcm.n.default_sound"
+            boolean r0 = r4.m3953a(r0)
+            java.lang.String r5 = "gcm.n.default_vibrate_timings"
+            boolean r5 = r4.m3953a(r5)
+            if (r5 == 0) goto L4cb
+            r0 = r0 | 2
+        L4cb:
+            java.lang.String r5 = "gcm.n.default_light_settings"
+            boolean r5 = r4.m3953a(r5)
+            if (r5 == 0) goto L4d5
+            r0 = r0 | 4
+        L4d5:
+            android.app.Notification r5 = r11.f4485y
+            r5.defaults = r0
+            r0 = r0 & 4
+            if (r0 == 0) goto L4e3
+            int r0 = r5.flags
+            r0 = r0 | 1
+            r5.flags = r0
+        L4e3:
+            java.lang.String r0 = "gcm.n.tag"
+            java.lang.String r0 = r4.m3962j(r0)
+            boolean r4 = android.text.TextUtils.isEmpty(r0)
+            if (r4 != 0) goto L4f0
+            goto L507
+        L4f0:
+            long r4 = android.os.SystemClock.uptimeMillis()
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            r6 = 37
+            r0.<init>(r6)
+            java.lang.String r6 = "FCM-Notification:"
+            r0.append(r6)
+            r0.append(r4)
+            java.lang.String r0 = r0.toString()
+        L507:
+            if (r2 != 0) goto L50a
+            goto L565
+        L50a:
+            s7.i<android.graphics.Bitmap> r4 = r2.f7092Z     // Catch: java.util.concurrent.TimeoutException -> L533 java.lang.InterruptedException -> L53c java.util.concurrent.ExecutionException -> L54c
+            java.lang.String r5 = "null reference"
+            java.util.Objects.requireNonNull(r4, r5)     // Catch: java.util.concurrent.TimeoutException -> L533 java.lang.InterruptedException -> L53c java.util.concurrent.ExecutionException -> L54c
+            r5 = 5
+            java.util.concurrent.TimeUnit r7 = java.util.concurrent.TimeUnit.SECONDS     // Catch: java.util.concurrent.TimeoutException -> L533 java.lang.InterruptedException -> L53c java.util.concurrent.ExecutionException -> L54c
+            java.lang.Object r4 = p327s7.C5988l.m12461b(r4, r5, r7)     // Catch: java.util.concurrent.TimeoutException -> L533 java.lang.InterruptedException -> L53c java.util.concurrent.ExecutionException -> L54c
+            android.graphics.Bitmap r4 = (android.graphics.Bitmap) r4     // Catch: java.util.concurrent.TimeoutException -> L533 java.lang.InterruptedException -> L53c java.util.concurrent.ExecutionException -> L54c
+            r11.m2487f(r4)     // Catch: java.util.concurrent.TimeoutException -> L533 java.lang.InterruptedException -> L53c java.util.concurrent.ExecutionException -> L54c
+            c0.k r5 = new c0.k     // Catch: java.util.concurrent.TimeoutException -> L533 java.lang.InterruptedException -> L53c java.util.concurrent.ExecutionException -> L54c
+            r5.<init>()     // Catch: java.util.concurrent.TimeoutException -> L533 java.lang.InterruptedException -> L53c java.util.concurrent.ExecutionException -> L54c
+            r5.f4457b = r4     // Catch: java.util.concurrent.TimeoutException -> L533 java.lang.InterruptedException -> L53c java.util.concurrent.ExecutionException -> L54c
+            r4 = 0
+            r5.m2477g(r4)     // Catch: java.util.concurrent.TimeoutException -> L533 java.lang.InterruptedException -> L53c java.util.concurrent.ExecutionException -> L54c
+            c0.n r4 = r11.f4473m     // Catch: java.util.concurrent.TimeoutException -> L533 java.lang.InterruptedException -> L53c java.util.concurrent.ExecutionException -> L54c
+            if (r4 == r5) goto L565
+            r11.f4473m = r5     // Catch: java.util.concurrent.TimeoutException -> L533 java.lang.InterruptedException -> L53c java.util.concurrent.ExecutionException -> L54c
+            r5.m2491f(r11)     // Catch: java.util.concurrent.TimeoutException -> L533 java.lang.InterruptedException -> L53c java.util.concurrent.ExecutionException -> L54c
+            goto L565
+        L533:
+            java.lang.String r4 = "Failed to download image in time, showing notification without it"
+            android.util.Log.w(r3, r4)
+            r2.close()
+            goto L565
+        L53c:
+            java.lang.String r4 = "Interrupted while downloading image, showing notification without it"
+            android.util.Log.w(r3, r4)
+            r2.close()
+            java.lang.Thread r2 = java.lang.Thread.currentThread()
+            r2.interrupt()
+            goto L565
+        L54c:
+            r2 = move-exception
+            java.lang.Throwable r2 = r2.getCause()
+            java.lang.String r2 = java.lang.String.valueOf(r2)
+            int r4 = r2.length()
+            java.lang.StringBuilder r5 = new java.lang.StringBuilder
+            int r4 = r4 + 26
+            r5.<init>(r4)
+            java.lang.String r4 = "Failed to download image: "
+            p031c1.C0842j.m2517a(r5, r4, r2, r3)
+        L565:
+            r2 = 3
+            boolean r2 = android.util.Log.isLoggable(r3, r2)
+            if (r2 == 0) goto L571
+            java.lang.String r2 = "Showing notification"
+            android.util.Log.d(r3, r2)
+        L571:
+            android.content.Context r2 = r15.f7013b
+            java.lang.String r3 = "notification"
+            java.lang.Object r2 = r2.getSystemService(r3)
+            android.app.NotificationManager r2 = (android.app.NotificationManager) r2
+            android.app.Notification r3 = r11.m2483a()
+            r2.notify(r0, r1, r3)
+            r0 = 1
+            return r0
+    }
+}
+package p057db;
+
+/* renamed from: db.d0 */
+/* loaded from: classes.dex */
+public final class C1394d0 {
+
+    /* renamed from: d */
+    public static final java.util.regex.Pattern f7015d = null;
+
+    /* renamed from: a */
+    public final java.lang.String f7016a;
+
+    /* renamed from: b */
+    public final java.lang.String f7017b;
+
+    /* renamed from: c */
+    public final java.lang.String f7018c;
+
+    static {
+            java.lang.String r0 = "[a-zA-Z0-9-_.~%]{1,900}"
+            java.util.regex.Pattern r0 = java.util.regex.Pattern.compile(r0)
+            p057db.C1394d0.f7015d = r0
+            return
+    }
+
+    public C1394d0(java.lang.String r5, java.lang.String r6) {
+            r4 = this;
+            r4.<init>()
+            r0 = 0
+            r1 = 1
+            if (r6 == 0) goto L25
+            java.lang.String r2 = "/topics/"
+            boolean r2 = r6.startsWith(r2)
+            if (r2 == 0) goto L25
+            java.lang.Object[] r2 = new java.lang.Object[r1]
+            r2[r0] = r5
+            java.lang.String r3 = "Format /topics/topic-name is deprecated. Only 'topic-name' should be used in %s."
+            java.lang.String r2 = java.lang.String.format(r3, r2)
+            java.lang.String r3 = "FirebaseMessaging"
+            android.util.Log.w(r3, r2)
+            r2 = 8
+            java.lang.String r2 = r6.substring(r2)
+            goto L26
+        L25:
+            r2 = r6
+        L26:
+            if (r2 == 0) goto L58
+            java.util.regex.Pattern r3 = p057db.C1394d0.f7015d
+            java.util.regex.Matcher r3 = r3.matcher(r2)
+            boolean r3 = r3.matches()
+            if (r3 == 0) goto L58
+            r4.f7016a = r2
+            r4.f7017b = r5
+            java.lang.String r0 = java.lang.String.valueOf(r5)
+            int r0 = r0.length()
+            java.lang.String r2 = java.lang.String.valueOf(r6)
+            int r2 = r2.length()
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder
+            int r0 = r0 + r1
+            int r0 = r0 + r2
+            r3.<init>(r0)
+            java.lang.String r0 = "!"
+            java.lang.String r5 = p083f.C1932s.m4774a(r3, r5, r0, r6)
+            r4.f7018c = r5
+            return
+        L58:
+            java.lang.IllegalArgumentException r5 = new java.lang.IllegalArgumentException
+            r6 = 2
+            java.lang.Object[] r6 = new java.lang.Object[r6]
+            r6[r0] = r2
+            java.lang.String r0 = "[a-zA-Z0-9-_.~%]{1,900}"
+            r6[r1] = r0
+            java.lang.String r0 = "Invalid topic name: %s does not match the allowed format %s."
+            java.lang.String r6 = java.lang.String.format(r0, r6)
+            r5.<init>(r6)
+            throw r5
+    }
+
+    public boolean equals(java.lang.Object r4) {
+            r3 = this;
+            boolean r0 = r4 instanceof p057db.C1394d0
+            r1 = 0
+            if (r0 != 0) goto L6
+            return r1
+        L6:
+            db.d0 r4 = (p057db.C1394d0) r4
+            java.lang.String r0 = r3.f7016a
+            java.lang.String r2 = r4.f7016a
+            boolean r0 = r0.equals(r2)
+            if (r0 == 0) goto L1e
+            java.lang.String r0 = r3.f7017b
+            java.lang.String r4 = r4.f7017b
+            boolean r4 = r0.equals(r4)
+            if (r4 == 0) goto L1e
+            r4 = 1
+            return r4
+        L1e:
+            return r1
+    }
+
+    public int hashCode() {
+            r3 = this;
+            r0 = 2
+            java.lang.Object[] r0 = new java.lang.Object[r0]
+            java.lang.String r1 = r3.f7017b
+            r2 = 0
+            r0[r2] = r1
+            java.lang.String r1 = r3.f7016a
+            r2 = 1
+            r0[r2] = r1
+            int r0 = java.util.Arrays.hashCode(r0)
+            return r0
+    }
+}
+package p057db;
+
+/* renamed from: db.e0 */
+/* loaded from: classes.dex */
+public final class C1396e0 {
+
+    /* renamed from: d */
+    public static java.lang.ref.WeakReference<p057db.C1396e0> f7020d;
+
+    /* renamed from: a */
+    public final android.content.SharedPreferences f7021a;
+
+    /* renamed from: b */
+    public p057db.C1390b0 f7022b;
+
+    /* renamed from: c */
+    public final java.util.concurrent.Executor f7023c;
+
+    public C1396e0(android.content.SharedPreferences r1, java.util.concurrent.Executor r2) {
+            r0 = this;
+            r0.<init>()
+            r0.f7023c = r2
+            r0.f7021a = r1
+            return
+    }
+
+    /* renamed from: a */
+    public synchronized p057db.C1394d0 m3916a() {
+            r4 = this;
+            monitor-enter(r4)
+            db.b0 r0 = r4.f7022b     // Catch: java.lang.Throwable -> L35
+            java.util.ArrayDeque<java.lang.String> r1 = r0.f7005d     // Catch: java.lang.Throwable -> L35
+            monitor-enter(r1)     // Catch: java.lang.Throwable -> L35
+            java.util.ArrayDeque<java.lang.String> r0 = r0.f7005d     // Catch: java.lang.Throwable -> L32
+            java.lang.Object r0 = r0.peek()     // Catch: java.lang.Throwable -> L32
+            java.lang.String r0 = (java.lang.String) r0     // Catch: java.lang.Throwable -> L32
+            monitor-exit(r1)     // Catch: java.lang.Throwable -> L32
+            java.util.regex.Pattern r1 = p057db.C1394d0.f7015d     // Catch: java.lang.Throwable -> L35
+            boolean r1 = android.text.TextUtils.isEmpty(r0)     // Catch: java.lang.Throwable -> L35
+            r2 = 0
+            if (r1 == 0) goto L19
+            goto L30
+        L19:
+            r1 = -1
+            java.lang.String r3 = "!"
+            java.lang.String[] r0 = r0.split(r3, r1)     // Catch: java.lang.Throwable -> L35
+            int r1 = r0.length     // Catch: java.lang.Throwable -> L35
+            r3 = 2
+            if (r1 == r3) goto L25
+            goto L30
+        L25:
+            db.d0 r2 = new db.d0     // Catch: java.lang.Throwable -> L35
+            r1 = 0
+            r1 = r0[r1]     // Catch: java.lang.Throwable -> L35
+            r3 = 1
+            r0 = r0[r3]     // Catch: java.lang.Throwable -> L35
+            r2.<init>(r1, r0)     // Catch: java.lang.Throwable -> L35
+        L30:
+            monitor-exit(r4)
+            return r2
+        L32:
+            r0 = move-exception
+            monitor-exit(r1)     // Catch: java.lang.Throwable -> L32
+            throw r0     // Catch: java.lang.Throwable -> L35
+        L35:
+            r0 = move-exception
+            monitor-exit(r4)
+            throw r0
+    }
+}
+package p057db;
+
+/* renamed from: db.g0 */
+/* loaded from: classes.dex */
+public class C1400g0 {
+
+    /* renamed from: j */
+    public static final long f7037j = 0;
+
+    /* renamed from: k */
+    public static final /* synthetic */ int f7038k = 0;
+
+    /* renamed from: a */
+    public final android.content.Context f7039a;
+
+    /* renamed from: b */
+    public final p057db.C1421v f7040b;
+
+    /* renamed from: c */
+    public final p057db.C1417r f7041c;
+
+    /* renamed from: d */
+    public final com.google.firebase.messaging.FirebaseMessaging f7042d;
+
+    /* renamed from: e */
+    public final p412xa.InterfaceC7011d f7043e;
+
+    /* renamed from: f */
+    public final java.util.Map<java.lang.String, java.util.ArrayDeque<p327s7.C5986j<java.lang.Void>>> f7044f;
+
+    /* renamed from: g */
+    public final java.util.concurrent.ScheduledExecutorService f7045g;
+
+    /* renamed from: h */
+    public boolean f7046h;
+
+    /* renamed from: i */
+    public final p057db.C1396e0 f7047i;
+
+    static {
+            java.util.concurrent.TimeUnit r0 = java.util.concurrent.TimeUnit.HOURS
+            r1 = 8
+            long r0 = r0.toSeconds(r1)
+            p057db.C1400g0.f7037j = r0
+            return
+    }
+
+    public C1400g0(com.google.firebase.messaging.FirebaseMessaging r2, p412xa.InterfaceC7011d r3, p057db.C1421v r4, p057db.C1396e0 r5, p057db.C1417r r6, android.content.Context r7, java.util.concurrent.ScheduledExecutorService r8) {
+            r1 = this;
+            r1.<init>()
+            s.a r0 = new s.a
+            r0.<init>()
+            r1.f7044f = r0
+            r0 = 0
+            r1.f7046h = r0
+            r1.f7042d = r2
+            r1.f7043e = r3
+            r1.f7040b = r4
+            r1.f7047i = r5
+            r1.f7041c = r6
+            r1.f7039a = r7
+            r1.f7045g = r8
+            return
+    }
+
+    /* renamed from: a */
+    public static <T> T m3918a(p327s7.AbstractC5985i<T> r3) {
+            r0 = 30
+            java.util.concurrent.TimeUnit r2 = java.util.concurrent.TimeUnit.SECONDS     // Catch: java.util.concurrent.TimeoutException -> L9 java.lang.InterruptedException -> Lb java.util.concurrent.ExecutionException -> L14
+            java.lang.Object r3 = p327s7.C5988l.m12461b(r3, r0, r2)     // Catch: java.util.concurrent.TimeoutException -> L9 java.lang.InterruptedException -> Lb java.util.concurrent.ExecutionException -> L14
+            return r3
+        L9:
+            r3 = move-exception
+            goto Lc
+        Lb:
+            r3 = move-exception
+        Lc:
+            java.io.IOException r0 = new java.io.IOException
+            java.lang.String r1 = "SERVICE_NOT_AVAILABLE"
+            r0.<init>(r1, r3)
+            throw r0
+        L14:
+            r3 = move-exception
+            java.lang.Throwable r0 = r3.getCause()
+            boolean r1 = r0 instanceof java.io.IOException
+            if (r1 != 0) goto L2a
+            boolean r1 = r0 instanceof java.lang.RuntimeException
+            if (r1 == 0) goto L24
+            java.lang.RuntimeException r0 = (java.lang.RuntimeException) r0
+            throw r0
+        L24:
+            java.io.IOException r0 = new java.io.IOException
+            r0.<init>(r3)
+            throw r0
+        L2a:
+            java.io.IOException r0 = (java.io.IOException) r0
+            throw r0
+    }
+
+    /* renamed from: d */
+    public static boolean m3919d() {
+            java.lang.String r0 = "FirebaseMessaging"
+            r1 = 3
+            boolean r2 = android.util.Log.isLoggable(r0, r1)
+            r3 = 0
+            r4 = 1
+            if (r2 != 0) goto L19
+            int r2 = android.os.Build.VERSION.SDK_INT
+            r5 = 23
+            if (r2 != r5) goto L1a
+            boolean r0 = android.util.Log.isLoggable(r0, r1)
+            if (r0 == 0) goto L18
+            goto L19
+        L18:
+            return r3
+        L19:
+            r3 = 1
+        L1a:
+            return r3
+    }
+
+    /* renamed from: b */
+    public final void m3920b(java.lang.String r8) {
+            r7 = this;
+            xa.d r0 = r7.f7043e
+            s7.i r0 = r0.mo14165r()
+            java.lang.Object r0 = m3918a(r0)
+            java.lang.String r0 = (java.lang.String) r0
+            db.r r1 = r7.f7041c
+            com.google.firebase.messaging.FirebaseMessaging r2 = r7.f7042d
+            java.lang.String r2 = r2.m3653a()
+            java.util.Objects.requireNonNull(r1)
+            android.os.Bundle r3 = new android.os.Bundle
+            r3.<init>()
+            java.lang.String r4 = java.lang.String.valueOf(r8)
+            int r5 = r4.length()
+            java.lang.String r6 = "/topics/"
+            if (r5 == 0) goto L2d
+            java.lang.String r4 = r6.concat(r4)
+            goto L32
+        L2d:
+            java.lang.String r4 = new java.lang.String
+            r4.<init>(r6)
+        L32:
+            java.lang.String r5 = "gcm.topic"
+            r3.putString(r5, r4)
+            java.lang.String r8 = java.lang.String.valueOf(r8)
+            int r4 = r8.length()
+            if (r4 == 0) goto L46
+            java.lang.String r8 = r6.concat(r8)
+            goto L4b
+        L46:
+            java.lang.String r8 = new java.lang.String
+            r8.<init>(r6)
+        L4b:
+            s7.i r8 = r1.m3942b(r0, r2, r8, r3)
+            s7.i r8 = r1.m3941a(r8)
+            m3918a(r8)
+            return
+    }
+
+    /* renamed from: c */
+    public final void m3921c(java.lang.String r8) {
+            r7 = this;
+            xa.d r0 = r7.f7043e
+            s7.i r0 = r0.mo14165r()
+            java.lang.Object r0 = m3918a(r0)
+            java.lang.String r0 = (java.lang.String) r0
+            db.r r1 = r7.f7041c
+            com.google.firebase.messaging.FirebaseMessaging r2 = r7.f7042d
+            java.lang.String r2 = r2.m3653a()
+            java.util.Objects.requireNonNull(r1)
+            android.os.Bundle r3 = new android.os.Bundle
+            r3.<init>()
+            java.lang.String r4 = java.lang.String.valueOf(r8)
+            int r5 = r4.length()
+            java.lang.String r6 = "/topics/"
+            if (r5 == 0) goto L2d
+            java.lang.String r4 = r6.concat(r4)
+            goto L32
+        L2d:
+            java.lang.String r4 = new java.lang.String
+            r4.<init>(r6)
+        L32:
+            java.lang.String r5 = "gcm.topic"
+            r3.putString(r5, r4)
+            java.lang.String r4 = "delete"
+            java.lang.String r5 = "1"
+            r3.putString(r4, r5)
+            java.lang.String r8 = java.lang.String.valueOf(r8)
+            int r4 = r8.length()
+            if (r4 == 0) goto L4d
+            java.lang.String r8 = r6.concat(r8)
+            goto L52
+        L4d:
+            java.lang.String r8 = new java.lang.String
+            r8.<init>(r6)
+        L52:
+            s7.i r8 = r1.m3942b(r0, r2, r8, r3)
+            s7.i r8 = r1.m3941a(r8)
+            m3918a(r8)
+            return
+    }
+
+    /* renamed from: e */
+    public synchronized void m3922e(boolean r1) {
+            r0 = this;
+            monitor-enter(r0)
+            r0.f7046h = r1     // Catch: java.lang.Throwable -> L5
+            monitor-exit(r0)
+            return
+        L5:
+            r1 = move-exception
+            monitor-exit(r0)
+            throw r1
+    }
+
+    /* renamed from: f */
+    public boolean m3923f() {
+            r8 = this;
+        L0:
+            monitor-enter(r8)
+            db.e0 r0 = r8.f7047i     // Catch: java.lang.Throwable -> L162
+            db.d0 r0 = r0.m3916a()     // Catch: java.lang.Throwable -> L162
+            r1 = 1
+            if (r0 != 0) goto L19
+            boolean r0 = m3919d()     // Catch: java.lang.Throwable -> L162
+            if (r0 == 0) goto L17
+            java.lang.String r0 = "FirebaseMessaging"
+            java.lang.String r2 = "topic sync succeeded"
+            android.util.Log.d(r0, r2)     // Catch: java.lang.Throwable -> L162
+        L17:
+            monitor-exit(r8)     // Catch: java.lang.Throwable -> L162
+            return r1
+        L19:
+            monitor-exit(r8)     // Catch: java.lang.Throwable -> L162
+            java.lang.String r2 = "FirebaseMessaging"
+            r3 = 0
+            java.lang.String r4 = r0.f7017b     // Catch: java.io.IOException -> Lc3
+            int r5 = r4.hashCode()     // Catch: java.io.IOException -> Lc3
+            r6 = 83
+            if (r5 == r6) goto L36
+            r6 = 85
+            if (r5 == r6) goto L2c
+            goto L40
+        L2c:
+            java.lang.String r5 = "U"
+            boolean r4 = r4.equals(r5)
+            if (r4 == 0) goto L40
+            r4 = 1
+            goto L41
+        L36:
+            java.lang.String r5 = "S"
+            boolean r4 = r4.equals(r5)
+            if (r4 == 0) goto L40
+            r4 = 0
+            goto L41
+        L40:
+            r4 = -1
+        L41:
+            java.lang.String r5 = " succeeded."
+            if (r4 == 0) goto L96
+            if (r4 == r1) goto L6e
+            boolean r4 = m3919d()     // Catch: java.io.IOException -> Lc3
+            if (r4 == 0) goto L106
+            java.lang.String r4 = java.lang.String.valueOf(r0)     // Catch: java.io.IOException -> Lc3
+            int r5 = r4.length()     // Catch: java.io.IOException -> Lc3
+            int r5 = r5 + 24
+            java.lang.StringBuilder r6 = new java.lang.StringBuilder     // Catch: java.io.IOException -> Lc3
+            r6.<init>(r5)     // Catch: java.io.IOException -> Lc3
+            java.lang.String r5 = "Unknown topic operation"
+            r6.append(r5)     // Catch: java.io.IOException -> Lc3
+            r6.append(r4)     // Catch: java.io.IOException -> Lc3
+            java.lang.String r4 = "."
+            r6.append(r4)     // Catch: java.io.IOException -> Lc3
+            java.lang.String r4 = r6.toString()     // Catch: java.io.IOException -> Lc3
+            goto Lbf
+        L6e:
+            java.lang.String r4 = r0.f7016a     // Catch: java.io.IOException -> Lc3
+            r8.m3921c(r4)     // Catch: java.io.IOException -> Lc3
+            boolean r4 = m3919d()     // Catch: java.io.IOException -> Lc3
+            if (r4 == 0) goto L106
+            java.lang.String r4 = r0.f7016a     // Catch: java.io.IOException -> Lc3
+            java.lang.String r6 = java.lang.String.valueOf(r4)     // Catch: java.io.IOException -> Lc3
+            int r6 = r6.length()     // Catch: java.io.IOException -> Lc3
+            int r6 = r6 + 35
+            java.lang.StringBuilder r7 = new java.lang.StringBuilder     // Catch: java.io.IOException -> Lc3
+            r7.<init>(r6)     // Catch: java.io.IOException -> Lc3
+            java.lang.String r6 = "Unsubscribe from topic: "
+            r7.append(r6)     // Catch: java.io.IOException -> Lc3
+            r7.append(r4)     // Catch: java.io.IOException -> Lc3
+        L92:
+            r7.append(r5)     // Catch: java.io.IOException -> Lc3
+            goto Lbb
+        L96:
+            java.lang.String r4 = r0.f7016a     // Catch: java.io.IOException -> Lc3
+            r8.m3920b(r4)     // Catch: java.io.IOException -> Lc3
+            boolean r4 = m3919d()     // Catch: java.io.IOException -> Lc3
+            if (r4 == 0) goto L106
+            java.lang.String r4 = r0.f7016a     // Catch: java.io.IOException -> Lc3
+            java.lang.String r6 = java.lang.String.valueOf(r4)     // Catch: java.io.IOException -> Lc3
+            int r6 = r6.length()     // Catch: java.io.IOException -> Lc3
+            int r6 = r6 + 31
+            java.lang.StringBuilder r7 = new java.lang.StringBuilder     // Catch: java.io.IOException -> Lc3
+            r7.<init>(r6)     // Catch: java.io.IOException -> Lc3
+            java.lang.String r6 = "Subscribe to topic: "
+            r7.append(r6)     // Catch: java.io.IOException -> Lc3
+            r7.append(r4)     // Catch: java.io.IOException -> Lc3
+            goto L92
+        Lbb:
+            java.lang.String r4 = r7.toString()     // Catch: java.io.IOException -> Lc3
+        Lbf:
+            android.util.Log.d(r2, r4)     // Catch: java.io.IOException -> Lc3
+            goto L106
+        Lc3:
+            r1 = move-exception
+            java.lang.String r4 = r1.getMessage()
+            java.lang.String r5 = "SERVICE_NOT_AVAILABLE"
+            boolean r4 = r5.equals(r4)
+            if (r4 != 0) goto Le7
+            java.lang.String r4 = r1.getMessage()
+            java.lang.String r5 = "INTERNAL_SERVER_ERROR"
+            boolean r4 = r5.equals(r4)
+            if (r4 == 0) goto Ldd
+            goto Le7
+        Ldd:
+            java.lang.String r4 = r1.getMessage()
+            if (r4 != 0) goto Le6
+            java.lang.String r1 = "Topic operation failed without exception message. Will retry Topic operation."
+            goto L102
+        Le6:
+            throw r1
+        Le7:
+            java.lang.String r1 = r1.getMessage()
+            java.lang.String r4 = java.lang.String.valueOf(r1)
+            int r4 = r4.length()
+            java.lang.StringBuilder r5 = new java.lang.StringBuilder
+            int r4 = r4 + 53
+            r5.<init>(r4)
+            java.lang.String r4 = "Topic operation failed: "
+            java.lang.String r6 = ". Will retry Topic operation."
+            java.lang.String r1 = p083f.C1932s.m4774a(r5, r4, r1, r6)
+        L102:
+            android.util.Log.e(r2, r1)
+            r1 = 0
+        L106:
+            if (r1 != 0) goto L109
+            return r3
+        L109:
+            db.e0 r1 = r8.f7047i
+            monitor-enter(r1)
+            db.b0 r2 = r1.f7022b     // Catch: java.lang.Throwable -> L15f
+            java.lang.String r3 = r0.f7018c     // Catch: java.lang.Throwable -> L15f
+            java.util.ArrayDeque<java.lang.String> r4 = r2.f7005d     // Catch: java.lang.Throwable -> L15f
+            monitor-enter(r4)     // Catch: java.lang.Throwable -> L15f
+            java.util.ArrayDeque<java.lang.String> r5 = r2.f7005d     // Catch: java.lang.Throwable -> L15c
+            boolean r3 = r5.remove(r3)     // Catch: java.lang.Throwable -> L15c
+            if (r3 == 0) goto L125
+            java.util.concurrent.Executor r3 = r2.f7006e     // Catch: java.lang.Throwable -> L15c
+            f6.i r5 = new f6.i     // Catch: java.lang.Throwable -> L15c
+            r5.<init>(r2)     // Catch: java.lang.Throwable -> L15c
+            r3.execute(r5)     // Catch: java.lang.Throwable -> L15c
+        L125:
+            monitor-exit(r4)     // Catch: java.lang.Throwable -> L15c
+            monitor-exit(r1)
+            java.util.Map<java.lang.String, java.util.ArrayDeque<s7.j<java.lang.Void>>> r2 = r8.f7044f
+            monitor-enter(r2)
+            java.lang.String r0 = r0.f7018c     // Catch: java.lang.Throwable -> L159
+            java.util.Map<java.lang.String, java.util.ArrayDeque<s7.j<java.lang.Void>>> r1 = r8.f7044f     // Catch: java.lang.Throwable -> L159
+            boolean r1 = r1.containsKey(r0)     // Catch: java.lang.Throwable -> L159
+            if (r1 != 0) goto L135
+            goto L156
+        L135:
+            java.util.Map<java.lang.String, java.util.ArrayDeque<s7.j<java.lang.Void>>> r1 = r8.f7044f     // Catch: java.lang.Throwable -> L159
+            java.lang.Object r1 = r1.get(r0)     // Catch: java.lang.Throwable -> L159
+            java.util.ArrayDeque r1 = (java.util.ArrayDeque) r1     // Catch: java.lang.Throwable -> L159
+            java.lang.Object r3 = r1.poll()     // Catch: java.lang.Throwable -> L159
+            s7.j r3 = (p327s7.C5986j) r3     // Catch: java.lang.Throwable -> L159
+            if (r3 == 0) goto L14b
+            r4 = 0
+            s7.q<TResult> r3 = r3.f23075a     // Catch: java.lang.Throwable -> L159
+            r3.m12473r(r4)     // Catch: java.lang.Throwable -> L159
+        L14b:
+            boolean r1 = r1.isEmpty()     // Catch: java.lang.Throwable -> L159
+            if (r1 == 0) goto L156
+            java.util.Map<java.lang.String, java.util.ArrayDeque<s7.j<java.lang.Void>>> r1 = r8.f7044f     // Catch: java.lang.Throwable -> L159
+            r1.remove(r0)     // Catch: java.lang.Throwable -> L159
+        L156:
+            monitor-exit(r2)     // Catch: java.lang.Throwable -> L159
+            goto L0
+        L159:
+            r0 = move-exception
+            monitor-exit(r2)     // Catch: java.lang.Throwable -> L159
+            throw r0
+        L15c:
+            r0 = move-exception
+            monitor-exit(r4)     // Catch: java.lang.Throwable -> L15c
+            throw r0     // Catch: java.lang.Throwable -> L15f
+        L15f:
+            r0 = move-exception
+            monitor-exit(r1)
+            throw r0
+        L162:
+            r0 = move-exception
+            monitor-exit(r8)     // Catch: java.lang.Throwable -> L162
+            throw r0
+    }
+
+    /* renamed from: g */
+    public void m3924g(long r11) {
+            r10 = this;
+            long r0 = r11 + r11
+            r2 = 30
+            long r0 = java.lang.Math.max(r2, r0)
+            long r2 = p057db.C1400g0.f7037j
+            long r8 = java.lang.Math.min(r0, r2)
+            db.h0 r0 = new db.h0
+            android.content.Context r6 = r10.f7039a
+            db.v r7 = r10.f7040b
+            r4 = r0
+            r5 = r10
+            r4.<init>(r5, r6, r7, r8)
+            java.util.concurrent.ScheduledExecutorService r1 = r10.f7045g
+            java.util.concurrent.TimeUnit r2 = java.util.concurrent.TimeUnit.SECONDS
+            r1.schedule(r0, r11, r2)
+            r11 = 1
+            r10.m3922e(r11)
+            return
+    }
+}
+package p057db;
+
+/* renamed from: db.i */
+/* loaded from: classes.dex */
+public final /* synthetic */ class C1403i implements p327s7.InterfaceC5977a {
+
+    /* renamed from: Y */
+    public static final p327s7.InterfaceC5977a f7059Y = null;
+
+    static {
+            db.i r0 = new db.i
+            r0.<init>()
+            p057db.C1403i.f7059Y = r0
+            return
+    }
+
+    public C1403i() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p327s7.InterfaceC5977a
+    /* renamed from: g */
+    public java.lang.Object mo816g(p327s7.AbstractC5985i r1) {
+            r0 = this;
+            java.lang.Object r1 = p057db.C1409l.f7068b
+            r1 = -1
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)
+            return r1
+    }
+}
+package p057db;
+
+/* renamed from: db.i0 */
+/* loaded from: classes.dex */
+public final class C1404i0 {
+
+    /* renamed from: a */
+    public static final long f7060a = 0;
+
+    /* renamed from: b */
+    public static final java.lang.Object f7061b = null;
+
+    /* renamed from: c */
+    public static p307r7.C5798a f7062c;
+
+    static {
+            java.util.concurrent.TimeUnit r0 = java.util.concurrent.TimeUnit.MINUTES
+            r1 = 1
+            long r0 = r0.toMillis(r1)
+            p057db.C1404i0.f7060a = r0
+            java.lang.Object r0 = new java.lang.Object
+            r0.<init>()
+            p057db.C1404i0.f7061b = r0
+            return
+    }
+
+    /* renamed from: a */
+    public static android.content.ComponentName m3931a(android.content.Context r4, android.content.Intent r5) {
+            java.lang.Object r0 = p057db.C1404i0.f7061b
+            monitor-enter(r0)
+            r7.a r1 = p057db.C1404i0.f7062c     // Catch: java.lang.Throwable -> L38
+            r2 = 1
+            if (r1 != 0) goto L18
+            r7.a r1 = new r7.a     // Catch: java.lang.Throwable -> L38
+            java.lang.String r3 = "wake:com.google.firebase.iid.WakeLockHolder"
+            r1.<init>(r4, r2, r3)     // Catch: java.lang.Throwable -> L38
+            p057db.C1404i0.f7062c = r1     // Catch: java.lang.Throwable -> L38
+            android.os.PowerManager$WakeLock r3 = r1.f22484b     // Catch: java.lang.Throwable -> L38
+            r3.setReferenceCounted(r2)     // Catch: java.lang.Throwable -> L38
+            r1.f22488f = r2     // Catch: java.lang.Throwable -> L38
+        L18:
+            java.lang.String r1 = "com.google.firebase.iid.WakeLockHolder.wakefulintent"
+            r3 = 0
+            boolean r1 = r5.getBooleanExtra(r1, r3)     // Catch: java.lang.Throwable -> L38
+            java.lang.String r3 = "com.google.firebase.iid.WakeLockHolder.wakefulintent"
+            r5.putExtra(r3, r2)     // Catch: java.lang.Throwable -> L38
+            android.content.ComponentName r4 = r4.startService(r5)     // Catch: java.lang.Throwable -> L38
+            if (r4 != 0) goto L2d
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L38
+            r4 = 0
+            return r4
+        L2d:
+            if (r1 != 0) goto L36
+            r7.a r5 = p057db.C1404i0.f7062c     // Catch: java.lang.Throwable -> L38
+            long r1 = p057db.C1404i0.f7060a     // Catch: java.lang.Throwable -> L38
+            r5.m12165a(r1)     // Catch: java.lang.Throwable -> L38
+        L36:
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L38
+            return r4
+        L38:
+            r4 = move-exception
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L38
+            throw r4
+    }
+}
+package p057db;
+
+/* renamed from: db.k */
+/* loaded from: classes.dex */
+public final /* synthetic */ class C1407k implements p327s7.InterfaceC5977a {
+
+    /* renamed from: Y */
+    public static final p327s7.InterfaceC5977a f7065Y = null;
+
+    static {
+            db.k r0 = new db.k
+            r0.<init>()
+            p057db.C1407k.f7065Y = r0
+            return
+    }
+
+    public C1407k() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p327s7.InterfaceC5977a
+    /* renamed from: g */
+    public java.lang.Object mo816g(p327s7.AbstractC5985i r1) {
+            r0 = this;
+            java.lang.Object r1 = p057db.C1409l.f7068b
+            r1 = 403(0x193, float:5.65E-43)
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)
+            return r1
+    }
+}
+package p057db;
+
+/* renamed from: db.k0 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class C1408k0 implements p327s7.InterfaceC5980d {
+
+    /* renamed from: a */
+    public final /* synthetic */ int f7066a;
+
+    /* renamed from: b */
+    public final java.lang.Object f7067b;
+
+    public C1408k0(p057db.ServiceConnectionC1412m0.a r2) {
+            r1 = this;
+            r0 = 0
+            r1.f7066a = r0
+            r1.<init>()
+            r1.f7067b = r2
+            return
+    }
+
+    public C1408k0(java.util.concurrent.ScheduledFuture r2) {
+            r1 = this;
+            r0 = 1
+            r1.f7066a = r0
+            r1.<init>()
+            r1.f7067b = r2
+            return
+    }
+
+    @Override // p327s7.InterfaceC5980d
+    /* renamed from: a */
+    public void mo3092a(p327s7.AbstractC5985i r2) {
+            r1 = this;
+            int r2 = r1.f7066a
+            switch(r2) {
+                case 0: goto L6;
+                default: goto L5;
+            }
+        L5:
+            goto Le
+        L6:
+            java.lang.Object r2 = r1.f7067b
+            db.m0$a r2 = (p057db.ServiceConnectionC1412m0.a) r2
+            r2.m3938a()
+            return
+        Le:
+            java.lang.Object r2 = r1.f7067b
+            java.util.concurrent.ScheduledFuture r2 = (java.util.concurrent.ScheduledFuture) r2
+            r0 = 0
+            r2.cancel(r0)
+            return
+    }
+}
+package p057db;
+
+/* renamed from: db.l */
+/* loaded from: classes.dex */
+public class C1409l {
+
+    /* renamed from: b */
+    public static final java.lang.Object f7068b = null;
+
+    /* renamed from: c */
+    public static p057db.ServiceConnectionC1412m0 f7069c;
+
+    /* renamed from: a */
+    public final android.content.Context f7070a;
+
+    static {
+            java.lang.Object r0 = new java.lang.Object
+            r0.<init>()
+            p057db.C1409l.f7068b = r0
+            return
+    }
+
+    public C1409l(android.content.Context r1) {
+            r0 = this;
+            r0.<init>()
+            r0.f7070a = r1
+            return
+    }
+
+    /* renamed from: a */
+    public static p327s7.AbstractC5985i<java.lang.Integer> m3932a(android.content.Context r6, android.content.Intent r7) {
+            java.lang.String r0 = "FirebaseMessaging"
+            r1 = 3
+            boolean r0 = android.util.Log.isLoggable(r0, r1)
+            if (r0 == 0) goto L10
+            java.lang.String r0 = "FirebaseMessaging"
+            java.lang.String r2 = "Binding to service"
+            android.util.Log.d(r0, r2)
+        L10:
+            java.lang.String r0 = "com.google.firebase.MESSAGING_EVENT"
+            java.lang.Object r2 = p057db.C1409l.f7068b
+            monitor-enter(r2)
+            db.m0 r3 = p057db.C1409l.f7069c     // Catch: java.lang.Throwable -> L78
+            if (r3 != 0) goto L20
+            db.m0 r3 = new db.m0     // Catch: java.lang.Throwable -> L78
+            r3.<init>(r6, r0)     // Catch: java.lang.Throwable -> L78
+            p057db.C1409l.f7069c = r3     // Catch: java.lang.Throwable -> L78
+        L20:
+            db.m0 r6 = p057db.C1409l.f7069c     // Catch: java.lang.Throwable -> L78
+            monitor-exit(r2)     // Catch: java.lang.Throwable -> L78
+            monitor-enter(r6)
+            java.lang.String r0 = "FirebaseMessaging"
+            boolean r0 = android.util.Log.isLoggable(r0, r1)     // Catch: java.lang.Throwable -> L75
+            if (r0 == 0) goto L33
+            java.lang.String r0 = "FirebaseMessaging"
+            java.lang.String r1 = "new intent queued in the bind-strategy delivery"
+            android.util.Log.d(r0, r1)     // Catch: java.lang.Throwable -> L75
+        L33:
+            db.m0$a r0 = new db.m0$a     // Catch: java.lang.Throwable -> L75
+            r0.<init>(r7)     // Catch: java.lang.Throwable -> L75
+            java.util.concurrent.ScheduledExecutorService r7 = r6.f7075a0     // Catch: java.lang.Throwable -> L75
+            f6.i r1 = new f6.i     // Catch: java.lang.Throwable -> L75
+            r1.<init>(r0)     // Catch: java.lang.Throwable -> L75
+            java.util.concurrent.TimeUnit r2 = java.util.concurrent.TimeUnit.MILLISECONDS     // Catch: java.lang.Throwable -> L75
+            r3 = 9000(0x2328, double:4.4466E-320)
+            java.util.concurrent.ScheduledFuture r1 = r7.schedule(r1, r3, r2)     // Catch: java.lang.Throwable -> L75
+            s7.j<java.lang.Void> r2 = r0.f7080b     // Catch: java.lang.Throwable -> L75
+            s7.q<TResult> r2 = r2.f23075a     // Catch: java.lang.Throwable -> L75
+            db.k0 r3 = new db.k0     // Catch: java.lang.Throwable -> L75
+            r3.<init>(r1)     // Catch: java.lang.Throwable -> L75
+            z2.n r1 = r2.f23097b     // Catch: java.lang.Throwable -> L75
+            s7.n r4 = new s7.n     // Catch: java.lang.Throwable -> L75
+            int r5 = p327s7.C5994r.f23102a     // Catch: java.lang.Throwable -> L75
+            r4.<init>(r7, r3)     // Catch: java.lang.Throwable -> L75
+            r1.m14310g(r4)     // Catch: java.lang.Throwable -> L75
+            r2.m12476u()     // Catch: java.lang.Throwable -> L75
+            java.util.Queue<db.m0$a> r7 = r6.f7076b0     // Catch: java.lang.Throwable -> L75
+            r7.add(r0)     // Catch: java.lang.Throwable -> L75
+            r6.m3936b()     // Catch: java.lang.Throwable -> L75
+            s7.j<java.lang.Void> r7 = r0.f7080b     // Catch: java.lang.Throwable -> L75
+            s7.q<TResult> r7 = r7.f23075a     // Catch: java.lang.Throwable -> L75
+            monitor-exit(r6)
+            java.util.concurrent.Executor r6 = p057db.ExecutorC1401h.f7048Y
+            s7.a r0 = p057db.C1403i.f7059Y
+            s7.i r6 = r7.mo12447e(r6, r0)
+            return r6
+        L75:
+            r7 = move-exception
+            monitor-exit(r6)
+            throw r7
+        L78:
+            r6 = move-exception
+            monitor-exit(r2)     // Catch: java.lang.Throwable -> L78
+            throw r6
+    }
+
+    /* renamed from: b */
+    public p327s7.AbstractC5985i<java.lang.Integer> m3933b(android.content.Intent r5) {
+            r4 = this;
+            java.lang.String r0 = "gcm.rawData64"
+            java.lang.String r1 = r5.getStringExtra(r0)
+            r2 = 0
+            if (r1 == 0) goto L15
+            byte[] r1 = android.util.Base64.decode(r1, r2)
+            java.lang.String r3 = "rawData"
+            r5.putExtra(r3, r1)
+            r5.removeExtra(r0)
+        L15:
+            android.content.Context r0 = r4.f7070a
+            boolean r1 = p353u6.C6345h.m12995a()
+            if (r1 == 0) goto L28
+            android.content.pm.ApplicationInfo r1 = r0.getApplicationInfo()
+            int r1 = r1.targetSdkVersion
+            r3 = 26
+            if (r1 < r3) goto L28
+            r2 = 1
+        L28:
+            int r1 = r5.getFlags()
+            r3 = 268435456(0x10000000, float:2.524355E-29)
+            r1 = r1 & r3
+            if (r2 == 0) goto L38
+            if (r1 != 0) goto L38
+            s7.i r5 = m3932a(r0, r5)
+            goto L4c
+        L38:
+            java.util.concurrent.Executor r1 = p057db.ExecutorC1399g.f7036Y
+            o7.j4 r2 = new o7.j4
+            r2.<init>(r0, r5)
+            s7.i r2 = p327s7.C5988l.m12462c(r1, r2)
+            androidx.appcompat.widget.x r3 = new androidx.appcompat.widget.x
+            r3.<init>(r0, r5)
+            s7.i r5 = r2.mo12449g(r1, r3)
+        L4c:
+            return r5
+    }
+}
+package p057db;
+
+/* renamed from: db.m */
+/* loaded from: classes.dex */
+public class C1411m implements android.app.Application.ActivityLifecycleCallbacks {
+
+    /* renamed from: Y */
+    public final java.util.Set<android.content.Intent> f7072Y;
+
+    public C1411m() {
+            r1 = this;
+            r1.<init>()
+            java.util.WeakHashMap r0 = new java.util.WeakHashMap
+            r0.<init>()
+            java.util.Set r0 = java.util.Collections.newSetFromMap(r0)
+            r1.f7072Y = r0
+            return
+    }
+
+    @Override // android.app.Application.ActivityLifecycleCallbacks
+    public void onActivityCreated(android.app.Activity r6, android.os.Bundle r7) {
+            r5 = this;
+            android.content.Intent r6 = r6.getIntent()
+            if (r6 == 0) goto L9f
+            java.util.Set<android.content.Intent> r7 = r5.f7072Y
+            boolean r7 = r7.add(r6)
+            if (r7 != 0) goto L10
+            goto L9f
+        L10:
+            android.os.Bundle r6 = r6.getExtras()
+            if (r6 == 0) goto L9f
+            java.lang.String r7 = "gcm.n.analytics_data"
+            android.os.Bundle r6 = r6.getBundle(r7)
+            java.lang.String r7 = "1"
+            if (r6 != 0) goto L22
+            r0 = 0
+            goto L2c
+        L22:
+            java.lang.String r0 = "google.c.a.e"
+            java.lang.String r0 = r6.getString(r0)
+            boolean r0 = r7.equals(r0)
+        L2c:
+            if (r0 == 0) goto L9f
+            if (r6 != 0) goto L31
+            goto L9a
+        L31:
+            java.lang.String r0 = "google.c.a.tc"
+            java.lang.String r0 = r6.getString(r0)
+            boolean r7 = r7.equals(r0)
+            r0 = 3
+            java.lang.String r1 = "FirebaseMessaging"
+            if (r7 == 0) goto L8f
+            o9.d r7 = p251o9.C5180d.m11494c()
+            java.lang.Class<s9.a> r2 = p329s9.InterfaceC5997a.class
+            r7.m11497a()
+            y9.i r7 = r7.f20315d
+            java.lang.Object r7 = r7.mo14246a(r2)
+            s9.a r7 = (p329s9.InterfaceC5997a) r7
+            boolean r0 = android.util.Log.isLoggable(r1, r0)
+            if (r0 == 0) goto L5c
+            java.lang.String r0 = "Received event with track-conversion=true. Setting user property and reengagement event"
+            android.util.Log.d(r1, r0)
+        L5c:
+            if (r7 == 0) goto L89
+            java.lang.String r0 = "google.c.a.c_id"
+            java.lang.String r0 = r6.getString(r0)
+            java.lang.String r1 = "fcm"
+            java.lang.String r2 = "_ln"
+            r7.mo12482e(r1, r2, r0)
+            android.os.Bundle r2 = new android.os.Bundle
+            r2.<init>()
+            java.lang.String r3 = "source"
+            java.lang.String r4 = "Firebase"
+            r2.putString(r3, r4)
+            java.lang.String r3 = "medium"
+            java.lang.String r4 = "notification"
+            r2.putString(r3, r4)
+            java.lang.String r3 = "campaign"
+            r2.putString(r3, r0)
+            java.lang.String r0 = "_cmp"
+            r7.mo12483f(r1, r0, r2)
+            goto L9a
+        L89:
+            java.lang.String r7 = "Unable to set user property for conversion tracking:  analytics library is missing"
+            android.util.Log.w(r1, r7)
+            goto L9a
+        L8f:
+            boolean r7 = android.util.Log.isLoggable(r1, r0)
+            if (r7 == 0) goto L9a
+            java.lang.String r7 = "Received event with track-conversion=false. Do not set user property"
+            android.util.Log.d(r1, r7)
+        L9a:
+            java.lang.String r7 = "_no"
+            p057db.C1420u.m3944b(r7, r6)
+        L9f:
+            return
+    }
+
+    @Override // android.app.Application.ActivityLifecycleCallbacks
+    public void onActivityDestroyed(android.app.Activity r1) {
+            r0 = this;
+            return
+    }
+
+    @Override // android.app.Application.ActivityLifecycleCallbacks
+    public void onActivityPaused(android.app.Activity r2) {
+            r1 = this;
+            boolean r0 = r2.isFinishing()
+            if (r0 == 0) goto Lf
+            java.util.Set<android.content.Intent> r0 = r1.f7072Y
+            android.content.Intent r2 = r2.getIntent()
+            r0.remove(r2)
+        Lf:
+            return
+    }
+
+    @Override // android.app.Application.ActivityLifecycleCallbacks
+    public void onActivityResumed(android.app.Activity r1) {
+            r0 = this;
+            return
+    }
+
+    @Override // android.app.Application.ActivityLifecycleCallbacks
+    public void onActivitySaveInstanceState(android.app.Activity r1, android.os.Bundle r2) {
+            r0 = this;
+            return
+    }
+
+    @Override // android.app.Application.ActivityLifecycleCallbacks
+    public void onActivityStarted(android.app.Activity r1) {
+            r0 = this;
+            return
+    }
+
+    @Override // android.app.Application.ActivityLifecycleCallbacks
+    public void onActivityStopped(android.app.Activity r1) {
+            r0 = this;
+            return
+    }
+}
+package p057db;
+
+/* renamed from: db.n */
+/* loaded from: classes.dex */
+public final /* synthetic */ class C1413n implements va.InterfaceC6629a.a, p327s7.InterfaceC5982f {
+
+    /* renamed from: Y */
+    public final com.google.firebase.messaging.FirebaseMessaging f7081Y;
+
+    public C1413n(com.google.firebase.messaging.FirebaseMessaging r2, int r3) {
+            r1 = this;
+            r0 = 1
+            if (r3 == r0) goto L9
+            r1.<init>()
+            r1.f7081Y = r2
+            return
+        L9:
+            r1.<init>()
+            r1.f7081Y = r2
+            return
+    }
+
+    @Override // p327s7.InterfaceC5982f
+    /* renamed from: d */
+    public void mo1270d(java.lang.Object r3) {
+            r2 = this;
+            com.google.firebase.messaging.FirebaseMessaging r0 = r2.f7081Y
+            db.g0 r3 = (p057db.C1400g0) r3
+            com.google.firebase.messaging.FirebaseMessaging$a r0 = r0.f6613g
+            boolean r0 = r0.m3663b()
+            if (r0 == 0) goto L28
+            db.e0 r0 = r3.f7047i
+            db.d0 r0 = r0.m3916a()
+            if (r0 == 0) goto L16
+            r0 = 1
+            goto L17
+        L16:
+            r0 = 0
+        L17:
+            if (r0 == 0) goto L28
+            monitor-enter(r3)
+            boolean r0 = r3.f7046h     // Catch: java.lang.Throwable -> L25
+            monitor-exit(r3)
+            if (r0 != 0) goto L28
+            r0 = 0
+            r3.m3924g(r0)
+            goto L28
+        L25:
+            r0 = move-exception
+            monitor-exit(r3)
+            throw r0
+        L28:
+            return
+    }
+}
+package p057db;
+
+/* renamed from: db.p */
+/* loaded from: classes.dex */
+public final /* synthetic */ class C1415p implements p432y9.InterfaceC7139f {
+
+    /* renamed from: a */
+    public static final p432y9.InterfaceC7139f f7083a = null;
+
+    static {
+            db.p r0 = new db.p
+            r0.<init>()
+            p057db.C1415p.f7083a = r0
+            return
+    }
+
+    public C1415p() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p432y9.InterfaceC7139f
+    /* renamed from: a */
+    public java.lang.Object mo3940a(p432y9.InterfaceC7137d r1) {
+            r0 = this;
+            com.google.firebase.messaging.FirebaseMessaging r1 = com.google.firebase.messaging.FirebaseMessagingRegistrar.m3665xc94cb159(r1)
+            return r1
+    }
+}
+package p057db;
+
+/* renamed from: db.r */
+/* loaded from: classes.dex */
+public class C1417r {
+
+    /* renamed from: a */
+    public final p251o9.C5180d f7085a;
+
+    /* renamed from: b */
+    public final p057db.C1421v f7086b;
+
+    /* renamed from: c */
+    public final p164j6.C3429c f7087c;
+
+    /* renamed from: d */
+    public final p392wa.InterfaceC6823b<p095fb.InterfaceC2137g> f7088d;
+
+    /* renamed from: e */
+    public final p392wa.InterfaceC6823b<ua.InterfaceC6369d> f7089e;
+
+    /* renamed from: f */
+    public final p412xa.InterfaceC7011d f7090f;
+
+    public C1417r(p251o9.C5180d r3, p057db.C1421v r4, p392wa.InterfaceC6823b<p095fb.InterfaceC2137g> r5, p392wa.InterfaceC6823b<ua.InterfaceC6369d> r6, p412xa.InterfaceC7011d r7) {
+            r2 = this;
+            j6.c r0 = new j6.c
+            r3.m11497a()
+            android.content.Context r1 = r3.f20312a
+            r0.<init>(r1)
+            r2.<init>()
+            r2.f7085a = r3
+            r2.f7086b = r4
+            r2.f7087c = r0
+            r2.f7088d = r5
+            r2.f7089e = r6
+            r2.f7090f = r7
+            return
+    }
+
+    /* renamed from: a */
+    public final p327s7.AbstractC5985i<java.lang.String> m3941a(p327s7.AbstractC5985i<android.os.Bundle> r3) {
+            r2 = this;
+            java.util.concurrent.Executor r0 = p057db.ExecutorC1416q.f7084Y
+            h7.rb r1 = new h7.rb
+            r1.<init>(r2)
+            s7.i r3 = r3.mo12447e(r0, r1)
+            return r3
+    }
+
+    /* renamed from: b */
+    public final p327s7.AbstractC5985i<android.os.Bundle> m3942b(java.lang.String r3, java.lang.String r4, java.lang.String r5, android.os.Bundle r6) {
+            r2 = this;
+            java.lang.String r0 = "scope"
+            r6.putString(r0, r5)
+            java.lang.String r5 = "sender"
+            r6.putString(r5, r4)
+            java.lang.String r5 = "subtype"
+            r6.putString(r5, r4)
+            java.lang.String r4 = "appid"
+            r6.putString(r4, r3)
+            java.lang.String r3 = "gmp_app_id"
+            o9.d r4 = r2.f7085a
+            r4.m11497a()
+            o9.h r4 = r4.f20314c
+            java.lang.String r4 = r4.f20325b
+            r6.putString(r3, r4)
+            java.lang.String r3 = "gmsv"
+            db.v r4 = r2.f7086b
+            monitor-enter(r4)
+            int r5 = r4.f7098d     // Catch: java.lang.Throwable -> L162
+            if (r5 != 0) goto L37
+            java.lang.String r5 = "com.google.android.gms"
+            android.content.pm.PackageInfo r5 = r4.m3948c(r5)     // Catch: java.lang.Throwable -> L162
+            if (r5 == 0) goto L37
+            int r5 = r5.versionCode     // Catch: java.lang.Throwable -> L162
+            r4.f7098d = r5     // Catch: java.lang.Throwable -> L162
+        L37:
+            int r5 = r4.f7098d     // Catch: java.lang.Throwable -> L162
+            monitor-exit(r4)
+            java.lang.String r4 = java.lang.Integer.toString(r5)
+            r6.putString(r3, r4)
+            java.lang.String r3 = "osv"
+            int r4 = android.os.Build.VERSION.SDK_INT
+            java.lang.String r4 = java.lang.Integer.toString(r4)
+            r6.putString(r3, r4)
+            java.lang.String r3 = "app_ver"
+            db.v r4 = r2.f7086b
+            java.lang.String r4 = r4.m3947a()
+            r6.putString(r3, r4)
+            java.lang.String r3 = "app_ver_name"
+            db.v r4 = r2.f7086b
+            monitor-enter(r4)
+            java.lang.String r5 = r4.f7097c     // Catch: java.lang.Throwable -> L15f
+            if (r5 != 0) goto L63
+            r4.m3950e()     // Catch: java.lang.Throwable -> L15f
+        L63:
+            java.lang.String r5 = r4.f7097c     // Catch: java.lang.Throwable -> L15f
+            monitor-exit(r4)
+            r6.putString(r3, r5)
+            java.lang.String r3 = "firebase-app-name-hash"
+            o9.d r4 = r2.f7085a
+            r4.m11497a()
+            java.lang.String r4 = r4.f20313b
+            java.lang.String r5 = "SHA-1"
+            java.security.MessageDigest r5 = java.security.MessageDigest.getInstance(r5)     // Catch: java.security.NoSuchAlgorithmException -> L87
+            byte[] r4 = r4.getBytes()     // Catch: java.security.NoSuchAlgorithmException -> L87
+            byte[] r4 = r5.digest(r4)     // Catch: java.security.NoSuchAlgorithmException -> L87
+            r5 = 11
+            java.lang.String r4 = android.util.Base64.encodeToString(r4, r5)     // Catch: java.security.NoSuchAlgorithmException -> L87
+            goto L89
+        L87:
+            java.lang.String r4 = "[HASH-ERROR]"
+        L89:
+            r6.putString(r3, r4)
+            r3 = 0
+            xa.d r4 = r2.f7090f     // Catch: java.lang.InterruptedException -> Lb1 java.util.concurrent.ExecutionException -> Lb3
+            s7.i r4 = r4.mo14154a(r3)     // Catch: java.lang.InterruptedException -> Lb1 java.util.concurrent.ExecutionException -> Lb3
+            java.lang.Object r4 = p327s7.C5988l.m12460a(r4)     // Catch: java.lang.InterruptedException -> Lb1 java.util.concurrent.ExecutionException -> Lb3
+            com.google.firebase.installations.a r4 = (com.google.firebase.installations.AbstractC1244a) r4     // Catch: java.lang.InterruptedException -> Lb1 java.util.concurrent.ExecutionException -> Lb3
+            java.lang.String r4 = r4.mo3650a()     // Catch: java.lang.InterruptedException -> Lb1 java.util.concurrent.ExecutionException -> Lb3
+            boolean r5 = android.text.TextUtils.isEmpty(r4)     // Catch: java.lang.InterruptedException -> Lb1 java.util.concurrent.ExecutionException -> Lb3
+            if (r5 != 0) goto La9
+            java.lang.String r5 = "Goog-Firebase-Installations-Auth"
+            r6.putString(r5, r4)     // Catch: java.lang.InterruptedException -> Lb1 java.util.concurrent.ExecutionException -> Lb3
+            goto Lbb
+        La9:
+            java.lang.String r4 = "FirebaseMessaging"
+            java.lang.String r5 = "FIS auth token is empty"
+            android.util.Log.w(r4, r5)     // Catch: java.lang.InterruptedException -> Lb1 java.util.concurrent.ExecutionException -> Lb3
+            goto Lbb
+        Lb1:
+            r4 = move-exception
+            goto Lb4
+        Lb3:
+            r4 = move-exception
+        Lb4:
+            java.lang.String r5 = "FirebaseMessaging"
+            java.lang.String r0 = "Failed to get FIS auth token"
+            android.util.Log.e(r5, r0, r4)
+        Lbb:
+            java.lang.String r4 = "cliv"
+            java.lang.String r5 = "fcm-22.0.0"
+            r6.putString(r4, r5)
+            wa.b<ua.d> r4 = r2.f7089e
+            java.lang.Object r4 = r4.get()
+            ua.d r4 = (ua.InterfaceC6369d) r4
+            wa.b<fb.g> r5 = r2.f7088d
+            java.lang.Object r5 = r5.get()
+            fb.g r5 = (p095fb.InterfaceC2137g) r5
+            r0 = 1
+            if (r4 == 0) goto Lf5
+            if (r5 == 0) goto Lf5
+            java.lang.String r1 = "fire-iid"
+            int r4 = r4.mo13015a(r1)
+            if (r4 == r0) goto Lf5
+            java.lang.String r1 = "Firebase-Client-Log-Type"
+            int r4 = p365v.C6480g.m13148b(r4)
+            java.lang.String r4 = java.lang.Integer.toString(r4)
+            r6.putString(r1, r4)
+            java.lang.String r4 = "Firebase-Client"
+            java.lang.String r5 = r5.mo5694a()
+            r6.putString(r4, r5)
+        Lf5:
+            j6.c r4 = r2.f7087c
+            j6.o r5 = r4.f14878c
+            monitor-enter(r5)
+            int r1 = r5.f14910b     // Catch: java.lang.Throwable -> L15c
+            if (r1 != 0) goto L10a
+            java.lang.String r1 = "com.google.android.gms"
+            android.content.pm.PackageInfo r1 = r5.m7910b(r1)     // Catch: java.lang.Throwable -> L15c
+            if (r1 == 0) goto L10a
+            int r1 = r1.versionCode     // Catch: java.lang.Throwable -> L15c
+            r5.f14910b = r1     // Catch: java.lang.Throwable -> L15c
+        L10a:
+            int r1 = r5.f14910b     // Catch: java.lang.Throwable -> L15c
+            monitor-exit(r5)
+            r5 = 12000000(0xb71b00, float:1.6815582E-38)
+            if (r1 < r5) goto L135
+            android.content.Context r3 = r4.f14877b
+            j6.h r3 = p164j6.C3434h.m7889m(r3)
+            j6.p r4 = new j6.p
+            monitor-enter(r3)
+            int r5 = r3.f14895c0     // Catch: java.lang.Throwable -> L132
+            int r0 = r5 + 1
+            r3.f14895c0 = r0     // Catch: java.lang.Throwable -> L132
+            monitor-exit(r3)
+            r4.<init>(r5, r6)
+            s7.i r3 = r3.m7900n(r4)
+            java.util.concurrent.Executor r4 = p164j6.ExecutorC3447u.f14918Y
+            s7.a r5 = p164j6.C3443q.f14912Y
+            s7.i r3 = r3.mo12447e(r4, r5)
+            goto L15b
+        L132:
+            r4 = move-exception
+            monitor-exit(r3)
+            throw r4
+        L135:
+            j6.o r5 = r4.f14878c
+            int r5 = r5.m7909a()
+            if (r5 == 0) goto L13e
+            r3 = 1
+        L13e:
+            if (r3 != 0) goto L14c
+            java.io.IOException r3 = new java.io.IOException
+            java.lang.String r4 = "MISSING_INSTANCEID_SERVICE"
+            r3.<init>(r4)
+            s7.i r3 = p327s7.C5988l.m12463d(r3)
+            goto L15b
+        L14c:
+            s7.i r3 = r4.m7886b(r6)
+            java.util.concurrent.Executor r5 = p164j6.ExecutorC3447u.f14918Y
+            androidx.appcompat.widget.x r0 = new androidx.appcompat.widget.x
+            r0.<init>(r4, r6)
+            s7.i r3 = r3.mo12449g(r5, r0)
+        L15b:
+            return r3
+        L15c:
+            r3 = move-exception
+            monitor-exit(r5)
+            throw r3
+        L15f:
+            r3 = move-exception
+            monitor-exit(r4)
+            throw r3
+        L162:
+            r3 = move-exception
+            monitor-exit(r4)
+            throw r3
+    }
+}
+package p057db;
+
+/* renamed from: db.s */
+/* loaded from: classes.dex */
+public class C1418s implements java.io.Closeable {
+
+    /* renamed from: Y */
+    public final java.net.URL f7091Y;
+
+    /* renamed from: Z */
+    public p327s7.AbstractC5985i<android.graphics.Bitmap> f7092Z;
+
+    /* renamed from: a0 */
+    public volatile java.io.InputStream f7093a0;
+
+    public C1418s(java.net.URL r1) {
+            r0 = this;
+            r0.<init>()
+            r0.f7091Y = r1
+            return
+    }
+
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+            r7 = this;
+            java.io.InputStream r0 = r7.f7093a0     // Catch: java.lang.NullPointerException -> L21
+            java.util.logging.Logger r1 = p145i7.C3104m.f12494a     // Catch: java.lang.NullPointerException -> L21
+            if (r0 != 0) goto L7
+            goto L19
+        L7:
+            r0.close()     // Catch: java.io.IOException -> Lb java.lang.NullPointerException -> L21
+            goto L19
+        Lb:
+            r6 = move-exception
+            java.util.logging.Logger r1 = p145i7.C3104m.f12494a     // Catch: java.io.IOException -> L1a java.lang.NullPointerException -> L21
+            java.util.logging.Level r2 = java.util.logging.Level.WARNING     // Catch: java.io.IOException -> L1a java.lang.NullPointerException -> L21
+            java.lang.String r3 = "com.google.common.io.Closeables"
+            java.lang.String r4 = "close"
+            java.lang.String r5 = "IOException thrown while closing Closeable."
+            r1.logp(r2, r3, r4, r5, r6)     // Catch: java.io.IOException -> L1a java.lang.NullPointerException -> L21
+        L19:
+            return
+        L1a:
+            r0 = move-exception
+            java.lang.AssertionError r1 = new java.lang.AssertionError     // Catch: java.lang.NullPointerException -> L21
+            r1.<init>(r0)     // Catch: java.lang.NullPointerException -> L21
+            throw r1     // Catch: java.lang.NullPointerException -> L21
+        L21:
+            r0 = move-exception
+            java.lang.String r1 = "FirebaseMessaging"
+            java.lang.String r2 = "Failed to close the image download stream."
+            android.util.Log.e(r1, r2, r0)
+            return
+    }
+}
+package p057db;
+
+/* renamed from: db.t */
+/* loaded from: classes.dex */
+public final /* synthetic */ class C1419t implements p335t3.InterfaceC6152e {
+
+    /* renamed from: Y */
+    public static final p335t3.InterfaceC6152e f7094Y = null;
+
+    static {
+            db.t r0 = new db.t
+            r0.<init>()
+            p057db.C1419t.f7094Y = r0
+            return
+    }
+
+    public C1419t() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p335t3.InterfaceC6152e
+    public java.lang.Object apply(java.lang.Object r3) {
+            r2 = this;
+            eb.b r3 = (p076eb.C1812b) r3
+            java.util.Objects.requireNonNull(r3)
+            androidx.fragment.app.l0 r0 = p145i7.AbstractC3100i.f12490a
+            java.io.ByteArrayOutputStream r1 = new java.io.ByteArrayOutputStream
+            r1.<init>()
+            r0.m1267Y(r3, r1)     // Catch: java.io.IOException -> Lf
+        Lf:
+            byte[] r3 = r1.toByteArray()
+            return r3
+    }
+}
+package p057db;
+
+/* renamed from: db.u */
+/* loaded from: classes.dex */
+public class C1420u {
+    /* renamed from: a */
+    public static java.lang.String m3943a(android.os.Bundle r1) {
+            java.lang.String r0 = "from"
+            java.lang.String r1 = r1.getString(r0)
+            if (r1 == 0) goto L11
+            java.lang.String r0 = "/topics/"
+            boolean r0 = r1.startsWith(r0)
+            if (r0 == 0) goto L11
+            return r1
+        L11:
+            r1 = 0
+            return r1
+    }
+
+    /* renamed from: b */
+    public static void m3944b(java.lang.String r5, android.os.Bundle r6) {
+            if (r6 != 0) goto L7
+            android.os.Bundle r6 = new android.os.Bundle
+            r6.<init>()
+        L7:
+            android.os.Bundle r0 = new android.os.Bundle
+            r0.<init>()
+            java.lang.String r1 = "google.c.a.c_id"
+            java.lang.String r1 = r6.getString(r1)
+            if (r1 == 0) goto L19
+            java.lang.String r2 = "_nmid"
+            r0.putString(r2, r1)
+        L19:
+            java.lang.String r1 = "google.c.a.c_l"
+            java.lang.String r1 = r6.getString(r1)
+            if (r1 == 0) goto L26
+            java.lang.String r2 = "_nmn"
+            r0.putString(r2, r1)
+        L26:
+            java.lang.String r1 = "google.c.a.m_l"
+            java.lang.String r1 = r6.getString(r1)
+            boolean r2 = android.text.TextUtils.isEmpty(r1)
+            if (r2 != 0) goto L37
+            java.lang.String r2 = "label"
+            r0.putString(r2, r1)
+        L37:
+            java.lang.String r1 = "google.c.a.m_c"
+            java.lang.String r1 = r6.getString(r1)
+            boolean r2 = android.text.TextUtils.isEmpty(r1)
+            if (r2 != 0) goto L48
+            java.lang.String r2 = "message_channel"
+            r0.putString(r2, r1)
+        L48:
+            java.lang.String r1 = m3943a(r6)
+            if (r1 == 0) goto L53
+            java.lang.String r2 = "_nt"
+            r0.putString(r2, r1)
+        L53:
+            java.lang.String r1 = "google.c.a.ts"
+            java.lang.String r1 = r6.getString(r1)
+            java.lang.String r2 = "FirebaseMessaging"
+            if (r1 == 0) goto L6d
+            java.lang.String r3 = "_nmt"
+            int r1 = java.lang.Integer.parseInt(r1)     // Catch: java.lang.NumberFormatException -> L67
+            r0.putInt(r3, r1)     // Catch: java.lang.NumberFormatException -> L67
+            goto L6d
+        L67:
+            r1 = move-exception
+            java.lang.String r3 = "Error while parsing timestamp in GCM event"
+            android.util.Log.w(r2, r3, r1)
+        L6d:
+            java.lang.String r1 = "google.c.a.udt"
+            boolean r3 = r6.containsKey(r1)
+            if (r3 == 0) goto L7a
+            java.lang.String r1 = r6.getString(r1)
+            goto L7b
+        L7a:
+            r1 = 0
+        L7b:
+            if (r1 == 0) goto L8d
+            java.lang.String r3 = "_ndt"
+            int r1 = java.lang.Integer.parseInt(r1)     // Catch: java.lang.NumberFormatException -> L87
+            r0.putInt(r3, r1)     // Catch: java.lang.NumberFormatException -> L87
+            goto L8d
+        L87:
+            r1 = move-exception
+            java.lang.String r3 = "Error while parsing use_device_time in GCM event"
+            android.util.Log.w(r2, r3, r1)
+        L8d:
+            boolean r6 = p057db.C1422w.m3951l(r6)
+            r1 = 1
+            if (r1 == r6) goto L97
+            java.lang.String r6 = "data"
+            goto L99
+        L97:
+            java.lang.String r6 = "display"
+        L99:
+            java.lang.String r1 = "_nr"
+            boolean r1 = r1.equals(r5)
+            if (r1 != 0) goto La9
+            java.lang.String r1 = "_nf"
+            boolean r1 = r1.equals(r5)
+            if (r1 == 0) goto Lae
+        La9:
+            java.lang.String r1 = "_nmc"
+            r0.putString(r1, r6)
+        Lae:
+            r6 = 3
+            boolean r6 = android.util.Log.isLoggable(r2, r6)
+            if (r6 == 0) goto Le0
+            java.lang.String r6 = java.lang.String.valueOf(r0)
+            int r1 = r5.length()
+            int r3 = r6.length()
+            java.lang.StringBuilder r4 = new java.lang.StringBuilder
+            int r1 = r1 + 37
+            int r1 = r1 + r3
+            r4.<init>(r1)
+            java.lang.String r1 = "Logging to scion event="
+            r4.append(r1)
+            r4.append(r5)
+            java.lang.String r1 = " scionPayload="
+            r4.append(r1)
+            r4.append(r6)
+            java.lang.String r6 = r4.toString()
+            android.util.Log.d(r2, r6)
+        Le0:
+            o9.d r6 = p251o9.C5180d.m11494c()
+            java.lang.Class<s9.a> r1 = p329s9.InterfaceC5997a.class
+            r6.m11497a()
+            y9.i r6 = r6.f20315d
+            java.lang.Object r6 = r6.mo14246a(r1)
+            s9.a r6 = (p329s9.InterfaceC5997a) r6
+            if (r6 == 0) goto Lf9
+            java.lang.String r1 = "fcm"
+            r6.mo12483f(r1, r5, r0)
+            return
+        Lf9:
+            java.lang.String r5 = "Unable to log event: analytics library is missing"
+            android.util.Log.w(r2, r5)
+            return
+    }
+
+    /* renamed from: c */
+    public static boolean m3945c(android.content.Intent r2) {
+            if (r2 == 0) goto L23
+            java.lang.String r0 = r2.getAction()
+            java.lang.String r1 = "com.google.firebase.messaging.RECEIVE_DIRECT_BOOT"
+            boolean r0 = r1.equals(r0)
+            if (r0 == 0) goto Lf
+            goto L23
+        Lf:
+            android.os.Bundle r2 = r2.getExtras()
+            if (r2 != 0) goto L16
+            goto L23
+        L16:
+            java.lang.String r0 = "google.c.a.e"
+            java.lang.String r2 = r2.getString(r0)
+            java.lang.String r0 = "1"
+            boolean r2 = r0.equals(r2)
+            goto L24
+        L23:
+            r2 = 0
+        L24:
+            return r2
+    }
+}
+package p057db;
+
+/* renamed from: db.v */
+/* loaded from: classes.dex */
+public class C1421v {
+
+    /* renamed from: a */
+    public final android.content.Context f7095a;
+
+    /* renamed from: b */
+    public java.lang.String f7096b;
+
+    /* renamed from: c */
+    public java.lang.String f7097c;
+
+    /* renamed from: d */
+    public int f7098d;
+
+    /* renamed from: e */
+    public int f7099e;
+
+    public C1421v(android.content.Context r2) {
+            r1 = this;
+            r1.<init>()
+            r0 = 0
+            r1.f7099e = r0
+            r1.f7095a = r2
+            return
+    }
+
+    /* renamed from: b */
+    public static java.lang.String m3946b(p251o9.C5180d r3) {
+            r3.m11497a()
+            o9.h r0 = r3.f20314c
+            java.lang.String r0 = r0.f20328e
+            if (r0 == 0) goto La
+            return r0
+        La:
+            r3.m11497a()
+            o9.h r3 = r3.f20314c
+            java.lang.String r3 = r3.f20325b
+            java.lang.String r0 = "1:"
+            boolean r0 = r3.startsWith(r0)
+            if (r0 != 0) goto L1a
+            return r3
+        L1a:
+            java.lang.String r0 = ":"
+            java.lang.String[] r3 = r3.split(r0)
+            int r0 = r3.length
+            r1 = 2
+            r2 = 0
+            if (r0 >= r1) goto L26
+            return r2
+        L26:
+            r0 = 1
+            r3 = r3[r0]
+            boolean r0 = r3.isEmpty()
+            if (r0 == 0) goto L30
+            return r2
+        L30:
+            return r3
+    }
+
+    /* renamed from: a */
+    public synchronized java.lang.String m3947a() {
+            r1 = this;
+            monitor-enter(r1)
+            java.lang.String r0 = r1.f7096b     // Catch: java.lang.Throwable -> Lc
+            if (r0 != 0) goto L8
+            r1.m3950e()     // Catch: java.lang.Throwable -> Lc
+        L8:
+            java.lang.String r0 = r1.f7096b     // Catch: java.lang.Throwable -> Lc
+            monitor-exit(r1)
+            return r0
+        Lc:
+            r0 = move-exception
+            monitor-exit(r1)
+            throw r0
+    }
+
+    /* renamed from: c */
+    public final android.content.pm.PackageInfo m3948c(java.lang.String r4) {
+            r3 = this;
+            android.content.Context r0 = r3.f7095a     // Catch: android.content.pm.PackageManager.NameNotFoundException -> Lc
+            android.content.pm.PackageManager r0 = r0.getPackageManager()     // Catch: android.content.pm.PackageManager.NameNotFoundException -> Lc
+            r1 = 0
+            android.content.pm.PackageInfo r4 = r0.getPackageInfo(r4, r1)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> Lc
+            return r4
+        Lc:
+            r4 = move-exception
+            java.lang.String r4 = java.lang.String.valueOf(r4)
+            int r0 = r4.length()
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            int r0 = r0 + 23
+            r1.<init>(r0)
+            java.lang.String r0 = "Failed to find package "
+            java.lang.String r2 = "FirebaseMessaging"
+            p031c1.C0842j.m2517a(r1, r0, r4, r2)
+            r4 = 0
+            return r4
+    }
+
+    /* renamed from: d */
+    public boolean m3949d() {
+            r6 = this;
+            monitor-enter(r6)
+            int r0 = r6.f7099e     // Catch: java.lang.Throwable -> L81
+            r1 = 2
+            r2 = 1
+            r3 = 0
+            if (r0 == 0) goto Lb
+        L8:
+            monitor-exit(r6)
+            goto L7d
+        Lb:
+            android.content.Context r0 = r6.f7095a     // Catch: java.lang.Throwable -> L81
+            android.content.pm.PackageManager r0 = r0.getPackageManager()     // Catch: java.lang.Throwable -> L81
+            java.lang.String r4 = "com.google.android.c2dm.permission.SEND"
+            java.lang.String r5 = "com.google.android.gms"
+            int r4 = r0.checkPermission(r4, r5)     // Catch: java.lang.Throwable -> L81
+            r5 = -1
+            if (r4 != r5) goto L26
+            java.lang.String r0 = "FirebaseMessaging"
+            java.lang.String r1 = "Google Play services missing or without correct permission."
+            android.util.Log.e(r0, r1)     // Catch: java.lang.Throwable -> L81
+            monitor-exit(r6)
+            r0 = 0
+            goto L7d
+        L26:
+            boolean r4 = p353u6.C6345h.m12995a()     // Catch: java.lang.Throwable -> L81
+            if (r4 != 0) goto L4a
+            android.content.Intent r4 = new android.content.Intent     // Catch: java.lang.Throwable -> L81
+            java.lang.String r5 = "com.google.android.c2dm.intent.REGISTER"
+            r4.<init>(r5)     // Catch: java.lang.Throwable -> L81
+            java.lang.String r5 = "com.google.android.gms"
+            r4.setPackage(r5)     // Catch: java.lang.Throwable -> L81
+            java.util.List r4 = r0.queryIntentServices(r4, r3)     // Catch: java.lang.Throwable -> L81
+            if (r4 == 0) goto L4a
+            int r4 = r4.size()     // Catch: java.lang.Throwable -> L81
+            if (r4 > 0) goto L45
+            goto L4a
+        L45:
+            r6.f7099e = r2     // Catch: java.lang.Throwable -> L81
+            monitor-exit(r6)
+            r0 = 1
+            goto L7d
+        L4a:
+            android.content.Intent r4 = new android.content.Intent     // Catch: java.lang.Throwable -> L81
+            java.lang.String r5 = "com.google.iid.TOKEN_REQUEST"
+            r4.<init>(r5)     // Catch: java.lang.Throwable -> L81
+            java.lang.String r5 = "com.google.android.gms"
+            r4.setPackage(r5)     // Catch: java.lang.Throwable -> L81
+            java.util.List r0 = r0.queryBroadcastReceivers(r4, r3)     // Catch: java.lang.Throwable -> L81
+            if (r0 == 0) goto L68
+            int r0 = r0.size()     // Catch: java.lang.Throwable -> L81
+            if (r0 > 0) goto L63
+            goto L68
+        L63:
+            r6.f7099e = r1     // Catch: java.lang.Throwable -> L81
+            monitor-exit(r6)
+            r0 = 2
+            goto L7d
+        L68:
+            java.lang.String r0 = "FirebaseMessaging"
+            java.lang.String r4 = "Failed to resolve IID implementation package, falling back"
+            android.util.Log.w(r0, r4)     // Catch: java.lang.Throwable -> L81
+            boolean r0 = p353u6.C6345h.m12995a()     // Catch: java.lang.Throwable -> L81
+            if (r0 == 0) goto L79
+            r6.f7099e = r1     // Catch: java.lang.Throwable -> L81
+            r0 = 2
+            goto L8
+        L79:
+            r6.f7099e = r2     // Catch: java.lang.Throwable -> L81
+            r0 = 1
+            goto L8
+        L7d:
+            if (r0 == 0) goto L80
+            return r2
+        L80:
+            return r3
+        L81:
+            r0 = move-exception
+            monitor-exit(r6)
+            throw r0
+    }
+
+    /* renamed from: e */
+    public final synchronized void m3950e() {
+            r2 = this;
+            monitor-enter(r2)
+            android.content.Context r0 = r2.f7095a     // Catch: java.lang.Throwable -> L1d
+            java.lang.String r0 = r0.getPackageName()     // Catch: java.lang.Throwable -> L1d
+            android.content.pm.PackageInfo r0 = r2.m3948c(r0)     // Catch: java.lang.Throwable -> L1d
+            if (r0 == 0) goto L1b
+            int r1 = r0.versionCode     // Catch: java.lang.Throwable -> L1d
+            java.lang.String r1 = java.lang.Integer.toString(r1)     // Catch: java.lang.Throwable -> L1d
+            r2.f7096b = r1     // Catch: java.lang.Throwable -> L1d
+            java.lang.String r0 = r0.versionName     // Catch: java.lang.Throwable -> L1d
+            r2.f7097c = r0     // Catch: java.lang.Throwable -> L1d
+            monitor-exit(r2)
+            return
+        L1b:
+            monitor-exit(r2)
+            return
+        L1d:
+            r0 = move-exception
+            monitor-exit(r2)
+            throw r0
+    }
+}
+package p057db;
+
+/* renamed from: db.w */
+/* loaded from: classes.dex */
+public class C1422w {
+
+    /* renamed from: a */
+    public final android.os.Bundle f7100a;
+
+    public C1422w(android.os.Bundle r2) {
+            r1 = this;
+            r1.<init>()
+            java.lang.String r0 = "data"
+            java.util.Objects.requireNonNull(r2, r0)
+            android.os.Bundle r0 = new android.os.Bundle
+            r0.<init>(r2)
+            r1.f7100a = r0
+            return
+    }
+
+    /* renamed from: l */
+    public static boolean m3951l(android.os.Bundle r4) {
+            java.lang.String r0 = "gcm.n.e"
+            java.lang.String r1 = r4.getString(r0)
+            java.lang.String r2 = "1"
+            boolean r1 = r2.equals(r1)
+            if (r1 != 0) goto L23
+            java.lang.String r1 = "gcm.n."
+            java.lang.String r3 = "gcm.notification."
+            java.lang.String r0 = r0.replace(r1, r3)
+            java.lang.String r4 = r4.getString(r0)
+            boolean r4 = r2.equals(r4)
+            if (r4 == 0) goto L21
+            goto L23
+        L21:
+            r4 = 0
+            return r4
+        L23:
+            r4 = 1
+            return r4
+    }
+
+    /* renamed from: n */
+    public static java.lang.String m3952n(java.lang.String r1) {
+            java.lang.String r0 = "gcm.n."
+            boolean r0 = r1.startsWith(r0)
+            if (r0 == 0) goto Ld
+            r0 = 6
+            java.lang.String r1 = r1.substring(r0)
+        Ld:
+            return r1
+    }
+
+    /* renamed from: a */
+    public boolean m3953a(java.lang.String r2) {
+            r1 = this;
+            java.lang.String r2 = r1.m3962j(r2)
+            java.lang.String r0 = "1"
+            boolean r0 = r0.equals(r2)
+            if (r0 != 0) goto L15
+            boolean r2 = java.lang.Boolean.parseBoolean(r2)
+            if (r2 == 0) goto L13
+            goto L15
+        L13:
+            r2 = 0
+            return r2
+        L15:
+            r2 = 1
+            return r2
+    }
+
+    /* renamed from: b */
+    public java.lang.Integer m3954b(java.lang.String r5) {
+            r4 = this;
+            java.lang.String r0 = r4.m3962j(r5)
+            boolean r1 = android.text.TextUtils.isEmpty(r0)
+            if (r1 != 0) goto L44
+            int r1 = java.lang.Integer.parseInt(r0)     // Catch: java.lang.NumberFormatException -> L13
+            java.lang.Integer r5 = java.lang.Integer.valueOf(r1)     // Catch: java.lang.NumberFormatException -> L13
+            return r5
+        L13:
+            java.lang.String r5 = m3952n(r5)
+            java.lang.String r1 = java.lang.String.valueOf(r5)
+            int r1 = r1.length()
+            java.lang.String r2 = java.lang.String.valueOf(r0)
+            int r2 = r2.length()
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder
+            int r1 = r1 + 38
+            int r1 = r1 + r2
+            r3.<init>(r1)
+            java.lang.String r1 = "Couldn't parse value of "
+            java.lang.String r2 = "("
+            p179k1.C3661s.m8090a(r3, r1, r5, r2, r0)
+            java.lang.String r5 = ") into an int"
+            r3.append(r5)
+            java.lang.String r5 = r3.toString()
+            java.lang.String r0 = "NotificationParams"
+            android.util.Log.w(r0, r5)
+        L44:
+            r5 = 0
+            return r5
+    }
+
+    /* renamed from: c */
+    public org.json.JSONArray m3955c(java.lang.String r5) {
+            r4 = this;
+            java.lang.String r0 = r4.m3962j(r5)
+            boolean r1 = android.text.TextUtils.isEmpty(r0)
+            if (r1 != 0) goto L41
+            org.json.JSONArray r1 = new org.json.JSONArray     // Catch: org.json.JSONException -> L10
+            r1.<init>(r0)     // Catch: org.json.JSONException -> L10
+            return r1
+        L10:
+            java.lang.String r5 = m3952n(r5)
+            java.lang.String r1 = java.lang.String.valueOf(r5)
+            int r1 = r1.length()
+            java.lang.String r2 = java.lang.String.valueOf(r0)
+            int r2 = r2.length()
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder
+            int r1 = r1 + 50
+            int r1 = r1 + r2
+            r3.<init>(r1)
+            java.lang.String r1 = "Malformed JSON for key "
+            java.lang.String r2 = ": "
+            p179k1.C3661s.m8090a(r3, r1, r5, r2, r0)
+            java.lang.String r5 = ", falling back to default"
+            r3.append(r5)
+            java.lang.String r5 = r3.toString()
+            java.lang.String r0 = "NotificationParams"
+            android.util.Log.w(r0, r5)
+        L41:
+            r5 = 0
+            return r5
+    }
+
+    /* renamed from: d */
+    public int[] m3956d() {
+            r9 = this;
+            java.lang.String r0 = "NotificationParams"
+            java.lang.String r1 = ". Skipping setting LightSettings"
+            java.lang.String r2 = "LightSettings is invalid: "
+            java.lang.String r3 = "gcm.n.light_settings"
+            org.json.JSONArray r3 = r9.m3955c(r3)
+            r4 = 0
+            if (r3 != 0) goto L10
+            return r4
+        L10:
+            r5 = 3
+            int[] r6 = new int[r5]
+            int r7 = r3.length()     // Catch: java.lang.IllegalArgumentException -> L47 org.json.JSONException -> L71
+            if (r7 != r5) goto L3f
+            r5 = 0
+            java.lang.String r7 = r3.optString(r5)     // Catch: java.lang.IllegalArgumentException -> L47 org.json.JSONException -> L71
+            int r7 = android.graphics.Color.parseColor(r7)     // Catch: java.lang.IllegalArgumentException -> L47 org.json.JSONException -> L71
+            r8 = -16777216(0xffffffffff000000, float:-1.7014118E38)
+            if (r7 == r8) goto L37
+            r6[r5] = r7     // Catch: java.lang.IllegalArgumentException -> L47 org.json.JSONException -> L71
+            r5 = 1
+            int r7 = r3.optInt(r5)     // Catch: java.lang.IllegalArgumentException -> L47 org.json.JSONException -> L71
+            r6[r5] = r7     // Catch: java.lang.IllegalArgumentException -> L47 org.json.JSONException -> L71
+            r5 = 2
+            int r7 = r3.optInt(r5)     // Catch: java.lang.IllegalArgumentException -> L47 org.json.JSONException -> L71
+            r6[r5] = r7     // Catch: java.lang.IllegalArgumentException -> L47 org.json.JSONException -> L71
+            return r6
+        L37:
+            java.lang.IllegalArgumentException r5 = new java.lang.IllegalArgumentException     // Catch: java.lang.IllegalArgumentException -> L47 org.json.JSONException -> L71
+            java.lang.String r6 = "Transparent color is invalid"
+            r5.<init>(r6)     // Catch: java.lang.IllegalArgumentException -> L47 org.json.JSONException -> L71
+            throw r5     // Catch: java.lang.IllegalArgumentException -> L47 org.json.JSONException -> L71
+        L3f:
+            org.json.JSONException r5 = new org.json.JSONException     // Catch: java.lang.IllegalArgumentException -> L47 org.json.JSONException -> L71
+            java.lang.String r6 = "lightSettings don't have all three fields"
+            r5.<init>(r6)     // Catch: java.lang.IllegalArgumentException -> L47 org.json.JSONException -> L71
+            throw r5     // Catch: java.lang.IllegalArgumentException -> L47 org.json.JSONException -> L71
+        L47:
+            r5 = move-exception
+            java.lang.String r3 = java.lang.String.valueOf(r3)
+            java.lang.String r5 = r5.getMessage()
+            int r6 = r3.length()
+            java.lang.String r7 = java.lang.String.valueOf(r5)
+            int r7 = r7.length()
+            java.lang.StringBuilder r8 = new java.lang.StringBuilder
+            int r6 = r6 + 60
+            int r6 = r6 + r7
+            r8.<init>(r6)
+            java.lang.String r6 = ". "
+            p179k1.C3661s.m8090a(r8, r2, r3, r6, r5)
+            r8.append(r1)
+            java.lang.String r1 = r8.toString()
+            goto L84
+        L71:
+            java.lang.String r3 = java.lang.String.valueOf(r3)
+            int r5 = r3.length()
+            java.lang.StringBuilder r6 = new java.lang.StringBuilder
+            int r5 = r5 + 58
+            r6.<init>(r5)
+            java.lang.String r1 = p083f.C1932s.m4774a(r6, r2, r3, r1)
+        L84:
+            android.util.Log.w(r0, r1)
+            return r4
+    }
+
+    /* renamed from: e */
+    public android.net.Uri m3957e() {
+            r2 = this;
+            java.lang.String r0 = "gcm.n.link_android"
+            java.lang.String r0 = r2.m3962j(r0)
+            boolean r1 = android.text.TextUtils.isEmpty(r0)
+            if (r1 == 0) goto L12
+            java.lang.String r0 = "gcm.n.link"
+            java.lang.String r0 = r2.m3962j(r0)
+        L12:
+            boolean r1 = android.text.TextUtils.isEmpty(r0)
+            if (r1 != 0) goto L1d
+            android.net.Uri r0 = android.net.Uri.parse(r0)
+            return r0
+        L1d:
+            r0 = 0
+            return r0
+    }
+
+    /* renamed from: f */
+    public java.lang.Object[] m3958f(java.lang.String r5) {
+            r4 = this;
+            java.lang.String r5 = java.lang.String.valueOf(r5)
+            java.lang.String r0 = "_loc_args"
+            java.lang.String r5 = r5.concat(r0)
+            org.json.JSONArray r5 = r4.m3955c(r5)
+            if (r5 != 0) goto L12
+            r5 = 0
+            return r5
+        L12:
+            int r0 = r5.length()
+            java.lang.String[] r1 = new java.lang.String[r0]
+            r2 = 0
+        L19:
+            if (r2 >= r0) goto L24
+            java.lang.String r3 = r5.optString(r2)
+            r1[r2] = r3
+            int r2 = r2 + 1
+            goto L19
+        L24:
+            return r1
+    }
+
+    /* renamed from: g */
+    public java.lang.String m3959g(java.lang.String r2) {
+            r1 = this;
+            java.lang.String r2 = java.lang.String.valueOf(r2)
+            java.lang.String r0 = "_loc_key"
+            java.lang.String r2 = r2.concat(r0)
+            java.lang.String r2 = r1.m3962j(r2)
+            return r2
+    }
+
+    /* renamed from: h */
+    public java.lang.Long m3960h(java.lang.String r5) {
+            r4 = this;
+            java.lang.String r0 = r4.m3962j(r5)
+            boolean r1 = android.text.TextUtils.isEmpty(r0)
+            if (r1 != 0) goto L44
+            long r1 = java.lang.Long.parseLong(r0)     // Catch: java.lang.NumberFormatException -> L13
+            java.lang.Long r5 = java.lang.Long.valueOf(r1)     // Catch: java.lang.NumberFormatException -> L13
+            return r5
+        L13:
+            java.lang.String r5 = m3952n(r5)
+            java.lang.String r1 = java.lang.String.valueOf(r5)
+            int r1 = r1.length()
+            java.lang.String r2 = java.lang.String.valueOf(r0)
+            int r2 = r2.length()
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder
+            int r1 = r1 + 38
+            int r1 = r1 + r2
+            r3.<init>(r1)
+            java.lang.String r1 = "Couldn't parse value of "
+            java.lang.String r2 = "("
+            p179k1.C3661s.m8090a(r3, r1, r5, r2, r0)
+            java.lang.String r5 = ") into a long"
+            r3.append(r5)
+            java.lang.String r5 = r3.toString()
+            java.lang.String r0 = "NotificationParams"
+            android.util.Log.w(r0, r5)
+        L44:
+            r5 = 0
+            return r5
+    }
+
+    /* renamed from: i */
+    public java.lang.String m3961i(android.content.res.Resources r7, java.lang.String r8, java.lang.String r9) {
+            r6 = this;
+            java.lang.String r0 = r6.m3962j(r9)
+            boolean r1 = android.text.TextUtils.isEmpty(r0)
+            if (r1 != 0) goto Lb
+            return r0
+        Lb:
+            java.lang.String r0 = r6.m3959g(r9)
+            boolean r1 = android.text.TextUtils.isEmpty(r0)
+            r2 = 0
+            if (r1 == 0) goto L18
+            goto L9a
+        L18:
+            java.lang.String r1 = "string"
+            int r8 = r7.getIdentifier(r0, r1, r8)
+            java.lang.String r0 = "NotificationParams"
+            java.lang.String r1 = " Default value will be used."
+            if (r8 != 0) goto L58
+            java.lang.String r7 = "_loc_key"
+            java.lang.String r7 = r9.concat(r7)
+            java.lang.String r7 = m3952n(r7)
+            java.lang.String r8 = java.lang.String.valueOf(r7)
+            int r8 = r8.length()
+            int r3 = r9.length()
+            java.lang.StringBuilder r4 = new java.lang.StringBuilder
+            int r8 = r8 + 49
+            int r8 = r8 + r3
+            r4.<init>(r8)
+            r4.append(r7)
+            java.lang.String r7 = " resource not found: "
+            r4.append(r7)
+            r4.append(r9)
+            r4.append(r1)
+            java.lang.String r7 = r4.toString()
+            android.util.Log.w(r0, r7)
+            goto L9a
+        L58:
+            java.lang.Object[] r3 = r6.m3958f(r9)
+            if (r3 != 0) goto L63
+            java.lang.String r2 = r7.getString(r8)
+            goto L9a
+        L63:
+            java.lang.String r2 = r7.getString(r8, r3)     // Catch: java.util.MissingFormatArgumentException -> L68
+            goto L9a
+        L68:
+            r7 = move-exception
+            java.lang.String r8 = m3952n(r9)
+            java.lang.String r9 = java.util.Arrays.toString(r3)
+            java.lang.String r3 = java.lang.String.valueOf(r8)
+            int r3 = r3.length()
+            java.lang.String r4 = java.lang.String.valueOf(r9)
+            int r4 = r4.length()
+            java.lang.StringBuilder r5 = new java.lang.StringBuilder
+            int r3 = r3 + 58
+            int r3 = r3 + r4
+            r5.<init>(r3)
+            java.lang.String r3 = "Missing format argument for "
+            java.lang.String r4 = ": "
+            p179k1.C3661s.m8090a(r5, r3, r8, r4, r9)
+            r5.append(r1)
+            java.lang.String r8 = r5.toString()
+            android.util.Log.w(r0, r8, r7)
+        L9a:
+            return r2
+    }
+
+    /* renamed from: j */
+    public java.lang.String m3962j(java.lang.String r4) {
+            r3 = this;
+            android.os.Bundle r0 = r3.f7100a
+            boolean r1 = r0.containsKey(r4)
+            if (r1 != 0) goto L27
+            java.lang.String r1 = "gcm.n."
+            boolean r2 = r4.startsWith(r1)
+            if (r2 == 0) goto L27
+            boolean r2 = r4.startsWith(r1)
+            if (r2 != 0) goto L18
+            r1 = r4
+            goto L1e
+        L18:
+            java.lang.String r2 = "gcm.notification."
+            java.lang.String r1 = r4.replace(r1, r2)
+        L1e:
+            android.os.Bundle r2 = r3.f7100a
+            boolean r2 = r2.containsKey(r1)
+            if (r2 == 0) goto L27
+            r4 = r1
+        L27:
+            java.lang.String r4 = r0.getString(r4)
+            return r4
+    }
+
+    /* renamed from: k */
+    public long[] m3963k() {
+            r7 = this;
+            java.lang.String r0 = "gcm.n.vibrate_timings"
+            org.json.JSONArray r0 = r7.m3955c(r0)
+            r1 = 0
+            if (r0 != 0) goto La
+            return r1
+        La:
+            int r2 = r0.length()     // Catch: java.lang.Throwable -> L2c
+            r3 = 1
+            if (r2 <= r3) goto L24
+            int r2 = r0.length()     // Catch: java.lang.Throwable -> L2c
+            long[] r3 = new long[r2]     // Catch: java.lang.Throwable -> L2c
+            r4 = 0
+        L18:
+            if (r4 >= r2) goto L23
+            long r5 = r0.optLong(r4)     // Catch: java.lang.Throwable -> L2c
+            r3[r4] = r5     // Catch: java.lang.Throwable -> L2c
+            int r4 = r4 + 1
+            goto L18
+        L23:
+            return r3
+        L24:
+            org.json.JSONException r2 = new org.json.JSONException     // Catch: java.lang.Throwable -> L2c
+            java.lang.String r3 = "vibrateTimings have invalid length"
+            r2.<init>(r3)     // Catch: java.lang.Throwable -> L2c
+            throw r2     // Catch: java.lang.Throwable -> L2c
+        L2c:
+            java.lang.String r0 = java.lang.String.valueOf(r0)
+            int r2 = r0.length()
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder
+            int r2 = r2 + 74
+            r3.<init>(r2)
+            java.lang.String r2 = "User defined vibrateTimings is invalid: "
+            java.lang.String r4 = ". Skipping setting vibrateTimings."
+            java.lang.String r5 = "NotificationParams"
+            p057db.C1387a.m3905a(r3, r2, r0, r4, r5)
+            return r1
+    }
+
+    /* renamed from: m */
+    public android.os.Bundle m3964m() {
+            r4 = this;
+            android.os.Bundle r0 = new android.os.Bundle
+            android.os.Bundle r1 = r4.f7100a
+            r0.<init>(r1)
+            android.os.Bundle r1 = r4.f7100a
+            java.util.Set r1 = r1.keySet()
+            java.util.Iterator r1 = r1.iterator()
+        L11:
+            boolean r2 = r1.hasNext()
+            if (r2 == 0) goto L37
+            java.lang.Object r2 = r1.next()
+            java.lang.String r2 = (java.lang.String) r2
+            java.lang.String r3 = "google.c.a."
+            boolean r3 = r2.startsWith(r3)
+            if (r3 != 0) goto L30
+            java.lang.String r3 = "from"
+            boolean r3 = r2.equals(r3)
+            if (r3 == 0) goto L2e
+            goto L30
+        L2e:
+            r3 = 0
+            goto L31
+        L30:
+            r3 = 1
+        L31:
+            if (r3 != 0) goto L11
+            r0.remove(r2)
+            goto L11
+        L37:
+            return r0
+    }
+}
+package p057db;
+
+/* renamed from: db.x */
+/* loaded from: classes.dex */
+public final class C1423x extends p270p6.AbstractC5367a {
+    public static final android.os.Parcelable.Creator<p057db.C1423x> CREATOR = null;
+
+    /* renamed from: Y */
+    public android.os.Bundle f7101Y;
+
+    /* renamed from: Z */
+    public java.util.Map<java.lang.String, java.lang.String> f7102Z;
+
+    /* renamed from: a0 */
+    public p057db.C1423x.b f7103a0;
+
+    /* renamed from: db.x$a */
+    public static /* synthetic */ class a {
+    }
+
+    /* renamed from: db.x$b */
+    public static class b {
+
+        /* renamed from: a */
+        public final java.lang.String f7104a;
+
+        /* renamed from: b */
+        public final java.lang.String f7105b;
+
+        public b(p057db.C1422w r2, p057db.C1423x.a r3) {
+                r1 = this;
+                r1.<init>()
+                java.lang.String r3 = "gcm.n.title"
+                java.lang.String r0 = r2.m3962j(r3)
+                r1.f7104a = r0
+                r2.m3959g(r3)
+                m3965a(r2, r3)
+                java.lang.String r3 = "gcm.n.body"
+                java.lang.String r0 = r2.m3962j(r3)
+                r1.f7105b = r0
+                r2.m3959g(r3)
+                m3965a(r2, r3)
+                java.lang.String r3 = "gcm.n.icon"
+                r2.m3962j(r3)
+                java.lang.String r3 = "gcm.n.sound2"
+                java.lang.String r3 = r2.m3962j(r3)
+                boolean r3 = android.text.TextUtils.isEmpty(r3)
+                if (r3 == 0) goto L35
+                java.lang.String r3 = "gcm.n.sound"
+                r2.m3962j(r3)
+            L35:
+                java.lang.String r3 = "gcm.n.tag"
+                r2.m3962j(r3)
+                java.lang.String r3 = "gcm.n.color"
+                r2.m3962j(r3)
+                java.lang.String r3 = "gcm.n.click_action"
+                r2.m3962j(r3)
+                java.lang.String r3 = "gcm.n.android_channel_id"
+                r2.m3962j(r3)
+                r2.m3957e()
+                java.lang.String r3 = "gcm.n.image"
+                r2.m3962j(r3)
+                java.lang.String r3 = "gcm.n.ticker"
+                r2.m3962j(r3)
+                java.lang.String r3 = "gcm.n.notification_priority"
+                r2.m3954b(r3)
+                java.lang.String r3 = "gcm.n.visibility"
+                r2.m3954b(r3)
+                java.lang.String r3 = "gcm.n.notification_count"
+                r2.m3954b(r3)
+                java.lang.String r3 = "gcm.n.sticky"
+                r2.m3953a(r3)
+                java.lang.String r3 = "gcm.n.local_only"
+                r2.m3953a(r3)
+                java.lang.String r3 = "gcm.n.default_sound"
+                r2.m3953a(r3)
+                java.lang.String r3 = "gcm.n.default_vibrate_timings"
+                r2.m3953a(r3)
+                java.lang.String r3 = "gcm.n.default_light_settings"
+                r2.m3953a(r3)
+                java.lang.String r3 = "gcm.n.event_time"
+                r2.m3960h(r3)
+                r2.m3956d()
+                r2.m3963k()
+                return
+        }
+
+        /* renamed from: a */
+        public static java.lang.String[] m3965a(p057db.C1422w r2, java.lang.String r3) {
+                java.lang.Object[] r2 = r2.m3958f(r3)
+                if (r2 != 0) goto L8
+                r2 = 0
+                return r2
+            L8:
+                int r3 = r2.length
+                java.lang.String[] r3 = new java.lang.String[r3]
+                r0 = 0
+            Lc:
+                int r1 = r2.length
+                if (r0 >= r1) goto L1a
+                r1 = r2[r0]
+                java.lang.String r1 = java.lang.String.valueOf(r1)
+                r3[r0] = r1
+                int r0 = r0 + 1
+                goto Lc
+            L1a:
+                return r3
+        }
+    }
+
+    static {
+            db.y r0 = new db.y
+            r0.<init>()
+            p057db.C1423x.CREATOR = r0
+            return
+    }
+
+    public C1423x(android.os.Bundle r1) {
+            r0 = this;
+            r0.<init>()
+            r0.f7101Y = r1
+            return
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(android.os.Parcel r4, int r5) {
+            r3 = this;
+            r5 = 20293(0x4f45, float:2.8437E-41)
+            int r5 = p270p6.C5369c.m11723k(r4, r5)
+            r0 = 2
+            android.os.Bundle r1 = r3.f7101Y
+            r2 = 0
+            p270p6.C5369c.m11714b(r4, r0, r1, r2)
+            p270p6.C5369c.m11726n(r4, r5)
+            return
+    }
+}
+package p057db;
+
+/* renamed from: db.y */
+/* loaded from: classes.dex */
+public class C1424y implements android.os.Parcelable.Creator<p057db.C1423x> {
+    public C1424y() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public p057db.C1423x createFromParcel(android.os.Parcel r6) {
+            r5 = this;
+            int r0 = p270p6.C5368b.m11710t(r6)
+            r1 = 0
+        L5:
+            int r2 = r6.dataPosition()
+            if (r2 >= r0) goto L1f
+            int r2 = r6.readInt()
+            r3 = 65535(0xffff, float:9.1834E-41)
+            r3 = r3 & r2
+            r4 = 2
+            if (r3 == r4) goto L1a
+            p270p6.C5368b.m11709s(r6, r2)
+            goto L5
+        L1a:
+            android.os.Bundle r1 = p270p6.C5368b.m11691a(r6, r2)
+            goto L5
+        L1f:
+            p270p6.C5368b.m11699i(r6, r0)
+            db.x r6 = new db.x
+            r6.<init>(r1)
+            return r6
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public p057db.C1423x[] newArray(int r1) {
+            r0 = this;
+            db.x[] r1 = new p057db.C1423x[r1]
+            return r1
+    }
+}
+package p057db;
+
+/* renamed from: db.z */
+/* loaded from: classes.dex */
+public class C1425z {
+
+    /* renamed from: a */
+    public final java.util.concurrent.Executor f7106a;
+
+    /* renamed from: b */
+    public final java.util.Map<java.lang.String, p327s7.AbstractC5985i<java.lang.String>> f7107b;
+
+    public C1425z(java.util.concurrent.Executor r2) {
+            r1 = this;
+            r1.<init>()
+            s.a r0 = new s.a
+            r0.<init>()
+            r1.f7107b = r0
+            r1.f7106a = r2
+            return
+    }
+}
+package p057db;
+
+/* renamed from: db.e */
+/* loaded from: classes.dex */
+public final /* synthetic */ class ExecutorC1395e implements java.util.concurrent.Executor {
+
+    /* renamed from: Y */
+    public static final java.util.concurrent.Executor f7019Y = null;
+
+    static {
+            db.e r0 = new db.e
+            r0.<init>()
+            p057db.ExecutorC1395e.f7019Y = r0
+            return
+    }
+
+    public ExecutorC1395e() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // java.util.concurrent.Executor
+    public void execute(java.lang.Runnable r1) {
+            r0 = this;
+            r1.run()
+            return
+    }
+}
+package p057db;
+
+/* renamed from: db.g */
+/* loaded from: classes.dex */
+public final /* synthetic */ class ExecutorC1399g implements java.util.concurrent.Executor {
+
+    /* renamed from: Y */
+    public static final java.util.concurrent.Executor f7036Y = null;
+
+    static {
+            db.g r0 = new db.g
+            r0.<init>()
+            p057db.ExecutorC1399g.f7036Y = r0
+            return
+    }
+
+    public ExecutorC1399g() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // java.util.concurrent.Executor
+    public void execute(java.lang.Runnable r1) {
+            r0 = this;
+            r1.run()
+            return
+    }
+}
+package p057db;
+
+/* renamed from: db.h */
+/* loaded from: classes.dex */
+public final /* synthetic */ class ExecutorC1401h implements java.util.concurrent.Executor {
+
+    /* renamed from: Y */
+    public static final java.util.concurrent.Executor f7048Y = null;
+
+    static {
+            db.h r0 = new db.h
+            r0.<init>()
+            p057db.ExecutorC1401h.f7048Y = r0
+            return
+    }
+
+    public ExecutorC1401h() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // java.util.concurrent.Executor
+    public void execute(java.lang.Runnable r1) {
+            r0 = this;
+            r1.run()
+            return
+    }
+}
+package p057db;
+
+/* renamed from: db.j */
+/* loaded from: classes.dex */
+public final /* synthetic */ class ExecutorC1405j implements java.util.concurrent.Executor {
+
+    /* renamed from: Y */
+    public static final java.util.concurrent.Executor f7063Y = null;
+
+    static {
+            db.j r0 = new db.j
+            r0.<init>()
+            p057db.ExecutorC1405j.f7063Y = r0
+            return
+    }
+
+    public ExecutorC1405j() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // java.util.concurrent.Executor
+    public void execute(java.lang.Runnable r1) {
+            r0 = this;
+            r1.run()
+            return
+    }
+}
+package p057db;
+
+/* renamed from: db.j0 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class ExecutorC1406j0 implements java.util.concurrent.Executor {
+
+    /* renamed from: Y */
+    public static final java.util.concurrent.Executor f7064Y = null;
+
+    static {
+            db.j0 r0 = new db.j0
+            r0.<init>()
+            p057db.ExecutorC1406j0.f7064Y = r0
+            return
+    }
+
+    public ExecutorC1406j0() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // java.util.concurrent.Executor
+    public void execute(java.lang.Runnable r1) {
+            r0 = this;
+            r1.run()
+            return
+    }
+}
+package p057db;
+
+/* renamed from: db.q */
+/* loaded from: classes.dex */
+public final /* synthetic */ class ExecutorC1416q implements java.util.concurrent.Executor {
+
+    /* renamed from: Y */
+    public static final java.util.concurrent.Executor f7084Y = null;
+
+    static {
+            db.q r0 = new db.q
+            r0.<init>()
+            p057db.ExecutorC1416q.f7084Y = r0
+            return
+    }
+
+    public ExecutorC1416q() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // java.util.concurrent.Executor
+    public void execute(java.lang.Runnable r1) {
+            r0 = this;
+            r1.run()
+            return
+    }
+}
+package p057db;
+
+/* renamed from: db.c0 */
+/* loaded from: classes.dex */
+public class RunnableC1392c0 implements java.lang.Runnable {
+
+    /* renamed from: Y */
+    public final long f7008Y;
+
+    /* renamed from: Z */
+    public final android.os.PowerManager.WakeLock f7009Z;
+
+    /* renamed from: a0 */
+    public final com.google.firebase.messaging.FirebaseMessaging f7010a0;
+
+    /* renamed from: db.c0$a */
+    public static class a extends android.content.BroadcastReceiver {
+
+        /* renamed from: a */
+        public p057db.RunnableC1392c0 f7011a;
+
+        public a(p057db.RunnableC1392c0 r1) {
+                r0 = this;
+                r0.<init>()
+                r0.f7011a = r1
+                return
+        }
+
+        /* renamed from: a */
+        public void m3914a() {
+                r2 = this;
+                boolean r0 = p057db.RunnableC1392c0.m3911a()
+                if (r0 == 0) goto Ld
+                java.lang.String r0 = "FirebaseMessaging"
+                java.lang.String r1 = "Connectivity change received registered"
+                android.util.Log.d(r0, r1)
+            Ld:
+                android.content.IntentFilter r0 = new android.content.IntentFilter
+                java.lang.String r1 = "android.net.conn.CONNECTIVITY_CHANGE"
+                r0.<init>(r1)
+                db.c0 r1 = r2.f7011a
+                com.google.firebase.messaging.FirebaseMessaging r1 = r1.f7010a0
+                android.content.Context r1 = r1.f6610d
+                r1.registerReceiver(r2, r0)
+                return
+        }
+
+        @Override // android.content.BroadcastReceiver
+        public void onReceive(android.content.Context r3, android.content.Intent r4) {
+                r2 = this;
+                db.c0 r3 = r2.f7011a
+                if (r3 != 0) goto L5
+                return
+            L5:
+                boolean r3 = r3.m3912b()
+                if (r3 != 0) goto Lc
+                return
+            Lc:
+                boolean r3 = p057db.RunnableC1392c0.m3911a()
+                if (r3 == 0) goto L19
+                java.lang.String r3 = "FirebaseMessaging"
+                java.lang.String r4 = "Connectivity changed. Starting background sync."
+                android.util.Log.d(r3, r4)
+            L19:
+                db.c0 r3 = r2.f7011a
+                com.google.firebase.messaging.FirebaseMessaging r4 = r3.f7010a0
+                r0 = 0
+                r4.m3654b(r3, r0)
+                db.c0 r3 = r2.f7011a
+                com.google.firebase.messaging.FirebaseMessaging r3 = r3.f7010a0
+                android.content.Context r3 = r3.f6610d
+                r3.unregisterReceiver(r2)
+                r3 = 0
+                r2.f7011a = r3
+                return
+        }
+    }
+
+    @android.annotation.SuppressLint({"InvalidWakeLockTag"})
+    public RunnableC1392c0(com.google.firebase.messaging.FirebaseMessaging r9, long r10) {
+            r8 = this;
+            r8.<init>()
+            java.util.concurrent.ThreadPoolExecutor r0 = new java.util.concurrent.ThreadPoolExecutor
+            java.util.concurrent.TimeUnit r5 = java.util.concurrent.TimeUnit.SECONDS
+            java.util.concurrent.LinkedBlockingQueue r6 = new java.util.concurrent.LinkedBlockingQueue
+            r6.<init>()
+            v6.a r7 = new v6.a
+            java.lang.String r1 = "firebase-iid-executor"
+            r7.<init>(r1)
+            r1 = 0
+            r2 = 1
+            r3 = 30
+            r0.<init>(r1, r2, r3, r5, r6, r7)
+            r8.f7010a0 = r9
+            r8.f7008Y = r10
+            android.content.Context r9 = r9.f6610d
+            java.lang.String r10 = "power"
+            java.lang.Object r9 = r9.getSystemService(r10)
+            android.os.PowerManager r9 = (android.os.PowerManager) r9
+            r10 = 1
+            java.lang.String r11 = "fiid-sync"
+            android.os.PowerManager$WakeLock r9 = r9.newWakeLock(r10, r11)
+            r8.f7009Z = r9
+            r10 = 0
+            r9.setReferenceCounted(r10)
+            return
+    }
+
+    /* renamed from: a */
+    public static boolean m3911a() {
+            java.lang.String r0 = "FirebaseMessaging"
+            r1 = 3
+            boolean r2 = android.util.Log.isLoggable(r0, r1)
+            r3 = 0
+            r4 = 1
+            if (r2 != 0) goto L19
+            int r2 = android.os.Build.VERSION.SDK_INT
+            r5 = 23
+            if (r2 != r5) goto L1a
+            boolean r0 = android.util.Log.isLoggable(r0, r1)
+            if (r0 == 0) goto L18
+            goto L19
+        L18:
+            return r3
+        L19:
+            r3 = 1
+        L1a:
+            return r3
+    }
+
+    /* renamed from: b */
+    public boolean m3912b() {
+            r2 = this;
+            com.google.firebase.messaging.FirebaseMessaging r0 = r2.f7010a0
+            android.content.Context r0 = r0.f6610d
+            java.lang.String r1 = "connectivity"
+            java.lang.Object r0 = r0.getSystemService(r1)
+            android.net.ConnectivityManager r0 = (android.net.ConnectivityManager) r0
+            if (r0 == 0) goto L13
+            android.net.NetworkInfo r0 = r0.getActiveNetworkInfo()
+            goto L14
+        L13:
+            r0 = 0
+        L14:
+            if (r0 == 0) goto L1e
+            boolean r0 = r0.isConnected()
+            if (r0 == 0) goto L1e
+            r0 = 1
+            return r0
+        L1e:
+            r0 = 0
+            return r0
+    }
+
+    /* renamed from: c */
+    public boolean m3913c() {
+            r6 = this;
+            java.lang.String r0 = "FirebaseMessaging"
+            r1 = 1
+            r2 = 0
+            com.google.firebase.messaging.FirebaseMessaging r3 = r6.f7010a0     // Catch: java.lang.SecurityException -> L1f java.io.IOException -> L22
+            java.lang.String r3 = r3.m3653a()     // Catch: java.lang.SecurityException -> L1f java.io.IOException -> L22
+            if (r3 != 0) goto L12
+            java.lang.String r3 = "Token retrieval failed: null"
+            android.util.Log.e(r0, r3)     // Catch: java.lang.SecurityException -> L1f java.io.IOException -> L22
+            return r2
+        L12:
+            r3 = 3
+            boolean r3 = android.util.Log.isLoggable(r0, r3)     // Catch: java.lang.SecurityException -> L1f java.io.IOException -> L22
+            if (r3 == 0) goto L1e
+            java.lang.String r3 = "Token successfully retrieved"
+            android.util.Log.d(r0, r3)     // Catch: java.lang.SecurityException -> L1f java.io.IOException -> L22
+        L1e:
+            return r1
+        L1f:
+            java.lang.String r1 = "Token retrieval failed with SecurityException. Will retry token retrieval"
+            goto L67
+        L22:
+            r3 = move-exception
+            java.lang.String r4 = r3.getMessage()
+            java.lang.String r5 = "SERVICE_NOT_AVAILABLE"
+            boolean r5 = r5.equals(r4)
+            if (r5 != 0) goto L41
+            java.lang.String r5 = "INTERNAL_SERVER_ERROR"
+            boolean r5 = r5.equals(r4)
+            if (r5 != 0) goto L41
+            java.lang.String r5 = "InternalServerError"
+            boolean r4 = r5.equals(r4)
+            if (r4 == 0) goto L40
+            goto L41
+        L40:
+            r1 = 0
+        L41:
+            if (r1 == 0) goto L5f
+            java.lang.String r1 = r3.getMessage()
+            java.lang.String r3 = java.lang.String.valueOf(r1)
+            int r3 = r3.length()
+            java.lang.StringBuilder r4 = new java.lang.StringBuilder
+            int r3 = r3 + 52
+            r4.<init>(r3)
+            java.lang.String r3 = "Token retrieval failed: "
+            java.lang.String r5 = ". Will retry token retrieval"
+            java.lang.String r1 = p083f.C1932s.m4774a(r4, r3, r1, r5)
+            goto L67
+        L5f:
+            java.lang.String r1 = r3.getMessage()
+            if (r1 != 0) goto L6b
+            java.lang.String r1 = "Token retrieval failed without exception message. Will retry token retrieval"
+        L67:
+            android.util.Log.w(r0, r1)
+            return r2
+        L6b:
+            throw r3
+    }
+
+    @Override // java.lang.Runnable
+    @android.annotation.SuppressLint({"WakelockTimeout"})
+    public void run() {
+            r5 = this;
+            db.a0 r0 = p057db.C1388a0.m3906a()
+            com.google.firebase.messaging.FirebaseMessaging r1 = r5.f7010a0
+            android.content.Context r1 = r1.f6610d
+            boolean r0 = r0.m3908c(r1)
+            if (r0 == 0) goto L13
+            android.os.PowerManager$WakeLock r0 = r5.f7009Z
+            r0.acquire()
+        L13:
+            r0 = 0
+            com.google.firebase.messaging.FirebaseMessaging r1 = r5.f7010a0     // Catch: java.io.IOException -> L8b java.lang.Throwable -> L8d
+            r2 = 1
+            r1.m3658f(r2)     // Catch: java.io.IOException -> L8b java.lang.Throwable -> L8d
+            com.google.firebase.messaging.FirebaseMessaging r1 = r5.f7010a0     // Catch: java.io.IOException -> L8b java.lang.Throwable -> L8d
+            db.v r1 = r1.f6614h     // Catch: java.io.IOException -> L8b java.lang.Throwable -> L8d
+            boolean r1 = r1.m3949d()     // Catch: java.io.IOException -> L8b java.lang.Throwable -> L8d
+            if (r1 != 0) goto L3d
+            com.google.firebase.messaging.FirebaseMessaging r1 = r5.f7010a0     // Catch: java.io.IOException -> L8b java.lang.Throwable -> L8d
+            r1.m3658f(r0)     // Catch: java.io.IOException -> L8b java.lang.Throwable -> L8d
+            db.a0 r0 = p057db.C1388a0.m3906a()
+            com.google.firebase.messaging.FirebaseMessaging r1 = r5.f7010a0
+            android.content.Context r1 = r1.f6610d
+            boolean r0 = r0.m3908c(r1)
+            if (r0 == 0) goto L3c
+        L37:
+            android.os.PowerManager$WakeLock r0 = r5.f7009Z
+            r0.release()
+        L3c:
+            return
+        L3d:
+            db.a0 r1 = p057db.C1388a0.m3906a()     // Catch: java.io.IOException -> L8b java.lang.Throwable -> L8d
+            com.google.firebase.messaging.FirebaseMessaging r2 = r5.f7010a0     // Catch: java.io.IOException -> L8b java.lang.Throwable -> L8d
+            android.content.Context r2 = r2.f6610d     // Catch: java.io.IOException -> L8b java.lang.Throwable -> L8d
+            boolean r1 = r1.m3907b(r2)     // Catch: java.io.IOException -> L8b java.lang.Throwable -> L8d
+            if (r1 == 0) goto L69
+            boolean r1 = r5.m3912b()     // Catch: java.io.IOException -> L8b java.lang.Throwable -> L8d
+            if (r1 != 0) goto L69
+            db.c0$a r1 = new db.c0$a     // Catch: java.io.IOException -> L8b java.lang.Throwable -> L8d
+            r1.<init>(r5)     // Catch: java.io.IOException -> L8b java.lang.Throwable -> L8d
+            r1.m3914a()     // Catch: java.io.IOException -> L8b java.lang.Throwable -> L8d
+            db.a0 r0 = p057db.C1388a0.m3906a()
+            com.google.firebase.messaging.FirebaseMessaging r1 = r5.f7010a0
+            android.content.Context r1 = r1.f6610d
+            boolean r0 = r0.m3908c(r1)
+            if (r0 == 0) goto L68
+            goto L37
+        L68:
+            return
+        L69:
+            boolean r1 = r5.m3913c()     // Catch: java.io.IOException -> L8b java.lang.Throwable -> L8d
+            if (r1 == 0) goto L75
+            com.google.firebase.messaging.FirebaseMessaging r1 = r5.f7010a0     // Catch: java.io.IOException -> L8b java.lang.Throwable -> L8d
+            r1.m3658f(r0)     // Catch: java.io.IOException -> L8b java.lang.Throwable -> L8d
+            goto L7c
+        L75:
+            com.google.firebase.messaging.FirebaseMessaging r1 = r5.f7010a0     // Catch: java.io.IOException -> L8b java.lang.Throwable -> L8d
+            long r2 = r5.f7008Y     // Catch: java.io.IOException -> L8b java.lang.Throwable -> L8d
+            r1.m3660h(r2)     // Catch: java.io.IOException -> L8b java.lang.Throwable -> L8d
+        L7c:
+            db.a0 r0 = p057db.C1388a0.m3906a()
+            com.google.firebase.messaging.FirebaseMessaging r1 = r5.f7010a0
+            android.content.Context r1 = r1.f6610d
+            boolean r0 = r0.m3908c(r1)
+            if (r0 == 0) goto Lcd
+            goto L37
+        L8b:
+            r1 = move-exception
+            goto L8f
+        L8d:
+            r0 = move-exception
+            goto Lce
+        L8f:
+            java.lang.String r2 = "FirebaseMessaging"
+            java.lang.String r1 = r1.getMessage()     // Catch: java.lang.Throwable -> L8d
+            java.lang.String r3 = java.lang.String.valueOf(r1)     // Catch: java.lang.Throwable -> L8d
+            int r3 = r3.length()     // Catch: java.lang.Throwable -> L8d
+            int r3 = r3 + 93
+            java.lang.StringBuilder r4 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L8d
+            r4.<init>(r3)     // Catch: java.lang.Throwable -> L8d
+            java.lang.String r3 = "Topic sync or token retrieval failed on hard failure exceptions: "
+            r4.append(r3)     // Catch: java.lang.Throwable -> L8d
+            r4.append(r1)     // Catch: java.lang.Throwable -> L8d
+            java.lang.String r1 = ". Won't retry the operation."
+            r4.append(r1)     // Catch: java.lang.Throwable -> L8d
+            java.lang.String r1 = r4.toString()     // Catch: java.lang.Throwable -> L8d
+            android.util.Log.e(r2, r1)     // Catch: java.lang.Throwable -> L8d
+            com.google.firebase.messaging.FirebaseMessaging r1 = r5.f7010a0     // Catch: java.lang.Throwable -> L8d
+            r1.m3658f(r0)     // Catch: java.lang.Throwable -> L8d
+            db.a0 r0 = p057db.C1388a0.m3906a()
+            com.google.firebase.messaging.FirebaseMessaging r1 = r5.f7010a0
+            android.content.Context r1 = r1.f6610d
+            boolean r0 = r0.m3908c(r1)
+            if (r0 == 0) goto Lcd
+            goto L37
+        Lcd:
+            return
+        Lce:
+            db.a0 r1 = p057db.C1388a0.m3906a()
+            com.google.firebase.messaging.FirebaseMessaging r2 = r5.f7010a0
+            android.content.Context r2 = r2.f6610d
+            boolean r1 = r1.m3908c(r2)
+            if (r1 != 0) goto Ldd
+            goto Le2
+        Ldd:
+            android.os.PowerManager$WakeLock r1 = r5.f7009Z
+            r1.release()
+        Le2:
+            throw r0
+    }
+}
+package p057db;
+
+/* renamed from: db.h0 */
+/* loaded from: classes.dex */
+public class RunnableC1402h0 implements java.lang.Runnable {
+
+    /* renamed from: d0 */
+    public static final java.lang.Object f7049d0 = null;
+
+    /* renamed from: e0 */
+    public static java.lang.Boolean f7050e0;
+
+    /* renamed from: f0 */
+    public static java.lang.Boolean f7051f0;
+
+    /* renamed from: Y */
+    public final android.content.Context f7052Y;
+
+    /* renamed from: Z */
+    public final p057db.C1421v f7053Z;
+
+    /* renamed from: a0 */
+    public final android.os.PowerManager.WakeLock f7054a0;
+
+    /* renamed from: b0 */
+    public final p057db.C1400g0 f7055b0;
+
+    /* renamed from: c0 */
+    public final long f7056c0;
+
+    /* renamed from: db.h0$a */
+    public class a extends android.content.BroadcastReceiver {
+
+        /* renamed from: a */
+        public p057db.RunnableC1402h0 f7057a;
+
+        /* renamed from: b */
+        public final /* synthetic */ p057db.RunnableC1402h0 f7058b;
+
+        public a(p057db.RunnableC1402h0 r1, p057db.RunnableC1402h0 r2) {
+                r0 = this;
+                r0.f7058b = r1
+                r0.<init>()
+                r0.f7057a = r2
+                return
+        }
+
+        /* renamed from: a */
+        public void m3930a() {
+                r3 = this;
+                boolean r0 = p057db.RunnableC1402h0.m3925a()
+                if (r0 == 0) goto Ld
+                java.lang.String r0 = "FirebaseMessaging"
+                java.lang.String r1 = "Connectivity change received registered"
+                android.util.Log.d(r0, r1)
+            Ld:
+                db.h0 r0 = r3.f7058b
+                android.content.Context r0 = r0.f7052Y
+                android.content.IntentFilter r1 = new android.content.IntentFilter
+                java.lang.String r2 = "android.net.conn.CONNECTIVITY_CHANGE"
+                r1.<init>(r2)
+                r0.registerReceiver(r3, r1)
+                return
+        }
+
+        @Override // android.content.BroadcastReceiver
+        public synchronized void onReceive(android.content.Context r5, android.content.Intent r6) {
+                r4 = this;
+                monitor-enter(r4)
+                db.h0 r6 = r4.f7057a     // Catch: java.lang.Throwable -> L31
+                if (r6 != 0) goto L7
+                monitor-exit(r4)
+                return
+            L7:
+                boolean r6 = r6.m3929e()     // Catch: java.lang.Throwable -> L31
+                if (r6 != 0) goto Lf
+                monitor-exit(r4)
+                return
+            Lf:
+                boolean r6 = p057db.RunnableC1402h0.m3925a()     // Catch: java.lang.Throwable -> L31
+                if (r6 == 0) goto L1c
+                java.lang.String r6 = "FirebaseMessaging"
+                java.lang.String r0 = "Connectivity changed. Starting background sync."
+                android.util.Log.d(r6, r0)     // Catch: java.lang.Throwable -> L31
+            L1c:
+                db.h0 r6 = r4.f7057a     // Catch: java.lang.Throwable -> L31
+                db.g0 r0 = r6.f7055b0     // Catch: java.lang.Throwable -> L31
+                r1 = 0
+                java.util.concurrent.ScheduledExecutorService r0 = r0.f7045g     // Catch: java.lang.Throwable -> L31
+                java.util.concurrent.TimeUnit r3 = java.util.concurrent.TimeUnit.SECONDS     // Catch: java.lang.Throwable -> L31
+                r0.schedule(r6, r1, r3)     // Catch: java.lang.Throwable -> L31
+                r5.unregisterReceiver(r4)     // Catch: java.lang.Throwable -> L31
+                r5 = 0
+                r4.f7057a = r5     // Catch: java.lang.Throwable -> L31
+                monitor-exit(r4)
+                return
+            L31:
+                r5 = move-exception
+                monitor-exit(r4)
+                throw r5
+        }
+    }
+
+    static {
+            java.lang.Object r0 = new java.lang.Object
+            r0.<init>()
+            p057db.RunnableC1402h0.f7049d0 = r0
+            return
+    }
+
+    public RunnableC1402h0(p057db.C1400g0 r1, android.content.Context r2, p057db.C1421v r3, long r4) {
+            r0 = this;
+            r0.<init>()
+            r0.f7055b0 = r1
+            r0.f7052Y = r2
+            r0.f7056c0 = r4
+            r0.f7053Z = r3
+            java.lang.String r1 = "power"
+            java.lang.Object r1 = r2.getSystemService(r1)
+            android.os.PowerManager r1 = (android.os.PowerManager) r1
+            r2 = 1
+            java.lang.String r3 = "wake:com.google.firebase.messaging"
+            android.os.PowerManager$WakeLock r1 = r1.newWakeLock(r2, r3)
+            r0.f7054a0 = r1
+            return
+    }
+
+    /* renamed from: a */
+    public static boolean m3925a() {
+            java.lang.String r0 = "FirebaseMessaging"
+            r1 = 3
+            boolean r2 = android.util.Log.isLoggable(r0, r1)
+            r3 = 0
+            if (r2 != 0) goto L16
+            int r2 = android.os.Build.VERSION.SDK_INT
+            r4 = 23
+            if (r2 != r4) goto L17
+            boolean r0 = android.util.Log.isLoggable(r0, r1)
+            if (r0 == 0) goto L17
+        L16:
+            r3 = 1
+        L17:
+            return r3
+    }
+
+    /* renamed from: b */
+    public static boolean m3926b(android.content.Context r3) {
+            java.lang.Object r0 = p057db.RunnableC1402h0.f7049d0
+            monitor-enter(r0)
+            java.lang.Boolean r1 = p057db.RunnableC1402h0.f7051f0     // Catch: java.lang.Throwable -> L1e
+            if (r1 != 0) goto Le
+            java.lang.String r2 = "android.permission.ACCESS_NETWORK_STATE"
+            boolean r3 = m3927c(r3, r2, r1)     // Catch: java.lang.Throwable -> L1e
+            goto L12
+        Le:
+            boolean r3 = r1.booleanValue()     // Catch: java.lang.Throwable -> L1e
+        L12:
+            java.lang.Boolean r3 = java.lang.Boolean.valueOf(r3)     // Catch: java.lang.Throwable -> L1e
+            p057db.RunnableC1402h0.f7051f0 = r3     // Catch: java.lang.Throwable -> L1e
+            boolean r3 = r3.booleanValue()     // Catch: java.lang.Throwable -> L1e
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L1e
+            return r3
+        L1e:
+            r3 = move-exception
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L1e
+            throw r3
+    }
+
+    /* renamed from: c */
+    public static boolean m3927c(android.content.Context r2, java.lang.String r3, java.lang.Boolean r4) {
+            if (r4 == 0) goto L7
+            boolean r2 = r4.booleanValue()
+            return r2
+        L7:
+            int r2 = r2.checkCallingOrSelfPermission(r3)
+            r4 = 0
+            if (r2 != 0) goto L10
+            r2 = 1
+            goto L11
+        L10:
+            r2 = 0
+        L11:
+            if (r2 != 0) goto L3c
+            r0 = 3
+            java.lang.String r1 = "FirebaseMessaging"
+            boolean r0 = android.util.Log.isLoggable(r1, r0)
+            if (r0 == 0) goto L3c
+            int r2 = r3.length()
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            int r2 = r2 + 142
+            r0.<init>(r2)
+            java.lang.String r2 = "Missing Permission: "
+            r0.append(r2)
+            r0.append(r3)
+            java.lang.String r2 = ". This permission should normally be included by the manifest merger, but may needed to be manually added to your manifest"
+            r0.append(r2)
+            java.lang.String r2 = r0.toString()
+            android.util.Log.d(r1, r2)
+            return r4
+        L3c:
+            return r2
+    }
+
+    /* renamed from: d */
+    public static boolean m3928d(android.content.Context r3) {
+            java.lang.Object r0 = p057db.RunnableC1402h0.f7049d0
+            monitor-enter(r0)
+            java.lang.Boolean r1 = p057db.RunnableC1402h0.f7050e0     // Catch: java.lang.Throwable -> L1e
+            if (r1 != 0) goto Le
+            java.lang.String r2 = "android.permission.WAKE_LOCK"
+            boolean r3 = m3927c(r3, r2, r1)     // Catch: java.lang.Throwable -> L1e
+            goto L12
+        Le:
+            boolean r3 = r1.booleanValue()     // Catch: java.lang.Throwable -> L1e
+        L12:
+            java.lang.Boolean r3 = java.lang.Boolean.valueOf(r3)     // Catch: java.lang.Throwable -> L1e
+            p057db.RunnableC1402h0.f7050e0 = r3     // Catch: java.lang.Throwable -> L1e
+            boolean r3 = r3.booleanValue()     // Catch: java.lang.Throwable -> L1e
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L1e
+            return r3
+        L1e:
+            r3 = move-exception
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L1e
+            throw r3
+    }
+
+    /* renamed from: e */
+    public final synchronized boolean m3929e() {
+            r2 = this;
+            monitor-enter(r2)
+            android.content.Context r0 = r2.f7052Y     // Catch: java.lang.Throwable -> L20
+            java.lang.String r1 = "connectivity"
+            java.lang.Object r0 = r0.getSystemService(r1)     // Catch: java.lang.Throwable -> L20
+            android.net.ConnectivityManager r0 = (android.net.ConnectivityManager) r0     // Catch: java.lang.Throwable -> L20
+            if (r0 == 0) goto L12
+            android.net.NetworkInfo r0 = r0.getActiveNetworkInfo()     // Catch: java.lang.Throwable -> L20
+            goto L13
+        L12:
+            r0 = 0
+        L13:
+            if (r0 == 0) goto L1e
+            boolean r0 = r0.isConnected()     // Catch: java.lang.Throwable -> L20
+            if (r0 == 0) goto L1e
+            r0 = 1
+        L1c:
+            monitor-exit(r2)
+            return r0
+        L1e:
+            r0 = 0
+            goto L1c
+        L20:
+            r0 = move-exception
+            monitor-exit(r2)
+            throw r0
+    }
+
+    @Override // java.lang.Runnable
+    @android.annotation.SuppressLint({"Wakelock"})
+    public void run() {
+            r6 = this;
+            java.lang.String r0 = "TopicsSyncTask's wakelock was already released due to timeout."
+            java.lang.String r1 = "FirebaseMessaging"
+            android.content.Context r2 = r6.f7052Y
+            boolean r2 = m3928d(r2)
+            if (r2 == 0) goto L13
+            android.os.PowerManager$WakeLock r2 = r6.f7054a0
+            long r3 = p057db.C1391c.f7007a
+            r2.acquire(r3)
+        L13:
+            r2 = 0
+            db.g0 r3 = r6.f7055b0     // Catch: java.lang.Throwable -> L88 java.io.IOException -> L8a
+            r4 = 1
+            r3.m3922e(r4)     // Catch: java.lang.Throwable -> L88 java.io.IOException -> L8a
+            db.v r3 = r6.f7053Z     // Catch: java.lang.Throwable -> L88 java.io.IOException -> L8a
+            boolean r3 = r3.m3949d()     // Catch: java.lang.Throwable -> L88 java.io.IOException -> L8a
+            if (r3 != 0) goto L39
+            db.g0 r3 = r6.f7055b0     // Catch: java.lang.Throwable -> L88 java.io.IOException -> L8a
+            r3.m3922e(r2)     // Catch: java.lang.Throwable -> L88 java.io.IOException -> L8a
+            android.content.Context r2 = r6.f7052Y
+            boolean r2 = m3928d(r2)
+            if (r2 == 0) goto L38
+            android.os.PowerManager$WakeLock r2 = r6.f7054a0     // Catch: java.lang.RuntimeException -> L35
+            r2.release()     // Catch: java.lang.RuntimeException -> L35
+            return
+        L35:
+            android.util.Log.i(r1, r0)
+        L38:
+            return
+        L39:
+            android.content.Context r3 = r6.f7052Y     // Catch: java.lang.Throwable -> L88 java.io.IOException -> L8a
+            boolean r3 = m3926b(r3)     // Catch: java.lang.Throwable -> L88 java.io.IOException -> L8a
+            if (r3 == 0) goto L61
+            boolean r3 = r6.m3929e()     // Catch: java.lang.Throwable -> L88 java.io.IOException -> L8a
+            if (r3 != 0) goto L61
+            db.h0$a r3 = new db.h0$a     // Catch: java.lang.Throwable -> L88 java.io.IOException -> L8a
+            r3.<init>(r6, r6)     // Catch: java.lang.Throwable -> L88 java.io.IOException -> L8a
+            r3.m3930a()     // Catch: java.lang.Throwable -> L88 java.io.IOException -> L8a
+            android.content.Context r2 = r6.f7052Y
+            boolean r2 = m3928d(r2)
+            if (r2 == 0) goto L60
+            android.os.PowerManager$WakeLock r2 = r6.f7054a0     // Catch: java.lang.RuntimeException -> L5d
+            r2.release()     // Catch: java.lang.RuntimeException -> L5d
+            return
+        L5d:
+            android.util.Log.i(r1, r0)
+        L60:
+            return
+        L61:
+            db.g0 r3 = r6.f7055b0     // Catch: java.lang.Throwable -> L88 java.io.IOException -> L8a
+            boolean r3 = r3.m3923f()     // Catch: java.lang.Throwable -> L88 java.io.IOException -> L8a
+            if (r3 == 0) goto L6f
+            db.g0 r3 = r6.f7055b0     // Catch: java.lang.Throwable -> L88 java.io.IOException -> L8a
+            r3.m3922e(r2)     // Catch: java.lang.Throwable -> L88 java.io.IOException -> L8a
+            goto L76
+        L6f:
+            db.g0 r3 = r6.f7055b0     // Catch: java.lang.Throwable -> L88 java.io.IOException -> L8a
+            long r4 = r6.f7056c0     // Catch: java.lang.Throwable -> L88 java.io.IOException -> L8a
+            r3.m3924g(r4)     // Catch: java.lang.Throwable -> L88 java.io.IOException -> L8a
+        L76:
+            android.content.Context r2 = r6.f7052Y
+            boolean r2 = m3928d(r2)
+            if (r2 == 0) goto Lbe
+            android.os.PowerManager$WakeLock r2 = r6.f7054a0     // Catch: java.lang.RuntimeException -> L84
+            r2.release()     // Catch: java.lang.RuntimeException -> L84
+            return
+        L84:
+            android.util.Log.i(r1, r0)
+            return
+        L88:
+            r2 = move-exception
+            goto Lbf
+        L8a:
+            r3 = move-exception
+            java.lang.String r4 = "Failed to sync topics. Won't retry sync. "
+            java.lang.String r3 = r3.getMessage()     // Catch: java.lang.Throwable -> L88
+            java.lang.String r3 = java.lang.String.valueOf(r3)     // Catch: java.lang.Throwable -> L88
+            int r5 = r3.length()     // Catch: java.lang.Throwable -> L88
+            if (r5 == 0) goto La0
+            java.lang.String r3 = r4.concat(r3)     // Catch: java.lang.Throwable -> L88
+            goto La5
+        La0:
+            java.lang.String r3 = new java.lang.String     // Catch: java.lang.Throwable -> L88
+            r3.<init>(r4)     // Catch: java.lang.Throwable -> L88
+        La5:
+            android.util.Log.e(r1, r3)     // Catch: java.lang.Throwable -> L88
+            db.g0 r3 = r6.f7055b0     // Catch: java.lang.Throwable -> L88
+            r3.m3922e(r2)     // Catch: java.lang.Throwable -> L88
+            android.content.Context r2 = r6.f7052Y
+            boolean r2 = m3928d(r2)
+            if (r2 == 0) goto Lbe
+            android.os.PowerManager$WakeLock r2 = r6.f7054a0     // Catch: java.lang.RuntimeException -> Lbb
+            r2.release()     // Catch: java.lang.RuntimeException -> Lbb
+            return
+        Lbb:
+            android.util.Log.i(r1, r0)
+        Lbe:
+            return
+        Lbf:
+            android.content.Context r3 = r6.f7052Y
+            boolean r3 = m3928d(r3)
+            if (r3 == 0) goto Ld0
+            android.os.PowerManager$WakeLock r3 = r6.f7054a0     // Catch: java.lang.RuntimeException -> Lcd
+            r3.release()     // Catch: java.lang.RuntimeException -> Lcd
+            goto Ld0
+        Lcd:
+            android.util.Log.i(r1, r0)
+        Ld0:
+            throw r2
+    }
+}
+package p057db;
+
+/* renamed from: db.m0 */
+/* loaded from: classes.dex */
+public class ServiceConnectionC1412m0 implements android.content.ServiceConnection {
+
+    /* renamed from: Y */
+    public final android.content.Context f7073Y;
+
+    /* renamed from: Z */
+    public final android.content.Intent f7074Z;
+
+    /* renamed from: a0 */
+    public final java.util.concurrent.ScheduledExecutorService f7075a0;
+
+    /* renamed from: b0 */
+    public final java.util.Queue<p057db.ServiceConnectionC1412m0.a> f7076b0;
+
+    /* renamed from: c0 */
+    public p057db.BinderC1410l0 f7077c0;
+
+    /* renamed from: d0 */
+    public boolean f7078d0;
+
+    /* renamed from: db.m0$a */
+    public static class a {
+
+        /* renamed from: a */
+        public final android.content.Intent f7079a;
+
+        /* renamed from: b */
+        public final p327s7.C5986j<java.lang.Void> f7080b;
+
+        public a(android.content.Intent r2) {
+                r1 = this;
+                r1.<init>()
+                s7.j r0 = new s7.j
+                r0.<init>()
+                r1.f7080b = r0
+                r1.f7079a = r2
+                return
+        }
+
+        /* renamed from: a */
+        public void m3938a() {
+                r2 = this;
+                s7.j<java.lang.Void> r0 = r2.f7080b
+                r1 = 0
+                r0.m12459b(r1)
+                return
+        }
+    }
+
+    public ServiceConnectionC1412m0(android.content.Context r3, java.lang.String r4) {
+            r2 = this;
+            java.util.concurrent.ScheduledThreadPoolExecutor r4 = new java.util.concurrent.ScheduledThreadPoolExecutor
+            v6.a r0 = new v6.a
+            java.lang.String r1 = "Firebase-FirebaseInstanceIdServiceConnection"
+            r0.<init>(r1)
+            r1 = 0
+            r4.<init>(r1, r0)
+            r2.<init>()
+            java.util.ArrayDeque r0 = new java.util.ArrayDeque
+            r0.<init>()
+            r2.f7076b0 = r0
+            r2.f7078d0 = r1
+            android.content.Context r3 = r3.getApplicationContext()
+            r2.f7073Y = r3
+            android.content.Intent r0 = new android.content.Intent
+            java.lang.String r1 = "com.google.firebase.MESSAGING_EVENT"
+            r0.<init>(r1)
+            java.lang.String r3 = r3.getPackageName()
+            android.content.Intent r3 = r0.setPackage(r3)
+            r2.f7074Z = r3
+            r2.f7075a0 = r4
+            return
+    }
+
+    /* renamed from: a */
+    public final void m3935a() {
+            r1 = this;
+        L0:
+            java.util.Queue<db.m0$a> r0 = r1.f7076b0
+            boolean r0 = r0.isEmpty()
+            if (r0 != 0) goto L14
+            java.util.Queue<db.m0$a> r0 = r1.f7076b0
+            java.lang.Object r0 = r0.poll()
+            db.m0$a r0 = (p057db.ServiceConnectionC1412m0.a) r0
+            r0.m3938a()
+            goto L0
+        L14:
+            return
+    }
+
+    /* renamed from: b */
+    public final synchronized void m3936b() {
+            r3 = this;
+            monitor-enter(r3)
+            java.lang.String r0 = "FirebaseMessaging"
+            r1 = 3
+            boolean r0 = android.util.Log.isLoggable(r0, r1)     // Catch: java.lang.Throwable -> L57
+            if (r0 != 0) goto Lb
+            goto L12
+        Lb:
+            java.lang.String r0 = "FirebaseMessaging"
+            java.lang.String r2 = "flush queue called"
+            android.util.Log.d(r0, r2)     // Catch: java.lang.Throwable -> L57
+        L12:
+            java.util.Queue<db.m0$a> r0 = r3.f7076b0     // Catch: java.lang.Throwable -> L57
+            boolean r0 = r0.isEmpty()     // Catch: java.lang.Throwable -> L57
+            if (r0 != 0) goto L55
+            java.lang.String r0 = "FirebaseMessaging"
+            boolean r0 = android.util.Log.isLoggable(r0, r1)     // Catch: java.lang.Throwable -> L57
+            if (r0 == 0) goto L29
+            java.lang.String r0 = "FirebaseMessaging"
+            java.lang.String r2 = "found intent to be delivered"
+            android.util.Log.d(r0, r2)     // Catch: java.lang.Throwable -> L57
+        L29:
+            db.l0 r0 = r3.f7077c0     // Catch: java.lang.Throwable -> L57
+            if (r0 == 0) goto L50
+            boolean r0 = r0.isBinderAlive()     // Catch: java.lang.Throwable -> L57
+            if (r0 == 0) goto L50
+            java.lang.String r0 = "FirebaseMessaging"
+            boolean r0 = android.util.Log.isLoggable(r0, r1)     // Catch: java.lang.Throwable -> L57
+            if (r0 == 0) goto L42
+            java.lang.String r0 = "FirebaseMessaging"
+            java.lang.String r2 = "binder is alive, sending the intent."
+            android.util.Log.d(r0, r2)     // Catch: java.lang.Throwable -> L57
+        L42:
+            java.util.Queue<db.m0$a> r0 = r3.f7076b0     // Catch: java.lang.Throwable -> L57
+            java.lang.Object r0 = r0.poll()     // Catch: java.lang.Throwable -> L57
+            db.m0$a r0 = (p057db.ServiceConnectionC1412m0.a) r0     // Catch: java.lang.Throwable -> L57
+            db.l0 r2 = r3.f7077c0     // Catch: java.lang.Throwable -> L57
+            r2.m3934a(r0)     // Catch: java.lang.Throwable -> L57
+            goto L12
+        L50:
+            r3.m3937c()     // Catch: java.lang.Throwable -> L57
+            monitor-exit(r3)
+            return
+        L55:
+            monitor-exit(r3)
+            return
+        L57:
+            r0 = move-exception
+            monitor-exit(r3)
+            throw r0
+    }
+
+    /* renamed from: c */
+    public final void m3937c() {
+            r5 = this;
+            java.lang.String r0 = "FirebaseMessaging"
+            r1 = 3
+            boolean r1 = android.util.Log.isLoggable(r0, r1)
+            r2 = 1
+            if (r1 == 0) goto L23
+            boolean r1 = r5.f7078d0
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder
+            r4 = 39
+            r3.<init>(r4)
+            java.lang.String r4 = "binder is dead. start connection? "
+            r3.append(r4)
+            r1 = r1 ^ r2
+            r3.append(r1)
+            java.lang.String r1 = r3.toString()
+            android.util.Log.d(r0, r1)
+        L23:
+            boolean r1 = r5.f7078d0
+            if (r1 == 0) goto L28
+            return
+        L28:
+            r5.f7078d0 = r2
+            t6.a r1 = p338t6.C6181a.m12748b()     // Catch: java.lang.SecurityException -> L41
+            android.content.Context r2 = r5.f7073Y     // Catch: java.lang.SecurityException -> L41
+            android.content.Intent r3 = r5.f7074Z     // Catch: java.lang.SecurityException -> L41
+            r4 = 65
+            boolean r1 = r1.m12749a(r2, r3, r5, r4)     // Catch: java.lang.SecurityException -> L41
+            if (r1 == 0) goto L3b
+            return
+        L3b:
+            java.lang.String r1 = "binding to the service failed"
+            android.util.Log.e(r0, r1)     // Catch: java.lang.SecurityException -> L41
+            goto L47
+        L41:
+            r1 = move-exception
+            java.lang.String r2 = "Exception while binding the service"
+            android.util.Log.e(r0, r2, r1)
+        L47:
+            r0 = 0
+            r5.f7078d0 = r0
+            r5.m3935a()
+            return
+    }
+
+    @Override // android.content.ServiceConnection
+    public synchronized void onServiceConnected(android.content.ComponentName r3, android.os.IBinder r4) {
+            r2 = this;
+            monitor-enter(r2)
+            java.lang.String r0 = "FirebaseMessaging"
+            r1 = 3
+            boolean r0 = android.util.Log.isLoggable(r0, r1)     // Catch: java.lang.Throwable -> L5f
+            if (r0 == 0) goto L2a
+            java.lang.String r3 = java.lang.String.valueOf(r3)     // Catch: java.lang.Throwable -> L5f
+            int r0 = r3.length()     // Catch: java.lang.Throwable -> L5f
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L5f
+            int r0 = r0 + 20
+            r1.<init>(r0)     // Catch: java.lang.Throwable -> L5f
+            java.lang.String r0 = "onServiceConnected: "
+            r1.append(r0)     // Catch: java.lang.Throwable -> L5f
+            r1.append(r3)     // Catch: java.lang.Throwable -> L5f
+            java.lang.String r3 = "FirebaseMessaging"
+            java.lang.String r0 = r1.toString()     // Catch: java.lang.Throwable -> L5f
+            android.util.Log.d(r3, r0)     // Catch: java.lang.Throwable -> L5f
+        L2a:
+            r3 = 0
+            r2.f7078d0 = r3     // Catch: java.lang.Throwable -> L5f
+            boolean r3 = r4 instanceof p057db.BinderC1410l0     // Catch: java.lang.Throwable -> L5f
+            if (r3 != 0) goto L56
+            java.lang.String r3 = java.lang.String.valueOf(r4)     // Catch: java.lang.Throwable -> L5f
+            int r4 = r3.length()     // Catch: java.lang.Throwable -> L5f
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L5f
+            int r4 = r4 + 28
+            r0.<init>(r4)     // Catch: java.lang.Throwable -> L5f
+            java.lang.String r4 = "Invalid service connection: "
+            r0.append(r4)     // Catch: java.lang.Throwable -> L5f
+            r0.append(r3)     // Catch: java.lang.Throwable -> L5f
+            java.lang.String r3 = "FirebaseMessaging"
+            java.lang.String r4 = r0.toString()     // Catch: java.lang.Throwable -> L5f
+            android.util.Log.e(r3, r4)     // Catch: java.lang.Throwable -> L5f
+            r2.m3935a()     // Catch: java.lang.Throwable -> L5f
+            monitor-exit(r2)
+            return
+        L56:
+            db.l0 r4 = (p057db.BinderC1410l0) r4     // Catch: java.lang.Throwable -> L5f
+            r2.f7077c0 = r4     // Catch: java.lang.Throwable -> L5f
+            r2.m3936b()     // Catch: java.lang.Throwable -> L5f
+            monitor-exit(r2)
+            return
+        L5f:
+            r3 = move-exception
+            monitor-exit(r2)
+            throw r3
+    }
+
+    @Override // android.content.ServiceConnection
+    public void onServiceDisconnected(android.content.ComponentName r4) {
+            r3 = this;
+            java.lang.String r0 = "FirebaseMessaging"
+            r1 = 3
+            boolean r1 = android.util.Log.isLoggable(r0, r1)
+            if (r1 == 0) goto L27
+            java.lang.String r4 = java.lang.String.valueOf(r4)
+            int r1 = r4.length()
+            java.lang.StringBuilder r2 = new java.lang.StringBuilder
+            int r1 = r1 + 23
+            r2.<init>(r1)
+            java.lang.String r1 = "onServiceDisconnected: "
+            r2.append(r1)
+            r2.append(r4)
+            java.lang.String r4 = r2.toString()
+            android.util.Log.d(r0, r4)
+        L27:
+            r3.m3936b()
+            return
+    }
+}

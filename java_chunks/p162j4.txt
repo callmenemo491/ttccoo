@@ -1,0 +1,4601 @@
+package p162j4;
+
+/* renamed from: j4.a */
+/* loaded from: classes.dex */
+public class C3396a implements p162j4.InterfaceC3400e {
+
+    /* renamed from: a */
+    public final java.util.List<p162j4.C3399d.b> f14661a;
+
+    /* renamed from: b */
+    public final p162j4.InterfaceC3412q f14662b;
+
+    /* renamed from: c */
+    public final p162j4.C3396a.a f14663c;
+
+    /* renamed from: d */
+    public final p162j4.C3396a.b f14664d;
+
+    /* renamed from: e */
+    public final int f14665e;
+
+    /* renamed from: f */
+    public final boolean f14666f;
+
+    /* renamed from: g */
+    public final boolean f14667g;
+
+    /* renamed from: h */
+    public final java.util.HashMap<java.lang.String, java.lang.String> f14668h;
+
+    /* renamed from: i */
+    public final p371v5.C6559i<p162j4.InterfaceC3403h.a> f14669i;
+
+    /* renamed from: j */
+    public final p352u5.InterfaceC6307b0 f14670j;
+
+    /* renamed from: k */
+    public final p162j4.InterfaceC3419x f14671k;
+
+    /* renamed from: l */
+    public final java.util.UUID f14672l;
+
+    /* renamed from: m */
+    public final p162j4.C3396a.e f14673m;
+
+    /* renamed from: n */
+    public int f14674n;
+
+    /* renamed from: o */
+    public int f14675o;
+
+    /* renamed from: p */
+    public android.os.HandlerThread f14676p;
+
+    /* renamed from: q */
+    public p162j4.C3396a.c f14677q;
+
+    /* renamed from: r */
+    public p142i4.InterfaceC3068b f14678r;
+
+    /* renamed from: s */
+    public p162j4.InterfaceC3400e.a f14679s;
+
+    /* renamed from: t */
+    public byte[] f14680t;
+
+    /* renamed from: u */
+    public byte[] f14681u;
+
+    /* renamed from: v */
+    public p162j4.InterfaceC3412q.a f14682v;
+
+    /* renamed from: w */
+    public p162j4.InterfaceC3412q.d f14683w;
+
+    /* renamed from: j4.a$a */
+    public interface a {
+    }
+
+    /* renamed from: j4.a$b */
+    public interface b {
+    }
+
+    @android.annotation.SuppressLint({"HandlerLeak"})
+    /* renamed from: j4.a$c */
+    public class c extends android.os.Handler {
+
+        /* renamed from: a */
+        public boolean f14684a;
+
+        /* renamed from: b */
+        public final /* synthetic */ p162j4.C3396a f14685b;
+
+        public c(p162j4.C3396a r1, android.os.Looper r2) {
+                r0 = this;
+                r0.f14685b = r1
+                r0.<init>(r2)
+                return
+        }
+
+        /* renamed from: a */
+        public void m7805a(int r9, java.lang.Object r10, boolean r11) {
+                r8 = this;
+                j4.a$d r7 = new j4.a$d
+                java.util.concurrent.atomic.AtomicLong r0 = p108g5.C2276k.f10386b
+                long r1 = r0.getAndIncrement()
+                long r4 = android.os.SystemClock.elapsedRealtime()
+                r0 = r7
+                r3 = r11
+                r6 = r10
+                r0.<init>(r1, r3, r4, r6)
+                android.os.Message r9 = r8.obtainMessage(r9, r7)
+                r9.sendToTarget()
+                return
+        }
+
+        @Override // android.os.Handler
+        public void handleMessage(android.os.Message r11) {
+                r10 = this;
+                java.lang.Object r0 = r11.obj
+                j4.a$d r0 = (p162j4.C3396a.d) r0
+                r1 = 1
+                int r2 = r11.what     // Catch: p162j4.C3420y -> L1d java.lang.Exception -> L37
+                if (r2 == 0) goto L25
+                if (r2 != r1) goto L1f
+                j4.a r2 = r10.f14685b     // Catch: p162j4.C3420y -> L1d java.lang.Exception -> L37
+                j4.x r3 = r2.f14671k     // Catch: p162j4.C3420y -> L1d java.lang.Exception -> L37
+                java.util.UUID r2 = r2.f14672l     // Catch: p162j4.C3420y -> L1d java.lang.Exception -> L37
+                java.lang.Object r4 = r0.f14688c     // Catch: p162j4.C3420y -> L1d java.lang.Exception -> L37
+                j4.q$a r4 = (p162j4.InterfaceC3412q.a) r4     // Catch: p162j4.C3420y -> L1d java.lang.Exception -> L37
+                j4.v r3 = (p162j4.C3417v) r3     // Catch: p162j4.C3420y -> L1d java.lang.Exception -> L37
+                byte[] r1 = r3.m7855a(r2, r4)     // Catch: p162j4.C3420y -> L1d java.lang.Exception -> L37
+                goto Ldf
+            L1d:
+                r2 = move-exception
+                goto L41
+            L1f:
+                java.lang.RuntimeException r2 = new java.lang.RuntimeException     // Catch: p162j4.C3420y -> L1d java.lang.Exception -> L37
+                r2.<init>()     // Catch: p162j4.C3420y -> L1d java.lang.Exception -> L37
+                throw r2     // Catch: p162j4.C3420y -> L1d java.lang.Exception -> L37
+            L25:
+                j4.a r2 = r10.f14685b     // Catch: p162j4.C3420y -> L1d java.lang.Exception -> L37
+                j4.x r3 = r2.f14671k     // Catch: p162j4.C3420y -> L1d java.lang.Exception -> L37
+                java.util.UUID r2 = r2.f14672l     // Catch: p162j4.C3420y -> L1d java.lang.Exception -> L37
+                java.lang.Object r4 = r0.f14688c     // Catch: p162j4.C3420y -> L1d java.lang.Exception -> L37
+                j4.q$d r4 = (p162j4.InterfaceC3412q.d) r4     // Catch: p162j4.C3420y -> L1d java.lang.Exception -> L37
+                j4.v r3 = (p162j4.C3417v) r3     // Catch: p162j4.C3420y -> L1d java.lang.Exception -> L37
+                byte[] r1 = r3.m7856c(r2, r4)     // Catch: p162j4.C3420y -> L1d java.lang.Exception -> L37
+                goto Ldf
+            L37:
+                r1 = move-exception
+                java.lang.String r2 = "DefaultDrmSession"
+                java.lang.String r3 = "Key/provisioning request produced an unexpected exception. Not retrying."
+                p371v5.C6565o.m13370c(r2, r3, r1)
+                goto Ldf
+            L41:
+                java.lang.Object r3 = r11.obj
+                j4.a$d r3 = (p162j4.C3396a.d) r3
+                boolean r4 = r3.f14687b
+                r5 = 0
+                if (r4 != 0) goto L4d
+            L4a:
+                r1 = 0
+                goto Ldb
+            L4d:
+                int r4 = r3.f14689d
+                int r4 = r4 + r1
+                r3.f14689d = r4
+                j4.a r6 = r10.f14685b
+                u5.b0 r6 = r6.f14670j
+                u5.s r6 = (p352u5.C6330s) r6
+                r7 = 3
+                int r6 = r6.m12982a(r7)
+                if (r4 <= r6) goto L60
+                goto L4a
+            L60:
+                g5.k r4 = new g5.k
+                android.os.SystemClock.elapsedRealtime()
+                android.os.SystemClock.elapsedRealtime()
+                java.lang.Throwable r4 = r2.getCause()
+                boolean r4 = r4 instanceof java.io.IOException
+                if (r4 == 0) goto L77
+                java.lang.Throwable r4 = r2.getCause()
+                java.io.IOException r4 = (java.io.IOException) r4
+                goto L80
+            L77:
+                j4.a$f r4 = new j4.a$f
+                java.lang.Throwable r6 = r2.getCause()
+                r4.<init>(r6)
+            L80:
+                j4.a r6 = r10.f14685b
+                u5.b0 r6 = r6.f14670j
+                int r3 = r3.f14689d
+                u5.s r6 = (p352u5.C6330s) r6
+                boolean r6 = r4 instanceof p088f4.C2044s0
+                r7 = -9223372036854775807(0x8000000000000001, double:-4.9E-324)
+                if (r6 != 0) goto Lc4
+                boolean r6 = r4 instanceof java.io.FileNotFoundException
+                if (r6 != 0) goto Lc4
+                boolean r6 = r4 instanceof p352u5.C6332u
+                if (r6 != 0) goto Lc4
+                boolean r6 = r4 instanceof p352u5.C6309c0.h
+                if (r6 != 0) goto Lc4
+                int r6 = p352u5.C6321j.f24696Z
+            L9f:
+                if (r4 == 0) goto Lb5
+                boolean r6 = r4 instanceof p352u5.C6321j
+                if (r6 == 0) goto Lb0
+                r6 = r4
+                u5.j r6 = (p352u5.C6321j) r6
+                int r6 = r6.f24697Y
+                r9 = 2008(0x7d8, float:2.814E-42)
+                if (r6 != r9) goto Lb0
+                r4 = 1
+                goto Lb6
+            Lb0:
+                java.lang.Throwable r4 = r4.getCause()
+                goto L9f
+            Lb5:
+                r4 = 0
+            Lb6:
+                if (r4 == 0) goto Lb9
+                goto Lc4
+            Lb9:
+                int r3 = r3 - r1
+                int r3 = r3 * 1000
+                r4 = 5000(0x1388, float:7.006E-42)
+                int r3 = java.lang.Math.min(r3, r4)
+                long r3 = (long) r3
+                goto Lc5
+            Lc4:
+                r3 = r7
+            Lc5:
+                int r6 = (r3 > r7 ? 1 : (r3 == r7 ? 0 : -1))
+                if (r6 != 0) goto Lca
+                goto L4a
+            Lca:
+                monitor-enter(r10)
+                boolean r6 = r10.f14684a     // Catch: java.lang.Throwable -> L105
+                if (r6 != 0) goto Ld8
+                android.os.Message r5 = android.os.Message.obtain(r11)     // Catch: java.lang.Throwable -> L105
+                r10.sendMessageDelayed(r5, r3)     // Catch: java.lang.Throwable -> L105
+                monitor-exit(r10)     // Catch: java.lang.Throwable -> L105
+                goto Ldb
+            Ld8:
+                monitor-exit(r10)     // Catch: java.lang.Throwable -> L105
+                goto L4a
+            Ldb:
+                if (r1 == 0) goto Lde
+                return
+            Lde:
+                r1 = r2
+            Ldf:
+                j4.a r2 = r10.f14685b
+                u5.b0 r2 = r2.f14670j
+                long r3 = r0.f14686a
+                java.util.Objects.requireNonNull(r2)
+                monitor-enter(r10)
+                boolean r2 = r10.f14684a     // Catch: java.lang.Throwable -> L102
+                if (r2 != 0) goto L100
+                j4.a r2 = r10.f14685b     // Catch: java.lang.Throwable -> L102
+                j4.a$e r2 = r2.f14673m     // Catch: java.lang.Throwable -> L102
+                int r11 = r11.what     // Catch: java.lang.Throwable -> L102
+                java.lang.Object r0 = r0.f14688c     // Catch: java.lang.Throwable -> L102
+                android.util.Pair r0 = android.util.Pair.create(r0, r1)     // Catch: java.lang.Throwable -> L102
+                android.os.Message r11 = r2.obtainMessage(r11, r0)     // Catch: java.lang.Throwable -> L102
+                r11.sendToTarget()     // Catch: java.lang.Throwable -> L102
+            L100:
+                monitor-exit(r10)     // Catch: java.lang.Throwable -> L102
+                return
+            L102:
+                r11 = move-exception
+                monitor-exit(r10)     // Catch: java.lang.Throwable -> L102
+                throw r11
+            L105:
+                r11 = move-exception
+                monitor-exit(r10)     // Catch: java.lang.Throwable -> L105
+                throw r11
+        }
+    }
+
+    /* renamed from: j4.a$d */
+    public static final class d {
+
+        /* renamed from: a */
+        public final long f14686a;
+
+        /* renamed from: b */
+        public final boolean f14687b;
+
+        /* renamed from: c */
+        public final java.lang.Object f14688c;
+
+        /* renamed from: d */
+        public int f14689d;
+
+        public d(long r1, boolean r3, long r4, java.lang.Object r6) {
+                r0 = this;
+                r0.<init>()
+                r0.f14686a = r1
+                r0.f14687b = r3
+                r0.f14688c = r6
+                return
+        }
+    }
+
+    @android.annotation.SuppressLint({"HandlerLeak"})
+    /* renamed from: j4.a$e */
+    public class e extends android.os.Handler {
+
+        /* renamed from: a */
+        public final /* synthetic */ p162j4.C3396a f14690a;
+
+        public e(p162j4.C3396a r1, android.os.Looper r2) {
+                r0 = this;
+                r0.f14690a = r1
+                r0.<init>(r2)
+                return
+        }
+
+        @Override // android.os.Handler
+        public void handleMessage(android.os.Message r8) {
+                r7 = this;
+                java.lang.Object r0 = r8.obj
+                android.util.Pair r0 = (android.util.Pair) r0
+                java.lang.Object r1 = r0.first
+                java.lang.Object r0 = r0.second
+                int r8 = r8.what
+                r2 = 0
+                r3 = 0
+                r4 = 2
+                r5 = 1
+                if (r8 == 0) goto L85
+                if (r8 == r5) goto L14
+                goto Le0
+            L14:
+                j4.a r8 = r7.f14690a
+                j4.q$a r6 = r8.f14682v
+                if (r1 != r6) goto Le0
+                boolean r1 = r8.m7798j()
+                if (r1 != 0) goto L22
+                goto Le0
+            L22:
+                r8.f14682v = r3
+                boolean r1 = r0 instanceof java.lang.Exception
+                if (r1 == 0) goto L2f
+                java.lang.Exception r0 = (java.lang.Exception) r0
+                r8.m7800l(r0, r2)
+                goto Le0
+            L2f:
+                byte[] r0 = (byte[]) r0     // Catch: java.lang.Exception -> L80
+                int r1 = r8.f14665e     // Catch: java.lang.Exception -> L80
+                r2 = 3
+                if (r1 != r2) goto L5e
+                j4.q r1 = r8.f14662b     // Catch: java.lang.Exception -> L80
+                byte[] r2 = r8.f14681u     // Catch: java.lang.Exception -> L80
+                int r3 = p371v5.C6552b0.f25624a     // Catch: java.lang.Exception -> L80
+                r1.mo7845f(r2, r0)     // Catch: java.lang.Exception -> L80
+                v5.i<j4.h$a> r0 = r8.f14669i     // Catch: java.lang.Exception -> L80
+                java.lang.Object r1 = r0.f25644Y     // Catch: java.lang.Exception -> L80
+                monitor-enter(r1)     // Catch: java.lang.Exception -> L80
+                java.util.Set<E> r0 = r0.f25646a0     // Catch: java.lang.Throwable -> L5b
+                monitor-exit(r1)     // Catch: java.lang.Throwable -> L5b
+                java.util.Iterator r0 = r0.iterator()     // Catch: java.lang.Exception -> L80
+            L4b:
+                boolean r1 = r0.hasNext()     // Catch: java.lang.Exception -> L80
+                if (r1 == 0) goto Le0
+                java.lang.Object r1 = r0.next()     // Catch: java.lang.Exception -> L80
+                j4.h$a r1 = (p162j4.InterfaceC3403h.a) r1     // Catch: java.lang.Exception -> L80
+                r1.m7824b()     // Catch: java.lang.Exception -> L80
+                goto L4b
+            L5b:
+                r0 = move-exception
+                monitor-exit(r1)     // Catch: java.lang.Throwable -> L5b
+                throw r0     // Catch: java.lang.Exception -> L80
+            L5e:
+                j4.q r1 = r8.f14662b     // Catch: java.lang.Exception -> L80
+                byte[] r2 = r8.f14680t     // Catch: java.lang.Exception -> L80
+                byte[] r0 = r1.mo7845f(r2, r0)     // Catch: java.lang.Exception -> L80
+                int r1 = r8.f14665e     // Catch: java.lang.Exception -> L80
+                if (r1 == r4) goto L70
+                if (r1 != 0) goto L77
+                byte[] r1 = r8.f14681u     // Catch: java.lang.Exception -> L80
+                if (r1 == 0) goto L77
+            L70:
+                if (r0 == 0) goto L77
+                int r1 = r0.length     // Catch: java.lang.Exception -> L80
+                if (r1 == 0) goto L77
+                r8.f14681u = r0     // Catch: java.lang.Exception -> L80
+            L77:
+                r0 = 4
+                r8.f14674n = r0     // Catch: java.lang.Exception -> L80
+                k1.d r0 = p179k1.C3646d.f16120i0     // Catch: java.lang.Exception -> L80
+                r8.m7796h(r0)     // Catch: java.lang.Exception -> L80
+                goto Le0
+            L80:
+                r0 = move-exception
+                r8.m7800l(r0, r5)
+                goto Le0
+            L85:
+                j4.a r8 = r7.f14690a
+                j4.q$d r6 = r8.f14683w
+                if (r1 != r6) goto Le0
+                int r1 = r8.f14674n
+                if (r1 == r4) goto L96
+                boolean r1 = r8.m7798j()
+                if (r1 != 0) goto L96
+                goto Le0
+            L96:
+                r8.f14683w = r3
+                boolean r1 = r0 instanceof java.lang.Exception
+                if (r1 == 0) goto La6
+                j4.a$a r8 = r8.f14663c
+                java.lang.Exception r0 = (java.lang.Exception) r0
+                j4.b$f r8 = (p162j4.C3397b.f) r8
+                r8.m7819a(r0, r2)
+                goto Le0
+            La6:
+                j4.q r1 = r8.f14662b     // Catch: java.lang.Exception -> Ld8
+                byte[] r0 = (byte[]) r0     // Catch: java.lang.Exception -> Ld8
+                r1.mo7847h(r0)     // Catch: java.lang.Exception -> Ld8
+                j4.a$a r8 = r8.f14663c
+                j4.b$f r8 = (p162j4.C3397b.f) r8
+                r8.f14721b = r3
+                java.util.Set<j4.a> r0 = r8.f14720a
+                b9.n r0 = p026b9.AbstractC0714n.m2311w(r0)
+                java.util.Set<j4.a> r8 = r8.f14720a
+                r8.clear()
+                b9.a r8 = r0.m2313A()
+            Lc2:
+                boolean r0 = r8.hasNext()
+                if (r0 == 0) goto Le0
+                java.lang.Object r0 = r8.next()
+                j4.a r0 = (p162j4.C3396a) r0
+                boolean r1 = r0.m7801m()
+                if (r1 == 0) goto Lc2
+                r0.m7797i(r5)
+                goto Lc2
+            Ld8:
+                r0 = move-exception
+                j4.a$a r8 = r8.f14663c
+                j4.b$f r8 = (p162j4.C3397b.f) r8
+                r8.m7819a(r0, r5)
+            Le0:
+                return
+        }
+    }
+
+    /* renamed from: j4.a$f */
+    public static final class f extends java.io.IOException {
+        public f(java.lang.Throwable r1) {
+                r0 = this;
+                r0.<init>(r1)
+                return
+        }
+    }
+
+    public C3396a(java.util.UUID r2, p162j4.InterfaceC3412q r3, p162j4.C3396a.a r4, p162j4.C3396a.b r5, java.util.List<p162j4.C3399d.b> r6, int r7, boolean r8, boolean r9, byte[] r10, java.util.HashMap<java.lang.String, java.lang.String> r11, p162j4.InterfaceC3419x r12, android.os.Looper r13, p352u5.InterfaceC6307b0 r14) {
+            r1 = this;
+            r1.<init>()
+            r0 = 1
+            if (r7 == r0) goto L9
+            r0 = 3
+            if (r7 != r0) goto Lc
+        L9:
+            java.util.Objects.requireNonNull(r10)
+        Lc:
+            r1.f14672l = r2
+            r1.f14663c = r4
+            r1.f14664d = r5
+            r1.f14662b = r3
+            r1.f14665e = r7
+            r1.f14666f = r8
+            r1.f14667g = r9
+            if (r10 == 0) goto L20
+            r1.f14681u = r10
+            r2 = 0
+            goto L27
+        L20:
+            java.util.Objects.requireNonNull(r6)
+            java.util.List r2 = java.util.Collections.unmodifiableList(r6)
+        L27:
+            r1.f14661a = r2
+            r1.f14668h = r11
+            r1.f14671k = r12
+            v5.i r2 = new v5.i
+            r2.<init>()
+            r1.f14669i = r2
+            r1.f14670j = r14
+            r2 = 2
+            r1.f14674n = r2
+            j4.a$e r2 = new j4.a$e
+            r2.<init>(r1, r13)
+            r1.f14673m = r2
+            return
+    }
+
+    @Override // p162j4.InterfaceC3400e
+    /* renamed from: a */
+    public boolean mo7789a() {
+            r1 = this;
+            boolean r0 = r1.f14666f
+            return r0
+    }
+
+    @Override // p162j4.InterfaceC3400e
+    /* renamed from: b */
+    public final java.util.UUID mo7790b() {
+            r1 = this;
+            java.util.UUID r0 = r1.f14672l
+            return r0
+    }
+
+    @Override // p162j4.InterfaceC3400e
+    /* renamed from: c */
+    public void mo7791c(p162j4.InterfaceC3403h.a r9) {
+            r8 = this;
+            int r0 = r8.f14675o
+            if (r0 > 0) goto Lc
+            java.lang.String r9 = "DefaultDrmSession"
+            java.lang.String r0 = "release() called on a session that's already fully released."
+            android.util.Log.e(r9, r0)
+            return
+        Lc:
+            r1 = 1
+            int r0 = r0 - r1
+            r8.f14675o = r0
+            r2 = 0
+            if (r0 != 0) goto L46
+            r0 = 0
+            r8.f14674n = r0
+            j4.a$e r0 = r8.f14673m
+            int r3 = p371v5.C6552b0.f25624a
+            r0.removeCallbacksAndMessages(r2)
+            j4.a$c r0 = r8.f14677q
+            monitor-enter(r0)
+            r0.removeCallbacksAndMessages(r2)     // Catch: java.lang.Throwable -> L43
+            r0.f14684a = r1     // Catch: java.lang.Throwable -> L43
+            monitor-exit(r0)
+            r8.f14677q = r2
+            android.os.HandlerThread r0 = r8.f14676p
+            r0.quit()
+            r8.f14676p = r2
+            r8.f14678r = r2
+            r8.f14679s = r2
+            r8.f14682v = r2
+            r8.f14683w = r2
+            byte[] r0 = r8.f14680t
+            if (r0 == 0) goto L46
+            j4.q r3 = r8.f14662b
+            r3.mo7844e(r0)
+            r8.f14680t = r2
+            goto L46
+        L43:
+            r9 = move-exception
+            monitor-exit(r0)
+            throw r9
+        L46:
+            if (r9 == 0) goto La3
+            v5.i<j4.h$a> r0 = r8.f14669i
+            java.lang.Object r3 = r0.f25644Y
+            monitor-enter(r3)
+            java.util.Map<E, java.lang.Integer> r4 = r0.f25645Z     // Catch: java.lang.Throwable -> La0
+            java.lang.Object r4 = r4.get(r9)     // Catch: java.lang.Throwable -> La0
+            java.lang.Integer r4 = (java.lang.Integer) r4     // Catch: java.lang.Throwable -> La0
+            if (r4 != 0) goto L59
+        L57:
+            monitor-exit(r3)     // Catch: java.lang.Throwable -> La0
+            goto L94
+        L59:
+            java.util.ArrayList r5 = new java.util.ArrayList     // Catch: java.lang.Throwable -> La0
+            java.util.List<E> r6 = r0.f25647b0     // Catch: java.lang.Throwable -> La0
+            r5.<init>(r6)     // Catch: java.lang.Throwable -> La0
+            r5.remove(r9)     // Catch: java.lang.Throwable -> La0
+            java.util.List r5 = java.util.Collections.unmodifiableList(r5)     // Catch: java.lang.Throwable -> La0
+            r0.f25647b0 = r5     // Catch: java.lang.Throwable -> La0
+            int r5 = r4.intValue()     // Catch: java.lang.Throwable -> La0
+            if (r5 != r1) goto L85
+            java.util.Map<E, java.lang.Integer> r4 = r0.f25645Z     // Catch: java.lang.Throwable -> La0
+            r4.remove(r9)     // Catch: java.lang.Throwable -> La0
+            java.util.HashSet r4 = new java.util.HashSet     // Catch: java.lang.Throwable -> La0
+            java.util.Set<E> r5 = r0.f25646a0     // Catch: java.lang.Throwable -> La0
+            r4.<init>(r5)     // Catch: java.lang.Throwable -> La0
+            r4.remove(r9)     // Catch: java.lang.Throwable -> La0
+            java.util.Set r4 = java.util.Collections.unmodifiableSet(r4)     // Catch: java.lang.Throwable -> La0
+            r0.f25646a0 = r4     // Catch: java.lang.Throwable -> La0
+            goto L57
+        L85:
+            java.util.Map<E, java.lang.Integer> r0 = r0.f25645Z     // Catch: java.lang.Throwable -> La0
+            int r4 = r4.intValue()     // Catch: java.lang.Throwable -> La0
+            int r4 = r4 - r1
+            java.lang.Integer r4 = java.lang.Integer.valueOf(r4)     // Catch: java.lang.Throwable -> La0
+            r0.put(r9, r4)     // Catch: java.lang.Throwable -> La0
+            goto L57
+        L94:
+            v5.i<j4.h$a> r0 = r8.f14669i
+            int r0 = r0.m13344a(r9)
+            if (r0 != 0) goto La3
+            r9.m7828f()
+            goto La3
+        La0:
+            r9 = move-exception
+            monitor-exit(r3)     // Catch: java.lang.Throwable -> La0
+            throw r9
+        La3:
+            j4.a$b r9 = r8.f14664d
+            int r0 = r8.f14675o
+            j4.b$g r9 = (p162j4.C3397b.g) r9
+            r3 = -9223372036854775807(0x8000000000000001, double:-4.9E-324)
+            if (r0 != r1) goto Lda
+            j4.b r1 = r9.f14722a
+            int r5 = r1.f14705p
+            if (r5 <= 0) goto Lda
+            long r5 = r1.f14701l
+            int r7 = (r5 > r3 ? 1 : (r5 == r3 ? 0 : -1))
+            if (r7 == 0) goto Lda
+            java.util.Set<j4.a> r0 = r1.f14704o
+            r0.add(r8)
+            j4.b r0 = r9.f14722a
+            android.os.Handler r0 = r0.f14710u
+            java.util.Objects.requireNonNull(r0)
+            f1.f r1 = new f1.f
+            r1.<init>(r8)
+            long r2 = android.os.SystemClock.uptimeMillis()
+            j4.b r4 = r9.f14722a
+            long r4 = r4.f14701l
+            long r2 = r2 + r4
+            r0.postAtTime(r1, r8, r2)
+            goto L12e
+        Lda:
+            if (r0 != 0) goto L12e
+            j4.b r0 = r9.f14722a
+            java.util.List<j4.a> r0 = r0.f14702m
+            r0.remove(r8)
+            j4.b r0 = r9.f14722a
+            j4.a r1 = r0.f14707r
+            if (r1 != r8) goto Leb
+            r0.f14707r = r2
+        Leb:
+            j4.a r1 = r0.f14708s
+            if (r1 != r8) goto Lf1
+            r0.f14708s = r2
+        Lf1:
+            j4.b$f r0 = r0.f14698i
+            java.util.Set<j4.a> r1 = r0.f14720a
+            r1.remove(r8)
+            j4.a r1 = r0.f14721b
+            if (r1 != r8) goto L117
+            r0.f14721b = r2
+            java.util.Set<j4.a> r1 = r0.f14720a
+            boolean r1 = r1.isEmpty()
+            if (r1 != 0) goto L117
+            java.util.Set<j4.a> r1 = r0.f14720a
+            java.util.Iterator r1 = r1.iterator()
+            java.lang.Object r1 = r1.next()
+            j4.a r1 = (p162j4.C3396a) r1
+            r0.f14721b = r1
+            r1.m7803o()
+        L117:
+            j4.b r0 = r9.f14722a
+            long r1 = r0.f14701l
+            int r5 = (r1 > r3 ? 1 : (r1 == r3 ? 0 : -1))
+            if (r5 == 0) goto L12e
+            android.os.Handler r0 = r0.f14710u
+            java.util.Objects.requireNonNull(r0)
+            r0.removeCallbacksAndMessages(r8)
+            j4.b r0 = r9.f14722a
+            java.util.Set<j4.a> r0 = r0.f14704o
+            r0.remove(r8)
+        L12e:
+            j4.b r9 = r9.f14722a
+            r9.m7815j()
+            return
+    }
+
+    @Override // p162j4.InterfaceC3400e
+    /* renamed from: d */
+    public void mo7792d(p162j4.InterfaceC3403h.a r8) {
+            r7 = this;
+            int r0 = r7.f14675o
+            r1 = 0
+            if (r0 >= 0) goto L1f
+            java.lang.String r2 = "DefaultDrmSession"
+            r3 = 51
+            java.lang.StringBuilder r4 = new java.lang.StringBuilder
+            r4.<init>(r3)
+            java.lang.String r3 = "Session reference count less than zero: "
+            r4.append(r3)
+            r4.append(r0)
+            java.lang.String r0 = r4.toString()
+            android.util.Log.e(r2, r0)
+            r7.f14675o = r1
+        L1f:
+            r0 = 1
+            if (r8 == 0) goto L68
+            v5.i<j4.h$a> r2 = r7.f14669i
+            java.lang.Object r3 = r2.f25644Y
+            monitor-enter(r3)
+            java.util.ArrayList r4 = new java.util.ArrayList     // Catch: java.lang.Throwable -> L65
+            java.util.List<E> r5 = r2.f25647b0     // Catch: java.lang.Throwable -> L65
+            r4.<init>(r5)     // Catch: java.lang.Throwable -> L65
+            r4.add(r8)     // Catch: java.lang.Throwable -> L65
+            java.util.List r4 = java.util.Collections.unmodifiableList(r4)     // Catch: java.lang.Throwable -> L65
+            r2.f25647b0 = r4     // Catch: java.lang.Throwable -> L65
+            java.util.Map<E, java.lang.Integer> r4 = r2.f25645Z     // Catch: java.lang.Throwable -> L65
+            java.lang.Object r4 = r4.get(r8)     // Catch: java.lang.Throwable -> L65
+            java.lang.Integer r4 = (java.lang.Integer) r4     // Catch: java.lang.Throwable -> L65
+            if (r4 != 0) goto L51
+            java.util.HashSet r5 = new java.util.HashSet     // Catch: java.lang.Throwable -> L65
+            java.util.Set<E> r6 = r2.f25646a0     // Catch: java.lang.Throwable -> L65
+            r5.<init>(r6)     // Catch: java.lang.Throwable -> L65
+            r5.add(r8)     // Catch: java.lang.Throwable -> L65
+            java.util.Set r5 = java.util.Collections.unmodifiableSet(r5)     // Catch: java.lang.Throwable -> L65
+            r2.f25646a0 = r5     // Catch: java.lang.Throwable -> L65
+        L51:
+            java.util.Map<E, java.lang.Integer> r2 = r2.f25645Z     // Catch: java.lang.Throwable -> L65
+            if (r4 == 0) goto L5b
+            int r4 = r4.intValue()     // Catch: java.lang.Throwable -> L65
+            int r4 = r4 + r0
+            goto L5c
+        L5b:
+            r4 = 1
+        L5c:
+            java.lang.Integer r4 = java.lang.Integer.valueOf(r4)     // Catch: java.lang.Throwable -> L65
+            r2.put(r8, r4)     // Catch: java.lang.Throwable -> L65
+            monitor-exit(r3)     // Catch: java.lang.Throwable -> L65
+            goto L68
+        L65:
+            r8 = move-exception
+            monitor-exit(r3)     // Catch: java.lang.Throwable -> L65
+            throw r8
+        L68:
+            int r2 = r7.f14675o
+            int r2 = r2 + r0
+            r7.f14675o = r2
+            if (r2 != r0) goto L9b
+            int r8 = r7.f14674n
+            r2 = 2
+            if (r8 != r2) goto L75
+            r1 = 1
+        L75:
+            p371v5.C6549a.m13291e(r1)
+            android.os.HandlerThread r8 = new android.os.HandlerThread
+            java.lang.String r1 = "ExoPlayer:DrmRequestHandler"
+            r8.<init>(r1)
+            r7.f14676p = r8
+            r8.start()
+            j4.a$c r8 = new j4.a$c
+            android.os.HandlerThread r1 = r7.f14676p
+            android.os.Looper r1 = r1.getLooper()
+            r8.<init>(r7, r1)
+            r7.f14677q = r8
+            boolean r8 = r7.m7801m()
+            if (r8 == 0) goto Lb0
+            r7.m7797i(r0)
+            goto Lb0
+        L9b:
+            if (r8 == 0) goto Lb0
+            boolean r1 = r7.m7798j()
+            if (r1 == 0) goto Lb0
+            v5.i<j4.h$a> r1 = r7.f14669i
+            int r1 = r1.m13344a(r8)
+            if (r1 != r0) goto Lb0
+            int r0 = r7.f14674n
+            r8.m7826d(r0)
+        Lb0:
+            j4.a$b r8 = r7.f14664d
+            j4.b$g r8 = (p162j4.C3397b.g) r8
+            j4.b r0 = r8.f14722a
+            long r1 = r0.f14701l
+            r3 = -9223372036854775807(0x8000000000000001, double:-4.9E-324)
+            int r5 = (r1 > r3 ? 1 : (r1 == r3 ? 0 : -1))
+            if (r5 == 0) goto Ld0
+            java.util.Set<j4.a> r0 = r0.f14704o
+            r0.remove(r7)
+            j4.b r8 = r8.f14722a
+            android.os.Handler r8 = r8.f14710u
+            java.util.Objects.requireNonNull(r8)
+            r8.removeCallbacksAndMessages(r7)
+        Ld0:
+            return
+    }
+
+    @Override // p162j4.InterfaceC3400e
+    /* renamed from: e */
+    public boolean mo7793e(java.lang.String r3) {
+            r2 = this;
+            j4.q r0 = r2.f14662b
+            byte[] r1 = r2.f14680t
+            p371v5.C6549a.m13292f(r1)
+            byte[] r1 = (byte[]) r1
+            boolean r3 = r0.mo7841b(r1, r3)
+            return r3
+    }
+
+    @Override // p162j4.InterfaceC3400e
+    /* renamed from: f */
+    public final p162j4.InterfaceC3400e.a mo7794f() {
+            r2 = this;
+            int r0 = r2.f14674n
+            r1 = 1
+            if (r0 != r1) goto L8
+            j4.e$a r0 = r2.f14679s
+            goto L9
+        L8:
+            r0 = 0
+        L9:
+            return r0
+    }
+
+    @Override // p162j4.InterfaceC3400e
+    /* renamed from: g */
+    public final p142i4.InterfaceC3068b mo7795g() {
+            r1 = this;
+            i4.b r0 = r1.f14678r
+            return r0
+    }
+
+    @Override // p162j4.InterfaceC3400e
+    public final int getState() {
+            r1 = this;
+            int r0 = r1.f14674n
+            return r0
+    }
+
+    /* renamed from: h */
+    public final void m7796h(p371v5.InterfaceC6558h<p162j4.InterfaceC3403h.a> r3) {
+            r2 = this;
+            v5.i<j4.h$a> r0 = r2.f14669i
+            java.lang.Object r1 = r0.f25644Y
+            monitor-enter(r1)
+            java.util.Set<E> r0 = r0.f25646a0     // Catch: java.lang.Throwable -> L1d
+            monitor-exit(r1)     // Catch: java.lang.Throwable -> L1d
+            java.util.Iterator r0 = r0.iterator()
+        Lc:
+            boolean r1 = r0.hasNext()
+            if (r1 == 0) goto L1c
+            java.lang.Object r1 = r0.next()
+            j4.h$a r1 = (p162j4.InterfaceC3403h.a) r1
+            r3.mo2143a(r1)
+            goto Lc
+        L1c:
+            return
+        L1d:
+            r3 = move-exception
+            monitor-exit(r1)     // Catch: java.lang.Throwable -> L1d
+            throw r3
+    }
+
+    @org.checkerframework.checker.nullness.qual.RequiresNonNull({"sessionId"})
+    /* renamed from: i */
+    public final void m7797i(boolean r10) {
+            r9 = this;
+            boolean r0 = r9.f14667g
+            if (r0 == 0) goto L5
+            return
+        L5:
+            byte[] r0 = r9.f14680t
+            int r1 = p371v5.C6552b0.f25624a
+            int r1 = r9.f14665e
+            r2 = 0
+            r3 = 2
+            r4 = 1
+            if (r1 == 0) goto L3d
+            if (r1 == r4) goto L3d
+            if (r1 == r3) goto L2a
+            r0 = 3
+            if (r1 == r0) goto L19
+            goto L10b
+        L19:
+            byte[] r1 = r9.f14681u
+            java.util.Objects.requireNonNull(r1)
+            byte[] r1 = r9.f14680t
+            java.util.Objects.requireNonNull(r1)
+            byte[] r1 = r9.f14681u
+            r9.m7802n(r1, r0, r10)
+            goto L10b
+        L2a:
+            byte[] r1 = r9.f14681u
+            if (r1 == 0) goto Lda
+            j4.q r5 = r9.f14662b     // Catch: java.lang.Exception -> L35
+            r5.mo7842c(r0, r1)     // Catch: java.lang.Exception -> L35
+            r2 = 1
+            goto L39
+        L35:
+            r1 = move-exception
+            r9.m7799k(r1, r4)
+        L39:
+            if (r2 == 0) goto L10b
+            goto Lda
+        L3d:
+            byte[] r1 = r9.f14681u
+            if (r1 != 0) goto L46
+            r9.m7802n(r0, r4, r10)
+            goto L10b
+        L46:
+            int r5 = r9.f14674n
+            r6 = 4
+            if (r5 == r6) goto L58
+            j4.q r5 = r9.f14662b     // Catch: java.lang.Exception -> L52
+            r5.mo7842c(r0, r1)     // Catch: java.lang.Exception -> L52
+            r2 = 1
+            goto L56
+        L52:
+            r1 = move-exception
+            r9.m7799k(r1, r4)
+        L56:
+            if (r2 == 0) goto L10b
+        L58:
+            java.util.UUID r1 = p088f4.C2017j.f8967d
+            java.util.UUID r2 = r9.f14672l
+            boolean r1 = r1.equals(r2)
+            if (r1 != 0) goto L68
+            r1 = 9223372036854775807(0x7fffffffffffffff, double:NaN)
+            goto Lb8
+        L68:
+            java.util.Map r1 = r9.m7804p()
+            if (r1 != 0) goto L70
+            r1 = 0
+            goto La1
+        L70:
+            android.util.Pair r2 = new android.util.Pair
+            java.lang.String r4 = "LicenseDurationRemaining"
+            r7 = -9223372036854775807(0x8000000000000001, double:-4.9E-324)
+            java.lang.Object r4 = r1.get(r4)     // Catch: java.lang.NumberFormatException -> L86
+            java.lang.String r4 = (java.lang.String) r4     // Catch: java.lang.NumberFormatException -> L86
+            if (r4 == 0) goto L86
+            long r4 = java.lang.Long.parseLong(r4)     // Catch: java.lang.NumberFormatException -> L86
+            goto L87
+        L86:
+            r4 = r7
+        L87:
+            java.lang.Long r4 = java.lang.Long.valueOf(r4)
+            java.lang.String r5 = "PlaybackDurationRemaining"
+            java.lang.Object r1 = r1.get(r5)     // Catch: java.lang.NumberFormatException -> L99
+            java.lang.String r1 = (java.lang.String) r1     // Catch: java.lang.NumberFormatException -> L99
+            if (r1 == 0) goto L99
+            long r7 = java.lang.Long.parseLong(r1)     // Catch: java.lang.NumberFormatException -> L99
+        L99:
+            java.lang.Long r1 = java.lang.Long.valueOf(r7)
+            r2.<init>(r4, r1)
+            r1 = r2
+        La1:
+            java.util.Objects.requireNonNull(r1)
+            java.lang.Object r2 = r1.first
+            java.lang.Long r2 = (java.lang.Long) r2
+            long r4 = r2.longValue()
+            java.lang.Object r1 = r1.second
+            java.lang.Long r1 = (java.lang.Long) r1
+            long r1 = r1.longValue()
+            long r1 = java.lang.Math.min(r4, r1)
+        Lb8:
+            int r4 = r9.f14665e
+            if (r4 != 0) goto Lde
+            r4 = 60
+            int r7 = (r1 > r4 ? 1 : (r1 == r4 ? 0 : -1))
+            if (r7 > 0) goto Lde
+            java.lang.String r4 = "DefaultDrmSession"
+            r5 = 88
+            java.lang.StringBuilder r6 = new java.lang.StringBuilder
+            r6.<init>(r5)
+            java.lang.String r5 = "Offline license has expired or will expire soon. Remaining seconds: "
+            r6.append(r5)
+            r6.append(r1)
+            java.lang.String r1 = r6.toString()
+            android.util.Log.d(r4, r1)
+        Lda:
+            r9.m7802n(r0, r3, r10)
+            goto L10b
+        Lde:
+            r4 = 0
+            int r10 = (r1 > r4 ? 1 : (r1 == r4 ? 0 : -1))
+            if (r10 > 0) goto Led
+            j4.w r10 = new j4.w
+            r10.<init>()
+            r9.m7799k(r10, r3)
+            goto L10b
+        Led:
+            r9.f14674n = r6
+            v5.i<j4.h$a> r10 = r9.f14669i
+            java.lang.Object r0 = r10.f25644Y
+            monitor-enter(r0)
+            java.util.Set<E> r10 = r10.f25646a0     // Catch: java.lang.Throwable -> L10c
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L10c
+            java.util.Iterator r10 = r10.iterator()
+        Lfb:
+            boolean r0 = r10.hasNext()
+            if (r0 == 0) goto L10b
+            java.lang.Object r0 = r10.next()
+            j4.h$a r0 = (p162j4.InterfaceC3403h.a) r0
+            r0.m7825c()
+            goto Lfb
+        L10b:
+            return
+        L10c:
+            r10 = move-exception
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L10c
+            throw r10
+    }
+
+    @org.checkerframework.checker.nullness.qual.EnsuresNonNullIf(expression = {"sessionId"}, result = true)
+    /* renamed from: j */
+    public final boolean m7798j() {
+            r2 = this;
+            int r0 = r2.f14674n
+            r1 = 3
+            if (r0 == r1) goto Lb
+            r1 = 4
+            if (r0 != r1) goto L9
+            goto Lb
+        L9:
+            r0 = 0
+            goto Lc
+        Lb:
+            r0 = 1
+        Lc:
+            return r0
+    }
+
+    /* renamed from: k */
+    public final void m7799k(java.lang.Exception r8, int r9) {
+            r7 = this;
+            j4.e$a r0 = new j4.e$a
+            int r1 = p371v5.C6552b0.f25624a
+            r2 = 21
+            r3 = 1
+            if (r1 < r2) goto L14
+            boolean r2 = p162j4.C3408m.m7837a(r8)
+            if (r2 == 0) goto L14
+            int r9 = p162j4.C3408m.m7838b(r8)
+            goto L5f
+        L14:
+            r2 = 23
+            r4 = 6006(0x1776, float:8.416E-42)
+            if (r1 < r2) goto L23
+            boolean r2 = p162j4.C3409n.m7839a(r8)
+            if (r2 == 0) goto L23
+        L20:
+            r9 = 6006(0x1776, float:8.416E-42)
+            goto L5f
+        L23:
+            r2 = 6002(0x1772, float:8.41E-42)
+            r5 = 18
+            if (r1 < r5) goto L32
+            boolean r6 = p162j4.C3407l.m7836b(r8)
+            if (r6 == 0) goto L32
+        L2f:
+            r9 = 6002(0x1772, float:8.41E-42)
+            goto L5f
+        L32:
+            if (r1 < r5) goto L3d
+            boolean r1 = p162j4.C3407l.m7835a(r8)
+            if (r1 == 0) goto L3d
+            r9 = 6007(0x1777, float:8.418E-42)
+            goto L5f
+        L3d:
+            boolean r1 = r8 instanceof p162j4.C3421z
+            if (r1 == 0) goto L44
+            r9 = 6001(0x1771, float:8.409E-42)
+            goto L5f
+        L44:
+            boolean r1 = r8 instanceof p162j4.C3397b.d
+            if (r1 == 0) goto L4b
+            r9 = 6003(0x1773, float:8.412E-42)
+            goto L5f
+        L4b:
+            boolean r1 = r8 instanceof p162j4.C3418w
+            if (r1 == 0) goto L52
+            r9 = 6008(0x1778, float:8.419E-42)
+            goto L5f
+        L52:
+            if (r9 != r3) goto L55
+            goto L20
+        L55:
+            r1 = 2
+            if (r9 != r1) goto L5b
+            r9 = 6004(0x1774, float:8.413E-42)
+            goto L5f
+        L5b:
+            r1 = 3
+            if (r9 != r1) goto L7b
+            goto L2f
+        L5f:
+            r0.<init>(r8, r9)
+            r7.f14679s = r0
+            java.lang.String r9 = "DefaultDrmSession"
+            java.lang.String r0 = "DRM session error"
+            p371v5.C6565o.m13369b(r9, r0, r8)
+            u3.b r9 = new u3.b
+            r9.<init>(r8)
+            r7.m7796h(r9)
+            int r8 = r7.f14674n
+            r9 = 4
+            if (r8 == r9) goto L7a
+            r7.f14674n = r3
+        L7a:
+            return
+        L7b:
+            java.lang.IllegalArgumentException r8 = new java.lang.IllegalArgumentException
+            r8.<init>()
+            throw r8
+    }
+
+    /* renamed from: l */
+    public final void m7800l(java.lang.Exception r2, boolean r3) {
+            r1 = this;
+            boolean r0 = r2 instanceof android.media.NotProvisionedException
+            if (r0 == 0) goto L18
+            j4.a$a r2 = r1.f14663c
+            j4.b$f r2 = (p162j4.C3397b.f) r2
+            java.util.Set<j4.a> r3 = r2.f14720a
+            r3.add(r1)
+            j4.a r3 = r2.f14721b
+            if (r3 == 0) goto L12
+            goto L20
+        L12:
+            r2.f14721b = r1
+            r1.m7803o()
+            goto L20
+        L18:
+            if (r3 == 0) goto L1c
+            r3 = 1
+            goto L1d
+        L1c:
+            r3 = 2
+        L1d:
+            r1.m7799k(r2, r3)
+        L20:
+            return
+    }
+
+    @org.checkerframework.checker.nullness.qual.EnsuresNonNullIf(expression = {"sessionId"}, result = true)
+    /* renamed from: m */
+    public final boolean m7801m() {
+            r4 = this;
+            boolean r0 = r4.m7798j()
+            r1 = 1
+            if (r0 == 0) goto L8
+            return r1
+        L8:
+            j4.q r0 = r4.f14662b     // Catch: java.lang.Exception -> L40 android.media.NotProvisionedException -> L45
+            byte[] r0 = r0.mo7851l()     // Catch: java.lang.Exception -> L40 android.media.NotProvisionedException -> L45
+            r4.f14680t = r0     // Catch: java.lang.Exception -> L40 android.media.NotProvisionedException -> L45
+            j4.q r2 = r4.f14662b     // Catch: java.lang.Exception -> L40 android.media.NotProvisionedException -> L45
+            i4.b r0 = r2.mo7850k(r0)     // Catch: java.lang.Exception -> L40 android.media.NotProvisionedException -> L45
+            r4.f14678r = r0     // Catch: java.lang.Exception -> L40 android.media.NotProvisionedException -> L45
+            r0 = 3
+            r4.f14674n = r0     // Catch: java.lang.Exception -> L40 android.media.NotProvisionedException -> L45
+            v5.i<j4.h$a> r2 = r4.f14669i     // Catch: java.lang.Exception -> L40 android.media.NotProvisionedException -> L45
+            java.lang.Object r3 = r2.f25644Y     // Catch: java.lang.Exception -> L40 android.media.NotProvisionedException -> L45
+            monitor-enter(r3)     // Catch: java.lang.Exception -> L40 android.media.NotProvisionedException -> L45
+            java.util.Set<E> r2 = r2.f25646a0     // Catch: java.lang.Throwable -> L3d
+            monitor-exit(r3)     // Catch: java.lang.Throwable -> L3d
+            java.util.Iterator r2 = r2.iterator()     // Catch: java.lang.Exception -> L40 android.media.NotProvisionedException -> L45
+        L27:
+            boolean r3 = r2.hasNext()     // Catch: java.lang.Exception -> L40 android.media.NotProvisionedException -> L45
+            if (r3 == 0) goto L37
+            java.lang.Object r3 = r2.next()     // Catch: java.lang.Exception -> L40 android.media.NotProvisionedException -> L45
+            j4.h$a r3 = (p162j4.InterfaceC3403h.a) r3     // Catch: java.lang.Exception -> L40 android.media.NotProvisionedException -> L45
+            r3.m7826d(r0)     // Catch: java.lang.Exception -> L40 android.media.NotProvisionedException -> L45
+            goto L27
+        L37:
+            byte[] r0 = r4.f14680t     // Catch: java.lang.Exception -> L40 android.media.NotProvisionedException -> L45
+            java.util.Objects.requireNonNull(r0)     // Catch: java.lang.Exception -> L40 android.media.NotProvisionedException -> L45
+            return r1
+        L3d:
+            r0 = move-exception
+            monitor-exit(r3)     // Catch: java.lang.Throwable -> L3d
+            throw r0     // Catch: java.lang.Exception -> L40 android.media.NotProvisionedException -> L45
+        L40:
+            r0 = move-exception
+            r4.m7799k(r0, r1)
+            goto L59
+        L45:
+            j4.a$a r0 = r4.f14663c
+            j4.b$f r0 = (p162j4.C3397b.f) r0
+            java.util.Set<j4.a> r1 = r0.f14720a
+            r1.add(r4)
+            j4.a r1 = r0.f14721b
+            if (r1 == 0) goto L54
+            goto L59
+        L54:
+            r0.f14721b = r4
+            r4.m7803o()
+        L59:
+            r0 = 0
+            return r0
+    }
+
+    /* renamed from: n */
+    public final void m7802n(byte[] r5, int r6, boolean r7) {
+            r4 = this;
+            r0 = 1
+            j4.q r1 = r4.f14662b     // Catch: java.lang.Exception -> L18
+            java.util.List<j4.d$b> r2 = r4.f14661a     // Catch: java.lang.Exception -> L18
+            java.util.HashMap<java.lang.String, java.lang.String> r3 = r4.f14668h     // Catch: java.lang.Exception -> L18
+            j4.q$a r5 = r1.mo7848i(r5, r2, r6, r3)     // Catch: java.lang.Exception -> L18
+            r4.f14682v = r5     // Catch: java.lang.Exception -> L18
+            j4.a$c r6 = r4.f14677q     // Catch: java.lang.Exception -> L18
+            int r1 = p371v5.C6552b0.f25624a     // Catch: java.lang.Exception -> L18
+            java.util.Objects.requireNonNull(r5)     // Catch: java.lang.Exception -> L18
+            r6.m7805a(r0, r5, r7)     // Catch: java.lang.Exception -> L18
+            goto L1c
+        L18:
+            r5 = move-exception
+            r4.m7800l(r5, r0)
+        L1c:
+            return
+    }
+
+    /* renamed from: o */
+    public void m7803o() {
+            r4 = this;
+            j4.q r0 = r4.f14662b
+            j4.q$d r0 = r0.mo7846g()
+            r4.f14683w = r0
+            j4.a$c r1 = r4.f14677q
+            int r2 = p371v5.C6552b0.f25624a
+            r2 = 0
+            java.util.Objects.requireNonNull(r0)
+            r3 = 1
+            r1.m7805a(r2, r0, r3)
+            return
+    }
+
+    /* renamed from: p */
+    public java.util.Map<java.lang.String, java.lang.String> m7804p() {
+            r2 = this;
+            byte[] r0 = r2.f14680t
+            if (r0 != 0) goto L6
+            r0 = 0
+            goto Lc
+        L6:
+            j4.q r1 = r2.f14662b
+            java.util.Map r0 = r1.mo7843d(r0)
+        Lc:
+            return r0
+    }
+}
+package p162j4;
+
+/* renamed from: j4.b */
+/* loaded from: classes.dex */
+public class C3397b implements p162j4.InterfaceC3405j {
+
+    /* renamed from: b */
+    public final java.util.UUID f14691b;
+
+    /* renamed from: c */
+    public final p162j4.InterfaceC3412q.c f14692c;
+
+    /* renamed from: d */
+    public final p162j4.InterfaceC3419x f14693d;
+
+    /* renamed from: e */
+    public final java.util.HashMap<java.lang.String, java.lang.String> f14694e;
+
+    /* renamed from: f */
+    public final boolean f14695f;
+
+    /* renamed from: g */
+    public final int[] f14696g;
+
+    /* renamed from: h */
+    public final boolean f14697h;
+
+    /* renamed from: i */
+    public final p162j4.C3397b.f f14698i;
+
+    /* renamed from: j */
+    public final p352u5.InterfaceC6307b0 f14699j;
+
+    /* renamed from: k */
+    public final p162j4.C3397b.g f14700k;
+
+    /* renamed from: l */
+    public final long f14701l;
+
+    /* renamed from: m */
+    public final java.util.List<p162j4.C3396a> f14702m;
+
+    /* renamed from: n */
+    public final java.util.Set<p162j4.C3397b.e> f14703n;
+
+    /* renamed from: o */
+    public final java.util.Set<p162j4.C3396a> f14704o;
+
+    /* renamed from: p */
+    public int f14705p;
+
+    /* renamed from: q */
+    public p162j4.InterfaceC3412q f14706q;
+
+    /* renamed from: r */
+    public p162j4.C3396a f14707r;
+
+    /* renamed from: s */
+    public p162j4.C3396a f14708s;
+
+    /* renamed from: t */
+    public android.os.Looper f14709t;
+
+    /* renamed from: u */
+    public android.os.Handler f14710u;
+
+    /* renamed from: v */
+    public int f14711v;
+
+    /* renamed from: w */
+    public byte[] f14712w;
+
+    /* renamed from: x */
+    public volatile p162j4.C3397b.c f14713x;
+
+    /* renamed from: j4.b$a */
+    public static /* synthetic */ class a {
+    }
+
+    /* renamed from: j4.b$b */
+    public class b implements p162j4.InterfaceC3412q.b {
+
+        /* renamed from: a */
+        public final /* synthetic */ p162j4.C3397b f14714a;
+
+        public b(p162j4.C3397b r1, p162j4.C3397b.a r2) {
+                r0 = this;
+                r0.f14714a = r1
+                r0.<init>()
+                return
+        }
+    }
+
+    @android.annotation.SuppressLint({"HandlerLeak"})
+    /* renamed from: j4.b$c */
+    public class c extends android.os.Handler {
+
+        /* renamed from: a */
+        public final /* synthetic */ p162j4.C3397b f14715a;
+
+        public c(p162j4.C3397b r1, android.os.Looper r2) {
+                r0 = this;
+                r0.f14715a = r1
+                r0.<init>(r2)
+                return
+        }
+
+        @Override // android.os.Handler
+        public void handleMessage(android.os.Message r5) {
+                r4 = this;
+                java.lang.Object r0 = r5.obj
+                byte[] r0 = (byte[]) r0
+                if (r0 != 0) goto L7
+                return
+            L7:
+                j4.b r1 = r4.f14715a
+                java.util.List<j4.a> r1 = r1.f14702m
+                java.util.Iterator r1 = r1.iterator()
+            Lf:
+                boolean r2 = r1.hasNext()
+                if (r2 == 0) goto L38
+                java.lang.Object r2 = r1.next()
+                j4.a r2 = (p162j4.C3396a) r2
+                byte[] r3 = r2.f14680t
+                boolean r3 = java.util.Arrays.equals(r3, r0)
+                if (r3 == 0) goto Lf
+                int r5 = r5.what
+                r0 = 2
+                if (r5 == r0) goto L29
+                goto L38
+            L29:
+                int r5 = r2.f14665e
+                if (r5 != 0) goto L38
+                int r5 = r2.f14674n
+                r0 = 4
+                if (r5 != r0) goto L38
+                int r5 = p371v5.C6552b0.f25624a
+                r5 = 0
+                r2.m7797i(r5)
+            L38:
+                return
+        }
+    }
+
+    /* renamed from: j4.b$d */
+    public static final class d extends java.lang.Exception {
+        public d(java.util.UUID r2, p162j4.C3397b.a r3) {
+                r1 = this;
+                java.lang.String r2 = java.lang.String.valueOf(r2)
+                int r3 = r2.length()
+                int r3 = r3 + 29
+                java.lang.StringBuilder r0 = new java.lang.StringBuilder
+                r0.<init>(r3)
+                java.lang.String r3 = "Media does not support uuid: "
+                r0.append(r3)
+                r0.append(r2)
+                java.lang.String r2 = r0.toString()
+                r1.<init>(r2)
+                return
+        }
+    }
+
+    /* renamed from: j4.b$e */
+    public class e implements p162j4.InterfaceC3405j.b {
+
+        /* renamed from: Y */
+        public final p162j4.InterfaceC3403h.a f14716Y;
+
+        /* renamed from: Z */
+        public p162j4.InterfaceC3400e f14717Z;
+
+        /* renamed from: a0 */
+        public boolean f14718a0;
+
+        /* renamed from: b0 */
+        public final /* synthetic */ p162j4.C3397b f14719b0;
+
+        public e(p162j4.C3397b r1, p162j4.InterfaceC3403h.a r2) {
+                r0 = this;
+                r0.f14719b0 = r1
+                r0.<init>()
+                r0.f14716Y = r2
+                return
+        }
+
+        @Override // p162j4.InterfaceC3405j.b
+        public void release() {
+                r2 = this;
+                j4.b r0 = r2.f14719b0
+                android.os.Handler r0 = r0.f14710u
+                java.util.Objects.requireNonNull(r0)
+                f1.f r1 = new f1.f
+                r1.<init>(r2)
+                p371v5.C6552b0.m13300D(r0, r1)
+                return
+        }
+    }
+
+    /* renamed from: j4.b$f */
+    public class f implements p162j4.C3396a.a {
+
+        /* renamed from: a */
+        public final java.util.Set<p162j4.C3396a> f14720a;
+
+        /* renamed from: b */
+        public p162j4.C3396a f14721b;
+
+        public f() {
+                r1 = this;
+                r1.<init>()
+                java.util.HashSet r0 = new java.util.HashSet
+                r0.<init>()
+                r1.f14720a = r0
+                return
+        }
+
+        /* renamed from: a */
+        public void m7819a(java.lang.Exception r4, boolean r5) {
+                r3 = this;
+                r0 = 0
+                r3.f14721b = r0
+                java.util.Set<j4.a> r0 = r3.f14720a
+                b9.n r0 = p026b9.AbstractC0714n.m2311w(r0)
+                java.util.Set<j4.a> r1 = r3.f14720a
+                r1.clear()
+                b9.a r0 = r0.m2313A()
+            L12:
+                boolean r1 = r0.hasNext()
+                if (r1 == 0) goto L27
+                java.lang.Object r1 = r0.next()
+                j4.a r1 = (p162j4.C3396a) r1
+                if (r5 == 0) goto L22
+                r2 = 1
+                goto L23
+            L22:
+                r2 = 3
+            L23:
+                r1.m7799k(r4, r2)
+                goto L12
+            L27:
+                return
+        }
+    }
+
+    /* renamed from: j4.b$g */
+    public class g implements p162j4.C3396a.b {
+
+        /* renamed from: a */
+        public final /* synthetic */ p162j4.C3397b f14722a;
+
+        public g(p162j4.C3397b r1, p162j4.C3397b.a r2) {
+                r0 = this;
+                r0.f14722a = r1
+                r0.<init>()
+                return
+        }
+    }
+
+    public C3397b(java.util.UUID r2, p162j4.InterfaceC3412q.c r3, p162j4.InterfaceC3419x r4, java.util.HashMap r5, boolean r6, int[] r7, boolean r8, p352u5.InterfaceC6307b0 r9, long r10, p162j4.C3397b.a r12) {
+            r1 = this;
+            r1.<init>()
+            java.util.Objects.requireNonNull(r2)
+            java.util.UUID r12 = p088f4.C2017j.f8965b
+            boolean r12 = r12.equals(r2)
+            r12 = r12 ^ 1
+            java.lang.String r0 = "Use C.CLEARKEY_UUID instead"
+            p371v5.C6549a.m13289c(r12, r0)
+            r1.f14691b = r2
+            r1.f14692c = r3
+            r1.f14693d = r4
+            r1.f14694e = r5
+            r1.f14695f = r6
+            r1.f14696g = r7
+            r1.f14697h = r8
+            r1.f14699j = r9
+            j4.b$f r2 = new j4.b$f
+            r2.<init>()
+            r1.f14698i = r2
+            j4.b$g r2 = new j4.b$g
+            r3 = 0
+            r2.<init>(r1, r3)
+            r1.f14700k = r2
+            r2 = 0
+            r1.f14711v = r2
+            java.util.ArrayList r2 = new java.util.ArrayList
+            r2.<init>()
+            r1.f14702m = r2
+            java.util.Set r2 = p026b9.C0707j0.m2302e()
+            r1.f14703n = r2
+            java.util.Set r2 = p026b9.C0707j0.m2302e()
+            r1.f14704o = r2
+            r1.f14701l = r10
+            return
+    }
+
+    /* renamed from: e */
+    public static boolean m7806e(p162j4.InterfaceC3400e r3) {
+            j4.a r3 = (p162j4.C3396a) r3
+            int r0 = r3.f14674n
+            r1 = 1
+            if (r0 != r1) goto L1d
+            int r0 = p371v5.C6552b0.f25624a
+            r2 = 19
+            if (r0 < r2) goto L1e
+            j4.e$a r3 = r3.mo7794f()
+            java.util.Objects.requireNonNull(r3)
+            java.lang.Throwable r3 = r3.getCause()
+            boolean r3 = r3 instanceof android.media.ResourceBusyException
+            if (r3 == 0) goto L1d
+            goto L1e
+        L1d:
+            r1 = 0
+        L1e:
+            return r1
+    }
+
+    /* renamed from: h */
+    public static java.util.List<p162j4.C3399d.b> m7807h(p162j4.C3399d r5, java.util.UUID r6, boolean r7) {
+            java.util.ArrayList r0 = new java.util.ArrayList
+            int r1 = r5.f14729b0
+            r0.<init>(r1)
+            r1 = 0
+            r2 = 0
+        L9:
+            int r3 = r5.f14729b0
+            if (r2 >= r3) goto L39
+            j4.d$b[] r3 = r5.f14726Y
+            r3 = r3[r2]
+            boolean r4 = r3.m7822a(r6)
+            if (r4 != 0) goto L2a
+            java.util.UUID r4 = p088f4.C2017j.f8966c
+            boolean r4 = r4.equals(r6)
+            if (r4 == 0) goto L28
+            java.util.UUID r4 = p088f4.C2017j.f8965b
+            boolean r4 = r3.m7822a(r4)
+            if (r4 == 0) goto L28
+            goto L2a
+        L28:
+            r4 = 0
+            goto L2b
+        L2a:
+            r4 = 1
+        L2b:
+            if (r4 == 0) goto L36
+            byte[] r4 = r3.f14734c0
+            if (r4 != 0) goto L33
+            if (r7 == 0) goto L36
+        L33:
+            r0.add(r3)
+        L36:
+            int r2 = r2 + 1
+            goto L9
+        L39:
+            return r0
+    }
+
+    @Override // p162j4.InterfaceC3405j
+    /* renamed from: a */
+    public p162j4.InterfaceC3405j.b mo7808a(android.os.Looper r2, p162j4.InterfaceC3403h.a r3, p088f4.C2003e0 r4) {
+            r1 = this;
+            int r0 = r1.f14705p
+            if (r0 <= 0) goto L6
+            r0 = 1
+            goto L7
+        L6:
+            r0 = 0
+        L7:
+            p371v5.C6549a.m13291e(r0)
+            r1.m7814i(r2)
+            j4.b$e r2 = new j4.b$e
+            r2.<init>(r1, r3)
+            android.os.Handler r3 = r1.f14710u
+            java.util.Objects.requireNonNull(r3)
+            a4.c r0 = new a4.c
+            r0.<init>(r2, r4)
+            r3.post(r0)
+            return r2
+    }
+
+    @Override // p162j4.InterfaceC3405j
+    /* renamed from: b */
+    public p162j4.InterfaceC3400e mo7809b(android.os.Looper r3, p162j4.InterfaceC3403h.a r4, p088f4.C2003e0 r5) {
+            r2 = this;
+            int r0 = r2.f14705p
+            r1 = 1
+            if (r0 <= 0) goto L7
+            r0 = 1
+            goto L8
+        L7:
+            r0 = 0
+        L8:
+            p371v5.C6549a.m13291e(r0)
+            r2.m7814i(r3)
+            j4.e r3 = r2.m7811d(r3, r4, r5, r1)
+            return r3
+    }
+
+    @Override // p162j4.InterfaceC3405j
+    /* renamed from: c */
+    public int mo7810c(p088f4.C2003e0 r7) {
+            r6 = this;
+            j4.q r0 = r6.f14706q
+            java.util.Objects.requireNonNull(r0)
+            int r0 = r0.mo7849j()
+            j4.d r1 = r7.f8899m0
+            r2 = 0
+            if (r1 != 0) goto L2b
+            java.lang.String r7 = r7.f8896j0
+            int r7 = p371v5.C6567q.m13377g(r7)
+            int[] r1 = r6.f14696g
+            int r3 = p371v5.C6552b0.f25624a
+            r3 = 0
+        L19:
+            int r4 = r1.length
+            r5 = -1
+            if (r3 >= r4) goto L25
+            r4 = r1[r3]
+            if (r4 != r7) goto L22
+            goto L26
+        L22:
+            int r3 = r3 + 1
+            goto L19
+        L25:
+            r3 = -1
+        L26:
+            if (r3 == r5) goto L29
+            goto L2a
+        L29:
+            r0 = 0
+        L2a:
+            return r0
+        L2b:
+            byte[] r7 = r6.f14712w
+            r3 = 1
+            if (r7 == 0) goto L31
+            goto L9e
+        L31:
+            java.util.UUID r7 = r6.f14691b
+            java.util.List r7 = m7807h(r1, r7, r3)
+            java.util.ArrayList r7 = (java.util.ArrayList) r7
+            boolean r7 = r7.isEmpty()
+            if (r7 == 0) goto L71
+            int r7 = r1.f14729b0
+            if (r7 != r3) goto L9f
+            j4.d$b[] r7 = r1.f14726Y
+            r7 = r7[r2]
+            java.util.UUID r4 = p088f4.C2017j.f8965b
+            boolean r7 = r7.m7822a(r4)
+            if (r7 == 0) goto L9f
+            java.util.UUID r7 = r6.f14691b
+            java.lang.String r7 = java.lang.String.valueOf(r7)
+            int r4 = r7.length()
+            int r4 = r4 + 72
+            java.lang.StringBuilder r5 = new java.lang.StringBuilder
+            r5.<init>(r4)
+            java.lang.String r4 = "DrmInitData only contains common PSSH SchemeData. Assuming support for: "
+            r5.append(r4)
+            r5.append(r7)
+            java.lang.String r7 = r5.toString()
+            java.lang.String r4 = "DefaultDrmSessionMgr"
+            android.util.Log.w(r4, r7)
+        L71:
+            java.lang.String r7 = r1.f14728a0
+            if (r7 == 0) goto L9e
+            java.lang.String r1 = "cenc"
+            boolean r1 = r1.equals(r7)
+            if (r1 == 0) goto L7e
+            goto L9e
+        L7e:
+            java.lang.String r1 = "cbcs"
+            boolean r1 = r1.equals(r7)
+            if (r1 == 0) goto L8d
+            int r7 = p371v5.C6552b0.f25624a
+            r1 = 25
+            if (r7 < r1) goto L9f
+            goto L9e
+        L8d:
+            java.lang.String r1 = "cbc1"
+            boolean r1 = r1.equals(r7)
+            if (r1 != 0) goto L9f
+            java.lang.String r1 = "cens"
+            boolean r7 = r1.equals(r7)
+            if (r7 == 0) goto L9e
+            goto L9f
+        L9e:
+            r2 = 1
+        L9f:
+            if (r2 == 0) goto La2
+            goto La3
+        La2:
+            r0 = 1
+        La3:
+            return r0
+    }
+
+    /* renamed from: d */
+    public final p162j4.InterfaceC3400e m7811d(android.os.Looper r6, p162j4.InterfaceC3403h.a r7, p088f4.C2003e0 r8, boolean r9) {
+            r5 = this;
+            j4.b$c r0 = r5.f14713x
+            if (r0 != 0) goto Lb
+            j4.b$c r0 = new j4.b$c
+            r0.<init>(r5, r6)
+            r5.f14713x = r0
+        Lb:
+            j4.d r6 = r8.f8899m0
+            r0 = 0
+            r1 = 0
+            if (r6 != 0) goto L61
+            java.lang.String r6 = r8.f8896j0
+            int r6 = p371v5.C6567q.m13377g(r6)
+            j4.q r7 = r5.f14706q
+            java.util.Objects.requireNonNull(r7)
+            int r8 = r7.mo7849j()
+            r2 = 2
+            r3 = 1
+            if (r8 != r2) goto L2a
+            boolean r8 = p162j4.C3413r.f14755d
+            if (r8 == 0) goto L2a
+            r8 = 1
+            goto L2b
+        L2a:
+            r8 = 0
+        L2b:
+            if (r8 != 0) goto L60
+            int[] r8 = r5.f14696g
+            int r2 = p371v5.C6552b0.f25624a
+        L31:
+            int r2 = r8.length
+            r4 = -1
+            if (r1 >= r2) goto L3d
+            r2 = r8[r1]
+            if (r2 != r6) goto L3a
+            goto L3e
+        L3a:
+            int r1 = r1 + 1
+            goto L31
+        L3d:
+            r1 = -1
+        L3e:
+            if (r1 == r4) goto L60
+            int r6 = r7.mo7849j()
+            if (r6 != r3) goto L47
+            goto L60
+        L47:
+            j4.a r6 = r5.f14707r
+            if (r6 != 0) goto L5b
+            b9.a<java.lang.Object> r6 = p026b9.AbstractC0714n.f3979Z
+            b9.n<java.lang.Object> r6 = p026b9.C0693c0.f3898c0
+            j4.a r6 = r5.m7813g(r6, r3, r0, r9)
+            java.util.List<j4.a> r7 = r5.f14702m
+            r7.add(r6)
+            r5.f14707r = r6
+            goto L5e
+        L5b:
+            r6.mo7792d(r0)
+        L5e:
+            j4.a r0 = r5.f14707r
+        L60:
+            return r0
+        L61:
+            byte[] r8 = r5.f14712w
+            if (r8 != 0) goto L94
+            java.util.UUID r8 = r5.f14691b
+            java.util.List r6 = m7807h(r6, r8, r1)
+            r8 = r6
+            java.util.ArrayList r8 = (java.util.ArrayList) r8
+            boolean r8 = r8.isEmpty()
+            if (r8 == 0) goto L95
+            j4.b$d r6 = new j4.b$d
+            java.util.UUID r8 = r5.f14691b
+            r6.<init>(r8, r0)
+            java.lang.String r8 = "DefaultDrmSessionMgr"
+            java.lang.String r9 = "DRM error"
+            p371v5.C6565o.m13369b(r8, r9, r6)
+            if (r7 == 0) goto L87
+            r7.m7827e(r6)
+        L87:
+            j4.p r7 = new j4.p
+            j4.e$a r8 = new j4.e$a
+            r9 = 6003(0x1773, float:8.412E-42)
+            r8.<init>(r6, r9)
+            r7.<init>(r8)
+            return r7
+        L94:
+            r6 = r0
+        L95:
+            boolean r8 = r5.f14695f
+            if (r8 != 0) goto L9c
+            j4.a r0 = r5.f14708s
+            goto Lb7
+        L9c:
+            java.util.List<j4.a> r8 = r5.f14702m
+            java.util.Iterator r8 = r8.iterator()
+        La2:
+            boolean r2 = r8.hasNext()
+            if (r2 == 0) goto Lb7
+            java.lang.Object r2 = r8.next()
+            j4.a r2 = (p162j4.C3396a) r2
+            java.util.List<j4.d$b> r3 = r2.f14661a
+            boolean r3 = p371v5.C6552b0.m13308a(r3, r6)
+            if (r3 == 0) goto La2
+            r0 = r2
+        Lb7:
+            if (r0 != 0) goto Lc9
+            j4.a r0 = r5.m7813g(r6, r1, r7, r9)
+            boolean r6 = r5.f14695f
+            if (r6 != 0) goto Lc3
+            r5.f14708s = r0
+        Lc3:
+            java.util.List<j4.a> r6 = r5.f14702m
+            r6.add(r0)
+            goto Lcc
+        Lc9:
+            r0.mo7792d(r7)
+        Lcc:
+            return r0
+    }
+
+    /* renamed from: f */
+    public final p162j4.C3396a m7812f(java.util.List<p162j4.C3399d.b> r17, boolean r18, p162j4.InterfaceC3403h.a r19) {
+            r16 = this;
+            r0 = r16
+            j4.q r1 = r0.f14706q
+            java.util.Objects.requireNonNull(r1)
+            boolean r1 = r0.f14697h
+            r9 = r1 | r18
+            j4.a r1 = new j4.a
+            java.util.UUID r3 = r0.f14691b
+            j4.q r4 = r0.f14706q
+            j4.b$f r5 = r0.f14698i
+            j4.b$g r6 = r0.f14700k
+            int r8 = r0.f14711v
+            byte[] r11 = r0.f14712w
+            java.util.HashMap<java.lang.String, java.lang.String> r12 = r0.f14694e
+            j4.x r13 = r0.f14693d
+            android.os.Looper r14 = r0.f14709t
+            java.util.Objects.requireNonNull(r14)
+            u5.b0 r15 = r0.f14699j
+            r2 = r1
+            r7 = r17
+            r10 = r18
+            r2.<init>(r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15)
+            r2 = r19
+            r1.mo7792d(r2)
+            long r2 = r0.f14701l
+            r4 = -9223372036854775807(0x8000000000000001, double:-4.9E-324)
+            int r6 = (r2 > r4 ? 1 : (r2 == r4 ? 0 : -1))
+            if (r6 == 0) goto L40
+            r2 = 0
+            r1.mo7792d(r2)
+        L40:
+            return r1
+    }
+
+    /* renamed from: g */
+    public final p162j4.C3396a m7813g(java.util.List<p162j4.C3399d.b> r8, boolean r9, p162j4.InterfaceC3403h.a r10, boolean r11) {
+            r7 = this;
+            j4.a r0 = r7.m7812f(r8, r9, r10)
+            boolean r1 = m7806e(r0)
+            r2 = 0
+            r3 = -9223372036854775807(0x8000000000000001, double:-4.9E-324)
+            if (r1 == 0) goto L2b
+            java.util.Set<j4.a> r1 = r7.f14704o
+            boolean r1 = r1.isEmpty()
+            if (r1 != 0) goto L2b
+            r7.m7816k()
+            r0.mo7791c(r10)
+            long r5 = r7.f14701l
+            int r1 = (r5 > r3 ? 1 : (r5 == r3 ? 0 : -1))
+            if (r1 == 0) goto L27
+            r0.mo7791c(r2)
+        L27:
+            j4.a r0 = r7.m7812f(r8, r9, r10)
+        L2b:
+            boolean r1 = m7806e(r0)
+            if (r1 == 0) goto L59
+            if (r11 == 0) goto L59
+            java.util.Set<j4.b$e> r11 = r7.f14703n
+            boolean r11 = r11.isEmpty()
+            if (r11 != 0) goto L59
+            r7.m7817l()
+            java.util.Set<j4.a> r11 = r7.f14704o
+            boolean r11 = r11.isEmpty()
+            if (r11 != 0) goto L49
+            r7.m7816k()
+        L49:
+            r0.mo7791c(r10)
+            long r5 = r7.f14701l
+            int r11 = (r5 > r3 ? 1 : (r5 == r3 ? 0 : -1))
+            if (r11 == 0) goto L55
+            r0.mo7791c(r2)
+        L55:
+            j4.a r0 = r7.m7812f(r8, r9, r10)
+        L59:
+            return r0
+    }
+
+    @org.checkerframework.checker.nullness.qual.EnsuresNonNull({"this.playbackLooper", "this.playbackHandler"})
+    /* renamed from: i */
+    public final synchronized void m7814i(android.os.Looper r2) {
+            r1 = this;
+            monitor-enter(r1)
+            android.os.Looper r0 = r1.f14709t     // Catch: java.lang.Throwable -> L1e
+            if (r0 != 0) goto Lf
+            r1.f14709t = r2     // Catch: java.lang.Throwable -> L1e
+            android.os.Handler r0 = new android.os.Handler     // Catch: java.lang.Throwable -> L1e
+            r0.<init>(r2)     // Catch: java.lang.Throwable -> L1e
+            r1.f14710u = r0     // Catch: java.lang.Throwable -> L1e
+            goto L1c
+        Lf:
+            if (r0 != r2) goto L13
+            r2 = 1
+            goto L14
+        L13:
+            r2 = 0
+        L14:
+            p371v5.C6549a.m13291e(r2)     // Catch: java.lang.Throwable -> L1e
+            android.os.Handler r2 = r1.f14710u     // Catch: java.lang.Throwable -> L1e
+            java.util.Objects.requireNonNull(r2)     // Catch: java.lang.Throwable -> L1e
+        L1c:
+            monitor-exit(r1)
+            return
+        L1e:
+            r2 = move-exception
+            monitor-exit(r1)
+            throw r2
+    }
+
+    /* renamed from: j */
+    public final void m7815j() {
+            r1 = this;
+            j4.q r0 = r1.f14706q
+            if (r0 == 0) goto L23
+            int r0 = r1.f14705p
+            if (r0 != 0) goto L23
+            java.util.List<j4.a> r0 = r1.f14702m
+            boolean r0 = r0.isEmpty()
+            if (r0 == 0) goto L23
+            java.util.Set<j4.b$e> r0 = r1.f14703n
+            boolean r0 = r0.isEmpty()
+            if (r0 == 0) goto L23
+            j4.q r0 = r1.f14706q
+            java.util.Objects.requireNonNull(r0)
+            r0.release()
+            r0 = 0
+            r1.f14706q = r0
+        L23:
+            return
+    }
+
+    /* renamed from: k */
+    public final void m7816k() {
+            r3 = this;
+            java.util.Set<j4.a> r0 = r3.f14704o
+            b9.p r0 = p026b9.AbstractC0716p.m2326u(r0)
+            b9.m0 r0 = r0.mo2270n()
+        La:
+            boolean r1 = r0.hasNext()
+            if (r1 == 0) goto L1b
+            java.lang.Object r1 = r0.next()
+            j4.e r1 = (p162j4.InterfaceC3400e) r1
+            r2 = 0
+            r1.mo7791c(r2)
+            goto La
+        L1b:
+            return
+    }
+
+    /* renamed from: l */
+    public final void m7817l() {
+            r4 = this;
+            java.util.Set<j4.b$e> r0 = r4.f14703n
+            b9.p r0 = p026b9.AbstractC0716p.m2326u(r0)
+            b9.m0 r0 = r0.mo2270n()
+        La:
+            boolean r1 = r0.hasNext()
+            if (r1 == 0) goto L26
+            java.lang.Object r1 = r0.next()
+            j4.b$e r1 = (p162j4.C3397b.e) r1
+            j4.b r2 = r1.f14719b0
+            android.os.Handler r2 = r2.f14710u
+            java.util.Objects.requireNonNull(r2)
+            f1.f r3 = new f1.f
+            r3.<init>(r1)
+            p371v5.C6552b0.m13300D(r2, r3)
+            goto La
+        L26:
+            return
+    }
+
+    @Override // p162j4.InterfaceC3405j
+    /* renamed from: o */
+    public final void mo7818o() {
+            r6 = this;
+            int r0 = r6.f14705p
+            int r1 = r0 + 1
+            r6.f14705p = r1
+            if (r0 == 0) goto L9
+            return
+        L9:
+            j4.q r0 = r6.f14706q
+            r1 = 0
+            if (r0 != 0) goto L21
+            j4.q$c r0 = r6.f14692c
+            java.util.UUID r2 = r6.f14691b
+            j4.q r0 = r0.mo7852a(r2)
+            r6.f14706q = r0
+            j4.b$b r2 = new j4.b$b
+            r2.<init>(r6, r1)
+            r0.mo7840a(r2)
+            goto L43
+        L21:
+            long r2 = r6.f14701l
+            r4 = -9223372036854775807(0x8000000000000001, double:-4.9E-324)
+            int r0 = (r2 > r4 ? 1 : (r2 == r4 ? 0 : -1))
+            if (r0 == 0) goto L43
+            r0 = 0
+        L2d:
+            java.util.List<j4.a> r2 = r6.f14702m
+            int r2 = r2.size()
+            if (r0 >= r2) goto L43
+            java.util.List<j4.a> r2 = r6.f14702m
+            java.lang.Object r2 = r2.get(r0)
+            j4.a r2 = (p162j4.C3396a) r2
+            r2.mo7792d(r1)
+            int r0 = r0 + 1
+            goto L2d
+        L43:
+            return
+    }
+
+    @Override // p162j4.InterfaceC3405j
+    public final void release() {
+            r5 = this;
+            int r0 = r5.f14705p
+            int r0 = r0 + (-1)
+            r5.f14705p = r0
+            if (r0 == 0) goto L9
+            return
+        L9:
+            long r0 = r5.f14701l
+            r2 = -9223372036854775807(0x8000000000000001, double:-4.9E-324)
+            int r4 = (r0 > r2 ? 1 : (r0 == r2 ? 0 : -1))
+            if (r4 == 0) goto L2f
+            java.util.ArrayList r0 = new java.util.ArrayList
+            java.util.List<j4.a> r1 = r5.f14702m
+            r0.<init>(r1)
+            r1 = 0
+        L1c:
+            int r2 = r0.size()
+            if (r1 >= r2) goto L2f
+            java.lang.Object r2 = r0.get(r1)
+            j4.a r2 = (p162j4.C3396a) r2
+            r3 = 0
+            r2.mo7791c(r3)
+            int r1 = r1 + 1
+            goto L1c
+        L2f:
+            r5.m7817l()
+            r5.m7815j()
+            return
+    }
+}
+package p162j4;
+
+/* renamed from: j4.c */
+/* loaded from: classes.dex */
+public final class C3398c {
+
+    /* renamed from: a */
+    public final java.lang.Object f14723a;
+
+    /* renamed from: b */
+    public p088f4.C2018j0.f f14724b;
+
+    /* renamed from: c */
+    public p162j4.InterfaceC3405j f14725c;
+
+    public C3398c() {
+            r1 = this;
+            r1.<init>()
+            java.lang.Object r0 = new java.lang.Object
+            r0.<init>()
+            r1.f14723a = r0
+            return
+    }
+
+    /* renamed from: a */
+    public final p162j4.InterfaceC3405j m7820a(p088f4.C2018j0.f r17) {
+            r16 = this;
+            r0 = r17
+            u5.q$b r1 = new u5.q$b
+            r1.<init>()
+            r2 = 0
+            r1.f24776b = r2
+            j4.v r6 = new j4.v
+            android.net.Uri r3 = r0.f8999b
+            if (r3 != 0) goto L12
+            r3 = r2
+            goto L16
+        L12:
+            java.lang.String r3 = r3.toString()
+        L16:
+            boolean r4 = r0.f9003f
+            r6.<init>(r3, r4, r1)
+            b9.o<java.lang.String, java.lang.String> r1 = r0.f9000c
+            b9.p r1 = r1.m2319e()
+            b9.m0 r1 = r1.mo2270n()
+        L25:
+            boolean r3 = r1.hasNext()
+            if (r3 == 0) goto L50
+            java.lang.Object r3 = r1.next()
+            java.util.Map$Entry r3 = (java.util.Map.Entry) r3
+            java.lang.Object r4 = r3.getKey()
+            java.lang.String r4 = (java.lang.String) r4
+            java.lang.Object r3 = r3.getValue()
+            java.lang.String r3 = (java.lang.String) r3
+            java.util.Objects.requireNonNull(r4)
+            java.util.Objects.requireNonNull(r3)
+            java.util.Map<java.lang.String, java.lang.String> r5 = r6.f14769d
+            monitor-enter(r5)
+            java.util.Map<java.lang.String, java.lang.String> r7 = r6.f14769d     // Catch: java.lang.Throwable -> L4d
+            r7.put(r4, r3)     // Catch: java.lang.Throwable -> L4d
+            monitor-exit(r5)     // Catch: java.lang.Throwable -> L4d
+            goto L25
+        L4d:
+            r0 = move-exception
+            monitor-exit(r5)     // Catch: java.lang.Throwable -> L4d
+            throw r0
+        L50:
+            java.util.HashMap r7 = new java.util.HashMap
+            r7.<init>()
+            java.util.UUID r1 = p088f4.C2017j.f8967d
+            int r1 = p162j4.C3416u.f14762d
+            u5.s r11 = new u5.s
+            r11.<init>()
+            r12 = 300000(0x493e0, double:1.482197E-318)
+            java.util.UUID r4 = r0.f8998a
+            j4.t r5 = p162j4.C3415t.f14761a
+            java.util.Objects.requireNonNull(r4)
+            boolean r8 = r0.f9001d
+            boolean r10 = r0.f9002e
+            b9.n<java.lang.Integer> r1 = r0.f9004g
+            int[] r1 = p074e9.C1806b.m4544w(r1)
+            int r3 = r1.length
+            r9 = 0
+        L74:
+            if (r9 >= r3) goto L87
+            r14 = r1[r9]
+            r2 = 2
+            r15 = 1
+            if (r14 == r2) goto L80
+            if (r14 != r15) goto L7f
+            goto L80
+        L7f:
+            r15 = 0
+        L80:
+            p371v5.C6549a.m13288b(r15)
+            int r9 = r9 + 1
+            r2 = 0
+            goto L74
+        L87:
+            java.lang.Object r1 = r1.clone()
+            r9 = r1
+            int[] r9 = (int[]) r9
+            j4.b r1 = new j4.b
+            r14 = 0
+            r3 = r1
+            r3.<init>(r4, r5, r6, r7, r8, r9, r10, r11, r12, r14)
+            byte[] r0 = r0.f9005h
+            if (r0 == 0) goto L9f
+            int r2 = r0.length
+            byte[] r2 = java.util.Arrays.copyOf(r0, r2)
+            goto La0
+        L9f:
+            r2 = 0
+        La0:
+            java.util.List<j4.a> r0 = r1.f14702m
+            boolean r0 = r0.isEmpty()
+            p371v5.C6549a.m13291e(r0)
+            r0 = 0
+            r1.f14711v = r0
+            r1.f14712w = r2
+            return r1
+    }
+}
+package p162j4;
+
+/* renamed from: j4.d */
+/* loaded from: classes.dex */
+public final class C3399d implements java.util.Comparator<p162j4.C3399d.b>, android.os.Parcelable {
+    public static final android.os.Parcelable.Creator<p162j4.C3399d> CREATOR = null;
+
+    /* renamed from: Y */
+    public final p162j4.C3399d.b[] f14726Y;
+
+    /* renamed from: Z */
+    public int f14727Z;
+
+    /* renamed from: a0 */
+    public final java.lang.String f14728a0;
+
+    /* renamed from: b0 */
+    public final int f14729b0;
+
+    /* renamed from: j4.d$a */
+    public class a implements android.os.Parcelable.Creator<p162j4.C3399d> {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p162j4.C3399d createFromParcel(android.os.Parcel r2) {
+                r1 = this;
+                j4.d r0 = new j4.d
+                r0.<init>(r2)
+                return r0
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p162j4.C3399d[] newArray(int r1) {
+                r0 = this;
+                j4.d[] r1 = new p162j4.C3399d[r1]
+                return r1
+        }
+    }
+
+    /* renamed from: j4.d$b */
+    public static final class b implements android.os.Parcelable {
+        public static final android.os.Parcelable.Creator<p162j4.C3399d.b> CREATOR = null;
+
+        /* renamed from: Y */
+        public int f14730Y;
+
+        /* renamed from: Z */
+        public final java.util.UUID f14731Z;
+
+        /* renamed from: a0 */
+        public final java.lang.String f14732a0;
+
+        /* renamed from: b0 */
+        public final java.lang.String f14733b0;
+
+        /* renamed from: c0 */
+        public final byte[] f14734c0;
+
+        /* renamed from: j4.d$b$a */
+        public class a implements android.os.Parcelable.Creator<p162j4.C3399d.b> {
+            public a() {
+                    r0 = this;
+                    r0.<init>()
+                    return
+            }
+
+            @Override // android.os.Parcelable.Creator
+            public p162j4.C3399d.b createFromParcel(android.os.Parcel r2) {
+                    r1 = this;
+                    j4.d$b r0 = new j4.d$b
+                    r0.<init>(r2)
+                    return r0
+            }
+
+            @Override // android.os.Parcelable.Creator
+            public p162j4.C3399d.b[] newArray(int r1) {
+                    r0 = this;
+                    j4.d$b[] r1 = new p162j4.C3399d.b[r1]
+                    return r1
+            }
+        }
+
+        static {
+                j4.d$b$a r0 = new j4.d$b$a
+                r0.<init>()
+                p162j4.C3399d.b.CREATOR = r0
+                return
+        }
+
+        public b(android.os.Parcel r6) {
+                r5 = this;
+                r5.<init>()
+                java.util.UUID r0 = new java.util.UUID
+                long r1 = r6.readLong()
+                long r3 = r6.readLong()
+                r0.<init>(r1, r3)
+                r5.f14731Z = r0
+                java.lang.String r0 = r6.readString()
+                r5.f14732a0 = r0
+                java.lang.String r0 = r6.readString()
+                int r1 = p371v5.C6552b0.f25624a
+                r5.f14733b0 = r0
+                byte[] r6 = r6.createByteArray()
+                r5.f14734c0 = r6
+                return
+        }
+
+        public b(java.util.UUID r1, java.lang.String r2, java.lang.String r3, byte[] r4) {
+                r0 = this;
+                r0.<init>()
+                java.util.Objects.requireNonNull(r1)
+                r0.f14731Z = r1
+                r0.f14732a0 = r2
+                java.util.Objects.requireNonNull(r3)
+                r0.f14733b0 = r3
+                r0.f14734c0 = r4
+                return
+        }
+
+        public b(java.util.UUID r1, java.lang.String r2, byte[] r3) {
+                r0 = this;
+                r0.<init>()
+                java.util.Objects.requireNonNull(r1)
+                r0.f14731Z = r1
+                r1 = 0
+                r0.f14732a0 = r1
+                r0.f14733b0 = r2
+                r0.f14734c0 = r3
+                return
+        }
+
+        /* renamed from: a */
+        public boolean m7822a(java.util.UUID r3) {
+                r2 = this;
+                java.util.UUID r0 = p088f4.C2017j.f8964a
+                java.util.UUID r1 = r2.f14731Z
+                boolean r0 = r0.equals(r1)
+                if (r0 != 0) goto L15
+                java.util.UUID r0 = r2.f14731Z
+                boolean r3 = r3.equals(r0)
+                if (r3 == 0) goto L13
+                goto L15
+            L13:
+                r3 = 0
+                goto L16
+            L15:
+                r3 = 1
+            L16:
+                return r3
+        }
+
+        @Override // android.os.Parcelable
+        public int describeContents() {
+                r1 = this;
+                r0 = 0
+                return r0
+        }
+
+        public boolean equals(java.lang.Object r5) {
+                r4 = this;
+                boolean r0 = r5 instanceof p162j4.C3399d.b
+                r1 = 0
+                if (r0 != 0) goto L6
+                return r1
+            L6:
+                r0 = 1
+                if (r5 != r4) goto La
+                return r0
+            La:
+                j4.d$b r5 = (p162j4.C3399d.b) r5
+                java.lang.String r2 = r4.f14732a0
+                java.lang.String r3 = r5.f14732a0
+                boolean r2 = p371v5.C6552b0.m13308a(r2, r3)
+                if (r2 == 0) goto L35
+                java.lang.String r2 = r4.f14733b0
+                java.lang.String r3 = r5.f14733b0
+                boolean r2 = p371v5.C6552b0.m13308a(r2, r3)
+                if (r2 == 0) goto L35
+                java.util.UUID r2 = r4.f14731Z
+                java.util.UUID r3 = r5.f14731Z
+                boolean r2 = p371v5.C6552b0.m13308a(r2, r3)
+                if (r2 == 0) goto L35
+                byte[] r2 = r4.f14734c0
+                byte[] r5 = r5.f14734c0
+                boolean r5 = java.util.Arrays.equals(r2, r5)
+                if (r5 == 0) goto L35
+                r1 = 1
+            L35:
+                return r1
+        }
+
+        public int hashCode() {
+                r3 = this;
+                int r0 = r3.f14730Y
+                if (r0 != 0) goto L2a
+                java.util.UUID r0 = r3.f14731Z
+                int r0 = r0.hashCode()
+                int r0 = r0 * 31
+                java.lang.String r1 = r3.f14732a0
+                if (r1 != 0) goto L12
+                r1 = 0
+                goto L16
+            L12:
+                int r1 = r1.hashCode()
+            L16:
+                int r0 = r0 + r1
+                int r0 = r0 * 31
+                java.lang.String r1 = r3.f14733b0
+                r2 = 31
+                int r0 = p213m1.C4319e.m9651a(r1, r0, r2)
+                byte[] r1 = r3.f14734c0
+                int r1 = java.util.Arrays.hashCode(r1)
+                int r1 = r1 + r0
+                r3.f14730Y = r1
+            L2a:
+                int r0 = r3.f14730Y
+                return r0
+        }
+
+        @Override // android.os.Parcelable
+        public void writeToParcel(android.os.Parcel r3, int r4) {
+                r2 = this;
+                java.util.UUID r4 = r2.f14731Z
+                long r0 = r4.getMostSignificantBits()
+                r3.writeLong(r0)
+                java.util.UUID r4 = r2.f14731Z
+                long r0 = r4.getLeastSignificantBits()
+                r3.writeLong(r0)
+                java.lang.String r4 = r2.f14732a0
+                r3.writeString(r4)
+                java.lang.String r4 = r2.f14733b0
+                r3.writeString(r4)
+                byte[] r4 = r2.f14734c0
+                r3.writeByteArray(r4)
+                return
+        }
+    }
+
+    static {
+            j4.d$a r0 = new j4.d$a
+            r0.<init>()
+            p162j4.C3399d.CREATOR = r0
+            return
+    }
+
+    public C3399d(android.os.Parcel r2) {
+            r1 = this;
+            r1.<init>()
+            java.lang.String r0 = r2.readString()
+            r1.f14728a0 = r0
+            android.os.Parcelable$Creator<j4.d$b> r0 = p162j4.C3399d.b.CREATOR
+            java.lang.Object[] r2 = r2.createTypedArray(r0)
+            j4.d$b[] r2 = (p162j4.C3399d.b[]) r2
+            int r0 = p371v5.C6552b0.f25624a
+            r1.f14726Y = r2
+            int r2 = r2.length
+            r1.f14729b0 = r2
+            return
+    }
+
+    public C3399d(java.lang.String r1, boolean r2, p162j4.C3399d.b... r3) {
+            r0 = this;
+            r0.<init>()
+            r0.f14728a0 = r1
+            if (r2 == 0) goto Le
+            java.lang.Object r1 = r3.clone()
+            r3 = r1
+            j4.d$b[] r3 = (p162j4.C3399d.b[]) r3
+        Le:
+            r0.f14726Y = r3
+            int r1 = r3.length
+            r0.f14729b0 = r1
+            java.util.Arrays.sort(r3, r0)
+            return
+    }
+
+    /* renamed from: a */
+    public p162j4.C3399d m7821a(java.lang.String r4) {
+            r3 = this;
+            java.lang.String r0 = r3.f14728a0
+            boolean r0 = p371v5.C6552b0.m13308a(r0, r4)
+            if (r0 == 0) goto L9
+            return r3
+        L9:
+            j4.d r0 = new j4.d
+            r1 = 0
+            j4.d$b[] r2 = r3.f14726Y
+            r0.<init>(r4, r1, r2)
+            return r0
+    }
+
+    @Override // java.util.Comparator
+    public int compare(p162j4.C3399d.b r3, p162j4.C3399d.b r4) {
+            r2 = this;
+            j4.d$b r3 = (p162j4.C3399d.b) r3
+            j4.d$b r4 = (p162j4.C3399d.b) r4
+            java.util.UUID r0 = p088f4.C2017j.f8964a
+            java.util.UUID r1 = r3.f14731Z
+            boolean r1 = r0.equals(r1)
+            if (r1 == 0) goto L1a
+            java.util.UUID r3 = r4.f14731Z
+            boolean r3 = r0.equals(r3)
+            if (r3 == 0) goto L18
+            r3 = 0
+            goto L22
+        L18:
+            r3 = 1
+            goto L22
+        L1a:
+            java.util.UUID r3 = r3.f14731Z
+            java.util.UUID r4 = r4.f14731Z
+            int r3 = r3.compareTo(r4)
+        L22:
+            return r3
+    }
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+            r1 = this;
+            r0 = 0
+            return r0
+    }
+
+    @Override // java.util.Comparator
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            r1 = 0
+            if (r5 == 0) goto L29
+            java.lang.Class<j4.d> r2 = p162j4.C3399d.class
+            java.lang.Class r3 = r5.getClass()
+            if (r2 == r3) goto L10
+            goto L29
+        L10:
+            j4.d r5 = (p162j4.C3399d) r5
+            java.lang.String r2 = r4.f14728a0
+            java.lang.String r3 = r5.f14728a0
+            boolean r2 = p371v5.C6552b0.m13308a(r2, r3)
+            if (r2 == 0) goto L27
+            j4.d$b[] r2 = r4.f14726Y
+            j4.d$b[] r5 = r5.f14726Y
+            boolean r5 = java.util.Arrays.equals(r2, r5)
+            if (r5 == 0) goto L27
+            goto L28
+        L27:
+            r0 = 0
+        L28:
+            return r0
+        L29:
+            return r1
+    }
+
+    public int hashCode() {
+            r2 = this;
+            int r0 = r2.f14727Z
+            if (r0 != 0) goto L19
+            java.lang.String r0 = r2.f14728a0
+            if (r0 != 0) goto La
+            r0 = 0
+            goto Le
+        La:
+            int r0 = r0.hashCode()
+        Le:
+            int r0 = r0 * 31
+            j4.d$b[] r1 = r2.f14726Y
+            int r1 = java.util.Arrays.hashCode(r1)
+            int r0 = r0 + r1
+            r2.f14727Z = r0
+        L19:
+            int r0 = r2.f14727Z
+            return r0
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(android.os.Parcel r2, int r3) {
+            r1 = this;
+            java.lang.String r3 = r1.f14728a0
+            r2.writeString(r3)
+            j4.d$b[] r3 = r1.f14726Y
+            r0 = 0
+            r2.writeTypedArray(r3, r0)
+            return
+    }
+}
+package p162j4;
+
+/* renamed from: j4.i */
+/* loaded from: classes.dex */
+public final /* synthetic */ class C3404i {
+    /* renamed from: a */
+    public static p162j4.InterfaceC3405j.b m7830a(p162j4.InterfaceC3405j r0, android.os.Looper r1, p162j4.InterfaceC3403h.a r2, p088f4.C2003e0 r3) {
+            j4.j$b r1 = p162j4.InterfaceC3405j.b.f14749F
+            return r1
+    }
+
+    /* renamed from: b */
+    public static void m7831b(p162j4.InterfaceC3405j r0) {
+            return
+    }
+
+    /* renamed from: c */
+    public static void m7832c(p162j4.InterfaceC3405j r0) {
+            return
+    }
+}
+package p162j4;
+
+/* renamed from: j4.k */
+/* loaded from: classes.dex */
+public final /* synthetic */ class C3406k {
+    static {
+            j4.j$b r0 = p162j4.InterfaceC3405j.b.f14749F
+            return
+    }
+
+    /* renamed from: a */
+    public static /* synthetic */ void m7833a() {
+            m7834b()
+            return
+    }
+
+    /* renamed from: b */
+    public static /* synthetic */ void m7834b() {
+            return
+    }
+}
+package p162j4;
+
+/* renamed from: j4.l */
+/* loaded from: classes.dex */
+public final class C3407l {
+    /* renamed from: a */
+    public static boolean m7835a(java.lang.Throwable r0) {
+            boolean r0 = r0 instanceof android.media.DeniedByServerException
+            return r0
+    }
+
+    /* renamed from: b */
+    public static boolean m7836b(java.lang.Throwable r0) {
+            boolean r0 = r0 instanceof android.media.NotProvisionedException
+            return r0
+    }
+}
+package p162j4;
+
+/* renamed from: j4.m */
+/* loaded from: classes.dex */
+public final class C3408m {
+    /* renamed from: a */
+    public static boolean m7837a(java.lang.Throwable r0) {
+            boolean r0 = r0 instanceof android.media.MediaDrm.MediaDrmStateException
+            return r0
+    }
+
+    /* renamed from: b */
+    public static int m7838b(java.lang.Throwable r5) {
+            android.media.MediaDrm$MediaDrmStateException r5 = (android.media.MediaDrm.MediaDrmStateException) r5
+            java.lang.String r5 = r5.getDiagnosticInfo()
+            int r0 = p371v5.C6552b0.f25624a
+            r0 = 0
+            if (r5 != 0) goto Lc
+            goto L37
+        Lc:
+            java.lang.String r1 = "_"
+            r2 = -1
+            java.lang.String[] r5 = r5.split(r1, r2)
+            int r1 = r5.length
+            r2 = 2
+            if (r1 >= r2) goto L18
+            goto L37
+        L18:
+            int r3 = r1 + (-1)
+            r3 = r5[r3]
+            r4 = 3
+            if (r1 < r4) goto L2c
+            int r1 = r1 - r2
+            r5 = r5[r1]
+            java.lang.String r1 = "neg"
+            boolean r5 = r1.equals(r5)
+            if (r5 == 0) goto L2c
+            r5 = 1
+            goto L2d
+        L2c:
+            r5 = 0
+        L2d:
+            java.util.Objects.requireNonNull(r3)     // Catch: java.lang.NumberFormatException -> L37
+            int r0 = java.lang.Integer.parseInt(r3)     // Catch: java.lang.NumberFormatException -> L37
+            if (r5 == 0) goto L37
+            int r0 = -r0
+        L37:
+            int r5 = p371v5.C6552b0.m13323p(r0)
+            return r5
+    }
+}
+package p162j4;
+
+/* renamed from: j4.n */
+/* loaded from: classes.dex */
+public final class C3409n {
+    /* renamed from: a */
+    public static boolean m7839a(java.lang.Throwable r0) {
+            boolean r0 = r0 instanceof android.media.MediaDrmResetException
+            return r0
+    }
+}
+package p162j4;
+
+/* renamed from: j4.o */
+/* loaded from: classes.dex */
+public final class C3410o implements p162j4.InterfaceC3412q {
+    public C3410o() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    /* renamed from: a */
+    public void mo7840a(p162j4.InterfaceC3412q.b r1) {
+            r0 = this;
+            return
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    /* renamed from: b */
+    public boolean mo7841b(byte[] r1, java.lang.String r2) {
+            r0 = this;
+            java.lang.IllegalStateException r1 = new java.lang.IllegalStateException
+            r1.<init>()
+            throw r1
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    /* renamed from: c */
+    public void mo7842c(byte[] r1, byte[] r2) {
+            r0 = this;
+            java.lang.IllegalStateException r1 = new java.lang.IllegalStateException
+            r1.<init>()
+            throw r1
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    /* renamed from: d */
+    public java.util.Map<java.lang.String, java.lang.String> mo7843d(byte[] r1) {
+            r0 = this;
+            java.lang.IllegalStateException r1 = new java.lang.IllegalStateException
+            r1.<init>()
+            throw r1
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    /* renamed from: e */
+    public void mo7844e(byte[] r1) {
+            r0 = this;
+            return
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    /* renamed from: f */
+    public byte[] mo7845f(byte[] r1, byte[] r2) {
+            r0 = this;
+            java.lang.IllegalStateException r1 = new java.lang.IllegalStateException
+            r1.<init>()
+            throw r1
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    /* renamed from: g */
+    public p162j4.InterfaceC3412q.d mo7846g() {
+            r1 = this;
+            java.lang.IllegalStateException r0 = new java.lang.IllegalStateException
+            r0.<init>()
+            throw r0
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    /* renamed from: h */
+    public void mo7847h(byte[] r1) {
+            r0 = this;
+            java.lang.IllegalStateException r1 = new java.lang.IllegalStateException
+            r1.<init>()
+            throw r1
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    /* renamed from: i */
+    public p162j4.InterfaceC3412q.a mo7848i(byte[] r1, java.util.List<p162j4.C3399d.b> r2, int r3, java.util.HashMap<java.lang.String, java.lang.String> r4) {
+            r0 = this;
+            java.lang.IllegalStateException r1 = new java.lang.IllegalStateException
+            r1.<init>()
+            throw r1
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    /* renamed from: j */
+    public int mo7849j() {
+            r1 = this;
+            r0 = 1
+            return r0
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    /* renamed from: k */
+    public p142i4.InterfaceC3068b mo7850k(byte[] r1) {
+            r0 = this;
+            java.lang.IllegalStateException r1 = new java.lang.IllegalStateException
+            r1.<init>()
+            throw r1
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    /* renamed from: l */
+    public byte[] mo7851l() {
+            r2 = this;
+            android.media.MediaDrmException r0 = new android.media.MediaDrmException
+            java.lang.String r1 = "Attempting to open a session using a dummy ExoMediaDrm."
+            r0.<init>(r1)
+            throw r0
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    public void release() {
+            r0 = this;
+            return
+    }
+}
+package p162j4;
+
+/* renamed from: j4.p */
+/* loaded from: classes.dex */
+public final class C3411p implements p162j4.InterfaceC3400e {
+
+    /* renamed from: a */
+    public final p162j4.InterfaceC3400e.a f14750a;
+
+    public C3411p(p162j4.InterfaceC3400e.a r1) {
+            r0 = this;
+            r0.<init>()
+            r0.f14750a = r1
+            return
+    }
+
+    @Override // p162j4.InterfaceC3400e
+    /* renamed from: a */
+    public boolean mo7789a() {
+            r1 = this;
+            r0 = 0
+            return r0
+    }
+
+    @Override // p162j4.InterfaceC3400e
+    /* renamed from: b */
+    public final java.util.UUID mo7790b() {
+            r1 = this;
+            java.util.UUID r0 = p088f4.C2017j.f8964a
+            return r0
+    }
+
+    @Override // p162j4.InterfaceC3400e
+    /* renamed from: c */
+    public void mo7791c(p162j4.InterfaceC3403h.a r1) {
+            r0 = this;
+            return
+    }
+
+    @Override // p162j4.InterfaceC3400e
+    /* renamed from: d */
+    public void mo7792d(p162j4.InterfaceC3403h.a r1) {
+            r0 = this;
+            return
+    }
+
+    @Override // p162j4.InterfaceC3400e
+    /* renamed from: e */
+    public boolean mo7793e(java.lang.String r1) {
+            r0 = this;
+            r1 = 0
+            return r1
+    }
+
+    @Override // p162j4.InterfaceC3400e
+    /* renamed from: f */
+    public p162j4.InterfaceC3400e.a mo7794f() {
+            r1 = this;
+            j4.e$a r0 = r1.f14750a
+            return r0
+    }
+
+    @Override // p162j4.InterfaceC3400e
+    /* renamed from: g */
+    public p142i4.InterfaceC3068b mo7795g() {
+            r1 = this;
+            r0 = 0
+            return r0
+    }
+
+    @Override // p162j4.InterfaceC3400e
+    public int getState() {
+            r1 = this;
+            r0 = 1
+            return r0
+    }
+}
+package p162j4;
+
+/* renamed from: j4.r */
+/* loaded from: classes.dex */
+public final class C3413r implements p142i4.InterfaceC3068b {
+
+    /* renamed from: d */
+    public static final boolean f14755d = false;
+
+    /* renamed from: a */
+    public final java.util.UUID f14756a;
+
+    /* renamed from: b */
+    public final byte[] f14757b;
+
+    /* renamed from: c */
+    public final boolean f14758c;
+
+    static {
+            java.lang.String r0 = p371v5.C6552b0.f25626c
+            java.lang.String r1 = "Amazon"
+            boolean r0 = r1.equals(r0)
+            if (r0 == 0) goto L1e
+            java.lang.String r0 = p371v5.C6552b0.f25627d
+            java.lang.String r1 = "AFTM"
+            boolean r1 = r1.equals(r0)
+            if (r1 != 0) goto L1c
+            java.lang.String r1 = "AFTB"
+            boolean r0 = r1.equals(r0)
+            if (r0 == 0) goto L1e
+        L1c:
+            r0 = 1
+            goto L1f
+        L1e:
+            r0 = 0
+        L1f:
+            p162j4.C3413r.f14755d = r0
+            return
+    }
+
+    public C3413r(java.util.UUID r1, byte[] r2, boolean r3) {
+            r0 = this;
+            r0.<init>()
+            r0.f14756a = r1
+            r0.f14757b = r2
+            r0.f14758c = r3
+            return
+    }
+}
+package p162j4;
+
+/* renamed from: j4.u */
+/* loaded from: classes.dex */
+public final class C3416u implements p162j4.InterfaceC3412q {
+
+    /* renamed from: d */
+    public static final /* synthetic */ int f14762d = 0;
+
+    /* renamed from: a */
+    public final java.util.UUID f14763a;
+
+    /* renamed from: b */
+    public final android.media.MediaDrm f14764b;
+
+    /* renamed from: c */
+    public int f14765c;
+
+    /* renamed from: j4.u$a */
+    public static class a {
+        /* renamed from: a */
+        public static boolean m7853a(android.media.MediaDrm r0, java.lang.String r1) {
+                boolean r0 = r0.requiresSecureDecoder(r1)
+                return r0
+        }
+    }
+
+    public C3416u(java.util.UUID r6) {
+            r5 = this;
+            r5.<init>()
+            java.util.Objects.requireNonNull(r6)
+            java.util.UUID r0 = p088f4.C2017j.f8965b
+            boolean r1 = r0.equals(r6)
+            r2 = 1
+            r1 = r1 ^ r2
+            java.lang.String r3 = "Use C.CLEARKEY_UUID instead"
+            p371v5.C6549a.m13289c(r1, r3)
+            r5.f14763a = r6
+            android.media.MediaDrm r1 = new android.media.MediaDrm
+            int r3 = p371v5.C6552b0.f25624a
+            r4 = 27
+            if (r3 >= r4) goto L26
+            java.util.UUID r3 = p088f4.C2017j.f8966c
+            boolean r3 = r3.equals(r6)
+            if (r3 == 0) goto L26
+            goto L27
+        L26:
+            r0 = r6
+        L27:
+            r1.<init>(r0)
+            r5.f14764b = r1
+            r5.f14765c = r2
+            java.util.UUID r0 = p088f4.C2017j.f8967d
+            boolean r6 = r0.equals(r6)
+            if (r6 == 0) goto L47
+            java.lang.String r6 = p371v5.C6552b0.f25627d
+            java.lang.String r0 = "ASUS_Z00AD"
+            boolean r6 = r0.equals(r6)
+            if (r6 == 0) goto L47
+            java.lang.String r6 = "securityLevel"
+            java.lang.String r0 = "L3"
+            r1.setPropertyString(r6, r0)
+        L47:
+            return
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    /* renamed from: a */
+    public void mo7840a(p162j4.InterfaceC3412q.b r3) {
+            r2 = this;
+            android.media.MediaDrm r0 = r2.f14764b
+            j4.s r1 = new j4.s
+            r1.<init>(r2, r3)
+            r0.setOnEventListener(r1)
+            return
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    /* renamed from: b */
+    public boolean mo7841b(byte[] r3, java.lang.String r4) {
+            r2 = this;
+            int r0 = p371v5.C6552b0.f25624a
+            r1 = 31
+            if (r0 < r1) goto Ld
+            android.media.MediaDrm r3 = r2.f14764b
+            boolean r3 = p162j4.C3416u.a.m7853a(r3, r4)
+            return r3
+        Ld:
+            android.media.MediaCrypto r0 = new android.media.MediaCrypto     // Catch: android.media.MediaCryptoException -> L21
+            java.util.UUID r1 = r2.f14763a     // Catch: android.media.MediaCryptoException -> L21
+            r0.<init>(r1, r3)     // Catch: android.media.MediaCryptoException -> L21
+            boolean r3 = r0.requiresSecureDecoderComponent(r4)     // Catch: java.lang.Throwable -> L1c
+            r0.release()
+            return r3
+        L1c:
+            r3 = move-exception
+            r0.release()
+            throw r3
+        L21:
+            r3 = 1
+            return r3
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    /* renamed from: c */
+    public void mo7842c(byte[] r2, byte[] r3) {
+            r1 = this;
+            android.media.MediaDrm r0 = r1.f14764b
+            r0.restoreKeys(r2, r3)
+            return
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    /* renamed from: d */
+    public java.util.Map<java.lang.String, java.lang.String> mo7843d(byte[] r2) {
+            r1 = this;
+            android.media.MediaDrm r0 = r1.f14764b
+            java.util.HashMap r2 = r0.queryKeyStatus(r2)
+            return r2
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    /* renamed from: e */
+    public void mo7844e(byte[] r2) {
+            r1 = this;
+            android.media.MediaDrm r0 = r1.f14764b
+            r0.closeSession(r2)
+            return
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    /* renamed from: f */
+    public byte[] mo7845f(byte[] r10, byte[] r11) {
+            r9 = this;
+            java.util.UUID r0 = p088f4.C2017j.f8966c
+            java.util.UUID r1 = r9.f14763a
+            boolean r0 = r0.equals(r1)
+            if (r0 == 0) goto Laf
+            int r0 = p371v5.C6552b0.f25624a
+            r1 = 27
+            if (r0 < r1) goto L12
+            goto Laf
+        L12:
+            org.json.JSONObject r0 = new org.json.JSONObject     // Catch: org.json.JSONException -> L92
+            java.lang.String r1 = p371v5.C6552b0.m13319l(r11)     // Catch: org.json.JSONException -> L92
+            r0.<init>(r1)     // Catch: org.json.JSONException -> L92
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder     // Catch: org.json.JSONException -> L92
+            java.lang.String r2 = "{\"keys\":["
+            r1.<init>(r2)     // Catch: org.json.JSONException -> L92
+            java.lang.String r2 = "keys"
+            org.json.JSONArray r0 = r0.getJSONArray(r2)     // Catch: org.json.JSONException -> L92
+            r2 = 0
+        L29:
+            int r3 = r0.length()     // Catch: org.json.JSONException -> L92
+            if (r2 >= r3) goto L84
+            if (r2 == 0) goto L36
+            java.lang.String r3 = ","
+            r1.append(r3)     // Catch: org.json.JSONException -> L92
+        L36:
+            org.json.JSONObject r3 = r0.getJSONObject(r2)     // Catch: org.json.JSONException -> L92
+            java.lang.String r4 = "{\"k\":\""
+            r1.append(r4)     // Catch: org.json.JSONException -> L92
+            java.lang.String r4 = "k"
+            java.lang.String r4 = r3.getString(r4)     // Catch: org.json.JSONException -> L92
+            r5 = 43
+            r6 = 45
+            java.lang.String r4 = r4.replace(r6, r5)     // Catch: org.json.JSONException -> L92
+            r7 = 47
+            r8 = 95
+            java.lang.String r4 = r4.replace(r8, r7)     // Catch: org.json.JSONException -> L92
+            r1.append(r4)     // Catch: org.json.JSONException -> L92
+            java.lang.String r4 = "\",\"kid\":\""
+            r1.append(r4)     // Catch: org.json.JSONException -> L92
+            java.lang.String r4 = "kid"
+            java.lang.String r4 = r3.getString(r4)     // Catch: org.json.JSONException -> L92
+            java.lang.String r4 = r4.replace(r6, r5)     // Catch: org.json.JSONException -> L92
+            java.lang.String r4 = r4.replace(r8, r7)     // Catch: org.json.JSONException -> L92
+            r1.append(r4)     // Catch: org.json.JSONException -> L92
+            java.lang.String r4 = "\",\"kty\":\""
+            r1.append(r4)     // Catch: org.json.JSONException -> L92
+            java.lang.String r4 = "kty"
+            java.lang.String r3 = r3.getString(r4)     // Catch: org.json.JSONException -> L92
+            r1.append(r3)     // Catch: org.json.JSONException -> L92
+            java.lang.String r3 = "\"}"
+            r1.append(r3)     // Catch: org.json.JSONException -> L92
+            int r2 = r2 + 1
+            goto L29
+        L84:
+            java.lang.String r0 = "]}"
+            r1.append(r0)     // Catch: org.json.JSONException -> L92
+            java.lang.String r0 = r1.toString()     // Catch: org.json.JSONException -> L92
+            byte[] r11 = p371v5.C6552b0.m13329v(r0)     // Catch: org.json.JSONException -> L92
+            goto Laf
+        L92:
+            r0 = move-exception
+            java.lang.String r1 = "Failed to adjust response data: "
+            java.lang.String r2 = p371v5.C6552b0.m13319l(r11)
+            int r3 = r2.length()
+            if (r3 == 0) goto La4
+            java.lang.String r1 = r1.concat(r2)
+            goto Laa
+        La4:
+            java.lang.String r2 = new java.lang.String
+            r2.<init>(r1)
+            r1 = r2
+        Laa:
+            java.lang.String r2 = "ClearKeyUtil"
+            p371v5.C6565o.m13369b(r2, r1, r0)
+        Laf:
+            android.media.MediaDrm r0 = r9.f14764b
+            byte[] r10 = r0.provideKeyResponse(r10, r11)
+            return r10
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    /* renamed from: g */
+    public p162j4.InterfaceC3412q.d mo7846g() {
+            r3 = this;
+            android.media.MediaDrm r0 = r3.f14764b
+            android.media.MediaDrm$ProvisionRequest r0 = r0.getProvisionRequest()
+            j4.q$d r1 = new j4.q$d
+            byte[] r2 = r0.getData()
+            java.lang.String r0 = r0.getDefaultUrl()
+            r1.<init>(r2, r0)
+            return r1
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    /* renamed from: h */
+    public void mo7847h(byte[] r2) {
+            r1 = this;
+            android.media.MediaDrm r0 = r1.f14764b
+            r0.provideProvisionResponse(r2)
+            return
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    @android.annotation.SuppressLint({"WrongConstant"})
+    /* renamed from: i */
+    public p162j4.InterfaceC3412q.a mo7848i(byte[] r17, java.util.List<p162j4.C3399d.b> r18, int r19, java.util.HashMap<java.lang.String, java.lang.String> r20) {
+            r16 = this;
+            r0 = r16
+            r1 = r18
+            r2 = 23
+            r3 = 0
+            if (r1 == 0) goto L22d
+            java.util.UUID r3 = r0.f14763a
+            java.util.UUID r4 = p088f4.C2017j.f8967d
+            boolean r3 = r4.equals(r3)
+            r4 = -1
+            r5 = 1
+            r6 = 0
+            if (r3 != 0) goto L18
+            goto Lbb
+        L18:
+            int r3 = p371v5.C6552b0.f25624a
+            r7 = 28
+            if (r3 < r7) goto L8f
+            int r3 = r18.size()
+            if (r3 <= r5) goto L8f
+            java.lang.Object r3 = r1.get(r6)
+            j4.d$b r3 = (p162j4.C3399d.b) r3
+            r7 = 0
+            r8 = 0
+        L2c:
+            int r9 = r18.size()
+            if (r7 >= r9) goto L63
+            java.lang.Object r9 = r1.get(r7)
+            j4.d$b r9 = (p162j4.C3399d.b) r9
+            byte[] r10 = r9.f14734c0
+            java.util.Objects.requireNonNull(r10)
+            java.lang.String r11 = r9.f14733b0
+            java.lang.String r12 = r3.f14733b0
+            boolean r11 = p371v5.C6552b0.m13308a(r11, r12)
+            if (r11 == 0) goto L61
+            java.lang.String r9 = r9.f14732a0
+            java.lang.String r11 = r3.f14732a0
+            boolean r9 = p371v5.C6552b0.m13308a(r9, r11)
+            if (r9 == 0) goto L61
+            t4.i$a r9 = p336t4.C6164i.m12730a(r10)
+            if (r9 == 0) goto L59
+            r9 = 1
+            goto L5a
+        L59:
+            r9 = 0
+        L5a:
+            if (r9 == 0) goto L61
+            int r9 = r10.length
+            int r8 = r8 + r9
+            int r7 = r7 + 1
+            goto L2c
+        L61:
+            r7 = 0
+            goto L64
+        L63:
+            r7 = 1
+        L64:
+            if (r7 == 0) goto L8f
+            byte[] r2 = new byte[r8]
+            r7 = 0
+            r8 = 0
+        L6a:
+            int r9 = r18.size()
+            if (r7 >= r9) goto L83
+            java.lang.Object r9 = r1.get(r7)
+            j4.d$b r9 = (p162j4.C3399d.b) r9
+            byte[] r9 = r9.f14734c0
+            java.util.Objects.requireNonNull(r9)
+            int r10 = r9.length
+            java.lang.System.arraycopy(r9, r6, r2, r8, r10)
+            int r8 = r8 + r10
+            int r7 = r7 + 1
+            goto L6a
+        L83:
+            j4.d$b r1 = new j4.d$b
+            java.util.UUID r7 = r3.f14731Z
+            java.lang.String r8 = r3.f14732a0
+            java.lang.String r3 = r3.f14733b0
+            r1.<init>(r7, r8, r3, r2)
+            goto Lc1
+        L8f:
+            r3 = 0
+        L90:
+            int r7 = r18.size()
+            if (r3 >= r7) goto Lbb
+            java.lang.Object r7 = r1.get(r3)
+            j4.d$b r7 = (p162j4.C3399d.b) r7
+            byte[] r8 = r7.f14734c0
+            java.util.Objects.requireNonNull(r8)
+            t4.i$a r8 = p336t4.C6164i.m12730a(r8)
+            if (r8 != 0) goto La9
+            r8 = -1
+            goto Lab
+        La9:
+            int r8 = r8.f23849b
+        Lab:
+            int r9 = p371v5.C6552b0.f25624a
+            if (r9 >= r2) goto Lb2
+            if (r8 != 0) goto Lb2
+            goto Lb6
+        Lb2:
+            if (r9 < r2) goto Lb8
+            if (r8 != r5) goto Lb8
+        Lb6:
+            r3 = r7
+            goto Lc2
+        Lb8:
+            int r3 = r3 + 1
+            goto L90
+        Lbb:
+            java.lang.Object r1 = r1.get(r6)
+            j4.d$b r1 = (p162j4.C3399d.b) r1
+        Lc1:
+            r3 = r1
+        Lc2:
+            java.util.UUID r1 = r0.f14763a
+            byte[] r2 = r3.f14734c0
+            java.util.Objects.requireNonNull(r2)
+            java.util.UUID r7 = p088f4.C2017j.f8968e
+            boolean r8 = r7.equals(r1)
+            r9 = 26
+            if (r8 == 0) goto L1c0
+            byte[] r8 = p336t4.C6164i.m12731b(r2, r1)
+            if (r8 != 0) goto Lda
+            goto Ldb
+        Lda:
+            r2 = r8
+        Ldb:
+            r8 = r2[r6]
+            r8 = r8 & 255(0xff, float:3.57E-43)
+            r10 = r2[r5]
+            r10 = r10 & 255(0xff, float:3.57E-43)
+            r11 = 8
+            int r10 = r10 << r11
+            r8 = r8 | r10
+            r10 = 3
+            r12 = 2
+            r12 = r2[r12]
+            r12 = r12 & 255(0xff, float:3.57E-43)
+            int r12 = r12 << 16
+            r8 = r8 | r12
+            r12 = 4
+            r10 = r2[r10]
+            r10 = r10 & 255(0xff, float:3.57E-43)
+            int r10 = r10 << 24
+            r8 = r8 | r10
+            r10 = 5
+            r12 = r2[r12]
+            r12 = r12 & 255(0xff, float:3.57E-43)
+            r13 = 6
+            r10 = r2[r10]
+            r10 = r10 & 255(0xff, float:3.57E-43)
+            int r10 = r10 << r11
+            r10 = r10 | r12
+            short r10 = (short) r10
+            r12 = 7
+            r13 = r2[r13]
+            r13 = r13 & 255(0xff, float:3.57E-43)
+            r12 = r2[r12]
+            r12 = r12 & 255(0xff, float:3.57E-43)
+            int r12 = r12 << r11
+            r12 = r12 | r13
+            short r12 = (short) r12
+            java.lang.String r13 = "FrameworkMediaDrm"
+            if (r10 != r5) goto L186
+            if (r12 == r5) goto L118
+            goto L186
+        L118:
+            r5 = 9
+            r14 = r2[r11]
+            r14 = r14 & 255(0xff, float:3.57E-43)
+            r15 = 10
+            r5 = r2[r5]
+            r5 = r5 & 255(0xff, float:3.57E-43)
+            int r5 = r5 << r11
+            r5 = r5 | r14
+            short r5 = (short) r5
+            java.nio.charset.Charset r11 = p010a9.C0035c.f83d
+            java.lang.String r14 = new java.lang.String
+            r14.<init>(r2, r15, r5, r11)
+            java.lang.String r5 = "<LA_URL>"
+            boolean r5 = r14.contains(r5)
+            if (r5 == 0) goto L137
+            goto L18b
+        L137:
+            java.lang.String r2 = "</DATA>"
+            int r2 = r14.indexOf(r2)
+            if (r2 != r4) goto L144
+            java.lang.String r4 = "Could not find the </DATA> tag. Skipping LA_URL workaround."
+            android.util.Log.w(r13, r4)
+        L144:
+            java.lang.String r4 = r14.substring(r6, r2)
+            java.lang.String r2 = r14.substring(r2)
+            int r5 = p064e.C1489c.m4038a(r4, r9)
+            int r5 = p064e.C1489c.m4038a(r2, r5)
+            java.lang.String r13 = "<LA_URL>https://x</LA_URL>"
+            java.lang.String r2 = p088f4.C2035p.m5377a(r5, r4, r13, r2)
+            int r8 = r8 + 52
+            java.nio.ByteBuffer r4 = java.nio.ByteBuffer.allocate(r8)
+            java.nio.ByteOrder r5 = java.nio.ByteOrder.LITTLE_ENDIAN
+            r4.order(r5)
+            r4.putInt(r8)
+            short r5 = (short) r10
+            r4.putShort(r5)
+            short r5 = (short) r12
+            r4.putShort(r5)
+            int r5 = r2.length()
+            int r5 = r5 * 2
+            short r5 = (short) r5
+            r4.putShort(r5)
+            byte[] r2 = r2.getBytes(r11)
+            r4.put(r2)
+            byte[] r2 = r4.array()
+            goto L18b
+        L186:
+            java.lang.String r4 = "Unexpected record count or type. Skipping LA_URL workaround."
+            android.util.Log.i(r13, r4)
+        L18b:
+            if (r2 == 0) goto L18f
+            int r4 = r2.length
+            goto L190
+        L18f:
+            r4 = 0
+        L190:
+            int r4 = r4 + 32
+            java.nio.ByteBuffer r5 = java.nio.ByteBuffer.allocate(r4)
+            r5.putInt(r4)
+            r4 = 1886614376(0x70737368, float:3.013775E29)
+            r5.putInt(r4)
+            r5.putInt(r6)
+            long r10 = r7.getMostSignificantBits()
+            r5.putLong(r10)
+            long r10 = r7.getLeastSignificantBits()
+            r5.putLong(r10)
+            if (r2 == 0) goto L1bc
+            int r4 = r2.length
+            if (r4 == 0) goto L1bc
+            int r4 = r2.length
+            r5.putInt(r4)
+            r5.put(r2)
+        L1bc:
+            byte[] r2 = r5.array()
+        L1c0:
+            int r4 = p371v5.C6552b0.f25624a
+            r5 = 23
+            if (r4 >= r5) goto L1ce
+            java.util.UUID r5 = p088f4.C2017j.f8967d
+            boolean r5 = r5.equals(r1)
+            if (r5 != 0) goto L200
+        L1ce:
+            boolean r5 = r7.equals(r1)
+            if (r5 == 0) goto L207
+            java.lang.String r5 = p371v5.C6552b0.f25626c
+            java.lang.String r6 = "Amazon"
+            boolean r5 = r6.equals(r5)
+            if (r5 == 0) goto L207
+            java.lang.String r5 = p371v5.C6552b0.f25627d
+            java.lang.String r6 = "AFTB"
+            boolean r6 = r6.equals(r5)
+            if (r6 != 0) goto L200
+            java.lang.String r6 = "AFTS"
+            boolean r6 = r6.equals(r5)
+            if (r6 != 0) goto L200
+            java.lang.String r6 = "AFTM"
+            boolean r6 = r6.equals(r5)
+            if (r6 != 0) goto L200
+            java.lang.String r6 = "AFTT"
+            boolean r5 = r6.equals(r5)
+            if (r5 == 0) goto L207
+        L200:
+            byte[] r1 = p336t4.C6164i.m12731b(r2, r1)
+            if (r1 == 0) goto L207
+            goto L208
+        L207:
+            r1 = r2
+        L208:
+            java.util.UUID r2 = r0.f14763a
+            java.lang.String r5 = r3.f14733b0
+            if (r4 >= r9) goto L229
+            java.util.UUID r4 = p088f4.C2017j.f8966c
+            boolean r2 = r4.equals(r2)
+            if (r2 == 0) goto L229
+            java.lang.String r2 = "video/mp4"
+            boolean r2 = r2.equals(r5)
+            if (r2 != 0) goto L226
+            java.lang.String r2 = "audio/mp4"
+            boolean r2 = r2.equals(r5)
+            if (r2 == 0) goto L229
+        L226:
+            java.lang.String r2 = "cenc"
+            goto L22a
+        L229:
+            r2 = r5
+        L22a:
+            r6 = r1
+            r7 = r2
+            goto L22f
+        L22d:
+            r6 = r3
+            r7 = r6
+        L22f:
+            android.media.MediaDrm r4 = r0.f14764b
+            r5 = r17
+            r8 = r19
+            r9 = r20
+            android.media.MediaDrm$KeyRequest r1 = r4.getKeyRequest(r5, r6, r7, r8, r9)
+            java.util.UUID r2 = r0.f14763a
+            byte[] r4 = r1.getData()
+            java.util.UUID r5 = p088f4.C2017j.f8966c
+            boolean r2 = r5.equals(r2)
+            if (r2 == 0) goto L268
+            int r2 = p371v5.C6552b0.f25624a
+            r5 = 27
+            if (r2 < r5) goto L250
+            goto L268
+        L250:
+            java.lang.String r2 = p371v5.C6552b0.m13319l(r4)
+            r4 = 43
+            r5 = 45
+            java.lang.String r2 = r2.replace(r4, r5)
+            r4 = 47
+            r5 = 95
+            java.lang.String r2 = r2.replace(r4, r5)
+            byte[] r4 = p371v5.C6552b0.m13329v(r2)
+        L268:
+            java.lang.String r2 = r1.getDefaultUrl()
+            java.lang.String r5 = "https://x"
+            boolean r5 = r5.equals(r2)
+            if (r5 == 0) goto L276
+            java.lang.String r2 = ""
+        L276:
+            boolean r5 = android.text.TextUtils.isEmpty(r2)
+            if (r5 == 0) goto L288
+            if (r3 == 0) goto L288
+            java.lang.String r5 = r3.f14732a0
+            boolean r5 = android.text.TextUtils.isEmpty(r5)
+            if (r5 != 0) goto L288
+            java.lang.String r2 = r3.f14732a0
+        L288:
+            int r3 = p371v5.C6552b0.f25624a
+            r5 = 23
+            if (r3 < r5) goto L293
+            int r1 = r1.getRequestType()
+            goto L295
+        L293:
+            r1 = -2147483648(0xffffffff80000000, float:-0.0)
+        L295:
+            j4.q$a r3 = new j4.q$a
+            r3.<init>(r4, r2, r1)
+            return r3
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    /* renamed from: j */
+    public int mo7849j() {
+            r1 = this;
+            r0 = 2
+            return r0
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    /* renamed from: k */
+    public p142i4.InterfaceC3068b mo7850k(byte[] r6) {
+            r5 = this;
+            int r0 = p371v5.C6552b0.f25624a
+            r1 = 21
+            if (r0 >= r1) goto L22
+            java.util.UUID r1 = p088f4.C2017j.f8967d
+            java.util.UUID r2 = r5.f14763a
+            boolean r1 = r1.equals(r2)
+            if (r1 == 0) goto L22
+            android.media.MediaDrm r1 = r5.f14764b
+            java.lang.String r2 = "securityLevel"
+            java.lang.String r1 = r1.getPropertyString(r2)
+            java.lang.String r2 = "L3"
+            boolean r1 = r2.equals(r1)
+            if (r1 == 0) goto L22
+            r1 = 1
+            goto L23
+        L22:
+            r1 = 0
+        L23:
+            j4.r r2 = new j4.r
+            java.util.UUID r3 = r5.f14763a
+            r4 = 27
+            if (r0 >= r4) goto L35
+            java.util.UUID r0 = p088f4.C2017j.f8966c
+            boolean r0 = r0.equals(r3)
+            if (r0 == 0) goto L35
+            java.util.UUID r3 = p088f4.C2017j.f8965b
+        L35:
+            r2.<init>(r3, r6, r1)
+            return r2
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    /* renamed from: l */
+    public byte[] mo7851l() {
+            r1 = this;
+            android.media.MediaDrm r0 = r1.f14764b
+            byte[] r0 = r0.openSession()
+            return r0
+    }
+
+    @Override // p162j4.InterfaceC3412q
+    public synchronized void release() {
+            r1 = this;
+            monitor-enter(r1)
+            int r0 = r1.f14765c     // Catch: java.lang.Throwable -> L10
+            int r0 = r0 + (-1)
+            r1.f14765c = r0     // Catch: java.lang.Throwable -> L10
+            if (r0 != 0) goto Le
+            android.media.MediaDrm r0 = r1.f14764b     // Catch: java.lang.Throwable -> L10
+            r0.release()     // Catch: java.lang.Throwable -> L10
+        Le:
+            monitor-exit(r1)
+            return
+        L10:
+            r0 = move-exception
+            monitor-exit(r1)
+            throw r0
+    }
+}
+package p162j4;
+
+/* renamed from: j4.v */
+/* loaded from: classes.dex */
+public final class C3417v implements p162j4.InterfaceC3419x {
+
+    /* renamed from: a */
+    public final p352u5.InterfaceC6333v f14766a;
+
+    /* renamed from: b */
+    public final java.lang.String f14767b;
+
+    /* renamed from: c */
+    public final boolean f14768c;
+
+    /* renamed from: d */
+    public final java.util.Map<java.lang.String, java.lang.String> f14769d;
+
+    public C3417v(java.lang.String r2, boolean r3, p352u5.InterfaceC6333v r4) {
+            r1 = this;
+            r1.<init>()
+            if (r3 == 0) goto Le
+            boolean r0 = android.text.TextUtils.isEmpty(r2)
+            if (r0 != 0) goto Lc
+            goto Le
+        Lc:
+            r0 = 0
+            goto Lf
+        Le:
+            r0 = 1
+        Lf:
+            p371v5.C6549a.m13288b(r0)
+            r1.f14766a = r4
+            r1.f14767b = r2
+            r1.f14768c = r3
+            java.util.HashMap r2 = new java.util.HashMap
+            r2.<init>()
+            r1.f14769d = r2
+            return
+    }
+
+    /* renamed from: b */
+    public static byte[] m7854b(p352u5.InterfaceC6333v r34, java.lang.String r35, byte[] r36, java.util.Map<java.lang.String, java.lang.String> r37) {
+            u5.f0 r1 = new u5.f0
+            r0 = r34
+            u5.q$b r0 = (p352u5.C6328q.b) r0
+            u5.q r0 = r0.m12981b()
+            r1.<init>(r0)
+            java.util.Collections.emptyMap()
+            android.net.Uri r3 = android.net.Uri.parse(r35)
+            java.lang.String r15 = "The uri must be set."
+            if (r3 == 0) goto Lde
+            u5.l r17 = new u5.l
+            r16 = 0
+            r4 = 0
+            r6 = 2
+            r9 = 0
+            r11 = -1
+            r13 = 0
+            r14 = 1
+            r0 = 0
+            r2 = r17
+            r7 = r36
+            r8 = r37
+            r18 = r15
+            r15 = r0
+            r2.<init>(r3, r4, r6, r7, r8, r9, r11, r13, r14, r15, r16)
+            r2 = 0
+            r3 = r17
+            r4 = 0
+        L36:
+            u5.k r5 = new u5.k     // Catch: java.lang.Exception -> Lc8
+            r5.<init>(r1, r3)     // Catch: java.lang.Exception -> Lc8
+            byte[] r0 = p371v5.C6552b0.m13305I(r5)     // Catch: java.lang.Throwable -> L45 p352u5.C6336y -> L48
+            int r2 = p371v5.C6552b0.f25624a     // Catch: java.lang.Exception -> Lc8
+            r5.close()     // Catch: java.io.IOException -> L44 java.lang.Exception -> Lc8
+        L44:
+            return r0
+        L45:
+            r0 = move-exception
+            goto Lc2
+        L48:
+            r0 = move-exception
+            r6 = r0
+            int r0 = r6.f24785a0     // Catch: java.lang.Throwable -> L45
+            r7 = 307(0x133, float:4.3E-43)
+            if (r0 == r7) goto L54
+            r7 = 308(0x134, float:4.32E-43)
+            if (r0 != r7) goto L59
+        L54:
+            r0 = 5
+            if (r4 >= r0) goto L59
+            r0 = 1
+            goto L5a
+        L59:
+            r0 = 0
+        L5a:
+            r7 = 0
+            if (r0 != 0) goto L5e
+            goto L79
+        L5e:
+            java.util.Map<java.lang.String, java.util.List<java.lang.String>> r0 = r6.f24786b0     // Catch: java.lang.Throwable -> L45
+            if (r0 == 0) goto L79
+            java.lang.String r8 = "Location"
+            java.lang.Object r0 = r0.get(r8)     // Catch: java.lang.Throwable -> L45
+            java.util.List r0 = (java.util.List) r0     // Catch: java.lang.Throwable -> L45
+            if (r0 == 0) goto L79
+            boolean r8 = r0.isEmpty()     // Catch: java.lang.Throwable -> L45
+            if (r8 != 0) goto L79
+            java.lang.Object r0 = r0.get(r2)     // Catch: java.lang.Throwable -> L45
+            r7 = r0
+            java.lang.String r7 = (java.lang.String) r7     // Catch: java.lang.Throwable -> L45
+        L79:
+            if (r7 == 0) goto Lc1
+            int r4 = r4 + 1
+            long r8 = r3.f24705b     // Catch: java.lang.Throwable -> L45
+            int r0 = r3.f24706c     // Catch: java.lang.Throwable -> L45
+            byte[] r6 = r3.f24707d     // Catch: java.lang.Throwable -> L45
+            java.util.Map<java.lang.String, java.lang.String> r10 = r3.f24708e     // Catch: java.lang.Throwable -> L45
+            long r11 = r3.f24709f     // Catch: java.lang.Throwable -> L45
+            long r13 = r3.f24710g     // Catch: java.lang.Throwable -> L45
+            java.lang.String r15 = r3.f24711h     // Catch: java.lang.Throwable -> L45
+            int r2 = r3.f24712i     // Catch: java.lang.Throwable -> L45
+            java.lang.Object r3 = r3.f24713j     // Catch: java.lang.Throwable -> L45
+            android.net.Uri r20 = android.net.Uri.parse(r7)     // Catch: java.lang.Throwable -> L45
+            if (r20 == 0) goto Lb9
+            u5.l r7 = new u5.l     // Catch: java.lang.Throwable -> L45
+            r33 = 0
+            r19 = r7
+            r21 = r8
+            r23 = r0
+            r24 = r6
+            r25 = r10
+            r26 = r11
+            r28 = r13
+            r30 = r15
+            r31 = r2
+            r32 = r3
+            r19.<init>(r20, r21, r23, r24, r25, r26, r28, r30, r31, r32, r33)     // Catch: java.lang.Throwable -> L45
+            int r0 = p371v5.C6552b0.f25624a     // Catch: java.lang.Exception -> Lc8
+            r5.close()     // Catch: java.io.IOException -> Lb5 java.lang.Exception -> Lc8
+        Lb5:
+            r3 = r7
+            r2 = 0
+            goto L36
+        Lb9:
+            java.lang.IllegalStateException r0 = new java.lang.IllegalStateException     // Catch: java.lang.Throwable -> L45
+            r2 = r18
+            r0.<init>(r2)     // Catch: java.lang.Throwable -> L45
+            throw r0     // Catch: java.lang.Throwable -> L45
+        Lc1:
+            throw r6     // Catch: java.lang.Throwable -> L45
+        Lc2:
+            int r2 = p371v5.C6552b0.f25624a     // Catch: java.lang.Exception -> Lc8
+            r5.close()     // Catch: java.io.IOException -> Lc7 java.lang.Exception -> Lc8
+        Lc7:
+            throw r0     // Catch: java.lang.Exception -> Lc8
+        Lc8:
+            r0 = move-exception
+            r10 = r0
+            j4.y r0 = new j4.y
+            android.net.Uri r6 = r1.f24681c
+            java.util.Objects.requireNonNull(r6)
+            java.util.Map r7 = r1.mo6022g()
+            long r8 = r1.f24680b
+            r4 = r0
+            r5 = r17
+            r4.<init>(r5, r6, r7, r8, r10)
+            throw r0
+        Lde:
+            r2 = r15
+            java.lang.IllegalStateException r0 = new java.lang.IllegalStateException
+            r0.<init>(r2)
+            throw r0
+    }
+
+    /* renamed from: a */
+    public byte[] m7855a(java.util.UUID r19, p162j4.InterfaceC3412q.a r20) {
+            r18 = this;
+            r1 = r18
+            r0 = r19
+            r2 = r20
+            java.lang.String r3 = r2.f14752b
+            boolean r4 = r1.f14768c
+            if (r4 != 0) goto L12
+            boolean r4 = android.text.TextUtils.isEmpty(r3)
+            if (r4 == 0) goto L14
+        L12:
+            java.lang.String r3 = r1.f14767b
+        L14:
+            boolean r4 = android.text.TextUtils.isEmpty(r3)
+            if (r4 != 0) goto L5e
+            java.util.HashMap r4 = new java.util.HashMap
+            r4.<init>()
+            java.util.UUID r5 = p088f4.C2017j.f8968e
+            boolean r6 = r5.equals(r0)
+            if (r6 == 0) goto L2a
+            java.lang.String r6 = "text/xml"
+            goto L37
+        L2a:
+            java.util.UUID r6 = p088f4.C2017j.f8966c
+            boolean r6 = r6.equals(r0)
+            if (r6 == 0) goto L35
+            java.lang.String r6 = "application/json"
+            goto L37
+        L35:
+            java.lang.String r6 = "application/octet-stream"
+        L37:
+            java.lang.String r7 = "Content-Type"
+            r4.put(r7, r6)
+            boolean r0 = r5.equals(r0)
+            if (r0 == 0) goto L49
+            java.lang.String r0 = "SOAPAction"
+            java.lang.String r5 = "http://schemas.microsoft.com/DRM/2007/03/protocols/AcquireLicense"
+            r4.put(r0, r5)
+        L49:
+            java.util.Map<java.lang.String, java.lang.String> r5 = r1.f14769d
+            monitor-enter(r5)
+            java.util.Map<java.lang.String, java.lang.String> r0 = r1.f14769d     // Catch: java.lang.Throwable -> L5b
+            r4.putAll(r0)     // Catch: java.lang.Throwable -> L5b
+            monitor-exit(r5)     // Catch: java.lang.Throwable -> L5b
+            u5.v r0 = r1.f14766a
+            byte[] r2 = r2.f14751a
+            byte[] r0 = m7854b(r0, r3, r2, r4)
+            return r0
+        L5b:
+            r0 = move-exception
+            monitor-exit(r5)     // Catch: java.lang.Throwable -> L5b
+            throw r0
+        L5e:
+            j4.y r0 = new j4.y
+            r15 = 0
+            r14 = 0
+            r13 = 0
+            r9 = 0
+            r7 = 0
+            r4 = 0
+            r6 = 1
+            java.util.Map r8 = java.util.Collections.emptyMap()
+            r11 = -1
+            android.net.Uri r3 = android.net.Uri.EMPTY
+            if (r3 == 0) goto L90
+            u5.l r17 = new u5.l
+            r16 = 0
+            r2 = r17
+            r2.<init>(r3, r4, r6, r7, r8, r9, r11, r13, r14, r15, r16)
+            android.net.Uri r8 = android.net.Uri.EMPTY
+            b9.o<java.lang.Object, java.lang.Object> r9 = p026b9.C0695d0.f3901e0
+            r10 = 0
+            java.lang.IllegalStateException r12 = new java.lang.IllegalStateException
+            java.lang.String r2 = "No license URL"
+            r12.<init>(r2)
+            r6 = r0
+            r7 = r17
+            r6.<init>(r7, r8, r9, r10, r12)
+            throw r0
+        L90:
+            java.lang.IllegalStateException r0 = new java.lang.IllegalStateException
+            java.lang.String r2 = "The uri must be set."
+            r0.<init>(r2)
+            throw r0
+    }
+
+    /* renamed from: c */
+    public byte[] m7856c(java.util.UUID r3, p162j4.InterfaceC3412q.d r4) {
+            r2 = this;
+            java.lang.String r3 = r4.f14754b
+            byte[] r4 = r4.f14753a
+            java.lang.String r4 = p371v5.C6552b0.m13319l(r4)
+            r0 = 15
+            int r0 = p064e.C1489c.m4038a(r3, r0)
+            int r1 = r4.length()
+            int r1 = r1 + r0
+            java.lang.String r0 = "&signedRequest="
+            java.lang.String r3 = p088f4.C2035p.m5377a(r1, r3, r0, r4)
+            u5.v r4 = r2.f14766a
+            r0 = 0
+            java.util.Map r1 = java.util.Collections.emptyMap()
+            byte[] r3 = m7854b(r4, r3, r0, r1)
+            return r3
+    }
+}
+package p162j4;
+
+/* renamed from: j4.w */
+/* loaded from: classes.dex */
+public final class C3418w extends java.lang.Exception {
+    public C3418w() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+}
+package p162j4;
+
+/* renamed from: j4.y */
+/* loaded from: classes.dex */
+public final class C3420y extends java.io.IOException {
+
+    /* renamed from: Y */
+    public final p352u5.C6323l f14770Y;
+
+    /* renamed from: Z */
+    public final java.util.Map<java.lang.String, java.util.List<java.lang.String>> f14771Z;
+
+    public C3420y(p352u5.C6323l r1, android.net.Uri r2, java.util.Map<java.lang.String, java.util.List<java.lang.String>> r3, long r4, java.lang.Throwable r6) {
+            r0 = this;
+            r0.<init>(r6)
+            r0.f14770Y = r1
+            r0.f14771Z = r3
+            return
+    }
+}
+package p162j4;
+
+/* renamed from: j4.z */
+/* loaded from: classes.dex */
+public final class C3421z extends java.lang.Exception {
+    public C3421z(int r1) {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    public C3421z(int r1, java.lang.Exception r2) {
+            r0 = this;
+            r0.<init>(r2)
+            return
+    }
+}
+package p162j4;
+
+/* renamed from: j4.e */
+/* loaded from: classes.dex */
+public interface InterfaceC3400e {
+
+    /* renamed from: j4.e$a */
+    public static class a extends java.io.IOException {
+
+        /* renamed from: Y */
+        public final int f14735Y;
+
+        public a(java.lang.Throwable r1, int r2) {
+                r0 = this;
+                r0.<init>(r1)
+                r0.f14735Y = r2
+                return
+        }
+    }
+
+    /* renamed from: a */
+    boolean mo7789a();
+
+    /* renamed from: b */
+    java.util.UUID mo7790b();
+
+    /* renamed from: c */
+    void mo7791c(p162j4.InterfaceC3403h.a r1);
+
+    /* renamed from: d */
+    void mo7792d(p162j4.InterfaceC3403h.a r1);
+
+    /* renamed from: e */
+    boolean mo7793e(java.lang.String r1);
+
+    /* renamed from: f */
+    p162j4.InterfaceC3400e.a mo7794f();
+
+    /* renamed from: g */
+    p142i4.InterfaceC3068b mo7795g();
+
+    int getState();
+}
+package p162j4;
+
+/* renamed from: j4.h */
+/* loaded from: classes.dex */
+public interface InterfaceC3403h {
+
+    /* renamed from: j4.h$a */
+    public static class a {
+
+        /* renamed from: a */
+        public final int f14743a;
+
+        /* renamed from: b */
+        public final p108g5.InterfaceC2283r.a f14744b;
+
+        /* renamed from: c */
+        public final java.util.concurrent.CopyOnWriteArrayList<p162j4.InterfaceC3403h.a.C7396a> f14745c;
+
+        /* renamed from: j4.h$a$a, reason: collision with other inner class name */
+        public static final class C7396a {
+
+            /* renamed from: a */
+            public android.os.Handler f14746a;
+
+            /* renamed from: b */
+            public p162j4.InterfaceC3403h f14747b;
+
+            public C7396a(android.os.Handler r1, p162j4.InterfaceC3403h r2) {
+                    r0 = this;
+                    r0.<init>()
+                    r0.f14746a = r1
+                    r0.f14747b = r2
+                    return
+            }
+        }
+
+        public a() {
+                r1 = this;
+                java.util.concurrent.CopyOnWriteArrayList r0 = new java.util.concurrent.CopyOnWriteArrayList
+                r0.<init>()
+                r1.<init>()
+                r1.f14745c = r0
+                r0 = 0
+                r1.f14743a = r0
+                r0 = 0
+                r1.f14744b = r0
+                return
+        }
+
+        public a(java.util.concurrent.CopyOnWriteArrayList<p162j4.InterfaceC3403h.a.C7396a> r1, int r2, p108g5.InterfaceC2283r.a r3) {
+                r0 = this;
+                r0.<init>()
+                r0.f14745c = r1
+                r0.f14743a = r2
+                r0.f14744b = r3
+                return
+        }
+
+        /* renamed from: a */
+        public void m7823a() {
+                r5 = this;
+                java.util.concurrent.CopyOnWriteArrayList<j4.h$a$a> r0 = r5.f14745c
+                java.util.Iterator r0 = r0.iterator()
+            L6:
+                boolean r1 = r0.hasNext()
+                if (r1 == 0) goto L20
+                java.lang.Object r1 = r0.next()
+                j4.h$a$a r1 = (p162j4.InterfaceC3403h.a.C7396a) r1
+                j4.h r2 = r1.f14747b
+                android.os.Handler r1 = r1.f14746a
+                j4.f r3 = new j4.f
+                r4 = 3
+                r3.<init>(r5, r2, r4)
+                p371v5.C6552b0.m13300D(r1, r3)
+                goto L6
+            L20:
+                return
+        }
+
+        /* renamed from: b */
+        public void m7824b() {
+                r5 = this;
+                java.util.concurrent.CopyOnWriteArrayList<j4.h$a$a> r0 = r5.f14745c
+                java.util.Iterator r0 = r0.iterator()
+            L6:
+                boolean r1 = r0.hasNext()
+                if (r1 == 0) goto L20
+                java.lang.Object r1 = r0.next()
+                j4.h$a$a r1 = (p162j4.InterfaceC3403h.a.C7396a) r1
+                j4.h r2 = r1.f14747b
+                android.os.Handler r1 = r1.f14746a
+                j4.f r3 = new j4.f
+                r4 = 1
+                r3.<init>(r5, r2, r4)
+                p371v5.C6552b0.m13300D(r1, r3)
+                goto L6
+            L20:
+                return
+        }
+
+        /* renamed from: c */
+        public void m7825c() {
+                r5 = this;
+                java.util.concurrent.CopyOnWriteArrayList<j4.h$a$a> r0 = r5.f14745c
+                java.util.Iterator r0 = r0.iterator()
+            L6:
+                boolean r1 = r0.hasNext()
+                if (r1 == 0) goto L20
+                java.lang.Object r1 = r0.next()
+                j4.h$a$a r1 = (p162j4.InterfaceC3403h.a.C7396a) r1
+                j4.h r2 = r1.f14747b
+                android.os.Handler r1 = r1.f14746a
+                j4.f r3 = new j4.f
+                r4 = 2
+                r3.<init>(r5, r2, r4)
+                p371v5.C6552b0.m13300D(r1, r3)
+                goto L6
+            L20:
+                return
+        }
+
+        /* renamed from: d */
+        public void m7826d(int r5) {
+                r4 = this;
+                java.util.concurrent.CopyOnWriteArrayList<j4.h$a$a> r0 = r4.f14745c
+                java.util.Iterator r0 = r0.iterator()
+            L6:
+                boolean r1 = r0.hasNext()
+                if (r1 == 0) goto L1f
+                java.lang.Object r1 = r0.next()
+                j4.h$a$a r1 = (p162j4.InterfaceC3403h.a.C7396a) r1
+                j4.h r2 = r1.f14747b
+                android.os.Handler r1 = r1.f14746a
+                j4.g r3 = new j4.g
+                r3.<init>(r4, r2, r5)
+                p371v5.C6552b0.m13300D(r1, r3)
+                goto L6
+            L1f:
+                return
+        }
+
+        /* renamed from: e */
+        public void m7827e(java.lang.Exception r5) {
+                r4 = this;
+                java.util.concurrent.CopyOnWriteArrayList<j4.h$a$a> r0 = r4.f14745c
+                java.util.Iterator r0 = r0.iterator()
+            L6:
+                boolean r1 = r0.hasNext()
+                if (r1 == 0) goto L1f
+                java.lang.Object r1 = r0.next()
+                j4.h$a$a r1 = (p162j4.InterfaceC3403h.a.C7396a) r1
+                j4.h r2 = r1.f14747b
+                android.os.Handler r1 = r1.f14746a
+                f4.n0 r3 = new f4.n0
+                r3.<init>(r4, r2, r5)
+                p371v5.C6552b0.m13300D(r1, r3)
+                goto L6
+            L1f:
+                return
+        }
+
+        /* renamed from: f */
+        public void m7828f() {
+                r5 = this;
+                java.util.concurrent.CopyOnWriteArrayList<j4.h$a$a> r0 = r5.f14745c
+                java.util.Iterator r0 = r0.iterator()
+            L6:
+                boolean r1 = r0.hasNext()
+                if (r1 == 0) goto L20
+                java.lang.Object r1 = r0.next()
+                j4.h$a$a r1 = (p162j4.InterfaceC3403h.a.C7396a) r1
+                j4.h r2 = r1.f14747b
+                android.os.Handler r1 = r1.f14746a
+                j4.f r3 = new j4.f
+                r4 = 0
+                r3.<init>(r5, r2, r4)
+                p371v5.C6552b0.m13300D(r1, r3)
+                goto L6
+            L20:
+                return
+        }
+
+        /* renamed from: g */
+        public p162j4.InterfaceC3403h.a m7829g(int r3, p108g5.InterfaceC2283r.a r4) {
+                r2 = this;
+                j4.h$a r0 = new j4.h$a
+                java.util.concurrent.CopyOnWriteArrayList<j4.h$a$a> r1 = r2.f14745c
+                r0.<init>(r1, r3, r4)
+                return r0
+        }
+    }
+
+    /* renamed from: E */
+    void mo5396E(int r1, p108g5.InterfaceC2283r.a r2);
+
+    /* renamed from: P */
+    void mo5397P(int r1, p108g5.InterfaceC2283r.a r2);
+
+    /* renamed from: e0 */
+    void mo5399e0(int r1, p108g5.InterfaceC2283r.a r2);
+
+    /* renamed from: g0 */
+    void mo5400g0(int r1, p108g5.InterfaceC2283r.a r2);
+
+    /* renamed from: o */
+    void mo5402o(int r1, p108g5.InterfaceC2283r.a r2, int r3);
+
+    /* renamed from: x */
+    void mo5406x(int r1, p108g5.InterfaceC2283r.a r2, java.lang.Exception r3);
+}
+package p162j4;
+
+/* renamed from: j4.j */
+/* loaded from: classes.dex */
+public interface InterfaceC3405j {
+
+    /* renamed from: a */
+    public static final p162j4.InterfaceC3405j f14748a = null;
+
+    /* renamed from: j4.j$a */
+    public class a implements p162j4.InterfaceC3405j {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // p162j4.InterfaceC3405j
+        /* renamed from: a */
+        public /* synthetic */ p162j4.InterfaceC3405j.b mo7808a(android.os.Looper r1, p162j4.InterfaceC3403h.a r2, p088f4.C2003e0 r3) {
+                r0 = this;
+                j4.j$b r1 = p162j4.C3404i.m7830a(r0, r1, r2, r3)
+                return r1
+        }
+
+        @Override // p162j4.InterfaceC3405j
+        /* renamed from: b */
+        public p162j4.InterfaceC3400e mo7809b(android.os.Looper r2, p162j4.InterfaceC3403h.a r3, p088f4.C2003e0 r4) {
+                r1 = this;
+                j4.d r2 = r4.f8899m0
+                if (r2 != 0) goto L6
+                r2 = 0
+                return r2
+            L6:
+                j4.p r2 = new j4.p
+                j4.e$a r3 = new j4.e$a
+                j4.z r4 = new j4.z
+                r0 = 1
+                r4.<init>(r0)
+                r0 = 6001(0x1771, float:8.409E-42)
+                r3.<init>(r4, r0)
+                r2.<init>(r3)
+                return r2
+        }
+
+        @Override // p162j4.InterfaceC3405j
+        /* renamed from: c */
+        public int mo7810c(p088f4.C2003e0 r1) {
+                r0 = this;
+                j4.d r1 = r1.f8899m0
+                if (r1 == 0) goto L6
+                r1 = 1
+                goto L7
+            L6:
+                r1 = 0
+            L7:
+                return r1
+        }
+
+        @Override // p162j4.InterfaceC3405j
+        /* renamed from: o */
+        public /* synthetic */ void mo7818o() {
+                r0 = this;
+                p162j4.C3404i.m7831b(r0)
+                return
+        }
+
+        @Override // p162j4.InterfaceC3405j
+        public /* synthetic */ void release() {
+                r0 = this;
+                p162j4.C3404i.m7832c(r0)
+                return
+        }
+    }
+
+    /* renamed from: j4.j$b */
+    public interface b {
+
+        /* renamed from: F */
+        public static final p162j4.InterfaceC3405j.b f14749F = null;
+
+        static {
+                k1.b r0 = p179k1.C3642b.f16059h0
+                p162j4.InterfaceC3405j.b.f14749F = r0
+                return
+        }
+
+        void release();
+    }
+
+    static {
+            j4.j$a r0 = new j4.j$a
+            r0.<init>()
+            p162j4.InterfaceC3405j.f14748a = r0
+            return
+    }
+
+    /* renamed from: a */
+    p162j4.InterfaceC3405j.b mo7808a(android.os.Looper r1, p162j4.InterfaceC3403h.a r2, p088f4.C2003e0 r3);
+
+    /* renamed from: b */
+    p162j4.InterfaceC3400e mo7809b(android.os.Looper r1, p162j4.InterfaceC3403h.a r2, p088f4.C2003e0 r3);
+
+    /* renamed from: c */
+    int mo7810c(p088f4.C2003e0 r1);
+
+    /* renamed from: o */
+    void mo7818o();
+
+    void release();
+}
+package p162j4;
+
+/* renamed from: j4.q */
+/* loaded from: classes.dex */
+public interface InterfaceC3412q {
+
+    /* renamed from: j4.q$a */
+    public static final class a {
+
+        /* renamed from: a */
+        public final byte[] f14751a;
+
+        /* renamed from: b */
+        public final java.lang.String f14752b;
+
+        public a(byte[] r1, java.lang.String r2, int r3) {
+                r0 = this;
+                r0.<init>()
+                r0.f14751a = r1
+                r0.f14752b = r2
+                return
+        }
+    }
+
+    /* renamed from: j4.q$b */
+    public interface b {
+    }
+
+    /* renamed from: j4.q$c */
+    public interface c {
+        /* renamed from: a */
+        p162j4.InterfaceC3412q mo7852a(java.util.UUID r1);
+    }
+
+    /* renamed from: j4.q$d */
+    public static final class d {
+
+        /* renamed from: a */
+        public final byte[] f14753a;
+
+        /* renamed from: b */
+        public final java.lang.String f14754b;
+
+        public d(byte[] r1, java.lang.String r2) {
+                r0 = this;
+                r0.<init>()
+                r0.f14753a = r1
+                r0.f14754b = r2
+                return
+        }
+    }
+
+    /* renamed from: a */
+    void mo7840a(p162j4.InterfaceC3412q.b r1);
+
+    /* renamed from: b */
+    boolean mo7841b(byte[] r1, java.lang.String r2);
+
+    /* renamed from: c */
+    void mo7842c(byte[] r1, byte[] r2);
+
+    /* renamed from: d */
+    java.util.Map<java.lang.String, java.lang.String> mo7843d(byte[] r1);
+
+    /* renamed from: e */
+    void mo7844e(byte[] r1);
+
+    /* renamed from: f */
+    byte[] mo7845f(byte[] r1, byte[] r2);
+
+    /* renamed from: g */
+    p162j4.InterfaceC3412q.d mo7846g();
+
+    /* renamed from: h */
+    void mo7847h(byte[] r1);
+
+    /* renamed from: i */
+    p162j4.InterfaceC3412q.a mo7848i(byte[] r1, java.util.List<p162j4.C3399d.b> r2, int r3, java.util.HashMap<java.lang.String, java.lang.String> r4);
+
+    /* renamed from: j */
+    int mo7849j();
+
+    /* renamed from: k */
+    p142i4.InterfaceC3068b mo7850k(byte[] r1);
+
+    /* renamed from: l */
+    byte[] mo7851l();
+
+    void release();
+}
+package p162j4;
+
+/* renamed from: j4.x */
+/* loaded from: classes.dex */
+public interface InterfaceC3419x {
+}
+package p162j4;
+
+/* renamed from: j4.f */
+/* loaded from: classes.dex */
+public final /* synthetic */ class RunnableC3401f implements java.lang.Runnable {
+
+    /* renamed from: Y */
+    public final /* synthetic */ int f14736Y;
+
+    /* renamed from: Z */
+    public final /* synthetic */ p162j4.InterfaceC3403h.a f14737Z;
+
+    /* renamed from: a0 */
+    public final /* synthetic */ p162j4.InterfaceC3403h f14738a0;
+
+    public /* synthetic */ RunnableC3401f(p162j4.InterfaceC3403h.a r2, p162j4.InterfaceC3403h r3, int r4) {
+            r1 = this;
+            r1.f14736Y = r4
+            r0 = 1
+            if (r4 == r0) goto L6
+            r0 = 2
+        L6:
+            r1.<init>()
+            r1.f14737Z = r2
+            r1.f14738a0 = r3
+            return
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+            r3 = this;
+            int r0 = r3.f14736Y
+            switch(r0) {
+                case 0: goto L1e;
+                case 1: goto L12;
+                case 2: goto L6;
+                default: goto L5;
+            }
+        L5:
+            goto L2a
+        L6:
+            j4.h$a r0 = r3.f14737Z
+            j4.h r1 = r3.f14738a0
+            int r2 = r0.f14743a
+            g5.r$a r0 = r0.f14744b
+            r1.mo5396E(r2, r0)
+            return
+        L12:
+            j4.h$a r0 = r3.f14737Z
+            j4.h r1 = r3.f14738a0
+            int r2 = r0.f14743a
+            g5.r$a r0 = r0.f14744b
+            r1.mo5400g0(r2, r0)
+            return
+        L1e:
+            j4.h$a r0 = r3.f14737Z
+            j4.h r1 = r3.f14738a0
+            int r2 = r0.f14743a
+            g5.r$a r0 = r0.f14744b
+            r1.mo5397P(r2, r0)
+            return
+        L2a:
+            j4.h$a r0 = r3.f14737Z
+            j4.h r1 = r3.f14738a0
+            int r2 = r0.f14743a
+            g5.r$a r0 = r0.f14744b
+            r1.mo5399e0(r2, r0)
+            return
+    }
+}
+package p162j4;
+
+/* renamed from: j4.g */
+/* loaded from: classes.dex */
+public final /* synthetic */ class RunnableC3402g implements java.lang.Runnable {
+
+    /* renamed from: Y */
+    public final /* synthetic */ int f14739Y;
+
+    /* renamed from: Z */
+    public final /* synthetic */ java.lang.Object f14740Z;
+
+    /* renamed from: a0 */
+    public final /* synthetic */ java.lang.Object f14741a0;
+
+    /* renamed from: b0 */
+    public final /* synthetic */ int f14742b0;
+
+    public /* synthetic */ RunnableC3402g(p162j4.InterfaceC3403h.a r2, p162j4.InterfaceC3403h r3, int r4) {
+            r1 = this;
+            r0 = 0
+            r1.f14739Y = r0
+            r1.<init>()
+            r1.f14740Z = r2
+            r1.f14741a0 = r3
+            r1.f14742b0 = r4
+            return
+    }
+
+    public /* synthetic */ RunnableC3402g(java.util.concurrent.CopyOnWriteArraySet r2, int r3, p371v5.C6564n.a r4) {
+            r1 = this;
+            r0 = 1
+            r1.f14739Y = r0
+            r1.<init>()
+            r1.f14740Z = r2
+            r1.f14742b0 = r3
+            r1.f14741a0 = r4
+            return
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+            r7 = this;
+            int r0 = r7.f14739Y
+            switch(r0) {
+                case 0: goto L6;
+                default: goto L5;
+            }
+        L5:
+            goto L1e
+        L6:
+            java.lang.Object r0 = r7.f14740Z
+            j4.h$a r0 = (p162j4.InterfaceC3403h.a) r0
+            java.lang.Object r1 = r7.f14741a0
+            j4.h r1 = (p162j4.InterfaceC3403h) r1
+            int r2 = r7.f14742b0
+            java.util.Objects.requireNonNull(r0)
+            java.util.Objects.requireNonNull(r1)
+            int r3 = r0.f14743a
+            g5.r$a r0 = r0.f14744b
+            r1.mo5402o(r3, r0, r2)
+            return
+        L1e:
+            java.lang.Object r0 = r7.f14740Z
+            java.util.concurrent.CopyOnWriteArraySet r0 = (java.util.concurrent.CopyOnWriteArraySet) r0
+            int r1 = r7.f14742b0
+            java.lang.Object r2 = r7.f14741a0
+            v5.n$a r2 = (p371v5.C6564n.a) r2
+            java.util.Iterator r0 = r0.iterator()
+        L2c:
+            boolean r3 = r0.hasNext()
+            if (r3 == 0) goto L55
+            java.lang.Object r3 = r0.next()
+            v5.n$c r3 = (p371v5.C6564n.c) r3
+            boolean r4 = r3.f25669d
+            if (r4 != 0) goto L2c
+            r4 = -1
+            r5 = 1
+            if (r1 == r4) goto L4d
+            v5.k$b r4 = r3.f25667b
+            boolean r6 = r4.f25657b
+            r6 = r6 ^ r5
+            p371v5.C6549a.m13291e(r6)
+            android.util.SparseBooleanArray r4 = r4.f25656a
+            r4.append(r1, r5)
+        L4d:
+            r3.f25668c = r5
+            T r3 = r3.f25666a
+            r2.mo24b(r3)
+            goto L2c
+        L55:
+            return
+    }
+}

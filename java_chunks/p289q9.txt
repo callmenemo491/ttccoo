@@ -1,0 +1,119 @@
+package p289q9;
+
+/* renamed from: q9.a */
+/* loaded from: classes.dex */
+public class C5602a {
+
+    /* renamed from: a */
+    public final java.util.Map<java.lang.String, p273p9.C5378c> f21765a;
+
+    /* renamed from: b */
+    public final p392wa.InterfaceC6823b<p329s9.InterfaceC5997a> f21766b;
+
+    public C5602a(android.content.Context r1, p392wa.InterfaceC6823b<p329s9.InterfaceC5997a> r2) {
+            r0 = this;
+            r0.<init>()
+            java.util.HashMap r1 = new java.util.HashMap
+            r1.<init>()
+            r0.f21765a = r1
+            r0.f21766b = r2
+            return
+    }
+}
+package p289q9;
+
+/* renamed from: q9.b */
+/* loaded from: classes.dex */
+public final /* synthetic */ class C5603b implements p432y9.InterfaceC7139f {
+
+    /* renamed from: b */
+    public static final /* synthetic */ p289q9.C5603b f21767b = null;
+
+    /* renamed from: c */
+    public static final /* synthetic */ p289q9.C5603b f21768c = null;
+
+    /* renamed from: d */
+    public static final /* synthetic */ p289q9.C5603b f21769d = null;
+
+    /* renamed from: e */
+    public static final /* synthetic */ p289q9.C5603b f21770e = null;
+
+    /* renamed from: a */
+    public final /* synthetic */ int f21771a;
+
+    static {
+            q9.b r0 = new q9.b
+            r1 = 0
+            r0.<init>(r1)
+            p289q9.C5603b.f21767b = r0
+            q9.b r0 = new q9.b
+            r1 = 1
+            r0.<init>(r1)
+            p289q9.C5603b.f21768c = r0
+            q9.b r0 = new q9.b
+            r1 = 2
+            r0.<init>(r1)
+            p289q9.C5603b.f21769d = r0
+            q9.b r0 = new q9.b
+            r1 = 3
+            r0.<init>(r1)
+            p289q9.C5603b.f21770e = r0
+            return
+    }
+
+    public /* synthetic */ C5603b(int r1) {
+            r0 = this;
+            r0.f21771a = r1
+            r0.<init>()
+            return
+    }
+
+    @Override // p432y9.InterfaceC7139f
+    /* renamed from: a */
+    public final java.lang.Object mo3940a(p432y9.InterfaceC7137d r5) {
+            r4 = this;
+            int r0 = r4.f21771a
+            switch(r0) {
+                case 0: goto L31;
+                case 1: goto L2c;
+                case 2: goto L6;
+                default: goto L5;
+            }
+        L5:
+            goto L36
+        L6:
+            fb.b r0 = new fb.b
+            java.lang.Class<fb.d> r1 = p095fb.AbstractC2134d.class
+            y9.s r5 = (p432y9.C7152s) r5
+            java.util.Set r5 = r5.mo14247b(r1)
+            fb.c r1 = p095fb.C2133c.f9829b
+            if (r1 != 0) goto L28
+            java.lang.Class<fb.c> r2 = p095fb.C2133c.class
+            monitor-enter(r2)
+            fb.c r1 = p095fb.C2133c.f9829b     // Catch: java.lang.Throwable -> L25
+            if (r1 != 0) goto L23
+            fb.c r1 = new fb.c     // Catch: java.lang.Throwable -> L25
+            r3 = 0
+            r1.<init>(r3)     // Catch: java.lang.Throwable -> L25
+            p095fb.C2133c.f9829b = r1     // Catch: java.lang.Throwable -> L25
+        L23:
+            monitor-exit(r2)     // Catch: java.lang.Throwable -> L25
+            goto L28
+        L25:
+            r5 = move-exception
+            monitor-exit(r2)     // Catch: java.lang.Throwable -> L25
+            throw r5
+        L28:
+            r0.<init>(r5, r1)
+            return r0
+        L2c:
+            xa.d r5 = com.google.firebase.installations.FirebaseInstallationsRegistrar.m3649a(r5)
+            return r5
+        L31:
+            q9.a r5 = com.google.firebase.abt.component.AbtRegistrar.m3626a(r5)
+            return r5
+        L36:
+            ib.a r5 = com.google.firebase.storage.StorageRegistrar.m3682a(r5)
+            return r5
+    }
+}

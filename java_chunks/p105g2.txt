@@ -1,0 +1,2111 @@
+package p105g2;
+
+/* renamed from: g2.n */
+/* loaded from: classes.dex */
+public abstract class AbstractC2220n<T> implements java.lang.Comparable<p105g2.AbstractC2220n<T>> {
+
+    /* renamed from: Y */
+    public final p105g2.C2227u.a f10140Y;
+
+    /* renamed from: Z */
+    public final int f10141Z;
+
+    /* renamed from: a0 */
+    public final java.lang.String f10142a0;
+
+    /* renamed from: b0 */
+    public final int f10143b0;
+
+    /* renamed from: c0 */
+    public final java.lang.Object f10144c0;
+
+    /* renamed from: d0 */
+    public p105g2.C2222p.a f10145d0;
+
+    /* renamed from: e0 */
+    public java.lang.Integer f10146e0;
+
+    /* renamed from: f0 */
+    public p105g2.C2221o f10147f0;
+
+    /* renamed from: g0 */
+    public boolean f10148g0;
+
+    /* renamed from: h0 */
+    public boolean f10149h0;
+
+    /* renamed from: i0 */
+    public boolean f10150i0;
+
+    /* renamed from: j0 */
+    public p105g2.C2212f f10151j0;
+
+    /* renamed from: k0 */
+    public p105g2.InterfaceC2208b.a f10152k0;
+
+    /* renamed from: l0 */
+    public java.lang.Object f10153l0;
+
+    /* renamed from: m0 */
+    public p105g2.AbstractC2220n.b f10154m0;
+
+    /* renamed from: g2.n$a */
+    public class a implements java.lang.Runnable {
+
+        /* renamed from: Y */
+        public final /* synthetic */ java.lang.String f10155Y;
+
+        /* renamed from: Z */
+        public final /* synthetic */ long f10156Z;
+
+        /* renamed from: a0 */
+        public final /* synthetic */ p105g2.AbstractC2220n f10157a0;
+
+        public a(p105g2.AbstractC2220n r1, java.lang.String r2, long r3) {
+                r0 = this;
+                r0.f10157a0 = r1
+                r0.f10155Y = r2
+                r0.f10156Z = r3
+                r0.<init>()
+                return
+        }
+
+        @Override // java.lang.Runnable
+        public void run() {
+                r4 = this;
+                g2.n r0 = r4.f10157a0
+                g2.u$a r0 = r0.f10140Y
+                java.lang.String r1 = r4.f10155Y
+                long r2 = r4.f10156Z
+                r0.m5823a(r1, r2)
+                g2.n r0 = r4.f10157a0
+                g2.u$a r1 = r0.f10140Y
+                java.lang.String r0 = r0.toString()
+                r1.m5824b(r0)
+                return
+        }
+    }
+
+    /* renamed from: g2.n$b */
+    public interface b {
+    }
+
+    /* renamed from: g2.n$c */
+    public enum c extends java.lang.Enum<p105g2.AbstractC2220n.c> {
+
+        /* renamed from: Y */
+        public static final p105g2.AbstractC2220n.c f10158Y = null;
+
+        /* renamed from: Z */
+        public static final /* synthetic */ p105g2.AbstractC2220n.c[] f10159Z = null;
+
+        static {
+                g2.n$c r0 = new g2.n$c
+                java.lang.String r1 = "LOW"
+                r2 = 0
+                r0.<init>(r1, r2)
+                g2.n$c r1 = new g2.n$c
+                java.lang.String r3 = "NORMAL"
+                r4 = 1
+                r1.<init>(r3, r4)
+                p105g2.AbstractC2220n.c.f10158Y = r1
+                g2.n$c r3 = new g2.n$c
+                java.lang.String r5 = "HIGH"
+                r6 = 2
+                r3.<init>(r5, r6)
+                g2.n$c r5 = new g2.n$c
+                java.lang.String r7 = "IMMEDIATE"
+                r8 = 3
+                r5.<init>(r7, r8)
+                r7 = 4
+                g2.n$c[] r7 = new p105g2.AbstractC2220n.c[r7]
+                r7[r2] = r0
+                r7[r4] = r1
+                r7[r6] = r3
+                r7[r8] = r5
+                p105g2.AbstractC2220n.c.f10159Z = r7
+                return
+        }
+
+        c(java.lang.String r1, int r2) {
+                r0 = this;
+                r0.<init>(r1, r2)
+                return
+        }
+
+        public static p105g2.AbstractC2220n.c valueOf(java.lang.String r1) {
+                java.lang.Class<g2.n$c> r0 = p105g2.AbstractC2220n.c.class
+                java.lang.Enum r1 = java.lang.Enum.valueOf(r0, r1)
+                g2.n$c r1 = (p105g2.AbstractC2220n.c) r1
+                return r1
+        }
+
+        public static p105g2.AbstractC2220n.c[] values() {
+                g2.n$c[] r0 = p105g2.AbstractC2220n.c.f10159Z
+                java.lang.Object r0 = r0.clone()
+                g2.n$c[] r0 = (p105g2.AbstractC2220n.c[]) r0
+                return r0
+        }
+    }
+
+    public AbstractC2220n(int r3, java.lang.String r4, p105g2.C2222p.a r5) {
+            r2 = this;
+            r2.<init>()
+            boolean r0 = p105g2.C2227u.a.f10178c
+            r1 = 0
+            if (r0 == 0) goto Le
+            g2.u$a r0 = new g2.u$a
+            r0.<init>()
+            goto Lf
+        Le:
+            r0 = r1
+        Lf:
+            r2.f10140Y = r0
+            java.lang.Object r0 = new java.lang.Object
+            r0.<init>()
+            r2.f10144c0 = r0
+            r0 = 1
+            r2.f10148g0 = r0
+            r0 = 0
+            r2.f10149h0 = r0
+            r2.f10150i0 = r0
+            r2.f10152k0 = r1
+            r2.f10141Z = r3
+            r2.f10142a0 = r4
+            r2.f10145d0 = r5
+            g2.f r3 = new g2.f
+            r3.<init>()
+            r2.f10151j0 = r3
+            boolean r3 = android.text.TextUtils.isEmpty(r4)
+            if (r3 != 0) goto L45
+            android.net.Uri r3 = android.net.Uri.parse(r4)
+            if (r3 == 0) goto L45
+            java.lang.String r3 = r3.getHost()
+            if (r3 == 0) goto L45
+            int r0 = r3.hashCode()
+        L45:
+            r2.f10143b0 = r0
+            return
+    }
+
+    @Override // java.lang.Comparable
+    public int compareTo(java.lang.Object r2) {
+            r1 = this;
+            g2.n r2 = (p105g2.AbstractC2220n) r2
+            java.util.Objects.requireNonNull(r2)
+            java.lang.Integer r0 = r1.f10146e0
+            int r0 = r0.intValue()
+            java.lang.Integer r2 = r2.f10146e0
+            int r2 = r2.intValue()
+            int r0 = r0 - r2
+            return r0
+    }
+
+    /* renamed from: e */
+    public void m5801e(java.lang.String r4) {
+            r3 = this;
+            boolean r0 = p105g2.C2227u.a.f10178c
+            if (r0 == 0) goto L11
+            g2.u$a r0 = r3.f10140Y
+            java.lang.Thread r1 = java.lang.Thread.currentThread()
+            long r1 = r1.getId()
+            r0.m5823a(r4, r1)
+        L11:
+            return
+    }
+
+    /* renamed from: g */
+    public void mo5802g() {
+            r2 = this;
+            java.lang.Object r0 = r2.f10144c0
+            monitor-enter(r0)
+            r1 = 1
+            r2.f10149h0 = r1     // Catch: java.lang.Throwable -> Lb
+            r1 = 0
+            r2.f10145d0 = r1     // Catch: java.lang.Throwable -> Lb
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> Lb
+            return
+        Lb:
+            r1 = move-exception
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> Lb
+            throw r1
+    }
+
+    /* renamed from: h */
+    public abstract void mo5803h(T r1);
+
+    /* renamed from: k */
+    public void m5804k(java.lang.String r5) {
+            r4 = this;
+            g2.o r0 = r4.f10147f0
+            if (r0 == 0) goto L32
+            java.util.Set<g2.n<?>> r1 = r0.f10161b
+            monitor-enter(r1)
+            java.util.Set<g2.n<?>> r2 = r0.f10161b     // Catch: java.lang.Throwable -> L2f
+            r2.remove(r4)     // Catch: java.lang.Throwable -> L2f
+            monitor-exit(r1)     // Catch: java.lang.Throwable -> L2f
+            java.util.List<g2.o$b> r2 = r0.f10169j
+            monitor-enter(r2)
+            java.util.List<g2.o$b> r1 = r0.f10169j     // Catch: java.lang.Throwable -> L2c
+            java.util.Iterator r1 = r1.iterator()     // Catch: java.lang.Throwable -> L2c
+        L16:
+            boolean r3 = r1.hasNext()     // Catch: java.lang.Throwable -> L2c
+            if (r3 == 0) goto L26
+            java.lang.Object r3 = r1.next()     // Catch: java.lang.Throwable -> L2c
+            g2.o$b r3 = (p105g2.C2221o.b) r3     // Catch: java.lang.Throwable -> L2c
+            r3.m5818a(r4)     // Catch: java.lang.Throwable -> L2c
+            goto L16
+        L26:
+            monitor-exit(r2)     // Catch: java.lang.Throwable -> L2c
+            r1 = 5
+            r0.m5816c(r4, r1)
+            goto L32
+        L2c:
+            r5 = move-exception
+            monitor-exit(r2)     // Catch: java.lang.Throwable -> L2c
+            throw r5
+        L2f:
+            r5 = move-exception
+            monitor-exit(r1)     // Catch: java.lang.Throwable -> L2f
+            throw r5
+        L32:
+            boolean r0 = p105g2.C2227u.a.f10178c
+            if (r0 == 0) goto L68
+            java.lang.Thread r0 = java.lang.Thread.currentThread()
+            long r0 = r0.getId()
+            android.os.Looper r2 = android.os.Looper.myLooper()
+            android.os.Looper r3 = android.os.Looper.getMainLooper()
+            if (r2 == r3) goto L5a
+            android.os.Handler r2 = new android.os.Handler
+            android.os.Looper r3 = android.os.Looper.getMainLooper()
+            r2.<init>(r3)
+            g2.n$a r3 = new g2.n$a
+            r3.<init>(r4, r5, r0)
+            r2.post(r3)
+            return
+        L5a:
+            g2.u$a r2 = r4.f10140Y
+            r2.m5823a(r5, r0)
+            g2.u$a r5 = r4.f10140Y
+            java.lang.String r0 = r4.toString()
+            r5.m5824b(r0)
+        L68:
+            return
+    }
+
+    /* renamed from: l */
+    public byte[] mo116l() {
+            r1 = this;
+            r0 = 0
+            return r0
+    }
+
+    /* renamed from: o */
+    public java.lang.String m5805o() {
+            r3 = this;
+            java.lang.String r0 = r3.f10142a0
+            int r1 = r3.f10141Z
+            if (r1 == 0) goto L22
+            r2 = -1
+            if (r1 != r2) goto La
+            goto L22
+        La:
+            java.lang.StringBuilder r2 = new java.lang.StringBuilder
+            r2.<init>()
+            java.lang.String r1 = java.lang.Integer.toString(r1)
+            r2.append(r1)
+            r1 = 45
+            r2.append(r1)
+            r2.append(r0)
+            java.lang.String r0 = r2.toString()
+        L22:
+            return r0
+    }
+
+    /* renamed from: p */
+    public java.util.Map<java.lang.String, java.lang.String> mo5806p() {
+            r1 = this;
+            java.util.Map r0 = java.util.Collections.emptyMap()
+            return r0
+    }
+
+    /* renamed from: q */
+    public boolean m5807q() {
+            r2 = this;
+            java.lang.Object r0 = r2.f10144c0
+            monitor-enter(r0)
+            boolean r1 = r2.f10150i0     // Catch: java.lang.Throwable -> L7
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L7
+            return r1
+        L7:
+            r1 = move-exception
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L7
+            throw r1
+    }
+
+    /* renamed from: r */
+    public boolean m5808r() {
+            r2 = this;
+            java.lang.Object r0 = r2.f10144c0
+            monitor-enter(r0)
+            boolean r1 = r2.f10149h0     // Catch: java.lang.Throwable -> L7
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L7
+            return r1
+        L7:
+            r1 = move-exception
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L7
+            throw r1
+    }
+
+    /* renamed from: s */
+    public void m5809s() {
+            r2 = this;
+            java.lang.Object r0 = r2.f10144c0
+            monitor-enter(r0)
+            r1 = 1
+            r2.f10150i0 = r1     // Catch: java.lang.Throwable -> L8
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L8
+            return
+        L8:
+            r1 = move-exception
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L8
+            throw r1
+    }
+
+    /* renamed from: t */
+    public void m5810t() {
+            r2 = this;
+            java.lang.Object r0 = r2.f10144c0
+            monitor-enter(r0)
+            g2.n$b r1 = r2.f10154m0     // Catch: java.lang.Throwable -> Le
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> Le
+            if (r1 == 0) goto Ld
+            g2.v r1 = (p105g2.C2228v) r1
+            r1.m5826b(r2)
+        Ld:
+            return
+        Le:
+            r1 = move-exception
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> Le
+            throw r1
+    }
+
+    public java.lang.String toString() {
+            r4 = this;
+            java.lang.String r0 = "0x"
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            int r1 = r4.f10143b0
+            java.lang.String r1 = java.lang.Integer.toHexString(r1)
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            r1.<init>()
+            boolean r2 = r4.m5808r()
+            if (r2 == 0) goto L21
+            java.lang.String r2 = "[X] "
+            goto L23
+        L21:
+            java.lang.String r2 = "[ ] "
+        L23:
+            r1.append(r2)
+            java.lang.String r2 = r4.f10142a0
+            java.lang.String r3 = " "
+            p179k1.C3661s.m8090a(r1, r2, r3, r0, r3)
+            g2.n$c r0 = p105g2.AbstractC2220n.c.f10158Y
+            r1.append(r0)
+            r1.append(r3)
+            java.lang.Integer r0 = r4.f10146e0
+            r1.append(r0)
+            java.lang.String r0 = r1.toString()
+            return r0
+    }
+
+    /* renamed from: u */
+    public void m5811u(p105g2.C2222p<?> r9) {
+            r8 = this;
+            java.lang.Object r0 = r8.f10144c0
+            monitor-enter(r0)
+            g2.n$b r1 = r8.f10154m0     // Catch: java.lang.Throwable -> L68
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L68
+            if (r1 == 0) goto L67
+            g2.v r1 = (p105g2.C2228v) r1
+            g2.b$a r0 = r9.f10172b
+            if (r0 == 0) goto L64
+            long r2 = java.lang.System.currentTimeMillis()
+            long r4 = r0.f10108e
+            r0 = 0
+            r6 = 1
+            int r7 = (r4 > r2 ? 1 : (r4 == r2 ? 0 : -1))
+            if (r7 >= 0) goto L1c
+            r2 = 1
+            goto L1d
+        L1c:
+            r2 = 0
+        L1d:
+            if (r2 == 0) goto L20
+            goto L64
+        L20:
+            java.lang.String r2 = r8.m5805o()
+            monitor-enter(r1)
+            java.util.Map<java.lang.String, java.util.List<g2.n<?>>> r3 = r1.f10184a     // Catch: java.lang.Throwable -> L61
+            java.lang.Object r3 = r3.remove(r2)     // Catch: java.lang.Throwable -> L61
+            java.util.List r3 = (java.util.List) r3     // Catch: java.lang.Throwable -> L61
+            monitor-exit(r1)     // Catch: java.lang.Throwable -> L61
+            if (r3 == 0) goto L67
+            boolean r4 = p105g2.C2227u.f10176a
+            if (r4 == 0) goto L48
+            java.lang.String r4 = "Releasing %d waiting requests for cacheKey=%s."
+            r5 = 2
+            java.lang.Object[] r5 = new java.lang.Object[r5]
+            int r7 = r3.size()
+            java.lang.Integer r7 = java.lang.Integer.valueOf(r7)
+            r5[r0] = r7
+            r5[r6] = r2
+            p105g2.C2227u.m5822d(r4, r5)
+        L48:
+            java.util.Iterator r0 = r3.iterator()
+        L4c:
+            boolean r2 = r0.hasNext()
+            if (r2 == 0) goto L67
+            java.lang.Object r2 = r0.next()
+            g2.n r2 = (p105g2.AbstractC2220n) r2
+            g2.q r3 = r1.f10185b
+            g2.g r3 = (p105g2.C2213g) r3
+            r4 = 0
+            r3.m5799a(r2, r9, r4)
+            goto L4c
+        L61:
+            r9 = move-exception
+            monitor-exit(r1)     // Catch: java.lang.Throwable -> L61
+            throw r9
+        L64:
+            r1.m5826b(r8)
+        L67:
+            return
+        L68:
+            r9 = move-exception
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L68
+            throw r9
+    }
+
+    /* renamed from: v */
+    public abstract p105g2.C2222p<T> mo5812v(p105g2.C2218l r1);
+
+    /* renamed from: w */
+    public void m5813w(int r2) {
+            r1 = this;
+            g2.o r0 = r1.f10147f0
+            if (r0 == 0) goto L7
+            r0.m5816c(r1, r2)
+        L7:
+            return
+    }
+}
+package p105g2;
+
+/* renamed from: g2.a */
+/* loaded from: classes.dex */
+public class C2207a extends p105g2.C2226t {
+    public C2207a(p105g2.C2218l r1) {
+            r0 = this;
+            r0.<init>(r1)
+            return
+    }
+
+    @Override // java.lang.Throwable
+    public java.lang.String getMessage() {
+            r1 = this;
+            java.lang.String r0 = super.getMessage()
+            return r0
+    }
+}
+package p105g2;
+
+/* renamed from: g2.d */
+/* loaded from: classes.dex */
+public class C2210d extends java.lang.Thread {
+
+    /* renamed from: e0 */
+    public static final boolean f10114e0 = false;
+
+    /* renamed from: Y */
+    public final java.util.concurrent.BlockingQueue<p105g2.AbstractC2220n<?>> f10115Y;
+
+    /* renamed from: Z */
+    public final java.util.concurrent.BlockingQueue<p105g2.AbstractC2220n<?>> f10116Z;
+
+    /* renamed from: a0 */
+    public final p105g2.InterfaceC2208b f10117a0;
+
+    /* renamed from: b0 */
+    public final p105g2.InterfaceC2223q f10118b0;
+
+    /* renamed from: c0 */
+    public volatile boolean f10119c0;
+
+    /* renamed from: d0 */
+    public final p105g2.C2228v f10120d0;
+
+    static {
+            boolean r0 = p105g2.C2227u.f10176a
+            p105g2.C2210d.f10114e0 = r0
+            return
+    }
+
+    public C2210d(java.util.concurrent.BlockingQueue<p105g2.AbstractC2220n<?>> r2, java.util.concurrent.BlockingQueue<p105g2.AbstractC2220n<?>> r3, p105g2.InterfaceC2208b r4, p105g2.InterfaceC2223q r5) {
+            r1 = this;
+            r1.<init>()
+            r0 = 0
+            r1.f10119c0 = r0
+            r1.f10115Y = r2
+            r1.f10116Z = r3
+            r1.f10117a0 = r4
+            r1.f10118b0 = r5
+            g2.v r2 = new g2.v
+            r2.<init>(r1, r3, r5)
+            r1.f10120d0 = r2
+            return
+    }
+
+    /* renamed from: a */
+    public final void m5798a() {
+            r12 = this;
+            java.util.concurrent.BlockingQueue<g2.n<?>> r0 = r12.f10115Y
+            java.lang.Object r0 = r0.take()
+            g2.n r0 = (p105g2.AbstractC2220n) r0
+            java.lang.String r1 = "cache-queue-take"
+            r0.m5801e(r1)
+            r1 = 1
+            r0.m5813w(r1)
+            r2 = 2
+            boolean r3 = r0.m5808r()     // Catch: java.lang.Throwable -> Lea
+            if (r3 == 0) goto L22
+            java.lang.String r1 = "cache-discard-canceled"
+            r0.m5804k(r1)     // Catch: java.lang.Throwable -> Lea
+        L1d:
+            r0.m5813w(r2)
+            goto Le9
+        L22:
+            g2.b r3 = r12.f10117a0     // Catch: java.lang.Throwable -> Lea
+            java.lang.String r4 = r0.m5805o()     // Catch: java.lang.Throwable -> Lea
+            h2.d r3 = (p119h2.C2442d) r3     // Catch: java.lang.Throwable -> Lea
+            g2.b$a r3 = r3.m6202a(r4)     // Catch: java.lang.Throwable -> Lea
+            if (r3 != 0) goto L43
+            java.lang.String r1 = "cache-miss"
+            r0.m5801e(r1)     // Catch: java.lang.Throwable -> Lea
+            g2.v r1 = r12.f10120d0     // Catch: java.lang.Throwable -> Lea
+            boolean r1 = r1.m5825a(r0)     // Catch: java.lang.Throwable -> Lea
+            if (r1 != 0) goto L1d
+            java.util.concurrent.BlockingQueue<g2.n<?>> r1 = r12.f10116Z     // Catch: java.lang.Throwable -> Lea
+        L3f:
+            r1.put(r0)     // Catch: java.lang.Throwable -> Lea
+            goto L1d
+        L43:
+            long r4 = java.lang.System.currentTimeMillis()     // Catch: java.lang.Throwable -> Lea
+            long r6 = r3.f10108e     // Catch: java.lang.Throwable -> Lea
+            r8 = 0
+            int r9 = (r6 > r4 ? 1 : (r6 == r4 ? 0 : -1))
+            if (r9 >= 0) goto L50
+            r6 = 1
+            goto L51
+        L50:
+            r6 = 0
+        L51:
+            if (r6 == 0) goto L65
+            java.lang.String r1 = "cache-hit-expired"
+            r0.m5801e(r1)     // Catch: java.lang.Throwable -> Lea
+            r0.f10152k0 = r3     // Catch: java.lang.Throwable -> Lea
+            g2.v r1 = r12.f10120d0     // Catch: java.lang.Throwable -> Lea
+            boolean r1 = r1.m5825a(r0)     // Catch: java.lang.Throwable -> Lea
+            if (r1 != 0) goto L1d
+            java.util.concurrent.BlockingQueue<g2.n<?>> r1 = r12.f10116Z     // Catch: java.lang.Throwable -> Lea
+            goto L3f
+        L65:
+            java.lang.String r6 = "cache-hit"
+            r0.m5801e(r6)     // Catch: java.lang.Throwable -> Lea
+            g2.l r6 = new g2.l     // Catch: java.lang.Throwable -> Lea
+            byte[] r7 = r3.f10104a     // Catch: java.lang.Throwable -> Lea
+            java.util.Map<java.lang.String, java.lang.String> r9 = r3.f10110g     // Catch: java.lang.Throwable -> Lea
+            r6.<init>(r7, r9)     // Catch: java.lang.Throwable -> Lea
+            g2.p r6 = r0.mo5812v(r6)     // Catch: java.lang.Throwable -> Lea
+            java.lang.String r7 = "cache-hit-parsed"
+            r0.m5801e(r7)     // Catch: java.lang.Throwable -> Lea
+            g2.t r7 = r6.f10173c     // Catch: java.lang.Throwable -> Lea
+            if (r7 != 0) goto L82
+            r7 = 1
+            goto L83
+        L82:
+            r7 = 0
+        L83:
+            r9 = 0
+            if (r7 != 0) goto Lb4
+            java.lang.String r1 = "cache-parsing-failed"
+            r0.m5801e(r1)     // Catch: java.lang.Throwable -> Lea
+            g2.b r1 = r12.f10117a0     // Catch: java.lang.Throwable -> Lea
+            java.lang.String r3 = r0.m5805o()     // Catch: java.lang.Throwable -> Lea
+            h2.d r1 = (p119h2.C2442d) r1     // Catch: java.lang.Throwable -> Lea
+            monitor-enter(r1)     // Catch: java.lang.Throwable -> Lea
+            g2.b$a r4 = r1.m6202a(r3)     // Catch: java.lang.Throwable -> Lb1
+            if (r4 == 0) goto La3
+            r5 = 0
+            r4.f10109f = r5     // Catch: java.lang.Throwable -> Lb1
+            r4.f10108e = r5     // Catch: java.lang.Throwable -> Lb1
+            r1.m6207f(r3, r4)     // Catch: java.lang.Throwable -> Lb1
+        La3:
+            monitor-exit(r1)     // Catch: java.lang.Throwable -> Lea
+            r0.f10152k0 = r9     // Catch: java.lang.Throwable -> Lea
+            g2.v r1 = r12.f10120d0     // Catch: java.lang.Throwable -> Lea
+            boolean r1 = r1.m5825a(r0)     // Catch: java.lang.Throwable -> Lea
+            if (r1 != 0) goto L1d
+            java.util.concurrent.BlockingQueue<g2.n<?>> r1 = r12.f10116Z     // Catch: java.lang.Throwable -> Lea
+            goto L3f
+        Lb1:
+            r3 = move-exception
+            monitor-exit(r1)     // Catch: java.lang.Throwable -> Lea
+            throw r3     // Catch: java.lang.Throwable -> Lea
+        Lb4:
+            long r10 = r3.f10109f     // Catch: java.lang.Throwable -> Lea
+            int r7 = (r10 > r4 ? 1 : (r10 == r4 ? 0 : -1))
+            if (r7 >= 0) goto Lbb
+            r8 = 1
+        Lbb:
+            if (r8 != 0) goto Lc2
+            g2.q r1 = r12.f10118b0     // Catch: java.lang.Throwable -> Lea
+        Lbf:
+            g2.g r1 = (p105g2.C2213g) r1     // Catch: java.lang.Throwable -> Lea
+            goto Le4
+        Lc2:
+            java.lang.String r4 = "cache-hit-refresh-needed"
+            r0.m5801e(r4)     // Catch: java.lang.Throwable -> Lea
+            r0.f10152k0 = r3     // Catch: java.lang.Throwable -> Lea
+            r6.f10174d = r1     // Catch: java.lang.Throwable -> Lea
+            g2.v r1 = r12.f10120d0     // Catch: java.lang.Throwable -> Lea
+            boolean r1 = r1.m5825a(r0)     // Catch: java.lang.Throwable -> Lea
+            if (r1 != 0) goto Le1
+            g2.q r1 = r12.f10118b0     // Catch: java.lang.Throwable -> Lea
+            g2.c r3 = new g2.c     // Catch: java.lang.Throwable -> Lea
+            r3.<init>(r12, r0)     // Catch: java.lang.Throwable -> Lea
+            g2.g r1 = (p105g2.C2213g) r1     // Catch: java.lang.Throwable -> Lea
+            r1.m5799a(r0, r6, r3)     // Catch: java.lang.Throwable -> Lea
+            goto L1d
+        Le1:
+            g2.q r1 = r12.f10118b0     // Catch: java.lang.Throwable -> Lea
+            goto Lbf
+        Le4:
+            r1.m5799a(r0, r6, r9)     // Catch: java.lang.Throwable -> Lea
+            goto L1d
+        Le9:
+            return
+        Lea:
+            r1 = move-exception
+            r0.m5813w(r2)
+            throw r1
+    }
+
+    @Override // java.lang.Thread, java.lang.Runnable
+    public void run() {
+            r3 = this;
+            boolean r0 = p105g2.C2210d.f10114e0
+            r1 = 0
+            if (r0 == 0) goto Lc
+            java.lang.Object[] r0 = new java.lang.Object[r1]
+            java.lang.String r2 = "start new dispatcher"
+            p105g2.C2227u.m5822d(r2, r0)
+        Lc:
+            r0 = 10
+            android.os.Process.setThreadPriority(r0)
+            g2.b r0 = r3.f10117a0
+            h2.d r0 = (p119h2.C2442d) r0
+            r0.m6205d()
+        L18:
+            r3.m5798a()     // Catch: java.lang.InterruptedException -> L1c
+            goto L18
+        L1c:
+            boolean r0 = r3.f10119c0
+            if (r0 == 0) goto L28
+            java.lang.Thread r0 = java.lang.Thread.currentThread()
+            r0.interrupt()
+            return
+        L28:
+            java.lang.Object[] r0 = new java.lang.Object[r1]
+            java.lang.String r2 = "Ignoring spurious interrupt of CacheDispatcher thread; use quit() to terminate it"
+            p105g2.C2227u.m5821c(r2, r0)
+            goto L18
+    }
+}
+package p105g2;
+
+/* renamed from: g2.e */
+/* loaded from: classes.dex */
+public class C2211e extends p105g2.C2224r {
+    public C2211e() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    public C2211e(p105g2.C2218l r1) {
+            r0 = this;
+            r0.<init>(r1)
+            return
+    }
+}
+package p105g2;
+
+/* renamed from: g2.f */
+/* loaded from: classes.dex */
+public class C2212f {
+
+    /* renamed from: a */
+    public int f10121a;
+
+    /* renamed from: b */
+    public int f10122b;
+
+    public C2212f() {
+            r1 = this;
+            r1.<init>()
+            r0 = 2500(0x9c4, float:3.503E-42)
+            r1.f10121a = r0
+            return
+    }
+}
+package p105g2;
+
+/* renamed from: g2.g */
+/* loaded from: classes.dex */
+public class C2213g implements p105g2.InterfaceC2223q {
+
+    /* renamed from: a */
+    public final java.util.concurrent.Executor f10123a;
+
+    /* renamed from: g2.g$a */
+    public class a implements java.util.concurrent.Executor {
+
+        /* renamed from: Y */
+        public final /* synthetic */ android.os.Handler f10124Y;
+
+        public a(p105g2.C2213g r1, android.os.Handler r2) {
+                r0 = this;
+                r0.f10124Y = r2
+                r0.<init>()
+                return
+        }
+
+        @Override // java.util.concurrent.Executor
+        public void execute(java.lang.Runnable r2) {
+                r1 = this;
+                android.os.Handler r0 = r1.f10124Y
+                r0.post(r2)
+                return
+        }
+    }
+
+    /* renamed from: g2.g$b */
+    public static class b implements java.lang.Runnable {
+
+        /* renamed from: Y */
+        public final p105g2.AbstractC2220n f10125Y;
+
+        /* renamed from: Z */
+        public final p105g2.C2222p f10126Z;
+
+        /* renamed from: a0 */
+        public final java.lang.Runnable f10127a0;
+
+        public b(p105g2.AbstractC2220n r1, p105g2.C2222p r2, java.lang.Runnable r3) {
+                r0 = this;
+                r0.<init>()
+                r0.f10125Y = r1
+                r0.f10126Z = r2
+                r0.f10127a0 = r3
+                return
+        }
+
+        @Override // java.lang.Runnable
+        public void run() {
+                r3 = this;
+                g2.n r0 = r3.f10125Y
+                boolean r0 = r0.m5808r()
+                if (r0 == 0) goto L10
+                g2.n r0 = r3.f10125Y
+                java.lang.String r1 = "canceled-at-delivery"
+                r0.m5804k(r1)
+                return
+            L10:
+                g2.p r0 = r3.f10126Z
+                g2.t r1 = r0.f10173c
+                if (r1 != 0) goto L18
+                r2 = 1
+                goto L19
+            L18:
+                r2 = 0
+            L19:
+                if (r2 == 0) goto L23
+                g2.n r1 = r3.f10125Y
+                T r0 = r0.f10171a
+                r1.mo5803h(r0)
+                goto L30
+            L23:
+                g2.n r0 = r3.f10125Y
+                java.lang.Object r2 = r0.f10144c0
+                monitor-enter(r2)
+                g2.p$a r0 = r0.f10145d0     // Catch: java.lang.Throwable -> L4d
+                monitor-exit(r2)     // Catch: java.lang.Throwable -> L4d
+                if (r0 == 0) goto L30
+                r0.mo118a(r1)
+            L30:
+                g2.p r0 = r3.f10126Z
+                boolean r0 = r0.f10174d
+                if (r0 == 0) goto L3e
+                g2.n r0 = r3.f10125Y
+                java.lang.String r1 = "intermediate-response"
+                r0.m5801e(r1)
+                goto L45
+            L3e:
+                g2.n r0 = r3.f10125Y
+                java.lang.String r1 = "done"
+                r0.m5804k(r1)
+            L45:
+                java.lang.Runnable r0 = r3.f10127a0
+                if (r0 == 0) goto L4c
+                r0.run()
+            L4c:
+                return
+            L4d:
+                r0 = move-exception
+                monitor-exit(r2)     // Catch: java.lang.Throwable -> L4d
+                throw r0
+        }
+    }
+
+    public C2213g(android.os.Handler r2) {
+            r1 = this;
+            r1.<init>()
+            g2.g$a r0 = new g2.g$a
+            r0.<init>(r1, r2)
+            r1.f10123a = r0
+            return
+    }
+
+    /* renamed from: a */
+    public void m5799a(p105g2.AbstractC2220n<?> r3, p105g2.C2222p<?> r4, java.lang.Runnable r5) {
+            r2 = this;
+            java.lang.Object r0 = r3.f10144c0
+            monitor-enter(r0)
+            r1 = 1
+            r3.f10150i0 = r1     // Catch: java.lang.Throwable -> L17
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L17
+            java.lang.String r0 = "post-response"
+            r3.m5801e(r0)
+            java.util.concurrent.Executor r0 = r2.f10123a
+            g2.g$b r1 = new g2.g$b
+            r1.<init>(r3, r4, r5)
+            r0.execute(r1)
+            return
+        L17:
+            r3 = move-exception
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L17
+            throw r3
+    }
+}
+package p105g2;
+
+/* renamed from: g2.h */
+/* loaded from: classes.dex */
+public final class C2214h {
+
+    /* renamed from: a */
+    public final java.lang.String f10128a;
+
+    /* renamed from: b */
+    public final java.lang.String f10129b;
+
+    public C2214h(java.lang.String r1, java.lang.String r2) {
+            r0 = this;
+            r0.<init>()
+            r0.f10128a = r1
+            r0.f10129b = r2
+            return
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            r1 = 0
+            if (r5 == 0) goto L29
+            java.lang.Class<g2.h> r2 = p105g2.C2214h.class
+            java.lang.Class r3 = r5.getClass()
+            if (r2 == r3) goto L10
+            goto L29
+        L10:
+            g2.h r5 = (p105g2.C2214h) r5
+            java.lang.String r2 = r4.f10128a
+            java.lang.String r3 = r5.f10128a
+            boolean r2 = android.text.TextUtils.equals(r2, r3)
+            if (r2 == 0) goto L27
+            java.lang.String r2 = r4.f10129b
+            java.lang.String r5 = r5.f10129b
+            boolean r5 = android.text.TextUtils.equals(r2, r5)
+            if (r5 == 0) goto L27
+            goto L28
+        L27:
+            r0 = 0
+        L28:
+            return r0
+        L29:
+            return r1
+    }
+
+    public int hashCode() {
+            r2 = this;
+            java.lang.String r0 = r2.f10128a
+            int r0 = r0.hashCode()
+            int r0 = r0 * 31
+            java.lang.String r1 = r2.f10129b
+            int r1 = r1.hashCode()
+            int r1 = r1 + r0
+            return r1
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "Header[name="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r3.f10128a
+            r0.append(r1)
+            java.lang.String r1 = ",value="
+            r0.append(r1)
+            java.lang.String r1 = r3.f10129b
+            java.lang.String r2 = "]"
+            java.lang.String r0 = p346u.C6269n.m12888a(r0, r1, r2)
+            return r0
+    }
+}
+package p105g2;
+
+/* renamed from: g2.j */
+/* loaded from: classes.dex */
+public class C2216j extends java.lang.Thread {
+
+    /* renamed from: Y */
+    public final java.util.concurrent.BlockingQueue<p105g2.AbstractC2220n<?>> f10130Y;
+
+    /* renamed from: Z */
+    public final p105g2.InterfaceC2215i f10131Z;
+
+    /* renamed from: a0 */
+    public final p105g2.InterfaceC2208b f10132a0;
+
+    /* renamed from: b0 */
+    public final p105g2.InterfaceC2223q f10133b0;
+
+    /* renamed from: c0 */
+    public volatile boolean f10134c0;
+
+    public C2216j(java.util.concurrent.BlockingQueue<p105g2.AbstractC2220n<?>> r2, p105g2.InterfaceC2215i r3, p105g2.InterfaceC2208b r4, p105g2.InterfaceC2223q r5) {
+            r1 = this;
+            r1.<init>()
+            r0 = 0
+            r1.f10134c0 = r0
+            r1.f10130Y = r2
+            r1.f10131Z = r3
+            r1.f10132a0 = r4
+            r1.f10133b0 = r5
+            return
+    }
+
+    /* renamed from: a */
+    public final void m5800a() {
+            r9 = this;
+            java.util.concurrent.BlockingQueue<g2.n<?>> r0 = r9.f10130Y
+            java.lang.Object r0 = r0.take()
+            g2.n r0 = (p105g2.AbstractC2220n) r0
+            java.lang.String r1 = "post-error"
+            android.os.SystemClock.elapsedRealtime()
+            r2 = 3
+            r0.m5813w(r2)
+            r2 = 0
+            r3 = 4
+            java.lang.String r4 = "network-queue-take"
+            r0.m5801e(r4)     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            boolean r4 = r0.m5808r()     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            if (r4 == 0) goto L2b
+            java.lang.String r4 = "network-discard-cancelled"
+            r0.m5804k(r4)     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+        L23:
+            r0.m5810t()     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+        L26:
+            r0.m5813w(r3)
+            goto Lda
+        L2b:
+            int r4 = r0.f10143b0     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            android.net.TrafficStats.setThreadStatsTag(r4)     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            g2.i r4 = r9.f10131Z     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            h2.b r4 = (p119h2.C2440b) r4     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            g2.l r4 = r4.m6191a(r0)     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            java.lang.String r5 = "network-http-complete"
+            r0.m5801e(r5)     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            boolean r5 = r4.f10139e     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            if (r5 == 0) goto L4d
+            boolean r5 = r0.m5807q()     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            if (r5 == 0) goto L4d
+            java.lang.String r4 = "not-modified"
+            r0.m5804k(r4)     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            goto L23
+        L4d:
+            g2.p r4 = r0.mo5812v(r4)     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            java.lang.String r5 = "network-parse-complete"
+            r0.m5801e(r5)     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            boolean r5 = r0.f10148g0     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            if (r5 == 0) goto L70
+            g2.b$a r5 = r4.f10172b     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            if (r5 == 0) goto L70
+            g2.b r5 = r9.f10132a0     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            java.lang.String r6 = r0.m5805o()     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            g2.b$a r7 = r4.f10172b     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            h2.d r5 = (p119h2.C2442d) r5     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            r5.m6207f(r6, r7)     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            java.lang.String r5 = "network-cache-written"
+            r0.m5801e(r5)     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+        L70:
+            r0.m5809s()     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            g2.q r5 = r9.f10133b0     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            g2.g r5 = (p105g2.C2213g) r5     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            r5.m5799a(r0, r4, r2)     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            r0.m5811u(r4)     // Catch: java.lang.Throwable -> L7e java.lang.Exception -> L80 p105g2.C2226t -> Lb8
+            goto L26
+        L7e:
+            r1 = move-exception
+            goto Ldb
+        L80:
+            r4 = move-exception
+            java.lang.String r5 = "Unhandled exception %s"
+            r6 = 1
+            java.lang.Object[] r6 = new java.lang.Object[r6]     // Catch: java.lang.Throwable -> L7e
+            r7 = 0
+            java.lang.String r8 = r4.toString()     // Catch: java.lang.Throwable -> L7e
+            r6[r7] = r8     // Catch: java.lang.Throwable -> L7e
+            java.lang.String r5 = p105g2.C2227u.m5819a(r5, r6)     // Catch: java.lang.Throwable -> L7e
+            java.lang.String r6 = "Volley"
+            android.util.Log.e(r6, r5, r4)     // Catch: java.lang.Throwable -> L7e
+            g2.t r5 = new g2.t     // Catch: java.lang.Throwable -> L7e
+            r5.<init>(r4)     // Catch: java.lang.Throwable -> L7e
+            android.os.SystemClock.elapsedRealtime()     // Catch: java.lang.Throwable -> L7e
+            g2.q r4 = r9.f10133b0     // Catch: java.lang.Throwable -> L7e
+            g2.g r4 = (p105g2.C2213g) r4     // Catch: java.lang.Throwable -> L7e
+            java.util.Objects.requireNonNull(r4)     // Catch: java.lang.Throwable -> L7e
+            r0.m5801e(r1)     // Catch: java.lang.Throwable -> L7e
+            g2.p r1 = new g2.p     // Catch: java.lang.Throwable -> L7e
+            r1.<init>(r5)     // Catch: java.lang.Throwable -> L7e
+            java.util.concurrent.Executor r4 = r4.f10123a     // Catch: java.lang.Throwable -> L7e
+            g2.g$b r5 = new g2.g$b     // Catch: java.lang.Throwable -> L7e
+            r5.<init>(r0, r1, r2)     // Catch: java.lang.Throwable -> L7e
+            r4.execute(r5)     // Catch: java.lang.Throwable -> L7e
+            goto Ld5
+        Lb8:
+            r4 = move-exception
+            android.os.SystemClock.elapsedRealtime()     // Catch: java.lang.Throwable -> L7e
+            g2.q r5 = r9.f10133b0     // Catch: java.lang.Throwable -> L7e
+            g2.g r5 = (p105g2.C2213g) r5     // Catch: java.lang.Throwable -> L7e
+            java.util.Objects.requireNonNull(r5)     // Catch: java.lang.Throwable -> L7e
+            r0.m5801e(r1)     // Catch: java.lang.Throwable -> L7e
+            g2.p r1 = new g2.p     // Catch: java.lang.Throwable -> L7e
+            r1.<init>(r4)     // Catch: java.lang.Throwable -> L7e
+            java.util.concurrent.Executor r4 = r5.f10123a     // Catch: java.lang.Throwable -> L7e
+            g2.g$b r5 = new g2.g$b     // Catch: java.lang.Throwable -> L7e
+            r5.<init>(r0, r1, r2)     // Catch: java.lang.Throwable -> L7e
+            r4.execute(r5)     // Catch: java.lang.Throwable -> L7e
+        Ld5:
+            r0.m5810t()     // Catch: java.lang.Throwable -> L7e
+            goto L26
+        Lda:
+            return
+        Ldb:
+            r0.m5813w(r3)
+            throw r1
+    }
+
+    @Override // java.lang.Thread, java.lang.Runnable
+    public void run() {
+            r2 = this;
+            r0 = 10
+            android.os.Process.setThreadPriority(r0)
+        L5:
+            r2.m5800a()     // Catch: java.lang.InterruptedException -> L9
+            goto L5
+        L9:
+            boolean r0 = r2.f10134c0
+            if (r0 == 0) goto L15
+            java.lang.Thread r0 = java.lang.Thread.currentThread()
+            r0.interrupt()
+            return
+        L15:
+            r0 = 0
+            java.lang.Object[] r0 = new java.lang.Object[r0]
+            java.lang.String r1 = "Ignoring spurious interrupt of NetworkDispatcher thread; use quit() to terminate it"
+            p105g2.C2227u.m5821c(r1, r0)
+            goto L5
+    }
+}
+package p105g2;
+
+/* renamed from: g2.k */
+/* loaded from: classes.dex */
+public class C2217k extends p105g2.C2226t {
+    public C2217k() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    public C2217k(java.lang.Throwable r1) {
+            r0 = this;
+            r0.<init>(r1)
+            return
+    }
+}
+package p105g2;
+
+/* renamed from: g2.l */
+/* loaded from: classes.dex */
+public class C2218l {
+
+    /* renamed from: a */
+    public final int f10135a;
+
+    /* renamed from: b */
+    public final byte[] f10136b;
+
+    /* renamed from: c */
+    public final java.util.Map<java.lang.String, java.lang.String> f10137c;
+
+    /* renamed from: d */
+    public final java.util.List<p105g2.C2214h> f10138d;
+
+    /* renamed from: e */
+    public final boolean f10139e;
+
+    public C2218l(int r1, byte[] r2, java.util.Map<java.lang.String, java.lang.String> r3, java.util.List<p105g2.C2214h> r4, boolean r5, long r6) {
+            r0 = this;
+            r0.<init>()
+            r0.f10135a = r1
+            r0.f10136b = r2
+            r0.f10137c = r3
+            if (r4 != 0) goto Ld
+            r1 = 0
+            goto L11
+        Ld:
+            java.util.List r1 = java.util.Collections.unmodifiableList(r4)
+        L11:
+            r0.f10138d = r1
+            r0.f10139e = r5
+            return
+    }
+
+    public C2218l(int r9, byte[] r10, boolean r11, long r12, java.util.List<p105g2.C2214h> r14) {
+            r8 = this;
+            if (r14 != 0) goto L5
+            r0 = 0
+        L3:
+            r3 = r0
+            goto L2f
+        L5:
+            boolean r0 = r14.isEmpty()
+            if (r0 == 0) goto L10
+            java.util.Map r0 = java.util.Collections.emptyMap()
+            goto L3
+        L10:
+            java.util.TreeMap r0 = new java.util.TreeMap
+            java.util.Comparator r1 = java.lang.String.CASE_INSENSITIVE_ORDER
+            r0.<init>(r1)
+            java.util.Iterator r1 = r14.iterator()
+        L1b:
+            boolean r2 = r1.hasNext()
+            if (r2 == 0) goto L3
+            java.lang.Object r2 = r1.next()
+            g2.h r2 = (p105g2.C2214h) r2
+            java.lang.String r3 = r2.f10128a
+            java.lang.String r2 = r2.f10129b
+            r0.put(r3, r2)
+            goto L1b
+        L2f:
+            r0 = r8
+            r1 = r9
+            r2 = r10
+            r4 = r14
+            r5 = r11
+            r6 = r12
+            r0.<init>(r1, r2, r3, r4, r5, r6)
+            return
+    }
+
+    @java.lang.Deprecated
+    public C2218l(byte[] r14, java.util.Map<java.lang.String, java.lang.String> r15) {
+            r13 = this;
+            if (r15 != 0) goto L5
+            r0 = 0
+        L3:
+            r9 = r0
+            goto L42
+        L5:
+            boolean r0 = r15.isEmpty()
+            if (r0 == 0) goto L10
+            java.util.List r0 = java.util.Collections.emptyList()
+            goto L3
+        L10:
+            java.util.ArrayList r0 = new java.util.ArrayList
+            int r1 = r15.size()
+            r0.<init>(r1)
+            java.util.Set r1 = r15.entrySet()
+            java.util.Iterator r1 = r1.iterator()
+        L21:
+            boolean r2 = r1.hasNext()
+            if (r2 == 0) goto L3
+            java.lang.Object r2 = r1.next()
+            java.util.Map$Entry r2 = (java.util.Map.Entry) r2
+            g2.h r3 = new g2.h
+            java.lang.Object r4 = r2.getKey()
+            java.lang.String r4 = (java.lang.String) r4
+            java.lang.Object r2 = r2.getValue()
+            java.lang.String r2 = (java.lang.String) r2
+            r3.<init>(r4, r2)
+            r0.add(r3)
+            goto L21
+        L42:
+            r6 = 200(0xc8, float:2.8E-43)
+            r10 = 0
+            r11 = 0
+            r5 = r13
+            r7 = r14
+            r8 = r15
+            r5.<init>(r6, r7, r8, r9, r10, r11)
+            return
+    }
+}
+package p105g2;
+
+/* renamed from: g2.m */
+/* loaded from: classes.dex */
+public class C2219m extends p105g2.C2217k {
+    public C2219m(java.lang.Throwable r1) {
+            r0 = this;
+            r0.<init>(r1)
+            return
+    }
+}
+package p105g2;
+
+/* renamed from: g2.o */
+/* loaded from: classes.dex */
+public class C2221o {
+
+    /* renamed from: a */
+    public final java.util.concurrent.atomic.AtomicInteger f10160a;
+
+    /* renamed from: b */
+    public final java.util.Set<p105g2.AbstractC2220n<?>> f10161b;
+
+    /* renamed from: c */
+    public final java.util.concurrent.PriorityBlockingQueue<p105g2.AbstractC2220n<?>> f10162c;
+
+    /* renamed from: d */
+    public final java.util.concurrent.PriorityBlockingQueue<p105g2.AbstractC2220n<?>> f10163d;
+
+    /* renamed from: e */
+    public final p105g2.InterfaceC2208b f10164e;
+
+    /* renamed from: f */
+    public final p105g2.InterfaceC2215i f10165f;
+
+    /* renamed from: g */
+    public final p105g2.InterfaceC2223q f10166g;
+
+    /* renamed from: h */
+    public final p105g2.C2216j[] f10167h;
+
+    /* renamed from: i */
+    public p105g2.C2210d f10168i;
+
+    /* renamed from: j */
+    public final java.util.List<p105g2.C2221o.b> f10169j;
+
+    /* renamed from: k */
+    public final java.util.List<p105g2.C2221o.a> f10170k;
+
+    /* renamed from: g2.o$a */
+    public interface a {
+        /* renamed from: a */
+        void m5817a(p105g2.AbstractC2220n<?> r1, int r2);
+    }
+
+    @java.lang.Deprecated
+    /* renamed from: g2.o$b */
+    public interface b<T> {
+        /* renamed from: a */
+        void m5818a(p105g2.AbstractC2220n<T> r1);
+    }
+
+    public C2221o(p105g2.InterfaceC2208b r4, p105g2.InterfaceC2215i r5) {
+            r3 = this;
+            g2.g r0 = new g2.g
+            android.os.Handler r1 = new android.os.Handler
+            android.os.Looper r2 = android.os.Looper.getMainLooper()
+            r1.<init>(r2)
+            r0.<init>(r1)
+            r3.<init>()
+            java.util.concurrent.atomic.AtomicInteger r1 = new java.util.concurrent.atomic.AtomicInteger
+            r1.<init>()
+            r3.f10160a = r1
+            java.util.HashSet r1 = new java.util.HashSet
+            r1.<init>()
+            r3.f10161b = r1
+            java.util.concurrent.PriorityBlockingQueue r1 = new java.util.concurrent.PriorityBlockingQueue
+            r1.<init>()
+            r3.f10162c = r1
+            java.util.concurrent.PriorityBlockingQueue r1 = new java.util.concurrent.PriorityBlockingQueue
+            r1.<init>()
+            r3.f10163d = r1
+            java.util.ArrayList r1 = new java.util.ArrayList
+            r1.<init>()
+            r3.f10169j = r1
+            java.util.ArrayList r1 = new java.util.ArrayList
+            r1.<init>()
+            r3.f10170k = r1
+            r3.f10164e = r4
+            r3.f10165f = r5
+            r4 = 4
+            g2.j[] r4 = new p105g2.C2216j[r4]
+            r3.f10167h = r4
+            r3.f10166g = r0
+            return
+    }
+
+    /* renamed from: a */
+    public <T> p105g2.AbstractC2220n<T> m5814a(p105g2.AbstractC2220n<T> r3) {
+            r2 = this;
+            r3.f10147f0 = r2
+            java.util.Set<g2.n<?>> r0 = r2.f10161b
+            monitor-enter(r0)
+            java.util.Set<g2.n<?>> r1 = r2.f10161b     // Catch: java.lang.Throwable -> L30
+            r1.add(r3)     // Catch: java.lang.Throwable -> L30
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L30
+            java.util.concurrent.atomic.AtomicInteger r0 = r2.f10160a
+            int r0 = r0.incrementAndGet()
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r0)
+            r3.f10146e0 = r0
+            java.lang.String r0 = "add-to-queue"
+            r3.m5801e(r0)
+            r0 = 0
+            r2.m5816c(r3, r0)
+            boolean r0 = r3.f10148g0
+            if (r0 != 0) goto L2a
+            java.util.concurrent.PriorityBlockingQueue<g2.n<?>> r0 = r2.f10163d
+            r0.add(r3)
+            goto L2f
+        L2a:
+            java.util.concurrent.PriorityBlockingQueue<g2.n<?>> r0 = r2.f10162c
+            r0.add(r3)
+        L2f:
+            return r3
+        L30:
+            r3 = move-exception
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L30
+            throw r3
+    }
+
+    /* renamed from: b */
+    public void m5815b(java.lang.Object r5) {
+            r4 = this;
+            java.util.Set<g2.n<?>> r0 = r4.f10161b
+            monitor-enter(r0)
+            java.util.Set<g2.n<?>> r1 = r4.f10161b     // Catch: java.lang.Throwable -> L24
+            java.util.Iterator r1 = r1.iterator()     // Catch: java.lang.Throwable -> L24
+        L9:
+            boolean r2 = r1.hasNext()     // Catch: java.lang.Throwable -> L24
+            if (r2 == 0) goto L22
+            java.lang.Object r2 = r1.next()     // Catch: java.lang.Throwable -> L24
+            g2.n r2 = (p105g2.AbstractC2220n) r2     // Catch: java.lang.Throwable -> L24
+            java.lang.Object r3 = r2.f10153l0     // Catch: java.lang.Throwable -> L24
+            if (r3 != r5) goto L1b
+            r3 = 1
+            goto L1c
+        L1b:
+            r3 = 0
+        L1c:
+            if (r3 == 0) goto L9
+            r2.mo5802g()     // Catch: java.lang.Throwable -> L24
+            goto L9
+        L22:
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L24
+            return
+        L24:
+            r5 = move-exception
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L24
+            throw r5
+    }
+
+    /* renamed from: c */
+    public void m5816c(p105g2.AbstractC2220n<?> r4, int r5) {
+            r3 = this;
+            java.util.List<g2.o$a> r0 = r3.f10170k
+            monitor-enter(r0)
+            java.util.List<g2.o$a> r1 = r3.f10170k     // Catch: java.lang.Throwable -> L1b
+            java.util.Iterator r1 = r1.iterator()     // Catch: java.lang.Throwable -> L1b
+        L9:
+            boolean r2 = r1.hasNext()     // Catch: java.lang.Throwable -> L1b
+            if (r2 == 0) goto L19
+            java.lang.Object r2 = r1.next()     // Catch: java.lang.Throwable -> L1b
+            g2.o$a r2 = (p105g2.C2221o.a) r2     // Catch: java.lang.Throwable -> L1b
+            r2.m5817a(r4, r5)     // Catch: java.lang.Throwable -> L1b
+            goto L9
+        L19:
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L1b
+            return
+        L1b:
+            r4 = move-exception
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L1b
+            throw r4
+    }
+}
+package p105g2;
+
+/* renamed from: g2.p */
+/* loaded from: classes.dex */
+public class C2222p<T> {
+
+    /* renamed from: a */
+    public final T f10171a;
+
+    /* renamed from: b */
+    public final p105g2.InterfaceC2208b.a f10172b;
+
+    /* renamed from: c */
+    public final p105g2.C2226t f10173c;
+
+    /* renamed from: d */
+    public boolean f10174d;
+
+    /* renamed from: g2.p$a */
+    public interface a {
+        /* renamed from: a */
+        void mo118a(p105g2.C2226t r1);
+    }
+
+    /* renamed from: g2.p$b */
+    public interface b<T> {
+        /* renamed from: a */
+        void mo117a(T r1);
+    }
+
+    public C2222p(p105g2.C2226t r2) {
+            r1 = this;
+            r1.<init>()
+            r0 = 0
+            r1.f10174d = r0
+            r0 = 0
+            r1.f10171a = r0
+            r1.f10172b = r0
+            r1.f10173c = r2
+            return
+    }
+
+    public C2222p(T r2, p105g2.InterfaceC2208b.a r3) {
+            r1 = this;
+            r1.<init>()
+            r0 = 0
+            r1.f10174d = r0
+            r1.f10171a = r2
+            r1.f10172b = r3
+            r2 = 0
+            r1.f10173c = r2
+            return
+    }
+}
+package p105g2;
+
+/* renamed from: g2.r */
+/* loaded from: classes.dex */
+public class C2224r extends p105g2.C2226t {
+    public C2224r() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    public C2224r(p105g2.C2218l r1) {
+            r0 = this;
+            r0.<init>(r1)
+            return
+    }
+}
+package p105g2;
+
+/* renamed from: g2.s */
+/* loaded from: classes.dex */
+public class C2225s extends p105g2.C2226t {
+    public C2225s() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+}
+package p105g2;
+
+/* renamed from: g2.t */
+/* loaded from: classes.dex */
+public class C2226t extends java.lang.Exception {
+
+    /* renamed from: Y */
+    public final p105g2.C2218l f10175Y;
+
+    public C2226t() {
+            r1 = this;
+            r1.<init>()
+            r0 = 0
+            r1.f10175Y = r0
+            return
+    }
+
+    public C2226t(p105g2.C2218l r1) {
+            r0 = this;
+            r0.<init>()
+            r0.f10175Y = r1
+            return
+    }
+
+    public C2226t(java.lang.Throwable r1) {
+            r0 = this;
+            r0.<init>(r1)
+            r1 = 0
+            r0.f10175Y = r1
+            return
+    }
+}
+package p105g2;
+
+/* renamed from: g2.u */
+/* loaded from: classes.dex */
+public class C2227u {
+
+    /* renamed from: a */
+    public static boolean f10176a;
+
+    /* renamed from: b */
+    public static final java.lang.String f10177b = null;
+
+    /* renamed from: g2.u$a */
+    public static class a {
+
+        /* renamed from: c */
+        public static final boolean f10178c = false;
+
+        /* renamed from: a */
+        public final java.util.List<p105g2.C2227u.a.C7392a> f10179a;
+
+        /* renamed from: b */
+        public boolean f10180b;
+
+        /* renamed from: g2.u$a$a, reason: collision with other inner class name */
+        public static class C7392a {
+
+            /* renamed from: a */
+            public final java.lang.String f10181a;
+
+            /* renamed from: b */
+            public final long f10182b;
+
+            /* renamed from: c */
+            public final long f10183c;
+
+            public C7392a(java.lang.String r1, long r2, long r4) {
+                    r0 = this;
+                    r0.<init>()
+                    r0.f10181a = r1
+                    r0.f10182b = r2
+                    r0.f10183c = r4
+                    return
+            }
+        }
+
+        static {
+                boolean r0 = p105g2.C2227u.f10176a
+                p105g2.C2227u.a.f10178c = r0
+                return
+        }
+
+        public a() {
+                r1 = this;
+                r1.<init>()
+                java.util.ArrayList r0 = new java.util.ArrayList
+                r0.<init>()
+                r1.f10179a = r0
+                r0 = 0
+                r1.f10180b = r0
+                return
+        }
+
+        /* renamed from: a */
+        public synchronized void m5823a(java.lang.String r9, long r10) {
+                r8 = this;
+                monitor-enter(r8)
+                boolean r0 = r8.f10180b     // Catch: java.lang.Throwable -> L20
+                if (r0 != 0) goto L18
+                java.util.List<g2.u$a$a> r0 = r8.f10179a     // Catch: java.lang.Throwable -> L20
+                g2.u$a$a r7 = new g2.u$a$a     // Catch: java.lang.Throwable -> L20
+                long r5 = android.os.SystemClock.elapsedRealtime()     // Catch: java.lang.Throwable -> L20
+                r1 = r7
+                r2 = r9
+                r3 = r10
+                r1.<init>(r2, r3, r5)     // Catch: java.lang.Throwable -> L20
+                r0.add(r7)     // Catch: java.lang.Throwable -> L20
+                monitor-exit(r8)
+                return
+            L18:
+                java.lang.IllegalStateException r9 = new java.lang.IllegalStateException     // Catch: java.lang.Throwable -> L20
+                java.lang.String r10 = "Marker added to finished log"
+                r9.<init>(r10)     // Catch: java.lang.Throwable -> L20
+                throw r9     // Catch: java.lang.Throwable -> L20
+            L20:
+                r9 = move-exception
+                monitor-exit(r8)
+                throw r9
+        }
+
+        /* renamed from: b */
+        public synchronized void m5824b(java.lang.String r11) {
+                r10 = this;
+                monitor-enter(r10)
+                r0 = 1
+                r10.f10180b = r0     // Catch: java.lang.Throwable -> L80
+                java.util.List<g2.u$a$a> r1 = r10.f10179a     // Catch: java.lang.Throwable -> L80
+                int r1 = r1.size()     // Catch: java.lang.Throwable -> L80
+                r2 = 0
+                r4 = 0
+                if (r1 != 0) goto L11
+                r7 = r2
+                goto L2c
+            L11:
+                java.util.List<g2.u$a$a> r1 = r10.f10179a     // Catch: java.lang.Throwable -> L80
+                java.lang.Object r1 = r1.get(r4)     // Catch: java.lang.Throwable -> L80
+                g2.u$a$a r1 = (p105g2.C2227u.a.C7392a) r1     // Catch: java.lang.Throwable -> L80
+                long r5 = r1.f10183c     // Catch: java.lang.Throwable -> L80
+                java.util.List<g2.u$a$a> r1 = r10.f10179a     // Catch: java.lang.Throwable -> L80
+                int r7 = r1.size()     // Catch: java.lang.Throwable -> L80
+                int r7 = r7 + (-1)
+                java.lang.Object r1 = r1.get(r7)     // Catch: java.lang.Throwable -> L80
+                g2.u$a$a r1 = (p105g2.C2227u.a.C7392a) r1     // Catch: java.lang.Throwable -> L80
+                long r7 = r1.f10183c     // Catch: java.lang.Throwable -> L80
+                long r7 = r7 - r5
+            L2c:
+                int r1 = (r7 > r2 ? 1 : (r7 == r2 ? 0 : -1))
+                if (r1 > 0) goto L32
+                monitor-exit(r10)
+                return
+            L32:
+                java.util.List<g2.u$a$a> r1 = r10.f10179a     // Catch: java.lang.Throwable -> L80
+                java.lang.Object r1 = r1.get(r4)     // Catch: java.lang.Throwable -> L80
+                g2.u$a$a r1 = (p105g2.C2227u.a.C7392a) r1     // Catch: java.lang.Throwable -> L80
+                long r1 = r1.f10183c     // Catch: java.lang.Throwable -> L80
+                java.lang.String r3 = "(%-4d ms) %s"
+                r5 = 2
+                java.lang.Object[] r6 = new java.lang.Object[r5]     // Catch: java.lang.Throwable -> L80
+                java.lang.Long r7 = java.lang.Long.valueOf(r7)     // Catch: java.lang.Throwable -> L80
+                r6[r4] = r7     // Catch: java.lang.Throwable -> L80
+                r6[r0] = r11     // Catch: java.lang.Throwable -> L80
+                p105g2.C2227u.m5820b(r3, r6)     // Catch: java.lang.Throwable -> L80
+                java.util.List<g2.u$a$a> r11 = r10.f10179a     // Catch: java.lang.Throwable -> L80
+                java.util.Iterator r11 = r11.iterator()     // Catch: java.lang.Throwable -> L80
+            L52:
+                boolean r3 = r11.hasNext()     // Catch: java.lang.Throwable -> L80
+                if (r3 == 0) goto L7e
+                java.lang.Object r3 = r11.next()     // Catch: java.lang.Throwable -> L80
+                g2.u$a$a r3 = (p105g2.C2227u.a.C7392a) r3     // Catch: java.lang.Throwable -> L80
+                long r6 = r3.f10183c     // Catch: java.lang.Throwable -> L80
+                java.lang.String r8 = "(+%-4d) [%2d] %s"
+                r9 = 3
+                java.lang.Object[] r9 = new java.lang.Object[r9]     // Catch: java.lang.Throwable -> L80
+                long r1 = r6 - r1
+                java.lang.Long r1 = java.lang.Long.valueOf(r1)     // Catch: java.lang.Throwable -> L80
+                r9[r4] = r1     // Catch: java.lang.Throwable -> L80
+                long r1 = r3.f10182b     // Catch: java.lang.Throwable -> L80
+                java.lang.Long r1 = java.lang.Long.valueOf(r1)     // Catch: java.lang.Throwable -> L80
+                r9[r0] = r1     // Catch: java.lang.Throwable -> L80
+                java.lang.String r1 = r3.f10181a     // Catch: java.lang.Throwable -> L80
+                r9[r5] = r1     // Catch: java.lang.Throwable -> L80
+                p105g2.C2227u.m5820b(r8, r9)     // Catch: java.lang.Throwable -> L80
+                r1 = r6
+                goto L52
+            L7e:
+                monitor-exit(r10)
+                return
+            L80:
+                r11 = move-exception
+                monitor-exit(r10)
+                throw r11
+        }
+
+        public void finalize() {
+                r2 = this;
+                boolean r0 = r2.f10180b
+                if (r0 != 0) goto L11
+                java.lang.String r0 = "Request on the loose"
+                r2.m5824b(r0)
+                r0 = 0
+                java.lang.Object[] r0 = new java.lang.Object[r0]
+                java.lang.String r1 = "Marker log finalized without finish() - uncaught exit point for request"
+                p105g2.C2227u.m5821c(r1, r0)
+            L11:
+                return
+        }
+    }
+
+    static {
+            java.lang.String r0 = "Volley"
+            r1 = 2
+            boolean r0 = android.util.Log.isLoggable(r0, r1)
+            p105g2.C2227u.f10176a = r0
+            java.lang.Class<g2.u> r0 = p105g2.C2227u.class
+            java.lang.String r0 = r0.getName()
+            p105g2.C2227u.f10177b = r0
+            return
+    }
+
+    public C2227u() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    /* renamed from: a */
+    public static java.lang.String m5819a(java.lang.String r7, java.lang.Object... r8) {
+            if (r8 != 0) goto L3
+            goto L9
+        L3:
+            java.util.Locale r0 = java.util.Locale.US
+            java.lang.String r7 = java.lang.String.format(r0, r7, r8)
+        L9:
+            java.lang.Throwable r8 = new java.lang.Throwable
+            r8.<init>()
+            java.lang.Throwable r8 = r8.fillInStackTrace()
+            java.lang.StackTraceElement[] r8 = r8.getStackTrace()
+            r0 = 2
+            r1 = 2
+        L18:
+            int r2 = r8.length
+            r3 = 1
+            if (r1 >= r2) goto L5d
+            r2 = r8[r1]
+            java.lang.String r2 = r2.getClassName()
+            java.lang.String r4 = p105g2.C2227u.f10177b
+            boolean r2 = r2.equals(r4)
+            if (r2 != 0) goto L5a
+            r2 = r8[r1]
+            java.lang.String r2 = r2.getClassName()
+            r4 = 46
+            int r4 = r2.lastIndexOf(r4)
+            int r4 = r4 + r3
+            java.lang.String r2 = r2.substring(r4)
+            r4 = 36
+            int r4 = r2.lastIndexOf(r4)
+            int r4 = r4 + r3
+            java.lang.String r2 = r2.substring(r4)
+            java.lang.String r4 = "."
+            java.lang.StringBuilder r2 = android.support.v4.media.C0143b.m255a(r2, r4)
+            r8 = r8[r1]
+            java.lang.String r8 = r8.getMethodName()
+            r2.append(r8)
+            java.lang.String r8 = r2.toString()
+            goto L5f
+        L5a:
+            int r1 = r1 + 1
+            goto L18
+        L5d:
+            java.lang.String r8 = "<unknown>"
+        L5f:
+            java.util.Locale r1 = java.util.Locale.US
+            r2 = 3
+            java.lang.Object[] r2 = new java.lang.Object[r2]
+            r4 = 0
+            java.lang.Thread r5 = java.lang.Thread.currentThread()
+            long r5 = r5.getId()
+            java.lang.Long r5 = java.lang.Long.valueOf(r5)
+            r2[r4] = r5
+            r2[r3] = r8
+            r2[r0] = r7
+            java.lang.String r7 = "[%d] %s: %s"
+            java.lang.String r7 = java.lang.String.format(r1, r7, r2)
+            return r7
+    }
+
+    /* renamed from: b */
+    public static void m5820b(java.lang.String r0, java.lang.Object... r1) {
+            java.lang.String r0 = m5819a(r0, r1)
+            java.lang.String r1 = "Volley"
+            android.util.Log.d(r1, r0)
+            return
+    }
+
+    /* renamed from: c */
+    public static void m5821c(java.lang.String r0, java.lang.Object... r1) {
+            java.lang.String r0 = m5819a(r0, r1)
+            java.lang.String r1 = "Volley"
+            android.util.Log.e(r1, r0)
+            return
+    }
+
+    /* renamed from: d */
+    public static void m5822d(java.lang.String r1, java.lang.Object... r2) {
+            boolean r0 = p105g2.C2227u.f10176a
+            if (r0 == 0) goto Ld
+            java.lang.String r1 = m5819a(r1, r2)
+            java.lang.String r2 = "Volley"
+            android.util.Log.v(r2, r1)
+        Ld:
+            return
+    }
+}
+package p105g2;
+
+/* renamed from: g2.v */
+/* loaded from: classes.dex */
+public class C2228v implements p105g2.AbstractC2220n.b {
+
+    /* renamed from: a */
+    public final java.util.Map<java.lang.String, java.util.List<p105g2.AbstractC2220n<?>>> f10184a;
+
+    /* renamed from: b */
+    public final p105g2.InterfaceC2223q f10185b;
+
+    /* renamed from: c */
+    public final p105g2.C2210d f10186c;
+
+    /* renamed from: d */
+    public final java.util.concurrent.BlockingQueue<p105g2.AbstractC2220n<?>> f10187d;
+
+    public C2228v(p105g2.C2210d r2, java.util.concurrent.BlockingQueue<p105g2.AbstractC2220n<?>> r3, p105g2.InterfaceC2223q r4) {
+            r1 = this;
+            r1.<init>()
+            java.util.HashMap r0 = new java.util.HashMap
+            r0.<init>()
+            r1.f10184a = r0
+            r1.f10185b = r4
+            r1.f10186c = r2
+            r1.f10187d = r3
+            return
+    }
+
+    /* renamed from: a */
+    public synchronized boolean m5825a(p105g2.AbstractC2220n<?> r6) {
+            r5 = this;
+            monitor-enter(r5)
+            java.lang.String r0 = r6.m5805o()     // Catch: java.lang.Throwable -> L58
+            java.util.Map<java.lang.String, java.util.List<g2.n<?>>> r1 = r5.f10184a     // Catch: java.lang.Throwable -> L58
+            boolean r1 = r1.containsKey(r0)     // Catch: java.lang.Throwable -> L58
+            r2 = 1
+            r3 = 0
+            if (r1 == 0) goto L3a
+            java.util.Map<java.lang.String, java.util.List<g2.n<?>>> r1 = r5.f10184a     // Catch: java.lang.Throwable -> L58
+            java.lang.Object r1 = r1.get(r0)     // Catch: java.lang.Throwable -> L58
+            java.util.List r1 = (java.util.List) r1     // Catch: java.lang.Throwable -> L58
+            if (r1 != 0) goto L1e
+            java.util.ArrayList r1 = new java.util.ArrayList     // Catch: java.lang.Throwable -> L58
+            r1.<init>()     // Catch: java.lang.Throwable -> L58
+        L1e:
+            java.lang.String r4 = "waiting-for-response"
+            r6.m5801e(r4)     // Catch: java.lang.Throwable -> L58
+            r1.add(r6)     // Catch: java.lang.Throwable -> L58
+            java.util.Map<java.lang.String, java.util.List<g2.n<?>>> r6 = r5.f10184a     // Catch: java.lang.Throwable -> L58
+            r6.put(r0, r1)     // Catch: java.lang.Throwable -> L58
+            boolean r6 = p105g2.C2227u.f10176a     // Catch: java.lang.Throwable -> L58
+            if (r6 == 0) goto L38
+            java.lang.String r6 = "Request for cacheKey=%s is in flight, putting on hold."
+            java.lang.Object[] r1 = new java.lang.Object[r2]     // Catch: java.lang.Throwable -> L58
+            r1[r3] = r0     // Catch: java.lang.Throwable -> L58
+            p105g2.C2227u.m5820b(r6, r1)     // Catch: java.lang.Throwable -> L58
+        L38:
+            monitor-exit(r5)
+            return r2
+        L3a:
+            java.util.Map<java.lang.String, java.util.List<g2.n<?>>> r1 = r5.f10184a     // Catch: java.lang.Throwable -> L58
+            r4 = 0
+            r1.put(r0, r4)     // Catch: java.lang.Throwable -> L58
+            java.lang.Object r1 = r6.f10144c0     // Catch: java.lang.Throwable -> L58
+            monitor-enter(r1)     // Catch: java.lang.Throwable -> L58
+            r6.f10154m0 = r5     // Catch: java.lang.Throwable -> L55
+            monitor-exit(r1)     // Catch: java.lang.Throwable -> L55
+            boolean r6 = p105g2.C2227u.f10176a     // Catch: java.lang.Throwable -> L58
+            if (r6 == 0) goto L53
+            java.lang.String r6 = "new request, sending to network %s"
+            java.lang.Object[] r1 = new java.lang.Object[r2]     // Catch: java.lang.Throwable -> L58
+            r1[r3] = r0     // Catch: java.lang.Throwable -> L58
+            p105g2.C2227u.m5820b(r6, r1)     // Catch: java.lang.Throwable -> L58
+        L53:
+            monitor-exit(r5)
+            return r3
+        L55:
+            r6 = move-exception
+            monitor-exit(r1)     // Catch: java.lang.Throwable -> L55
+            throw r6     // Catch: java.lang.Throwable -> L58
+        L58:
+            r6 = move-exception
+            monitor-exit(r5)
+            throw r6
+    }
+
+    /* renamed from: b */
+    public synchronized void m5826b(p105g2.AbstractC2220n<?> r7) {
+            r6 = this;
+            monitor-enter(r6)
+            java.lang.String r7 = r7.m5805o()     // Catch: java.lang.Throwable -> L6e
+            java.util.Map<java.lang.String, java.util.List<g2.n<?>>> r0 = r6.f10184a     // Catch: java.lang.Throwable -> L6e
+            java.lang.Object r0 = r0.remove(r7)     // Catch: java.lang.Throwable -> L6e
+            java.util.List r0 = (java.util.List) r0     // Catch: java.lang.Throwable -> L6e
+            if (r0 == 0) goto L6c
+            boolean r1 = r0.isEmpty()     // Catch: java.lang.Throwable -> L6e
+            if (r1 != 0) goto L6c
+            boolean r1 = p105g2.C2227u.f10176a     // Catch: java.lang.Throwable -> L6e
+            r2 = 1
+            r3 = 0
+            if (r1 == 0) goto L2f
+            java.lang.String r1 = "%d waiting requests for cacheKey=%s; resend to network"
+            r4 = 2
+            java.lang.Object[] r4 = new java.lang.Object[r4]     // Catch: java.lang.Throwable -> L6e
+            int r5 = r0.size()     // Catch: java.lang.Throwable -> L6e
+            java.lang.Integer r5 = java.lang.Integer.valueOf(r5)     // Catch: java.lang.Throwable -> L6e
+            r4[r3] = r5     // Catch: java.lang.Throwable -> L6e
+            r4[r2] = r7     // Catch: java.lang.Throwable -> L6e
+            p105g2.C2227u.m5822d(r1, r4)     // Catch: java.lang.Throwable -> L6e
+        L2f:
+            java.lang.Object r1 = r0.remove(r3)     // Catch: java.lang.Throwable -> L6e
+            g2.n r1 = (p105g2.AbstractC2220n) r1     // Catch: java.lang.Throwable -> L6e
+            java.util.Map<java.lang.String, java.util.List<g2.n<?>>> r4 = r6.f10184a     // Catch: java.lang.Throwable -> L6e
+            r4.put(r7, r0)     // Catch: java.lang.Throwable -> L6e
+            java.lang.Object r7 = r1.f10144c0     // Catch: java.lang.Throwable -> L6e
+            monitor-enter(r7)     // Catch: java.lang.Throwable -> L6e
+            r1.f10154m0 = r6     // Catch: java.lang.Throwable -> L69
+            monitor-exit(r7)     // Catch: java.lang.Throwable -> L69
+            g2.d r7 = r6.f10186c     // Catch: java.lang.Throwable -> L6e
+            if (r7 == 0) goto L6c
+            java.util.concurrent.BlockingQueue<g2.n<?>> r7 = r6.f10187d     // Catch: java.lang.Throwable -> L6e
+            if (r7 == 0) goto L6c
+            r7.put(r1)     // Catch: java.lang.InterruptedException -> L4c java.lang.Throwable -> L6e
+            goto L6c
+        L4c:
+            r7 = move-exception
+            java.lang.String r0 = "Couldn't add request to queue. %s"
+            java.lang.Object[] r1 = new java.lang.Object[r2]     // Catch: java.lang.Throwable -> L6e
+            java.lang.String r7 = r7.toString()     // Catch: java.lang.Throwable -> L6e
+            r1[r3] = r7     // Catch: java.lang.Throwable -> L6e
+            p105g2.C2227u.m5821c(r0, r1)     // Catch: java.lang.Throwable -> L6e
+            java.lang.Thread r7 = java.lang.Thread.currentThread()     // Catch: java.lang.Throwable -> L6e
+            r7.interrupt()     // Catch: java.lang.Throwable -> L6e
+            g2.d r7 = r6.f10186c     // Catch: java.lang.Throwable -> L6e
+            r7.f10119c0 = r2     // Catch: java.lang.Throwable -> L6e
+            r7.interrupt()     // Catch: java.lang.Throwable -> L6e
+            goto L6c
+        L69:
+            r0 = move-exception
+            monitor-exit(r7)     // Catch: java.lang.Throwable -> L69
+            throw r0     // Catch: java.lang.Throwable -> L6e
+        L6c:
+            monitor-exit(r6)
+            return
+        L6e:
+            r7 = move-exception
+            monitor-exit(r6)
+            throw r7
+    }
+}
+package p105g2;
+
+/* renamed from: g2.b */
+/* loaded from: classes.dex */
+public interface InterfaceC2208b {
+
+    /* renamed from: g2.b$a */
+    public static class a {
+
+        /* renamed from: a */
+        public byte[] f10104a;
+
+        /* renamed from: b */
+        public java.lang.String f10105b;
+
+        /* renamed from: c */
+        public long f10106c;
+
+        /* renamed from: d */
+        public long f10107d;
+
+        /* renamed from: e */
+        public long f10108e;
+
+        /* renamed from: f */
+        public long f10109f;
+
+        /* renamed from: g */
+        public java.util.Map<java.lang.String, java.lang.String> f10110g;
+
+        /* renamed from: h */
+        public java.util.List<p105g2.C2214h> f10111h;
+
+        public a() {
+                r1 = this;
+                r1.<init>()
+                java.util.Map r0 = java.util.Collections.emptyMap()
+                r1.f10110g = r0
+                return
+        }
+    }
+}
+package p105g2;
+
+/* renamed from: g2.i */
+/* loaded from: classes.dex */
+public interface InterfaceC2215i {
+}
+package p105g2;
+
+/* renamed from: g2.q */
+/* loaded from: classes.dex */
+public interface InterfaceC2223q {
+}
+package p105g2;
+
+/* renamed from: g2.c */
+/* loaded from: classes.dex */
+public class RunnableC2209c implements java.lang.Runnable {
+
+    /* renamed from: Y */
+    public final /* synthetic */ p105g2.AbstractC2220n f10112Y;
+
+    /* renamed from: Z */
+    public final /* synthetic */ p105g2.C2210d f10113Z;
+
+    public RunnableC2209c(p105g2.C2210d r1, p105g2.AbstractC2220n r2) {
+            r0 = this;
+            r0.f10113Z = r1
+            r0.f10112Y = r2
+            r0.<init>()
+            return
+    }
+
+    @Override // java.lang.Runnable
+    public void run() {
+            r2 = this;
+            g2.d r0 = r2.f10113Z     // Catch: java.lang.InterruptedException -> La
+            java.util.concurrent.BlockingQueue<g2.n<?>> r0 = r0.f10116Z     // Catch: java.lang.InterruptedException -> La
+            g2.n r1 = r2.f10112Y     // Catch: java.lang.InterruptedException -> La
+            r0.put(r1)     // Catch: java.lang.InterruptedException -> La
+            goto L11
+        La:
+            java.lang.Thread r0 = java.lang.Thread.currentThread()
+            r0.interrupt()
+        L11:
+            return
+    }
+}

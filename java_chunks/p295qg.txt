@@ -1,0 +1,845 @@
+package p295qg;
+
+/* renamed from: qg.a */
+/* loaded from: classes.dex */
+public final class C5647a {
+    private final java.util.List<p295qg.C5653g> rows;
+
+    public C5647a(java.util.List<p295qg.C5653g> r2) {
+            r1 = this;
+            java.lang.String r0 = "rows"
+            p214m2.C4339q.m9706k(r2, r0)
+            r1.<init>()
+            r1.rows = r2
+            return
+    }
+
+    public static /* synthetic */ p295qg.C5647a copy$default(p295qg.C5647a r0, java.util.List r1, int r2, java.lang.Object r3) {
+            r2 = r2 & 1
+            if (r2 == 0) goto L6
+            java.util.List<qg.g> r1 = r0.rows
+        L6:
+            qg.a r0 = r0.copy(r1)
+            return r0
+    }
+
+    public final java.util.List<p295qg.C5653g> component1() {
+            r1 = this;
+            java.util.List<qg.g> r0 = r1.rows
+            return r0
+    }
+
+    public final p295qg.C5647a copy(java.util.List<p295qg.C5653g> r2) {
+            r1 = this;
+            java.lang.String r0 = "rows"
+            p214m2.C4339q.m9706k(r2, r0)
+            qg.a r0 = new qg.a
+            r0.<init>(r2)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r4) {
+            r3 = this;
+            r0 = 1
+            if (r3 != r4) goto L4
+            return r0
+        L4:
+            boolean r1 = r4 instanceof p295qg.C5647a
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            qg.a r4 = (p295qg.C5647a) r4
+            java.util.List<qg.g> r1 = r3.rows
+            java.util.List<qg.g> r4 = r4.rows
+            boolean r4 = p214m2.C4339q.m9702c(r1, r4)
+            if (r4 != 0) goto L17
+            return r2
+        L17:
+            return r0
+    }
+
+    public final java.util.List<p295qg.C5653g> getRows() {
+            r1 = this;
+            java.util.List<qg.g> r0 = r1.rows
+            return r0
+    }
+
+    public int hashCode() {
+            r1 = this;
+            java.util.List<qg.g> r0 = r1.rows
+            int r0 = r0.hashCode()
+            return r0
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "LastClaimVirtualDream(rows="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.util.List<qg.g> r1 = r3.rows
+            r2 = 41
+            java.lang.String r0 = p213m1.C4320f.m9652a(r0, r1, r2)
+            return r0
+    }
+}
+package p295qg;
+
+/* renamed from: qg.b */
+/* loaded from: classes.dex */
+public final class C5648b {
+    private final java.lang.String key;
+    private final java.lang.String value;
+
+    public C5648b(java.lang.String r2, java.lang.String r3) {
+            r1 = this;
+            java.lang.String r0 = "key"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "value"
+            p214m2.C4339q.m9706k(r3, r0)
+            r1.<init>()
+            r1.key = r2
+            r1.value = r3
+            return
+    }
+
+    public static /* synthetic */ p295qg.C5648b copy$default(p295qg.C5648b r0, java.lang.String r1, java.lang.String r2, int r3, java.lang.Object r4) {
+            r4 = r3 & 1
+            if (r4 == 0) goto L6
+            java.lang.String r1 = r0.key
+        L6:
+            r3 = r3 & 2
+            if (r3 == 0) goto Lc
+            java.lang.String r2 = r0.value
+        Lc:
+            qg.b r0 = r0.copy(r1, r2)
+            return r0
+    }
+
+    public final java.lang.String component1() {
+            r1 = this;
+            java.lang.String r0 = r1.key
+            return r0
+    }
+
+    public final java.lang.String component2() {
+            r1 = this;
+            java.lang.String r0 = r1.value
+            return r0
+    }
+
+    public final p295qg.C5648b copy(java.lang.String r2, java.lang.String r3) {
+            r1 = this;
+            java.lang.String r0 = "key"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "value"
+            p214m2.C4339q.m9706k(r3, r0)
+            qg.b r0 = new qg.b
+            r0.<init>(r2, r3)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            boolean r1 = r5 instanceof p295qg.C5648b
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            qg.b r5 = (p295qg.C5648b) r5
+            java.lang.String r1 = r4.key
+            java.lang.String r3 = r5.key
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L17
+            return r2
+        L17:
+            java.lang.String r1 = r4.value
+            java.lang.String r5 = r5.value
+            boolean r5 = p214m2.C4339q.m9702c(r1, r5)
+            if (r5 != 0) goto L22
+            return r2
+        L22:
+            return r0
+    }
+
+    public final java.lang.String getKey() {
+            r1 = this;
+            java.lang.String r0 = r1.key
+            return r0
+    }
+
+    public final java.lang.String getValue() {
+            r1 = this;
+            java.lang.String r0 = r1.value
+            return r0
+    }
+
+    public int hashCode() {
+            r2 = this;
+            java.lang.String r0 = r2.key
+            int r0 = r0.hashCode()
+            int r0 = r0 * 31
+            java.lang.String r1 = r2.value
+            int r1 = r1.hashCode()
+            int r1 = r1 + r0
+            return r1
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "Level(key="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r3.key
+            r0.append(r1)
+            java.lang.String r1 = ", value="
+            r0.append(r1)
+            java.lang.String r1 = r3.value
+            r2 = 41
+            java.lang.String r0 = p185k7.C3814g5.m8552a(r0, r1, r2)
+            return r0
+    }
+}
+package p295qg;
+
+/* renamed from: qg.c */
+/* loaded from: classes.dex */
+public final class C5649c {
+    private final java.util.List<p295qg.C5648b> levels;
+    private final java.lang.String pool;
+
+    public C5649c(java.lang.String r2, java.util.List<p295qg.C5648b> r3) {
+            r1 = this;
+            java.lang.String r0 = "pool"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "levels"
+            p214m2.C4339q.m9706k(r3, r0)
+            r1.<init>()
+            r1.pool = r2
+            r1.levels = r3
+            return
+    }
+
+    public static /* synthetic */ p295qg.C5649c copy$default(p295qg.C5649c r0, java.lang.String r1, java.util.List r2, int r3, java.lang.Object r4) {
+            r4 = r3 & 1
+            if (r4 == 0) goto L6
+            java.lang.String r1 = r0.pool
+        L6:
+            r3 = r3 & 2
+            if (r3 == 0) goto Lc
+            java.util.List<qg.b> r2 = r0.levels
+        Lc:
+            qg.c r0 = r0.copy(r1, r2)
+            return r0
+    }
+
+    public final java.lang.String component1() {
+            r1 = this;
+            java.lang.String r0 = r1.pool
+            return r0
+    }
+
+    public final java.util.List<p295qg.C5648b> component2() {
+            r1 = this;
+            java.util.List<qg.b> r0 = r1.levels
+            return r0
+    }
+
+    public final p295qg.C5649c copy(java.lang.String r2, java.util.List<p295qg.C5648b> r3) {
+            r1 = this;
+            java.lang.String r0 = "pool"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "levels"
+            p214m2.C4339q.m9706k(r3, r0)
+            qg.c r0 = new qg.c
+            r0.<init>(r2, r3)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            boolean r1 = r5 instanceof p295qg.C5649c
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            qg.c r5 = (p295qg.C5649c) r5
+            java.lang.String r1 = r4.pool
+            java.lang.String r3 = r5.pool
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L17
+            return r2
+        L17:
+            java.util.List<qg.b> r1 = r4.levels
+            java.util.List<qg.b> r5 = r5.levels
+            boolean r5 = p214m2.C4339q.m9702c(r1, r5)
+            if (r5 != 0) goto L22
+            return r2
+        L22:
+            return r0
+    }
+
+    public final java.util.List<p295qg.C5648b> getLevels() {
+            r1 = this;
+            java.util.List<qg.b> r0 = r1.levels
+            return r0
+    }
+
+    public final java.lang.String getPool() {
+            r1 = this;
+            java.lang.String r0 = r1.pool
+            return r0
+    }
+
+    public int hashCode() {
+            r2 = this;
+            java.lang.String r0 = r2.pool
+            int r0 = r0.hashCode()
+            int r0 = r0 * 31
+            java.util.List<qg.b> r1 = r2.levels
+            int r1 = r1.hashCode()
+            int r1 = r1 + r0
+            return r1
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "Row(pool="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r3.pool
+            r0.append(r1)
+            java.lang.String r1 = ", levels="
+            r0.append(r1)
+            java.util.List<qg.b> r1 = r3.levels
+            r2 = 41
+            java.lang.String r0 = p213m1.C4320f.m9652a(r0, r1, r2)
+            return r0
+    }
+}
+package p295qg;
+
+/* renamed from: qg.d */
+/* loaded from: classes.dex */
+public final class C5650d {
+    private final java.util.List<p295qg.C5649c> rows;
+
+    public C5650d(java.util.List<p295qg.C5649c> r2) {
+            r1 = this;
+            java.lang.String r0 = "rows"
+            p214m2.C4339q.m9706k(r2, r0)
+            r1.<init>()
+            r1.rows = r2
+            return
+    }
+
+    public static /* synthetic */ p295qg.C5650d copy$default(p295qg.C5650d r0, java.util.List r1, int r2, java.lang.Object r3) {
+            r2 = r2 & 1
+            if (r2 == 0) goto L6
+            java.util.List<qg.c> r1 = r0.rows
+        L6:
+            qg.d r0 = r0.copy(r1)
+            return r0
+    }
+
+    public final java.util.List<p295qg.C5649c> component1() {
+            r1 = this;
+            java.util.List<qg.c> r0 = r1.rows
+            return r0
+    }
+
+    public final p295qg.C5650d copy(java.util.List<p295qg.C5649c> r2) {
+            r1 = this;
+            java.lang.String r0 = "rows"
+            p214m2.C4339q.m9706k(r2, r0)
+            qg.d r0 = new qg.d
+            r0.<init>(r2)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r4) {
+            r3 = this;
+            r0 = 1
+            if (r3 != r4) goto L4
+            return r0
+        L4:
+            boolean r1 = r4 instanceof p295qg.C5650d
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            qg.d r4 = (p295qg.C5650d) r4
+            java.util.List<qg.c> r1 = r3.rows
+            java.util.List<qg.c> r4 = r4.rows
+            boolean r4 = p214m2.C4339q.m9702c(r1, r4)
+            if (r4 != 0) goto L17
+            return r2
+        L17:
+            return r0
+    }
+
+    public final java.util.List<p295qg.C5649c> getRows() {
+            r1 = this;
+            java.util.List<qg.c> r0 = r1.rows
+            return r0
+    }
+
+    public int hashCode() {
+            r1 = this;
+            java.util.List<qg.c> r0 = r1.rows
+            int r0 = r0.hashCode()
+            return r0
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "VirtualDreamCollections(rows="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.util.List<qg.c> r1 = r3.rows
+            r2 = 41
+            java.lang.String r0 = p213m1.C4320f.m9652a(r0, r1, r2)
+            return r0
+    }
+}
+package p295qg;
+
+/* renamed from: qg.e */
+/* loaded from: classes.dex */
+public final class C5651e {
+    private final java.util.List<p295qg.C5652f> inventory;
+    private final java.lang.String pool;
+
+    public C5651e(java.lang.String r2, java.util.List<p295qg.C5652f> r3) {
+            r1 = this;
+            java.lang.String r0 = "pool"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "inventory"
+            p214m2.C4339q.m9706k(r3, r0)
+            r1.<init>()
+            r1.pool = r2
+            r1.inventory = r3
+            return
+    }
+
+    public static /* synthetic */ p295qg.C5651e copy$default(p295qg.C5651e r0, java.lang.String r1, java.util.List r2, int r3, java.lang.Object r4) {
+            r4 = r3 & 1
+            if (r4 == 0) goto L6
+            java.lang.String r1 = r0.pool
+        L6:
+            r3 = r3 & 2
+            if (r3 == 0) goto Lc
+            java.util.List<qg.f> r2 = r0.inventory
+        Lc:
+            qg.e r0 = r0.copy(r1, r2)
+            return r0
+    }
+
+    public final java.lang.String component1() {
+            r1 = this;
+            java.lang.String r0 = r1.pool
+            return r0
+    }
+
+    public final java.util.List<p295qg.C5652f> component2() {
+            r1 = this;
+            java.util.List<qg.f> r0 = r1.inventory
+            return r0
+    }
+
+    public final p295qg.C5651e copy(java.lang.String r2, java.util.List<p295qg.C5652f> r3) {
+            r1 = this;
+            java.lang.String r0 = "pool"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "inventory"
+            p214m2.C4339q.m9706k(r3, r0)
+            qg.e r0 = new qg.e
+            r0.<init>(r2, r3)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            boolean r1 = r5 instanceof p295qg.C5651e
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            qg.e r5 = (p295qg.C5651e) r5
+            java.lang.String r1 = r4.pool
+            java.lang.String r3 = r5.pool
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L17
+            return r2
+        L17:
+            java.util.List<qg.f> r1 = r4.inventory
+            java.util.List<qg.f> r5 = r5.inventory
+            boolean r5 = p214m2.C4339q.m9702c(r1, r5)
+            if (r5 != 0) goto L22
+            return r2
+        L22:
+            return r0
+    }
+
+    public final java.util.List<p295qg.C5652f> getInventory() {
+            r1 = this;
+            java.util.List<qg.f> r0 = r1.inventory
+            return r0
+    }
+
+    public final java.lang.String getPool() {
+            r1 = this;
+            java.lang.String r0 = r1.pool
+            return r0
+    }
+
+    public int hashCode() {
+            r2 = this;
+            java.lang.String r0 = r2.pool
+            int r0 = r0.hashCode()
+            int r0 = r0 * 31
+            java.util.List<qg.f> r1 = r2.inventory
+            int r1 = r1.hashCode()
+            int r1 = r1 + r0
+            return r1
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "VirtualDreamData(pool="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r3.pool
+            r0.append(r1)
+            java.lang.String r1 = ", inventory="
+            r0.append(r1)
+            java.util.List<qg.f> r1 = r3.inventory
+            r2 = 41
+            java.lang.String r0 = p213m1.C4320f.m9652a(r0, r1, r2)
+            return r0
+    }
+}
+package p295qg;
+
+/* renamed from: qg.f */
+/* loaded from: classes.dex */
+public final class C5652f {
+    private final java.lang.String key;
+    private final int value;
+
+    public C5652f(java.lang.String r2, int r3) {
+            r1 = this;
+            java.lang.String r0 = "key"
+            p214m2.C4339q.m9706k(r2, r0)
+            r1.<init>()
+            r1.key = r2
+            r1.value = r3
+            return
+    }
+
+    public static /* synthetic */ p295qg.C5652f copy$default(p295qg.C5652f r0, java.lang.String r1, int r2, int r3, java.lang.Object r4) {
+            r4 = r3 & 1
+            if (r4 == 0) goto L6
+            java.lang.String r1 = r0.key
+        L6:
+            r3 = r3 & 2
+            if (r3 == 0) goto Lc
+            int r2 = r0.value
+        Lc:
+            qg.f r0 = r0.copy(r1, r2)
+            return r0
+    }
+
+    public final java.lang.String component1() {
+            r1 = this;
+            java.lang.String r0 = r1.key
+            return r0
+    }
+
+    public final int component2() {
+            r1 = this;
+            int r0 = r1.value
+            return r0
+    }
+
+    public final p295qg.C5652f copy(java.lang.String r2, int r3) {
+            r1 = this;
+            java.lang.String r0 = "key"
+            p214m2.C4339q.m9706k(r2, r0)
+            qg.f r0 = new qg.f
+            r0.<init>(r2, r3)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            boolean r1 = r5 instanceof p295qg.C5652f
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            qg.f r5 = (p295qg.C5652f) r5
+            java.lang.String r1 = r4.key
+            java.lang.String r3 = r5.key
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L17
+            return r2
+        L17:
+            int r1 = r4.value
+            int r5 = r5.value
+            if (r1 == r5) goto L1e
+            return r2
+        L1e:
+            return r0
+    }
+
+    public final java.lang.String getKey() {
+            r1 = this;
+            java.lang.String r0 = r1.key
+            return r0
+    }
+
+    public final int getValue() {
+            r1 = this;
+            int r0 = r1.value
+            return r0
+    }
+
+    public int hashCode() {
+            r2 = this;
+            java.lang.String r0 = r2.key
+            int r0 = r0.hashCode()
+            int r0 = r0 * 31
+            int r1 = r2.value
+            int r0 = r0 + r1
+            return r0
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "VirtualDreamInventory(key="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r3.key
+            r0.append(r1)
+            java.lang.String r1 = ", value="
+            r0.append(r1)
+            int r1 = r3.value
+            r2 = 41
+            java.lang.String r0 = p084f0.C1939b.m4826a(r0, r1, r2)
+            return r0
+    }
+}
+package p295qg;
+
+/* renamed from: qg.g */
+/* loaded from: classes.dex */
+public final class C5653g {
+    private final java.lang.String account;
+    private final java.util.List<p295qg.C5651e> data;
+    private final long last_claim;
+    private final java.lang.String unclaimed;
+
+    public C5653g(java.lang.String r2, long r3, java.lang.String r5, java.util.List<p295qg.C5651e> r6) {
+            r1 = this;
+            java.lang.String r0 = "account"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "unclaimed"
+            p214m2.C4339q.m9706k(r5, r0)
+            java.lang.String r0 = "data"
+            p214m2.C4339q.m9706k(r6, r0)
+            r1.<init>()
+            r1.account = r2
+            r1.last_claim = r3
+            r1.unclaimed = r5
+            r1.data = r6
+            return
+    }
+
+    public static /* synthetic */ p295qg.C5653g copy$default(p295qg.C5653g r3, java.lang.String r4, long r5, java.lang.String r7, java.util.List r8, int r9, java.lang.Object r10) {
+            r10 = r9 & 1
+            if (r10 == 0) goto L6
+            java.lang.String r4 = r3.account
+        L6:
+            r10 = r9 & 2
+            if (r10 == 0) goto Lc
+            long r5 = r3.last_claim
+        Lc:
+            r0 = r5
+            r5 = r9 & 4
+            if (r5 == 0) goto L13
+            java.lang.String r7 = r3.unclaimed
+        L13:
+            r10 = r7
+            r5 = r9 & 8
+            if (r5 == 0) goto L1a
+            java.util.List<qg.e> r8 = r3.data
+        L1a:
+            r2 = r8
+            r5 = r3
+            r6 = r4
+            r7 = r0
+            r9 = r10
+            r10 = r2
+            qg.g r3 = r5.copy(r6, r7, r9, r10)
+            return r3
+    }
+
+    public final java.lang.String component1() {
+            r1 = this;
+            java.lang.String r0 = r1.account
+            return r0
+    }
+
+    public final long component2() {
+            r2 = this;
+            long r0 = r2.last_claim
+            return r0
+    }
+
+    public final java.lang.String component3() {
+            r1 = this;
+            java.lang.String r0 = r1.unclaimed
+            return r0
+    }
+
+    public final java.util.List<p295qg.C5651e> component4() {
+            r1 = this;
+            java.util.List<qg.e> r0 = r1.data
+            return r0
+    }
+
+    public final p295qg.C5653g copy(java.lang.String r8, long r9, java.lang.String r11, java.util.List<p295qg.C5651e> r12) {
+            r7 = this;
+            java.lang.String r0 = "account"
+            p214m2.C4339q.m9706k(r8, r0)
+            java.lang.String r0 = "unclaimed"
+            p214m2.C4339q.m9706k(r11, r0)
+            java.lang.String r0 = "data"
+            p214m2.C4339q.m9706k(r12, r0)
+            qg.g r0 = new qg.g
+            r1 = r0
+            r2 = r8
+            r3 = r9
+            r5 = r11
+            r6 = r12
+            r1.<init>(r2, r3, r5, r6)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r8) {
+            r7 = this;
+            r0 = 1
+            if (r7 != r8) goto L4
+            return r0
+        L4:
+            boolean r1 = r8 instanceof p295qg.C5653g
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            qg.g r8 = (p295qg.C5653g) r8
+            java.lang.String r1 = r7.account
+            java.lang.String r3 = r8.account
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L17
+            return r2
+        L17:
+            long r3 = r7.last_claim
+            long r5 = r8.last_claim
+            int r1 = (r3 > r5 ? 1 : (r3 == r5 ? 0 : -1))
+            if (r1 == 0) goto L20
+            return r2
+        L20:
+            java.lang.String r1 = r7.unclaimed
+            java.lang.String r3 = r8.unclaimed
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L2b
+            return r2
+        L2b:
+            java.util.List<qg.e> r1 = r7.data
+            java.util.List<qg.e> r8 = r8.data
+            boolean r8 = p214m2.C4339q.m9702c(r1, r8)
+            if (r8 != 0) goto L36
+            return r2
+        L36:
+            return r0
+    }
+
+    public final java.lang.String getAccount() {
+            r1 = this;
+            java.lang.String r0 = r1.account
+            return r0
+    }
+
+    public final java.util.List<p295qg.C5651e> getData() {
+            r1 = this;
+            java.util.List<qg.e> r0 = r1.data
+            return r0
+    }
+
+    public final long getLast_claim() {
+            r2 = this;
+            long r0 = r2.last_claim
+            return r0
+    }
+
+    public final java.lang.String getUnclaimed() {
+            r1 = this;
+            java.lang.String r0 = r1.unclaimed
+            return r0
+    }
+
+    public int hashCode() {
+            r5 = this;
+            java.lang.String r0 = r5.account
+            int r0 = r0.hashCode()
+            int r0 = r0 * 31
+            long r1 = r5.last_claim
+            r3 = 32
+            long r3 = r1 >>> r3
+            long r1 = r1 ^ r3
+            int r2 = (int) r1
+            int r0 = r0 + r2
+            int r0 = r0 * 31
+            java.lang.String r1 = r5.unclaimed
+            r2 = 31
+            int r0 = p213m1.C4319e.m9651a(r1, r0, r2)
+            java.util.List<qg.e> r1 = r5.data
+            int r1 = r1.hashCode()
+            int r1 = r1 + r0
+            return r1
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "VirtualDreamRow(account="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r3.account
+            r0.append(r1)
+            java.lang.String r1 = ", last_claim="
+            r0.append(r1)
+            long r1 = r3.last_claim
+            r0.append(r1)
+            java.lang.String r1 = ", unclaimed="
+            r0.append(r1)
+            java.lang.String r1 = r3.unclaimed
+            r0.append(r1)
+            java.lang.String r1 = ", data="
+            r0.append(r1)
+            java.util.List<qg.e> r1 = r3.data
+            r2 = 41
+            java.lang.String r0 = p213m1.C4320f.m9652a(r0, r1, r2)
+            return r0
+    }
+}

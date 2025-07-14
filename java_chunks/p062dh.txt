@@ -1,0 +1,2480 @@
+package p062dh;
+
+/* renamed from: dh.a */
+/* loaded from: classes.dex */
+public abstract class AbstractC1465a<E> implements java.util.Collection<E>, p259oh.InterfaceC5277a {
+
+    /* renamed from: dh.a$a */
+    public static final class a extends p239nh.AbstractC4830j implements mh.InterfaceC4620l<E, java.lang.CharSequence> {
+
+        /* renamed from: Z */
+        public final /* synthetic */ p062dh.AbstractC1465a<E> f7226Z;
+
+        public a(p062dh.AbstractC1465a<? extends E> r1) {
+                r0 = this;
+                r0.f7226Z = r1
+                r1 = 1
+                r0.<init>(r1)
+                return
+        }
+
+        @Override // mh.InterfaceC4620l
+        /* renamed from: b */
+        public java.lang.CharSequence mo107b(java.lang.Object r2) {
+                r1 = this;
+                dh.a<E> r0 = r1.f7226Z
+                if (r2 != r0) goto L7
+                java.lang.String r2 = "(this Collection)"
+                goto Lb
+            L7:
+                java.lang.String r2 = java.lang.String.valueOf(r2)
+            Lb:
+                return r2
+        }
+    }
+
+    public AbstractC1465a() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    /* renamed from: a */
+    public abstract int mo3981a();
+
+    @Override // java.util.Collection
+    public boolean add(E r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.Collection
+    public boolean addAll(java.util.Collection<? extends E> r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.Collection
+    public void clear() {
+            r2 = this;
+            java.lang.UnsupportedOperationException r0 = new java.lang.UnsupportedOperationException
+            java.lang.String r1 = "Operation is not supported for read-only collection"
+            r0.<init>(r1)
+            throw r0
+    }
+
+    @Override // java.util.Collection
+    public boolean contains(E r4) {
+            r3 = this;
+            boolean r0 = r3.isEmpty()
+            r1 = 0
+            if (r0 == 0) goto L8
+            goto L1d
+        L8:
+            java.util.Iterator r0 = r3.iterator()
+        Lc:
+            boolean r2 = r0.hasNext()
+            if (r2 == 0) goto L1d
+            java.lang.Object r2 = r0.next()
+            boolean r2 = p214m2.C4339q.m9702c(r2, r4)
+            if (r2 == 0) goto Lc
+            r1 = 1
+        L1d:
+            return r1
+    }
+
+    @Override // java.util.Collection
+    public boolean containsAll(java.util.Collection<? extends java.lang.Object> r3) {
+            r2 = this;
+            java.lang.String r0 = "elements"
+            p214m2.C4339q.m9706k(r3, r0)
+            boolean r0 = r3.isEmpty()
+            r1 = 1
+            if (r0 == 0) goto Ld
+            goto L22
+        Ld:
+            java.util.Iterator r3 = r3.iterator()
+        L11:
+            boolean r0 = r3.hasNext()
+            if (r0 == 0) goto L22
+            java.lang.Object r0 = r3.next()
+            boolean r0 = r2.contains(r0)
+            if (r0 != 0) goto L11
+            r1 = 0
+        L22:
+            return r1
+    }
+
+    @Override // java.util.Collection
+    public boolean isEmpty() {
+            r1 = this;
+            int r0 = r1.mo3981a()
+            if (r0 != 0) goto L8
+            r0 = 1
+            goto L9
+        L8:
+            r0 = 0
+        L9:
+            return r0
+    }
+
+    @Override // java.util.Collection
+    public boolean remove(java.lang.Object r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.Collection
+    public boolean removeAll(java.util.Collection<? extends java.lang.Object> r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.Collection
+    public boolean retainAll(java.util.Collection<? extends java.lang.Object> r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.Collection
+    public final /* bridge */ int size() {
+            r1 = this;
+            int r0 = r1.mo3981a()
+            return r0
+    }
+
+    @Override // java.util.Collection
+    public java.lang.Object[] toArray() {
+            r1 = this;
+            java.lang.Object[] r0 = p239nh.C4825e.m10851a(r1)
+            return r0
+    }
+
+    @Override // java.util.Collection
+    public <T> T[] toArray(T[] r2) {
+            r1 = this;
+            java.lang.String r0 = "array"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.Object[] r2 = p239nh.C4825e.m10852b(r1, r2)
+            return r2
+    }
+
+    public java.lang.String toString() {
+            r8 = this;
+            dh.a$a r6 = new dh.a$a
+            r6.<init>(r8)
+            java.lang.String r1 = ", "
+            java.lang.String r2 = "["
+            java.lang.String r3 = "]"
+            r4 = 0
+            r5 = 0
+            r7 = 24
+            r0 = r8
+            java.lang.String r0 = p062dh.C1473i.m4000L(r0, r1, r2, r3, r4, r5, r6, r7)
+            return r0
+    }
+}
+package p062dh;
+
+/* JADX WARN: Unexpected interfaces in signature: [oh.a] */
+/* renamed from: dh.b */
+/* loaded from: classes.dex */
+public abstract class AbstractC1466b<E> extends p062dh.AbstractC1465a<E> implements java.util.List<E> {
+
+    /* renamed from: dh.b$a */
+    public class a implements java.util.Iterator<E>, p259oh.InterfaceC5277a {
+
+        /* renamed from: Y */
+        public int f7227Y;
+
+        /* renamed from: Z */
+        public final /* synthetic */ p062dh.AbstractC1466b<E> f7228Z;
+
+        public a(p062dh.AbstractC1466b r1) {
+                r0 = this;
+                r0.f7228Z = r1
+                r0.<init>()
+                return
+        }
+
+        @Override // java.util.Iterator
+        public boolean hasNext() {
+                r2 = this;
+                int r0 = r2.f7227Y
+                dh.b<E> r1 = r2.f7228Z
+                int r1 = r1.mo3981a()
+                if (r0 >= r1) goto Lc
+                r0 = 1
+                goto Ld
+            Lc:
+                r0 = 0
+            Ld:
+                return r0
+        }
+
+        @Override // java.util.Iterator
+        public E next() {
+                r3 = this;
+                boolean r0 = r3.hasNext()
+                if (r0 == 0) goto L13
+                dh.b<E> r0 = r3.f7228Z
+                int r1 = r3.f7227Y
+                int r2 = r1 + 1
+                r3.f7227Y = r2
+                java.lang.Object r0 = r0.get(r1)
+                return r0
+            L13:
+                java.util.NoSuchElementException r0 = new java.util.NoSuchElementException
+                r0.<init>()
+                throw r0
+        }
+
+        @Override // java.util.Iterator
+        public void remove() {
+                r2 = this;
+                java.lang.UnsupportedOperationException r0 = new java.lang.UnsupportedOperationException
+                java.lang.String r1 = "Operation is not supported for read-only collection"
+                r0.<init>(r1)
+                throw r0
+        }
+    }
+
+    /* JADX WARN: Unexpected interfaces in signature: [oh.a] */
+    /* renamed from: dh.b$b */
+    public class b extends p062dh.AbstractC1466b<E>.a implements java.util.ListIterator<E> {
+
+        /* renamed from: a0 */
+        public final /* synthetic */ p062dh.AbstractC1466b<E> f7229a0;
+
+        public b(p062dh.AbstractC1466b r4, int r5) {
+                r3 = this;
+                r3.f7229a0 = r4
+                r3.<init>(r4)
+                int r4 = r4.mo3981a()
+                if (r5 < 0) goto L10
+                if (r5 > r4) goto L10
+                r3.f7227Y = r5
+                return
+            L10:
+                java.lang.IndexOutOfBoundsException r0 = new java.lang.IndexOutOfBoundsException
+                java.lang.String r1 = "index: "
+                java.lang.String r2 = ", size: "
+                java.lang.String r4 = p243o1.C4872b.m11020a(r1, r5, r2, r4)
+                r0.<init>(r4)
+                throw r0
+        }
+
+        @Override // java.util.ListIterator
+        public void add(E r2) {
+                r1 = this;
+                java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+                java.lang.String r0 = "Operation is not supported for read-only collection"
+                r2.<init>(r0)
+                throw r2
+        }
+
+        @Override // java.util.ListIterator
+        public boolean hasPrevious() {
+                r1 = this;
+                int r0 = r1.f7227Y
+                if (r0 <= 0) goto L6
+                r0 = 1
+                goto L7
+            L6:
+                r0 = 0
+            L7:
+                return r0
+        }
+
+        @Override // java.util.ListIterator
+        public int nextIndex() {
+                r1 = this;
+                int r0 = r1.f7227Y
+                return r0
+        }
+
+        @Override // java.util.ListIterator
+        public E previous() {
+                r2 = this;
+                boolean r0 = r2.hasPrevious()
+                if (r0 == 0) goto L13
+                dh.b<E> r0 = r2.f7229a0
+                int r1 = r2.f7227Y
+                int r1 = r1 + (-1)
+                r2.f7227Y = r1
+                java.lang.Object r0 = r0.get(r1)
+                return r0
+            L13:
+                java.util.NoSuchElementException r0 = new java.util.NoSuchElementException
+                r0.<init>()
+                throw r0
+        }
+
+        @Override // java.util.ListIterator
+        public int previousIndex() {
+                r1 = this;
+                int r0 = r1.f7227Y
+                int r0 = r0 + (-1)
+                return r0
+        }
+
+        @Override // java.util.ListIterator
+        public void set(E r2) {
+                r1 = this;
+                java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+                java.lang.String r0 = "Operation is not supported for read-only collection"
+                r2.<init>(r0)
+                throw r2
+        }
+    }
+
+    /* renamed from: dh.b$c */
+    public static final class c<E> extends p062dh.AbstractC1466b<E> implements java.util.RandomAccess {
+
+        /* renamed from: Y */
+        public final p062dh.AbstractC1466b<E> f7230Y;
+
+        /* renamed from: Z */
+        public final int f7231Z;
+
+        /* renamed from: a0 */
+        public int f7232a0;
+
+        public c(p062dh.AbstractC1466b<? extends E> r5, int r6, int r7) {
+                r4 = this;
+                r4.<init>()
+                r4.f7230Y = r5
+                r4.f7231Z = r6
+                int r5 = r5.mo3981a()
+                java.lang.String r0 = "fromIndex: "
+                if (r6 < 0) goto L23
+                if (r7 > r5) goto L23
+                if (r6 > r7) goto L17
+                int r7 = r7 - r6
+                r4.f7232a0 = r7
+                return
+            L17:
+                java.lang.IllegalArgumentException r5 = new java.lang.IllegalArgumentException
+                java.lang.String r1 = " > toIndex: "
+                java.lang.String r6 = p243o1.C4872b.m11020a(r0, r6, r1, r7)
+                r5.<init>(r6)
+                throw r5
+            L23:
+                java.lang.IndexOutOfBoundsException r1 = new java.lang.IndexOutOfBoundsException
+                java.lang.String r2 = ", toIndex: "
+                java.lang.String r3 = ", size: "
+                java.lang.StringBuilder r6 = androidx.recyclerview.widget.C0608s.m2117a(r0, r6, r2, r7, r3)
+                r6.append(r5)
+                java.lang.String r5 = r6.toString()
+                r1.<init>(r5)
+                throw r1
+        }
+
+        @Override // p062dh.AbstractC1465a
+        /* renamed from: a */
+        public int mo3981a() {
+                r1 = this;
+                int r0 = r1.f7232a0
+                return r0
+        }
+
+        @Override // p062dh.AbstractC1466b, java.util.List
+        public E get(int r5) {
+                r4 = this;
+                int r0 = r4.f7232a0
+                if (r5 < 0) goto L10
+                if (r5 >= r0) goto L10
+                dh.b<E> r0 = r4.f7230Y
+                int r1 = r4.f7231Z
+                int r1 = r1 + r5
+                java.lang.Object r5 = r0.get(r1)
+                return r5
+            L10:
+                java.lang.IndexOutOfBoundsException r1 = new java.lang.IndexOutOfBoundsException
+                java.lang.String r2 = "index: "
+                java.lang.String r3 = ", size: "
+                java.lang.String r5 = p243o1.C4872b.m11020a(r2, r5, r3, r0)
+                r1.<init>(r5)
+                throw r1
+        }
+    }
+
+    public AbstractC1466b() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // java.util.List
+    public void add(int r1, E r2) {
+            r0 = this;
+            java.lang.UnsupportedOperationException r1 = new java.lang.UnsupportedOperationException
+            java.lang.String r2 = "Operation is not supported for read-only collection"
+            r1.<init>(r2)
+            throw r1
+    }
+
+    @Override // java.util.List
+    public boolean addAll(int r1, java.util.Collection<? extends E> r2) {
+            r0 = this;
+            java.lang.UnsupportedOperationException r1 = new java.lang.UnsupportedOperationException
+            java.lang.String r2 = "Operation is not supported for read-only collection"
+            r1.<init>(r2)
+            throw r1
+    }
+
+    @Override // java.util.Collection, java.util.List
+    public boolean equals(java.lang.Object r6) {
+            r5 = this;
+            r0 = 1
+            if (r6 != r5) goto L4
+            return r0
+        L4:
+            boolean r1 = r6 instanceof java.util.List
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            java.util.Collection r6 = (java.util.Collection) r6
+            java.lang.String r1 = "c"
+            p214m2.C4339q.m9706k(r5, r1)
+            java.lang.String r1 = "other"
+            p214m2.C4339q.m9706k(r6, r1)
+            int r1 = r5.size()
+            int r3 = r6.size()
+            if (r1 == r3) goto L22
+        L20:
+            r0 = 0
+            goto L3f
+        L22:
+            java.util.Iterator r6 = r6.iterator()
+            java.util.Iterator r1 = r5.iterator()
+        L2a:
+            boolean r3 = r1.hasNext()
+            if (r3 == 0) goto L3f
+            java.lang.Object r3 = r1.next()
+            java.lang.Object r4 = r6.next()
+            boolean r3 = p214m2.C4339q.m9702c(r3, r4)
+            if (r3 != 0) goto L2a
+            goto L20
+        L3f:
+            return r0
+    }
+
+    @Override // java.util.List
+    public abstract E get(int r1);
+
+    @Override // java.util.Collection, java.util.List
+    public int hashCode() {
+            r3 = this;
+            java.lang.String r0 = "c"
+            p214m2.C4339q.m9706k(r3, r0)
+            java.util.Iterator r0 = r3.iterator()
+            r1 = 1
+        La:
+            boolean r2 = r0.hasNext()
+            if (r2 == 0) goto L20
+            java.lang.Object r2 = r0.next()
+            int r1 = r1 * 31
+            if (r2 == 0) goto L1d
+            int r2 = r2.hashCode()
+            goto L1e
+        L1d:
+            r2 = 0
+        L1e:
+            int r1 = r1 + r2
+            goto La
+        L20:
+            return r1
+    }
+
+    @Override // java.util.List
+    public int indexOf(E r4) {
+            r3 = this;
+            java.util.Iterator r0 = r3.iterator()
+            r1 = 0
+        L5:
+            boolean r2 = r0.hasNext()
+            if (r2 == 0) goto L19
+            java.lang.Object r2 = r0.next()
+            boolean r2 = p214m2.C4339q.m9702c(r2, r4)
+            if (r2 == 0) goto L16
+            goto L1a
+        L16:
+            int r1 = r1 + 1
+            goto L5
+        L19:
+            r1 = -1
+        L1a:
+            return r1
+    }
+
+    @Override // java.util.Collection, java.lang.Iterable, java.util.List
+    public java.util.Iterator<E> iterator() {
+            r1 = this;
+            dh.b$a r0 = new dh.b$a
+            r0.<init>(r1)
+            return r0
+    }
+
+    @Override // java.util.List
+    public int lastIndexOf(E r3) {
+            r2 = this;
+            int r0 = r2.size()
+            java.util.ListIterator r0 = r2.listIterator(r0)
+        L8:
+            boolean r1 = r0.hasPrevious()
+            if (r1 == 0) goto L1d
+            java.lang.Object r1 = r0.previous()
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 == 0) goto L8
+            int r3 = r0.nextIndex()
+            goto L1e
+        L1d:
+            r3 = -1
+        L1e:
+            return r3
+    }
+
+    @Override // java.util.List
+    public java.util.ListIterator<E> listIterator() {
+            r2 = this;
+            dh.b$b r0 = new dh.b$b
+            r1 = 0
+            r0.<init>(r2, r1)
+            return r0
+    }
+
+    @Override // java.util.List
+    public java.util.ListIterator<E> listIterator(int r2) {
+            r1 = this;
+            dh.b$b r0 = new dh.b$b
+            r0.<init>(r1, r2)
+            return r0
+    }
+
+    @Override // java.util.List
+    public E remove(int r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.List
+    public E set(int r1, E r2) {
+            r0 = this;
+            java.lang.UnsupportedOperationException r1 = new java.lang.UnsupportedOperationException
+            java.lang.String r2 = "Operation is not supported for read-only collection"
+            r1.<init>(r2)
+            throw r1
+    }
+
+    @Override // java.util.List
+    public java.util.List<E> subList(int r2, int r3) {
+            r1 = this;
+            dh.b$c r0 = new dh.b$c
+            r0.<init>(r1, r2, r3)
+            return r0
+    }
+}
+package p062dh;
+
+/* renamed from: dh.n */
+/* loaded from: classes.dex */
+public abstract class AbstractC1478n implements java.util.Iterator<java.lang.Integer>, p259oh.InterfaceC5277a {
+    public AbstractC1478n() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    /* renamed from: a */
+    public abstract int mo4012a();
+
+    @Override // java.util.Iterator
+    public /* bridge */ /* synthetic */ java.lang.Integer next() {
+            r1 = this;
+            int r0 = r1.mo4012a()
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r0)
+            return r0
+    }
+
+    @Override // java.util.Iterator
+    public void remove() {
+            r2 = this;
+            java.lang.UnsupportedOperationException r0 = new java.lang.UnsupportedOperationException
+            java.lang.String r1 = "Operation is not supported for read-only collection"
+            r0.<init>(r1)
+            throw r0
+    }
+}
+package p062dh;
+
+/* renamed from: dh.o */
+/* loaded from: classes.dex */
+public abstract class AbstractC1479o implements java.util.Iterator<java.lang.Long>, p259oh.InterfaceC5277a {
+    public AbstractC1479o() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    /* renamed from: a */
+    public abstract long mo4013a();
+
+    @Override // java.util.Iterator
+    public /* bridge */ /* synthetic */ java.lang.Long next() {
+            r2 = this;
+            long r0 = r2.mo4013a()
+            java.lang.Long r0 = java.lang.Long.valueOf(r0)
+            return r0
+    }
+
+    @Override // java.util.Iterator
+    public void remove() {
+            r2 = this;
+            java.lang.UnsupportedOperationException r0 = new java.lang.UnsupportedOperationException
+            java.lang.String r1 = "Operation is not supported for read-only collection"
+            r0.<init>(r1)
+            throw r0
+    }
+}
+package p062dh;
+
+/* renamed from: dh.c */
+/* loaded from: classes.dex */
+public final class C1467c<T> implements java.util.Collection<T>, p259oh.InterfaceC5277a {
+
+    /* renamed from: Y */
+    public final T[] f7233Y;
+
+    /* renamed from: Z */
+    public final boolean f7234Z;
+
+    public C1467c(T[] r1, boolean r2) {
+            r0 = this;
+            r0.<init>()
+            r0.f7233Y = r1
+            r0.f7234Z = r2
+            return
+    }
+
+    @Override // java.util.Collection
+    public boolean add(T r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.Collection
+    public boolean addAll(java.util.Collection<? extends T> r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.Collection
+    public void clear() {
+            r2 = this;
+            java.lang.UnsupportedOperationException r0 = new java.lang.UnsupportedOperationException
+            java.lang.String r1 = "Operation is not supported for read-only collection"
+            r0.<init>(r1)
+            throw r0
+    }
+
+    @Override // java.util.Collection
+    public boolean contains(java.lang.Object r3) {
+            r2 = this;
+            T[] r0 = r2.f7233Y
+            java.lang.String r1 = "<this>"
+            p214m2.C4339q.m9706k(r0, r1)
+            int r3 = p062dh.C1468d.m3988J(r0, r3)
+            if (r3 < 0) goto Lf
+            r3 = 1
+            goto L10
+        Lf:
+            r3 = 0
+        L10:
+            return r3
+    }
+
+    @Override // java.util.Collection
+    public boolean containsAll(java.util.Collection<? extends java.lang.Object> r3) {
+            r2 = this;
+            java.lang.String r0 = "elements"
+            p214m2.C4339q.m9706k(r3, r0)
+            boolean r0 = r3.isEmpty()
+            r1 = 1
+            if (r0 == 0) goto Ld
+            goto L22
+        Ld:
+            java.util.Iterator r3 = r3.iterator()
+        L11:
+            boolean r0 = r3.hasNext()
+            if (r0 == 0) goto L22
+            java.lang.Object r0 = r3.next()
+            boolean r0 = r2.contains(r0)
+            if (r0 != 0) goto L11
+            r1 = 0
+        L22:
+            return r1
+    }
+
+    @Override // java.util.Collection
+    public boolean isEmpty() {
+            r1 = this;
+            T[] r0 = r1.f7233Y
+            int r0 = r0.length
+            if (r0 != 0) goto L7
+            r0 = 1
+            goto L8
+        L7:
+            r0 = 0
+        L8:
+            return r0
+    }
+
+    @Override // java.util.Collection, java.lang.Iterable
+    public java.util.Iterator<T> iterator() {
+            r2 = this;
+            T[] r0 = r2.f7233Y
+            java.lang.String r1 = "array"
+            p214m2.C4339q.m9706k(r0, r1)
+            nh.a r1 = new nh.a
+            r1.<init>(r0)
+            return r1
+    }
+
+    @Override // java.util.Collection
+    public boolean remove(java.lang.Object r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.Collection
+    public boolean removeAll(java.util.Collection<? extends java.lang.Object> r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.Collection
+    public boolean retainAll(java.util.Collection<? extends java.lang.Object> r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.Collection
+    public final int size() {
+            r1 = this;
+            T[] r0 = r1.f7233Y
+            int r0 = r0.length
+            return r0
+    }
+
+    @Override // java.util.Collection
+    public final java.lang.Object[] toArray() {
+            r4 = this;
+            T[] r0 = r4.f7233Y
+            boolean r1 = r4.f7234Z
+            java.lang.Class<java.lang.Object[]> r2 = java.lang.Object[].class
+            java.lang.String r3 = "<this>"
+            p214m2.C4339q.m9706k(r0, r3)
+            if (r1 == 0) goto L18
+            java.lang.Class r1 = r0.getClass()
+            boolean r1 = p214m2.C4339q.m9702c(r1, r2)
+            if (r1 == 0) goto L18
+            goto L22
+        L18:
+            int r1 = r0.length
+            java.lang.Object[] r0 = java.util.Arrays.copyOf(r0, r1, r2)
+            java.lang.String r1 = "copyOf(this, this.size, Array<Any?>::class.java)"
+            p214m2.C4339q.m9705j(r0, r1)
+        L22:
+            return r0
+    }
+
+    @Override // java.util.Collection
+    public <T> T[] toArray(T[] r2) {
+            r1 = this;
+            java.lang.String r0 = "array"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.Object[] r2 = p239nh.C4825e.m10852b(r1, r2)
+            return r2
+    }
+}
+package p062dh;
+
+/* renamed from: dh.d */
+/* loaded from: classes.dex */
+public class C1468d extends p074e9.C1805a {
+    /* renamed from: D */
+    public static final <T> java.util.List<T> m3982D(T[] r1) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r1, r0)
+            java.util.List r1 = java.util.Arrays.asList(r1)
+            java.lang.String r0 = "asList(this)"
+            p214m2.C4339q.m9705j(r1, r0)
+            return r1
+    }
+
+    /* renamed from: E */
+    public static final byte[] m3983E(byte[] r1, byte[] r2, int r3, int r4, int r5) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r1, r0)
+            java.lang.String r0 = "destination"
+            p214m2.C4339q.m9706k(r2, r0)
+            int r5 = r5 - r4
+            java.lang.System.arraycopy(r1, r4, r2, r3, r5)
+            return r2
+    }
+
+    /* renamed from: F */
+    public static /* synthetic */ byte[] m3984F(byte[] r2, byte[] r3, int r4, int r5, int r6, int r7) {
+            r0 = r7 & 2
+            r1 = 0
+            if (r0 == 0) goto L6
+            r4 = 0
+        L6:
+            r0 = r7 & 4
+            if (r0 == 0) goto Lb
+            r5 = 0
+        Lb:
+            r7 = r7 & 8
+            if (r7 == 0) goto L10
+            int r6 = r2.length
+        L10:
+            m3983E(r2, r3, r4, r5, r6)
+            return r3
+    }
+
+    /* renamed from: G */
+    public static java.lang.Object[] m3985G(java.lang.Object[] r2, java.lang.Object[] r3, int r4, int r5, int r6, int r7) {
+            r0 = r7 & 2
+            r1 = 0
+            if (r0 == 0) goto L6
+            r4 = 0
+        L6:
+            r0 = r7 & 4
+            if (r0 == 0) goto Lb
+            r5 = 0
+        Lb:
+            r7 = r7 & 8
+            if (r7 == 0) goto L10
+            int r6 = r2.length
+        L10:
+            java.lang.String r7 = "<this>"
+            p214m2.C4339q.m9706k(r2, r7)
+            int r6 = r6 - r5
+            java.lang.System.arraycopy(r2, r5, r3, r4, r6)
+            return r3
+    }
+
+    /* renamed from: H */
+    public static final byte[] m3986H(byte[] r2, int r3, int r4) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r2, r0)
+            int r0 = r2.length
+            if (r4 > r0) goto L12
+            byte[] r2 = java.util.Arrays.copyOfRange(r2, r3, r4)
+            java.lang.String r3 = "copyOfRange(this, fromIndex, toIndex)"
+            p214m2.C4339q.m9705j(r2, r3)
+            return r2
+        L12:
+            java.lang.IndexOutOfBoundsException r2 = new java.lang.IndexOutOfBoundsException
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder
+            r3.<init>()
+            java.lang.String r1 = "toIndex ("
+            r3.append(r1)
+            r3.append(r4)
+            java.lang.String r4 = ") is greater than size ("
+            r3.append(r4)
+            r3.append(r0)
+            java.lang.String r4 = ")."
+            r3.append(r4)
+            java.lang.String r3 = r3.toString()
+            r2.<init>(r3)
+            throw r2
+    }
+
+    /* renamed from: I */
+    public static final <T> int m3987I(T[] r1) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r1, r0)
+            int r1 = r1.length
+            int r1 = r1 + (-1)
+            return r1
+    }
+
+    /* renamed from: J */
+    public static final <T> int m3988J(T[] r3, T r4) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r3, r0)
+            r0 = 0
+            if (r4 != 0) goto L13
+            int r4 = r3.length
+        L9:
+            if (r0 >= r4) goto L22
+            r1 = r3[r0]
+            if (r1 != 0) goto L10
+            return r0
+        L10:
+            int r0 = r0 + 1
+            goto L9
+        L13:
+            int r1 = r3.length
+        L14:
+            if (r0 >= r1) goto L22
+            r2 = r3[r0]
+            boolean r2 = p214m2.C4339q.m9702c(r4, r2)
+            if (r2 == 0) goto L1f
+            return r0
+        L1f:
+            int r0 = r0 + 1
+            goto L14
+        L22:
+            r3 = -1
+            return r3
+    }
+
+    /* renamed from: K */
+    public static java.lang.String m3989K(byte[] r4, java.lang.CharSequence r5, java.lang.CharSequence r6, java.lang.CharSequence r7, int r8, java.lang.CharSequence r9, mh.InterfaceC4620l r10, int r11) {
+            r6 = r11 & 1
+            if (r6 == 0) goto L6
+            java.lang.String r5 = ", "
+        L6:
+            r6 = r11 & 2
+            java.lang.String r7 = ""
+            r9 = 0
+            if (r6 == 0) goto Lf
+            r6 = r7
+            goto L10
+        Lf:
+            r6 = r9
+        L10:
+            r0 = r11 & 4
+            if (r0 == 0) goto L15
+            goto L16
+        L15:
+            r7 = r9
+        L16:
+            r0 = r11 & 8
+            if (r0 == 0) goto L1b
+            r8 = -1
+        L1b:
+            r0 = r11 & 16
+            if (r0 == 0) goto L22
+            java.lang.String r0 = "..."
+            goto L23
+        L22:
+            r0 = r9
+        L23:
+            r11 = r11 & 32
+            if (r11 == 0) goto L28
+            r10 = r9
+        L28:
+            java.lang.String r9 = "prefix"
+            p214m2.C4339q.m9706k(r6, r9)
+            java.lang.String r9 = "postfix"
+            p214m2.C4339q.m9706k(r7, r9)
+            java.lang.String r9 = "truncated"
+            p214m2.C4339q.m9706k(r0, r9)
+            java.lang.StringBuilder r9 = new java.lang.StringBuilder
+            r9.<init>()
+            r9.append(r6)
+            int r6 = r4.length
+            r11 = 0
+            r1 = 0
+        L42:
+            if (r11 >= r6) goto L69
+            r2 = r4[r11]
+            int r1 = r1 + 1
+            r3 = 1
+            if (r1 <= r3) goto L4e
+            r9.append(r5)
+        L4e:
+            if (r8 < 0) goto L52
+            if (r1 > r8) goto L69
+        L52:
+            if (r10 == 0) goto L5f
+            java.lang.Byte r2 = java.lang.Byte.valueOf(r2)
+            java.lang.Object r2 = r10.mo107b(r2)
+            java.lang.CharSequence r2 = (java.lang.CharSequence) r2
+            goto L63
+        L5f:
+            java.lang.String r2 = java.lang.String.valueOf(r2)
+        L63:
+            r9.append(r2)
+            int r11 = r11 + 1
+            goto L42
+        L69:
+            if (r8 < 0) goto L70
+            if (r1 <= r8) goto L70
+            r9.append(r0)
+        L70:
+            r9.append(r7)
+            java.lang.String r4 = r9.toString()
+            java.lang.String r5 = "joinTo(StringBuilder(), \u2026ed, transform).toString()"
+            p214m2.C4339q.m9705j(r4, r5)
+            return r4
+    }
+
+    /* renamed from: L */
+    public static final char m3990L(char[] r2) {
+            int r0 = r2.length
+            if (r0 == 0) goto L12
+            r1 = 1
+            if (r0 != r1) goto La
+            r0 = 0
+            char r2 = r2[r0]
+            return r2
+        La:
+            java.lang.IllegalArgumentException r2 = new java.lang.IllegalArgumentException
+            java.lang.String r0 = "Array has more than one element."
+            r2.<init>(r0)
+            throw r2
+        L12:
+            java.util.NoSuchElementException r2 = new java.util.NoSuchElementException
+            java.lang.String r0 = "Array is empty."
+            r2.<init>(r0)
+            throw r2
+    }
+
+    /* renamed from: M */
+    public static final <T> java.util.List<T> m3991M(T[] r3) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r3, r0)
+            int r0 = r3.length
+            if (r0 == 0) goto L1e
+            r1 = 1
+            r2 = 0
+            if (r0 == r1) goto L17
+            java.util.ArrayList r0 = new java.util.ArrayList
+            dh.c r1 = new dh.c
+            r1.<init>(r3, r2)
+            r0.<init>(r1)
+            goto L20
+        L17:
+            r3 = r3[r2]
+            java.util.List r0 = p074e9.C1805a.m4528m(r3)
+            goto L20
+        L1e:
+            dh.k r0 = p062dh.C1475k.f7237Y
+        L20:
+            return r0
+    }
+}
+package p062dh;
+
+/* renamed from: dh.e */
+/* loaded from: classes.dex */
+public class C1469e extends p074e9.C1805a {
+    /* renamed from: D */
+    public static final <T> int m3992D(java.lang.Iterable<? extends T> r1, int r2) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r1, r0)
+            boolean r0 = r1 instanceof java.util.Collection
+            if (r0 == 0) goto Lf
+            java.util.Collection r1 = (java.util.Collection) r1
+            int r2 = r1.size()
+        Lf:
+            return r2
+    }
+}
+package p062dh;
+
+/* renamed from: dh.f */
+/* loaded from: classes.dex */
+public class C1470f extends p062dh.C1469e {
+    /* renamed from: E */
+    public static final <T> void m3993E(java.util.List<T> r2, java.util.Comparator<? super T> r3) {
+            int r0 = r2.size()
+            r1 = 1
+            if (r0 <= r1) goto La
+            java.util.Collections.sort(r2, r3)
+        La:
+            return
+    }
+}
+package p062dh;
+
+/* renamed from: dh.g */
+/* loaded from: classes.dex */
+public class C1471g extends p062dh.C1470f {
+    /* renamed from: F */
+    public static final <T> boolean m3994F(java.util.Collection<? super T> r2, java.lang.Iterable<? extends T> r3) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "elements"
+            p214m2.C4339q.m9706k(r3, r0)
+            boolean r0 = r3 instanceof java.util.Collection
+            if (r0 == 0) goto L15
+            java.util.Collection r3 = (java.util.Collection) r3
+            boolean r2 = r2.addAll(r3)
+            return r2
+        L15:
+            r0 = 0
+            java.util.Iterator r3 = r3.iterator()
+        L1a:
+            boolean r1 = r3.hasNext()
+            if (r1 == 0) goto L2c
+            java.lang.Object r1 = r3.next()
+            boolean r1 = r2.add(r1)
+            if (r1 == 0) goto L1a
+            r0 = 1
+            goto L1a
+        L2c:
+            return r0
+    }
+}
+package p062dh;
+
+/* renamed from: dh.h */
+/* loaded from: classes.dex */
+public final class C1472h implements th.InterfaceC6246d<java.lang.Object> {
+
+    /* renamed from: a */
+    public final /* synthetic */ java.lang.Iterable f7235a;
+
+    public C1472h(java.lang.Iterable r1) {
+            r0 = this;
+            r0.f7235a = r1
+            r0.<init>()
+            return
+    }
+
+    @Override // th.InterfaceC6246d
+    public java.util.Iterator<java.lang.Object> iterator() {
+            r1 = this;
+            java.lang.Iterable r0 = r1.f7235a
+            java.util.Iterator r0 = r0.iterator()
+            return r0
+    }
+}
+package p062dh;
+
+/* renamed from: dh.i */
+/* loaded from: classes.dex */
+public class C1473i extends p062dh.C1471g {
+    /* renamed from: G */
+    public static final <T> T m3995G(java.util.List<? extends T> r1) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r1, r0)
+            boolean r0 = r1.isEmpty()
+            if (r0 != 0) goto L11
+            r0 = 0
+            java.lang.Object r1 = r1.get(r0)
+            return r1
+        L11:
+            java.util.NoSuchElementException r1 = new java.util.NoSuchElementException
+            java.lang.String r0 = "List is empty."
+            r1.<init>(r0)
+            throw r1
+    }
+
+    /* renamed from: H */
+    public static final <T> T m3996H(java.util.List<? extends T> r1) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r1, r0)
+            boolean r0 = r1.isEmpty()
+            if (r0 == 0) goto Ld
+            r1 = 0
+            goto L12
+        Ld:
+            r0 = 0
+            java.lang.Object r1 = r1.get(r0)
+        L12:
+            return r1
+    }
+
+    /* renamed from: I */
+    public static final <T> T m3997I(java.util.List<? extends T> r1, int r2) {
+            if (r2 < 0) goto Ld
+            int r0 = p074e9.C1805a.m4527l(r1)
+            if (r2 > r0) goto Ld
+            java.lang.Object r1 = r1.get(r2)
+            goto Le
+        Ld:
+            r1 = 0
+        Le:
+            return r1
+    }
+
+    /* renamed from: J */
+    public static final <T, A extends java.lang.Appendable> A m3998J(java.lang.Iterable<? extends T> r2, A r3, java.lang.CharSequence r4, java.lang.CharSequence r5, java.lang.CharSequence r6, int r7, java.lang.CharSequence r8, mh.InterfaceC4620l<? super T, ? extends java.lang.CharSequence> r9) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "buffer"
+            p214m2.C4339q.m9706k(r3, r0)
+            java.lang.String r0 = "separator"
+            p214m2.C4339q.m9706k(r4, r0)
+            java.lang.String r0 = "prefix"
+            p214m2.C4339q.m9706k(r5, r0)
+            java.lang.String r0 = "postfix"
+            p214m2.C4339q.m9706k(r6, r0)
+            java.lang.String r0 = "truncated"
+            p214m2.C4339q.m9706k(r8, r0)
+            r3.append(r5)
+            java.util.Iterator r2 = r2.iterator()
+            r5 = 0
+        L26:
+            boolean r0 = r2.hasNext()
+            if (r0 == 0) goto L40
+            java.lang.Object r0 = r2.next()
+            int r5 = r5 + 1
+            r1 = 1
+            if (r5 <= r1) goto L38
+            r3.append(r4)
+        L38:
+            if (r7 < 0) goto L3c
+            if (r5 > r7) goto L40
+        L3c:
+            p101fh.C2174f.m5713c(r3, r0, r9)
+            goto L26
+        L40:
+            if (r7 < 0) goto L47
+            if (r5 <= r7) goto L47
+            r3.append(r8)
+        L47:
+            r3.append(r6)
+            return r3
+    }
+
+    /* renamed from: K */
+    public static /* synthetic */ java.lang.Appendable m3999K(java.lang.Iterable r9, java.lang.Appendable r10, java.lang.CharSequence r11, java.lang.CharSequence r12, java.lang.CharSequence r13, int r14, java.lang.CharSequence r15, mh.InterfaceC4620l r16, int r17) {
+            r0 = r17 & 2
+            if (r0 == 0) goto L8
+            java.lang.String r0 = ", "
+            r3 = r0
+            goto L9
+        L8:
+            r3 = r11
+        L9:
+            r0 = r17 & 4
+            java.lang.String r1 = ""
+            r2 = 0
+            if (r0 == 0) goto L12
+            r4 = r1
+            goto L13
+        L12:
+            r4 = r2
+        L13:
+            r0 = r17 & 8
+            if (r0 == 0) goto L19
+            r5 = r1
+            goto L1a
+        L19:
+            r5 = r2
+        L1a:
+            r0 = r17 & 16
+            if (r0 == 0) goto L21
+            r0 = -1
+            r6 = -1
+            goto L22
+        L21:
+            r6 = r14
+        L22:
+            r0 = r17 & 32
+            if (r0 == 0) goto L2a
+            java.lang.String r0 = "..."
+            r7 = r0
+            goto L2b
+        L2a:
+            r7 = r2
+        L2b:
+            r8 = 0
+            r1 = r9
+            r2 = r10
+            m3998J(r1, r2, r3, r4, r5, r6, r7, r8)
+            return r10
+    }
+
+    /* renamed from: L */
+    public static java.lang.String m4000L(java.lang.Iterable r8, java.lang.CharSequence r9, java.lang.CharSequence r10, java.lang.CharSequence r11, int r12, java.lang.CharSequence r13, mh.InterfaceC4620l r14, int r15) {
+            r13 = r15 & 1
+            if (r13 == 0) goto L6
+            java.lang.String r9 = ", "
+        L6:
+            r2 = r9
+            r9 = r15 & 2
+            java.lang.String r13 = ""
+            if (r9 == 0) goto Lf
+            r3 = r13
+            goto L10
+        Lf:
+            r3 = r10
+        L10:
+            r9 = r15 & 4
+            if (r9 == 0) goto L16
+            r4 = r13
+            goto L17
+        L16:
+            r4 = r11
+        L17:
+            r9 = r15 & 8
+            if (r9 == 0) goto L1e
+            r12 = -1
+            r5 = -1
+            goto L1f
+        L1e:
+            r5 = r12
+        L1f:
+            r9 = r15 & 16
+            r10 = 0
+            if (r9 == 0) goto L28
+            java.lang.String r9 = "..."
+            r6 = r9
+            goto L29
+        L28:
+            r6 = r10
+        L29:
+            r9 = r15 & 32
+            if (r9 == 0) goto L2f
+            r7 = r10
+            goto L30
+        L2f:
+            r7 = r14
+        L30:
+            java.lang.String r9 = "<this>"
+            p214m2.C4339q.m9706k(r8, r9)
+            java.lang.String r9 = "prefix"
+            p214m2.C4339q.m9706k(r3, r9)
+            java.lang.String r9 = "postfix"
+            p214m2.C4339q.m9706k(r4, r9)
+            java.lang.String r9 = "truncated"
+            p214m2.C4339q.m9706k(r6, r9)
+            java.lang.StringBuilder r9 = new java.lang.StringBuilder
+            r9.<init>()
+            r0 = r8
+            r1 = r9
+            m3998J(r0, r1, r2, r3, r4, r5, r6, r7)
+            java.lang.String r8 = r9.toString()
+            java.lang.String r9 = "joinTo(StringBuilder(), \u2026ed, transform).toString()"
+            p214m2.C4339q.m9705j(r8, r9)
+            return r8
+    }
+
+    /* renamed from: M */
+    public static final <T> T m4001M(java.util.List<? extends T> r1) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r1, r0)
+            boolean r0 = r1.isEmpty()
+            if (r0 != 0) goto L14
+            int r0 = p074e9.C1805a.m4527l(r1)
+            java.lang.Object r1 = r1.get(r0)
+            return r1
+        L14:
+            java.util.NoSuchElementException r1 = new java.util.NoSuchElementException
+            java.lang.String r0 = "List is empty."
+            r1.<init>(r0)
+            throw r1
+    }
+
+    /* renamed from: N */
+    public static final <T> T m4002N(java.util.List<? extends T> r1) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r1, r0)
+            boolean r0 = r1.isEmpty()
+            if (r0 == 0) goto Ld
+            r1 = 0
+            goto L17
+        Ld:
+            int r0 = r1.size()
+            int r0 = r0 + (-1)
+            java.lang.Object r1 = r1.get(r0)
+        L17:
+            return r1
+    }
+
+    /* renamed from: O */
+    public static final <T> java.util.List<T> m4003O(java.lang.Iterable<? extends T> r2) {
+            r0 = r2
+            java.util.Collection r0 = (java.util.Collection) r0
+            int r0 = r0.size()
+            r1 = 1
+            if (r0 > r1) goto Lf
+            java.util.List r2 = m4007S(r2)
+            return r2
+        Lf:
+            java.util.List r2 = m4008T(r2)
+            java.util.Collections.reverse(r2)
+            return r2
+    }
+
+    /* renamed from: P */
+    public static final <T> java.util.List<T> m4004P(java.lang.Iterable<? extends T> r3, java.util.Comparator<? super T> r4) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r3, r0)
+            boolean r0 = r3 instanceof java.util.Collection
+            if (r0 == 0) goto L2f
+            r0 = r3
+            java.util.Collection r0 = (java.util.Collection) r0
+            int r1 = r0.size()
+            r2 = 1
+            if (r1 > r2) goto L18
+            java.util.List r3 = m4007S(r3)
+            return r3
+        L18:
+            r3 = 0
+            java.lang.Object[] r3 = new java.lang.Object[r3]
+            java.lang.Object[] r3 = r0.toArray(r3)
+            java.lang.String r0 = "null cannot be cast to non-null type kotlin.Array<T of kotlin.collections.ArraysKt__ArraysJVMKt.toTypedArray>"
+            java.util.Objects.requireNonNull(r3, r0)
+            int r0 = r3.length
+            if (r0 <= r2) goto L2a
+            java.util.Arrays.sort(r3, r4)
+        L2a:
+            java.util.List r3 = p062dh.C1468d.m3982D(r3)
+            return r3
+        L2f:
+            java.util.List r3 = m4008T(r3)
+            p062dh.C1470f.m3993E(r3, r4)
+            return r3
+    }
+
+    /* renamed from: Q */
+    public static final <T> java.util.List<T> m4005Q(java.lang.Iterable<? extends T> r4, int r5) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r4, r0)
+            r0 = 1
+            r1 = 0
+            if (r5 < 0) goto Lb
+            r2 = 1
+            goto Lc
+        Lb:
+            r2 = 0
+        Lc:
+            if (r2 == 0) goto L6b
+            if (r5 != 0) goto L13
+            dh.k r4 = p062dh.C1475k.f7237Y
+            return r4
+        L13:
+            boolean r2 = r4 instanceof java.util.Collection
+            if (r2 == 0) goto L4d
+            r2 = r4
+            java.util.Collection r2 = (java.util.Collection) r2
+            int r2 = r2.size()
+            if (r5 < r2) goto L25
+            java.util.List r4 = m4007S(r4)
+            return r4
+        L25:
+            if (r5 != r0) goto L4d
+            boolean r5 = r4 instanceof java.util.List
+            if (r5 == 0) goto L32
+            java.util.List r4 = (java.util.List) r4
+            java.lang.Object r4 = m3995G(r4)
+            goto L40
+        L32:
+            java.util.Iterator r4 = r4.iterator()
+            boolean r5 = r4.hasNext()
+            if (r5 == 0) goto L45
+            java.lang.Object r4 = r4.next()
+        L40:
+            java.util.List r4 = p074e9.C1805a.m4528m(r4)
+            return r4
+        L45:
+            java.util.NoSuchElementException r4 = new java.util.NoSuchElementException
+            java.lang.String r5 = "Collection is empty."
+            r4.<init>(r5)
+            throw r4
+        L4d:
+            java.util.ArrayList r2 = new java.util.ArrayList
+            r2.<init>(r5)
+            java.util.Iterator r4 = r4.iterator()
+        L56:
+            boolean r3 = r4.hasNext()
+            if (r3 == 0) goto L66
+            java.lang.Object r3 = r4.next()
+            r2.add(r3)
+            int r1 = r1 + r0
+            if (r1 != r5) goto L56
+        L66:
+            java.util.List r4 = p074e9.C1805a.m4534s(r2)
+            return r4
+        L6b:
+            java.lang.String r4 = "Requested element count "
+            java.lang.String r0 = " is less than zero."
+            java.lang.String r4 = android.support.v4.media.C0146e.m258a(r4, r5, r0)
+            java.lang.IllegalArgumentException r5 = new java.lang.IllegalArgumentException
+            java.lang.String r4 = r4.toString()
+            r5.<init>(r4)
+            throw r5
+    }
+
+    /* renamed from: R */
+    public static final <T, C extends java.util.Collection<? super T>> C m4006R(java.lang.Iterable<? extends T> r1, C r2) {
+            java.util.Iterator r1 = r1.iterator()
+        L4:
+            boolean r0 = r1.hasNext()
+            if (r0 == 0) goto L12
+            java.lang.Object r0 = r1.next()
+            r2.add(r0)
+            goto L4
+        L12:
+            return r2
+    }
+
+    /* renamed from: S */
+    public static final <T> java.util.List<T> m4007S(java.lang.Iterable<? extends T> r3) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r3, r0)
+            boolean r0 = r3 instanceof java.util.Collection
+            if (r0 == 0) goto L36
+            r0 = r3
+            java.util.Collection r0 = (java.util.Collection) r0
+            int r1 = r0.size()
+            if (r1 == 0) goto L33
+            r2 = 1
+            if (r1 == r2) goto L1a
+            java.util.List r3 = m4009U(r0)
+            goto L35
+        L1a:
+            boolean r0 = r3 instanceof java.util.List
+            if (r0 == 0) goto L26
+            java.util.List r3 = (java.util.List) r3
+            r0 = 0
+            java.lang.Object r3 = r3.get(r0)
+            goto L2e
+        L26:
+            java.util.Iterator r3 = r3.iterator()
+            java.lang.Object r3 = r3.next()
+        L2e:
+            java.util.List r3 = p074e9.C1805a.m4528m(r3)
+            goto L35
+        L33:
+            dh.k r3 = p062dh.C1475k.f7237Y
+        L35:
+            return r3
+        L36:
+            java.util.List r3 = m4008T(r3)
+            java.util.List r3 = p074e9.C1805a.m4534s(r3)
+            return r3
+    }
+
+    /* renamed from: T */
+    public static final <T> java.util.List<T> m4008T(java.lang.Iterable<? extends T> r1) {
+            boolean r0 = r1 instanceof java.util.Collection
+            if (r0 == 0) goto Lb
+            java.util.Collection r1 = (java.util.Collection) r1
+            java.util.List r1 = m4009U(r1)
+            return r1
+        Lb:
+            java.util.ArrayList r0 = new java.util.ArrayList
+            r0.<init>()
+            m4006R(r1, r0)
+            return r0
+    }
+
+    /* renamed from: U */
+    public static final <T> java.util.List<T> m4009U(java.util.Collection<? extends T> r1) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r1, r0)
+            java.util.ArrayList r0 = new java.util.ArrayList
+            r0.<init>(r1)
+            return r0
+    }
+
+    /* renamed from: V */
+    public static final <T> java.util.Set<T> m4010V(java.lang.Iterable<? extends T> r1) {
+            java.util.LinkedHashSet r0 = new java.util.LinkedHashSet
+            java.util.Collection r1 = (java.util.Collection) r1
+            r0.<init>(r1)
+            return r0
+    }
+
+    /* renamed from: W */
+    public static final <T> java.util.Set<T> m4011W(java.lang.Iterable<? extends T> r4) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r4, r0)
+            boolean r0 = r4 instanceof java.util.Collection
+            java.lang.String r1 = "singleton(element)"
+            r2 = 1
+            if (r0 == 0) goto L48
+            r0 = r4
+            java.util.Collection r0 = (java.util.Collection) r0
+            int r3 = r0.size()
+            if (r3 == 0) goto L45
+            if (r3 == r2) goto L28
+            java.util.LinkedHashSet r1 = new java.util.LinkedHashSet
+            int r0 = r0.size()
+            int r0 = p185k7.C4038x4.m9097j(r0)
+            r1.<init>(r0)
+            m4006R(r4, r1)
+            goto L47
+        L28:
+            boolean r0 = r4 instanceof java.util.List
+            if (r0 == 0) goto L34
+            java.util.List r4 = (java.util.List) r4
+            r0 = 0
+            java.lang.Object r4 = r4.get(r0)
+            goto L3c
+        L34:
+            java.util.Iterator r4 = r4.iterator()
+            java.lang.Object r4 = r4.next()
+        L3c:
+            java.util.Set r4 = java.util.Collections.singleton(r4)
+            p214m2.C4339q.m9705j(r4, r1)
+            r1 = r4
+            goto L47
+        L45:
+            dh.m r1 = p062dh.C1477m.f7239Y
+        L47:
+            return r1
+        L48:
+            java.util.LinkedHashSet r0 = new java.util.LinkedHashSet
+            r0.<init>()
+            m4006R(r4, r0)
+            int r4 = r0.size()
+            if (r4 == 0) goto L69
+            if (r4 == r2) goto L59
+            goto L6b
+        L59:
+            java.util.Iterator r4 = r0.iterator()
+            java.lang.Object r4 = r4.next()
+            java.util.Set r0 = java.util.Collections.singleton(r4)
+            p214m2.C4339q.m9705j(r0, r1)
+            goto L6b
+        L69:
+            dh.m r0 = p062dh.C1477m.f7239Y
+        L6b:
+            return r0
+    }
+}
+package p062dh;
+
+/* renamed from: dh.j */
+/* loaded from: classes.dex */
+public final class C1474j implements java.util.ListIterator, p259oh.InterfaceC5277a {
+
+    /* renamed from: Y */
+    public static final p062dh.C1474j f7236Y = null;
+
+    static {
+            dh.j r0 = new dh.j
+            r0.<init>()
+            p062dh.C1474j.f7236Y = r0
+            return
+    }
+
+    public C1474j() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // java.util.ListIterator
+    public /* bridge */ /* synthetic */ void add(java.lang.Object r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.ListIterator, java.util.Iterator
+    public boolean hasNext() {
+            r1 = this;
+            r0 = 0
+            return r0
+    }
+
+    @Override // java.util.ListIterator
+    public boolean hasPrevious() {
+            r1 = this;
+            r0 = 0
+            return r0
+    }
+
+    @Override // java.util.ListIterator, java.util.Iterator
+    public java.lang.Object next() {
+            r1 = this;
+            java.util.NoSuchElementException r0 = new java.util.NoSuchElementException
+            r0.<init>()
+            throw r0
+    }
+
+    @Override // java.util.ListIterator
+    public int nextIndex() {
+            r1 = this;
+            r0 = 0
+            return r0
+    }
+
+    @Override // java.util.ListIterator
+    public java.lang.Object previous() {
+            r1 = this;
+            java.util.NoSuchElementException r0 = new java.util.NoSuchElementException
+            r0.<init>()
+            throw r0
+    }
+
+    @Override // java.util.ListIterator
+    public int previousIndex() {
+            r1 = this;
+            r0 = -1
+            return r0
+    }
+
+    @Override // java.util.ListIterator, java.util.Iterator
+    public void remove() {
+            r2 = this;
+            java.lang.UnsupportedOperationException r0 = new java.lang.UnsupportedOperationException
+            java.lang.String r1 = "Operation is not supported for read-only collection"
+            r0.<init>(r1)
+            throw r0
+    }
+
+    @Override // java.util.ListIterator
+    public /* bridge */ /* synthetic */ void set(java.lang.Object r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+}
+package p062dh;
+
+/* renamed from: dh.k */
+/* loaded from: classes.dex */
+public final class C1475k implements java.util.List, java.io.Serializable, java.util.RandomAccess, p259oh.InterfaceC5277a {
+
+    /* renamed from: Y */
+    public static final p062dh.C1475k f7237Y = null;
+
+    static {
+            dh.k r0 = new dh.k
+            r0.<init>()
+            p062dh.C1475k.f7237Y = r0
+            return
+    }
+
+    public C1475k() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // java.util.List
+    public /* bridge */ /* synthetic */ void add(int r1, java.lang.Object r2) {
+            r0 = this;
+            java.lang.UnsupportedOperationException r1 = new java.lang.UnsupportedOperationException
+            java.lang.String r2 = "Operation is not supported for read-only collection"
+            r1.<init>(r2)
+            throw r1
+    }
+
+    @Override // java.util.List, java.util.Collection
+    public /* bridge */ /* synthetic */ boolean add(java.lang.Object r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.List
+    public boolean addAll(int r1, java.util.Collection r2) {
+            r0 = this;
+            java.lang.UnsupportedOperationException r1 = new java.lang.UnsupportedOperationException
+            java.lang.String r2 = "Operation is not supported for read-only collection"
+            r1.<init>(r2)
+            throw r1
+    }
+
+    @Override // java.util.List, java.util.Collection
+    public boolean addAll(java.util.Collection r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.List, java.util.Collection
+    public void clear() {
+            r2 = this;
+            java.lang.UnsupportedOperationException r0 = new java.lang.UnsupportedOperationException
+            java.lang.String r1 = "Operation is not supported for read-only collection"
+            r0.<init>(r1)
+            throw r0
+    }
+
+    @Override // java.util.List, java.util.Collection
+    public final boolean contains(java.lang.Object r3) {
+            r2 = this;
+            boolean r0 = r3 instanceof java.lang.Void
+            r1 = 0
+            if (r0 != 0) goto L6
+            return r1
+        L6:
+            java.lang.Void r3 = (java.lang.Void) r3
+            java.lang.String r0 = "element"
+            p214m2.C4339q.m9706k(r3, r0)
+            return r1
+    }
+
+    @Override // java.util.List, java.util.Collection
+    public boolean containsAll(java.util.Collection r2) {
+            r1 = this;
+            java.lang.String r0 = "elements"
+            p214m2.C4339q.m9706k(r2, r0)
+            boolean r2 = r2.isEmpty()
+            return r2
+    }
+
+    @Override // java.util.List, java.util.Collection
+    public boolean equals(java.lang.Object r2) {
+            r1 = this;
+            boolean r0 = r2 instanceof java.util.List
+            if (r0 == 0) goto Le
+            java.util.List r2 = (java.util.List) r2
+            boolean r2 = r2.isEmpty()
+            if (r2 == 0) goto Le
+            r2 = 1
+            goto Lf
+        Le:
+            r2 = 0
+        Lf:
+            return r2
+    }
+
+    @Override // java.util.List
+    public java.lang.Object get(int r4) {
+            r3 = this;
+            java.lang.IndexOutOfBoundsException r0 = new java.lang.IndexOutOfBoundsException
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            r1.<init>()
+            java.lang.String r2 = "Empty list doesn't contain element at index "
+            r1.append(r2)
+            r1.append(r4)
+            r4 = 46
+            r1.append(r4)
+            java.lang.String r4 = r1.toString()
+            r0.<init>(r4)
+            throw r0
+    }
+
+    @Override // java.util.List, java.util.Collection
+    public int hashCode() {
+            r1 = this;
+            r0 = 1
+            return r0
+    }
+
+    @Override // java.util.List
+    public final int indexOf(java.lang.Object r3) {
+            r2 = this;
+            boolean r0 = r3 instanceof java.lang.Void
+            r1 = -1
+            if (r0 != 0) goto L6
+            return r1
+        L6:
+            java.lang.Void r3 = (java.lang.Void) r3
+            java.lang.String r0 = "element"
+            p214m2.C4339q.m9706k(r3, r0)
+            return r1
+    }
+
+    @Override // java.util.List, java.util.Collection
+    public boolean isEmpty() {
+            r1 = this;
+            r0 = 1
+            return r0
+    }
+
+    @Override // java.util.List, java.util.Collection, java.lang.Iterable
+    public java.util.Iterator iterator() {
+            r1 = this;
+            dh.j r0 = p062dh.C1474j.f7236Y
+            return r0
+    }
+
+    @Override // java.util.List
+    public final int lastIndexOf(java.lang.Object r3) {
+            r2 = this;
+            boolean r0 = r3 instanceof java.lang.Void
+            r1 = -1
+            if (r0 != 0) goto L6
+            return r1
+        L6:
+            java.lang.Void r3 = (java.lang.Void) r3
+            java.lang.String r0 = "element"
+            p214m2.C4339q.m9706k(r3, r0)
+            return r1
+    }
+
+    @Override // java.util.List
+    public java.util.ListIterator listIterator() {
+            r1 = this;
+            dh.j r0 = p062dh.C1474j.f7236Y
+            return r0
+    }
+
+    @Override // java.util.List
+    public java.util.ListIterator listIterator(int r3) {
+            r2 = this;
+            if (r3 != 0) goto L5
+            dh.j r3 = p062dh.C1474j.f7236Y
+            return r3
+        L5:
+            java.lang.IndexOutOfBoundsException r0 = new java.lang.IndexOutOfBoundsException
+            java.lang.String r1 = "Index: "
+            java.lang.String r3 = android.support.v4.media.C0142a.m254a(r1, r3)
+            r0.<init>(r3)
+            throw r0
+    }
+
+    @Override // java.util.List
+    public /* bridge */ /* synthetic */ java.lang.Object remove(int r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.List, java.util.Collection
+    public boolean remove(java.lang.Object r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.List, java.util.Collection
+    public boolean removeAll(java.util.Collection r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.List, java.util.Collection
+    public boolean retainAll(java.util.Collection r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.List
+    public /* bridge */ /* synthetic */ java.lang.Object set(int r1, java.lang.Object r2) {
+            r0 = this;
+            java.lang.UnsupportedOperationException r1 = new java.lang.UnsupportedOperationException
+            java.lang.String r2 = "Operation is not supported for read-only collection"
+            r1.<init>(r2)
+            throw r1
+    }
+
+    @Override // java.util.List, java.util.Collection
+    public final /* bridge */ int size() {
+            r1 = this;
+            r0 = 0
+            return r0
+    }
+
+    @Override // java.util.List
+    public java.util.List subList(int r4, int r5) {
+            r3 = this;
+            if (r4 != 0) goto L5
+            if (r5 != 0) goto L5
+            return r3
+        L5:
+            java.lang.IndexOutOfBoundsException r0 = new java.lang.IndexOutOfBoundsException
+            java.lang.String r1 = "fromIndex: "
+            java.lang.String r2 = ", toIndex: "
+            java.lang.String r4 = p243o1.C4872b.m11020a(r1, r4, r2, r5)
+            r0.<init>(r4)
+            throw r0
+    }
+
+    @Override // java.util.List, java.util.Collection
+    public java.lang.Object[] toArray() {
+            r1 = this;
+            java.lang.Object[] r0 = p239nh.C4825e.m10851a(r1)
+            return r0
+    }
+
+    @Override // java.util.List, java.util.Collection
+    public <T> T[] toArray(T[] r2) {
+            r1 = this;
+            java.lang.String r0 = "array"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.Object[] r2 = p239nh.C4825e.m10852b(r1, r2)
+            return r2
+    }
+
+    public java.lang.String toString() {
+            r1 = this;
+            java.lang.String r0 = "[]"
+            return r0
+    }
+}
+package p062dh;
+
+/* renamed from: dh.l */
+/* loaded from: classes.dex */
+public final class C1476l implements java.util.Map, java.io.Serializable, p259oh.InterfaceC5277a {
+
+    /* renamed from: Y */
+    public static final p062dh.C1476l f7238Y = null;
+
+    static {
+            dh.l r0 = new dh.l
+            r0.<init>()
+            p062dh.C1476l.f7238Y = r0
+            return
+    }
+
+    public C1476l() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // java.util.Map
+    public void clear() {
+            r2 = this;
+            java.lang.UnsupportedOperationException r0 = new java.lang.UnsupportedOperationException
+            java.lang.String r1 = "Operation is not supported for read-only collection"
+            r0.<init>(r1)
+            throw r0
+    }
+
+    @Override // java.util.Map
+    public boolean containsKey(java.lang.Object r1) {
+            r0 = this;
+            r1 = 0
+            return r1
+    }
+
+    @Override // java.util.Map
+    public final boolean containsValue(java.lang.Object r3) {
+            r2 = this;
+            boolean r0 = r3 instanceof java.lang.Void
+            r1 = 0
+            if (r0 != 0) goto L6
+            return r1
+        L6:
+            java.lang.Void r3 = (java.lang.Void) r3
+            java.lang.String r0 = "value"
+            p214m2.C4339q.m9706k(r3, r0)
+            return r1
+    }
+
+    @Override // java.util.Map
+    public final /* bridge */ java.util.Set<java.util.Map.Entry> entrySet() {
+            r1 = this;
+            dh.m r0 = p062dh.C1477m.f7239Y
+            return r0
+    }
+
+    @Override // java.util.Map
+    public boolean equals(java.lang.Object r2) {
+            r1 = this;
+            boolean r0 = r2 instanceof java.util.Map
+            if (r0 == 0) goto Le
+            java.util.Map r2 = (java.util.Map) r2
+            boolean r2 = r2.isEmpty()
+            if (r2 == 0) goto Le
+            r2 = 1
+            goto Lf
+        Le:
+            r2 = 0
+        Lf:
+            return r2
+    }
+
+    @Override // java.util.Map
+    public /* bridge */ /* synthetic */ java.lang.Object get(java.lang.Object r1) {
+            r0 = this;
+            r1 = 0
+            return r1
+    }
+
+    @Override // java.util.Map
+    public int hashCode() {
+            r1 = this;
+            r0 = 0
+            return r0
+    }
+
+    @Override // java.util.Map
+    public boolean isEmpty() {
+            r1 = this;
+            r0 = 1
+            return r0
+    }
+
+    @Override // java.util.Map
+    public final /* bridge */ java.util.Set<java.lang.Object> keySet() {
+            r1 = this;
+            dh.m r0 = p062dh.C1477m.f7239Y
+            return r0
+    }
+
+    @Override // java.util.Map
+    public /* bridge */ /* synthetic */ java.lang.Object put(java.lang.Object r1, java.lang.Object r2) {
+            r0 = this;
+            java.lang.UnsupportedOperationException r1 = new java.lang.UnsupportedOperationException
+            java.lang.String r2 = "Operation is not supported for read-only collection"
+            r1.<init>(r2)
+            throw r1
+    }
+
+    @Override // java.util.Map
+    public void putAll(java.util.Map r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.Map
+    public java.lang.Object remove(java.lang.Object r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.Map
+    public final /* bridge */ int size() {
+            r1 = this;
+            r0 = 0
+            return r0
+    }
+
+    public java.lang.String toString() {
+            r1 = this;
+            java.lang.String r0 = "{}"
+            return r0
+    }
+
+    @Override // java.util.Map
+    public final /* bridge */ java.util.Collection values() {
+            r1 = this;
+            dh.k r0 = p062dh.C1475k.f7237Y
+            return r0
+    }
+}
+package p062dh;
+
+/* renamed from: dh.m */
+/* loaded from: classes.dex */
+public final class C1477m implements java.util.Set, java.io.Serializable, p259oh.InterfaceC5277a {
+
+    /* renamed from: Y */
+    public static final p062dh.C1477m f7239Y = null;
+
+    static {
+            dh.m r0 = new dh.m
+            r0.<init>()
+            p062dh.C1477m.f7239Y = r0
+            return
+    }
+
+    public C1477m() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // java.util.Set, java.util.Collection
+    public /* bridge */ /* synthetic */ boolean add(java.lang.Object r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.Set, java.util.Collection
+    public boolean addAll(java.util.Collection r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.Set, java.util.Collection
+    public void clear() {
+            r2 = this;
+            java.lang.UnsupportedOperationException r0 = new java.lang.UnsupportedOperationException
+            java.lang.String r1 = "Operation is not supported for read-only collection"
+            r0.<init>(r1)
+            throw r0
+    }
+
+    @Override // java.util.Set, java.util.Collection
+    public final boolean contains(java.lang.Object r3) {
+            r2 = this;
+            boolean r0 = r3 instanceof java.lang.Void
+            r1 = 0
+            if (r0 != 0) goto L6
+            return r1
+        L6:
+            java.lang.Void r3 = (java.lang.Void) r3
+            java.lang.String r0 = "element"
+            p214m2.C4339q.m9706k(r3, r0)
+            return r1
+    }
+
+    @Override // java.util.Set, java.util.Collection
+    public boolean containsAll(java.util.Collection r2) {
+            r1 = this;
+            java.lang.String r0 = "elements"
+            p214m2.C4339q.m9706k(r2, r0)
+            boolean r2 = r2.isEmpty()
+            return r2
+    }
+
+    @Override // java.util.Set, java.util.Collection
+    public boolean equals(java.lang.Object r2) {
+            r1 = this;
+            boolean r0 = r2 instanceof java.util.Set
+            if (r0 == 0) goto Le
+            java.util.Set r2 = (java.util.Set) r2
+            boolean r2 = r2.isEmpty()
+            if (r2 == 0) goto Le
+            r2 = 1
+            goto Lf
+        Le:
+            r2 = 0
+        Lf:
+            return r2
+    }
+
+    @Override // java.util.Set, java.util.Collection
+    public int hashCode() {
+            r1 = this;
+            r0 = 0
+            return r0
+    }
+
+    @Override // java.util.Set, java.util.Collection
+    public boolean isEmpty() {
+            r1 = this;
+            r0 = 1
+            return r0
+    }
+
+    @Override // java.util.Set, java.util.Collection, java.lang.Iterable
+    public java.util.Iterator iterator() {
+            r1 = this;
+            dh.j r0 = p062dh.C1474j.f7236Y
+            return r0
+    }
+
+    @Override // java.util.Set, java.util.Collection
+    public boolean remove(java.lang.Object r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.Set, java.util.Collection
+    public boolean removeAll(java.util.Collection r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.Set, java.util.Collection
+    public boolean retainAll(java.util.Collection r2) {
+            r1 = this;
+            java.lang.UnsupportedOperationException r2 = new java.lang.UnsupportedOperationException
+            java.lang.String r0 = "Operation is not supported for read-only collection"
+            r2.<init>(r0)
+            throw r2
+    }
+
+    @Override // java.util.Set, java.util.Collection
+    public final /* bridge */ int size() {
+            r1 = this;
+            r0 = 0
+            return r0
+    }
+
+    @Override // java.util.Set, java.util.Collection
+    public java.lang.Object[] toArray() {
+            r1 = this;
+            java.lang.Object[] r0 = p239nh.C4825e.m10851a(r1)
+            return r0
+    }
+
+    @Override // java.util.Set, java.util.Collection
+    public <T> T[] toArray(T[] r2) {
+            r1 = this;
+            java.lang.String r0 = "array"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.Object[] r2 = p239nh.C4825e.m10852b(r1, r2)
+            return r2
+    }
+
+    public java.lang.String toString() {
+            r1 = this;
+            java.lang.String r0 = "[]"
+            return r0
+    }
+}
+package p062dh;
+
+/* renamed from: dh.p */
+/* loaded from: classes.dex */
+public class C1480p extends p185k7.C4038x4 {
+    /* renamed from: s */
+    public static final <K, V> java.util.Map<K, V> m4014s(kotlin.Pair<? extends K, ? extends V>... r5) {
+            int r0 = r5.length
+            if (r0 <= 0) goto L1d
+            java.util.LinkedHashMap r0 = new java.util.LinkedHashMap
+            int r1 = r5.length
+            int r1 = p185k7.C4038x4.m9097j(r1)
+            r0.<init>(r1)
+            int r1 = r5.length
+            r2 = 0
+        Lf:
+            if (r2 >= r1) goto L1f
+            r3 = r5[r2]
+            A r4 = r3.f5050Y
+            B r3 = r3.f5051Z
+            r0.put(r4, r3)
+            int r2 = r2 + 1
+            goto Lf
+        L1d:
+            dh.l r0 = p062dh.C1476l.f7238Y
+        L1f:
+            return r0
+    }
+
+    /* renamed from: t */
+    public static final <K, V> java.util.List<ch.C0978e<K, V>> m4015t(java.util.Map<? extends K, ? extends V> r4) {
+            java.lang.String r0 = "<this>"
+            p214m2.C4339q.m9706k(r4, r0)
+            int r0 = r4.size()
+            if (r0 != 0) goto Le
+            dh.k r4 = p062dh.C1475k.f7237Y
+            return r4
+        Le:
+            java.util.Set r0 = r4.entrySet()
+            java.util.Iterator r0 = r0.iterator()
+            boolean r1 = r0.hasNext()
+            if (r1 != 0) goto L1f
+            dh.k r4 = p062dh.C1475k.f7237Y
+            return r4
+        L1f:
+            java.lang.Object r1 = r0.next()
+            java.util.Map$Entry r1 = (java.util.Map.Entry) r1
+            boolean r2 = r0.hasNext()
+            if (r2 != 0) goto L3d
+            ch.e r4 = new ch.e
+            java.lang.Object r0 = r1.getKey()
+            java.lang.Object r1 = r1.getValue()
+            r4.<init>(r0, r1)
+            java.util.List r4 = p074e9.C1805a.m4528m(r4)
+            return r4
+        L3d:
+            java.util.ArrayList r2 = new java.util.ArrayList
+            int r4 = r4.size()
+            r2.<init>(r4)
+            ch.e r4 = new ch.e
+            java.lang.Object r3 = r1.getKey()
+            java.lang.Object r1 = r1.getValue()
+            r4.<init>(r3, r1)
+            r2.add(r4)
+        L56:
+            java.lang.Object r4 = r0.next()
+            java.util.Map$Entry r4 = (java.util.Map.Entry) r4
+            ch.e r1 = new ch.e
+            java.lang.Object r3 = r4.getKey()
+            java.lang.Object r4 = r4.getValue()
+            r1.<init>(r3, r4)
+            r2.add(r1)
+            boolean r4 = r0.hasNext()
+            if (r4 != 0) goto L56
+            return r2
+    }
+
+    /* renamed from: u */
+    public static final <K, V> java.util.Map<K, V> m4016u(java.lang.Iterable<? extends ch.C0978e<? extends K, ? extends V>> r3) {
+            r0 = 1
+            r1 = r3
+            java.util.Collection r1 = (java.util.Collection) r1
+            int r2 = r1.size()
+            if (r2 == 0) goto L2b
+            if (r2 == r0) goto L1d
+            java.util.LinkedHashMap r0 = new java.util.LinkedHashMap
+            int r1 = r1.size()
+            int r1 = p185k7.C4038x4.m9097j(r1)
+            r0.<init>(r1)
+            m4017v(r3, r0)
+            goto L2d
+        L1d:
+            java.util.List r3 = (java.util.List) r3
+            r0 = 0
+            java.lang.Object r3 = r3.get(r0)
+            ch.e r3 = (ch.C0978e) r3
+            java.util.Map r0 = p185k7.C4038x4.m9098k(r3)
+            goto L2d
+        L2b:
+            dh.l r0 = p062dh.C1476l.f7238Y
+        L2d:
+            return r0
+    }
+
+    /* renamed from: v */
+    public static final <K, V, M extends java.util.Map<? super K, ? super V>> M m4017v(java.lang.Iterable<? extends ch.C0978e<? extends K, ? extends V>> r2, M r3) {
+            java.util.Iterator r2 = r2.iterator()
+        L4:
+            boolean r0 = r2.hasNext()
+            if (r0 == 0) goto L18
+            java.lang.Object r0 = r2.next()
+            ch.e r0 = (ch.C0978e) r0
+            A r1 = r0.f5050Y
+            B r0 = r0.f5051Z
+            r3.put(r1, r0)
+            goto L4
+        L18:
+            return r3
+    }
+}

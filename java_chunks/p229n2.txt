@@ -1,0 +1,1916 @@
+package p229n2;
+
+/* renamed from: n2.d */
+/* loaded from: classes.dex */
+public class C4674d implements p229n2.InterfaceC4673c {
+    public C4674d() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p229n2.InterfaceC4673c
+    /* renamed from: a */
+    public void mo10689a(int r1) {
+            r0 = this;
+            return
+    }
+
+    @Override // p229n2.InterfaceC4673c
+    /* renamed from: b */
+    public void mo10690b() {
+            r0 = this;
+            return
+    }
+
+    @Override // p229n2.InterfaceC4673c
+    /* renamed from: c */
+    public void mo10691c(float r1) {
+            r0 = this;
+            return
+    }
+
+    @Override // p229n2.InterfaceC4673c
+    /* renamed from: d */
+    public android.graphics.Bitmap mo10692d(int r1, int r2, android.graphics.Bitmap.Config r3) {
+            r0 = this;
+            android.graphics.Bitmap r1 = android.graphics.Bitmap.createBitmap(r1, r2, r3)
+            return r1
+    }
+
+    @Override // p229n2.InterfaceC4673c
+    /* renamed from: e */
+    public android.graphics.Bitmap mo10693e(int r1, int r2, android.graphics.Bitmap.Config r3) {
+            r0 = this;
+            android.graphics.Bitmap r1 = android.graphics.Bitmap.createBitmap(r1, r2, r3)
+            return r1
+    }
+
+    @Override // p229n2.InterfaceC4673c
+    /* renamed from: f */
+    public void mo10694f(android.graphics.Bitmap r1) {
+            r0 = this;
+            r1.recycle()
+            return
+    }
+}
+package p229n2;
+
+/* renamed from: n2.e */
+/* loaded from: classes.dex */
+public final class C4675e implements p229n2.InterfaceC4671a<byte[]> {
+    public C4675e() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p229n2.InterfaceC4671a
+    /* renamed from: a */
+    public int mo10681a(byte[] r1) {
+            r0 = this;
+            byte[] r1 = (byte[]) r1
+            int r1 = r1.length
+            return r1
+    }
+
+    @Override // p229n2.InterfaceC4671a
+    /* renamed from: b */
+    public int mo10682b() {
+            r1 = this;
+            r0 = 1
+            return r0
+    }
+
+    @Override // p229n2.InterfaceC4671a
+    /* renamed from: m */
+    public java.lang.String mo10683m() {
+            r1 = this;
+            java.lang.String r0 = "ByteArrayPool"
+            return r0
+    }
+
+    @Override // p229n2.InterfaceC4671a
+    public byte[] newArray(int r1) {
+            r0 = this;
+            byte[] r1 = new byte[r1]
+            return r1
+    }
+}
+package p229n2;
+
+import p229n2.InterfaceC4681k;
+
+/* renamed from: n2.f */
+/* loaded from: classes.dex */
+public class C4676f<K extends p229n2.InterfaceC4681k, V> {
+
+    /* renamed from: a */
+    public final p229n2.C4676f.a<K, V> f18611a;
+
+    /* renamed from: b */
+    public final java.util.Map<K, p229n2.C4676f.a<K, V>> f18612b;
+
+    /* renamed from: n2.f$a */
+    public static class a<K, V> {
+
+        /* renamed from: a */
+        public final K f18613a;
+
+        /* renamed from: b */
+        public java.util.List<V> f18614b;
+
+        /* renamed from: c */
+        public p229n2.C4676f.a<K, V> f18615c;
+
+        /* renamed from: d */
+        public p229n2.C4676f.a<K, V> f18616d;
+
+        public a() {
+                r1 = this;
+                r0 = 0
+                r1.<init>(r0)
+                return
+        }
+
+        public a(K r1) {
+                r0 = this;
+                r0.<init>()
+                r0.f18616d = r0
+                r0.f18615c = r0
+                r0.f18613a = r1
+                return
+        }
+
+        /* renamed from: a */
+        public V m10698a() {
+                r2 = this;
+                java.util.List<V> r0 = r2.f18614b
+                if (r0 == 0) goto L9
+                int r0 = r0.size()
+                goto La
+            L9:
+                r0 = 0
+            La:
+                if (r0 <= 0) goto L15
+                java.util.List<V> r1 = r2.f18614b
+                int r0 = r0 + (-1)
+                java.lang.Object r0 = r1.remove(r0)
+                goto L16
+            L15:
+                r0 = 0
+            L16:
+                return r0
+        }
+    }
+
+    public C4676f() {
+            r2 = this;
+            r2.<init>()
+            n2.f$a r0 = new n2.f$a
+            r1 = 0
+            r0.<init>(r1)
+            r2.f18611a = r0
+            java.util.HashMap r0 = new java.util.HashMap
+            r0.<init>()
+            r2.f18612b = r0
+            return
+    }
+
+    /* renamed from: a */
+    public V m10695a(K r3) {
+            r2 = this;
+            java.util.Map<K extends n2.k, n2.f$a<K extends n2.k, V>> r0 = r2.f18612b
+            java.lang.Object r0 = r0.get(r3)
+            n2.f$a r0 = (p229n2.C4676f.a) r0
+            if (r0 != 0) goto L15
+            n2.f$a r0 = new n2.f$a
+            r0.<init>(r3)
+            java.util.Map<K extends n2.k, n2.f$a<K extends n2.k, V>> r1 = r2.f18612b
+            r1.put(r3, r0)
+            goto L18
+        L15:
+            r3.mo10704a()
+        L18:
+            n2.f$a<K, V> r3 = r0.f18616d
+            n2.f$a<K, V> r1 = r0.f18615c
+            r3.f18615c = r1
+            n2.f$a<K, V> r1 = r0.f18615c
+            r1.f18616d = r3
+            n2.f$a<K extends n2.k, V> r3 = r2.f18611a
+            r0.f18616d = r3
+            n2.f$a<K, V> r3 = r3.f18615c
+            r0.f18615c = r3
+            r3.f18616d = r0
+            n2.f$a<K, V> r3 = r0.f18616d
+            r3.f18615c = r0
+            java.lang.Object r3 = r0.m10698a()
+            return r3
+    }
+
+    /* renamed from: b */
+    public void m10696b(K r4, V r5) {
+            r3 = this;
+            java.util.Map<K extends n2.k, n2.f$a<K extends n2.k, V>> r0 = r3.f18612b
+            java.lang.Object r0 = r0.get(r4)
+            n2.f$a r0 = (p229n2.C4676f.a) r0
+            if (r0 != 0) goto L2d
+            n2.f$a r0 = new n2.f$a
+            r0.<init>(r4)
+            n2.f$a<K, V> r1 = r0.f18616d
+            n2.f$a<K, V> r2 = r0.f18615c
+            r1.f18615c = r2
+            n2.f$a<K, V> r2 = r0.f18615c
+            r2.f18616d = r1
+            n2.f$a<K extends n2.k, V> r1 = r3.f18611a
+            n2.f$a<K, V> r2 = r1.f18616d
+            r0.f18616d = r2
+            r0.f18615c = r1
+            r1.f18616d = r0
+            n2.f$a<K, V> r1 = r0.f18616d
+            r1.f18615c = r0
+            java.util.Map<K extends n2.k, n2.f$a<K extends n2.k, V>> r1 = r3.f18612b
+            r1.put(r4, r0)
+            goto L30
+        L2d:
+            r4.mo10704a()
+        L30:
+            java.util.List<V> r4 = r0.f18614b
+            if (r4 != 0) goto L3b
+            java.util.ArrayList r4 = new java.util.ArrayList
+            r4.<init>()
+            r0.f18614b = r4
+        L3b:
+            java.util.List<V> r4 = r0.f18614b
+            r4.add(r5)
+            return
+    }
+
+    /* renamed from: c */
+    public V m10697c() {
+            r3 = this;
+            n2.f$a<K extends n2.k, V> r0 = r3.f18611a
+        L2:
+            n2.f$a<K, V> r0 = r0.f18616d
+            n2.f$a<K extends n2.k, V> r1 = r3.f18611a
+            boolean r1 = r0.equals(r1)
+            if (r1 != 0) goto L2c
+            java.lang.Object r1 = r0.m10698a()
+            if (r1 == 0) goto L13
+            return r1
+        L13:
+            n2.f$a<K, V> r1 = r0.f18616d
+            n2.f$a<K, V> r2 = r0.f18615c
+            r1.f18615c = r2
+            n2.f$a<K, V> r2 = r0.f18615c
+            r2.f18616d = r1
+            java.util.Map<K extends n2.k, n2.f$a<K extends n2.k, V>> r1 = r3.f18612b
+            K r2 = r0.f18613a
+            r1.remove(r2)
+            K r1 = r0.f18613a
+            n2.k r1 = (p229n2.InterfaceC4681k) r1
+            r1.mo10704a()
+            goto L2
+        L2c:
+            r0 = 0
+            return r0
+    }
+
+    public java.lang.String toString() {
+            r5 = this;
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            java.lang.String r1 = "GroupedLinkedMap( "
+            r0.<init>(r1)
+            n2.f$a<K extends n2.k, V> r1 = r5.f18611a
+            n2.f$a<K, V> r1 = r1.f18615c
+            r2 = 0
+            r3 = 0
+        Ld:
+            n2.f$a<K extends n2.k, V> r4 = r5.f18611a
+            boolean r4 = r1.equals(r4)
+            if (r4 != 0) goto L3a
+            r3 = 1
+            r4 = 123(0x7b, float:1.72E-43)
+            r0.append(r4)
+            K r4 = r1.f18613a
+            r0.append(r4)
+            r4 = 58
+            r0.append(r4)
+            java.util.List<V> r4 = r1.f18614b
+            if (r4 == 0) goto L2e
+            int r4 = r4.size()
+            goto L2f
+        L2e:
+            r4 = 0
+        L2f:
+            r0.append(r4)
+            java.lang.String r4 = "}, "
+            r0.append(r4)
+            n2.f$a<K, V> r1 = r1.f18615c
+            goto Ld
+        L3a:
+            if (r3 == 0) goto L49
+            int r1 = r0.length()
+            int r1 = r1 + (-2)
+            int r2 = r0.length()
+            r0.delete(r1, r2)
+        L49:
+            java.lang.String r1 = " )"
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            return r0
+    }
+}
+package p229n2;
+
+/* renamed from: n2.g */
+/* loaded from: classes.dex */
+public final class C4677g implements p229n2.InterfaceC4671a<int[]> {
+    public C4677g() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // p229n2.InterfaceC4671a
+    /* renamed from: a */
+    public int mo10681a(int[] r1) {
+            r0 = this;
+            int[] r1 = (int[]) r1
+            int r1 = r1.length
+            return r1
+    }
+
+    @Override // p229n2.InterfaceC4671a
+    /* renamed from: b */
+    public int mo10682b() {
+            r1 = this;
+            r0 = 4
+            return r0
+    }
+
+    @Override // p229n2.InterfaceC4671a
+    /* renamed from: m */
+    public java.lang.String mo10683m() {
+            r1 = this;
+            java.lang.String r0 = "IntegerArrayPool"
+            return r0
+    }
+
+    @Override // p229n2.InterfaceC4671a
+    public int[] newArray(int r1) {
+            r0 = this;
+            int[] r1 = new int[r1]
+            return r1
+    }
+}
+package p229n2;
+
+/* renamed from: n2.h */
+/* loaded from: classes.dex */
+public final class C4678h implements p229n2.InterfaceC4672b {
+
+    /* renamed from: a */
+    public final p229n2.C4676f<p229n2.C4678h.a, java.lang.Object> f18617a;
+
+    /* renamed from: b */
+    public final p229n2.C4678h.b f18618b;
+
+    /* renamed from: c */
+    public final java.util.Map<java.lang.Class<?>, java.util.NavigableMap<java.lang.Integer, java.lang.Integer>> f18619c;
+
+    /* renamed from: d */
+    public final java.util.Map<java.lang.Class<?>, p229n2.InterfaceC4671a<?>> f18620d;
+
+    /* renamed from: e */
+    public final int f18621e;
+
+    /* renamed from: f */
+    public int f18622f;
+
+    /* renamed from: n2.h$a */
+    public static final class a implements p229n2.InterfaceC4681k {
+
+        /* renamed from: a */
+        public final p229n2.C4678h.b f18623a;
+
+        /* renamed from: b */
+        public int f18624b;
+
+        /* renamed from: c */
+        public java.lang.Class<?> f18625c;
+
+        public a(p229n2.C4678h.b r1) {
+                r0 = this;
+                r0.<init>()
+                r0.f18623a = r1
+                return
+        }
+
+        @Override // p229n2.InterfaceC4681k
+        /* renamed from: a */
+        public void mo10704a() {
+                r1 = this;
+                n2.h$b r0 = r1.f18623a
+                r0.m13173g(r1)
+                return
+        }
+
+        public boolean equals(java.lang.Object r4) {
+                r3 = this;
+                boolean r0 = r4 instanceof p229n2.C4678h.a
+                r1 = 0
+                if (r0 == 0) goto L14
+                n2.h$a r4 = (p229n2.C4678h.a) r4
+                int r0 = r3.f18624b
+                int r2 = r4.f18624b
+                if (r0 != r2) goto L14
+                java.lang.Class<?> r0 = r3.f18625c
+                java.lang.Class<?> r4 = r4.f18625c
+                if (r0 != r4) goto L14
+                r1 = 1
+            L14:
+                return r1
+        }
+
+        public int hashCode() {
+                r2 = this;
+                int r0 = r2.f18624b
+                int r0 = r0 * 31
+                java.lang.Class<?> r1 = r2.f18625c
+                if (r1 == 0) goto Ld
+                int r1 = r1.hashCode()
+                goto Le
+            Ld:
+                r1 = 0
+            Le:
+                int r0 = r0 + r1
+                return r0
+        }
+
+        public java.lang.String toString() {
+                r2 = this;
+                java.lang.String r0 = "Key{size="
+                java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+                int r1 = r2.f18624b
+                r0.append(r1)
+                java.lang.String r1 = "array="
+                r0.append(r1)
+                java.lang.Class<?> r1 = r2.f18625c
+                r0.append(r1)
+                r1 = 125(0x7d, float:1.75E-43)
+                r0.append(r1)
+                java.lang.String r0 = r0.toString()
+                return r0
+        }
+    }
+
+    /* renamed from: n2.h$b */
+    public static final class b extends p366v0.AbstractC6484c {
+        public b() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // p366v0.AbstractC6484c
+        /* renamed from: a */
+        public p229n2.InterfaceC4681k mo10705a() {
+                r1 = this;
+                n2.h$a r0 = new n2.h$a
+                r0.<init>(r1)
+                return r0
+        }
+
+        /* renamed from: m */
+        public p229n2.C4678h.a m10706m(int r2, java.lang.Class<?> r3) {
+                r1 = this;
+                n2.k r0 = r1.m13170c()
+                n2.h$a r0 = (p229n2.C4678h.a) r0
+                r0.f18624b = r2
+                r0.f18625c = r3
+                return r0
+        }
+    }
+
+    public C4678h(int r2) {
+            r1 = this;
+            r1.<init>()
+            n2.f r0 = new n2.f
+            r0.<init>()
+            r1.f18617a = r0
+            n2.h$b r0 = new n2.h$b
+            r0.<init>()
+            r1.f18618b = r0
+            java.util.HashMap r0 = new java.util.HashMap
+            r0.<init>()
+            r1.f18619c = r0
+            java.util.HashMap r0 = new java.util.HashMap
+            r0.<init>()
+            r1.f18620d = r0
+            r1.f18621e = r2
+            return
+    }
+
+    @Override // p229n2.InterfaceC4672b
+    /* renamed from: a */
+    public synchronized void mo10684a(int r2) {
+            r1 = this;
+            monitor-enter(r1)
+            r0 = 40
+            if (r2 < r0) goto Lf
+            monitor-enter(r1)     // Catch: java.lang.Throwable -> L20
+            r2 = 0
+            r1.m10700g(r2)     // Catch: java.lang.Throwable -> Lc
+            monitor-exit(r1)     // Catch: java.lang.Throwable -> L20
+            goto L1e
+        Lc:
+            r2 = move-exception
+            monitor-exit(r1)     // Catch: java.lang.Throwable -> L20
+            throw r2     // Catch: java.lang.Throwable -> L20
+        Lf:
+            r0 = 20
+            if (r2 >= r0) goto L17
+            r0 = 15
+            if (r2 != r0) goto L1e
+        L17:
+            int r2 = r1.f18621e     // Catch: java.lang.Throwable -> L20
+            int r2 = r2 / 2
+            r1.m10700g(r2)     // Catch: java.lang.Throwable -> L20
+        L1e:
+            monitor-exit(r1)
+            return
+        L20:
+            r2 = move-exception
+            monitor-exit(r1)
+            throw r2
+    }
+
+    @Override // p229n2.InterfaceC4672b
+    /* renamed from: b */
+    public synchronized void mo10685b() {
+            r1 = this;
+            monitor-enter(r1)
+            r0 = 0
+            r1.m10700g(r0)     // Catch: java.lang.Throwable -> L7
+            monitor-exit(r1)
+            return
+        L7:
+            r0 = move-exception
+            monitor-exit(r1)
+            throw r0
+    }
+
+    @Override // p229n2.InterfaceC4672b
+    /* renamed from: c */
+    public synchronized <T> T mo10686c(int r2, java.lang.Class<T> r3) {
+            r1 = this;
+            monitor-enter(r1)
+            n2.h$b r0 = r1.f18618b     // Catch: java.lang.Throwable -> L13
+            n2.k r0 = r0.m13170c()     // Catch: java.lang.Throwable -> L13
+            n2.h$a r0 = (p229n2.C4678h.a) r0     // Catch: java.lang.Throwable -> L13
+            r0.f18624b = r2     // Catch: java.lang.Throwable -> L13
+            r0.f18625c = r3     // Catch: java.lang.Throwable -> L13
+            java.lang.Object r2 = r1.m10702i(r0, r3)     // Catch: java.lang.Throwable -> L13
+            monitor-exit(r1)
+            return r2
+        L13:
+            r2 = move-exception
+            monitor-exit(r1)
+            throw r2
+    }
+
+    @Override // p229n2.InterfaceC4672b
+    /* renamed from: d */
+    public synchronized <T> void mo10687d(T r6) {
+            r5 = this;
+            monitor-enter(r5)
+            java.lang.Class r0 = r6.getClass()     // Catch: java.lang.Throwable -> L5d
+            n2.a r1 = r5.m10701h(r0)     // Catch: java.lang.Throwable -> L5d
+            int r2 = r1.mo10681a(r6)     // Catch: java.lang.Throwable -> L5d
+            int r1 = r1.mo10682b()     // Catch: java.lang.Throwable -> L5d
+            int r1 = r1 * r2
+            int r3 = r5.f18621e     // Catch: java.lang.Throwable -> L5d
+            int r3 = r3 / 2
+            r4 = 1
+            if (r1 > r3) goto L1c
+            r3 = 1
+            goto L1d
+        L1c:
+            r3 = 0
+        L1d:
+            if (r3 != 0) goto L21
+            monitor-exit(r5)
+            return
+        L21:
+            n2.h$b r3 = r5.f18618b     // Catch: java.lang.Throwable -> L5d
+            n2.h$a r2 = r3.m10706m(r2, r0)     // Catch: java.lang.Throwable -> L5d
+            n2.f<n2.h$a, java.lang.Object> r3 = r5.f18617a     // Catch: java.lang.Throwable -> L5d
+            r3.m10696b(r2, r6)     // Catch: java.lang.Throwable -> L5d
+            java.util.NavigableMap r6 = r5.m10703j(r0)     // Catch: java.lang.Throwable -> L5d
+            int r0 = r2.f18624b     // Catch: java.lang.Throwable -> L5d
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r0)     // Catch: java.lang.Throwable -> L5d
+            java.lang.Object r0 = r6.get(r0)     // Catch: java.lang.Throwable -> L5d
+            java.lang.Integer r0 = (java.lang.Integer) r0     // Catch: java.lang.Throwable -> L5d
+            int r2 = r2.f18624b     // Catch: java.lang.Throwable -> L5d
+            java.lang.Integer r2 = java.lang.Integer.valueOf(r2)     // Catch: java.lang.Throwable -> L5d
+            if (r0 != 0) goto L45
+            goto L4a
+        L45:
+            int r0 = r0.intValue()     // Catch: java.lang.Throwable -> L5d
+            int r4 = r4 + r0
+        L4a:
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r4)     // Catch: java.lang.Throwable -> L5d
+            r6.put(r2, r0)     // Catch: java.lang.Throwable -> L5d
+            int r6 = r5.f18622f     // Catch: java.lang.Throwable -> L5d
+            int r6 = r6 + r1
+            r5.f18622f = r6     // Catch: java.lang.Throwable -> L5d
+            int r6 = r5.f18621e     // Catch: java.lang.Throwable -> L5d
+            r5.m10700g(r6)     // Catch: java.lang.Throwable -> L5d
+            monitor-exit(r5)
+            return
+        L5d:
+            r6 = move-exception
+            monitor-exit(r5)
+            throw r6
+    }
+
+    @Override // p229n2.InterfaceC4672b
+    /* renamed from: e */
+    public synchronized <T> T mo10688e(int r6, java.lang.Class<T> r7) {
+            r5 = this;
+            monitor-enter(r5)
+            java.util.NavigableMap r0 = r5.m10703j(r7)     // Catch: java.lang.Throwable -> L4d
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r6)     // Catch: java.lang.Throwable -> L4d
+            java.lang.Object r0 = r0.ceilingKey(r1)     // Catch: java.lang.Throwable -> L4d
+            java.lang.Integer r0 = (java.lang.Integer) r0     // Catch: java.lang.Throwable -> L4d
+            r1 = 1
+            r2 = 0
+            if (r0 == 0) goto L2c
+            int r3 = r5.f18622f     // Catch: java.lang.Throwable -> L4d
+            if (r3 == 0) goto L20
+            int r4 = r5.f18621e     // Catch: java.lang.Throwable -> L4d
+            int r4 = r4 / r3
+            r3 = 2
+            if (r4 < r3) goto L1e
+            goto L20
+        L1e:
+            r3 = 0
+            goto L21
+        L20:
+            r3 = 1
+        L21:
+            if (r3 != 0) goto L2d
+            int r3 = r0.intValue()     // Catch: java.lang.Throwable -> L4d
+            int r4 = r6 * 8
+            if (r3 > r4) goto L2c
+            goto L2d
+        L2c:
+            r1 = 0
+        L2d:
+            if (r1 == 0) goto L3a
+            n2.h$b r6 = r5.f18618b     // Catch: java.lang.Throwable -> L4d
+            int r0 = r0.intValue()     // Catch: java.lang.Throwable -> L4d
+            n2.h$a r6 = r6.m10706m(r0, r7)     // Catch: java.lang.Throwable -> L4d
+            goto L47
+        L3a:
+            n2.h$b r0 = r5.f18618b     // Catch: java.lang.Throwable -> L4d
+            n2.k r0 = r0.m13170c()     // Catch: java.lang.Throwable -> L4d
+            n2.h$a r0 = (p229n2.C4678h.a) r0     // Catch: java.lang.Throwable -> L4d
+            r0.f18624b = r6     // Catch: java.lang.Throwable -> L4d
+            r0.f18625c = r7     // Catch: java.lang.Throwable -> L4d
+            r6 = r0
+        L47:
+            java.lang.Object r6 = r5.m10702i(r6, r7)     // Catch: java.lang.Throwable -> L4d
+            monitor-exit(r5)
+            return r6
+        L4d:
+            r6 = move-exception
+            monitor-exit(r5)
+            throw r6
+    }
+
+    /* renamed from: f */
+    public final void m10699f(int r4, java.lang.Class<?> r5) {
+            r3 = this;
+            java.util.NavigableMap r5 = r3.m10703j(r5)
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r4)
+            java.lang.Object r0 = r5.get(r0)
+            java.lang.Integer r0 = (java.lang.Integer) r0
+            if (r0 == 0) goto L2c
+            int r1 = r0.intValue()
+            r2 = 1
+            java.lang.Integer r4 = java.lang.Integer.valueOf(r4)
+            if (r1 != r2) goto L1f
+            r5.remove(r4)
+            goto L2b
+        L1f:
+            int r0 = r0.intValue()
+            int r0 = r0 - r2
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r0)
+            r5.put(r4, r0)
+        L2b:
+            return
+        L2c:
+            java.lang.NullPointerException r5 = new java.lang.NullPointerException
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            r0.<init>()
+            java.lang.String r1 = "Tried to decrement empty size, size: "
+            r0.append(r1)
+            r0.append(r4)
+            java.lang.String r4 = ", this: "
+            r0.append(r4)
+            r0.append(r3)
+            java.lang.String r4 = r0.toString()
+            r5.<init>(r4)
+            throw r5
+    }
+
+    /* renamed from: g */
+    public final void m10700g(int r6) {
+            r5 = this;
+        L0:
+            int r0 = r5.f18622f
+            if (r0 <= r6) goto L55
+            n2.f<n2.h$a, java.lang.Object> r0 = r5.f18617a
+            java.lang.Object r0 = r0.m10697c()
+            java.lang.String r1 = "Argument must not be null"
+            java.util.Objects.requireNonNull(r0, r1)
+            java.lang.Class r1 = r0.getClass()
+            n2.a r1 = r5.m10701h(r1)
+            int r2 = r5.f18622f
+            int r3 = r1.mo10681a(r0)
+            int r4 = r1.mo10682b()
+            int r4 = r4 * r3
+            int r2 = r2 - r4
+            r5.f18622f = r2
+            int r2 = r1.mo10681a(r0)
+            java.lang.Class r3 = r0.getClass()
+            r5.m10699f(r2, r3)
+            java.lang.String r2 = r1.mo10683m()
+            r3 = 2
+            boolean r2 = android.util.Log.isLoggable(r2, r3)
+            if (r2 == 0) goto L0
+            java.lang.String r2 = r1.mo10683m()
+            java.lang.String r3 = "evicted: "
+            java.lang.StringBuilder r3 = android.support.v4.media.C0144c.m256a(r3)
+            int r0 = r1.mo10681a(r0)
+            r3.append(r0)
+            java.lang.String r0 = r3.toString()
+            android.util.Log.v(r2, r0)
+            goto L0
+        L55:
+            return
+    }
+
+    /* renamed from: h */
+    public final <T> p229n2.InterfaceC4671a<T> m10701h(java.lang.Class<T> r3) {
+            r2 = this;
+            java.util.Map<java.lang.Class<?>, n2.a<?>> r0 = r2.f18620d
+            java.lang.Object r0 = r0.get(r3)
+            n2.a r0 = (p229n2.InterfaceC4671a) r0
+            if (r0 != 0) goto L42
+            java.lang.Class<int[]> r0 = int[].class
+            boolean r0 = r3.equals(r0)
+            if (r0 == 0) goto L18
+            n2.g r0 = new n2.g
+            r0.<init>()
+            goto L25
+        L18:
+            java.lang.Class<byte[]> r0 = byte[].class
+            boolean r0 = r3.equals(r0)
+            if (r0 == 0) goto L2b
+            n2.e r0 = new n2.e
+            r0.<init>()
+        L25:
+            java.util.Map<java.lang.Class<?>, n2.a<?>> r1 = r2.f18620d
+            r1.put(r3, r0)
+            goto L42
+        L2b:
+            java.lang.IllegalArgumentException r0 = new java.lang.IllegalArgumentException
+            java.lang.String r1 = "No array pool found for: "
+            java.lang.StringBuilder r1 = android.support.v4.media.C0144c.m256a(r1)
+            java.lang.String r3 = r3.getSimpleName()
+            r1.append(r3)
+            java.lang.String r3 = r1.toString()
+            r0.<init>(r3)
+            throw r0
+        L42:
+            return r0
+    }
+
+    /* renamed from: i */
+    public final <T> T m10702i(p229n2.C4678h.a r6, java.lang.Class<T> r7) {
+            r5 = this;
+            n2.a r0 = r5.m10701h(r7)
+            n2.f<n2.h$a, java.lang.Object> r1 = r5.f18617a
+            java.lang.Object r1 = r1.m10695a(r6)
+            if (r1 == 0) goto L22
+            int r2 = r5.f18622f
+            int r3 = r0.mo10681a(r1)
+            int r4 = r0.mo10682b()
+            int r4 = r4 * r3
+            int r2 = r2 - r4
+            r5.f18622f = r2
+            int r2 = r0.mo10681a(r1)
+            r5.m10699f(r2, r7)
+        L22:
+            if (r1 != 0) goto L50
+            java.lang.String r7 = r0.mo10683m()
+            r1 = 2
+            boolean r7 = android.util.Log.isLoggable(r7, r1)
+            if (r7 == 0) goto L4a
+            java.lang.String r7 = r0.mo10683m()
+            java.lang.String r1 = "Allocated "
+            java.lang.StringBuilder r1 = android.support.v4.media.C0144c.m256a(r1)
+            int r2 = r6.f18624b
+            r1.append(r2)
+            java.lang.String r2 = " bytes"
+            r1.append(r2)
+            java.lang.String r1 = r1.toString()
+            android.util.Log.v(r7, r1)
+        L4a:
+            int r6 = r6.f18624b
+            java.lang.Object r1 = r0.newArray(r6)
+        L50:
+            return r1
+    }
+
+    /* renamed from: j */
+    public final java.util.NavigableMap<java.lang.Integer, java.lang.Integer> m10703j(java.lang.Class<?> r3) {
+            r2 = this;
+            java.util.Map<java.lang.Class<?>, java.util.NavigableMap<java.lang.Integer, java.lang.Integer>> r0 = r2.f18619c
+            java.lang.Object r0 = r0.get(r3)
+            java.util.NavigableMap r0 = (java.util.NavigableMap) r0
+            if (r0 != 0) goto L14
+            java.util.TreeMap r0 = new java.util.TreeMap
+            r0.<init>()
+            java.util.Map<java.lang.Class<?>, java.util.NavigableMap<java.lang.Integer, java.lang.Integer>> r1 = r2.f18619c
+            r1.put(r3, r0)
+        L14:
+            return r0
+    }
+}
+package p229n2;
+
+/* renamed from: n2.i */
+/* loaded from: classes.dex */
+public class C4679i implements p229n2.InterfaceC4673c {
+
+    /* renamed from: k */
+    public static final android.graphics.Bitmap.Config f18626k = null;
+
+    /* renamed from: a */
+    public final p229n2.InterfaceC4680j f18627a;
+
+    /* renamed from: b */
+    public final java.util.Set<android.graphics.Bitmap.Config> f18628b;
+
+    /* renamed from: c */
+    public final long f18629c;
+
+    /* renamed from: d */
+    public final p229n2.C4679i.a f18630d;
+
+    /* renamed from: e */
+    public long f18631e;
+
+    /* renamed from: f */
+    public long f18632f;
+
+    /* renamed from: g */
+    public int f18633g;
+
+    /* renamed from: h */
+    public int f18634h;
+
+    /* renamed from: i */
+    public int f18635i;
+
+    /* renamed from: j */
+    public int f18636j;
+
+    /* renamed from: n2.i$a */
+    public interface a {
+    }
+
+    /* renamed from: n2.i$b */
+    public static final class b implements p229n2.C4679i.a {
+        public b() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+    }
+
+    static {
+            android.graphics.Bitmap$Config r0 = android.graphics.Bitmap.Config.ARGB_8888
+            p229n2.C4679i.f18626k = r0
+            return
+    }
+
+    public C4679i(long r5) {
+            r4 = this;
+            n2.l r0 = new n2.l
+            r0.<init>()
+            java.util.HashSet r1 = new java.util.HashSet
+            android.graphics.Bitmap$Config[] r2 = android.graphics.Bitmap.Config.values()
+            java.util.List r2 = java.util.Arrays.asList(r2)
+            r1.<init>(r2)
+            int r2 = android.os.Build.VERSION.SDK_INT
+            r3 = 0
+            r1.add(r3)
+            r3 = 26
+            if (r2 < r3) goto L21
+            android.graphics.Bitmap$Config r2 = android.graphics.Bitmap.Config.HARDWARE
+            r1.remove(r2)
+        L21:
+            java.util.Set r1 = java.util.Collections.unmodifiableSet(r1)
+            r4.<init>()
+            r4.f18629c = r5
+            r4.f18631e = r5
+            r4.f18627a = r0
+            r4.f18628b = r1
+            n2.i$b r5 = new n2.i$b
+            r5.<init>()
+            r4.f18630d = r5
+            return
+    }
+
+    @Override // p229n2.InterfaceC4673c
+    @android.annotation.SuppressLint({"InlinedApi"})
+    /* renamed from: a */
+    public void mo10689a(int r6) {
+            r5 = this;
+            java.lang.String r0 = "LruBitmapPool"
+            r1 = 3
+            boolean r2 = android.util.Log.isLoggable(r0, r1)
+            if (r2 == 0) goto L1d
+            java.lang.StringBuilder r2 = new java.lang.StringBuilder
+            r2.<init>()
+            java.lang.String r3 = "trimMemory, level="
+            r2.append(r3)
+            r2.append(r6)
+            java.lang.String r2 = r2.toString()
+            android.util.Log.d(r0, r2)
+        L1d:
+            r2 = 40
+            if (r6 >= r2) goto L3b
+            int r2 = android.os.Build.VERSION.SDK_INT
+            r3 = 23
+            r4 = 20
+            if (r2 < r3) goto L2c
+            if (r6 < r4) goto L2c
+            goto L3b
+        L2c:
+            if (r6 >= r4) goto L32
+            r0 = 15
+            if (r6 != r0) goto L4b
+        L32:
+            long r0 = r5.f18631e
+            r2 = 2
+            long r0 = r0 / r2
+            r5.m10710j(r0)
+            goto L4b
+        L3b:
+            boolean r6 = android.util.Log.isLoggable(r0, r1)
+            if (r6 == 0) goto L46
+            java.lang.String r6 = "clearMemory"
+            android.util.Log.d(r0, r6)
+        L46:
+            r0 = 0
+            r5.m10710j(r0)
+        L4b:
+            return
+    }
+
+    @Override // p229n2.InterfaceC4673c
+    /* renamed from: b */
+    public void mo10690b() {
+            r2 = this;
+            java.lang.String r0 = "LruBitmapPool"
+            r1 = 3
+            boolean r1 = android.util.Log.isLoggable(r0, r1)
+            if (r1 == 0) goto Le
+            java.lang.String r1 = "clearMemory"
+            android.util.Log.d(r0, r1)
+        Le:
+            r0 = 0
+            r2.m10710j(r0)
+            return
+    }
+
+    @Override // p229n2.InterfaceC4673c
+    /* renamed from: c */
+    public synchronized void mo10691c(float r3) {
+            r2 = this;
+            monitor-enter(r2)
+            long r0 = r2.f18629c     // Catch: java.lang.Throwable -> L12
+            float r0 = (float) r0     // Catch: java.lang.Throwable -> L12
+            float r0 = r0 * r3
+            int r3 = java.lang.Math.round(r0)     // Catch: java.lang.Throwable -> L12
+            long r0 = (long) r3     // Catch: java.lang.Throwable -> L12
+            r2.f18631e = r0     // Catch: java.lang.Throwable -> L12
+            r2.m10710j(r0)     // Catch: java.lang.Throwable -> L12
+            monitor-exit(r2)
+            return
+        L12:
+            r3 = move-exception
+            monitor-exit(r2)
+            throw r3
+    }
+
+    @Override // p229n2.InterfaceC4673c
+    /* renamed from: d */
+    public android.graphics.Bitmap mo10692d(int r2, int r3, android.graphics.Bitmap.Config r4) {
+            r1 = this;
+            android.graphics.Bitmap r0 = r1.m10709i(r2, r3, r4)
+            if (r0 != 0) goto Lf
+            if (r4 == 0) goto L9
+            goto Lb
+        L9:
+            android.graphics.Bitmap$Config r4 = p229n2.C4679i.f18626k
+        Lb:
+            android.graphics.Bitmap r0 = android.graphics.Bitmap.createBitmap(r2, r3, r4)
+        Lf:
+            return r0
+    }
+
+    @Override // p229n2.InterfaceC4673c
+    /* renamed from: e */
+    public android.graphics.Bitmap mo10693e(int r2, int r3, android.graphics.Bitmap.Config r4) {
+            r1 = this;
+            android.graphics.Bitmap r0 = r1.m10709i(r2, r3, r4)
+            if (r0 == 0) goto Lb
+            r2 = 0
+            r0.eraseColor(r2)
+            goto L14
+        Lb:
+            if (r4 == 0) goto Le
+            goto L10
+        Le:
+            android.graphics.Bitmap$Config r4 = p229n2.C4679i.f18626k
+        L10:
+            android.graphics.Bitmap r0 = android.graphics.Bitmap.createBitmap(r2, r3, r4)
+        L14:
+            return r0
+    }
+
+    @Override // p229n2.InterfaceC4673c
+    /* renamed from: f */
+    public synchronized void mo10694f(android.graphics.Bitmap r7) {
+            r6 = this;
+            monitor-enter(r6)
+            if (r7 == 0) goto Ld3
+            boolean r0 = r7.isRecycled()     // Catch: java.lang.Throwable -> Ldb
+            if (r0 != 0) goto Lcb
+            boolean r0 = r7.isMutable()     // Catch: java.lang.Throwable -> Ldb
+            r1 = 2
+            if (r0 == 0) goto L82
+            n2.j r0 = r6.f18627a     // Catch: java.lang.Throwable -> Ldb
+            n2.l r0 = (p229n2.C4682l) r0     // Catch: java.lang.Throwable -> Ldb
+            java.util.Objects.requireNonNull(r0)     // Catch: java.lang.Throwable -> Ldb
+            int r0 = p106g3.C2238j.m5844d(r7)     // Catch: java.lang.Throwable -> Ldb
+            long r2 = (long) r0     // Catch: java.lang.Throwable -> Ldb
+            long r4 = r6.f18631e     // Catch: java.lang.Throwable -> Ldb
+            int r0 = (r2 > r4 ? 1 : (r2 == r4 ? 0 : -1))
+            if (r0 > 0) goto L82
+            java.util.Set<android.graphics.Bitmap$Config> r0 = r6.f18628b     // Catch: java.lang.Throwable -> Ldb
+            android.graphics.Bitmap$Config r2 = r7.getConfig()     // Catch: java.lang.Throwable -> Ldb
+            boolean r0 = r0.contains(r2)     // Catch: java.lang.Throwable -> Ldb
+            if (r0 != 0) goto L2f
+            goto L82
+        L2f:
+            n2.j r0 = r6.f18627a     // Catch: java.lang.Throwable -> Ldb
+            n2.l r0 = (p229n2.C4682l) r0     // Catch: java.lang.Throwable -> Ldb
+            java.util.Objects.requireNonNull(r0)     // Catch: java.lang.Throwable -> Ldb
+            int r0 = p106g3.C2238j.m5844d(r7)     // Catch: java.lang.Throwable -> Ldb
+            n2.j r2 = r6.f18627a     // Catch: java.lang.Throwable -> Ldb
+            n2.l r2 = (p229n2.C4682l) r2     // Catch: java.lang.Throwable -> Ldb
+            r2.m10716f(r7)     // Catch: java.lang.Throwable -> Ldb
+            n2.i$a r2 = r6.f18630d     // Catch: java.lang.Throwable -> Ldb
+            java.util.Objects.requireNonNull(r2)     // Catch: java.lang.Throwable -> Ldb
+            int r2 = r6.f18635i     // Catch: java.lang.Throwable -> Ldb
+            int r2 = r2 + 1
+            r6.f18635i = r2     // Catch: java.lang.Throwable -> Ldb
+            long r2 = r6.f18632f     // Catch: java.lang.Throwable -> Ldb
+            long r4 = (long) r0     // Catch: java.lang.Throwable -> Ldb
+            long r2 = r2 + r4
+            r6.f18632f = r2     // Catch: java.lang.Throwable -> Ldb
+            java.lang.String r0 = "LruBitmapPool"
+            boolean r0 = android.util.Log.isLoggable(r0, r1)     // Catch: java.lang.Throwable -> Ldb
+            if (r0 == 0) goto L78
+            java.lang.String r0 = "LruBitmapPool"
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> Ldb
+            r1.<init>()     // Catch: java.lang.Throwable -> Ldb
+            java.lang.String r2 = "Put bitmap in pool="
+            r1.append(r2)     // Catch: java.lang.Throwable -> Ldb
+            n2.j r2 = r6.f18627a     // Catch: java.lang.Throwable -> Ldb
+            n2.l r2 = (p229n2.C4682l) r2     // Catch: java.lang.Throwable -> Ldb
+            java.lang.String r7 = r2.m10715e(r7)     // Catch: java.lang.Throwable -> Ldb
+            r1.append(r7)     // Catch: java.lang.Throwable -> Ldb
+            java.lang.String r7 = r1.toString()     // Catch: java.lang.Throwable -> Ldb
+            android.util.Log.v(r0, r7)     // Catch: java.lang.Throwable -> Ldb
+        L78:
+            r6.m10707g()     // Catch: java.lang.Throwable -> Ldb
+            long r0 = r6.f18631e     // Catch: java.lang.Throwable -> Ldb
+            r6.m10710j(r0)     // Catch: java.lang.Throwable -> Ldb
+            monitor-exit(r6)
+            return
+        L82:
+            java.lang.String r0 = "LruBitmapPool"
+            boolean r0 = android.util.Log.isLoggable(r0, r1)     // Catch: java.lang.Throwable -> Ldb
+            if (r0 == 0) goto Lc6
+            java.lang.String r0 = "LruBitmapPool"
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> Ldb
+            r1.<init>()     // Catch: java.lang.Throwable -> Ldb
+            java.lang.String r2 = "Reject bitmap from pool, bitmap: "
+            r1.append(r2)     // Catch: java.lang.Throwable -> Ldb
+            n2.j r2 = r6.f18627a     // Catch: java.lang.Throwable -> Ldb
+            n2.l r2 = (p229n2.C4682l) r2     // Catch: java.lang.Throwable -> Ldb
+            java.lang.String r2 = r2.m10715e(r7)     // Catch: java.lang.Throwable -> Ldb
+            r1.append(r2)     // Catch: java.lang.Throwable -> Ldb
+            java.lang.String r2 = ", is mutable: "
+            r1.append(r2)     // Catch: java.lang.Throwable -> Ldb
+            boolean r2 = r7.isMutable()     // Catch: java.lang.Throwable -> Ldb
+            r1.append(r2)     // Catch: java.lang.Throwable -> Ldb
+            java.lang.String r2 = ", is allowed config: "
+            r1.append(r2)     // Catch: java.lang.Throwable -> Ldb
+            java.util.Set<android.graphics.Bitmap$Config> r2 = r6.f18628b     // Catch: java.lang.Throwable -> Ldb
+            android.graphics.Bitmap$Config r3 = r7.getConfig()     // Catch: java.lang.Throwable -> Ldb
+            boolean r2 = r2.contains(r3)     // Catch: java.lang.Throwable -> Ldb
+            r1.append(r2)     // Catch: java.lang.Throwable -> Ldb
+            java.lang.String r1 = r1.toString()     // Catch: java.lang.Throwable -> Ldb
+            android.util.Log.v(r0, r1)     // Catch: java.lang.Throwable -> Ldb
+        Lc6:
+            r7.recycle()     // Catch: java.lang.Throwable -> Ldb
+            monitor-exit(r6)
+            return
+        Lcb:
+            java.lang.IllegalStateException r7 = new java.lang.IllegalStateException     // Catch: java.lang.Throwable -> Ldb
+            java.lang.String r0 = "Cannot pool recycled bitmap"
+            r7.<init>(r0)     // Catch: java.lang.Throwable -> Ldb
+            throw r7     // Catch: java.lang.Throwable -> Ldb
+        Ld3:
+            java.lang.NullPointerException r7 = new java.lang.NullPointerException     // Catch: java.lang.Throwable -> Ldb
+            java.lang.String r0 = "Bitmap must not be null"
+            r7.<init>(r0)     // Catch: java.lang.Throwable -> Ldb
+            throw r7     // Catch: java.lang.Throwable -> Ldb
+        Ldb:
+            r7 = move-exception
+            monitor-exit(r6)
+            throw r7
+    }
+
+    /* renamed from: g */
+    public final void m10707g() {
+            r2 = this;
+            java.lang.String r0 = "LruBitmapPool"
+            r1 = 2
+            boolean r0 = android.util.Log.isLoggable(r0, r1)
+            if (r0 == 0) goto Lc
+            r2.m10708h()
+        Lc:
+            return
+    }
+
+    /* renamed from: h */
+    public final void m10708h() {
+            r3 = this;
+            java.lang.String r0 = "Hits="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            int r1 = r3.f18633g
+            r0.append(r1)
+            java.lang.String r1 = ", misses="
+            r0.append(r1)
+            int r1 = r3.f18634h
+            r0.append(r1)
+            java.lang.String r1 = ", puts="
+            r0.append(r1)
+            int r1 = r3.f18635i
+            r0.append(r1)
+            java.lang.String r1 = ", evictions="
+            r0.append(r1)
+            int r1 = r3.f18636j
+            r0.append(r1)
+            java.lang.String r1 = ", currentSize="
+            r0.append(r1)
+            long r1 = r3.f18632f
+            r0.append(r1)
+            java.lang.String r1 = ", maxSize="
+            r0.append(r1)
+            long r1 = r3.f18631e
+            r0.append(r1)
+            java.lang.String r1 = "\nStrategy="
+            r0.append(r1)
+            n2.j r1 = r3.f18627a
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            java.lang.String r1 = "LruBitmapPool"
+            android.util.Log.v(r1, r0)
+            return
+    }
+
+    /* renamed from: i */
+    public final synchronized android.graphics.Bitmap m10709i(int r7, int r8, android.graphics.Bitmap.Config r9) {
+            r6 = this;
+            monitor-enter(r6)
+            int r0 = android.os.Build.VERSION.SDK_INT     // Catch: java.lang.Throwable -> Lc1
+            r1 = 26
+            if (r0 >= r1) goto L8
+            goto Lc
+        L8:
+            android.graphics.Bitmap$Config r0 = android.graphics.Bitmap.Config.HARDWARE     // Catch: java.lang.Throwable -> Lc1
+            if (r9 == r0) goto La5
+        Lc:
+            n2.j r0 = r6.f18627a     // Catch: java.lang.Throwable -> Lc1
+            if (r9 == 0) goto L12
+            r1 = r9
+            goto L14
+        L12:
+            android.graphics.Bitmap$Config r1 = p229n2.C4679i.f18626k     // Catch: java.lang.Throwable -> Lc1
+        L14:
+            n2.l r0 = (p229n2.C4682l) r0     // Catch: java.lang.Throwable -> Lc1
+            android.graphics.Bitmap r0 = r0.m10713b(r7, r8, r1)     // Catch: java.lang.Throwable -> Lc1
+            r1 = 1
+            if (r0 != 0) goto L51
+            java.lang.String r2 = "LruBitmapPool"
+            r3 = 3
+            boolean r2 = android.util.Log.isLoggable(r2, r3)     // Catch: java.lang.Throwable -> Lc1
+            if (r2 == 0) goto L4b
+            java.lang.String r2 = "LruBitmapPool"
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> Lc1
+            r3.<init>()     // Catch: java.lang.Throwable -> Lc1
+            java.lang.String r4 = "Missing bitmap="
+            r3.append(r4)     // Catch: java.lang.Throwable -> Lc1
+            n2.j r4 = r6.f18627a     // Catch: java.lang.Throwable -> Lc1
+            n2.l r4 = (p229n2.C4682l) r4     // Catch: java.lang.Throwable -> Lc1
+            java.util.Objects.requireNonNull(r4)     // Catch: java.lang.Throwable -> Lc1
+            int r4 = p106g3.C2238j.m5843c(r7, r8, r9)     // Catch: java.lang.Throwable -> Lc1
+            java.lang.String r4 = p229n2.C4682l.m10711c(r4, r9)     // Catch: java.lang.Throwable -> Lc1
+            r3.append(r4)     // Catch: java.lang.Throwable -> Lc1
+            java.lang.String r3 = r3.toString()     // Catch: java.lang.Throwable -> Lc1
+            android.util.Log.d(r2, r3)     // Catch: java.lang.Throwable -> Lc1
+        L4b:
+            int r2 = r6.f18634h     // Catch: java.lang.Throwable -> Lc1
+            int r2 = r2 + r1
+            r6.f18634h = r2     // Catch: java.lang.Throwable -> Lc1
+            goto L72
+        L51:
+            int r2 = r6.f18633g     // Catch: java.lang.Throwable -> Lc1
+            int r2 = r2 + r1
+            r6.f18633g = r2     // Catch: java.lang.Throwable -> Lc1
+            long r2 = r6.f18632f     // Catch: java.lang.Throwable -> Lc1
+            n2.j r4 = r6.f18627a     // Catch: java.lang.Throwable -> Lc1
+            n2.l r4 = (p229n2.C4682l) r4     // Catch: java.lang.Throwable -> Lc1
+            java.util.Objects.requireNonNull(r4)     // Catch: java.lang.Throwable -> Lc1
+            int r4 = p106g3.C2238j.m5844d(r0)     // Catch: java.lang.Throwable -> Lc1
+            long r4 = (long) r4     // Catch: java.lang.Throwable -> Lc1
+            long r2 = r2 - r4
+            r6.f18632f = r2     // Catch: java.lang.Throwable -> Lc1
+            n2.i$a r2 = r6.f18630d     // Catch: java.lang.Throwable -> Lc1
+            java.util.Objects.requireNonNull(r2)     // Catch: java.lang.Throwable -> Lc1
+            r0.setHasAlpha(r1)     // Catch: java.lang.Throwable -> Lc1
+            r0.setPremultiplied(r1)     // Catch: java.lang.Throwable -> Lc1
+        L72:
+            java.lang.String r1 = "LruBitmapPool"
+            r2 = 2
+            boolean r1 = android.util.Log.isLoggable(r1, r2)     // Catch: java.lang.Throwable -> Lc1
+            if (r1 == 0) goto La0
+            java.lang.String r1 = "LruBitmapPool"
+            java.lang.StringBuilder r2 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> Lc1
+            r2.<init>()     // Catch: java.lang.Throwable -> Lc1
+            java.lang.String r3 = "Get bitmap="
+            r2.append(r3)     // Catch: java.lang.Throwable -> Lc1
+            n2.j r3 = r6.f18627a     // Catch: java.lang.Throwable -> Lc1
+            n2.l r3 = (p229n2.C4682l) r3     // Catch: java.lang.Throwable -> Lc1
+            java.util.Objects.requireNonNull(r3)     // Catch: java.lang.Throwable -> Lc1
+            int r7 = p106g3.C2238j.m5843c(r7, r8, r9)     // Catch: java.lang.Throwable -> Lc1
+            java.lang.String r7 = p229n2.C4682l.m10711c(r7, r9)     // Catch: java.lang.Throwable -> Lc1
+            r2.append(r7)     // Catch: java.lang.Throwable -> Lc1
+            java.lang.String r7 = r2.toString()     // Catch: java.lang.Throwable -> Lc1
+            android.util.Log.v(r1, r7)     // Catch: java.lang.Throwable -> Lc1
+        La0:
+            r6.m10707g()     // Catch: java.lang.Throwable -> Lc1
+            monitor-exit(r6)
+            return r0
+        La5:
+            java.lang.IllegalArgumentException r7 = new java.lang.IllegalArgumentException     // Catch: java.lang.Throwable -> Lc1
+            java.lang.StringBuilder r8 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> Lc1
+            r8.<init>()     // Catch: java.lang.Throwable -> Lc1
+            java.lang.String r0 = "Cannot create a mutable Bitmap with config: "
+            r8.append(r0)     // Catch: java.lang.Throwable -> Lc1
+            r8.append(r9)     // Catch: java.lang.Throwable -> Lc1
+            java.lang.String r9 = ". Consider setting Downsampler#ALLOW_HARDWARE_CONFIG to false in your RequestOptions and/or in GlideBuilder.setDefaultRequestOptions"
+            r8.append(r9)     // Catch: java.lang.Throwable -> Lc1
+            java.lang.String r8 = r8.toString()     // Catch: java.lang.Throwable -> Lc1
+            r7.<init>(r8)     // Catch: java.lang.Throwable -> Lc1
+            throw r7     // Catch: java.lang.Throwable -> Lc1
+        Lc1:
+            r7 = move-exception
+            monitor-exit(r6)
+            throw r7
+    }
+
+    /* renamed from: j */
+    public final synchronized void m10710j(long r7) {
+            r6 = this;
+            monitor-enter(r6)
+        L1:
+            long r0 = r6.f18632f     // Catch: java.lang.Throwable -> L88
+            int r2 = (r0 > r7 ? 1 : (r0 == r7 ? 0 : -1))
+            if (r2 <= 0) goto L86
+            n2.j r0 = r6.f18627a     // Catch: java.lang.Throwable -> L88
+            n2.l r0 = (p229n2.C4682l) r0     // Catch: java.lang.Throwable -> L88
+            n2.f<n2.l$b, android.graphics.Bitmap> r1 = r0.f18643b     // Catch: java.lang.Throwable -> L88
+            java.lang.Object r1 = r1.m10697c()     // Catch: java.lang.Throwable -> L88
+            android.graphics.Bitmap r1 = (android.graphics.Bitmap) r1     // Catch: java.lang.Throwable -> L88
+            if (r1 == 0) goto L20
+            int r2 = p106g3.C2238j.m5844d(r1)     // Catch: java.lang.Throwable -> L88
+            java.lang.Integer r2 = java.lang.Integer.valueOf(r2)     // Catch: java.lang.Throwable -> L88
+            r0.m10712a(r2, r1)     // Catch: java.lang.Throwable -> L88
+        L20:
+            if (r1 != 0) goto L3b
+            java.lang.String r7 = "LruBitmapPool"
+            r8 = 5
+            boolean r7 = android.util.Log.isLoggable(r7, r8)     // Catch: java.lang.Throwable -> L88
+            if (r7 == 0) goto L35
+            java.lang.String r7 = "LruBitmapPool"
+            java.lang.String r8 = "Size mismatch, resetting"
+            android.util.Log.w(r7, r8)     // Catch: java.lang.Throwable -> L88
+            r6.m10708h()     // Catch: java.lang.Throwable -> L88
+        L35:
+            r7 = 0
+            r6.f18632f = r7     // Catch: java.lang.Throwable -> L88
+            monitor-exit(r6)
+            return
+        L3b:
+            n2.i$a r0 = r6.f18630d     // Catch: java.lang.Throwable -> L88
+            java.util.Objects.requireNonNull(r0)     // Catch: java.lang.Throwable -> L88
+            long r2 = r6.f18632f     // Catch: java.lang.Throwable -> L88
+            n2.j r0 = r6.f18627a     // Catch: java.lang.Throwable -> L88
+            n2.l r0 = (p229n2.C4682l) r0     // Catch: java.lang.Throwable -> L88
+            java.util.Objects.requireNonNull(r0)     // Catch: java.lang.Throwable -> L88
+            int r0 = p106g3.C2238j.m5844d(r1)     // Catch: java.lang.Throwable -> L88
+            long r4 = (long) r0     // Catch: java.lang.Throwable -> L88
+            long r2 = r2 - r4
+            r6.f18632f = r2     // Catch: java.lang.Throwable -> L88
+            int r0 = r6.f18636j     // Catch: java.lang.Throwable -> L88
+            int r0 = r0 + 1
+            r6.f18636j = r0     // Catch: java.lang.Throwable -> L88
+            java.lang.String r0 = "LruBitmapPool"
+            r2 = 3
+            boolean r0 = android.util.Log.isLoggable(r0, r2)     // Catch: java.lang.Throwable -> L88
+            if (r0 == 0) goto L7e
+            java.lang.String r0 = "LruBitmapPool"
+            java.lang.StringBuilder r2 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L88
+            r2.<init>()     // Catch: java.lang.Throwable -> L88
+            java.lang.String r3 = "Evicting bitmap="
+            r2.append(r3)     // Catch: java.lang.Throwable -> L88
+            n2.j r3 = r6.f18627a     // Catch: java.lang.Throwable -> L88
+            n2.l r3 = (p229n2.C4682l) r3     // Catch: java.lang.Throwable -> L88
+            java.lang.String r3 = r3.m10715e(r1)     // Catch: java.lang.Throwable -> L88
+            r2.append(r3)     // Catch: java.lang.Throwable -> L88
+            java.lang.String r2 = r2.toString()     // Catch: java.lang.Throwable -> L88
+            android.util.Log.d(r0, r2)     // Catch: java.lang.Throwable -> L88
+        L7e:
+            r6.m10707g()     // Catch: java.lang.Throwable -> L88
+            r1.recycle()     // Catch: java.lang.Throwable -> L88
+            goto L1
+        L86:
+            monitor-exit(r6)
+            return
+        L88:
+            r7 = move-exception
+            monitor-exit(r6)
+            throw r7
+    }
+}
+package p229n2;
+
+/* renamed from: n2.l */
+/* loaded from: classes.dex */
+public class C4682l implements p229n2.InterfaceC4680j {
+
+    /* renamed from: d */
+    public static final android.graphics.Bitmap.Config[] f18637d = null;
+
+    /* renamed from: e */
+    public static final android.graphics.Bitmap.Config[] f18638e = null;
+
+    /* renamed from: f */
+    public static final android.graphics.Bitmap.Config[] f18639f = null;
+
+    /* renamed from: g */
+    public static final android.graphics.Bitmap.Config[] f18640g = null;
+
+    /* renamed from: h */
+    public static final android.graphics.Bitmap.Config[] f18641h = null;
+
+    /* renamed from: a */
+    public final p229n2.C4682l.c f18642a;
+
+    /* renamed from: b */
+    public final p229n2.C4676f<p229n2.C4682l.b, android.graphics.Bitmap> f18643b;
+
+    /* renamed from: c */
+    public final java.util.Map<android.graphics.Bitmap.Config, java.util.NavigableMap<java.lang.Integer, java.lang.Integer>> f18644c;
+
+    /* renamed from: n2.l$a */
+    public static /* synthetic */ class a {
+
+        /* renamed from: a */
+        public static final /* synthetic */ int[] f18645a = null;
+
+        static {
+                android.graphics.Bitmap$Config[] r0 = android.graphics.Bitmap.Config.values()
+                int r0 = r0.length
+                int[] r0 = new int[r0]
+                p229n2.C4682l.a.f18645a = r0
+                android.graphics.Bitmap$Config r1 = android.graphics.Bitmap.Config.ARGB_8888     // Catch: java.lang.NoSuchFieldError -> L12
+                int r1 = r1.ordinal()     // Catch: java.lang.NoSuchFieldError -> L12
+                r2 = 1
+                r0[r1] = r2     // Catch: java.lang.NoSuchFieldError -> L12
+            L12:
+                int[] r0 = p229n2.C4682l.a.f18645a     // Catch: java.lang.NoSuchFieldError -> L1d
+                android.graphics.Bitmap$Config r1 = android.graphics.Bitmap.Config.RGB_565     // Catch: java.lang.NoSuchFieldError -> L1d
+                int r1 = r1.ordinal()     // Catch: java.lang.NoSuchFieldError -> L1d
+                r2 = 2
+                r0[r1] = r2     // Catch: java.lang.NoSuchFieldError -> L1d
+            L1d:
+                int[] r0 = p229n2.C4682l.a.f18645a     // Catch: java.lang.NoSuchFieldError -> L28
+                android.graphics.Bitmap$Config r1 = android.graphics.Bitmap.Config.ARGB_4444     // Catch: java.lang.NoSuchFieldError -> L28
+                int r1 = r1.ordinal()     // Catch: java.lang.NoSuchFieldError -> L28
+                r2 = 3
+                r0[r1] = r2     // Catch: java.lang.NoSuchFieldError -> L28
+            L28:
+                int[] r0 = p229n2.C4682l.a.f18645a     // Catch: java.lang.NoSuchFieldError -> L33
+                android.graphics.Bitmap$Config r1 = android.graphics.Bitmap.Config.ALPHA_8     // Catch: java.lang.NoSuchFieldError -> L33
+                int r1 = r1.ordinal()     // Catch: java.lang.NoSuchFieldError -> L33
+                r2 = 4
+                r0[r1] = r2     // Catch: java.lang.NoSuchFieldError -> L33
+            L33:
+                return
+        }
+    }
+
+    /* renamed from: n2.l$b */
+    public static final class b implements p229n2.InterfaceC4681k {
+
+        /* renamed from: a */
+        public final p229n2.C4682l.c f18646a;
+
+        /* renamed from: b */
+        public int f18647b;
+
+        /* renamed from: c */
+        public android.graphics.Bitmap.Config f18648c;
+
+        public b(p229n2.C4682l.c r1) {
+                r0 = this;
+                r0.<init>()
+                r0.f18646a = r1
+                return
+        }
+
+        @Override // p229n2.InterfaceC4681k
+        /* renamed from: a */
+        public void mo10704a() {
+                r1 = this;
+                n2.l$c r0 = r1.f18646a
+                r0.m13173g(r1)
+                return
+        }
+
+        public boolean equals(java.lang.Object r4) {
+                r3 = this;
+                boolean r0 = r4 instanceof p229n2.C4682l.b
+                r1 = 0
+                if (r0 == 0) goto L18
+                n2.l$b r4 = (p229n2.C4682l.b) r4
+                int r0 = r3.f18647b
+                int r2 = r4.f18647b
+                if (r0 != r2) goto L18
+                android.graphics.Bitmap$Config r0 = r3.f18648c
+                android.graphics.Bitmap$Config r4 = r4.f18648c
+                boolean r4 = p106g3.C2238j.m5842b(r0, r4)
+                if (r4 == 0) goto L18
+                r1 = 1
+            L18:
+                return r1
+        }
+
+        public int hashCode() {
+                r2 = this;
+                int r0 = r2.f18647b
+                int r0 = r0 * 31
+                android.graphics.Bitmap$Config r1 = r2.f18648c
+                if (r1 == 0) goto Ld
+                int r1 = r1.hashCode()
+                goto Le
+            Ld:
+                r1 = 0
+            Le:
+                int r0 = r0 + r1
+                return r0
+        }
+
+        public java.lang.String toString() {
+                r2 = this;
+                int r0 = r2.f18647b
+                android.graphics.Bitmap$Config r1 = r2.f18648c
+                java.lang.String r0 = p229n2.C4682l.m10711c(r0, r1)
+                return r0
+        }
+    }
+
+    /* renamed from: n2.l$c */
+    public static class c extends p366v0.AbstractC6484c {
+        public c() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // p366v0.AbstractC6484c
+        /* renamed from: a */
+        public p229n2.InterfaceC4681k mo10705a() {
+                r1 = this;
+                n2.l$b r0 = new n2.l$b
+                r0.<init>(r1)
+                return r0
+        }
+
+        /* renamed from: m */
+        public p229n2.C4682l.b m10717m(int r2, android.graphics.Bitmap.Config r3) {
+                r1 = this;
+                n2.k r0 = r1.m13170c()
+                n2.l$b r0 = (p229n2.C4682l.b) r0
+                r0.f18647b = r2
+                r0.f18648c = r3
+                return r0
+        }
+    }
+
+    static {
+            r0 = 2
+            android.graphics.Bitmap$Config[] r0 = new android.graphics.Bitmap.Config[r0]
+            android.graphics.Bitmap$Config r1 = android.graphics.Bitmap.Config.ARGB_8888
+            r2 = 0
+            r0[r2] = r1
+            r1 = 0
+            r3 = 1
+            r0[r3] = r1
+            int r1 = android.os.Build.VERSION.SDK_INT
+            r4 = 26
+            if (r1 < r4) goto L1f
+            r1 = 3
+            java.lang.Object[] r0 = java.util.Arrays.copyOf(r0, r1)
+            android.graphics.Bitmap$Config[] r0 = (android.graphics.Bitmap.Config[]) r0
+            int r1 = r0.length
+            int r1 = r1 - r3
+            android.graphics.Bitmap$Config r4 = android.graphics.Bitmap.Config.RGBA_F16
+            r0[r1] = r4
+        L1f:
+            p229n2.C4682l.f18637d = r0
+            p229n2.C4682l.f18638e = r0
+            android.graphics.Bitmap$Config[] r0 = new android.graphics.Bitmap.Config[r3]
+            android.graphics.Bitmap$Config r1 = android.graphics.Bitmap.Config.RGB_565
+            r0[r2] = r1
+            p229n2.C4682l.f18639f = r0
+            android.graphics.Bitmap$Config[] r0 = new android.graphics.Bitmap.Config[r3]
+            android.graphics.Bitmap$Config r1 = android.graphics.Bitmap.Config.ARGB_4444
+            r0[r2] = r1
+            p229n2.C4682l.f18640g = r0
+            android.graphics.Bitmap$Config[] r0 = new android.graphics.Bitmap.Config[r3]
+            android.graphics.Bitmap$Config r1 = android.graphics.Bitmap.Config.ALPHA_8
+            r0[r2] = r1
+            p229n2.C4682l.f18641h = r0
+            return
+    }
+
+    public C4682l() {
+            r1 = this;
+            r1.<init>()
+            n2.l$c r0 = new n2.l$c
+            r0.<init>()
+            r1.f18642a = r0
+            n2.f r0 = new n2.f
+            r0.<init>()
+            r1.f18643b = r0
+            java.util.HashMap r0 = new java.util.HashMap
+            r0.<init>()
+            r1.f18644c = r0
+            return
+    }
+
+    /* renamed from: c */
+    public static java.lang.String m10711c(int r2, android.graphics.Bitmap.Config r3) {
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            r0.<init>()
+            java.lang.String r1 = "["
+            r0.append(r1)
+            r0.append(r2)
+            java.lang.String r2 = "]("
+            r0.append(r2)
+            r0.append(r3)
+            java.lang.String r2 = ")"
+            r0.append(r2)
+            java.lang.String r2 = r0.toString()
+            return r2
+    }
+
+    /* renamed from: a */
+    public final void m10712a(java.lang.Integer r4, android.graphics.Bitmap r5) {
+            r3 = this;
+            android.graphics.Bitmap$Config r0 = r5.getConfig()
+            java.util.NavigableMap r0 = r3.m10714d(r0)
+            java.lang.Object r1 = r0.get(r4)
+            java.lang.Integer r1 = (java.lang.Integer) r1
+            if (r1 == 0) goto L28
+            int r5 = r1.intValue()
+            r2 = 1
+            if (r5 != r2) goto L1b
+            r0.remove(r4)
+            goto L27
+        L1b:
+            int r5 = r1.intValue()
+            int r5 = r5 - r2
+            java.lang.Integer r5 = java.lang.Integer.valueOf(r5)
+            r0.put(r4, r5)
+        L27:
+            return
+        L28:
+            java.lang.NullPointerException r0 = new java.lang.NullPointerException
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            r1.<init>()
+            java.lang.String r2 = "Tried to decrement empty size, size: "
+            r1.append(r2)
+            r1.append(r4)
+            java.lang.String r4 = ", removed: "
+            r1.append(r4)
+            java.lang.String r4 = r3.m10715e(r5)
+            r1.append(r4)
+            java.lang.String r4 = ", this: "
+            r1.append(r4)
+            r1.append(r3)
+            java.lang.String r4 = r1.toString()
+            r0.<init>(r4)
+            throw r0
+    }
+
+    /* renamed from: b */
+    public android.graphics.Bitmap m10713b(int r10, int r11, android.graphics.Bitmap.Config r12) {
+            r9 = this;
+            int r0 = p106g3.C2238j.m5843c(r10, r11, r12)
+            n2.l$c r1 = r9.f18642a
+            n2.k r1 = r1.m13170c()
+            n2.l$b r1 = (p229n2.C4682l.b) r1
+            r1.f18647b = r0
+            r1.f18648c = r12
+            int r2 = android.os.Build.VERSION.SDK_INT
+            r3 = 26
+            r4 = 0
+            if (r2 < r3) goto L22
+            android.graphics.Bitmap$Config r2 = android.graphics.Bitmap.Config.RGBA_F16
+            boolean r2 = r2.equals(r12)
+            if (r2 == 0) goto L22
+            android.graphics.Bitmap$Config[] r2 = p229n2.C4682l.f18638e
+            goto L46
+        L22:
+            int[] r2 = p229n2.C4682l.a.f18645a
+            int r3 = r12.ordinal()
+            r2 = r2[r3]
+            r3 = 1
+            if (r2 == r3) goto L44
+            r5 = 2
+            if (r2 == r5) goto L41
+            r5 = 3
+            if (r2 == r5) goto L3e
+            r5 = 4
+            if (r2 == r5) goto L3b
+            android.graphics.Bitmap$Config[] r2 = new android.graphics.Bitmap.Config[r3]
+            r2[r4] = r12
+            goto L46
+        L3b:
+            android.graphics.Bitmap$Config[] r2 = p229n2.C4682l.f18641h
+            goto L46
+        L3e:
+            android.graphics.Bitmap$Config[] r2 = p229n2.C4682l.f18640g
+            goto L46
+        L41:
+            android.graphics.Bitmap$Config[] r2 = p229n2.C4682l.f18639f
+            goto L46
+        L44:
+            android.graphics.Bitmap$Config[] r2 = p229n2.C4682l.f18637d
+        L46:
+            int r3 = r2.length
+        L47:
+            if (r4 >= r3) goto L87
+            r5 = r2[r4]
+            java.util.NavigableMap r6 = r9.m10714d(r5)
+            java.lang.Integer r7 = java.lang.Integer.valueOf(r0)
+            java.lang.Object r6 = r6.ceilingKey(r7)
+            java.lang.Integer r6 = (java.lang.Integer) r6
+            if (r6 == 0) goto L84
+            int r7 = r6.intValue()
+            int r8 = r0 * 8
+            if (r7 > r8) goto L84
+            int r2 = r6.intValue()
+            if (r2 != r0) goto L74
+            if (r5 != 0) goto L6e
+            if (r12 == 0) goto L87
+            goto L74
+        L6e:
+            boolean r0 = r5.equals(r12)
+            if (r0 != 0) goto L87
+        L74:
+            n2.l$c r0 = r9.f18642a
+            r0.m13173g(r1)
+            n2.l$c r0 = r9.f18642a
+            int r1 = r6.intValue()
+            n2.l$b r1 = r0.m10717m(r1, r5)
+            goto L87
+        L84:
+            int r4 = r4 + 1
+            goto L47
+        L87:
+            n2.f<n2.l$b, android.graphics.Bitmap> r0 = r9.f18643b
+            java.lang.Object r0 = r0.m10695a(r1)
+            android.graphics.Bitmap r0 = (android.graphics.Bitmap) r0
+            if (r0 == 0) goto L9d
+            int r1 = r1.f18647b
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)
+            r9.m10712a(r1, r0)
+            r0.reconfigure(r10, r11, r12)
+        L9d:
+            return r0
+    }
+
+    /* renamed from: d */
+    public final java.util.NavigableMap<java.lang.Integer, java.lang.Integer> m10714d(android.graphics.Bitmap.Config r3) {
+            r2 = this;
+            java.util.Map<android.graphics.Bitmap$Config, java.util.NavigableMap<java.lang.Integer, java.lang.Integer>> r0 = r2.f18644c
+            java.lang.Object r0 = r0.get(r3)
+            java.util.NavigableMap r0 = (java.util.NavigableMap) r0
+            if (r0 != 0) goto L14
+            java.util.TreeMap r0 = new java.util.TreeMap
+            r0.<init>()
+            java.util.Map<android.graphics.Bitmap$Config, java.util.NavigableMap<java.lang.Integer, java.lang.Integer>> r1 = r2.f18644c
+            r1.put(r3, r0)
+        L14:
+            return r0
+    }
+
+    /* renamed from: e */
+    public java.lang.String m10715e(android.graphics.Bitmap r2) {
+            r1 = this;
+            int r0 = p106g3.C2238j.m5844d(r2)
+            android.graphics.Bitmap$Config r2 = r2.getConfig()
+            java.lang.String r2 = m10711c(r0, r2)
+            return r2
+    }
+
+    /* renamed from: f */
+    public void m10716f(android.graphics.Bitmap r4) {
+            r3 = this;
+            int r0 = p106g3.C2238j.m5844d(r4)
+            n2.l$c r1 = r3.f18642a
+            android.graphics.Bitmap$Config r2 = r4.getConfig()
+            n2.l$b r0 = r1.m10717m(r0, r2)
+            n2.f<n2.l$b, android.graphics.Bitmap> r1 = r3.f18643b
+            r1.m10696b(r0, r4)
+            android.graphics.Bitmap$Config r4 = r4.getConfig()
+            java.util.NavigableMap r4 = r3.m10714d(r4)
+            int r1 = r0.f18647b
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)
+            java.lang.Object r1 = r4.get(r1)
+            java.lang.Integer r1 = (java.lang.Integer) r1
+            int r0 = r0.f18647b
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r0)
+            r2 = 1
+            if (r1 != 0) goto L31
+            goto L36
+        L31:
+            int r1 = r1.intValue()
+            int r2 = r2 + r1
+        L36:
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r2)
+            r4.put(r0, r1)
+            return
+    }
+
+    public java.lang.String toString() {
+            r4 = this;
+            java.lang.String r0 = "SizeConfigStrategy{groupedMap="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            n2.f<n2.l$b, android.graphics.Bitmap> r1 = r4.f18643b
+            r0.append(r1)
+            java.lang.String r1 = ", sortedSizes=("
+            r0.append(r1)
+            java.util.Map<android.graphics.Bitmap$Config, java.util.NavigableMap<java.lang.Integer, java.lang.Integer>> r1 = r4.f18644c
+            java.util.Set r1 = r1.entrySet()
+            java.util.Iterator r1 = r1.iterator()
+        L1a:
+            boolean r2 = r1.hasNext()
+            if (r2 == 0) goto L3f
+            java.lang.Object r2 = r1.next()
+            java.util.Map$Entry r2 = (java.util.Map.Entry) r2
+            java.lang.Object r3 = r2.getKey()
+            r0.append(r3)
+            r3 = 91
+            r0.append(r3)
+            java.lang.Object r2 = r2.getValue()
+            r0.append(r2)
+            java.lang.String r2 = "], "
+            r0.append(r2)
+            goto L1a
+        L3f:
+            java.util.Map<android.graphics.Bitmap$Config, java.util.NavigableMap<java.lang.Integer, java.lang.Integer>> r1 = r4.f18644c
+            boolean r1 = r1.isEmpty()
+            if (r1 != 0) goto L56
+            int r1 = r0.length()
+            int r1 = r1 + (-2)
+            int r2 = r0.length()
+            java.lang.String r3 = ""
+            r0.replace(r1, r2, r3)
+        L56:
+            java.lang.String r1 = ")}"
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            return r0
+    }
+}
+package p229n2;
+
+/* renamed from: n2.a */
+/* loaded from: classes.dex */
+public interface InterfaceC4671a<T> {
+    /* renamed from: a */
+    int mo10681a(T r1);
+
+    /* renamed from: b */
+    int mo10682b();
+
+    /* renamed from: m */
+    java.lang.String mo10683m();
+
+    T newArray(int r1);
+}
+package p229n2;
+
+/* renamed from: n2.b */
+/* loaded from: classes.dex */
+public interface InterfaceC4672b {
+    /* renamed from: a */
+    void mo10684a(int r1);
+
+    /* renamed from: b */
+    void mo10685b();
+
+    /* renamed from: c */
+    <T> T mo10686c(int r1, java.lang.Class<T> r2);
+
+    /* renamed from: d */
+    <T> void mo10687d(T r1);
+
+    /* renamed from: e */
+    <T> T mo10688e(int r1, java.lang.Class<T> r2);
+}
+package p229n2;
+
+/* renamed from: n2.c */
+/* loaded from: classes.dex */
+public interface InterfaceC4673c {
+    /* renamed from: a */
+    void mo10689a(int r1);
+
+    /* renamed from: b */
+    void mo10690b();
+
+    /* renamed from: c */
+    void mo10691c(float r1);
+
+    /* renamed from: d */
+    android.graphics.Bitmap mo10692d(int r1, int r2, android.graphics.Bitmap.Config r3);
+
+    /* renamed from: e */
+    android.graphics.Bitmap mo10693e(int r1, int r2, android.graphics.Bitmap.Config r3);
+
+    /* renamed from: f */
+    void mo10694f(android.graphics.Bitmap r1);
+}
+package p229n2;
+
+/* renamed from: n2.j */
+/* loaded from: classes.dex */
+public interface InterfaceC4680j {
+}
+package p229n2;
+
+/* renamed from: n2.k */
+/* loaded from: classes.dex */
+public interface InterfaceC4681k {
+    /* renamed from: a */
+    void mo10704a();
+}

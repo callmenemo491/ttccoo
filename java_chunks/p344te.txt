@@ -1,0 +1,2143 @@
+package p344te;
+
+/* renamed from: te.a */
+/* loaded from: classes.dex */
+public final class C6219a implements java.io.Serializable {
+    private final java.lang.String assetID;
+    private final double collectionFee;
+    private final java.lang.String collectionName;
+    private final java.lang.String imageURL;
+    private final java.lang.String name;
+    private final double suggestedMedianDouble;
+    private final java.lang.String template_id;
+    private final java.lang.String videoURL;
+
+    public C6219a(java.lang.String r2, java.lang.String r3, java.lang.String r4, double r5, double r7, java.lang.String r9, java.lang.String r10, java.lang.String r11) {
+            r1 = this;
+            java.lang.String r0 = "assetID"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "name"
+            p214m2.C4339q.m9706k(r3, r0)
+            java.lang.String r0 = "collectionName"
+            p214m2.C4339q.m9706k(r4, r0)
+            java.lang.String r0 = "template_id"
+            p214m2.C4339q.m9706k(r9, r0)
+            r1.<init>()
+            r1.assetID = r2
+            r1.name = r3
+            r1.collectionName = r4
+            r1.collectionFee = r5
+            r1.suggestedMedianDouble = r7
+            r1.template_id = r9
+            r1.imageURL = r10
+            r1.videoURL = r11
+            return
+    }
+
+    public static /* synthetic */ p344te.C6219a copy$default(p344te.C6219a r11, java.lang.String r12, java.lang.String r13, java.lang.String r14, double r15, double r17, java.lang.String r19, java.lang.String r20, java.lang.String r21, int r22, java.lang.Object r23) {
+            r0 = r11
+            r1 = r22
+            r2 = r1 & 1
+            if (r2 == 0) goto La
+            java.lang.String r2 = r0.assetID
+            goto Lb
+        La:
+            r2 = r12
+        Lb:
+            r3 = r1 & 2
+            if (r3 == 0) goto L12
+            java.lang.String r3 = r0.name
+            goto L13
+        L12:
+            r3 = r13
+        L13:
+            r4 = r1 & 4
+            if (r4 == 0) goto L1a
+            java.lang.String r4 = r0.collectionName
+            goto L1b
+        L1a:
+            r4 = r14
+        L1b:
+            r5 = r1 & 8
+            if (r5 == 0) goto L22
+            double r5 = r0.collectionFee
+            goto L23
+        L22:
+            r5 = r15
+        L23:
+            r7 = r1 & 16
+            if (r7 == 0) goto L2a
+            double r7 = r0.suggestedMedianDouble
+            goto L2c
+        L2a:
+            r7 = r17
+        L2c:
+            r9 = r1 & 32
+            if (r9 == 0) goto L33
+            java.lang.String r9 = r0.template_id
+            goto L35
+        L33:
+            r9 = r19
+        L35:
+            r10 = r1 & 64
+            if (r10 == 0) goto L3c
+            java.lang.String r10 = r0.imageURL
+            goto L3e
+        L3c:
+            r10 = r20
+        L3e:
+            r1 = r1 & 128(0x80, float:1.8E-43)
+            if (r1 == 0) goto L45
+            java.lang.String r1 = r0.videoURL
+            goto L47
+        L45:
+            r1 = r21
+        L47:
+            r12 = r2
+            r13 = r3
+            r14 = r4
+            r15 = r5
+            r17 = r7
+            r19 = r9
+            r20 = r10
+            r21 = r1
+            te.a r0 = r11.copy(r12, r13, r14, r15, r17, r19, r20, r21)
+            return r0
+    }
+
+    public final java.lang.String component1() {
+            r1 = this;
+            java.lang.String r0 = r1.assetID
+            return r0
+    }
+
+    public final java.lang.String component2() {
+            r1 = this;
+            java.lang.String r0 = r1.name
+            return r0
+    }
+
+    public final java.lang.String component3() {
+            r1 = this;
+            java.lang.String r0 = r1.collectionName
+            return r0
+    }
+
+    public final double component4() {
+            r2 = this;
+            double r0 = r2.collectionFee
+            return r0
+    }
+
+    public final double component5() {
+            r2 = this;
+            double r0 = r2.suggestedMedianDouble
+            return r0
+    }
+
+    public final java.lang.String component6() {
+            r1 = this;
+            java.lang.String r0 = r1.template_id
+            return r0
+    }
+
+    public final java.lang.String component7() {
+            r1 = this;
+            java.lang.String r0 = r1.imageURL
+            return r0
+    }
+
+    public final java.lang.String component8() {
+            r1 = this;
+            java.lang.String r0 = r1.videoURL
+            return r0
+    }
+
+    public final p344te.C6219a copy(java.lang.String r13, java.lang.String r14, java.lang.String r15, double r16, double r18, java.lang.String r20, java.lang.String r21, java.lang.String r22) {
+            r12 = this;
+            java.lang.String r0 = "assetID"
+            r2 = r13
+            p214m2.C4339q.m9706k(r13, r0)
+            java.lang.String r0 = "name"
+            r3 = r14
+            p214m2.C4339q.m9706k(r14, r0)
+            java.lang.String r0 = "collectionName"
+            r4 = r15
+            p214m2.C4339q.m9706k(r15, r0)
+            java.lang.String r0 = "template_id"
+            r9 = r20
+            p214m2.C4339q.m9706k(r9, r0)
+            te.a r0 = new te.a
+            r1 = r0
+            r5 = r16
+            r7 = r18
+            r10 = r21
+            r11 = r22
+            r1.<init>(r2, r3, r4, r5, r7, r9, r10, r11)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r6) {
+            r5 = this;
+            r0 = 1
+            if (r5 != r6) goto L4
+            return r0
+        L4:
+            boolean r1 = r6 instanceof p344te.C6219a
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            te.a r6 = (p344te.C6219a) r6
+            java.lang.String r1 = r5.assetID
+            java.lang.String r3 = r6.assetID
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L17
+            return r2
+        L17:
+            java.lang.String r1 = r5.name
+            java.lang.String r3 = r6.name
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L22
+            return r2
+        L22:
+            java.lang.String r1 = r5.collectionName
+            java.lang.String r3 = r6.collectionName
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L2d
+            return r2
+        L2d:
+            double r3 = r5.collectionFee
+            java.lang.Double r1 = java.lang.Double.valueOf(r3)
+            double r3 = r6.collectionFee
+            java.lang.Double r3 = java.lang.Double.valueOf(r3)
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L40
+            return r2
+        L40:
+            double r3 = r5.suggestedMedianDouble
+            java.lang.Double r1 = java.lang.Double.valueOf(r3)
+            double r3 = r6.suggestedMedianDouble
+            java.lang.Double r3 = java.lang.Double.valueOf(r3)
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L53
+            return r2
+        L53:
+            java.lang.String r1 = r5.template_id
+            java.lang.String r3 = r6.template_id
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L5e
+            return r2
+        L5e:
+            java.lang.String r1 = r5.imageURL
+            java.lang.String r3 = r6.imageURL
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L69
+            return r2
+        L69:
+            java.lang.String r1 = r5.videoURL
+            java.lang.String r6 = r6.videoURL
+            boolean r6 = p214m2.C4339q.m9702c(r1, r6)
+            if (r6 != 0) goto L74
+            return r2
+        L74:
+            return r0
+    }
+
+    public final java.lang.String getAssetID() {
+            r1 = this;
+            java.lang.String r0 = r1.assetID
+            return r0
+    }
+
+    public final double getCollectionFee() {
+            r2 = this;
+            double r0 = r2.collectionFee
+            return r0
+    }
+
+    public final java.lang.String getCollectionName() {
+            r1 = this;
+            java.lang.String r0 = r1.collectionName
+            return r0
+    }
+
+    public final java.lang.String getImageURL() {
+            r1 = this;
+            java.lang.String r0 = r1.imageURL
+            return r0
+    }
+
+    public final java.lang.String getName() {
+            r1 = this;
+            java.lang.String r0 = r1.name
+            return r0
+    }
+
+    public final double getSuggestedMedianDouble() {
+            r2 = this;
+            double r0 = r2.suggestedMedianDouble
+            return r0
+    }
+
+    public final java.lang.String getTemplate_id() {
+            r1 = this;
+            java.lang.String r0 = r1.template_id
+            return r0
+    }
+
+    public final java.lang.String getVideoURL() {
+            r1 = this;
+            java.lang.String r0 = r1.videoURL
+            return r0
+    }
+
+    public int hashCode() {
+            r6 = this;
+            java.lang.String r0 = r6.assetID
+            int r0 = r0.hashCode()
+            int r0 = r0 * 31
+            java.lang.String r1 = r6.name
+            r2 = 31
+            int r0 = p213m1.C4319e.m9651a(r1, r0, r2)
+            java.lang.String r1 = r6.collectionName
+            int r0 = p213m1.C4319e.m9651a(r1, r0, r2)
+            double r1 = r6.collectionFee
+            long r1 = java.lang.Double.doubleToLongBits(r1)
+            r3 = 32
+            long r4 = r1 >>> r3
+            long r1 = r1 ^ r4
+            int r2 = (int) r1
+            int r0 = r0 + r2
+            int r0 = r0 * 31
+            double r1 = r6.suggestedMedianDouble
+            long r1 = java.lang.Double.doubleToLongBits(r1)
+            long r3 = r1 >>> r3
+            long r1 = r1 ^ r3
+            int r2 = (int) r1
+            int r0 = r0 + r2
+            int r0 = r0 * 31
+            java.lang.String r1 = r6.template_id
+            r2 = 31
+            int r0 = p213m1.C4319e.m9651a(r1, r0, r2)
+            java.lang.String r1 = r6.imageURL
+            r2 = 0
+            if (r1 != 0) goto L41
+            r1 = 0
+            goto L45
+        L41:
+            int r1 = r1.hashCode()
+        L45:
+            int r0 = r0 + r1
+            int r0 = r0 * 31
+            java.lang.String r1 = r6.videoURL
+            if (r1 != 0) goto L4d
+            goto L51
+        L4d:
+            int r2 = r1.hashCode()
+        L51:
+            int r0 = r0 + r2
+            return r0
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "AssetListing(assetID="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r3.assetID
+            r0.append(r1)
+            java.lang.String r1 = ", name="
+            r0.append(r1)
+            java.lang.String r1 = r3.name
+            r0.append(r1)
+            java.lang.String r1 = ", collectionName="
+            r0.append(r1)
+            java.lang.String r1 = r3.collectionName
+            r0.append(r1)
+            java.lang.String r1 = ", collectionFee="
+            r0.append(r1)
+            double r1 = r3.collectionFee
+            r0.append(r1)
+            java.lang.String r1 = ", suggestedMedianDouble="
+            r0.append(r1)
+            double r1 = r3.suggestedMedianDouble
+            r0.append(r1)
+            java.lang.String r1 = ", template_id="
+            r0.append(r1)
+            java.lang.String r1 = r3.template_id
+            r0.append(r1)
+            java.lang.String r1 = ", imageURL="
+            r0.append(r1)
+            java.lang.String r1 = r3.imageURL
+            r0.append(r1)
+            java.lang.String r1 = ", videoURL="
+            r0.append(r1)
+            java.lang.String r1 = r3.videoURL
+            r2 = 41
+            java.lang.String r0 = p185k7.C3814g5.m8552a(r0, r1, r2)
+            return r0
+    }
+}
+package p344te;
+
+/* renamed from: te.b */
+/* loaded from: classes.dex */
+public final class C6220b implements java.io.Serializable {
+
+    @p189kb.InterfaceC4079b("suggested_median")
+    private final java.lang.String suggestedMedian;
+
+    public C6220b(java.lang.String r2) {
+            r1 = this;
+            java.lang.String r0 = "suggestedMedian"
+            p214m2.C4339q.m9706k(r2, r0)
+            r1.<init>()
+            r1.suggestedMedian = r2
+            return
+    }
+
+    public static /* synthetic */ p344te.C6220b copy$default(p344te.C6220b r0, java.lang.String r1, int r2, java.lang.Object r3) {
+            r2 = r2 & 1
+            if (r2 == 0) goto L6
+            java.lang.String r1 = r0.suggestedMedian
+        L6:
+            te.b r0 = r0.copy(r1)
+            return r0
+    }
+
+    public final java.lang.String component1() {
+            r1 = this;
+            java.lang.String r0 = r1.suggestedMedian
+            return r0
+    }
+
+    public final p344te.C6220b copy(java.lang.String r2) {
+            r1 = this;
+            java.lang.String r0 = "suggestedMedian"
+            p214m2.C4339q.m9706k(r2, r0)
+            te.b r0 = new te.b
+            r0.<init>(r2)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r4) {
+            r3 = this;
+            r0 = 1
+            if (r3 != r4) goto L4
+            return r0
+        L4:
+            boolean r1 = r4 instanceof p344te.C6220b
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            te.b r4 = (p344te.C6220b) r4
+            java.lang.String r1 = r3.suggestedMedian
+            java.lang.String r4 = r4.suggestedMedian
+            boolean r4 = p214m2.C4339q.m9702c(r1, r4)
+            if (r4 != 0) goto L17
+            return r2
+        L17:
+            return r0
+    }
+
+    public final java.lang.String getSuggestedMedian() {
+            r1 = this;
+            java.lang.String r0 = r1.suggestedMedian
+            return r0
+    }
+
+    public final double getSuggestedMedianDouble() {
+            r4 = this;
+            java.lang.String r0 = r4.suggestedMedian
+            java.lang.Double r0 = p362uh.C6462h.m13048E(r0)
+            if (r0 == 0) goto L12
+            double r0 = r0.doubleValue()
+            r2 = 100000000(0x5f5e100, float:2.3122341E-35)
+            double r2 = (double) r2
+            double r0 = r0 / r2
+            goto L14
+        L12:
+            r0 = 0
+        L14:
+            return r0
+    }
+
+    public int hashCode() {
+            r1 = this;
+            java.lang.String r0 = r1.suggestedMedian
+            int r0 = r0.hashCode()
+            return r0
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "AtomicPrice(suggestedMedian="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r3.suggestedMedian
+            r2 = 41
+            java.lang.String r0 = p185k7.C3814g5.m8552a(r0, r1, r2)
+            return r0
+    }
+}
+package p344te;
+
+/* renamed from: te.c */
+/* loaded from: classes.dex */
+public final class C6221c implements java.io.Serializable {
+
+    @p189kb.InterfaceC4079b("market_fee")
+    private final double collectionFee;
+
+    @p189kb.InterfaceC4079b("collection_name")
+    private final java.lang.String collectionName;
+    private final java.lang.String name;
+
+    public C6221c(java.lang.String r2, java.lang.String r3, double r4) {
+            r1 = this;
+            java.lang.String r0 = "collectionName"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "name"
+            p214m2.C4339q.m9706k(r3, r0)
+            r1.<init>()
+            r1.collectionName = r2
+            r1.name = r3
+            r1.collectionFee = r4
+            return
+    }
+
+    public static /* synthetic */ p344te.C6221c copy$default(p344te.C6221c r0, java.lang.String r1, java.lang.String r2, double r3, int r5, java.lang.Object r6) {
+            r6 = r5 & 1
+            if (r6 == 0) goto L6
+            java.lang.String r1 = r0.collectionName
+        L6:
+            r6 = r5 & 2
+            if (r6 == 0) goto Lc
+            java.lang.String r2 = r0.name
+        Lc:
+            r5 = r5 & 4
+            if (r5 == 0) goto L12
+            double r3 = r0.collectionFee
+        L12:
+            te.c r0 = r0.copy(r1, r2, r3)
+            return r0
+    }
+
+    public final java.lang.String component1() {
+            r1 = this;
+            java.lang.String r0 = r1.collectionName
+            return r0
+    }
+
+    public final java.lang.String component2() {
+            r1 = this;
+            java.lang.String r0 = r1.name
+            return r0
+    }
+
+    public final double component3() {
+            r2 = this;
+            double r0 = r2.collectionFee
+            return r0
+    }
+
+    public final p344te.C6221c copy(java.lang.String r2, java.lang.String r3, double r4) {
+            r1 = this;
+            java.lang.String r0 = "collectionName"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "name"
+            p214m2.C4339q.m9706k(r3, r0)
+            te.c r0 = new te.c
+            r0.<init>(r2, r3, r4)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r6) {
+            r5 = this;
+            r0 = 1
+            if (r5 != r6) goto L4
+            return r0
+        L4:
+            boolean r1 = r6 instanceof p344te.C6221c
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            te.c r6 = (p344te.C6221c) r6
+            java.lang.String r1 = r5.collectionName
+            java.lang.String r3 = r6.collectionName
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L17
+            return r2
+        L17:
+            java.lang.String r1 = r5.name
+            java.lang.String r3 = r6.name
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L22
+            return r2
+        L22:
+            double r3 = r5.collectionFee
+            java.lang.Double r1 = java.lang.Double.valueOf(r3)
+            double r3 = r6.collectionFee
+            java.lang.Double r6 = java.lang.Double.valueOf(r3)
+            boolean r6 = p214m2.C4339q.m9702c(r1, r6)
+            if (r6 != 0) goto L35
+            return r2
+        L35:
+            return r0
+    }
+
+    public final double getCollectionFee() {
+            r2 = this;
+            double r0 = r2.collectionFee
+            return r0
+    }
+
+    public final java.lang.String getCollectionName() {
+            r1 = this;
+            java.lang.String r0 = r1.collectionName
+            return r0
+    }
+
+    public final java.lang.String getName() {
+            r1 = this;
+            java.lang.String r0 = r1.name
+            return r0
+    }
+
+    public int hashCode() {
+            r5 = this;
+            java.lang.String r0 = r5.collectionName
+            int r0 = r0.hashCode()
+            int r0 = r0 * 31
+            java.lang.String r1 = r5.name
+            r2 = 31
+            int r0 = p213m1.C4319e.m9651a(r1, r0, r2)
+            double r1 = r5.collectionFee
+            long r1 = java.lang.Double.doubleToLongBits(r1)
+            r3 = 32
+            long r3 = r1 >>> r3
+            long r1 = r1 ^ r3
+            int r2 = (int) r1
+            int r0 = r0 + r2
+            return r0
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "Collection(collectionName="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r3.collectionName
+            r0.append(r1)
+            java.lang.String r1 = ", name="
+            r0.append(r1)
+            java.lang.String r1 = r3.name
+            r0.append(r1)
+            java.lang.String r1 = ", collectionFee="
+            r0.append(r1)
+            double r1 = r3.collectionFee
+            r0.append(r1)
+            r1 = 41
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            return r0
+    }
+}
+package p344te;
+
+/* renamed from: te.d */
+/* loaded from: classes.dex */
+public final class C6222d implements java.io.Serializable {
+    private final java.util.List<p344te.C6225g> assets;
+
+    @p189kb.InterfaceC4079b("offer_id")
+    private final java.lang.String offerID;
+    private final p344te.C6224f price;
+
+    @p189kb.InterfaceC4079b("sale_id")
+    private final java.lang.String saleID;
+
+    public C6222d(java.lang.String r2, java.lang.String r3, p344te.C6224f r4, java.util.List<p344te.C6225g> r5) {
+            r1 = this;
+            java.lang.String r0 = "saleID"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "offerID"
+            p214m2.C4339q.m9706k(r3, r0)
+            java.lang.String r0 = "price"
+            p214m2.C4339q.m9706k(r4, r0)
+            java.lang.String r0 = "assets"
+            p214m2.C4339q.m9706k(r5, r0)
+            r1.<init>()
+            r1.saleID = r2
+            r1.offerID = r3
+            r1.price = r4
+            r1.assets = r5
+            return
+    }
+
+    public static /* synthetic */ p344te.C6222d copy$default(p344te.C6222d r0, java.lang.String r1, java.lang.String r2, p344te.C6224f r3, java.util.List r4, int r5, java.lang.Object r6) {
+            r6 = r5 & 1
+            if (r6 == 0) goto L6
+            java.lang.String r1 = r0.saleID
+        L6:
+            r6 = r5 & 2
+            if (r6 == 0) goto Lc
+            java.lang.String r2 = r0.offerID
+        Lc:
+            r6 = r5 & 4
+            if (r6 == 0) goto L12
+            te.f r3 = r0.price
+        L12:
+            r5 = r5 & 8
+            if (r5 == 0) goto L18
+            java.util.List<te.g> r4 = r0.assets
+        L18:
+            te.d r0 = r0.copy(r1, r2, r3, r4)
+            return r0
+    }
+
+    public final java.lang.String component1() {
+            r1 = this;
+            java.lang.String r0 = r1.saleID
+            return r0
+    }
+
+    public final java.lang.String component2() {
+            r1 = this;
+            java.lang.String r0 = r1.offerID
+            return r0
+    }
+
+    public final p344te.C6224f component3() {
+            r1 = this;
+            te.f r0 = r1.price
+            return r0
+    }
+
+    public final java.util.List<p344te.C6225g> component4() {
+            r1 = this;
+            java.util.List<te.g> r0 = r1.assets
+            return r0
+    }
+
+    public final p344te.C6222d copy(java.lang.String r2, java.lang.String r3, p344te.C6224f r4, java.util.List<p344te.C6225g> r5) {
+            r1 = this;
+            java.lang.String r0 = "saleID"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "offerID"
+            p214m2.C4339q.m9706k(r3, r0)
+            java.lang.String r0 = "price"
+            p214m2.C4339q.m9706k(r4, r0)
+            java.lang.String r0 = "assets"
+            p214m2.C4339q.m9706k(r5, r0)
+            te.d r0 = new te.d
+            r0.<init>(r2, r3, r4, r5)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            boolean r1 = r5 instanceof p344te.C6222d
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            te.d r5 = (p344te.C6222d) r5
+            java.lang.String r1 = r4.saleID
+            java.lang.String r3 = r5.saleID
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L17
+            return r2
+        L17:
+            java.lang.String r1 = r4.offerID
+            java.lang.String r3 = r5.offerID
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L22
+            return r2
+        L22:
+            te.f r1 = r4.price
+            te.f r3 = r5.price
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L2d
+            return r2
+        L2d:
+            java.util.List<te.g> r1 = r4.assets
+            java.util.List<te.g> r5 = r5.assets
+            boolean r5 = p214m2.C4339q.m9702c(r1, r5)
+            if (r5 != 0) goto L38
+            return r2
+        L38:
+            return r0
+    }
+
+    public final java.util.List<p344te.C6225g> getAssets() {
+            r1 = this;
+            java.util.List<te.g> r0 = r1.assets
+            return r0
+    }
+
+    public final java.lang.String getOfferID() {
+            r1 = this;
+            java.lang.String r0 = r1.offerID
+            return r0
+    }
+
+    public final p344te.C6224f getPrice() {
+            r1 = this;
+            te.f r0 = r1.price
+            return r0
+    }
+
+    public final java.lang.String getSaleID() {
+            r1 = this;
+            java.lang.String r0 = r1.saleID
+            return r0
+    }
+
+    public int hashCode() {
+            r3 = this;
+            java.lang.String r0 = r3.saleID
+            int r0 = r0.hashCode()
+            int r0 = r0 * 31
+            java.lang.String r1 = r3.offerID
+            r2 = 31
+            int r0 = p213m1.C4319e.m9651a(r1, r0, r2)
+            te.f r1 = r3.price
+            int r1 = r1.hashCode()
+            int r1 = r1 + r0
+            int r1 = r1 * 31
+            java.util.List<te.g> r0 = r3.assets
+            int r0 = r0.hashCode()
+            int r0 = r0 + r1
+            return r0
+    }
+
+    public final p344te.C6223e toMListingModel() {
+            r20 = this;
+            r0 = r20
+            java.lang.String r2 = r0.saleID
+            java.lang.String r3 = r0.offerID
+            te.f r4 = r0.price
+            java.util.List<te.g> r1 = r0.assets
+            java.util.ArrayList r5 = new java.util.ArrayList
+            r5.<init>()
+            java.util.Iterator r1 = r1.iterator()
+        L13:
+            boolean r6 = r1.hasNext()
+            if (r6 == 0) goto L95
+            java.lang.Object r6 = r1.next()
+            te.g r6 = (p344te.C6225g) r6
+            xf.t r7 = r6.getTemplate()
+            if (r7 == 0) goto L8a
+            xf.p r7 = r7.toNFTDetailUI()
+            if (r7 != 0) goto L2c
+            goto L8a
+        L2c:
+            te.a r19 = new te.a
+            java.lang.String r9 = r6.getAssetID()
+            te.g$a r8 = r6.getData()
+            if (r8 == 0) goto L3e
+            java.lang.String r8 = r8.getName()
+            if (r8 != 0) goto L46
+        L3e:
+            java.lang.String r8 = r7.getName()
+            if (r8 != 0) goto L46
+            java.lang.String r8 = "no name"
+        L46:
+            r10 = r8
+            te.c r8 = r6.getCollection()
+            java.lang.String r11 = r8.getCollectionName()
+            te.c r8 = r6.getCollection()
+            double r12 = r8.getCollectionFee()
+            java.util.List r8 = r6.getPrices()
+            java.lang.Object r8 = p062dh.C1473i.m3996H(r8)
+            te.b r8 = (p344te.C6220b) r8
+            if (r8 == 0) goto L68
+            double r14 = r8.getSuggestedMedianDouble()
+            goto L6a
+        L68:
+            r14 = 0
+        L6a:
+            java.lang.String r16 = r7.getTemplate_id()
+            te.g$a r6 = r6.getData()
+            if (r6 == 0) goto L7a
+            java.lang.String r6 = r6.getImageURL()
+            if (r6 != 0) goto L7e
+        L7a:
+            java.lang.String r6 = r7.getImageURL()
+        L7e:
+            r17 = r6
+            java.lang.String r18 = r7.getVideoURL()
+            r8 = r19
+            r8.<init>(r9, r10, r11, r12, r14, r16, r17, r18)
+            goto L8c
+        L8a:
+            r19 = 0
+        L8c:
+            r6 = r19
+            if (r6 == 0) goto L13
+            r5.add(r6)
+            goto L13
+        L95:
+            r6 = 0
+            te.e r7 = new te.e
+            r1 = r7
+            r1.<init>(r2, r3, r4, r5, r6)
+            return r7
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "DataAsset(saleID="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r3.saleID
+            r0.append(r1)
+            java.lang.String r1 = ", offerID="
+            r0.append(r1)
+            java.lang.String r1 = r3.offerID
+            r0.append(r1)
+            java.lang.String r1 = ", price="
+            r0.append(r1)
+            te.f r1 = r3.price
+            r0.append(r1)
+            java.lang.String r1 = ", assets="
+            r0.append(r1)
+            java.util.List<te.g> r1 = r3.assets
+            r2 = 41
+            java.lang.String r0 = p213m1.C4320f.m9652a(r0, r1, r2)
+            return r0
+    }
+}
+package p344te;
+
+/* renamed from: te.e */
+/* loaded from: classes.dex */
+public final class C6223e implements java.io.Serializable {
+    private final java.util.List<p344te.C6219a> assets;
+    private final java.lang.String offerID;
+    private final p344te.C6224f price;
+    private final java.lang.String saleID;
+    private java.lang.String valueDollarString;
+
+    public C6223e(java.lang.String r2, java.lang.String r3, p344te.C6224f r4, java.util.List<p344te.C6219a> r5, java.lang.String r6) {
+            r1 = this;
+            java.lang.String r0 = "saleID"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "offerID"
+            p214m2.C4339q.m9706k(r3, r0)
+            java.lang.String r0 = "price"
+            p214m2.C4339q.m9706k(r4, r0)
+            java.lang.String r0 = "assets"
+            p214m2.C4339q.m9706k(r5, r0)
+            r1.<init>()
+            r1.saleID = r2
+            r1.offerID = r3
+            r1.price = r4
+            r1.assets = r5
+            r1.valueDollarString = r6
+            return
+    }
+
+    public static /* synthetic */ p344te.C6223e copy$default(p344te.C6223e r3, java.lang.String r4, java.lang.String r5, p344te.C6224f r6, java.util.List r7, java.lang.String r8, int r9, java.lang.Object r10) {
+            r10 = r9 & 1
+            if (r10 == 0) goto L6
+            java.lang.String r4 = r3.saleID
+        L6:
+            r10 = r9 & 2
+            if (r10 == 0) goto Lc
+            java.lang.String r5 = r3.offerID
+        Lc:
+            r10 = r5
+            r5 = r9 & 4
+            if (r5 == 0) goto L13
+            te.f r6 = r3.price
+        L13:
+            r0 = r6
+            r5 = r9 & 8
+            if (r5 == 0) goto L1a
+            java.util.List<te.a> r7 = r3.assets
+        L1a:
+            r1 = r7
+            r5 = r9 & 16
+            if (r5 == 0) goto L21
+            java.lang.String r8 = r3.valueDollarString
+        L21:
+            r2 = r8
+            r5 = r3
+            r6 = r4
+            r7 = r10
+            r8 = r0
+            r9 = r1
+            r10 = r2
+            te.e r3 = r5.copy(r6, r7, r8, r9, r10)
+            return r3
+    }
+
+    public final java.lang.String component1() {
+            r1 = this;
+            java.lang.String r0 = r1.saleID
+            return r0
+    }
+
+    public final java.lang.String component2() {
+            r1 = this;
+            java.lang.String r0 = r1.offerID
+            return r0
+    }
+
+    public final p344te.C6224f component3() {
+            r1 = this;
+            te.f r0 = r1.price
+            return r0
+    }
+
+    public final java.util.List<p344te.C6219a> component4() {
+            r1 = this;
+            java.util.List<te.a> r0 = r1.assets
+            return r0
+    }
+
+    public final java.lang.String component5() {
+            r1 = this;
+            java.lang.String r0 = r1.valueDollarString
+            return r0
+    }
+
+    public final p344te.C6223e copy(java.lang.String r8, java.lang.String r9, p344te.C6224f r10, java.util.List<p344te.C6219a> r11, java.lang.String r12) {
+            r7 = this;
+            java.lang.String r0 = "saleID"
+            p214m2.C4339q.m9706k(r8, r0)
+            java.lang.String r0 = "offerID"
+            p214m2.C4339q.m9706k(r9, r0)
+            java.lang.String r0 = "price"
+            p214m2.C4339q.m9706k(r10, r0)
+            java.lang.String r0 = "assets"
+            p214m2.C4339q.m9706k(r11, r0)
+            te.e r0 = new te.e
+            r1 = r0
+            r2 = r8
+            r3 = r9
+            r4 = r10
+            r5 = r11
+            r6 = r12
+            r1.<init>(r2, r3, r4, r5, r6)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            boolean r1 = r5 instanceof p344te.C6223e
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            te.e r5 = (p344te.C6223e) r5
+            java.lang.String r1 = r4.saleID
+            java.lang.String r3 = r5.saleID
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L17
+            return r2
+        L17:
+            java.lang.String r1 = r4.offerID
+            java.lang.String r3 = r5.offerID
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L22
+            return r2
+        L22:
+            te.f r1 = r4.price
+            te.f r3 = r5.price
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L2d
+            return r2
+        L2d:
+            java.util.List<te.a> r1 = r4.assets
+            java.util.List<te.a> r3 = r5.assets
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L38
+            return r2
+        L38:
+            java.lang.String r1 = r4.valueDollarString
+            java.lang.String r5 = r5.valueDollarString
+            boolean r5 = p214m2.C4339q.m9702c(r1, r5)
+            if (r5 != 0) goto L43
+            return r2
+        L43:
+            return r0
+    }
+
+    public final java.util.List<p344te.C6219a> getAssets() {
+            r1 = this;
+            java.util.List<te.a> r0 = r1.assets
+            return r0
+    }
+
+    public final java.lang.String getListingName() {
+            r2 = this;
+            java.util.List<te.a> r0 = r2.assets
+            int r0 = r0.size()
+            r1 = 1
+            if (r0 != r1) goto L16
+            java.util.List<te.a> r0 = r2.assets
+            java.lang.Object r0 = p062dh.C1473i.m3995G(r0)
+            te.a r0 = (p344te.C6219a) r0
+            java.lang.String r0 = r0.getName()
+            goto L2d
+        L16:
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            r0.<init>()
+            java.util.List<te.a> r1 = r2.assets
+            int r1 = r1.size()
+            r0.append(r1)
+            java.lang.String r1 = " NFT Bundle"
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+        L2d:
+            return r0
+    }
+
+    public final java.lang.String getOfferID() {
+            r1 = this;
+            java.lang.String r0 = r1.offerID
+            return r0
+    }
+
+    public final p344te.C6224f getPrice() {
+            r1 = this;
+            te.f r0 = r1.price
+            return r0
+    }
+
+    public final java.lang.String getSaleID() {
+            r1 = this;
+            java.lang.String r0 = r1.saleID
+            return r0
+    }
+
+    public final java.lang.String getValueDollarString() {
+            r1 = this;
+            java.lang.String r0 = r1.valueDollarString
+            return r0
+    }
+
+    public int hashCode() {
+            r3 = this;
+            java.lang.String r0 = r3.saleID
+            int r0 = r0.hashCode()
+            int r0 = r0 * 31
+            java.lang.String r1 = r3.offerID
+            r2 = 31
+            int r0 = p213m1.C4319e.m9651a(r1, r0, r2)
+            te.f r1 = r3.price
+            int r1 = r1.hashCode()
+            int r1 = r1 + r0
+            int r1 = r1 * 31
+            java.util.List<te.a> r0 = r3.assets
+            int r0 = p255od.C5212k0.m11509a(r0, r1, r2)
+            java.lang.String r1 = r3.valueDollarString
+            if (r1 != 0) goto L25
+            r1 = 0
+            goto L29
+        L25:
+            int r1 = r1.hashCode()
+        L29:
+            int r0 = r0 + r1
+            return r0
+    }
+
+    public final void setValueDollarString(java.lang.String r1) {
+            r0 = this;
+            r0.valueDollarString = r1
+            return
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "MListingModel(saleID="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r3.saleID
+            r0.append(r1)
+            java.lang.String r1 = ", offerID="
+            r0.append(r1)
+            java.lang.String r1 = r3.offerID
+            r0.append(r1)
+            java.lang.String r1 = ", price="
+            r0.append(r1)
+            te.f r1 = r3.price
+            r0.append(r1)
+            java.lang.String r1 = ", assets="
+            r0.append(r1)
+            java.util.List<te.a> r1 = r3.assets
+            r0.append(r1)
+            java.lang.String r1 = ", valueDollarString="
+            r0.append(r1)
+            java.lang.String r1 = r3.valueDollarString
+            r2 = 41
+            java.lang.String r0 = p185k7.C3814g5.m8552a(r0, r1, r2)
+            return r0
+    }
+}
+package p344te;
+
+/* renamed from: te.f */
+/* loaded from: classes.dex */
+public final class C6224f implements java.io.Serializable {
+    private final java.lang.String amount;
+
+    @p189kb.InterfaceC4079b("token_contract")
+    private final java.lang.String tokenContract;
+
+    @p189kb.InterfaceC4079b("token_precision")
+    private final int tokenPrecision;
+
+    @p189kb.InterfaceC4079b("token_symbol")
+    private final java.lang.String tokenSymbol;
+
+    public C6224f(java.lang.String r2, int r3, java.lang.String r4, java.lang.String r5) {
+            r1 = this;
+            java.lang.String r0 = "amount"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "tokenContract"
+            p214m2.C4339q.m9706k(r4, r0)
+            java.lang.String r0 = "tokenSymbol"
+            p214m2.C4339q.m9706k(r5, r0)
+            r1.<init>()
+            r1.amount = r2
+            r1.tokenPrecision = r3
+            r1.tokenContract = r4
+            r1.tokenSymbol = r5
+            return
+    }
+
+    public static /* synthetic */ p344te.C6224f copy$default(p344te.C6224f r0, java.lang.String r1, int r2, java.lang.String r3, java.lang.String r4, int r5, java.lang.Object r6) {
+            r6 = r5 & 1
+            if (r6 == 0) goto L6
+            java.lang.String r1 = r0.amount
+        L6:
+            r6 = r5 & 2
+            if (r6 == 0) goto Lc
+            int r2 = r0.tokenPrecision
+        Lc:
+            r6 = r5 & 4
+            if (r6 == 0) goto L12
+            java.lang.String r3 = r0.tokenContract
+        L12:
+            r5 = r5 & 8
+            if (r5 == 0) goto L18
+            java.lang.String r4 = r0.tokenSymbol
+        L18:
+            te.f r0 = r0.copy(r1, r2, r3, r4)
+            return r0
+    }
+
+    public final java.lang.String component1() {
+            r1 = this;
+            java.lang.String r0 = r1.amount
+            return r0
+    }
+
+    public final int component2() {
+            r1 = this;
+            int r0 = r1.tokenPrecision
+            return r0
+    }
+
+    public final java.lang.String component3() {
+            r1 = this;
+            java.lang.String r0 = r1.tokenContract
+            return r0
+    }
+
+    public final java.lang.String component4() {
+            r1 = this;
+            java.lang.String r0 = r1.tokenSymbol
+            return r0
+    }
+
+    public final p344te.C6224f copy(java.lang.String r2, int r3, java.lang.String r4, java.lang.String r5) {
+            r1 = this;
+            java.lang.String r0 = "amount"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "tokenContract"
+            p214m2.C4339q.m9706k(r4, r0)
+            java.lang.String r0 = "tokenSymbol"
+            p214m2.C4339q.m9706k(r5, r0)
+            te.f r0 = new te.f
+            r0.<init>(r2, r3, r4, r5)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            boolean r1 = r5 instanceof p344te.C6224f
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            te.f r5 = (p344te.C6224f) r5
+            java.lang.String r1 = r4.amount
+            java.lang.String r3 = r5.amount
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L17
+            return r2
+        L17:
+            int r1 = r4.tokenPrecision
+            int r3 = r5.tokenPrecision
+            if (r1 == r3) goto L1e
+            return r2
+        L1e:
+            java.lang.String r1 = r4.tokenContract
+            java.lang.String r3 = r5.tokenContract
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L29
+            return r2
+        L29:
+            java.lang.String r1 = r4.tokenSymbol
+            java.lang.String r5 = r5.tokenSymbol
+            boolean r5 = p214m2.C4339q.m9702c(r1, r5)
+            if (r5 != 0) goto L34
+            return r2
+        L34:
+            return r0
+    }
+
+    public final java.lang.String getAmount() {
+            r1 = this;
+            java.lang.String r0 = r1.amount
+            return r0
+    }
+
+    public final double getAmountDouble() {
+            r4 = this;
+            java.lang.String r0 = r4.amount
+            java.lang.Double r0 = p362uh.C6462h.m13048E(r0)
+            if (r0 == 0) goto L12
+            double r0 = r0.doubleValue()
+            r2 = 100000000(0x5f5e100, float:2.3122341E-35)
+            double r2 = (double) r2
+            double r0 = r0 / r2
+            goto L14
+        L12:
+            r0 = 0
+        L14:
+            return r0
+    }
+
+    public final java.lang.String getAmountString() {
+            r4 = this;
+            java.lang.String r0 = r4.amount
+            java.lang.Double r0 = p362uh.C6462h.m13048E(r0)
+            if (r0 == 0) goto L18
+            double r0 = r0.doubleValue()
+            r2 = 100000000(0x5f5e100, float:2.3122341E-35)
+            double r2 = (double) r2
+            double r0 = r0 / r2
+            r2 = 0
+            r3 = 2
+            java.lang.String r0 = vg.C6672m.m13535v(r0, r3, r2, r3)
+            goto L1a
+        L18:
+            java.lang.String r0 = "---"
+        L1a:
+            return r0
+    }
+
+    public final java.lang.String getTokenContract() {
+            r1 = this;
+            java.lang.String r0 = r1.tokenContract
+            return r0
+    }
+
+    public final int getTokenPrecision() {
+            r1 = this;
+            int r0 = r1.tokenPrecision
+            return r0
+    }
+
+    public final java.lang.String getTokenSymbol() {
+            r1 = this;
+            java.lang.String r0 = r1.tokenSymbol
+            return r0
+    }
+
+    public int hashCode() {
+            r3 = this;
+            java.lang.String r0 = r3.amount
+            int r0 = r0.hashCode()
+            int r0 = r0 * 31
+            int r1 = r3.tokenPrecision
+            int r0 = r0 + r1
+            int r0 = r0 * 31
+            java.lang.String r1 = r3.tokenContract
+            r2 = 31
+            int r0 = p213m1.C4319e.m9651a(r1, r0, r2)
+            java.lang.String r1 = r3.tokenSymbol
+            int r1 = r1.hashCode()
+            int r1 = r1 + r0
+            return r1
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "Price(amount="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r3.amount
+            r0.append(r1)
+            java.lang.String r1 = ", tokenPrecision="
+            r0.append(r1)
+            int r1 = r3.tokenPrecision
+            r0.append(r1)
+            java.lang.String r1 = ", tokenContract="
+            r0.append(r1)
+            java.lang.String r1 = r3.tokenContract
+            r0.append(r1)
+            java.lang.String r1 = ", tokenSymbol="
+            r0.append(r1)
+            java.lang.String r1 = r3.tokenSymbol
+            r2 = 41
+            java.lang.String r0 = p185k7.C3814g5.m8552a(r0, r1, r2)
+            return r0
+    }
+}
+package p344te;
+
+/* renamed from: te.g */
+/* loaded from: classes.dex */
+public final class C6225g implements java.io.Serializable {
+
+    @p189kb.InterfaceC4079b("asset_id")
+    private final java.lang.String assetID;
+    private final p344te.C6221c collection;
+    private final p344te.C6225g.a data;
+
+    @p189kb.InterfaceC4079b("is_transferable")
+    private final boolean isTransferable;
+    private final java.util.List<p344te.C6220b> prices;
+    private final p417xf.C7066t template;
+
+    /* renamed from: te.g$a */
+    public static final class a {
+        private final java.lang.String img;
+        private final java.lang.String name;
+
+        public a(java.lang.String r1, java.lang.String r2) {
+                r0 = this;
+                r0.<init>()
+                r0.name = r1
+                r0.img = r2
+                return
+        }
+
+        private final java.lang.String component2() {
+                r1 = this;
+                java.lang.String r0 = r1.img
+                return r0
+        }
+
+        public static /* synthetic */ p344te.C6225g.a copy$default(p344te.C6225g.a r0, java.lang.String r1, java.lang.String r2, int r3, java.lang.Object r4) {
+                r4 = r3 & 1
+                if (r4 == 0) goto L6
+                java.lang.String r1 = r0.name
+            L6:
+                r3 = r3 & 2
+                if (r3 == 0) goto Lc
+                java.lang.String r2 = r0.img
+            Lc:
+                te.g$a r0 = r0.copy(r1, r2)
+                return r0
+        }
+
+        public final java.lang.String component1() {
+                r1 = this;
+                java.lang.String r0 = r1.name
+                return r0
+        }
+
+        public final p344te.C6225g.a copy(java.lang.String r2, java.lang.String r3) {
+                r1 = this;
+                te.g$a r0 = new te.g$a
+                r0.<init>(r2, r3)
+                return r0
+        }
+
+        public boolean equals(java.lang.Object r5) {
+                r4 = this;
+                r0 = 1
+                if (r4 != r5) goto L4
+                return r0
+            L4:
+                boolean r1 = r5 instanceof p344te.C6225g.a
+                r2 = 0
+                if (r1 != 0) goto La
+                return r2
+            La:
+                te.g$a r5 = (p344te.C6225g.a) r5
+                java.lang.String r1 = r4.name
+                java.lang.String r3 = r5.name
+                boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+                if (r1 != 0) goto L17
+                return r2
+            L17:
+                java.lang.String r1 = r4.img
+                java.lang.String r5 = r5.img
+                boolean r5 = p214m2.C4339q.m9702c(r1, r5)
+                if (r5 != 0) goto L22
+                return r2
+            L22:
+                return r0
+        }
+
+        public final java.lang.String getImageURL() {
+                r4 = this;
+                java.lang.String r0 = r4.img
+                if (r0 != 0) goto L6
+                r0 = 0
+                return r0
+            L6:
+                r1 = 2
+                java.lang.String r2 = "http"
+                r3 = 0
+                boolean r0 = p362uh.C6463i.m13061R(r0, r2, r3, r1)
+                if (r0 == 0) goto L13
+                java.lang.String r0 = r4.img
+                return r0
+            L13:
+                java.lang.String r0 = r4.img
+                if (r0 == 0) goto L1d
+                boolean r0 = p362uh.C6463i.m13054K(r0)
+                if (r0 == 0) goto L1e
+            L1d:
+                r3 = 1
+            L1e:
+                if (r3 == 0) goto L23
+                java.lang.String r0 = ""
+                goto L32
+            L23:
+                java.lang.String r0 = "https://cdn.tacocrypto.io/default/resize:fit:400:400:0/plain/"
+                java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+                java.lang.String r1 = r4.img
+                r0.append(r1)
+                java.lang.String r0 = r0.toString()
+            L32:
+                return r0
+        }
+
+        public final java.lang.String getName() {
+                r1 = this;
+                java.lang.String r0 = r1.name
+                return r0
+        }
+
+        public int hashCode() {
+                r3 = this;
+                java.lang.String r0 = r3.name
+                r1 = 0
+                if (r0 != 0) goto L7
+                r0 = 0
+                goto Lb
+            L7:
+                int r0 = r0.hashCode()
+            Lb:
+                int r0 = r0 * 31
+                java.lang.String r2 = r3.img
+                if (r2 != 0) goto L12
+                goto L16
+            L12:
+                int r1 = r2.hashCode()
+            L16:
+                int r0 = r0 + r1
+                return r0
+        }
+
+        public java.lang.String toString() {
+                r3 = this;
+                java.lang.String r0 = "Data(name="
+                java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+                java.lang.String r1 = r3.name
+                r0.append(r1)
+                java.lang.String r1 = ", img="
+                r0.append(r1)
+                java.lang.String r1 = r3.img
+                r2 = 41
+                java.lang.String r0 = p185k7.C3814g5.m8552a(r0, r1, r2)
+                return r0
+        }
+    }
+
+    public C6225g(java.lang.String r2, p344te.C6225g.a r3, boolean r4, p344te.C6221c r5, p417xf.C7066t r6, java.util.List<p344te.C6220b> r7) {
+            r1 = this;
+            java.lang.String r0 = "assetID"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "collection"
+            p214m2.C4339q.m9706k(r5, r0)
+            java.lang.String r0 = "prices"
+            p214m2.C4339q.m9706k(r7, r0)
+            r1.<init>()
+            r1.assetID = r2
+            r1.data = r3
+            r1.isTransferable = r4
+            r1.collection = r5
+            r1.template = r6
+            r1.prices = r7
+            return
+    }
+
+    public static /* synthetic */ p344te.C6225g copy$default(p344te.C6225g r4, java.lang.String r5, p344te.C6225g.a r6, boolean r7, p344te.C6221c r8, p417xf.C7066t r9, java.util.List r10, int r11, java.lang.Object r12) {
+            r12 = r11 & 1
+            if (r12 == 0) goto L6
+            java.lang.String r5 = r4.assetID
+        L6:
+            r12 = r11 & 2
+            if (r12 == 0) goto Lc
+            te.g$a r6 = r4.data
+        Lc:
+            r12 = r6
+            r6 = r11 & 4
+            if (r6 == 0) goto L13
+            boolean r7 = r4.isTransferable
+        L13:
+            r0 = r7
+            r6 = r11 & 8
+            if (r6 == 0) goto L1a
+            te.c r8 = r4.collection
+        L1a:
+            r1 = r8
+            r6 = r11 & 16
+            if (r6 == 0) goto L21
+            xf.t r9 = r4.template
+        L21:
+            r2 = r9
+            r6 = r11 & 32
+            if (r6 == 0) goto L28
+            java.util.List<te.b> r10 = r4.prices
+        L28:
+            r3 = r10
+            r6 = r4
+            r7 = r5
+            r8 = r12
+            r9 = r0
+            r10 = r1
+            r11 = r2
+            r12 = r3
+            te.g r4 = r6.copy(r7, r8, r9, r10, r11, r12)
+            return r4
+    }
+
+    public final java.lang.String component1() {
+            r1 = this;
+            java.lang.String r0 = r1.assetID
+            return r0
+    }
+
+    public final p344te.C6225g.a component2() {
+            r1 = this;
+            te.g$a r0 = r1.data
+            return r0
+    }
+
+    public final boolean component3() {
+            r1 = this;
+            boolean r0 = r1.isTransferable
+            return r0
+    }
+
+    public final p344te.C6221c component4() {
+            r1 = this;
+            te.c r0 = r1.collection
+            return r0
+    }
+
+    public final p417xf.C7066t component5() {
+            r1 = this;
+            xf.t r0 = r1.template
+            return r0
+    }
+
+    public final java.util.List<p344te.C6220b> component6() {
+            r1 = this;
+            java.util.List<te.b> r0 = r1.prices
+            return r0
+    }
+
+    public final p344te.C6225g copy(java.lang.String r9, p344te.C6225g.a r10, boolean r11, p344te.C6221c r12, p417xf.C7066t r13, java.util.List<p344te.C6220b> r14) {
+            r8 = this;
+            java.lang.String r0 = "assetID"
+            p214m2.C4339q.m9706k(r9, r0)
+            java.lang.String r0 = "collection"
+            p214m2.C4339q.m9706k(r12, r0)
+            java.lang.String r0 = "prices"
+            p214m2.C4339q.m9706k(r14, r0)
+            te.g r0 = new te.g
+            r1 = r0
+            r2 = r9
+            r3 = r10
+            r4 = r11
+            r5 = r12
+            r6 = r13
+            r7 = r14
+            r1.<init>(r2, r3, r4, r5, r6, r7)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            boolean r1 = r5 instanceof p344te.C6225g
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            te.g r5 = (p344te.C6225g) r5
+            java.lang.String r1 = r4.assetID
+            java.lang.String r3 = r5.assetID
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L17
+            return r2
+        L17:
+            te.g$a r1 = r4.data
+            te.g$a r3 = r5.data
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L22
+            return r2
+        L22:
+            boolean r1 = r4.isTransferable
+            boolean r3 = r5.isTransferable
+            if (r1 == r3) goto L29
+            return r2
+        L29:
+            te.c r1 = r4.collection
+            te.c r3 = r5.collection
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L34
+            return r2
+        L34:
+            xf.t r1 = r4.template
+            xf.t r3 = r5.template
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L3f
+            return r2
+        L3f:
+            java.util.List<te.b> r1 = r4.prices
+            java.util.List<te.b> r5 = r5.prices
+            boolean r5 = p214m2.C4339q.m9702c(r1, r5)
+            if (r5 != 0) goto L4a
+            return r2
+        L4a:
+            return r0
+    }
+
+    public final java.lang.String getAssetID() {
+            r1 = this;
+            java.lang.String r0 = r1.assetID
+            return r0
+    }
+
+    public final p344te.C6221c getCollection() {
+            r1 = this;
+            te.c r0 = r1.collection
+            return r0
+    }
+
+    public final p344te.C6225g.a getData() {
+            r1 = this;
+            te.g$a r0 = r1.data
+            return r0
+    }
+
+    public final java.util.List<p344te.C6220b> getPrices() {
+            r1 = this;
+            java.util.List<te.b> r0 = r1.prices
+            return r0
+    }
+
+    public final p417xf.C7066t getTemplate() {
+            r1 = this;
+            xf.t r0 = r1.template
+            return r0
+    }
+
+    public int hashCode() {
+            r3 = this;
+            java.lang.String r0 = r3.assetID
+            int r0 = r0.hashCode()
+            int r0 = r0 * 31
+            te.g$a r1 = r3.data
+            r2 = 0
+            if (r1 != 0) goto Lf
+            r1 = 0
+            goto L13
+        Lf:
+            int r1 = r1.hashCode()
+        L13:
+            int r0 = r0 + r1
+            int r0 = r0 * 31
+            boolean r1 = r3.isTransferable
+            if (r1 == 0) goto L1b
+            r1 = 1
+        L1b:
+            int r0 = r0 + r1
+            int r0 = r0 * 31
+            te.c r1 = r3.collection
+            int r1 = r1.hashCode()
+            int r1 = r1 + r0
+            int r1 = r1 * 31
+            xf.t r0 = r3.template
+            if (r0 != 0) goto L2c
+            goto L30
+        L2c:
+            int r2 = r0.hashCode()
+        L30:
+            int r1 = r1 + r2
+            int r1 = r1 * 31
+            java.util.List<te.b> r0 = r3.prices
+            int r0 = r0.hashCode()
+            int r0 = r0 + r1
+            return r0
+    }
+
+    public final boolean isTransferable() {
+            r1 = this;
+            boolean r0 = r1.isTransferable
+            return r0
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "SaleAsset(assetID="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r3.assetID
+            r0.append(r1)
+            java.lang.String r1 = ", data="
+            r0.append(r1)
+            te.g$a r1 = r3.data
+            r0.append(r1)
+            java.lang.String r1 = ", isTransferable="
+            r0.append(r1)
+            boolean r1 = r3.isTransferable
+            r0.append(r1)
+            java.lang.String r1 = ", collection="
+            r0.append(r1)
+            te.c r1 = r3.collection
+            r0.append(r1)
+            java.lang.String r1 = ", template="
+            r0.append(r1)
+            xf.t r1 = r3.template
+            r0.append(r1)
+            java.lang.String r1 = ", prices="
+            r0.append(r1)
+            java.util.List<te.b> r1 = r3.prices
+            r2 = 41
+            java.lang.String r0 = p213m1.C4320f.m9652a(r0, r1, r2)
+            return r0
+    }
+}
+package p344te;
+
+/* renamed from: te.h */
+/* loaded from: classes.dex */
+public final class C6226h {
+    private final java.lang.String buyer;
+    private final long price;
+    private final int token_precision;
+    private final java.lang.String token_symbol;
+
+    public C6226h(long r2, java.lang.String r4, int r5, java.lang.String r6) {
+            r1 = this;
+            java.lang.String r0 = "token_symbol"
+            p214m2.C4339q.m9706k(r4, r0)
+            java.lang.String r0 = "buyer"
+            p214m2.C4339q.m9706k(r6, r0)
+            r1.<init>()
+            r1.price = r2
+            r1.token_symbol = r4
+            r1.token_precision = r5
+            r1.buyer = r6
+            return
+    }
+
+    public static /* synthetic */ p344te.C6226h copy$default(p344te.C6226h r6, long r7, java.lang.String r9, int r10, java.lang.String r11, int r12, java.lang.Object r13) {
+            r13 = r12 & 1
+            if (r13 == 0) goto L6
+            long r7 = r6.price
+        L6:
+            r1 = r7
+            r7 = r12 & 2
+            if (r7 == 0) goto Ld
+            java.lang.String r9 = r6.token_symbol
+        Ld:
+            r3 = r9
+            r7 = r12 & 4
+            if (r7 == 0) goto L14
+            int r10 = r6.token_precision
+        L14:
+            r4 = r10
+            r7 = r12 & 8
+            if (r7 == 0) goto L1b
+            java.lang.String r11 = r6.buyer
+        L1b:
+            r5 = r11
+            r0 = r6
+            te.h r6 = r0.copy(r1, r3, r4, r5)
+            return r6
+    }
+
+    public final long component1() {
+            r2 = this;
+            long r0 = r2.price
+            return r0
+    }
+
+    public final java.lang.String component2() {
+            r1 = this;
+            java.lang.String r0 = r1.token_symbol
+            return r0
+    }
+
+    public final int component3() {
+            r1 = this;
+            int r0 = r1.token_precision
+            return r0
+    }
+
+    public final java.lang.String component4() {
+            r1 = this;
+            java.lang.String r0 = r1.buyer
+            return r0
+    }
+
+    public final p344te.C6226h copy(long r8, java.lang.String r10, int r11, java.lang.String r12) {
+            r7 = this;
+            java.lang.String r0 = "token_symbol"
+            p214m2.C4339q.m9706k(r10, r0)
+            java.lang.String r0 = "buyer"
+            p214m2.C4339q.m9706k(r12, r0)
+            te.h r0 = new te.h
+            r1 = r0
+            r2 = r8
+            r4 = r10
+            r5 = r11
+            r6 = r12
+            r1.<init>(r2, r4, r5, r6)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r8) {
+            r7 = this;
+            r0 = 1
+            if (r7 != r8) goto L4
+            return r0
+        L4:
+            boolean r1 = r8 instanceof p344te.C6226h
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            te.h r8 = (p344te.C6226h) r8
+            long r3 = r7.price
+            long r5 = r8.price
+            int r1 = (r3 > r5 ? 1 : (r3 == r5 ? 0 : -1))
+            if (r1 == 0) goto L15
+            return r2
+        L15:
+            java.lang.String r1 = r7.token_symbol
+            java.lang.String r3 = r8.token_symbol
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L20
+            return r2
+        L20:
+            int r1 = r7.token_precision
+            int r3 = r8.token_precision
+            if (r1 == r3) goto L27
+            return r2
+        L27:
+            java.lang.String r1 = r7.buyer
+            java.lang.String r8 = r8.buyer
+            boolean r8 = p214m2.C4339q.m9702c(r1, r8)
+            if (r8 != 0) goto L32
+            return r2
+        L32:
+            return r0
+    }
+
+    public final java.lang.String getBuyer() {
+            r1 = this;
+            java.lang.String r0 = r1.buyer
+            return r0
+    }
+
+    public final long getPrice() {
+            r2 = this;
+            long r0 = r2.price
+            return r0
+    }
+
+    public final java.lang.Double getPriceWax() {
+            r4 = this;
+            java.lang.String r0 = r4.token_symbol
+            java.lang.String r1 = "WAX"
+            boolean r0 = p214m2.C4339q.m9702c(r0, r1)
+            if (r0 == 0) goto L18
+            long r0 = r4.price
+            double r0 = (double) r0
+            r2 = 4726483295884279808(0x4197d78400000000, double:1.0E8)
+            double r0 = r0 / r2
+            java.lang.Double r0 = java.lang.Double.valueOf(r0)
+            goto L19
+        L18:
+            r0 = 0
+        L19:
+            return r0
+    }
+
+    public final int getToken_precision() {
+            r1 = this;
+            int r0 = r1.token_precision
+            return r0
+    }
+
+    public final java.lang.String getToken_symbol() {
+            r1 = this;
+            java.lang.String r0 = r1.token_symbol
+            return r0
+    }
+
+    public int hashCode() {
+            r4 = this;
+            long r0 = r4.price
+            r2 = 32
+            long r2 = r0 >>> r2
+            long r0 = r0 ^ r2
+            int r1 = (int) r0
+            int r1 = r1 * 31
+            java.lang.String r0 = r4.token_symbol
+            r2 = 31
+            int r0 = p213m1.C4319e.m9651a(r0, r1, r2)
+            int r1 = r4.token_precision
+            int r0 = r0 + r1
+            int r0 = r0 * 31
+            java.lang.String r1 = r4.buyer
+            int r1 = r1.hashCode()
+            int r1 = r1 + r0
+            return r1
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "SaleAtomic(price="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            long r1 = r3.price
+            r0.append(r1)
+            java.lang.String r1 = ", token_symbol="
+            r0.append(r1)
+            java.lang.String r1 = r3.token_symbol
+            r0.append(r1)
+            java.lang.String r1 = ", token_precision="
+            r0.append(r1)
+            int r1 = r3.token_precision
+            r0.append(r1)
+            java.lang.String r1 = ", buyer="
+            r0.append(r1)
+            java.lang.String r1 = r3.buyer
+            r2 = 41
+            java.lang.String r0 = p185k7.C3814g5.m8552a(r0, r1, r2)
+            return r0
+    }
+}
+package p344te;
+
+/* renamed from: te.i */
+/* loaded from: classes.dex */
+public final class C6227i {
+    private final java.util.List<p344te.C6222d> data;
+
+    public C6227i(java.util.List<p344te.C6222d> r2) {
+            r1 = this;
+            java.lang.String r0 = "data"
+            p214m2.C4339q.m9706k(r2, r0)
+            r1.<init>()
+            r1.data = r2
+            return
+    }
+
+    public static /* synthetic */ p344te.C6227i copy$default(p344te.C6227i r0, java.util.List r1, int r2, java.lang.Object r3) {
+            r2 = r2 & 1
+            if (r2 == 0) goto L6
+            java.util.List<te.d> r1 = r0.data
+        L6:
+            te.i r0 = r0.copy(r1)
+            return r0
+    }
+
+    public final java.util.List<p344te.C6222d> component1() {
+            r1 = this;
+            java.util.List<te.d> r0 = r1.data
+            return r0
+    }
+
+    public final p344te.C6227i copy(java.util.List<p344te.C6222d> r2) {
+            r1 = this;
+            java.lang.String r0 = "data"
+            p214m2.C4339q.m9706k(r2, r0)
+            te.i r0 = new te.i
+            r0.<init>(r2)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r4) {
+            r3 = this;
+            r0 = 1
+            if (r3 != r4) goto L4
+            return r0
+        L4:
+            boolean r1 = r4 instanceof p344te.C6227i
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            te.i r4 = (p344te.C6227i) r4
+            java.util.List<te.d> r1 = r3.data
+            java.util.List<te.d> r4 = r4.data
+            boolean r4 = p214m2.C4339q.m9702c(r1, r4)
+            if (r4 != 0) goto L17
+            return r2
+        L17:
+            return r0
+    }
+
+    public final java.util.List<p344te.C6222d> getData() {
+            r1 = this;
+            java.util.List<te.d> r0 = r1.data
+            return r0
+    }
+
+    public int hashCode() {
+            r1 = this;
+            java.util.List<te.d> r0 = r1.data
+            int r0 = r0.hashCode()
+            return r0
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "SalesResponse(data="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.util.List<te.d> r1 = r3.data
+            r2 = 41
+            java.lang.String r0 = p213m1.C4320f.m9652a(r0, r1, r2)
+            return r0
+    }
+}

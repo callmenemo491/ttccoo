@@ -1,0 +1,3199 @@
+package p065e0;
+
+/* renamed from: e0.a */
+/* loaded from: classes.dex */
+public final /* synthetic */ class C1496a {
+    /* renamed from: a */
+    public static float m4063a(float r0, float r1, float r2, float r3) {
+            float r0 = r0 - r1
+            float r0 = r0 / r2
+            float r0 = r0 + r3
+            return r0
+    }
+}
+package p065e0;
+
+/* renamed from: e0.b */
+/* loaded from: classes.dex */
+public class C1497b {
+
+    /* renamed from: a */
+    public final float f7284a;
+
+    /* renamed from: b */
+    public final float f7285b;
+
+    /* renamed from: c */
+    public final float f7286c;
+
+    /* renamed from: d */
+    public final float f7287d;
+
+    /* renamed from: e */
+    public final float f7288e;
+
+    /* renamed from: f */
+    public final float f7289f;
+
+    /* renamed from: g */
+    public final float f7290g;
+
+    /* renamed from: h */
+    public final float f7291h;
+
+    /* renamed from: i */
+    public final float f7292i;
+
+    public C1497b(float r2, float r3, float r4, float r5, float r6, float r7, float r8, float r9, float r10, int r11) {
+            r1 = this;
+            r0 = 1
+            if (r11 == r0) goto L19
+            r1.<init>()
+            r1.f7284a = r2
+            r1.f7285b = r3
+            r1.f7286c = r4
+            r1.f7287d = r5
+            r1.f7288e = r6
+            r1.f7289f = r7
+            r1.f7290g = r8
+            r1.f7291h = r9
+            r1.f7292i = r10
+            return
+        L19:
+            r1.<init>()
+            r1.f7284a = r2
+            r1.f7285b = r5
+            r1.f7286c = r8
+            r1.f7287d = r3
+            r1.f7288e = r6
+            r1.f7289f = r9
+            r1.f7290g = r4
+            r1.f7291h = r7
+            r1.f7292i = r10
+            return
+    }
+
+    /* renamed from: a */
+    public static p065e0.C1497b m4064a(int r25) {
+            e0.k r0 = p065e0.C1506k.f7328k
+            int r1 = android.graphics.Color.red(r25)
+            float r1 = p065e0.C1498c.m4070b(r1)
+            int r2 = android.graphics.Color.green(r25)
+            float r2 = p065e0.C1498c.m4070b(r2)
+            int r3 = android.graphics.Color.blue(r25)
+            float r3 = p065e0.C1498c.m4070b(r3)
+            float[][] r4 = p065e0.C1498c.f7296d
+            r5 = 0
+            r6 = r4[r5]
+            r6 = r6[r5]
+            float r6 = r6 * r1
+            r7 = r4[r5]
+            r8 = 1
+            r7 = r7[r8]
+            float r7 = r7 * r2
+            float r7 = r7 + r6
+            r6 = r4[r5]
+            r9 = 2
+            r6 = r6[r9]
+            float r6 = r6 * r3
+            float r6 = r6 + r7
+            r7 = r4[r8]
+            r7 = r7[r5]
+            float r7 = r7 * r1
+            r10 = r4[r8]
+            r10 = r10[r8]
+            float r10 = r10 * r2
+            float r10 = r10 + r7
+            r7 = r4[r8]
+            r7 = r7[r9]
+            float r7 = r7 * r3
+            float r7 = r7 + r10
+            r10 = r4[r9]
+            r10 = r10[r5]
+            float r1 = r1 * r10
+            r10 = r4[r9]
+            r10 = r10[r8]
+            float r2 = r2 * r10
+            float r2 = r2 + r1
+            r1 = r4[r9]
+            r1 = r1[r9]
+            float r3 = r3 * r1
+            float r3 = r3 + r2
+            r1 = 3
+            float[] r1 = new float[r1]
+            r1[r5] = r6
+            r1[r8] = r7
+            r1[r9] = r3
+            float[][] r2 = p065e0.C1498c.f7293a
+            r3 = r1[r5]
+            r4 = r2[r5]
+            r4 = r4[r5]
+            float r3 = r3 * r4
+            r4 = r1[r8]
+            r6 = r2[r5]
+            r6 = r6[r8]
+            float r4 = r4 * r6
+            float r4 = r4 + r3
+            r3 = r1[r9]
+            r6 = r2[r5]
+            r6 = r6[r9]
+            float r3 = r3 * r6
+            float r3 = r3 + r4
+            r4 = r1[r5]
+            r6 = r2[r8]
+            r6 = r6[r5]
+            float r4 = r4 * r6
+            r6 = r1[r8]
+            r7 = r2[r8]
+            r7 = r7[r8]
+            float r6 = r6 * r7
+            float r6 = r6 + r4
+            r4 = r1[r9]
+            r7 = r2[r8]
+            r7 = r7[r9]
+            float r4 = r4 * r7
+            float r4 = r4 + r6
+            r6 = r1[r5]
+            r7 = r2[r9]
+            r7 = r7[r5]
+            float r6 = r6 * r7
+            r7 = r1[r8]
+            r10 = r2[r9]
+            r10 = r10[r8]
+            float r7 = r7 * r10
+            float r7 = r7 + r6
+            r1 = r1[r9]
+            r2 = r2[r9]
+            r2 = r2[r9]
+            float r1 = r1 * r2
+            float r1 = r1 + r7
+            float[] r2 = r0.f7335g
+            r5 = r2[r5]
+            float r5 = r5 * r3
+            r3 = r2[r8]
+            float r3 = r3 * r4
+            r2 = r2[r9]
+            float r2 = r2 * r1
+            float r1 = r0.f7336h
+            float r4 = java.lang.Math.abs(r5)
+            float r4 = r4 * r1
+            double r6 = (double) r4
+            r8 = 4636737291354636288(0x4059000000000000, double:100.0)
+            double r6 = r6 / r8
+            r10 = 4601237667291888353(0x3fdae147ae147ae1, double:0.42)
+            double r6 = java.lang.Math.pow(r6, r10)
+            float r1 = (float) r6
+            float r4 = r0.f7336h
+            float r6 = java.lang.Math.abs(r3)
+            float r6 = r6 * r4
+            double r6 = (double) r6
+            double r6 = r6 / r8
+            double r6 = java.lang.Math.pow(r6, r10)
+            float r4 = (float) r6
+            float r6 = r0.f7336h
+            float r7 = java.lang.Math.abs(r2)
+            float r7 = r7 * r6
+            double r6 = (double) r7
+            double r6 = r6 / r8
+            double r6 = java.lang.Math.pow(r6, r10)
+            float r6 = (float) r6
+            float r5 = java.lang.Math.signum(r5)
+            r7 = 1137180672(0x43c80000, float:400.0)
+            float r5 = r5 * r7
+            float r5 = r5 * r1
+            r10 = 1104742973(0x41d90a3d, float:27.13)
+            float r1 = r1 + r10
+            float r5 = r5 / r1
+            float r1 = java.lang.Math.signum(r3)
+            float r1 = r1 * r7
+            float r1 = r1 * r4
+            float r4 = r4 + r10
+            float r1 = r1 / r4
+            float r2 = java.lang.Math.signum(r2)
+            float r2 = r2 * r7
+            float r2 = r2 * r6
+            float r6 = r6 + r10
+            float r2 = r2 / r6
+            r3 = 4622382067542392832(0x4026000000000000, double:11.0)
+            double r6 = (double) r5
+            double r6 = r6 * r3
+            r3 = -4600427019358961664(0xc028000000000000, double:-12.0)
+            double r10 = (double) r1
+            double r10 = r10 * r3
+            double r10 = r10 + r6
+            double r3 = (double) r2
+            double r10 = r10 + r3
+            float r6 = (float) r10
+            r7 = 1093664768(0x41300000, float:11.0)
+            float r6 = r6 / r7
+            float r7 = r5 + r1
+            double r10 = (double) r7
+            r12 = 4611686018427387904(0x4000000000000000, double:2.0)
+            double r3 = r3 * r12
+            double r10 = r10 - r3
+            float r3 = (float) r10
+            r4 = 1091567616(0x41100000, float:9.0)
+            float r3 = r3 / r4
+            r4 = 1101004800(0x41a00000, float:20.0)
+            float r7 = r5 * r4
+            float r1 = r1 * r4
+            float r7 = r7 + r1
+            r10 = 1101529088(0x41a80000, float:21.0)
+            float r10 = r10 * r2
+            float r10 = r10 + r7
+            float r10 = r10 / r4
+            r7 = 1109393408(0x42200000, float:40.0)
+            float r5 = r5 * r7
+            float r5 = r5 + r1
+            float r5 = r5 + r2
+            float r5 = r5 / r4
+            double r1 = (double) r3
+            double r14 = (double) r6
+            double r1 = java.lang.Math.atan2(r1, r14)
+            float r1 = (float) r1
+            r2 = 1127481344(0x43340000, float:180.0)
+            float r1 = r1 * r2
+            r4 = 1078530011(0x40490fdb, float:3.1415927)
+            float r1 = r1 / r4
+            r7 = 0
+            r11 = 1135869952(0x43b40000, float:360.0)
+            int r7 = (r1 > r7 ? 1 : (r1 == r7 ? 0 : -1))
+            if (r7 >= 0) goto L162
+            float r1 = r1 + r11
+            goto L167
+        L162:
+            int r7 = (r1 > r11 ? 1 : (r1 == r11 ? 0 : -1))
+            if (r7 < 0) goto L167
+            float r1 = r1 - r11
+        L167:
+            r15 = r1
+            float r4 = r4 * r15
+            float r4 = r4 / r2
+            float r1 = r0.f7330b
+            float r5 = r5 * r1
+            float r1 = r0.f7329a
+            float r5 = r5 / r1
+            double r1 = (double) r5
+            float r5 = r0.f7332d
+            float r7 = r0.f7338j
+            float r5 = r5 * r7
+            double r8 = (double) r5
+            double r1 = java.lang.Math.pow(r1, r8)
+            float r1 = (float) r1
+            r2 = 1120403456(0x42c80000, float:100.0)
+            float r1 = r1 * r2
+            float r5 = r0.f7332d
+            r7 = 1082130432(0x40800000, float:4.0)
+            float r5 = r7 / r5
+            float r2 = r1 / r2
+            double r8 = (double) r2
+            double r8 = java.lang.Math.sqrt(r8)
+            float r2 = (float) r8
+            float r5 = r5 * r2
+            float r2 = r0.f7329a
+            float r2 = r2 + r7
+            float r2 = r2 * r5
+            float r5 = r0.f7337i
+            float r18 = r2 * r5
+            double r8 = (double) r15
+            r19 = 4626362123713081508(0x403423d70a3d70a4, double:20.14)
+            int r2 = (r8 > r19 ? 1 : (r8 == r19 ? 0 : -1))
+            if (r2 >= 0) goto L1a8
+            float r11 = r11 + r15
+            goto L1a9
+        L1a8:
+            r11 = r15
+        L1a9:
+            r2 = 1048576000(0x3e800000, float:0.25)
+            double r8 = (double) r11
+            r19 = 4614256656552045848(0x400921fb54442d18, double:3.141592653589793)
+            double r8 = r8 * r19
+            r19 = 4640537203540230144(0x4066800000000000, double:180.0)
+            double r8 = r8 / r19
+            double r8 = r8 + r12
+            double r8 = java.lang.Math.cos(r8)
+            r11 = 4615739258092021350(0x400e666666666666, double:3.8)
+            double r8 = r8 + r11
+            float r5 = (float) r8
+            float r5 = r5 * r2
+            r2 = 1164993142(0x45706276, float:3846.1538)
+            float r5 = r5 * r2
+            float r2 = r0.f7333e
+            float r5 = r5 * r2
+            float r2 = r0.f7331c
+            float r5 = r5 * r2
+            float r6 = r6 * r6
+            float r3 = r3 * r3
+            float r3 = r3 + r6
+            double r2 = (double) r3
+            double r2 = java.lang.Math.sqrt(r2)
+            float r2 = (float) r2
+            float r5 = r5 * r2
+            r2 = 1050421494(0x3e9c28f6, float:0.305)
+            float r10 = r10 + r2
+            float r5 = r5 / r10
+            r2 = 4610064722561534525(0x3ffa3d70a3d70a3d, double:1.64)
+            r8 = 4598895795485655695(0x3fd28f5c28f5c28f, double:0.29)
+            float r6 = r0.f7334f
+            double r10 = (double) r6
+            double r8 = java.lang.Math.pow(r8, r10)
+            double r2 = r2 - r8
+            r8 = 4604750475001237340(0x3fe75c28f5c28f5c, double:0.73)
+            double r2 = java.lang.Math.pow(r2, r8)
+            float r2 = (float) r2
+            double r5 = (double) r5
+            r8 = 4606281698874543309(0x3feccccccccccccd, double:0.9)
+            double r5 = java.lang.Math.pow(r5, r8)
+            float r3 = (float) r5
+            float r2 = r2 * r3
+            double r5 = (double) r1
+            r8 = 4636737291354636288(0x4059000000000000, double:100.0)
+            double r5 = r5 / r8
+            double r5 = java.lang.Math.sqrt(r5)
+            float r3 = (float) r5
+            float r16 = r2 * r3
+            float r3 = r0.f7337i
+            float r19 = r16 * r3
+            r3 = 1112014848(0x42480000, float:50.0)
+            float r5 = r0.f7332d
+            float r2 = r2 * r5
+            float r0 = r0.f7329a
+            float r0 = r0 + r7
+            float r2 = r2 / r0
+            double r5 = (double) r2
+            double r5 = java.lang.Math.sqrt(r5)
+            float r0 = (float) r5
+            float r20 = r0 * r3
+            r0 = 1071225242(0x3fd9999a, float:1.7)
+            float r0 = r0 * r1
+            r2 = 1004888130(0x3be56042, float:0.007)
+            float r2 = r2 * r1
+            r3 = 1065353216(0x3f800000, float:1.0)
+            float r2 = r2 + r3
+            float r21 = r0 / r2
+            r0 = 1110405192(0x422f7048, float:43.85965)
+            r2 = 1018873617(0x3cbac711, float:0.0228)
+            float r2 = r2 * r19
+            float r2 = r2 + r3
+            double r2 = (double) r2
+            double r2 = java.lang.Math.log(r2)
+            float r2 = (float) r2
+            float r2 = r2 * r0
+            double r3 = (double) r4
+            double r5 = java.lang.Math.cos(r3)
+            float r0 = (float) r5
+            float r22 = r2 * r0
+            double r3 = java.lang.Math.sin(r3)
+            float r0 = (float) r3
+            float r23 = r2 * r0
+            e0.b r0 = new e0.b
+            r24 = 0
+            r14 = r0
+            r17 = r1
+            r14.<init>(r15, r16, r17, r18, r19, r20, r21, r22, r23, r24)
+            return r0
+    }
+
+    /* renamed from: b */
+    public static p065e0.C1497b m4065b(float r14, float r15, float r16) {
+            r3 = r14
+            e0.k r0 = p065e0.C1506k.f7328k
+            float r1 = r0.f7332d
+            r2 = 1082130432(0x40800000, float:4.0)
+            float r1 = r2 / r1
+            double r4 = (double) r3
+            r6 = 4636737291354636288(0x4059000000000000, double:100.0)
+            double r4 = r4 / r6
+            double r6 = java.lang.Math.sqrt(r4)
+            float r6 = (float) r6
+            float r1 = r1 * r6
+            float r6 = r0.f7329a
+            float r6 = r6 + r2
+            float r6 = r6 * r1
+            float r1 = r0.f7337i
+            float r6 = r6 * r1
+            float r7 = r15 * r1
+            double r4 = java.lang.Math.sqrt(r4)
+            float r1 = (float) r4
+            float r1 = r15 / r1
+            r4 = 1112014848(0x42480000, float:50.0)
+            float r5 = r0.f7332d
+            float r1 = r1 * r5
+            float r0 = r0.f7329a
+            float r0 = r0 + r2
+            float r1 = r1 / r0
+            double r0 = (double) r1
+            double r0 = java.lang.Math.sqrt(r0)
+            float r0 = (float) r0
+            float r8 = r0 * r4
+            r0 = 1078530011(0x40490fdb, float:3.1415927)
+            float r0 = r0 * r16
+            r1 = 1127481344(0x43340000, float:180.0)
+            float r0 = r0 / r1
+            r1 = 1071225242(0x3fd9999a, float:1.7)
+            float r1 = r1 * r3
+            r2 = 1065353216(0x3f800000, float:1.0)
+            r4 = 1004888130(0x3be56042, float:0.007)
+            float r4 = r4 * r3
+            float r4 = r4 + r2
+            float r9 = r1 / r4
+            r1 = 1110405192(0x422f7048, float:43.85965)
+            r4 = 4607182418800017408(0x3ff0000000000000, double:1.0)
+            r10 = 4582228873984682964(0x3f9758e219652bd4, double:0.0228)
+            double r12 = (double) r7
+            double r12 = r12 * r10
+            double r12 = r12 + r4
+            double r4 = java.lang.Math.log(r12)
+            float r2 = (float) r4
+            float r2 = r2 * r1
+            double r0 = (double) r0
+            double r4 = java.lang.Math.cos(r0)
+            float r4 = (float) r4
+            float r10 = r2 * r4
+            double r0 = java.lang.Math.sin(r0)
+            float r0 = (float) r0
+            float r11 = r2 * r0
+            e0.b r12 = new e0.b
+            r13 = 0
+            r0 = r12
+            r1 = r16
+            r2 = r15
+            r3 = r14
+            r4 = r6
+            r5 = r7
+            r6 = r8
+            r7 = r9
+            r8 = r10
+            r9 = r11
+            r10 = r13
+            r0.<init>(r1, r2, r3, r4, r5, r6, r7, r8, r9, r10)
+            return r12
+    }
+
+    /* renamed from: c */
+    public static p065e0.C1497b m4066c(float r19, float r20, float r21, float r22, float r23, float r24, float r25, float r26, float r27, float r28, float r29, float r30, float r31, float r32, float r33, float r34) {
+            e0.b r0 = m4067d(r19, r20, r21, r22, r23, r24, r25, r26)
+            e0.b r12 = new e0.b
+            float r1 = r0.f7288e
+            float r2 = r0.f7292i
+            float r3 = r1 * r2
+            float r4 = r0.f7289f
+            float r5 = r0.f7291h
+            float r6 = r4 * r5
+            float r3 = r3 - r6
+            float r6 = r0.f7290g
+            float r7 = r4 * r6
+            float r8 = r0.f7287d
+            float r9 = r8 * r2
+            float r7 = r7 - r9
+            float r9 = r8 * r5
+            float r10 = r1 * r6
+            float r9 = r9 - r10
+            float r10 = r0.f7286c
+            float r11 = r10 * r5
+            float r13 = r0.f7285b
+            float r14 = r13 * r2
+            float r11 = r11 - r14
+            float r0 = r0.f7284a
+            float r2 = r2 * r0
+            float r14 = r10 * r6
+            float r14 = r2 - r14
+            float r6 = r6 * r13
+            float r5 = r5 * r0
+            float r15 = r6 - r5
+            float r2 = r13 * r4
+            float r5 = r10 * r1
+            float r16 = r2 - r5
+            float r10 = r10 * r8
+            float r4 = r4 * r0
+            float r10 = r10 - r4
+            float r0 = r0 * r1
+            float r13 = r13 * r8
+            float r0 = r0 - r13
+            r13 = 1
+            r1 = r12
+            r2 = r3
+            r3 = r7
+            r4 = r9
+            r5 = r11
+            r6 = r14
+            r7 = r15
+            r8 = r16
+            r9 = r10
+            r10 = r0
+            r11 = r13
+            r1.<init>(r2, r3, r4, r5, r6, r7, r8, r9, r10, r11)
+            e0.b r0 = m4067d(r27, r28, r29, r30, r31, r32, r33, r34)
+            e0.b r1 = new e0.b
+            float r2 = r0.f7284a
+            float r3 = r12.f7284a
+            float r4 = r2 * r3
+            float r5 = r0.f7287d
+            float r6 = r12.f7285b
+            float r7 = r5 * r6
+            float r7 = r7 + r4
+            float r4 = r0.f7290g
+            float r8 = r12.f7286c
+            float r9 = r4 * r8
+            float r7 = r7 + r9
+            float r9 = r12.f7287d
+            float r10 = r2 * r9
+            float r11 = r12.f7288e
+            float r13 = r5 * r11
+            float r13 = r13 + r10
+            float r10 = r12.f7289f
+            float r14 = r4 * r10
+            float r13 = r13 + r14
+            float r14 = r12.f7290g
+            float r2 = r2 * r14
+            float r15 = r12.f7291h
+            float r5 = r5 * r15
+            float r5 = r5 + r2
+            float r2 = r12.f7292i
+            float r4 = r4 * r2
+            float r4 = r4 + r5
+            float r5 = r0.f7285b
+            float r12 = r5 * r3
+            r22 = r4
+            float r4 = r0.f7288e
+            float r16 = r4 * r6
+            float r16 = r16 + r12
+            float r12 = r0.f7291h
+            float r17 = r12 * r8
+            float r16 = r17 + r16
+            float r17 = r5 * r9
+            float r18 = r4 * r11
+            float r18 = r18 + r17
+            float r17 = r12 * r10
+            float r17 = r17 + r18
+            float r5 = r5 * r14
+            float r4 = r4 * r15
+            float r4 = r4 + r5
+            float r12 = r12 * r2
+            float r4 = r4 + r12
+            float r5 = r0.f7286c
+            float r3 = r3 * r5
+            float r12 = r0.f7289f
+            float r6 = r6 * r12
+            float r6 = r6 + r3
+            float r0 = r0.f7292i
+            float r8 = r8 * r0
+            float r3 = r8 + r6
+            float r9 = r9 * r5
+            float r11 = r11 * r12
+            float r11 = r11 + r9
+            float r10 = r10 * r0
+            float r6 = r10 + r11
+            float r5 = r5 * r14
+            float r12 = r12 * r15
+            float r12 = r12 + r5
+            float r0 = r0 * r2
+            float r0 = r0 + r12
+            r2 = 1
+            r19 = r1
+            r20 = r7
+            r21 = r13
+            r23 = r16
+            r24 = r17
+            r25 = r4
+            r26 = r3
+            r27 = r6
+            r28 = r0
+            r29 = r2
+            r19.<init>(r20, r21, r22, r23, r24, r25, r26, r27, r28, r29)
+            return r1
+    }
+
+    /* renamed from: d */
+    public static p065e0.C1497b m4067d(float r12, float r13, float r14, float r15, float r16, float r17, float r18, float r19) {
+            float r0 = r12 - r14
+            float r0 = r0 + r16
+            float r0 = r0 - r18
+            float r1 = r13 - r15
+            float r1 = r1 + r17
+            float r1 = r1 - r19
+            r2 = 0
+            int r3 = (r0 > r2 ? 1 : (r0 == r2 ? 0 : -1))
+            if (r3 != 0) goto L2b
+            int r2 = (r1 > r2 ? 1 : (r1 == r2 ? 0 : -1))
+            if (r2 != 0) goto L2b
+            e0.b r11 = new e0.b
+            float r1 = r14 - r12
+            float r2 = r16 - r14
+            float r4 = r15 - r13
+            float r5 = r17 - r15
+            r7 = 0
+            r8 = 0
+            r9 = 1065353216(0x3f800000, float:1.0)
+            r10 = 1
+            r0 = r11
+            r3 = r12
+            r6 = r13
+            r0.<init>(r1, r2, r3, r4, r5, r6, r7, r8, r9, r10)
+            return r11
+        L2b:
+            float r2 = r14 - r16
+            float r3 = r18 - r16
+            float r4 = r15 - r17
+            float r5 = r19 - r17
+            float r6 = r2 * r5
+            float r7 = r3 * r4
+            float r6 = r6 - r7
+            float r5 = r5 * r0
+            float r3 = r3 * r1
+            float r5 = r5 - r3
+            float r7 = r5 / r6
+            float r2 = r2 * r1
+            float r0 = r0 * r4
+            float r2 = r2 - r0
+            float r8 = r2 / r6
+            e0.b r11 = new e0.b
+            float r0 = r14 - r12
+            float r1 = r7 * r14
+            float r1 = r1 + r0
+            float r0 = r18 - r12
+            float r2 = r8 * r18
+            float r2 = r2 + r0
+            float r0 = r15 - r13
+            float r3 = r7 * r15
+            float r4 = r3 + r0
+            float r0 = r19 - r13
+            float r3 = r8 * r19
+            float r5 = r3 + r0
+            r9 = 1065353216(0x3f800000, float:1.0)
+            r10 = 1
+            r0 = r11
+            r3 = r12
+            r6 = r13
+            r0.<init>(r1, r2, r3, r4, r5, r6, r7, r8, r9, r10)
+            return r11
+    }
+
+    /* renamed from: e */
+    public int m4068e(p065e0.C1506k r18) {
+            r17 = this;
+            r0 = r17
+            r1 = r18
+            float r2 = r0.f7285b
+            double r3 = (double) r2
+            r5 = 4636737291354636288(0x4059000000000000, double:100.0)
+            r7 = 0
+            int r9 = (r3 > r7 ? 1 : (r3 == r7 ? 0 : -1))
+            if (r9 == 0) goto L1f
+            float r3 = r0.f7286c
+            double r3 = (double) r3
+            int r9 = (r3 > r7 ? 1 : (r3 == r7 ? 0 : -1))
+            if (r9 != 0) goto L17
+            goto L1f
+        L17:
+            double r3 = r3 / r5
+            double r3 = java.lang.Math.sqrt(r3)
+            float r3 = (float) r3
+            float r2 = r2 / r3
+            goto L20
+        L1f:
+            r2 = 0
+        L20:
+            double r2 = (double) r2
+            r9 = 4610064722561534525(0x3ffa3d70a3d70a3d, double:1.64)
+            r11 = 4598895795485655695(0x3fd28f5c28f5c28f, double:0.29)
+            float r4 = r1.f7334f
+            double r13 = (double) r4
+            double r11 = java.lang.Math.pow(r11, r13)
+            double r9 = r9 - r11
+            r11 = 4604750475001237340(0x3fe75c28f5c28f5c, double:0.73)
+            double r9 = java.lang.Math.pow(r9, r11)
+            double r2 = r2 / r9
+            r9 = 4607682818758614130(0x3ff1c71c71c71c72, double:1.1111111111111112)
+            double r2 = java.lang.Math.pow(r2, r9)
+            float r2 = (float) r2
+            float r3 = r0.f7284a
+            r4 = 1078530011(0x40490fdb, float:3.1415927)
+            float r3 = r3 * r4
+            r4 = 1127481344(0x43340000, float:180.0)
+            float r3 = r3 / r4
+            r4 = 1048576000(0x3e800000, float:0.25)
+            double r9 = (double) r3
+            r11 = 4611686018427387904(0x4000000000000000, double:2.0)
+            double r11 = r11 + r9
+            double r11 = java.lang.Math.cos(r11)
+            r13 = 4615739258092021350(0x400e666666666666, double:3.8)
+            double r11 = r11 + r13
+            float r3 = (float) r11
+            float r3 = r3 * r4
+            float r4 = r1.f7329a
+            float r11 = r0.f7286c
+            double r11 = (double) r11
+            double r11 = r11 / r5
+            r5 = 4607182418800017408(0x3ff0000000000000, double:1.0)
+            float r13 = r1.f7332d
+            double r13 = (double) r13
+            double r5 = r5 / r13
+            float r13 = r1.f7338j
+            double r13 = (double) r13
+            double r5 = r5 / r13
+            double r5 = java.lang.Math.pow(r11, r5)
+            float r5 = (float) r5
+            float r4 = r4 * r5
+            r5 = 1164993142(0x45706276, float:3846.1538)
+            float r3 = r3 * r5
+            float r5 = r1.f7333e
+            float r3 = r3 * r5
+            float r5 = r1.f7331c
+            float r3 = r3 * r5
+            float r5 = r1.f7330b
+            float r4 = r4 / r5
+            double r5 = java.lang.Math.sin(r9)
+            float r5 = (float) r5
+            double r9 = java.lang.Math.cos(r9)
+            float r6 = (float) r9
+            r9 = 1050421494(0x3e9c28f6, float:0.305)
+            float r9 = r9 + r4
+            r10 = 1102577664(0x41b80000, float:23.0)
+            float r9 = r9 * r10
+            float r9 = r9 * r2
+            float r3 = r3 * r10
+            r10 = 1093664768(0x41300000, float:11.0)
+            float r10 = r10 * r2
+            float r10 = r10 * r6
+            float r10 = r10 + r3
+            r3 = 1121452032(0x42d80000, float:108.0)
+            float r2 = r2 * r3
+            float r2 = r2 * r5
+            float r2 = r2 + r10
+            float r9 = r9 / r2
+            float r6 = r6 * r9
+            float r9 = r9 * r5
+            r2 = 1139146752(0x43e60000, float:460.0)
+            float r4 = r4 * r2
+            r2 = 1138851840(0x43e18000, float:451.0)
+            float r2 = r2 * r6
+            float r2 = r2 + r4
+            r3 = 1133510656(0x43900000, float:288.0)
+            float r3 = r3 * r9
+            float r3 = r3 + r2
+            r2 = 1152344064(0x44af6000, float:1403.0)
+            float r3 = r3 / r2
+            r5 = 1147060224(0x445ec000, float:891.0)
+            float r5 = r5 * r6
+            float r5 = r4 - r5
+            r10 = 1132625920(0x43828000, float:261.0)
+            float r10 = r10 * r9
+            float r5 = r5 - r10
+            float r5 = r5 / r2
+            r10 = 1130102784(0x435c0000, float:220.0)
+            float r6 = r6 * r10
+            float r4 = r4 - r6
+            r6 = 1170530304(0x45c4e000, float:6300.0)
+            float r9 = r9 * r6
+            float r4 = r4 - r9
+            float r4 = r4 / r2
+            float r2 = java.lang.Math.abs(r3)
+            double r9 = (double) r2
+            r11 = 4628329633800288993(0x403b2147ae147ae1, double:27.13)
+            double r9 = r9 * r11
+            float r2 = java.lang.Math.abs(r3)
+            double r13 = (double) r2
+            r15 = 4645744490609377280(0x4079000000000000, double:400.0)
+            double r13 = r15 - r13
+            double r9 = r9 / r13
+            double r9 = java.lang.Math.max(r7, r9)
+            float r2 = (float) r9
+            float r3 = java.lang.Math.signum(r3)
+            float r6 = r1.f7336h
+            r9 = 1120403456(0x42c80000, float:100.0)
+            float r6 = r9 / r6
+            float r6 = r6 * r3
+            double r2 = (double) r2
+            r13 = 4612543846927839427(0x40030c30c30c30c3, double:2.380952380952381)
+            double r2 = java.lang.Math.pow(r2, r13)
+            float r2 = (float) r2
+            float r6 = r6 * r2
+            float r2 = java.lang.Math.abs(r5)
+            double r2 = (double) r2
+            double r2 = r2 * r11
+            float r10 = java.lang.Math.abs(r5)
+            double r11 = (double) r10
+            double r10 = r15 - r11
+            double r2 = r2 / r10
+            double r2 = java.lang.Math.max(r7, r2)
+            float r2 = (float) r2
+            float r3 = java.lang.Math.signum(r5)
+            float r5 = r1.f7336h
+            float r5 = r9 / r5
+            float r5 = r5 * r3
+            double r2 = (double) r2
+            double r2 = java.lang.Math.pow(r2, r13)
+            float r2 = (float) r2
+            float r5 = r5 * r2
+            float r2 = java.lang.Math.abs(r4)
+            double r2 = (double) r2
+            r10 = 4628329633800288993(0x403b2147ae147ae1, double:27.13)
+            double r2 = r2 * r10
+            float r10 = java.lang.Math.abs(r4)
+            double r10 = (double) r10
+            double r15 = r15 - r10
+            double r2 = r2 / r15
+            double r2 = java.lang.Math.max(r7, r2)
+            float r2 = (float) r2
+            float r3 = java.lang.Math.signum(r4)
+            float r4 = r1.f7336h
+            float r9 = r9 / r4
+            float r9 = r9 * r3
+            double r2 = (double) r2
+            double r2 = java.lang.Math.pow(r2, r13)
+            float r2 = (float) r2
+            float r9 = r9 * r2
+            float[] r1 = r1.f7335g
+            r2 = 0
+            r3 = r1[r2]
+            float r6 = r6 / r3
+            r3 = 1
+            r4 = r1[r3]
+            float r5 = r5 / r4
+            r4 = 2
+            r1 = r1[r4]
+            float r9 = r9 / r1
+            float[][] r1 = p065e0.C1498c.f7294b
+            r7 = r1[r2]
+            r7 = r7[r2]
+            float r7 = r7 * r6
+            r8 = r1[r2]
+            r8 = r8[r3]
+            float r8 = r8 * r5
+            float r8 = r8 + r7
+            r7 = r1[r2]
+            r7 = r7[r4]
+            float r7 = r7 * r9
+            float r7 = r7 + r8
+            r8 = r1[r3]
+            r8 = r8[r2]
+            float r8 = r8 * r6
+            r10 = r1[r3]
+            r10 = r10[r3]
+            float r10 = r10 * r5
+            float r10 = r10 + r8
+            r8 = r1[r3]
+            r8 = r8[r4]
+            float r8 = r8 * r9
+            float r8 = r8 + r10
+            r10 = r1[r4]
+            r2 = r10[r2]
+            float r6 = r6 * r2
+            r2 = r1[r4]
+            r2 = r2[r3]
+            float r5 = r5 * r2
+            float r5 = r5 + r6
+            r1 = r1[r4]
+            r1 = r1[r4]
+            float r9 = r9 * r1
+            float r9 = r9 + r5
+            double r1 = (double) r7
+            double r3 = (double) r8
+            double r5 = (double) r9
+            int r1 = p084f0.C1938a.m4817b(r1, r3, r5)
+            return r1
+    }
+}
+package p065e0;
+
+/* renamed from: e0.c */
+/* loaded from: classes.dex */
+public final class C1498c {
+
+    /* renamed from: a */
+    public static final float[][] f7293a = null;
+
+    /* renamed from: b */
+    public static final float[][] f7294b = null;
+
+    /* renamed from: c */
+    public static final float[] f7295c = null;
+
+    /* renamed from: d */
+    public static final float[][] f7296d = null;
+
+    static {
+            r0 = 3
+            float[][] r1 = new float[r0][]
+            float[] r2 = new float[r0]
+            r2 = {x0058: FILL_ARRAY_DATA , data: [1053652383, 1059484093, -1118648123} // fill-array
+            r3 = 0
+            r1[r3] = r2
+            float[] r2 = new float[r0]
+            r2 = {x0062: FILL_ARRAY_DATA , data: [-1098898655, 1067067965, 1027330407} // fill-array
+            r4 = 1
+            r1[r4] = r2
+            float[] r2 = new float[r0]
+            r2 = {x006c: FILL_ARRAY_DATA , data: [-1157087275, 1028162020, 1064566818} // fill-array
+            r5 = 2
+            r1[r5] = r2
+            p065e0.C1498c.f7293a = r1
+            float[][] r1 = new float[r0][]
+            float[] r2 = new float[r0]
+            r2 = {x0076: FILL_ARRAY_DATA , data: [1072584765, -1082036021, 1041810539} // fill-array
+            r1[r3] = r2
+            float[] r2 = new float[r0]
+            r2 = {x0080: FILL_ARRAY_DATA , data: [1053190625, 1059002158, -1139603558} // fill-array
+            r1[r4] = r2
+            float[] r2 = new float[r0]
+            r2 = {x008a: FILL_ARRAY_DATA , data: [-1132345847, -1123302273, 1065772348} // fill-array
+            r1[r5] = r2
+            p065e0.C1498c.f7294b = r1
+            float[] r1 = new float[r0]
+            r1 = {x0094: FILL_ARRAY_DATA , data: [1119754256, 1120403456, 1121567769} // fill-array
+            p065e0.C1498c.f7295c = r1
+            float[][] r1 = new float[r0][]
+            float[] r2 = new float[r0]
+            r2 = {x009e: FILL_ARRAY_DATA , data: [1054023191, 1052187149, 1043912633} // fill-array
+            r1[r3] = r2
+            float[] r2 = new float[r0]
+            r2 = {x00a8: FILL_ARRAY_DATA , data: [1046066128, 1060575065, 1033100696} // fill-array
+            r1[r4] = r2
+            float[] r0 = new float[r0]
+            r0 = {x00b2: FILL_ARRAY_DATA , data: [1017006063, 1039404073, 1064520140} // fill-array
+            r1[r5] = r0
+            p065e0.C1498c.f7296d = r1
+            return
+    }
+
+    /* renamed from: a */
+    public static int m4069a(float r15) {
+            r0 = 1065353216(0x3f800000, float:1.0)
+            int r0 = (r15 > r0 ? 1 : (r15 == r0 ? 0 : -1))
+            if (r0 >= 0) goto L9
+            r15 = -16777216(0xffffffffff000000, float:-1.7014118E38)
+            return r15
+        L9:
+            r0 = 1120272384(0x42c60000, float:99.0)
+            int r0 = (r15 > r0 ? 1 : (r15 == r0 ? 0 : -1))
+            if (r0 <= 0) goto L11
+            r15 = -1
+            return r15
+        L11:
+            r0 = 1098907648(0x41800000, float:16.0)
+            float r1 = r15 + r0
+            r2 = 1122500608(0x42e80000, float:116.0)
+            float r1 = r1 / r2
+            r3 = 1147261687(0x4461d2f7, float:903.2963)
+            r4 = 1007753895(0x3c111aa7, float:0.008856452)
+            r5 = 1090519040(0x41000000, float:8.0)
+            r6 = 1
+            r7 = 0
+            int r5 = (r15 > r5 ? 1 : (r15 == r5 ? 0 : -1))
+            if (r5 <= 0) goto L28
+            r5 = 1
+            goto L29
+        L28:
+            r5 = 0
+        L29:
+            if (r5 == 0) goto L30
+            float r15 = r1 * r1
+            float r15 = r15 * r1
+            goto L31
+        L30:
+            float r15 = r15 / r3
+        L31:
+            float r5 = r1 * r1
+            float r5 = r5 * r1
+            int r4 = (r5 > r4 ? 1 : (r5 == r4 ? 0 : -1))
+            if (r4 <= 0) goto L3b
+            r4 = 1
+            goto L3c
+        L3b:
+            r4 = 0
+        L3c:
+            if (r4 == 0) goto L40
+            r8 = r5
+            goto L44
+        L40:
+            float r8 = r1 * r2
+            float r8 = r8 - r0
+            float r8 = r8 / r3
+        L44:
+            if (r4 == 0) goto L47
+            goto L4c
+        L47:
+            float r1 = r1 * r2
+            float r1 = r1 - r0
+            float r5 = r1 / r3
+        L4c:
+            float[] r0 = p065e0.C1498c.f7295c
+            r1 = r0[r7]
+            float r8 = r8 * r1
+            double r9 = (double) r8
+            r1 = r0[r6]
+            float r15 = r15 * r1
+            double r11 = (double) r15
+            r15 = 2
+            r15 = r0[r15]
+            float r5 = r5 * r15
+            double r13 = (double) r5
+            int r15 = p084f0.C1938a.m4817b(r9, r11, r13)
+            return r15
+    }
+
+    /* renamed from: b */
+    public static float m4070b(int r5) {
+            float r5 = (float) r5
+            r0 = 1132396544(0x437f0000, float:255.0)
+            float r5 = r5 / r0
+            r0 = 1120403456(0x42c80000, float:100.0)
+            r1 = 1025879782(0x3d25aee6, float:0.04045)
+            int r1 = (r5 > r1 ? 1 : (r5 == r1 ? 0 : -1))
+            if (r1 > 0) goto L14
+            r1 = 1095678034(0x414eb852, float:12.92)
+            float r5 = r5 / r1
+        L11:
+            float r5 = r5 * r0
+            return r5
+        L14:
+            r1 = 1029785518(0x3d6147ae, float:0.055)
+            float r5 = r5 + r1
+            r1 = 1065814589(0x3f870a3d, float:1.055)
+            float r5 = r5 / r1
+            double r1 = (double) r5
+            r3 = 4612586738567610368(0x4003333340000000, double:2.4000000953674316)
+            double r1 = java.lang.Math.pow(r1, r3)
+            float r5 = (float) r1
+            goto L11
+    }
+
+    /* renamed from: c */
+    public static float m4071c(float r5) {
+            r0 = 1120403456(0x42c80000, float:100.0)
+            r1 = 1090519040(0x41000000, float:8.0)
+            int r1 = (r5 > r1 ? 1 : (r5 == r1 ? 0 : -1))
+            if (r1 <= 0) goto L19
+            double r1 = (double) r5
+            r3 = 4625196817309499392(0x4030000000000000, double:16.0)
+            double r1 = r1 + r3
+            r3 = 4637863191261478912(0x405d000000000000, double:116.0)
+            double r1 = r1 / r3
+            r3 = 4613937818241073152(0x4008000000000000, double:3.0)
+            double r1 = java.lang.Math.pow(r1, r3)
+            float r5 = (float) r1
+        L16:
+            float r5 = r5 * r0
+            return r5
+        L19:
+            r1 = 1147261687(0x4461d2f7, float:903.2963)
+            float r5 = r5 / r1
+            goto L16
+    }
+}
+package p065e0;
+
+/* renamed from: e0.d */
+/* loaded from: classes.dex */
+public final class C1499d {
+
+    /* renamed from: a */
+    public static final java.lang.ThreadLocal<android.util.TypedValue> f7297a = null;
+
+    static {
+            java.lang.ThreadLocal r0 = new java.lang.ThreadLocal
+            r0.<init>()
+            p065e0.C1499d.f7297a = r0
+            return
+    }
+
+    /* renamed from: a */
+    public static android.content.res.ColorStateList m4072a(android.content.res.Resources r4, org.xmlpull.v1.XmlPullParser r5, android.content.res.Resources.Theme r6) {
+            android.util.AttributeSet r0 = android.util.Xml.asAttributeSet(r5)
+        L4:
+            int r1 = r5.next()
+            r2 = 2
+            if (r1 == r2) goto Lf
+            r3 = 1
+            if (r1 == r3) goto Lf
+            goto L4
+        Lf:
+            if (r1 != r2) goto L16
+            android.content.res.ColorStateList r4 = m4073b(r4, r5, r0, r6)
+            return r4
+        L16:
+            org.xmlpull.v1.XmlPullParserException r4 = new org.xmlpull.v1.XmlPullParserException
+            java.lang.String r5 = "No start tag found"
+            r4.<init>(r5)
+            throw r4
+    }
+
+    /* renamed from: b */
+    public static android.content.res.ColorStateList m4073b(android.content.res.Resources r30, org.xmlpull.v1.XmlPullParser r31, android.util.AttributeSet r32, android.content.res.Resources.Theme r33) {
+            r0 = r30
+            r1 = r32
+            r2 = r33
+            java.lang.String r3 = r31.getName()
+            java.lang.String r4 = "selector"
+            boolean r4 = r3.equals(r4)
+            if (r4 == 0) goto L34a
+            int r3 = r31.getDepth()
+            r4 = 1
+            int r3 = r3 + r4
+            r5 = 20
+            int[][] r6 = new int[r5][]
+            int[] r5 = new int[r5]
+            r7 = 0
+            r8 = 0
+        L20:
+            int r9 = r31.next()
+            if (r9 == r4) goto L337
+            int r10 = r31.getDepth()
+            r11 = 3
+            if (r10 >= r3) goto L2f
+            if (r9 == r11) goto L337
+        L2f:
+            r12 = 2
+            if (r9 != r12) goto L325
+            if (r10 > r3) goto L325
+            java.lang.String r9 = r31.getName()
+            java.lang.String r10 = "item"
+            boolean r9 = r9.equals(r10)
+            if (r9 != 0) goto L42
+            goto L325
+        L42:
+            int[] r9 = p017b0.C0653a.f3794a
+            if (r2 != 0) goto L4b
+            android.content.res.TypedArray r9 = r0.obtainAttributes(r1, r9)
+            goto L4f
+        L4b:
+            android.content.res.TypedArray r9 = r2.obtainStyledAttributes(r1, r9, r7, r7)
+        L4f:
+            r10 = -1
+            int r13 = r9.getResourceId(r7, r10)
+            r14 = -65281(0xffffffffffff00ff, float:NaN)
+            if (r13 == r10) goto L8a
+            java.lang.ThreadLocal<android.util.TypedValue> r10 = p065e0.C1499d.f7297a
+            java.lang.Object r15 = r10.get()
+            android.util.TypedValue r15 = (android.util.TypedValue) r15
+            if (r15 != 0) goto L6b
+            android.util.TypedValue r15 = new android.util.TypedValue
+            r15.<init>()
+            r10.set(r15)
+        L6b:
+            r0.getValue(r13, r15, r4)
+            int r10 = r15.type
+            r15 = 28
+            if (r10 < r15) goto L7a
+            r15 = 31
+            if (r10 > r15) goto L7a
+            r10 = 1
+            goto L7b
+        L7a:
+            r10 = 0
+        L7b:
+            if (r10 != 0) goto L8a
+            android.content.res.XmlResourceParser r10 = r0.getXml(r13)     // Catch: java.lang.Exception -> L8a
+            android.content.res.ColorStateList r10 = m4072a(r0, r10, r2)     // Catch: java.lang.Exception -> L8a
+            int r7 = r10.getDefaultColor()     // Catch: java.lang.Exception -> L8a
+            goto L8e
+        L8a:
+            int r7 = r9.getColor(r7, r14)
+        L8e:
+            boolean r10 = r9.hasValue(r4)
+            r13 = 1065353216(0x3f800000, float:1.0)
+            if (r10 == 0) goto L9b
+            float r4 = r9.getFloat(r4, r13)
+            goto La8
+        L9b:
+            boolean r4 = r9.hasValue(r11)
+            if (r4 == 0) goto La6
+            float r4 = r9.getFloat(r11, r13)
+            goto La8
+        La6:
+            r4 = 1065353216(0x3f800000, float:1.0)
+        La8:
+            boolean r10 = p158j0.C3379a.m7754a()
+            r11 = -1082130432(0xffffffffbf800000, float:-1.0)
+            r13 = 4
+            if (r10 == 0) goto Lbc
+            boolean r10 = r9.hasValue(r12)
+            if (r10 == 0) goto Lbc
+            float r10 = r9.getFloat(r12, r11)
+            goto Lc0
+        Lbc:
+            float r10 = r9.getFloat(r13, r11)
+        Lc0:
+            r9.recycle()
+            int r9 = r32.getAttributeCount()
+            int[] r11 = new int[r9]
+            r12 = 0
+            r13 = 0
+        Lcb:
+            if (r12 >= r9) goto Lf8
+            int r14 = r1.getAttributeNameResource(r12)
+            r15 = 16843173(0x10101a5, float:2.3694738E-38)
+            if (r14 == r15) goto Lf3
+            r15 = 16843551(0x101031f, float:2.3695797E-38)
+            if (r14 == r15) goto Lf3
+            r15 = 2130968625(0x7f040031, float:1.7545909E38)
+            if (r14 == r15) goto Lf3
+            r15 = 2130969121(0x7f040221, float:1.7546915E38)
+            if (r14 == r15) goto Lf3
+            int r15 = r13 + 1
+            r0 = 0
+            boolean r0 = r1.getAttributeBooleanValue(r12, r0)
+            if (r0 == 0) goto Lef
+            goto Lf0
+        Lef:
+            int r14 = -r14
+        Lf0:
+            r11[r13] = r14
+            r13 = r15
+        Lf3:
+            int r12 = r12 + 1
+            r0 = r30
+            goto Lcb
+        Lf8:
+            int[] r0 = android.util.StateSet.trimStateSet(r11, r13)
+            r9 = 1120403456(0x42c80000, float:100.0)
+            r11 = 0
+            int r12 = (r10 > r11 ? 1 : (r10 == r11 ? 0 : -1))
+            if (r12 < 0) goto L109
+            int r9 = (r10 > r9 ? 1 : (r10 == r9 ? 0 : -1))
+            if (r9 > 0) goto L109
+            r9 = 1
+            goto L10a
+        L109:
+            r9 = 0
+        L10a:
+            r12 = 1065353216(0x3f800000, float:1.0)
+            int r12 = (r4 > r12 ? 1 : (r4 == r12 ? 0 : -1))
+            if (r12 != 0) goto L11a
+            if (r9 != 0) goto L11a
+            r18 = r0
+            r21 = r3
+            r9 = r5
+            r11 = r6
+            goto L2e7
+        L11a:
+            int r12 = android.graphics.Color.alpha(r7)
+            float r12 = (float) r12
+            float r12 = r12 * r4
+            r4 = 1056964608(0x3f000000, float:0.5)
+            float r12 = r12 + r4
+            int r4 = (int) r12
+            r12 = 255(0xff, float:3.57E-43)
+            r13 = 0
+            int r4 = p064e.C1492f.m4042b(r4, r13, r12)
+            if (r9 == 0) goto L2d9
+            e0.b r7 = p065e0.C1497b.m4064a(r7)
+            float r9 = r7.f7284a
+            float r7 = r7.f7285b
+            e0.k r12 = p065e0.C1506k.f7328k
+            double r13 = (double) r7
+            r15 = 4607182418800017408(0x3ff0000000000000, double:1.0)
+            int r17 = (r13 > r15 ? 1 : (r13 == r15 ? 0 : -1))
+            if (r17 < 0) goto L2ce
+            int r13 = java.lang.Math.round(r10)
+            double r13 = (double) r13
+            r15 = 0
+            int r17 = (r13 > r15 ? 1 : (r13 == r15 ? 0 : -1))
+            if (r17 <= 0) goto L2ce
+            int r13 = java.lang.Math.round(r10)
+            double r13 = (double) r13
+            r15 = 4636737291354636288(0x4059000000000000, double:100.0)
+            int r17 = (r13 > r15 ? 1 : (r13 == r15 ? 0 : -1))
+            if (r17 < 0) goto L157
+            goto L2ce
+        L157:
+            int r11 = (r9 > r11 ? 1 : (r9 == r11 ? 0 : -1))
+            if (r11 >= 0) goto L15d
+            r9 = 0
+            goto L163
+        L15d:
+            r11 = 1135869952(0x43b40000, float:360.0)
+            float r9 = java.lang.Math.min(r11, r9)
+        L163:
+            r11 = 0
+            r13 = 1
+            r14 = 0
+            r13 = r11
+            r14 = 1
+            r15 = 0
+            r11 = r7
+        L16a:
+            float r16 = r15 - r7
+            float r16 = java.lang.Math.abs(r16)
+            r17 = 1053609165(0x3ecccccd, float:0.4)
+            int r16 = (r16 > r17 ? 1 : (r16 == r17 ? 0 : -1))
+            if (r16 < 0) goto L2c0
+            r16 = 1148846080(0x447a0000, float:1000.0)
+            r17 = 1148846080(0x447a0000, float:1000.0)
+            r18 = 0
+            r19 = 1120403456(0x42c80000, float:100.0)
+            r20 = 0
+            r1 = 0
+            r2 = 1120403456(0x42c80000, float:100.0)
+        L184:
+            float r18 = r1 - r2
+            float r18 = java.lang.Math.abs(r18)
+            r19 = 1008981770(0x3c23d70a, float:0.01)
+            r21 = r3
+            r3 = 1073741824(0x40000000, float:2.0)
+            int r18 = (r18 > r19 ? 1 : (r18 == r19 ? 0 : -1))
+            if (r18 <= 0) goto L288
+            r18 = r0
+            float r0 = p065e0.C1496a.m4063a(r2, r1, r3, r1)
+            e0.b r3 = p065e0.C1497b.m4065b(r0, r11, r9)
+            r22 = r0
+            e0.k r0 = p065e0.C1506k.f7328k
+            int r0 = r3.m4068e(r0)
+            int r3 = android.graphics.Color.red(r0)
+            float r3 = p065e0.C1498c.m4070b(r3)
+            int r23 = android.graphics.Color.green(r0)
+            float r23 = p065e0.C1498c.m4070b(r23)
+            int r24 = android.graphics.Color.blue(r0)
+            float r24 = p065e0.C1498c.m4070b(r24)
+            float[][] r25 = p065e0.C1498c.f7296d
+            r26 = 1
+            r27 = r25[r26]
+            r28 = 0
+            r27 = r27[r28]
+            float r3 = r3 * r27
+            r27 = r25[r26]
+            r27 = r27[r26]
+            float r23 = r23 * r27
+            float r23 = r23 + r3
+            r3 = r25[r26]
+            r25 = 2
+            r3 = r3[r25]
+            float r24 = r24 * r3
+            float r24 = r24 + r23
+            r3 = 1120403456(0x42c80000, float:100.0)
+            float r3 = r24 / r3
+            r23 = 1007753895(0x3c111aa7, float:0.008856452)
+            int r23 = (r3 > r23 ? 1 : (r3 == r23 ? 0 : -1))
+            if (r23 > 0) goto L1f2
+            r23 = 1147261687(0x4461d2f7, float:903.2963)
+            float r3 = r3 * r23
+            r23 = r1
+            r24 = r2
+            goto L204
+        L1f2:
+            r23 = r1
+            r24 = r2
+            double r1 = (double) r3
+            double r1 = java.lang.Math.cbrt(r1)
+            float r1 = (float) r1
+            r2 = 1122500608(0x42e80000, float:116.0)
+            float r1 = r1 * r2
+            r2 = 1098907648(0x41800000, float:16.0)
+            float r3 = r1 - r2
+        L204:
+            float r1 = r10 - r3
+            float r1 = java.lang.Math.abs(r1)
+            r2 = 1045220557(0x3e4ccccd, float:0.2)
+            int r2 = (r1 > r2 ? 1 : (r1 == r2 ? 0 : -1))
+            if (r2 >= 0) goto L25f
+            e0.b r0 = p065e0.C1497b.m4064a(r0)
+            float r2 = r0.f7286c
+            r25 = r1
+            float r1 = r0.f7285b
+            e0.b r1 = p065e0.C1497b.m4065b(r2, r1, r9)
+            float r2 = r0.f7290g
+            r26 = r9
+            float r9 = r1.f7290g
+            float r2 = r2 - r9
+            float r9 = r0.f7291h
+            r27 = r11
+            float r11 = r1.f7291h
+            float r9 = r9 - r11
+            float r11 = r0.f7292i
+            float r1 = r1.f7292i
+            float r11 = r11 - r1
+            float r2 = r2 * r2
+            float r9 = r9 * r9
+            float r9 = r9 + r2
+            float r11 = r11 * r11
+            float r11 = r11 + r9
+            double r1 = (double) r11
+            double r1 = java.lang.Math.sqrt(r1)
+            r28 = 4609028894647239311(0x3ff68f5c28f5c28f, double:1.41)
+            r9 = r5
+            r11 = r6
+            r5 = 4603849755075763241(0x3fe428f5c28f5c29, double:0.63)
+            double r1 = java.lang.Math.pow(r1, r5)
+            double r1 = r1 * r28
+            float r1 = (float) r1
+            r2 = 1065353216(0x3f800000, float:1.0)
+            int r2 = (r1 > r2 ? 1 : (r1 == r2 ? 0 : -1))
+            if (r2 > 0) goto L265
+            r20 = r0
+            r17 = r1
+            r16 = r25
+            goto L265
+        L25f:
+            r26 = r9
+            r27 = r11
+            r9 = r5
+            r11 = r6
+        L265:
+            r0 = 0
+            int r1 = (r16 > r0 ? 1 : (r16 == r0 ? 0 : -1))
+            if (r1 != 0) goto L26f
+            int r0 = (r17 > r0 ? 1 : (r17 == r0 ? 0 : -1))
+            if (r0 != 0) goto L26f
+            goto L290
+        L26f:
+            int r0 = (r3 > r10 ? 1 : (r3 == r10 ? 0 : -1))
+            if (r0 >= 0) goto L278
+            r1 = r22
+            r2 = r24
+            goto L27c
+        L278:
+            r2 = r22
+            r1 = r23
+        L27c:
+            r5 = r9
+            r6 = r11
+            r0 = r18
+            r3 = r21
+            r9 = r26
+            r11 = r27
+            goto L184
+        L288:
+            r18 = r0
+            r26 = r9
+            r27 = r11
+            r9 = r5
+            r11 = r6
+        L290:
+            r0 = r20
+            if (r14 == 0) goto L2b1
+            if (r0 == 0) goto L29b
+            int r7 = r0.m4068e(r12)
+            goto L2df
+        L29b:
+            r1 = 1073741824(0x40000000, float:2.0)
+            float r0 = p065e0.C1496a.m4063a(r7, r15, r1, r15)
+            r14 = 0
+        L2a2:
+            r1 = r32
+            r2 = r33
+            r5 = r9
+            r6 = r11
+            r3 = r21
+            r9 = r26
+            r11 = r0
+            r0 = r18
+            goto L16a
+        L2b1:
+            r1 = 1073741824(0x40000000, float:2.0)
+            if (r0 != 0) goto L2b8
+            r7 = r27
+            goto L2bb
+        L2b8:
+            r13 = r0
+            r15 = r27
+        L2bb:
+            float r0 = p065e0.C1496a.m4063a(r7, r15, r1, r15)
+            goto L2a2
+        L2c0:
+            r18 = r0
+            r21 = r3
+            r9 = r5
+            r11 = r6
+            if (r13 != 0) goto L2c9
+            goto L2d4
+        L2c9:
+            int r7 = r13.m4068e(r12)
+            goto L2df
+        L2ce:
+            r18 = r0
+            r21 = r3
+            r9 = r5
+            r11 = r6
+        L2d4:
+            int r7 = p065e0.C1498c.m4069a(r10)
+            goto L2df
+        L2d9:
+            r18 = r0
+            r21 = r3
+            r9 = r5
+            r11 = r6
+        L2df:
+            r0 = 16777215(0xffffff, float:2.3509886E-38)
+            r0 = r0 & r7
+            int r1 = r4 << 24
+            r7 = r0 | r1
+        L2e7:
+            int r0 = r8 + 1
+            int r1 = r9.length
+            r2 = 8
+            if (r0 <= r1) goto L2fe
+            r1 = 4
+            if (r8 > r1) goto L2f4
+            r1 = 8
+            goto L2f6
+        L2f4:
+            int r1 = r8 * 2
+        L2f6:
+            int[] r1 = new int[r1]
+            r3 = 0
+            java.lang.System.arraycopy(r9, r3, r1, r3, r8)
+            r5 = r1
+            goto L2ff
+        L2fe:
+            r5 = r9
+        L2ff:
+            r5[r8] = r7
+            int r1 = r11.length
+            if (r0 <= r1) goto L31e
+            java.lang.Class r1 = r11.getClass()
+            java.lang.Class r1 = r1.getComponentType()
+            r3 = 4
+            if (r8 > r3) goto L310
+            goto L312
+        L310:
+            int r2 = r8 * 2
+        L312:
+            java.lang.Object r1 = java.lang.reflect.Array.newInstance(r1, r2)
+            java.lang.Object[] r1 = (java.lang.Object[]) r1
+            r2 = 0
+            java.lang.System.arraycopy(r11, r2, r1, r2, r8)
+            r6 = r1
+            goto L31f
+        L31e:
+            r6 = r11
+        L31f:
+            r6[r8] = r18
+            int[][] r6 = (int[][]) r6
+            r8 = r0
+            goto L32b
+        L325:
+            r21 = r3
+            r9 = r5
+            r11 = r6
+            r5 = r9
+            r6 = r11
+        L32b:
+            r4 = 1
+            r7 = 0
+            r0 = r30
+            r1 = r32
+            r2 = r33
+            r3 = r21
+            goto L20
+        L337:
+            r9 = r5
+            r11 = r6
+            int[] r0 = new int[r8]
+            int[][] r1 = new int[r8][]
+            r2 = 0
+            java.lang.System.arraycopy(r9, r2, r0, r2, r8)
+            java.lang.System.arraycopy(r11, r2, r1, r2, r8)
+            android.content.res.ColorStateList r2 = new android.content.res.ColorStateList
+            r2.<init>(r1, r0)
+            return r2
+        L34a:
+            org.xmlpull.v1.XmlPullParserException r0 = new org.xmlpull.v1.XmlPullParserException
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            r1.<init>()
+            java.lang.String r2 = r31.getPositionDescription()
+            r1.append(r2)
+            java.lang.String r2 = ": invalid color state list tag "
+            r1.append(r2)
+            r1.append(r3)
+            java.lang.String r1 = r1.toString()
+            r0.<init>(r1)
+            throw r0
+    }
+}
+package p065e0;
+
+/* renamed from: e0.e */
+/* loaded from: classes.dex */
+public final class C1500e {
+
+    /* renamed from: a */
+    public final android.graphics.Shader f7298a;
+
+    /* renamed from: b */
+    public final android.content.res.ColorStateList f7299b;
+
+    /* renamed from: c */
+    public int f7300c;
+
+    public C1500e(android.graphics.Shader r1, android.content.res.ColorStateList r2, int r3) {
+            r0 = this;
+            r0.<init>()
+            r0.f7298a = r1
+            r0.f7299b = r2
+            r0.f7300c = r3
+            return
+    }
+
+    /* renamed from: a */
+    public static p065e0.C1500e m4074a(android.content.res.Resources r29, int r30, android.content.res.Resources.Theme r31) {
+            r0 = r29
+            r1 = r31
+            android.content.res.XmlResourceParser r2 = r29.getXml(r30)
+            android.util.AttributeSet r3 = android.util.Xml.asAttributeSet(r2)
+        Lc:
+            int r4 = r2.next()
+            r5 = 2
+            r6 = 1
+            if (r4 == r5) goto L17
+            if (r4 == r6) goto L17
+            goto Lc
+        L17:
+            if (r4 != r5) goto L278
+            java.lang.String r4 = r2.getName()
+            java.util.Objects.requireNonNull(r4)
+            java.lang.String r7 = "gradient"
+            boolean r8 = r4.equals(r7)
+            r9 = 0
+            if (r8 != 0) goto L5d
+            java.lang.String r5 = "selector"
+            boolean r5 = r4.equals(r5)
+            if (r5 == 0) goto L3f
+            android.content.res.ColorStateList r0 = p065e0.C1499d.m4073b(r0, r2, r3, r1)
+            e0.e r1 = new e0.e
+            int r2 = r0.getDefaultColor()
+            r1.<init>(r9, r0, r2)
+            return r1
+        L3f:
+            org.xmlpull.v1.XmlPullParserException r0 = new org.xmlpull.v1.XmlPullParserException
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            r1.<init>()
+            java.lang.String r2 = r2.getPositionDescription()
+            r1.append(r2)
+            java.lang.String r2 = ": unsupported complex color tag "
+            r1.append(r2)
+            r1.append(r4)
+            java.lang.String r1 = r1.toString()
+            r0.<init>(r1)
+            throw r0
+        L5d:
+            java.lang.String r4 = r2.getName()
+            boolean r7 = r4.equals(r7)
+            if (r7 == 0) goto L25a
+            int[] r4 = p017b0.C0653a.f3797d
+            android.content.res.TypedArray r4 = p065e0.C1505j.m4095i(r0, r1, r3, r4)
+            r7 = 8
+            java.lang.String r8 = "startX"
+            boolean r8 = p065e0.C1505j.m4094h(r2, r8)
+            r10 = 0
+            if (r8 != 0) goto L7a
+            r12 = 0
+            goto L7f
+        L7a:
+            float r7 = r4.getFloat(r7, r10)
+            r12 = r7
+        L7f:
+            r7 = 9
+            java.lang.String r8 = "startY"
+            boolean r8 = p065e0.C1505j.m4094h(r2, r8)
+            if (r8 != 0) goto L8b
+            r13 = 0
+            goto L90
+        L8b:
+            float r7 = r4.getFloat(r7, r10)
+            r13 = r7
+        L90:
+            r7 = 10
+            java.lang.String r8 = "endX"
+            boolean r8 = p065e0.C1505j.m4094h(r2, r8)
+            if (r8 != 0) goto L9c
+            r14 = 0
+            goto La1
+        L9c:
+            float r7 = r4.getFloat(r7, r10)
+            r14 = r7
+        La1:
+            r7 = 11
+            java.lang.String r8 = "endY"
+            boolean r8 = p065e0.C1505j.m4094h(r2, r8)
+            if (r8 != 0) goto Lad
+            r15 = 0
+            goto Lb2
+        Lad:
+            float r7 = r4.getFloat(r7, r10)
+            r15 = r7
+        Lb2:
+            java.lang.String r7 = "centerX"
+            boolean r7 = p065e0.C1505j.m4094h(r2, r7)
+            r8 = 3
+            if (r7 != 0) goto Lbd
+            r7 = 0
+            goto Lc1
+        Lbd:
+            float r7 = r4.getFloat(r8, r10)
+        Lc1:
+            r11 = 4
+            java.lang.String r9 = "centerY"
+            boolean r9 = p065e0.C1505j.m4094h(r2, r9)
+            if (r9 != 0) goto Lcc
+            r9 = 0
+            goto Ld0
+        Lcc:
+            float r9 = r4.getFloat(r11, r10)
+        Ld0:
+            java.lang.String r11 = "type"
+            boolean r11 = p065e0.C1505j.m4094h(r2, r11)
+            r8 = 0
+            if (r11 != 0) goto Ldb
+            r11 = 0
+            goto Ldf
+        Ldb:
+            int r11 = r4.getInt(r5, r8)
+        Ldf:
+            java.lang.String r5 = "startColor"
+            boolean r5 = p065e0.C1505j.m4094h(r2, r5)
+            if (r5 != 0) goto Le9
+            r5 = 0
+            goto Led
+        Le9:
+            int r5 = r4.getColor(r8, r8)
+        Led:
+            java.lang.String r10 = "centerColor"
+            boolean r19 = p065e0.C1505j.m4094h(r2, r10)
+            r6 = 7
+            boolean r10 = p065e0.C1505j.m4094h(r2, r10)
+            if (r10 != 0) goto Lfc
+            r6 = 0
+            goto L100
+        Lfc:
+            int r6 = r4.getColor(r6, r8)
+        L100:
+            java.lang.String r10 = "endColor"
+            boolean r10 = p065e0.C1505j.m4094h(r2, r10)
+            if (r10 != 0) goto L10a
+            r10 = 0
+            goto L111
+        L10a:
+            r10 = 1
+            int r21 = r4.getColor(r10, r8)
+            r10 = r21
+        L111:
+            java.lang.String r8 = "tileMode"
+            boolean r8 = p065e0.C1505j.m4094h(r2, r8)
+            r21 = r7
+            r7 = 0
+            if (r8 != 0) goto L11d
+            goto L123
+        L11d:
+            r8 = 6
+            int r8 = r4.getInt(r8, r7)
+            r7 = r8
+        L123:
+            java.lang.String r8 = "gradientRadius"
+            boolean r8 = p065e0.C1505j.m4094h(r2, r8)
+            if (r8 != 0) goto L12f
+            r22 = r9
+            r8 = 0
+            goto L137
+        L12f:
+            r8 = 5
+            r22 = r9
+            r9 = 0
+            float r8 = r4.getFloat(r8, r9)
+        L137:
+            r4.recycle()
+            int r4 = r2.getDepth()
+            r9 = 1
+            int r4 = r4 + r9
+            java.util.ArrayList r9 = new java.util.ArrayList
+            r23 = r8
+            r8 = 20
+            r9.<init>(r8)
+            r24 = r15
+            java.util.ArrayList r15 = new java.util.ArrayList
+            r15.<init>(r8)
+        L150:
+            int r8 = r2.next()
+            r25 = r14
+            r14 = 1
+            if (r8 == r14) goto L1c7
+            int r14 = r2.getDepth()
+            r26 = r13
+            if (r14 >= r4) goto L164
+            r13 = 3
+            if (r8 == r13) goto L1c9
+        L164:
+            r13 = 2
+            if (r8 == r13) goto L168
+            goto L1c2
+        L168:
+            if (r14 > r4) goto L1c2
+            java.lang.String r8 = r2.getName()
+            java.lang.String r13 = "item"
+            boolean r8 = r8.equals(r13)
+            if (r8 != 0) goto L177
+            goto L1c2
+        L177:
+            int[] r8 = p017b0.C0653a.f3798e
+            android.content.res.TypedArray r8 = p065e0.C1505j.m4095i(r0, r1, r3, r8)
+            r13 = 0
+            boolean r14 = r8.hasValue(r13)
+            r13 = 1
+            boolean r20 = r8.hasValue(r13)
+            if (r14 == 0) goto L1a7
+            if (r20 == 0) goto L1a7
+            r14 = 0
+            int r27 = r8.getColor(r14, r14)
+            r14 = 0
+            float r28 = r8.getFloat(r13, r14)
+            r8.recycle()
+            java.lang.Integer r8 = java.lang.Integer.valueOf(r27)
+            r15.add(r8)
+            java.lang.Float r8 = java.lang.Float.valueOf(r28)
+            r9.add(r8)
+            goto L1c2
+        L1a7:
+            org.xmlpull.v1.XmlPullParserException r0 = new org.xmlpull.v1.XmlPullParserException
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            r1.<init>()
+            java.lang.String r2 = r2.getPositionDescription()
+            r1.append(r2)
+            java.lang.String r2 = ": <item> tag requires a 'color' attribute and a 'offset' attribute!"
+            r1.append(r2)
+            java.lang.String r1 = r1.toString()
+            r0.<init>(r1)
+            throw r0
+        L1c2:
+            r14 = r25
+            r13 = r26
+            goto L150
+        L1c7:
+            r26 = r13
+        L1c9:
+            int r0 = r15.size()
+            if (r0 <= 0) goto L1d5
+            e0.g r0 = new e0.g
+            r0.<init>(r15, r9)
+            goto L1d6
+        L1d5:
+            r0 = 0
+        L1d6:
+            if (r0 == 0) goto L1da
+        L1d8:
+            r1 = 1
+            goto L1e6
+        L1da:
+            e0.g r0 = new e0.g
+            if (r19 == 0) goto L1e2
+            r0.<init>(r5, r6, r10)
+            goto L1d8
+        L1e2:
+            r0.<init>(r5, r10)
+            goto L1d8
+        L1e6:
+            if (r11 == r1) goto L21c
+            r2 = 2
+            if (r11 == r2) goto L20e
+            android.graphics.LinearGradient r3 = new android.graphics.LinearGradient
+            int[] r4 = r0.f7312a
+            float[] r0 = r0.f7313b
+            if (r7 == r1) goto L1fb
+            if (r7 == r2) goto L1f8
+            android.graphics.Shader$TileMode r1 = android.graphics.Shader.TileMode.CLAMP
+            goto L1fd
+        L1f8:
+            android.graphics.Shader$TileMode r1 = android.graphics.Shader.TileMode.MIRROR
+            goto L1fd
+        L1fb:
+            android.graphics.Shader$TileMode r1 = android.graphics.Shader.TileMode.REPEAT
+        L1fd:
+            r18 = r1
+            r11 = r3
+            r13 = r26
+            r14 = r25
+            r15 = r24
+            r16 = r4
+            r17 = r0
+            r11.<init>(r12, r13, r14, r15, r16, r17, r18)
+            goto L24a
+        L20e:
+            android.graphics.SweepGradient r3 = new android.graphics.SweepGradient
+            int[] r1 = r0.f7312a
+            float[] r0 = r0.f7313b
+            r10 = r21
+            r9 = r22
+            r3.<init>(r10, r9, r1, r0)
+            goto L24a
+        L21c:
+            r10 = r21
+            r9 = r22
+            r1 = 0
+            int r1 = (r23 > r1 ? 1 : (r23 == r1 ? 0 : -1))
+            if (r1 <= 0) goto L252
+            android.graphics.RadialGradient r3 = new android.graphics.RadialGradient
+            int[] r1 = r0.f7312a
+            float[] r0 = r0.f7313b
+            r2 = 1
+            if (r7 == r2) goto L237
+            r2 = 2
+            if (r7 == r2) goto L234
+            android.graphics.Shader$TileMode r2 = android.graphics.Shader.TileMode.CLAMP
+            goto L239
+        L234:
+            android.graphics.Shader$TileMode r2 = android.graphics.Shader.TileMode.MIRROR
+            goto L239
+        L237:
+            android.graphics.Shader$TileMode r2 = android.graphics.Shader.TileMode.REPEAT
+        L239:
+            r22 = r2
+            r16 = r3
+            r17 = r10
+            r18 = r9
+            r19 = r23
+            r20 = r1
+            r21 = r0
+            r16.<init>(r17, r18, r19, r20, r21, r22)
+        L24a:
+            e0.e r0 = new e0.e
+            r1 = 0
+            r2 = 0
+            r0.<init>(r3, r1, r2)
+            return r0
+        L252:
+            org.xmlpull.v1.XmlPullParserException r0 = new org.xmlpull.v1.XmlPullParserException
+            java.lang.String r1 = "<gradient> tag requires 'gradientRadius' attribute with radial type"
+            r0.<init>(r1)
+            throw r0
+        L25a:
+            org.xmlpull.v1.XmlPullParserException r0 = new org.xmlpull.v1.XmlPullParserException
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            r1.<init>()
+            java.lang.String r2 = r2.getPositionDescription()
+            r1.append(r2)
+            java.lang.String r2 = ": invalid gradient color tag "
+            r1.append(r2)
+            r1.append(r4)
+            java.lang.String r1 = r1.toString()
+            r0.<init>(r1)
+            throw r0
+        L278:
+            org.xmlpull.v1.XmlPullParserException r0 = new org.xmlpull.v1.XmlPullParserException
+            java.lang.String r1 = "No start tag found"
+            r0.<init>(r1)
+            throw r0
+    }
+
+    /* renamed from: b */
+    public boolean m4075b() {
+            r1 = this;
+            android.graphics.Shader r0 = r1.f7298a
+            if (r0 == 0) goto L6
+            r0 = 1
+            goto L7
+        L6:
+            r0 = 0
+        L7:
+            return r0
+    }
+
+    /* renamed from: c */
+    public boolean m4076c() {
+            r1 = this;
+            android.graphics.Shader r0 = r1.f7298a
+            if (r0 != 0) goto L10
+            android.content.res.ColorStateList r0 = r1.f7299b
+            if (r0 == 0) goto L10
+            boolean r0 = r0.isStateful()
+            if (r0 == 0) goto L10
+            r0 = 1
+            goto L11
+        L10:
+            r0 = 0
+        L11:
+            return r0
+    }
+
+    /* renamed from: d */
+    public boolean m4077d(int[] r3) {
+            r2 = this;
+            boolean r0 = r2.m4076c()
+            if (r0 == 0) goto L18
+            android.content.res.ColorStateList r0 = r2.f7299b
+            int r1 = r0.getDefaultColor()
+            int r3 = r0.getColorForState(r3, r1)
+            int r0 = r2.f7300c
+            if (r3 == r0) goto L18
+            r0 = 1
+            r2.f7300c = r3
+            goto L19
+        L18:
+            r0 = 0
+        L19:
+            return r0
+    }
+}
+package p065e0;
+
+/* renamed from: e0.f */
+/* loaded from: classes.dex */
+public class C1501f {
+
+    /* renamed from: e0.f$a */
+    public interface a {
+    }
+
+    /* renamed from: e0.f$b */
+    public static final class b implements p065e0.C1501f.a {
+
+        /* renamed from: a */
+        public final p065e0.C1501f.c[] f7301a;
+
+        public b(p065e0.C1501f.c[] r1) {
+                r0 = this;
+                r0.<init>()
+                r0.f7301a = r1
+                return
+        }
+    }
+
+    /* renamed from: e0.f$c */
+    public static final class c {
+
+        /* renamed from: a */
+        public final java.lang.String f7302a;
+
+        /* renamed from: b */
+        public int f7303b;
+
+        /* renamed from: c */
+        public boolean f7304c;
+
+        /* renamed from: d */
+        public java.lang.String f7305d;
+
+        /* renamed from: e */
+        public int f7306e;
+
+        /* renamed from: f */
+        public int f7307f;
+
+        public c(java.lang.String r1, int r2, boolean r3, java.lang.String r4, int r5, int r6) {
+                r0 = this;
+                r0.<init>()
+                r0.f7302a = r1
+                r0.f7303b = r2
+                r0.f7304c = r3
+                r0.f7305d = r4
+                r0.f7306e = r5
+                r0.f7307f = r6
+                return
+        }
+    }
+
+    /* renamed from: e0.f$d */
+    public static final class d implements p065e0.C1501f.a {
+
+        /* renamed from: a */
+        public final p178k0.C3629e f7308a;
+
+        /* renamed from: b */
+        public final int f7309b;
+
+        /* renamed from: c */
+        public final int f7310c;
+
+        /* renamed from: d */
+        public final java.lang.String f7311d;
+
+        public d(p178k0.C3629e r1, int r2, int r3, java.lang.String r4) {
+                r0 = this;
+                r0.<init>()
+                r0.f7308a = r1
+                r0.f7310c = r2
+                r0.f7309b = r3
+                r0.f7311d = r4
+                return
+        }
+    }
+
+    /* renamed from: a */
+    public static p065e0.C1501f.a m4078a(org.xmlpull.v1.XmlPullParser r23, android.content.res.Resources r24) {
+            r0 = r24
+        L2:
+            int r1 = r23.next()
+            r2 = 2
+            r3 = 1
+            if (r1 == r2) goto Ld
+            if (r1 == r3) goto Ld
+            goto L2
+        Ld:
+            if (r1 != r2) goto L125
+            java.lang.String r1 = "font-family"
+            r4 = 0
+            r5 = r23
+            r5.require(r2, r4, r1)
+            java.lang.String r6 = r23.getName()
+            boolean r1 = r6.equals(r1)
+            if (r1 == 0) goto L120
+            android.util.AttributeSet r1 = android.util.Xml.asAttributeSet(r23)
+            int[] r6 = p017b0.C0653a.f3795b
+            android.content.res.TypedArray r1 = r0.obtainAttributes(r1, r6)
+            r6 = 0
+            java.lang.String r7 = r1.getString(r6)
+            r8 = 4
+            java.lang.String r9 = r1.getString(r8)
+            r10 = 5
+            java.lang.String r11 = r1.getString(r10)
+            int r12 = r1.getResourceId(r3, r6)
+            int r13 = r1.getInteger(r2, r3)
+            r14 = 500(0x1f4, float:7.0E-43)
+            r15 = 3
+            int r14 = r1.getInteger(r15, r14)
+            r4 = 6
+            java.lang.String r8 = r1.getString(r4)
+            r1.recycle()
+            if (r7 == 0) goto L71
+            if (r9 == 0) goto L71
+            if (r11 == 0) goto L71
+        L57:
+            int r1 = r23.next()
+            if (r1 == r15) goto L61
+            m4080c(r23)
+            goto L57
+        L61:
+            java.util.List r0 = m4079b(r0, r12)
+            e0.f$d r4 = new e0.f$d
+            k0.e r1 = new k0.e
+            r1.<init>(r7, r9, r11, r0)
+            r4.<init>(r1, r13, r14, r8)
+            goto L124
+        L71:
+            java.util.ArrayList r1 = new java.util.ArrayList
+            r1.<init>()
+        L76:
+            int r7 = r23.next()
+            if (r7 == r15) goto L107
+            int r7 = r23.getEventType()
+            if (r7 == r2) goto L83
+            goto L76
+        L83:
+            java.lang.String r7 = r23.getName()
+            java.lang.String r8 = "font"
+            boolean r7 = r7.equals(r8)
+            if (r7 == 0) goto L102
+            android.util.AttributeSet r7 = android.util.Xml.asAttributeSet(r23)
+            int[] r8 = p017b0.C0653a.f3796c
+            android.content.res.TypedArray r7 = r0.obtainAttributes(r7, r8)
+            r8 = 8
+            boolean r9 = r7.hasValue(r8)
+            if (r9 == 0) goto La2
+            goto La3
+        La2:
+            r8 = 1
+        La3:
+            r9 = 400(0x190, float:5.6E-43)
+            int r18 = r7.getInt(r8, r9)
+            boolean r8 = r7.hasValue(r4)
+            if (r8 == 0) goto Lb1
+            r8 = 6
+            goto Lb2
+        Lb1:
+            r8 = 2
+        Lb2:
+            int r8 = r7.getInt(r8, r6)
+            if (r3 != r8) goto Lbb
+            r19 = 1
+            goto Lbd
+        Lbb:
+            r19 = 0
+        Lbd:
+            r8 = 9
+            boolean r9 = r7.hasValue(r8)
+            if (r9 == 0) goto Lc6
+            goto Lc7
+        Lc6:
+            r8 = 3
+        Lc7:
+            r9 = 7
+            boolean r11 = r7.hasValue(r9)
+            if (r11 == 0) goto Lcf
+            goto Ld0
+        Lcf:
+            r9 = 4
+        Ld0:
+            java.lang.String r20 = r7.getString(r9)
+            int r21 = r7.getInt(r8, r6)
+            boolean r8 = r7.hasValue(r10)
+            if (r8 == 0) goto Le0
+            r8 = 5
+            goto Le1
+        Le0:
+            r8 = 0
+        Le1:
+            int r22 = r7.getResourceId(r8, r6)
+            java.lang.String r17 = r7.getString(r8)
+            r7.recycle()
+        Lec:
+            int r7 = r23.next()
+            if (r7 == r15) goto Lf6
+            m4080c(r23)
+            goto Lec
+        Lf6:
+            e0.f$c r7 = new e0.f$c
+            r16 = r7
+            r16.<init>(r17, r18, r19, r20, r21, r22)
+            r1.add(r7)
+            goto L76
+        L102:
+            m4080c(r23)
+            goto L76
+        L107:
+            boolean r0 = r1.isEmpty()
+            if (r0 == 0) goto L10e
+            goto L123
+        L10e:
+            e0.f$b r4 = new e0.f$b
+            int r0 = r1.size()
+            e0.f$c[] r0 = new p065e0.C1501f.c[r0]
+            java.lang.Object[] r0 = r1.toArray(r0)
+            e0.f$c[] r0 = (p065e0.C1501f.c[]) r0
+            r4.<init>(r0)
+            goto L124
+        L120:
+            m4080c(r23)
+        L123:
+            r4 = 0
+        L124:
+            return r4
+        L125:
+            org.xmlpull.v1.XmlPullParserException r0 = new org.xmlpull.v1.XmlPullParserException
+            java.lang.String r1 = "No start tag found"
+            r0.<init>(r1)
+            throw r0
+    }
+
+    /* renamed from: b */
+    public static java.util.List<java.util.List<byte[]>> m4079b(android.content.res.Resources r5, int r6) {
+            if (r6 != 0) goto L7
+            java.util.List r5 = java.util.Collections.emptyList()
+            return r5
+        L7:
+            android.content.res.TypedArray r0 = r5.obtainTypedArray(r6)
+            int r1 = r0.length()     // Catch: java.lang.Throwable -> L50
+            if (r1 != 0) goto L19
+            java.util.List r5 = java.util.Collections.emptyList()     // Catch: java.lang.Throwable -> L50
+            r0.recycle()
+            return r5
+        L19:
+            java.util.ArrayList r1 = new java.util.ArrayList     // Catch: java.lang.Throwable -> L50
+            r1.<init>()     // Catch: java.lang.Throwable -> L50
+            r2 = 0
+            int r3 = r0.getType(r2)     // Catch: java.lang.Throwable -> L50
+            r4 = 1
+            if (r3 != r4) goto L41
+            r6 = 0
+        L27:
+            int r3 = r0.length()     // Catch: java.lang.Throwable -> L50
+            if (r6 >= r3) goto L4c
+            int r3 = r0.getResourceId(r6, r2)     // Catch: java.lang.Throwable -> L50
+            if (r3 == 0) goto L3e
+            java.lang.String[] r3 = r5.getStringArray(r3)     // Catch: java.lang.Throwable -> L50
+            java.util.List r3 = m4081d(r3)     // Catch: java.lang.Throwable -> L50
+            r1.add(r3)     // Catch: java.lang.Throwable -> L50
+        L3e:
+            int r6 = r6 + 1
+            goto L27
+        L41:
+            java.lang.String[] r5 = r5.getStringArray(r6)     // Catch: java.lang.Throwable -> L50
+            java.util.List r5 = m4081d(r5)     // Catch: java.lang.Throwable -> L50
+            r1.add(r5)     // Catch: java.lang.Throwable -> L50
+        L4c:
+            r0.recycle()
+            return r1
+        L50:
+            r5 = move-exception
+            r0.recycle()
+            throw r5
+    }
+
+    /* renamed from: c */
+    public static void m4080c(org.xmlpull.v1.XmlPullParser r3) {
+            r0 = 1
+        L1:
+            if (r0 <= 0) goto L14
+            int r1 = r3.next()
+            r2 = 2
+            if (r1 == r2) goto L11
+            r2 = 3
+            if (r1 == r2) goto Le
+            goto L1
+        Le:
+            int r0 = r0 + (-1)
+            goto L1
+        L11:
+            int r0 = r0 + 1
+            goto L1
+        L14:
+            return
+    }
+
+    /* renamed from: d */
+    public static java.util.List<byte[]> m4081d(java.lang.String[] r5) {
+            java.util.ArrayList r0 = new java.util.ArrayList
+            r0.<init>()
+            int r1 = r5.length
+            r2 = 0
+            r3 = 0
+        L8:
+            if (r3 >= r1) goto L16
+            r4 = r5[r3]
+            byte[] r4 = android.util.Base64.decode(r4, r2)
+            r0.add(r4)
+            int r3 = r3 + 1
+            goto L8
+        L16:
+            return r0
+    }
+}
+package p065e0;
+
+/* renamed from: e0.g */
+/* loaded from: classes.dex */
+public final class C1502g {
+
+    /* renamed from: a */
+    public final int[] f7312a;
+
+    /* renamed from: b */
+    public final float[] f7313b;
+
+    public C1502g(int r4, int r5) {
+            r3 = this;
+            r3.<init>()
+            r0 = 2
+            int[] r1 = new int[r0]
+            r2 = 0
+            r1[r2] = r4
+            r4 = 1
+            r1[r4] = r5
+            r3.f7312a = r1
+            float[] r4 = new float[r0]
+            r4 = {x0016: FILL_ARRAY_DATA , data: [0, 1065353216} // fill-array
+            r3.f7313b = r4
+            return
+    }
+
+    public C1502g(int r4, int r5, int r6) {
+            r3 = this;
+            r3.<init>()
+            r0 = 3
+            int[] r1 = new int[r0]
+            r2 = 0
+            r1[r2] = r4
+            r4 = 1
+            r1[r4] = r5
+            r4 = 2
+            r1[r4] = r6
+            r3.f7312a = r1
+            float[] r4 = new float[r0]
+            r4 = {x001a: FILL_ARRAY_DATA , data: [0, 1056964608, 1065353216} // fill-array
+            r3.f7313b = r4
+            return
+    }
+
+    public C1502g(java.util.List<java.lang.Integer> r5, java.util.List<java.lang.Float> r6) {
+            r4 = this;
+            r4.<init>()
+            int r0 = r5.size()
+            int[] r1 = new int[r0]
+            r4.f7312a = r1
+            float[] r1 = new float[r0]
+            r4.f7313b = r1
+            r1 = 0
+        L10:
+            if (r1 >= r0) goto L31
+            int[] r2 = r4.f7312a
+            java.lang.Object r3 = r5.get(r1)
+            java.lang.Integer r3 = (java.lang.Integer) r3
+            int r3 = r3.intValue()
+            r2[r1] = r3
+            float[] r2 = r4.f7313b
+            java.lang.Object r3 = r6.get(r1)
+            java.lang.Float r3 = (java.lang.Float) r3
+            float r3 = r3.floatValue()
+            r2[r1] = r3
+            int r1 = r1 + 1
+            goto L10
+        L31:
+            return
+    }
+}
+package p065e0;
+
+/* renamed from: e0.h */
+/* loaded from: classes.dex */
+public final class C1503h {
+
+    /* renamed from: a */
+    public static final java.lang.ThreadLocal<android.util.TypedValue> f7314a = null;
+
+    /* renamed from: b */
+    public static final java.util.WeakHashMap<p065e0.C1503h.b, android.util.SparseArray<p065e0.C1503h.a>> f7315b = null;
+
+    /* renamed from: c */
+    public static final java.lang.Object f7316c = null;
+
+    /* renamed from: e0.h$a */
+    public static class a {
+
+        /* renamed from: a */
+        public final android.content.res.ColorStateList f7317a;
+
+        /* renamed from: b */
+        public final android.content.res.Configuration f7318b;
+
+        public a(android.content.res.ColorStateList r1, android.content.res.Configuration r2) {
+                r0 = this;
+                r0.<init>()
+                r0.f7317a = r1
+                r0.f7318b = r2
+                return
+        }
+    }
+
+    /* renamed from: e0.h$b */
+    public static final class b {
+
+        /* renamed from: a */
+        public final android.content.res.Resources f7319a;
+
+        /* renamed from: b */
+        public final android.content.res.Resources.Theme f7320b;
+
+        public b(android.content.res.Resources r1, android.content.res.Resources.Theme r2) {
+                r0 = this;
+                r0.<init>()
+                r0.f7319a = r1
+                r0.f7320b = r2
+                return
+        }
+
+        public boolean equals(java.lang.Object r5) {
+                r4 = this;
+                r0 = 1
+                if (r4 != r5) goto L4
+                return r0
+            L4:
+                r1 = 0
+                if (r5 == 0) goto L29
+                java.lang.Class<e0.h$b> r2 = p065e0.C1503h.b.class
+                java.lang.Class r3 = r5.getClass()
+                if (r2 == r3) goto L10
+                goto L29
+            L10:
+                e0.h$b r5 = (p065e0.C1503h.b) r5
+                android.content.res.Resources r2 = r4.f7319a
+                android.content.res.Resources r3 = r5.f7319a
+                boolean r2 = r2.equals(r3)
+                if (r2 == 0) goto L27
+                android.content.res.Resources$Theme r2 = r4.f7320b
+                android.content.res.Resources$Theme r5 = r5.f7320b
+                boolean r5 = java.util.Objects.equals(r2, r5)
+                if (r5 == 0) goto L27
+                goto L28
+            L27:
+                r0 = 0
+            L28:
+                return r0
+            L29:
+                return r1
+        }
+
+        public int hashCode() {
+                r3 = this;
+                r0 = 2
+                java.lang.Object[] r0 = new java.lang.Object[r0]
+                android.content.res.Resources r1 = r3.f7319a
+                r2 = 0
+                r0[r2] = r1
+                android.content.res.Resources$Theme r1 = r3.f7320b
+                r2 = 1
+                r0[r2] = r1
+                int r0 = java.util.Objects.hash(r0)
+                return r0
+        }
+    }
+
+    /* renamed from: e0.h$c */
+    public static abstract class c {
+
+        /* renamed from: e0.h$c$a */
+        public class a implements java.lang.Runnable {
+
+            /* renamed from: Y */
+            public final /* synthetic */ android.graphics.Typeface f7321Y;
+
+            /* renamed from: Z */
+            public final /* synthetic */ p065e0.C1503h.c f7322Z;
+
+            public a(p065e0.C1503h.c r1, android.graphics.Typeface r2) {
+                    r0 = this;
+                    r0.f7322Z = r1
+                    r0.f7321Y = r2
+                    r0.<init>()
+                    return
+            }
+
+            @Override // java.lang.Runnable
+            public void run() {
+                    r2 = this;
+                    e0.h$c r0 = r2.f7322Z
+                    android.graphics.Typeface r1 = r2.f7321Y
+                    r0.mo846e(r1)
+                    return
+            }
+        }
+
+        /* renamed from: e0.h$c$b */
+        public class b implements java.lang.Runnable {
+
+            /* renamed from: Y */
+            public final /* synthetic */ int f7323Y;
+
+            /* renamed from: Z */
+            public final /* synthetic */ p065e0.C1503h.c f7324Z;
+
+            public b(p065e0.C1503h.c r1, int r2) {
+                    r0 = this;
+                    r0.f7324Z = r1
+                    r0.f7323Y = r2
+                    r0.<init>()
+                    return
+            }
+
+            @Override // java.lang.Runnable
+            public void run() {
+                    r2 = this;
+                    e0.h$c r0 = r2.f7324Z
+                    int r1 = r2.f7323Y
+                    r0.mo845d(r1)
+                    return
+            }
+        }
+
+        public c() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        /* renamed from: c */
+        public static android.os.Handler m4084c(android.os.Handler r1) {
+                if (r1 != 0) goto Lb
+                android.os.Handler r1 = new android.os.Handler
+                android.os.Looper r0 = android.os.Looper.getMainLooper()
+                r1.<init>(r0)
+            Lb:
+                return r1
+        }
+
+        /* renamed from: a */
+        public final void m4085a(int r2, android.os.Handler r3) {
+                r1 = this;
+                android.os.Handler r3 = m4084c(r3)
+                e0.h$c$b r0 = new e0.h$c$b
+                r0.<init>(r1, r2)
+                r3.post(r0)
+                return
+        }
+
+        /* renamed from: b */
+        public final void m4086b(android.graphics.Typeface r2, android.os.Handler r3) {
+                r1 = this;
+                android.os.Handler r3 = m4084c(r3)
+                e0.h$c$a r0 = new e0.h$c$a
+                r0.<init>(r1, r2)
+                r3.post(r0)
+                return
+        }
+
+        /* renamed from: d */
+        public abstract void mo845d(int r1);
+
+        /* renamed from: e */
+        public abstract void mo846e(android.graphics.Typeface r1);
+    }
+
+    static {
+            java.lang.ThreadLocal r0 = new java.lang.ThreadLocal
+            r0.<init>()
+            p065e0.C1503h.f7314a = r0
+            java.util.WeakHashMap r0 = new java.util.WeakHashMap
+            r1 = 0
+            r0.<init>(r1)
+            p065e0.C1503h.f7315b = r0
+            java.lang.Object r0 = new java.lang.Object
+            r0.<init>()
+            p065e0.C1503h.f7316c = r0
+            return
+    }
+
+    /* renamed from: a */
+    public static android.graphics.Typeface m4082a(android.content.Context r8, int r9) {
+            boolean r0 = r8.isRestricted()
+            if (r0 == 0) goto L8
+            r8 = 0
+            return r8
+        L8:
+            android.util.TypedValue r2 = new android.util.TypedValue
+            r2.<init>()
+            r3 = 0
+            r4 = 0
+            r5 = 0
+            r6 = 0
+            r7 = 0
+            r0 = r8
+            r1 = r9
+            android.graphics.Typeface r8 = m4083b(r0, r1, r2, r3, r4, r5, r6, r7)
+            return r8
+    }
+
+    /* renamed from: b */
+    public static android.graphics.Typeface m4083b(android.content.Context r16, int r17, android.util.TypedValue r18, int r19, p065e0.C1503h.c r20, android.os.Handler r21, boolean r22, boolean r23) {
+            r9 = r17
+            r0 = r18
+            r5 = r19
+            r10 = r20
+            r11 = r21
+            android.content.res.Resources r3 = r16.getResources()
+            r1 = 1
+            r3.getValue(r9, r0, r1)
+            java.lang.String r12 = "ResourcesCompat"
+            java.lang.CharSequence r1 = r0.string
+            if (r1 == 0) goto Lcf
+            java.lang.String r13 = r1.toString()
+            java.lang.String r0 = "res/"
+            boolean r0 = r13.startsWith(r0)
+            r14 = -3
+            r15 = 0
+            if (r0 != 0) goto L2a
+            if (r10 == 0) goto Lab
+            goto La8
+        L2a:
+            s.f<java.lang.String, android.graphics.Typeface> r0 = p084f0.C1942e.f8488b
+            java.lang.String r1 = p084f0.C1942e.m4839c(r3, r9, r5)
+            java.lang.Object r0 = r0.m12329b(r1)
+            android.graphics.Typeface r0 = (android.graphics.Typeface) r0
+            if (r0 == 0) goto L40
+            if (r10 == 0) goto L3d
+            r10.m4086b(r0, r11)
+        L3d:
+            r15 = r0
+            goto Lab
+        L40:
+            if (r23 == 0) goto L44
+            goto Lab
+        L44:
+            java.lang.String r0 = r13.toLowerCase()     // Catch: java.io.IOException -> L88 org.xmlpull.v1.XmlPullParserException -> L91
+            java.lang.String r1 = ".xml"
+            boolean r0 = r0.endsWith(r1)     // Catch: java.io.IOException -> L88 org.xmlpull.v1.XmlPullParserException -> L91
+            if (r0 == 0) goto L76
+            android.content.res.XmlResourceParser r0 = r3.getXml(r9)     // Catch: java.io.IOException -> L88 org.xmlpull.v1.XmlPullParserException -> L91
+            e0.f$a r2 = p065e0.C1501f.m4078a(r0, r3)     // Catch: java.io.IOException -> L88 org.xmlpull.v1.XmlPullParserException -> L91
+            if (r2 != 0) goto L65
+            java.lang.String r0 = "Failed to find font-family tag"
+            android.util.Log.e(r12, r0)     // Catch: java.io.IOException -> L88 org.xmlpull.v1.XmlPullParserException -> L91
+            if (r10 == 0) goto Lab
+            r10.m4085a(r14, r11)     // Catch: java.io.IOException -> L88 org.xmlpull.v1.XmlPullParserException -> L91
+            goto Lab
+        L65:
+            r1 = r16
+            r4 = r17
+            r5 = r19
+            r6 = r20
+            r7 = r21
+            r8 = r22
+            android.graphics.Typeface r15 = p084f0.C1942e.m4837a(r1, r2, r3, r4, r5, r6, r7, r8)     // Catch: java.io.IOException -> L88 org.xmlpull.v1.XmlPullParserException -> L91
+            goto Lab
+        L76:
+            r0 = r16
+            android.graphics.Typeface r0 = p084f0.C1942e.m4838b(r0, r3, r9, r13, r5)     // Catch: java.io.IOException -> L88 org.xmlpull.v1.XmlPullParserException -> L91
+            if (r10 == 0) goto L3d
+            if (r0 == 0) goto L84
+            r10.m4086b(r0, r11)     // Catch: java.io.IOException -> L88 org.xmlpull.v1.XmlPullParserException -> L91
+            goto L3d
+        L84:
+            r10.m4085a(r14, r11)     // Catch: java.io.IOException -> L88 org.xmlpull.v1.XmlPullParserException -> L91
+            goto L3d
+        L88:
+            r0 = move-exception
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            r1.<init>()
+            java.lang.String r2 = "Failed to read xml resource "
+            goto L99
+        L91:
+            r0 = move-exception
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            r1.<init>()
+            java.lang.String r2 = "Failed to parse xml resource "
+        L99:
+            r1.append(r2)
+            r1.append(r13)
+            java.lang.String r1 = r1.toString()
+            android.util.Log.e(r12, r1, r0)
+            if (r10 == 0) goto Lab
+        La8:
+            r10.m4085a(r14, r11)
+        Lab:
+            if (r15 != 0) goto Lce
+            if (r10 != 0) goto Lce
+            if (r23 == 0) goto Lb2
+            goto Lce
+        Lb2:
+            android.content.res.Resources$NotFoundException r0 = new android.content.res.Resources$NotFoundException
+            java.lang.String r1 = "Font resource ID #0x"
+            java.lang.StringBuilder r1 = android.support.v4.media.C0144c.m256a(r1)
+            java.lang.String r2 = java.lang.Integer.toHexString(r17)
+            r1.append(r2)
+            java.lang.String r2 = " could not be retrieved."
+            r1.append(r2)
+            java.lang.String r1 = r1.toString()
+            r0.<init>(r1)
+            throw r0
+        Lce:
+            return r15
+        Lcf:
+            android.content.res.Resources$NotFoundException r1 = new android.content.res.Resources$NotFoundException
+            java.lang.String r2 = "Resource \""
+            java.lang.StringBuilder r2 = android.support.v4.media.C0144c.m256a(r2)
+            java.lang.String r3 = r3.getResourceName(r9)
+            r2.append(r3)
+            java.lang.String r3 = "\" ("
+            r2.append(r3)
+            java.lang.String r3 = java.lang.Integer.toHexString(r17)
+            r2.append(r3)
+            java.lang.String r3 = ") is not a Font: "
+            r2.append(r3)
+            r2.append(r0)
+            java.lang.String r0 = r2.toString()
+            r1.<init>(r0)
+            throw r1
+    }
+}
+package p065e0;
+
+/* renamed from: e0.i */
+/* loaded from: classes.dex */
+public class C1504i {
+
+    /* renamed from: a */
+    public static final java.lang.Object f7325a = null;
+
+    /* renamed from: b */
+    public static java.lang.reflect.Method f7326b;
+
+    /* renamed from: c */
+    public static boolean f7327c;
+
+    static {
+            java.lang.Object r0 = new java.lang.Object
+            r0.<init>()
+            p065e0.C1504i.f7325a = r0
+            return
+    }
+}
+package p065e0;
+
+/* renamed from: e0.j */
+/* loaded from: classes.dex */
+public class C1505j {
+    /* renamed from: a */
+    public static int m4087a(android.content.Context r2, int r3, int r4) {
+            android.util.TypedValue r0 = new android.util.TypedValue
+            r0.<init>()
+            android.content.res.Resources$Theme r2 = r2.getTheme()
+            r1 = 1
+            r2.resolveAttribute(r3, r0, r1)
+            int r2 = r0.resourceId
+            if (r2 == 0) goto L12
+            return r3
+        L12:
+            return r4
+    }
+
+    /* renamed from: b */
+    public static boolean m4088b(android.content.res.TypedArray r0, int r1, int r2, boolean r3) {
+            boolean r2 = r0.getBoolean(r2, r3)
+            boolean r0 = r0.getBoolean(r1, r2)
+            return r0
+    }
+
+    /* renamed from: c */
+    public static p065e0.C1500e m4089c(android.content.res.TypedArray r2, org.xmlpull.v1.XmlPullParser r3, android.content.res.Resources.Theme r4, java.lang.String r5, int r6, int r7) {
+            boolean r3 = m4094h(r3, r5)
+            r5 = 0
+            if (r3 == 0) goto L3b
+            android.util.TypedValue r3 = new android.util.TypedValue
+            r3.<init>()
+            r2.getValue(r6, r3)
+            int r0 = r3.type
+            r1 = 28
+            if (r0 < r1) goto L21
+            r1 = 31
+            if (r0 > r1) goto L21
+            int r2 = r3.data
+            e0.e r3 = new e0.e
+            r3.<init>(r5, r5, r2)
+            return r3
+        L21:
+            android.content.res.Resources r3 = r2.getResources()
+            r0 = 0
+            int r2 = r2.getResourceId(r6, r0)
+            e0.e r2 = p065e0.C1500e.m4074a(r3, r2, r4)     // Catch: java.lang.Exception -> L2f
+            goto L38
+        L2f:
+            r2 = move-exception
+            java.lang.String r3 = "ComplexColorCompat"
+            java.lang.String r4 = "Failed to inflate ComplexColor."
+            android.util.Log.e(r3, r4, r2)
+            r2 = r5
+        L38:
+            if (r2 == 0) goto L3b
+            return r2
+        L3b:
+            e0.e r2 = new e0.e
+            r2.<init>(r5, r5, r7)
+            return r2
+    }
+
+    /* renamed from: d */
+    public static java.lang.String m4090d(android.content.res.TypedArray r0, org.xmlpull.v1.XmlPullParser r1, java.lang.String r2, int r3) {
+            boolean r1 = m4094h(r1, r2)
+            if (r1 != 0) goto L8
+            r0 = 0
+            return r0
+        L8:
+            java.lang.String r0 = r0.getString(r3)
+            return r0
+    }
+
+    /* renamed from: e */
+    public static int m4091e(android.content.res.TypedArray r0, int r1, int r2, int r3) {
+            int r2 = r0.getResourceId(r2, r3)
+            int r0 = r0.getResourceId(r1, r2)
+            return r0
+    }
+
+    /* renamed from: f */
+    public static java.lang.String m4092f(android.content.res.TypedArray r0, int r1, int r2) {
+            java.lang.String r1 = r0.getString(r1)
+            if (r1 != 0) goto La
+            java.lang.String r1 = r0.getString(r2)
+        La:
+            return r1
+    }
+
+    /* renamed from: g */
+    public static java.lang.CharSequence[] m4093g(android.content.res.TypedArray r0, int r1, int r2) {
+            java.lang.CharSequence[] r1 = r0.getTextArray(r1)
+            if (r1 != 0) goto La
+            java.lang.CharSequence[] r1 = r0.getTextArray(r2)
+        La:
+            return r1
+    }
+
+    /* renamed from: h */
+    public static boolean m4094h(org.xmlpull.v1.XmlPullParser r1, java.lang.String r2) {
+            java.lang.String r0 = "http://schemas.android.com/apk/res/android"
+            java.lang.String r1 = r1.getAttributeValue(r0, r2)
+            if (r1 == 0) goto La
+            r1 = 1
+            goto Lb
+        La:
+            r1 = 0
+        Lb:
+            return r1
+    }
+
+    /* renamed from: i */
+    public static android.content.res.TypedArray m4095i(android.content.res.Resources r0, android.content.res.Resources.Theme r1, android.util.AttributeSet r2, int[] r3) {
+            if (r1 != 0) goto L7
+            android.content.res.TypedArray r0 = r0.obtainAttributes(r2, r3)
+            return r0
+        L7:
+            r0 = 0
+            android.content.res.TypedArray r0 = r1.obtainStyledAttributes(r2, r3, r0, r0)
+            return r0
+    }
+}
+package p065e0;
+
+/* renamed from: e0.k */
+/* loaded from: classes.dex */
+public final class C1506k {
+
+    /* renamed from: k */
+    public static final p065e0.C1506k f7328k = null;
+
+    /* renamed from: a */
+    public final float f7329a;
+
+    /* renamed from: b */
+    public final float f7330b;
+
+    /* renamed from: c */
+    public final float f7331c;
+
+    /* renamed from: d */
+    public final float f7332d;
+
+    /* renamed from: e */
+    public final float f7333e;
+
+    /* renamed from: f */
+    public final float f7334f;
+
+    /* renamed from: g */
+    public final float[] f7335g;
+
+    /* renamed from: h */
+    public final float f7336h;
+
+    /* renamed from: i */
+    public final float f7337i;
+
+    /* renamed from: j */
+    public final float f7338j;
+
+    static {
+            float[] r0 = p065e0.C1498c.f7295c
+            r1 = 1112014848(0x42480000, float:50.0)
+            float r2 = p065e0.C1498c.m4071c(r1)
+            double r2 = (double) r2
+            r4 = 4634156444089534796(0x404fd4bbab8b494c, double:63.66197723675813)
+            double r2 = r2 * r4
+            r4 = 4636737291354636288(0x4059000000000000, double:100.0)
+            double r2 = r2 / r4
+            float r2 = (float) r2
+            float[][] r3 = p065e0.C1498c.f7293a
+            r6 = 0
+            r7 = r0[r6]
+            r8 = r3[r6]
+            r8 = r8[r6]
+            float r7 = r7 * r8
+            r8 = 1
+            r9 = r0[r8]
+            r10 = r3[r6]
+            r10 = r10[r8]
+            float r9 = r9 * r10
+            float r9 = r9 + r7
+            r7 = 2
+            r10 = r0[r7]
+            r11 = r3[r6]
+            r11 = r11[r7]
+            float r10 = r10 * r11
+            float r10 = r10 + r9
+            r9 = r0[r6]
+            r11 = r3[r8]
+            r11 = r11[r6]
+            float r9 = r9 * r11
+            r11 = r0[r8]
+            r12 = r3[r8]
+            r12 = r12[r8]
+            float r11 = r11 * r12
+            float r11 = r11 + r9
+            r9 = r0[r7]
+            r12 = r3[r8]
+            r12 = r12[r7]
+            float r9 = r9 * r12
+            float r9 = r9 + r11
+            r11 = r0[r6]
+            r12 = r3[r7]
+            r12 = r12[r6]
+            float r11 = r11 * r12
+            r12 = r0[r8]
+            r13 = r3[r7]
+            r13 = r13[r8]
+            float r12 = r12 * r13
+            float r12 = r12 + r11
+            r11 = r0[r7]
+            r3 = r3[r7]
+            r3 = r3[r7]
+            float r11 = r11 * r3
+            float r11 = r11 + r12
+            r3 = 1065353216(0x3f800000, float:1.0)
+            double r12 = (double) r3
+            r14 = 4606281698874543309(0x3feccccccccccccd, double:0.9)
+            int r16 = (r12 > r14 ? 1 : (r12 == r14 ? 0 : -1))
+            if (r16 < 0) goto L7a
+            r12 = 1060152279(0x3f30a3d7, float:0.69)
+            r17 = 1060152279(0x3f30a3d7, float:0.69)
+            goto L80
+        L7a:
+            r12 = 1059565076(0x3f27ae14, float:0.655)
+            r17 = 1059565076(0x3f27ae14, float:0.655)
+        L80:
+            r12 = 1049508068(0x3e8e38e4, float:0.2777778)
+            float r13 = -r2
+            r14 = 1109917696(0x42280000, float:42.0)
+            float r13 = r13 - r14
+            r14 = 1119354880(0x42b80000, float:92.0)
+            float r13 = r13 / r14
+            double r13 = (double) r13
+            double r13 = java.lang.Math.exp(r13)
+            float r13 = (float) r13
+            float r13 = r13 * r12
+            r12 = 1065353216(0x3f800000, float:1.0)
+            float r13 = r12 - r13
+            float r13 = r13 * r3
+            double r14 = (double) r13
+            r18 = 4607182418800017408(0x3ff0000000000000, double:1.0)
+            int r16 = (r14 > r18 ? 1 : (r14 == r18 ? 0 : -1))
+            if (r16 <= 0) goto La2
+            r13 = 1065353216(0x3f800000, float:1.0)
+            goto La9
+        La2:
+            r18 = 0
+            int r16 = (r14 > r18 ? 1 : (r14 == r18 ? 0 : -1))
+            if (r16 >= 0) goto La9
+            r13 = 0
+        La9:
+            r14 = 3
+            float[] r15 = new float[r14]
+            r16 = 1120403456(0x42c80000, float:100.0)
+            float r18 = r16 / r10
+            float r18 = r18 * r13
+            float r18 = r18 + r12
+            float r18 = r18 - r13
+            r15[r6] = r18
+            float r18 = r16 / r9
+            float r18 = r18 * r13
+            float r18 = r18 + r12
+            float r18 = r18 - r13
+            r15[r8] = r18
+            float r16 = r16 / r11
+            float r16 = r16 * r13
+            float r16 = r16 + r12
+            float r16 = r16 - r13
+            r15[r7] = r16
+            r13 = 1084227584(0x40a00000, float:5.0)
+            float r13 = r13 * r2
+            float r13 = r13 + r12
+            float r13 = r12 / r13
+            float r16 = r13 * r13
+            float r16 = r16 * r13
+            float r16 = r16 * r13
+            float r12 = r12 - r16
+            float r16 = r16 * r2
+            r13 = 1036831949(0x3dcccccd, float:0.1)
+            float r13 = r13 * r12
+            float r13 = r13 * r12
+            r18 = 4617315517961601024(0x4014000000000000, double:5.0)
+            double r3 = (double) r2
+            double r3 = r3 * r18
+            double r2 = java.lang.Math.cbrt(r3)
+            float r2 = (float) r2
+            float r13 = r13 * r2
+            float r2 = r13 + r16
+            float r1 = p065e0.C1498c.m4071c(r1)
+            r0 = r0[r8]
+            float r13 = r1 / r0
+            r0 = 1069379748(0x3fbd70a4, float:1.48)
+            double r3 = (double) r13
+            double r7 = java.lang.Math.sqrt(r3)
+            float r7 = (float) r7
+            float r22 = r7 + r0
+            r0 = 1060739482(0x3f39999a, float:0.725)
+            r7 = 4596373779694328218(0x3fc999999999999a, double:0.2)
+            double r3 = java.lang.Math.pow(r3, r7)
+            float r3 = (float) r3
+            float r16 = r0 / r3
+            float[] r0 = new float[r14]
+            r3 = r15[r6]
+            float r3 = r3 * r2
+            float r3 = r3 * r10
+            double r3 = (double) r3
+            r7 = 4636737291354636288(0x4059000000000000, double:100.0)
+            double r3 = r3 / r7
+            r10 = r13
+            r12 = 4601237667291888353(0x3fdae147ae147ae1, double:0.42)
+            double r3 = java.lang.Math.pow(r3, r12)
+            float r3 = (float) r3
+            r0[r6] = r3
+            r1 = 1
+            r3 = r15[r1]
+            float r3 = r3 * r2
+            float r3 = r3 * r9
+            double r3 = (double) r3
+            double r3 = r3 / r7
+            double r3 = java.lang.Math.pow(r3, r12)
+            float r3 = (float) r3
+            r0[r1] = r3
+            r3 = 2
+            r4 = r15[r3]
+            float r4 = r4 * r2
+            float r4 = r4 * r11
+            r9 = r2
+            double r1 = (double) r4
+            double r1 = r1 / r7
+            double r1 = java.lang.Math.pow(r1, r12)
+            float r1 = (float) r1
+            r0[r3] = r1
+            float[] r1 = new float[r14]
+            r2 = r0[r6]
+            r3 = 1137180672(0x43c80000, float:400.0)
+            float r2 = r2 * r3
+            r4 = r0[r6]
+            r7 = 1104742973(0x41d90a3d, float:27.13)
+            float r4 = r4 + r7
+            float r2 = r2 / r4
+            r1[r6] = r2
+            r2 = 1
+            r4 = r0[r2]
+            float r4 = r4 * r3
+            r8 = r0[r2]
+            float r8 = r8 + r7
+            float r4 = r4 / r8
+            r1[r2] = r4
+            r4 = 2
+            r8 = r0[r4]
+            float r8 = r8 * r3
+            r0 = r0[r4]
+            float r0 = r0 + r7
+            float r8 = r8 / r0
+            r1[r4] = r8
+            r0 = 1073741824(0x40000000, float:2.0)
+            r3 = r1[r6]
+            float r3 = r3 * r0
+            r0 = r1[r2]
+            float r3 = r3 + r0
+            r0 = 1028443341(0x3d4ccccd, float:0.05)
+            r1 = r1[r4]
+            float r1 = r1 * r0
+            float r1 = r1 + r3
+            float r14 = r1 * r16
+            e0.k r0 = new e0.k
+            double r1 = (double) r9
+            r3 = 4598175219545276416(0x3fd0000000000000, double:0.25)
+            double r1 = java.lang.Math.pow(r1, r3)
+            float r1 = (float) r1
+            r12 = r0
+            r13 = r10
+            r2 = r15
+            r15 = r16
+            r3 = 1065353216(0x3f800000, float:1.0)
+            r18 = r3
+            r19 = r2
+            r20 = r9
+            r21 = r1
+            r12.<init>(r13, r14, r15, r16, r17, r18, r19, r20, r21, r22)
+            p065e0.C1506k.f7328k = r0
+            return
+    }
+
+    public C1506k(float r1, float r2, float r3, float r4, float r5, float r6, float[] r7, float r8, float r9, float r10) {
+            r0 = this;
+            r0.<init>()
+            r0.f7334f = r1
+            r0.f7329a = r2
+            r0.f7330b = r3
+            r0.f7331c = r4
+            r0.f7332d = r5
+            r0.f7333e = r6
+            r0.f7335g = r7
+            r0.f7336h = r8
+            r0.f7337i = r9
+            r0.f7338j = r10
+            return
+    }
+}

@@ -1,0 +1,404 @@
+package p264p0;
+
+@android.annotation.SuppressLint({"PrivateConstructorForUtilityClass"})
+/* renamed from: p0.a */
+/* loaded from: classes.dex */
+public final class C5337a {
+
+    /* renamed from: a */
+    public static final java.lang.String[] f21231a = null;
+
+    static {
+            r0 = 0
+            java.lang.String[] r0 = new java.lang.String[r0]
+            p264p0.C5337a.f21231a = r0
+            return
+    }
+
+    /* renamed from: a */
+    public static boolean m11642a(java.lang.CharSequence r1, int r2, int r3) {
+            if (r3 == 0) goto L10
+            r0 = 1
+            if (r3 == r0) goto L7
+            r1 = 0
+            return r1
+        L7:
+            char r1 = r1.charAt(r2)
+            boolean r1 = java.lang.Character.isHighSurrogate(r1)
+            return r1
+        L10:
+            char r1 = r1.charAt(r2)
+            boolean r1 = java.lang.Character.isLowSurrogate(r1)
+            return r1
+    }
+
+    /* renamed from: b */
+    public static void m11643b(android.view.inputmethod.EditorInfo r2, java.lang.CharSequence r3, int r4, int r5) {
+            android.os.Bundle r0 = r2.extras
+            if (r0 != 0) goto Lb
+            android.os.Bundle r0 = new android.os.Bundle
+            r0.<init>()
+            r2.extras = r0
+        Lb:
+            if (r3 == 0) goto L13
+            android.text.SpannableStringBuilder r0 = new android.text.SpannableStringBuilder
+            r0.<init>(r3)
+            goto L14
+        L13:
+            r0 = 0
+        L14:
+            android.os.Bundle r3 = r2.extras
+            java.lang.String r1 = "androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_SURROUNDING_TEXT"
+            r3.putCharSequence(r1, r0)
+            android.os.Bundle r3 = r2.extras
+            java.lang.String r0 = "androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_SELECTION_HEAD"
+            r3.putInt(r0, r4)
+            android.os.Bundle r2 = r2.extras
+            java.lang.String r3 = "androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_SELECTION_END"
+            r2.putInt(r3, r5)
+            return
+    }
+}
+package p264p0;
+
+/* renamed from: p0.b */
+/* loaded from: classes.dex */
+public class C5338b extends android.view.inputmethod.InputConnectionWrapper {
+
+    /* renamed from: a */
+    public final /* synthetic */ p264p0.InterfaceC5340d f21232a;
+
+    public C5338b(android.view.inputmethod.InputConnection r1, boolean r2, p264p0.InterfaceC5340d r3) {
+            r0 = this;
+            r0.f21232a = r3
+            r0.<init>(r1, r2)
+            return
+    }
+
+    @Override // android.view.inputmethod.InputConnectionWrapper, android.view.inputmethod.InputConnection
+    public boolean commitContent(android.view.inputmethod.InputContentInfo r5, int r6, android.os.Bundle r7) {
+            r4 = this;
+            p0.d r0 = r4.f21232a
+            r1 = 0
+            if (r5 != 0) goto L6
+            goto L17
+        L6:
+            int r2 = android.os.Build.VERSION.SDK_INT
+            r3 = 25
+            if (r2 >= r3) goto Ld
+            goto L17
+        Ld:
+            p0.e r1 = new p0.e
+            p0.e$a r2 = new p0.e$a
+            r2.<init>(r5)
+            r1.<init>(r2)
+        L17:
+            androidx.appcompat.widget.t r0 = (androidx.appcompat.widget.C0303t) r0
+            boolean r0 = r0.m786a(r1, r6, r7)
+            if (r0 == 0) goto L21
+            r5 = 1
+            return r5
+        L21:
+            boolean r5 = super.commitContent(r5, r6, r7)
+            return r5
+    }
+}
+package p264p0;
+
+/* renamed from: p0.c */
+/* loaded from: classes.dex */
+public class C5339c extends android.view.inputmethod.InputConnectionWrapper {
+
+    /* renamed from: a */
+    public final /* synthetic */ p264p0.InterfaceC5340d f21233a;
+
+    public C5339c(android.view.inputmethod.InputConnection r1, boolean r2, p264p0.InterfaceC5340d r3) {
+            r0 = this;
+            r0.f21233a = r3
+            r0.<init>(r1, r2)
+            return
+    }
+
+    @Override // android.view.inputmethod.InputConnectionWrapper, android.view.inputmethod.InputConnection
+    public boolean performPrivateCommand(java.lang.String r12, android.os.Bundle r13) {
+            r11 = this;
+            p0.d r0 = r11.f21233a
+            r1 = 1
+            r2 = 0
+            if (r13 != 0) goto L8
+            goto L87
+        L8:
+            java.lang.String r3 = "androidx.core.view.inputmethod.InputConnectionCompat.COMMIT_CONTENT"
+            boolean r3 = android.text.TextUtils.equals(r3, r12)
+            if (r3 == 0) goto L12
+            r3 = 0
+            goto L1b
+        L12:
+            java.lang.String r3 = "android.support.v13.view.inputmethod.InputConnectionCompat.COMMIT_CONTENT"
+            boolean r3 = android.text.TextUtils.equals(r3, r12)
+            if (r3 == 0) goto L87
+            r3 = 1
+        L1b:
+            r4 = 0
+            if (r3 == 0) goto L21
+            java.lang.String r5 = "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_RESULT_RECEIVER"
+            goto L23
+        L21:
+            java.lang.String r5 = "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_RESULT_RECEIVER"
+        L23:
+            android.os.Parcelable r5 = r13.getParcelable(r5)     // Catch: java.lang.Throwable -> L7f
+            android.os.ResultReceiver r5 = (android.os.ResultReceiver) r5     // Catch: java.lang.Throwable -> L7f
+            if (r3 == 0) goto L2e
+            java.lang.String r6 = "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_URI"
+            goto L30
+        L2e:
+            java.lang.String r6 = "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_URI"
+        L30:
+            android.os.Parcelable r6 = r13.getParcelable(r6)     // Catch: java.lang.Throwable -> L7d
+            android.net.Uri r6 = (android.net.Uri) r6     // Catch: java.lang.Throwable -> L7d
+            if (r3 == 0) goto L3b
+            java.lang.String r7 = "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_DESCRIPTION"
+            goto L3d
+        L3b:
+            java.lang.String r7 = "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_DESCRIPTION"
+        L3d:
+            android.os.Parcelable r7 = r13.getParcelable(r7)     // Catch: java.lang.Throwable -> L7d
+            android.content.ClipDescription r7 = (android.content.ClipDescription) r7     // Catch: java.lang.Throwable -> L7d
+            if (r3 == 0) goto L48
+            java.lang.String r8 = "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_LINK_URI"
+            goto L4a
+        L48:
+            java.lang.String r8 = "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_LINK_URI"
+        L4a:
+            android.os.Parcelable r8 = r13.getParcelable(r8)     // Catch: java.lang.Throwable -> L7d
+            android.net.Uri r8 = (android.net.Uri) r8     // Catch: java.lang.Throwable -> L7d
+            if (r3 == 0) goto L55
+            java.lang.String r9 = "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_FLAGS"
+            goto L57
+        L55:
+            java.lang.String r9 = "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_FLAGS"
+        L57:
+            int r9 = r13.getInt(r9)     // Catch: java.lang.Throwable -> L7d
+            if (r3 == 0) goto L60
+            java.lang.String r3 = "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_OPTS"
+            goto L62
+        L60:
+            java.lang.String r3 = "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_OPTS"
+        L62:
+            android.os.Parcelable r3 = r13.getParcelable(r3)     // Catch: java.lang.Throwable -> L7d
+            android.os.Bundle r3 = (android.os.Bundle) r3     // Catch: java.lang.Throwable -> L7d
+            if (r6 == 0) goto L77
+            if (r7 == 0) goto L77
+            p0.e r10 = new p0.e     // Catch: java.lang.Throwable -> L7d
+            r10.<init>(r6, r7, r8)     // Catch: java.lang.Throwable -> L7d
+            androidx.appcompat.widget.t r0 = (androidx.appcompat.widget.C0303t) r0     // Catch: java.lang.Throwable -> L7d
+            boolean r2 = r0.m786a(r10, r9, r3)     // Catch: java.lang.Throwable -> L7d
+        L77:
+            if (r5 == 0) goto L87
+            r5.send(r2, r4)
+            goto L87
+        L7d:
+            r12 = move-exception
+            goto L81
+        L7f:
+            r12 = move-exception
+            r5 = r4
+        L81:
+            if (r5 == 0) goto L86
+            r5.send(r2, r4)
+        L86:
+            throw r12
+        L87:
+            if (r2 == 0) goto L8a
+            return r1
+        L8a:
+            boolean r12 = super.performPrivateCommand(r12, r13)
+            return r12
+    }
+}
+package p264p0;
+
+/* renamed from: p0.e */
+/* loaded from: classes.dex */
+public final class C5341e {
+
+    /* renamed from: a */
+    public final p264p0.C5341e.c f21234a;
+
+    /* renamed from: p0.e$a */
+    public static final class a implements p264p0.C5341e.c {
+
+        /* renamed from: a */
+        public final android.view.inputmethod.InputContentInfo f21235a;
+
+        public a(android.net.Uri r2, android.content.ClipDescription r3, android.net.Uri r4) {
+                r1 = this;
+                r1.<init>()
+                android.view.inputmethod.InputContentInfo r0 = new android.view.inputmethod.InputContentInfo
+                r0.<init>(r2, r3, r4)
+                r1.f21235a = r0
+                return
+        }
+
+        public a(java.lang.Object r1) {
+                r0 = this;
+                r0.<init>()
+                android.view.inputmethod.InputContentInfo r1 = (android.view.inputmethod.InputContentInfo) r1
+                r0.f21235a = r1
+                return
+        }
+
+        @Override // p264p0.C5341e.c
+        /* renamed from: a */
+        public android.content.ClipDescription mo11644a() {
+                r1 = this;
+                android.view.inputmethod.InputContentInfo r0 = r1.f21235a
+                android.content.ClipDescription r0 = r0.getDescription()
+                return r0
+        }
+
+        @Override // p264p0.C5341e.c
+        /* renamed from: b */
+        public java.lang.Object mo11645b() {
+                r1 = this;
+                android.view.inputmethod.InputContentInfo r0 = r1.f21235a
+                return r0
+        }
+
+        @Override // p264p0.C5341e.c
+        /* renamed from: c */
+        public android.net.Uri mo11646c() {
+                r1 = this;
+                android.view.inputmethod.InputContentInfo r0 = r1.f21235a
+                android.net.Uri r0 = r0.getContentUri()
+                return r0
+        }
+
+        @Override // p264p0.C5341e.c
+        /* renamed from: d */
+        public void mo11647d() {
+                r1 = this;
+                android.view.inputmethod.InputContentInfo r0 = r1.f21235a
+                r0.requestPermission()
+                return
+        }
+
+        @Override // p264p0.C5341e.c
+        /* renamed from: e */
+        public android.net.Uri mo11648e() {
+                r1 = this;
+                android.view.inputmethod.InputContentInfo r0 = r1.f21235a
+                android.net.Uri r0 = r0.getLinkUri()
+                return r0
+        }
+    }
+
+    /* renamed from: p0.e$b */
+    public static final class b implements p264p0.C5341e.c {
+
+        /* renamed from: a */
+        public final android.net.Uri f21236a;
+
+        /* renamed from: b */
+        public final android.content.ClipDescription f21237b;
+
+        /* renamed from: c */
+        public final android.net.Uri f21238c;
+
+        public b(android.net.Uri r1, android.content.ClipDescription r2, android.net.Uri r3) {
+                r0 = this;
+                r0.<init>()
+                r0.f21236a = r1
+                r0.f21237b = r2
+                r0.f21238c = r3
+                return
+        }
+
+        @Override // p264p0.C5341e.c
+        /* renamed from: a */
+        public android.content.ClipDescription mo11644a() {
+                r1 = this;
+                android.content.ClipDescription r0 = r1.f21237b
+                return r0
+        }
+
+        @Override // p264p0.C5341e.c
+        /* renamed from: b */
+        public java.lang.Object mo11645b() {
+                r1 = this;
+                r0 = 0
+                return r0
+        }
+
+        @Override // p264p0.C5341e.c
+        /* renamed from: c */
+        public android.net.Uri mo11646c() {
+                r1 = this;
+                android.net.Uri r0 = r1.f21236a
+                return r0
+        }
+
+        @Override // p264p0.C5341e.c
+        /* renamed from: d */
+        public void mo11647d() {
+                r0 = this;
+                return
+        }
+
+        @Override // p264p0.C5341e.c
+        /* renamed from: e */
+        public android.net.Uri mo11648e() {
+                r1 = this;
+                android.net.Uri r0 = r1.f21238c
+                return r0
+        }
+    }
+
+    /* renamed from: p0.e$c */
+    public interface c {
+        /* renamed from: a */
+        android.content.ClipDescription mo11644a();
+
+        /* renamed from: b */
+        java.lang.Object mo11645b();
+
+        /* renamed from: c */
+        android.net.Uri mo11646c();
+
+        /* renamed from: d */
+        void mo11647d();
+
+        /* renamed from: e */
+        android.net.Uri mo11648e();
+    }
+
+    public C5341e(android.net.Uri r3, android.content.ClipDescription r4, android.net.Uri r5) {
+            r2 = this;
+            r2.<init>()
+            int r0 = android.os.Build.VERSION.SDK_INT
+            r1 = 25
+            if (r0 < r1) goto Lf
+            p0.e$a r0 = new p0.e$a
+            r0.<init>(r3, r4, r5)
+            goto L14
+        Lf:
+            p0.e$b r0 = new p0.e$b
+            r0.<init>(r3, r4, r5)
+        L14:
+            r2.f21234a = r0
+            return
+    }
+
+    public C5341e(p264p0.C5341e.c r1) {
+            r0 = this;
+            r0.<init>()
+            r0.f21234a = r1
+            return
+    }
+}
+package p264p0;
+
+/* renamed from: p0.d */
+/* loaded from: classes.dex */
+public interface InterfaceC5340d {
+}

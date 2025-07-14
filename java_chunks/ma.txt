@@ -1,0 +1,493 @@
+package ma;
+
+/* renamed from: ma.a */
+/* loaded from: classes.dex */
+public class C4507a implements ma.InterfaceC4509c {
+
+    /* renamed from: a */
+    public final int f18310a;
+
+    /* renamed from: b */
+    public final java.lang.Object f18311b;
+
+    /* renamed from: c */
+    public final java.lang.Object f18312c;
+
+    public C4507a(int r2, ma.InterfaceC4509c[] r3) {
+            r1 = this;
+            r1.<init>()
+            r1.f18310a = r2
+            r1.f18311b = r3
+            ma.b r3 = new ma.b
+            r0 = 0
+            r3.<init>(r2, r0)
+            r1.f18312c = r3
+            return
+    }
+
+    public C4507a(java.io.InputStream r2) {
+            r1 = this;
+            int r0 = p317ri.C5923v1.m12292c(r2)
+            r1.<init>()
+            r1.f18311b = r2
+            r1.f18310a = r0
+            r2 = 11
+            byte[][] r2 = new byte[r2][]
+            r1.f18312c = r2
+            return
+    }
+
+    public C4507a(java.io.InputStream r1, int r2) {
+            r0 = this;
+            r0.<init>()
+            r0.f18311b = r1
+            r0.f18310a = r2
+            r1 = 11
+            byte[][] r1 = new byte[r1][]
+            r0.f18312c = r1
+            return
+    }
+
+    @Override // ma.InterfaceC4509c
+    /* renamed from: a */
+    public java.lang.StackTraceElement[] mo10389a(java.lang.StackTraceElement[] r8) {
+            r7 = this;
+            int r0 = r8.length
+            int r1 = r7.f18310a
+            if (r0 > r1) goto L6
+            return r8
+        L6:
+            java.lang.Object r0 = r7.f18311b
+            ma.c[] r0 = (ma.InterfaceC4509c[]) r0
+            int r1 = r0.length
+            r2 = 0
+            r3 = r8
+        Ld:
+            if (r2 >= r1) goto L1e
+            r4 = r0[r2]
+            int r5 = r3.length
+            int r6 = r7.f18310a
+            if (r5 > r6) goto L17
+            goto L1e
+        L17:
+            java.lang.StackTraceElement[] r3 = r4.mo10389a(r8)
+            int r2 = r2 + 1
+            goto Ld
+        L1e:
+            int r8 = r3.length
+            int r0 = r7.f18310a
+            if (r8 <= r0) goto L2b
+            java.lang.Object r8 = r7.f18312c
+            ma.b r8 = (ma.C4508b) r8
+            java.lang.StackTraceElement[] r3 = r8.mo10389a(r3)
+        L2b:
+            return r3
+    }
+
+    /* renamed from: b */
+    public p317ri.InterfaceC5870e m10390b() {
+            r12 = this;
+            java.lang.Object r0 = r12.f18311b
+            java.io.InputStream r0 = (java.io.InputStream) r0
+            int r0 = r0.read()
+            r1 = -1
+            if (r0 != r1) goto Ld
+            r0 = 0
+            return r0
+        Ld:
+            r1 = 0
+            r12.m10393e(r1)
+            java.lang.Object r2 = r12.f18311b
+            java.io.InputStream r2 = (java.io.InputStream) r2
+            int r2 = p317ri.C5885j.m12233L(r2, r0)
+            r3 = r0 & 32
+            r4 = 1
+            if (r3 == 0) goto L20
+            r3 = 1
+            goto L21
+        L20:
+            r3 = 0
+        L21:
+            java.lang.Object r5 = r12.f18311b
+            java.io.InputStream r5 = (java.io.InputStream) r5
+            int r6 = r12.f18310a
+            int r5 = p317ri.C5885j.m12236n(r5, r6)
+            r6 = 17
+            r7 = 16
+            r8 = 8
+            r9 = 4
+            if (r5 >= 0) goto L9b
+            if (r3 == 0) goto L93
+            ri.r1 r3 = new ri.r1
+            java.lang.Object r5 = r12.f18311b
+            java.io.InputStream r5 = (java.io.InputStream) r5
+            int r10 = r12.f18310a
+            r3.<init>(r5, r10)
+            ma.a r5 = new ma.a
+            int r10 = r12.f18310a
+            r5.<init>(r3, r10)
+            r3 = r0 & 64
+            if (r3 == 0) goto L52
+            ri.b0 r0 = new ri.b0
+            r0.<init>(r2, r5)
+            return r0
+        L52:
+            r0 = r0 & 128(0x80, float:1.8E-43)
+            if (r0 == 0) goto L5c
+            ri.k0 r0 = new ri.k0
+            r0.<init>(r4, r2, r5)
+            return r0
+        L5c:
+            if (r2 == r9) goto L8d
+            if (r2 == r8) goto L87
+            if (r2 == r7) goto L81
+            if (r2 != r6) goto L6a
+            ri.i0 r0 = new ri.i0
+            r0.<init>(r5, r1)
+            goto L92
+        L6a:
+            ri.g r0 = new ri.g
+            java.lang.String r3 = "unknown BER object encountered: 0x"
+            java.lang.StringBuilder r3 = android.support.v4.media.C0144c.m256a(r3)
+            java.lang.String r2 = java.lang.Integer.toHexString(r2)
+            r3.append(r2)
+            java.lang.String r2 = r3.toString()
+            r0.<init>(r2, r1)
+            throw r0
+        L81:
+            ri.g0 r0 = new ri.g0
+            r0.<init>(r5, r1)
+            goto L92
+        L87:
+            ri.p0 r0 = new ri.p0
+            r0.<init>(r5)
+            goto L92
+        L8d:
+            ri.e0 r0 = new ri.e0
+            r0.<init>(r5)
+        L92:
+            return r0
+        L93:
+            java.io.IOException r0 = new java.io.IOException
+            java.lang.String r1 = "indefinite-length primitive encoding encountered"
+            r0.<init>(r1)
+            throw r0
+        L9b:
+            ri.p1 r10 = new ri.p1
+            java.lang.Object r11 = r12.f18311b
+            java.io.InputStream r11 = (java.io.InputStream) r11
+            r10.<init>(r11, r5)
+            r5 = r0 & 64
+            if (r5 == 0) goto Lb2
+            ri.i1 r0 = new ri.i1
+            byte[] r1 = r10.m12261i()
+            r0.<init>(r3, r2, r1)
+            return r0
+        Lb2:
+            r0 = r0 & 128(0x80, float:1.8E-43)
+            if (r0 == 0) goto Lc1
+            ri.k0 r0 = new ri.k0
+            ma.a r1 = new ma.a
+            r1.<init>(r10)
+            r0.<init>(r3, r2, r1)
+            return r0
+        Lc1:
+            if (r3 == 0) goto L105
+            if (r2 == r9) goto Lfa
+            if (r2 == r8) goto Lef
+            if (r2 == r7) goto Le4
+            if (r2 != r6) goto Ld6
+            ri.i0 r0 = new ri.i0
+            ma.a r1 = new ma.a
+            r1.<init>(r10)
+            r0.<init>(r1, r4)
+            return r0
+        Ld6:
+            java.io.IOException r0 = new java.io.IOException
+            java.lang.String r1 = "unknown tag "
+            java.lang.String r3 = " encountered"
+            java.lang.String r1 = android.support.v4.media.C0146e.m258a(r1, r2, r3)
+            r0.<init>(r1)
+            throw r0
+        Le4:
+            ri.g0 r0 = new ri.g0
+            ma.a r1 = new ma.a
+            r1.<init>(r10)
+            r0.<init>(r1, r4)
+            return r0
+        Lef:
+            ri.p0 r0 = new ri.p0
+            ma.a r1 = new ma.a
+            r1.<init>(r10)
+            r0.<init>(r1)
+            return r0
+        Lfa:
+            ri.e0 r0 = new ri.e0
+            ma.a r1 = new ma.a
+            r1.<init>(r10)
+            r0.<init>(r1)
+            return r0
+        L105:
+            if (r2 == r9) goto L119
+            java.lang.Object r0 = r12.f18312c     // Catch: java.lang.IllegalArgumentException -> L110
+            byte[][] r0 = (byte[][]) r0     // Catch: java.lang.IllegalArgumentException -> L110
+            ri.s r0 = p317ri.C5885j.m12234i(r2, r10, r0)     // Catch: java.lang.IllegalArgumentException -> L110
+            return r0
+        L110:
+            r0 = move-exception
+            ri.g r2 = new ri.g
+            java.lang.String r3 = "corrupted stream detected"
+            r2.<init>(r3, r0, r1)
+            throw r2
+        L119:
+            ri.e0 r0 = new ri.e0
+            r0.<init>(r10)
+            return r0
+    }
+
+    /* renamed from: c */
+    public p317ri.AbstractC5912s m10391c(boolean r5, int r6) {
+            r4 = this;
+            r0 = 0
+            if (r5 != 0) goto L18
+            java.lang.Object r5 = r4.f18311b
+            java.io.InputStream r5 = (java.io.InputStream) r5
+            ri.p1 r5 = (p317ri.C5905p1) r5
+            ri.d1 r1 = new ri.d1
+            ri.x0 r2 = new ri.x0
+            byte[] r5 = r5.m12261i()
+            r2.<init>(r5)
+            r1.<init>(r0, r6, r2)
+            return r1
+        L18:
+            h7.rb r5 = r4.m10392d()
+            java.lang.Object r1 = r4.f18311b
+            java.io.InputStream r1 = (java.io.InputStream) r1
+            boolean r1 = r1 instanceof p317ri.C5911r1
+            r2 = 1
+            if (r1 == 0) goto L4c
+            int r1 = r5.m7098u()
+            if (r1 != r2) goto L35
+            ri.j0 r1 = new ri.j0
+            ri.e r5 = r5.m7093n(r0)
+            r1.<init>(r2, r6, r5)
+            goto L4b
+        L35:
+            ri.j0 r1 = new ri.j0
+            ri.f0 r3 = p317ri.C5865c0.f22679a
+            int r3 = r5.m7098u()
+            if (r3 >= r2) goto L42
+            ri.f0 r5 = p317ri.C5865c0.f22679a
+            goto L48
+        L42:
+            ri.f0 r2 = new ri.f0
+            r2.<init>(r5)
+            r5 = r2
+        L48:
+            r1.<init>(r0, r6, r5)
+        L4b:
+            return r1
+        L4c:
+            int r1 = r5.m7098u()
+            if (r1 != r2) goto L5c
+            ri.d1 r1 = new ri.d1
+            ri.e r5 = r5.m7093n(r0)
+            r1.<init>(r2, r6, r5)
+            goto L72
+        L5c:
+            ri.d1 r1 = new ri.d1
+            ri.t r3 = p317ri.C5907q0.f22732a
+            int r3 = r5.m7098u()
+            if (r3 >= r2) goto L69
+            ri.t r5 = p317ri.C5907q0.f22732a
+            goto L6f
+        L69:
+            ri.m1 r2 = new ri.m1
+            r2.<init>(r5)
+            r5 = r2
+        L6f:
+            r1.<init>(r0, r6, r5)
+        L72:
+            return r1
+    }
+
+    /* renamed from: d */
+    public p124h7.C2839rb m10392d() {
+            r3 = this;
+            h7.rb r0 = new h7.rb
+            r1 = 25
+            r0.<init>(r1)
+        L7:
+            ri.e r1 = r3.m10390b()
+            if (r1 == 0) goto L20
+            boolean r2 = r1 instanceof p317ri.InterfaceC5908q1
+            if (r2 == 0) goto L18
+            ri.q1 r1 = (p317ri.InterfaceC5908q1) r1
+            ri.s r1 = r1.mo12213i()
+            goto L1c
+        L18:
+            ri.s r1 = r1.mo168e()
+        L1c:
+            r0.m7087h(r1)
+            goto L7
+        L20:
+            return r0
+    }
+
+    /* renamed from: e */
+    public void m10393e(boolean r3) {
+            r2 = this;
+            java.lang.Object r0 = r2.f18311b
+            java.io.InputStream r0 = (java.io.InputStream) r0
+            boolean r1 = r0 instanceof p317ri.C5911r1
+            if (r1 == 0) goto Lf
+            ri.r1 r0 = (p317ri.C5911r1) r0
+            r0.f22740d0 = r3
+            r0.m12270i()
+        Lf:
+            return
+    }
+}
+package ma;
+
+/* renamed from: ma.b */
+/* loaded from: classes.dex */
+public class C4508b implements ma.InterfaceC4509c {
+
+    /* renamed from: a */
+    public final /* synthetic */ int f18313a;
+
+    /* renamed from: b */
+    public final int f18314b;
+
+    public C4508b(int r2, int r3) {
+            r1 = this;
+            r1.f18313a = r3
+            r0 = 1
+            if (r3 == r0) goto Lb
+            r1.<init>()
+            r1.f18314b = r2
+            return
+        Lb:
+            r1.<init>()
+            r1.f18314b = r2
+            return
+    }
+
+    @Override // ma.InterfaceC4509c
+    /* renamed from: a */
+    public java.lang.StackTraceElement[] mo10389a(java.lang.StackTraceElement[] r18) {
+            r17 = this;
+            r0 = r17
+            r1 = r18
+            int r2 = r0.f18313a
+            r3 = 0
+            switch(r2) {
+                case 0: goto Lb;
+                default: goto La;
+            }
+        La:
+            goto L21
+        Lb:
+            int r2 = r1.length
+            int r4 = r0.f18314b
+            if (r2 > r4) goto L11
+            goto L20
+        L11:
+            int r2 = r4 / 2
+            int r5 = r4 - r2
+            java.lang.StackTraceElement[] r4 = new java.lang.StackTraceElement[r4]
+            java.lang.System.arraycopy(r1, r3, r4, r3, r5)
+            int r3 = r1.length
+            int r3 = r3 - r2
+            java.lang.System.arraycopy(r1, r3, r4, r5, r2)
+            r1 = r4
+        L20:
+            return r1
+        L21:
+            int r2 = r0.f18314b
+            java.util.HashMap r4 = new java.util.HashMap
+            r4.<init>()
+            int r5 = r1.length
+            java.lang.StackTraceElement[] r5 = new java.lang.StackTraceElement[r5]
+            r6 = 1
+            r7 = 0
+            r8 = 0
+            r9 = 1
+        L2f:
+            int r10 = r1.length
+            if (r7 >= r10) goto L88
+            r10 = r1[r7]
+            java.lang.Object r11 = r4.get(r10)
+            java.lang.Integer r11 = (java.lang.Integer) r11
+            if (r11 == 0) goto L75
+            int r12 = r11.intValue()
+            int r13 = r7 - r12
+            int r14 = r7 + r13
+            int r15 = r1.length
+            if (r14 <= r15) goto L48
+            goto L59
+        L48:
+            r14 = 0
+        L49:
+            if (r14 >= r13) goto L5f
+            int r15 = r12 + r14
+            r15 = r1[r15]
+            int r16 = r7 + r14
+            r3 = r1[r16]
+            boolean r3 = r15.equals(r3)
+            if (r3 != 0) goto L5b
+        L59:
+            r3 = 0
+            goto L60
+        L5b:
+            int r14 = r14 + 1
+            r3 = 0
+            goto L49
+        L5f:
+            r3 = 1
+        L60:
+            if (r3 != 0) goto L63
+            goto L75
+        L63:
+            int r3 = r11.intValue()
+            int r3 = r7 - r3
+            if (r9 >= r2) goto L71
+            java.lang.System.arraycopy(r1, r7, r5, r8, r3)
+            int r8 = r8 + r3
+            int r9 = r9 + 1
+        L71:
+            int r3 = r3 + (-1)
+            int r3 = r3 + r7
+            goto L7d
+        L75:
+            r3 = r1[r7]
+            r5[r8] = r3
+            int r8 = r8 + 1
+            r3 = r7
+            r9 = 1
+        L7d:
+            java.lang.Integer r7 = java.lang.Integer.valueOf(r7)
+            r4.put(r10, r7)
+            int r7 = r3 + 1
+            r3 = 0
+            goto L2f
+        L88:
+            java.lang.StackTraceElement[] r2 = new java.lang.StackTraceElement[r8]
+            r3 = 0
+            java.lang.System.arraycopy(r5, r3, r2, r3, r8)
+            int r3 = r1.length
+            if (r8 >= r3) goto L92
+            r1 = r2
+        L92:
+            return r1
+    }
+}
+package ma;
+
+/* renamed from: ma.c */
+/* loaded from: classes.dex */
+public interface InterfaceC4509c {
+    /* renamed from: a */
+    java.lang.StackTraceElement[] mo10389a(java.lang.StackTraceElement[] r1);
+}

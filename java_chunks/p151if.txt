@@ -1,0 +1,677 @@
+package p151if;
+
+/* renamed from: if.a */
+/* loaded from: classes.dex */
+public final class C3138a {
+    private final java.lang.String userName;
+    private final p151if.C3138a.a wallet;
+
+    /* renamed from: if.a$a */
+    public static final class a {
+        private final java.lang.String name;
+
+        public a(java.lang.String r2) {
+                r1 = this;
+                java.lang.String r0 = "name"
+                p214m2.C4339q.m9706k(r2, r0)
+                r1.<init>()
+                r1.name = r2
+                return
+        }
+
+        public static /* synthetic */ p151if.C3138a.a copy$default(p151if.C3138a.a r0, java.lang.String r1, int r2, java.lang.Object r3) {
+                r2 = r2 & 1
+                if (r2 == 0) goto L6
+                java.lang.String r1 = r0.name
+            L6:
+                if.a$a r0 = r0.copy(r1)
+                return r0
+        }
+
+        public final java.lang.String component1() {
+                r1 = this;
+                java.lang.String r0 = r1.name
+                return r0
+        }
+
+        public final p151if.C3138a.a copy(java.lang.String r2) {
+                r1 = this;
+                java.lang.String r0 = "name"
+                p214m2.C4339q.m9706k(r2, r0)
+                if.a$a r0 = new if.a$a
+                r0.<init>(r2)
+                return r0
+        }
+
+        public boolean equals(java.lang.Object r4) {
+                r3 = this;
+                r0 = 1
+                if (r3 != r4) goto L4
+                return r0
+            L4:
+                boolean r1 = r4 instanceof p151if.C3138a.a
+                r2 = 0
+                if (r1 != 0) goto La
+                return r2
+            La:
+                if.a$a r4 = (p151if.C3138a.a) r4
+                java.lang.String r1 = r3.name
+                java.lang.String r4 = r4.name
+                boolean r4 = p214m2.C4339q.m9702c(r1, r4)
+                if (r4 != 0) goto L17
+                return r2
+            L17:
+                return r0
+        }
+
+        public final java.lang.String getName() {
+                r1 = this;
+                java.lang.String r0 = r1.name
+                return r0
+        }
+
+        public int hashCode() {
+                r1 = this;
+                java.lang.String r0 = r1.name
+                int r0 = r0.hashCode()
+                return r0
+        }
+
+        public java.lang.String toString() {
+                r3 = this;
+                java.lang.String r0 = "Wallet(name="
+                java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+                java.lang.String r1 = r3.name
+                r2 = 41
+                java.lang.String r0 = p185k7.C3814g5.m8552a(r0, r1, r2)
+                return r0
+        }
+    }
+
+    public C3138a(java.lang.String r2, p151if.C3138a.a r3) {
+            r1 = this;
+            java.lang.String r0 = "userName"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "wallet"
+            p214m2.C4339q.m9706k(r3, r0)
+            r1.<init>()
+            r1.userName = r2
+            r1.wallet = r3
+            return
+    }
+
+    public static /* synthetic */ p151if.C3138a copy$default(p151if.C3138a r0, java.lang.String r1, p151if.C3138a.a r2, int r3, java.lang.Object r4) {
+            r4 = r3 & 1
+            if (r4 == 0) goto L6
+            java.lang.String r1 = r0.userName
+        L6:
+            r3 = r3 & 2
+            if (r3 == 0) goto Lc
+            if.a$a r2 = r0.wallet
+        Lc:
+            if.a r0 = r0.copy(r1, r2)
+            return r0
+    }
+
+    public final java.lang.String component1() {
+            r1 = this;
+            java.lang.String r0 = r1.userName
+            return r0
+    }
+
+    public final p151if.C3138a.a component2() {
+            r1 = this;
+            if.a$a r0 = r1.wallet
+            return r0
+    }
+
+    public final p151if.C3138a copy(java.lang.String r2, p151if.C3138a.a r3) {
+            r1 = this;
+            java.lang.String r0 = "userName"
+            p214m2.C4339q.m9706k(r2, r0)
+            java.lang.String r0 = "wallet"
+            p214m2.C4339q.m9706k(r3, r0)
+            if.a r0 = new if.a
+            r0.<init>(r2, r3)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            boolean r1 = r5 instanceof p151if.C3138a
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            if.a r5 = (p151if.C3138a) r5
+            java.lang.String r1 = r4.userName
+            java.lang.String r3 = r5.userName
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L17
+            return r2
+        L17:
+            if.a$a r1 = r4.wallet
+            if.a$a r5 = r5.wallet
+            boolean r5 = p214m2.C4339q.m9702c(r1, r5)
+            if (r5 != 0) goto L22
+            return r2
+        L22:
+            return r0
+    }
+
+    public final java.lang.String getUserName() {
+            r1 = this;
+            java.lang.String r0 = r1.userName
+            return r0
+    }
+
+    public final p151if.C3138a.a getWallet() {
+            r1 = this;
+            if.a$a r0 = r1.wallet
+            return r0
+    }
+
+    public int hashCode() {
+            r2 = this;
+            java.lang.String r0 = r2.userName
+            int r0 = r0.hashCode()
+            int r0 = r0 * 31
+            if.a$a r1 = r2.wallet
+            int r1 = r1.hashCode()
+            int r1 = r1 + r0
+            return r1
+    }
+
+    public java.lang.String toString() {
+            r2 = this;
+            java.lang.String r0 = "ColonizeAccountInfo(userName="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r2.userName
+            r0.append(r1)
+            java.lang.String r1 = ", wallet="
+            r0.append(r1)
+            if.a$a r1 = r2.wallet
+            r0.append(r1)
+            r1 = 41
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            return r0
+    }
+}
+package p151if;
+
+/* renamed from: if.b */
+/* loaded from: classes.dex */
+public final class C3139b {
+    private final java.lang.String token;
+
+    public C3139b(java.lang.String r2) {
+            r1 = this;
+            java.lang.String r0 = "token"
+            p214m2.C4339q.m9706k(r2, r0)
+            r1.<init>()
+            r1.token = r2
+            return
+    }
+
+    public static /* synthetic */ p151if.C3139b copy$default(p151if.C3139b r0, java.lang.String r1, int r2, java.lang.Object r3) {
+            r2 = r2 & 1
+            if (r2 == 0) goto L6
+            java.lang.String r1 = r0.token
+        L6:
+            if.b r0 = r0.copy(r1)
+            return r0
+    }
+
+    public final java.lang.String component1() {
+            r1 = this;
+            java.lang.String r0 = r1.token
+            return r0
+    }
+
+    public final p151if.C3139b copy(java.lang.String r2) {
+            r1 = this;
+            java.lang.String r0 = "token"
+            p214m2.C4339q.m9706k(r2, r0)
+            if.b r0 = new if.b
+            r0.<init>(r2)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r4) {
+            r3 = this;
+            r0 = 1
+            if (r3 != r4) goto L4
+            return r0
+        L4:
+            boolean r1 = r4 instanceof p151if.C3139b
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            if.b r4 = (p151if.C3139b) r4
+            java.lang.String r1 = r3.token
+            java.lang.String r4 = r4.token
+            boolean r4 = p214m2.C4339q.m9702c(r1, r4)
+            if (r4 != 0) goto L17
+            return r2
+        L17:
+            return r0
+    }
+
+    public final java.lang.String getToken() {
+            r1 = this;
+            java.lang.String r0 = r1.token
+            return r0
+    }
+
+    public int hashCode() {
+            r1 = this;
+            java.lang.String r0 = r1.token
+            int r0 = r0.hashCode()
+            return r0
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "ColonizeLoginResponse(token="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r3.token
+            r2 = 41
+            java.lang.String r0 = p185k7.C3814g5.m8552a(r0, r1, r2)
+            return r0
+    }
+}
+package p151if;
+
+/* renamed from: if.c */
+/* loaded from: classes.dex */
+public final class C3140c {
+    private final boolean more;
+    private final java.lang.String next_key;
+    private final java.util.List<p151if.C3140c.a> rows;
+
+    /* renamed from: if.c$a */
+    public static final class a {
+        private final java.lang.String account;
+        private final java.lang.String lastreward;
+        private final java.util.List<java.lang.String> quantities;
+
+        public a(java.lang.String r2, java.lang.String r3, java.util.List<java.lang.String> r4) {
+                r1 = this;
+                java.lang.String r0 = "account"
+                p214m2.C4339q.m9706k(r2, r0)
+                java.lang.String r0 = "lastreward"
+                p214m2.C4339q.m9706k(r3, r0)
+                java.lang.String r0 = "quantities"
+                p214m2.C4339q.m9706k(r4, r0)
+                r1.<init>()
+                r1.account = r2
+                r1.lastreward = r3
+                r1.quantities = r4
+                return
+        }
+
+        public static /* synthetic */ p151if.C3140c.a copy$default(p151if.C3140c.a r0, java.lang.String r1, java.lang.String r2, java.util.List r3, int r4, java.lang.Object r5) {
+                r5 = r4 & 1
+                if (r5 == 0) goto L6
+                java.lang.String r1 = r0.account
+            L6:
+                r5 = r4 & 2
+                if (r5 == 0) goto Lc
+                java.lang.String r2 = r0.lastreward
+            Lc:
+                r4 = r4 & 4
+                if (r4 == 0) goto L12
+                java.util.List<java.lang.String> r3 = r0.quantities
+            L12:
+                if.c$a r0 = r0.copy(r1, r2, r3)
+                return r0
+        }
+
+        public final java.lang.String component1() {
+                r1 = this;
+                java.lang.String r0 = r1.account
+                return r0
+        }
+
+        public final java.lang.String component2() {
+                r1 = this;
+                java.lang.String r0 = r1.lastreward
+                return r0
+        }
+
+        public final java.util.List<java.lang.String> component3() {
+                r1 = this;
+                java.util.List<java.lang.String> r0 = r1.quantities
+                return r0
+        }
+
+        public final p151if.C3140c.a copy(java.lang.String r2, java.lang.String r3, java.util.List<java.lang.String> r4) {
+                r1 = this;
+                java.lang.String r0 = "account"
+                p214m2.C4339q.m9706k(r2, r0)
+                java.lang.String r0 = "lastreward"
+                p214m2.C4339q.m9706k(r3, r0)
+                java.lang.String r0 = "quantities"
+                p214m2.C4339q.m9706k(r4, r0)
+                if.c$a r0 = new if.c$a
+                r0.<init>(r2, r3, r4)
+                return r0
+        }
+
+        public boolean equals(java.lang.Object r5) {
+                r4 = this;
+                r0 = 1
+                if (r4 != r5) goto L4
+                return r0
+            L4:
+                boolean r1 = r5 instanceof p151if.C3140c.a
+                r2 = 0
+                if (r1 != 0) goto La
+                return r2
+            La:
+                if.c$a r5 = (p151if.C3140c.a) r5
+                java.lang.String r1 = r4.account
+                java.lang.String r3 = r5.account
+                boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+                if (r1 != 0) goto L17
+                return r2
+            L17:
+                java.lang.String r1 = r4.lastreward
+                java.lang.String r3 = r5.lastreward
+                boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+                if (r1 != 0) goto L22
+                return r2
+            L22:
+                java.util.List<java.lang.String> r1 = r4.quantities
+                java.util.List<java.lang.String> r5 = r5.quantities
+                boolean r5 = p214m2.C4339q.m9702c(r1, r5)
+                if (r5 != 0) goto L2d
+                return r2
+            L2d:
+                return r0
+        }
+
+        public final java.lang.String getAccount() {
+                r1 = this;
+                java.lang.String r0 = r1.account
+                return r0
+        }
+
+        public final java.lang.String getLastreward() {
+                r1 = this;
+                java.lang.String r0 = r1.lastreward
+                return r0
+        }
+
+        public final java.util.List<java.lang.String> getQuantities() {
+                r1 = this;
+                java.util.List<java.lang.String> r0 = r1.quantities
+                return r0
+        }
+
+        public int hashCode() {
+                r3 = this;
+                java.lang.String r0 = r3.account
+                int r0 = r0.hashCode()
+                int r0 = r0 * 31
+                java.lang.String r1 = r3.lastreward
+                r2 = 31
+                int r0 = p213m1.C4319e.m9651a(r1, r0, r2)
+                java.util.List<java.lang.String> r1 = r3.quantities
+                int r1 = r1.hashCode()
+                int r1 = r1 + r0
+                return r1
+        }
+
+        public java.lang.String toString() {
+                r3 = this;
+                java.lang.String r0 = "Row(account="
+                java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+                java.lang.String r1 = r3.account
+                r0.append(r1)
+                java.lang.String r1 = ", lastreward="
+                r0.append(r1)
+                java.lang.String r1 = r3.lastreward
+                r0.append(r1)
+                java.lang.String r1 = ", quantities="
+                r0.append(r1)
+                java.util.List<java.lang.String> r1 = r3.quantities
+                r2 = 41
+                java.lang.String r0 = p213m1.C4320f.m9652a(r0, r1, r2)
+                return r0
+        }
+    }
+
+    public C3140c(boolean r2, java.lang.String r3, java.util.List<p151if.C3140c.a> r4) {
+            r1 = this;
+            java.lang.String r0 = "next_key"
+            p214m2.C4339q.m9706k(r3, r0)
+            java.lang.String r0 = "rows"
+            p214m2.C4339q.m9706k(r4, r0)
+            r1.<init>()
+            r1.more = r2
+            r1.next_key = r3
+            r1.rows = r4
+            return
+    }
+
+    public static /* synthetic */ p151if.C3140c copy$default(p151if.C3140c r0, boolean r1, java.lang.String r2, java.util.List r3, int r4, java.lang.Object r5) {
+            r5 = r4 & 1
+            if (r5 == 0) goto L6
+            boolean r1 = r0.more
+        L6:
+            r5 = r4 & 2
+            if (r5 == 0) goto Lc
+            java.lang.String r2 = r0.next_key
+        Lc:
+            r4 = r4 & 4
+            if (r4 == 0) goto L12
+            java.util.List<if.c$a> r3 = r0.rows
+        L12:
+            if.c r0 = r0.copy(r1, r2, r3)
+            return r0
+    }
+
+    public final boolean component1() {
+            r1 = this;
+            boolean r0 = r1.more
+            return r0
+    }
+
+    public final java.lang.String component2() {
+            r1 = this;
+            java.lang.String r0 = r1.next_key
+            return r0
+    }
+
+    public final java.util.List<p151if.C3140c.a> component3() {
+            r1 = this;
+            java.util.List<if.c$a> r0 = r1.rows
+            return r0
+    }
+
+    public final p151if.C3140c copy(boolean r2, java.lang.String r3, java.util.List<p151if.C3140c.a> r4) {
+            r1 = this;
+            java.lang.String r0 = "next_key"
+            p214m2.C4339q.m9706k(r3, r0)
+            java.lang.String r0 = "rows"
+            p214m2.C4339q.m9706k(r4, r0)
+            if.c r0 = new if.c
+            r0.<init>(r2, r3, r4)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            boolean r1 = r5 instanceof p151if.C3140c
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            if.c r5 = (p151if.C3140c) r5
+            boolean r1 = r4.more
+            boolean r3 = r5.more
+            if (r1 == r3) goto L13
+            return r2
+        L13:
+            java.lang.String r1 = r4.next_key
+            java.lang.String r3 = r5.next_key
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L1e
+            return r2
+        L1e:
+            java.util.List<if.c$a> r1 = r4.rows
+            java.util.List<if.c$a> r5 = r5.rows
+            boolean r5 = p214m2.C4339q.m9702c(r1, r5)
+            if (r5 != 0) goto L29
+            return r2
+        L29:
+            return r0
+    }
+
+    public final boolean getMore() {
+            r1 = this;
+            boolean r0 = r1.more
+            return r0
+    }
+
+    public final java.lang.String getNext_key() {
+            r1 = this;
+            java.lang.String r0 = r1.next_key
+            return r0
+    }
+
+    public final java.util.List<p151if.C3140c.a> getRows() {
+            r1 = this;
+            java.util.List<if.c$a> r0 = r1.rows
+            return r0
+    }
+
+    public int hashCode() {
+            r3 = this;
+            boolean r0 = r3.more
+            if (r0 == 0) goto L5
+            r0 = 1
+        L5:
+            int r0 = r0 * 31
+            java.lang.String r1 = r3.next_key
+            r2 = 31
+            int r0 = p213m1.C4319e.m9651a(r1, r0, r2)
+            java.util.List<if.c$a> r1 = r3.rows
+            int r1 = r1.hashCode()
+            int r1 = r1 + r0
+            return r1
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "ColonizeMarsResponse(more="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            boolean r1 = r3.more
+            r0.append(r1)
+            java.lang.String r1 = ", next_key="
+            r0.append(r1)
+            java.lang.String r1 = r3.next_key
+            r0.append(r1)
+            java.lang.String r1 = ", rows="
+            r0.append(r1)
+            java.util.List<if.c$a> r1 = r3.rows
+            r2 = 41
+            java.lang.String r0 = p213m1.C4320f.m9652a(r0, r1, r2)
+            return r0
+    }
+}
+package p151if;
+
+/* renamed from: if.d */
+/* loaded from: classes.dex */
+public final class C3141d {
+    private final java.lang.String amount;
+
+    public C3141d(java.lang.String r2) {
+            r1 = this;
+            java.lang.String r0 = "amount"
+            p214m2.C4339q.m9706k(r2, r0)
+            r1.<init>()
+            r1.amount = r2
+            return
+    }
+
+    public static /* synthetic */ p151if.C3141d copy$default(p151if.C3141d r0, java.lang.String r1, int r2, java.lang.Object r3) {
+            r2 = r2 & 1
+            if (r2 == 0) goto L6
+            java.lang.String r1 = r0.amount
+        L6:
+            if.d r0 = r0.copy(r1)
+            return r0
+    }
+
+    public final java.lang.String component1() {
+            r1 = this;
+            java.lang.String r0 = r1.amount
+            return r0
+    }
+
+    public final p151if.C3141d copy(java.lang.String r2) {
+            r1 = this;
+            java.lang.String r0 = "amount"
+            p214m2.C4339q.m9706k(r2, r0)
+            if.d r0 = new if.d
+            r0.<init>(r2)
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r4) {
+            r3 = this;
+            r0 = 1
+            if (r3 != r4) goto L4
+            return r0
+        L4:
+            boolean r1 = r4 instanceof p151if.C3141d
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            if.d r4 = (p151if.C3141d) r4
+            java.lang.String r1 = r3.amount
+            java.lang.String r4 = r4.amount
+            boolean r4 = p214m2.C4339q.m9702c(r1, r4)
+            if (r4 != 0) goto L17
+            return r2
+        L17:
+            return r0
+    }
+
+    public final java.lang.String getAmount() {
+            r1 = this;
+            java.lang.String r0 = r1.amount
+            return r0
+    }
+
+    public int hashCode() {
+            r1 = this;
+            java.lang.String r0 = r1.amount
+            int r0 = r0.hashCode()
+            return r0
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "ColonizeUnclaim(amount="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r3.amount
+            r2 = 41
+            java.lang.String r0 = p185k7.C3814g5.m8552a(r0, r1, r2)
+            return r0
+    }
+}

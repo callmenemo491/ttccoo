@@ -1,0 +1,481 @@
+package vi;
+
+/* renamed from: vi.b */
+/* loaded from: classes.dex */
+public class C6758b {
+
+    /* renamed from: a */
+    public static final java.util.Hashtable f26059a = null;
+
+    /* renamed from: b */
+    public static final java.util.Hashtable f26060b = null;
+
+    static {
+            java.util.Hashtable r0 = new java.util.Hashtable
+            r0.<init>()
+            vi.C6758b.f26059a = r0
+            java.util.Hashtable r1 = new java.util.Hashtable
+            r1.<init>()
+            vi.C6758b.f26060b = r1
+            java.util.Hashtable r2 = new java.util.Hashtable
+            r2.<init>()
+            java.math.BigInteger r4 = new java.math.BigInteger
+            java.lang.String r9 = "115792089237316195423570985008687907853269984665640564039457584007913129639319"
+            r4.<init>(r9)
+            java.math.BigInteger r10 = new java.math.BigInteger
+            java.lang.String r11 = "115792089237316195423570985008687907853073762908499243225378155805079068850323"
+            r10.<init>(r11)
+            nj.c$f r12 = new nj.c$f
+            java.math.BigInteger r5 = new java.math.BigInteger
+            java.lang.String r13 = "115792089237316195423570985008687907853269984665640564039457584007913129639316"
+            r5.<init>(r13)
+            java.math.BigInteger r6 = new java.math.BigInteger
+            java.lang.String r14 = "166"
+            r6.<init>(r14)
+            java.math.BigInteger r15 = p240nj.InterfaceC4844b.f19244S
+            r3 = r12
+            r7 = r10
+            r8 = r15
+            r3.<init>(r4, r5, r6, r7, r8)
+            kj.f r3 = new kj.f
+            java.math.BigInteger r4 = new java.math.BigInteger
+            java.lang.String r5 = "1"
+            r4.<init>(r5)
+            java.math.BigInteger r6 = new java.math.BigInteger
+            java.lang.String r7 = "64033881142927202683649881450433473985931760268884941288852745803908878638612"
+            r6.<init>(r7)
+            nj.d r4 = r12.mo10879l(r4)
+            nj.d r6 = r12.mo10879l(r6)
+            r8 = 0
+            nj.f r4 = r12.mo10874g(r4, r6, r8)
+            r3.<init>(r12, r4, r10, r15)
+            ri.n r4 = vi.InterfaceC6757a.f26054a
+            r1.put(r4, r3)
+            java.math.BigInteger r3 = new java.math.BigInteger
+            r3.<init>(r9)
+            java.math.BigInteger r6 = new java.math.BigInteger
+            r6.<init>(r11)
+            nj.c$f r9 = new nj.c$f
+            java.math.BigInteger r10 = new java.math.BigInteger
+            r10.<init>(r13)
+            java.math.BigInteger r11 = new java.math.BigInteger
+            r11.<init>(r14)
+            r12 = r15
+            r15 = r9
+            r16 = r3
+            r17 = r10
+            r18 = r11
+            r19 = r6
+            r20 = r12
+            r15.<init>(r16, r17, r18, r19, r20)
+            kj.f r3 = new kj.f
+            java.math.BigInteger r10 = new java.math.BigInteger
+            r10.<init>(r5)
+            java.math.BigInteger r11 = new java.math.BigInteger
+            r11.<init>(r7)
+            nj.d r7 = r9.mo10879l(r10)
+            nj.d r10 = r9.mo10879l(r11)
+            nj.f r7 = r9.mo10874g(r7, r10, r8)
+            r3.<init>(r9, r7, r6, r12)
+            ri.n r6 = vi.InterfaceC6757a.f26057d
+            r1.put(r6, r3)
+            java.math.BigInteger r3 = new java.math.BigInteger
+            java.lang.String r7 = "57896044618658097711785492504343953926634992332820282019728792003956564823193"
+            r3.<init>(r7)
+            java.math.BigInteger r7 = new java.math.BigInteger
+            java.lang.String r9 = "57896044618658097711785492504343953927102133160255826820068844496087732066703"
+            r7.<init>(r9)
+            nj.c$f r9 = new nj.c$f
+            java.math.BigInteger r10 = new java.math.BigInteger
+            java.lang.String r11 = "57896044618658097711785492504343953926634992332820282019728792003956564823190"
+            r10.<init>(r11)
+            java.math.BigInteger r11 = new java.math.BigInteger
+            java.lang.String r13 = "28091019353058090096996979000309560759124368558014865957655842872397301267595"
+            r11.<init>(r13)
+            r15 = r9
+            r16 = r3
+            r17 = r10
+            r18 = r11
+            r19 = r7
+            r20 = r12
+            r15.<init>(r16, r17, r18, r19, r20)
+            kj.f r3 = new kj.f
+            java.math.BigInteger r10 = new java.math.BigInteger
+            r10.<init>(r5)
+            java.math.BigInteger r5 = new java.math.BigInteger
+            java.lang.String r11 = "28792665814854611296992347458380284135028636778229113005756334730996303888124"
+            r5.<init>(r11)
+            nj.d r10 = r9.mo10879l(r10)
+            nj.d r5 = r9.mo10879l(r5)
+            nj.f r5 = r9.mo10874g(r10, r5, r8)
+            r3.<init>(r9, r5, r7, r12)
+            ri.n r5 = vi.InterfaceC6757a.f26055b
+            r1.put(r5, r3)
+            java.math.BigInteger r3 = new java.math.BigInteger
+            java.lang.String r7 = "70390085352083305199547718019018437841079516630045180471284346843705633502619"
+            r3.<init>(r7)
+            java.math.BigInteger r9 = new java.math.BigInteger
+            java.lang.String r10 = "70390085352083305199547718019018437840920882647164081035322601458352298396601"
+            r9.<init>(r10)
+            nj.c$f r11 = new nj.c$f
+            java.math.BigInteger r13 = new java.math.BigInteger
+            java.lang.String r14 = "70390085352083305199547718019018437841079516630045180471284346843705633502616"
+            r13.<init>(r14)
+            java.math.BigInteger r15 = new java.math.BigInteger
+            java.lang.String r8 = "32858"
+            r15.<init>(r8)
+            r18 = r15
+            r15 = r11
+            r16 = r3
+            r17 = r13
+            r19 = r9
+            r20 = r12
+            r15.<init>(r16, r17, r18, r19, r20)
+            kj.f r3 = new kj.f
+            java.math.BigInteger r13 = new java.math.BigInteger
+            java.lang.String r15 = "0"
+            r13.<init>(r15)
+            r16 = r15
+            java.math.BigInteger r15 = new java.math.BigInteger
+            r21 = r2
+            java.lang.String r2 = "29818893917731240733471273240314769927240550812383695689146495261604565990247"
+            r15.<init>(r2)
+            nj.d r13 = r11.mo10879l(r13)
+            nj.d r15 = r11.mo10879l(r15)
+            r22 = r6
+            r6 = 0
+            nj.f r13 = r11.mo10874g(r13, r15, r6)
+            r3.<init>(r11, r13, r9, r12)
+            ri.n r6 = vi.InterfaceC6757a.f26058e
+            r1.put(r6, r3)
+            java.math.BigInteger r3 = new java.math.BigInteger
+            r3.<init>(r7)
+            java.math.BigInteger r7 = new java.math.BigInteger
+            r7.<init>(r10)
+            nj.c$f r9 = new nj.c$f
+            java.math.BigInteger r10 = new java.math.BigInteger
+            r10.<init>(r14)
+            java.math.BigInteger r11 = new java.math.BigInteger
+            r11.<init>(r8)
+            r8 = r16
+            r15 = r9
+            r16 = r3
+            r17 = r10
+            r18 = r11
+            r19 = r7
+            r20 = r12
+            r15.<init>(r16, r17, r18, r19, r20)
+            kj.f r3 = new kj.f
+            java.math.BigInteger r10 = new java.math.BigInteger
+            r10.<init>(r8)
+            java.math.BigInteger r8 = new java.math.BigInteger
+            r8.<init>(r2)
+            nj.d r2 = r9.mo10879l(r10)
+            nj.d r8 = r9.mo10879l(r8)
+            r10 = 0
+            nj.f r2 = r9.mo10874g(r2, r8, r10)
+            r3.<init>(r9, r2, r7, r12)
+            ri.n r2 = vi.InterfaceC6757a.f26056c
+            r1.put(r2, r3)
+            java.math.BigInteger r14 = new java.math.BigInteger
+            r3 = 16
+            java.lang.String r7 = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD97"
+            r14.<init>(r7, r3)
+            java.math.BigInteger r7 = new java.math.BigInteger
+            java.lang.String r8 = "400000000000000000000000000000000FD8CDDFC87B6635C115AF556C360C67"
+            r7.<init>(r8, r3)
+            nj.c$f r8 = new nj.c$f
+            java.math.BigInteger r15 = new java.math.BigInteger
+            java.lang.String r9 = "C2173F1513981673AF4892C23035A27CE25E2013BF95AA33B22C656F277E7335"
+            r15.<init>(r9, r3)
+            java.math.BigInteger r9 = new java.math.BigInteger
+            java.lang.String r10 = "295F9BAE7428ED9CCC20E7C359A9D41A22FCCD9108E17BF7BA9337A6F8AE9513"
+            r9.<init>(r10, r3)
+            java.math.BigInteger r10 = p240nj.InterfaceC4844b.f19247V
+            r13 = r8
+            r16 = r9
+            r17 = r7
+            r18 = r10
+            r13.<init>(r14, r15, r16, r17, r18)
+            kj.f r9 = new kj.f
+            java.math.BigInteger r11 = new java.math.BigInteger
+            java.lang.String r13 = "91E38443A5E82C0D880923425712B2BB658B9196932E02C78B2582FE742DAA28"
+            r11.<init>(r13, r3)
+            java.math.BigInteger r13 = new java.math.BigInteger
+            java.lang.String r14 = "32879423AB1A0375895786C4BB46E9565FDE0B5344766740AF268ADB32322E5C"
+            r13.<init>(r14, r3)
+            nj.d r11 = r8.mo10879l(r11)
+            nj.d r13 = r8.mo10879l(r13)
+            r14 = 0
+            nj.f r11 = r8.mo10874g(r11, r13, r14)
+            r9.<init>(r8, r11, r7, r10)
+            ri.n r7 = p460zi.InterfaceC7356a.f28120a
+            r1.put(r7, r9)
+            java.math.BigInteger r8 = new java.math.BigInteger
+            java.lang.String r9 = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDC7"
+            r8.<init>(r9, r3)
+            java.math.BigInteger r11 = new java.math.BigInteger
+            java.lang.String r13 = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF27E69532F48D89116FF22B8D4E0560609B4B38ABFAD2B85DCACDB1411F10B275"
+            r11.<init>(r13, r3)
+            nj.c$f r13 = new nj.c$f
+            java.math.BigInteger r14 = new java.math.BigInteger
+            java.lang.String r15 = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDC4"
+            r14.<init>(r15, r3)
+            java.math.BigInteger r15 = new java.math.BigInteger
+            r29 = r7
+            java.lang.String r7 = "E8C2505DEDFC86DDC1BD0B2B6667F1DA34B82574761CB0E879BD081CFD0B6265EE3CB090F30D27614CB4574010DA90DD862EF9D4EBEE4761503190785A71C760"
+            r15.<init>(r7, r3)
+            r7 = r15
+            r15 = r13
+            r16 = r8
+            r17 = r14
+            r18 = r7
+            r19 = r11
+            r20 = r12
+            r15.<init>(r16, r17, r18, r19, r20)
+            kj.f r7 = new kj.f
+            java.math.BigInteger r8 = new java.math.BigInteger
+            java.lang.String r14 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003"
+            r8.<init>(r14)
+            java.math.BigInteger r14 = new java.math.BigInteger
+            java.lang.String r15 = "7503CFE87A836AE3A61B8816E25450E6CE5E1C93ACF1ABC1778064FDCBEFA921DF1626BE4FD036E93D75E6A50E3A41E98028FE5FC235F5B889A589CB5215F2A4"
+            r14.<init>(r15, r3)
+            nj.d r8 = r13.mo10879l(r8)
+            nj.d r14 = r13.mo10879l(r14)
+            r15 = 0
+            nj.f r8 = r13.mo10874g(r8, r14, r15)
+            r7.<init>(r13, r8, r11, r12)
+            ri.n r8 = p460zi.InterfaceC7356a.f28121b
+            r1.put(r8, r7)
+            java.math.BigInteger r7 = new java.math.BigInteger
+            java.lang.String r11 = "8000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006F"
+            r7.<init>(r11, r3)
+            java.math.BigInteger r11 = new java.math.BigInteger
+            java.lang.String r13 = "800000000000000000000000000000000000000000000000000000000000000149A1EC142565A545ACFDB77BD9D40CFA8B996712101BEA0EC6346C54374F25BD"
+            r11.<init>(r13, r3)
+            nj.c$f r13 = new nj.c$f
+            java.math.BigInteger r14 = new java.math.BigInteger
+            java.lang.String r15 = "8000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006C"
+            r14.<init>(r15, r3)
+            java.math.BigInteger r15 = new java.math.BigInteger
+            r30 = r8
+            java.lang.String r8 = "687D1B459DC841457E3E06CF6F5E2517B97C7D614AF138BCBF85DC806C4B289F3E965D2DB1416D217F8B276FAD1AB69C50F78BEE1FA3106EFB8CCBC7C5140116"
+            r15.<init>(r8, r3)
+            r8 = r15
+            r15 = r13
+            r16 = r7
+            r17 = r14
+            r18 = r8
+            r19 = r11
+            r20 = r12
+            r15.<init>(r16, r17, r18, r19, r20)
+            kj.f r7 = new kj.f
+            java.math.BigInteger r8 = new java.math.BigInteger
+            java.lang.String r14 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002"
+            r8.<init>(r14)
+            java.math.BigInteger r14 = new java.math.BigInteger
+            java.lang.String r15 = "1A8F7EDA389B094C2C071E3647A8940F3C123B697578C213BE6DD9E6C8EC7335DCB228FD1EDF4A39152CBCAAF8C0398828041055F94CEEEC7E21340780FE41BD"
+            r14.<init>(r15, r3)
+            nj.d r8 = r13.mo10879l(r8)
+            nj.d r14 = r13.mo10879l(r14)
+            r15 = 0
+            nj.f r8 = r13.mo10874g(r8, r14, r15)
+            r7.<init>(r13, r8, r11, r12)
+            ri.n r8 = p460zi.InterfaceC7356a.f28122c
+            r1.put(r8, r7)
+            java.math.BigInteger r7 = new java.math.BigInteger
+            r7.<init>(r9, r3)
+            java.math.BigInteger r9 = new java.math.BigInteger
+            java.lang.String r11 = "3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC98CDBA46506AB004C33A9FF5147502CC8EDA9E7A769A12694623CEF47F023ED"
+            r9.<init>(r11, r3)
+            nj.c$f r11 = new nj.c$f
+            java.math.BigInteger r12 = new java.math.BigInteger
+            java.lang.String r13 = "DC9203E514A721875485A529D2C722FB187BC8980EB866644DE41C68E143064546E861C0E2C9EDD92ADE71F46FCF50FF2AD97F951FDA9F2A2EB6546F39689BD3"
+            r12.<init>(r13, r3)
+            java.math.BigInteger r13 = new java.math.BigInteger
+            java.lang.String r14 = "B4C4EE28CEBC6C2C8AC12952CF37F16AC7EFB6A9F69F4B57FFDA2E4F0DE5ADE038CBC2FFF719D2C18DE0284B8BFEF3B52B8CC7A5F5BF0A3C8D2319A5312557E1"
+            r13.<init>(r14, r3)
+            r23 = r11
+            r24 = r7
+            r25 = r12
+            r26 = r13
+            r27 = r9
+            r28 = r10
+            r23.<init>(r24, r25, r26, r27, r28)
+            kj.f r7 = new kj.f
+            java.math.BigInteger r12 = new java.math.BigInteger
+            java.lang.String r13 = "E2E31EDFC23DE7BDEBE241CE593EF5DE2295B7A9CBAEF021D385F7074CEA043AA27272A7AE602BF2A7B9033DB9ED3610C6FB85487EAE97AAC5BC7928C1950148"
+            r12.<init>(r13, r3)
+            java.math.BigInteger r13 = new java.math.BigInteger
+            java.lang.String r14 = "F5CE40D95B5EB899ABBCCFF5911CB8577939804D6527378B8C108C3D2090FF9BE18E2D33E3021ED2EF32D85822423B6304F726AA854BAE07D0396E9A9ADDC40F"
+            r13.<init>(r14, r3)
+            nj.d r3 = r11.mo10879l(r12)
+            nj.d r12 = r11.mo10879l(r13)
+            r13 = 0
+            nj.f r3 = r11.mo10874g(r3, r12, r13)
+            r7.<init>(r11, r3, r9, r10)
+            ri.n r3 = p460zi.InterfaceC7356a.f28123d
+            r1.put(r3, r7)
+            java.lang.String r1 = "GostR3410-2001-CryptoPro-A"
+            r0.put(r1, r4)
+            java.lang.String r7 = "GostR3410-2001-CryptoPro-B"
+            r0.put(r7, r5)
+            java.lang.String r9 = "GostR3410-2001-CryptoPro-C"
+            r0.put(r9, r2)
+            java.lang.String r10 = "GostR3410-2001-CryptoPro-XchA"
+            r11 = r22
+            r0.put(r10, r11)
+            java.lang.String r12 = "GostR3410-2001-CryptoPro-XchB"
+            r0.put(r12, r6)
+            java.lang.String r13 = "Tc26-Gost-3410-12-256-paramSetA"
+            r14 = r29
+            r0.put(r13, r14)
+            java.lang.String r15 = "Tc26-Gost-3410-12-512-paramSetA"
+            r16 = r13
+            r13 = r30
+            r0.put(r15, r13)
+            java.lang.String r13 = "Tc26-Gost-3410-12-512-paramSetB"
+            r0.put(r13, r8)
+            r17 = r8
+            java.lang.String r8 = "Tc26-Gost-3410-12-512-paramSetC"
+            r0.put(r8, r3)
+            r0 = r21
+            r0.put(r4, r1)
+            r0.put(r5, r7)
+            r0.put(r2, r9)
+            r0.put(r11, r10)
+            r0.put(r6, r12)
+            r1 = r16
+            r0.put(r14, r1)
+            r1 = r30
+            r0.put(r1, r15)
+            r1 = r17
+            r0.put(r1, r13)
+            r0.put(r3, r8)
+            return
+    }
+}
+package vi;
+
+/* renamed from: vi.a */
+/* loaded from: classes.dex */
+public interface InterfaceC6757a {
+
+    /* renamed from: a */
+    public static final p317ri.C5897n f26054a = null;
+
+    /* renamed from: b */
+    public static final p317ri.C5897n f26055b = null;
+
+    /* renamed from: c */
+    public static final p317ri.C5897n f26056c = null;
+
+    /* renamed from: d */
+    public static final p317ri.C5897n f26057d = null;
+
+    /* renamed from: e */
+    public static final p317ri.C5897n f26058e = null;
+
+    static {
+            ri.n r0 = new ri.n
+            java.lang.String r1 = "1.2.643.2.2"
+            r0.<init>(r1)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "9"
+            r1.<init>(r0, r2)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "10"
+            r1.<init>(r0, r2)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "13.0"
+            r1.<init>(r0, r2)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "13.1"
+            r1.<init>(r0, r2)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "21"
+            r1.<init>(r0, r2)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "31.0"
+            r1.<init>(r0, r2)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "31.1"
+            r1.<init>(r0, r2)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "31.2"
+            r1.<init>(r0, r2)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "31.3"
+            r1.<init>(r0, r2)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "31.4"
+            r1.<init>(r0, r2)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "20"
+            r1.<init>(r0, r2)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "19"
+            r1.<init>(r0, r2)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "4"
+            r1.<init>(r0, r2)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "3"
+            r1.<init>(r0, r2)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "30.1"
+            r1.<init>(r0, r2)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "32.2"
+            r1.<init>(r0, r2)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "32.3"
+            r1.<init>(r0, r2)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "32.4"
+            r1.<init>(r0, r2)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "32.5"
+            r1.<init>(r0, r2)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "33.1"
+            r1.<init>(r0, r2)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "33.2"
+            r1.<init>(r0, r2)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "33.3"
+            r1.<init>(r0, r2)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "35.1"
+            r1.<init>(r0, r2)
+            vi.InterfaceC6757a.f26054a = r1
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "35.2"
+            r1.<init>(r0, r2)
+            vi.InterfaceC6757a.f26055b = r1
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "35.3"
+            r1.<init>(r0, r2)
+            vi.InterfaceC6757a.f26056c = r1
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "36.0"
+            r1.<init>(r0, r2)
+            vi.InterfaceC6757a.f26057d = r1
+            ri.n r1 = new ri.n
+            java.lang.String r3 = "36.1"
+            r1.<init>(r0, r3)
+            vi.InterfaceC6757a.f26058e = r1
+            ri.n r1 = new ri.n
+            r1.<init>(r0, r2)
+            ri.n r1 = new ri.n
+            r1.<init>(r0, r3)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "96"
+            r1.<init>(r0, r2)
+            ri.n r1 = new ri.n
+            java.lang.String r2 = "98"
+            r1.<init>(r0, r2)
+            return
+    }
+}

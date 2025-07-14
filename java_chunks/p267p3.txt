@@ -1,0 +1,225 @@
+package p267p3;
+
+/* renamed from: p3.a */
+/* loaded from: classes.dex */
+public interface InterfaceC5347a extends p267p3.InterfaceC5348b<java.lang.Object> {
+    /* renamed from: B */
+    boolean m11654B();
+
+    /* renamed from: E */
+    java.lang.String[] m11655E();
+
+    /* renamed from: m */
+    int m11656m();
+}
+package p267p3;
+
+import p198l3.C4172f;
+
+/* renamed from: p3.b */
+/* loaded from: classes.dex */
+public interface InterfaceC5348b<T extends p198l3.C4172f> extends p267p3.InterfaceC5350d<T> {
+    /* renamed from: H */
+    int mo9285H();
+}
+package p267p3;
+
+/* renamed from: p3.c */
+/* loaded from: classes.dex */
+public interface InterfaceC5349c extends p267p3.InterfaceC5353g<java.lang.Object> {
+    /* renamed from: G */
+    int m11657G();
+
+    /* renamed from: d0 */
+    int m11658d0();
+}
+package p267p3;
+
+import p198l3.C4172f;
+
+/* renamed from: p3.d */
+/* loaded from: classes.dex */
+public interface InterfaceC5350d<T extends p198l3.C4172f> {
+    /* renamed from: A */
+    float mo9254A();
+
+    /* renamed from: C */
+    void mo9226C(p215m3.AbstractC4351c r1);
+
+    /* renamed from: D */
+    boolean mo9227D();
+
+    /* renamed from: L */
+    p181k3.C3685i.a mo9228L();
+
+    /* renamed from: M */
+    float mo9229M();
+
+    /* renamed from: N */
+    void mo9230N(boolean r1);
+
+    /* renamed from: O */
+    p215m3.AbstractC4351c mo9231O();
+
+    /* renamed from: P */
+    int mo9255P();
+
+    /* renamed from: Q */
+    p323s3.C5949c mo9232Q();
+
+    /* renamed from: R */
+    int mo9233R();
+
+    /* renamed from: T */
+    boolean mo9234T();
+
+    /* renamed from: W */
+    float mo9235W();
+
+    /* renamed from: X */
+    T mo9256X(int r1);
+
+    /* renamed from: a */
+    android.graphics.Typeface mo9236a();
+
+    /* renamed from: b */
+    boolean mo9237b();
+
+    /* renamed from: c0 */
+    float mo9238c0();
+
+    /* renamed from: d */
+    int mo9239d();
+
+    /* renamed from: f0 */
+    int mo9240f0(int r1);
+
+    /* renamed from: g */
+    float mo9257g();
+
+    /* renamed from: i */
+    int mo9241i(int r1);
+
+    boolean isVisible();
+
+    /* renamed from: j */
+    float mo9260j();
+
+    /* renamed from: l */
+    java.util.List<java.lang.Integer> mo9242l();
+
+    /* renamed from: o */
+    android.graphics.DashPathEffect mo9243o();
+
+    /* renamed from: p */
+    T mo9261p(float r1, float r2);
+
+    /* renamed from: q */
+    void mo9262q(float r1, float r2);
+
+    /* renamed from: s */
+    boolean mo9244s();
+
+    /* renamed from: t */
+    java.util.List<T> mo9263t(float r1);
+
+    /* renamed from: u */
+    T mo9264u(float r1, float r2, p198l3.AbstractC4171e.a r3);
+
+    /* renamed from: v */
+    int mo9265v(T r1);
+
+    /* renamed from: x */
+    java.lang.String mo9245x();
+
+    /* renamed from: y */
+    float mo9266y();
+}
+package p267p3;
+
+/* renamed from: p3.e */
+/* loaded from: classes.dex */
+public interface InterfaceC5351e extends p267p3.InterfaceC5352f<p198l3.C4172f> {
+    /* renamed from: F */
+    float mo9268F();
+
+    /* renamed from: I */
+    android.graphics.DashPathEffect mo9269I();
+
+    /* renamed from: J */
+    int mo9270J(int r1);
+
+    /* renamed from: S */
+    boolean mo9271S();
+
+    /* renamed from: V */
+    int mo9272V();
+
+    /* renamed from: Y */
+    float mo9273Y();
+
+    /* renamed from: Z */
+    float mo9274Z();
+
+    /* renamed from: c */
+    int mo9275c();
+
+    /* renamed from: e0 */
+    boolean mo9276e0();
+
+    /* renamed from: h */
+    p367v1.C6488b mo9277h();
+
+    /* renamed from: r */
+    boolean mo9278r();
+
+    /* renamed from: w */
+    int mo9279w();
+}
+package p267p3;
+
+import p198l3.C4172f;
+
+/* renamed from: p3.f */
+/* loaded from: classes.dex */
+public interface InterfaceC5352f<T extends p198l3.C4172f> extends p267p3.InterfaceC5353g<T> {
+    /* renamed from: K */
+    android.graphics.drawable.Drawable mo9280K();
+
+    /* renamed from: a0 */
+    boolean mo9281a0();
+
+    /* renamed from: e */
+    int mo9282e();
+
+    /* renamed from: f */
+    int mo9283f();
+
+    /* renamed from: n */
+    float mo9284n();
+}
+package p267p3;
+
+import p198l3.C4172f;
+
+/* renamed from: p3.g */
+/* loaded from: classes.dex */
+public interface InterfaceC5353g<T extends p198l3.C4172f> extends p267p3.InterfaceC5348b<T> {
+    /* renamed from: U */
+    boolean mo9286U();
+
+    /* renamed from: b0 */
+    boolean mo9287b0();
+
+    /* renamed from: k */
+    android.graphics.DashPathEffect mo9288k();
+
+    /* renamed from: z */
+    float mo9289z();
+}
+package p267p3;
+
+/* renamed from: p3.h */
+/* loaded from: classes.dex */
+public interface InterfaceC5354h extends p267p3.InterfaceC5350d<p198l3.C4177k> {
+}

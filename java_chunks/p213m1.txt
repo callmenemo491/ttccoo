@@ -1,0 +1,1344 @@
+package p213m1;
+
+/* renamed from: m1.a */
+/* loaded from: classes.dex */
+public class C4315a {
+
+    /* renamed from: e */
+    public static final java.util.Map<java.lang.String, java.util.concurrent.locks.Lock> f17585e = null;
+
+    /* renamed from: a */
+    public final java.io.File f17586a;
+
+    /* renamed from: b */
+    public final java.util.concurrent.locks.Lock f17587b;
+
+    /* renamed from: c */
+    public final boolean f17588c;
+
+    /* renamed from: d */
+    public java.nio.channels.FileChannel f17589d;
+
+    static {
+            java.util.HashMap r0 = new java.util.HashMap
+            r0.<init>()
+            p213m1.C4315a.f17585e = r0
+            return
+    }
+
+    public C4315a(java.lang.String r3, java.io.File r4, boolean r5) {
+            r2 = this;
+            r2.<init>()
+            java.io.File r0 = new java.io.File
+            java.lang.String r1 = ".lck"
+            java.lang.String r3 = p064e.C1493g.m4049a(r3, r1)
+            r0.<init>(r4, r3)
+            r2.f17586a = r0
+            java.lang.String r3 = r0.getAbsolutePath()
+            java.util.Map<java.lang.String, java.util.concurrent.locks.Lock> r4 = p213m1.C4315a.f17585e
+            monitor-enter(r4)
+            r0 = r4
+            java.util.HashMap r0 = (java.util.HashMap) r0     // Catch: java.lang.Throwable -> L33
+            java.lang.Object r0 = r0.get(r3)     // Catch: java.lang.Throwable -> L33
+            java.util.concurrent.locks.Lock r0 = (java.util.concurrent.locks.Lock) r0     // Catch: java.lang.Throwable -> L33
+            if (r0 != 0) goto L2d
+            java.util.concurrent.locks.ReentrantLock r0 = new java.util.concurrent.locks.ReentrantLock     // Catch: java.lang.Throwable -> L33
+            r0.<init>()     // Catch: java.lang.Throwable -> L33
+            r1 = r4
+            java.util.HashMap r1 = (java.util.HashMap) r1     // Catch: java.lang.Throwable -> L33
+            r1.put(r3, r0)     // Catch: java.lang.Throwable -> L33
+        L2d:
+            monitor-exit(r4)     // Catch: java.lang.Throwable -> L33
+            r2.f17587b = r0
+            r2.f17588c = r5
+            return
+        L33:
+            r3 = move-exception
+            monitor-exit(r4)     // Catch: java.lang.Throwable -> L33
+            throw r3
+    }
+
+    /* renamed from: a */
+    public void m9643a() {
+            r1 = this;
+            java.nio.channels.FileChannel r0 = r1.f17589d
+            if (r0 == 0) goto L7
+            r0.close()     // Catch: java.io.IOException -> L7
+        L7:
+            java.util.concurrent.locks.Lock r0 = r1.f17587b
+            r0.unlock()
+            return
+    }
+}
+package p213m1;
+
+/* renamed from: m1.b */
+/* loaded from: classes.dex */
+public class C4316b {
+    /* renamed from: a */
+    public static int m9644a(android.database.Cursor r8, java.lang.String r9) {
+            int r0 = r8.getColumnIndex(r9)
+            if (r0 < 0) goto L7
+            goto L6c
+        L7:
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            r0.<init>()
+            java.lang.String r1 = "`"
+            r0.append(r1)
+            r0.append(r9)
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            int r0 = r8.getColumnIndex(r0)
+            if (r0 < 0) goto L22
+            goto L6c
+        L22:
+            int r0 = android.os.Build.VERSION.SDK_INT
+            r2 = 25
+            if (r0 <= r2) goto L29
+            goto L6b
+        L29:
+            int r0 = r9.length()
+            if (r0 != 0) goto L30
+            goto L6b
+        L30:
+            java.lang.String[] r0 = r8.getColumnNames()
+            java.lang.String r2 = "."
+            java.lang.String r3 = p064e.C1493g.m4049a(r2, r9)
+            java.lang.String r1 = android.support.v4.media.C0145d.m257a(r2, r9, r1)
+            r2 = 0
+            r4 = 0
+        L40:
+            int r5 = r0.length
+            if (r4 >= r5) goto L6b
+            r5 = r0[r4]
+            int r6 = r5.length()
+            int r7 = r9.length()
+            int r7 = r7 + 2
+            if (r6 < r7) goto L68
+            boolean r6 = r5.endsWith(r3)
+            if (r6 == 0) goto L58
+            goto L66
+        L58:
+            char r6 = r5.charAt(r2)
+            r7 = 96
+            if (r6 != r7) goto L68
+            boolean r5 = r5.endsWith(r1)
+            if (r5 == 0) goto L68
+        L66:
+            r0 = r4
+            goto L6c
+        L68:
+            int r4 = r4 + 1
+            goto L40
+        L6b:
+            r0 = -1
+        L6c:
+            if (r0 < 0) goto L6f
+            return r0
+        L6f:
+            java.lang.String[] r8 = r8.getColumnNames()     // Catch: java.lang.Exception -> L78
+            java.lang.String r8 = java.util.Arrays.toString(r8)     // Catch: java.lang.Exception -> L78
+            goto L82
+        L78:
+            r8 = move-exception
+            java.lang.String r0 = "RoomCursorUtil"
+            java.lang.String r1 = "Cannot collect column names for debug purposes"
+            android.util.Log.d(r0, r1, r8)
+            java.lang.String r8 = ""
+        L82:
+            java.lang.IllegalArgumentException r0 = new java.lang.IllegalArgumentException
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            r1.<init>()
+            java.lang.String r2 = "column '"
+            r1.append(r2)
+            r1.append(r9)
+            java.lang.String r9 = "' does not exist. Available columns: "
+            r1.append(r9)
+            r1.append(r8)
+            java.lang.String r8 = r1.toString()
+            r0.<init>(r8)
+            throw r0
+    }
+}
+package p213m1;
+
+/* renamed from: m1.c */
+/* loaded from: classes.dex */
+public class C4317c {
+    /* renamed from: a */
+    public static android.database.Cursor m9645a(p179k1.AbstractC3664v r3, p243o1.InterfaceC4875e r4, boolean r5, android.os.CancellationSignal r6) {
+            r6 = 0
+            android.database.Cursor r3 = r3.m8115l(r4, r6)
+            if (r5 == 0) goto L98
+            boolean r4 = r3 instanceof android.database.AbstractWindowedCursor
+            if (r4 == 0) goto L98
+            r4 = r3
+            android.database.AbstractWindowedCursor r4 = (android.database.AbstractWindowedCursor) r4
+            int r5 = r4.getCount()
+            boolean r0 = r4.hasWindow()
+            if (r0 == 0) goto L21
+            android.database.CursorWindow r0 = r4.getWindow()
+            int r0 = r0.getNumRows()
+            goto L22
+        L21:
+            r0 = r5
+        L22:
+            int r1 = android.os.Build.VERSION.SDK_INT
+            r2 = 23
+            if (r1 < r2) goto L2a
+            if (r0 >= r5) goto L98
+        L2a:
+            android.database.MatrixCursor r3 = new android.database.MatrixCursor     // Catch: java.lang.Throwable -> L93
+            java.lang.String[] r5 = r4.getColumnNames()     // Catch: java.lang.Throwable -> L93
+            int r0 = r4.getCount()     // Catch: java.lang.Throwable -> L93
+            r3.<init>(r5, r0)     // Catch: java.lang.Throwable -> L93
+        L37:
+            boolean r5 = r4.moveToNext()     // Catch: java.lang.Throwable -> L93
+            if (r5 == 0) goto L8f
+            int r5 = r4.getColumnCount()     // Catch: java.lang.Throwable -> L93
+            java.lang.Object[] r5 = new java.lang.Object[r5]     // Catch: java.lang.Throwable -> L93
+            r0 = 0
+        L44:
+            int r1 = r4.getColumnCount()     // Catch: java.lang.Throwable -> L93
+            if (r0 >= r1) goto L8b
+            int r1 = r4.getType(r0)     // Catch: java.lang.Throwable -> L93
+            if (r1 == 0) goto L86
+            r2 = 1
+            if (r1 == r2) goto L7b
+            r2 = 2
+            if (r1 == r2) goto L70
+            r2 = 3
+            if (r1 == r2) goto L69
+            r2 = 4
+            if (r1 != r2) goto L63
+            byte[] r1 = r4.getBlob(r0)     // Catch: java.lang.Throwable -> L93
+            r5[r0] = r1     // Catch: java.lang.Throwable -> L93
+            goto L88
+        L63:
+            java.lang.IllegalStateException r3 = new java.lang.IllegalStateException     // Catch: java.lang.Throwable -> L93
+            r3.<init>()     // Catch: java.lang.Throwable -> L93
+            throw r3     // Catch: java.lang.Throwable -> L93
+        L69:
+            java.lang.String r1 = r4.getString(r0)     // Catch: java.lang.Throwable -> L93
+            r5[r0] = r1     // Catch: java.lang.Throwable -> L93
+            goto L88
+        L70:
+            double r1 = r4.getDouble(r0)     // Catch: java.lang.Throwable -> L93
+            java.lang.Double r1 = java.lang.Double.valueOf(r1)     // Catch: java.lang.Throwable -> L93
+            r5[r0] = r1     // Catch: java.lang.Throwable -> L93
+            goto L88
+        L7b:
+            long r1 = r4.getLong(r0)     // Catch: java.lang.Throwable -> L93
+            java.lang.Long r1 = java.lang.Long.valueOf(r1)     // Catch: java.lang.Throwable -> L93
+            r5[r0] = r1     // Catch: java.lang.Throwable -> L93
+            goto L88
+        L86:
+            r5[r0] = r6     // Catch: java.lang.Throwable -> L93
+        L88:
+            int r0 = r0 + 1
+            goto L44
+        L8b:
+            r3.addRow(r5)     // Catch: java.lang.Throwable -> L93
+            goto L37
+        L8f:
+            r4.close()
+            return r3
+        L93:
+            r3 = move-exception
+            r4.close()
+            throw r3
+        L98:
+            return r3
+    }
+
+    /* renamed from: b */
+    public static int m9646b(java.io.File r10) {
+            r0 = 4
+            r1 = 0
+            java.nio.ByteBuffer r2 = java.nio.ByteBuffer.allocate(r0)     // Catch: java.lang.Throwable -> L36
+            java.io.FileInputStream r3 = new java.io.FileInputStream     // Catch: java.lang.Throwable -> L36
+            r3.<init>(r10)     // Catch: java.lang.Throwable -> L36
+            java.nio.channels.FileChannel r1 = r3.getChannel()     // Catch: java.lang.Throwable -> L36
+            r5 = 60
+            r7 = 4
+            r9 = 1
+            r4 = r1
+            r4.tryLock(r5, r7, r9)     // Catch: java.lang.Throwable -> L36
+            r3 = 60
+            r1.position(r3)     // Catch: java.lang.Throwable -> L36
+            int r10 = r1.read(r2)     // Catch: java.lang.Throwable -> L36
+            if (r10 != r0) goto L2e
+            r2.rewind()     // Catch: java.lang.Throwable -> L36
+            int r10 = r2.getInt()     // Catch: java.lang.Throwable -> L36
+            r1.close()
+            return r10
+        L2e:
+            java.io.IOException r10 = new java.io.IOException     // Catch: java.lang.Throwable -> L36
+            java.lang.String r0 = "Bad database header, unable to read 4 bytes at offset 60"
+            r10.<init>(r0)     // Catch: java.lang.Throwable -> L36
+            throw r10     // Catch: java.lang.Throwable -> L36
+        L36:
+            r10 = move-exception
+            if (r1 == 0) goto L3c
+            r1.close()
+        L3c:
+            throw r10
+    }
+}
+package p213m1;
+
+/* renamed from: m1.d */
+/* loaded from: classes.dex */
+public final class C4318d {
+
+    /* renamed from: a */
+    public final java.lang.String f17590a;
+
+    /* renamed from: b */
+    public final java.util.Map<java.lang.String, p213m1.C4318d.a> f17591b;
+
+    /* renamed from: c */
+    public final java.util.Set<p213m1.C4318d.b> f17592c;
+
+    /* renamed from: d */
+    public final java.util.Set<p213m1.C4318d.d> f17593d;
+
+    /* renamed from: m1.d$a */
+    public static final class a {
+
+        /* renamed from: a */
+        public final java.lang.String f17594a;
+
+        /* renamed from: b */
+        public final java.lang.String f17595b;
+
+        /* renamed from: c */
+        public final int f17596c;
+
+        /* renamed from: d */
+        public final boolean f17597d;
+
+        /* renamed from: e */
+        public final int f17598e;
+
+        /* renamed from: f */
+        public final java.lang.String f17599f;
+
+        /* renamed from: g */
+        public final int f17600g;
+
+        public a(java.lang.String r1, java.lang.String r2, boolean r3, int r4, java.lang.String r5, int r6) {
+                r0 = this;
+                r0.<init>()
+                r0.f17594a = r1
+                r0.f17595b = r2
+                r0.f17597d = r3
+                r0.f17598e = r4
+                r1 = 5
+                if (r2 != 0) goto Lf
+                goto L5f
+            Lf:
+                java.util.Locale r3 = java.util.Locale.US
+                java.lang.String r2 = r2.toUpperCase(r3)
+                java.lang.String r3 = "INT"
+                boolean r3 = r2.contains(r3)
+                if (r3 == 0) goto L1f
+                r1 = 3
+                goto L5f
+            L1f:
+                java.lang.String r3 = "CHAR"
+                boolean r3 = r2.contains(r3)
+                if (r3 != 0) goto L5e
+                java.lang.String r3 = "CLOB"
+                boolean r3 = r2.contains(r3)
+                if (r3 != 0) goto L5e
+                java.lang.String r3 = "TEXT"
+                boolean r3 = r2.contains(r3)
+                if (r3 == 0) goto L38
+                goto L5e
+            L38:
+                java.lang.String r3 = "BLOB"
+                boolean r3 = r2.contains(r3)
+                if (r3 == 0) goto L41
+                goto L5f
+            L41:
+                java.lang.String r1 = "REAL"
+                boolean r1 = r2.contains(r1)
+                if (r1 != 0) goto L5c
+                java.lang.String r1 = "FLOA"
+                boolean r1 = r2.contains(r1)
+                if (r1 != 0) goto L5c
+                java.lang.String r1 = "DOUB"
+                boolean r1 = r2.contains(r1)
+                if (r1 == 0) goto L5a
+                goto L5c
+            L5a:
+                r1 = 1
+                goto L5f
+            L5c:
+                r1 = 4
+                goto L5f
+            L5e:
+                r1 = 2
+            L5f:
+                r0.f17596c = r1
+                r0.f17599f = r5
+                r0.f17600g = r6
+                return
+        }
+
+        /* renamed from: a */
+        public static boolean m9650a(java.lang.String r6, java.lang.String r7) {
+                r0 = 0
+                if (r7 != 0) goto L4
+                return r0
+            L4:
+                boolean r1 = r6.equals(r7)
+                r2 = 1
+                if (r1 == 0) goto Lc
+                return r2
+            Lc:
+                int r1 = r6.length()
+                if (r1 != 0) goto L13
+                goto L42
+            L13:
+                r1 = 0
+                r3 = 0
+            L15:
+                int r4 = r6.length()
+                if (r1 >= r4) goto L3e
+                char r4 = r6.charAt(r1)
+                r5 = 40
+                if (r1 != 0) goto L26
+                if (r4 == r5) goto L26
+                goto L42
+            L26:
+                if (r4 != r5) goto L2b
+                int r3 = r3 + 1
+                goto L3b
+            L2b:
+                r5 = 41
+                if (r4 != r5) goto L3b
+                int r3 = r3 + (-1)
+                if (r3 != 0) goto L3b
+                int r4 = r6.length()
+                int r4 = r4 - r2
+                if (r1 == r4) goto L3b
+                goto L42
+            L3b:
+                int r1 = r1 + 1
+                goto L15
+            L3e:
+                if (r3 != 0) goto L42
+                r1 = 1
+                goto L43
+            L42:
+                r1 = 0
+            L43:
+                if (r1 == 0) goto L57
+                int r0 = r6.length()
+                int r0 = r0 - r2
+                java.lang.String r6 = r6.substring(r2, r0)
+                java.lang.String r6 = r6.trim()
+                boolean r6 = r6.equals(r7)
+                return r6
+            L57:
+                return r0
+        }
+
+        public boolean equals(java.lang.Object r6) {
+                r5 = this;
+                r0 = 1
+                if (r5 != r6) goto L4
+                return r0
+            L4:
+                boolean r1 = r6 instanceof p213m1.C4318d.a
+                r2 = 0
+                if (r1 != 0) goto La
+                return r2
+            La:
+                m1.d$a r6 = (p213m1.C4318d.a) r6
+                int r1 = r5.f17598e
+                int r3 = r6.f17598e
+                if (r1 == r3) goto L13
+                return r2
+            L13:
+                java.lang.String r1 = r5.f17594a
+                java.lang.String r3 = r6.f17594a
+                boolean r1 = r1.equals(r3)
+                if (r1 != 0) goto L1e
+                return r2
+            L1e:
+                boolean r1 = r5.f17597d
+                boolean r3 = r6.f17597d
+                if (r1 == r3) goto L25
+                return r2
+            L25:
+                int r1 = r5.f17600g
+                r3 = 2
+                if (r1 != r0) goto L3b
+                int r1 = r6.f17600g
+                if (r1 != r3) goto L3b
+                java.lang.String r1 = r5.f17599f
+                if (r1 == 0) goto L3b
+                java.lang.String r4 = r6.f17599f
+                boolean r1 = m9650a(r1, r4)
+                if (r1 != 0) goto L3b
+                return r2
+            L3b:
+                int r1 = r5.f17600g
+                if (r1 != r3) goto L50
+                int r1 = r6.f17600g
+                if (r1 != r0) goto L50
+                java.lang.String r1 = r6.f17599f
+                if (r1 == 0) goto L50
+                java.lang.String r3 = r5.f17599f
+                boolean r1 = m9650a(r1, r3)
+                if (r1 != 0) goto L50
+                return r2
+            L50:
+                int r1 = r5.f17600g
+                if (r1 == 0) goto L6a
+                int r3 = r6.f17600g
+                if (r1 != r3) goto L6a
+                java.lang.String r1 = r5.f17599f
+                if (r1 == 0) goto L65
+                java.lang.String r3 = r6.f17599f
+                boolean r1 = m9650a(r1, r3)
+                if (r1 != 0) goto L6a
+                goto L69
+            L65:
+                java.lang.String r1 = r6.f17599f
+                if (r1 == 0) goto L6a
+            L69:
+                return r2
+            L6a:
+                int r1 = r5.f17596c
+                int r6 = r6.f17596c
+                if (r1 != r6) goto L71
+                goto L72
+            L71:
+                r0 = 0
+            L72:
+                return r0
+        }
+
+        public int hashCode() {
+                r2 = this;
+                java.lang.String r0 = r2.f17594a
+                int r0 = r0.hashCode()
+                int r0 = r0 * 31
+                int r1 = r2.f17596c
+                int r0 = r0 + r1
+                int r0 = r0 * 31
+                boolean r1 = r2.f17597d
+                if (r1 == 0) goto L14
+                r1 = 1231(0x4cf, float:1.725E-42)
+                goto L16
+            L14:
+                r1 = 1237(0x4d5, float:1.733E-42)
+            L16:
+                int r0 = r0 + r1
+                int r0 = r0 * 31
+                int r1 = r2.f17598e
+                int r0 = r0 + r1
+                return r0
+        }
+
+        public java.lang.String toString() {
+                r3 = this;
+                java.lang.String r0 = "Column{name='"
+                java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+                java.lang.String r1 = r3.f17594a
+                r0.append(r1)
+                r1 = 39
+                r0.append(r1)
+                java.lang.String r2 = ", type='"
+                r0.append(r2)
+                java.lang.String r2 = r3.f17595b
+                r0.append(r2)
+                r0.append(r1)
+                java.lang.String r2 = ", affinity='"
+                r0.append(r2)
+                int r2 = r3.f17596c
+                r0.append(r2)
+                r0.append(r1)
+                java.lang.String r2 = ", notNull="
+                r0.append(r2)
+                boolean r2 = r3.f17597d
+                r0.append(r2)
+                java.lang.String r2 = ", primaryKeyPosition="
+                r0.append(r2)
+                int r2 = r3.f17598e
+                r0.append(r2)
+                java.lang.String r2 = ", defaultValue='"
+                r0.append(r2)
+                java.lang.String r2 = r3.f17599f
+                r0.append(r2)
+                r0.append(r1)
+                r1 = 125(0x7d, float:1.75E-43)
+                r0.append(r1)
+                java.lang.String r0 = r0.toString()
+                return r0
+        }
+    }
+
+    /* renamed from: m1.d$b */
+    public static final class b {
+
+        /* renamed from: a */
+        public final java.lang.String f17601a;
+
+        /* renamed from: b */
+        public final java.lang.String f17602b;
+
+        /* renamed from: c */
+        public final java.lang.String f17603c;
+
+        /* renamed from: d */
+        public final java.util.List<java.lang.String> f17604d;
+
+        /* renamed from: e */
+        public final java.util.List<java.lang.String> f17605e;
+
+        public b(java.lang.String r1, java.lang.String r2, java.lang.String r3, java.util.List<java.lang.String> r4, java.util.List<java.lang.String> r5) {
+                r0 = this;
+                r0.<init>()
+                r0.f17601a = r1
+                r0.f17602b = r2
+                r0.f17603c = r3
+                java.util.List r1 = java.util.Collections.unmodifiableList(r4)
+                r0.f17604d = r1
+                java.util.List r1 = java.util.Collections.unmodifiableList(r5)
+                r0.f17605e = r1
+                return
+        }
+
+        public boolean equals(java.lang.Object r4) {
+                r3 = this;
+                if (r3 != r4) goto L4
+                r4 = 1
+                return r4
+            L4:
+                boolean r0 = r4 instanceof p213m1.C4318d.b
+                r1 = 0
+                if (r0 != 0) goto La
+                return r1
+            La:
+                m1.d$b r4 = (p213m1.C4318d.b) r4
+                java.lang.String r0 = r3.f17601a
+                java.lang.String r2 = r4.f17601a
+                boolean r0 = r0.equals(r2)
+                if (r0 != 0) goto L17
+                return r1
+            L17:
+                java.lang.String r0 = r3.f17602b
+                java.lang.String r2 = r4.f17602b
+                boolean r0 = r0.equals(r2)
+                if (r0 != 0) goto L22
+                return r1
+            L22:
+                java.lang.String r0 = r3.f17603c
+                java.lang.String r2 = r4.f17603c
+                boolean r0 = r0.equals(r2)
+                if (r0 != 0) goto L2d
+                return r1
+            L2d:
+                java.util.List<java.lang.String> r0 = r3.f17604d
+                java.util.List<java.lang.String> r2 = r4.f17604d
+                boolean r0 = r0.equals(r2)
+                if (r0 != 0) goto L38
+                return r1
+            L38:
+                java.util.List<java.lang.String> r0 = r3.f17605e
+                java.util.List<java.lang.String> r4 = r4.f17605e
+                boolean r4 = r0.equals(r4)
+                return r4
+        }
+
+        public int hashCode() {
+                r3 = this;
+                java.lang.String r0 = r3.f17601a
+                int r0 = r0.hashCode()
+                int r0 = r0 * 31
+                java.lang.String r1 = r3.f17602b
+                r2 = 31
+                int r0 = p213m1.C4319e.m9651a(r1, r0, r2)
+                java.lang.String r1 = r3.f17603c
+                int r0 = p213m1.C4319e.m9651a(r1, r0, r2)
+                java.util.List<java.lang.String> r1 = r3.f17604d
+                int r1 = r1.hashCode()
+                int r1 = r1 + r0
+                int r1 = r1 * 31
+                java.util.List<java.lang.String> r0 = r3.f17605e
+                int r0 = r0.hashCode()
+                int r0 = r0 + r1
+                return r0
+        }
+
+        public java.lang.String toString() {
+                r3 = this;
+                java.lang.String r0 = "ForeignKey{referenceTable='"
+                java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+                java.lang.String r1 = r3.f17601a
+                r0.append(r1)
+                r1 = 39
+                r0.append(r1)
+                java.lang.String r2 = ", onDelete='"
+                r0.append(r2)
+                java.lang.String r2 = r3.f17602b
+                r0.append(r2)
+                r0.append(r1)
+                java.lang.String r2 = ", onUpdate='"
+                r0.append(r2)
+                java.lang.String r2 = r3.f17603c
+                r0.append(r2)
+                r0.append(r1)
+                java.lang.String r1 = ", columnNames="
+                r0.append(r1)
+                java.util.List<java.lang.String> r1 = r3.f17604d
+                r0.append(r1)
+                java.lang.String r1 = ", referenceColumnNames="
+                r0.append(r1)
+                java.util.List<java.lang.String> r1 = r3.f17605e
+                r2 = 125(0x7d, float:1.75E-43)
+                java.lang.String r0 = p213m1.C4320f.m9652a(r0, r1, r2)
+                return r0
+        }
+    }
+
+    /* renamed from: m1.d$c */
+    public static class c implements java.lang.Comparable<p213m1.C4318d.c> {
+
+        /* renamed from: Y */
+        public final int f17606Y;
+
+        /* renamed from: Z */
+        public final int f17607Z;
+
+        /* renamed from: a0 */
+        public final java.lang.String f17608a0;
+
+        /* renamed from: b0 */
+        public final java.lang.String f17609b0;
+
+        public c(int r1, int r2, java.lang.String r3, java.lang.String r4) {
+                r0 = this;
+                r0.<init>()
+                r0.f17606Y = r1
+                r0.f17607Z = r2
+                r0.f17608a0 = r3
+                r0.f17609b0 = r4
+                return
+        }
+
+        @Override // java.lang.Comparable
+        public int compareTo(p213m1.C4318d.c r3) {
+                r2 = this;
+                m1.d$c r3 = (p213m1.C4318d.c) r3
+                int r0 = r2.f17606Y
+                int r1 = r3.f17606Y
+                int r0 = r0 - r1
+                if (r0 != 0) goto Le
+                int r0 = r2.f17607Z
+                int r3 = r3.f17607Z
+                int r0 = r0 - r3
+            Le:
+                return r0
+        }
+    }
+
+    /* renamed from: m1.d$d */
+    public static final class d {
+
+        /* renamed from: a */
+        public final java.lang.String f17610a;
+
+        /* renamed from: b */
+        public final boolean f17611b;
+
+        /* renamed from: c */
+        public final java.util.List<java.lang.String> f17612c;
+
+        /* renamed from: d */
+        public final java.util.List<java.lang.String> f17613d;
+
+        public d(java.lang.String r1, boolean r2, java.util.List<java.lang.String> r3, java.util.List<java.lang.String> r4) {
+                r0 = this;
+                r0.<init>()
+                r0.f17610a = r1
+                r0.f17611b = r2
+                r0.f17612c = r3
+                int r1 = r4.size()
+                if (r1 != 0) goto L19
+                int r1 = r3.size()
+                java.lang.String r2 = "ASC"
+                java.util.List r4 = java.util.Collections.nCopies(r1, r2)
+            L19:
+                r0.f17613d = r4
+                return
+        }
+
+        public boolean equals(java.lang.Object r4) {
+                r3 = this;
+                if (r3 != r4) goto L4
+                r4 = 1
+                return r4
+            L4:
+                boolean r0 = r4 instanceof p213m1.C4318d.d
+                r1 = 0
+                if (r0 != 0) goto La
+                return r1
+            La:
+                m1.d$d r4 = (p213m1.C4318d.d) r4
+                boolean r0 = r3.f17611b
+                boolean r2 = r4.f17611b
+                if (r0 == r2) goto L13
+                return r1
+            L13:
+                java.util.List<java.lang.String> r0 = r3.f17612c
+                java.util.List<java.lang.String> r2 = r4.f17612c
+                boolean r0 = r0.equals(r2)
+                if (r0 != 0) goto L1e
+                return r1
+            L1e:
+                java.util.List<java.lang.String> r0 = r3.f17613d
+                java.util.List<java.lang.String> r2 = r4.f17613d
+                boolean r0 = r0.equals(r2)
+                if (r0 != 0) goto L29
+                return r1
+            L29:
+                java.lang.String r0 = r3.f17610a
+                java.lang.String r1 = "index_"
+                boolean r0 = r0.startsWith(r1)
+                if (r0 == 0) goto L3a
+                java.lang.String r4 = r4.f17610a
+                boolean r4 = r4.startsWith(r1)
+                return r4
+            L3a:
+                java.lang.String r0 = r3.f17610a
+                java.lang.String r4 = r4.f17610a
+                boolean r4 = r0.equals(r4)
+                return r4
+        }
+
+        public int hashCode() {
+                r2 = this;
+                java.lang.String r0 = r2.f17610a
+                java.lang.String r1 = "index_"
+                boolean r0 = r0.startsWith(r1)
+                if (r0 == 0) goto Le
+                r0 = -1184239155(0xffffffffb969f1cd, float:-2.231069E-4)
+                goto L14
+            Le:
+                java.lang.String r0 = r2.f17610a
+                int r0 = r0.hashCode()
+            L14:
+                int r0 = r0 * 31
+                boolean r1 = r2.f17611b
+                int r0 = r0 + r1
+                int r0 = r0 * 31
+                java.util.List<java.lang.String> r1 = r2.f17612c
+                int r1 = r1.hashCode()
+                int r1 = r1 + r0
+                int r1 = r1 * 31
+                java.util.List<java.lang.String> r0 = r2.f17613d
+                int r0 = r0.hashCode()
+                int r0 = r0 + r1
+                return r0
+        }
+
+        public java.lang.String toString() {
+                r3 = this;
+                java.lang.String r0 = "Index{name='"
+                java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+                java.lang.String r1 = r3.f17610a
+                r0.append(r1)
+                r1 = 39
+                r0.append(r1)
+                java.lang.String r1 = ", unique="
+                r0.append(r1)
+                boolean r1 = r3.f17611b
+                r0.append(r1)
+                java.lang.String r1 = ", columns="
+                r0.append(r1)
+                java.util.List<java.lang.String> r1 = r3.f17612c
+                r0.append(r1)
+                java.lang.String r1 = ", orders="
+                r0.append(r1)
+                java.util.List<java.lang.String> r1 = r3.f17613d
+                r2 = 125(0x7d, float:1.75E-43)
+                java.lang.String r0 = p213m1.C4320f.m9652a(r0, r1, r2)
+                return r0
+        }
+    }
+
+    public C4318d(java.lang.String r1, java.util.Map<java.lang.String, p213m1.C4318d.a> r2, java.util.Set<p213m1.C4318d.b> r3, java.util.Set<p213m1.C4318d.d> r4) {
+            r0 = this;
+            r0.<init>()
+            r0.f17590a = r1
+            java.util.Map r1 = java.util.Collections.unmodifiableMap(r2)
+            r0.f17591b = r1
+            java.util.Set r1 = java.util.Collections.unmodifiableSet(r3)
+            r0.f17592c = r1
+            if (r4 != 0) goto L15
+            r1 = 0
+            goto L19
+        L15:
+            java.util.Set r1 = java.util.Collections.unmodifiableSet(r4)
+        L19:
+            r0.f17593d = r1
+            return
+    }
+
+    /* renamed from: a */
+    public static p213m1.C4318d m9647a(p243o1.InterfaceC4871a r28, java.lang.String r29) {
+            r0 = r28
+            r1 = r29
+            java.lang.StringBuilder r2 = new java.lang.StringBuilder
+            r2.<init>()
+            java.lang.String r3 = "PRAGMA table_info(`"
+            r2.append(r3)
+            r2.append(r1)
+            java.lang.String r3 = "`)"
+            r2.append(r3)
+            java.lang.String r2 = r2.toString()
+            android.database.Cursor r2 = r0.mo11017r0(r2)
+            java.util.HashMap r4 = new java.util.HashMap
+            r4.<init>()
+            int r5 = r2.getColumnCount()     // Catch: java.lang.Throwable -> L1b6
+            java.lang.String r6 = "name"
+            if (r5 <= 0) goto L76
+            int r5 = r2.getColumnIndex(r6)     // Catch: java.lang.Throwable -> L1b6
+            java.lang.String r9 = "type"
+            int r9 = r2.getColumnIndex(r9)     // Catch: java.lang.Throwable -> L1b6
+            java.lang.String r10 = "notnull"
+            int r10 = r2.getColumnIndex(r10)     // Catch: java.lang.Throwable -> L1b6
+            java.lang.String r11 = "pk"
+            int r11 = r2.getColumnIndex(r11)     // Catch: java.lang.Throwable -> L1b6
+            java.lang.String r12 = "dflt_value"
+            int r12 = r2.getColumnIndex(r12)     // Catch: java.lang.Throwable -> L1b6
+        L47:
+            boolean r13 = r2.moveToNext()     // Catch: java.lang.Throwable -> L1b6
+            if (r13 == 0) goto L76
+            java.lang.String r13 = r2.getString(r5)     // Catch: java.lang.Throwable -> L1b6
+            java.lang.String r16 = r2.getString(r9)     // Catch: java.lang.Throwable -> L1b6
+            int r14 = r2.getInt(r10)     // Catch: java.lang.Throwable -> L1b6
+            if (r14 == 0) goto L5e
+            r17 = 1
+            goto L60
+        L5e:
+            r17 = 0
+        L60:
+            int r18 = r2.getInt(r11)     // Catch: java.lang.Throwable -> L1b6
+            java.lang.String r19 = r2.getString(r12)     // Catch: java.lang.Throwable -> L1b6
+            m1.d$a r15 = new m1.d$a     // Catch: java.lang.Throwable -> L1b6
+            r20 = 2
+            r14 = r15
+            r7 = r15
+            r15 = r13
+            r14.<init>(r15, r16, r17, r18, r19, r20)     // Catch: java.lang.Throwable -> L1b6
+            r4.put(r13, r7)     // Catch: java.lang.Throwable -> L1b6
+            goto L47
+        L76:
+            r2.close()
+            java.util.HashSet r2 = new java.util.HashSet
+            r2.<init>()
+            java.lang.StringBuilder r5 = new java.lang.StringBuilder
+            r5.<init>()
+            java.lang.String r7 = "PRAGMA foreign_key_list(`"
+            r5.append(r7)
+            r5.append(r1)
+            r5.append(r3)
+            java.lang.String r5 = r5.toString()
+            android.database.Cursor r5 = r0.mo11017r0(r5)
+            java.lang.String r7 = "id"
+            int r7 = r5.getColumnIndex(r7)     // Catch: java.lang.Throwable -> L1b1
+            java.lang.String r9 = "seq"
+            int r9 = r5.getColumnIndex(r9)     // Catch: java.lang.Throwable -> L1b1
+            java.lang.String r10 = "table"
+            int r10 = r5.getColumnIndex(r10)     // Catch: java.lang.Throwable -> L1b1
+            java.lang.String r11 = "on_delete"
+            int r11 = r5.getColumnIndex(r11)     // Catch: java.lang.Throwable -> L1b1
+            java.lang.String r12 = "on_update"
+            int r12 = r5.getColumnIndex(r12)     // Catch: java.lang.Throwable -> L1b1
+            java.util.List r13 = m9648b(r5)     // Catch: java.lang.Throwable -> L1b1
+            int r14 = r5.getCount()     // Catch: java.lang.Throwable -> L1b1
+            r15 = 0
+        Lbd:
+            if (r15 >= r14) goto L139
+            r5.moveToPosition(r15)     // Catch: java.lang.Throwable -> L1b1
+            int r16 = r5.getInt(r9)     // Catch: java.lang.Throwable -> L1b1
+            if (r16 == 0) goto Ld1
+            r17 = r7
+            r18 = r9
+            r27 = r13
+            r20 = r14
+            goto L12e
+        Ld1:
+            int r8 = r5.getInt(r7)     // Catch: java.lang.Throwable -> L1b1
+            r17 = r7
+            java.util.ArrayList r7 = new java.util.ArrayList     // Catch: java.lang.Throwable -> L1b1
+            r7.<init>()     // Catch: java.lang.Throwable -> L1b1
+            r18 = r9
+            java.util.ArrayList r9 = new java.util.ArrayList     // Catch: java.lang.Throwable -> L1b1
+            r9.<init>()     // Catch: java.lang.Throwable -> L1b1
+            r19 = r13
+            java.util.ArrayList r19 = (java.util.ArrayList) r19     // Catch: java.lang.Throwable -> L1b1
+            java.util.Iterator r19 = r19.iterator()     // Catch: java.lang.Throwable -> L1b1
+        Leb:
+            boolean r20 = r19.hasNext()     // Catch: java.lang.Throwable -> L1b1
+            if (r20 == 0) goto L110
+            java.lang.Object r20 = r19.next()     // Catch: java.lang.Throwable -> L1b1
+            r27 = r13
+            r13 = r20
+            m1.d$c r13 = (p213m1.C4318d.c) r13     // Catch: java.lang.Throwable -> L1b1
+            r20 = r14
+            int r14 = r13.f17606Y     // Catch: java.lang.Throwable -> L1b1
+            if (r14 != r8) goto L10b
+            java.lang.String r14 = r13.f17608a0     // Catch: java.lang.Throwable -> L1b1
+            r7.add(r14)     // Catch: java.lang.Throwable -> L1b1
+            java.lang.String r13 = r13.f17609b0     // Catch: java.lang.Throwable -> L1b1
+            r9.add(r13)     // Catch: java.lang.Throwable -> L1b1
+        L10b:
+            r14 = r20
+            r13 = r27
+            goto Leb
+        L110:
+            r27 = r13
+            r20 = r14
+            m1.d$b r8 = new m1.d$b     // Catch: java.lang.Throwable -> L1b1
+            java.lang.String r22 = r5.getString(r10)     // Catch: java.lang.Throwable -> L1b1
+            java.lang.String r23 = r5.getString(r11)     // Catch: java.lang.Throwable -> L1b1
+            java.lang.String r24 = r5.getString(r12)     // Catch: java.lang.Throwable -> L1b1
+            r21 = r8
+            r25 = r7
+            r26 = r9
+            r21.<init>(r22, r23, r24, r25, r26)     // Catch: java.lang.Throwable -> L1b1
+            r2.add(r8)     // Catch: java.lang.Throwable -> L1b1
+        L12e:
+            int r15 = r15 + 1
+            r7 = r17
+            r9 = r18
+            r14 = r20
+            r13 = r27
+            goto Lbd
+        L139:
+            r5.close()
+            java.lang.StringBuilder r5 = new java.lang.StringBuilder
+            r5.<init>()
+            java.lang.String r7 = "PRAGMA index_list(`"
+            r5.append(r7)
+            r5.append(r1)
+            r5.append(r3)
+            java.lang.String r3 = r5.toString()
+            android.database.Cursor r3 = r0.mo11017r0(r3)
+            int r5 = r3.getColumnIndex(r6)     // Catch: java.lang.Throwable -> L1ac
+            java.lang.String r6 = "origin"
+            int r6 = r3.getColumnIndex(r6)     // Catch: java.lang.Throwable -> L1ac
+            java.lang.String r7 = "unique"
+            int r7 = r3.getColumnIndex(r7)     // Catch: java.lang.Throwable -> L1ac
+            r8 = 0
+            r9 = -1
+            if (r5 == r9) goto L1a3
+            if (r6 == r9) goto L1a3
+            if (r7 != r9) goto L16d
+            goto L1a3
+        L16d:
+            java.util.HashSet r9 = new java.util.HashSet     // Catch: java.lang.Throwable -> L1ac
+            r9.<init>()     // Catch: java.lang.Throwable -> L1ac
+        L172:
+            boolean r10 = r3.moveToNext()     // Catch: java.lang.Throwable -> L1ac
+            if (r10 == 0) goto L19e
+            java.lang.String r10 = r3.getString(r6)     // Catch: java.lang.Throwable -> L1ac
+            java.lang.String r11 = "c"
+            boolean r10 = r11.equals(r10)     // Catch: java.lang.Throwable -> L1ac
+            if (r10 != 0) goto L185
+            goto L172
+        L185:
+            java.lang.String r10 = r3.getString(r5)     // Catch: java.lang.Throwable -> L1ac
+            int r11 = r3.getInt(r7)     // Catch: java.lang.Throwable -> L1ac
+            r12 = 1
+            if (r11 != r12) goto L192
+            r11 = 1
+            goto L193
+        L192:
+            r11 = 0
+        L193:
+            m1.d$d r10 = m9649c(r0, r10, r11)     // Catch: java.lang.Throwable -> L1ac
+            if (r10 != 0) goto L19a
+            goto L1a3
+        L19a:
+            r9.add(r10)     // Catch: java.lang.Throwable -> L1ac
+            goto L172
+        L19e:
+            r3.close()
+            r8 = r9
+            goto L1a6
+        L1a3:
+            r3.close()
+        L1a6:
+            m1.d r0 = new m1.d
+            r0.<init>(r1, r4, r2, r8)
+            return r0
+        L1ac:
+            r0 = move-exception
+            r3.close()
+            throw r0
+        L1b1:
+            r0 = move-exception
+            r5.close()
+            throw r0
+        L1b6:
+            r0 = move-exception
+            r2.close()
+            throw r0
+    }
+
+    /* renamed from: b */
+    public static java.util.List<p213m1.C4318d.c> m9648b(android.database.Cursor r12) {
+            java.lang.String r0 = "id"
+            int r0 = r12.getColumnIndex(r0)
+            java.lang.String r1 = "seq"
+            int r1 = r12.getColumnIndex(r1)
+            java.lang.String r2 = "from"
+            int r2 = r12.getColumnIndex(r2)
+            java.lang.String r3 = "to"
+            int r3 = r12.getColumnIndex(r3)
+            int r4 = r12.getCount()
+            java.util.ArrayList r5 = new java.util.ArrayList
+            r5.<init>()
+            r6 = 0
+        L22:
+            if (r6 >= r4) goto L42
+            r12.moveToPosition(r6)
+            m1.d$c r7 = new m1.d$c
+            int r8 = r12.getInt(r0)
+            int r9 = r12.getInt(r1)
+            java.lang.String r10 = r12.getString(r2)
+            java.lang.String r11 = r12.getString(r3)
+            r7.<init>(r8, r9, r10, r11)
+            r5.add(r7)
+            int r6 = r6 + 1
+            goto L22
+        L42:
+            java.util.Collections.sort(r5)
+            return r5
+    }
+
+    /* renamed from: c */
+    public static p213m1.C4318d.d m9649c(p243o1.InterfaceC4871a r10, java.lang.String r11, boolean r12) {
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            r0.<init>()
+            java.lang.String r1 = "PRAGMA index_xinfo(`"
+            r0.append(r1)
+            r0.append(r11)
+            java.lang.String r1 = "`)"
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            android.database.Cursor r10 = r10.mo11017r0(r0)
+            java.lang.String r0 = "seqno"
+            int r0 = r10.getColumnIndex(r0)     // Catch: java.lang.Throwable -> La3
+            java.lang.String r1 = "cid"
+            int r1 = r10.getColumnIndex(r1)     // Catch: java.lang.Throwable -> La3
+            java.lang.String r2 = "name"
+            int r2 = r10.getColumnIndex(r2)     // Catch: java.lang.Throwable -> La3
+            java.lang.String r3 = "desc"
+            int r3 = r10.getColumnIndex(r3)     // Catch: java.lang.Throwable -> La3
+            r4 = -1
+            if (r0 == r4) goto L9e
+            if (r1 == r4) goto L9e
+            if (r2 == r4) goto L9e
+            if (r3 != r4) goto L3c
+            goto L9e
+        L3c:
+            java.util.TreeMap r4 = new java.util.TreeMap     // Catch: java.lang.Throwable -> La3
+            r4.<init>()     // Catch: java.lang.Throwable -> La3
+            java.util.TreeMap r5 = new java.util.TreeMap     // Catch: java.lang.Throwable -> La3
+            r5.<init>()     // Catch: java.lang.Throwable -> La3
+        L46:
+            boolean r6 = r10.moveToNext()     // Catch: java.lang.Throwable -> La3
+            if (r6 == 0) goto L75
+            int r6 = r10.getInt(r1)     // Catch: java.lang.Throwable -> La3
+            if (r6 >= 0) goto L53
+            goto L46
+        L53:
+            int r6 = r10.getInt(r0)     // Catch: java.lang.Throwable -> La3
+            java.lang.String r7 = r10.getString(r2)     // Catch: java.lang.Throwable -> La3
+            int r8 = r10.getInt(r3)     // Catch: java.lang.Throwable -> La3
+            if (r8 <= 0) goto L64
+            java.lang.String r8 = "DESC"
+            goto L66
+        L64:
+            java.lang.String r8 = "ASC"
+        L66:
+            java.lang.Integer r9 = java.lang.Integer.valueOf(r6)     // Catch: java.lang.Throwable -> La3
+            r4.put(r9, r7)     // Catch: java.lang.Throwable -> La3
+            java.lang.Integer r6 = java.lang.Integer.valueOf(r6)     // Catch: java.lang.Throwable -> La3
+            r5.put(r6, r8)     // Catch: java.lang.Throwable -> La3
+            goto L46
+        L75:
+            java.util.ArrayList r0 = new java.util.ArrayList     // Catch: java.lang.Throwable -> La3
+            int r1 = r4.size()     // Catch: java.lang.Throwable -> La3
+            r0.<init>(r1)     // Catch: java.lang.Throwable -> La3
+            java.util.Collection r1 = r4.values()     // Catch: java.lang.Throwable -> La3
+            r0.addAll(r1)     // Catch: java.lang.Throwable -> La3
+            java.util.ArrayList r1 = new java.util.ArrayList     // Catch: java.lang.Throwable -> La3
+            int r2 = r5.size()     // Catch: java.lang.Throwable -> La3
+            r1.<init>(r2)     // Catch: java.lang.Throwable -> La3
+            java.util.Collection r2 = r5.values()     // Catch: java.lang.Throwable -> La3
+            r1.addAll(r2)     // Catch: java.lang.Throwable -> La3
+            m1.d$d r2 = new m1.d$d     // Catch: java.lang.Throwable -> La3
+            r2.<init>(r11, r12, r0, r1)     // Catch: java.lang.Throwable -> La3
+            r10.close()
+            return r2
+        L9e:
+            r11 = 0
+            r10.close()
+            return r11
+        La3:
+            r11 = move-exception
+            r10.close()
+            throw r11
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            boolean r1 = r5 instanceof p213m1.C4318d
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            m1.d r5 = (p213m1.C4318d) r5
+            java.lang.String r1 = r4.f17590a
+            if (r1 == 0) goto L19
+            java.lang.String r3 = r5.f17590a
+            boolean r1 = r1.equals(r3)
+            if (r1 != 0) goto L1e
+            goto L1d
+        L19:
+            java.lang.String r1 = r5.f17590a
+            if (r1 == 0) goto L1e
+        L1d:
+            return r2
+        L1e:
+            java.util.Map<java.lang.String, m1.d$a> r1 = r4.f17591b
+            if (r1 == 0) goto L2b
+            java.util.Map<java.lang.String, m1.d$a> r3 = r5.f17591b
+            boolean r1 = r1.equals(r3)
+            if (r1 != 0) goto L30
+            goto L2f
+        L2b:
+            java.util.Map<java.lang.String, m1.d$a> r1 = r5.f17591b
+            if (r1 == 0) goto L30
+        L2f:
+            return r2
+        L30:
+            java.util.Set<m1.d$b> r1 = r4.f17592c
+            if (r1 == 0) goto L3d
+            java.util.Set<m1.d$b> r3 = r5.f17592c
+            boolean r1 = r1.equals(r3)
+            if (r1 != 0) goto L42
+            goto L41
+        L3d:
+            java.util.Set<m1.d$b> r1 = r5.f17592c
+            if (r1 == 0) goto L42
+        L41:
+            return r2
+        L42:
+            java.util.Set<m1.d$d> r1 = r4.f17593d
+            if (r1 == 0) goto L50
+            java.util.Set<m1.d$d> r5 = r5.f17593d
+            if (r5 != 0) goto L4b
+            goto L50
+        L4b:
+            boolean r5 = r1.equals(r5)
+            return r5
+        L50:
+            return r0
+    }
+
+    public int hashCode() {
+            r3 = this;
+            java.lang.String r0 = r3.f17590a
+            r1 = 0
+            if (r0 == 0) goto La
+            int r0 = r0.hashCode()
+            goto Lb
+        La:
+            r0 = 0
+        Lb:
+            int r0 = r0 * 31
+            java.util.Map<java.lang.String, m1.d$a> r2 = r3.f17591b
+            if (r2 == 0) goto L16
+            int r2 = r2.hashCode()
+            goto L17
+        L16:
+            r2 = 0
+        L17:
+            int r0 = r0 + r2
+            int r0 = r0 * 31
+            java.util.Set<m1.d$b> r2 = r3.f17592c
+            if (r2 == 0) goto L22
+            int r1 = r2.hashCode()
+        L22:
+            int r0 = r0 + r1
+            return r0
+    }
+
+    public java.lang.String toString() {
+            r2 = this;
+            java.lang.String r0 = "TableInfo{name='"
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            java.lang.String r1 = r2.f17590a
+            r0.append(r1)
+            r1 = 39
+            r0.append(r1)
+            java.lang.String r1 = ", columns="
+            r0.append(r1)
+            java.util.Map<java.lang.String, m1.d$a> r1 = r2.f17591b
+            r0.append(r1)
+            java.lang.String r1 = ", foreignKeys="
+            r0.append(r1)
+            java.util.Set<m1.d$b> r1 = r2.f17592c
+            r0.append(r1)
+            java.lang.String r1 = ", indices="
+            r0.append(r1)
+            java.util.Set<m1.d$d> r1 = r2.f17593d
+            r0.append(r1)
+            r1 = 125(0x7d, float:1.75E-43)
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            return r0
+    }
+}
+package p213m1;
+
+/* renamed from: m1.e */
+/* loaded from: classes.dex */
+public final /* synthetic */ class C4319e {
+    /* renamed from: a */
+    public static int m9651a(java.lang.String r0, int r1, int r2) {
+            int r0 = r0.hashCode()
+            int r0 = r0 + r1
+            int r0 = r0 * r2
+            return r0
+    }
+}
+package p213m1;
+
+/* renamed from: m1.f */
+/* loaded from: classes.dex */
+public final /* synthetic */ class C4320f {
+    /* renamed from: a */
+    public static java.lang.String m9652a(java.lang.StringBuilder r0, java.util.List r1, char r2) {
+            r0.append(r1)
+            r0.append(r2)
+            java.lang.String r0 = r0.toString()
+            return r0
+    }
+}

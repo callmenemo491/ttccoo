@@ -1,0 +1,146 @@
+package mh;
+
+/* renamed from: mh.a */
+/* loaded from: classes.dex */
+public interface InterfaceC4609a<R> extends ch.InterfaceC0974a<R> {
+    /* renamed from: e */
+    R mo15e();
+}
+package mh;
+
+/* renamed from: mh.b */
+/* loaded from: classes.dex */
+public interface InterfaceC4610b<P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, R> extends ch.InterfaceC0974a<R> {
+}
+package mh;
+
+/* renamed from: mh.c */
+/* loaded from: classes.dex */
+public interface InterfaceC4611c<P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, R> extends ch.InterfaceC0974a<R> {
+}
+package mh;
+
+/* renamed from: mh.d */
+/* loaded from: classes.dex */
+public interface InterfaceC4612d<P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, R> extends ch.InterfaceC0974a<R> {
+}
+package mh;
+
+/* renamed from: mh.e */
+/* loaded from: classes.dex */
+public interface InterfaceC4613e<P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, P13, R> extends ch.InterfaceC0974a<R> {
+}
+package mh;
+
+/* renamed from: mh.f */
+/* loaded from: classes.dex */
+public interface InterfaceC4614f<P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, P13, P14, R> extends ch.InterfaceC0974a<R> {
+}
+package mh;
+
+/* renamed from: mh.g */
+/* loaded from: classes.dex */
+public interface InterfaceC4615g<P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, P13, P14, P15, R> extends ch.InterfaceC0974a<R> {
+}
+package mh;
+
+/* renamed from: mh.h */
+/* loaded from: classes.dex */
+public interface InterfaceC4616h<P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, P13, P14, P15, P16, R> extends ch.InterfaceC0974a<R> {
+}
+package mh;
+
+/* renamed from: mh.i */
+/* loaded from: classes.dex */
+public interface InterfaceC4617i<P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, P13, P14, P15, P16, P17, R> extends ch.InterfaceC0974a<R> {
+}
+package mh;
+
+/* renamed from: mh.j */
+/* loaded from: classes.dex */
+public interface InterfaceC4618j<P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, P13, P14, P15, P16, P17, P18, R> extends ch.InterfaceC0974a<R> {
+}
+package mh;
+
+/* renamed from: mh.k */
+/* loaded from: classes.dex */
+public interface InterfaceC4619k<P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, P13, P14, P15, P16, P17, P18, P19, R> extends ch.InterfaceC0974a<R> {
+}
+package mh;
+
+/* renamed from: mh.l */
+/* loaded from: classes.dex */
+public interface InterfaceC4620l<P1, R> extends ch.InterfaceC0974a<R> {
+    /* renamed from: b */
+    R mo107b(P1 r1);
+}
+package mh;
+
+/* renamed from: mh.m */
+/* loaded from: classes.dex */
+public interface InterfaceC4621m<P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, P13, P14, P15, P16, P17, P18, P19, P20, R> extends ch.InterfaceC0974a<R> {
+}
+package mh;
+
+/* renamed from: mh.n */
+/* loaded from: classes.dex */
+public interface InterfaceC4622n<P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, P13, P14, P15, P16, P17, P18, P19, P20, P21, R> extends ch.InterfaceC0974a<R> {
+}
+package mh;
+
+/* renamed from: mh.o */
+/* loaded from: classes.dex */
+public interface InterfaceC4623o<P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, P13, P14, P15, P16, P17, P18, P19, P20, P21, P22, R> extends ch.InterfaceC0974a<R> {
+}
+package mh;
+
+/* renamed from: mh.p */
+/* loaded from: classes.dex */
+public interface InterfaceC4624p<P1, P2, R> extends ch.InterfaceC0974a<R> {
+    /* renamed from: l */
+    R mo122l(P1 r1, P2 r2);
+}
+package mh;
+
+/* renamed from: mh.q */
+/* loaded from: classes.dex */
+public interface InterfaceC4625q<P1, P2, P3, R> extends ch.InterfaceC0974a<R> {
+    /* renamed from: i */
+    R mo115i(P1 r1, P2 r2, P3 r3);
+}
+package mh;
+
+/* renamed from: mh.r */
+/* loaded from: classes.dex */
+public interface InterfaceC4626r<P1, P2, P3, P4, R> extends ch.InterfaceC0974a<R> {
+}
+package mh;
+
+/* renamed from: mh.s */
+/* loaded from: classes.dex */
+public interface InterfaceC4627s<P1, P2, P3, P4, P5, R> extends ch.InterfaceC0974a<R> {
+}
+package mh;
+
+/* renamed from: mh.t */
+/* loaded from: classes.dex */
+public interface InterfaceC4628t<P1, P2, P3, P4, P5, P6, R> extends ch.InterfaceC0974a<R> {
+}
+package mh;
+
+/* renamed from: mh.u */
+/* loaded from: classes.dex */
+public interface InterfaceC4629u<P1, P2, P3, P4, P5, P6, P7, R> extends ch.InterfaceC0974a<R> {
+}
+package mh;
+
+/* renamed from: mh.v */
+/* loaded from: classes.dex */
+public interface InterfaceC4630v<P1, P2, P3, P4, P5, P6, P7, P8, R> extends ch.InterfaceC0974a<R> {
+}
+package mh;
+
+/* renamed from: mh.w */
+/* loaded from: classes.dex */
+public interface InterfaceC4631w<P1, P2, P3, P4, P5, P6, P7, P8, P9, R> extends ch.InterfaceC0974a<R> {
+}

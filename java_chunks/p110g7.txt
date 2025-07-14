@@ -1,0 +1,120 @@
+package p110g7;
+
+/* renamed from: g7.a */
+/* loaded from: classes.dex */
+public class BinderC2295a extends android.os.Binder implements android.os.IInterface {
+    public BinderC2295a(java.lang.String r1) {
+            r0 = this;
+            r0.<init>()
+            r0.attachInterface(r0, r1)
+            return
+    }
+
+    @Override // android.os.IInterface
+    public android.os.IBinder asBinder() {
+            r0 = this;
+            return r0
+    }
+
+    @Override // android.os.Binder
+    public boolean onTransact(int r2, android.os.Parcel r3, android.os.Parcel r4, int r5) {
+            r1 = this;
+            r0 = 16777215(0xffffff, float:2.3509886E-38)
+            if (r2 <= r0) goto La
+            boolean r0 = super.onTransact(r2, r3, r4, r5)
+            goto L12
+        La:
+            java.lang.String r0 = r1.getInterfaceDescriptor()
+            r3.enforceInterface(r0)
+            r0 = 0
+        L12:
+            if (r0 == 0) goto L16
+            r2 = 1
+            return r2
+        L16:
+            boolean r2 = r1.mo6060v(r2, r3, r4, r5)
+            return r2
+    }
+
+    /* renamed from: v */
+    public boolean mo6060v(int r1, android.os.Parcel r2, android.os.Parcel r3, int r4) {
+            r0 = this;
+            r1 = 0
+            return r1
+    }
+}
+package p110g7;
+
+/* renamed from: g7.b */
+/* loaded from: classes.dex */
+public class C2296b {
+
+    /* renamed from: a */
+    public static final /* synthetic */ int f10516a = 0;
+
+    static {
+            java.lang.Class<g7.b> r0 = p110g7.C2296b.class
+            r0.getClassLoader()
+            return
+    }
+
+    public C2296b() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    /* renamed from: a */
+    public static <T extends android.os.Parcelable> T m6061a(android.os.Parcel r1, android.os.Parcelable.Creator<T> r2) {
+            int r0 = r1.readInt()
+            if (r0 != 0) goto L8
+            r1 = 0
+            return r1
+        L8:
+            java.lang.Object r1 = r2.createFromParcel(r1)
+            android.os.Parcelable r1 = (android.os.Parcelable) r1
+            return r1
+    }
+
+    /* renamed from: b */
+    public static void m6062b(android.os.Parcel r0, android.os.IInterface r1) {
+            if (r1 != 0) goto L4
+            r1 = 0
+            goto L8
+        L4:
+            android.os.IBinder r1 = r1.asBinder()
+        L8:
+            r0.writeStrongBinder(r1)
+            return
+    }
+
+    /* renamed from: c */
+    public static void m6063c(android.os.Parcel r2, android.os.Parcelable r3) {
+            r0 = 0
+            if (r3 != 0) goto L7
+            r2.writeInt(r0)
+            return
+        L7:
+            r1 = 1
+            r2.writeInt(r1)
+            r3.writeToParcel(r2, r0)
+            return
+    }
+}
+package p110g7;
+
+/* renamed from: g7.c */
+/* loaded from: classes.dex */
+public class HandlerC2297c extends android.os.Handler {
+    public HandlerC2297c(android.os.Looper r1) {
+            r0 = this;
+            r0.<init>(r1)
+            return
+    }
+
+    public HandlerC2297c(android.os.Looper r1, android.os.Handler.Callback r2) {
+            r0 = this;
+            r0.<init>(r1, r2)
+            return
+    }
+}

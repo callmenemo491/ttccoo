@@ -1,0 +1,2042 @@
+package p375v9;
+
+/* renamed from: v9.c */
+/* loaded from: classes.dex */
+public abstract class AbstractC6590c extends p270p6.AbstractC5367a {
+    public AbstractC6590c(int r2) {
+            r1 = this;
+            r0 = 1
+            if (r2 == r0) goto L7
+            r1.<init>()
+            return
+        L7:
+            r1.<init>()
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.o */
+/* loaded from: classes.dex */
+public abstract class AbstractC6614o extends p270p6.AbstractC5367a implements p375v9.InterfaceC6628z {
+    public AbstractC6614o() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    /* renamed from: X */
+    public abstract p411x9.C6980d mo13462X();
+
+    /* renamed from: Y */
+    public abstract java.util.List<? extends p375v9.InterfaceC6628z> mo13463Y();
+
+    /* renamed from: Z */
+    public abstract java.lang.String mo13464Z();
+
+    /* renamed from: a0 */
+    public abstract java.lang.String mo13465a0();
+
+    /* renamed from: b0 */
+    public abstract boolean mo13466b0();
+
+    /* renamed from: c0 */
+    public abstract p251o9.C5180d mo13467c0();
+
+    /* renamed from: d0 */
+    public abstract p375v9.AbstractC6614o mo13468d0();
+
+    /* renamed from: e0 */
+    public abstract p375v9.AbstractC6614o mo13469e0(java.util.List<? extends p375v9.InterfaceC6628z> r1);
+
+    /* renamed from: f0 */
+    public abstract p124h7.C2752me mo13470f0();
+
+    /* renamed from: g0 */
+    public abstract java.lang.String mo13471g0();
+
+    /* renamed from: h0 */
+    public abstract java.lang.String mo13472h0();
+
+    /* renamed from: i0 */
+    public abstract java.util.List<java.lang.String> mo13473i0();
+
+    /* renamed from: j0 */
+    public abstract void mo13474j0(p124h7.C2752me r1);
+
+    /* renamed from: k0 */
+    public abstract void mo13475k0(java.util.List<p375v9.AbstractC6621s> r1);
+}
+package p375v9;
+
+/* renamed from: v9.s */
+/* loaded from: classes.dex */
+public abstract class AbstractC6621s extends p270p6.AbstractC5367a {
+    public AbstractC6621s() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    /* renamed from: X */
+    public abstract org.json.JSONObject mo13476X();
+}
+package p375v9;
+
+/* renamed from: v9.t */
+/* loaded from: classes.dex */
+public abstract class AbstractC6622t extends p270p6.AbstractC5367a {
+    public AbstractC6622t() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.u */
+/* loaded from: classes.dex */
+public abstract class AbstractC6623u extends p375v9.AbstractC6590c {
+    public AbstractC6623u() {
+            r1 = this;
+            r0 = 0
+            r1.<init>(r0)
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.a */
+/* loaded from: classes.dex */
+public class C6586a extends p270p6.AbstractC5367a {
+    public static final android.os.Parcelable.Creator<p375v9.C6586a> CREATOR = null;
+
+    /* renamed from: Y */
+    public final java.lang.String f25757Y;
+
+    /* renamed from: Z */
+    public final java.lang.String f25758Z;
+
+    /* renamed from: a0 */
+    public final java.lang.String f25759a0;
+
+    /* renamed from: b0 */
+    public final java.lang.String f25760b0;
+
+    /* renamed from: c0 */
+    public final boolean f25761c0;
+
+    /* renamed from: d0 */
+    public final java.lang.String f25762d0;
+
+    /* renamed from: e0 */
+    public final boolean f25763e0;
+
+    /* renamed from: f0 */
+    public java.lang.String f25764f0;
+
+    /* renamed from: g0 */
+    public int f25765g0;
+
+    /* renamed from: h0 */
+    public java.lang.String f25766h0;
+
+    static {
+            v9.h0 r0 = new v9.h0
+            r0.<init>()
+            p375v9.C6586a.CREATOR = r0
+            return
+    }
+
+    public C6586a(java.lang.String r1, java.lang.String r2, java.lang.String r3, java.lang.String r4, boolean r5, java.lang.String r6, boolean r7, java.lang.String r8, int r9, java.lang.String r10) {
+            r0 = this;
+            r0.<init>()
+            r0.f25757Y = r1
+            r0.f25758Z = r2
+            r0.f25759a0 = r3
+            r0.f25760b0 = r4
+            r0.f25761c0 = r5
+            r0.f25762d0 = r6
+            r0.f25763e0 = r7
+            r0.f25764f0 = r8
+            r0.f25765g0 = r9
+            r0.f25766h0 = r10
+            return
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(android.os.Parcel r5, int r6) {
+            r4 = this;
+            r6 = 20293(0x4f45, float:2.8437E-41)
+            int r6 = p270p6.C5369c.m11723k(r5, r6)
+            java.lang.String r0 = r4.f25757Y
+            r1 = 1
+            r2 = 0
+            p270p6.C5369c.m11719g(r5, r1, r0, r2)
+            java.lang.String r0 = r4.f25758Z
+            r1 = 2
+            p270p6.C5369c.m11719g(r5, r1, r0, r2)
+            java.lang.String r0 = r4.f25759a0
+            r1 = 3
+            p270p6.C5369c.m11719g(r5, r1, r0, r2)
+            java.lang.String r0 = r4.f25760b0
+            r1 = 4
+            p270p6.C5369c.m11719g(r5, r1, r0, r2)
+            boolean r0 = r4.f25761c0
+            r3 = 5
+            p270p6.C5369c.m11724l(r5, r3, r1)
+            r5.writeInt(r0)
+            java.lang.String r0 = r4.f25762d0
+            r3 = 6
+            p270p6.C5369c.m11719g(r5, r3, r0, r2)
+            boolean r0 = r4.f25763e0
+            r3 = 7
+            p270p6.C5369c.m11724l(r5, r3, r1)
+            r5.writeInt(r0)
+            java.lang.String r0 = r4.f25764f0
+            r3 = 8
+            p270p6.C5369c.m11719g(r5, r3, r0, r2)
+            int r0 = r4.f25765g0
+            r3 = 9
+            p270p6.C5369c.m11724l(r5, r3, r1)
+            r5.writeInt(r0)
+            java.lang.String r0 = r4.f25766h0
+            r1 = 10
+            p270p6.C5369c.m11719g(r5, r1, r0, r2)
+            p270p6.C5369c.m11726n(r5, r6)
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.a0 */
+/* loaded from: classes.dex */
+public class C6587a0 extends p270p6.AbstractC5367a {
+    public static final android.os.Parcelable.Creator<p375v9.C6587a0> CREATOR = null;
+
+    /* renamed from: Y */
+    public java.lang.String f25767Y;
+
+    /* renamed from: Z */
+    public java.lang.String f25768Z;
+
+    /* renamed from: a0 */
+    public boolean f25769a0;
+
+    /* renamed from: b0 */
+    public boolean f25770b0;
+
+    /* renamed from: c0 */
+    public android.net.Uri f25771c0;
+
+    static {
+            v9.g0 r0 = new v9.g0
+            r0.<init>()
+            p375v9.C6587a0.CREATOR = r0
+            return
+    }
+
+    public C6587a0(java.lang.String r1, java.lang.String r2, boolean r3, boolean r4) {
+            r0 = this;
+            r0.<init>()
+            r0.f25767Y = r1
+            r0.f25768Z = r2
+            r0.f25769a0 = r3
+            r0.f25770b0 = r4
+            boolean r1 = android.text.TextUtils.isEmpty(r2)
+            if (r1 == 0) goto L13
+            r1 = 0
+            goto L17
+        L13:
+            android.net.Uri r1 = android.net.Uri.parse(r2)
+        L17:
+            r0.f25771c0 = r1
+            return
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(android.os.Parcel r4, int r5) {
+            r3 = this;
+            r5 = 20293(0x4f45, float:2.8437E-41)
+            int r5 = p270p6.C5369c.m11723k(r4, r5)
+            r0 = 2
+            java.lang.String r1 = r3.f25767Y
+            r2 = 0
+            p270p6.C5369c.m11719g(r4, r0, r1, r2)
+            r0 = 3
+            java.lang.String r1 = r3.f25768Z
+            p270p6.C5369c.m11719g(r4, r0, r1, r2)
+            boolean r0 = r3.f25769a0
+            r1 = 4
+            p270p6.C5369c.m11724l(r4, r1, r1)
+            r4.writeInt(r0)
+            r0 = 5
+            boolean r2 = r3.f25770b0
+            p270p6.C5369c.m11724l(r4, r0, r1)
+            r4.writeInt(r2)
+            p270p6.C5369c.m11726n(r4, r5)
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.b */
+/* loaded from: classes.dex */
+public class C6588b {
+
+    /* renamed from: c */
+    public static final /* synthetic */ int f25772c = 0;
+
+    /* renamed from: a */
+    public final java.lang.String f25773a;
+
+    /* renamed from: b */
+    public final java.lang.String f25774b;
+
+    static {
+            v9.i0 r0 = new v9.i0
+            r0.<init>()
+            return
+    }
+
+    public C6588b(java.lang.String r7) {
+            r6 = this;
+            r6.<init>()
+            java.lang.String r0 = "apiKey"
+            java.lang.String r1 = m13456a(r7, r0)
+            java.lang.String r2 = "oobCode"
+            java.lang.String r3 = m13456a(r7, r2)
+            java.lang.String r4 = "mode"
+            java.lang.String r5 = m13456a(r7, r4)
+            if (r1 == 0) goto L39
+            if (r3 == 0) goto L39
+            if (r5 == 0) goto L39
+            com.google.android.gms.common.internal.C1101a.m3100e(r1)
+            com.google.android.gms.common.internal.C1101a.m3100e(r3)
+            r6.f25773a = r3
+            com.google.android.gms.common.internal.C1101a.m3100e(r5)
+            java.lang.String r0 = "continueUrl"
+            m13456a(r7, r0)
+            java.lang.String r0 = "languageCode"
+            m13456a(r7, r0)
+            java.lang.String r0 = "tenantId"
+            java.lang.String r7 = m13456a(r7, r0)
+            r6.f25774b = r7
+            return
+        L39:
+            java.lang.IllegalArgumentException r7 = new java.lang.IllegalArgumentException
+            r1 = 3
+            java.lang.Object[] r1 = new java.lang.Object[r1]
+            r3 = 0
+            r1[r3] = r0
+            r0 = 1
+            r1[r0] = r2
+            r0 = 2
+            r1[r0] = r4
+            java.lang.String r0 = "%s, %s and %s are required in a valid action code URL"
+            java.lang.String r0 = java.lang.String.format(r0, r1)
+            r7.<init>(r0)
+            throw r7
+    }
+
+    /* renamed from: a */
+    public static java.lang.String m13456a(java.lang.String r3, java.lang.String r4) {
+            java.lang.String r0 = "link"
+            android.net.Uri r3 = android.net.Uri.parse(r3)
+            java.util.Set r1 = r3.getQueryParameterNames()     // Catch: java.lang.Throwable -> L2b
+            boolean r2 = r1.contains(r4)     // Catch: java.lang.Throwable -> L2b
+            if (r2 == 0) goto L15
+            java.lang.String r3 = r3.getQueryParameter(r4)     // Catch: java.lang.Throwable -> L2b
+            return r3
+        L15:
+            boolean r1 = r1.contains(r0)     // Catch: java.lang.Throwable -> L2b
+            if (r1 == 0) goto L2b
+            java.lang.String r3 = r3.getQueryParameter(r0)     // Catch: java.lang.Throwable -> L2b
+            com.google.android.gms.common.internal.C1101a.m3100e(r3)     // Catch: java.lang.Throwable -> L2b
+            android.net.Uri r3 = android.net.Uri.parse(r3)     // Catch: java.lang.Throwable -> L2b
+            java.lang.String r3 = r3.getQueryParameter(r4)     // Catch: java.lang.Throwable -> L2b
+            return r3
+        L2b:
+            r3 = 0
+            return r3
+    }
+}
+package p375v9;
+
+/* renamed from: v9.b0 */
+/* loaded from: classes.dex */
+public final class C6589b0 implements android.os.Parcelable.Creator<p375v9.C6620r> {
+    public C6589b0() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final p375v9.C6620r createFromParcel(android.os.Parcel r7) {
+            r6 = this;
+            int r0 = p270p6.C5368b.m11710t(r7)
+            r1 = 0
+            r2 = r1
+        L6:
+            int r3 = r7.dataPosition()
+            if (r3 >= r0) goto L28
+            int r3 = r7.readInt()
+            r4 = 65535(0xffff, float:9.1834E-41)
+            r4 = r4 & r3
+            r5 = 1
+            if (r4 == r5) goto L23
+            r5 = 2
+            if (r4 == r5) goto L1e
+            p270p6.C5368b.m11709s(r7, r3)
+            goto L6
+        L1e:
+            java.lang.String r2 = p270p6.C5368b.m11695e(r7, r3)
+            goto L6
+        L23:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r7, r3)
+            goto L6
+        L28:
+            p270p6.C5368b.m11699i(r7, r0)
+            v9.r r7 = new v9.r
+            r7.<init>(r1, r2)
+            return r7
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ p375v9.C6620r[] newArray(int r1) {
+            r0 = this;
+            v9.r[] r1 = new p375v9.C6620r[r1]
+            return r1
+    }
+}
+package p375v9;
+
+/* renamed from: v9.c0 */
+/* loaded from: classes.dex */
+public final class C6591c0 implements android.os.Parcelable.Creator<p375v9.C6624v> {
+    public C6591c0() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final p375v9.C6624v createFromParcel(android.os.Parcel r12) {
+            r11 = this;
+            int r0 = p270p6.C5368b.m11710t(r12)
+            r1 = 0
+            r2 = 0
+            r4 = r2
+            r5 = r4
+            r7 = r5
+            r9 = r7
+            r10 = r9
+            r6 = 0
+            r8 = 0
+        Ld:
+            int r1 = r12.dataPosition()
+            if (r1 >= r0) goto L4c
+            int r1 = r12.readInt()
+            r2 = 65535(0xffff, float:9.1834E-41)
+            r2 = r2 & r1
+            switch(r2) {
+                case 1: goto L46;
+                case 2: goto L40;
+                case 3: goto L3a;
+                case 4: goto L34;
+                case 5: goto L2e;
+                case 6: goto L28;
+                case 7: goto L22;
+                default: goto L1e;
+            }
+        L1e:
+            p270p6.C5368b.m11709s(r12, r1)
+            goto Ld
+        L22:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r12, r1)
+            r10 = r1
+            goto Ld
+        L28:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r12, r1)
+            r9 = r1
+            goto Ld
+        L2e:
+            boolean r1 = p270p6.C5368b.m11700j(r12, r1)
+            r8 = r1
+            goto Ld
+        L34:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r12, r1)
+            r7 = r1
+            goto Ld
+        L3a:
+            boolean r1 = p270p6.C5368b.m11700j(r12, r1)
+            r6 = r1
+            goto Ld
+        L40:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r12, r1)
+            r5 = r1
+            goto Ld
+        L46:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r12, r1)
+            r4 = r1
+            goto Ld
+        L4c:
+            p270p6.C5368b.m11699i(r12, r0)
+            v9.v r12 = new v9.v
+            r3 = r12
+            r3.<init>(r4, r5, r6, r7, r8, r9, r10)
+            return r12
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ p375v9.C6624v[] newArray(int r1) {
+            r0 = this;
+            v9.v[] r1 = new p375v9.C6624v[r1]
+            return r1
+    }
+}
+package p375v9;
+
+/* renamed from: v9.d0 */
+/* loaded from: classes.dex */
+public final class C6593d0 implements android.os.Parcelable.Creator<p375v9.C6625w> {
+    public C6593d0() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final p375v9.C6625w createFromParcel(android.os.Parcel r11) {
+            r10 = this;
+            int r0 = p270p6.C5368b.m11710t(r11)
+            r1 = 0
+            r2 = 0
+            r5 = r1
+            r6 = r5
+            r9 = r6
+            r7 = r2
+        Lb:
+            int r1 = r11.dataPosition()
+            if (r1 >= r0) goto L41
+            int r1 = r11.readInt()
+            r2 = 65535(0xffff, float:9.1834E-41)
+            r2 = r2 & r1
+            r3 = 1
+            if (r2 == r3) goto L3b
+            r3 = 2
+            if (r2 == r3) goto L35
+            r3 = 3
+            if (r2 == r3) goto L2f
+            r3 = 4
+            if (r2 == r3) goto L29
+            p270p6.C5368b.m11709s(r11, r1)
+            goto Lb
+        L29:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r11, r1)
+            r9 = r1
+            goto Lb
+        L2f:
+            long r1 = p270p6.C5368b.m11706p(r11, r1)
+            r7 = r1
+            goto Lb
+        L35:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r11, r1)
+            r6 = r1
+            goto Lb
+        L3b:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r11, r1)
+            r5 = r1
+            goto Lb
+        L41:
+            p270p6.C5368b.m11699i(r11, r0)
+            v9.w r11 = new v9.w
+            r4 = r11
+            r4.<init>(r5, r6, r7, r9)
+            return r11
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ p375v9.C6625w[] newArray(int r1) {
+            r0 = this;
+            v9.w[] r1 = new p375v9.C6625w[r1]
+            return r1
+    }
+}
+package p375v9;
+
+/* renamed from: v9.e */
+/* loaded from: classes.dex */
+public class C6594e extends p375v9.AbstractC6590c {
+    public static final android.os.Parcelable.Creator<p375v9.C6594e> CREATOR = null;
+
+    /* renamed from: Y */
+    public java.lang.String f25775Y;
+
+    /* renamed from: Z */
+    public java.lang.String f25776Z;
+
+    /* renamed from: a0 */
+    public final java.lang.String f25777a0;
+
+    /* renamed from: b0 */
+    public java.lang.String f25778b0;
+
+    /* renamed from: c0 */
+    public boolean f25779c0;
+
+    static {
+            v9.l0 r0 = new v9.l0
+            r0.<init>()
+            p375v9.C6594e.CREATOR = r0
+            return
+    }
+
+    public C6594e(java.lang.String r2, java.lang.String r3, java.lang.String r4, java.lang.String r5, boolean r6) {
+            r1 = this;
+            r0 = 0
+            r1.<init>(r0)
+            com.google.android.gms.common.internal.C1101a.m3100e(r2)
+            r1.f25775Y = r2
+            boolean r2 = android.text.TextUtils.isEmpty(r3)
+            if (r2 == 0) goto L1e
+            boolean r2 = android.text.TextUtils.isEmpty(r4)
+            if (r2 != 0) goto L16
+            goto L1e
+        L16:
+            java.lang.IllegalArgumentException r2 = new java.lang.IllegalArgumentException
+            java.lang.String r3 = "Cannot create an EmailAuthCredential without a password or emailLink."
+            r2.<init>(r3)
+            throw r2
+        L1e:
+            r1.f25776Z = r3
+            r1.f25777a0 = r4
+            r1.f25778b0 = r5
+            r1.f25779c0 = r6
+            return
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(android.os.Parcel r4, int r5) {
+            r3 = this;
+            r5 = 20293(0x4f45, float:2.8437E-41)
+            int r5 = p270p6.C5369c.m11723k(r4, r5)
+            r0 = 1
+            java.lang.String r1 = r3.f25775Y
+            r2 = 0
+            p270p6.C5369c.m11719g(r4, r0, r1, r2)
+            r0 = 2
+            java.lang.String r1 = r3.f25776Z
+            p270p6.C5369c.m11719g(r4, r0, r1, r2)
+            r0 = 3
+            java.lang.String r1 = r3.f25777a0
+            p270p6.C5369c.m11719g(r4, r0, r1, r2)
+            java.lang.String r0 = r3.f25778b0
+            r1 = 4
+            p270p6.C5369c.m11719g(r4, r1, r0, r2)
+            r0 = 5
+            boolean r2 = r3.f25779c0
+            p270p6.C5369c.m11724l(r4, r0, r1)
+            r4.writeInt(r2)
+            p270p6.C5369c.m11726n(r4, r5)
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.e0 */
+/* loaded from: classes.dex */
+public final class C6595e0 implements android.os.Parcelable.Creator<p375v9.C6626x> {
+    public C6595e0() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final p375v9.C6626x createFromParcel(android.os.Parcel r6) {
+            r5 = this;
+            int r0 = p270p6.C5368b.m11710t(r6)
+            r1 = 0
+        L5:
+            int r2 = r6.dataPosition()
+            if (r2 >= r0) goto L1f
+            int r2 = r6.readInt()
+            r3 = 65535(0xffff, float:9.1834E-41)
+            r3 = r3 & r2
+            r4 = 1
+            if (r3 == r4) goto L1a
+            p270p6.C5368b.m11709s(r6, r2)
+            goto L5
+        L1a:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r6, r2)
+            goto L5
+        L1f:
+            p270p6.C5368b.m11699i(r6, r0)
+            v9.x r6 = new v9.x
+            r6.<init>(r1)
+            return r6
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ p375v9.C6626x[] newArray(int r1) {
+            r0 = this;
+            v9.x[] r1 = new p375v9.C6626x[r1]
+            return r1
+    }
+}
+package p375v9;
+
+/* renamed from: v9.f */
+/* loaded from: classes.dex */
+public class C6596f extends p375v9.AbstractC6590c {
+    public static final android.os.Parcelable.Creator<p375v9.C6596f> CREATOR = null;
+
+    /* renamed from: Y */
+    public final java.lang.String f25780Y;
+
+    static {
+            v9.m0 r0 = new v9.m0
+            r0.<init>()
+            p375v9.C6596f.CREATOR = r0
+            return
+    }
+
+    public C6596f(java.lang.String r2) {
+            r1 = this;
+            r0 = 0
+            r1.<init>(r0)
+            com.google.android.gms.common.internal.C1101a.m3100e(r2)
+            r1.f25780Y = r2
+            return
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(android.os.Parcel r4, int r5) {
+            r3 = this;
+            r5 = 20293(0x4f45, float:2.8437E-41)
+            int r5 = p270p6.C5369c.m11723k(r4, r5)
+            r0 = 1
+            java.lang.String r1 = r3.f25780Y
+            r2 = 0
+            p270p6.C5369c.m11719g(r4, r0, r1, r2)
+            p270p6.C5369c.m11726n(r4, r5)
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.f0 */
+/* loaded from: classes.dex */
+public final class C6597f0 implements android.os.Parcelable.Creator<p375v9.C6627y> {
+    public C6597f0() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final p375v9.C6627y createFromParcel(android.os.Parcel r7) {
+            r6 = this;
+            int r0 = p270p6.C5368b.m11710t(r7)
+            r1 = 0
+            r2 = r1
+        L6:
+            int r3 = r7.dataPosition()
+            if (r3 >= r0) goto L28
+            int r3 = r7.readInt()
+            r4 = 65535(0xffff, float:9.1834E-41)
+            r4 = r4 & r3
+            r5 = 1
+            if (r4 == r5) goto L23
+            r5 = 2
+            if (r4 == r5) goto L1e
+            p270p6.C5368b.m11709s(r7, r3)
+            goto L6
+        L1e:
+            java.lang.String r2 = p270p6.C5368b.m11695e(r7, r3)
+            goto L6
+        L23:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r7, r3)
+            goto L6
+        L28:
+            p270p6.C5368b.m11699i(r7, r0)
+            v9.y r7 = new v9.y
+            r7.<init>(r1, r2)
+            return r7
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ p375v9.C6627y[] newArray(int r1) {
+            r0 = this;
+            v9.y[] r1 = new p375v9.C6627y[r1]
+            return r1
+    }
+}
+package p375v9;
+
+/* renamed from: v9.g */
+/* loaded from: classes.dex */
+public final class C6598g extends p375v9.C6602i {
+    public C6598g(java.lang.String r2, java.lang.String r3, int r4) {
+            r1 = this;
+            r0 = 1
+            if (r4 == r0) goto L7
+            r1.<init>(r2, r3)
+            return
+        L7:
+            r1.<init>(r2, r3)
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.g0 */
+/* loaded from: classes.dex */
+public final class C6599g0 implements android.os.Parcelable.Creator<p375v9.C6587a0> {
+    public C6599g0() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final p375v9.C6587a0 createFromParcel(android.os.Parcel r9) {
+            r8 = this;
+            int r0 = p270p6.C5368b.m11710t(r9)
+            r1 = 0
+            r2 = 0
+            r3 = r2
+            r4 = r3
+            r2 = 0
+        L9:
+            int r5 = r9.dataPosition()
+            if (r5 >= r0) goto L3b
+            int r5 = r9.readInt()
+            r6 = 65535(0xffff, float:9.1834E-41)
+            r6 = r6 & r5
+            r7 = 2
+            if (r6 == r7) goto L36
+            r7 = 3
+            if (r6 == r7) goto L31
+            r7 = 4
+            if (r6 == r7) goto L2c
+            r7 = 5
+            if (r6 == r7) goto L27
+            p270p6.C5368b.m11709s(r9, r5)
+            goto L9
+        L27:
+            boolean r2 = p270p6.C5368b.m11700j(r9, r5)
+            goto L9
+        L2c:
+            boolean r1 = p270p6.C5368b.m11700j(r9, r5)
+            goto L9
+        L31:
+            java.lang.String r4 = p270p6.C5368b.m11695e(r9, r5)
+            goto L9
+        L36:
+            java.lang.String r3 = p270p6.C5368b.m11695e(r9, r5)
+            goto L9
+        L3b:
+            p270p6.C5368b.m11699i(r9, r0)
+            v9.a0 r9 = new v9.a0
+            r9.<init>(r3, r4, r1, r2)
+            return r9
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ p375v9.C6587a0[] newArray(int r1) {
+            r0 = this;
+            v9.a0[] r1 = new p375v9.C6587a0[r1]
+            return r1
+    }
+}
+package p375v9;
+
+/* renamed from: v9.h */
+/* loaded from: classes.dex */
+public class C6600h extends p375v9.C6602i {
+    public C6600h(java.lang.String r2, java.lang.String r3, int r4) {
+            r1 = this;
+            r0 = 1
+            if (r4 == r0) goto L7
+            r1.<init>(r2, r3)
+            return
+        L7:
+            r1.<init>(r2, r3)
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.h0 */
+/* loaded from: classes.dex */
+public final class C6601h0 implements android.os.Parcelable.Creator<p375v9.C6586a> {
+    public C6601h0() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final p375v9.C6586a createFromParcel(android.os.Parcel r15) {
+            r14 = this;
+            int r0 = p270p6.C5368b.m11710t(r15)
+            r1 = 0
+            r2 = 0
+            r4 = r2
+            r5 = r4
+            r6 = r5
+            r7 = r6
+            r9 = r7
+            r11 = r9
+            r13 = r11
+            r8 = 0
+            r10 = 0
+            r12 = 0
+        L10:
+            int r1 = r15.dataPosition()
+            if (r1 >= r0) goto L61
+            int r1 = r15.readInt()
+            r2 = 65535(0xffff, float:9.1834E-41)
+            r2 = r2 & r1
+            switch(r2) {
+                case 1: goto L5b;
+                case 2: goto L55;
+                case 3: goto L4f;
+                case 4: goto L49;
+                case 5: goto L43;
+                case 6: goto L3d;
+                case 7: goto L37;
+                case 8: goto L31;
+                case 9: goto L2b;
+                case 10: goto L25;
+                default: goto L21;
+            }
+        L21:
+            p270p6.C5368b.m11709s(r15, r1)
+            goto L10
+        L25:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r15, r1)
+            r13 = r1
+            goto L10
+        L2b:
+            int r1 = p270p6.C5368b.m11705o(r15, r1)
+            r12 = r1
+            goto L10
+        L31:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r15, r1)
+            r11 = r1
+            goto L10
+        L37:
+            boolean r1 = p270p6.C5368b.m11700j(r15, r1)
+            r10 = r1
+            goto L10
+        L3d:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r15, r1)
+            r9 = r1
+            goto L10
+        L43:
+            boolean r1 = p270p6.C5368b.m11700j(r15, r1)
+            r8 = r1
+            goto L10
+        L49:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r15, r1)
+            r7 = r1
+            goto L10
+        L4f:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r15, r1)
+            r6 = r1
+            goto L10
+        L55:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r15, r1)
+            r5 = r1
+            goto L10
+        L5b:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r15, r1)
+            r4 = r1
+            goto L10
+        L61:
+            p270p6.C5368b.m11699i(r15, r0)
+            v9.a r15 = new v9.a
+            r3 = r15
+            r3.<init>(r4, r5, r6, r7, r8, r9, r10, r11, r12, r13)
+            return r15
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ p375v9.C6586a[] newArray(int r1) {
+            r0 = this;
+            v9.a[] r1 = new p375v9.C6586a[r1]
+            return r1
+    }
+}
+package p375v9;
+
+/* renamed from: v9.i */
+/* loaded from: classes.dex */
+public class C6602i extends p251o9.C5181e {
+    public C6602i(java.lang.String r1, java.lang.String r2) {
+            r0 = this;
+            r0.<init>(r2)
+            com.google.android.gms.common.internal.C1101a.m3100e(r1)
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.i0 */
+/* loaded from: classes.dex */
+public final class C6603i0 extends java.util.HashMap<java.lang.String, java.lang.Integer> {
+    public C6603i0() {
+            r2 = this;
+            r2.<init>()
+            r0 = 2
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r0)
+            java.lang.String r1 = "recoverEmail"
+            r2.put(r1, r0)
+            r0 = 0
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r0)
+            java.lang.String r1 = "resetPassword"
+            r2.put(r1, r0)
+            r0 = 4
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r0)
+            java.lang.String r1 = "signIn"
+            r2.put(r1, r0)
+            r0 = 1
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r0)
+            java.lang.String r1 = "verifyEmail"
+            r2.put(r1, r0)
+            r0 = 5
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r0)
+            java.lang.String r1 = "verifyBeforeChangeEmail"
+            r2.put(r1, r0)
+            r0 = 6
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r0)
+            java.lang.String r1 = "revertSecondFactorAddition"
+            r2.put(r1, r0)
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.j */
+/* loaded from: classes.dex */
+public class C6604j extends p375v9.C6602i {
+    public C6604j(java.lang.String r1, java.lang.String r2) {
+            r0 = this;
+            r0.<init>(r1, r2)
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.j0 */
+/* loaded from: classes.dex */
+public final class C6605j0 extends p375v9.AbstractC6623u {
+    public static final android.os.Parcelable.Creator<p375v9.C6605j0> CREATOR = null;
+
+    /* renamed from: Y */
+    public final java.lang.String f25781Y;
+
+    /* renamed from: Z */
+    public final java.lang.String f25782Z;
+
+    /* renamed from: a0 */
+    public final java.lang.String f25783a0;
+
+    /* renamed from: b0 */
+    public final p124h7.C2681if f25784b0;
+
+    /* renamed from: c0 */
+    public final java.lang.String f25785c0;
+
+    /* renamed from: d0 */
+    public final java.lang.String f25786d0;
+
+    /* renamed from: e0 */
+    public final java.lang.String f25787e0;
+
+    static {
+            v9.k0 r0 = new v9.k0
+            r0.<init>()
+            p375v9.C6605j0.CREATOR = r0
+            return
+    }
+
+    public C6605j0(java.lang.String r2, java.lang.String r3, java.lang.String r4, p124h7.C2681if r5, java.lang.String r6, java.lang.String r7, java.lang.String r8) {
+            r1 = this;
+            r1.<init>()
+            int r0 = p124h7.C2896ue.f11946a
+            if (r2 != 0) goto L9
+            java.lang.String r2 = ""
+        L9:
+            r1.f25781Y = r2
+            r1.f25782Z = r3
+            r1.f25783a0 = r4
+            r1.f25784b0 = r5
+            r1.f25785c0 = r6
+            r1.f25786d0 = r7
+            r1.f25787e0 = r8
+            return
+    }
+
+    /* renamed from: Y */
+    public static p375v9.C6605j0 m13458Y(p124h7.C2681if r9) {
+            java.lang.String r0 = "Must specify a non-null webSignInCredential"
+            com.google.android.gms.common.internal.C1101a.m3104i(r9, r0)
+            v9.j0 r0 = new v9.j0
+            r2 = 0
+            r3 = 0
+            r4 = 0
+            r6 = 0
+            r7 = 0
+            r8 = 0
+            r1 = r0
+            r5 = r9
+            r1.<init>(r2, r3, r4, r5, r6, r7, r8)
+            return r0
+    }
+
+    /* renamed from: X */
+    public final p375v9.AbstractC6590c m13459X() {
+            r9 = this;
+            v9.j0 r8 = new v9.j0
+            java.lang.String r1 = r9.f25781Y
+            java.lang.String r2 = r9.f25782Z
+            java.lang.String r3 = r9.f25783a0
+            h7.if r4 = r9.f25784b0
+            java.lang.String r5 = r9.f25785c0
+            java.lang.String r6 = r9.f25786d0
+            java.lang.String r7 = r9.f25787e0
+            r0 = r8
+            r0.<init>(r1, r2, r3, r4, r5, r6, r7)
+            return r8
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(android.os.Parcel r5, int r6) {
+            r4 = this;
+            r0 = 20293(0x4f45, float:2.8437E-41)
+            int r0 = p270p6.C5369c.m11723k(r5, r0)
+            r1 = 1
+            java.lang.String r2 = r4.f25781Y
+            r3 = 0
+            p270p6.C5369c.m11719g(r5, r1, r2, r3)
+            r1 = 2
+            java.lang.String r2 = r4.f25782Z
+            p270p6.C5369c.m11719g(r5, r1, r2, r3)
+            r1 = 3
+            java.lang.String r2 = r4.f25783a0
+            p270p6.C5369c.m11719g(r5, r1, r2, r3)
+            r1 = 4
+            h7.if r2 = r4.f25784b0
+            p270p6.C5369c.m11718f(r5, r1, r2, r6, r3)
+            r6 = 5
+            java.lang.String r1 = r4.f25785c0
+            p270p6.C5369c.m11719g(r5, r6, r1, r3)
+            r6 = 6
+            java.lang.String r1 = r4.f25786d0
+            p270p6.C5369c.m11719g(r5, r6, r1, r3)
+            r6 = 7
+            java.lang.String r1 = r4.f25787e0
+            p270p6.C5369c.m11719g(r5, r6, r1, r3)
+            p270p6.C5369c.m11726n(r5, r0)
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.k */
+/* loaded from: classes.dex */
+public final class C6606k extends p375v9.C6602i {
+    public C6606k(java.lang.String r1, java.lang.String r2) {
+            r0 = this;
+            r0.<init>(r1, r2)
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.k0 */
+/* loaded from: classes.dex */
+public final class C6607k0 implements android.os.Parcelable.Creator<p375v9.C6605j0> {
+    public C6607k0() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final p375v9.C6605j0 createFromParcel(android.os.Parcel r11) {
+            r10 = this;
+            int r0 = p270p6.C5368b.m11710t(r11)
+            r1 = 0
+            r3 = r1
+            r4 = r3
+            r5 = r4
+            r6 = r5
+            r7 = r6
+            r8 = r7
+            r9 = r8
+        Lc:
+            int r1 = r11.dataPosition()
+            if (r1 >= r0) goto L4f
+            int r1 = r11.readInt()
+            r2 = 65535(0xffff, float:9.1834E-41)
+            r2 = r2 & r1
+            switch(r2) {
+                case 1: goto L49;
+                case 2: goto L43;
+                case 3: goto L3d;
+                case 4: goto L33;
+                case 5: goto L2d;
+                case 6: goto L27;
+                case 7: goto L21;
+                default: goto L1d;
+            }
+        L1d:
+            p270p6.C5368b.m11709s(r11, r1)
+            goto Lc
+        L21:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r11, r1)
+            r9 = r1
+            goto Lc
+        L27:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r11, r1)
+            r8 = r1
+            goto Lc
+        L2d:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r11, r1)
+            r7 = r1
+            goto Lc
+        L33:
+            android.os.Parcelable$Creator<h7.if> r2 = p124h7.C2681if.CREATOR
+            android.os.Parcelable r1 = p270p6.C5368b.m11694d(r11, r1, r2)
+            h7.if r1 = (p124h7.C2681if) r1
+            r6 = r1
+            goto Lc
+        L3d:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r11, r1)
+            r5 = r1
+            goto Lc
+        L43:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r11, r1)
+            r4 = r1
+            goto Lc
+        L49:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r11, r1)
+            r3 = r1
+            goto Lc
+        L4f:
+            p270p6.C5368b.m11699i(r11, r0)
+            v9.j0 r11 = new v9.j0
+            r2 = r11
+            r2.<init>(r3, r4, r5, r6, r7, r8, r9)
+            return r11
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ p375v9.C6605j0[] newArray(int r1) {
+            r0 = this;
+            v9.j0[] r1 = new p375v9.C6605j0[r1]
+            return r1
+    }
+}
+package p375v9;
+
+/* renamed from: v9.l */
+/* loaded from: classes.dex */
+public class C6608l extends p375v9.C6602i {
+    public C6608l(java.lang.String r1, java.lang.String r2, p375v9.AbstractC6622t r3) {
+            r0 = this;
+            r0.<init>(r1, r2)
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.l0 */
+/* loaded from: classes.dex */
+public final class C6609l0 implements android.os.Parcelable.Creator<p375v9.C6594e> {
+    public C6609l0() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final p375v9.C6594e createFromParcel(android.os.Parcel r10) {
+            r9 = this;
+            int r0 = p270p6.C5368b.m11710t(r10)
+            r1 = 0
+            r2 = 0
+            r4 = r1
+            r5 = r4
+            r6 = r5
+            r7 = r6
+            r8 = 0
+        Lb:
+            int r1 = r10.dataPosition()
+            if (r1 >= r0) goto L4a
+            int r1 = r10.readInt()
+            r2 = 65535(0xffff, float:9.1834E-41)
+            r2 = r2 & r1
+            r3 = 1
+            if (r2 == r3) goto L44
+            r3 = 2
+            if (r2 == r3) goto L3e
+            r3 = 3
+            if (r2 == r3) goto L38
+            r3 = 4
+            if (r2 == r3) goto L32
+            r3 = 5
+            if (r2 == r3) goto L2c
+            p270p6.C5368b.m11709s(r10, r1)
+            goto Lb
+        L2c:
+            boolean r1 = p270p6.C5368b.m11700j(r10, r1)
+            r8 = r1
+            goto Lb
+        L32:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r10, r1)
+            r7 = r1
+            goto Lb
+        L38:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r10, r1)
+            r6 = r1
+            goto Lb
+        L3e:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r10, r1)
+            r5 = r1
+            goto Lb
+        L44:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r10, r1)
+            r4 = r1
+            goto Lb
+        L4a:
+            p270p6.C5368b.m11699i(r10, r0)
+            v9.e r10 = new v9.e
+            r3 = r10
+            r3.<init>(r4, r5, r6, r7, r8)
+            return r10
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ p375v9.C6594e[] newArray(int r1) {
+            r0 = this;
+            v9.e[] r1 = new p375v9.C6594e[r1]
+            return r1
+    }
+}
+package p375v9;
+
+/* renamed from: v9.m */
+/* loaded from: classes.dex */
+public final class C6610m extends p375v9.C6602i {
+    public C6610m(java.lang.String r1, java.lang.String r2) {
+            r0 = this;
+            r0.<init>(r1, r2)
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.m0 */
+/* loaded from: classes.dex */
+public final class C6611m0 implements android.os.Parcelable.Creator<p375v9.C6596f> {
+    public C6611m0() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final p375v9.C6596f createFromParcel(android.os.Parcel r6) {
+            r5 = this;
+            int r0 = p270p6.C5368b.m11710t(r6)
+            r1 = 0
+        L5:
+            int r2 = r6.dataPosition()
+            if (r2 >= r0) goto L1f
+            int r2 = r6.readInt()
+            r3 = 65535(0xffff, float:9.1834E-41)
+            r3 = r3 & r2
+            r4 = 1
+            if (r3 == r4) goto L1a
+            p270p6.C5368b.m11709s(r6, r2)
+            goto L5
+        L1a:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r6, r2)
+            goto L5
+        L1f:
+            p270p6.C5368b.m11699i(r6, r0)
+            v9.f r6 = new v9.f
+            r6.<init>(r1)
+            return r6
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ p375v9.C6596f[] newArray(int r1) {
+            r0 = this;
+            v9.f[] r1 = new p375v9.C6596f[r1]
+            return r1
+    }
+}
+package p375v9;
+
+/* renamed from: v9.n */
+/* loaded from: classes.dex */
+public final class C6612n extends p375v9.C6604j {
+    public C6612n(java.lang.String r1, java.lang.String r2, java.lang.String r3) {
+            r0 = this;
+            r0.<init>(r1, r2)
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.n0 */
+/* loaded from: classes.dex */
+public final class C6613n0 implements p411x9.InterfaceC7004w, p411x9.InterfaceC6991j {
+
+    /* renamed from: a */
+    public final /* synthetic */ int f25788a;
+
+    /* renamed from: b */
+    public final /* synthetic */ com.google.firebase.auth.FirebaseAuth f25789b;
+
+    public C6613n0(com.google.firebase.auth.FirebaseAuth r2, int r3) {
+            r1 = this;
+            r1.f25788a = r3
+            r0 = 1
+            if (r3 == r0) goto Lb
+            r1.f25789b = r2
+            r1.<init>()
+            return
+        Lb:
+            r1.f25789b = r2
+            r1.<init>()
+            return
+    }
+
+    @Override // p411x9.InterfaceC7004w
+    /* renamed from: a */
+    public final void mo13460a(p124h7.C2752me r3, p375v9.AbstractC6614o r4) {
+            r2 = this;
+            int r0 = r2.f25788a
+            r1 = 1
+            switch(r0) {
+                case 0: goto L7;
+                default: goto L6;
+            }
+        L6:
+            goto Ld
+        L7:
+            com.google.firebase.auth.FirebaseAuth r0 = r2.f25789b
+            com.google.firebase.auth.FirebaseAuth.m3630e(r0, r4, r3, r1, r1)
+            return
+        Ld:
+            java.lang.String r0 = "null reference"
+            java.util.Objects.requireNonNull(r3, r0)
+            java.util.Objects.requireNonNull(r4, r0)
+            r4.mo13474j0(r3)
+            com.google.firebase.auth.FirebaseAuth r0 = r2.f25789b
+            com.google.firebase.auth.FirebaseAuth.m3630e(r0, r4, r3, r1, r1)
+            return
+    }
+
+    @Override // p411x9.InterfaceC6991j
+    /* renamed from: b */
+    public final void mo13461b(com.google.android.gms.common.api.Status r5) {
+            r4 = this;
+            int r0 = r4.f25788a
+            r1 = 17005(0x426d, float:2.3829E-41)
+            r2 = 17021(0x427d, float:2.3852E-41)
+            r3 = 17011(0x4273, float:2.3837E-41)
+            switch(r0) {
+                case 0: goto Lc;
+                default: goto Lb;
+            }
+        Lb:
+            goto L1a
+        Lc:
+            int r5 = r5.f5536Z
+            if (r5 == r3) goto L14
+            if (r5 == r2) goto L14
+            if (r5 != r1) goto L19
+        L14:
+            com.google.firebase.auth.FirebaseAuth r5 = r4.f25789b
+            r5.m3632b()
+        L19:
+            return
+        L1a:
+            int r5 = r5.f5536Z
+            if (r5 == r3) goto L26
+            if (r5 == r2) goto L26
+            if (r5 == r1) goto L26
+            r0 = 17091(0x42c3, float:2.395E-41)
+            if (r5 != r0) goto L2b
+        L26:
+            com.google.firebase.auth.FirebaseAuth r5 = r4.f25789b
+            r5.m3632b()
+        L2b:
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.o0 */
+/* loaded from: classes.dex */
+public class C6615o0 implements p411x9.InterfaceC7004w {
+
+    /* renamed from: a */
+    public final /* synthetic */ com.google.firebase.auth.FirebaseAuth f25790a;
+
+    public C6615o0(com.google.firebase.auth.FirebaseAuth r1) {
+            r0 = this;
+            r0.f25790a = r1
+            r0.<init>()
+            return
+    }
+
+    @Override // p411x9.InterfaceC7004w
+    /* renamed from: a */
+    public final void mo13460a(p124h7.C2752me r4, p375v9.AbstractC6614o r5) {
+            r3 = this;
+            java.lang.String r0 = "null reference"
+            java.util.Objects.requireNonNull(r4, r0)
+            java.util.Objects.requireNonNull(r5, r0)
+            r5.mo13474j0(r4)
+            com.google.firebase.auth.FirebaseAuth r0 = r3.f25790a
+            java.util.Objects.requireNonNull(r0)
+            r1 = 1
+            r2 = 0
+            com.google.firebase.auth.FirebaseAuth.m3630e(r0, r5, r4, r1, r2)
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.p */
+/* loaded from: classes.dex */
+public class C6616p {
+
+    /* renamed from: a */
+    public java.lang.String f25791a;
+
+    /* renamed from: b */
+    public java.util.Map<java.lang.String, java.lang.Object> f25792b;
+
+    public C6616p(java.lang.String r1, java.util.Map<java.lang.String, java.lang.Object> r2) {
+            r0 = this;
+            r0.<init>()
+            r0.f25791a = r1
+            r0.f25792b = r2
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.q */
+/* loaded from: classes.dex */
+public class C6618q extends p375v9.AbstractC6590c {
+    public static final android.os.Parcelable.Creator<p375v9.C6618q> CREATOR = null;
+
+    /* renamed from: Y */
+    public java.lang.String f25794Y;
+
+    static {
+            v9.q0 r0 = new v9.q0
+            r0.<init>()
+            p375v9.C6618q.CREATOR = r0
+            return
+    }
+
+    public C6618q(java.lang.String r2) {
+            r1 = this;
+            r0 = 0
+            r1.<init>(r0)
+            com.google.android.gms.common.internal.C1101a.m3100e(r2)
+            r1.f25794Y = r2
+            return
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(android.os.Parcel r4, int r5) {
+            r3 = this;
+            r5 = 20293(0x4f45, float:2.8437E-41)
+            int r5 = p270p6.C5369c.m11723k(r4, r5)
+            r0 = 1
+            java.lang.String r1 = r3.f25794Y
+            r2 = 0
+            p270p6.C5369c.m11719g(r4, r0, r1, r2)
+            p270p6.C5369c.m11726n(r4, r5)
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.q0 */
+/* loaded from: classes.dex */
+public final class C6619q0 implements android.os.Parcelable.Creator<p375v9.C6618q> {
+    public C6619q0() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final p375v9.C6618q createFromParcel(android.os.Parcel r6) {
+            r5 = this;
+            int r0 = p270p6.C5368b.m11710t(r6)
+            r1 = 0
+        L5:
+            int r2 = r6.dataPosition()
+            if (r2 >= r0) goto L1f
+            int r2 = r6.readInt()
+            r3 = 65535(0xffff, float:9.1834E-41)
+            r3 = r3 & r2
+            r4 = 1
+            if (r3 == r4) goto L1a
+            p270p6.C5368b.m11709s(r6, r2)
+            goto L5
+        L1a:
+            java.lang.String r1 = p270p6.C5368b.m11695e(r6, r2)
+            goto L5
+        L1f:
+            p270p6.C5368b.m11699i(r6, r0)
+            v9.q r6 = new v9.q
+            r6.<init>(r1)
+            return r6
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ p375v9.C6618q[] newArray(int r1) {
+            r0 = this;
+            v9.q[] r1 = new p375v9.C6618q[r1]
+            return r1
+    }
+}
+package p375v9;
+
+/* renamed from: v9.r */
+/* loaded from: classes.dex */
+public class C6620r extends p375v9.AbstractC6590c {
+    public static final android.os.Parcelable.Creator<p375v9.C6620r> CREATOR = null;
+
+    /* renamed from: Y */
+    public final java.lang.String f25795Y;
+
+    /* renamed from: Z */
+    public final java.lang.String f25796Z;
+
+    static {
+            v9.b0 r0 = new v9.b0
+            r0.<init>()
+            p375v9.C6620r.CREATOR = r0
+            return
+    }
+
+    public C6620r(java.lang.String r2, java.lang.String r3) {
+            r1 = this;
+            r0 = 0
+            r1.<init>(r0)
+            if (r2 != 0) goto L11
+            if (r3 == 0) goto L9
+            goto L11
+        L9:
+            java.lang.IllegalArgumentException r2 = new java.lang.IllegalArgumentException
+            java.lang.String r3 = "Must specify an idToken or an accessToken."
+            r2.<init>(r3)
+            throw r2
+        L11:
+            if (r2 == 0) goto L22
+            int r0 = r2.length()
+            if (r0 == 0) goto L1a
+            goto L22
+        L1a:
+            java.lang.IllegalArgumentException r2 = new java.lang.IllegalArgumentException
+            java.lang.String r3 = "idToken cannot be empty"
+            r2.<init>(r3)
+            throw r2
+        L22:
+            if (r3 == 0) goto L33
+            int r0 = r3.length()
+            if (r0 == 0) goto L2b
+            goto L33
+        L2b:
+            java.lang.IllegalArgumentException r2 = new java.lang.IllegalArgumentException
+            java.lang.String r3 = "accessToken cannot be empty"
+            r2.<init>(r3)
+            throw r2
+        L33:
+            r1.f25795Y = r2
+            r1.f25796Z = r3
+            return
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(android.os.Parcel r4, int r5) {
+            r3 = this;
+            r5 = 20293(0x4f45, float:2.8437E-41)
+            int r5 = p270p6.C5369c.m11723k(r4, r5)
+            r0 = 1
+            java.lang.String r1 = r3.f25795Y
+            r2 = 0
+            p270p6.C5369c.m11719g(r4, r0, r1, r2)
+            r0 = 2
+            java.lang.String r1 = r3.f25796Z
+            p270p6.C5369c.m11719g(r4, r0, r1, r2)
+            p270p6.C5369c.m11726n(r4, r5)
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.v */
+/* loaded from: classes.dex */
+public class C6624v extends p375v9.AbstractC6590c implements java.lang.Cloneable {
+    public static final android.os.Parcelable.Creator<p375v9.C6624v> CREATOR = null;
+
+    /* renamed from: Y */
+    public java.lang.String f25797Y;
+
+    /* renamed from: Z */
+    public java.lang.String f25798Z;
+
+    /* renamed from: a0 */
+    public boolean f25799a0;
+
+    /* renamed from: b0 */
+    public java.lang.String f25800b0;
+
+    /* renamed from: c0 */
+    public boolean f25801c0;
+
+    /* renamed from: d0 */
+    public java.lang.String f25802d0;
+
+    /* renamed from: e0 */
+    public java.lang.String f25803e0;
+
+    static {
+            v9.c0 r0 = new v9.c0
+            r0.<init>()
+            p375v9.C6624v.CREATOR = r0
+            return
+    }
+
+    public C6624v(java.lang.String r4, java.lang.String r5, boolean r6, java.lang.String r7, boolean r8, java.lang.String r9, java.lang.String r10) {
+            r3 = this;
+            r0 = 0
+            r3.<init>(r0)
+            r1 = 1
+            if (r6 == 0) goto L16
+            boolean r2 = android.text.TextUtils.isEmpty(r7)
+            if (r2 != 0) goto L16
+            boolean r2 = android.text.TextUtils.isEmpty(r10)
+            if (r2 != 0) goto L14
+            goto L16
+        L14:
+            r0 = 1
+            goto L3d
+        L16:
+            if (r6 == 0) goto L24
+            boolean r2 = android.text.TextUtils.isEmpty(r7)
+            if (r2 == 0) goto L24
+            boolean r2 = android.text.TextUtils.isEmpty(r10)
+            if (r2 == 0) goto L14
+        L24:
+            boolean r2 = android.text.TextUtils.isEmpty(r4)
+            if (r2 != 0) goto L30
+            boolean r2 = android.text.TextUtils.isEmpty(r5)
+            if (r2 == 0) goto L14
+        L30:
+            boolean r2 = android.text.TextUtils.isEmpty(r7)
+            if (r2 != 0) goto L3d
+            boolean r2 = android.text.TextUtils.isEmpty(r9)
+            if (r2 != 0) goto L3d
+            goto L14
+        L3d:
+            java.lang.String r1 = "Cannot create PhoneAuthCredential without either verificationProof, sessionInfo, temporary proof, or enrollment ID."
+            com.google.android.gms.common.internal.C1101a.m3097b(r0, r1)
+            r3.f25797Y = r4
+            r3.f25798Z = r5
+            r3.f25799a0 = r6
+            r3.f25800b0 = r7
+            r3.f25801c0 = r8
+            r3.f25802d0 = r9
+            r3.f25803e0 = r10
+            return
+    }
+
+    /* renamed from: Y */
+    public static p375v9.C6624v m13477Y(java.lang.String r9, java.lang.String r10) {
+            v9.v r8 = new v9.v
+            r3 = 0
+            r4 = 0
+            r5 = 1
+            r6 = 0
+            r7 = 0
+            r0 = r8
+            r1 = r9
+            r2 = r10
+            r0.<init>(r1, r2, r3, r4, r5, r6, r7)
+            return r8
+    }
+
+    /* renamed from: X */
+    public final p375v9.C6624v m13478X() {
+            r9 = this;
+            v9.v r8 = new v9.v
+            java.lang.String r1 = r9.f25797Y
+            java.lang.String r2 = r9.f25798Z
+            boolean r3 = r9.f25799a0
+            java.lang.String r4 = r9.f25800b0
+            boolean r5 = r9.f25801c0
+            java.lang.String r6 = r9.f25802d0
+            java.lang.String r7 = r9.f25803e0
+            r0 = r8
+            r0.<init>(r1, r2, r3, r4, r5, r6, r7)
+            return r8
+    }
+
+    public final /* bridge */ /* synthetic */ java.lang.Object clone() {
+            r1 = this;
+            v9.v r0 = r1.m13478X()
+            return r0
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(android.os.Parcel r5, int r6) {
+            r4 = this;
+            r6 = 20293(0x4f45, float:2.8437E-41)
+            int r6 = p270p6.C5369c.m11723k(r5, r6)
+            r0 = 1
+            java.lang.String r1 = r4.f25797Y
+            r2 = 0
+            p270p6.C5369c.m11719g(r5, r0, r1, r2)
+            r0 = 2
+            java.lang.String r1 = r4.f25798Z
+            p270p6.C5369c.m11719g(r5, r0, r1, r2)
+            r0 = 3
+            boolean r1 = r4.f25799a0
+            r3 = 4
+            p270p6.C5369c.m11724l(r5, r0, r3)
+            r5.writeInt(r1)
+            java.lang.String r0 = r4.f25800b0
+            p270p6.C5369c.m11719g(r5, r3, r0, r2)
+            r0 = 5
+            boolean r1 = r4.f25801c0
+            p270p6.C5369c.m11724l(r5, r0, r3)
+            r5.writeInt(r1)
+            r0 = 6
+            java.lang.String r1 = r4.f25802d0
+            p270p6.C5369c.m11719g(r5, r0, r1, r2)
+            r0 = 7
+            java.lang.String r1 = r4.f25803e0
+            p270p6.C5369c.m11719g(r5, r0, r1, r2)
+            p270p6.C5369c.m11726n(r5, r6)
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.w */
+/* loaded from: classes.dex */
+public class C6625w extends p375v9.AbstractC6621s {
+    public static final android.os.Parcelable.Creator<p375v9.C6625w> CREATOR = null;
+
+    /* renamed from: Y */
+    public final java.lang.String f25804Y;
+
+    /* renamed from: Z */
+    public final java.lang.String f25805Z;
+
+    /* renamed from: a0 */
+    public final long f25806a0;
+
+    /* renamed from: b0 */
+    public final java.lang.String f25807b0;
+
+    static {
+            v9.d0 r0 = new v9.d0
+            r0.<init>()
+            p375v9.C6625w.CREATOR = r0
+            return
+    }
+
+    public C6625w(java.lang.String r1, java.lang.String r2, long r3, java.lang.String r5) {
+            r0 = this;
+            r0.<init>()
+            com.google.android.gms.common.internal.C1101a.m3100e(r1)
+            r0.f25804Y = r1
+            r0.f25805Z = r2
+            r0.f25806a0 = r3
+            com.google.android.gms.common.internal.C1101a.m3100e(r5)
+            r0.f25807b0 = r5
+            return
+    }
+
+    @Override // p375v9.AbstractC6621s
+    /* renamed from: X */
+    public org.json.JSONObject mo13476X() {
+            r4 = this;
+            org.json.JSONObject r0 = new org.json.JSONObject
+            r0.<init>()
+            java.lang.String r1 = "factorIdKey"
+            java.lang.String r2 = "phone"
+            r0.putOpt(r1, r2)     // Catch: org.json.JSONException -> L2d
+            java.lang.String r1 = "uid"
+            java.lang.String r2 = r4.f25804Y     // Catch: org.json.JSONException -> L2d
+            r0.putOpt(r1, r2)     // Catch: org.json.JSONException -> L2d
+            java.lang.String r1 = "displayName"
+            java.lang.String r2 = r4.f25805Z     // Catch: org.json.JSONException -> L2d
+            r0.putOpt(r1, r2)     // Catch: org.json.JSONException -> L2d
+            java.lang.String r1 = "enrollmentTimestamp"
+            long r2 = r4.f25806a0     // Catch: org.json.JSONException -> L2d
+            java.lang.Long r2 = java.lang.Long.valueOf(r2)     // Catch: org.json.JSONException -> L2d
+            r0.putOpt(r1, r2)     // Catch: org.json.JSONException -> L2d
+            java.lang.String r1 = "phoneNumber"
+            java.lang.String r2 = r4.f25807b0     // Catch: org.json.JSONException -> L2d
+            r0.putOpt(r1, r2)     // Catch: org.json.JSONException -> L2d
+            return r0
+        L2d:
+            r0 = move-exception
+            java.lang.String r1 = "PhoneMultiFactorInfo"
+            java.lang.String r2 = "Failed to jsonify this object"
+            android.util.Log.d(r1, r2)
+            h7.g8 r1 = new h7.g8
+            r1.<init>(r0)
+            throw r1
+    }
+
+    @Override // android.os.Parcelable
+    @android.annotation.SuppressLint({"FirebaseUnknownNullness"})
+    public void writeToParcel(android.os.Parcel r6, int r7) {
+            r5 = this;
+            r7 = 20293(0x4f45, float:2.8437E-41)
+            int r7 = p270p6.C5369c.m11723k(r6, r7)
+            java.lang.String r0 = r5.f25804Y
+            r1 = 1
+            r2 = 0
+            p270p6.C5369c.m11719g(r6, r1, r0, r2)
+            java.lang.String r0 = r5.f25805Z
+            r1 = 2
+            p270p6.C5369c.m11719g(r6, r1, r0, r2)
+            long r0 = r5.f25806a0
+            r3 = 3
+            r4 = 8
+            p270p6.C5369c.m11724l(r6, r3, r4)
+            r6.writeLong(r0)
+            java.lang.String r0 = r5.f25807b0
+            r1 = 4
+            p270p6.C5369c.m11719g(r6, r1, r0, r2)
+            p270p6.C5369c.m11726n(r6, r7)
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.x */
+/* loaded from: classes.dex */
+public class C6626x extends p375v9.AbstractC6590c {
+    public static final android.os.Parcelable.Creator<p375v9.C6626x> CREATOR = null;
+
+    /* renamed from: Y */
+    public final java.lang.String f25808Y;
+
+    static {
+            v9.e0 r0 = new v9.e0
+            r0.<init>()
+            p375v9.C6626x.CREATOR = r0
+            return
+    }
+
+    public C6626x(java.lang.String r2) {
+            r1 = this;
+            r0 = 0
+            r1.<init>(r0)
+            com.google.android.gms.common.internal.C1101a.m3100e(r2)
+            r1.f25808Y = r2
+            return
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(android.os.Parcel r4, int r5) {
+            r3 = this;
+            r5 = 20293(0x4f45, float:2.8437E-41)
+            int r5 = p270p6.C5369c.m11723k(r4, r5)
+            r0 = 1
+            java.lang.String r1 = r3.f25808Y
+            r2 = 0
+            p270p6.C5369c.m11719g(r4, r0, r1, r2)
+            p270p6.C5369c.m11726n(r4, r5)
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.y */
+/* loaded from: classes.dex */
+public class C6627y extends p375v9.AbstractC6590c {
+    public static final android.os.Parcelable.Creator<p375v9.C6627y> CREATOR = null;
+
+    /* renamed from: Y */
+    public java.lang.String f25809Y;
+
+    /* renamed from: Z */
+    public java.lang.String f25810Z;
+
+    static {
+            v9.f0 r0 = new v9.f0
+            r0.<init>()
+            p375v9.C6627y.CREATOR = r0
+            return
+    }
+
+    public C6627y(java.lang.String r2, java.lang.String r3) {
+            r1 = this;
+            r0 = 0
+            r1.<init>(r0)
+            com.google.android.gms.common.internal.C1101a.m3100e(r2)
+            r1.f25809Y = r2
+            com.google.android.gms.common.internal.C1101a.m3100e(r3)
+            r1.f25810Z = r3
+            return
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(android.os.Parcel r4, int r5) {
+            r3 = this;
+            r5 = 20293(0x4f45, float:2.8437E-41)
+            int r5 = p270p6.C5369c.m11723k(r4, r5)
+            r0 = 1
+            java.lang.String r1 = r3.f25809Y
+            r2 = 0
+            p270p6.C5369c.m11719g(r4, r0, r1, r2)
+            r0 = 2
+            java.lang.String r1 = r3.f25810Z
+            p270p6.C5369c.m11719g(r4, r0, r1, r2)
+            p270p6.C5369c.m11726n(r4, r5)
+            return
+    }
+}
+package p375v9;
+
+/* renamed from: v9.d */
+/* loaded from: classes.dex */
+public interface InterfaceC6592d extends p270p6.InterfaceC5370d {
+    /* renamed from: H */
+    p375v9.AbstractC6614o mo13457H();
+}
+package p375v9;
+
+/* renamed from: v9.z */
+/* loaded from: classes.dex */
+public interface InterfaceC6628z {
+    /* renamed from: T */
+    java.lang.String mo13479T();
+}

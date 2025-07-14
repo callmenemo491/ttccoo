@@ -1,0 +1,667 @@
+package p353u6;
+
+/* renamed from: u6.a */
+/* loaded from: classes.dex */
+public class C6338a {
+    @androidx.annotation.RecentlyNullable
+    @java.lang.Deprecated
+    /* renamed from: a */
+    public static byte[] m12988a(@androidx.annotation.RecentlyNonNull android.content.Context r1, @androidx.annotation.RecentlyNonNull java.lang.String r2) {
+            w6.b r1 = p388w6.C6816c.m13887a(r1)
+            android.content.Context r1 = r1.f26525a
+            android.content.pm.PackageManager r1 = r1.getPackageManager()
+            r0 = 64
+            android.content.pm.PackageInfo r1 = r1.getPackageInfo(r2, r0)
+            android.content.pm.Signature[] r2 = r1.signatures
+            if (r2 == 0) goto L2e
+            int r2 = r2.length
+            r0 = 1
+            if (r2 != r0) goto L2e
+            java.lang.String r2 = "SHA1"
+            java.security.MessageDigest r2 = m12989b(r2)
+            if (r2 == 0) goto L2e
+            android.content.pm.Signature[] r1 = r1.signatures
+            r0 = 0
+            r1 = r1[r0]
+            byte[] r1 = r1.toByteArray()
+            byte[] r1 = r2.digest(r1)
+            return r1
+        L2e:
+            r1 = 0
+            return r1
+    }
+
+    @androidx.annotation.RecentlyNullable
+    /* renamed from: b */
+    public static java.security.MessageDigest m12989b(@androidx.annotation.RecentlyNonNull java.lang.String r2) {
+            r0 = 0
+        L1:
+            r1 = 2
+            if (r0 >= r1) goto Le
+            java.security.MessageDigest r1 = java.security.MessageDigest.getInstance(r2)     // Catch: java.security.NoSuchAlgorithmException -> Lb
+            if (r1 == 0) goto Lb
+            return r1
+        Lb:
+            int r0 = r0 + 1
+            goto L1
+        Le:
+            r2 = 0
+            return r2
+    }
+}
+package p353u6;
+
+/* renamed from: u6.d */
+/* loaded from: classes.dex */
+public class C6341d implements p353u6.InterfaceC6340c {
+
+    /* renamed from: a */
+    public static final p353u6.C6341d f24789a = null;
+
+    static {
+            u6.d r0 = new u6.d
+            r0.<init>()
+            p353u6.C6341d.f24789a = r0
+            return
+    }
+
+    public C6341d() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    /* renamed from: a */
+    public long m12990a() {
+            r2 = this;
+            long r0 = java.lang.System.currentTimeMillis()
+            return r0
+    }
+}
+package p353u6;
+
+/* renamed from: u6.e */
+/* loaded from: classes.dex */
+public final class C6342e {
+
+    /* renamed from: a */
+    public static java.lang.Boolean f24790a;
+
+    /* renamed from: b */
+    public static java.lang.Boolean f24791b;
+
+    /* renamed from: c */
+    public static java.lang.Boolean f24792c;
+
+    /* renamed from: d */
+    public static java.lang.Boolean f24793d;
+
+    @android.annotation.TargetApi(20)
+    /* renamed from: a */
+    public static boolean m12991a(@androidx.annotation.RecentlyNonNull android.content.Context r1) {
+            android.content.pm.PackageManager r1 = r1.getPackageManager()
+            java.lang.Boolean r0 = p353u6.C6342e.f24790a
+            if (r0 != 0) goto L14
+            java.lang.String r0 = "android.hardware.type.watch"
+            boolean r1 = r1.hasSystemFeature(r0)
+            java.lang.Boolean r1 = java.lang.Boolean.valueOf(r1)
+            p353u6.C6342e.f24790a = r1
+        L14:
+            java.lang.Boolean r1 = p353u6.C6342e.f24790a
+            boolean r1 = r1.booleanValue()
+            return r1
+    }
+
+    @android.annotation.TargetApi(26)
+    /* renamed from: b */
+    public static boolean m12992b(@androidx.annotation.RecentlyNonNull android.content.Context r4) {
+            boolean r0 = m12991a(r4)
+            r1 = 0
+            if (r0 == 0) goto L36
+            int r0 = android.os.Build.VERSION.SDK_INT
+            r2 = 24
+            r3 = 1
+            if (r0 < r2) goto L10
+            r0 = 1
+            goto L11
+        L10:
+            r0 = 0
+        L11:
+            if (r0 == 0) goto L35
+            java.lang.Boolean r0 = p353u6.C6342e.f24791b
+            if (r0 != 0) goto L27
+            android.content.pm.PackageManager r4 = r4.getPackageManager()
+            java.lang.String r0 = "cn.google"
+            boolean r4 = r4.hasSystemFeature(r0)
+            java.lang.Boolean r4 = java.lang.Boolean.valueOf(r4)
+            p353u6.C6342e.f24791b = r4
+        L27:
+            java.lang.Boolean r4 = p353u6.C6342e.f24791b
+            boolean r4 = r4.booleanValue()
+            if (r4 == 0) goto L36
+            boolean r4 = p353u6.C6345h.m12995a()
+            if (r4 != 0) goto L36
+        L35:
+            return r3
+        L36:
+            return r1
+    }
+}
+package p353u6;
+
+/* renamed from: u6.f */
+/* loaded from: classes.dex */
+public class C6343f {
+
+    /* renamed from: a */
+    public static final char[] f24794a = null;
+
+    /* renamed from: b */
+    public static final char[] f24795b = null;
+
+    static {
+            r0 = 16
+            char[] r1 = new char[r0]
+            r1 = {x0012: FILL_ARRAY_DATA , data: [48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 65, 66, 67, 68, 69, 70} // fill-array
+            p353u6.C6343f.f24794a = r1
+            char[] r0 = new char[r0]
+            r0 = {x0026: FILL_ARRAY_DATA , data: [48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 97, 98, 99, 100, 101, 102} // fill-array
+            p353u6.C6343f.f24795b = r0
+            return
+    }
+
+    @androidx.annotation.RecentlyNonNull
+    /* renamed from: a */
+    public static java.lang.String m12993a(@androidx.annotation.RecentlyNonNull byte[] r5, boolean r6) {
+            int r0 = r5.length
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            int r2 = r0 << 1
+            r1.<init>(r2)
+            r2 = 0
+        L9:
+            if (r2 >= r0) goto L30
+            if (r6 == 0) goto L17
+            int r3 = r0 + (-1)
+            if (r2 != r3) goto L17
+            r3 = r5[r2]
+            r3 = r3 & 255(0xff, float:3.57E-43)
+            if (r3 == 0) goto L30
+        L17:
+            char[] r3 = p353u6.C6343f.f24794a
+            r4 = r5[r2]
+            r4 = r4 & 240(0xf0, float:3.36E-43)
+            int r4 = r4 >>> 4
+            char r4 = r3[r4]
+            r1.append(r4)
+            r4 = r5[r2]
+            r4 = r4 & 15
+            char r3 = r3[r4]
+            r1.append(r3)
+            int r2 = r2 + 1
+            goto L9
+        L30:
+            java.lang.String r5 = r1.toString()
+            return r5
+    }
+}
+package p353u6;
+
+/* renamed from: u6.g */
+/* loaded from: classes.dex */
+public final class C6344g {
+    static {
+            java.lang.String r0 = "\\\\."
+            java.util.regex.Pattern.compile(r0)
+            java.lang.String r0 = "[\\\\\"/\b\f\n\r\t]"
+            java.util.regex.Pattern.compile(r0)
+            return
+    }
+
+    /* renamed from: a */
+    public static boolean m12994a(java.lang.Object r5, java.lang.Object r6) {
+            r0 = 1
+            if (r5 != 0) goto L6
+            if (r6 != 0) goto L6
+            return r0
+        L6:
+            r1 = 0
+            if (r5 == 0) goto L87
+            if (r6 != 0) goto Ld
+            goto L87
+        Ld:
+            boolean r2 = r5 instanceof org.json.JSONObject
+            if (r2 == 0) goto L50
+            boolean r2 = r6 instanceof org.json.JSONObject
+            if (r2 == 0) goto L50
+            org.json.JSONObject r5 = (org.json.JSONObject) r5
+            org.json.JSONObject r6 = (org.json.JSONObject) r6
+            int r2 = r5.length()
+            int r3 = r6.length()
+            if (r2 == r3) goto L24
+            return r1
+        L24:
+            java.util.Iterator r2 = r5.keys()
+        L28:
+            boolean r3 = r2.hasNext()
+            if (r3 == 0) goto L4f
+            java.lang.Object r3 = r2.next()
+            java.lang.String r3 = (java.lang.String) r3
+            boolean r4 = r6.has(r3)
+            if (r4 != 0) goto L3b
+            return r1
+        L3b:
+            java.lang.String r4 = "null reference"
+            java.util.Objects.requireNonNull(r3, r4)     // Catch: org.json.JSONException -> L4e
+            java.lang.Object r4 = r5.get(r3)     // Catch: org.json.JSONException -> L4e
+            java.lang.Object r3 = r6.get(r3)     // Catch: org.json.JSONException -> L4e
+            boolean r3 = m12994a(r4, r3)     // Catch: org.json.JSONException -> L4e
+            if (r3 != 0) goto L28
+        L4e:
+            return r1
+        L4f:
+            return r0
+        L50:
+            boolean r2 = r5 instanceof org.json.JSONArray
+            if (r2 == 0) goto L82
+            boolean r2 = r6 instanceof org.json.JSONArray
+            if (r2 == 0) goto L82
+            org.json.JSONArray r5 = (org.json.JSONArray) r5
+            org.json.JSONArray r6 = (org.json.JSONArray) r6
+            int r2 = r5.length()
+            int r3 = r6.length()
+            if (r2 == r3) goto L67
+            return r1
+        L67:
+            r2 = 0
+        L68:
+            int r3 = r5.length()
+            if (r2 >= r3) goto L81
+            java.lang.Object r3 = r5.get(r2)     // Catch: org.json.JSONException -> L80
+            java.lang.Object r4 = r6.get(r2)     // Catch: org.json.JSONException -> L80
+            boolean r3 = m12994a(r3, r4)     // Catch: org.json.JSONException -> L80
+            if (r3 != 0) goto L7d
+            return r1
+        L7d:
+            int r2 = r2 + 1
+            goto L68
+        L80:
+            return r1
+        L81:
+            return r0
+        L82:
+            boolean r5 = r5.equals(r6)
+            return r5
+        L87:
+            return r1
+    }
+}
+package p353u6;
+
+/* renamed from: u6.h */
+/* loaded from: classes.dex */
+public final class C6345h {
+
+    /* renamed from: a */
+    public static java.lang.Boolean f24796a;
+
+    /* renamed from: a */
+    public static boolean m12995a() {
+            int r0 = android.os.Build.VERSION.SDK_INT
+            r1 = 26
+            if (r0 < r1) goto L8
+            r0 = 1
+            return r0
+        L8:
+            r0 = 0
+            return r0
+    }
+}
+package p353u6;
+
+/* renamed from: u6.i */
+/* loaded from: classes.dex */
+public class C6346i {
+
+    /* renamed from: a */
+    public static java.lang.String f24797a;
+
+    /* renamed from: b */
+    public static int f24798b;
+
+    @androidx.annotation.RecentlyNullable
+    /* renamed from: a */
+    public static java.lang.String m12996a() {
+            java.lang.String r0 = p353u6.C6346i.f24797a
+            if (r0 != 0) goto L57
+            int r0 = p353u6.C6346i.f24798b
+            if (r0 != 0) goto Le
+            int r0 = android.os.Process.myPid()
+            p353u6.C6346i.f24798b = r0
+        Le:
+            int r0 = p353u6.C6346i.f24798b
+            r1 = 0
+            if (r0 > 0) goto L14
+            goto L55
+        L14:
+            r2 = 25
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L48 java.io.IOException -> L4f
+            r3.<init>(r2)     // Catch: java.lang.Throwable -> L48 java.io.IOException -> L4f
+            java.lang.String r2 = "/proc/"
+            r3.append(r2)     // Catch: java.lang.Throwable -> L48 java.io.IOException -> L4f
+            r3.append(r0)     // Catch: java.lang.Throwable -> L48 java.io.IOException -> L4f
+            java.lang.String r0 = "/cmdline"
+            r3.append(r0)     // Catch: java.lang.Throwable -> L48 java.io.IOException -> L4f
+            java.lang.String r0 = r3.toString()     // Catch: java.lang.Throwable -> L48 java.io.IOException -> L4f
+            java.io.BufferedReader r0 = m12997b(r0)     // Catch: java.lang.Throwable -> L48 java.io.IOException -> L4f
+            java.lang.String r2 = r0.readLine()     // Catch: java.lang.Throwable -> L41 java.io.IOException -> L46
+            java.lang.String r3 = "null reference"
+            java.util.Objects.requireNonNull(r2, r3)     // Catch: java.lang.Throwable -> L41 java.io.IOException -> L46
+            java.lang.String r1 = r2.trim()     // Catch: java.lang.Throwable -> L41 java.io.IOException -> L46
+            r0.close()     // Catch: java.io.IOException -> L55
+            goto L55
+        L41:
+            r1 = move-exception
+            r4 = r1
+            r1 = r0
+            r0 = r4
+            goto L49
+        L46:
+            goto L50
+        L48:
+            r0 = move-exception
+        L49:
+            if (r1 == 0) goto L4e
+            r1.close()     // Catch: java.io.IOException -> L4e
+        L4e:
+            throw r0
+        L4f:
+            r0 = r1
+        L50:
+            if (r0 == 0) goto L55
+            r0.close()     // Catch: java.io.IOException -> L55
+        L55:
+            p353u6.C6346i.f24797a = r1
+        L57:
+            java.lang.String r0 = p353u6.C6346i.f24797a
+            return r0
+    }
+
+    /* renamed from: b */
+    public static java.io.BufferedReader m12997b(java.lang.String r3) {
+            android.os.StrictMode$ThreadPolicy r0 = android.os.StrictMode.allowThreadDiskReads()
+            java.io.BufferedReader r1 = new java.io.BufferedReader     // Catch: java.lang.Throwable -> L12
+            java.io.FileReader r2 = new java.io.FileReader     // Catch: java.lang.Throwable -> L12
+            r2.<init>(r3)     // Catch: java.lang.Throwable -> L12
+            r1.<init>(r2)     // Catch: java.lang.Throwable -> L12
+            android.os.StrictMode.setThreadPolicy(r0)
+            return r1
+        L12:
+            r3 = move-exception
+            android.os.StrictMode.setThreadPolicy(r0)
+            throw r3
+    }
+}
+package p353u6;
+
+/* renamed from: u6.j */
+/* loaded from: classes.dex */
+public class C6347j {
+    static {
+            java.lang.String r0 = "\\$\\{(.*?)\\}"
+            java.util.regex.Pattern.compile(r0)
+            return
+    }
+
+    @androidx.annotation.RecentlyNullable
+    /* renamed from: a */
+    public static java.lang.String m12998a(java.lang.String r1) {
+            boolean r0 = android.text.TextUtils.isEmpty(r1)
+            if (r0 == 0) goto L7
+            r1 = 0
+        L7:
+            return r1
+    }
+
+    /* renamed from: b */
+    public static boolean m12999b(java.lang.String r0) {
+            if (r0 == 0) goto Lf
+            java.lang.String r0 = r0.trim()
+            boolean r0 = r0.isEmpty()
+            if (r0 == 0) goto Ld
+            goto Lf
+        Ld:
+            r0 = 0
+            return r0
+        Lf:
+            r0 = 1
+            return r0
+    }
+}
+package p353u6;
+
+/* renamed from: u6.k */
+/* loaded from: classes.dex */
+public final class C6348k {
+    /* renamed from: a */
+    public static boolean m13000a(@androidx.annotation.RecentlyNonNull android.content.Context r3, int r4) {
+            java.lang.String r0 = "com.google.android.gms"
+            boolean r4 = m13001b(r3, r4, r0)
+            r1 = 0
+            if (r4 != 0) goto La
+            return r1
+        La:
+            android.content.pm.PackageManager r4 = r3.getPackageManager()
+            r2 = 64
+            android.content.pm.PackageInfo r4 = r4.getPackageInfo(r0, r2)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L3e
+            k6.i r3 = p184k6.C3706i.m8168a(r3)
+            java.util.Objects.requireNonNull(r3)
+            if (r4 != 0) goto L1e
+            goto L3d
+        L1e:
+            boolean r0 = p184k6.C3706i.m8170d(r4, r1)
+            r2 = 1
+            if (r0 == 0) goto L27
+        L25:
+            r1 = 1
+            goto L3d
+        L27:
+            boolean r4 = p184k6.C3706i.m8170d(r4, r2)
+            if (r4 == 0) goto L3d
+            android.content.Context r3 = r3.f16416a
+            boolean r3 = p184k6.C3705h.m8167a(r3)
+            if (r3 == 0) goto L36
+            goto L25
+        L36:
+            java.lang.String r3 = "GoogleSignatureVerifier"
+            java.lang.String r4 = "Test-keys aren't accepted on this build."
+            android.util.Log.w(r3, r4)
+        L3d:
+            return r1
+        L3e:
+            r3 = 3
+            java.lang.String r4 = "UidVerifier"
+            boolean r3 = android.util.Log.isLoggable(r4, r3)
+            if (r3 == 0) goto L4c
+            java.lang.String r3 = "Package manager can't find google play services package, defaulting to false"
+            android.util.Log.d(r4, r3)
+        L4c:
+            return r1
+    }
+
+    @android.annotation.TargetApi(19)
+    /* renamed from: b */
+    public static boolean m13001b(@androidx.annotation.RecentlyNonNull android.content.Context r1, int r2, @androidx.annotation.RecentlyNonNull java.lang.String r3) {
+            w6.b r1 = p388w6.C6816c.m13887a(r1)
+            java.util.Objects.requireNonNull(r1)
+            android.content.Context r1 = r1.f26525a     // Catch: java.lang.SecurityException -> L20
+            java.lang.String r0 = "appops"
+            java.lang.Object r1 = r1.getSystemService(r0)     // Catch: java.lang.SecurityException -> L20
+            android.app.AppOpsManager r1 = (android.app.AppOpsManager) r1     // Catch: java.lang.SecurityException -> L20
+            if (r1 == 0) goto L18
+            r1.checkPackage(r2, r3)     // Catch: java.lang.SecurityException -> L20
+            r1 = 1
+            goto L21
+        L18:
+            java.lang.NullPointerException r1 = new java.lang.NullPointerException     // Catch: java.lang.SecurityException -> L20
+            java.lang.String r2 = "context.getSystemService(Context.APP_OPS_SERVICE) is null"
+            r1.<init>(r2)     // Catch: java.lang.SecurityException -> L20
+            throw r1     // Catch: java.lang.SecurityException -> L20
+        L20:
+            r1 = 0
+        L21:
+            return r1
+    }
+}
+package p353u6;
+
+/* renamed from: u6.l */
+/* loaded from: classes.dex */
+public class C6349l {
+
+    /* renamed from: a */
+    public static final java.lang.reflect.Method f24799a = null;
+
+    /* renamed from: b */
+    public static final java.lang.reflect.Method f24800b = null;
+
+    /* renamed from: c */
+    public static final java.lang.reflect.Method f24801c = null;
+
+    /* renamed from: d */
+    public static final java.lang.reflect.Method f24802d = null;
+
+    static {
+            java.lang.Class<java.lang.String> r0 = java.lang.String.class
+            java.lang.String r1 = "add"
+            android.os.Process.myUid()
+            r2 = 0
+            r3 = 1
+            r4 = 0
+            java.lang.Class<android.os.WorkSource> r5 = android.os.WorkSource.class
+            java.lang.Class[] r6 = new java.lang.Class[r3]     // Catch: java.lang.Exception -> L17
+            java.lang.Class r7 = java.lang.Integer.TYPE     // Catch: java.lang.Exception -> L17
+            r6[r4] = r7     // Catch: java.lang.Exception -> L17
+            java.lang.reflect.Method r5 = r5.getMethod(r1, r6)     // Catch: java.lang.Exception -> L17
+            goto L18
+        L17:
+            r5 = r2
+        L18:
+            p353u6.C6349l.f24799a = r5
+            r5 = 2
+            java.lang.Class<android.os.WorkSource> r6 = android.os.WorkSource.class
+            java.lang.Class[] r7 = new java.lang.Class[r5]     // Catch: java.lang.Exception -> L2a
+            java.lang.Class r8 = java.lang.Integer.TYPE     // Catch: java.lang.Exception -> L2a
+            r7[r4] = r8     // Catch: java.lang.Exception -> L2a
+            r7[r3] = r0     // Catch: java.lang.Exception -> L2a
+            java.lang.reflect.Method r1 = r6.getMethod(r1, r7)     // Catch: java.lang.Exception -> L2a
+            goto L2b
+        L2a:
+            r1 = r2
+        L2b:
+            p353u6.C6349l.f24800b = r1
+            java.lang.Class<android.os.WorkSource> r1 = android.os.WorkSource.class
+            java.lang.String r6 = "size"
+            java.lang.Class[] r7 = new java.lang.Class[r4]     // Catch: java.lang.Exception -> L38
+            java.lang.reflect.Method r1 = r1.getMethod(r6, r7)     // Catch: java.lang.Exception -> L38
+            goto L39
+        L38:
+            r1 = r2
+        L39:
+            p353u6.C6349l.f24801c = r1
+            java.lang.Class<android.os.WorkSource> r1 = android.os.WorkSource.class
+            java.lang.String r6 = "get"
+            java.lang.Class[] r7 = new java.lang.Class[r3]     // Catch: java.lang.Exception -> L48
+            java.lang.Class r8 = java.lang.Integer.TYPE     // Catch: java.lang.Exception -> L48
+            r7[r4] = r8     // Catch: java.lang.Exception -> L48
+            r1.getMethod(r6, r7)     // Catch: java.lang.Exception -> L48
+        L48:
+            java.lang.Class<android.os.WorkSource> r1 = android.os.WorkSource.class
+            java.lang.String r6 = "getName"
+            java.lang.Class[] r7 = new java.lang.Class[r3]     // Catch: java.lang.Exception -> L56
+            java.lang.Class r8 = java.lang.Integer.TYPE     // Catch: java.lang.Exception -> L56
+            r7[r4] = r8     // Catch: java.lang.Exception -> L56
+            java.lang.reflect.Method r2 = r1.getMethod(r6, r7)     // Catch: java.lang.Exception -> L56
+        L56:
+            p353u6.C6349l.f24802d = r2
+            int r1 = android.os.Build.VERSION.SDK_INT
+            r2 = 28
+            if (r1 < r2) goto L60
+            r1 = 1
+            goto L61
+        L60:
+            r1 = 0
+        L61:
+            java.lang.String r6 = "WorkSourceUtil"
+            if (r1 == 0) goto L75
+            java.lang.Class<android.os.WorkSource> r1 = android.os.WorkSource.class
+            java.lang.String r7 = "createWorkChain"
+            java.lang.Class[] r8 = new java.lang.Class[r4]     // Catch: java.lang.Exception -> L6f
+            r1.getMethod(r7, r8)     // Catch: java.lang.Exception -> L6f
+            goto L75
+        L6f:
+            r1 = move-exception
+            java.lang.String r7 = "Missing WorkChain API createWorkChain"
+            android.util.Log.w(r6, r7, r1)
+        L75:
+            int r1 = android.os.Build.VERSION.SDK_INT
+            if (r1 < r2) goto L7b
+            r1 = 1
+            goto L7c
+        L7b:
+            r1 = 0
+        L7c:
+            if (r1 == 0) goto L98
+            java.lang.String r1 = "android.os.WorkSource$WorkChain"
+            java.lang.Class r1 = java.lang.Class.forName(r1)     // Catch: java.lang.Exception -> L92
+            java.lang.String r2 = "addNode"
+            java.lang.Class[] r5 = new java.lang.Class[r5]     // Catch: java.lang.Exception -> L92
+            java.lang.Class r7 = java.lang.Integer.TYPE     // Catch: java.lang.Exception -> L92
+            r5[r4] = r7     // Catch: java.lang.Exception -> L92
+            r5[r3] = r0     // Catch: java.lang.Exception -> L92
+            r1.getMethod(r2, r5)     // Catch: java.lang.Exception -> L92
+            goto L98
+        L92:
+            r0 = move-exception
+            java.lang.String r1 = "Missing WorkChain class"
+            android.util.Log.w(r6, r1, r0)
+        L98:
+            return
+    }
+
+    /* renamed from: a */
+    public static boolean m13002a(@androidx.annotation.RecentlyNonNull android.content.Context r3) {
+            r0 = 0
+            if (r3 != 0) goto L4
+            return r0
+        L4:
+            android.content.pm.PackageManager r1 = r3.getPackageManager()
+            if (r1 != 0) goto Lb
+            return r0
+        Lb:
+            w6.b r1 = p388w6.C6816c.m13887a(r3)
+            java.lang.String r3 = r3.getPackageName()
+            android.content.Context r1 = r1.f26525a
+            android.content.pm.PackageManager r1 = r1.getPackageManager()
+            java.lang.String r2 = "android.permission.UPDATE_DEVICE_STATS"
+            int r3 = r1.checkPermission(r2, r3)
+            if (r3 != 0) goto L23
+            r3 = 1
+            return r3
+        L23:
+            return r0
+    }
+}
+package p353u6;
+
+/* renamed from: u6.b */
+/* loaded from: classes.dex */
+public interface InterfaceC6339b<T, U> {
+    /* renamed from: c */
+    void mo6077c(@androidx.annotation.RecentlyNonNull T r1, @androidx.annotation.RecentlyNonNull U r2);
+}
+package p353u6;
+
+/* renamed from: u6.c */
+/* loaded from: classes.dex */
+public interface InterfaceC6340c {
+}

@@ -1,0 +1,969 @@
+package p060df;
+
+/* renamed from: df.a */
+/* loaded from: classes.dex */
+public final class C1445a {
+
+    /* renamed from: a */
+    public final int f7166a;
+
+    /* renamed from: b */
+    public final int f7167b;
+
+    /* renamed from: c */
+    public final int f7168c;
+
+    /* renamed from: d */
+    public final double f7169d;
+
+    /* renamed from: e */
+    public final double f7170e;
+
+    /* renamed from: f */
+    public final double f7171f;
+
+    public C1445a() {
+            r11 = this;
+            r1 = 0
+            r2 = 0
+            r3 = 0
+            r4 = 0
+            r6 = 0
+            r8 = 0
+            r10 = 63
+            r0 = r11
+            r0.<init>(r1, r2, r3, r4, r6, r8, r10)
+            return
+    }
+
+    public C1445a(int r1, int r2, int r3, double r4, double r6, double r8) {
+            r0 = this;
+            r0.<init>()
+            r0.f7166a = r1
+            r0.f7167b = r2
+            r0.f7168c = r3
+            r0.f7169d = r4
+            r0.f7170e = r6
+            r0.f7171f = r8
+            return
+    }
+
+    public C1445a(int r4, int r5, int r6, double r7, double r9, double r11, int r13) {
+            r3 = this;
+            r0 = r13 & 1
+            r1 = 0
+            if (r0 == 0) goto L6
+            r4 = 0
+        L6:
+            r0 = r13 & 2
+            if (r0 == 0) goto Lb
+            r5 = 0
+        Lb:
+            r0 = r13 & 4
+            if (r0 == 0) goto L10
+            r6 = 0
+        L10:
+            r0 = r13 & 8
+            r1 = 0
+            if (r0 == 0) goto L17
+            r7 = r1
+        L17:
+            r0 = r13 & 16
+            if (r0 == 0) goto L1c
+            r9 = r1
+        L1c:
+            r13 = r13 & 32
+            if (r13 == 0) goto L21
+            r11 = r1
+        L21:
+            r3.<init>()
+            r3.f7166a = r4
+            r3.f7167b = r5
+            r3.f7168c = r6
+            r3.f7169d = r7
+            r3.f7170e = r9
+            r3.f7171f = r11
+            return
+    }
+
+    public boolean equals(java.lang.Object r6) {
+            r5 = this;
+            r0 = 1
+            if (r5 != r6) goto L4
+            return r0
+        L4:
+            boolean r1 = r6 instanceof p060df.C1445a
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            df.a r6 = (p060df.C1445a) r6
+            int r1 = r5.f7166a
+            int r3 = r6.f7166a
+            if (r1 == r3) goto L13
+            return r2
+        L13:
+            int r1 = r5.f7167b
+            int r3 = r6.f7167b
+            if (r1 == r3) goto L1a
+            return r2
+        L1a:
+            int r1 = r5.f7168c
+            int r3 = r6.f7168c
+            if (r1 == r3) goto L21
+            return r2
+        L21:
+            double r3 = r5.f7169d
+            java.lang.Double r1 = java.lang.Double.valueOf(r3)
+            double r3 = r6.f7169d
+            java.lang.Double r3 = java.lang.Double.valueOf(r3)
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L34
+            return r2
+        L34:
+            double r3 = r5.f7170e
+            java.lang.Double r1 = java.lang.Double.valueOf(r3)
+            double r3 = r6.f7170e
+            java.lang.Double r3 = java.lang.Double.valueOf(r3)
+            boolean r1 = p214m2.C4339q.m9702c(r1, r3)
+            if (r1 != 0) goto L47
+            return r2
+        L47:
+            double r3 = r5.f7171f
+            java.lang.Double r1 = java.lang.Double.valueOf(r3)
+            double r3 = r6.f7171f
+            java.lang.Double r6 = java.lang.Double.valueOf(r3)
+            boolean r6 = p214m2.C4339q.m9702c(r1, r6)
+            if (r6 != 0) goto L5a
+            return r2
+        L5a:
+            return r0
+    }
+
+    public int hashCode() {
+            r6 = this;
+            int r0 = r6.f7166a
+            int r0 = r0 * 31
+            int r1 = r6.f7167b
+            int r0 = r0 + r1
+            int r0 = r0 * 31
+            int r1 = r6.f7168c
+            int r0 = r0 + r1
+            int r0 = r0 * 31
+            double r1 = r6.f7169d
+            long r1 = java.lang.Double.doubleToLongBits(r1)
+            r3 = 32
+            long r4 = r1 >>> r3
+            long r1 = r1 ^ r4
+            int r2 = (int) r1
+            int r0 = r0 + r2
+            int r0 = r0 * 31
+            double r1 = r6.f7170e
+            long r1 = java.lang.Double.doubleToLongBits(r1)
+            long r4 = r1 >>> r3
+            long r1 = r1 ^ r4
+            int r2 = (int) r1
+            int r0 = r0 + r2
+            int r0 = r0 * 31
+            double r1 = r6.f7171f
+            long r1 = java.lang.Double.doubleToLongBits(r1)
+            long r3 = r1 >>> r3
+            long r1 = r1 ^ r3
+            int r2 = (int) r1
+            int r0 = r0 + r2
+            return r0
+    }
+
+    public java.lang.String toString() {
+            r3 = this;
+            java.lang.String r0 = "CenturyTrainClaim(locomotiveCount="
+            java.lang.StringBuilder r0 = android.support.v4.media.C0144c.m256a(r0)
+            int r1 = r3.f7166a
+            r0.append(r1)
+            java.lang.String r1 = ", conductorCount="
+            r0.append(r1)
+            int r1 = r3.f7167b
+            r0.append(r1)
+            java.lang.String r1 = ", railcarCount="
+            r0.append(r1)
+            int r1 = r3.f7168c
+            r0.append(r1)
+            java.lang.String r1 = ", locomotiveTocium="
+            r0.append(r1)
+            double r1 = r3.f7169d
+            r0.append(r1)
+            java.lang.String r1 = ", conductorTocium="
+            r0.append(r1)
+            double r1 = r3.f7170e
+            r0.append(r1)
+            java.lang.String r1 = ", railcarTocium="
+            r0.append(r1)
+            double r1 = r3.f7171f
+            r0.append(r1)
+            r1 = 41
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            return r0
+    }
+}
+package p060df;
+
+/* renamed from: df.c */
+/* loaded from: classes.dex */
+public final class C1447c extends td.AbstractC6218f<p171jd.C3505e1> {
+
+    /* renamed from: o1 */
+    public static final /* synthetic */ int f7174o1 = 0;
+
+    /* renamed from: m1 */
+    public final boolean f7175m1;
+
+    /* renamed from: n1 */
+    public final ch.InterfaceC0977d f7176n1;
+
+    /* renamed from: df.c$a */
+    public static final class a extends p239nh.AbstractC4830j implements mh.InterfaceC4620l<p013ah.C0100a, ch.C0985l> {
+
+        /* renamed from: Z */
+        public final /* synthetic */ p060df.C1447c f7177Z;
+
+        public a(p060df.C1447c r1) {
+                r0 = this;
+                r0.f7177Z = r1
+                r1 = 1
+                r0.<init>(r1)
+                return
+        }
+
+        @Override // mh.InterfaceC4620l
+        /* renamed from: b */
+        public ch.C0985l mo107b(p013ah.C0100a r2) {
+                r1 = this;
+                ah.a r2 = (p013ah.C0100a) r2
+                java.lang.String r0 = "it"
+                p214m2.C4339q.m9706k(r2, r0)
+                df.c r0 = r1.f7177Z
+                p458zg.C7331c.m14402a(r0, r2)
+                ch.l r2 = ch.C0985l.f5061a
+                return r2
+        }
+    }
+
+    /* renamed from: df.c$b */
+    public static final class b extends p239nh.AbstractC4830j implements mh.InterfaceC4620l<android.view.View, ch.C0985l> {
+
+        /* renamed from: Z */
+        public final /* synthetic */ p060df.C1447c f7178Z;
+
+        public b(p060df.C1447c r1) {
+                r0 = this;
+                r0.f7178Z = r1
+                r1 = 1
+                r0.<init>(r1)
+                return
+        }
+
+        @Override // mh.InterfaceC4620l
+        /* renamed from: b */
+        public ch.C0985l mo107b(android.view.View r14) {
+                r13 = this;
+                android.view.View r14 = (android.view.View) r14
+                java.lang.String r0 = "it"
+                p214m2.C4339q.m9706k(r14, r0)
+                df.c r14 = r13.f7178Z
+                int r0 = p060df.C1447c.f7174o1
+                df.g r14 = r14.m3975P0()
+                df.c r0 = r13.f7178Z
+                android.content.Context r0 = r0.m1334s0()
+                java.util.Objects.requireNonNull(r14)
+                java.lang.String r1 = "context"
+                p214m2.C4339q.m9706k(r0, r1)
+                androidx.lifecycle.d0<df.a> r2 = r14.f7187e
+                java.lang.Object r2 = r2.m1411d()
+                df.a r2 = (p060df.C1445a) r2
+                r3 = 0
+                if (r2 == 0) goto L51
+                java.util.ArrayList r4 = new java.util.ArrayList
+                r4.<init>()
+                double r5 = r2.f7169d
+                r7 = 0
+                int r9 = (r5 > r7 ? 1 : (r5 == r7 ? 0 : -1))
+                if (r9 <= 0) goto L3a
+                df.h r5 = p060df.EnumC1452h.f7192Z
+                r4.add(r5)
+            L3a:
+                double r5 = r2.f7170e
+                int r9 = (r5 > r7 ? 1 : (r5 == r7 ? 0 : -1))
+                if (r9 <= 0) goto L45
+                df.h r5 = p060df.EnumC1452h.f7193a0
+                r4.add(r5)
+            L45:
+                double r5 = r2.f7171f
+                int r2 = (r5 > r7 ? 1 : (r5 == r7 ? 0 : -1))
+                if (r2 <= 0) goto L52
+                df.h r2 = p060df.EnumC1452h.f7194b0
+                r4.add(r2)
+                goto L52
+            L51:
+                r4 = r3
+            L52:
+                r2 = 0
+                r5 = 1
+                if (r4 == 0) goto L5f
+                boolean r6 = r4.isEmpty()
+                if (r6 == 0) goto L5d
+                goto L5f
+            L5d:
+                r6 = 0
+                goto L60
+            L5f:
+                r6 = 1
+            L60:
+                if (r6 == 0) goto L64
+                goto Ld9
+            L64:
+                nd.b0 r6 = r14.f7185c
+                df.d r7 = new df.d
+                r7.<init>(r14)
+                java.util.Objects.requireNonNull(r6)
+                p214m2.C4339q.m9706k(r0, r1)
+                java.lang.String r14 = "listSchema"
+                p214m2.C4339q.m9706k(r4, r14)
+                java.lang.String r14 = "completion"
+                p214m2.C4339q.m9706k(r7, r14)
+                r6.f18918n = r7
+                id.b r14 = r6.m10795h()
+                if (r14 != 0) goto L84
+                goto Ld9
+            L84:
+                java.lang.String r1 = r14.f12559a
+                int r7 = r1.length()
+                if (r7 != 0) goto L8d
+                r2 = 1
+            L8d:
+                if (r2 != 0) goto Ldc
+                one.block.eosiojava.models.rpcProvider.Authorization r2 = new one.block.eosiojava.models.rpcProvider.Authorization
+                java.lang.String r7 = r6.f18911g
+                r2.<init>(r1, r7)
+                java.util.ArrayList r7 = new java.util.ArrayList
+                r8 = 10
+                int r8 = p062dh.C1469e.m3992D(r4, r8)
+                r7.<init>(r8)
+                java.util.Iterator r4 = r4.iterator()
+            La5:
+                boolean r8 = r4.hasNext()
+                if (r8 == 0) goto Lc9
+                java.lang.Object r8 = r4.next()
+                df.h r8 = (p060df.EnumC1452h) r8
+                nd.w0 r9 = new nd.w0
+                pd.b0 r10 = new pd.b0
+                java.lang.String r8 = r8.f7196Y
+                r10.<init>(r1, r8)
+                java.util.List r8 = p074e9.C1805a.m4528m(r2)
+                java.lang.String r11 = "yard.century"
+                java.lang.String r12 = "claim"
+                r9.<init>(r11, r12, r10, r8)
+                r7.add(r9)
+                goto La5
+            Lc9:
+                b3.b r1 = new b3.b
+                r1.<init>(r5)
+                r1.m2207b(r7)
+                nd.a r4 = p238nd.EnumC4724a.f18875e0
+                r1.m2209d(r4, r2)
+                r6.m10804r(r0, r14, r1, r3)
+            Ld9:
+                ch.l r14 = ch.C0985l.f5061a
+                return r14
+            Ldc:
+                java.lang.Exception r14 = new java.lang.Exception
+                java.lang.String r0 = "USER_NOT_SIGNED"
+                r14.<init>(r0)
+                throw r14
+        }
+    }
+
+    /* renamed from: df.c$c */
+    public static final class c extends p239nh.AbstractC4830j implements mh.InterfaceC4609a<androidx.fragment.app.ComponentCallbacksC0395n> {
+
+        /* renamed from: Z */
+        public final /* synthetic */ androidx.fragment.app.ComponentCallbacksC0395n f7179Z;
+
+        public c(androidx.fragment.app.ComponentCallbacksC0395n r1) {
+                r0 = this;
+                r0.f7179Z = r1
+                r1 = 0
+                r0.<init>(r1)
+                return
+        }
+
+        @Override // mh.InterfaceC4609a
+        /* renamed from: e */
+        public androidx.fragment.app.ComponentCallbacksC0395n mo15e() {
+                r1 = this;
+                androidx.fragment.app.n r0 = r1.f7179Z
+                return r0
+        }
+    }
+
+    /* renamed from: df.c$d */
+    public static final class d extends p239nh.AbstractC4830j implements mh.InterfaceC4609a<androidx.lifecycle.C0467s0> {
+
+        /* renamed from: Z */
+        public final /* synthetic */ mh.InterfaceC4609a f7180Z;
+
+        public d(mh.InterfaceC4609a r1) {
+                r0 = this;
+                r0.f7180Z = r1
+                r1 = 0
+                r0.<init>(r1)
+                return
+        }
+
+        @Override // mh.InterfaceC4609a
+        /* renamed from: e */
+        public androidx.lifecycle.C0467s0 mo15e() {
+                r2 = this;
+                mh.a r0 = r2.f7180Z
+                java.lang.Object r0 = r0.mo15e()
+                androidx.lifecycle.t0 r0 = (androidx.lifecycle.InterfaceC0469t0) r0
+                androidx.lifecycle.s0 r0 = r0.mo432o()
+                java.lang.String r1 = "ownerProducer().viewModelStore"
+                p214m2.C4339q.m9705j(r0, r1)
+                return r0
+        }
+    }
+
+    /* renamed from: df.c$e */
+    public /* synthetic */ class e extends p239nh.C4829i implements mh.InterfaceC4625q<android.view.LayoutInflater, android.view.ViewGroup, java.lang.Boolean, p171jd.C3505e1> {
+
+        /* renamed from: g0 */
+        public static final p060df.C1447c.e f7181g0 = null;
+
+        static {
+                df.c$e r0 = new df.c$e
+                r0.<init>()
+                p060df.C1447c.e.f7181g0 = r0
+                return
+        }
+
+        public e() {
+                r6 = this;
+                java.lang.Class<jd.e1> r2 = p171jd.C3505e1.class
+                r1 = 3
+                java.lang.String r3 = "inflate"
+                java.lang.String r4 = "inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lio/tacocrypto/app/databinding/ToolCenturytrainFragmentBinding;"
+                r5 = 0
+                r0 = r6
+                r0.<init>(r1, r2, r3, r4, r5)
+                return
+        }
+
+        @Override // mh.InterfaceC4625q
+        /* renamed from: i */
+        public p171jd.C3505e1 mo115i(android.view.LayoutInflater r13, android.view.ViewGroup r14, java.lang.Boolean r15) {
+                r12 = this;
+                android.view.LayoutInflater r13 = (android.view.LayoutInflater) r13
+                android.view.ViewGroup r14 = (android.view.ViewGroup) r14
+                java.lang.Boolean r15 = (java.lang.Boolean) r15
+                boolean r15 = r15.booleanValue()
+                java.lang.String r0 = "p0"
+                p214m2.C4339q.m9706k(r13, r0)
+                r0 = 2131558663(0x7f0d0107, float:1.8742648E38)
+                r1 = 0
+                android.view.View r13 = r13.inflate(r0, r14, r1)
+                if (r15 == 0) goto L1c
+                r14.addView(r13)
+            L1c:
+                r14 = 2131361945(0x7f0a0099, float:1.8343657E38)
+                android.view.View r15 = p064e.C1494h.m4055f(r13, r14)
+                r2 = r15
+                com.google.android.material.button.MaterialButton r2 = (com.google.android.material.button.MaterialButton) r2
+                if (r2 == 0) goto L9e
+                r14 = 2131361981(0x7f0a00bd, float:1.834373E38)
+                android.view.View r15 = p064e.C1494h.m4055f(r13, r14)
+                r3 = r15
+                androidx.appcompat.widget.AppCompatImageView r3 = (androidx.appcompat.widget.AppCompatImageView) r3
+                if (r3 == 0) goto L9e
+                r14 = 2131362044(0x7f0a00fc, float:1.8343857E38)
+                android.view.View r15 = p064e.C1494h.m4055f(r13, r14)
+                r4 = r15
+                androidx.appcompat.widget.AppCompatTextView r4 = (androidx.appcompat.widget.AppCompatTextView) r4
+                if (r4 == 0) goto L9e
+                r14 = 2131362225(0x7f0a01b1, float:1.8344225E38)
+                android.view.View r15 = p064e.C1494h.m4055f(r13, r14)
+                r5 = r15
+                com.google.android.material.card.MaterialCardView r5 = (com.google.android.material.card.MaterialCardView) r5
+                if (r5 == 0) goto L9e
+                r14 = 2131362258(0x7f0a01d2, float:1.8344292E38)
+                android.view.View r15 = p064e.C1494h.m4055f(r13, r14)
+                r6 = r15
+                com.google.android.material.imageview.ShapeableImageView r6 = (com.google.android.material.imageview.ShapeableImageView) r6
+                if (r6 == 0) goto L9e
+                r14 = 2131362312(0x7f0a0208, float:1.8344401E38)
+                android.view.View r15 = p064e.C1494h.m4055f(r13, r14)
+                r7 = r15
+                androidx.appcompat.widget.AppCompatTextView r7 = (androidx.appcompat.widget.AppCompatTextView) r7
+                if (r7 == 0) goto L9e
+                r14 = 2131362515(0x7f0a02d3, float:1.8344813E38)
+                android.view.View r15 = p064e.C1494h.m4055f(r13, r14)
+                r8 = r15
+                androidx.appcompat.widget.AppCompatTextView r8 = (androidx.appcompat.widget.AppCompatTextView) r8
+                if (r8 == 0) goto L9e
+                r14 = 2131362706(0x7f0a0392, float:1.83452E38)
+                android.view.View r15 = p064e.C1494h.m4055f(r13, r14)
+                r9 = r15
+                androidx.appcompat.widget.AppCompatTextView r9 = (androidx.appcompat.widget.AppCompatTextView) r9
+                if (r9 == 0) goto L9e
+                r14 = 2131362710(0x7f0a0396, float:1.8345208E38)
+                android.view.View r15 = p064e.C1494h.m4055f(r13, r14)
+                r10 = r15
+                androidx.appcompat.widget.AppCompatTextView r10 = (androidx.appcompat.widget.AppCompatTextView) r10
+                if (r10 == 0) goto L9e
+                r14 = 2131362749(0x7f0a03bd, float:1.8345287E38)
+                android.view.View r15 = p064e.C1494h.m4055f(r13, r14)
+                r11 = r15
+                androidx.appcompat.widget.AppCompatTextView r11 = (androidx.appcompat.widget.AppCompatTextView) r11
+                if (r11 == 0) goto L9e
+                jd.e1 r14 = new jd.e1
+                r1 = r13
+                androidx.constraintlayout.widget.ConstraintLayout r1 = (androidx.constraintlayout.widget.ConstraintLayout) r1
+                r0 = r14
+                r0.<init>(r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11)
+                return r14
+            L9e:
+                android.content.res.Resources r13 = r13.getResources()
+                java.lang.String r13 = r13.getResourceName(r14)
+                java.lang.NullPointerException r14 = new java.lang.NullPointerException
+                java.lang.String r15 = "Missing required view with ID: "
+                java.lang.String r13 = r15.concat(r13)
+                r14.<init>(r13)
+                throw r14
+        }
+    }
+
+    /* renamed from: df.c$f */
+    public static final class f extends p239nh.AbstractC4830j implements mh.InterfaceC4609a<androidx.lifecycle.InterfaceC0461p0> {
+
+        /* renamed from: Z */
+        public final /* synthetic */ p060df.C1447c f7182Z;
+
+        public f(p060df.C1447c r1) {
+                r0 = this;
+                r0.f7182Z = r1
+                r1 = 0
+                r0.<init>(r1)
+                return
+        }
+
+        @Override // mh.InterfaceC4609a
+        /* renamed from: e */
+        public androidx.lifecycle.InterfaceC0461p0 mo15e() {
+                r1 = this;
+                df.c r0 = r1.f7182Z
+                vg.i r0 = p185k7.C3828h5.m8599n(r0)
+                return r0
+        }
+    }
+
+    public C1447c() {
+            r4 = this;
+            r4.<init>()
+            r0 = 1
+            r4.f7175m1 = r0
+            df.c$f r0 = new df.c$f
+            r0.<init>(r4)
+            df.c$c r1 = new df.c$c
+            r1.<init>(r4)
+            java.lang.Class<df.g> r2 = p060df.C1451g.class
+            sh.b r2 = p239nh.C4838r.m10853a(r2)
+            df.c$d r3 = new df.c$d
+            r3.<init>(r1)
+            ch.d r0 = androidx.fragment.app.C0420z0.m1404a(r4, r2, r3, r0)
+            r4.f7176n1 = r0
+            return
+    }
+
+    @Override // td.AbstractC6213a
+    /* renamed from: L0 */
+    public void mo108L0() {
+            r4 = this;
+            df.g r0 = r4.m3975P0()
+            androidx.lifecycle.LiveData<df.a> r0 = r0.f7188f
+            androidx.lifecycle.v r1 = r4.m1311O()
+            df.b r2 = new df.b
+            r3 = 0
+            r2.<init>(r4, r3)
+            r0.m1413f(r1, r2)
+            df.g r0 = r4.m3975P0()
+            androidx.lifecycle.LiveData<java.lang.Boolean> r0 = r0.f7190h
+            androidx.lifecycle.v r1 = r4.m1311O()
+            df.b r2 = new df.b
+            r3 = 1
+            r2.<init>(r4, r3)
+            r0.m1413f(r1, r2)
+            df.g r0 = r4.m3975P0()
+            androidx.lifecycle.d0<vg.b<ah.a>> r0 = r0.f7189g
+            androidx.lifecycle.v r1 = r4.m1311O()
+            vg.c r2 = new vg.c
+            df.c$a r3 = new df.c$a
+            r3.<init>(r4)
+            r2.<init>(r3)
+            r0.m1413f(r1, r2)
+            return
+    }
+
+    @Override // td.AbstractC6213a
+    /* renamed from: M0 */
+    public void mo109M0() {
+            r5 = this;
+            T extends w1.a r0 = r5.f24168k1
+            p214m2.C4339q.m9704i(r0)
+            jd.e1 r0 = (p171jd.C3505e1) r0
+            androidx.appcompat.widget.AppCompatImageView r1 = r0.f15115c
+            ud.a r2 = new ud.a
+            r2.<init>(r5)
+            r1.setOnClickListener(r2)
+            androidx.appcompat.widget.AppCompatTextView r1 = r0.f15120h
+            java.lang.StringBuilder r2 = new java.lang.StringBuilder
+            r2.<init>()
+            io.tacocrypto.app.ui.secret.c r3 = io.tacocrypto.app.p156ui.secret.EnumC3251c.f14340g0
+            java.lang.String r4 = " Tool"
+            p206le.C4271b.m9585a(r3, r2, r4, r1)
+            com.google.android.material.imageview.ShapeableImageView r1 = r0.f15117e
+            java.lang.String r2 = "imageToken"
+            p214m2.C4339q.m9705j(r1, r2)
+            io.tacocrypto.app.a r2 = io.tacocrypto.app.EnumC3199a.f14218c0
+            java.lang.String r2 = p097fd.C2139a.m5697a(r2)
+            vg.C6672m.m13521h(r1, r2)
+            com.google.android.material.button.MaterialButton r0 = r0.f15114b
+            java.lang.String r1 = "buttonClaim"
+            p214m2.C4339q.m9705j(r0, r1)
+            r1 = 0
+            df.c$b r2 = new df.c$b
+            r2.<init>(r5)
+            r3 = 1
+            vg.C6664e.m13509j(r0, r1, r2, r3)
+            return
+    }
+
+    @Override // td.AbstractC6213a
+    /* renamed from: N0 */
+    public mh.InterfaceC4625q<android.view.LayoutInflater, android.view.ViewGroup, java.lang.Boolean, p171jd.C3505e1> mo110N0() {
+            r2 = this;
+            df.c$e r0 = p060df.C1447c.e.f7181g0
+            java.lang.String r1 = "bindingInflater"
+            p214m2.C4339q.m9706k(r0, r1)
+            return r0
+    }
+
+    @Override // td.AbstractC6218f
+    /* renamed from: O0 */
+    public boolean mo111O0() {
+            r1 = this;
+            boolean r0 = r1.f7175m1
+            return r0
+    }
+
+    /* renamed from: P0 */
+    public final p060df.C1451g m3975P0() {
+            r1 = this;
+            ch.d r0 = r1.f7176n1
+            java.lang.Object r0 = r0.getValue()
+            df.g r0 = (p060df.C1451g) r0
+            return r0
+    }
+
+    @Override // androidx.fragment.app.DialogInterfaceOnCancelListenerC0391l, androidx.fragment.app.ComponentCallbacksC0395n
+    /* renamed from: V */
+    public void mo114V(android.os.Bundle r1) {
+            r0 = this;
+            super.mo114V(r1)
+            df.g r1 = r0.m3975P0()
+            r1.m3976d()
+            return
+    }
+}
+package p060df;
+
+/* renamed from: df.d */
+/* loaded from: classes.dex */
+public final class C1448d extends p239nh.AbstractC4830j implements mh.InterfaceC4624p<java.lang.Boolean, java.lang.String, ch.C0985l> {
+
+    /* renamed from: Z */
+    public final /* synthetic */ p060df.C1451g f7183Z;
+
+    public C1448d(p060df.C1451g r1) {
+            r0 = this;
+            r0.f7183Z = r1
+            r1 = 2
+            r0.<init>(r1)
+            return
+    }
+
+    @Override // mh.InterfaceC4624p
+    /* renamed from: l */
+    public ch.C0985l mo122l(java.lang.Boolean r5, java.lang.String r6) {
+            r4 = this;
+            java.lang.Boolean r5 = (java.lang.Boolean) r5
+            boolean r5 = r5.booleanValue()
+            java.lang.String r6 = (java.lang.String) r6
+            df.g r0 = r4.f7183Z
+            androidx.lifecycle.d0<vg.b<ah.a>> r1 = r0.f7189g
+            if (r5 == 0) goto L38
+            android.os.Handler r5 = new android.os.Handler
+            android.os.Looper r6 = android.os.Looper.getMainLooper()
+            r5.<init>(r6)
+            df.g r6 = r4.f7183Z
+            f1.f r0 = new f1.f
+            r0.<init>(r6)
+            r2 = 3000(0xbb8, double:1.482E-320)
+            r5.postDelayed(r0, r2)
+            java.lang.String r5 = "Claim success"
+            r6 = 0
+            java.lang.String r0 = "title"
+            p214m2.C4339q.m9706k(r5, r0)
+            vg.b r0 = new vg.b
+            ah.a r2 = new ah.a
+            zg.d r3 = p458zg.EnumC7332d.f28067Y
+            r2.<init>(r5, r6, r3)
+            r0.<init>(r2)
+            goto L49
+        L38:
+            r0.m3976d()
+            vg.b r0 = new vg.b
+            ah.a r5 = new ah.a
+            zg.d r2 = p458zg.EnumC7332d.f28068Z
+            java.lang.String r3 = "Transaction Error"
+            r5.<init>(r3, r6, r2)
+            r0.<init>(r5)
+        L49:
+            r1.mo7l(r0)
+            ch.l r5 = ch.C0985l.f5061a
+            return r5
+    }
+}
+package p060df;
+
+/* renamed from: df.e */
+/* loaded from: classes.dex */
+public final class C1449e extends p119h2.C2448j {
+
+    /* renamed from: p0 */
+    public final /* synthetic */ java.lang.String f7184p0;
+
+    public C1449e(java.lang.String r1, java.lang.String r2, p105g2.C2222p.b<java.lang.String> r3, p105g2.C2222p.a r4) {
+            r0 = this;
+            r0.f7184p0 = r1
+            r1 = 1
+            r0.<init>(r1, r2, r3, r4)
+            return
+    }
+
+    @Override // p105g2.AbstractC2220n
+    /* renamed from: l */
+    public byte[] mo116l() {
+            r2 = this;
+            java.lang.String r0 = r2.f7184p0
+            java.nio.charset.Charset r1 = p362uh.C6455a.f25034b
+            byte[] r0 = r0.getBytes(r1)
+            java.lang.String r1 = "this as java.lang.String).getBytes(charset)"
+            p214m2.C4339q.m9705j(r0, r1)
+            return r0
+    }
+}
+package p060df;
+
+/* renamed from: df.f */
+/* loaded from: classes.dex */
+public final class C1450f extends p274pb.C5380a<p255od.C5211k> {
+    public C1450f() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+}
+package p060df;
+
+/* renamed from: df.g */
+/* loaded from: classes.dex */
+public final class C1451g extends androidx.lifecycle.AbstractC0457n0 {
+
+    /* renamed from: c */
+    public final p238nd.C4728b0 f7185c;
+
+    /* renamed from: d */
+    public final ch.InterfaceC0977d f7186d;
+
+    /* renamed from: e */
+    public final androidx.lifecycle.C0437d0<p060df.C1445a> f7187e;
+
+    /* renamed from: f */
+    public final androidx.lifecycle.LiveData<p060df.C1445a> f7188f;
+
+    /* renamed from: g */
+    public final androidx.lifecycle.C0437d0<vg.C6661b<p013ah.C0100a>> f7189g;
+
+    /* renamed from: h */
+    public final androidx.lifecycle.LiveData<java.lang.Boolean> f7190h;
+
+    /* renamed from: df.g$a */
+    public static final class a extends p239nh.AbstractC4830j implements mh.InterfaceC4609a<p105g2.C2221o> {
+
+        /* renamed from: Z */
+        public final /* synthetic */ android.app.Application f7191Z;
+
+        public a(android.app.Application r1) {
+                r0 = this;
+                r0.f7191Z = r1
+                r1 = 0
+                r0.<init>(r1)
+                return
+        }
+
+        @Override // mh.InterfaceC4609a
+        /* renamed from: e */
+        public p105g2.C2221o mo15e() {
+                r1 = this;
+                android.app.Application r0 = r1.f7191Z
+                g2.o r0 = p119h2.C2450l.m6226a(r0)
+                return r0
+        }
+    }
+
+    public C1451g(android.app.Application r12, p238nd.C4728b0 r13) {
+            r11 = this;
+            java.lang.String r0 = "app"
+            p214m2.C4339q.m9706k(r12, r0)
+            java.lang.String r0 = "eosManager"
+            p214m2.C4339q.m9706k(r13, r0)
+            r11.<init>()
+            r11.f7185c = r13
+            df.g$a r13 = new df.g$a
+            r13.<init>(r12)
+            ch.d r12 = p185k7.C4038x4.m9096i(r13)
+            r11.f7186d = r12
+            androidx.lifecycle.d0 r12 = new androidx.lifecycle.d0
+            r12.<init>()
+            androidx.lifecycle.d0 r12 = new androidx.lifecycle.d0
+            df.a r13 = new df.a
+            r1 = 0
+            r2 = 0
+            r3 = 0
+            r4 = 0
+            r6 = 0
+            r8 = 0
+            r10 = 63
+            r0 = r13
+            r0.<init>(r1, r2, r3, r4, r6, r8, r10)
+            r12.<init>(r13)
+            r11.f7187e = r12
+            r11.f7188f = r12
+            androidx.lifecycle.d0 r13 = new androidx.lifecycle.d0
+            r13.<init>()
+            r11.f7189g = r13
+            k1.b r13 = p179k1.C3642b.f16072u0
+            androidx.lifecycle.LiveData r12 = androidx.lifecycle.C0455m0.m1450a(r12, r13)
+            r11.f7190h = r12
+            return
+    }
+
+    /* renamed from: d */
+    public final void m3976d() {
+            r5 = this;
+            nd.b0 r0 = r5.f7185c
+            id.b r0 = r0.m10795h()
+            if (r0 != 0) goto L9
+            goto L36
+        L9:
+            java.lang.String r1 = "\n            {\n                \"code\": \"yard.century\",\n                \"index_position\": 1,\n                \"json\": true,\n                \"key_type\": \"\",\n                \"limit\": 10000,\n                \"lower_bound\": \"\",\n                \"reverse\": false,\n                \"scope\": \""
+            java.lang.StringBuilder r1 = android.support.v4.media.C0144c.m256a(r1)
+            java.lang.String r0 = r0.f12559a
+            java.lang.String r2 = "\",\n                \"show_payer\": false,\n                \"table\": \"assets\",\n                \"upper_bound\": \"\"\n            }"
+            java.lang.String r0 = p377vd.C6637f.m13492a(r1, r0, r2)
+            nd.v0 r1 = p238nd.C4781v0.f19121e
+            java.lang.String r2 = "Please for EndpointManager us initialize() before getting the instance."
+            java.lang.String r1 = p377vd.C6638g.m13493a(r1, r2, r1)
+            nd.s r2 = new nd.s
+            r2.<init>(r5)
+            nd.r r3 = p238nd.C4772r.f19095c
+            df.e r4 = new df.e
+            r4.<init>(r0, r1, r2, r3)
+            ch.d r0 = r5.f7186d
+            java.lang.Object r0 = r0.getValue()
+            g2.o r0 = (p105g2.C2221o) r0
+            r0.m5814a(r4)
+        L36:
+            return
+    }
+}
+package p060df;
+
+/* renamed from: df.h */
+/* loaded from: classes.dex */
+public enum EnumC1452h extends java.lang.Enum<p060df.EnumC1452h> {
+
+    /* renamed from: Z */
+    public static final p060df.EnumC1452h f7192Z = null;
+
+    /* renamed from: a0 */
+    public static final p060df.EnumC1452h f7193a0 = null;
+
+    /* renamed from: b0 */
+    public static final p060df.EnumC1452h f7194b0 = null;
+
+    /* renamed from: c0 */
+    public static final /* synthetic */ p060df.EnumC1452h[] f7195c0 = null;
+
+    /* renamed from: Y */
+    public final java.lang.String f7196Y;
+
+    static {
+            df.h r0 = new df.h
+            java.lang.String r1 = "LOCOMOTIVE"
+            r2 = 0
+            java.lang.String r3 = "locomotive"
+            r0.<init>(r1, r2, r3)
+            p060df.EnumC1452h.f7192Z = r0
+            df.h r1 = new df.h
+            java.lang.String r3 = "CONDUCTOR"
+            r4 = 1
+            java.lang.String r5 = "conductor"
+            r1.<init>(r3, r4, r5)
+            p060df.EnumC1452h.f7193a0 = r1
+            df.h r3 = new df.h
+            java.lang.String r5 = "RAILCAR"
+            r6 = 2
+            java.lang.String r7 = "railcar"
+            r3.<init>(r5, r6, r7)
+            p060df.EnumC1452h.f7194b0 = r3
+            r5 = 3
+            df.h[] r5 = new p060df.EnumC1452h[r5]
+            r5[r2] = r0
+            r5[r4] = r1
+            r5[r6] = r3
+            p060df.EnumC1452h.f7195c0 = r5
+            return
+    }
+
+    EnumC1452h(java.lang.String r1, int r2, java.lang.String r3) {
+            r0 = this;
+            r0.<init>(r1, r2)
+            r0.f7196Y = r3
+            return
+    }
+
+    public static p060df.EnumC1452h valueOf(java.lang.String r1) {
+            java.lang.Class<df.h> r0 = p060df.EnumC1452h.class
+            java.lang.Enum r1 = java.lang.Enum.valueOf(r0, r1)
+            df.h r1 = (p060df.EnumC1452h) r1
+            return r1
+    }
+
+    public static p060df.EnumC1452h[] values() {
+            df.h[] r0 = p060df.EnumC1452h.f7195c0
+            java.lang.Object r0 = r0.clone()
+            df.h[] r0 = (p060df.EnumC1452h[]) r0
+            return r0
+    }
+}

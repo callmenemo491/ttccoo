@@ -1,0 +1,273 @@
+package p011aa;
+
+/* renamed from: aa.b */
+/* loaded from: classes.dex */
+public final class C0046b implements p011aa.InterfaceC0045a {
+
+    /* renamed from: c */
+    public static final p011aa.InterfaceC0048d f98c = null;
+
+    /* renamed from: a */
+    public final p392wa.InterfaceC6822a<p011aa.InterfaceC0045a> f99a;
+
+    /* renamed from: b */
+    public final java.util.concurrent.atomic.AtomicReference<p011aa.InterfaceC0045a> f100b;
+
+    /* renamed from: aa.b$a */
+    public static /* synthetic */ class a {
+    }
+
+    /* renamed from: aa.b$b */
+    public static final class b implements p011aa.InterfaceC0048d {
+        public b(p011aa.C0046b.a r1) {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+    }
+
+    static {
+            aa.b$b r0 = new aa.b$b
+            r1 = 0
+            r0.<init>(r1)
+            p011aa.C0046b.f98c = r0
+            return
+    }
+
+    public C0046b(p392wa.InterfaceC6822a<p011aa.InterfaceC0045a> r3) {
+            r2 = this;
+            r2.<init>()
+            java.util.concurrent.atomic.AtomicReference r0 = new java.util.concurrent.atomic.AtomicReference
+            r1 = 0
+            r0.<init>(r1)
+            r2.f100b = r0
+            r2.f99a = r3
+            u3.b r0 = new u3.b
+            r0.<init>(r2)
+            y9.r r3 = (p432y9.C7151r) r3
+            r3.m14265a(r0)
+            return
+    }
+
+    @Override // p011aa.InterfaceC0045a
+    /* renamed from: a */
+    public void mo45a(java.lang.String r4) {
+            r3 = this;
+            wa.a<aa.a> r0 = r3.f99a
+            k1.e r1 = new k1.e
+            r2 = 2
+            r1.<init>(r4, r2)
+            y9.r r0 = (p432y9.C7151r) r0
+            r0.m14265a(r1)
+            return
+    }
+
+    @Override // p011aa.InterfaceC0045a
+    /* renamed from: b */
+    public p011aa.InterfaceC0048d mo46b(java.lang.String r2) {
+            r1 = this;
+            java.util.concurrent.atomic.AtomicReference<aa.a> r0 = r1.f100b
+            java.lang.Object r0 = r0.get()
+            aa.a r0 = (p011aa.InterfaceC0045a) r0
+            if (r0 != 0) goto Ld
+            aa.d r2 = p011aa.C0046b.f98c
+            goto L11
+        Ld:
+            aa.d r2 = r0.mo46b(r2)
+        L11:
+            return r2
+    }
+
+    @Override // p011aa.InterfaceC0045a
+    /* renamed from: c */
+    public boolean mo47c() {
+            r1 = this;
+            java.util.concurrent.atomic.AtomicReference<aa.a> r0 = r1.f100b
+            java.lang.Object r0 = r0.get()
+            aa.a r0 = (p011aa.InterfaceC0045a) r0
+            if (r0 == 0) goto L12
+            boolean r0 = r0.mo47c()
+            if (r0 == 0) goto L12
+            r0 = 1
+            goto L13
+        L12:
+            r0 = 0
+        L13:
+            return r0
+    }
+
+    @Override // p011aa.InterfaceC0045a
+    /* renamed from: d */
+    public void mo48d(java.lang.String r9, java.lang.String r10, long r11, p094fa.AbstractC2107c0 r13) {
+            r8 = this;
+            java.lang.String r0 = "Deferring native open session: "
+            java.lang.String r0 = p064e.C1493g.m4049a(r0, r9)
+            r1 = 2
+            java.lang.String r2 = "FirebaseCrashlytics"
+            boolean r1 = android.util.Log.isLoggable(r2, r1)
+            if (r1 == 0) goto L13
+            r1 = 0
+            android.util.Log.v(r2, r0, r1)
+        L13:
+            wa.a<aa.a> r0 = r8.f99a
+            a4.g r7 = new a4.g
+            r1 = r7
+            r2 = r9
+            r3 = r10
+            r4 = r11
+            r6 = r13
+            r1.<init>(r2, r3, r4, r6)
+            y9.r r0 = (p432y9.C7151r) r0
+            r0.m14265a(r7)
+            return
+    }
+
+    @Override // p011aa.InterfaceC0045a
+    /* renamed from: e */
+    public boolean mo49e(java.lang.String r2) {
+            r1 = this;
+            java.util.concurrent.atomic.AtomicReference<aa.a> r0 = r1.f100b
+            java.lang.Object r0 = r0.get()
+            aa.a r0 = (p011aa.InterfaceC0045a) r0
+            if (r0 == 0) goto L12
+            boolean r2 = r0.mo49e(r2)
+            if (r2 == 0) goto L12
+            r2 = 1
+            goto L13
+        L12:
+            r2 = 0
+        L13:
+            return r2
+    }
+}
+package p011aa;
+
+/* renamed from: aa.c */
+/* loaded from: classes.dex */
+public class C0047c {
+
+    /* renamed from: a */
+    public static final p011aa.C0047c f101a = null;
+
+    static {
+            aa.c r0 = new aa.c
+            java.lang.String r1 = "FirebaseCrashlytics"
+            r0.<init>(r1)
+            p011aa.C0047c.f101a = r0
+            return
+    }
+
+    public C0047c(java.lang.String r1) {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+
+    /* renamed from: a */
+    public final boolean m50a(int r2) {
+            r1 = this;
+            r0 = 4
+            if (r0 <= r2) goto Le
+            java.lang.String r0 = "FirebaseCrashlytics"
+            boolean r2 = android.util.Log.isLoggable(r0, r2)
+            if (r2 == 0) goto Lc
+            goto Le
+        Lc:
+            r2 = 0
+            goto Lf
+        Le:
+            r2 = 1
+        Lf:
+            return r2
+    }
+
+    /* renamed from: b */
+    public void m51b(java.lang.String r3) {
+            r2 = this;
+            r0 = 3
+            boolean r0 = r2.m50a(r0)
+            if (r0 == 0) goto Ld
+            r0 = 0
+            java.lang.String r1 = "FirebaseCrashlytics"
+            android.util.Log.d(r1, r3, r0)
+        Ld:
+            return
+    }
+
+    /* renamed from: c */
+    public void m52c(java.lang.String r3) {
+            r2 = this;
+            r0 = 6
+            boolean r0 = r2.m50a(r0)
+            if (r0 == 0) goto Ld
+            java.lang.String r0 = "FirebaseCrashlytics"
+            r1 = 0
+            android.util.Log.e(r0, r3, r1)
+        Ld:
+            return
+    }
+
+    /* renamed from: d */
+    public void m53d(java.lang.String r3) {
+            r2 = this;
+            r0 = 2
+            boolean r0 = r2.m50a(r0)
+            if (r0 == 0) goto Ld
+            java.lang.String r0 = "FirebaseCrashlytics"
+            r1 = 0
+            android.util.Log.v(r0, r3, r1)
+        Ld:
+            return
+    }
+
+    /* renamed from: e */
+    public void m54e(java.lang.String r3) {
+            r2 = this;
+            r0 = 5
+            boolean r0 = r2.m50a(r0)
+            if (r0 == 0) goto Ld
+            java.lang.String r0 = "FirebaseCrashlytics"
+            r1 = 0
+            android.util.Log.w(r0, r3, r1)
+        Ld:
+            return
+    }
+
+    /* renamed from: f */
+    public void m55f(java.lang.String r2, java.lang.Throwable r3) {
+            r1 = this;
+            r0 = 5
+            boolean r0 = r1.m50a(r0)
+            if (r0 == 0) goto Lc
+            java.lang.String r0 = "FirebaseCrashlytics"
+            android.util.Log.w(r0, r2, r3)
+        Lc:
+            return
+    }
+}
+package p011aa;
+
+/* renamed from: aa.a */
+/* loaded from: classes.dex */
+public interface InterfaceC0045a {
+    /* renamed from: a */
+    void mo45a(java.lang.String r1);
+
+    /* renamed from: b */
+    p011aa.InterfaceC0048d mo46b(java.lang.String r1);
+
+    /* renamed from: c */
+    boolean mo47c();
+
+    /* renamed from: d */
+    void mo48d(java.lang.String r1, java.lang.String r2, long r3, p094fa.AbstractC2107c0 r5);
+
+    /* renamed from: e */
+    boolean mo49e(java.lang.String r1);
+}
+package p011aa;
+
+/* renamed from: aa.d */
+/* loaded from: classes.dex */
+public interface InterfaceC0048d {
+}

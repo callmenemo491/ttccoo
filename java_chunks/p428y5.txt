@@ -1,0 +1,660 @@
+package p428y5;
+
+/* renamed from: y5.a */
+/* loaded from: classes.dex */
+public class C7118a {
+
+    /* renamed from: a */
+    public p184k6.ServiceConnectionC3696a f27519a;
+
+    /* renamed from: b */
+    public p024b7.InterfaceC0684b f27520b;
+
+    /* renamed from: c */
+    public boolean f27521c;
+
+    /* renamed from: d */
+    public final java.lang.Object f27522d;
+
+    /* renamed from: e */
+    public p428y5.C7118a.b f27523e;
+
+    /* renamed from: f */
+    public final android.content.Context f27524f;
+
+    /* renamed from: g */
+    public final boolean f27525g;
+
+    /* renamed from: h */
+    public final long f27526h;
+
+    /* renamed from: y5.a$a */
+    public static final class a {
+
+        /* renamed from: a */
+        public final java.lang.String f27527a;
+
+        /* renamed from: b */
+        public final boolean f27528b;
+
+        public a(java.lang.String r1, boolean r2) {
+                r0 = this;
+                r0.<init>()
+                r0.f27527a = r1
+                r0.f27528b = r2
+                return
+        }
+
+        public final java.lang.String toString() {
+                r4 = this;
+                java.lang.String r0 = r4.f27527a
+                boolean r1 = r4.f27528b
+                r2 = 7
+                int r2 = p064e.C1489c.m4038a(r0, r2)
+                java.lang.StringBuilder r3 = new java.lang.StringBuilder
+                r3.<init>(r2)
+                java.lang.String r2 = "{"
+                r3.append(r2)
+                r3.append(r0)
+                java.lang.String r0 = "}"
+                r3.append(r0)
+                r3.append(r1)
+                java.lang.String r0 = r3.toString()
+                return r0
+        }
+    }
+
+    /* renamed from: y5.a$b */
+    public static class b extends java.lang.Thread {
+
+        /* renamed from: Y */
+        public java.lang.ref.WeakReference<p428y5.C7118a> f27529Y;
+
+        /* renamed from: Z */
+        public long f27530Z;
+
+        /* renamed from: a0 */
+        public java.util.concurrent.CountDownLatch f27531a0;
+
+        /* renamed from: b0 */
+        public boolean f27532b0;
+
+        public b(p428y5.C7118a r2, long r3) {
+                r1 = this;
+                r1.<init>()
+                java.lang.ref.WeakReference r0 = new java.lang.ref.WeakReference
+                r0.<init>(r2)
+                r1.f27529Y = r0
+                r1.f27530Z = r3
+                java.util.concurrent.CountDownLatch r2 = new java.util.concurrent.CountDownLatch
+                r3 = 1
+                r2.<init>(r3)
+                r1.f27531a0 = r2
+                r2 = 0
+                r1.f27532b0 = r2
+                r1.start()
+                return
+        }
+
+        @Override // java.lang.Thread, java.lang.Runnable
+        public final void run() {
+                r5 = this;
+                r0 = 1
+                java.util.concurrent.CountDownLatch r1 = r5.f27531a0     // Catch: java.lang.InterruptedException -> L1d
+                long r2 = r5.f27530Z     // Catch: java.lang.InterruptedException -> L1d
+                java.util.concurrent.TimeUnit r4 = java.util.concurrent.TimeUnit.MILLISECONDS     // Catch: java.lang.InterruptedException -> L1d
+                boolean r1 = r1.await(r2, r4)     // Catch: java.lang.InterruptedException -> L1d
+                if (r1 != 0) goto L1c
+                java.lang.ref.WeakReference<y5.a> r1 = r5.f27529Y     // Catch: java.lang.InterruptedException -> L1d
+                java.lang.Object r1 = r1.get()     // Catch: java.lang.InterruptedException -> L1d
+                y5.a r1 = (p428y5.C7118a) r1     // Catch: java.lang.InterruptedException -> L1d
+                if (r1 == 0) goto L1c
+                r1.m14231a()     // Catch: java.lang.InterruptedException -> L1d
+                r5.f27532b0 = r0     // Catch: java.lang.InterruptedException -> L1d
+            L1c:
+                return
+            L1d:
+                java.lang.ref.WeakReference<y5.a> r1 = r5.f27529Y
+                java.lang.Object r1 = r1.get()
+                y5.a r1 = (p428y5.C7118a) r1
+                if (r1 == 0) goto L2d
+                r1.m14231a()
+                r5.f27532b0 = r0
+            L2d:
+                return
+        }
+    }
+
+    public C7118a(android.content.Context r2, long r3, boolean r5, boolean r6) {
+            r1 = this;
+            r1.<init>()
+            java.lang.Object r0 = new java.lang.Object
+            r0.<init>()
+            r1.f27522d = r0
+            java.lang.String r0 = "null reference"
+            java.util.Objects.requireNonNull(r2, r0)
+            if (r5 == 0) goto L19
+            android.content.Context r5 = r2.getApplicationContext()
+            if (r5 != 0) goto L18
+            goto L19
+        L18:
+            r2 = r5
+        L19:
+            r1.f27524f = r2
+            r2 = 0
+            r1.f27521c = r2
+            r1.f27526h = r3
+            r1.f27525g = r6
+            return
+    }
+
+    /* renamed from: b */
+    public static p428y5.C7118a.a m14228b(android.content.Context r13) {
+            java.lang.String r0 = "Error while reading from SharedPreferences "
+            java.lang.String r1 = "GmscoreFlag"
+            f.t r2 = new f.t
+            r2.<init>(r13)
+            java.lang.String r3 = "gads:ad_id_app_context:enabled"
+            boolean r3 = r2.m4789u(r3)
+            java.lang.String r4 = "gads:ad_id_app_context:ping_ratio"
+            r5 = 0
+            java.util.Deque<java.lang.ref.WeakReference<org.xmlpull.v1.XmlPullParser>> r6 = r2.f8425Z     // Catch: java.lang.Throwable -> L22
+            r7 = r6
+            android.content.SharedPreferences r7 = (android.content.SharedPreferences) r7     // Catch: java.lang.Throwable -> L22
+            if (r7 != 0) goto L1a
+            goto L26
+        L1a:
+            android.content.SharedPreferences r6 = (android.content.SharedPreferences) r6     // Catch: java.lang.Throwable -> L22
+            float r4 = r6.getFloat(r4, r5)     // Catch: java.lang.Throwable -> L22
+            r12 = r4
+            goto L27
+        L22:
+            r4 = move-exception
+            android.util.Log.w(r1, r0, r4)
+        L26:
+            r12 = 0
+        L27:
+            java.lang.String r4 = "gads:ad_id_use_shared_preference:experiment_id"
+            java.lang.String r5 = ""
+            java.util.Deque<java.lang.ref.WeakReference<org.xmlpull.v1.XmlPullParser>> r6 = r2.f8425Z     // Catch: java.lang.Throwable -> L3a
+            r7 = r6
+            android.content.SharedPreferences r7 = (android.content.SharedPreferences) r7     // Catch: java.lang.Throwable -> L3a
+            if (r7 != 0) goto L33
+            goto L3e
+        L33:
+            android.content.SharedPreferences r6 = (android.content.SharedPreferences) r6     // Catch: java.lang.Throwable -> L3a
+            java.lang.String r0 = r6.getString(r4, r5)     // Catch: java.lang.Throwable -> L3a
+            goto L3f
+        L3a:
+            r4 = move-exception
+            android.util.Log.w(r1, r0, r4)
+        L3e:
+            r0 = r5
+        L3f:
+            java.lang.String r1 = "gads:ad_id_use_persistent_service:enabled"
+            boolean r9 = r2.m4789u(r1)
+            y5.a r1 = new y5.a
+            r6 = -1
+            r4 = r1
+            r5 = r13
+            r8 = r3
+            r4.<init>(r5, r6, r8, r9)
+            long r4 = android.os.SystemClock.elapsedRealtime()     // Catch: java.lang.Throwable -> L6e
+            r13 = 0
+            r1.m14234g(r13)     // Catch: java.lang.Throwable -> L6e
+            y5.a$a r13 = r1.m14232c()     // Catch: java.lang.Throwable -> L6e
+            long r6 = android.os.SystemClock.elapsedRealtime()     // Catch: java.lang.Throwable -> L6e
+            long r8 = r6 - r4
+            r11 = 0
+            r4 = r1
+            r5 = r13
+            r6 = r3
+            r7 = r12
+            r10 = r0
+            r4.m14235h(r5, r6, r7, r8, r10, r11)     // Catch: java.lang.Throwable -> L6e
+            r1.m14231a()
+            return r13
+        L6e:
+            r13 = move-exception
+            r5 = 0
+            r8 = -1
+            r4 = r1
+            r6 = r3
+            r7 = r12
+            r10 = r0
+            r11 = r13
+            r4.m14235h(r5, r6, r7, r8, r10, r11)     // Catch: java.lang.Throwable -> L7b
+            throw r13     // Catch: java.lang.Throwable -> L7b
+        L7b:
+            r13 = move-exception
+            r1.m14231a()
+            throw r13
+    }
+
+    /* renamed from: d */
+    public static p024b7.InterfaceC0684b m14229d(p184k6.ServiceConnectionC3696a r3) {
+            java.util.concurrent.TimeUnit r0 = java.util.concurrent.TimeUnit.MILLISECONDS     // Catch: java.lang.Throwable -> L1d java.lang.InterruptedException -> L24
+            r1 = 10000(0x2710, double:4.9407E-320)
+            android.os.IBinder r3 = r3.m8156a(r1, r0)     // Catch: java.lang.Throwable -> L1d java.lang.InterruptedException -> L24
+            int r0 = p024b7.AbstractBinderC0685c.f3872a     // Catch: java.lang.Throwable -> L1d java.lang.InterruptedException -> L24
+            java.lang.String r0 = "com.google.android.gms.ads.identifier.internal.IAdvertisingIdService"
+            android.os.IInterface r0 = r3.queryLocalInterface(r0)     // Catch: java.lang.Throwable -> L1d java.lang.InterruptedException -> L24
+            boolean r1 = r0 instanceof p024b7.InterfaceC0684b     // Catch: java.lang.Throwable -> L1d java.lang.InterruptedException -> L24
+            if (r1 == 0) goto L17
+            b7.b r0 = (p024b7.InterfaceC0684b) r0     // Catch: java.lang.Throwable -> L1d java.lang.InterruptedException -> L24
+            goto L1c
+        L17:
+            b7.d r0 = new b7.d     // Catch: java.lang.Throwable -> L1d java.lang.InterruptedException -> L24
+            r0.<init>(r3)     // Catch: java.lang.Throwable -> L1d java.lang.InterruptedException -> L24
+        L1c:
+            return r0
+        L1d:
+            r3 = move-exception
+            java.io.IOException r0 = new java.io.IOException
+            r0.<init>(r3)
+            throw r0
+        L24:
+            java.io.IOException r3 = new java.io.IOException
+            java.lang.String r0 = "Interrupted exception"
+            r3.<init>(r0)
+            throw r3
+    }
+
+    /* renamed from: e */
+    public static p184k6.ServiceConnectionC3696a m14230e(android.content.Context r3, boolean r4) {
+            android.content.pm.PackageManager r0 = r3.getPackageManager()     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L52
+            java.lang.String r1 = "com.android.vending"
+            r2 = 0
+            r0.getPackageInfo(r1, r2)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L52
+            k6.f r0 = p184k6.C3703f.f16409b
+            r1 = 12451000(0xbdfcb8, float:1.7447567E-38)
+            int r0 = r0.mo8164b(r3, r1)
+            if (r0 == 0) goto L21
+            r1 = 2
+            if (r0 != r1) goto L19
+            goto L21
+        L19:
+            java.io.IOException r3 = new java.io.IOException
+            java.lang.String r4 = "Google Play services not available"
+            r3.<init>(r4)
+            throw r3
+        L21:
+            if (r4 == 0) goto L26
+            java.lang.String r4 = "com.google.android.gms.ads.identifier.service.PERSISTENT_START"
+            goto L28
+        L26:
+            java.lang.String r4 = "com.google.android.gms.ads.identifier.service.START"
+        L28:
+            k6.a r0 = new k6.a
+            r0.<init>()
+            android.content.Intent r1 = new android.content.Intent
+            r1.<init>(r4)
+            java.lang.String r4 = "com.google.android.gms"
+            r1.setPackage(r4)
+            t6.a r4 = p338t6.C6181a.m12748b()     // Catch: java.lang.Throwable -> L4b
+            r2 = 1
+            boolean r3 = r4.m12749a(r3, r1, r0, r2)     // Catch: java.lang.Throwable -> L4b
+            if (r3 == 0) goto L43
+            return r0
+        L43:
+            java.io.IOException r3 = new java.io.IOException
+            java.lang.String r4 = "Connection failure"
+            r3.<init>(r4)
+            throw r3
+        L4b:
+            r3 = move-exception
+            java.io.IOException r4 = new java.io.IOException
+            r4.<init>(r3)
+            throw r4
+        L52:
+            j6.m r3 = new j6.m
+            r4 = 9
+            r3.<init>(r4)
+            throw r3
+    }
+
+    /* renamed from: a */
+    public final void m14231a() {
+            r3 = this;
+            java.lang.String r0 = "Calling this from your main thread can lead to deadlock"
+            com.google.android.gms.common.internal.C1101a.m3102g(r0)
+            monitor-enter(r3)
+            android.content.Context r0 = r3.f27524f     // Catch: java.lang.Throwable -> L33
+            if (r0 == 0) goto L31
+            k6.a r0 = r3.f27519a     // Catch: java.lang.Throwable -> L33
+            if (r0 != 0) goto Lf
+            goto L31
+        Lf:
+            boolean r0 = r3.f27521c     // Catch: java.lang.Throwable -> L1f
+            if (r0 == 0) goto L27
+            t6.a r0 = p338t6.C6181a.m12748b()     // Catch: java.lang.Throwable -> L1f
+            android.content.Context r1 = r3.f27524f     // Catch: java.lang.Throwable -> L1f
+            k6.a r2 = r3.f27519a     // Catch: java.lang.Throwable -> L1f
+            r0.m12750c(r1, r2)     // Catch: java.lang.Throwable -> L1f
+            goto L27
+        L1f:
+            r0 = move-exception
+            java.lang.String r1 = "AdvertisingIdClient"
+            java.lang.String r2 = "AdvertisingIdClient unbindService failed."
+            android.util.Log.i(r1, r2, r0)     // Catch: java.lang.Throwable -> L33
+        L27:
+            r0 = 0
+            r3.f27521c = r0     // Catch: java.lang.Throwable -> L33
+            r0 = 0
+            r3.f27520b = r0     // Catch: java.lang.Throwable -> L33
+            r3.f27519a = r0     // Catch: java.lang.Throwable -> L33
+            monitor-exit(r3)     // Catch: java.lang.Throwable -> L33
+            return
+        L31:
+            monitor-exit(r3)     // Catch: java.lang.Throwable -> L33
+            return
+        L33:
+            r0 = move-exception
+            monitor-exit(r3)     // Catch: java.lang.Throwable -> L33
+            throw r0
+    }
+
+    /* renamed from: c */
+    public p428y5.C7118a.a m14232c() {
+            r4 = this;
+            java.lang.String r0 = "Calling this from your main thread can lead to deadlock"
+            com.google.android.gms.common.internal.C1101a.m3102g(r0)
+            monitor-enter(r4)
+            boolean r0 = r4.f27521c     // Catch: java.lang.Throwable -> L70
+            if (r0 != 0) goto L3b
+            java.lang.Object r0 = r4.f27522d     // Catch: java.lang.Throwable -> L70
+            monitor-enter(r0)     // Catch: java.lang.Throwable -> L70
+            y5.a$b r1 = r4.f27523e     // Catch: java.lang.Throwable -> L38
+            if (r1 == 0) goto L30
+            boolean r1 = r1.f27532b0     // Catch: java.lang.Throwable -> L38
+            if (r1 == 0) goto L30
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L38
+            r0 = 0
+            r4.m14234g(r0)     // Catch: java.lang.Exception -> L27 java.lang.Throwable -> L70
+            boolean r0 = r4.f27521c     // Catch: java.lang.Throwable -> L70
+            if (r0 == 0) goto L1f
+            goto L3b
+        L1f:
+            java.io.IOException r0 = new java.io.IOException     // Catch: java.lang.Throwable -> L70
+            java.lang.String r1 = "AdvertisingIdClient cannot reconnect."
+            r0.<init>(r1)     // Catch: java.lang.Throwable -> L70
+            throw r0     // Catch: java.lang.Throwable -> L70
+        L27:
+            r0 = move-exception
+            java.io.IOException r1 = new java.io.IOException     // Catch: java.lang.Throwable -> L70
+            java.lang.String r2 = "AdvertisingIdClient cannot reconnect."
+            r1.<init>(r2, r0)     // Catch: java.lang.Throwable -> L70
+            throw r1     // Catch: java.lang.Throwable -> L70
+        L30:
+            java.io.IOException r1 = new java.io.IOException     // Catch: java.lang.Throwable -> L38
+            java.lang.String r2 = "AdvertisingIdClient is not connected."
+            r1.<init>(r2)     // Catch: java.lang.Throwable -> L38
+            throw r1     // Catch: java.lang.Throwable -> L38
+        L38:
+            r1 = move-exception
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L38
+            throw r1     // Catch: java.lang.Throwable -> L70
+        L3b:
+            k6.a r0 = r4.f27519a     // Catch: java.lang.Throwable -> L70
+            java.lang.String r1 = "null reference"
+            java.util.Objects.requireNonNull(r0, r1)     // Catch: java.lang.Throwable -> L70
+            b7.b r0 = r4.f27520b     // Catch: java.lang.Throwable -> L70
+            java.lang.String r1 = "null reference"
+            java.util.Objects.requireNonNull(r0, r1)     // Catch: java.lang.Throwable -> L70
+            y5.a$a r0 = new y5.a$a     // Catch: android.os.RemoteException -> L60 java.lang.Throwable -> L70
+            b7.b r1 = r4.f27520b     // Catch: android.os.RemoteException -> L60 java.lang.Throwable -> L70
+            java.lang.String r1 = r1.mo2245r()     // Catch: android.os.RemoteException -> L60 java.lang.Throwable -> L70
+            b7.b r2 = r4.f27520b     // Catch: android.os.RemoteException -> L60 java.lang.Throwable -> L70
+            r3 = 1
+            boolean r2 = r2.mo2246s1(r3)     // Catch: android.os.RemoteException -> L60 java.lang.Throwable -> L70
+            r0.<init>(r1, r2)     // Catch: android.os.RemoteException -> L60 java.lang.Throwable -> L70
+            monitor-exit(r4)     // Catch: java.lang.Throwable -> L70
+            r4.m14233f()
+            return r0
+        L60:
+            r0 = move-exception
+            java.lang.String r1 = "AdvertisingIdClient"
+            java.lang.String r2 = "GMS remote exception "
+            android.util.Log.i(r1, r2, r0)     // Catch: java.lang.Throwable -> L70
+            java.io.IOException r0 = new java.io.IOException     // Catch: java.lang.Throwable -> L70
+            java.lang.String r1 = "Remote exception"
+            r0.<init>(r1)     // Catch: java.lang.Throwable -> L70
+            throw r0     // Catch: java.lang.Throwable -> L70
+        L70:
+            r0 = move-exception
+            monitor-exit(r4)     // Catch: java.lang.Throwable -> L70
+            throw r0
+    }
+
+    /* renamed from: f */
+    public final void m14233f() {
+            r6 = this;
+            java.lang.Object r0 = r6.f27522d
+            monitor-enter(r0)
+            y5.a$b r1 = r6.f27523e     // Catch: java.lang.Throwable -> L24
+            if (r1 == 0) goto L11
+            java.util.concurrent.CountDownLatch r1 = r1.f27531a0     // Catch: java.lang.Throwable -> L24
+            r1.countDown()     // Catch: java.lang.Throwable -> L24
+            y5.a$b r1 = r6.f27523e     // Catch: java.lang.InterruptedException -> L11 java.lang.Throwable -> L24
+            r1.join()     // Catch: java.lang.InterruptedException -> L11 java.lang.Throwable -> L24
+        L11:
+            long r1 = r6.f27526h     // Catch: java.lang.Throwable -> L24
+            r3 = 0
+            int r5 = (r1 > r3 ? 1 : (r1 == r3 ? 0 : -1))
+            if (r5 <= 0) goto L22
+            y5.a$b r1 = new y5.a$b     // Catch: java.lang.Throwable -> L24
+            long r2 = r6.f27526h     // Catch: java.lang.Throwable -> L24
+            r1.<init>(r6, r2)     // Catch: java.lang.Throwable -> L24
+            r6.f27523e = r1     // Catch: java.lang.Throwable -> L24
+        L22:
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L24
+            return
+        L24:
+            r1 = move-exception
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L24
+            throw r1
+    }
+
+    public void finalize() {
+            r0 = this;
+            r0.m14231a()
+            super.finalize()
+            return
+    }
+
+    /* renamed from: g */
+    public final void m14234g(boolean r3) {
+            r2 = this;
+            java.lang.String r0 = "Calling this from your main thread can lead to deadlock"
+            com.google.android.gms.common.internal.C1101a.m3102g(r0)
+            monitor-enter(r2)
+            boolean r0 = r2.f27521c     // Catch: java.lang.Throwable -> L27
+            if (r0 == 0) goto Ld
+            r2.m14231a()     // Catch: java.lang.Throwable -> L27
+        Ld:
+            android.content.Context r0 = r2.f27524f     // Catch: java.lang.Throwable -> L27
+            boolean r1 = r2.f27525g     // Catch: java.lang.Throwable -> L27
+            k6.a r0 = m14230e(r0, r1)     // Catch: java.lang.Throwable -> L27
+            r2.f27519a = r0     // Catch: java.lang.Throwable -> L27
+            b7.b r0 = m14229d(r0)     // Catch: java.lang.Throwable -> L27
+            r2.f27520b = r0     // Catch: java.lang.Throwable -> L27
+            r0 = 1
+            r2.f27521c = r0     // Catch: java.lang.Throwable -> L27
+            if (r3 == 0) goto L25
+            r2.m14233f()     // Catch: java.lang.Throwable -> L27
+        L25:
+            monitor-exit(r2)     // Catch: java.lang.Throwable -> L27
+            return
+        L27:
+            r3 = move-exception
+            monitor-exit(r2)     // Catch: java.lang.Throwable -> L27
+            throw r3
+    }
+
+    /* renamed from: h */
+    public final boolean m14235h(p428y5.C7118a.a r5, boolean r6, float r7, long r8, java.lang.String r10, java.lang.Throwable r11) {
+            r4 = this;
+            double r0 = java.lang.Math.random()
+            double r2 = (double) r7
+            int r7 = (r0 > r2 ? 1 : (r0 == r2 ? 0 : -1))
+            if (r7 <= 0) goto Lb
+            r5 = 0
+            return r5
+        Lb:
+            java.util.HashMap r7 = new java.util.HashMap
+            r7.<init>()
+            java.lang.String r0 = "1"
+            java.lang.String r1 = "0"
+            if (r6 == 0) goto L18
+            r6 = r0
+            goto L19
+        L18:
+            r6 = r1
+        L19:
+            java.lang.String r2 = "app_context"
+            r7.put(r2, r6)
+            if (r5 == 0) goto L2b
+            boolean r6 = r5.f27528b
+            if (r6 == 0) goto L25
+            goto L26
+        L25:
+            r0 = r1
+        L26:
+            java.lang.String r6 = "limit_ad_tracking"
+            r7.put(r6, r0)
+        L2b:
+            if (r5 == 0) goto L3e
+            java.lang.String r5 = r5.f27527a
+            if (r5 == 0) goto L3e
+            int r5 = r5.length()
+            java.lang.String r5 = java.lang.Integer.toString(r5)
+            java.lang.String r6 = "ad_id_size"
+            r7.put(r6, r5)
+        L3e:
+            if (r11 == 0) goto L4d
+            java.lang.Class r5 = r11.getClass()
+            java.lang.String r5 = r5.getName()
+            java.lang.String r6 = "error"
+            r7.put(r6, r5)
+        L4d:
+            if (r10 == 0) goto L5a
+            boolean r5 = r10.isEmpty()
+            if (r5 != 0) goto L5a
+            java.lang.String r5 = "experiment_id"
+            r7.put(r5, r10)
+        L5a:
+            java.lang.String r5 = "tag"
+            java.lang.String r6 = "AdvertisingIdClient"
+            r7.put(r5, r6)
+            java.lang.String r5 = java.lang.Long.toString(r8)
+            java.lang.String r6 = "time_spent"
+            r7.put(r6, r5)
+            y5.b r5 = new y5.b
+            r5.<init>(r7)
+            r5.start()
+            r5 = 1
+            return r5
+    }
+}
+package p428y5;
+
+/* renamed from: y5.b */
+/* loaded from: classes.dex */
+public final class C7119b extends java.lang.Thread {
+
+    /* renamed from: Y */
+    public final /* synthetic */ java.util.Map f27533Y;
+
+    public C7119b(java.util.Map r1) {
+            r0 = this;
+            r0.f27533Y = r1
+            r0.<init>()
+            return
+    }
+
+    @Override // java.lang.Thread, java.lang.Runnable
+    public final void run() {
+            r7 = this;
+            java.lang.String r0 = ". "
+            java.lang.String r1 = "HttpUrlPinger"
+            java.util.Map r2 = r7.f27533Y
+            java.lang.String r3 = "https://pagead2.googlesyndication.com/pagead/gen_204?id=gmob-apps"
+            android.net.Uri r3 = android.net.Uri.parse(r3)
+            android.net.Uri$Builder r3 = r3.buildUpon()
+            java.util.Set r4 = r2.keySet()
+            java.util.Iterator r4 = r4.iterator()
+        L18:
+            boolean r5 = r4.hasNext()
+            if (r5 == 0) goto L2e
+            java.lang.Object r5 = r4.next()
+            java.lang.String r5 = (java.lang.String) r5
+            java.lang.Object r6 = r2.get(r5)
+            java.lang.String r6 = (java.lang.String) r6
+            r3.appendQueryParameter(r5, r6)
+            goto L18
+        L2e:
+            android.net.Uri r2 = r3.build()
+            java.lang.String r2 = r2.toString()
+            java.net.URL r3 = new java.net.URL     // Catch: java.lang.RuntimeException -> L7c java.io.IOException -> L7e java.lang.IndexOutOfBoundsException -> L95
+            r3.<init>(r2)     // Catch: java.lang.RuntimeException -> L7c java.io.IOException -> L7e java.lang.IndexOutOfBoundsException -> L95
+            java.net.URLConnection r3 = r3.openConnection()     // Catch: java.lang.RuntimeException -> L7c java.io.IOException -> L7e java.lang.IndexOutOfBoundsException -> L95
+            java.net.HttpURLConnection r3 = (java.net.HttpURLConnection) r3     // Catch: java.lang.RuntimeException -> L7c java.io.IOException -> L7e java.lang.IndexOutOfBoundsException -> L95
+            int r4 = r3.getResponseCode()     // Catch: java.lang.Throwable -> L77
+            r5 = 200(0xc8, float:2.8E-43)
+            if (r4 < r5) goto L4d
+            r5 = 300(0x12c, float:4.2E-43)
+            if (r4 < r5) goto L73
+        L4d:
+            java.lang.String r5 = java.lang.String.valueOf(r2)     // Catch: java.lang.Throwable -> L77
+            int r5 = r5.length()     // Catch: java.lang.Throwable -> L77
+            int r5 = r5 + 65
+            java.lang.StringBuilder r6 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L77
+            r6.<init>(r5)     // Catch: java.lang.Throwable -> L77
+            java.lang.String r5 = "Received non-success response code "
+            r6.append(r5)     // Catch: java.lang.Throwable -> L77
+            r6.append(r4)     // Catch: java.lang.Throwable -> L77
+            java.lang.String r4 = " from pinging URL: "
+            r6.append(r4)     // Catch: java.lang.Throwable -> L77
+            r6.append(r2)     // Catch: java.lang.Throwable -> L77
+            java.lang.String r4 = r6.toString()     // Catch: java.lang.Throwable -> L77
+            android.util.Log.w(r1, r4)     // Catch: java.lang.Throwable -> L77
+        L73:
+            r3.disconnect()     // Catch: java.lang.RuntimeException -> L7c java.io.IOException -> L7e java.lang.IndexOutOfBoundsException -> L95
+            return
+        L77:
+            r4 = move-exception
+            r3.disconnect()     // Catch: java.lang.RuntimeException -> L7c java.io.IOException -> L7e java.lang.IndexOutOfBoundsException -> L95
+            throw r4     // Catch: java.lang.RuntimeException -> L7c java.io.IOException -> L7e java.lang.IndexOutOfBoundsException -> L95
+        L7c:
+            r3 = move-exception
+            goto L7f
+        L7e:
+            r3 = move-exception
+        L7f:
+            java.lang.String r4 = r3.getMessage()
+            r5 = 27
+            int r5 = p064e.C1489c.m4038a(r2, r5)
+            int r5 = p064e.C1489c.m4038a(r4, r5)
+            java.lang.StringBuilder r6 = new java.lang.StringBuilder
+            r6.<init>(r5)
+            java.lang.String r5 = "Error while pinging URL: "
+            goto Lab
+        L95:
+            r3 = move-exception
+            java.lang.String r4 = r3.getMessage()
+            r5 = 32
+            int r5 = p064e.C1489c.m4038a(r2, r5)
+            int r5 = p064e.C1489c.m4038a(r4, r5)
+            java.lang.StringBuilder r6 = new java.lang.StringBuilder
+            r6.<init>(r5)
+            java.lang.String r5 = "Error while parsing ping URL: "
+        Lab:
+            r6.append(r5)
+            r6.append(r2)
+            r6.append(r0)
+            r6.append(r4)
+            java.lang.String r0 = r6.toString()
+            android.util.Log.w(r1, r0, r3)
+            return
+    }
+}

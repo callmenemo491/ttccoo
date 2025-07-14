@@ -1,0 +1,3613 @@
+package p051d5;
+
+/* renamed from: d5.h */
+/* loaded from: classes.dex */
+public abstract class AbstractC1289h implements p427y4.C7110a.b {
+
+    /* renamed from: Y */
+    public final java.lang.String f6790Y;
+
+    public AbstractC1289h(java.lang.String r1) {
+            r0 = this;
+            r0.<init>()
+            r0.f6790Y = r1
+            return
+    }
+
+    @Override // p427y4.C7110a.b
+    /* renamed from: D */
+    public /* synthetic */ p088f4.C2003e0 mo30D() {
+            r1 = this;
+            f4.e0 r0 = p427y4.C7111b.m14222b(r1)
+            return r0
+    }
+
+    @Override // p427y4.C7110a.b
+    /* renamed from: O */
+    public /* synthetic */ byte[] mo31O() {
+            r1 = this;
+            byte[] r0 = p427y4.C7111b.m14221a(r1)
+            return r0
+    }
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+            r1 = this;
+            r0 = 0
+            return r0
+    }
+
+    @Override // p427y4.C7110a.b
+    /* renamed from: p */
+    public /* synthetic */ void mo32p(p088f4.C2021k0.b r1) {
+            r0 = this;
+            p427y4.C7111b.m14223c(r0, r1)
+            return
+    }
+
+    public java.lang.String toString() {
+            r1 = this;
+            java.lang.String r0 = r1.f6790Y
+            return r0
+    }
+}
+package p051d5;
+
+/* renamed from: d5.a */
+/* loaded from: classes.dex */
+public final class C1282a extends p051d5.AbstractC1289h {
+    public static final android.os.Parcelable.Creator<p051d5.C1282a> CREATOR = null;
+
+    /* renamed from: Z */
+    public final java.lang.String f6762Z;
+
+    /* renamed from: a0 */
+    public final java.lang.String f6763a0;
+
+    /* renamed from: b0 */
+    public final int f6764b0;
+
+    /* renamed from: c0 */
+    public final byte[] f6765c0;
+
+    /* renamed from: d5.a$a */
+    public class a implements android.os.Parcelable.Creator<p051d5.C1282a> {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p051d5.C1282a createFromParcel(android.os.Parcel r2) {
+                r1 = this;
+                d5.a r0 = new d5.a
+                r0.<init>(r2)
+                return r0
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p051d5.C1282a[] newArray(int r1) {
+                r0 = this;
+                d5.a[] r1 = new p051d5.C1282a[r1]
+                return r1
+        }
+    }
+
+    static {
+            d5.a$a r0 = new d5.a$a
+            r0.<init>()
+            p051d5.C1282a.CREATOR = r0
+            return
+    }
+
+    public C1282a(android.os.Parcel r3) {
+            r2 = this;
+            java.lang.String r0 = "APIC"
+            r2.<init>(r0)
+            java.lang.String r0 = r3.readString()
+            int r1 = p371v5.C6552b0.f25624a
+            r2.f6762Z = r0
+            java.lang.String r0 = r3.readString()
+            r2.f6763a0 = r0
+            int r0 = r3.readInt()
+            r2.f6764b0 = r0
+            byte[] r3 = r3.createByteArray()
+            r2.f6765c0 = r3
+            return
+    }
+
+    public C1282a(java.lang.String r2, java.lang.String r3, int r4, byte[] r5) {
+            r1 = this;
+            java.lang.String r0 = "APIC"
+            r1.<init>(r0)
+            r1.f6762Z = r2
+            r1.f6763a0 = r3
+            r1.f6764b0 = r4
+            r1.f6765c0 = r5
+            return
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            r1 = 0
+            if (r5 == 0) goto L39
+            java.lang.Class<d5.a> r2 = p051d5.C1282a.class
+            java.lang.Class r3 = r5.getClass()
+            if (r2 == r3) goto L10
+            goto L39
+        L10:
+            d5.a r5 = (p051d5.C1282a) r5
+            int r2 = r4.f6764b0
+            int r3 = r5.f6764b0
+            if (r2 != r3) goto L37
+            java.lang.String r2 = r4.f6762Z
+            java.lang.String r3 = r5.f6762Z
+            boolean r2 = p371v5.C6552b0.m13308a(r2, r3)
+            if (r2 == 0) goto L37
+            java.lang.String r2 = r4.f6763a0
+            java.lang.String r3 = r5.f6763a0
+            boolean r2 = p371v5.C6552b0.m13308a(r2, r3)
+            if (r2 == 0) goto L37
+            byte[] r2 = r4.f6765c0
+            byte[] r5 = r5.f6765c0
+            boolean r5 = java.util.Arrays.equals(r2, r5)
+            if (r5 == 0) goto L37
+            goto L38
+        L37:
+            r0 = 0
+        L38:
+            return r0
+        L39:
+            return r1
+    }
+
+    public int hashCode() {
+            r3 = this;
+            int r0 = r3.f6764b0
+            r1 = 527(0x20f, float:7.38E-43)
+            int r1 = r1 + r0
+            int r1 = r1 * 31
+            java.lang.String r0 = r3.f6762Z
+            r2 = 0
+            if (r0 == 0) goto L11
+            int r0 = r0.hashCode()
+            goto L12
+        L11:
+            r0 = 0
+        L12:
+            int r1 = r1 + r0
+            int r1 = r1 * 31
+            java.lang.String r0 = r3.f6763a0
+            if (r0 == 0) goto L1d
+            int r2 = r0.hashCode()
+        L1d:
+            int r1 = r1 + r2
+            int r1 = r1 * 31
+            byte[] r0 = r3.f6765c0
+            int r0 = java.util.Arrays.hashCode(r0)
+            int r0 = r0 + r1
+            return r0
+    }
+
+    @Override // p051d5.AbstractC1289h, p427y4.C7110a.b
+    /* renamed from: p */
+    public void mo32p(p088f4.C2021k0.b r3) {
+            r2 = this;
+            byte[] r0 = r2.f6765c0
+            int r1 = r2.f6764b0
+            r3.m5313b(r0, r1)
+            return
+    }
+
+    @Override // p051d5.AbstractC1289h
+    public java.lang.String toString() {
+            r6 = this;
+            java.lang.String r0 = r6.f6790Y
+            java.lang.String r1 = r6.f6762Z
+            java.lang.String r2 = r6.f6763a0
+            r3 = 25
+            int r3 = p064e.C1489c.m4038a(r0, r3)
+            int r3 = p064e.C1489c.m4038a(r1, r3)
+            int r3 = p064e.C1489c.m4038a(r2, r3)
+            java.lang.String r4 = ": mimeType="
+            java.lang.String r5 = ", description="
+            java.lang.StringBuilder r0 = p064e.C1491e.m4040a(r3, r0, r4, r1, r5)
+            r0.append(r2)
+            java.lang.String r0 = r0.toString()
+            return r0
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(android.os.Parcel r1, int r2) {
+            r0 = this;
+            java.lang.String r2 = r0.f6762Z
+            r1.writeString(r2)
+            java.lang.String r2 = r0.f6763a0
+            r1.writeString(r2)
+            int r2 = r0.f6764b0
+            r1.writeInt(r2)
+            byte[] r2 = r0.f6765c0
+            r1.writeByteArray(r2)
+            return
+    }
+}
+package p051d5;
+
+/* renamed from: d5.b */
+/* loaded from: classes.dex */
+public final class C1283b extends p051d5.AbstractC1289h {
+    public static final android.os.Parcelable.Creator<p051d5.C1283b> CREATOR = null;
+
+    /* renamed from: Z */
+    public final byte[] f6766Z;
+
+    /* renamed from: d5.b$a */
+    public class a implements android.os.Parcelable.Creator<p051d5.C1283b> {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p051d5.C1283b createFromParcel(android.os.Parcel r2) {
+                r1 = this;
+                d5.b r0 = new d5.b
+                r0.<init>(r2)
+                return r0
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p051d5.C1283b[] newArray(int r1) {
+                r0 = this;
+                d5.b[] r1 = new p051d5.C1283b[r1]
+                return r1
+        }
+    }
+
+    static {
+            d5.b$a r0 = new d5.b$a
+            r0.<init>()
+            p051d5.C1283b.CREATOR = r0
+            return
+    }
+
+    public C1283b(android.os.Parcel r3) {
+            r2 = this;
+            java.lang.String r0 = r3.readString()
+            int r1 = p371v5.C6552b0.f25624a
+            r2.<init>(r0)
+            byte[] r3 = r3.createByteArray()
+            r2.f6766Z = r3
+            return
+    }
+
+    public C1283b(java.lang.String r1, byte[] r2) {
+            r0 = this;
+            r0.<init>(r1)
+            r0.f6766Z = r2
+            return
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            r1 = 0
+            if (r5 == 0) goto L29
+            java.lang.Class<d5.b> r2 = p051d5.C1283b.class
+            java.lang.Class r3 = r5.getClass()
+            if (r2 == r3) goto L10
+            goto L29
+        L10:
+            d5.b r5 = (p051d5.C1283b) r5
+            java.lang.String r2 = r4.f6790Y
+            java.lang.String r3 = r5.f6790Y
+            boolean r2 = r2.equals(r3)
+            if (r2 == 0) goto L27
+            byte[] r2 = r4.f6766Z
+            byte[] r5 = r5.f6766Z
+            boolean r5 = java.util.Arrays.equals(r2, r5)
+            if (r5 == 0) goto L27
+            goto L28
+        L27:
+            r0 = 0
+        L28:
+            return r0
+        L29:
+            return r1
+    }
+
+    public int hashCode() {
+            r3 = this;
+            java.lang.String r0 = r3.f6790Y
+            r1 = 527(0x20f, float:7.38E-43)
+            r2 = 31
+            int r0 = p213m1.C4319e.m9651a(r0, r1, r2)
+            byte[] r1 = r3.f6766Z
+            int r1 = java.util.Arrays.hashCode(r1)
+            int r1 = r1 + r0
+            return r1
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(android.os.Parcel r1, int r2) {
+            r0 = this;
+            java.lang.String r2 = r0.f6790Y
+            r1.writeString(r2)
+            byte[] r2 = r0.f6766Z
+            r1.writeByteArray(r2)
+            return
+    }
+}
+package p051d5;
+
+/* renamed from: d5.c */
+/* loaded from: classes.dex */
+public final class C1284c extends p051d5.AbstractC1289h {
+    public static final android.os.Parcelable.Creator<p051d5.C1284c> CREATOR = null;
+
+    /* renamed from: Z */
+    public final java.lang.String f6767Z;
+
+    /* renamed from: a0 */
+    public final int f6768a0;
+
+    /* renamed from: b0 */
+    public final int f6769b0;
+
+    /* renamed from: c0 */
+    public final long f6770c0;
+
+    /* renamed from: d0 */
+    public final long f6771d0;
+
+    /* renamed from: e0 */
+    public final p051d5.AbstractC1289h[] f6772e0;
+
+    /* renamed from: d5.c$a */
+    public class a implements android.os.Parcelable.Creator<p051d5.C1284c> {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p051d5.C1284c createFromParcel(android.os.Parcel r2) {
+                r1 = this;
+                d5.c r0 = new d5.c
+                r0.<init>(r2)
+                return r0
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p051d5.C1284c[] newArray(int r1) {
+                r0 = this;
+                d5.c[] r1 = new p051d5.C1284c[r1]
+                return r1
+        }
+    }
+
+    static {
+            d5.c$a r0 = new d5.c$a
+            r0.<init>()
+            p051d5.C1284c.CREATOR = r0
+            return
+    }
+
+    public C1284c(android.os.Parcel r5) {
+            r4 = this;
+            java.lang.String r0 = "CHAP"
+            r4.<init>(r0)
+            java.lang.String r0 = r5.readString()
+            int r1 = p371v5.C6552b0.f25624a
+            r4.f6767Z = r0
+            int r0 = r5.readInt()
+            r4.f6768a0 = r0
+            int r0 = r5.readInt()
+            r4.f6769b0 = r0
+            long r0 = r5.readLong()
+            r4.f6770c0 = r0
+            long r0 = r5.readLong()
+            r4.f6771d0 = r0
+            int r0 = r5.readInt()
+            d5.h[] r1 = new p051d5.AbstractC1289h[r0]
+            r4.f6772e0 = r1
+            r1 = 0
+        L2e:
+            if (r1 >= r0) goto L43
+            d5.h[] r2 = r4.f6772e0
+            java.lang.Class<d5.h> r3 = p051d5.AbstractC1289h.class
+            java.lang.ClassLoader r3 = r3.getClassLoader()
+            android.os.Parcelable r3 = r5.readParcelable(r3)
+            d5.h r3 = (p051d5.AbstractC1289h) r3
+            r2[r1] = r3
+            int r1 = r1 + 1
+            goto L2e
+        L43:
+            return
+    }
+
+    public C1284c(java.lang.String r2, int r3, int r4, long r5, long r7, p051d5.AbstractC1289h[] r9) {
+            r1 = this;
+            java.lang.String r0 = "CHAP"
+            r1.<init>(r0)
+            r1.f6767Z = r2
+            r1.f6768a0 = r3
+            r1.f6769b0 = r4
+            r1.f6770c0 = r5
+            r1.f6771d0 = r7
+            r1.f6772e0 = r9
+            return
+    }
+
+    @Override // p051d5.AbstractC1289h, android.os.Parcelable
+    public int describeContents() {
+            r1 = this;
+            r0 = 0
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r8) {
+            r7 = this;
+            r0 = 1
+            if (r7 != r8) goto L4
+            return r0
+        L4:
+            r1 = 0
+            if (r8 == 0) goto L45
+            java.lang.Class<d5.c> r2 = p051d5.C1284c.class
+            java.lang.Class r3 = r8.getClass()
+            if (r2 == r3) goto L10
+            goto L45
+        L10:
+            d5.c r8 = (p051d5.C1284c) r8
+            int r2 = r7.f6768a0
+            int r3 = r8.f6768a0
+            if (r2 != r3) goto L43
+            int r2 = r7.f6769b0
+            int r3 = r8.f6769b0
+            if (r2 != r3) goto L43
+            long r2 = r7.f6770c0
+            long r4 = r8.f6770c0
+            int r6 = (r2 > r4 ? 1 : (r2 == r4 ? 0 : -1))
+            if (r6 != 0) goto L43
+            long r2 = r7.f6771d0
+            long r4 = r8.f6771d0
+            int r6 = (r2 > r4 ? 1 : (r2 == r4 ? 0 : -1))
+            if (r6 != 0) goto L43
+            java.lang.String r2 = r7.f6767Z
+            java.lang.String r3 = r8.f6767Z
+            boolean r2 = p371v5.C6552b0.m13308a(r2, r3)
+            if (r2 == 0) goto L43
+            d5.h[] r2 = r7.f6772e0
+            d5.h[] r8 = r8.f6772e0
+            boolean r8 = java.util.Arrays.equals(r2, r8)
+            if (r8 == 0) goto L43
+            goto L44
+        L43:
+            r0 = 0
+        L44:
+            return r0
+        L45:
+            return r1
+    }
+
+    public int hashCode() {
+            r4 = this;
+            int r0 = r4.f6768a0
+            r1 = 527(0x20f, float:7.38E-43)
+            int r1 = r1 + r0
+            int r1 = r1 * 31
+            int r0 = r4.f6769b0
+            int r1 = r1 + r0
+            int r1 = r1 * 31
+            long r2 = r4.f6770c0
+            int r0 = (int) r2
+            int r1 = r1 + r0
+            int r1 = r1 * 31
+            long r2 = r4.f6771d0
+            int r0 = (int) r2
+            int r1 = r1 + r0
+            int r1 = r1 * 31
+            java.lang.String r0 = r4.f6767Z
+            if (r0 == 0) goto L21
+            int r0 = r0.hashCode()
+            goto L22
+        L21:
+            r0 = 0
+        L22:
+            int r1 = r1 + r0
+            return r1
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(android.os.Parcel r5, int r6) {
+            r4 = this;
+            java.lang.String r6 = r4.f6767Z
+            r5.writeString(r6)
+            int r6 = r4.f6768a0
+            r5.writeInt(r6)
+            int r6 = r4.f6769b0
+            r5.writeInt(r6)
+            long r0 = r4.f6770c0
+            r5.writeLong(r0)
+            long r0 = r4.f6771d0
+            r5.writeLong(r0)
+            d5.h[] r6 = r4.f6772e0
+            int r6 = r6.length
+            r5.writeInt(r6)
+            d5.h[] r6 = r4.f6772e0
+            int r0 = r6.length
+            r1 = 0
+            r2 = 0
+        L24:
+            if (r2 >= r0) goto L2e
+            r3 = r6[r2]
+            r5.writeParcelable(r3, r1)
+            int r2 = r2 + 1
+            goto L24
+        L2e:
+            return
+    }
+}
+package p051d5;
+
+/* renamed from: d5.d */
+/* loaded from: classes.dex */
+public final class C1285d extends p051d5.AbstractC1289h {
+    public static final android.os.Parcelable.Creator<p051d5.C1285d> CREATOR = null;
+
+    /* renamed from: Z */
+    public final java.lang.String f6773Z;
+
+    /* renamed from: a0 */
+    public final boolean f6774a0;
+
+    /* renamed from: b0 */
+    public final boolean f6775b0;
+
+    /* renamed from: c0 */
+    public final java.lang.String[] f6776c0;
+
+    /* renamed from: d0 */
+    public final p051d5.AbstractC1289h[] f6777d0;
+
+    /* renamed from: d5.d$a */
+    public class a implements android.os.Parcelable.Creator<p051d5.C1285d> {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p051d5.C1285d createFromParcel(android.os.Parcel r2) {
+                r1 = this;
+                d5.d r0 = new d5.d
+                r0.<init>(r2)
+                return r0
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p051d5.C1285d[] newArray(int r1) {
+                r0 = this;
+                d5.d[] r1 = new p051d5.C1285d[r1]
+                return r1
+        }
+    }
+
+    static {
+            d5.d$a r0 = new d5.d$a
+            r0.<init>()
+            p051d5.C1285d.CREATOR = r0
+            return
+    }
+
+    public C1285d(android.os.Parcel r5) {
+            r4 = this;
+            java.lang.String r0 = "CTOC"
+            r4.<init>(r0)
+            java.lang.String r0 = r5.readString()
+            int r1 = p371v5.C6552b0.f25624a
+            r4.f6773Z = r0
+            byte r0 = r5.readByte()
+            r1 = 1
+            r2 = 0
+            if (r0 == 0) goto L17
+            r0 = 1
+            goto L18
+        L17:
+            r0 = 0
+        L18:
+            r4.f6774a0 = r0
+            byte r0 = r5.readByte()
+            if (r0 == 0) goto L21
+            goto L22
+        L21:
+            r1 = 0
+        L22:
+            r4.f6775b0 = r1
+            java.lang.String[] r0 = r5.createStringArray()
+            r4.f6776c0 = r0
+            int r0 = r5.readInt()
+            d5.h[] r1 = new p051d5.AbstractC1289h[r0]
+            r4.f6777d0 = r1
+        L32:
+            if (r2 >= r0) goto L47
+            d5.h[] r1 = r4.f6777d0
+            java.lang.Class<d5.h> r3 = p051d5.AbstractC1289h.class
+            java.lang.ClassLoader r3 = r3.getClassLoader()
+            android.os.Parcelable r3 = r5.readParcelable(r3)
+            d5.h r3 = (p051d5.AbstractC1289h) r3
+            r1[r2] = r3
+            int r2 = r2 + 1
+            goto L32
+        L47:
+            return
+    }
+
+    public C1285d(java.lang.String r2, boolean r3, boolean r4, java.lang.String[] r5, p051d5.AbstractC1289h[] r6) {
+            r1 = this;
+            java.lang.String r0 = "CTOC"
+            r1.<init>(r0)
+            r1.f6773Z = r2
+            r1.f6774a0 = r3
+            r1.f6775b0 = r4
+            r1.f6776c0 = r5
+            r1.f6777d0 = r6
+            return
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            r1 = 0
+            if (r5 == 0) goto L3f
+            java.lang.Class<d5.d> r2 = p051d5.C1285d.class
+            java.lang.Class r3 = r5.getClass()
+            if (r2 == r3) goto L10
+            goto L3f
+        L10:
+            d5.d r5 = (p051d5.C1285d) r5
+            boolean r2 = r4.f6774a0
+            boolean r3 = r5.f6774a0
+            if (r2 != r3) goto L3d
+            boolean r2 = r4.f6775b0
+            boolean r3 = r5.f6775b0
+            if (r2 != r3) goto L3d
+            java.lang.String r2 = r4.f6773Z
+            java.lang.String r3 = r5.f6773Z
+            boolean r2 = p371v5.C6552b0.m13308a(r2, r3)
+            if (r2 == 0) goto L3d
+            java.lang.String[] r2 = r4.f6776c0
+            java.lang.String[] r3 = r5.f6776c0
+            boolean r2 = java.util.Arrays.equals(r2, r3)
+            if (r2 == 0) goto L3d
+            d5.h[] r2 = r4.f6777d0
+            d5.h[] r5 = r5.f6777d0
+            boolean r5 = java.util.Arrays.equals(r2, r5)
+            if (r5 == 0) goto L3d
+            goto L3e
+        L3d:
+            r0 = 0
+        L3e:
+            return r0
+        L3f:
+            return r1
+    }
+
+    public int hashCode() {
+            r2 = this;
+            boolean r0 = r2.f6774a0
+            r1 = 527(0x20f, float:7.38E-43)
+            int r1 = r1 + r0
+            int r1 = r1 * 31
+            boolean r0 = r2.f6775b0
+            int r1 = r1 + r0
+            int r1 = r1 * 31
+            java.lang.String r0 = r2.f6773Z
+            if (r0 == 0) goto L15
+            int r0 = r0.hashCode()
+            goto L16
+        L15:
+            r0 = 0
+        L16:
+            int r1 = r1 + r0
+            return r1
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(android.os.Parcel r5, int r6) {
+            r4 = this;
+            java.lang.String r6 = r4.f6773Z
+            r5.writeString(r6)
+            boolean r6 = r4.f6774a0
+            byte r6 = (byte) r6
+            r5.writeByte(r6)
+            boolean r6 = r4.f6775b0
+            byte r6 = (byte) r6
+            r5.writeByte(r6)
+            java.lang.String[] r6 = r4.f6776c0
+            r5.writeStringArray(r6)
+            d5.h[] r6 = r4.f6777d0
+            int r6 = r6.length
+            r5.writeInt(r6)
+            d5.h[] r6 = r4.f6777d0
+            int r0 = r6.length
+            r1 = 0
+            r2 = 0
+        L21:
+            if (r2 >= r0) goto L2b
+            r3 = r6[r2]
+            r5.writeParcelable(r3, r1)
+            int r2 = r2 + 1
+            goto L21
+        L2b:
+            return
+    }
+}
+package p051d5;
+
+/* renamed from: d5.e */
+/* loaded from: classes.dex */
+public final class C1286e extends p051d5.AbstractC1289h {
+    public static final android.os.Parcelable.Creator<p051d5.C1286e> CREATOR = null;
+
+    /* renamed from: Z */
+    public final java.lang.String f6778Z;
+
+    /* renamed from: a0 */
+    public final java.lang.String f6779a0;
+
+    /* renamed from: b0 */
+    public final java.lang.String f6780b0;
+
+    /* renamed from: d5.e$a */
+    public class a implements android.os.Parcelable.Creator<p051d5.C1286e> {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p051d5.C1286e createFromParcel(android.os.Parcel r2) {
+                r1 = this;
+                d5.e r0 = new d5.e
+                r0.<init>(r2)
+                return r0
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p051d5.C1286e[] newArray(int r1) {
+                r0 = this;
+                d5.e[] r1 = new p051d5.C1286e[r1]
+                return r1
+        }
+    }
+
+    static {
+            d5.e$a r0 = new d5.e$a
+            r0.<init>()
+            p051d5.C1286e.CREATOR = r0
+            return
+    }
+
+    public C1286e(android.os.Parcel r3) {
+            r2 = this;
+            java.lang.String r0 = "COMM"
+            r2.<init>(r0)
+            java.lang.String r0 = r3.readString()
+            int r1 = p371v5.C6552b0.f25624a
+            r2.f6778Z = r0
+            java.lang.String r0 = r3.readString()
+            r2.f6779a0 = r0
+            java.lang.String r3 = r3.readString()
+            r2.f6780b0 = r3
+            return
+    }
+
+    public C1286e(java.lang.String r2, java.lang.String r3, java.lang.String r4) {
+            r1 = this;
+            java.lang.String r0 = "COMM"
+            r1.<init>(r0)
+            r1.f6778Z = r2
+            r1.f6779a0 = r3
+            r1.f6780b0 = r4
+            return
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            r1 = 0
+            if (r5 == 0) goto L33
+            java.lang.Class<d5.e> r2 = p051d5.C1286e.class
+            java.lang.Class r3 = r5.getClass()
+            if (r2 == r3) goto L10
+            goto L33
+        L10:
+            d5.e r5 = (p051d5.C1286e) r5
+            java.lang.String r2 = r4.f6779a0
+            java.lang.String r3 = r5.f6779a0
+            boolean r2 = p371v5.C6552b0.m13308a(r2, r3)
+            if (r2 == 0) goto L31
+            java.lang.String r2 = r4.f6778Z
+            java.lang.String r3 = r5.f6778Z
+            boolean r2 = p371v5.C6552b0.m13308a(r2, r3)
+            if (r2 == 0) goto L31
+            java.lang.String r2 = r4.f6780b0
+            java.lang.String r5 = r5.f6780b0
+            boolean r5 = p371v5.C6552b0.m13308a(r2, r5)
+            if (r5 == 0) goto L31
+            goto L32
+        L31:
+            r0 = 0
+        L32:
+            return r0
+        L33:
+            return r1
+    }
+
+    public int hashCode() {
+            r3 = this;
+            java.lang.String r0 = r3.f6778Z
+            r1 = 0
+            if (r0 == 0) goto La
+            int r0 = r0.hashCode()
+            goto Lb
+        La:
+            r0 = 0
+        Lb:
+            r2 = 527(0x20f, float:7.38E-43)
+            int r2 = r2 + r0
+            int r2 = r2 * 31
+            java.lang.String r0 = r3.f6779a0
+            if (r0 == 0) goto L19
+            int r0 = r0.hashCode()
+            goto L1a
+        L19:
+            r0 = 0
+        L1a:
+            int r2 = r2 + r0
+            int r2 = r2 * 31
+            java.lang.String r0 = r3.f6780b0
+            if (r0 == 0) goto L25
+            int r1 = r0.hashCode()
+        L25:
+            int r2 = r2 + r1
+            return r2
+    }
+
+    @Override // p051d5.AbstractC1289h
+    public java.lang.String toString() {
+            r6 = this;
+            java.lang.String r0 = r6.f6790Y
+            java.lang.String r1 = r6.f6778Z
+            java.lang.String r2 = r6.f6779a0
+            r3 = 25
+            int r3 = p064e.C1489c.m4038a(r0, r3)
+            int r3 = p064e.C1489c.m4038a(r1, r3)
+            int r3 = p064e.C1489c.m4038a(r2, r3)
+            java.lang.String r4 = ": language="
+            java.lang.String r5 = ", description="
+            java.lang.StringBuilder r0 = p064e.C1491e.m4040a(r3, r0, r4, r1, r5)
+            r0.append(r2)
+            java.lang.String r0 = r0.toString()
+            return r0
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(android.os.Parcel r1, int r2) {
+            r0 = this;
+            java.lang.String r2 = r0.f6790Y
+            r1.writeString(r2)
+            java.lang.String r2 = r0.f6778Z
+            r1.writeString(r2)
+            java.lang.String r2 = r0.f6780b0
+            r1.writeString(r2)
+            return
+    }
+}
+package p051d5;
+
+/* renamed from: d5.f */
+/* loaded from: classes.dex */
+public final class C1287f extends p051d5.AbstractC1289h {
+    public static final android.os.Parcelable.Creator<p051d5.C1287f> CREATOR = null;
+
+    /* renamed from: Z */
+    public final java.lang.String f6781Z;
+
+    /* renamed from: a0 */
+    public final java.lang.String f6782a0;
+
+    /* renamed from: b0 */
+    public final java.lang.String f6783b0;
+
+    /* renamed from: c0 */
+    public final byte[] f6784c0;
+
+    /* renamed from: d5.f$a */
+    public class a implements android.os.Parcelable.Creator<p051d5.C1287f> {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p051d5.C1287f createFromParcel(android.os.Parcel r2) {
+                r1 = this;
+                d5.f r0 = new d5.f
+                r0.<init>(r2)
+                return r0
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p051d5.C1287f[] newArray(int r1) {
+                r0 = this;
+                d5.f[] r1 = new p051d5.C1287f[r1]
+                return r1
+        }
+    }
+
+    static {
+            d5.f$a r0 = new d5.f$a
+            r0.<init>()
+            p051d5.C1287f.CREATOR = r0
+            return
+    }
+
+    public C1287f(android.os.Parcel r3) {
+            r2 = this;
+            java.lang.String r0 = "GEOB"
+            r2.<init>(r0)
+            java.lang.String r0 = r3.readString()
+            int r1 = p371v5.C6552b0.f25624a
+            r2.f6781Z = r0
+            java.lang.String r0 = r3.readString()
+            r2.f6782a0 = r0
+            java.lang.String r0 = r3.readString()
+            r2.f6783b0 = r0
+            byte[] r3 = r3.createByteArray()
+            r2.f6784c0 = r3
+            return
+    }
+
+    public C1287f(java.lang.String r2, java.lang.String r3, java.lang.String r4, byte[] r5) {
+            r1 = this;
+            java.lang.String r0 = "GEOB"
+            r1.<init>(r0)
+            r1.f6781Z = r2
+            r1.f6782a0 = r3
+            r1.f6783b0 = r4
+            r1.f6784c0 = r5
+            return
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            r1 = 0
+            if (r5 == 0) goto L3d
+            java.lang.Class<d5.f> r2 = p051d5.C1287f.class
+            java.lang.Class r3 = r5.getClass()
+            if (r2 == r3) goto L10
+            goto L3d
+        L10:
+            d5.f r5 = (p051d5.C1287f) r5
+            java.lang.String r2 = r4.f6781Z
+            java.lang.String r3 = r5.f6781Z
+            boolean r2 = p371v5.C6552b0.m13308a(r2, r3)
+            if (r2 == 0) goto L3b
+            java.lang.String r2 = r4.f6782a0
+            java.lang.String r3 = r5.f6782a0
+            boolean r2 = p371v5.C6552b0.m13308a(r2, r3)
+            if (r2 == 0) goto L3b
+            java.lang.String r2 = r4.f6783b0
+            java.lang.String r3 = r5.f6783b0
+            boolean r2 = p371v5.C6552b0.m13308a(r2, r3)
+            if (r2 == 0) goto L3b
+            byte[] r2 = r4.f6784c0
+            byte[] r5 = r5.f6784c0
+            boolean r5 = java.util.Arrays.equals(r2, r5)
+            if (r5 == 0) goto L3b
+            goto L3c
+        L3b:
+            r0 = 0
+        L3c:
+            return r0
+        L3d:
+            return r1
+    }
+
+    public int hashCode() {
+            r3 = this;
+            java.lang.String r0 = r3.f6781Z
+            r1 = 0
+            if (r0 == 0) goto La
+            int r0 = r0.hashCode()
+            goto Lb
+        La:
+            r0 = 0
+        Lb:
+            r2 = 527(0x20f, float:7.38E-43)
+            int r2 = r2 + r0
+            int r2 = r2 * 31
+            java.lang.String r0 = r3.f6782a0
+            if (r0 == 0) goto L19
+            int r0 = r0.hashCode()
+            goto L1a
+        L19:
+            r0 = 0
+        L1a:
+            int r2 = r2 + r0
+            int r2 = r2 * 31
+            java.lang.String r0 = r3.f6783b0
+            if (r0 == 0) goto L25
+            int r1 = r0.hashCode()
+        L25:
+            int r2 = r2 + r1
+            int r2 = r2 * 31
+            byte[] r0 = r3.f6784c0
+            int r0 = java.util.Arrays.hashCode(r0)
+            int r0 = r0 + r2
+            return r0
+    }
+
+    @Override // p051d5.AbstractC1289h
+    public java.lang.String toString() {
+            r7 = this;
+            java.lang.String r0 = r7.f6790Y
+            java.lang.String r1 = r7.f6781Z
+            java.lang.String r2 = r7.f6782a0
+            java.lang.String r3 = r7.f6783b0
+            r4 = 36
+            int r4 = p064e.C1489c.m4038a(r0, r4)
+            int r4 = p064e.C1489c.m4038a(r1, r4)
+            int r4 = p064e.C1489c.m4038a(r2, r4)
+            int r4 = p064e.C1489c.m4038a(r3, r4)
+            java.lang.String r5 = ": mimeType="
+            java.lang.String r6 = ", filename="
+            java.lang.StringBuilder r0 = p064e.C1491e.m4040a(r4, r0, r5, r1, r6)
+            java.lang.String r1 = ", description="
+            java.lang.String r0 = p083f.C1932s.m4774a(r0, r2, r1, r3)
+            return r0
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(android.os.Parcel r1, int r2) {
+            r0 = this;
+            java.lang.String r2 = r0.f6781Z
+            r1.writeString(r2)
+            java.lang.String r2 = r0.f6782a0
+            r1.writeString(r2)
+            java.lang.String r2 = r0.f6783b0
+            r1.writeString(r2)
+            byte[] r2 = r0.f6784c0
+            r1.writeByteArray(r2)
+            return
+    }
+}
+package p051d5;
+
+/* renamed from: d5.g */
+/* loaded from: classes.dex */
+public final class C1288g extends p427y4.AbstractC7117h {
+
+    /* renamed from: b */
+    public static final p051d5.C1288g.a f6785b = null;
+
+    /* renamed from: a */
+    public final p051d5.C1288g.a f6786a;
+
+    /* renamed from: d5.g$a */
+    public interface a {
+        /* renamed from: c */
+        boolean mo2144c(int r1, int r2, int r3, int r4, int r5);
+    }
+
+    /* renamed from: d5.g$b */
+    public static final class b {
+
+        /* renamed from: a */
+        public final int f6787a;
+
+        /* renamed from: b */
+        public final boolean f6788b;
+
+        /* renamed from: c */
+        public final int f6789c;
+
+        public b(int r1, boolean r2, int r3) {
+                r0 = this;
+                r0.<init>()
+                r0.f6787a = r1
+                r0.f6788b = r2
+                r0.f6789c = r3
+                return
+        }
+    }
+
+    static {
+            androidx.room.a r0 = androidx.room.C0618a.f3661k0
+            p051d5.C1288g.f6785b = r0
+            return
+    }
+
+    public C1288g() {
+            r1 = this;
+            r1.<init>()
+            r0 = 0
+            r1.f6786a = r0
+            return
+    }
+
+    public C1288g(p051d5.C1288g.a r1) {
+            r0 = this;
+            r0.<init>()
+            r0.f6786a = r1
+            return
+    }
+
+    /* renamed from: c */
+    public static byte[] m3737c(byte[] r0, int r1, int r2) {
+            if (r2 > r1) goto L5
+            byte[] r0 = p371v5.C6552b0.f25629f
+            return r0
+        L5:
+            byte[] r0 = java.util.Arrays.copyOfRange(r0, r1, r2)
+            return r0
+    }
+
+    /* renamed from: e */
+    public static p051d5.C1282a m3738e(p371v5.C6571u r8, int r9, int r10) {
+            int r0 = r8.m13418u()
+            java.lang.String r1 = m3753t(r0)
+            r2 = -1
+            int r9 = r9 + r2
+            byte[] r3 = new byte[r9]
+            byte[] r4 = r8.f25710a
+            int r5 = r8.f25711b
+            r6 = 0
+            java.lang.System.arraycopy(r4, r5, r3, r6, r9)
+            int r4 = r8.f25711b
+            int r4 = r4 + r9
+            r8.f25711b = r4
+            r8 = 2
+            java.lang.String r4 = "image/"
+            java.lang.String r5 = "ISO-8859-1"
+            if (r10 != r8) goto L4b
+            java.lang.String r10 = new java.lang.String
+            r2 = 3
+            r10.<init>(r3, r6, r2, r5)
+            java.lang.String r10 = p185k7.C3836i.m8629n(r10)
+            java.lang.String r10 = java.lang.String.valueOf(r10)
+            int r2 = r10.length()
+            if (r2 == 0) goto L39
+            java.lang.String r10 = r4.concat(r10)
+            goto L3e
+        L39:
+            java.lang.String r10 = new java.lang.String
+            r10.<init>(r4)
+        L3e:
+            java.lang.String r2 = "image/jpg"
+            boolean r2 = r2.equals(r10)
+            if (r2 == 0) goto L48
+            java.lang.String r10 = "image/jpeg"
+        L48:
+            r2 = r10
+            r10 = 2
+            goto L72
+        L4b:
+            int r10 = m3756w(r3, r6)
+            java.lang.String r7 = new java.lang.String
+            r7.<init>(r3, r6, r10, r5)
+            java.lang.String r5 = p185k7.C3836i.m8629n(r7)
+            r6 = 47
+            int r6 = r5.indexOf(r6)
+            if (r6 != r2) goto L71
+            int r2 = r5.length()
+            if (r2 == 0) goto L6b
+            java.lang.String r2 = r4.concat(r5)
+            goto L72
+        L6b:
+            java.lang.String r2 = new java.lang.String
+            r2.<init>(r4)
+            goto L72
+        L71:
+            r2 = r5
+        L72:
+            int r4 = r10 + 1
+            r4 = r3[r4]
+            r4 = r4 & 255(0xff, float:3.57E-43)
+            int r10 = r10 + r8
+            int r8 = m3755v(r3, r10, r0)
+            java.lang.String r5 = new java.lang.String
+            int r6 = r8 - r10
+            r5.<init>(r3, r10, r6, r1)
+            int r10 = m3752s(r0)
+            int r10 = r10 + r8
+            byte[] r8 = m3737c(r3, r10, r9)
+            d5.a r9 = new d5.a
+            r9.<init>(r2, r5, r4, r8)
+            return r9
+    }
+
+    /* renamed from: f */
+    public static p051d5.C1283b m3739f(p371v5.C6571u r4, int r5, java.lang.String r6) {
+            byte[] r0 = new byte[r5]
+            byte[] r1 = r4.f25710a
+            int r2 = r4.f25711b
+            r3 = 0
+            java.lang.System.arraycopy(r1, r2, r0, r3, r5)
+            int r1 = r4.f25711b
+            int r1 = r1 + r5
+            r4.f25711b = r1
+            d5.b r4 = new d5.b
+            r4.<init>(r6, r0)
+            return r4
+    }
+
+    /* renamed from: g */
+    public static p051d5.C1284c m3740g(p371v5.C6571u r15, int r16, int r17, boolean r18, int r19, p051d5.C1288g.a r20) {
+            r0 = r15
+            int r1 = r0.f25711b
+            byte[] r2 = r0.f25710a
+            int r2 = m3756w(r2, r1)
+            java.lang.String r4 = new java.lang.String
+            byte[] r3 = r0.f25710a
+            int r5 = r2 - r1
+            java.lang.String r6 = "ISO-8859-1"
+            r4.<init>(r3, r1, r5, r6)
+            int r2 = r2 + 1
+            r15.m13396F(r2)
+            int r5 = r15.m13403f()
+            int r6 = r15.m13403f()
+            long r2 = r15.m13419v()
+            r7 = -1
+            r9 = 4294967295(0xffffffff, double:2.1219957905E-314)
+            int r11 = (r2 > r9 ? 1 : (r2 == r9 ? 0 : -1))
+            if (r11 != 0) goto L32
+            r11 = r7
+            goto L33
+        L32:
+            r11 = r2
+        L33:
+            long r2 = r15.m13419v()
+            int r13 = (r2 > r9 ? 1 : (r2 == r9 ? 0 : -1))
+            if (r13 != 0) goto L3d
+            r9 = r7
+            goto L3e
+        L3d:
+            r9 = r2
+        L3e:
+            java.util.ArrayList r2 = new java.util.ArrayList
+            r2.<init>()
+            int r1 = r1 + r16
+        L45:
+            int r3 = r0.f25711b
+            if (r3 >= r1) goto L5b
+            r3 = r17
+            r7 = r18
+            r8 = r19
+            r13 = r20
+            d5.h r14 = m3743j(r3, r15, r7, r8, r13)
+            if (r14 == 0) goto L45
+            r2.add(r14)
+            goto L45
+        L5b:
+            r0 = 0
+            d5.h[] r0 = new p051d5.AbstractC1289h[r0]
+            java.lang.Object[] r0 = r2.toArray(r0)
+            d5.h[] r0 = (p051d5.AbstractC1289h[]) r0
+            d5.c r1 = new d5.c
+            r3 = r1
+            r7 = r11
+            r11 = r0
+            r3.<init>(r4, r5, r6, r7, r9, r11)
+            return r1
+    }
+
+    /* renamed from: h */
+    public static p051d5.C1285d m3741h(p371v5.C6571u r16, int r17, int r18, boolean r19, int r20, p051d5.C1288g.a r21) {
+            r0 = r16
+            int r1 = r0.f25711b
+            byte[] r2 = r0.f25710a
+            int r2 = m3756w(r2, r1)
+            java.lang.String r3 = new java.lang.String
+            byte[] r4 = r0.f25710a
+            int r5 = r2 - r1
+            java.lang.String r6 = "ISO-8859-1"
+            r3.<init>(r4, r1, r5, r6)
+            r4 = 1
+            int r2 = r2 + r4
+            r0.m13396F(r2)
+            int r2 = r16.m13418u()
+            r5 = r2 & 2
+            r7 = 0
+            if (r5 == 0) goto L25
+            r5 = 1
+            goto L26
+        L25:
+            r5 = 0
+        L26:
+            r2 = r2 & r4
+            if (r2 == 0) goto L2b
+            r2 = 1
+            goto L2c
+        L2b:
+            r2 = 0
+        L2c:
+            int r8 = r16.m13418u()
+            java.lang.String[] r9 = new java.lang.String[r8]
+            r10 = 0
+        L33:
+            if (r10 >= r8) goto L4f
+            int r11 = r0.f25711b
+            byte[] r12 = r0.f25710a
+            int r12 = m3756w(r12, r11)
+            java.lang.String r13 = new java.lang.String
+            byte[] r14 = r0.f25710a
+            int r15 = r12 - r11
+            r13.<init>(r14, r11, r15, r6)
+            r9[r10] = r13
+            int r12 = r12 + r4
+            r0.m13396F(r12)
+            int r10 = r10 + 1
+            goto L33
+        L4f:
+            java.util.ArrayList r4 = new java.util.ArrayList
+            r4.<init>()
+            int r1 = r1 + r17
+        L56:
+            int r6 = r0.f25711b
+            if (r6 >= r1) goto L6c
+            r6 = r18
+            r8 = r19
+            r10 = r20
+            r11 = r21
+            d5.h r12 = m3743j(r6, r0, r8, r10, r11)
+            if (r12 == 0) goto L56
+            r4.add(r12)
+            goto L56
+        L6c:
+            d5.h[] r0 = new p051d5.AbstractC1289h[r7]
+            java.lang.Object[] r0 = r4.toArray(r0)
+            d5.h[] r0 = (p051d5.AbstractC1289h[]) r0
+            d5.d r1 = new d5.d
+            r16 = r1
+            r17 = r3
+            r18 = r5
+            r19 = r2
+            r20 = r9
+            r21 = r0
+            r16.<init>(r17, r18, r19, r20, r21)
+            return r1
+    }
+
+    /* renamed from: i */
+    public static p051d5.C1286e m3742i(p371v5.C6571u r8, int r9) {
+            r0 = 4
+            if (r9 >= r0) goto L5
+            r8 = 0
+            return r8
+        L5:
+            int r1 = r8.m13418u()
+            java.lang.String r2 = m3753t(r1)
+            r3 = 3
+            byte[] r4 = new byte[r3]
+            byte[] r5 = r8.f25710a
+            int r6 = r8.f25711b
+            r7 = 0
+            java.lang.System.arraycopy(r5, r6, r4, r7, r3)
+            int r5 = r8.f25711b
+            int r5 = r5 + r3
+            r8.f25711b = r5
+            java.lang.String r5 = new java.lang.String
+            r5.<init>(r4, r7, r3)
+            int r9 = r9 - r0
+            byte[] r0 = new byte[r9]
+            byte[] r3 = r8.f25710a
+            int r4 = r8.f25711b
+            java.lang.System.arraycopy(r3, r4, r0, r7, r9)
+            int r3 = r8.f25711b
+            int r3 = r3 + r9
+            r8.f25711b = r3
+            int r8 = m3755v(r0, r7, r1)
+            java.lang.String r9 = new java.lang.String
+            r9.<init>(r0, r7, r8, r2)
+            int r3 = m3752s(r1)
+            int r3 = r3 + r8
+            int r8 = m3755v(r0, r3, r1)
+            java.lang.String r8 = m3747n(r0, r3, r8, r2)
+            d5.e r0 = new d5.e
+            r0.<init>(r5, r9, r8)
+            return r0
+    }
+
+    /* renamed from: j */
+    public static p051d5.AbstractC1289h m3743j(int r19, p371v5.C6571u r20, boolean r21, int r22, p051d5.C1288g.a r23) {
+            r0 = r19
+            r7 = r20
+            int r8 = r20.m13418u()
+            int r9 = r20.m13418u()
+            int r10 = r20.m13418u()
+            r12 = 3
+            if (r0 < r12) goto L19
+            int r1 = r20.m13418u()
+            r13 = r1
+            goto L1a
+        L19:
+            r13 = 0
+        L1a:
+            r14 = 4
+            if (r0 != r14) goto L3c
+            int r1 = r20.m13421x()
+            if (r21 != 0) goto L3a
+            r2 = r1 & 255(0xff, float:3.57E-43)
+            int r3 = r1 >> 8
+            r3 = r3 & 255(0xff, float:3.57E-43)
+            int r3 = r3 << 7
+            r2 = r2 | r3
+            int r3 = r1 >> 16
+            r3 = r3 & 255(0xff, float:3.57E-43)
+            int r3 = r3 << 14
+            r2 = r2 | r3
+            int r1 = r1 >> 24
+            r1 = r1 & 255(0xff, float:3.57E-43)
+            int r1 = r1 << 21
+            r1 = r1 | r2
+        L3a:
+            r15 = r1
+            goto L48
+        L3c:
+            if (r0 != r12) goto L43
+            int r1 = r20.m13421x()
+            goto L3a
+        L43:
+            int r1 = r20.m13420w()
+            goto L3a
+        L48:
+            if (r0 < r12) goto L50
+            int r1 = r20.m13423z()
+            r6 = r1
+            goto L51
+        L50:
+            r6 = 0
+        L51:
+            r16 = 0
+            if (r8 != 0) goto L65
+            if (r9 != 0) goto L65
+            if (r10 != 0) goto L65
+            if (r13 != 0) goto L65
+            if (r15 != 0) goto L65
+            if (r6 != 0) goto L65
+            int r0 = r7.f25712c
+            r7.m13396F(r0)
+            return r16
+        L65:
+            int r1 = r7.f25711b
+            int r5 = r1 + r15
+            int r1 = r7.f25712c
+            java.lang.String r4 = "Id3Decoder"
+            if (r5 <= r1) goto L7a
+            java.lang.String r0 = "Frame size exceeds remaining tag data"
+            android.util.Log.w(r4, r0)
+            int r0 = r7.f25712c
+            r7.m13396F(r0)
+            return r16
+        L7a:
+            if (r23 == 0) goto L92
+            r1 = r23
+            r2 = r19
+            r3 = r8
+            r11 = r4
+            r4 = r9
+            r14 = r5
+            r5 = r10
+            r18 = r6
+            r6 = r13
+            boolean r1 = r1.mo2144c(r2, r3, r4, r5, r6)
+            if (r1 != 0) goto L96
+            r7.m13396F(r14)
+            return r16
+        L92:
+            r11 = r4
+            r14 = r5
+            r18 = r6
+        L96:
+            r1 = 1
+            if (r0 != r12) goto Lb4
+            r2 = r18
+            r3 = r2 & 128(0x80, float:1.8E-43)
+            if (r3 == 0) goto La1
+            r3 = 1
+            goto La2
+        La1:
+            r3 = 0
+        La2:
+            r4 = r2 & 64
+            if (r4 == 0) goto La8
+            r4 = 1
+            goto La9
+        La8:
+            r4 = 0
+        La9:
+            r2 = r2 & 32
+            if (r2 == 0) goto Laf
+            r2 = 1
+            goto Lb0
+        Laf:
+            r2 = 0
+        Lb0:
+            r17 = r3
+            r6 = 0
+            goto Lea
+        Lb4:
+            r2 = r18
+            r3 = 4
+            if (r0 != r3) goto Le4
+            r3 = r2 & 64
+            if (r3 == 0) goto Lbf
+            r3 = 1
+            goto Lc0
+        Lbf:
+            r3 = 0
+        Lc0:
+            r4 = r2 & 8
+            if (r4 == 0) goto Lc6
+            r4 = 1
+            goto Lc7
+        Lc6:
+            r4 = 0
+        Lc7:
+            r5 = r2 & 4
+            if (r5 == 0) goto Lcd
+            r5 = 1
+            goto Lce
+        Lcd:
+            r5 = 0
+        Lce:
+            r6 = r2 & 2
+            if (r6 == 0) goto Ld4
+            r6 = 1
+            goto Ld5
+        Ld4:
+            r6 = 0
+        Ld5:
+            r2 = r2 & r1
+            if (r2 == 0) goto Ldb
+            r17 = 1
+            goto Ldd
+        Ldb:
+            r17 = 0
+        Ldd:
+            r2 = r3
+            r3 = r17
+            r17 = r4
+            r4 = r5
+            goto Lea
+        Le4:
+            r2 = 0
+            r3 = 0
+            r4 = 0
+            r6 = 0
+            r17 = 0
+        Lea:
+            if (r17 != 0) goto L227
+            if (r4 == 0) goto Lf0
+            goto L227
+        Lf0:
+            if (r2 == 0) goto Lf7
+            int r15 = r15 + (-1)
+            r7.m13397G(r1)
+        Lf7:
+            if (r3 == 0) goto Lff
+            int r15 = r15 + (-4)
+            r1 = 4
+            r7.m13397G(r1)
+        Lff:
+            if (r6 == 0) goto L105
+            int r15 = m3757x(r7, r15)
+        L105:
+            r1 = 84
+            r2 = 88
+            r3 = 2
+            if (r8 != r1) goto L11a
+            if (r9 != r2) goto L11a
+            if (r10 != r2) goto L11a
+            if (r0 == r3) goto L114
+            if (r13 != r2) goto L11a
+        L114:
+            d5.l r1 = m3749p(r7, r15)     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+            goto L1ea
+        L11a:
+            if (r8 != r1) goto L129
+            java.lang.String r1 = m3754u(r0, r8, r9, r10, r13)     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+            d5.l r1 = m3748o(r7, r15, r1)     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+            goto L1ea
+        L126:
+            r0 = move-exception
+            goto L223
+        L129:
+            r4 = 87
+            if (r8 != r4) goto L13b
+            if (r9 != r2) goto L13b
+            if (r10 != r2) goto L13b
+            if (r0 == r3) goto L135
+            if (r13 != r2) goto L13b
+        L135:
+            d5.m r1 = m3751r(r7, r15)     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+            goto L1ea
+        L13b:
+            if (r8 != r4) goto L147
+            java.lang.String r1 = m3754u(r0, r8, r9, r10, r13)     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+            d5.m r1 = m3750q(r7, r15, r1)     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+            goto L1ea
+        L147:
+            r2 = 73
+            r4 = 80
+            if (r8 != r4) goto L15d
+            r5 = 82
+            if (r9 != r5) goto L15d
+            if (r10 != r2) goto L15d
+            r5 = 86
+            if (r13 != r5) goto L15d
+            d5.k r1 = m3746m(r7, r15)     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+            goto L1ea
+        L15d:
+            r5 = 71
+            r6 = 79
+            if (r8 != r5) goto L175
+            r5 = 69
+            if (r9 != r5) goto L175
+            if (r10 != r6) goto L175
+            r5 = 66
+            if (r13 == r5) goto L16f
+            if (r0 != r3) goto L175
+        L16f:
+            d5.f r1 = m3744k(r7, r15)     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+            goto L1ea
+        L175:
+            r5 = 65
+            r12 = 67
+            if (r0 != r3) goto L182
+            if (r8 != r4) goto L190
+            if (r9 != r2) goto L190
+            if (r10 != r12) goto L190
+            goto L18a
+        L182:
+            if (r8 != r5) goto L190
+            if (r9 != r4) goto L190
+            if (r10 != r2) goto L190
+            if (r13 != r12) goto L190
+        L18a:
+            d5.a r1 = m3738e(r7, r15, r0)     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+            goto L1ea
+        L190:
+            r2 = 77
+            if (r8 != r12) goto L1a1
+            if (r9 != r6) goto L1a1
+            if (r10 != r2) goto L1a1
+            if (r13 == r2) goto L19c
+            if (r0 != r3) goto L1a1
+        L19c:
+            d5.e r1 = m3742i(r7, r15)     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+            goto L1ea
+        L1a1:
+            if (r8 != r12) goto L1bb
+            r3 = 72
+            if (r9 != r3) goto L1bb
+            if (r10 != r5) goto L1bb
+            if (r13 != r4) goto L1bb
+            r1 = r20
+            r2 = r15
+            r3 = r19
+            r4 = r21
+            r5 = r22
+            r6 = r23
+            d5.c r1 = m3740g(r1, r2, r3, r4, r5, r6)     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+            goto L1ea
+        L1bb:
+            if (r8 != r12) goto L1d3
+            if (r9 != r1) goto L1d3
+            if (r10 != r6) goto L1d3
+            if (r13 != r12) goto L1d3
+            r1 = r20
+            r2 = r15
+            r3 = r19
+            r4 = r21
+            r5 = r22
+            r6 = r23
+            d5.d r1 = m3741h(r1, r2, r3, r4, r5, r6)     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+            goto L1ea
+        L1d3:
+            if (r8 != r2) goto L1e2
+            r2 = 76
+            if (r9 != r2) goto L1e2
+            if (r10 != r2) goto L1e2
+            if (r13 != r1) goto L1e2
+            d5.j r1 = m3745l(r7, r15)     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+            goto L1ea
+        L1e2:
+            java.lang.String r1 = m3754u(r0, r8, r9, r10, r13)     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+            d5.b r1 = m3739f(r7, r15, r1)     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+        L1ea:
+            if (r1 != 0) goto L216
+            java.lang.String r0 = m3754u(r0, r8, r9, r10, r13)     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+            java.lang.String r2 = java.lang.String.valueOf(r0)     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+            int r2 = r2.length()     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+            int r2 = r2 + 50
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+            r3.<init>(r2)     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+            java.lang.String r2 = "Failed to decode frame: id="
+            r3.append(r2)     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+            r3.append(r0)     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+            java.lang.String r0 = ", frameSize="
+            r3.append(r0)     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+            r3.append(r15)     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+            java.lang.String r0 = r3.toString()     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+            android.util.Log.w(r11, r0)     // Catch: java.lang.Throwable -> L126 java.io.UnsupportedEncodingException -> L21a
+        L216:
+            r7.m13396F(r14)
+            return r1
+        L21a:
+            java.lang.String r0 = "Unsupported character encoding"
+            android.util.Log.w(r11, r0)     // Catch: java.lang.Throwable -> L126
+            r7.m13396F(r14)
+            return r16
+        L223:
+            r7.m13396F(r14)
+            throw r0
+        L227:
+            java.lang.String r0 = "Skipping unsupported compressed or encrypted frame"
+            android.util.Log.w(r11, r0)
+            r7.m13396F(r14)
+            return r16
+    }
+
+    /* renamed from: k */
+    public static p051d5.C1287f m3744k(p371v5.C6571u r6, int r7) {
+            int r0 = r6.m13418u()
+            java.lang.String r1 = m3753t(r0)
+            int r7 = r7 + (-1)
+            byte[] r2 = new byte[r7]
+            byte[] r3 = r6.f25710a
+            int r4 = r6.f25711b
+            r5 = 0
+            java.lang.System.arraycopy(r3, r4, r2, r5, r7)
+            int r3 = r6.f25711b
+            int r3 = r3 + r7
+            r6.f25711b = r3
+            int r6 = m3756w(r2, r5)
+            java.lang.String r3 = new java.lang.String
+            java.lang.String r4 = "ISO-8859-1"
+            r3.<init>(r2, r5, r6, r4)
+            int r6 = r6 + 1
+            int r4 = m3755v(r2, r6, r0)
+            java.lang.String r6 = m3747n(r2, r6, r4, r1)
+            int r5 = m3752s(r0)
+            int r5 = r5 + r4
+            int r4 = m3755v(r2, r5, r0)
+            java.lang.String r1 = m3747n(r2, r5, r4, r1)
+            int r0 = m3752s(r0)
+            int r0 = r0 + r4
+            byte[] r7 = m3737c(r2, r0, r7)
+            d5.f r0 = new d5.f
+            r0.<init>(r3, r6, r1, r7)
+            return r0
+    }
+
+    /* renamed from: l */
+    public static p051d5.C1291j m3745l(p371v5.C6571u r10, int r11) {
+            int r1 = r10.m13423z()
+            int r2 = r10.m13420w()
+            int r3 = r10.m13420w()
+            int r0 = r10.m13418u()
+            int r4 = r10.m13418u()
+            m4.b0 r5 = new m4.b0
+            r5.<init>()
+            byte[] r6 = r10.f25710a
+            int r7 = r10.f25712c
+            r5.m9771p(r6, r7)
+            int r10 = r10.f25711b
+            int r10 = r10 * 8
+            r5.m9772q(r10)
+            int r11 = r11 + (-10)
+            int r11 = r11 * 8
+            int r10 = r0 + r4
+            int r11 = r11 / r10
+            int[] r10 = new int[r11]
+            int[] r6 = new int[r11]
+            r7 = 0
+        L33:
+            if (r7 >= r11) goto L44
+            int r8 = r5.m9766k(r0)
+            int r9 = r5.m9766k(r4)
+            r10[r7] = r8
+            r6[r7] = r9
+            int r7 = r7 + 1
+            goto L33
+        L44:
+            d5.j r11 = new d5.j
+            r0 = r11
+            r4 = r10
+            r5 = r6
+            r0.<init>(r1, r2, r3, r4, r5)
+            return r11
+    }
+
+    /* renamed from: m */
+    public static p051d5.C1292k m3746m(p371v5.C6571u r4, int r5) {
+            byte[] r0 = new byte[r5]
+            byte[] r1 = r4.f25710a
+            int r2 = r4.f25711b
+            r3 = 0
+            java.lang.System.arraycopy(r1, r2, r0, r3, r5)
+            int r1 = r4.f25711b
+            int r1 = r1 + r5
+            r4.f25711b = r1
+            int r4 = m3756w(r0, r3)
+            java.lang.String r1 = new java.lang.String
+            java.lang.String r2 = "ISO-8859-1"
+            r1.<init>(r0, r3, r4, r2)
+            int r4 = r4 + 1
+            byte[] r4 = m3737c(r0, r4, r5)
+            d5.k r5 = new d5.k
+            r5.<init>(r1, r4)
+            return r5
+    }
+
+    /* renamed from: n */
+    public static java.lang.String m3747n(byte[] r1, int r2, int r3, java.lang.String r4) {
+            if (r3 <= r2) goto Ld
+            int r0 = r1.length
+            if (r3 <= r0) goto L6
+            goto Ld
+        L6:
+            java.lang.String r0 = new java.lang.String
+            int r3 = r3 - r2
+            r0.<init>(r1, r2, r3, r4)
+            return r0
+        Ld:
+            java.lang.String r1 = ""
+            return r1
+    }
+
+    /* renamed from: o */
+    public static p051d5.C1293l m3748o(p371v5.C6571u r7, int r8, java.lang.String r9) {
+            r0 = 0
+            r1 = 1
+            if (r8 >= r1) goto L5
+            return r0
+        L5:
+            int r2 = r7.m13418u()
+            java.lang.String r3 = m3753t(r2)
+            int r8 = r8 - r1
+            byte[] r1 = new byte[r8]
+            byte[] r4 = r7.f25710a
+            int r5 = r7.f25711b
+            r6 = 0
+            java.lang.System.arraycopy(r4, r5, r1, r6, r8)
+            int r4 = r7.f25711b
+            int r4 = r4 + r8
+            r7.f25711b = r4
+            int r7 = m3755v(r1, r6, r2)
+            java.lang.String r8 = new java.lang.String
+            r8.<init>(r1, r6, r7, r3)
+            d5.l r7 = new d5.l
+            r7.<init>(r9, r0, r8)
+            return r7
+    }
+
+    /* renamed from: p */
+    public static p051d5.C1293l m3749p(p371v5.C6571u r6, int r7) {
+            r0 = 1
+            if (r7 >= r0) goto L5
+            r6 = 0
+            return r6
+        L5:
+            int r1 = r6.m13418u()
+            java.lang.String r2 = m3753t(r1)
+            int r7 = r7 - r0
+            byte[] r0 = new byte[r7]
+            byte[] r3 = r6.f25710a
+            int r4 = r6.f25711b
+            r5 = 0
+            java.lang.System.arraycopy(r3, r4, r0, r5, r7)
+            int r3 = r6.f25711b
+            int r3 = r3 + r7
+            r6.f25711b = r3
+            int r6 = m3755v(r0, r5, r1)
+            java.lang.String r7 = new java.lang.String
+            r7.<init>(r0, r5, r6, r2)
+            int r3 = m3752s(r1)
+            int r3 = r3 + r6
+            int r6 = m3755v(r0, r3, r1)
+            java.lang.String r6 = m3747n(r0, r3, r6, r2)
+            d5.l r0 = new d5.l
+            java.lang.String r1 = "TXXX"
+            r0.<init>(r1, r7, r6)
+            return r0
+    }
+
+    /* renamed from: q */
+    public static p051d5.C1294m m3750q(p371v5.C6571u r4, int r5, java.lang.String r6) {
+            byte[] r0 = new byte[r5]
+            byte[] r1 = r4.f25710a
+            int r2 = r4.f25711b
+            r3 = 0
+            java.lang.System.arraycopy(r1, r2, r0, r3, r5)
+            int r1 = r4.f25711b
+            int r1 = r1 + r5
+            r4.f25711b = r1
+            int r4 = m3756w(r0, r3)
+            java.lang.String r5 = new java.lang.String
+            java.lang.String r1 = "ISO-8859-1"
+            r5.<init>(r0, r3, r4, r1)
+            d5.m r4 = new d5.m
+            r0 = 0
+            r4.<init>(r6, r0, r5)
+            return r4
+    }
+
+    /* renamed from: r */
+    public static p051d5.C1294m m3751r(p371v5.C6571u r6, int r7) {
+            r0 = 1
+            if (r7 >= r0) goto L5
+            r6 = 0
+            return r6
+        L5:
+            int r1 = r6.m13418u()
+            java.lang.String r2 = m3753t(r1)
+            int r7 = r7 - r0
+            byte[] r0 = new byte[r7]
+            byte[] r3 = r6.f25710a
+            int r4 = r6.f25711b
+            r5 = 0
+            java.lang.System.arraycopy(r3, r4, r0, r5, r7)
+            int r3 = r6.f25711b
+            int r3 = r3 + r7
+            r6.f25711b = r3
+            int r6 = m3755v(r0, r5, r1)
+            java.lang.String r7 = new java.lang.String
+            r7.<init>(r0, r5, r6, r2)
+            int r1 = m3752s(r1)
+            int r1 = r1 + r6
+            int r6 = m3756w(r0, r1)
+            java.lang.String r2 = "ISO-8859-1"
+            java.lang.String r6 = m3747n(r0, r1, r6, r2)
+            d5.m r0 = new d5.m
+            java.lang.String r1 = "WXXX"
+            r0.<init>(r1, r7, r6)
+            return r0
+    }
+
+    /* renamed from: s */
+    public static int m3752s(int r1) {
+            if (r1 == 0) goto L8
+            r0 = 3
+            if (r1 != r0) goto L6
+            goto L8
+        L6:
+            r1 = 2
+            goto L9
+        L8:
+            r1 = 1
+        L9:
+            return r1
+    }
+
+    /* renamed from: t */
+    public static java.lang.String m3753t(int r1) {
+            r0 = 1
+            if (r1 == r0) goto L12
+            r0 = 2
+            if (r1 == r0) goto Lf
+            r0 = 3
+            if (r1 == r0) goto Lc
+            java.lang.String r1 = "ISO-8859-1"
+            return r1
+        Lc:
+            java.lang.String r1 = "UTF-8"
+            return r1
+        Lf:
+            java.lang.String r1 = "UTF-16BE"
+            return r1
+        L12:
+            java.lang.String r1 = "UTF-16"
+            return r1
+    }
+
+    /* renamed from: u */
+    public static java.lang.String m3754u(int r5, int r6, int r7, int r8, int r9) {
+            r0 = 3
+            r1 = 1
+            r2 = 0
+            r3 = 2
+            if (r5 != r3) goto L23
+            java.util.Locale r5 = java.util.Locale.US
+            java.lang.Object[] r9 = new java.lang.Object[r0]
+            java.lang.Integer r6 = java.lang.Integer.valueOf(r6)
+            r9[r2] = r6
+            java.lang.Integer r6 = java.lang.Integer.valueOf(r7)
+            r9[r1] = r6
+            java.lang.Integer r6 = java.lang.Integer.valueOf(r8)
+            r9[r3] = r6
+            java.lang.String r6 = "%c%c%c"
+            java.lang.String r5 = java.lang.String.format(r5, r6, r9)
+            goto L46
+        L23:
+            java.util.Locale r5 = java.util.Locale.US
+            r4 = 4
+            java.lang.Object[] r4 = new java.lang.Object[r4]
+            java.lang.Integer r6 = java.lang.Integer.valueOf(r6)
+            r4[r2] = r6
+            java.lang.Integer r6 = java.lang.Integer.valueOf(r7)
+            r4[r1] = r6
+            java.lang.Integer r6 = java.lang.Integer.valueOf(r8)
+            r4[r3] = r6
+            java.lang.Integer r6 = java.lang.Integer.valueOf(r9)
+            r4[r0] = r6
+            java.lang.String r6 = "%c%c%c%c"
+            java.lang.String r5 = java.lang.String.format(r5, r6, r4)
+        L46:
+            return r5
+    }
+
+    /* renamed from: v */
+    public static int m3755v(byte[] r2, int r3, int r4) {
+            int r0 = m3756w(r2, r3)
+            if (r4 == 0) goto L25
+            r1 = 3
+            if (r4 != r1) goto La
+            goto L25
+        La:
+            int r4 = r2.length
+            int r4 = r4 + (-1)
+            if (r0 >= r4) goto L23
+            int r4 = r0 - r3
+            int r4 = r4 % 2
+            if (r4 != 0) goto L1c
+            int r4 = r0 + 1
+            r4 = r2[r4]
+            if (r4 != 0) goto L1c
+            return r0
+        L1c:
+            int r0 = r0 + 1
+            int r0 = m3756w(r2, r0)
+            goto La
+        L23:
+            int r2 = r2.length
+            return r2
+        L25:
+            return r0
+    }
+
+    /* renamed from: w */
+    public static int m3756w(byte[] r1, int r2) {
+        L0:
+            int r0 = r1.length
+            if (r2 >= r0) goto Lb
+            r0 = r1[r2]
+            if (r0 != 0) goto L8
+            return r2
+        L8:
+            int r2 = r2 + 1
+            goto L0
+        Lb:
+            int r1 = r1.length
+            return r1
+    }
+
+    /* renamed from: x */
+    public static int m3757x(p371v5.C6571u r5, int r6) {
+            byte[] r0 = r5.f25710a
+            int r5 = r5.f25711b
+            r1 = r5
+        L5:
+            int r2 = r1 + 1
+            int r3 = r5 + r6
+            if (r2 >= r3) goto L25
+            r3 = r0[r1]
+            r4 = 255(0xff, float:3.57E-43)
+            r3 = r3 & r4
+            if (r3 != r4) goto L23
+            r3 = r0[r2]
+            if (r3 != 0) goto L23
+            int r3 = r1 - r5
+            int r1 = r1 + 2
+            int r3 = r6 - r3
+            int r3 = r3 + (-2)
+            java.lang.System.arraycopy(r0, r1, r0, r2, r3)
+            int r6 = r6 + (-1)
+        L23:
+            r1 = r2
+            goto L5
+        L25:
+            return r6
+    }
+
+    /* renamed from: y */
+    public static boolean m3758y(p371v5.C6571u r18, int r19, int r20, boolean r21) {
+            r1 = r18
+            r0 = r19
+            int r2 = r1.f25711b
+        L6:
+            int r3 = r18.m13398a()     // Catch: java.lang.Throwable -> Lab
+            r4 = 1
+            r5 = r20
+            if (r3 < r5) goto La7
+            r3 = 3
+            r6 = 0
+            if (r0 < r3) goto L20
+            int r7 = r18.m13403f()     // Catch: java.lang.Throwable -> Lab
+            long r8 = r18.m13419v()     // Catch: java.lang.Throwable -> Lab
+            int r10 = r18.m13423z()     // Catch: java.lang.Throwable -> Lab
+            goto L2a
+        L20:
+            int r7 = r18.m13420w()     // Catch: java.lang.Throwable -> Lab
+            int r8 = r18.m13420w()     // Catch: java.lang.Throwable -> Lab
+            long r8 = (long) r8
+            r10 = 0
+        L2a:
+            r11 = 0
+            if (r7 != 0) goto L38
+            int r7 = (r8 > r11 ? 1 : (r8 == r11 ? 0 : -1))
+            if (r7 != 0) goto L38
+            if (r10 != 0) goto L38
+            r1.m13396F(r2)
+            return r4
+        L38:
+            r7 = 4
+            if (r0 != r7) goto L69
+            if (r21 != 0) goto L69
+            r13 = 8421504(0x808080, double:4.160776E-317)
+            long r13 = r13 & r8
+            int r15 = (r13 > r11 ? 1 : (r13 == r11 ? 0 : -1))
+            if (r15 == 0) goto L49
+            r1.m13396F(r2)
+            return r6
+        L49:
+            r11 = 255(0xff, double:1.26E-321)
+            long r13 = r8 & r11
+            r15 = 8
+            long r15 = r8 >> r15
+            long r15 = r15 & r11
+            r17 = 7
+            long r15 = r15 << r17
+            long r13 = r13 | r15
+            r15 = 16
+            long r15 = r8 >> r15
+            long r15 = r15 & r11
+            r17 = 14
+            long r15 = r15 << r17
+            long r13 = r13 | r15
+            r15 = 24
+            long r8 = r8 >> r15
+            long r8 = r8 & r11
+            r11 = 21
+            long r8 = r8 << r11
+            long r8 = r8 | r13
+        L69:
+            if (r0 != r7) goto L77
+            r3 = r10 & 64
+            if (r3 == 0) goto L71
+            r3 = 1
+            goto L72
+        L71:
+            r3 = 0
+        L72:
+            r7 = r10 & 1
+            if (r7 == 0) goto L86
+            goto L87
+        L77:
+            if (r0 != r3) goto L85
+            r3 = r10 & 32
+            if (r3 == 0) goto L7f
+            r3 = 1
+            goto L80
+        L7f:
+            r3 = 0
+        L80:
+            r7 = r10 & 128(0x80, float:1.8E-43)
+            if (r7 == 0) goto L86
+            goto L87
+        L85:
+            r3 = 0
+        L86:
+            r4 = 0
+        L87:
+            if (r4 == 0) goto L8b
+            int r3 = r3 + 4
+        L8b:
+            long r3 = (long) r3
+            int r7 = (r8 > r3 ? 1 : (r8 == r3 ? 0 : -1))
+            if (r7 >= 0) goto L94
+            r1.m13396F(r2)
+            return r6
+        L94:
+            int r3 = r18.m13398a()     // Catch: java.lang.Throwable -> Lab
+            long r3 = (long) r3
+            int r7 = (r3 > r8 ? 1 : (r3 == r8 ? 0 : -1))
+            if (r7 >= 0) goto La1
+            r1.m13396F(r2)
+            return r6
+        La1:
+            int r3 = (int) r8
+            r1.m13397G(r3)     // Catch: java.lang.Throwable -> Lab
+            goto L6
+        La7:
+            r1.m13396F(r2)
+            return r4
+        Lab:
+            r0 = move-exception
+            r1.m13396F(r2)
+            throw r0
+    }
+
+    @Override // p427y4.AbstractC7117h
+    /* renamed from: b */
+    public p427y4.C7110a mo33b(p427y4.C7114e r1, java.nio.ByteBuffer r2) {
+            r0 = this;
+            byte[] r1 = r2.array()
+            int r2 = r2.limit()
+            y4.a r1 = r0.m3759d(r1, r2)
+            return r1
+    }
+
+    /* renamed from: d */
+    public p427y4.C7110a m3759d(byte[] r13, int r14) {
+            r12 = this;
+            java.util.ArrayList r0 = new java.util.ArrayList
+            r0.<init>()
+            v5.u r1 = new v5.u
+            r1.<init>(r13, r14)
+            int r13 = r1.m13398a()
+            r14 = 0
+            r2 = 1
+            r3 = 2
+            r4 = 10
+            java.lang.String r5 = "Id3Decoder"
+            r6 = 4
+            r7 = 0
+            if (r13 >= r4) goto L1d
+            java.lang.String r13 = "Data too short to be an ID3 tag"
+            goto Lb7
+        L1d:
+            int r13 = r1.m13420w()
+            r8 = 4801587(0x494433, float:6.728456E-39)
+            if (r13 == r8) goto L4d
+            java.lang.String r8 = "Unexpected first three bytes of ID3 tag header: 0x"
+            java.lang.Object[] r9 = new java.lang.Object[r2]
+            java.lang.Integer r13 = java.lang.Integer.valueOf(r13)
+            r9[r14] = r13
+            java.lang.String r13 = "%06X"
+            java.lang.String r13 = java.lang.String.format(r13, r9)
+            java.lang.String r13 = java.lang.String.valueOf(r13)
+            int r9 = r13.length()
+            if (r9 == 0) goto L46
+            java.lang.String r13 = r8.concat(r13)
+            goto Lb7
+        L46:
+            java.lang.String r13 = new java.lang.String
+            r13.<init>(r8)
+            goto Lb7
+        L4d:
+            int r13 = r1.m13418u()
+            r1.m13397G(r2)
+            int r8 = r1.m13418u()
+            int r9 = r1.m13417t()
+            if (r13 != r3) goto L6a
+            r10 = r8 & 64
+            if (r10 == 0) goto L64
+            r10 = 1
+            goto L65
+        L64:
+            r10 = 0
+        L65:
+            if (r10 == 0) goto La0
+            java.lang.String r13 = "Skipped ID3 tag with majorVersion=2 and undefined compression scheme"
+            goto Lb7
+        L6a:
+            r10 = 3
+            if (r13 != r10) goto L80
+            r10 = r8 & 64
+            if (r10 == 0) goto L73
+            r10 = 1
+            goto L74
+        L73:
+            r10 = 0
+        L74:
+            if (r10 == 0) goto La0
+            int r10 = r1.m13403f()
+            r1.m13397G(r10)
+            int r10 = r10 + r6
+            int r9 = r9 - r10
+            goto La0
+        L80:
+            if (r13 != r6) goto Laf
+            r10 = r8 & 64
+            if (r10 == 0) goto L88
+            r10 = 1
+            goto L89
+        L88:
+            r10 = 0
+        L89:
+            if (r10 == 0) goto L95
+            int r10 = r1.m13417t()
+            int r11 = r10 + (-4)
+            r1.m13397G(r11)
+            int r9 = r9 - r10
+        L95:
+            r10 = r8 & 16
+            if (r10 == 0) goto L9b
+            r10 = 1
+            goto L9c
+        L9b:
+            r10 = 0
+        L9c:
+            if (r10 == 0) goto La0
+            int r9 = r9 + (-10)
+        La0:
+            if (r13 >= r6) goto La8
+            r8 = r8 & 128(0x80, float:1.8E-43)
+            if (r8 == 0) goto La8
+            r8 = 1
+            goto La9
+        La8:
+            r8 = 0
+        La9:
+            d5.g$b r10 = new d5.g$b
+            r10.<init>(r13, r8, r9)
+            goto Lbb
+        Laf:
+            r8 = 57
+            java.lang.String r9 = "Skipped ID3 tag with unsupported majorVersion="
+            java.lang.String r13 = p064e.C1490d.m4039a(r8, r9, r13)
+        Lb7:
+            android.util.Log.w(r5, r13)
+            r10 = r7
+        Lbb:
+            if (r10 != 0) goto Lbe
+            return r7
+        Lbe:
+            int r13 = r1.f25711b
+            int r8 = r10.f6787a
+            if (r8 != r3) goto Lc5
+            r4 = 6
+        Lc5:
+            int r3 = r10.f6789c
+            boolean r8 = r10.f6788b
+            if (r8 == 0) goto Lcf
+            int r3 = m3757x(r1, r3)
+        Lcf:
+            int r13 = r13 + r3
+            r1.m13395E(r13)
+            int r13 = r10.f6787a
+            boolean r13 = m3758y(r1, r13, r4, r14)
+            if (r13 != 0) goto Lf1
+            int r13 = r10.f6787a
+            if (r13 != r6) goto Le7
+            boolean r13 = m3758y(r1, r6, r4, r2)
+            if (r13 == 0) goto Le7
+            r14 = 1
+            goto Lf1
+        Le7:
+            int r13 = r10.f6787a
+            r14 = 56
+            java.lang.String r0 = "Failed to validate ID3 tag with majorVersion="
+            p088f4.C1999d.m5182a(r14, r0, r13, r5)
+            return r7
+        Lf1:
+            int r13 = r1.m13398a()
+            if (r13 < r4) goto L105
+            int r13 = r10.f6787a
+            d5.g$a r2 = r12.f6786a
+            d5.h r13 = m3743j(r13, r1, r14, r4, r2)
+            if (r13 == 0) goto Lf1
+            r0.add(r13)
+            goto Lf1
+        L105:
+            y4.a r13 = new y4.a
+            r13.<init>(r0)
+            return r13
+    }
+}
+package p051d5;
+
+/* renamed from: d5.i */
+/* loaded from: classes.dex */
+public final class C1290i extends p051d5.AbstractC1289h {
+    public static final android.os.Parcelable.Creator<p051d5.C1290i> CREATOR = null;
+
+    /* renamed from: Z */
+    public final java.lang.String f6791Z;
+
+    /* renamed from: a0 */
+    public final java.lang.String f6792a0;
+
+    /* renamed from: b0 */
+    public final java.lang.String f6793b0;
+
+    /* renamed from: d5.i$a */
+    public class a implements android.os.Parcelable.Creator<p051d5.C1290i> {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p051d5.C1290i createFromParcel(android.os.Parcel r2) {
+                r1 = this;
+                d5.i r0 = new d5.i
+                r0.<init>(r2)
+                return r0
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p051d5.C1290i[] newArray(int r1) {
+                r0 = this;
+                d5.i[] r1 = new p051d5.C1290i[r1]
+                return r1
+        }
+    }
+
+    static {
+            d5.i$a r0 = new d5.i$a
+            r0.<init>()
+            p051d5.C1290i.CREATOR = r0
+            return
+    }
+
+    public C1290i(android.os.Parcel r3) {
+            r2 = this;
+            java.lang.String r0 = "----"
+            r2.<init>(r0)
+            java.lang.String r0 = r3.readString()
+            int r1 = p371v5.C6552b0.f25624a
+            r2.f6791Z = r0
+            java.lang.String r0 = r3.readString()
+            r2.f6792a0 = r0
+            java.lang.String r3 = r3.readString()
+            r2.f6793b0 = r3
+            return
+    }
+
+    public C1290i(java.lang.String r2, java.lang.String r3, java.lang.String r4) {
+            r1 = this;
+            java.lang.String r0 = "----"
+            r1.<init>(r0)
+            r1.f6791Z = r2
+            r1.f6792a0 = r3
+            r1.f6793b0 = r4
+            return
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            r1 = 0
+            if (r5 == 0) goto L33
+            java.lang.Class<d5.i> r2 = p051d5.C1290i.class
+            java.lang.Class r3 = r5.getClass()
+            if (r2 == r3) goto L10
+            goto L33
+        L10:
+            d5.i r5 = (p051d5.C1290i) r5
+            java.lang.String r2 = r4.f6792a0
+            java.lang.String r3 = r5.f6792a0
+            boolean r2 = p371v5.C6552b0.m13308a(r2, r3)
+            if (r2 == 0) goto L31
+            java.lang.String r2 = r4.f6791Z
+            java.lang.String r3 = r5.f6791Z
+            boolean r2 = p371v5.C6552b0.m13308a(r2, r3)
+            if (r2 == 0) goto L31
+            java.lang.String r2 = r4.f6793b0
+            java.lang.String r5 = r5.f6793b0
+            boolean r5 = p371v5.C6552b0.m13308a(r2, r5)
+            if (r5 == 0) goto L31
+            goto L32
+        L31:
+            r0 = 0
+        L32:
+            return r0
+        L33:
+            return r1
+    }
+
+    public int hashCode() {
+            r3 = this;
+            java.lang.String r0 = r3.f6791Z
+            r1 = 0
+            if (r0 == 0) goto La
+            int r0 = r0.hashCode()
+            goto Lb
+        La:
+            r0 = 0
+        Lb:
+            r2 = 527(0x20f, float:7.38E-43)
+            int r2 = r2 + r0
+            int r2 = r2 * 31
+            java.lang.String r0 = r3.f6792a0
+            if (r0 == 0) goto L19
+            int r0 = r0.hashCode()
+            goto L1a
+        L19:
+            r0 = 0
+        L1a:
+            int r2 = r2 + r0
+            int r2 = r2 * 31
+            java.lang.String r0 = r3.f6793b0
+            if (r0 == 0) goto L25
+            int r1 = r0.hashCode()
+        L25:
+            int r2 = r2 + r1
+            return r2
+    }
+
+    @Override // p051d5.AbstractC1289h
+    public java.lang.String toString() {
+            r6 = this;
+            java.lang.String r0 = r6.f6790Y
+            java.lang.String r1 = r6.f6791Z
+            java.lang.String r2 = r6.f6792a0
+            r3 = 23
+            int r3 = p064e.C1489c.m4038a(r0, r3)
+            int r3 = p064e.C1489c.m4038a(r1, r3)
+            int r3 = p064e.C1489c.m4038a(r2, r3)
+            java.lang.String r4 = ": domain="
+            java.lang.String r5 = ", description="
+            java.lang.StringBuilder r0 = p064e.C1491e.m4040a(r3, r0, r4, r1, r5)
+            r0.append(r2)
+            java.lang.String r0 = r0.toString()
+            return r0
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(android.os.Parcel r1, int r2) {
+            r0 = this;
+            java.lang.String r2 = r0.f6790Y
+            r1.writeString(r2)
+            java.lang.String r2 = r0.f6791Z
+            r1.writeString(r2)
+            java.lang.String r2 = r0.f6793b0
+            r1.writeString(r2)
+            return
+    }
+}
+package p051d5;
+
+/* renamed from: d5.j */
+/* loaded from: classes.dex */
+public final class C1291j extends p051d5.AbstractC1289h {
+    public static final android.os.Parcelable.Creator<p051d5.C1291j> CREATOR = null;
+
+    /* renamed from: Z */
+    public final int f6794Z;
+
+    /* renamed from: a0 */
+    public final int f6795a0;
+
+    /* renamed from: b0 */
+    public final int f6796b0;
+
+    /* renamed from: c0 */
+    public final int[] f6797c0;
+
+    /* renamed from: d0 */
+    public final int[] f6798d0;
+
+    /* renamed from: d5.j$a */
+    public class a implements android.os.Parcelable.Creator<p051d5.C1291j> {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p051d5.C1291j createFromParcel(android.os.Parcel r2) {
+                r1 = this;
+                d5.j r0 = new d5.j
+                r0.<init>(r2)
+                return r0
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p051d5.C1291j[] newArray(int r1) {
+                r0 = this;
+                d5.j[] r1 = new p051d5.C1291j[r1]
+                return r1
+        }
+    }
+
+    static {
+            d5.j$a r0 = new d5.j$a
+            r0.<init>()
+            p051d5.C1291j.CREATOR = r0
+            return
+    }
+
+    public C1291j(int r2, int r3, int r4, int[] r5, int[] r6) {
+            r1 = this;
+            java.lang.String r0 = "MLLT"
+            r1.<init>(r0)
+            r1.f6794Z = r2
+            r1.f6795a0 = r3
+            r1.f6796b0 = r4
+            r1.f6797c0 = r5
+            r1.f6798d0 = r6
+            return
+    }
+
+    public C1291j(android.os.Parcel r3) {
+            r2 = this;
+            java.lang.String r0 = "MLLT"
+            r2.<init>(r0)
+            int r0 = r3.readInt()
+            r2.f6794Z = r0
+            int r0 = r3.readInt()
+            r2.f6795a0 = r0
+            int r0 = r3.readInt()
+            r2.f6796b0 = r0
+            int[] r0 = r3.createIntArray()
+            int r1 = p371v5.C6552b0.f25624a
+            r2.f6797c0 = r0
+            int[] r3 = r3.createIntArray()
+            r2.f6798d0 = r3
+            return
+    }
+
+    @Override // p051d5.AbstractC1289h, android.os.Parcelable
+    public int describeContents() {
+            r1 = this;
+            r0 = 0
+            return r0
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            r1 = 0
+            if (r5 == 0) goto L3b
+            java.lang.Class<d5.j> r2 = p051d5.C1291j.class
+            java.lang.Class r3 = r5.getClass()
+            if (r2 == r3) goto L10
+            goto L3b
+        L10:
+            d5.j r5 = (p051d5.C1291j) r5
+            int r2 = r4.f6794Z
+            int r3 = r5.f6794Z
+            if (r2 != r3) goto L39
+            int r2 = r4.f6795a0
+            int r3 = r5.f6795a0
+            if (r2 != r3) goto L39
+            int r2 = r4.f6796b0
+            int r3 = r5.f6796b0
+            if (r2 != r3) goto L39
+            int[] r2 = r4.f6797c0
+            int[] r3 = r5.f6797c0
+            boolean r2 = java.util.Arrays.equals(r2, r3)
+            if (r2 == 0) goto L39
+            int[] r2 = r4.f6798d0
+            int[] r5 = r5.f6798d0
+            boolean r5 = java.util.Arrays.equals(r2, r5)
+            if (r5 == 0) goto L39
+            goto L3a
+        L39:
+            r0 = 0
+        L3a:
+            return r0
+        L3b:
+            return r1
+    }
+
+    public int hashCode() {
+            r2 = this;
+            int r0 = r2.f6794Z
+            r1 = 527(0x20f, float:7.38E-43)
+            int r1 = r1 + r0
+            int r1 = r1 * 31
+            int r0 = r2.f6795a0
+            int r1 = r1 + r0
+            int r1 = r1 * 31
+            int r0 = r2.f6796b0
+            int r1 = r1 + r0
+            int r1 = r1 * 31
+            int[] r0 = r2.f6797c0
+            int r0 = java.util.Arrays.hashCode(r0)
+            int r0 = r0 + r1
+            int r0 = r0 * 31
+            int[] r1 = r2.f6798d0
+            int r1 = java.util.Arrays.hashCode(r1)
+            int r1 = r1 + r0
+            return r1
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(android.os.Parcel r1, int r2) {
+            r0 = this;
+            int r2 = r0.f6794Z
+            r1.writeInt(r2)
+            int r2 = r0.f6795a0
+            r1.writeInt(r2)
+            int r2 = r0.f6796b0
+            r1.writeInt(r2)
+            int[] r2 = r0.f6797c0
+            r1.writeIntArray(r2)
+            int[] r2 = r0.f6798d0
+            r1.writeIntArray(r2)
+            return
+    }
+}
+package p051d5;
+
+/* renamed from: d5.k */
+/* loaded from: classes.dex */
+public final class C1292k extends p051d5.AbstractC1289h {
+    public static final android.os.Parcelable.Creator<p051d5.C1292k> CREATOR = null;
+
+    /* renamed from: Z */
+    public final java.lang.String f6799Z;
+
+    /* renamed from: a0 */
+    public final byte[] f6800a0;
+
+    /* renamed from: d5.k$a */
+    public class a implements android.os.Parcelable.Creator<p051d5.C1292k> {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p051d5.C1292k createFromParcel(android.os.Parcel r2) {
+                r1 = this;
+                d5.k r0 = new d5.k
+                r0.<init>(r2)
+                return r0
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p051d5.C1292k[] newArray(int r1) {
+                r0 = this;
+                d5.k[] r1 = new p051d5.C1292k[r1]
+                return r1
+        }
+    }
+
+    static {
+            d5.k$a r0 = new d5.k$a
+            r0.<init>()
+            p051d5.C1292k.CREATOR = r0
+            return
+    }
+
+    public C1292k(android.os.Parcel r3) {
+            r2 = this;
+            java.lang.String r0 = "PRIV"
+            r2.<init>(r0)
+            java.lang.String r0 = r3.readString()
+            int r1 = p371v5.C6552b0.f25624a
+            r2.f6799Z = r0
+            byte[] r3 = r3.createByteArray()
+            r2.f6800a0 = r3
+            return
+    }
+
+    public C1292k(java.lang.String r2, byte[] r3) {
+            r1 = this;
+            java.lang.String r0 = "PRIV"
+            r1.<init>(r0)
+            r1.f6799Z = r2
+            r1.f6800a0 = r3
+            return
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            r1 = 0
+            if (r5 == 0) goto L29
+            java.lang.Class<d5.k> r2 = p051d5.C1292k.class
+            java.lang.Class r3 = r5.getClass()
+            if (r2 == r3) goto L10
+            goto L29
+        L10:
+            d5.k r5 = (p051d5.C1292k) r5
+            java.lang.String r2 = r4.f6799Z
+            java.lang.String r3 = r5.f6799Z
+            boolean r2 = p371v5.C6552b0.m13308a(r2, r3)
+            if (r2 == 0) goto L27
+            byte[] r2 = r4.f6800a0
+            byte[] r5 = r5.f6800a0
+            boolean r5 = java.util.Arrays.equals(r2, r5)
+            if (r5 == 0) goto L27
+            goto L28
+        L27:
+            r0 = 0
+        L28:
+            return r0
+        L29:
+            return r1
+    }
+
+    public int hashCode() {
+            r2 = this;
+            java.lang.String r0 = r2.f6799Z
+            if (r0 == 0) goto L9
+            int r0 = r0.hashCode()
+            goto La
+        L9:
+            r0 = 0
+        La:
+            r1 = 527(0x20f, float:7.38E-43)
+            int r1 = r1 + r0
+            int r1 = r1 * 31
+            byte[] r0 = r2.f6800a0
+            int r0 = java.util.Arrays.hashCode(r0)
+            int r0 = r0 + r1
+            return r0
+    }
+
+    @Override // p051d5.AbstractC1289h
+    public java.lang.String toString() {
+            r4 = this;
+            java.lang.String r0 = r4.f6790Y
+            java.lang.String r1 = r4.f6799Z
+            r2 = 8
+            int r2 = p064e.C1489c.m4038a(r0, r2)
+            int r2 = p064e.C1489c.m4038a(r1, r2)
+            java.lang.String r3 = ": owner="
+            java.lang.String r0 = p088f4.C2035p.m5377a(r2, r0, r3, r1)
+            return r0
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(android.os.Parcel r1, int r2) {
+            r0 = this;
+            java.lang.String r2 = r0.f6799Z
+            r1.writeString(r2)
+            byte[] r2 = r0.f6800a0
+            r1.writeByteArray(r2)
+            return
+    }
+}
+package p051d5;
+
+/* renamed from: d5.l */
+/* loaded from: classes.dex */
+public final class C1293l extends p051d5.AbstractC1289h {
+    public static final android.os.Parcelable.Creator<p051d5.C1293l> CREATOR = null;
+
+    /* renamed from: Z */
+    public final java.lang.String f6801Z;
+
+    /* renamed from: a0 */
+    public final java.lang.String f6802a0;
+
+    /* renamed from: d5.l$a */
+    public class a implements android.os.Parcelable.Creator<p051d5.C1293l> {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p051d5.C1293l createFromParcel(android.os.Parcel r2) {
+                r1 = this;
+                d5.l r0 = new d5.l
+                r0.<init>(r2)
+                return r0
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p051d5.C1293l[] newArray(int r1) {
+                r0 = this;
+                d5.l[] r1 = new p051d5.C1293l[r1]
+                return r1
+        }
+    }
+
+    static {
+            d5.l$a r0 = new d5.l$a
+            r0.<init>()
+            p051d5.C1293l.CREATOR = r0
+            return
+    }
+
+    public C1293l(android.os.Parcel r3) {
+            r2 = this;
+            java.lang.String r0 = r3.readString()
+            int r1 = p371v5.C6552b0.f25624a
+            r2.<init>(r0)
+            java.lang.String r0 = r3.readString()
+            r2.f6801Z = r0
+            java.lang.String r3 = r3.readString()
+            r2.f6802a0 = r3
+            return
+    }
+
+    public C1293l(java.lang.String r1, java.lang.String r2, java.lang.String r3) {
+            r0 = this;
+            r0.<init>(r1)
+            r0.f6801Z = r2
+            r0.f6802a0 = r3
+            return
+    }
+
+    /* renamed from: a */
+    public static java.util.List<java.lang.Integer> m3760a(java.lang.String r7) {
+            java.util.ArrayList r0 = new java.util.ArrayList
+            r0.<init>()
+            int r1 = r7.length()     // Catch: java.lang.NumberFormatException -> L6f
+            r2 = 5
+            r3 = 10
+            r4 = 7
+            r5 = 0
+            r6 = 4
+            if (r1 < r3) goto L41
+            java.lang.String r1 = r7.substring(r5, r6)     // Catch: java.lang.NumberFormatException -> L6f
+            int r1 = java.lang.Integer.parseInt(r1)     // Catch: java.lang.NumberFormatException -> L6f
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)     // Catch: java.lang.NumberFormatException -> L6f
+            r0.add(r1)     // Catch: java.lang.NumberFormatException -> L6f
+            java.lang.String r1 = r7.substring(r2, r4)     // Catch: java.lang.NumberFormatException -> L6f
+            int r1 = java.lang.Integer.parseInt(r1)     // Catch: java.lang.NumberFormatException -> L6f
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)     // Catch: java.lang.NumberFormatException -> L6f
+            r0.add(r1)     // Catch: java.lang.NumberFormatException -> L6f
+            r1 = 8
+            java.lang.String r7 = r7.substring(r1, r3)     // Catch: java.lang.NumberFormatException -> L6f
+            int r7 = java.lang.Integer.parseInt(r7)     // Catch: java.lang.NumberFormatException -> L6f
+        L39:
+            java.lang.Integer r7 = java.lang.Integer.valueOf(r7)     // Catch: java.lang.NumberFormatException -> L6f
+            r0.add(r7)     // Catch: java.lang.NumberFormatException -> L6f
+            goto L6e
+        L41:
+            int r1 = r7.length()     // Catch: java.lang.NumberFormatException -> L6f
+            if (r1 < r4) goto L5f
+            java.lang.String r1 = r7.substring(r5, r6)     // Catch: java.lang.NumberFormatException -> L6f
+            int r1 = java.lang.Integer.parseInt(r1)     // Catch: java.lang.NumberFormatException -> L6f
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)     // Catch: java.lang.NumberFormatException -> L6f
+            r0.add(r1)     // Catch: java.lang.NumberFormatException -> L6f
+            java.lang.String r7 = r7.substring(r2, r4)     // Catch: java.lang.NumberFormatException -> L6f
+            int r7 = java.lang.Integer.parseInt(r7)     // Catch: java.lang.NumberFormatException -> L6f
+            goto L39
+        L5f:
+            int r1 = r7.length()     // Catch: java.lang.NumberFormatException -> L6f
+            if (r1 < r6) goto L6e
+            java.lang.String r7 = r7.substring(r5, r6)     // Catch: java.lang.NumberFormatException -> L6f
+            int r7 = java.lang.Integer.parseInt(r7)     // Catch: java.lang.NumberFormatException -> L6f
+            goto L39
+        L6e:
+            return r0
+        L6f:
+            java.util.ArrayList r7 = new java.util.ArrayList
+            r7.<init>()
+            return r7
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            r1 = 0
+            if (r5 == 0) goto L33
+            java.lang.Class<d5.l> r2 = p051d5.C1293l.class
+            java.lang.Class r3 = r5.getClass()
+            if (r2 == r3) goto L10
+            goto L33
+        L10:
+            d5.l r5 = (p051d5.C1293l) r5
+            java.lang.String r2 = r4.f6790Y
+            java.lang.String r3 = r5.f6790Y
+            boolean r2 = p371v5.C6552b0.m13308a(r2, r3)
+            if (r2 == 0) goto L31
+            java.lang.String r2 = r4.f6801Z
+            java.lang.String r3 = r5.f6801Z
+            boolean r2 = p371v5.C6552b0.m13308a(r2, r3)
+            if (r2 == 0) goto L31
+            java.lang.String r2 = r4.f6802a0
+            java.lang.String r5 = r5.f6802a0
+            boolean r5 = p371v5.C6552b0.m13308a(r2, r5)
+            if (r5 == 0) goto L31
+            goto L32
+        L31:
+            r0 = 0
+        L32:
+            return r0
+        L33:
+            return r1
+    }
+
+    public int hashCode() {
+            r3 = this;
+            java.lang.String r0 = r3.f6790Y
+            r1 = 527(0x20f, float:7.38E-43)
+            r2 = 31
+            int r0 = p213m1.C4319e.m9651a(r0, r1, r2)
+            java.lang.String r1 = r3.f6801Z
+            r2 = 0
+            if (r1 == 0) goto L14
+            int r1 = r1.hashCode()
+            goto L15
+        L14:
+            r1 = 0
+        L15:
+            int r0 = r0 + r1
+            int r0 = r0 * 31
+            java.lang.String r1 = r3.f6802a0
+            if (r1 == 0) goto L20
+            int r2 = r1.hashCode()
+        L20:
+            int r0 = r0 + r2
+            return r0
+    }
+
+    @Override // p051d5.AbstractC1289h, p427y4.C7110a.b
+    /* renamed from: p */
+    public void mo32p(p088f4.C2021k0.b r9) {
+            r8 = this;
+            java.lang.String r0 = r8.f6790Y
+            java.util.Objects.requireNonNull(r0)
+            int r1 = r0.hashCode()
+            r2 = 1
+            r3 = 2
+            r4 = 0
+            r5 = 3
+            r6 = 4
+            r7 = -1
+            switch(r1) {
+                case 82815: goto L125;
+                case 82878: goto L11a;
+                case 82897: goto L10f;
+                case 83253: goto L104;
+                case 83254: goto Lf9;
+                case 83255: goto Lee;
+                case 83341: goto Le3;
+                case 83378: goto Ld8;
+                case 83536: goto Lca;
+                case 83552: goto Lbc;
+                case 2567331: goto Lae;
+                case 2569357: goto La0;
+                case 2569891: goto L92;
+                case 2570401: goto L84;
+                case 2570410: goto L76;
+                case 2571565: goto L68;
+                case 2575251: goto L5a;
+                case 2581512: goto L4c;
+                case 2581513: goto L3e;
+                case 2581514: goto L30;
+                case 2583398: goto L22;
+                case 2590194: goto L14;
+                default: goto L12;
+            }
+        L12:
+            goto L12f
+        L14:
+            java.lang.String r1 = "TYER"
+            boolean r0 = r0.equals(r1)
+            if (r0 != 0) goto L1e
+            goto L12f
+        L1e:
+            r7 = 21
+            goto L12f
+        L22:
+            java.lang.String r1 = "TRCK"
+            boolean r0 = r0.equals(r1)
+            if (r0 != 0) goto L2c
+            goto L12f
+        L2c:
+            r7 = 20
+            goto L12f
+        L30:
+            java.lang.String r1 = "TPE3"
+            boolean r0 = r0.equals(r1)
+            if (r0 != 0) goto L3a
+            goto L12f
+        L3a:
+            r7 = 19
+            goto L12f
+        L3e:
+            java.lang.String r1 = "TPE2"
+            boolean r0 = r0.equals(r1)
+            if (r0 != 0) goto L48
+            goto L12f
+        L48:
+            r7 = 18
+            goto L12f
+        L4c:
+            java.lang.String r1 = "TPE1"
+            boolean r0 = r0.equals(r1)
+            if (r0 != 0) goto L56
+            goto L12f
+        L56:
+            r7 = 17
+            goto L12f
+        L5a:
+            java.lang.String r1 = "TIT2"
+            boolean r0 = r0.equals(r1)
+            if (r0 != 0) goto L64
+            goto L12f
+        L64:
+            r7 = 16
+            goto L12f
+        L68:
+            java.lang.String r1 = "TEXT"
+            boolean r0 = r0.equals(r1)
+            if (r0 != 0) goto L72
+            goto L12f
+        L72:
+            r7 = 15
+            goto L12f
+        L76:
+            java.lang.String r1 = "TDRL"
+            boolean r0 = r0.equals(r1)
+            if (r0 != 0) goto L80
+            goto L12f
+        L80:
+            r7 = 14
+            goto L12f
+        L84:
+            java.lang.String r1 = "TDRC"
+            boolean r0 = r0.equals(r1)
+            if (r0 != 0) goto L8e
+            goto L12f
+        L8e:
+            r7 = 13
+            goto L12f
+        L92:
+            java.lang.String r1 = "TDAT"
+            boolean r0 = r0.equals(r1)
+            if (r0 != 0) goto L9c
+            goto L12f
+        L9c:
+            r7 = 12
+            goto L12f
+        La0:
+            java.lang.String r1 = "TCOM"
+            boolean r0 = r0.equals(r1)
+            if (r0 != 0) goto Laa
+            goto L12f
+        Laa:
+            r7 = 11
+            goto L12f
+        Lae:
+            java.lang.String r1 = "TALB"
+            boolean r0 = r0.equals(r1)
+            if (r0 != 0) goto Lb8
+            goto L12f
+        Lb8:
+            r7 = 10
+            goto L12f
+        Lbc:
+            java.lang.String r1 = "TYE"
+            boolean r0 = r0.equals(r1)
+            if (r0 != 0) goto Lc6
+            goto L12f
+        Lc6:
+            r7 = 9
+            goto L12f
+        Lca:
+            java.lang.String r1 = "TXT"
+            boolean r0 = r0.equals(r1)
+            if (r0 != 0) goto Ld4
+            goto L12f
+        Ld4:
+            r7 = 8
+            goto L12f
+        Ld8:
+            java.lang.String r1 = "TT2"
+            boolean r0 = r0.equals(r1)
+            if (r0 != 0) goto Le1
+            goto L12f
+        Le1:
+            r7 = 7
+            goto L12f
+        Le3:
+            java.lang.String r1 = "TRK"
+            boolean r0 = r0.equals(r1)
+            if (r0 != 0) goto Lec
+            goto L12f
+        Lec:
+            r7 = 6
+            goto L12f
+        Lee:
+            java.lang.String r1 = "TP3"
+            boolean r0 = r0.equals(r1)
+            if (r0 != 0) goto Lf7
+            goto L12f
+        Lf7:
+            r7 = 5
+            goto L12f
+        Lf9:
+            java.lang.String r1 = "TP2"
+            boolean r0 = r0.equals(r1)
+            if (r0 != 0) goto L102
+            goto L12f
+        L102:
+            r7 = 4
+            goto L12f
+        L104:
+            java.lang.String r1 = "TP1"
+            boolean r0 = r0.equals(r1)
+            if (r0 != 0) goto L10d
+            goto L12f
+        L10d:
+            r7 = 3
+            goto L12f
+        L10f:
+            java.lang.String r1 = "TDA"
+            boolean r0 = r0.equals(r1)
+            if (r0 != 0) goto L118
+            goto L12f
+        L118:
+            r7 = 2
+            goto L12f
+        L11a:
+            java.lang.String r1 = "TCM"
+            boolean r0 = r0.equals(r1)
+            if (r0 != 0) goto L123
+            goto L12f
+        L123:
+            r7 = 1
+            goto L12f
+        L125:
+            java.lang.String r1 = "TAL"
+            boolean r0 = r0.equals(r1)
+            if (r0 != 0) goto L12e
+            goto L12f
+        L12e:
+            r7 = 0
+        L12f:
+            switch(r7) {
+                case 0: goto L202;
+                case 1: goto L1fd;
+                case 2: goto L1dc;
+                case 3: goto L1d7;
+                case 4: goto L1d2;
+                case 5: goto L1cd;
+                case 6: goto L1a7;
+                case 7: goto L1a2;
+                case 8: goto L19d;
+                case 9: goto L190;
+                case 10: goto L202;
+                case 11: goto L1fd;
+                case 12: goto L1dc;
+                case 13: goto L162;
+                case 14: goto L134;
+                case 15: goto L19d;
+                case 16: goto L1a2;
+                case 17: goto L1d7;
+                case 18: goto L1d2;
+                case 19: goto L1cd;
+                case 20: goto L1a7;
+                case 21: goto L190;
+                default: goto L132;
+            }
+        L132:
+            goto L206
+        L134:
+            java.lang.String r0 = r8.f6802a0
+            java.util.List r0 = m3760a(r0)
+            java.util.ArrayList r0 = (java.util.ArrayList) r0
+            int r1 = r0.size()
+            if (r1 == r2) goto L158
+            if (r1 == r3) goto L150
+            if (r1 == r5) goto L148
+            goto L206
+        L148:
+            java.lang.Object r1 = r0.get(r3)
+            java.lang.Integer r1 = (java.lang.Integer) r1
+            r9.f9157w = r1
+        L150:
+            java.lang.Object r1 = r0.get(r2)
+            java.lang.Integer r1 = (java.lang.Integer) r1
+            r9.f9156v = r1
+        L158:
+            java.lang.Object r0 = r0.get(r4)
+            java.lang.Integer r0 = (java.lang.Integer) r0
+            r9.f9155u = r0
+            goto L206
+        L162:
+            java.lang.String r0 = r8.f6802a0
+            java.util.List r0 = m3760a(r0)
+            java.util.ArrayList r0 = (java.util.ArrayList) r0
+            int r1 = r0.size()
+            if (r1 == r2) goto L186
+            if (r1 == r3) goto L17e
+            if (r1 == r5) goto L176
+            goto L206
+        L176:
+            java.lang.Object r1 = r0.get(r3)
+            java.lang.Integer r1 = (java.lang.Integer) r1
+            r9.f9154t = r1
+        L17e:
+            java.lang.Object r1 = r0.get(r2)
+            java.lang.Integer r1 = (java.lang.Integer) r1
+            r9.f9153s = r1
+        L186:
+            java.lang.Object r0 = r0.get(r4)
+            java.lang.Integer r0 = (java.lang.Integer) r0
+            r9.f9152r = r0
+            goto L206
+        L190:
+            java.lang.String r0 = r8.f6802a0     // Catch: java.lang.Throwable -> L206
+            int r0 = java.lang.Integer.parseInt(r0)     // Catch: java.lang.Throwable -> L206
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r0)     // Catch: java.lang.Throwable -> L206
+            r9.f9152r = r0     // Catch: java.lang.Throwable -> L206
+            goto L206
+        L19d:
+            java.lang.String r0 = r8.f6802a0
+            r9.f9158x = r0
+            goto L206
+        L1a2:
+            java.lang.String r0 = r8.f6802a0
+            r9.f9135a = r0
+            goto L206
+        L1a7:
+            java.lang.String r0 = r8.f6802a0
+            java.lang.String r1 = "/"
+            java.lang.String[] r0 = p371v5.C6552b0.m13303G(r0, r1)
+            r1 = r0[r4]     // Catch: java.lang.Throwable -> L206
+            int r1 = java.lang.Integer.parseInt(r1)     // Catch: java.lang.Throwable -> L206
+            int r3 = r0.length     // Catch: java.lang.Throwable -> L206
+            if (r3 <= r2) goto L1c3
+            r0 = r0[r2]     // Catch: java.lang.Throwable -> L206
+            int r0 = java.lang.Integer.parseInt(r0)     // Catch: java.lang.Throwable -> L206
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r0)     // Catch: java.lang.Throwable -> L206
+            goto L1c4
+        L1c3:
+            r0 = 0
+        L1c4:
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)     // Catch: java.lang.Throwable -> L206
+            r9.f9148n = r1     // Catch: java.lang.Throwable -> L206
+            r9.f9149o = r0     // Catch: java.lang.Throwable -> L206
+            goto L206
+        L1cd:
+            java.lang.String r0 = r8.f6802a0
+            r9.f9160z = r0
+            goto L206
+        L1d2:
+            java.lang.String r0 = r8.f6802a0
+            r9.f9138d = r0
+            goto L206
+        L1d7:
+            java.lang.String r0 = r8.f6802a0
+            r9.f9136b = r0
+            goto L206
+        L1dc:
+            java.lang.String r0 = r8.f6802a0     // Catch: java.lang.Throwable -> L206
+            java.lang.String r0 = r0.substring(r3, r6)     // Catch: java.lang.Throwable -> L206
+            int r0 = java.lang.Integer.parseInt(r0)     // Catch: java.lang.Throwable -> L206
+            java.lang.String r1 = r8.f6802a0     // Catch: java.lang.Throwable -> L206
+            java.lang.String r1 = r1.substring(r4, r3)     // Catch: java.lang.Throwable -> L206
+            int r1 = java.lang.Integer.parseInt(r1)     // Catch: java.lang.Throwable -> L206
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r0)     // Catch: java.lang.Throwable -> L206
+            r9.f9153s = r0     // Catch: java.lang.Throwable -> L206
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r1)     // Catch: java.lang.Throwable -> L206
+            r9.f9154t = r0     // Catch: java.lang.Throwable -> L206
+            goto L206
+        L1fd:
+            java.lang.String r0 = r8.f6802a0
+            r9.f9159y = r0
+            goto L206
+        L202:
+            java.lang.String r0 = r8.f6802a0
+            r9.f9137c = r0
+        L206:
+            return
+    }
+
+    @Override // p051d5.AbstractC1289h
+    public java.lang.String toString() {
+            r6 = this;
+            java.lang.String r0 = r6.f6790Y
+            java.lang.String r1 = r6.f6801Z
+            java.lang.String r2 = r6.f6802a0
+            r3 = 22
+            int r3 = p064e.C1489c.m4038a(r0, r3)
+            int r3 = p064e.C1489c.m4038a(r1, r3)
+            int r3 = p064e.C1489c.m4038a(r2, r3)
+            java.lang.String r4 = ": description="
+            java.lang.String r5 = ": value="
+            java.lang.StringBuilder r0 = p064e.C1491e.m4040a(r3, r0, r4, r1, r5)
+            r0.append(r2)
+            java.lang.String r0 = r0.toString()
+            return r0
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(android.os.Parcel r1, int r2) {
+            r0 = this;
+            java.lang.String r2 = r0.f6790Y
+            r1.writeString(r2)
+            java.lang.String r2 = r0.f6801Z
+            r1.writeString(r2)
+            java.lang.String r2 = r0.f6802a0
+            r1.writeString(r2)
+            return
+    }
+}
+package p051d5;
+
+/* renamed from: d5.m */
+/* loaded from: classes.dex */
+public final class C1294m extends p051d5.AbstractC1289h {
+    public static final android.os.Parcelable.Creator<p051d5.C1294m> CREATOR = null;
+
+    /* renamed from: Z */
+    public final java.lang.String f6803Z;
+
+    /* renamed from: a0 */
+    public final java.lang.String f6804a0;
+
+    /* renamed from: d5.m$a */
+    public class a implements android.os.Parcelable.Creator<p051d5.C1294m> {
+        public a() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p051d5.C1294m createFromParcel(android.os.Parcel r2) {
+                r1 = this;
+                d5.m r0 = new d5.m
+                r0.<init>(r2)
+                return r0
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public p051d5.C1294m[] newArray(int r1) {
+                r0 = this;
+                d5.m[] r1 = new p051d5.C1294m[r1]
+                return r1
+        }
+    }
+
+    static {
+            d5.m$a r0 = new d5.m$a
+            r0.<init>()
+            p051d5.C1294m.CREATOR = r0
+            return
+    }
+
+    public C1294m(android.os.Parcel r3) {
+            r2 = this;
+            java.lang.String r0 = r3.readString()
+            int r1 = p371v5.C6552b0.f25624a
+            r2.<init>(r0)
+            java.lang.String r0 = r3.readString()
+            r2.f6803Z = r0
+            java.lang.String r3 = r3.readString()
+            r2.f6804a0 = r3
+            return
+    }
+
+    public C1294m(java.lang.String r1, java.lang.String r2, java.lang.String r3) {
+            r0 = this;
+            r0.<init>(r1)
+            r0.f6803Z = r2
+            r0.f6804a0 = r3
+            return
+    }
+
+    public boolean equals(java.lang.Object r5) {
+            r4 = this;
+            r0 = 1
+            if (r4 != r5) goto L4
+            return r0
+        L4:
+            r1 = 0
+            if (r5 == 0) goto L33
+            java.lang.Class<d5.m> r2 = p051d5.C1294m.class
+            java.lang.Class r3 = r5.getClass()
+            if (r2 == r3) goto L10
+            goto L33
+        L10:
+            d5.m r5 = (p051d5.C1294m) r5
+            java.lang.String r2 = r4.f6790Y
+            java.lang.String r3 = r5.f6790Y
+            boolean r2 = r2.equals(r3)
+            if (r2 == 0) goto L31
+            java.lang.String r2 = r4.f6803Z
+            java.lang.String r3 = r5.f6803Z
+            boolean r2 = p371v5.C6552b0.m13308a(r2, r3)
+            if (r2 == 0) goto L31
+            java.lang.String r2 = r4.f6804a0
+            java.lang.String r5 = r5.f6804a0
+            boolean r5 = p371v5.C6552b0.m13308a(r2, r5)
+            if (r5 == 0) goto L31
+            goto L32
+        L31:
+            r0 = 0
+        L32:
+            return r0
+        L33:
+            return r1
+    }
+
+    public int hashCode() {
+            r3 = this;
+            java.lang.String r0 = r3.f6790Y
+            r1 = 527(0x20f, float:7.38E-43)
+            r2 = 31
+            int r0 = p213m1.C4319e.m9651a(r0, r1, r2)
+            java.lang.String r1 = r3.f6803Z
+            r2 = 0
+            if (r1 == 0) goto L14
+            int r1 = r1.hashCode()
+            goto L15
+        L14:
+            r1 = 0
+        L15:
+            int r0 = r0 + r1
+            int r0 = r0 * 31
+            java.lang.String r1 = r3.f6804a0
+            if (r1 == 0) goto L20
+            int r2 = r1.hashCode()
+        L20:
+            int r0 = r0 + r2
+            return r0
+    }
+
+    @Override // p051d5.AbstractC1289h
+    public java.lang.String toString() {
+            r4 = this;
+            java.lang.String r0 = r4.f6790Y
+            java.lang.String r1 = r4.f6804a0
+            r2 = 6
+            int r2 = p064e.C1489c.m4038a(r0, r2)
+            int r2 = p064e.C1489c.m4038a(r1, r2)
+            java.lang.String r3 = ": url="
+            java.lang.String r0 = p088f4.C2035p.m5377a(r2, r0, r3, r1)
+            return r0
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(android.os.Parcel r1, int r2) {
+            r0 = this;
+            java.lang.String r2 = r0.f6790Y
+            r1.writeString(r2)
+            java.lang.String r2 = r0.f6803Z
+            r1.writeString(r2)
+            java.lang.String r2 = r0.f6804a0
+            r1.writeString(r2)
+            return
+    }
+}

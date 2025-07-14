@@ -1,0 +1,25 @@
+package p311rb;
+
+/* renamed from: rb.a */
+/* loaded from: classes.dex */
+public abstract class AbstractC5803a extends p311rb.AbstractC5804b {
+    public AbstractC5803a() {
+            r1 = this;
+            r0 = 0
+            throw r0
+    }
+}
+package p311rb;
+
+import p311rb.AbstractC5804b;
+
+/* renamed from: rb.b */
+/* loaded from: classes.dex */
+public abstract class AbstractC5804b<MessageType extends p311rb.AbstractC5804b<MessageType, BuilderType>, BuilderType> {
+}
+package p311rb;
+
+/* renamed from: rb.c */
+/* loaded from: classes.dex */
+public abstract class AbstractC5805c extends p311rb.AbstractC5803a implements java.io.Serializable {
+}

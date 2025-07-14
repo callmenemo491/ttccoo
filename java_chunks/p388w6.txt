@@ -1,0 +1,173 @@
+package p388w6;
+
+/* renamed from: w6.a */
+/* loaded from: classes.dex */
+public class C6814a {
+
+    /* renamed from: a */
+    public static android.content.Context f26523a;
+
+    /* renamed from: b */
+    public static java.lang.Boolean f26524b;
+
+    /* renamed from: a */
+    public static synchronized boolean m13883a(@androidx.annotation.RecentlyNonNull android.content.Context r4) {
+            java.lang.Class<w6.a> r0 = p388w6.C6814a.class
+            monitor-enter(r0)
+            android.content.Context r1 = r4.getApplicationContext()     // Catch: java.lang.Throwable -> L4a
+            android.content.Context r2 = p388w6.C6814a.f26523a     // Catch: java.lang.Throwable -> L4a
+            if (r2 == 0) goto L17
+            java.lang.Boolean r3 = p388w6.C6814a.f26524b     // Catch: java.lang.Throwable -> L4a
+            if (r3 == 0) goto L17
+            if (r2 != r1) goto L17
+            boolean r4 = r3.booleanValue()     // Catch: java.lang.Throwable -> L4a
+            monitor-exit(r0)
+            return r4
+        L17:
+            r2 = 0
+            p388w6.C6814a.f26524b = r2     // Catch: java.lang.Throwable -> L4a
+            boolean r2 = p353u6.C6345h.m12995a()     // Catch: java.lang.Throwable -> L4a
+            if (r2 == 0) goto L2f
+            android.content.pm.PackageManager r4 = r1.getPackageManager()     // Catch: java.lang.Throwable -> L4a
+            boolean r4 = r4.isInstantApp()     // Catch: java.lang.Throwable -> L4a
+            java.lang.Boolean r4 = java.lang.Boolean.valueOf(r4)     // Catch: java.lang.Throwable -> L4a
+        L2c:
+            p388w6.C6814a.f26524b = r4     // Catch: java.lang.Throwable -> L4a
+            goto L40
+        L2f:
+            java.lang.ClassLoader r4 = r4.getClassLoader()     // Catch: java.lang.ClassNotFoundException -> L3d java.lang.Throwable -> L4a
+            java.lang.String r2 = "com.google.android.instantapps.supervisor.InstantAppsRuntime"
+            r4.loadClass(r2)     // Catch: java.lang.ClassNotFoundException -> L3d java.lang.Throwable -> L4a
+            java.lang.Boolean r4 = java.lang.Boolean.TRUE     // Catch: java.lang.ClassNotFoundException -> L3d java.lang.Throwable -> L4a
+            p388w6.C6814a.f26524b = r4     // Catch: java.lang.ClassNotFoundException -> L3d java.lang.Throwable -> L4a
+            goto L40
+        L3d:
+            java.lang.Boolean r4 = java.lang.Boolean.FALSE     // Catch: java.lang.Throwable -> L4a
+            goto L2c
+        L40:
+            p388w6.C6814a.f26523a = r1     // Catch: java.lang.Throwable -> L4a
+            java.lang.Boolean r4 = p388w6.C6814a.f26524b     // Catch: java.lang.Throwable -> L4a
+            boolean r4 = r4.booleanValue()     // Catch: java.lang.Throwable -> L4a
+            monitor-exit(r0)
+            return r4
+        L4a:
+            r4 = move-exception
+            monitor-exit(r0)
+            throw r4
+    }
+}
+package p388w6;
+
+/* renamed from: w6.b */
+/* loaded from: classes.dex */
+public class C6815b {
+
+    /* renamed from: a */
+    public final android.content.Context f26525a;
+
+    public C6815b(@androidx.annotation.RecentlyNonNull android.content.Context r1) {
+            r0 = this;
+            r0.<init>()
+            r0.f26525a = r1
+            return
+    }
+
+    @androidx.annotation.RecentlyNonNull
+    /* renamed from: a */
+    public android.content.pm.ApplicationInfo m13884a(@androidx.annotation.RecentlyNonNull java.lang.String r2, int r3) {
+            r1 = this;
+            android.content.Context r0 = r1.f26525a
+            android.content.pm.PackageManager r0 = r0.getPackageManager()
+            android.content.pm.ApplicationInfo r2 = r0.getApplicationInfo(r2, r3)
+            return r2
+    }
+
+    @androidx.annotation.RecentlyNonNull
+    /* renamed from: b */
+    public android.content.pm.PackageInfo m13885b(@androidx.annotation.RecentlyNonNull java.lang.String r2, int r3) {
+            r1 = this;
+            android.content.Context r0 = r1.f26525a
+            android.content.pm.PackageManager r0 = r0.getPackageManager()
+            android.content.pm.PackageInfo r2 = r0.getPackageInfo(r2, r3)
+            return r2
+    }
+
+    /* renamed from: c */
+    public boolean m13886c() {
+            r2 = this;
+            int r0 = android.os.Binder.getCallingUid()
+            int r1 = android.os.Process.myUid()
+            if (r0 != r1) goto L11
+            android.content.Context r0 = r2.f26525a
+            boolean r0 = p388w6.C6814a.m13883a(r0)
+            return r0
+        L11:
+            boolean r0 = p353u6.C6345h.m12995a()
+            if (r0 == 0) goto L32
+            android.content.Context r0 = r2.f26525a
+            android.content.pm.PackageManager r0 = r0.getPackageManager()
+            int r1 = android.os.Binder.getCallingUid()
+            java.lang.String r0 = r0.getNameForUid(r1)
+            if (r0 == 0) goto L32
+            android.content.Context r1 = r2.f26525a
+            android.content.pm.PackageManager r1 = r1.getPackageManager()
+            boolean r0 = r1.isInstantApp(r0)
+            return r0
+        L32:
+            r0 = 0
+            return r0
+    }
+}
+package p388w6;
+
+/* renamed from: w6.c */
+/* loaded from: classes.dex */
+public class C6816c {
+
+    /* renamed from: b */
+    public static p388w6.C6816c f26526b;
+
+    /* renamed from: a */
+    public p388w6.C6815b f26527a;
+
+    static {
+            w6.c r0 = new w6.c
+            r0.<init>()
+            p388w6.C6816c.f26526b = r0
+            return
+    }
+
+    public C6816c() {
+            r1 = this;
+            r1.<init>()
+            r0 = 0
+            r1.f26527a = r0
+            return
+    }
+
+    @androidx.annotation.RecentlyNonNull
+    /* renamed from: a */
+    public static p388w6.C6815b m13887a(@androidx.annotation.RecentlyNonNull android.content.Context r2) {
+            w6.c r0 = p388w6.C6816c.f26526b
+            monitor-enter(r0)
+            w6.b r1 = r0.f26527a     // Catch: java.lang.Throwable -> L1d
+            if (r1 != 0) goto L19
+            android.content.Context r1 = r2.getApplicationContext()     // Catch: java.lang.Throwable -> L1d
+            if (r1 != 0) goto Le
+            goto L12
+        Le:
+            android.content.Context r2 = r2.getApplicationContext()     // Catch: java.lang.Throwable -> L1d
+        L12:
+            w6.b r1 = new w6.b     // Catch: java.lang.Throwable -> L1d
+            r1.<init>(r2)     // Catch: java.lang.Throwable -> L1d
+            r0.f26527a = r1     // Catch: java.lang.Throwable -> L1d
+        L19:
+            w6.b r2 = r0.f26527a     // Catch: java.lang.Throwable -> L1d
+            monitor-exit(r0)
+            return r2
+        L1d:
+            r2 = move-exception
+            monitor-exit(r0)
+            throw r2
+    }
+}

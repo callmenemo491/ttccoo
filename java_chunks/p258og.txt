@@ -1,0 +1,1955 @@
+package p258og;
+
+/* renamed from: og.b */
+/* loaded from: classes.dex */
+public final class C5265b extends td.AbstractC6218f<p171jd.C3518h2> {
+
+    /* renamed from: o1 */
+    public static final /* synthetic */ int f20434o1 = 0;
+
+    /* renamed from: m1 */
+    public final boolean f20435m1;
+
+    /* renamed from: n1 */
+    public final ch.InterfaceC0977d f20436n1;
+
+    /* renamed from: og.b$a */
+    public static final class a extends p239nh.AbstractC4830j implements mh.InterfaceC4620l<p013ah.C0100a, ch.C0985l> {
+
+        /* renamed from: Z */
+        public final /* synthetic */ p258og.C5265b f20437Z;
+
+        public a(p258og.C5265b r1) {
+                r0 = this;
+                r0.f20437Z = r1
+                r1 = 1
+                r0.<init>(r1)
+                return
+        }
+
+        @Override // mh.InterfaceC4620l
+        /* renamed from: b */
+        public ch.C0985l mo107b(p013ah.C0100a r2) {
+                r1 = this;
+                ah.a r2 = (p013ah.C0100a) r2
+                java.lang.String r0 = "it"
+                p214m2.C4339q.m9706k(r2, r0)
+                og.b r0 = r1.f20437Z
+                p458zg.C7331c.m14402a(r0, r2)
+                ch.l r2 = ch.C0985l.f5061a
+                return r2
+        }
+    }
+
+    /* renamed from: og.b$b */
+    public static final class b extends p239nh.AbstractC4830j implements mh.InterfaceC4620l<ch.C0985l, ch.C0985l> {
+
+        /* renamed from: Z */
+        public final /* synthetic */ p258og.C5265b f20438Z;
+
+        public b(p258og.C5265b r1) {
+                r0 = this;
+                r0.f20438Z = r1
+                r1 = 1
+                r0.<init>(r1)
+                return
+        }
+
+        @Override // mh.InterfaceC4620l
+        /* renamed from: b */
+        public ch.C0985l mo107b(ch.C0985l r3) {
+                r2 = this;
+                ch.l r3 = (ch.C0985l) r3
+                java.lang.String r0 = "it"
+                p214m2.C4339q.m9706k(r3, r0)
+                og.b r3 = r2.f20438Z
+                java.lang.String r0 = "Ooops"
+                java.lang.String r1 = "Sorry, Uplift on Anchor is not supported yet (we're working on it)"
+                p458zg.C7331c.m14403b(r3, r0, r1)
+                ch.l r3 = ch.C0985l.f5061a
+                return r3
+        }
+    }
+
+    /* renamed from: og.b$c */
+    public static final class c extends p239nh.AbstractC4830j implements mh.InterfaceC4620l<android.view.View, ch.C0985l> {
+
+        /* renamed from: Z */
+        public final /* synthetic */ p258og.C5265b f20439Z;
+
+        public c(p258og.C5265b r1) {
+                r0 = this;
+                r0.f20439Z = r1
+                r1 = 1
+                r0.<init>(r1)
+                return
+        }
+
+        @Override // mh.InterfaceC4620l
+        /* renamed from: b */
+        public ch.C0985l mo107b(android.view.View r14) {
+                r13 = this;
+                android.view.View r14 = (android.view.View) r14
+                java.lang.String r0 = "it"
+                p214m2.C4339q.m9706k(r14, r0)
+                og.b r14 = r13.f20439Z
+                int r0 = p258og.C5265b.f20434o1
+                og.d r14 = r14.m11518P0()
+                og.b r0 = r13.f20439Z
+                android.content.Context r6 = r0.m1334s0()
+                java.util.Objects.requireNonNull(r14)
+                nd.b0 r0 = r14.f20446c
+                id.b r0 = r0.m10795h()
+                r1 = 0
+                if (r0 == 0) goto L24
+                od.v0 r0 = r0.f12560b
+                goto L25
+            L24:
+                r0 = r1
+            L25:
+                od.v0 r2 = p255od.EnumC5234v0.ANCHOR
+                if (r0 != r2) goto L37
+                androidx.lifecycle.d0<vg.b<ch.l>> r14 = r14.f20456m
+                vg.b r0 = new vg.b
+                ch.l r1 = ch.C0985l.f5061a
+                r0.<init>(r1)
+                r14.mo7l(r0)
+                goto Ld6
+            L37:
+                nd.b0 r4 = r14.f20446c
+                og.e r0 = new og.e
+                r0.<init>(r14)
+                java.util.Objects.requireNonNull(r4)
+                r4.f18918n = r1
+                r4.f18919o = r0
+                r4.f18920p = r1
+                id.b r14 = r4.m10795h()
+                if (r14 != 0) goto L4f
+                goto Ld6
+            L4f:
+                java.lang.String r0 = r14.f12559a
+                int r1 = r0.length()
+                r2 = 0
+                r3 = 1
+                if (r1 != 0) goto L5b
+                r1 = 1
+                goto L5c
+            L5b:
+                r1 = 0
+            L5c:
+                if (r1 != 0) goto Ld9
+                one.block.eosiojava.models.rpcProvider.Authorization r1 = new one.block.eosiojava.models.rpcProvider.Authorization
+                java.lang.String r5 = r4.f18911g
+                r1.<init>(r0, r5)
+                b3.b r5 = new b3.b
+                r5.<init>(r3)
+                nd.w0 r0 = new nd.w0
+                pd.n r7 = new pd.n
+                java.lang.String r8 = "23849328"
+                r7.<init>(r8)
+                java.util.List r1 = p074e9.C1805a.m4528m(r1)
+                java.lang.String r8 = "atomictoolsx"
+                java.lang.String r9 = "auth"
+                r0.<init>(r8, r9, r7, r1)
+                java.util.List<com.bumptech.glide.load.ImageHeaderParser> r1 = r5.f3814a
+                r1.add(r0)
+                od.v0 r14 = r14.f12560b
+                int[] r0 = p238nd.C4728b0.c.f18932a
+                int r14 = r14.ordinal()
+                r14 = r0[r14]
+                if (r14 == r3) goto La9
+                r0 = 2
+                if (r14 == r0) goto L93
+                goto Ld6
+            L93:
+                nd.f0 r14 = new nd.f0
+                r14.<init>(r4)
+                r4.f18924t = r14
+                r4.m10805s(r6)
+                java.util.List r14 = r5.m2211g()
+                nd.i0 r0 = new nd.i0
+                r0.<init>(r4, r14)
+                r4.f18913i = r0
+                goto Ld6
+            La9:
+                one.block.eosiojava.session.TransactionSession r14 = r4.m10796i()
+                if (r14 != 0) goto Lb8
+                java.lang.Object[] r0 = new java.lang.Object[r2]
+                hk.a$b r1 = hk.C3053a.f12282b
+                java.lang.String r2 = "ERROR: No TransactionSession found."
+                r1.mo7467a(r2, r0)
+            Lb8:
+                if (r14 != 0) goto Lbb
+                goto Ld6
+            Lbb:
+                one.block.eosiojava.session.TransactionProcessor r2 = r14.getTransactionProcessor()
+                r4.f18915k = r2
+                java.util.List r3 = r5.m2211g()
+                vh.v0 r14 = p379vh.C6746v0.f26044Y
+                r8 = 0
+                nd.e0 r10 = new nd.e0
+                r7 = 0
+                r1 = r10
+                r1.<init>(r2, r3, r4, r5, r6, r7)
+                r11 = 3
+                r12 = 0
+                r9 = 0
+                r7 = r14
+                p101fh.C2174f.m5714d(r7, r8, r9, r10, r11, r12)
+            Ld6:
+                ch.l r14 = ch.C0985l.f5061a
+                return r14
+            Ld9:
+                java.lang.Exception r14 = new java.lang.Exception
+                java.lang.String r0 = "USER_NOT_SIGNED"
+                r14.<init>(r0)
+                throw r14
+        }
+    }
+
+    /* renamed from: og.b$d */
+    public static final class d extends p239nh.AbstractC4830j implements mh.InterfaceC4609a<androidx.fragment.app.ComponentCallbacksC0395n> {
+
+        /* renamed from: Z */
+        public final /* synthetic */ androidx.fragment.app.ComponentCallbacksC0395n f20440Z;
+
+        public d(androidx.fragment.app.ComponentCallbacksC0395n r1) {
+                r0 = this;
+                r0.f20440Z = r1
+                r1 = 0
+                r0.<init>(r1)
+                return
+        }
+
+        @Override // mh.InterfaceC4609a
+        /* renamed from: e */
+        public androidx.fragment.app.ComponentCallbacksC0395n mo15e() {
+                r1 = this;
+                androidx.fragment.app.n r0 = r1.f20440Z
+                return r0
+        }
+    }
+
+    /* renamed from: og.b$e */
+    public static final class e extends p239nh.AbstractC4830j implements mh.InterfaceC4609a<androidx.lifecycle.C0467s0> {
+
+        /* renamed from: Z */
+        public final /* synthetic */ mh.InterfaceC4609a f20441Z;
+
+        public e(mh.InterfaceC4609a r1) {
+                r0 = this;
+                r0.f20441Z = r1
+                r1 = 0
+                r0.<init>(r1)
+                return
+        }
+
+        @Override // mh.InterfaceC4609a
+        /* renamed from: e */
+        public androidx.lifecycle.C0467s0 mo15e() {
+                r2 = this;
+                mh.a r0 = r2.f20441Z
+                java.lang.Object r0 = r0.mo15e()
+                androidx.lifecycle.t0 r0 = (androidx.lifecycle.InterfaceC0469t0) r0
+                androidx.lifecycle.s0 r0 = r0.mo432o()
+                java.lang.String r1 = "ownerProducer().viewModelStore"
+                p214m2.C4339q.m9705j(r0, r1)
+                return r0
+        }
+    }
+
+    /* renamed from: og.b$f */
+    public /* synthetic */ class f extends p239nh.C4829i implements mh.InterfaceC4625q<android.view.LayoutInflater, android.view.ViewGroup, java.lang.Boolean, p171jd.C3518h2> {
+
+        /* renamed from: g0 */
+        public static final p258og.C5265b.f f20442g0 = null;
+
+        static {
+                og.b$f r0 = new og.b$f
+                r0.<init>()
+                p258og.C5265b.f.f20442g0 = r0
+                return
+        }
+
+        public f() {
+                r6 = this;
+                java.lang.Class<jd.h2> r2 = p171jd.C3518h2.class
+                r1 = 3
+                java.lang.String r3 = "inflate"
+                java.lang.String r4 = "inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lio/tacocrypto/app/databinding/ToolUpliftFragmentBinding;"
+                r5 = 0
+                r0 = r6
+                r0.<init>(r1, r2, r3, r4, r5)
+                return
+        }
+
+        @Override // mh.InterfaceC4625q
+        /* renamed from: i */
+        public p171jd.C3518h2 mo115i(android.view.LayoutInflater r11, android.view.ViewGroup r12, java.lang.Boolean r13) {
+                r10 = this;
+                android.view.LayoutInflater r11 = (android.view.LayoutInflater) r11
+                android.view.ViewGroup r12 = (android.view.ViewGroup) r12
+                java.lang.Boolean r13 = (java.lang.Boolean) r13
+                boolean r13 = r13.booleanValue()
+                java.lang.String r0 = "p0"
+                p214m2.C4339q.m9706k(r11, r0)
+                r0 = 2131558689(0x7f0d0121, float:1.87427E38)
+                r1 = 0
+                android.view.View r11 = r11.inflate(r0, r12, r1)
+                if (r13 == 0) goto L1c
+                r12.addView(r11)
+            L1c:
+                r12 = 2131361945(0x7f0a0099, float:1.8343657E38)
+                android.view.View r13 = p064e.C1494h.m4055f(r11, r12)
+                r2 = r13
+                com.google.android.material.button.MaterialButton r2 = (com.google.android.material.button.MaterialButton) r2
+                if (r2 == 0) goto L86
+                r12 = 2131361981(0x7f0a00bd, float:1.834373E38)
+                android.view.View r13 = p064e.C1494h.m4055f(r11, r12)
+                r3 = r13
+                androidx.appcompat.widget.AppCompatImageView r3 = (androidx.appcompat.widget.AppCompatImageView) r3
+                if (r3 == 0) goto L86
+                r12 = 2131362225(0x7f0a01b1, float:1.8344225E38)
+                android.view.View r13 = p064e.C1494h.m4055f(r11, r12)
+                r4 = r13
+                com.google.android.material.card.MaterialCardView r4 = (com.google.android.material.card.MaterialCardView) r4
+                if (r4 == 0) goto L86
+                r12 = 2131362262(0x7f0a01d6, float:1.83443E38)
+                android.view.View r13 = p064e.C1494h.m4055f(r11, r12)
+                r5 = r13
+                com.google.android.material.imageview.ShapeableImageView r5 = (com.google.android.material.imageview.ShapeableImageView) r5
+                if (r5 == 0) goto L86
+                r12 = 2131362500(0x7f0a02c4, float:1.8344782E38)
+                android.view.View r13 = p064e.C1494h.m4055f(r11, r12)
+                r6 = r13
+                com.google.android.material.progressindicator.CircularProgressIndicator r6 = (com.google.android.material.progressindicator.CircularProgressIndicator) r6
+                if (r6 == 0) goto L86
+                r12 = 2131362637(0x7f0a034d, float:1.834506E38)
+                android.view.View r13 = p064e.C1494h.m4055f(r11, r12)
+                r7 = r13
+                androidx.appcompat.widget.AppCompatTextView r7 = (androidx.appcompat.widget.AppCompatTextView) r7
+                if (r7 == 0) goto L86
+                r12 = 2131362710(0x7f0a0396, float:1.8345208E38)
+                android.view.View r13 = p064e.C1494h.m4055f(r11, r12)
+                r8 = r13
+                androidx.appcompat.widget.AppCompatTextView r8 = (androidx.appcompat.widget.AppCompatTextView) r8
+                if (r8 == 0) goto L86
+                r12 = 2131362749(0x7f0a03bd, float:1.8345287E38)
+                android.view.View r13 = p064e.C1494h.m4055f(r11, r12)
+                r9 = r13
+                androidx.appcompat.widget.AppCompatTextView r9 = (androidx.appcompat.widget.AppCompatTextView) r9
+                if (r9 == 0) goto L86
+                jd.h2 r12 = new jd.h2
+                r1 = r11
+                androidx.constraintlayout.widget.ConstraintLayout r1 = (androidx.constraintlayout.widget.ConstraintLayout) r1
+                r0 = r12
+                r0.<init>(r1, r2, r3, r4, r5, r6, r7, r8, r9)
+                return r12
+            L86:
+                android.content.res.Resources r11 = r11.getResources()
+                java.lang.String r11 = r11.getResourceName(r12)
+                java.lang.NullPointerException r12 = new java.lang.NullPointerException
+                java.lang.String r13 = "Missing required view with ID: "
+                java.lang.String r11 = r13.concat(r11)
+                r12.<init>(r11)
+                throw r12
+        }
+    }
+
+    /* renamed from: og.b$g */
+    public static final class g extends p239nh.AbstractC4830j implements mh.InterfaceC4609a<androidx.lifecycle.InterfaceC0461p0> {
+
+        /* renamed from: Z */
+        public final /* synthetic */ p258og.C5265b f20443Z;
+
+        public g(p258og.C5265b r1) {
+                r0 = this;
+                r0.f20443Z = r1
+                r1 = 0
+                r0.<init>(r1)
+                return
+        }
+
+        @Override // mh.InterfaceC4609a
+        /* renamed from: e */
+        public androidx.lifecycle.InterfaceC0461p0 mo15e() {
+                r1 = this;
+                og.b r0 = r1.f20443Z
+                vg.i r0 = p185k7.C3828h5.m8599n(r0)
+                return r0
+        }
+    }
+
+    public C5265b() {
+            r4 = this;
+            r4.<init>()
+            r0 = 1
+            r4.f20435m1 = r0
+            og.b$g r0 = new og.b$g
+            r0.<init>(r4)
+            og.b$d r1 = new og.b$d
+            r1.<init>(r4)
+            java.lang.Class<og.d> r2 = p258og.C5267d.class
+            sh.b r2 = p239nh.C4838r.m10853a(r2)
+            og.b$e r3 = new og.b$e
+            r3.<init>(r1)
+            ch.d r0 = androidx.fragment.app.C0420z0.m1404a(r4, r2, r3, r0)
+            r4.f20436n1 = r0
+            return
+    }
+
+    @Override // td.AbstractC6213a
+    /* renamed from: L0 */
+    public void mo108L0() {
+            r4 = this;
+            og.d r0 = r4.m11518P0()
+            androidx.lifecycle.LiveData<java.lang.Double> r0 = r0.f20451h
+            androidx.lifecycle.v r1 = r4.m1311O()
+            og.a r2 = new og.a
+            r3 = 0
+            r2.<init>(r4, r3)
+            r0.m1413f(r1, r2)
+            og.d r0 = r4.m11518P0()
+            androidx.lifecycle.LiveData<java.lang.Double> r0 = r0.f20453j
+            androidx.lifecycle.v r1 = r4.m1311O()
+            og.a r2 = new og.a
+            r3 = 1
+            r2.<init>(r4, r3)
+            r0.m1413f(r1, r2)
+            og.d r0 = r4.m11518P0()
+            androidx.lifecycle.LiveData<java.lang.Boolean> r0 = r0.f20454k
+            androidx.lifecycle.v r1 = r4.m1311O()
+            og.a r2 = new og.a
+            r3 = 2
+            r2.<init>(r4, r3)
+            r0.m1413f(r1, r2)
+            og.d r0 = r4.m11518P0()
+            androidx.lifecycle.LiveData<java.lang.Boolean> r0 = r0.f20449f
+            androidx.lifecycle.v r1 = r4.m1311O()
+            og.a r2 = new og.a
+            r3 = 3
+            r2.<init>(r4, r3)
+            r0.m1413f(r1, r2)
+            og.d r0 = r4.m11518P0()
+            androidx.lifecycle.d0<vg.b<ah.a>> r0 = r0.f20455l
+            androidx.lifecycle.v r1 = r4.m1311O()
+            vg.c r2 = new vg.c
+            og.b$a r3 = new og.b$a
+            r3.<init>(r4)
+            r2.<init>(r3)
+            r0.m1413f(r1, r2)
+            og.d r0 = r4.m11518P0()
+            androidx.lifecycle.d0<vg.b<ch.l>> r0 = r0.f20456m
+            androidx.lifecycle.v r1 = r4.m1311O()
+            vg.c r2 = new vg.c
+            og.b$b r3 = new og.b$b
+            r3.<init>(r4)
+            r2.<init>(r3)
+            r0.m1413f(r1, r2)
+            return
+    }
+
+    @Override // td.AbstractC6213a
+    /* renamed from: M0 */
+    public void mo109M0() {
+            r5 = this;
+            T extends w1.a r0 = r5.f24168k1
+            p214m2.C4339q.m9704i(r0)
+            jd.h2 r0 = (p171jd.C3518h2) r0
+            androidx.appcompat.widget.AppCompatImageView r1 = r0.f15217c
+            gg.a r2 = new gg.a
+            r2.<init>(r5)
+            r1.setOnClickListener(r2)
+            androidx.appcompat.widget.AppCompatTextView r1 = r0.f15221g
+            java.lang.StringBuilder r2 = new java.lang.StringBuilder
+            r2.<init>()
+            io.tacocrypto.app.ui.secret.c r3 = io.tacocrypto.app.p156ui.secret.EnumC3251c.f14349p0
+            java.lang.String r4 = " Tool"
+            p206le.C4271b.m9585a(r3, r2, r4, r1)
+            com.google.android.material.imageview.ShapeableImageView r1 = r0.f15218d
+            java.lang.String r2 = "imageView"
+            p214m2.C4339q.m9705j(r1, r2)
+            java.lang.String r2 = "https://assets.tacostudios.io/logo/upliftium.png"
+            vg.C6672m.m13521h(r1, r2)
+            com.google.android.material.button.MaterialButton r0 = r0.f15216b
+            java.lang.String r1 = "buttonClaim"
+            p214m2.C4339q.m9705j(r0, r1)
+            r1 = 0
+            og.b$c r2 = new og.b$c
+            r2.<init>(r5)
+            r3 = 1
+            vg.C6664e.m13509j(r0, r1, r2, r3)
+            return
+    }
+
+    @Override // td.AbstractC6213a
+    /* renamed from: N0 */
+    public mh.InterfaceC4625q<android.view.LayoutInflater, android.view.ViewGroup, java.lang.Boolean, p171jd.C3518h2> mo110N0() {
+            r2 = this;
+            og.b$f r0 = p258og.C5265b.f.f20442g0
+            java.lang.String r1 = "bindingInflater"
+            p214m2.C4339q.m9706k(r0, r1)
+            return r0
+    }
+
+    @Override // td.AbstractC6218f
+    /* renamed from: O0 */
+    public boolean mo111O0() {
+            r1 = this;
+            boolean r0 = r1.f20435m1
+            return r0
+    }
+
+    /* renamed from: P0 */
+    public final p258og.C5267d m11518P0() {
+            r1 = this;
+            ch.d r0 = r1.f20436n1
+            java.lang.Object r0 = r0.getValue()
+            og.d r0 = (p258og.C5267d) r0
+            return r0
+    }
+
+    @Override // androidx.fragment.app.DialogInterfaceOnCancelListenerC0391l, androidx.fragment.app.ComponentCallbacksC0395n
+    /* renamed from: V */
+    public void mo114V(android.os.Bundle r1) {
+            r0 = this;
+            super.mo114V(r1)
+            og.d r1 = r0.m11518P0()
+            r1.m11523h()
+            return
+    }
+}
+package p258og;
+
+/* renamed from: og.c */
+/* loaded from: classes.dex */
+public final /* synthetic */ class C5266c implements p105g2.C2222p.b {
+
+    /* renamed from: a */
+    public final /* synthetic */ int f20444a;
+
+    /* renamed from: b */
+    public final /* synthetic */ p258og.C5267d f20445b;
+
+    public /* synthetic */ C5266c(p258og.C5267d r1, int r2) {
+            r0 = this;
+            r0.f20444a = r2
+            r0.<init>()
+            r0.f20445b = r1
+            return
+    }
+
+    @Override // p105g2.C2222p.b
+    /* renamed from: a */
+    public final void mo117a(java.lang.Object r5) {
+            r4 = this;
+            int r0 = r4.f20444a
+            java.lang.String r1 = "response"
+            java.lang.String r2 = "this$0"
+            switch(r0) {
+                case 0: goto La;
+                default: goto L9;
+            }
+        L9:
+            goto L63
+        La:
+            og.d r0 = r4.f20445b
+            java.lang.String r5 = (java.lang.String) r5
+            p214m2.C4339q.m9706k(r0, r2)
+            p214m2.C4339q.m9705j(r5, r1)
+            jb.j r1 = new jb.j
+            r1.<init>()
+            og.g r2 = new og.g
+            r2.<init>()
+            java.lang.reflect.Type r2 = r2.f21382b
+            java.lang.Object r5 = r1.m7929c(r5, r2)
+            md.d1 r5 = (md.C4547d1) r5
+            md.c1 r5 = r5.getPayload()
+            if (r5 == 0) goto L62
+            java.lang.String r5 = r5.getMinecraftUUID()
+            if (r5 == 0) goto L62
+            r0.f20457n = r5
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            r1.<init>()
+            java.lang.String r2 = "{\"minecraftUUID\": \""
+            r1.append(r2)
+            r1.append(r5)
+            java.lang.String r5 = "\" }"
+            r1.append(r5)
+            java.lang.String r5 = r1.toString()
+            java.lang.String r5 = p362uh.C6459e.m13046C(r5)
+            og.c r1 = new og.c
+            r2 = 1
+            r1.<init>(r0, r2)
+            qf.d r2 = p294qf.C5636d.f21930g
+            og.l r3 = new og.l
+            r3.<init>(r5, r1, r2)
+            g2.o r5 = r0.m11522g()
+            r5.m5814a(r3)
+        L62:
+            return
+        L63:
+            og.d r0 = r4.f20445b
+            java.lang.String r5 = (java.lang.String) r5
+            p214m2.C4339q.m9706k(r0, r2)
+            p214m2.C4339q.m9705j(r5, r1)
+            jb.j r1 = new jb.j
+            r1.<init>()
+            og.k r2 = new og.k
+            r2.<init>()
+            java.lang.reflect.Type r2 = r2.f21382b
+            java.lang.Object r5 = r1.m7929c(r5, r2)
+            md.a1 r5 = (md.C4538a1) r5
+            androidx.lifecycle.d0<java.lang.Double> r1 = r0.f20450g
+            md.z0 r2 = r5.getPayload()
+            r3 = 0
+            if (r2 == 0) goto L93
+            java.lang.String r2 = r2.getBalance()
+            if (r2 == 0) goto L93
+            java.lang.Double r2 = p362uh.C6462h.m13048E(r2)
+            goto L94
+        L93:
+            r2 = r3
+        L94:
+            r1.mo7l(r2)
+            androidx.lifecycle.d0<java.lang.Double> r0 = r0.f20452i
+            md.z0 r5 = r5.getPayload()
+            if (r5 == 0) goto La9
+            java.lang.String r5 = r5.getClaimable()
+            if (r5 == 0) goto La9
+            java.lang.Double r3 = p362uh.C6462h.m13048E(r5)
+        La9:
+            r0.mo7l(r3)
+            return
+    }
+}
+package p258og;
+
+/* renamed from: og.d */
+/* loaded from: classes.dex */
+public final class C5267d extends androidx.lifecycle.AbstractC0457n0 {
+
+    /* renamed from: c */
+    public final p238nd.C4728b0 f20446c;
+
+    /* renamed from: d */
+    public final ch.InterfaceC0977d f20447d;
+
+    /* renamed from: e */
+    public final androidx.lifecycle.C0437d0<java.lang.Boolean> f20448e;
+
+    /* renamed from: f */
+    public final androidx.lifecycle.LiveData<java.lang.Boolean> f20449f;
+
+    /* renamed from: g */
+    public final androidx.lifecycle.C0437d0<java.lang.Double> f20450g;
+
+    /* renamed from: h */
+    public final androidx.lifecycle.LiveData<java.lang.Double> f20451h;
+
+    /* renamed from: i */
+    public final androidx.lifecycle.C0437d0<java.lang.Double> f20452i;
+
+    /* renamed from: j */
+    public final androidx.lifecycle.LiveData<java.lang.Double> f20453j;
+
+    /* renamed from: k */
+    public final androidx.lifecycle.LiveData<java.lang.Boolean> f20454k;
+
+    /* renamed from: l */
+    public final androidx.lifecycle.C0437d0<vg.C6661b<p013ah.C0100a>> f20455l;
+
+    /* renamed from: m */
+    public final androidx.lifecycle.C0437d0<vg.C6661b<ch.C0985l>> f20456m;
+
+    /* renamed from: n */
+    public java.lang.String f20457n;
+
+    /* renamed from: og.d$a */
+    public static final class a {
+        public boolean equals(java.lang.Object r4) {
+                r3 = this;
+                r0 = 1
+                if (r3 != r4) goto L4
+                return r0
+            L4:
+                boolean r1 = r4 instanceof p258og.C5267d.a
+                r2 = 0
+                if (r1 != 0) goto La
+                return r2
+            La:
+                og.d$a r4 = (p258og.C5267d.a) r4
+                java.util.Objects.requireNonNull(r4)
+                r4 = 0
+                boolean r4 = p214m2.C4339q.m9702c(r4, r4)
+                if (r4 != 0) goto L17
+                return r2
+            L17:
+                return r0
+        }
+
+        public int hashCode() {
+                r1 = this;
+                r0 = 0
+                return r0
+        }
+
+        public java.lang.String toString() {
+                r1 = this;
+                java.lang.String r0 = "MessageResponse(message=null)"
+                return r0
+        }
+    }
+
+    /* renamed from: og.d$b */
+    public static final class b extends p239nh.AbstractC4830j implements mh.InterfaceC4624p<java.lang.Boolean, java.lang.Boolean, java.lang.Boolean> {
+
+        /* renamed from: Z */
+        public static final p258og.C5267d.b f20458Z = null;
+
+        static {
+                og.d$b r0 = new og.d$b
+                r0.<init>()
+                p258og.C5267d.b.f20458Z = r0
+                return
+        }
+
+        public b() {
+                r1 = this;
+                r0 = 2
+                r1.<init>(r0)
+                return
+        }
+
+        @Override // mh.InterfaceC4624p
+        /* renamed from: l */
+        public java.lang.Boolean mo122l(java.lang.Boolean r2, java.lang.Boolean r3) {
+                r1 = this;
+                java.lang.Boolean r2 = (java.lang.Boolean) r2
+                java.lang.Boolean r3 = (java.lang.Boolean) r3
+                java.lang.Boolean r0 = java.lang.Boolean.TRUE
+                boolean r2 = p214m2.C4339q.m9702c(r2, r0)
+                if (r2 == 0) goto Lf
+                java.lang.Boolean r2 = java.lang.Boolean.FALSE
+                goto L1b
+            Lf:
+                if (r3 == 0) goto L16
+                boolean r2 = r3.booleanValue()
+                goto L17
+            L16:
+                r2 = 0
+            L17:
+                java.lang.Boolean r2 = java.lang.Boolean.valueOf(r2)
+            L1b:
+                return r2
+        }
+    }
+
+    /* renamed from: og.d$c */
+    public static final class c extends p119h2.C2448j {
+
+        /* renamed from: p0 */
+        public final /* synthetic */ java.lang.String f20459p0;
+
+        /* renamed from: q0 */
+        public final /* synthetic */ java.lang.String f20460q0;
+
+        public c(java.lang.String r1, java.lang.String r2, p258og.C5267d.d<T> r3, p258og.C5267d.e r4) {
+                r0 = this;
+                r0.f20459p0 = r1
+                r0.f20460q0 = r2
+                r1 = 1
+                java.lang.String r2 = "https://tools.uplift.art:3033/v1/world/account/claim-upliftium"
+                r0.<init>(r1, r2, r3, r4)
+                return
+        }
+
+        @Override // p105g2.AbstractC2220n
+        /* renamed from: l */
+        public byte[] mo116l() {
+                r2 = this;
+                java.lang.String r0 = r2.f20459p0
+                java.nio.charset.Charset r1 = p362uh.C6455a.f25034b
+                byte[] r0 = r0.getBytes(r1)
+                java.lang.String r1 = "this as java.lang.String).getBytes(charset)"
+                p214m2.C4339q.m9705j(r0, r1)
+                return r0
+        }
+
+        @Override // p105g2.AbstractC2220n
+        /* renamed from: p */
+        public java.util.Map<java.lang.String, java.lang.String> mo5806p() {
+                r6 = this;
+                r0 = 10
+                ch.e[] r0 = new ch.C0978e[r0]
+                ch.e r1 = new ch.e
+                java.lang.String r2 = "Content-Type"
+                java.lang.String r3 = "application/json"
+                r1.<init>(r2, r3)
+                r2 = 0
+                r0[r2] = r1
+                r1 = 1
+                java.lang.String r2 = r6.f20460q0
+                ch.e r4 = new ch.e
+                java.lang.String r5 = "Authorization"
+                r4.<init>(r5, r2)
+                r0[r1] = r4
+                r1 = 2
+                ch.e r2 = new ch.e
+                java.lang.String r4 = "Origin"
+                java.lang.String r5 = "https://enter.theuplift.world"
+                r2.<init>(r4, r5)
+                r0[r1] = r2
+                r1 = 3
+                ch.e r2 = new ch.e
+                java.lang.String r4 = "Referer"
+                java.lang.String r5 = "https://enter.theuplift.world/"
+                r2.<init>(r4, r5)
+                r0[r1] = r2
+                r1 = 4
+                ch.e r2 = new ch.e
+                java.lang.String r4 = "Host"
+                java.lang.String r5 = "tools.uplift.art:3033"
+                r2.<init>(r4, r5)
+                r0[r1] = r2
+                r1 = 5
+                ch.e r2 = new ch.e
+                java.lang.String r4 = "Sec-Fetch-Dest"
+                java.lang.String r5 = "empty"
+                r2.<init>(r4, r5)
+                r0[r1] = r2
+                r1 = 6
+                ch.e r2 = new ch.e
+                java.lang.String r4 = "Sec-Fetch-Mode"
+                java.lang.String r5 = "cors"
+                r2.<init>(r4, r5)
+                r0[r1] = r2
+                r1 = 7
+                ch.e r2 = new ch.e
+                java.lang.String r4 = "Sec-Fetch-Site"
+                java.lang.String r5 = "cross-site"
+                r2.<init>(r4, r5)
+                r0[r1] = r2
+                r1 = 8
+                ch.e r2 = new ch.e
+                java.lang.String r4 = "X-Requested-With"
+                java.lang.String r5 = "XmlHttpRequest"
+                r2.<init>(r4, r5)
+                r0[r1] = r2
+                r1 = 9
+                ch.e r2 = new ch.e
+                java.lang.String r4 = "Accept"
+                r2.<init>(r4, r3)
+                r0[r1] = r2
+                java.util.Map r0 = p062dh.C1480p.m4014s(r0)
+                return r0
+        }
+    }
+
+    /* renamed from: og.d$d */
+    public static final class d<T> implements p105g2.C2222p.b {
+
+        /* renamed from: a */
+        public final /* synthetic */ p101fh.InterfaceC2172d<md.C4541b1> f20461a;
+
+        public d(p101fh.InterfaceC2172d<? super md.C4541b1> r1) {
+                r0 = this;
+                r0.f20461a = r1
+                r0.<init>()
+                return
+        }
+
+        @Override // p105g2.C2222p.b
+        /* renamed from: a */
+        public void mo117a(java.lang.Object r4) {
+                r3 = this;
+                java.lang.String r4 = (java.lang.String) r4
+                fh.d<md.b1> r0 = r3.f20461a
+                java.lang.String r1 = "response"
+                jb.j r1 = p238nd.C4754k.m10827a(r4, r1)
+                og.f r2 = new og.f
+                r2.<init>()
+                java.lang.reflect.Type r2 = r2.f21382b
+                java.lang.Object r4 = r1.m7929c(r4, r2)
+                r0.mo5707k(r4)
+                return
+        }
+    }
+
+    /* renamed from: og.d$e */
+    public static final class e implements p105g2.C2222p.a {
+
+        /* renamed from: a */
+        public final /* synthetic */ p101fh.InterfaceC2172d<md.C4541b1> f20462a;
+
+        public e(p101fh.InterfaceC2172d<? super md.C4541b1> r1) {
+                r0 = this;
+                r0.f20462a = r1
+                r0.<init>()
+                return
+        }
+
+        @Override // p105g2.C2222p.a
+        /* renamed from: a */
+        public final void mo118a(p105g2.C2226t r3) {
+                r2 = this;
+                fh.d<md.b1> r0 = r2.f20462a
+                java.lang.String r1 = "it"
+                p214m2.C4339q.m9705j(r3, r1)
+                java.lang.Object r3 = p074e9.C1805a.m4520e(r3)
+                r0.mo5707k(r3)
+                return
+        }
+    }
+
+    /* renamed from: og.d$f */
+    public static final class f extends p119h2.C2448j {
+
+        /* renamed from: p0 */
+        public final /* synthetic */ java.lang.String f20463p0;
+
+        public f(java.lang.String r1, java.lang.String r2, p258og.C5267d.g<T> r3, p258og.C5267d.h r4) {
+                r0 = this;
+                r0.f20463p0 = r1
+                r1 = 1
+                r0.<init>(r1, r2, r3, r4)
+                return
+        }
+
+        @Override // p105g2.AbstractC2220n
+        /* renamed from: l */
+        public byte[] mo116l() {
+                r2 = this;
+                java.lang.String r0 = r2.f20463p0
+                java.nio.charset.Charset r1 = p362uh.C6455a.f25034b
+                byte[] r0 = r0.getBytes(r1)
+                java.lang.String r1 = "this as java.lang.String).getBytes(charset)"
+                p214m2.C4339q.m9705j(r0, r1)
+                return r0
+        }
+    }
+
+    /* renamed from: og.d$g */
+    public static final class g<T> implements p105g2.C2222p.b {
+
+        /* renamed from: a */
+        public final /* synthetic */ p101fh.InterfaceC2172d<md.C4536a> f20464a;
+
+        public g(p101fh.InterfaceC2172d<? super md.C4536a> r1) {
+                r0 = this;
+                r0.f20464a = r1
+                r0.<init>()
+                return
+        }
+
+        @Override // p105g2.C2222p.b
+        /* renamed from: a */
+        public void mo117a(java.lang.Object r4) {
+                r3 = this;
+                java.lang.String r4 = (java.lang.String) r4
+                fh.d<md.a> r0 = r3.f20464a
+                java.lang.String r1 = "response"
+                jb.j r1 = p238nd.C4754k.m10827a(r4, r1)
+                og.i r2 = new og.i
+                r2.<init>()
+                java.lang.reflect.Type r2 = r2.f21382b
+                java.lang.Object r4 = r1.m7929c(r4, r2)
+                r0.mo5707k(r4)
+                return
+        }
+    }
+
+    /* renamed from: og.d$h */
+    public static final class h implements p105g2.C2222p.a {
+
+        /* renamed from: a */
+        public final /* synthetic */ p101fh.InterfaceC2172d<md.C4536a> f20465a;
+
+        public h(p101fh.InterfaceC2172d<? super md.C4536a> r1) {
+                r0 = this;
+                r0.f20465a = r1
+                r0.<init>()
+                return
+        }
+
+        @Override // p105g2.C2222p.a
+        /* renamed from: a */
+        public final void mo118a(p105g2.C2226t r3) {
+                r2 = this;
+                fh.d<md.a> r0 = r2.f20465a
+                java.lang.String r1 = "it"
+                p214m2.C4339q.m9705j(r3, r1)
+                java.lang.Object r3 = p074e9.C1805a.m4520e(r3)
+                r0.mo5707k(r3)
+                return
+        }
+    }
+
+    /* renamed from: og.d$i */
+    public static final class i extends p119h2.C2448j {
+
+        /* renamed from: p0 */
+        public final /* synthetic */ java.lang.String f20466p0;
+
+        public i(java.lang.String r2, p258og.C5267d.j<T> r3, p258og.C5267d.k r4) {
+                r1 = this;
+                r1.f20466p0 = r2
+                r2 = 1
+                java.lang.String r0 = "https://tools.uplift.art:3033/v1/world/account/auth"
+                r1.<init>(r2, r0, r3, r4)
+                return
+        }
+
+        @Override // p105g2.AbstractC2220n
+        /* renamed from: l */
+        public byte[] mo116l() {
+                r2 = this;
+                java.lang.String r0 = r2.f20466p0
+                java.nio.charset.Charset r1 = p362uh.C6455a.f25034b
+                byte[] r0 = r0.getBytes(r1)
+                java.lang.String r1 = "this as java.lang.String).getBytes(charset)"
+                p214m2.C4339q.m9705j(r0, r1)
+                return r0
+        }
+
+        @Override // p105g2.AbstractC2220n
+        /* renamed from: p */
+        public java.util.Map<java.lang.String, java.lang.String> mo5806p() {
+                r3 = this;
+                ch.e r0 = new ch.e
+                java.lang.String r1 = "Content-Type"
+                java.lang.String r2 = "application/json"
+                r0.<init>(r1, r2)
+                java.util.Map r0 = p185k7.C4038x4.m9098k(r0)
+                return r0
+        }
+    }
+
+    /* renamed from: og.d$j */
+    public static final class j<T> implements p105g2.C2222p.b {
+
+        /* renamed from: a */
+        public final /* synthetic */ p101fh.InterfaceC2172d<md.C4590y0> f20467a;
+
+        public j(p101fh.InterfaceC2172d<? super md.C4590y0> r1) {
+                r0 = this;
+                r0.f20467a = r1
+                r0.<init>()
+                return
+        }
+
+        @Override // p105g2.C2222p.b
+        /* renamed from: a */
+        public void mo117a(java.lang.Object r4) {
+                r3 = this;
+                java.lang.String r4 = (java.lang.String) r4
+                fh.d<md.y0> r0 = r3.f20467a
+                java.lang.String r1 = "response"
+                jb.j r1 = p238nd.C4754k.m10827a(r4, r1)
+                og.j r2 = new og.j
+                r2.<init>()
+                java.lang.reflect.Type r2 = r2.f21382b
+                java.lang.Object r4 = r1.m7929c(r4, r2)
+                r0.mo5707k(r4)
+                return
+        }
+    }
+
+    /* renamed from: og.d$k */
+    public static final class k implements p105g2.C2222p.a {
+
+        /* renamed from: a */
+        public final /* synthetic */ p101fh.InterfaceC2172d<md.C4590y0> f20468a;
+
+        public k(p101fh.InterfaceC2172d<? super md.C4590y0> r1) {
+                r0 = this;
+                r0.f20468a = r1
+                r0.<init>()
+                return
+        }
+
+        @Override // p105g2.C2222p.a
+        /* renamed from: a */
+        public final void mo118a(p105g2.C2226t r3) {
+                r2 = this;
+                fh.d<md.y0> r0 = r2.f20468a
+                java.lang.String r1 = "it"
+                p214m2.C4339q.m9705j(r3, r1)
+                java.lang.Object r3 = p074e9.C1805a.m4520e(r3)
+                r0.mo5707k(r3)
+                return
+        }
+    }
+
+    /* renamed from: og.d$l */
+    public static final class l extends p239nh.AbstractC4830j implements mh.InterfaceC4609a<p105g2.C2221o> {
+
+        /* renamed from: Z */
+        public final /* synthetic */ android.app.Application f20469Z;
+
+        public l(android.app.Application r1) {
+                r0 = this;
+                r0.f20469Z = r1
+                r1 = 0
+                r0.<init>(r1)
+                return
+        }
+
+        @Override // mh.InterfaceC4609a
+        /* renamed from: e */
+        public p105g2.C2221o mo15e() {
+                r1 = this;
+                android.app.Application r0 = r1.f20469Z
+                g2.o r0 = p119h2.C2450l.m6226a(r0)
+                return r0
+        }
+    }
+
+    public C5267d(android.app.Application r3, p238nd.C4728b0 r4) {
+            r2 = this;
+            java.lang.String r0 = "app"
+            p214m2.C4339q.m9706k(r3, r0)
+            java.lang.String r0 = "eosManager"
+            p214m2.C4339q.m9706k(r4, r0)
+            r2.<init>()
+            r2.f20446c = r4
+            og.d$l r4 = new og.d$l
+            r4.<init>(r3)
+            ch.d r3 = p185k7.C4038x4.m9096i(r4)
+            r2.f20447d = r3
+            androidx.lifecycle.d0 r3 = new androidx.lifecycle.d0
+            r3.<init>()
+            r2.f20448e = r3
+            r2.f20449f = r3
+            androidx.lifecycle.d0 r4 = new androidx.lifecycle.d0
+            r0 = 0
+            r4.<init>(r0)
+            r2.f20450g = r4
+            r2.f20451h = r4
+            androidx.lifecycle.d0 r4 = new androidx.lifecycle.d0
+            r0 = 0
+            java.lang.Double r0 = java.lang.Double.valueOf(r0)
+            r4.<init>(r0)
+            r2.f20452i = r4
+            r2.f20453j = r4
+            k1.b r0 = p179k1.C3642b.f16075x0
+            androidx.lifecycle.LiveData r4 = androidx.lifecycle.C0455m0.m1450a(r4, r0)
+            og.d$b r0 = p258og.C5267d.b.f20458Z
+            androidx.lifecycle.LiveData r3 = p185k7.C4038x4.m9090c(r3, r4, r0)
+            r2.f20454k = r3
+            androidx.lifecycle.d0 r3 = new androidx.lifecycle.d0
+            r3.<init>()
+            r2.f20455l = r3
+            androidx.lifecycle.d0 r3 = new androidx.lifecycle.d0
+            r3.<init>()
+            r2.f20456m = r3
+            return
+    }
+
+    /* renamed from: d */
+    public final java.lang.Object m11519d(java.lang.String r3, java.lang.String r4, java.lang.String r5, p101fh.InterfaceC2172d<? super md.C4541b1> r6) {
+            r2 = this;
+            fh.j r0 = new fh.j
+            fh.d r6 = gh.C2390b.m6127q(r6)
+            r0.<init>(r6)
+            java.lang.StringBuilder r6 = new java.lang.StringBuilder
+            r6.<init>()
+            java.lang.String r1 = "\n             {\n                \"chainAccount\": \""
+            r6.append(r1)
+            r6.append(r3)
+            java.lang.String r3 = "\",\n                \"chainType\": \"WAX\",\n                \"minecraftUUID\": \""
+            r6.append(r3)
+            r6.append(r4)
+            java.lang.String r3 = "\"\n            }"
+            r6.append(r3)
+            java.lang.String r3 = r6.toString()
+            java.lang.String r3 = p362uh.C6459e.m13046C(r3)
+            java.lang.String r4 = "Bearer "
+            java.lang.String r4 = p064e.C1493g.m4049a(r4, r5)
+            og.d$d r5 = new og.d$d
+            r5.<init>(r0)
+            og.d$e r6 = new og.d$e
+            r6.<init>(r0)
+            og.d$c r1 = new og.d$c
+            r1.<init>(r3, r4, r5, r6)
+            g2.o r3 = r2.m11522g()
+            r3.m5814a(r1)
+            java.lang.Object r3 = r0.m5741a()
+            return r3
+    }
+
+    /* renamed from: e */
+    public final java.lang.Object m11520e(java.lang.String r5, p101fh.InterfaceC2172d<? super md.C4536a> r6) {
+            r4 = this;
+            fh.j r0 = new fh.j
+            fh.d r6 = gh.C2390b.m6127q(r6)
+            r0.<init>(r6)
+            java.lang.String r6 = "{\"account_name\": \""
+            java.lang.String r1 = "\"}"
+            java.lang.String r5 = android.support.v4.media.C0145d.m257a(r6, r5, r1)
+            java.lang.StringBuilder r6 = new java.lang.StringBuilder
+            r6.<init>()
+            nd.v0 r1 = p238nd.C4781v0.f19121e
+            java.lang.String r2 = "Please for EndpointManager us initialize() before getting the instance."
+            java.util.Objects.requireNonNull(r1, r2)
+            java.lang.String r1 = r1.f19124c
+            java.lang.String r2 = "/v1/chain/get_account"
+            java.lang.String r6 = p346u.C6269n.m12888a(r6, r1, r2)
+            og.d$g r1 = new og.d$g
+            r1.<init>(r0)
+            og.d$h r2 = new og.d$h
+            r2.<init>(r0)
+            og.d$f r3 = new og.d$f
+            r3.<init>(r5, r6, r1, r2)
+            g2.o r5 = r4.m11522g()
+            r5.m5814a(r3)
+            java.lang.Object r5 = r0.m5741a()
+            return r5
+    }
+
+    /* renamed from: f */
+    public final java.lang.Object m11521f(java.lang.String r10, java.lang.String r11, p255od.C5230t0 r12, p101fh.InterfaceC2172d<? super md.C4590y0> r13) {
+            r9 = this;
+            fh.j r0 = new fh.j
+            fh.d r13 = gh.C2390b.m6127q(r13)
+            r0.<init>(r13)
+            java.lang.String r13 = "\n            {\n                \"block_num\": \""
+            java.lang.StringBuilder r13 = android.support.v4.media.C0144c.m256a(r13)
+            java.math.BigInteger r1 = r12.getBlock_num()
+            r13.append(r1)
+            java.lang.String r1 = "\",\n                \"chainAccount\": \""
+            r13.append(r1)
+            r13.append(r10)
+            java.lang.String r10 = "\",\n                \"chainPermission\": \"active\",\n                \"chainType\": \"WAX\",\n                \"key\": \""
+            r13.append(r10)
+            r13.append(r11)
+            java.lang.String r10 = "\",\n                \"nonce\": \"23849328\",\n                \"serializedTx\": {\n                    \"data\": "
+            r13.append(r10)
+            java.lang.String r10 = r12.getSerializedTx()
+            r13.append(r10)
+            java.lang.String r10 = ",\n                    \"type\": \"Buffer\"\n                },\n                \"signatures\": "
+            r13.append(r10)
+            java.util.List r1 = r12.getSignatures()
+            java.lang.String r10 = "<this>"
+            p214m2.C4339q.m9706k(r1, r10)
+            java.lang.StringBuilder r10 = new java.lang.StringBuilder
+            r10.<init>()
+            r11 = 91
+            r10.append(r11)
+            java.lang.String r2 = "\",\""
+            java.lang.String r3 = "\""
+            java.lang.String r4 = "\""
+            r5 = 0
+            r6 = 0
+            r7 = 0
+            r8 = 56
+            java.lang.String r11 = p062dh.C1473i.m4000L(r1, r2, r3, r4, r5, r6, r7, r8)
+            r10.append(r11)
+            r11 = 93
+            r10.append(r11)
+            java.lang.String r10 = r10.toString()
+            r13.append(r10)
+            java.lang.String r10 = "\n            }"
+            r13.append(r10)
+            java.lang.String r10 = r13.toString()
+            java.lang.String r10 = p362uh.C6459e.m13046C(r10)
+            og.d$j r11 = new og.d$j
+            r11.<init>(r0)
+            og.d$k r12 = new og.d$k
+            r12.<init>(r0)
+            og.d$i r13 = new og.d$i
+            r13.<init>(r10, r11, r12)
+            g2.o r10 = r9.m11522g()
+            r10.m5814a(r13)
+            java.lang.Object r10 = r0.m5741a()
+            return r10
+    }
+
+    /* renamed from: g */
+    public final p105g2.C2221o m11522g() {
+            r1 = this;
+            ch.d r0 = r1.f20447d
+            java.lang.Object r0 = r0.getValue()
+            g2.o r0 = (p105g2.C2221o) r0
+            return r0
+    }
+
+    /* renamed from: h */
+    public final void m11523h() {
+            r4 = this;
+            nd.b0 r0 = r4.f20446c
+            id.b r0 = r0.m10795h()
+            if (r0 != 0) goto L9
+            goto L2b
+        L9:
+            java.lang.String r1 = "\n            { \n\t            \"chainAccount\": \""
+            java.lang.StringBuilder r1 = android.support.v4.media.C0144c.m256a(r1)
+            java.lang.String r0 = r0.f12559a
+            java.lang.String r2 = "\",\n\t            \"chainType\": \"WAX\"\n            }"
+            java.lang.String r0 = p377vd.C6637f.m13492a(r1, r0, r2)
+            og.c r1 = new og.c
+            r2 = 0
+            r1.<init>(r4, r2)
+            nd.r r2 = p238nd.C4772r.f19099g
+            og.h r3 = new og.h
+            r3.<init>(r0, r1, r2)
+            g2.o r0 = r4.m11522g()
+            r0.m5814a(r3)
+        L2b:
+            return
+    }
+}
+package p258og;
+
+/* renamed from: og.e */
+/* loaded from: classes.dex */
+public final class C5268e extends p239nh.AbstractC4830j implements mh.InterfaceC4625q<java.lang.Boolean, java.lang.String, p255od.C5230t0, ch.C0985l> {
+
+    /* renamed from: Z */
+    public final /* synthetic */ p258og.C5267d f20470Z;
+
+    public C5268e(p258og.C5267d r1) {
+            r0 = this;
+            r0.f20470Z = r1
+            r1 = 3
+            r0.<init>(r1)
+            return
+    }
+
+    @Override // mh.InterfaceC4625q
+    /* renamed from: i */
+    public ch.C0985l mo115i(java.lang.Boolean r9, java.lang.String r10, p255od.C5230t0 r11) {
+            r8 = this;
+            java.lang.Boolean r9 = (java.lang.Boolean) r9
+            boolean r9 = r9.booleanValue()
+            java.lang.String r10 = (java.lang.String) r10
+            od.t0 r11 = (p255od.C5230t0) r11
+            if (r9 == 0) goto L39
+            og.d r9 = r8.f20470Z
+            nd.b0 r9 = r9.f20446c
+            id.b r9 = r9.m10795h()
+            if (r9 == 0) goto L4e
+            java.lang.String r9 = r9.f12559a
+            if (r9 != 0) goto L1b
+            goto L4e
+        L1b:
+            og.d r10 = r8.f20470Z
+            p214m2.C4339q.m9704i(r11)
+            androidx.lifecycle.d0<java.lang.Boolean> r0 = r10.f20448e
+            java.lang.Boolean r1 = java.lang.Boolean.TRUE
+            r0.mo7l(r1)
+            vh.b0 r2 = p064e.C1488b.m4037d(r10)
+            og.m r5 = new og.m
+            r0 = 0
+            r5.<init>(r10, r9, r11, r0)
+            r3 = 0
+            r6 = 3
+            r7 = 0
+            r4 = 0
+            p101fh.C2174f.m5714d(r2, r3, r4, r5, r6, r7)
+            goto L4e
+        L39:
+            og.d r9 = r8.f20470Z
+            androidx.lifecycle.d0<vg.b<ah.a>> r9 = r9.f20455l
+            vg.b r11 = new vg.b
+            ah.a r0 = new ah.a
+            zg.d r1 = p458zg.EnumC7332d.f28068Z
+            java.lang.String r2 = "Transaction Error"
+            r0.<init>(r2, r10, r1)
+            r11.<init>(r0)
+            r9.mo7l(r11)
+        L4e:
+            ch.l r9 = ch.C0985l.f5061a
+            return r9
+    }
+}
+package p258og;
+
+/* renamed from: og.f */
+/* loaded from: classes.dex */
+public final class C5269f extends p274pb.C5380a<md.C4541b1> {
+    public C5269f() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+}
+package p258og;
+
+/* renamed from: og.g */
+/* loaded from: classes.dex */
+public final class C5270g extends p274pb.C5380a<md.C4547d1> {
+    public C5270g() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+}
+package p258og;
+
+/* renamed from: og.h */
+/* loaded from: classes.dex */
+public final class C5271h extends p119h2.C2448j {
+
+    /* renamed from: p0 */
+    public final /* synthetic */ java.lang.String f20471p0;
+
+    public C5271h(java.lang.String r2, p105g2.C2222p.b<java.lang.String> r3, p105g2.C2222p.a r4) {
+            r1 = this;
+            r1.f20471p0 = r2
+            r2 = 1
+            java.lang.String r0 = "https://tools.uplift.art:3033/v1/world/query/fetch-account"
+            r1.<init>(r2, r0, r3, r4)
+            return
+    }
+
+    @Override // p105g2.AbstractC2220n
+    /* renamed from: l */
+    public byte[] mo116l() {
+            r2 = this;
+            java.lang.String r0 = r2.f20471p0
+            java.nio.charset.Charset r1 = p362uh.C6455a.f25034b
+            byte[] r0 = r0.getBytes(r1)
+            java.lang.String r1 = "this as java.lang.String).getBytes(charset)"
+            p214m2.C4339q.m9705j(r0, r1)
+            return r0
+    }
+
+    @Override // p105g2.AbstractC2220n
+    /* renamed from: p */
+    public java.util.Map<java.lang.String, java.lang.String> mo5806p() {
+            r3 = this;
+            ch.e r0 = new ch.e
+            java.lang.String r1 = "Content-Type"
+            java.lang.String r2 = "application/json"
+            r0.<init>(r1, r2)
+            java.util.Map r0 = p185k7.C4038x4.m9098k(r0)
+            return r0
+    }
+}
+package p258og;
+
+/* renamed from: og.i */
+/* loaded from: classes.dex */
+public final class C5272i extends p274pb.C5380a<md.C4536a> {
+    public C5272i() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+}
+package p258og;
+
+/* renamed from: og.j */
+/* loaded from: classes.dex */
+public final class C5273j extends p274pb.C5380a<md.C4590y0> {
+    public C5273j() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+}
+package p258og;
+
+/* renamed from: og.k */
+/* loaded from: classes.dex */
+public final class C5274k extends p274pb.C5380a<md.C4538a1> {
+    public C5274k() {
+            r0 = this;
+            r0.<init>()
+            return
+    }
+}
+package p258og;
+
+/* renamed from: og.l */
+/* loaded from: classes.dex */
+public final class C5275l extends p119h2.C2448j {
+
+    /* renamed from: p0 */
+    public final /* synthetic */ java.lang.String f20472p0;
+
+    public C5275l(java.lang.String r2, p105g2.C2222p.b<java.lang.String> r3, p105g2.C2222p.a r4) {
+            r1 = this;
+            r1.f20472p0 = r2
+            r2 = 1
+            java.lang.String r0 = "https://tools.uplift.art:3033/v1/world/account/fetch-balance"
+            r1.<init>(r2, r0, r3, r4)
+            return
+    }
+
+    @Override // p105g2.AbstractC2220n
+    /* renamed from: l */
+    public byte[] mo116l() {
+            r2 = this;
+            java.lang.String r0 = r2.f20472p0
+            java.nio.charset.Charset r1 = p362uh.C6455a.f25034b
+            byte[] r0 = r0.getBytes(r1)
+            java.lang.String r1 = "this as java.lang.String).getBytes(charset)"
+            p214m2.C4339q.m9705j(r0, r1)
+            return r0
+    }
+
+    @Override // p105g2.AbstractC2220n
+    /* renamed from: p */
+    public java.util.Map<java.lang.String, java.lang.String> mo5806p() {
+            r3 = this;
+            ch.e r0 = new ch.e
+            java.lang.String r1 = "Content-Type"
+            java.lang.String r2 = "application/json"
+            r0.<init>(r1, r2)
+            java.util.Map r0 = p185k7.C4038x4.m9098k(r0)
+            return r0
+    }
+}
+package p258og;
+
+@p134hh.InterfaceC3044e(m7451c = "io.tacocrypto.app.ui.tools.uplift.UpliftToolViewModel$sdfljk$1", m7452f = "UpliftToolViewModel.kt", m7453l = {144, 146, 147, 162, 169}, m7454m = "invokeSuspend")
+/* renamed from: og.m */
+/* loaded from: classes.dex */
+public final class C5276m extends p134hh.AbstractC3048i implements mh.InterfaceC4624p<p379vh.InterfaceC6686b0, p101fh.InterfaceC2172d<? super ch.C0979f<? extends md.C4541b1>>, java.lang.Object> {
+
+    /* renamed from: c0 */
+    public java.lang.Object f20473c0;
+
+    /* renamed from: d0 */
+    public java.lang.Object f20474d0;
+
+    /* renamed from: e0 */
+    public java.lang.Object f20475e0;
+
+    /* renamed from: f0 */
+    public int f20476f0;
+
+    /* renamed from: g0 */
+    public /* synthetic */ java.lang.Object f20477g0;
+
+    /* renamed from: h0 */
+    public final /* synthetic */ p258og.C5267d f20478h0;
+
+    /* renamed from: i0 */
+    public final /* synthetic */ java.lang.String f20479i0;
+
+    /* renamed from: j0 */
+    public final /* synthetic */ p255od.C5230t0 f20480j0;
+
+    @p134hh.InterfaceC3044e(m7451c = "io.tacocrypto.app.ui.tools.uplift.UpliftToolViewModel$sdfljk$1$2$1", m7452f = "UpliftToolViewModel.kt", m7453l = {}, m7454m = "invokeSuspend")
+    /* renamed from: og.m$a */
+    public static final class a extends p134hh.AbstractC3048i implements mh.InterfaceC4624p<p379vh.InterfaceC6686b0, p101fh.InterfaceC2172d<? super ch.C0985l>, java.lang.Object> {
+
+        /* renamed from: c0 */
+        public final /* synthetic */ p258og.C5267d f20481c0;
+
+        public a(p258og.C5267d r1, p101fh.InterfaceC2172d<? super p258og.C5276m.a> r2) {
+                r0 = this;
+                r0.f20481c0 = r1
+                r1 = 2
+                r0.<init>(r1, r2)
+                return
+        }
+
+        @Override // p134hh.AbstractC3040a
+        /* renamed from: h */
+        public final p101fh.InterfaceC2172d<ch.C0985l> mo121h(java.lang.Object r2, p101fh.InterfaceC2172d<?> r3) {
+                r1 = this;
+                og.m$a r2 = new og.m$a
+                og.d r0 = r1.f20481c0
+                r2.<init>(r0, r3)
+                return r2
+        }
+
+        @Override // mh.InterfaceC4624p
+        /* renamed from: l */
+        public java.lang.Object mo122l(p379vh.InterfaceC6686b0 r2, p101fh.InterfaceC2172d<? super ch.C0985l> r3) {
+                r1 = this;
+                vh.b0 r2 = (p379vh.InterfaceC6686b0) r2
+                fh.d r3 = (p101fh.InterfaceC2172d) r3
+                og.m$a r2 = new og.m$a
+                og.d r0 = r1.f20481c0
+                r2.<init>(r0, r3)
+                ch.l r3 = ch.C0985l.f5061a
+                r2.mo123o(r3)
+                return r3
+        }
+
+        @Override // p134hh.AbstractC3040a
+        /* renamed from: o */
+        public final java.lang.Object mo123o(java.lang.Object r6) {
+                r5 = this;
+                p074e9.C1805a.m4540y(r6)
+                og.d r6 = r5.f20481c0
+                androidx.lifecycle.d0<java.lang.Boolean> r6 = r6.f20448e
+                java.lang.Boolean r0 = java.lang.Boolean.FALSE
+                r6.mo7l(r0)
+                android.os.Handler r6 = new android.os.Handler
+                android.os.Looper r0 = android.os.Looper.getMainLooper()
+                r6.<init>(r0)
+                og.d r0 = r5.f20481c0
+                cg.k r1 = new cg.k
+                r1.<init>(r0)
+                r2 = 1500(0x5dc, double:7.41E-321)
+                r6.postDelayed(r1, r2)
+                og.d r6 = r5.f20481c0
+                androidx.lifecycle.d0<vg.b<ah.a>> r6 = r6.f20455l
+                vg.b r0 = new vg.b
+                ah.a r1 = new ah.a
+                zg.d r2 = p458zg.EnumC7332d.f28067Y
+                java.lang.String r3 = "Claim success"
+                r4 = 0
+                r1.<init>(r3, r4, r2)
+                r0.<init>(r1)
+                r6.mo7l(r0)
+                ch.l r6 = ch.C0985l.f5061a
+                return r6
+        }
+    }
+
+    @p134hh.InterfaceC3044e(m7451c = "io.tacocrypto.app.ui.tools.uplift.UpliftToolViewModel$sdfljk$1$3$1", m7452f = "UpliftToolViewModel.kt", m7453l = {}, m7454m = "invokeSuspend")
+    /* renamed from: og.m$b */
+    public static final class b extends p134hh.AbstractC3048i implements mh.InterfaceC4624p<p379vh.InterfaceC6686b0, p101fh.InterfaceC2172d<? super ch.C0985l>, java.lang.Object> {
+
+        /* renamed from: c0 */
+        public final /* synthetic */ p258og.C5267d f20482c0;
+
+        /* renamed from: d0 */
+        public final /* synthetic */ java.lang.String f20483d0;
+
+        public b(p258og.C5267d r1, java.lang.String r2, p101fh.InterfaceC2172d<? super p258og.C5276m.b> r3) {
+                r0 = this;
+                r0.f20482c0 = r1
+                r0.f20483d0 = r2
+                r1 = 2
+                r0.<init>(r1, r3)
+                return
+        }
+
+        @Override // p134hh.AbstractC3040a
+        /* renamed from: h */
+        public final p101fh.InterfaceC2172d<ch.C0985l> mo121h(java.lang.Object r3, p101fh.InterfaceC2172d<?> r4) {
+                r2 = this;
+                og.m$b r3 = new og.m$b
+                og.d r0 = r2.f20482c0
+                java.lang.String r1 = r2.f20483d0
+                r3.<init>(r0, r1, r4)
+                return r3
+        }
+
+        @Override // mh.InterfaceC4624p
+        /* renamed from: l */
+        public java.lang.Object mo122l(p379vh.InterfaceC6686b0 r3, p101fh.InterfaceC2172d<? super ch.C0985l> r4) {
+                r2 = this;
+                vh.b0 r3 = (p379vh.InterfaceC6686b0) r3
+                fh.d r4 = (p101fh.InterfaceC2172d) r4
+                og.m$b r3 = new og.m$b
+                og.d r0 = r2.f20482c0
+                java.lang.String r1 = r2.f20483d0
+                r3.<init>(r0, r1, r4)
+                ch.l r4 = ch.C0985l.f5061a
+                r3.mo123o(r4)
+                return r4
+        }
+
+        @Override // p134hh.AbstractC3040a
+        /* renamed from: o */
+        public final java.lang.Object mo123o(java.lang.Object r6) {
+                r5 = this;
+                p074e9.C1805a.m4540y(r6)
+                og.d r6 = r5.f20482c0
+                androidx.lifecycle.d0<java.lang.Boolean> r6 = r6.f20448e
+                java.lang.Boolean r0 = java.lang.Boolean.FALSE
+                r6.mo7l(r0)
+                og.d r6 = r5.f20482c0
+                androidx.lifecycle.d0<vg.b<ah.a>> r6 = r6.f20455l
+                java.lang.String r0 = r5.f20483d0
+                vg.b r1 = new vg.b
+                ah.a r2 = new ah.a
+                zg.d r3 = p458zg.EnumC7332d.f28068Z
+                java.lang.String r4 = "Error"
+                r2.<init>(r4, r0, r3)
+                r1.<init>(r2)
+                r6.mo7l(r1)
+                ch.l r6 = ch.C0985l.f5061a
+                return r6
+        }
+    }
+
+    /* renamed from: og.m$c */
+    public static final class c extends p274pb.C5380a<p258og.C5267d.a> {
+        public c() {
+                r0 = this;
+                r0.<init>()
+                return
+        }
+    }
+
+    public C5276m(p258og.C5267d r1, java.lang.String r2, p255od.C5230t0 r3, p101fh.InterfaceC2172d<? super p258og.C5276m> r4) {
+            r0 = this;
+            r0.f20478h0 = r1
+            r0.f20479i0 = r2
+            r0.f20480j0 = r3
+            r1 = 2
+            r0.<init>(r1, r4)
+            return
+    }
+
+    @Override // p134hh.AbstractC3040a
+    /* renamed from: h */
+    public final p101fh.InterfaceC2172d<ch.C0985l> mo121h(java.lang.Object r5, p101fh.InterfaceC2172d<?> r6) {
+            r4 = this;
+            og.m r0 = new og.m
+            og.d r1 = r4.f20478h0
+            java.lang.String r2 = r4.f20479i0
+            od.t0 r3 = r4.f20480j0
+            r0.<init>(r1, r2, r3, r6)
+            r0.f20477g0 = r5
+            return r0
+    }
+
+    @Override // mh.InterfaceC4624p
+    /* renamed from: l */
+    public java.lang.Object mo122l(p379vh.InterfaceC6686b0 r5, p101fh.InterfaceC2172d<? super ch.C0979f<? extends md.C4541b1>> r6) {
+            r4 = this;
+            vh.b0 r5 = (p379vh.InterfaceC6686b0) r5
+            fh.d r6 = (p101fh.InterfaceC2172d) r6
+            og.m r0 = new og.m
+            og.d r1 = r4.f20478h0
+            java.lang.String r2 = r4.f20479i0
+            od.t0 r3 = r4.f20480j0
+            r0.<init>(r1, r2, r3, r6)
+            r0.f20477g0 = r5
+            ch.l r5 = ch.C0985l.f5061a
+            java.lang.Object r5 = r0.mo123o(r5)
+            return r5
+    }
+
+    @Override // p134hh.AbstractC3040a
+    /* renamed from: o */
+    public final java.lang.Object mo123o(java.lang.Object r18) {
+            r17 = this;
+            r1 = r17
+            gh.a r2 = gh.EnumC2389a.f10764Y
+            int r0 = r1.f20476f0
+            r3 = 0
+            r4 = 5
+            r5 = 4
+            r6 = 3
+            r7 = 2
+            r8 = 1
+            if (r0 == 0) goto L68
+            if (r0 == r8) goto L4d
+            if (r0 == r7) goto L39
+            if (r0 == r6) goto L2e
+            if (r0 == r5) goto L27
+            if (r0 != r4) goto L1f
+            java.lang.Object r0 = r1.f20477g0
+            p074e9.C1805a.m4540y(r18)
+            goto L1ac
+        L1f:
+            java.lang.IllegalStateException r0 = new java.lang.IllegalStateException
+            java.lang.String r2 = "call to 'resume' before 'invoke' with coroutine"
+            r0.<init>(r2)
+            throw r0
+        L27:
+            java.lang.Object r0 = r1.f20477g0
+            p074e9.C1805a.m4540y(r18)
+            goto L186
+        L2e:
+            java.lang.Object r0 = r1.f20477g0
+            vh.b0 r0 = (p379vh.InterfaceC6686b0) r0
+            p074e9.C1805a.m4540y(r18)     // Catch: java.lang.Throwable -> L104
+            r0 = r18
+            goto Lfb
+        L39:
+            java.lang.Object r0 = r1.f20474d0
+            vh.b0 r0 = (p379vh.InterfaceC6686b0) r0
+            java.lang.Object r7 = r1.f20473c0
+            java.lang.String r7 = (java.lang.String) r7
+            java.lang.Object r9 = r1.f20477g0
+            og.d r9 = (p258og.C5267d) r9
+            p074e9.C1805a.m4540y(r18)     // Catch: java.lang.Throwable -> L15d
+            r10 = r7
+            r7 = r18
+            goto Lda
+        L4d:
+            java.lang.Object r0 = r1.f20475e0
+            vh.b0 r0 = (p379vh.InterfaceC6686b0) r0
+            java.lang.Object r9 = r1.f20474d0
+            od.t0 r9 = (p255od.C5230t0) r9
+            java.lang.Object r10 = r1.f20473c0
+            java.lang.String r10 = (java.lang.String) r10
+            java.lang.Object r11 = r1.f20477g0
+            og.d r11 = (p258og.C5267d) r11
+            p074e9.C1805a.m4540y(r18)     // Catch: java.lang.Throwable -> L15d
+            r12 = r18
+            r16 = r11
+            r11 = r9
+            r9 = r16
+            goto L86
+        L68:
+            p074e9.C1805a.m4540y(r18)
+            java.lang.Object r0 = r1.f20477g0
+            vh.b0 r0 = (p379vh.InterfaceC6686b0) r0
+            og.d r9 = r1.f20478h0
+            java.lang.String r10 = r1.f20479i0
+            od.t0 r11 = r1.f20480j0
+            r1.f20477g0 = r9     // Catch: java.lang.Throwable -> L15d
+            r1.f20473c0 = r10     // Catch: java.lang.Throwable -> L15d
+            r1.f20474d0 = r11     // Catch: java.lang.Throwable -> L15d
+            r1.f20475e0 = r0     // Catch: java.lang.Throwable -> L15d
+            r1.f20476f0 = r8     // Catch: java.lang.Throwable -> L15d
+            java.lang.Object r12 = r9.m11520e(r10, r1)     // Catch: java.lang.Throwable -> L15d
+            if (r12 != r2) goto L86
+            return r2
+        L86:
+            md.a r12 = (md.C4536a) r12     // Catch: java.lang.Throwable -> L15d
+            java.util.List r12 = r12.getPermissions()     // Catch: java.lang.Throwable -> L15d
+            java.util.Iterator r12 = r12.iterator()     // Catch: java.lang.Throwable -> L15d
+        L90:
+            boolean r13 = r12.hasNext()     // Catch: java.lang.Throwable -> L15d
+            if (r13 == 0) goto Laa
+            java.lang.Object r13 = r12.next()     // Catch: java.lang.Throwable -> L15d
+            r14 = r13
+            md.a$a r14 = (md.C4536a.a) r14     // Catch: java.lang.Throwable -> L15d
+            java.lang.String r14 = r14.getPerm_name()     // Catch: java.lang.Throwable -> L15d
+            java.lang.String r15 = "active"
+            boolean r14 = p214m2.C4339q.m9702c(r14, r15)     // Catch: java.lang.Throwable -> L15d
+            if (r14 == 0) goto L90
+            goto Lab
+        Laa:
+            r13 = r3
+        Lab:
+            md.a$a r13 = (md.C4536a.a) r13     // Catch: java.lang.Throwable -> L15d
+            if (r13 == 0) goto L155
+            md.a$a$a r12 = r13.getRequired_auth()     // Catch: java.lang.Throwable -> L15d
+            if (r12 == 0) goto L155
+            java.util.List r12 = r12.getKeys()     // Catch: java.lang.Throwable -> L15d
+            if (r12 == 0) goto L155
+            java.lang.Object r12 = p062dh.C1473i.m3996H(r12)     // Catch: java.lang.Throwable -> L15d
+            md.a$a$a$a r12 = (md.C4536a.a.C7407a.C7408a) r12     // Catch: java.lang.Throwable -> L15d
+            if (r12 == 0) goto L155
+            java.lang.String r12 = r12.getKey()     // Catch: java.lang.Throwable -> L15d
+            if (r12 == 0) goto L155
+            r1.f20477g0 = r9     // Catch: java.lang.Throwable -> L15d
+            r1.f20473c0 = r10     // Catch: java.lang.Throwable -> L15d
+            r1.f20474d0 = r0     // Catch: java.lang.Throwable -> L15d
+            r1.f20475e0 = r3     // Catch: java.lang.Throwable -> L15d
+            r1.f20476f0 = r7     // Catch: java.lang.Throwable -> L15d
+            java.lang.Object r7 = r9.m11521f(r10, r12, r11, r1)     // Catch: java.lang.Throwable -> L15d
+            if (r7 != r2) goto Lda
+            return r2
+        Lda:
+            md.y0 r7 = (md.C4590y0) r7     // Catch: java.lang.Throwable -> L15d
+            md.x0 r7 = r7.getPayload()     // Catch: java.lang.Throwable -> L15d
+            if (r7 == 0) goto L14d
+            java.lang.String r7 = r7.getToken()     // Catch: java.lang.Throwable -> L15d
+            if (r7 == 0) goto L14d
+            java.lang.String r11 = r9.f20457n     // Catch: java.lang.Throwable -> L104
+            if (r11 == 0) goto Lfe
+            r1.f20477g0 = r0     // Catch: java.lang.Throwable -> L104
+            r1.f20473c0 = r3     // Catch: java.lang.Throwable -> L104
+            r1.f20474d0 = r3     // Catch: java.lang.Throwable -> L104
+            r1.f20476f0 = r6     // Catch: java.lang.Throwable -> L104
+            java.lang.Object r0 = r9.m11519d(r10, r11, r7, r1)     // Catch: java.lang.Throwable -> L104
+            if (r0 != r2) goto Lfb
+            return r2
+        Lfb:
+            md.b1 r0 = (md.C4541b1) r0     // Catch: java.lang.Throwable -> L104
+            goto L109
+        Lfe:
+            java.lang.String r0 = "minecraftUUID"
+            p214m2.C4339q.m9713w(r0)     // Catch: java.lang.Throwable -> L104
+            throw r3     // Catch: java.lang.Throwable -> L104
+        L104:
+            r0 = move-exception
+            java.lang.Object r0 = p074e9.C1805a.m4520e(r0)     // Catch: java.lang.Throwable -> L15d
+        L109:
+            boolean r6 = r0 instanceof ch.C0979f.a     // Catch: java.lang.Throwable -> L15d
+            r6 = r6 ^ r8
+            if (r6 == 0) goto L114
+            p074e9.C1805a.m4540y(r0)     // Catch: java.lang.Throwable -> L15d
+            md.b1 r0 = (md.C4541b1) r0     // Catch: java.lang.Throwable -> L15d
+            goto L162
+        L114:
+            java.lang.Throwable r0 = ch.C0979f.m2690b(r0)     // Catch: java.lang.Throwable -> L15d
+            if (r0 != 0) goto L121
+            java.lang.Exception r0 = new java.lang.Exception     // Catch: java.lang.Throwable -> L15d
+            java.lang.String r6 = "no message"
+            r0.<init>(r6)     // Catch: java.lang.Throwable -> L15d
+        L121:
+            r6 = r0
+            r0 = r6
+            g2.t r0 = (p105g2.C2226t) r0     // Catch: java.lang.Throwable -> L148
+            g2.l r0 = r0.f10175Y     // Catch: java.lang.Throwable -> L148
+            byte[] r0 = r0.f10136b     // Catch: java.lang.Throwable -> L148
+            java.lang.String r7 = "exception as VolleyError).networkResponse.data"
+            p214m2.C4339q.m9705j(r0, r7)     // Catch: java.lang.Throwable -> L148
+            java.lang.String r0 = p362uh.C6463i.m13051H(r0)     // Catch: java.lang.Throwable -> L148
+            jb.j r7 = new jb.j     // Catch: java.lang.Throwable -> L148
+            r7.<init>()     // Catch: java.lang.Throwable -> L148
+            og.m$c r9 = new og.m$c     // Catch: java.lang.Throwable -> L148
+            r9.<init>()     // Catch: java.lang.Throwable -> L148
+            java.lang.reflect.Type r9 = r9.f21382b     // Catch: java.lang.Throwable -> L148
+            java.lang.Object r0 = r7.m7929c(r0, r9)     // Catch: java.lang.Throwable -> L148
+            og.d$a r0 = (p258og.C5267d.a) r0     // Catch: java.lang.Throwable -> L148
+            java.util.Objects.requireNonNull(r0)     // Catch: java.lang.Throwable -> L148
+            goto L14c
+        L148:
+            r0 = move-exception
+            p074e9.C1805a.m4520e(r0)     // Catch: java.lang.Throwable -> L15d
+        L14c:
+            throw r6     // Catch: java.lang.Throwable -> L15d
+        L14d:
+            java.lang.Exception r0 = new java.lang.Exception     // Catch: java.lang.Throwable -> L15d
+            java.lang.String r6 = "Error auth from uplift"
+            r0.<init>(r6)     // Catch: java.lang.Throwable -> L15d
+            throw r0     // Catch: java.lang.Throwable -> L15d
+        L155:
+            java.lang.Exception r0 = new java.lang.Exception     // Catch: java.lang.Throwable -> L15d
+            java.lang.String r6 = "pub_key not found"
+            r0.<init>(r6)     // Catch: java.lang.Throwable -> L15d
+            throw r0     // Catch: java.lang.Throwable -> L15d
+        L15d:
+            r0 = move-exception
+            java.lang.Object r0 = p074e9.C1805a.m4520e(r0)
+        L162:
+            og.d r6 = r1.f20478h0
+            boolean r7 = r0 instanceof ch.C0979f.a
+            r7 = r7 ^ r8
+            if (r7 == 0) goto L186
+            r7 = r0
+            md.b1 r7 = (md.C4541b1) r7
+            vh.z r7 = p379vh.C6716l0.f26007a
+            vh.k1 r7 = p459zh.C7346l.f28106a
+            og.m$a r8 = new og.m$a
+            r8.<init>(r6, r3)
+            r1.f20477g0 = r0
+            r1.f20473c0 = r3
+            r1.f20474d0 = r3
+            r1.f20475e0 = r3
+            r1.f20476f0 = r5
+            java.lang.Object r5 = p101fh.C2174f.m5710A(r7, r8, r1)
+            if (r5 != r2) goto L186
+            return r2
+        L186:
+            og.d r5 = r1.f20478h0
+            java.lang.Throwable r6 = ch.C0979f.m2690b(r0)
+            if (r6 == 0) goto L1ac
+            java.lang.String r6 = vg.C6672m.m13514a(r6)
+            vh.z r7 = p379vh.C6716l0.f26007a
+            vh.k1 r7 = p459zh.C7346l.f28106a
+            og.m$b r8 = new og.m$b
+            r8.<init>(r5, r6, r3)
+            r1.f20477g0 = r0
+            r1.f20473c0 = r3
+            r1.f20474d0 = r3
+            r1.f20475e0 = r3
+            r1.f20476f0 = r4
+            java.lang.Object r3 = p101fh.C2174f.m5710A(r7, r8, r1)
+            if (r3 != r2) goto L1ac
+            return r2
+        L1ac:
+            ch.f r2 = new ch.f
+            r2.<init>(r0)
+            return r2
+    }
+}

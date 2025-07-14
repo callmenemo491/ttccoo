@@ -1,0 +1,1686 @@
+package p005a4;
+
+/* renamed from: a4.b */
+/* loaded from: classes.dex */
+public class C0013b implements p005a4.InterfaceC0023l {
+
+    /* renamed from: a */
+    public final android.content.Context f13a;
+
+    /* renamed from: b */
+    public final p021b4.InterfaceC0666c f14b;
+
+    /* renamed from: c */
+    public final com.google.android.datatransport.runtime.scheduling.jobscheduling.AbstractC1044c f15c;
+
+    public C0013b(android.content.Context r1, p021b4.InterfaceC0666c r2, com.google.android.datatransport.runtime.scheduling.jobscheduling.AbstractC1044c r3) {
+            r0 = this;
+            r0.<init>()
+            r0.f13a = r1
+            r0.f14b = r2
+            r0.f15c = r3
+            return
+    }
+
+    @Override // p005a4.InterfaceC0023l
+    /* renamed from: a */
+    public void mo21a(p385w3.AbstractC6787i r17, int r18, boolean r19) {
+            r16 = this;
+            r0 = r16
+            r1 = r17
+            r2 = r18
+            android.content.ComponentName r3 = new android.content.ComponentName
+            android.content.Context r4 = r0.f13a
+            java.lang.Class<com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService> r5 = com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService.class
+            r3.<init>(r4, r5)
+            android.content.Context r4 = r0.f13a
+            java.lang.String r5 = "jobscheduler"
+            java.lang.Object r4 = r4.getSystemService(r5)
+            android.app.job.JobScheduler r4 = (android.app.job.JobScheduler) r4
+            java.util.zip.Adler32 r5 = new java.util.zip.Adler32
+            r5.<init>()
+            android.content.Context r6 = r0.f13a
+            java.lang.String r6 = r6.getPackageName()
+            java.lang.String r7 = "UTF-8"
+            java.nio.charset.Charset r8 = java.nio.charset.Charset.forName(r7)
+            byte[] r6 = r6.getBytes(r8)
+            r5.update(r6)
+            java.lang.String r6 = r17.mo13798b()
+            java.nio.charset.Charset r7 = java.nio.charset.Charset.forName(r7)
+            byte[] r6 = r6.getBytes(r7)
+            r5.update(r6)
+            r6 = 4
+            java.nio.ByteBuffer r7 = java.nio.ByteBuffer.allocate(r6)
+            t3.d r8 = r17.mo13800d()
+            int r8 = p069e4.C1515a.m4103a(r8)
+            java.nio.ByteBuffer r7 = r7.putInt(r8)
+            byte[] r7 = r7.array()
+            r5.update(r7)
+            byte[] r7 = r17.mo13799c()
+            if (r7 == 0) goto L65
+            byte[] r7 = r17.mo13799c()
+            r5.update(r7)
+        L65:
+            long r7 = r5.getValue()
+            int r5 = (int) r7
+            java.lang.String r7 = "JobInfoScheduler"
+            java.lang.String r8 = "attemptNumber"
+            r9 = 0
+            r10 = 1
+            if (r19 != 0) goto La1
+            java.util.List r11 = r4.getAllPendingJobs()
+            java.util.Iterator r11 = r11.iterator()
+        L7a:
+            boolean r12 = r11.hasNext()
+            if (r12 == 0) goto L98
+            java.lang.Object r12 = r11.next()
+            android.app.job.JobInfo r12 = (android.app.job.JobInfo) r12
+            android.os.PersistableBundle r13 = r12.getExtras()
+            int r13 = r13.getInt(r8)
+            int r12 = r12.getId()
+            if (r12 != r5) goto L7a
+            if (r13 < r2) goto L98
+            r11 = 1
+            goto L99
+        L98:
+            r11 = 0
+        L99:
+            if (r11 == 0) goto La1
+            java.lang.String r2 = "Upload for context %s is already scheduled. Returning..."
+            p064e.C1494h.m4052c(r7, r2, r1)
+            return
+        La1:
+            b4.c r11 = r0.f14b
+            long r11 = r11.mo2225H(r1)
+            com.google.android.datatransport.runtime.scheduling.jobscheduling.c r13 = r0.f15c
+            android.app.job.JobInfo$Builder r14 = new android.app.job.JobInfo$Builder
+            r14.<init>(r5, r3)
+            t3.d r3 = r17.mo13800d()
+            r15 = r7
+            long r6 = r13.m2818b(r3, r11, r2)
+            r14.setMinimumLatency(r6)
+            java.util.Map r6 = r13.mo2811c()
+            java.lang.Object r3 = r6.get(r3)
+            com.google.android.datatransport.runtime.scheduling.jobscheduling.c$a r3 = (com.google.android.datatransport.runtime.scheduling.jobscheduling.AbstractC1044c.a) r3
+            java.util.Set r3 = r3.mo2813c()
+            com.google.android.datatransport.runtime.scheduling.jobscheduling.c$b r6 = com.google.android.datatransport.runtime.scheduling.jobscheduling.AbstractC1044c.b.f5245Y
+            boolean r6 = r3.contains(r6)
+            r7 = 2
+            if (r6 == 0) goto Ld5
+            r14.setRequiredNetworkType(r7)
+            goto Ld8
+        Ld5:
+            r14.setRequiredNetworkType(r10)
+        Ld8:
+            com.google.android.datatransport.runtime.scheduling.jobscheduling.c$b r6 = com.google.android.datatransport.runtime.scheduling.jobscheduling.AbstractC1044c.b.f5247a0
+            boolean r6 = r3.contains(r6)
+            if (r6 == 0) goto Le3
+            r14.setRequiresCharging(r10)
+        Le3:
+            com.google.android.datatransport.runtime.scheduling.jobscheduling.c$b r6 = com.google.android.datatransport.runtime.scheduling.jobscheduling.AbstractC1044c.b.f5246Z
+            boolean r3 = r3.contains(r6)
+            if (r3 == 0) goto Lee
+            r14.setRequiresDeviceIdle(r10)
+        Lee:
+            android.os.PersistableBundle r3 = new android.os.PersistableBundle
+            r3.<init>()
+            r3.putInt(r8, r2)
+            java.lang.String r6 = r17.mo13798b()
+            java.lang.String r8 = "backendName"
+            r3.putString(r8, r6)
+            t3.d r6 = r17.mo13800d()
+            int r6 = p069e4.C1515a.m4103a(r6)
+            java.lang.String r8 = "priority"
+            r3.putInt(r8, r6)
+            byte[] r6 = r17.mo13799c()
+            if (r6 == 0) goto L11f
+            byte[] r6 = r17.mo13799c()
+            java.lang.String r6 = android.util.Base64.encodeToString(r6, r9)
+            java.lang.String r8 = "extras"
+            r3.putString(r8, r6)
+        L11f:
+            r14.setExtras(r3)
+            r3 = 5
+            java.lang.Object[] r3 = new java.lang.Object[r3]
+            r3[r9] = r1
+            java.lang.Integer r5 = java.lang.Integer.valueOf(r5)
+            r3[r10] = r5
+            com.google.android.datatransport.runtime.scheduling.jobscheduling.c r5 = r0.f15c
+            t3.d r1 = r17.mo13800d()
+            long r5 = r5.m2818b(r1, r11, r2)
+            java.lang.Long r1 = java.lang.Long.valueOf(r5)
+            r3[r7] = r1
+            r1 = 3
+            java.lang.Long r5 = java.lang.Long.valueOf(r11)
+            r3[r1] = r5
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r18)
+            r2 = 4
+            r3[r2] = r1
+            java.lang.String r1 = "Scheduling upload for context %s with jobId=%d in %dms(Backend next call timestamp %d). Attempt %d"
+            r2 = r15
+            p064e.C1494h.m4053d(r2, r1, r3)
+            android.app.job.JobInfo r1 = r14.build()
+            r4.schedule(r1)
+            return
+    }
+
+    @Override // p005a4.InterfaceC0023l
+    /* renamed from: b */
+    public void mo22b(p385w3.AbstractC6787i r2, int r3) {
+            r1 = this;
+            r0 = 0
+            r1.mo21a(r2, r3, r0)
+            return
+    }
+}
+package p005a4;
+
+/* renamed from: a4.e */
+/* loaded from: classes.dex */
+public final /* synthetic */ class C0016e implements p034c4.InterfaceC0867b.a, p371v5.C6564n.a {
+
+    /* renamed from: Y */
+    public final /* synthetic */ int f22Y;
+
+    /* renamed from: Z */
+    public final /* synthetic */ java.lang.Object f23Z;
+
+    /* renamed from: a0 */
+    public final /* synthetic */ java.lang.Object f24a0;
+
+    /* renamed from: b0 */
+    public final /* synthetic */ int f25b0;
+
+    public /* synthetic */ C0016e(int r2, p088f4.InterfaceC2054x0.f r3, p088f4.InterfaceC2054x0.f r4) {
+            r1 = this;
+            r0 = 1
+            r1.f22Y = r0
+            r1.<init>()
+            r1.f25b0 = r2
+            r1.f23Z = r3
+            r1.f24a0 = r4
+            return
+    }
+
+    public /* synthetic */ C0016e(p005a4.C0020i r2, p385w3.AbstractC6787i r3, int r4) {
+            r1 = this;
+            r0 = 0
+            r1.f22Y = r0
+            r1.<init>()
+            r1.f23Z = r2
+            r1.f24a0 = r3
+            r1.f25b0 = r4
+            return
+    }
+
+    public /* synthetic */ C0016e(p107g4.InterfaceC2255q.a r2, p088f4.C2018j0 r3, int r4) {
+            r1 = this;
+            r0 = 2
+            r1.f22Y = r0
+            r1.<init>()
+            r1.f23Z = r2
+            r1.f24a0 = r3
+            r1.f25b0 = r4
+            return
+    }
+
+    @Override // p371v5.C6564n.a
+    /* renamed from: b */
+    public void mo24b(java.lang.Object r5) {
+            r4 = this;
+            int r0 = r4.f22Y
+            switch(r0) {
+                case 1: goto L6;
+                default: goto L5;
+            }
+        L5:
+            goto L1b
+        L6:
+            int r0 = r4.f25b0
+            java.lang.Object r1 = r4.f23Z
+            f4.x0$f r1 = (p088f4.InterfaceC2054x0.f) r1
+            java.lang.Object r2 = r4.f24a0
+            f4.x0$f r2 = (p088f4.InterfaceC2054x0.f) r2
+            f4.x0$c r5 = (p088f4.InterfaceC2054x0.c) r5
+            int r3 = p088f4.C2057z.f9393H
+            r5.mo2911k(r0)
+            r5.mo2889Q(r1, r2, r0)
+            return
+        L1b:
+            java.lang.Object r0 = r4.f23Z
+            g4.q$a r0 = (p107g4.InterfaceC2255q.a) r0
+            java.lang.Object r0 = r4.f24a0
+            f4.j0 r0 = (p088f4.C2018j0) r0
+            g4.q r5 = (p107g4.InterfaceC2255q) r5
+            r5.m5866F()
+            return
+    }
+
+    @Override // p034c4.InterfaceC0867b.a
+    /* renamed from: h */
+    public java.lang.Object mo23h() {
+            r3 = this;
+            java.lang.Object r0 = r3.f23Z
+            a4.i r0 = (p005a4.C0020i) r0
+            java.lang.Object r1 = r3.f24a0
+            w3.i r1 = (p385w3.AbstractC6787i) r1
+            int r2 = r3.f25b0
+            a4.l r0 = r0.f40d
+            int r2 = r2 + 1
+            r0.mo22b(r1, r2)
+            r0 = 0
+            return r0
+    }
+}
+package p005a4;
+
+/* renamed from: a4.f */
+/* loaded from: classes.dex */
+public final /* synthetic */ class C0017f implements p034c4.InterfaceC0867b.a, p371v5.C6564n.a {
+
+    /* renamed from: Y */
+    public final /* synthetic */ java.lang.Object f26Y;
+
+    /* renamed from: Z */
+    public final /* synthetic */ java.lang.Object f27Z;
+
+    /* renamed from: a0 */
+    public final /* synthetic */ long f28a0;
+
+    public /* synthetic */ C0017f(p005a4.C0020i r1, p385w3.AbstractC6787i r2, long r3) {
+            r0 = this;
+            r0.<init>()
+            r0.f26Y = r1
+            r0.f27Z = r2
+            r0.f28a0 = r3
+            return
+    }
+
+    public /* synthetic */ C0017f(p107g4.InterfaceC2255q.a r1, java.lang.Object r2, long r3) {
+            r0 = this;
+            r0.<init>()
+            r0.f26Y = r1
+            r0.f27Z = r2
+            r0.f28a0 = r3
+            return
+    }
+
+    @Override // p371v5.C6564n.a
+    /* renamed from: b */
+    public void mo24b(java.lang.Object r2) {
+            r1 = this;
+            java.lang.Object r0 = r1.f26Y
+            g4.q$a r0 = (p107g4.InterfaceC2255q.a) r0
+            g4.q r2 = (p107g4.InterfaceC2255q) r2
+            r2.m5887a()
+            return
+    }
+
+    @Override // p034c4.InterfaceC0867b.a
+    /* renamed from: h */
+    public java.lang.Object mo23h() {
+            r7 = this;
+            java.lang.Object r0 = r7.f26Y
+            a4.i r0 = (p005a4.C0020i) r0
+            java.lang.Object r1 = r7.f27Z
+            w3.i r1 = (p385w3.AbstractC6787i) r1
+            long r2 = r7.f28a0
+            b4.c r4 = r0.f39c
+            d4.a r0 = r0.f43g
+            long r5 = r0.mo3736a()
+            long r5 = r5 + r2
+            r4.mo2231o(r1, r5)
+            r0 = 0
+            return r0
+    }
+}
+package p005a4;
+
+/* renamed from: a4.g */
+/* loaded from: classes.dex */
+public final /* synthetic */ class C0018g implements p034c4.InterfaceC0867b.a, p392wa.InterfaceC6822a.a {
+
+    /* renamed from: Y */
+    public final /* synthetic */ java.lang.Object f29Y;
+
+    /* renamed from: Z */
+    public final /* synthetic */ java.lang.Object f30Z;
+
+    /* renamed from: a0 */
+    public final /* synthetic */ java.lang.Object f31a0;
+
+    /* renamed from: b0 */
+    public final /* synthetic */ long f32b0;
+
+    public /* synthetic */ C0018g(p005a4.C0020i r1, java.lang.Iterable r2, p385w3.AbstractC6787i r3, long r4) {
+            r0 = this;
+            r0.<init>()
+            r0.f29Y = r1
+            r0.f30Z = r2
+            r0.f31a0 = r3
+            r0.f32b0 = r4
+            return
+    }
+
+    public /* synthetic */ C0018g(java.lang.String r1, java.lang.String r2, long r3, p094fa.AbstractC2107c0 r5) {
+            r0 = this;
+            r0.<init>()
+            r0.f29Y = r1
+            r0.f30Z = r2
+            r0.f32b0 = r3
+            r0.f31a0 = r5
+            return
+    }
+
+    @Override // p392wa.InterfaceC6822a.a
+    /* renamed from: c */
+    public void mo25c(p392wa.InterfaceC6823b r8) {
+            r7 = this;
+            java.lang.Object r0 = r7.f29Y
+            r2 = r0
+            java.lang.String r2 = (java.lang.String) r2
+            java.lang.Object r0 = r7.f30Z
+            r3 = r0
+            java.lang.String r3 = (java.lang.String) r3
+            long r4 = r7.f32b0
+            java.lang.Object r0 = r7.f31a0
+            r6 = r0
+            fa.c0 r6 = (p094fa.AbstractC2107c0) r6
+            java.lang.Object r8 = r8.get()
+            r1 = r8
+            aa.a r1 = (p011aa.InterfaceC0045a) r1
+            r1.mo48d(r2, r3, r4, r6)
+            return
+    }
+
+    @Override // p034c4.InterfaceC0867b.a
+    /* renamed from: h */
+    public java.lang.Object mo23h() {
+            r7 = this;
+            java.lang.Object r0 = r7.f29Y
+            a4.i r0 = (p005a4.C0020i) r0
+            java.lang.Object r1 = r7.f30Z
+            java.lang.Iterable r1 = (java.lang.Iterable) r1
+            java.lang.Object r2 = r7.f31a0
+            w3.i r2 = (p385w3.AbstractC6787i) r2
+            long r3 = r7.f32b0
+            b4.c r5 = r0.f39c
+            r5.mo2228h0(r1)
+            b4.c r1 = r0.f39c
+            d4.a r0 = r0.f43g
+            long r5 = r0.mo3736a()
+            long r5 = r5 + r3
+            r1.mo2231o(r2, r5)
+            r0 = 0
+            return r0
+    }
+}
+package p005a4;
+
+/* renamed from: a4.i */
+/* loaded from: classes.dex */
+public class C0020i {
+
+    /* renamed from: a */
+    public final android.content.Context f37a;
+
+    /* renamed from: b */
+    public final p405x3.InterfaceC6922d f38b;
+
+    /* renamed from: c */
+    public final p021b4.InterfaceC0666c f39c;
+
+    /* renamed from: d */
+    public final p005a4.InterfaceC0023l f40d;
+
+    /* renamed from: e */
+    public final java.util.concurrent.Executor f41e;
+
+    /* renamed from: f */
+    public final p034c4.InterfaceC0867b f42f;
+
+    /* renamed from: g */
+    public final p050d4.InterfaceC1277a f43g;
+
+    public C0020i(android.content.Context r1, p405x3.InterfaceC6922d r2, p021b4.InterfaceC0666c r3, p005a4.InterfaceC0023l r4, java.util.concurrent.Executor r5, p034c4.InterfaceC0867b r6, p050d4.InterfaceC1277a r7) {
+            r0 = this;
+            r0.<init>()
+            r0.f37a = r1
+            r0.f38b = r2
+            r0.f39c = r3
+            r0.f40d = r4
+            r0.f41e = r5
+            r0.f42f = r6
+            r0.f43g = r7
+            return
+    }
+
+    /* renamed from: a */
+    public void m26a(p385w3.AbstractC6787i r11, int r12) {
+            r10 = this;
+            x3.d r0 = r10.f38b
+            java.lang.String r1 = r11.mo13798b()
+            x3.h r0 = r0.mo14027a(r1)
+            r1 = 0
+            r7 = r1
+        Ld:
+            c4.b r1 = r10.f42f
+            a4.d r2 = new a4.d
+            r3 = 0
+            r2.<init>(r10, r11, r3)
+            java.lang.Object r1 = r1.mo2235a(r2)
+            java.lang.Boolean r1 = (java.lang.Boolean) r1
+            boolean r1 = r1.booleanValue()
+            if (r1 == 0) goto Lac
+            c4.b r1 = r10.f42f
+            a4.d r2 = new a4.d
+            r9 = 1
+            r2.<init>(r10, r11, r9)
+            java.lang.Object r1 = r1.mo2235a(r2)
+            r5 = r1
+            java.lang.Iterable r5 = (java.lang.Iterable) r5
+            java.util.Iterator r1 = r5.iterator()
+            boolean r1 = r1.hasNext()
+            if (r1 != 0) goto L3b
+            return
+        L3b:
+            if (r0 != 0) goto L49
+            java.lang.String r1 = "Uploader"
+            java.lang.String r2 = "Unknown backend for %s, deleting event batch for it..."
+            p064e.C1494h.m4052c(r1, r2, r11)
+            com.google.android.datatransport.runtime.backends.c r1 = com.google.android.datatransport.runtime.backends.AbstractC1039c.m2805a()
+            goto L74
+        L49:
+            java.util.ArrayList r1 = new java.util.ArrayList
+            r1.<init>()
+            java.util.Iterator r2 = r5.iterator()
+        L52:
+            boolean r3 = r2.hasNext()
+            if (r3 == 0) goto L66
+            java.lang.Object r3 = r2.next()
+            b4.h r3 = (p021b4.AbstractC0671h) r3
+            w3.f r3 = r3.mo2221a()
+            r1.add(r3)
+            goto L52
+        L66:
+            byte[] r2 = r11.mo13799c()
+            x3.a r3 = new x3.a
+            r4 = 0
+            r3.<init>(r1, r2, r4)
+            com.google.android.datatransport.runtime.backends.c r1 = r0.mo12929b(r3)
+        L74:
+            com.google.android.datatransport.runtime.backends.c$a r2 = r1.mo2802c()
+            com.google.android.datatransport.runtime.backends.c$a r3 = com.google.android.datatransport.runtime.backends.AbstractC1039c.a.f5232Z
+            if (r2 != r3) goto L90
+            c4.b r0 = r10.f42f
+            a4.g r1 = new a4.g
+            r3 = r1
+            r4 = r10
+            r6 = r11
+            r3.<init>(r4, r5, r6, r7)
+            r0.mo2235a(r1)
+            a4.l r0 = r10.f40d
+            int r12 = r12 + r9
+            r0.mo21a(r11, r12, r9)
+            return
+        L90:
+            c4.b r2 = r10.f42f
+            f1.g0 r3 = new f1.g0
+            r3.<init>(r10, r5)
+            r2.mo2235a(r3)
+            com.google.android.datatransport.runtime.backends.c$a r2 = r1.mo2802c()
+            com.google.android.datatransport.runtime.backends.c$a r3 = com.google.android.datatransport.runtime.backends.AbstractC1039c.a.f5231Y
+            if (r2 != r3) goto Ld
+            long r1 = r1.mo2801b()
+            long r7 = java.lang.Math.max(r7, r1)
+            goto Ld
+        Lac:
+            c4.b r12 = r10.f42f
+            a4.f r0 = new a4.f
+            r0.<init>(r10, r11, r7)
+            r12.mo2235a(r0)
+            return
+    }
+}
+package p005a4;
+
+/* renamed from: a4.j */
+/* loaded from: classes.dex */
+public final class C0021j implements bh.InterfaceC0769a, p124h7.InterfaceC2697jd, p124h7.InterfaceC2534ad {
+
+    /* renamed from: Y */
+    public final bh.InterfaceC0769a<android.content.Context> f44Y;
+
+    /* renamed from: Z */
+    public final bh.InterfaceC0769a<p405x3.InterfaceC6922d> f45Z;
+
+    /* renamed from: a0 */
+    public final bh.InterfaceC0769a<p021b4.InterfaceC0666c> f46a0;
+
+    /* renamed from: b0 */
+    public final bh.InterfaceC0769a<p005a4.InterfaceC0023l> f47b0;
+
+    /* renamed from: c0 */
+    public final bh.InterfaceC0769a<java.util.concurrent.Executor> f48c0;
+
+    /* renamed from: d0 */
+    public final bh.InterfaceC0769a<p034c4.InterfaceC0867b> f49d0;
+
+    /* renamed from: e0 */
+    public bh.InterfaceC0769a<p050d4.InterfaceC1277a> f50e0;
+
+    public C0021j(bh.InterfaceC0769a r1, bh.InterfaceC0769a r2, bh.InterfaceC0769a r3, bh.InterfaceC0769a r4, bh.InterfaceC0769a r5, bh.InterfaceC0769a r6, bh.InterfaceC0769a r7) {
+            r0 = this;
+            r0.<init>()
+            r0.f44Y = r1
+            r0.f45Z = r2
+            r0.f46a0 = r3
+            r0.f47b0 = r4
+            r0.f48c0 = r5
+            r0.f49d0 = r6
+            r0.f50e0 = r7
+            return
+    }
+
+    public C0021j(p124h7.InterfaceC2697jd r1, java.lang.String r2, java.lang.String r3, java.lang.Boolean r4, p375v9.C6605j0 r5, p124h7.C2624fc r6, p124h7.C2752me r7) {
+            r0 = this;
+            r0.f44Y = r1
+            r0.f45Z = r2
+            r0.f46a0 = r3
+            r0.f47b0 = r4
+            r0.f48c0 = r5
+            r0.f49d0 = r6
+            r0.f50e0 = r7
+            r0.<init>()
+            return
+    }
+
+    public C0021j(java.lang.String r1, java.lang.String r2, java.lang.String r3, java.lang.String r4, java.lang.String r5) {
+            r0 = this;
+            r0.<init>()
+            com.google.android.gms.common.internal.C1101a.m3100e(r1)
+            r0.f44Y = r1
+            java.lang.String r1 = "phone"
+            com.google.android.gms.common.internal.C1101a.m3100e(r1)
+            r0.f45Z = r1
+            r0.f46a0 = r2
+            r0.f47b0 = r3
+            r0.f48c0 = r4
+            r0.f49d0 = r5
+            return
+    }
+
+    @Override // p124h7.InterfaceC2534ad
+    /* renamed from: a */
+    public java.lang.String mo27a() {
+            r4 = this;
+            org.json.JSONObject r0 = new org.json.JSONObject
+            r0.<init>()
+            bh.a<android.content.Context> r1 = r4.f44Y
+            java.lang.String r1 = (java.lang.String) r1
+            java.lang.String r2 = "idToken"
+            r0.put(r2, r1)
+            bh.a<x3.d> r1 = r4.f45Z
+            java.lang.String r1 = (java.lang.String) r1
+            java.util.Objects.requireNonNull(r1)
+            java.lang.String r1 = "mfaProvider"
+            r2 = 1
+            r0.put(r1, r2)
+            bh.a<b4.c> r1 = r4.f46a0
+            java.lang.String r1 = (java.lang.String) r1
+            if (r1 == 0) goto L69
+            org.json.JSONObject r1 = new org.json.JSONObject
+            r1.<init>()
+            bh.a<b4.c> r2 = r4.f46a0
+            java.lang.String r2 = (java.lang.String) r2
+            java.lang.String r3 = "phoneNumber"
+            r1.put(r3, r2)
+            bh.a<java.util.concurrent.Executor> r2 = r4.f48c0
+            java.lang.String r2 = (java.lang.String) r2
+            boolean r2 = android.text.TextUtils.isEmpty(r2)
+            if (r2 != 0) goto L42
+            bh.a<java.util.concurrent.Executor> r2 = r4.f48c0
+            java.lang.String r2 = (java.lang.String) r2
+            java.lang.String r3 = "recaptchaToken"
+            r1.put(r3, r2)
+        L42:
+            bh.a<c4.b> r2 = r4.f49d0
+            java.lang.String r2 = (java.lang.String) r2
+            boolean r2 = android.text.TextUtils.isEmpty(r2)
+            if (r2 != 0) goto L55
+            bh.a<c4.b> r2 = r4.f49d0
+            java.lang.String r2 = (java.lang.String) r2
+            java.lang.String r3 = "safetyNetToken"
+            r1.put(r3, r2)
+        L55:
+            bh.a<d4.a> r2 = r4.f50e0
+            h7.fd r2 = (p124h7.C2625fd) r2
+            if (r2 == 0) goto L64
+            org.json.JSONObject r2 = r2.m6721b()
+            java.lang.String r3 = "autoRetrievalInfo"
+            r1.put(r3, r2)
+        L64:
+            java.lang.String r2 = "phoneEnrollmentInfo"
+            r0.put(r2, r1)
+        L69:
+            java.lang.String r0 = r0.toString()
+            return r0
+    }
+
+    @Override // p124h7.InterfaceC2697jd
+    /* renamed from: b */
+    public void mo28b(java.lang.Object r5) {
+            r4 = this;
+            h7.ee r5 = (p124h7.C2608ee) r5
+            h7.ie r5 = r5.f11490Y
+            java.util.List<h7.ge> r5 = r5.f11641Y
+            if (r5 == 0) goto L74
+            boolean r0 = r5.isEmpty()
+            if (r0 == 0) goto Lf
+            goto L74
+        Lf:
+            r0 = 0
+            java.lang.Object r5 = r5.get(r0)
+            h7.ge r5 = (p124h7.C2644ge) r5
+            h7.se r1 = r5.f11549d0
+            if (r1 == 0) goto L1d
+            java.util.List<h7.qe> r1 = r1.f11911Y
+            goto L1e
+        L1d:
+            r1 = 0
+        L1e:
+            if (r1 == 0) goto L58
+            boolean r2 = r1.isEmpty()
+            if (r2 != 0) goto L58
+            bh.a<x3.d> r2 = r4.f45Z
+            java.lang.String r2 = (java.lang.String) r2
+            boolean r2 = android.text.TextUtils.isEmpty(r2)
+            if (r2 != 0) goto L4c
+        L30:
+            int r2 = r1.size()
+            if (r0 >= r2) goto L58
+            java.lang.Object r2 = r1.get(r0)
+            h7.qe r2 = (p124h7.C2824qe) r2
+            java.lang.String r2 = r2.f11867b0
+            bh.a<x3.d> r3 = r4.f45Z
+            java.lang.String r3 = (java.lang.String) r3
+            boolean r2 = r2.equals(r3)
+            if (r2 == 0) goto L49
+            goto L4c
+        L49:
+            int r0 = r0 + 1
+            goto L30
+        L4c:
+            java.lang.Object r0 = r1.get(r0)
+            h7.qe r0 = (p124h7.C2824qe) r0
+            bh.a<b4.c> r1 = r4.f46a0
+            java.lang.String r1 = (java.lang.String) r1
+            r0.f11868c0 = r1
+        L58:
+            bh.a<a4.l> r0 = r4.f47b0
+            java.lang.Boolean r0 = (java.lang.Boolean) r0
+            boolean r0 = r0.booleanValue()
+            r5.f11554i0 = r0
+            bh.a<java.util.concurrent.Executor> r0 = r4.f48c0
+            v9.j0 r0 = (p375v9.C6605j0) r0
+            r5.f11555j0 = r0
+            bh.a<c4.b> r0 = r4.f49d0
+            h7.fc r0 = (p124h7.C2624fc) r0
+            bh.a<d4.a> r1 = r4.f50e0
+            h7.me r1 = (p124h7.C2752me) r1
+            r0.m6717e(r1, r5)
+            return
+        L74:
+            bh.a<android.content.Context> r5 = r4.f44Y
+            h7.jd r5 = (p124h7.InterfaceC2697jd) r5
+            java.lang.String r0 = "No users."
+            r5.mo29e(r0)
+            return
+    }
+
+    @Override // p124h7.InterfaceC2697jd
+    /* renamed from: e */
+    public void mo29e(java.lang.String r2) {
+            r1 = this;
+            bh.a<android.content.Context> r0 = r1.f44Y
+            h7.jd r0 = (p124h7.InterfaceC2697jd) r0
+            r0.mo29e(r2)
+            return
+    }
+
+    @Override // bh.InterfaceC0769a
+    public java.lang.Object get() {
+            r9 = this;
+            bh.a<android.content.Context> r0 = r9.f44Y
+            bh.a r0 = (bh.InterfaceC0769a) r0
+            java.lang.Object r0 = r0.get()
+            r2 = r0
+            android.content.Context r2 = (android.content.Context) r2
+            bh.a<x3.d> r0 = r9.f45Z
+            bh.a r0 = (bh.InterfaceC0769a) r0
+            java.lang.Object r0 = r0.get()
+            r3 = r0
+            x3.d r3 = (p405x3.InterfaceC6922d) r3
+            bh.a<b4.c> r0 = r9.f46a0
+            bh.a r0 = (bh.InterfaceC0769a) r0
+            java.lang.Object r0 = r0.get()
+            r4 = r0
+            b4.c r4 = (p021b4.InterfaceC0666c) r4
+            bh.a<a4.l> r0 = r9.f47b0
+            bh.a r0 = (bh.InterfaceC0769a) r0
+            java.lang.Object r0 = r0.get()
+            r5 = r0
+            a4.l r5 = (p005a4.InterfaceC0023l) r5
+            bh.a<java.util.concurrent.Executor> r0 = r9.f48c0
+            bh.a r0 = (bh.InterfaceC0769a) r0
+            java.lang.Object r0 = r0.get()
+            r6 = r0
+            java.util.concurrent.Executor r6 = (java.util.concurrent.Executor) r6
+            bh.a<c4.b> r0 = r9.f49d0
+            bh.a r0 = (bh.InterfaceC0769a) r0
+            java.lang.Object r0 = r0.get()
+            r7 = r0
+            c4.b r7 = (p034c4.InterfaceC0867b) r7
+            bh.a<d4.a> r0 = r9.f50e0
+            bh.a r0 = (bh.InterfaceC0769a) r0
+            java.lang.Object r0 = r0.get()
+            r8 = r0
+            d4.a r8 = (p050d4.InterfaceC1277a) r8
+            a4.i r0 = new a4.i
+            r1 = r0
+            r1.<init>(r2, r3, r4, r5, r6, r7, r8)
+            return r0
+    }
+}
+package p005a4;
+
+/* renamed from: a4.k */
+/* loaded from: classes.dex */
+public class C0022k {
+
+    /* renamed from: a */
+    public final java.util.concurrent.Executor f51a;
+
+    /* renamed from: b */
+    public final p021b4.InterfaceC0666c f52b;
+
+    /* renamed from: c */
+    public final p005a4.InterfaceC0023l f53c;
+
+    /* renamed from: d */
+    public final p034c4.InterfaceC0867b f54d;
+
+    public C0022k(java.util.concurrent.Executor r1, p021b4.InterfaceC0666c r2, p005a4.InterfaceC0023l r3, p034c4.InterfaceC0867b r4) {
+            r0 = this;
+            r0.<init>()
+            r0.f51a = r1
+            r0.f52b = r2
+            r0.f53c = r3
+            r0.f54d = r4
+            return
+    }
+}
+package p005a4;
+
+/* renamed from: a4.l */
+/* loaded from: classes.dex */
+public interface InterfaceC0023l {
+    /* renamed from: a */
+    void mo21a(p385w3.AbstractC6787i r1, int r2, boolean r3);
+
+    /* renamed from: b */
+    void mo22b(p385w3.AbstractC6787i r1, int r2);
+}
+package p005a4;
+
+/* renamed from: a4.c */
+/* loaded from: classes.dex */
+public final /* synthetic */ class RunnableC0014c implements java.lang.Runnable {
+
+    /* renamed from: Y */
+    public final /* synthetic */ int f16Y;
+
+    /* renamed from: Z */
+    public final /* synthetic */ java.lang.Object f17Z;
+
+    /* renamed from: a0 */
+    public final /* synthetic */ java.lang.Object f18a0;
+
+    public /* synthetic */ RunnableC0014c(com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService r2, android.app.job.JobParameters r3) {
+            r1 = this;
+            r0 = 0
+            r1.f16Y = r0
+            r1.<init>()
+            r1.f17Z = r2
+            r1.f18a0 = r3
+            return
+    }
+
+    public /* synthetic */ RunnableC0014c(com.journeyapps.barcodescanner.C1254b.a r2, p454zc.C7279c r3) {
+            r1 = this;
+            r0 = 15
+            r1.f16Y = r0
+            r1.<init>()
+            r1.f17Z = r2
+            r1.f18a0 = r3
+            return
+    }
+
+    public /* synthetic */ RunnableC0014c(p088f4.C1994b0 r2, p088f4.C1992a1 r3) {
+            r1 = this;
+            r0 = 2
+            r1.f16Y = r0
+            r1.<init>()
+            r1.f17Z = r2
+            r1.f18a0 = r3
+            return
+    }
+
+    public /* synthetic */ RunnableC0014c(p088f4.C2057z r2, p088f4.C1994b0.d r3) {
+            r1 = this;
+            r0 = 1
+            r1.f16Y = r0
+            r1.<init>()
+            r1.f17Z = r2
+            r1.f18a0 = r3
+            return
+    }
+
+    public /* synthetic */ RunnableC0014c(p108g5.C2290y r2, p216m4.InterfaceC4378w r3) {
+            r1 = this;
+            r0 = 6
+            r1.f16Y = r0
+            r1.<init>()
+            r1.f17Z = r2
+            r1.f18a0 = r3
+            return
+    }
+
+    public /* synthetic */ RunnableC0014c(p121h4.InterfaceC2473n.a r2, java.lang.String r3) {
+            r1 = this;
+            r0 = 3
+            r1.f16Y = r0
+            r1.<init>()
+            r1.f17Z = r2
+            r1.f18a0 = r3
+            return
+    }
+
+    public /* synthetic */ RunnableC0014c(p162j4.C3397b.e r2, p088f4.C2003e0 r3) {
+            r1 = this;
+            r0 = 4
+            r1.f16Y = r0
+            r1.<init>()
+            r1.f17Z = r2
+            r1.f18a0 = r3
+            return
+    }
+
+    public /* synthetic */ RunnableC0014c(java.util.Map.Entry r2, p342ta.C6203a r3) {
+            r1 = this;
+            r0 = 14
+            r1.f16Y = r0
+            r1.<init>()
+            r1.f17Z = r2
+            r1.f18a0 = r3
+            return
+    }
+
+    public /* synthetic */ RunnableC0014c(p359ud.C6394q r2, id.C3130a r3) {
+            r1 = this;
+            r0 = 16
+            r1.f16Y = r0
+            r1.<init>()
+            r1.f17Z = r2
+            r1.f18a0 = r3
+            return
+    }
+
+    public /* synthetic */ RunnableC0014c(p371v5.C6569s r2, p371v5.C6569s.b r3) {
+            r1 = this;
+            r0 = 7
+            r1.f16Y = r0
+            r1.<init>()
+            r1.f17Z = r2
+            r1.f18a0 = r3
+            return
+    }
+
+    public /* synthetic */ RunnableC0014c(p387w5.InterfaceC6812o.a r2, java.lang.Exception r3) {
+            r1 = this;
+            r0 = 10
+            r1.f16Y = r0
+            r1.<init>()
+            r1.f17Z = r2
+            r1.f18a0 = r3
+            return
+    }
+
+    public /* synthetic */ RunnableC0014c(p387w5.InterfaceC6812o.a r2, java.lang.String r3) {
+            r1 = this;
+            r0 = 9
+            r1.f16Y = r0
+            r1.<init>()
+            r1.f17Z = r2
+            r1.f18a0 = r3
+            return
+    }
+
+    public /* synthetic */ RunnableC0014c(p387w5.InterfaceC6812o.a r2, p387w5.C6813p r3) {
+            r1 = this;
+            r0 = 8
+            r1.f16Y = r0
+            r1.<init>()
+            r1.f17Z = r2
+            r1.f18a0 = r3
+            return
+    }
+
+    public /* synthetic */ RunnableC0014c(p406x4.C6932f r2, android.media.MediaCodec r3) {
+            r1 = this;
+            r0 = 5
+            r1.f16Y = r0
+            r1.<init>()
+            r1.f17Z = r2
+            r1.f18a0 = r3
+            return
+    }
+
+    public /* synthetic */ RunnableC0014c(p407x5.C6955j r2, android.graphics.SurfaceTexture r3) {
+            r1 = this;
+            r0 = 11
+            r1.f16Y = r0
+            r1.<init>()
+            r1.f17Z = r2
+            r1.f18a0 = r3
+            return
+    }
+
+    public /* synthetic */ RunnableC0014c(p432y9.C7149p r2, p392wa.InterfaceC6823b r3) {
+            r1 = this;
+            r0 = 13
+            r1.f16Y = r0
+            r1.<init>()
+            r1.f17Z = r2
+            r1.f18a0 = r3
+            return
+    }
+
+    public /* synthetic */ RunnableC0014c(p432y9.C7151r r2, p392wa.InterfaceC6823b r3) {
+            r1 = this;
+            r0 = 12
+            r1.f16Y = r0
+            r1.<init>()
+            r1.f17Z = r2
+            r1.f18a0 = r3
+            return
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+            r20 = this;
+            r1 = r20
+            int r0 = r1.f16Y
+            r2 = 1
+            r3 = 0
+            r4 = 0
+            r5 = -1
+            r6 = -9223372036854775807(0x8000000000000001, double:-4.9E-324)
+            r8 = 0
+            switch(r0) {
+                case 0: goto L3ee;
+                case 1: goto L31b;
+                case 2: goto L2fd;
+                case 3: goto L2ed;
+                case 4: goto L2c5;
+                case 5: goto L286;
+                case 6: goto L23c;
+                case 7: goto L227;
+                case 8: goto L217;
+                case 9: goto L207;
+                case 10: goto L1f7;
+                case 11: goto L1c1;
+                case 12: goto L199;
+                case 13: goto L178;
+                case 14: goto L166;
+                case 15: goto L14;
+                default: goto L12;
+            }
+        L12:
+            goto L3fc
+        L14:
+            java.lang.Object r0 = r1.f17Z
+            com.journeyapps.barcodescanner.b$a r0 = (com.journeyapps.barcodescanner.C1254b.a) r0
+            java.lang.Object r6 = r1.f18a0
+            zc.c r6 = (p454zc.C7279c) r6
+            com.journeyapps.barcodescanner.b r7 = r0.f6730Y
+            boolean r0 = r7.f6719d
+            if (r0 == 0) goto Lb9
+            zc.s r0 = r6.f27932b
+            java.util.Objects.requireNonNull(r0)
+            android.graphics.Rect r8 = new android.graphics.Rect
+            zb.c r9 = r0.f27965a
+            int r10 = r9.f27907b
+            int r9 = r9.f27908c
+            r8.<init>(r3, r3, r10, r9)
+            android.graphics.YuvImage r9 = new android.graphics.YuvImage
+            zb.c r10 = r0.f27965a
+            byte[] r12 = r10.f27906a
+            int r13 = r0.f27966b
+            int r14 = r10.f27907b
+            int r15 = r10.f27908c
+            r16 = 0
+            r11 = r9
+            r11.<init>(r12, r13, r14, r15, r16)
+            java.io.ByteArrayOutputStream r10 = new java.io.ByteArrayOutputStream
+            r10.<init>()
+            r11 = 90
+            r9.compressToJpeg(r8, r11, r10)
+            byte[] r8 = r10.toByteArray()
+            android.graphics.BitmapFactory$Options r9 = new android.graphics.BitmapFactory$Options
+            r9.<init>()
+            r10 = 2
+            r9.inSampleSize = r10
+            int r10 = r8.length
+            android.graphics.Bitmap r11 = android.graphics.BitmapFactory.decodeByteArray(r8, r3, r10, r9)
+            int r8 = r0.f27967c
+            if (r8 == 0) goto L80
+            android.graphics.Matrix r8 = new android.graphics.Matrix
+            r8.<init>()
+            int r0 = r0.f27967c
+            float r0 = (float) r0
+            r8.postRotate(r0)
+            r12 = 0
+            r13 = 0
+            int r14 = r11.getWidth()
+            int r15 = r11.getHeight()
+            r17 = 0
+            r16 = r8
+            android.graphics.Bitmap r11 = android.graphics.Bitmap.createBitmap(r11, r12, r13, r14, r15, r16, r17)
+        L80:
+            java.lang.String r0 = "barcodeimage"
+            java.lang.String r8 = ".jpg"
+            android.app.Activity r9 = r7.f6716a     // Catch: java.io.IOException -> La2
+            java.io.File r9 = r9.getCacheDir()     // Catch: java.io.IOException -> La2
+            java.io.File r0 = java.io.File.createTempFile(r0, r8, r9)     // Catch: java.io.IOException -> La2
+            java.io.FileOutputStream r8 = new java.io.FileOutputStream     // Catch: java.io.IOException -> La2
+            r8.<init>(r0)     // Catch: java.io.IOException -> La2
+            android.graphics.Bitmap$CompressFormat r9 = android.graphics.Bitmap.CompressFormat.JPEG     // Catch: java.io.IOException -> La2
+            r10 = 100
+            r11.compress(r9, r10, r8)     // Catch: java.io.IOException -> La2
+            r8.close()     // Catch: java.io.IOException -> La2
+            java.lang.String r4 = r0.getAbsolutePath()     // Catch: java.io.IOException -> La2
+            goto Lb9
+        La2:
+            r0 = move-exception
+            java.lang.String r8 = "b"
+            java.lang.StringBuilder r9 = new java.lang.StringBuilder
+            r9.<init>()
+            java.lang.String r10 = "Unable to create temporary file and store bitmap! "
+            r9.append(r10)
+            r9.append(r0)
+            java.lang.String r0 = r9.toString()
+            android.util.Log.w(r8, r0)
+        Lb9:
+            android.content.Intent r0 = new android.content.Intent
+            java.lang.String r8 = "com.google.zxing.client.android.SCAN"
+            r0.<init>(r8)
+            r8 = 524288(0x80000, float:7.34684E-40)
+            r0.addFlags(r8)
+            sb.o r8 = r6.f27931a
+            java.lang.String r8 = r8.f23206a
+            java.lang.String r9 = "SCAN_RESULT"
+            r0.putExtra(r9, r8)
+            sb.o r8 = r6.f27931a
+            sb.a r8 = r8.f23209d
+            java.lang.String r8 = r8.toString()
+            java.lang.String r9 = "SCAN_RESULT_FORMAT"
+            r0.putExtra(r9, r8)
+            sb.o r8 = r6.f27931a
+            byte[] r8 = r8.f23207b
+            if (r8 == 0) goto Le9
+            int r9 = r8.length
+            if (r9 <= 0) goto Le9
+            java.lang.String r9 = "SCAN_RESULT_BYTES"
+            r0.putExtra(r9, r8)
+        Le9:
+            sb.o r6 = r6.f27931a
+            java.util.Map<sb.p, java.lang.Object> r6 = r6.f23210e
+            if (r6 == 0) goto L156
+            sb.p r8 = sb.EnumC6022p.f23217e0
+            boolean r9 = r6.containsKey(r8)
+            if (r9 == 0) goto L104
+            java.lang.Object r8 = r6.get(r8)
+            java.lang.String r8 = r8.toString()
+            java.lang.String r9 = "SCAN_RESULT_UPC_EAN_EXTENSION"
+            r0.putExtra(r9, r8)
+        L104:
+            sb.p r8 = sb.EnumC6022p.f23211Y
+            java.lang.Object r8 = r6.get(r8)
+            java.lang.Number r8 = (java.lang.Number) r8
+            if (r8 == 0) goto L117
+            int r8 = r8.intValue()
+            java.lang.String r9 = "SCAN_RESULT_ORIENTATION"
+            r0.putExtra(r9, r8)
+        L117:
+            sb.p r8 = sb.EnumC6022p.f23213a0
+            java.lang.Object r8 = r6.get(r8)
+            java.lang.String r8 = (java.lang.String) r8
+            if (r8 == 0) goto L126
+            java.lang.String r9 = "SCAN_RESULT_ERROR_CORRECTION_LEVEL"
+            r0.putExtra(r9, r8)
+        L126:
+            sb.p r8 = sb.EnumC6022p.f23212Z
+            java.lang.Object r6 = r6.get(r8)
+            java.lang.Iterable r6 = (java.lang.Iterable) r6
+            if (r6 == 0) goto L156
+            java.util.Iterator r6 = r6.iterator()
+        L134:
+            boolean r8 = r6.hasNext()
+            if (r8 == 0) goto L156
+            java.lang.Object r8 = r6.next()
+            byte[] r8 = (byte[]) r8
+            java.lang.StringBuilder r9 = new java.lang.StringBuilder
+            r9.<init>()
+            java.lang.String r10 = "SCAN_RESULT_BYTE_SEGMENTS_"
+            r9.append(r10)
+            r9.append(r3)
+            java.lang.String r9 = r9.toString()
+            r0.putExtra(r9, r8)
+            int r3 = r3 + r2
+            goto L134
+        L156:
+            if (r4 == 0) goto L15d
+            java.lang.String r2 = "SCAN_RESULT_IMAGE_PATH"
+            r0.putExtra(r2, r4)
+        L15d:
+            android.app.Activity r2 = r7.f6716a
+            r2.setResult(r5, r0)
+            r7.m3702a()
+            return
+        L166:
+            java.lang.Object r0 = r1.f17Z
+            java.util.Map$Entry r0 = (java.util.Map.Entry) r0
+            java.lang.Object r2 = r1.f18a0
+            ta.a r2 = (p342ta.C6203a) r2
+            java.lang.Object r0 = r0.getKey()
+            ta.b r0 = (p342ta.InterfaceC6204b) r0
+            r0.mo3939a(r2)
+            return
+        L178:
+            java.lang.Object r0 = r1.f17Z
+            r2 = r0
+            y9.p r2 = (p432y9.C7149p) r2
+            java.lang.Object r0 = r1.f18a0
+            wa.b r0 = (p392wa.InterfaceC6823b) r0
+            int r3 = p432y9.C7142i.f27576g
+            monitor-enter(r2)
+            java.util.Set<T> r3 = r2.f27599b     // Catch: java.lang.Throwable -> L196
+            if (r3 != 0) goto L18b
+            java.util.Set<wa.b<T>> r3 = r2.f27598a     // Catch: java.lang.Throwable -> L196
+            goto L191
+        L18b:
+            java.util.Set<T> r3 = r2.f27599b     // Catch: java.lang.Throwable -> L196
+            java.lang.Object r0 = r0.get()     // Catch: java.lang.Throwable -> L196
+        L191:
+            r3.add(r0)     // Catch: java.lang.Throwable -> L196
+            monitor-exit(r2)
+            return
+        L196:
+            r0 = move-exception
+            monitor-exit(r2)
+            throw r0
+        L199:
+            java.lang.Object r0 = r1.f17Z
+            r2 = r0
+            y9.r r2 = (p432y9.C7151r) r2
+            java.lang.Object r0 = r1.f18a0
+            wa.b r0 = (p392wa.InterfaceC6823b) r0
+            int r3 = p432y9.C7142i.f27576g
+            wa.b<T> r3 = r2.f27603b
+            wa.b<java.lang.Object> r5 = p432y9.C7151r.f27601d
+            if (r3 != r5) goto L1b9
+            monitor-enter(r2)
+            wa.a$a<T> r3 = r2.f27602a     // Catch: java.lang.Throwable -> L1b6
+            r2.f27602a = r4     // Catch: java.lang.Throwable -> L1b6
+            r2.f27603b = r0     // Catch: java.lang.Throwable -> L1b6
+            monitor-exit(r2)     // Catch: java.lang.Throwable -> L1b6
+            r3.mo25c(r0)
+            return
+        L1b6:
+            r0 = move-exception
+            monitor-exit(r2)     // Catch: java.lang.Throwable -> L1b6
+            throw r0
+        L1b9:
+            java.lang.IllegalStateException r0 = new java.lang.IllegalStateException
+            java.lang.String r2 = "provide() can be called only once."
+            r0.<init>(r2)
+            throw r0
+        L1c1:
+            java.lang.Object r0 = r1.f17Z
+            x5.j r0 = (p407x5.C6955j) r0
+            java.lang.Object r2 = r1.f18a0
+            android.graphics.SurfaceTexture r2 = (android.graphics.SurfaceTexture) r2
+            android.graphics.SurfaceTexture r3 = r0.f27180g0
+            android.view.Surface r4 = r0.f27181h0
+            android.view.Surface r5 = new android.view.Surface
+            r5.<init>(r2)
+            r0.f27180g0 = r2
+            r0.f27181h0 = r5
+            java.util.concurrent.CopyOnWriteArrayList<x5.j$b> r0 = r0.f27174a0
+            java.util.Iterator r0 = r0.iterator()
+        L1dc:
+            boolean r2 = r0.hasNext()
+            if (r2 == 0) goto L1ec
+            java.lang.Object r2 = r0.next()
+            x5.j$b r2 = (p407x5.C6955j.b) r2
+            r2.mo5300o(r5)
+            goto L1dc
+        L1ec:
+            if (r3 == 0) goto L1f1
+            r3.release()
+        L1f1:
+            if (r4 == 0) goto L1f6
+            r4.release()
+        L1f6:
+            return
+        L1f7:
+            java.lang.Object r0 = r1.f17Z
+            w5.o$a r0 = (p387w5.InterfaceC6812o.a) r0
+            java.lang.Object r2 = r1.f18a0
+            java.lang.Exception r2 = (java.lang.Exception) r2
+            w5.o r0 = r0.f26518b
+            int r3 = p371v5.C6552b0.f25624a
+            r0.mo5286L(r2)
+            return
+        L207:
+            java.lang.Object r0 = r1.f17Z
+            w5.o$a r0 = (p387w5.InterfaceC6812o.a) r0
+            java.lang.Object r2 = r1.f18a0
+            java.lang.String r2 = (java.lang.String) r2
+            w5.o r0 = r0.f26518b
+            int r3 = p371v5.C6552b0.f25624a
+            r0.mo5298l(r2)
+            return
+        L217:
+            java.lang.Object r0 = r1.f17Z
+            w5.o$a r0 = (p387w5.InterfaceC6812o.a) r0
+            java.lang.Object r2 = r1.f18a0
+            w5.p r2 = (p387w5.C6813p) r2
+            w5.o r0 = r0.f26518b
+            int r3 = p371v5.C6552b0.f25624a
+            r0.mo5294e(r2)
+            return
+        L227:
+            java.lang.Object r0 = r1.f17Z
+            v5.s r0 = (p371v5.C6569s) r0
+            java.lang.Object r2 = r1.f18a0
+            v5.s$b r2 = (p371v5.C6569s.b) r2
+            java.lang.Object r4 = r0.f25706c
+            monitor-enter(r4)
+            int r0 = r0.f25707d     // Catch: java.lang.Throwable -> L239
+            monitor-exit(r4)     // Catch: java.lang.Throwable -> L239
+            r2.mo12969a(r0)
+            return
+        L239:
+            r0 = move-exception
+            monitor-exit(r4)     // Catch: java.lang.Throwable -> L239
+            throw r0
+        L23c:
+            java.lang.Object r0 = r1.f17Z
+            g5.y r0 = (p108g5.C2290y) r0
+            java.lang.Object r4 = r1.f18a0
+            m4.w r4 = (p216m4.InterfaceC4378w) r4
+            c5.b r5 = r0.f10468p0
+            if (r5 != 0) goto L24a
+            r5 = r4
+            goto L24f
+        L24a:
+            m4.w$b r5 = new m4.w$b
+            r5.<init>(r6, r8)
+        L24f:
+            r0.f10475w0 = r5
+            long r8 = r4.mo9744h()
+            r0.f10476x0 = r8
+            long r8 = r0.f10444D0
+            r10 = -1
+            int r5 = (r8 > r10 ? 1 : (r8 == r10 ? 0 : -1))
+            if (r5 != 0) goto L268
+            long r8 = r4.mo9744h()
+            int r5 = (r8 > r6 ? 1 : (r8 == r6 ? 0 : -1))
+            if (r5 != 0) goto L268
+            r3 = 1
+        L268:
+            r0.f10477y0 = r3
+            if (r3 == 0) goto L26d
+            r2 = 7
+        L26d:
+            r0.f10478z0 = r2
+            g5.y$b r2 = r0.f10457e0
+            long r5 = r0.f10476x0
+            boolean r3 = r4.mo9742d()
+            boolean r4 = r0.f10477y0
+            g5.z r2 = (p108g5.C2291z) r2
+            r2.m6059u(r5, r3, r4)
+            boolean r2 = r0.f10472t0
+            if (r2 != 0) goto L285
+            r0.m6053x()
+        L285:
+            return
+        L286:
+            java.lang.Object r0 = r1.f17Z
+            r2 = r0
+            x4.f r2 = (p406x4.C6932f) r2
+            java.lang.Object r0 = r1.f18a0
+            android.media.MediaCodec r0 = (android.media.MediaCodec) r0
+            java.lang.Object r4 = r2.f26990a
+            monitor-enter(r4)
+            boolean r3 = r2.f27001l     // Catch: java.lang.Throwable -> L2c2
+            if (r3 == 0) goto L297
+            goto L2c0
+        L297:
+            long r5 = r2.f27000k     // Catch: java.lang.Throwable -> L2c2
+            r10 = 1
+            long r5 = r5 - r10
+            r2.f27000k = r5     // Catch: java.lang.Throwable -> L2c2
+            int r3 = (r5 > r8 ? 1 : (r5 == r8 ? 0 : -1))
+            if (r3 <= 0) goto L2a3
+            goto L2c0
+        L2a3:
+            if (r3 >= 0) goto L2ab
+            java.lang.IllegalStateException r0 = new java.lang.IllegalStateException     // Catch: java.lang.Throwable -> L2c2
+            r0.<init>()     // Catch: java.lang.Throwable -> L2c2
+            goto L2bd
+        L2ab:
+            r2.m14054b()     // Catch: java.lang.Throwable -> L2c2
+            if (r0 == 0) goto L2c0
+            r0.start()     // Catch: java.lang.Exception -> L2b4 java.lang.IllegalStateException -> L2bc java.lang.Throwable -> L2c2
+            goto L2c0
+        L2b4:
+            r0 = move-exception
+            r3 = r0
+            java.lang.IllegalStateException r0 = new java.lang.IllegalStateException     // Catch: java.lang.Throwable -> L2c2
+            r0.<init>(r3)     // Catch: java.lang.Throwable -> L2c2
+            goto L2bd
+        L2bc:
+            r0 = move-exception
+        L2bd:
+            r2.m14056d(r0)     // Catch: java.lang.Throwable -> L2c2
+        L2c0:
+            monitor-exit(r4)     // Catch: java.lang.Throwable -> L2c2
+            return
+        L2c2:
+            r0 = move-exception
+            monitor-exit(r4)     // Catch: java.lang.Throwable -> L2c2
+            throw r0
+        L2c5:
+            java.lang.Object r0 = r1.f17Z
+            j4.b$e r0 = (p162j4.C3397b.e) r0
+            java.lang.Object r2 = r1.f18a0
+            f4.e0 r2 = (p088f4.C2003e0) r2
+            j4.b r4 = r0.f14719b0
+            int r5 = r4.f14705p
+            if (r5 == 0) goto L2ec
+            boolean r5 = r0.f14718a0
+            if (r5 == 0) goto L2d8
+            goto L2ec
+        L2d8:
+            android.os.Looper r5 = r4.f14709t
+            java.util.Objects.requireNonNull(r5)
+            j4.h$a r6 = r0.f14716Y
+            j4.e r2 = r4.m7811d(r5, r6, r2, r3)
+            r0.f14717Z = r2
+            j4.b r2 = r0.f14719b0
+            java.util.Set<j4.b$e> r2 = r2.f14703n
+            r2.add(r0)
+        L2ec:
+            return
+        L2ed:
+            java.lang.Object r0 = r1.f17Z
+            h4.n$a r0 = (p121h4.InterfaceC2473n.a) r0
+            java.lang.Object r2 = r1.f18a0
+            java.lang.String r2 = (java.lang.String) r2
+            h4.n r0 = r0.f11064b
+            int r3 = p371v5.C6552b0.f25624a
+            r0.mo5287V(r2)
+            return
+        L2fd:
+            java.lang.Object r0 = r1.f17Z
+            f4.b0 r0 = (p088f4.C1994b0) r0
+            java.lang.Object r2 = r1.f18a0
+            f4.a1 r2 = (p088f4.C1992a1) r2
+            java.util.Objects.requireNonNull(r0)
+            r0.m5145d(r2)     // Catch: p088f4.C2038q -> L30c
+            return
+        L30c:
+            r0 = move-exception
+            r2 = r0
+            java.lang.String r0 = "ExoPlayerImplInternal"
+            java.lang.String r3 = "Unexpected error delivering message on external thread."
+            p371v5.C6565o.m13369b(r0, r3, r2)
+            java.lang.RuntimeException r0 = new java.lang.RuntimeException
+            r0.<init>(r2)
+            throw r0
+        L31b:
+            java.lang.Object r0 = r1.f17Z
+            r10 = r0
+            f4.z r10 = (p088f4.C2057z) r10
+            java.lang.Object r0 = r1.f18a0
+            f4.b0$d r0 = (p088f4.C1994b0.d) r0
+            int r4 = r10.f9422w
+            int r11 = r0.f8843c
+            int r4 = r4 - r11
+            r10.f9422w = r4
+            boolean r11 = r0.f8844d
+            if (r11 == 0) goto L335
+            int r11 = r0.f8845e
+            r10.f9423x = r11
+            r10.f9424y = r2
+        L335:
+            boolean r11 = r0.f8846f
+            if (r11 == 0) goto L33d
+            int r11 = r0.f8847g
+            r10.f9425z = r11
+        L33d:
+            if (r4 != 0) goto L3ed
+            f4.v0 r4 = r0.f8842b
+            f4.n1 r4 = r4.f9350a
+            f4.v0 r11 = r10.f9398E
+            f4.n1 r11 = r11.f9350a
+            boolean r11 = r11.m5344r()
+            if (r11 != 0) goto L357
+            boolean r11 = r4.m5344r()
+            if (r11 == 0) goto L357
+            r10.f9399F = r5
+            r10.f9400G = r8
+        L357:
+            boolean r5 = r4.m5344r()
+            if (r5 != 0) goto L392
+            r5 = r4
+            f4.b1 r5 = (p088f4.C1995b1) r5
+            f4.n1[] r5 = r5.f8861g0
+            java.util.List r5 = java.util.Arrays.asList(r5)
+            int r8 = r5.size()
+            java.util.List<f4.z$a> r9 = r10.f9411l
+            int r9 = r9.size()
+            if (r8 != r9) goto L374
+            r8 = 1
+            goto L375
+        L374:
+            r8 = 0
+        L375:
+            p371v5.C6549a.m13291e(r8)
+            r8 = 0
+        L379:
+            int r9 = r5.size()
+            if (r8 >= r9) goto L392
+            java.util.List<f4.z$a> r9 = r10.f9411l
+            java.lang.Object r9 = r9.get(r8)
+            f4.z$a r9 = (p088f4.C2057z.a) r9
+            java.lang.Object r11 = r5.get(r8)
+            f4.n1 r11 = (p088f4.AbstractC2031n1) r11
+            r9.f9427b = r11
+            int r8 = r8 + 1
+            goto L379
+        L392:
+            boolean r5 = r10.f9424y
+            if (r5 == 0) goto L3d9
+            f4.v0 r5 = r0.f8842b
+            g5.r$a r5 = r5.f9351b
+            f4.v0 r8 = r10.f9398E
+            g5.r$a r8 = r8.f9351b
+            boolean r5 = r5.equals(r8)
+            if (r5 == 0) goto L3b2
+            f4.v0 r5 = r0.f8842b
+            long r8 = r5.f9353d
+            f4.v0 r5 = r10.f9398E
+            long r11 = r5.f9368s
+            int r5 = (r8 > r11 ? 1 : (r8 == r11 ? 0 : -1))
+            if (r5 == 0) goto L3b1
+            goto L3b2
+        L3b1:
+            r2 = 0
+        L3b2:
+            if (r2 == 0) goto L3d5
+            boolean r5 = r4.m5344r()
+            if (r5 != 0) goto L3d0
+            f4.v0 r5 = r0.f8842b
+            g5.r$a r5 = r5.f9351b
+            boolean r5 = r5.m6028a()
+            if (r5 == 0) goto L3c5
+            goto L3d0
+        L3c5:
+            f4.v0 r5 = r0.f8842b
+            g5.r$a r6 = r5.f9351b
+            long r7 = r5.f9353d
+            long r4 = r10.m5455p0(r4, r6, r7)
+            goto L3d4
+        L3d0:
+            f4.v0 r4 = r0.f8842b
+            long r4 = r4.f9353d
+        L3d4:
+            r6 = r4
+        L3d5:
+            r15 = r2
+            r17 = r6
+            goto L3dc
+        L3d9:
+            r17 = r6
+            r15 = 0
+        L3dc:
+            r10.f9424y = r3
+            f4.v0 r11 = r0.f8842b
+            r12 = 1
+            int r13 = r10.f9425z
+            r14 = 0
+            int r0 = r10.f9423x
+            r19 = -1
+            r16 = r0
+            r10.m5461v0(r11, r12, r13, r14, r15, r16, r17, r19)
+        L3ed:
+            return
+        L3ee:
+            java.lang.Object r0 = r1.f17Z
+            com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService r0 = (com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService) r0
+            java.lang.Object r2 = r1.f18a0
+            android.app.job.JobParameters r2 = (android.app.job.JobParameters) r2
+            int r4 = com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService.f5236Y
+            r0.jobFinished(r2, r3)
+            return
+        L3fc:
+            java.lang.Object r0 = r1.f17Z
+            ud.q r0 = (p359ud.C6394q) r0
+            java.lang.Object r4 = r1.f18a0
+            id.a r4 = (id.C3130a) r4
+            java.lang.String r5 = "this$0"
+            p214m2.C4339q.m9706k(r0, r5)
+            java.lang.String r5 = "$contact"
+            p214m2.C4339q.m9706k(r4, r5)
+            io.tacocrypto.app.database.AppDatabase r0 = r0.f24884c
+            hd.b r0 = r0.mo7712o()
+            id.a[] r2 = new id.C3130a[r2]
+            r2[r3] = r4
+            r0.mo7434a(r2)
+            return
+    }
+}
+package p005a4;
+
+/* renamed from: a4.h */
+/* loaded from: classes.dex */
+public final /* synthetic */ class RunnableC0019h implements java.lang.Runnable {
+
+    /* renamed from: Y */
+    public final /* synthetic */ p005a4.C0020i f33Y;
+
+    /* renamed from: Z */
+    public final /* synthetic */ p385w3.AbstractC6787i f34Z;
+
+    /* renamed from: a0 */
+    public final /* synthetic */ int f35a0;
+
+    /* renamed from: b0 */
+    public final /* synthetic */ java.lang.Runnable f36b0;
+
+    public /* synthetic */ RunnableC0019h(p005a4.C0020i r1, p385w3.AbstractC6787i r2, int r3, java.lang.Runnable r4) {
+            r0 = this;
+            r0.<init>()
+            r0.f33Y = r1
+            r0.f34Z = r2
+            r0.f35a0 = r3
+            r0.f36b0 = r4
+            return
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+            r8 = this;
+            a4.i r0 = r8.f33Y
+            w3.i r1 = r8.f34Z
+            int r2 = r8.f35a0
+            java.lang.Runnable r3 = r8.f36b0
+            java.util.Objects.requireNonNull(r0)
+            r4 = 1
+            c4.b r5 = r0.f42f     // Catch: java.lang.Throwable -> L45 p034c4.C0866a -> L47
+            b4.c r6 = r0.f39c     // Catch: java.lang.Throwable -> L45 p034c4.C0866a -> L47
+            java.util.Objects.requireNonNull(r6)     // Catch: java.lang.Throwable -> L45 p034c4.C0866a -> L47
+            u3.b r7 = new u3.b     // Catch: java.lang.Throwable -> L45 p034c4.C0866a -> L47
+            r7.<init>(r6)     // Catch: java.lang.Throwable -> L45 p034c4.C0866a -> L47
+            r5.mo2235a(r7)     // Catch: java.lang.Throwable -> L45 p034c4.C0866a -> L47
+            android.content.Context r5 = r0.f37a     // Catch: java.lang.Throwable -> L45 p034c4.C0866a -> L47
+            java.lang.String r6 = "connectivity"
+            java.lang.Object r5 = r5.getSystemService(r6)     // Catch: java.lang.Throwable -> L45 p034c4.C0866a -> L47
+            android.net.ConnectivityManager r5 = (android.net.ConnectivityManager) r5     // Catch: java.lang.Throwable -> L45 p034c4.C0866a -> L47
+            android.net.NetworkInfo r5 = r5.getActiveNetworkInfo()     // Catch: java.lang.Throwable -> L45 p034c4.C0866a -> L47
+            if (r5 == 0) goto L33
+            boolean r5 = r5.isConnected()     // Catch: java.lang.Throwable -> L45 p034c4.C0866a -> L47
+            if (r5 == 0) goto L33
+            r5 = 1
+            goto L34
+        L33:
+            r5 = 0
+        L34:
+            if (r5 != 0) goto L41
+            c4.b r5 = r0.f42f     // Catch: java.lang.Throwable -> L45 p034c4.C0866a -> L47
+            a4.e r6 = new a4.e     // Catch: java.lang.Throwable -> L45 p034c4.C0866a -> L47
+            r6.<init>(r0, r1, r2)     // Catch: java.lang.Throwable -> L45 p034c4.C0866a -> L47
+            r5.mo2235a(r6)     // Catch: java.lang.Throwable -> L45 p034c4.C0866a -> L47
+            goto L4d
+        L41:
+            r0.m26a(r1, r2)     // Catch: java.lang.Throwable -> L45 p034c4.C0866a -> L47
+            goto L4d
+        L45:
+            r0 = move-exception
+            goto L51
+        L47:
+            a4.l r0 = r0.f40d     // Catch: java.lang.Throwable -> L45
+            int r2 = r2 + r4
+            r0.mo22b(r1, r2)     // Catch: java.lang.Throwable -> L45
+        L4d:
+            r3.run()
+            return
+        L51:
+            r3.run()
+            throw r0
+    }
+}

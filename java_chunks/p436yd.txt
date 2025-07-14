@@ -1,0 +1,620 @@
+package p436yd;
+
+/* renamed from: yd.c */
+/* loaded from: classes.dex */
+public final class C7158c extends p239nh.AbstractC4830j implements mh.InterfaceC4620l<p458zg.C7334f, ch.C0985l> {
+
+    /* renamed from: Z */
+    public final /* synthetic */ java.lang.Throwable f27617Z;
+
+    public C7158c(java.lang.Throwable r1) {
+            r0 = this;
+            r0.f27617Z = r1
+            r1 = 1
+            r0.<init>(r1)
+            return
+    }
+
+    @Override // mh.InterfaceC4620l
+    /* renamed from: b */
+    public ch.C0985l mo107b(p458zg.C7334f r4) {
+            r3 = this;
+            zg.f r4 = (p458zg.C7334f) r4
+            java.lang.String r0 = "$this$showProjectDialog"
+            p214m2.C4339q.m9706k(r4, r0)
+            r0 = 0
+            r1 = 1
+            java.lang.String r2 = "Error"
+            p458zg.C7334f.m14409e(r4, r0, r2, r1)
+            zg.d r2 = p458zg.EnumC7332d.f28068Z
+            r4.m14410d(r2)
+            java.lang.Throwable r2 = r3.f27617Z
+            java.lang.String r2 = r2.getMessage()
+            p458zg.C7334f.m14406a(r4, r0, r2, r1)
+            r1 = 2131951953(0x7f130151, float:1.9540335E38)
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r1)
+            r2 = 6
+            p458zg.C7334f.m14408c(r4, r1, r0, r0, r2)
+            ch.l r4 = ch.C0985l.f5061a
+            return r4
+    }
+}
+package p436yd;
+
+/* renamed from: yd.d */
+/* loaded from: classes.dex */
+public final /* synthetic */ class C7159d implements androidx.lifecycle.InterfaceC0439e0 {
+
+    /* renamed from: a */
+    public final /* synthetic */ int f27618a;
+
+    /* renamed from: b */
+    public final /* synthetic */ mh.InterfaceC4620l f27619b;
+
+    public /* synthetic */ C7159d(mh.InterfaceC4620l r2, int r3) {
+            r1 = this;
+            r1.f27618a = r3
+            r0 = 1
+            r1.<init>()
+            r1.f27619b = r2
+            return
+    }
+
+    @Override // androidx.lifecycle.InterfaceC0439e0
+    /* renamed from: d */
+    public final void mo124d(java.lang.Object r3) {
+            r2 = this;
+            int r0 = r2.f27618a
+            java.lang.String r1 = "$tmp0"
+            switch(r0) {
+                case 0: goto L8;
+                default: goto L7;
+            }
+        L7:
+            goto L13
+        L8:
+            mh.l r0 = r2.f27619b
+            java.util.List r3 = (java.util.List) r3
+            p214m2.C4339q.m9706k(r0, r1)
+            r0.mo107b(r3)
+            return
+        L13:
+            mh.l r0 = r2.f27619b
+            java.util.List r3 = (java.util.List) r3
+            p214m2.C4339q.m9706k(r0, r1)
+            r0.mo107b(r3)
+            return
+    }
+}
+package p436yd;
+
+/* renamed from: yd.e */
+/* loaded from: classes.dex */
+public final /* synthetic */ class C7160e implements androidx.lifecycle.InterfaceC0439e0 {
+
+    /* renamed from: a */
+    public final /* synthetic */ int f27620a;
+
+    /* renamed from: b */
+    public final /* synthetic */ p436yd.C7161f f27621b;
+
+    /* renamed from: c */
+    public final /* synthetic */ gd.C2326a f27622c;
+
+    public /* synthetic */ C7160e(gd.C2326a r2, p436yd.C7161f r3) {
+            r1 = this;
+            r0 = 1
+            r1.f27620a = r0
+            r1.<init>()
+            r1.f27622c = r2
+            r1.f27621b = r3
+            return
+    }
+
+    public /* synthetic */ C7160e(p436yd.C7161f r2, gd.C2326a r3) {
+            r1 = this;
+            r0 = 0
+            r1.f27620a = r0
+            r1.<init>()
+            r1.f27621b = r2
+            r1.f27622c = r3
+            return
+    }
+
+    @Override // androidx.lifecycle.InterfaceC0439e0
+    /* renamed from: d */
+    public final void mo124d(java.lang.Object r5) {
+            r4 = this;
+            int r0 = r4.f27620a
+            java.lang.String r1 = "$musicServiceConnection"
+            java.lang.String r2 = "this$0"
+            switch(r0) {
+                case 0: goto La;
+                default: goto L9;
+            }
+        L9:
+            goto L33
+        La:
+            yd.f r0 = r4.f27621b
+            gd.a r3 = r4.f27622c
+            android.support.v4.media.session.PlaybackStateCompat r5 = (android.support.v4.media.session.PlaybackStateCompat) r5
+            p214m2.C4339q.m9706k(r0, r2)
+            p214m2.C4339q.m9706k(r3, r1)
+            if (r5 != 0) goto L1a
+            android.support.v4.media.session.PlaybackStateCompat r5 = gd.C2327b.f10578a
+        L1a:
+            r0.f27627g = r5
+            androidx.lifecycle.d0<android.support.v4.media.MediaMetadataCompat> r5 = r3.f10570d
+            java.lang.Object r5 = r5.m1411d()
+            android.support.v4.media.MediaMetadataCompat r5 = (android.support.v4.media.MediaMetadataCompat) r5
+            if (r5 != 0) goto L28
+            android.support.v4.media.MediaMetadataCompat r5 = gd.C2327b.f10579b
+        L28:
+            java.lang.String r1 = "musicServiceConnection.n\u2026.value ?: NOTHING_PLAYING"
+            p214m2.C4339q.m9705j(r5, r1)
+            android.support.v4.media.session.PlaybackStateCompat r1 = r0.f27627g
+            r0.m14271d(r1, r5)
+            return
+        L33:
+            gd.a r0 = r4.f27622c
+            yd.f r3 = r4.f27621b
+            java.lang.Boolean r5 = (java.lang.Boolean) r5
+            p214m2.C4339q.m9706k(r0, r1)
+            p214m2.C4339q.m9706k(r3, r2)
+            androidx.lifecycle.d0<java.lang.Boolean> r5 = r0.f10567a
+            java.lang.Object r5 = r5.m1411d()
+            java.lang.Boolean r1 = java.lang.Boolean.TRUE
+            boolean r5 = p214m2.C4339q.m9702c(r5, r1)
+            if (r5 == 0) goto L62
+            androidx.lifecycle.LiveData<java.lang.Boolean> r5 = r3.f27630j
+            java.lang.Object r5 = r5.m1411d()
+            boolean r5 = p214m2.C4339q.m9702c(r5, r1)
+            if (r5 == 0) goto L62
+            android.os.Bundle r5 = android.os.Bundle.EMPTY
+            yd.g r1 = p436yd.C7162g.f27641Z
+            java.lang.String r2 = " io.tacocrypto.app.mymusicservice.COMMAND.REFRESH_IF_EMPTY"
+            r0.m6086b(r2, r5, r1)
+        L62:
+            return
+    }
+}
+package p436yd;
+
+/* renamed from: yd.f */
+/* loaded from: classes.dex */
+public final class C7161f extends androidx.lifecycle.AbstractC0457n0 {
+
+    /* renamed from: c */
+    public final android.app.Application f27623c;
+
+    /* renamed from: d */
+    public final p238nd.C4728b0 f27624d;
+
+    /* renamed from: e */
+    public final p238nd.C4778u f27625e;
+
+    /* renamed from: f */
+    public final mh.InterfaceC4620l<java.util.List<id.C3131b>, ch.C0985l> f27626f;
+
+    /* renamed from: g */
+    public android.support.v4.media.session.PlaybackStateCompat f27627g;
+
+    /* renamed from: h */
+    public final androidx.lifecycle.C0437d0<cg.C0970l.a> f27628h;
+
+    /* renamed from: i */
+    public final androidx.lifecycle.C0437d0<java.lang.Boolean> f27629i;
+
+    /* renamed from: j */
+    public final androidx.lifecycle.LiveData<java.lang.Boolean> f27630j;
+
+    /* renamed from: k */
+    public final androidx.lifecycle.C0437d0<java.lang.Boolean> f27631k;
+
+    /* renamed from: l */
+    public final androidx.lifecycle.LiveData<java.lang.Boolean> f27632l;
+
+    /* renamed from: m */
+    public final androidx.lifecycle.C0437d0<java.lang.Boolean> f27633m;
+
+    /* renamed from: n */
+    public final androidx.lifecycle.LiveData<java.lang.Boolean> f27634n;
+
+    /* renamed from: o */
+    public final androidx.lifecycle.InterfaceC0439e0<android.support.v4.media.session.PlaybackStateCompat> f27635o;
+
+    /* renamed from: p */
+    public final androidx.lifecycle.InterfaceC0439e0<android.support.v4.media.MediaMetadataCompat> f27636p;
+
+    /* renamed from: q */
+    public final gd.C2326a f27637q;
+
+    /* renamed from: r */
+    public final androidx.lifecycle.InterfaceC0439e0<java.lang.Boolean> f27638r;
+
+    /* renamed from: yd.f$a */
+    public static final class a extends p239nh.AbstractC4830j implements mh.InterfaceC4620l<java.util.List<? extends id.C3131b>, ch.C0985l> {
+
+        /* renamed from: Z */
+        public final /* synthetic */ p436yd.C7161f f27639Z;
+
+        public a(p436yd.C7161f r1) {
+                r0 = this;
+                r0.f27639Z = r1
+                r1 = 1
+                r0.<init>(r1)
+                return
+        }
+
+        @Override // mh.InterfaceC4620l
+        /* renamed from: b */
+        public ch.C0985l mo107b(java.util.List<? extends id.C3131b> r4) {
+                r3 = this;
+                java.util.List r4 = (java.util.List) r4
+                java.lang.String r0 = "it"
+                p214m2.C4339q.m9706k(r4, r0)
+                yd.f r4 = r3.f27639Z
+                nd.b0 r0 = r4.f27624d
+                androidx.lifecycle.LiveData<java.util.List<id.b>> r0 = r0.f18925u
+                mh.l<java.util.List<id.b>, ch.l> r4 = r4.f27626f
+                yd.d r1 = new yd.d
+                r2 = 0
+                r1.<init>(r4, r2)
+                r0.mo6k(r1)
+                ch.l r4 = ch.C0985l.f5061a
+                return r4
+        }
+    }
+
+    /* renamed from: yd.f$b */
+    public static final class b extends p239nh.AbstractC4830j implements mh.InterfaceC4624p<java.lang.Boolean, java.lang.Boolean, java.lang.Boolean> {
+
+        /* renamed from: Z */
+        public static final p436yd.C7161f.b f27640Z = null;
+
+        static {
+                yd.f$b r0 = new yd.f$b
+                r0.<init>()
+                p436yd.C7161f.b.f27640Z = r0
+                return
+        }
+
+        public b() {
+                r1 = this;
+                r0 = 2
+                r1.<init>(r0)
+                return
+        }
+
+        @Override // mh.InterfaceC4624p
+        /* renamed from: l */
+        public java.lang.Boolean mo122l(java.lang.Boolean r2, java.lang.Boolean r3) {
+                r1 = this;
+                java.lang.Boolean r2 = (java.lang.Boolean) r2
+                java.lang.Boolean r3 = (java.lang.Boolean) r3
+                r0 = 0
+                if (r2 == 0) goto Lc
+                boolean r2 = r2.booleanValue()
+                goto Ld
+            Lc:
+                r2 = 0
+            Ld:
+                if (r2 != 0) goto L19
+                if (r3 == 0) goto L16
+                boolean r2 = r3.booleanValue()
+                goto L17
+            L16:
+                r2 = 0
+            L17:
+                if (r2 == 0) goto L1a
+            L19:
+                r0 = 1
+            L1a:
+                java.lang.Boolean r2 = java.lang.Boolean.valueOf(r0)
+                return r2
+        }
+    }
+
+    public C7161f(android.app.Application r5, p238nd.C4728b0 r6, p238nd.C4778u r7, p238nd.C4753j1 r8, gd.C2326a r9) {
+            r4 = this;
+            java.lang.String r0 = "app"
+            p214m2.C4339q.m9706k(r5, r0)
+            java.lang.String r0 = "eosManager"
+            p214m2.C4339q.m9706k(r6, r0)
+            java.lang.String r0 = "dataManager"
+            p214m2.C4339q.m9706k(r7, r0)
+            java.lang.String r0 = "preferenceStorage"
+            p214m2.C4339q.m9706k(r8, r0)
+            r4.<init>()
+            r4.f27623c = r5
+            r4.f27624d = r6
+            r4.f27625e = r7
+            yd.f$a r5 = new yd.f$a
+            r5.<init>(r4)
+            r4.f27626f = r5
+            android.support.v4.media.session.PlaybackStateCompat r5 = gd.C2327b.f10578a
+            r4.f27627g = r5
+            androidx.lifecycle.d0 r5 = new androidx.lifecycle.d0
+            r5.<init>()
+            r4.f27628h = r5
+            androidx.lifecycle.d0 r5 = new androidx.lifecycle.d0
+            java.lang.Boolean r6 = java.lang.Boolean.FALSE
+            r5.<init>(r6)
+            r4.f27629i = r5
+            android.content.SharedPreferences r5 = r8.m10820a()
+            boolean r7 = r6 instanceof java.lang.String
+            java.lang.String r8 = "showNFTPlayerValue"
+            if (r7 == 0) goto L4f
+            r7 = r6
+            java.lang.String r7 = (java.lang.String) r7
+            java.lang.String r7 = r5.getString(r8, r7)
+            java.lang.String r0 = "null cannot be cast to non-null type kotlin.Boolean"
+            java.util.Objects.requireNonNull(r7, r0)
+            goto L76
+        L4f:
+            boolean r7 = r6 instanceof java.lang.Integer
+            if (r7 == 0) goto L63
+            r7 = r6
+            java.lang.Number r7 = (java.lang.Number) r7
+            int r7 = r7.intValue()
+            int r7 = r5.getInt(r8, r7)
+            java.lang.Integer r7 = java.lang.Integer.valueOf(r7)
+            goto L76
+        L63:
+            boolean r7 = r6 instanceof java.lang.Long
+            if (r7 == 0) goto L79
+            r7 = r6
+            java.lang.Number r7 = (java.lang.Number) r7
+            long r0 = r7.longValue()
+            long r0 = r5.getLong(r8, r0)
+            java.lang.Long r7 = java.lang.Long.valueOf(r0)
+        L76:
+            java.lang.Boolean r7 = (java.lang.Boolean) r7
+            goto L82
+        L79:
+            r7 = 0
+            boolean r7 = r5.getBoolean(r8, r7)
+            java.lang.Boolean r7 = java.lang.Boolean.valueOf(r7)
+        L82:
+            xh.g r0 = new xh.g
+            if (r7 != 0) goto L88
+            zh.p r7 = p439yh.C7209f.f27750a
+        L88:
+            r0.<init>(r7)
+            nd.g1 r7 = new nd.g1
+            r7.<init>(r8, r0, r5, r6)
+            r5.registerOnSharedPreferenceChangeListener(r7)
+            nd.h1 r8 = new nd.h1
+            r1 = 0
+            r8.<init>(r5, r7, r1)
+            xh.d r5 = new xh.d
+            r5.<init>(r0, r8)
+            fh.i r7 = p101fh.C2177i.f9918Y
+            r2 = 5000(0x1388, double:2.4703E-320)
+            androidx.lifecycle.l r8 = new androidx.lifecycle.l
+            r8.<init>(r5, r1)
+            androidx.lifecycle.h r5 = new androidx.lifecycle.h
+            r5.<init>(r7, r2, r8)
+            r4.f27630j = r5
+            androidx.lifecycle.d0 r7 = new androidx.lifecycle.d0
+            r7.<init>(r6)
+            r4.f27631k = r7
+            yd.f$b r8 = p436yd.C7161f.b.f27640Z
+            androidx.lifecycle.LiveData r7 = p185k7.C4038x4.m9090c(r5, r7, r8)
+            r4.f27632l = r7
+            androidx.lifecycle.d0 r7 = new androidx.lifecycle.d0
+            r7.<init>(r6)
+            r4.f27633m = r7
+            r4.f27634n = r7
+            yd.e r6 = new yd.e
+            r6.<init>(r4, r9)
+            r4.f27635o = r6
+            nd.x r7 = new nd.x
+            r7.<init>(r4)
+            r4.f27636p = r7
+            androidx.lifecycle.d0<android.support.v4.media.session.PlaybackStateCompat> r8 = r9.f10569c
+            r8.m1414g(r6)
+            androidx.lifecycle.d0<android.support.v4.media.MediaMetadataCompat> r6 = r9.f10570d
+            r6.m1414g(r7)
+            r4.f27637q = r9
+            yd.e r6 = new yd.e
+            r6.<init>(r9, r4)
+            r4.f27638r = r6
+            r5.m1414g(r6)
+            androidx.lifecycle.d0<java.lang.Boolean> r5 = r9.f10567a
+            r5.m1414g(r6)
+            return
+    }
+
+    @Override // androidx.lifecycle.AbstractC0457n0
+    /* renamed from: b */
+    public void mo8b() {
+            r2 = this;
+            gd.a r0 = r2.f27637q
+            androidx.lifecycle.d0<android.support.v4.media.session.PlaybackStateCompat> r0 = r0.f10569c
+            androidx.lifecycle.e0<android.support.v4.media.session.PlaybackStateCompat> r1 = r2.f27635o
+            r0.mo6k(r1)
+            gd.a r0 = r2.f27637q
+            androidx.lifecycle.d0<android.support.v4.media.MediaMetadataCompat> r0 = r0.f10570d
+            androidx.lifecycle.e0<android.support.v4.media.MediaMetadataCompat> r1 = r2.f27636p
+            r0.mo6k(r1)
+            androidx.lifecycle.LiveData<java.lang.Boolean> r0 = r2.f27630j
+            androidx.lifecycle.e0<java.lang.Boolean> r1 = r2.f27638r
+            r0.mo6k(r1)
+            gd.a r0 = r2.f27637q
+            androidx.lifecycle.d0<java.lang.Boolean> r0 = r0.f10567a
+            androidx.lifecycle.e0<java.lang.Boolean> r1 = r2.f27638r
+            r0.mo6k(r1)
+            return
+    }
+
+    /* renamed from: d */
+    public final void m14271d(android.support.v4.media.session.PlaybackStateCompat r21, android.support.v4.media.MediaMetadataCompat r22) {
+            r20 = this;
+            r0 = r20
+            r1 = r21
+            r2 = r22
+            android.os.Bundle r3 = r2.f498Y
+            java.lang.String r4 = "android.media.metadata.DURATION"
+            r5 = 0
+            long r7 = r3.getLong(r4, r5)
+            int r10 = (r7 > r5 ? 1 : (r7 == r5 ? 0 : -1))
+            if (r10 == 0) goto Lbf
+            java.lang.String r7 = "android.media.metadata.MEDIA_ID"
+            java.lang.String r8 = r2.m231e(r7)
+            if (r8 == 0) goto Lbf
+            cg.l$a r8 = new cg.l$a
+            java.lang.String r11 = r2.m231e(r7)
+            p214m2.C4339q.m9704i(r11)
+            java.lang.String r7 = "android.media.metadata.ALBUM_ART_URI"
+            java.lang.String r7 = r2.m231e(r7)
+            android.net.Uri r12 = p185k7.C3828h5.m8579H(r7)
+            java.lang.String r7 = "android.media.metadata.TITLE"
+            java.lang.String r7 = r2.m231e(r7)
+            r10 = 0
+            if (r7 == 0) goto L42
+            java.lang.CharSequence r7 = p362uh.C6467m.m13083n0(r7)
+            java.lang.String r7 = r7.toString()
+            r13 = r7
+            goto L43
+        L42:
+            r13 = r10
+        L43:
+            java.lang.String r7 = "android.media.metadata.DISPLAY_SUBTITLE"
+            java.lang.String r7 = r2.m231e(r7)
+            if (r7 == 0) goto L55
+            java.lang.CharSequence r7 = p362uh.C6467m.m13083n0(r7)
+            java.lang.String r7 = r7.toString()
+            r14 = r7
+            goto L56
+        L55:
+            r14 = r10
+        L56:
+            android.os.Bundle r7 = r2.f498Y
+            long r15 = r7.getLong(r4, r5)
+            android.app.Application r7 = r0.f27623c
+            android.os.Bundle r2 = r2.f498Y
+            long r3 = r2.getLong(r4, r5)
+            java.lang.String r2 = "context"
+            p214m2.C4339q.m9706k(r7, r2)
+            double r9 = (double) r3
+            r18 = 4652007308841189376(0x408f400000000000, double:1000.0)
+            double r9 = r9 / r18
+            double r9 = java.lang.Math.floor(r9)
+            int r7 = (int) r9
+            int r9 = r7 / 60
+            int r10 = r9 * 60
+            int r7 = r7 - r10
+            int r10 = (r3 > r5 ? 1 : (r3 == r5 ? 0 : -1))
+            if (r10 >= 0) goto L86
+            java.lang.String r3 = "--:--"
+            r17 = r3
+            r2 = 1
+            r9 = 0
+            goto Lb5
+        L86:
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder
+            r3.<init>()
+            r3.append(r9)
+            r4 = 58
+            r3.append(r4)
+            r2 = 1
+            java.lang.Object[] r4 = new java.lang.Object[r2]
+            java.lang.Integer r7 = java.lang.Integer.valueOf(r7)
+            r9 = 0
+            r4[r9] = r7
+            java.lang.Object[] r4 = java.util.Arrays.copyOf(r4, r2)
+            java.lang.String r7 = "%02d"
+            java.lang.String r4 = java.lang.String.format(r7, r4)
+            java.lang.String r7 = "format(format, *args)"
+            p214m2.C4339q.m9705j(r4, r7)
+            r3.append(r4)
+            java.lang.String r3 = r3.toString()
+            r17 = r3
+        Lb5:
+            r10 = r8
+            r10.<init>(r11, r12, r13, r14, r15, r17)
+            androidx.lifecycle.d0<cg.l$a> r3 = r0.f27628h
+            r3.mo1415j(r8)
+            goto Lc1
+        Lbf:
+            r2 = 1
+            r9 = 0
+        Lc1:
+            androidx.lifecycle.d0<java.lang.Boolean> r3 = r0.f27631k
+            int r4 = r1.f564Y
+            r7 = 3
+            r8 = 6
+            if (r4 == r8) goto Ld1
+            if (r4 == r7) goto Ld1
+            r10 = 2
+            if (r4 != r10) goto Lcf
+            goto Ld1
+        Lcf:
+            r4 = 0
+            goto Ld2
+        Ld1:
+            r4 = 1
+        Ld2:
+            java.lang.Boolean r4 = java.lang.Boolean.valueOf(r4)
+            r3.mo1415j(r4)
+            androidx.lifecycle.d0<java.lang.Boolean> r3 = r0.f27633m
+            long r10 = r1.f568c0
+            r12 = 32
+            long r10 = r10 & r12
+            int r4 = (r10 > r5 ? 1 : (r10 == r5 ? 0 : -1))
+            if (r4 == 0) goto Le6
+            r4 = 1
+            goto Le7
+        Le6:
+            r4 = 0
+        Le7:
+            java.lang.Boolean r4 = java.lang.Boolean.valueOf(r4)
+            r3.mo1415j(r4)
+            androidx.lifecycle.d0<java.lang.Boolean> r3 = r0.f27629i
+            int r1 = r1.f564Y
+            if (r1 == r8) goto Lf8
+            if (r1 != r7) goto Lf7
+            goto Lf8
+        Lf7:
+            r2 = 0
+        Lf8:
+            java.lang.Boolean r1 = java.lang.Boolean.valueOf(r2)
+            r3.mo1415j(r1)
+            return
+    }
+}
+package p436yd;
+
+/* renamed from: yd.g */
+/* loaded from: classes.dex */
+public final class C7162g extends p239nh.AbstractC4830j implements mh.InterfaceC4624p<java.lang.Integer, android.os.Bundle, ch.C0985l> {
+
+    /* renamed from: Z */
+    public static final p436yd.C7162g f27641Z = null;
+
+    static {
+            yd.g r0 = new yd.g
+            r0.<init>()
+            p436yd.C7162g.f27641Z = r0
+            return
+    }
+
+    public C7162g() {
+            r1 = this;
+            r0 = 2
+            r1.<init>(r0)
+            return
+    }
+
+    @Override // mh.InterfaceC4624p
+    /* renamed from: l */
+    public /* bridge */ /* synthetic */ ch.C0985l mo122l(java.lang.Integer r1, android.os.Bundle r2) {
+            r0 = this;
+            java.lang.Number r1 = (java.lang.Number) r1
+            r1.intValue()
+            android.os.Bundle r2 = (android.os.Bundle) r2
+            ch.l r1 = ch.C0985l.f5061a
+            return r1
+    }
+}
